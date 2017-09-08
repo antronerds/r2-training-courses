@@ -1,0 +1,80 @@
+/*
+Creates an image in a box with text below and shadowed outline 
+Use as follows:
+<div class="polaroid">
+  <img src="rock600x400.jpg" alt="Norway" style="width:100%">
+  <div class="container">
+    <p>The Troll's tongue in Hardanger, Norway</p>
+  </div>
+</div>
+
+*/
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+div.noshow{
+	display: none;
+}
+
+/* 
+Creates an R2 did you know box; a table containing header with R2D2 image
+*/
+
+div.r2didyouknow table {
+	border-collapse:collapse;
+	border-left:solid 1px black;
+	border-right:solid 1px black;
+	border-top:solid 1px black;
+	border-bottom:solid 1px black;
+	margin:auto;
+	background-color:#f2f2f2;
+	width: 85%; 
+	cellpadding: 6px;
+}
+div.r2didyouknow th {
+	color:#C45A58;
+	height: 32px;
+	border-bottom:solid 1px black;
+	background-image: url("../images/R2d2_logo.png");
+	background-repeat: no-repeat; 
+	background-position: left; 
+}
+
+
+
+
+/* 
+Images are parsed into an reference external class; we want these centered and block just
+like their annotation text in strong
+*/
+a.reference.external strong{
+	display: block;
+	text-align: center;
+  	padding: 10px 10px;	
+}
+
+img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto; 
+  	padding: 10px 10px;	
+}
+
+/*
+Except for the logo
+*/
+
+img[src="_images/R2d2_logo.png"]{
+	display: inline;
+	float: left;
+}
+
