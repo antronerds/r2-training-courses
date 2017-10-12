@@ -18,19 +18,10 @@ Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which i
 Figures:
 
 
-  ![Figure1: Bright field image of isogenic pairs.](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure1: Bright field image of isogenic pairs.")
-	
-  [**Figure1: Bright field image of isogenic pairs.**](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png)
-
-
-
-
-
-
 Tumors and lineages: clustering data
 ---------------------------------------
 
-1.  [Go to the R2 website](https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?&dscope=TRAIN001&option=about_dscope) 
+1.  <a href="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?&dscope=TRAIN001&option=about_dscope" target="_blank">Go to the R2 website</a> 
 2.  Click tSNE maps in the left menu
 	
 How can we further characterize the groups? Use additional data available in the scientific community resources. Since we profiled the two additional classical cell lines we can use these in a larger public dataset of other tumor cell lines and see where they cluster. 
@@ -56,8 +47,14 @@ Urgency of research: patient material
 
 These so called classical cell lines have gone through thousands of cloning cycles and usually are pretty far off their original genomic composition. We’ve recently isolated from on patient from several tumor sites two biopsies per site. These are so called isogenic cell line pairs. We’ve profiled the mRNA expression of these samples and of a so called classical cell line. To investigate the relations between these samples we’ve profiled them using Affymetrix RNA chips. The resulting gene expression patterns can be used perform a hierarchical clustering. 
 What number of groups do you expect?
+
 Figures:
-the cell line images from the Nat Gen paper, supplemental fig 1a
+ * the cell line images from the Nat Gen paper, supplemental fig 1a
+
+  ![Figure1: Bright field image of isogenic pairs.](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure1: Bright field image of isogenic pairs.")
+	
+  [**Figure1: Bright field image of isogenic pairs.**](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png)
+
 Explain RNA analysis; differential expression picture from the book; fig 1.17
 Explaining clustering techniques
 
