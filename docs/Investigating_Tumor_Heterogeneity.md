@@ -18,16 +18,16 @@ Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which i
 Figures:
 
 
-	![Figure1: Bright field image of isogenic pairs.](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure1: Bright field image of isogenic pairs.")
+  ![Figure1: Bright field image of isogenic pairs.](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure1: Bright field image of isogenic pairs.")
 	
-	[**Figure1: Bright field image of isogenic pairs.**](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png)
+  [**Figure1: Bright field image of isogenic pairs.**](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png)
 
 
 
 
 
 
-1: Tumors and lineages: clustering data
+Tumors and lineages: clustering data
 ---------------------------------------
 
 1.  [Go to the R2 website](https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?&dscope=TRAIN001&option=about_dscope) 
@@ -51,7 +51,7 @@ Show figures of mesenchymal and neuroectodermal tumors (2.7 and 2.9)
 
 
 
-2: Urgency of research: patient material
+Urgency of research: patient material
 ----------------------------------------
 
 These so called classical cell lines have gone through thousands of cloning cycles and usually are pretty far off their original genomic composition. We’ve recently isolated from on patient from several tumor sites two biopsies per site. These are so called isogenic cell line pairs. We’ve profiled the mRNA expression of these samples and of a so called classical cell line. To investigate the relations between these samples we’ve profiled them using Affymetrix RNA chips. The resulting gene expression patterns can be used perform a hierarchical clustering. 
@@ -62,7 +62,7 @@ Explain RNA analysis; differential expression picture from the book; fig 1.17
 Explaining clustering techniques
 
 
-3: Which genes make a difference? Creating signatures
+Which genes make a difference? Creating signatures
 -----------------------------------------------------
 
 We have identified two different types of cells that seem to be related independent from patients. What genes determine the difference between the two types? We’ll use RNA expression data again but now the other way around; based on the classification in groups we look for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
@@ -72,28 +72,28 @@ As a first analysis step we can check a data resource called the Gene Ontology t
 Figures:
 
 
-4: Identifying groups: using signatures to classify other datasets
+Identifying groups: using signatures to classify other datasets
 ------------------------------------------------------------------
 
 Now that we have a clue as to what character the two types of cell lines have, we can use the gene expression data to create an expression based definition of each type.   
 Figures:
 
 
-5: Using scores for further characterization
+Using scores for further characterization
 --------------------------------------------
 
 The expression patterns of these specific signature can be used to investigate the relative behaviour of cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one number; a signature score. These scores can be compared in more dimensions, in this case signature dimensions. First we
 Figures:
 
 
-6: Finding causes; homing in on transcription factors
+Finding causes; homing in on transcription factors
 -----------------------------------------------------
 
 Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we determine which TF’s might determine the difference between both of these cell lines?
 Figures:
 
 
-7: Proving causes; manipulating cell lines
+Proving causes; manipulating cell lines
 ------------------------------------------
 
 From experiments we know that both cell types can switch
@@ -102,7 +102,7 @@ Keyword: reprogramming
 Figures:
 
 
-8: Creating hypotheses; relating to chromatin modification data
+Creating hypotheses; relating to chromatin modification data
 ---------------------------------------------------------------
 
 So the TF PRRX1 is capable of shifting cells from a MES state to an ADRN state. How can we further determine causal relations and probably targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We measured enhancer mark. We view a couple of genes from the signatures to discover patterns
@@ -112,7 +112,7 @@ Figures:
 
 
 
-9: Suggesting therapy
+Suggesting therapy
 ---------------------
 
 
