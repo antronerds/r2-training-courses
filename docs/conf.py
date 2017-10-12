@@ -5,7 +5,7 @@ templates_path = ['_templates']
 
 master_doc = 'index'
 
-project = u'R2 courses'
+project = u'R2 training courses'
 copyright = u'2017, Jan Koster'
 author = u'R2 support team'
 
@@ -47,18 +47,18 @@ latex_elements = {
 }
 
 latex_documents = [
-  (master_doc, 'Test.tex', u'R2 Courses',
+  (master_doc, 'Test.tex', u'R2 Training Courses',
    u'The R2 support team', 'manual'),
 ]
 
 man_pages = [
-    (master_doc, 'test', u'R2 Courses',
+    (master_doc, 'test', u'R2 Training Courses',
      [author], 1)
 ]
 
 texinfo_documents = [
-  (master_doc, 'Test', u'R2 Courses',
-   author, 'Test', 'R2 Courses',
+  (master_doc, 'Test', u'R2 Training Courses',
+   author, 'Test', 'R2 Training Courses',
    'Miscellaneous'),
 ]
 
