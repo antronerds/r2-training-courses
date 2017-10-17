@@ -15,22 +15,43 @@ Fortunately new technologies have become available to molecular biology. These e
 Using advanced data analysis, statistics and clustering methods, the new field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate new hypotheses that can be tested experimentally.
 Today you’ll use a web-based platform, R2, that provides you with a set of such bioinformatics tools to investigate recent patient and experimental data from Neuroblastoma tumors and cell lines. 
 Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which is derived from the neural crest. During embryogenesis, cells delaminate from the neural crest, migrate ventrally and differentiate into adrenaline- or noradrenaline-producing cells. Neuroblastomas typically express enzymes for the adrenaline-synthesis route. High-stage neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease.
-Figures:
+Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of Neuroblastoma tumors. From a single patient we obtained two biopsies from three different tumor sites.    
 
 
 Tumors and lineages: clustering data
 ---------------------------------------
 
-1.  <a href="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?&dscope=TRAIN001&option=about_dscope" target="_blank">Go to the R2 website</a> 
-2.  Click tSNE maps in the left menu
-	
-How can we further characterize the groups? Use additional data available in the scientific community resources. Since we profiled the two additional classical cell lines we can use these in a larger public dataset of other tumor cell lines and see where they cluster. 
-The other datasets used are
-What  
-This is not isogenic, we 
-Figures:
-Explain tSNE map; figure Jan presentation?
-Show figures of mesenchymal and neuroectodermal tumors (2.7 and 2.9)
+For a start we'll investigate two so called "classical" cell lines of Neuroblastoma. How do these profiles relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories.  
+We can use these in a larger public dataset of other tumor cell lines and see how they relate. 
+
+*Dataset used:*
+* Classical cell lines derived from 6 different childhood tumors
+*Techniques used:* 
+* mRNA Microarray expression
+*Analysis used*
+* Principle Components Analysis
+
+Go to R2 by clicking on the button below:
+
+<form name="mark_single_sample" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_itcc_cellpanel86_u133p2">
+  <button type="button" >Go to R2</button>
+</form>
+
+
+1. You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities.
+  * Can you think of an gene that might mark differences between these tumors?
+  * In field 3 type the name of the gene and click next
+  * Leave all settings to default and click next
+  * A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines; do you observe a difference between different cell lines?
+  * If you did not already choose this gene, now try the known oncogene NMYC
+  * What do you observe from the data annotation track below?
+
+2. To get a first impression of the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. 
+   * What kinds of tumors do you distinguish?
+   * What is their lineage, can you relate this to a type of tissue?
+   * What do you note about the Neuroblastoma cell lines?   
+
 
 
 ------------------
@@ -41,12 +62,22 @@ Show figures of mesenchymal and neuroectodermal tumors (2.7 and 2.9)
 ------------------
 
 
-
 Urgency of research: patient material
 ----------------------------------------
 
-These so called classical cell lines have gone through thousands of cloning cycles and usually are pretty far off their original genomic composition. We’ve recently isolated from on patient from several tumor sites two biopsies per site. These are so called isogenic cell line pairs. We’ve profiled the mRNA expression of these samples and of a so called classical cell line. To investigate the relations between these samples we’ve profiled them using Affymetrix RNA chips. The resulting gene expression patterns can be used perform a hierarchical clustering. 
-What number of groups do you expect?
+From the former step we derived that Neuroblastoma cell lines seem to be more inhomogeneous than other childhood tumor classical cell lines. These so called classical cell lines have gone through thousands of cloning cycles and usually are pretty far off their original genomic composition. We’ve recently isolated from one patient from several tumor sites two biopsies per site. These are so called isogenic cell line pairs. We’ve profiled the mRNA expression of these samples and of a so called classical cell line. To investigate the relations between these samples we’ve profiled them using Affymetrix RNA chips. The resulting gene expression patterns can be used perform a hierarchical clustering. 
+
+*Dataset used:*
+* Cell lines recently derived from three tumors from one patient. Two biopsies per tumor. Combined with two classical Neuroblastoma cell lines
+*Techniques used:* 
+* mRNA Microarray expression
+* Bright field image microscopy
+*Analysis used*
+* Unsupervised hierarchical clustering
+
+
+* What number of groups do you expect?
+* Given the former observations, what type of lineage can you assign to each group?
 
 Figures:
  * the cell line images from the Nat Gen paper, supplemental fig 1a
@@ -62,10 +93,13 @@ Explaining clustering techniques
 Which genes make a difference? Creating signatures
 -----------------------------------------------------
 
-We have identified two different types of cells that seem to be related independent from patients. What genes determine the difference between the two types? We’ll use RNA expression data again but now the other way around; based on the classification in groups we look for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
+We have identified two different types of cells that seem to be related in different tumor sites in the same patient. What genes determine the difference between the two types? We’ll use RNA expression data again but now the other way around; based on the classification in groups we look for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
 For future use we’ll store the genes that make the difference as a so called signature. We’ll make two sets, each specific for a type of cells. Name them according to the hints we got from the previous analysis: MES and ADRN
 Try Broad geneset EMT
-As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene. What can you say about the function of the group of genes that are upregulated in the MES type of cells?
+As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene. 
+
+What can you say about the function of the group of genes that are upregulated in the MES type of cells?
+
 Figures:
 
 
@@ -73,7 +107,7 @@ Identifying groups: using signatures to classify other datasets
 ------------------------------------------------------------------
 
 Now that we have a clue as to what character the two types of cell lines have, we can use the gene expression data to create an expression based definition of each type.   
-Figures:
+* What do you 
 
 
 Using scores for further characterization
