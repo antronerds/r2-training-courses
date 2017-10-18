@@ -24,11 +24,13 @@ Tumors and lineages: clustering data
 For a start we'll investigate two so called "classical" cell lines of Neuroblastoma. How do these profiles relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories.  
 We can use these in a larger public dataset of other tumor cell lines and see how they relate. 
 
-*Dataset used:*
-* Classical cell lines derived from 6 different childhood tumors
-*Techniques used:* 
+*Dataset used:*  
+* 56 classical cell lines derived from 6 different childhood tumors (Cellline Childhood cancer - ITCC - 86 - MAS5.0 - u133p2)
+
+*Techniques used:*   
 * mRNA Microarray expression
-*Analysis used*
+
+*Analysis used*  
 * Principle Components Analysis
 
 Go to R2 by clicking on the button below:
@@ -40,51 +42,77 @@ Go to R2 by clicking on the button below:
 
 
 1. You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities.
-  * Can you think of an gene that might mark differences between these tumors?
+
+---------
+  ![](_static/images/R2d2_logo.png)**Can you think of an gene that might mark differences between these tumors?**
+
+> *----*
+
+---------
+
   * In field 3 type the name of the gene and click next
   * Leave all settings to default and click next
-  * A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines; do you observe a difference between different cell lines?
-  * If you did not already choose this gene, now try the known oncogene NMYC
-  * What do you observe from the data annotation track below?
+  * A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines.
 
-2. To get a first impression of the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. 
-   * What kinds of tumors do you distinguish?
-   * What is their lineage, can you relate this to a type of tissue?
-   * What do you note about the Neuroblastoma cell lines?   
+---------
+  ![](_static/images/R2d2_logo.png)**Do you observe a difference between different cell lines?**
 
+> *----*
 
-
-------------------
-  ![](_static/images/R2d2_logo.png)**Sample did you know box?**
+---------
   
->  *Text goes here*
 
-------------------
+  * If you did not already choose this gene, now try the known oncogene NMYC
+  
+---------
+  ![](_static/images/R2d2_logo.png)**What do you observe from the data annotation track below?**
+
+> *----*
+
+---------
+  
+
+2. To get a first impression of the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea.
+  *
+
+  * What kinds of tumors do you distinguish?
+  * What is their lineage, can you relate this to a type of tissue?
+  * What do you note about the Neuroblastoma cell lines?
+
 
 
 Urgency of research: patient material
 ----------------------------------------
 
-From the former step we derived that Neuroblastoma cell lines seem to be more inhomogeneous than other childhood tumor classical cell lines. These so called classical cell lines have gone through thousands of cloning cycles and usually are pretty far off their original genomic composition. We’ve recently isolated from one patient from several tumor sites two biopsies per site. These are so called isogenic cell line pairs. We’ve profiled the mRNA expression of these samples and of a so called classical cell line. To investigate the relations between these samples we’ve profiled them using Affymetrix RNA chips. The resulting gene expression patterns can be used perform a hierarchical clustering. 
-
-*Dataset used:*
-* Cell lines recently derived from three tumors from one patient. Two biopsies per tumor. Combined with two classical Neuroblastoma cell lines
-*Techniques used:* 
-* mRNA Microarray expression
-* Bright field image microscopy
-*Analysis used*
-* Unsupervised hierarchical clustering
-
-
-* What number of groups do you expect?
-* Given the former observations, what type of lineage can you assign to each group?
-
-Figures:
- * the cell line images from the Nat Gen paper, supplemental fig 1a
+From the former step we derived that Neuroblastoma cell lines seem to be less homogeneous than other childhood tumor classical cell lines. These so called classical cell lines have gone through thousands of cloning cycles and usually are pretty far off their original genomic composition. We’ve recently isolated from one patient from several tumor sites two biopsies per site. These are so called isogenic cell line pairs, see below. 
 
   ![Figure1: Bright field image of isogenic pairs.](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure1: Bright field image of isogenic pairs.")
 	
   [**Figure1: Bright field image of isogenic pairs.**](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png)
+
+* What do you note about the morphology of the cell lines?
+
+We’ve profiled the mRNA expression of these samples and of a so called classical cell line. To investigate the relations between these samples we’ve profiled them using Affymetrix RNA chips. The resulting gene expression patterns can be used perform a hierarchical clustering. 
+
+*Dataset used:*  
+  * Cell lines recently derived from three tumors from one patient. Two biopsies per tumor were taken. This dataset is combined with two classical Neuroblastoma cell lines that clustered far apart: SHEP and SY5Y (Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2) 
+  
+*Techniques used:*  
+* mRNA Microarray expression
+* Bright field image microscopy
+
+*Analysis used*  
+* Unsupervised hierarchical clustering
+
+*References*  
+*
+
+Use toplister, 100 genes  
+View geneset (heatmap)
+ 
+
+* What number of groups do you expect?
+* Given the former observations, what type of lineage can you assign to each group?
 
 Explain RNA analysis; differential expression picture from the book; fig 1.17
 Explaining clustering techniques
@@ -96,32 +124,97 @@ Which genes make a difference? Creating signatures
 We have identified two different types of cells that seem to be related in different tumor sites in the same patient. What genes determine the difference between the two types? We’ll use RNA expression data again but now the other way around; based on the classification in groups we look for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
 For future use we’ll store the genes that make the difference as a so called signature. We’ll make two sets, each specific for a type of cells. Name them according to the hints we got from the previous analysis: MES and ADRN
 Try Broad geneset EMT
+
+*Dataset used:*  
+* Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2 (same as above)
+
+*Techniques used:*   
+* 
+
+*Analysis used*  
+* 
+
+*References*  
+* 
+
+
 As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene. 
 
 What can you say about the function of the group of genes that are upregulated in the MES type of cells?
 
-Figures:
+Differential expression between sets  
+View as heatmap to confirm  
+Do GO analysis: Motility in GO MES up  
+Store as gene-category, both up and down  
+
 
 
 Identifying groups: using signatures to classify other datasets
 ------------------------------------------------------------------
 
-Now that we have a clue as to what character the two types of cell lines have, we can use the gene expression data to create an expression based definition of each type.   
-* What do you 
+So we now have a signature that distinguishes between the two types of cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines?
+
+*Dataset used:*
+* A combination of the 8 cell lines above, additional classical Neuroblastoma cell lines and cells from the neural crest lineage (Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2)
+
+*Techniques used:* 
+* mRNA expression data
+
+*Analysis used*
+* Heatmap analysis
+
+*References*
+* 
+   
+View geneset with ADRN-high, and MES high and save as track  
+View geneset with the combined signature and observe the high and low portions are similar   
+
+* Which samples group together?
+* How does this relate to above 
 
 
 Using scores for further characterization
 --------------------------------------------
 
 The expression patterns of these specific signature can be used to investigate the relative behaviour of cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one number; a signature score. These scores can be compared in more dimensions, in this case signature dimensions. First we
-Figures:
+
+*Dataset used:*
+* Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2
+
+*Techniques used:* 
+* 
+
+*Analysis used*
+* 
+
+*References*
+* 
+First show each track, with boxplots  
+Next relate two tracks  
+
 
 
 Finding causes; homing in on transcription factors
 -----------------------------------------------------
 
 Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we determine which TF’s might determine the difference between both of these cell lines?
-Figures:
+
+*Dataset used:*
+* 
+
+*Techniques used:* 
+* 
+
+*Analysis used*
+* 
+
+*References*
+* 
+
+Differential expression between groups  
+select only MES and ADRN, select TF as category  
+Investigate top 4 high in MES in Entrez; which to choose?  
+
 
 
 Proving causes; manipulating cell lines
@@ -130,7 +223,19 @@ Proving causes; manipulating cell lines
 From experiments we know that both cell types can switch
 Now that we found the TF PRRX1 to be highly expressed in the MES type of cell lines we can try to investigate this relation by manipulating the gene in cell lines we grow in the lab. The gene was inducibly expressed in the cell lines and these were monitored through time for their gene expression. The PRRX1 gene was also silenced by using a CRISPR/Cas9 system.
 Keyword: reprogramming
-Figures:
+
+*Dataset used:*
+* 
+
+*Techniques used:* 
+* 
+
+*Analysis used*
+* 
+
+*References*
+* 
+Show that experimental manipulation of one of them can move cell lines along the MES/ADRN axis  
 
 
 Creating hypotheses; relating to chromatin modification data
@@ -139,8 +244,17 @@ Creating hypotheses; relating to chromatin modification data
 So the TF PRRX1 is capable of shifting cells from a MES state to an ADRN state. How can we further determine causal relations and probably targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We measured enhancer mark. We view a couple of genes from the signatures to discover patterns
 Epigentisch versus genetisch
 
-Figures:
+*Dataset used:*
+*
 
+*Techniques used:* 
+*
+
+*Analysis used*
+*
+
+*References*
+*
 
 
 Suggesting therapy
@@ -153,9 +267,16 @@ SKNSH; upon chemotherapy (drugs) mesenchymal shift; drugable are for example kin
 Hints: 
 Figures:
 
+*Dataset used:*
+* 
 
+*Techniques used:* 
+* 
 
+*Analysis used*
+* 
 
-
+*References*
+* 
 
 
