@@ -9,7 +9,12 @@ Investigating Tumor Heterogeneity
 Introduction
 ------------
 
-Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. During the lectures you’ve been shown how this works in colorectal cancer, where a well defined path of subsequent gained mutations leads to more aggressive tumorigenic cell types. 
+Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. During the lectures you’ve been shown how this works in colorectal cancer, where a well defined path of subsequent gained mutations leads to more aggressive tumorigenic cell types.
+
+  ![Figure1: Mutation paths during cancer progression.](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure1: Mutation paths during cancer progression.")
+	
+  [**Figure1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
+
 Although there has been extensive research into similar mutation mechanisms in Neuroblastoma (also in our group), there has been no such mechanism found for this cancer type. In this practical work we want to try to bring you to the cutting edge of research into this dangerous childhood tumor. From the lectures you should have learned already that this tumor seems to be heterogenic by nature. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of Neuroblastoma. Children experiencing a relapse almost always die. 
 Fortunately new technologies have become available to molecular biology. These enable us to study not only the mutations and RNA expression of genes but also study the epigenetic modifications of the DNA. And not only that but genes can now be manipulated in cell lines and living tissues. 
 Using advanced data analysis, statistics and clustering methods, the new field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate new hypotheses that can be tested experimentally.
@@ -21,11 +26,11 @@ Using recent molecular biology data gathering techniques and advanced bioinforma
 Tumors and lineages: clustering data
 ---------------------------------------
 
-For a start we'll investigate two so called "classical" cell lines of Neuroblastoma. How do these profiles relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories.  
+For a start we'll investigate so called "classical" cell lines of Neuroblastoma tumors. How do these profiles relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories.  
 We can use these in a larger public dataset of other tumor cell lines and see how they relate. 
 
 *Dataset used:*  
-* 56 classical cell lines derived from 6 different childhood tumors (Cellline Childhood cancer - ITCC - 86 - MAS5.0 - u133p2)
+* 86 classical cell lines derived from 6 different childhood tumors (Cellline Childhood cancer - ITCC - 86 - MAS5.0 - u133p2)
 
 *Techniques used:*   
 * mRNA Microarray expression
@@ -37,7 +42,7 @@ Go to R2 by clicking on the button below:
 
 <form name="mark_single_sample" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_itcc_cellpanel86_u133p2">
-  <button type="button" >Go to R2</button>
+  <button type="submit" >Go to R2</button>
 </form>
 
 
@@ -72,8 +77,9 @@ Go to R2 by clicking on the button below:
 ---------
   
 
-2. To get a first impression of the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea.
-  *
+2. To get a first impression of the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. A suitable method is the Principle Components Analysis (PCA). 
+
+* Go to the main screen in R2 (click the 'Go to Main' link in the left upper corner)
 
   * What kinds of tumors do you distinguish?
   * What is their lineage, can you relate this to a type of tissue?
@@ -107,11 +113,29 @@ We’ve profiled the mRNA expression of these samples and of a so called classic
 *References*  
 *
 
-Use toplister, 100 genes  
-View geneset (heatmap)
- 
+* For this analysis we'll directly go to one of the analysis tools of R2; Toplister. The Toplister calculates which genes behave different through a dataset, it calculates the genes whose expression values have the largest standard deviation within a given set of samples.
+* Goto R2 by clicking the button below
 
-* What number of groups do you expect?
+* Check that the settings are 
+* Click next; a list of genes appears
+
+---------
+  ![](_static/images/R2d2_logo.png)**Do you recognize any genes?**
+
+> *----*
+
+---------
+
+* Use the mousewheel to scroll to the bottom of the page, here you can choose to either store this set or perform an additional analysis. The Heatmap(z-score) produces a hierarchically clustered view of the expression values of the top 100 genes 
+* Click on Heatmap(z-score)
+
+---------
+  ![](_static/images/R2d2_logo.png)**What number of groups do you expect?**
+
+> *----*
+
+---------
+
 * Given the former observations, what type of lineage can you assign to each group?
 
 Explain RNA analysis; differential expression picture from the book; fig 1.17
@@ -122,31 +146,50 @@ Which genes make a difference? Creating signatures
 -----------------------------------------------------
 
 We have identified two different types of cells that seem to be related in different tumor sites in the same patient. What genes determine the difference between the two types? We’ll use RNA expression data again but now the other way around; based on the classification in groups we look for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
-For future use we’ll store the genes that make the difference as a so called signature. We’ll make two sets, each specific for a type of cells. Name them according to the hints we got from the previous analysis: MES and ADRN
-Try Broad geneset EMT
 
 *Dataset used:*  
 * Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2 (same as above)
+* Gene Ontology
+* Broad curated hallmark datasets
 
 *Techniques used:*   
-* 
+* mRNA arrays
 
 *Analysis used*  
-* 
+* Overrepresentation calculation
 
 *References*  
 * 
 
+* Go to the main page of R2 ()
+* In Field 3 choose Find Differential expression between groups
+* This dataset has been annotated with the two types we observed above in a so called track. Choose this track.
 
-As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene. 
+---------
+  ![](_static/images/R2d2_logo.png)**How is this figure different from the former?**
 
-What can you say about the function of the group of genes that are upregulated in the MES type of cells?
+> *----*
 
-Differential expression between sets  
-View as heatmap to confirm  
-Do GO analysis: Motility in GO MES up  
-Store as gene-category, both up and down  
+---------
 
+* For future use the genes that make the difference have been stored for you as so called signatures. R2 provides additional analyses for this set of genes in the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene.  
+
+---------
+  ![](_static/images/R2d2_logo.png)**What can you say about the function of the group of genes that are upregulated in the MES type of cells?**
+
+> *----*
+
+---------
+
+
+* Now select the Geneset option Try Broad geneset EMT
+
+---------
+  ![](_static/images/R2d2_logo.png)**Which hallmark category of genes pops up as most important?**
+
+> *----*
+
+---------
 
 
 Identifying groups: using signatures to classify other datasets
@@ -166,11 +209,12 @@ So we now have a signature that distinguishes between the two types of cells. Ho
 *References*
 * 
    
-View geneset with ADRN-high, and MES high and save as track  
+View geneset with ADRN-high, and MES high
 View geneset with the combined signature and observe the high and low portions are similar   
 
 * Which samples group together?
-* How does this relate to above 
+
+* How does this relate to above? 
 
 
 Using scores for further characterization
@@ -189,8 +233,9 @@ The expression patterns of these specific signature can be used to investigate t
 
 *References*
 * 
-First show each track, with boxplots  
-Next relate two tracks  
+
+* First show each track, with boxplots  
+* Next relate two tracks  
 
 
 
@@ -211,9 +256,9 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 *References*
 * 
 
-Differential expression between groups  
-select only MES and ADRN, select TF as category  
-Investigate top 4 high in MES in Entrez; which to choose?  
+* Differential expression between groups  
+* select only MES and ADRN, select TF as category  
+* Investigate top 4 high in MES in Entrez; which to choose?  
 
 
 
@@ -235,14 +280,18 @@ Keyword: reprogramming
 
 *References*
 * 
-Show that experimental manipulation of one of them can move cell lines along the MES/ADRN axis  
+
+* Show that experimental manipulation of one of them can move cell lines along the MES/ADRN axis
+* Directly link to the dataset
+* Toy around with colors till the one that explains most shows   
 
 
 Creating hypotheses; relating to chromatin modification data
 ---------------------------------------------------------------
 
 So the TF PRRX1 is capable of shifting cells from a MES state to an ADRN state. How can we further determine causal relations and probably targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We measured enhancer mark. We view a couple of genes from the signatures to discover patterns
-Epigentisch versus genetisch
+
+Epigenetic versus genetic; the concept of re-programming
 
 *Dataset used:*
 *
@@ -256,6 +305,8 @@ Epigentisch versus genetisch
 *References*
 *
 
+* Directly link to the chromatin modification data from TF's that were found to be specific (MEOX?)
+* Try different TF's and have them explain the difference
 
 Suggesting therapy
 ---------------------
