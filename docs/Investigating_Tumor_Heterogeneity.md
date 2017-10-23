@@ -26,7 +26,8 @@ Using recent molecular biology data gathering techniques and advanced bioinforma
 Tumors and lineages: clustering data
 ---------------------------------------
 
-For a start we'll investigate so called "classical" cell lines of Neuroblastoma tumors. How do these profiles relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories.  
+For a start we'll investigate so called "classical" cell lines of Neuroblastoma tumors. Classical cell lines are cultured cell lines that can be grown and passaged indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since.  
+How do these profiles relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories.  
 We can use these in a larger public dataset of other tumor cell lines and see how they relate. 
 
 *Dataset used:*  
@@ -38,18 +39,20 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 *Analysis used*  
 * Principle Components Analysis
 
-Go to R2 by clicking on the button below:
+##### A first impression of your data; expression of key genes
+
+* Go to R2 by clicking on the button below:
 
 <form name="mark_single_sample" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_itcc_cellpanel86_u133p2">
   <button type="submit" >Go to R2</button>
-</form>
+</form>  
 
 
-1. You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities.
+* You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you think of an gene that might mark differences between these tumors?**
+  ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumors?**
 
 > *----*
 
@@ -67,24 +70,39 @@ Go to R2 by clicking on the button below:
 ---------
   
 
-  * If you did not already choose this gene, now try the known oncogene NMYC
+  * If you did not already choose this gene, now try the gen NMYC
   
 ---------
+  ![](_static/images/R2d2_logo.png)**Can you say something about the role this gene can play in cancer?**
+
+> *----*
+
   ![](_static/images/R2d2_logo.png)**What do you observe from the data annotation track below?**
 
 > *----*
 
 ---------
   
+##### A first impression of your data; Principle Components Analysis
 
-2. To get a first impression of the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. A suitable method is the Principle Components Analysis (PCA). 
+* To get a first impression of the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. A suitable method is the Principle Components Analysis (PCA). 
 
 * Go to the main screen in R2 (click the 'Go to Main' link in the left upper corner)
 
-  * What kinds of tumors do you distinguish?
-  * What is their lineage, can you relate this to a type of tissue?
-  * What do you note about the Neuroblastoma cell lines?
+---------
+  ![](_static/images/R2d2_logo.png)**What kinds of tumors do you distinguish?**
 
+> *----*
+
+  ![](_static/images/R2d2_logo.png)**What is their lineage, can you relate this to a type of tissue?**
+
+> *----*
+
+  ![](_static/images/R2d2_logo.png)**What do you note about the Neuroblastoma cell lines?**
+
+> *----*
+
+---------
 
 
 Urgency of research: patient material
