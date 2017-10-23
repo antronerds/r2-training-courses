@@ -108,13 +108,18 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 Urgency of research: patient material
 ----------------------------------------
 
-From the former step we derived that Neuroblastoma cell lines seem to be less homogeneous than other childhood tumor classical cell lines. These so called classical cell lines have gone through thousands of cloning cycles and usually are pretty far off their original genomic composition. We’ve recently isolated from one patient from several tumor sites two biopsies per site. These are so called isogenic cell line pairs, see below. 
+In the former step we derived that Neuroblastoma cell lines seem to be less homogeneous than other childhood tumor classical cell lines. These so called classical cell lines have gone through thousands of cloning cycles and usually are pretty far off their original genomic composition. We’ve recently isolated from one patient from several tumor sites two biopsies per site. These are so called isogenic cell line pairs, see below. 
 
   ![Figure1: Bright field image of isogenic pairs.](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure1: Bright field image of isogenic pairs.")
 	
   [**Figure1: Bright field image of isogenic pairs.**](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png)
 
-* What do you note about the morphology of the cell lines?
+---------
+  ![](_static/images/R2d2_logo.png)**What do you note about the morphology of the cell lines?**
+
+> *----*
+
+---------
 
 We’ve profiled the mRNA expression of these samples and of a so called classical cell line. To investigate the relations between these samples we’ve profiled them using Affymetrix RNA chips. The resulting gene expression patterns can be used perform a hierarchical clustering. 
 
@@ -123,16 +128,18 @@ We’ve profiled the mRNA expression of these samples and of a so called classic
   
 *Techniques used:*  
 * mRNA Microarray expression
-* Bright field image microscopy
 
 *Analysis used*  
 * Unsupervised hierarchical clustering
+* Heatmap visualization
 
 *References*  
 *
 
-* For this analysis we'll directly go to one of the analysis tools of R2; Toplister. The Toplister calculates which genes behave different through a dataset, it calculates the genes whose expression values have the largest standard deviation within a given set of samples.
+* For this analysis we'll directly go to one of the analysis tools of R2; Toplister. The Toplister calculates which genes behave different through a dataset. It does so by calculating the genes whose expression values have the largest standard deviation within a given set of samples.
 * Goto R2 by clicking the button below
+
+TODO; create proper form here
 
 * Check that the settings are 
 * Click next; a list of genes appears
@@ -144,7 +151,7 @@ We’ve profiled the mRNA expression of these samples and of a so called classic
 
 ---------
 
-* Use the mousewheel to scroll to the bottom of the page, here you can choose to either store this set or perform an additional analysis. The Heatmap(z-score) produces a hierarchically clustered view of the expression values of the top 100 genes 
+* Use the mousewheel to scroll to the bottom of the page, here you can choose to perform an additional analysis. The Heatmap(z-score) produces a hierarchically clustered view of the expression values of the top 100 genes.  
 * Click on Heatmap(z-score)
 
 ---------
@@ -157,13 +164,13 @@ We’ve profiled the mRNA expression of these samples and of a so called classic
 * Given the former observations, what type of lineage can you assign to each group?
 
 Explain RNA analysis; differential expression picture from the book; fig 1.17
-Explaining clustering techniques
+Explaining clustering techniques	
 
 
 Which genes make a difference? Creating signatures
 -----------------------------------------------------
 
-We have identified two different types of cells that seem to be related in different tumor sites in the same patient. What genes determine the difference between the two types? We’ll use RNA expression data again but now the other way around; based on the classification in groups we look for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
+We have identified two different types of cells that seem to be related in different tumor sites in the same patient. What genes determine the difference between the two types? We’ll use RNA expression data again but now the other way around; based on a predefined classification in groups we look for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
 
 *Dataset used:*  
 * Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2 (same as above)
@@ -190,7 +197,7 @@ We have identified two different types of cells that seem to be related in diffe
 
 ---------
 
-* For future use the genes that make the difference have been stored for you as so called signatures. R2 provides additional analyses for this set of genes in the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene.  
+* For future use the genes that make the difference have been stored for you as so called signatures. R2 provides additional analyses for this set of genes in the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene. R2 now calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them.  
 
 ---------
   ![](_static/images/R2d2_logo.png)**What can you say about the function of the group of genes that are upregulated in the MES type of cells?**
@@ -226,13 +233,24 @@ So we now have a signature that distinguishes between the two types of cells. Ho
 
 *References*
 * 
-   
-View geneset with ADRN-high, and MES high
-View geneset with the combined signature and observe the high and low portions are similar   
+* Go to the main portal of R2
+* In field 3 select View Geneset
+* View geneset with ADRN-high, and MES high
+* View geneset with the combined signature and observe the high and low portions are similar   
 
-* Which samples group together?
+---------
+  ![](_static/images/R2d2_logo.png)**Which samples group together?**
 
-* How does this relate to above? 
+> *----*
+
+---------
+
+---------
+  ![](_static/images/R2d2_logo.png)**How does this relate to above?**
+
+> *----*
+
+---------
 
 
 Using scores for further characterization
