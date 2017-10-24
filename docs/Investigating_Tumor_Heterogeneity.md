@@ -139,9 +139,17 @@ We’ve profiled the mRNA expression of these samples and of a so called classic
 * For this analysis we'll directly go to one of the analysis tools of R2; Toplister. The Toplister calculates which genes behave different through a dataset. It does so by calculating the genes whose expression values have the largest standard deviation within a given set of samples.
 * Goto R2 by clicking the button below
 
-TODO; create proper form here
+<form name="toplisterform" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<input type='hidden' name='minpres' value='1'>
+<input type='hidden' name='howmany' value='300'>
+<input type='hidden' name='option' value='high_ana2'>
+<input type='hidden' name='table' value='ps_avgpres_gse90803geo8_u133p2'>
+<input type='hidden' name='hugoonce' value='yes'>
+<input type='hidden' name='set' value='highest'>
+<input type='hidden' name='cortype' value='transform_2log'>
+</form>
 
-* Check that the settings are 
+* Check that the settings are as follows
 * Click next; a list of genes appears
 
 ---------
@@ -246,7 +254,7 @@ So we now have a signature that distinguishes between the two types of cells. Ho
 ---------
 
 ---------
-  ![](_static/images/R2d2_logo.png)**How does this relate to above?**
+  ![](_static/images/R2d2_logo.png)**How does this relate to the above?**
 
 > *----*
 
@@ -256,7 +264,7 @@ So we now have a signature that distinguishes between the two types of cells. Ho
 Using scores for further characterization
 --------------------------------------------
 
-The expression patterns of these specific signature can be used to investigate the relative behaviour of cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one number; a signature score. These scores can be compared in more dimensions, in this case signature dimensions. First we'll analyze the scores separately.
+The expression patterns of these specific signature can be used to investigate the relative behavior of cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one number; a signature score. These scores can be compared in more dimensions, in this case signature dimensions. First we'll analyze the scores separately.
 
 *Dataset used:*
 * Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2
