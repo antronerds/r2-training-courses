@@ -41,10 +41,11 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 
 ##### A first impression of your data; expression of key genes
 
-* Go to R2 by clicking on the button below:
+* Go to R2 by clicking on the button below:  
+
 
 <form name="mark_single_sample" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_itcc_cellpanel86_u133p2">
+  <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
   <button type="submit" >Go to R2</button>
 </form>  
 
@@ -147,6 +148,7 @@ We’ve profiled the mRNA expression of these samples and of a so called classic
 <input type='hidden' name='hugoonce' value='yes'>
 <input type='hidden' name='set' value='highest'>
 <input type='hidden' name='cortype' value='transform_2log'>
+<button type="submit" >Go to R2</button>
 </form>
 
 * Check that the settings are as follows
