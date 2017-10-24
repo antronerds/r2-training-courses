@@ -41,10 +41,10 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 
 ##### A first impression of your data; expression of key genes
 
-* Go to R2 by clicking on the button below:  
+* Go to R2 by clicking on the button below: TODO; this still has to point to the proper set  
 
 
-<form name="mark_single_sample" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
   <button type="submit" >Go to R2</button>
 </form>  
@@ -88,7 +88,16 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 
 * To get a first impression of the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. A suitable method is the Principle Components Analysis (PCA). 
 
-* Go to the main screen in R2 (click the 'Go to Main' link in the left upper corner)
+* Go to the main screen in R2
+
+
+<form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
+  <button type="submit" >Go to main page R2</button>
+</form>  
+
+* In field 3 select Principle Components analysis (TODO; make this available)
+* In the next screen leave all as is and click
 
 ---------
   ![](_static/images/R2d2_logo.png)**What kinds of tumors do you distinguish?**
@@ -169,12 +178,12 @@ We’ve profiled the mRNA expression of these samples and of a so called classic
 
 > *----*
 
+  ![](_static/images/R2d2_logo.png)**Given the former observations, what type of lineage can you assign to each group?**
+
+> *----*
+
 ---------
 
-* Given the former observations, what type of lineage can you assign to each group?
-
-Explain RNA analysis; differential expression picture from the book; fig 1.17
-Explaining clustering techniques	
 
 
 Which genes make a difference? Creating signatures
@@ -196,9 +205,16 @@ We have identified two different types of cells that seem to be related in diffe
 *References*  
 * 
 
-* Go to the main page of R2 ()
+* Go to the main page of R2
+
+<form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
+  <button type="submit" >Go to R2</button>
+</form>  
+
+
 * In Field 3 choose Find Differential expression between groups
-* This dataset has been annotated with the two types we observed above in a so called track. Choose this track.
+* This dataset has been annotated with type informations. Each sample was assigned to either the mesenchymal or the adrenergic type, in R2 this is called a *track*. Choose the proper track.
 
 ---------
   ![](_static/images/R2d2_logo.png)**How is this figure different from the former?**
@@ -243,9 +259,16 @@ So we now have a signature that distinguishes between the two types of cells. Ho
 
 *References*
 * 
-* Go to the main portal of R2
+* Go to the main portal of R2 by clicking the button below; the dataset described above is automatically selected
+
+<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
+  <button type="submit" >Go to R2</button>
+</form>  
+
+
 * In field 3 select View Geneset
-* View geneset with ADRN-high, and MES high
+* 
 * View geneset with the combined signature and observe the high and low portions are similar   
 
 ---------
@@ -278,8 +301,15 @@ The expression patterns of these specific signature can be used to investigate t
 * 
 
 *References*
-* 
 
+* Go back to the main portal of R2 by clicking the button below.
+
+<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
+  <button type="submit" >Go to R2</button>
+</form>  
+
+* 
 * First show each track, with boxplots  
 * Next relate two tracks  
 
@@ -358,11 +388,10 @@ Suggesting therapy
 ---------------------
 
 
-Armed with the current new knowledge, can you think of a way to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options?
-Related 
-SKNSH; upon chemotherapy (drugs) mesenchymal shift; drugable are for example kinases; 
-Hints: 
-Figures:
+* Armed with the current new knowledge, can you think of a way to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options?
+* SKNSH; upon chemotherapy (drugs) mesenchymal shift; drugable are for example kinases; 
+* Hints: 
+* Figures:
 
 *Dataset used:*
 * 
