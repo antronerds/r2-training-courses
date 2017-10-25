@@ -199,7 +199,7 @@ We’ve profiled the mRNA expression of genes using Affymetrix RNA chips in thes
 Which genes make a difference? Creating signatures
 -----------------------------------------------------
 
-We have identified two different types of cells that seem to be related in different tumor sites in the same patient. What genes determine the difference between the two types? We’ll use RNA expression data again but now the other way around; based on a predefined classification in groups we look for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
+We have identified two different types of cells that seem to be related in different tumor sites in the same patient. Neuroblastoma apparently has a heterogenous nature. What genes determine the difference between the two types? We’ll use RNA expression data again but now the other way around; based on a predefined classification in groups we look for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
 
 *Dataset used:*  
 * Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2 (same as above)
@@ -223,7 +223,7 @@ We have identified two different types of cells that seem to be related in diffe
 
 
 * In Field 3 choose Find Differential expression between groups
-* This dataset has been annotated with type information. Each sample was assigned to either the mesenchymal or the adrenergic type, in R2 this is called a *track*. Choose the proper track in the 'Select a track' dropdown. Since we have only 8 samples make sure that the  
+* This dataset has been annotated with type information. Each sample was assigned to either the MESenchymal or the ADReNergic type, in R2 this is called a *track*. Choose the proper track in the 'Select a track' dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to   
 
 ---------
   ![](_static/images/R2d2_logo.png)**How is this figure different from the former?**
@@ -232,7 +232,7 @@ We have identified two different types of cells that seem to be related in diffe
 
 ---------
 
-* For future use the genes that make the difference have been stored for you as so called signatures. R2 provides additional analyses for this set of genes in the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene. R2 now calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. In the menu panel to the right select the 
+* For future use the genes that make the difference have been stored for you in R2 as signatures (aka genesets or categories). R2 provides additional analyses for this set of genes in the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene. R2 now calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. In the menu panel to the right select the 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What can you say about the function of the group of genes that are upregulated in the MES type of cells?**
@@ -244,10 +244,7 @@ We have identified two different types of cells that seem to be related in diffe
 
 * In R2 there are much more sets of genes that have been found to be implemented in specific processes. The Broad institute has compiled quite some of these sets of genes that characterize hallmark biological processes   
 * Go back by clicking the back button
-elect the Geneset option
-* Do this 
-* Another type of sets of genes that can be used for overrepresentation calculations are pathways. KEGG is a database containing curated biological pathways
-* Repeat this for other sets of genes, this might reveal interes
+* Select the Geneset option from the right menu
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which hallmark category of genes pops up as most important?**
@@ -255,6 +252,18 @@ elect the Geneset option
 <br><br>
 
 ---------
+
+* Select the Broad Hallmark geneset 
+* Another type of sets of genes that can be used for overrepresentation calculations are pathways. KEGG is a database containing curated biological pathways. Perform the same analysis as above for the KEGG pathways database
+
+---------
+  ![](_static/images/R2d2_logo.png)**What interesting pathways do you find?**
+
+<br><br>
+
+---------
+
+* Click on the 
 
 
 Identifying groups: using signatures to classify other datasets
@@ -395,7 +404,7 @@ Epigenetic versus genetic; the concept of re-programming
 *References*
 *
 
-* Directly link to the chromatin modification data from TF's that were found to be specific (MEOX?)
+* Directly link to the chromatin modification data from TF's that were found to be specific (MEOX)
 * Try different TF's and have them explain the difference
 
 Suggesting therapy
@@ -403,6 +412,7 @@ Suggesting therapy
 
 
 * Armed with the current new knowledge, can you think of a way to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options?
+* Use the tools available 
 * SKNSH; upon chemotherapy (drugs) mesenchymal shift; drugable are for example kinases; 
 * Hints: 
 * Figures:
