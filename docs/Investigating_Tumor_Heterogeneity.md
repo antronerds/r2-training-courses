@@ -52,13 +52,12 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 </form>  
 
 
-
 * You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to your develop your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumors?**
 
-> *----*
+<br><br>
 
 ---------
 
@@ -69,7 +68,7 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 ---------
   ![](_static/images/R2d2_logo.png)**Do you observe a difference between different cell lines?**
 
-> *----*
+<br><br>
 
 ---------
   
@@ -79,11 +78,11 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 ---------
   ![](_static/images/R2d2_logo.png)**Can you say something about the role this gene can play in cancer?**
 
-> *----*
+<br><br>
 
   ![](_static/images/R2d2_logo.png)**What do you observe from the data annotation track below?**
 
-> *----*
+<br><br>
 
 ---------
   
@@ -108,15 +107,19 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 ---------
   ![](_static/images/R2d2_logo.png)**What kinds of tumors do you distinguish?**
 
-> *----*
+<br><br>
 
   ![](_static/images/R2d2_logo.png)**What is their lineage, can you relate this to a type of tissue?**
 
-> *----*
+<br><br>
 
   ![](_static/images/R2d2_logo.png)**What do you note about the Neuroblastoma cell lines?**
 
-> *----*
+<br><br>
+
+  ![](_static/images/R2d2_logo.png)**If you had to choose a pair of cell lines for further investigation, which would you choose?**
+
+<br><br>
 
 ---------
 
@@ -124,7 +127,7 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 Urgency of research: patient material
 ----------------------------------------
 
-In the former step we derived that Neuroblastoma cell lines seem to be less homogeneous than other childhood tumor classical cell lines. These so called classical cell lines have gone through thousands of cloning cycles and usually are pretty far off their original genomic composition. We’ve recently isolated from one patient from several tumor sites two biopsies per site. These are so called isogenic cell line pairs, see below. 
+In the former step we derived that Neuroblastoma cell lines seem to be less homogeneous than other childhood tumor classical cell lines. These so called classical cell lines have gone through thousands of cloning cycles and usually are pretty far off their original genomic composition. We’ve recently isolated from one patient from several tumor sites two biopsies per site. These are so called isogenic cell line pairs. A microscopic image is provided below. 
 
   ![Figure1: Bright field image of isogenic pairs.](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure1: Bright field image of isogenic pairs.")
 	
@@ -133,11 +136,11 @@ In the former step we derived that Neuroblastoma cell lines seem to be less homo
 ---------
   ![](_static/images/R2d2_logo.png)**What do you note about the morphology of the cell lines?**
 
-> *----*
+<br><br>
 
 ---------
 
-We’ve profiled the mRNA expression of these samples and of a so called classical cell line. To investigate the relations between these samples we’ve profiled them using Affymetrix RNA chips. The resulting gene expression patterns can be used perform a hierarchical clustering. 
+We’ve profiled the mRNA expression of genes using Affymetrix RNA chips in these samples and of two classical Neuroblastoma cell lines that behave very different. The resulting gene expression patterns can be used perform a hierarchical clustering. 
 
 *Dataset used:*  
   * Cell lines recently derived from three tumors from one patient. Two biopsies per tumor were taken. This dataset is combined with two classical Neuroblastoma cell lines that clustered far apart: SHEP and SY5Y (Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2) 
@@ -157,36 +160,37 @@ We’ve profiled the mRNA expression of these samples and of a so called classic
 
 <form name="toplisterform" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
 <input type='hidden' name='minpres' value='1'>
-<input type='hidden' name='howmany' value='300'>
+<input type='hidden' name='howmany' value='100'>
 <input type='hidden' name='option' value='high_ana2'>
 <input type='hidden' name='table' value='ps_avgpres_gse90803geo8_u133p2'>
 <input type='hidden' name='hugoonce' value='yes'>
-<input type='hidden' name='set' value='highest'>
+<input type='hidden' name='set' value='standard_deviation'>
 <input type='hidden' name='cortype' value='transform_2log'>
 <button type="submit" >Go to R2</button>
 </form>
 
-* Check that the settings are as follows
 * Click next; a list of genes appears
 
 ---------
   ![](_static/images/R2d2_logo.png)**Do you recognize any genes?**
 
-> *----*
+<br><br>
 
 ---------
 
 * Use the mousewheel to scroll to the bottom of the page, here you can choose to perform an additional analysis. The Heatmap(z-score) produces a hierarchically clustered view of the expression values of the top 100 genes.  
-* Click on Heatmap(z-score)
 
 ---------
   ![](_static/images/R2d2_logo.png)**What number of groups do you expect?**
 
-> *----*
+<br><br>
+
+* Click on Heatmap(z-score)
+
 
   ![](_static/images/R2d2_logo.png)**Given the former observations, what type of lineage can you assign to each group?**
 
-> *----*
+<br><br>
 
 ---------
 
@@ -224,7 +228,7 @@ We have identified two different types of cells that seem to be related in diffe
 ---------
   ![](_static/images/R2d2_logo.png)**How is this figure different from the former?**
 
-> *----*
+<br><br>
 
 ---------
 
@@ -233,7 +237,7 @@ We have identified two different types of cells that seem to be related in diffe
 ---------
   ![](_static/images/R2d2_logo.png)**What can you say about the function of the group of genes that are upregulated in the MES type of cells?**
 
-> *----*
+<br><br>
 
 ---------
 
@@ -248,7 +252,7 @@ elect the Geneset option
 ---------
   ![](_static/images/R2d2_logo.png)**Which hallmark category of genes pops up as most important?**
 
-> *----*
+<br><br>
 
 ---------
 
@@ -284,14 +288,14 @@ So we now have a signature that distinguishes between the two types of cells. We
 ---------
   ![](_static/images/R2d2_logo.png)**Which samples group together?**
 
-> *----*
+<br><br>
 
 ---------
 
 ---------
   ![](_static/images/R2d2_logo.png)**How does this relate to the above?**
 
-> *----*
+<br><br>
 
 ---------
 
