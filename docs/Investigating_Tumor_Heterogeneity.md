@@ -5,6 +5,8 @@ Investigating Tumor Heterogeneity
 
 *Learn how to use the R2 data analysis platform to analyse tumor heterogeneity in Neuroblastoma*
 
+**NOTE:** This document is under construction.
+
 
 Introduction
 ------------
@@ -41,16 +43,17 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 
 ##### A first impression of your data; expression of key genes
 
-* Go to R2 by clicking on the button below: TODO; this still has to point to the proper set  
+* Go to R2 by clicking on the button below:  
 
 
-<form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
+<form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
   <button type="submit" >Go to R2</button>
 </form>  
 
 
-* You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. 
+
+* You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to your develop your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumors?**
@@ -61,7 +64,7 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 
   * In field 3 type the name of the gene and click next
   * Leave all settings to default and click next
-  * A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines.
+  * A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values along of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. Hovering with your mouse over data points will show additional information.
 
 ---------
   ![](_static/images/R2d2_logo.png)**Do you observe a difference between different cell lines?**
@@ -71,7 +74,7 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 ---------
   
 
-  * If you did not already choose this gene, now try the gen NMYC
+  * If you did not already choose this gene, now try the gene MYCN (Click the **Go to Main** link in the left upper corner)
   
 ---------
   ![](_static/images/R2d2_logo.png)**Can you say something about the role this gene can play in cancer?**
@@ -84,20 +87,23 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 
 ---------
   
-##### A first impression of your data; Principle Components Analysis
+##### A first impression of your data; tSNE maps
 
-* To get a first impression of the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. A suitable method is the Principle Components Analysis (PCA). 
+* We've seen that the expression of genes changes through the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map.  
 
 * Go to the main screen in R2
 
 
-<form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
-  <button type="submit" >Go to main page R2</button>
+<form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
+  <button type="submit" >Go to R2</button>
 </form>  
 
-* In field 3 select Principle Components analysis (TODO; make this available)
-* In the next screen leave all as is and click
+
+* In the left menu bar select the tSNE maps option
+* A selection of available tSNE maps appears; select *Cellline Childhood Cancer (public) - Versteeg - 86 - MAS5.0 - u133p2* 
+* Click Plot the t-SNE Default result
+* Colors are not set by default, try different colormodes, click next to show the changes 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What kinds of tumors do you distinguish?**
@@ -202,10 +208,9 @@ We have identified two different types of cells that seem to be related in diffe
 *Analysis used*  
 * Overrepresentation calculation
 
-*References*  
-* 
+*References*   
 
-* Go to the main page of R2
+* Go to the main page of R2 by clicking the button below
 
 <form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
@@ -214,7 +219,7 @@ We have identified two different types of cells that seem to be related in diffe
 
 
 * In Field 3 choose Find Differential expression between groups
-* This dataset has been annotated with type informations. Each sample was assigned to either the mesenchymal or the adrenergic type, in R2 this is called a *track*. Choose the proper track.
+* This dataset has been annotated with type information. Each sample was assigned to either the mesenchymal or the adrenergic type, in R2 this is called a *track*. Choose the proper track in the 'Select a track' dropdown. Since we have only 8 samples make sure that the  
 
 ---------
   ![](_static/images/R2d2_logo.png)**How is this figure different from the former?**
@@ -223,7 +228,7 @@ We have identified two different types of cells that seem to be related in diffe
 
 ---------
 
-* For future use the genes that make the difference have been stored for you as so called signatures. R2 provides additional analyses for this set of genes in the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene. R2 now calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them.  
+* For future use the genes that make the difference have been stored for you as so called signatures. R2 provides additional analyses for this set of genes in the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene. R2 now calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. In the menu panel to the right select the 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What can you say about the function of the group of genes that are upregulated in the MES type of cells?**
@@ -233,7 +238,12 @@ We have identified two different types of cells that seem to be related in diffe
 ---------
 
 
-* Now select the Geneset option Try Broad geneset EMT
+* In R2 there are much more sets of genes that have been found to be implemented in specific processes. The Broad institute has compiled quite some of these sets of genes that characterize hallmark biological processes   
+* Go back by clicking the back button
+elect the Geneset option
+* Do this 
+* Another type of sets of genes that can be used for overrepresentation calculations are pathways. KEGG is a database containing curated biological pathways
+* Repeat this for other sets of genes, this might reveal interes
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which hallmark category of genes pops up as most important?**
@@ -246,7 +256,7 @@ We have identified two different types of cells that seem to be related in diffe
 Identifying groups: using signatures to classify other datasets
 ------------------------------------------------------------------
 
-So we now have a signature that distinguishes between the two types of cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines?
+So we now have a signature that distinguishes between the two types of cells. We also know somHow does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines?
 
 *Dataset used:*
 * A combination of the 8 cell lines above, additional classical Neuroblastoma cell lines and cells from the neural crest lineage (Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2)
@@ -258,7 +268,7 @@ So we now have a signature that distinguishes between the two types of cells. Ho
 * Heatmap analysis
 
 *References*
-* 
+ 
 * Go to the main portal of R2 by clicking the button below; the dataset described above is automatically selected
 
 <form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
