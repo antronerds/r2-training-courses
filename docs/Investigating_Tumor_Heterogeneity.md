@@ -315,8 +315,6 @@ We now have a signature that distinguishes between the two types of cells. We al
 
 
 ---------
-
----------
   ![](_static/images/R2d2_logo.png)**Do you observe similar patterns? Can you explain this?**
 
 <br><br>
@@ -350,8 +348,16 @@ The expression patterns of these specific signatures can be used to compare cell
 </form>  
 
 
-* First show each track, with boxplots  
+* First show each track against the id track; to show signature score value   
 * Next relate two tracks  
+
+
+---------
+  ![](_static/images/R2d2_logo.png)**What conclusion would you draw from this figure?**
+
+<br><br>
+
+---------
 
 
 
@@ -375,14 +381,21 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 * Differential expression between groups  
 * select only MES and ADRN, select TF as category  
-* Investigate top 4 high in MES in Entrez; which to choose?  
+* Investigate top 4 high in MES in Entrez; which to choose? Only PRRX1 is cancer related
+
+---------
+  ![](_static/images/R2d2_logo.png)**Which gene would you choose for further research? Why?**
+
+<br><br>
+
+---------
 
 
 
 Proving causes; manipulating cell lines
 ------------------------------------------
 
-From experiments we know that both cell types can switch
+From experiments we know that both cell types can switch.
 Now that we found the TF PRRX1 to be highly expressed in the MES type of cell lines we can try to investigate this relation by manipulating the gene in cell lines we grow in the lab. The gene was inducibly expressed in the cell lines and these were monitored through time for their gene expression. The PRRX1 gene was also silenced by using a CRISPR/Cas9 system.
 Keyword: reprogramming
 
