@@ -311,16 +311,17 @@ We now have a signature that distinguishes between the two types of cells. We al
 Using scores for further characterization
 --------------------------------------------
 
-The expression patterns of these specific signature can be used to investigate the relative behavior of cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one number; a signature score. These scores can be compared in more dimensions, in this case signature dimensions. First we'll analyze the scores separately.
+The expression patterns of these specific signature can be used to investigate the relative behavior of cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one value; a signature score. These scores can be compared in more dimensions, in this case signature dimensions.  
+To make such a calculation possible we have classified the samples of the dataset you used above in two groups. In R2 terms: we've created a categorical track that assigns samples to either the MES or the ADRN type. For each sample R2 summarizes the expression values of the genes in each of the signatures. This allows you to compare the behavior of the samples in multiple signatures in one overview.  
 
 *Dataset used:*
 * Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2
 
 *Techniques used:* 
-* 
+* mRNA expression data
 
 *Analysis used*
-* 
+* Signature scores 
 
 *References*
 
@@ -331,7 +332,7 @@ The expression patterns of these specific signature can be used to investigate t
   <button type="submit" >Go to R2</button>
 </form>  
 
-* 
+
 * First show each track, with boxplots  
 * Next relate two tracks  
 
