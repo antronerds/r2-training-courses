@@ -28,19 +28,16 @@ Using recent molecular biology data gathering techniques and advanced bioinforma
 Tumors and lineages: clustering data
 ---------------------------------------
 
-For a start we'll investigate so called "classical" cell lines of Neuroblastoma tumors. Classical cell lines are cultured cell lines that can be grown and passaged indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since.  
-How do these profiles relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories.  
-We can use these in a larger public dataset of other tumor cell lines and see how they relate. 
+For a start we'll investigate so called "classical" cell lines of Neuroblastoma tumors. Classical cell lines are cultured cell lines that can be grown and passaged indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do these profiles relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of other tumor cell lines and see how they relate. 
 
-*Dataset used:*  
+*Data used:*  
 * 86 classical cell lines derived from 6 different childhood tumors (Cellline Childhood cancer - ITCC - 86 - MAS5.0 - u133p2)
 
 *Techniques used:*   
 * mRNA Microarray expression
 
 *Analysis used*  
-* PCA: Principle Components Analysis
-* t-SNE: t-distributed stochastic neighbor embedding
+* t-SNE: t-distributed stochastic neighbor embedding statistics
 
 ##### A first impression of your data; expression of key genes
 
@@ -143,7 +140,7 @@ In the former step we derived that Neuroblastoma cell lines seem to be less homo
 
 We’ve profiled the mRNA expression of genes using Affymetrix RNA chips in these samples and of two classical Neuroblastoma cell lines that behave very different. The resulting gene expression patterns can be used perform a hierarchical clustering. 
 
-*Dataset used:*  
+*Data used:*  
   * Cell lines recently derived from three tumors from one patient. Two biopsies per tumor were taken. This dataset is combined with two classical Neuroblastoma cell lines that clustered far apart: SHEP and SY5Y (Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2) 
   
 *Techniques used:*  
@@ -153,8 +150,6 @@ We’ve profiled the mRNA expression of genes using Affymetrix RNA chips in thes
 * Unsupervised hierarchical clustering
 * Heatmap visualization
 
-*References*  
-*
 
 * For this analysis we'll directly go to one of the analysis tools of R2; Toplister. The Toplister calculates which genes behave different through a dataset. It does so by calculating the genes whose expression values have the largest standard deviation within a given set of samples.
 * Goto R2 by clicking the button below
@@ -202,7 +197,7 @@ Which genes make a difference? Creating signatures
 
 We have identified two different types of cells that seem to be related in different tumor sites in the same patient. Neuroblastoma apparently has a heterogenous nature. What genes determine the difference between the two types? We’ll use RNA expression data again but now the other way around; based on a predefined classification in groups we look for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
 
-*Dataset used:*  
+*Data used:*  
 * Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2 (same as above)
 * Gene Ontology
 * Broad curated hallmark datasets
@@ -224,7 +219,9 @@ We have identified two different types of cells that seem to be related in diffe
 
 
 * In Field 3 choose Find Differential expression between groups
-* This dataset has been annotated with type information. Each sample was assigned to either the MESenchymal or the ADReNergic type, in R2 this is called a *track*. Choose the proper track in the 'Select a track' dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to   
+* This dataset has been annotated with type information. Each sample was assigned to either the MESenchymal or the ADReNergic type, in R2 this is called a *track*. Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to **No correction**
+* A list of differentially expressed genes appears; click on the hyperlinked name of your favorite gene to see its expression in the sample set; try an oppositely correlating gene also
+* Now click on the **Heatmap(zscore)** button in the right menu panel; a heatmap showing the expression of all differentially expressed genes with correlation p-value < 0.01 in this dataset is shown.    
 
 ---------
   ![](_static/images/R2d2_logo.png)**How is this figure different from the former?**
@@ -233,7 +230,7 @@ We have identified two different types of cells that seem to be related in diffe
 
 ---------
 
-* For future use the genes that make the difference have been stored for you in R2 as signatures (aka genesets or categories). R2 provides additional analyses for this set of genes in the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene. R2 now calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. In the menu panel to the right select the 
+* For future use the genes that make the difference have been stored for you in R2 as signatures (aka genesets or categories). One set of genes that is highly expressed in the MES type of samples (r2_mesadrn_mes) and one set of genes highly expressed in the ADRN type of samples (r2_mesadrn_adrn) R2 provides additional analysis for sets of genes in the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene. R2 now calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. In the menu panel to the right select the **Gene Ontology Analysis** button 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What can you say about the function of the group of genes that are upregulated in the MES type of cells?**
@@ -244,8 +241,8 @@ We have identified two different types of cells that seem to be related in diffe
 
 
 * In R2 there are much more sets of genes that have been found to be implemented in specific processes. The Broad institute has compiled quite some of these sets of genes that characterize hallmark biological processes   
-* Go back by clicking the back button
-* Select the Geneset option from the right menu
+* Go back by clicking the back buttonn
+* Select the Geneset option from the right menuu
 * Select the Broad Hallmark geneset 
 
 ---------
@@ -255,7 +252,7 @@ We have identified two different types of cells that seem to be related in diffe
 
 ---------
 
-* Another type of sets of genes that can be used for overrepresentation calculations are pathways. KEGG is a database containing curated biological pathways. Perform the same analysis as above for the KEGG pathways database
+* Another type of sets of genes that can be used for over-representation calculations are pathways. KEGG is a database containing curated biological pathways. Perform the same analysis as above for the KEGG pathways database
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which pathways do you consider interesting from a oncology point of view?**
@@ -268,9 +265,9 @@ We have identified two different types of cells that seem to be related in diffe
 Identifying groups: using signatures to classify other datasets
 ------------------------------------------------------------------
 
-We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis.
+We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis. We've assembled a more complex dataset by gathering the dataset of the 4 pairs of cell lines, additional classical cell lines from the first dataset and publicly available data of cell lines derived from normal neural crest tissue. This is the tissue where neuroblastoma tumors are known to initiate.
 
-*Dataset used:*
+*Data used:*
 * A combination of the 8 cell lines above, additional classical Neuroblastoma cell lines and cells from the neural crest lineage (Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2)
 
 *Techniques used:* 
@@ -308,14 +305,15 @@ We now have a signature that distinguishes between the two types of cells. We al
 
 ---------
 
+* When observing 
 
 Using scores for further characterization
 --------------------------------------------
 
-The expression patterns of these specific signature can be used to investigate the relative behavior of cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one value; a signature score. These scores can be compared in more dimensions, in this case signature dimensions.  
-To make such a calculation possible we have classified the samples of the dataset you used above in two groups. In R2 terms: we've created a categorical track that assigns samples to either the MES or the ADRN type. For each sample R2 summarizes the expression values of the genes in each of the signatures. This allows you to compare the behavior of the samples in multiple signatures in one overview.  
+The expression patterns of these specific signatures can be used to compare cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one value; a signature score.  
+To make such a calculation possible we have classified the samples of the dataset you used above in two groups based on the clustering you observed. In one group has a high average expression 
 
-*Dataset used:*
+*Data used:*
 * Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2
 
 *Techniques used:* 
@@ -344,7 +342,8 @@ Finding causes; homing in on transcription factors
 
 Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we determine which TF’s might determine the difference between both of these cell lines?
 
-*Dataset used:*
+*Data used:*
+* 
 * 
 
 *Techniques used:* 
@@ -369,7 +368,7 @@ From experiments we know that both cell types can switch
 Now that we found the TF PRRX1 to be highly expressed in the MES type of cell lines we can try to investigate this relation by manipulating the gene in cell lines we grow in the lab. The gene was inducibly expressed in the cell lines and these were monitored through time for their gene expression. The PRRX1 gene was also silenced by using a CRISPR/Cas9 system.
 Keyword: reprogramming
 
-*Dataset used:*
+*Data used:*
 * 
 
 *Techniques used:* 
@@ -393,7 +392,7 @@ So the TF PRRX1 is capable of shifting cells from a MES state to an ADRN state. 
 
 Epigenetic versus genetic; the concept of re-programming
 
-*Dataset used:*
+*Data used:*
 *
 
 *Techniques used:* 
@@ -418,7 +417,7 @@ Suggesting therapy
 * Hints: 
 * Figures:
 
-*Dataset used:*
+*Data used:*
 * 
 
 *Techniques used:* 
