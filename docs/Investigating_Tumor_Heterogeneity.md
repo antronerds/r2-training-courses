@@ -39,7 +39,8 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 * mRNA Microarray expression
 
 *Analysis used*  
-* Principle Components Analysis
+* PCA: Principle Components Analysis
+* t-SNE: t-distributed stochastic neighbor embedding
 
 ##### A first impression of your data; expression of key genes
 
@@ -55,7 +56,7 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 * You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to your develop your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumors?**
+  ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumor models?**
 
 <br><br>
 
@@ -105,7 +106,7 @@ We can use these in a larger public dataset of other tumor cell lines and see ho
 * Colors are not set by default, try different colormodes, click next to show the changes 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What kinds of tumors do you distinguish?**
+  ![](_static/images/R2d2_logo.png)**What kind of tumor models do you distinguish?**
 
 <br><br>
 
