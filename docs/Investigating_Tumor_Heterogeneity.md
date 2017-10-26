@@ -305,13 +305,31 @@ We now have a signature that distinguishes between the two types of cells. We al
 
 ---------
 
-* When observing 
+* When observing such clearcut patterns you immediately have to wonder whether something special is going on. We'll check the signature in another dataset, in this case a publicly available Colon Cancer dataset. Click on the button below to go there and perform the same analysis.
+
+
+<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_colonmicrosat84_u133p2">
+  <button type="submit" >Go to R2 colon data</button>
+</form>  
+
+
+---------
+
+---------
+  ![](_static/images/R2d2_logo.png)**Do you observe similar patterns? Can you explain this?**
+
+<br><br>
+
+---------
+
+
+* If you have time left you might want to check other datasets, some might show similar patterns of interest!
 
 Using scores for further characterization
 --------------------------------------------
 
-The expression patterns of these specific signatures can be used to compare cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one value; a signature score.  
-To make such a calculation possible we have classified the samples of the dataset you used above in two groups based on the clustering you observed. In one group has a high average expression 
+The expression patterns of these specific signatures can be used to compare cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one value; a signature score. To make such a calculation possible we have classified the samples of the dataset you used above in two groups based on the clustering you observed. In one group has a high average expression 
 
 *Data used:*
 * Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2
