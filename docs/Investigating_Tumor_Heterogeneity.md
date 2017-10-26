@@ -245,31 +245,29 @@ We have identified two different types of cells that seem to be related in diffe
 * In R2 there are much more sets of genes that have been found to be implemented in specific processes. The Broad institute has compiled quite some of these sets of genes that characterize hallmark biological processes   
 * Go back by clicking the back button
 * Select the Geneset option from the right menu
+* Select the Broad Hallmark geneset 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Which hallmark category of genes pops up as most important?**
+  ![](_static/images/R2d2_logo.png)**Which hallmark category of genes pops up as most important? Can you explain this?**
 
 <br><br>
 
 ---------
 
-* Select the Broad Hallmark geneset 
 * Another type of sets of genes that can be used for overrepresentation calculations are pathways. KEGG is a database containing curated biological pathways. Perform the same analysis as above for the KEGG pathways database
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What interesting pathways do you find?**
+  ![](_static/images/R2d2_logo.png)**Which pathways do you consider interesting from a oncology point of view?**
 
 <br><br>
 
 ---------
-
-* Click on the 
 
 
 Identifying groups: using signatures to classify other datasets
 ------------------------------------------------------------------
 
-So we now have a signature that distinguishes between the two types of cells. We also know somHow does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines?
+We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis.
 
 *Dataset used:*
 * A combination of the 8 cell lines above, additional classical Neuroblastoma cell lines and cells from the neural crest lineage (Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2)
@@ -291,8 +289,9 @@ So we now have a signature that distinguishes between the two types of cells. We
 
 
 * In field 3 select View Geneset
-* 
-* View geneset with the combined signature and observe the high and low portions are similar   
+* Click next and select geneset_r2provided_genelists 
+* Click next, leave selection as is and click next
+* Select both signatures that were derived before by CTRL click on the MES (r2_mesadrn_mes) and ADNR (r2_mesadrn_mes) signatures and click next
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which samples group together?**
