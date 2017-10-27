@@ -386,7 +386,6 @@ The expression patterns of these specific signatures can be used to compare cell
 ---------
 
 
-
 Finding causes; homing in on transcription factors
 -----------------------------------------------------
 
@@ -411,12 +410,13 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 </form>  
 
 
-* Again we're going to find out which genes make a difference, but now in a specific subset that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. In field 3 select   
-* select only MES and ADRN, select TF as category  
-* Investigate top 4 high in MES in Entrez; which to choose? Only PRRX1 is cancer related
+* Again we're going to find out which genes make a difference, but now in a specific subset that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. In field 3 select **Find Differential expression between groups** Click **next**
+* Make sure to select the proper track **Select a track** We're now also going to filter for a specific **GeneCategory**; select the Transcription factors (*TF(945)*). Click **Next**. 
+* In the next screen we're asked to further filter for a specific type of samples to compare, we're focusing on the difference between ADRN and MES; select these. Click **Next**. 
+* A list of genes appears. Investigate the top 4 by clicking on the hyperlinked gene symbols. This brings you to the expression view of the gene. From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked GeneID number in the top table.
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Which gene would you choose for further research? Why?**
+  ![](_static/images/R2d2_logo.png)**Armed with this information, which gene would you choose for further research? Why?**
 
 <br>
 <br>
