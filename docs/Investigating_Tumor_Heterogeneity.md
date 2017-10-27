@@ -124,7 +124,7 @@ For a start we'll investigate so called "classical" cell lines of Neuroblastoma 
 <br>
 
 
-  ![](_static/images/R2d2_logo.png)**If you had to choose a pair of cell lines for further investigation, which would you choose?**
+  ![](_static/images/R2d2_logo.png)**If you had to choose two cell lines for further investigation, which would you choose?**
 
 <br>
 <br>
@@ -196,9 +196,17 @@ We’ve profiled the mRNA expression of genes using Affymetrix RNA chips in thes
 ---------
 
 * Click on **Heatmap(z-score)**
+* The cell line pairs from the patient were also investigated for the tumor stem cell marker gene CD133 and for their migration capability. See the results in the figure below:
 
 
-  ![](_static/images/R2d2_logo.png)**Given the former observations, what type of lineage can you assign to each group?**
+  ![Figure1: CD133 Facs analysis and transwell migration assay of isogenic pairs](_static/images/TumorHeterogeneity_PairsCD133Migrate.png "CD133 Facs analysis and transwell migration assay of isogenic pairs")
+	
+  [**Figure1: CD133 Facs analysis and transwell migration assay of isogenic pairs**](_static/images/TumorHeterogeneity_PairsCD133Migrate.png)
+
+
+---------
+
+  ![](_static/images/R2d2_logo.png)**Given these observations, what lineage can you assign to each group?**
 
 <br>
 <br>
@@ -491,7 +499,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 Creating hypotheses; relating to chromatin modification data
 ---------------------------------------------------------------
 
-Apparently this TF is capable of shifting cells from an ADRN state to an ADRN state. How can we further determine causal relations and probably targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We measured the enhancer marks . We view a couple of genes from the signatures to discover patterns
+Apparently this TF is capable of shifting cells from state to the other. How can we further determine causal relations and probably targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We measured the enhancer marks. We'll investigate this for a couple of genes that are part of the signatures to discover patterns
 
 Epigenetic versus genetic; the concept of re-programming
 
