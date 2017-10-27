@@ -66,7 +66,8 @@ For a start we'll investigate so called "classical" cell lines of Neuroblastoma 
 ---------
   ![](_static/images/R2d2_logo.png)**Do you observe a difference between different cell lines?**
 
-<br><br>
+<br>
+<br>
 
 ---------
   
@@ -76,11 +77,13 @@ For a start we'll investigate so called "classical" cell lines of Neuroblastoma 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you say something about the role this gene can play in cancer?**
 
-<br><br>
+<br>
+<br>
 
   ![](_static/images/R2d2_logo.png)**What do you observe from the data annotation track below?**
 
-<br><br>
+<br>
+<br>
 
 ---------
 
@@ -105,19 +108,27 @@ For a start we'll investigate so called "classical" cell lines of Neuroblastoma 
 ---------
   ![](_static/images/R2d2_logo.png)**What kind of tumor models do you distinguish?**
 
-<br><br>
+<br>
+<br>
+
 
   ![](_static/images/R2d2_logo.png)**What is their lineage, can you relate this to a type of tissue?**
 
-<br><br>
+<br>
+<br>
+
 
   ![](_static/images/R2d2_logo.png)**What do you note about the Neuroblastoma cell lines?**
 
-<br><br>
+<br>
+<br>
+
 
   ![](_static/images/R2d2_logo.png)**If you had to choose a pair of cell lines for further investigation, which would you choose?**
 
-<br><br>
+<br>
+<br>
+
 
 ---------
 
@@ -170,7 +181,8 @@ We’ve profiled the mRNA expression of genes using Affymetrix RNA chips in thes
 ---------
   ![](_static/images/R2d2_logo.png)**Do you recognize any genes?**
 
-<br><br>
+<br>
+<br>
 
 ---------
 
@@ -181,12 +193,15 @@ We’ve profiled the mRNA expression of genes using Affymetrix RNA chips in thes
 
 <br><br>
 
+---------
+
 * Click on **Heatmap(z-score)**
 
 
   ![](_static/images/R2d2_logo.png)**Given the former observations, what type of lineage can you assign to each group?**
 
-<br><br>
+<br>
+<br>
 
 ---------
 
@@ -226,7 +241,8 @@ We have identified two different types of cells that seem to be related in diffe
 ---------
   ![](_static/images/R2d2_logo.png)**How is this figure different from the former?**
 
-<br><br>
+<br>
+<br>
 
 ---------
 
@@ -235,7 +251,8 @@ We have identified two different types of cells that seem to be related in diffe
 ---------
   ![](_static/images/R2d2_logo.png)**What can you say about the function of the group of genes that are upregulated in the MES type of cells?**
 
-<br><br>
+<br>
+<br>
 
 ---------
 
@@ -248,7 +265,8 @@ We have identified two different types of cells that seem to be related in diffe
 ---------
   ![](_static/images/R2d2_logo.png)**Which hallmark category of genes pops up as most important? Can you explain this?**
 
-<br><br>
+<br>
+<br>
 
 ---------
 
@@ -257,7 +275,8 @@ We have identified two different types of cells that seem to be related in diffe
 ---------
   ![](_static/images/R2d2_logo.png)**Which pathways do you consider interesting from a oncology point of view?**
 
-<br><br>
+<br>
+<br>
 
 ---------
 
@@ -294,14 +313,16 @@ We now have a signature that distinguishes between the two types of cells. We al
 ---------
   ![](_static/images/R2d2_logo.png)**Which samples group together?**
 
-<br><br>
+<br>
+<br>
 
 ---------
 
 ---------
   ![](_static/images/R2d2_logo.png)**How does this relate to the above?**
 
-<br><br>
+<br>
+<br>
 
 ---------
 
@@ -317,7 +338,8 @@ We now have a signature that distinguishes between the two types of cells. We al
 ---------
   ![](_static/images/R2d2_logo.png)**Do you observe similar patterns? Can you explain this?**
 
-<br><br>
+<br>
+<br>
 
 ---------
 
@@ -358,7 +380,8 @@ The expression patterns of these specific signatures can be used to compare cell
 ---------
   ![](_static/images/R2d2_logo.png)**What conclusion would you draw from these figures?**
 
-<br><br>
+<br>
+<br>
 
 ---------
 
@@ -375,7 +398,7 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 * NCBI (National Center for Biotechnology Information - USA) Gene information database 
 
 *Techniques used:* 
-
+* mRNA expression data
 
 *Analysis used*
 * Differential expression
@@ -384,18 +407,19 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 <form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
-  <button type="submit" >Go to R2</button>
+  <button type="submit" >Go to R2 main</button>
 </form>  
 
 
-* Differential expression between groups  
+* Again we're going to find out which genes make a difference, but now in a specific subset that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. In field 3 select   
 * select only MES and ADRN, select TF as category  
 * Investigate top 4 high in MES in Entrez; which to choose? Only PRRX1 is cancer related
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which gene would you choose for further research? Why?**
 
-<br><br>
+<br>
+<br>
 
 ---------
 
