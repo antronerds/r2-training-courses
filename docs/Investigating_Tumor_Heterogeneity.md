@@ -60,7 +60,7 @@ For a start we'll investigate so called "classical" cell lines of Neuroblastoma 
 ---------
 
   * In field 3 type the name of the gene and click next
-  * Leave all settings to default and click next
+  * Leave all settings to default and click **next**
   * A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values along of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. Hovering with your mouse over data points will show additional information.
 
 ---------
@@ -83,7 +83,7 @@ For a start we'll investigate so called "classical" cell lines of Neuroblastoma 
 <br><br>
 
 ---------
-  
+
 ##### A first impression of your data; tSNE maps
 
 * We've seen that the expression of genes changes through the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map.  
@@ -97,10 +97,10 @@ For a start we'll investigate so called "classical" cell lines of Neuroblastoma 
 </form>  
 
 
-* In the left menu bar select the tSNE maps option
+* In the left menu bar select the **tSNE maps** option
 * A selection of available tSNE maps appears; select *Cellline Childhood Cancer (public) - Versteeg - 86 - MAS5.0 - u133p2* 
-* Click Plot the t-SNE Default result
-* Colors are not set by default, try different colormodes, click next to show the changes 
+* Click **Plot the t-SNE Default** result
+* Colors are not set by default, under **ColorMode** select **Color by Track** and try different tracks, click next to show the changes 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What kind of tumor models do you distinguish?**
@@ -162,10 +162,10 @@ We’ve profiled the mRNA expression of genes using Affymetrix RNA chips in thes
 <input type='hidden' name='hugoonce' value='yes'>
 <input type='hidden' name='set' value='standard_deviation'>
 <input type='hidden' name='cortype' value='transform_2log'>
-<button type="submit" >Go to R2</button>
+<button type="submit" >Go to R2 Toplister</button>
 </form>
 
-* Click next; a list of genes appears
+* Click **next**; a list of genes appears
 
 ---------
   ![](_static/images/R2d2_logo.png)**Do you recognize any genes?**
@@ -174,14 +174,14 @@ We’ve profiled the mRNA expression of genes using Affymetrix RNA chips in thes
 
 ---------
 
-* Use the mousewheel to scroll to the bottom of the page, here you can choose to perform an additional analysis. The Heatmap(z-score) produces a hierarchically clustered view of the expression values of the top 100 genes.  
+* Use the mousewheel to scroll to the bottom of the page, here you can choose to perform an additional analysis. The heatmap vizualization produces a hierarchically clustered view of the expression values of the top 100 genes.  
 
 ---------
   ![](_static/images/R2d2_logo.png)**What number of groups do you expect?**
 
 <br><br>
 
-* Click on Heatmap(z-score)
+* Click on **Heatmap(z-score)**
 
 
   ![](_static/images/R2d2_logo.png)**Given the former observations, what type of lineage can you assign to each group?**
@@ -214,7 +214,7 @@ We have identified two different types of cells that seem to be related in diffe
 
 <form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
-  <button type="submit" >Go to R2</button>
+  <button type="submit" >Go to R2 main portal</button>
 </form>  
 
 
@@ -242,8 +242,8 @@ We have identified two different types of cells that seem to be related in diffe
 
 * In R2 there are much more sets of genes that have been found to be implemented in specific processes. The Broad institute has compiled quite some of these sets of genes that characterize hallmark biological processes   
 * Go back by clicking the back buttonn
-* Select the Geneset option from the right menuu
-* Select the Broad Hallmark geneset 
+* Select the **Gene set analysis** option from the right menu
+* Select the *geneset_broad_2015_hallmark* geneset 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which hallmark category of genes pops up as most important? Can you explain this?**
@@ -286,10 +286,10 @@ We now have a signature that distinguishes between the two types of cells. We al
 </form>  
 
 
-* In field 3 select View Geneset
-* Click next and select geneset_r2provided_genelists 
-* Click next, leave selection as is and click next
-* Select both signatures that were derived before by CTRL click on the MES (r2_mesadrn_mes) and ADNR (r2_mesadrn_mes) signatures and click next
+* In field 3 select **View Geneset**
+* Click next and select *geneset_r2provided_genelists* 
+* Click next, leave selection as is and click **next**
+* Select both signatures that were derived before by CTRL click on the MES (*r2_mesadrn_mes*) and ADNR (*r2_mesadrn_mes*) signatures and click **next**
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which samples group together?**
@@ -327,7 +327,7 @@ We now have a signature that distinguishes between the two types of cells. We al
 Using scores for further characterization
 --------------------------------------------
 
-The expression patterns of these specific signatures can be used to compare cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one value; a signature score. To make such a calculation possible we have classified the samples of the dataset you used above in two groups based on the clustering you observed. In one group has a high average expression 
+The expression patterns of these specific signatures can be used to compare cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one value; a signature score. R2 has calculated these scores for all samples in both signatures. We're going to find out how they relate.
 
 *Data used:*
 * Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2
@@ -348,12 +348,15 @@ The expression patterns of these specific signatures can be used to compare cell
 </form>  
 
 
-* First show each track against the id track; to show signature score value   
-* Next relate two tracks  
-
+* In field 3 choose **Relate 2 tracks** and click next
+* First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (lab\_id) and on the Y-axis the signature score track that R2 has generated for the MES signature (u-34\_mesadrn\_mes(#)). Click next.
+* A graph is generated for each sample the signature score for the mesadrn\_mes signature is shown, select **Color by Track** for ColorMode and try different tracks. Click **Adjust Settings** to view the result.
+* Now select for the Y-axis the ADRN part of the signature, click Adjust Settings to view the result.
+* Now we're going to compare the signature scores; select the MES signature for the X track
+* If you have time you can also try the **Color by Gene ColorMode**, choose a gene of interest (Note: the dropdown selection is linked to the database, wait for the proper selections to popup...)
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What conclusion would you draw from this figure?**
+  ![](_static/images/R2d2_logo.png)**What conclusion would you draw from these figures?**
 
 <br><br>
 
@@ -367,17 +370,23 @@ Finding causes; homing in on transcription factors
 Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we determine which TF’s might determine the difference between both of these cell lines?
 
 *Data used:*
-* 
-* 
+* Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2
+* Transcription factor annotation from Gene Ontology
+* NCBI (National Center for Biotechnology Information - USA) Gene information database 
 
 *Techniques used:* 
-* 
+
 
 *Analysis used*
-* 
+* Differential expression
 
-*References*
-* 
+* Go back to the main portal of R2 by clicking the button below.
+
+<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
+  <button type="submit" >Go to R2</button>
+</form>  
+
 
 * Differential expression between groups  
 * select only MES and ADRN, select TF as category  
