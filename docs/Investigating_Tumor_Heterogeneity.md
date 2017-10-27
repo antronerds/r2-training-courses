@@ -448,32 +448,50 @@ Now that we have a candidate Transcription Factor we can try to investigate its 
 
 ---------
 
-The TF was inducibly expressed in the cell lines and these cell lines were monitored through time for their gene expression using Affymetrix mRNA arrays. The resulting data was added to the dataset we used above for comparison. 
+The TF was inducibly expressed in the SKNBE cell line and this was monitored through time for their gene expression using Affymetrix mRNA arrays. The resulting data was added to the dataset we used above for comparison. 
 
-Keyword: reprogramming
+
+---------
+  ![](_static/images/R2d2_logo.png)**To which of the cell types does SKNBE belong?**
+
+<br>
+<br>
+
+---------
 
 *Data used:*
-* 
+* A combination of the 4 cell line pairs, additional classical Neuroblastoma cell lines, cells from the neural crest lineage and lines that had the TF inducible expressed for increasing periods (Mixed Neuroblastoma (MES-ADRN-Crest-Exp) - Versteeg - 52 - MAS5.0 - u133p2)
+
 
 *Techniques used:* 
 * Inducible gene expression
-
+* mRNA expression data
 
 *Analysis used*
-* 
+* Signature score comparison
 
-*References*
-* 
+* Go to the R2 main page by clicking the button below, the correct dataset will be selected.  
 
-* Show that experimental manipulation of one of them can move cell lines along the MES/ADRN axis
-* Directly link to the dataset
-* Toy around with colors till the one that explains most shows   
+<form name="52_pairs_crest_exp" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
+  <button type="submit" >Go to R2 main, inducible TF set</button>
+</form>  
+
+* Select in field 3 the **Relate 2 tracks** option. R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. Relate the two tracks, adapt the ColorMode to Color by Track and try appropriate tracks.
+
+---------
+  ![](_static/images/R2d2_logo.png)**What is your conclusion from this experiment?**
+
+<br>
+<br>
+
+---------
 
 
 Creating hypotheses; relating to chromatin modification data
 ---------------------------------------------------------------
 
-So the TF is capable of shifting cells from a MES state to an ADRN state. How can we further determine causal relations and probably targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We measured the enhancer marks . We view a couple of genes from the signatures to discover patterns
+Apparently this TF is capable of shifting cells from an ADRN state to an ADRN state. How can we further determine causal relations and probably targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We measured the enhancer marks . We view a couple of genes from the signatures to discover patterns
 
 Epigenetic versus genetic; the concept of re-programming
 
