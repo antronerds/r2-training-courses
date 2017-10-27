@@ -413,7 +413,7 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 * Again we're going to find out which genes make a difference, but now in a specific subset that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. In field 3 select **Find Differential expression between groups** Click **next**
 * Make sure to select the proper track **Select a track** We're now also going to filter for a specific **GeneCategory**; select the Transcription factors (*TF(945)*). Click **Next**. 
 * In the next screen we're asked to further filter for a specific type of samples to compare, we're focusing on the difference between ADRN and MES; select these. Click **Next**. 
-* A list of genes appears. Investigate the top 4 by clicking on the hyperlinked gene symbols. This brings you to the expression view of the gene. From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked GeneID number in the top table.
+* A list of genes appears. Investigate the top 4 by clicking on the hyperlinked gene symbols. This brings you to the expression view of the gene. From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the top table.
 
 ---------
   ![](_static/images/R2d2_logo.png)**Armed with this information, which gene would you choose for further research? Why?**
@@ -424,19 +424,40 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 ---------
 
 
-
 Proving causes; manipulating cell lines
 ------------------------------------------
 
-From experiments we know that both cell types can switch.
-Now that we found the TF PRRX1 to be highly expressed in the MES type of cell lines we can try to investigate this relation by manipulating the gene in cell lines we grow in the lab. The gene was inducibly expressed in the cell lines and these were monitored through time for their gene expression. The PRRX1 gene was also silenced by using a CRISPR/Cas9 system.
+From experiments it is known that cells can change their nature, some cells exhibit a certain plasticity.
+
+---------
+  ![](_static/images/R2d2_logo.png)**Can you think of any such processes that are of relevance to cancer?**
+
+<br>
+<br>
+
+---------
+
+From experiments in our lab it became evident that the two cell types found in Neuroblastoma were able to switch. After a given period of time cells is dishes changed their nature as became evident from the expression of certain marker proteins on their surface.
+Now that we have a candidate Transcription Factor we can try to investigate its relevance in this plasticity by manipulating the gene in cell lines we grow in the lab. 
+
+---------
+  ![](_static/images/R2d2_logo.png)**Can you think of ways to manipulate genes in cell lines?**
+
+<br>
+<br>
+
+---------
+
+The TF was inducibly expressed in the cell lines and these cell lines were monitored through time for their gene expression using Affymetrix mRNA arrays. The resulting data was added to the dataset we used above for comparison. 
+
 Keyword: reprogramming
 
 *Data used:*
 * 
 
 *Techniques used:* 
-* 
+* Inducible gene expression
+
 
 *Analysis used*
 * 
@@ -452,7 +473,7 @@ Keyword: reprogramming
 Creating hypotheses; relating to chromatin modification data
 ---------------------------------------------------------------
 
-So the TF PRRX1 is capable of shifting cells from a MES state to an ADRN state. How can we further determine causal relations and probably targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We measured enhancer mark. We view a couple of genes from the signatures to discover patterns
+So the TF is capable of shifting cells from a MES state to an ADRN state. How can we further determine causal relations and probably targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We measured the enhancer marks . We view a couple of genes from the signatures to discover patterns
 
 Epigenetic versus genetic; the concept of re-programming
 
@@ -475,7 +496,7 @@ Suggesting therapy
 ---------------------
 
 
-* Armed with the current new knowledge, can you think of a way to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options?
+* With the current new knowledge you derived above, can you think of a way to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options?
 * Use the tools available 
 * SKNSH; upon chemotherapy (drugs) mesenchymal shift; drugable are for example kinases; 
 * Hints: 
