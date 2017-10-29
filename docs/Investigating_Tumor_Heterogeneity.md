@@ -60,7 +60,7 @@ For a start we'll investigate so called "classical" cell lines of Neuroblastoma 
 ---------
 
   * In field 3 type the name of the gene and click next
-  * Leave all settings to default and click **next**
+  * Leave all settings at default and click **next**
   * A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values along of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. Hovering with your mouse over data points will show additional information.
 
 ---------
@@ -136,7 +136,7 @@ For a start we'll investigate so called "classical" cell lines of Neuroblastoma 
 Urgency of research: patient material
 ----------------------------------------
 
-In the former step we derived that Neuroblastoma cell lines seem to be less homogeneous than other childhood tumor classical cell lines. These so called classical cell lines have gone through thousands of cloning cycles and usually are pretty far off their original genomic composition. We’ve recently isolated from one patient from several tumor sites two biopsies per site. These are so called isogenic cell line pairs. A microscopic image is provided below. 
+In the former step we derived that Neuroblastoma cell lines seem to be less homogeneous than other childhood tumor classical cell lines. These so called classical cell lines have gone through numerous cloning cycles and usually are pretty far off their original genomic composition. We have recently established new cell lines from neuroblastoma patients. In some cases multiple cell lines were obtained from the same biopsy. These are so called isogenic cell line pairs. A microscopic image is provided below. 
 
   ![Figure1: Bright field image of isogenic pairs.](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure1: Bright field image of isogenic pairs.")
 	
@@ -149,7 +149,7 @@ In the former step we derived that Neuroblastoma cell lines seem to be less homo
 
 ---------
 
-We’ve profiled the mRNA expression of genes using Affymetrix RNA chips in these samples and of two classical Neuroblastoma cell lines that behave very different. The resulting gene expression patterns can be used perform a hierarchical clustering. 
+We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of these pairs and of two classical Neuroblastoma cell lines that behave very different. The resulting gene expression patterns can be used perform a hierarchical clustering. 
 
 *Data used:*  
   * Cell lines recently derived from three tumors from one patient. Two biopsies per tumor were taken. This dataset is combined with two classical Neuroblastoma cell lines that clustered far apart: SHEP and SY5Y (Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2) 
@@ -162,7 +162,7 @@ We’ve profiled the mRNA expression of genes using Affymetrix RNA chips in thes
 * Heatmap visualization
 
 
-* For this analysis we'll directly go to one of the analysis tools of R2; Toplister. The Toplister calculates which genes behave different through a dataset. It does so by calculating the genes whose expression values have the largest standard deviation within a given set of samples.
+* For this analysis we'll directly go to one of the analysis tools of R2; Toplister. The Toplister can assess which genes behave different throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples.
 * Goto R2 by clicking the button below
 
 <form name="toplisterform" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
@@ -186,7 +186,7 @@ We’ve profiled the mRNA expression of genes using Affymetrix RNA chips in thes
 
 ---------
 
-* Use the mousewheel to scroll to the bottom of the page, here you can choose to perform an additional analysis. The heatmap vizualization produces a hierarchically clustered view of the expression values of the top 100 genes.  
+* Use the mousewheel to scroll to the bottom of the page (or click on the shoe-print at the top of the page). Here you can choose to perform an additional analysis. The heatmap vizualization produces a hierarchically clustered view of the expression values of the top 100 genes.  
 
 ---------
   ![](_static/images/R2d2_logo.png)**What number of groups do you expect?**
@@ -218,7 +218,7 @@ We’ve profiled the mRNA expression of genes using Affymetrix RNA chips in thes
 Which genes make a difference? Creating signatures
 -----------------------------------------------------
 
-We have identified two different types of cells that seem to be related in different tumor sites in the same patient. Neuroblastoma apparently has a heterogenous nature. What genes determine the difference between the two types? We’ll use RNA expression data again but now the other way around; based on a predefined classification in groups we look for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
+We have identified two different types of cells that occur in a single biopsy in the same patient. Neuroblastoma apparently has a heterogenous nature. What genes determine the difference between the two types? We’ll use RNA expression data again but now the other way around; based on a predefined classification in groups we look for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
 
 *Data used:*  
 * Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2 (same as above)
@@ -242,7 +242,7 @@ We have identified two different types of cells that seem to be related in diffe
 
 
 * In Field 3 choose Find Differential expression between groups
-* This dataset has been annotated with type information. Each sample was assigned to either the MESenchymal or the ADReNergic type, in R2 this is called a *track*. Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to **No correction**
+* This dataset has been annotated with 'type' information. Each sample was assigned to either the MESenchymal or the ADReNergic type, in R2 this is called a *track*. Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to **No correction**
 * A list of differentially expressed genes appears; click on the hyperlinked name of your favorite gene to see its expression in the sample set; try an oppositely correlating gene also
 * Now click on the **Heatmap(zscore)** button in the right menu panel; a heatmap showing the expression of all differentially expressed genes with correlation p-value < 0.01 in this dataset is shown.    
 
