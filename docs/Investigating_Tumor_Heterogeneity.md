@@ -539,7 +539,7 @@ Epigenetic versus genetic; the concept of re-programming
 
 * Click on the button below to show the ChIP-Seq data for 
 
-<form name='dscope_5' action='[[_HYPERLINK]]' enctype=\"multipart/form-data\" method='POST' target='_gv'>[[_LOGGEDFORM]]
+<form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype=\"multipart/form-data\" method='POST' target='_gv'>
 <input type='hidden' name='option' value='gbv2_base'>
 <input type='hidden' name='|a01giemsa' value='on'>
 <input type='hidden' name='a02bsequence' value='off'>
