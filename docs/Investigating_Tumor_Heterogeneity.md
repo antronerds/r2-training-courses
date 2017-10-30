@@ -499,21 +499,32 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 Creating hypotheses; relating to chromatin modification data
 ---------------------------------------------------------------
 
-Apparently this TF is capable of shifting cells from state to the other. How can we further determine causal relations and probably targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We measured the enhancer marks. We'll investigate this for a couple of genes that are part of the signatures to discover patterns
+Apparently this TF is capable of shifting cells from state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIP–seq analysis of the H3K27ac and H3K4me3 histone modifications for the isogenic cell line pairs. We'll investigate a couple of genes that are part of the signatures to see whether they exhibit specific differences.
 
 Epigenetic versus genetic; the concept of re-programming
 
 *Data used:*
-*
+* 
 
 *Techniques used:* 
-*
+* ChIP–seq analysis
 
 *Analysis used*
-*
+* 
 
 *References*
 *
+
+---------
+  ![](_static/images/R2d2_logo.png)**Can you explain what this experiment might reveal?**
+
+<br>
+<br>
+
+---------
+
+* First we'll check the original list of TF's that were part of one of the signatures. Click on the button below to reveal this list.
+* One of the genes is MEOX2; we're going to investigate the ChIP-seq data from this specific gene using the GenomeBrowser in R2. Click on the button below to go there.
 
 * Directly link to the chromatin modification data from TF's that were found to be specific (MEOX)
 * Try different TF's and have them explain the difference
