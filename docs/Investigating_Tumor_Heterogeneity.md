@@ -580,7 +580,7 @@ Epigenetic versus genetic; the concept of re-programming
 <input type='hidden' name='chip_slider' value='no'>
 <input type='hidden' name='chip_slider_value' value='3'>
 <input type='hidden' name='chip_table' value='chip_raw'>
-<input type='hidden' name='chrom' value='chr3'>
+<input type='hidden' name='chrom' value='chr12'>
 <input type='hidden' name='clinvar' value='off'>
 <input type='hidden' name='combiset' value='ps_amc_ticcellcheck43_u133p2'>
 <input type='hidden' name='cosmic' value='off'>
@@ -608,7 +608,7 @@ Epigenetic versus genetic; the concept of re-programming
 <input type='hidden' name='elmer_nm_var_all' value='off'>
 <input type='hidden' name='encode_bed_data_v1' value='off'>
 <input type='hidden' name='encode_tf_v1' value='off'>
-<input type='hidden' name='end' value='149401326'>
+<input type='hidden' name='end' value='103355294'>
 <input type='hidden' name='epi_roadmap' value='off'>
 <input type='hidden' name='exomevarserver' value='off'>
 <input type='hidden' name='express_background' value=''>
@@ -693,7 +693,7 @@ Epigenetic versus genetic; the concept of re-programming
 <input type='hidden' name='sample' value='dataset_track'>
 <input type='hidden' name='snp138' value='off'>
 <input type='hidden' name='snp_array' value='off'>
-<input type='hidden' name='start' value='149160339'>
+<input type='hidden' name='start' value='103350451'>
 <input type='hidden' name='superenhancer_nb_george' value='off'>
 <input type='hidden' name='sv_delly_pedcan1' value='off'>
 <input type='hidden' name='sv_ivo_mb500' value='off'>
@@ -749,7 +749,7 @@ Epigenetic versus genetic; the concept of re-programming
 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you give a reason why the second TF does not seem to ?**
+  ![](_static/images/R2d2_logo.png)**Can you give a reason why the second TF does not seem to show difference between both chromatin modification marks?**
 
 <br>
 <br>
@@ -757,9 +757,9 @@ Epigenetic versus genetic; the concept of re-programming
 ---------
 
 
-To avoid this problem we filtered for TF's that were at least 
+* To avoid this problem we filtered for TF's that were binding within at least a certain distance of either the ADRN signature genes or the MES signature genes 
 
-* Directly link to the chromatin modification data from TF's that were found to be specific (MEOX)
+* Directly link to the chromatin modification data from TF's that were found to be specific
 * Try different TF's and have them explain the difference
 
 Suggesting therapy
