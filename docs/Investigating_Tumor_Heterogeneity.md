@@ -764,6 +764,16 @@ Epigenetic versus genetic; the concept of re-programming
 ---------
 
 * The chromatin state is especially important for transcription factors; we'll re-visit the list of transcription factors that are differentially expressed between the MES and ADRN cell lines
+
+---------
+  ![](_static/images/R2d2_logo.png)**Why are Transcription Factors of interest in this setting?**
+
+<br>
+<br>
+
+---------
+
+
 * Use both differential expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate.
 
 
@@ -781,11 +791,11 @@ Suggesting therapy
 ---------------------
 
 * With the current new knowledge you derived above, can you think of a strategy to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options?
-* Follow the links below to use the differential expression analysis
-* And the genomebrowser information 
+* Follow the links above to use the differential expression analysis and the genomebrowser information 
 * Hints: 
   * There is a category "drugtargets" in R2 to select druggable proteins
-  * Knowledge about pathways can also be exploited
+  * Knowledge about pathways can be exploited as well
+  * The NCBI database can 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which strategy do you suggest?**
