@@ -106,7 +106,7 @@ For a start we'll investigate so called "classical" cell lines of Neuroblastoma 
 * Colors are not set by default, under **ColorMode** select **Color by Track** and try different tracks, click next to show the changes 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What kind of tumor models do you distinguish?**
+  ![](_static/images/R2d2_logo.png)**What tumor types do you distinguish?**
 
 <br>
 <br>
@@ -124,7 +124,7 @@ For a start we'll investigate so called "classical" cell lines of Neuroblastoma 
 <br>
 
 
-  ![](_static/images/R2d2_logo.png)**If you had to choose two cell lines for further investigation, which would you choose?**
+  ![](_static/images/R2d2_logo.png)**If you had to choose two cell lines for further investigation of Neuroblastoma, which would you choose?**
 
 <br>
 <br>
