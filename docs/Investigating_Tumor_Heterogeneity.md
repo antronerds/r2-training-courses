@@ -499,7 +499,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 Creating hypotheses; relating to chromatin modification data
 ---------------------------------------------------------------
 
-Apparently this TF is capable of shifting cells from state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIP–seq analysis of the H3K27ac and H3K4me3 histone modifications for the isogenic cell line pairs. 
+Apparently this TF is capable of shifting cells from state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIP–seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
 
 Epigenetic versus genetic; the concept of re-programming
 
@@ -523,21 +523,18 @@ Epigenetic versus genetic; the concept of re-programming
 
 ---------
 
-* First we'll check the original list of TF's that were part of one of the signatures. Click on the button below to re-inspect this list.
 
-<form name="toplisterform" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-<input type='hidden' name='minpres' value='1'>
-<input type='hidden' name='howmany' value='100'>
-<input type='hidden' name='option' value='high_ana2'>
-<input type='hidden' name='table' value='ps_avgpres_gse90803geo8_u133p2'>
-<input type='hidden' name='hugoonce' value='yes'>
-<input type='hidden' name='set' value='standard_deviation'>
-<input type='hidden' name='cortype' value='transform_2log'>
-<button type="submit" >Go to R2 Toplister</button>
-</form>
+* First we'll check one of the marker genes for Neuroblastoma: DLK1 
 
+---------
+  ![](_static/images/R2d2_logo.png)**What do you expect for the H3K27ac signals?**
 
-* Click on the button below to show the ChIP-Seq data for 
+<br>
+<br>
+
+---------
+
+* Click on the button below to show the ChIP-Seq data for DLK1 in the four cell line pairs. For your convenience the signals are colored according to the type (MES or ADRN) of cell line. 
 
 <form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype=\"multipart/form-data\" method='POST' target='_gv'>
 <input type='hidden' name='option' value='gbv2_base'>
@@ -580,7 +577,7 @@ Epigenetic versus genetic; the concept of re-programming
 <input type='hidden' name='chip_slider' value='no'>
 <input type='hidden' name='chip_slider_value' value='3'>
 <input type='hidden' name='chip_table' value='chip_raw'>
-<input type='hidden' name='chrom' value='chr12'>
+<input type='hidden' name='chrom' value='chr14'>
 <input type='hidden' name='clinvar' value='off'>
 <input type='hidden' name='combiset' value='ps_amc_ticcellcheck43_u133p2'>
 <input type='hidden' name='cosmic' value='off'>
@@ -608,7 +605,7 @@ Epigenetic versus genetic; the concept of re-programming
 <input type='hidden' name='elmer_nm_var_all' value='off'>
 <input type='hidden' name='encode_bed_data_v1' value='off'>
 <input type='hidden' name='encode_tf_v1' value='off'>
-<input type='hidden' name='end' value='103355294'>
+<input type='hidden' name='end' value='101202467'>
 <input type='hidden' name='epi_roadmap' value='off'>
 <input type='hidden' name='exomevarserver' value='off'>
 <input type='hidden' name='express_background' value=''>
@@ -693,7 +690,7 @@ Epigenetic versus genetic; the concept of re-programming
 <input type='hidden' name='sample' value='dataset_track'>
 <input type='hidden' name='snp138' value='off'>
 <input type='hidden' name='snp_array' value='off'>
-<input type='hidden' name='start' value='103350451'>
+<input type='hidden' name='start' value='101192201'>
 <input type='hidden' name='superenhancer_nb_george' value='off'>
 <input type='hidden' name='sv_delly_pedcan1' value='off'>
 <input type='hidden' name='sv_ivo_mb500' value='off'>
@@ -744,12 +741,11 @@ Epigenetic versus genetic; the concept of re-programming
 <input type='hidden' name='wgs_somatic_strelka' value='off'>
 <input type='hidden' name='wgs_somatic_varscan2' value='off'>
 <input type='hidden' name='wgs_varfileb_maris_20' value='off'>
-<button type="submit" >Go to R2 GenomeBrowser</button>
+<button type="submit" >Go to R2 GenomeBrowser for DLK1</button>
 </form>
 
-
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you give a reason why the second TF does not seem to show difference between both chromatin modification marks?**
+  ![](_static/images/R2d2_logo.png)**Does this graph convince you that enhancers are important here?**
 
 <br>
 <br>
@@ -757,16 +753,36 @@ Epigenetic versus genetic; the concept of re-programming
 ---------
 
 
-* To avoid this problem we filtered for TF's that were binding within at least a certain distance of either the ADRN signature genes or the MES signature genes 
+* At the top of the page click on the **zoom out 10X** button
 
-* Directly link to the chromatin modification data from TF's that were found to be specific
-* Try different TF's and have them explain the difference
+---------
+  ![](_static/images/R2d2_logo.png)**And now?**
+
+<br>
+<br>
+
+---------
+
+* The chromatin state is especially important for transcription factors; we'll re-visit the list of transcription factors that are differentially expressed between the MES and ADRN cell lines
+* Use both differential expression analysis and the enhancer data in the genomebrowser to decide which transcription factor would be worthwhile to further investigate.
+
+
+---------
+  ![](_static/images/R2d2_logo.png)**Which Transcription Factor would you consider for further study?**
+
+<br>
+<br>
+
+---------
+
+
 
 Suggesting therapy
 ---------------------
 
 
 * With the current new knowledge you derived above, can you think of a way to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options?
+
 * Use the tools available 
 * SKNSH; upon chemotherapy (drugs) mesenchymal shift; drugable are for example kinases; 
 * Hints: 
