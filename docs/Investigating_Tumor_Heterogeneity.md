@@ -780,24 +780,17 @@ Epigenetic versus genetic; the concept of re-programming
 Suggesting therapy
 ---------------------
 
+* With the current new knowledge you derived above, can you think of a strategy to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options?
+* Follow the links below to use the differential expression analysis
+* And the genomebrowser information 
+* Hints: there is a category "drugtargets" in R2 to select druggable proteins
 
-* With the current new knowledge you derived above, can you think of a way to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options?
+---------
+  ![](_static/images/R2d2_logo.png)**Which strategy do you suggest?**
 
-* Use the tools available 
-* SKNSH; upon chemotherapy (drugs) mesenchymal shift; drugable are for example kinases; 
-* Hints: 
-* Figures:
+<br>
+<br>
 
-*Data used:*
-* 
-
-*Techniques used:* 
-* 
-
-*Analysis used*
-* 
-
-*References*
-* 
+---------
 
 
