@@ -1,6 +1,6 @@
 <a id="investigating_tumor_heterogeneity"> </a>
 
-Investigating Tumor Heterogeneity
+Investigating Intra-tumor Heterogeneity
 =================================
 
 *Learn how to use the R2 data analysis platform to analyse tumor heterogeneity in Neuroblastoma*
@@ -17,27 +17,30 @@ Cancer is a very complex disease. Much more complicated than originally anticipa
 	
   [**Figure1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
-Although there has been extensive research into similar mutation mechanisms in Neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you to the cutting edge of research into this often deadly childhood tumor. From the lectures you should have learned already that this tumor seems to be heterogenic by nature. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of Neuroblastoma. Children experiencing a relapse almost always die. 
-Fortunately new technologies have become available to molecular biology. These enable us to study not only the mutations and RNA expression of genes but also study the epigenetic modifications of the DNA and accompanied histones. And in addition genes can now be manipulated in cell lines and living tissues. 
-Using advanced data analysis, statistics and clustering methods, the new field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate new hypotheses that can be tested experimentally.
-Today you will use a web-based genomics analysis and visualization platform, R2, that provides you with a set of such bioinformatics tools to investigate recent patient and experimental data from Neuroblastoma tumors and cell lines. 
+Although there has been extensive research into similar mutation mechanisms in Neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you to the cutting edge of research into this often deadly childhood tumor. From the lectures you should have learned already that this tumor consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of Neuroblastoma. Children developing a relapse almost always die. 
+Fortunately new technologies have become available to molecular biology. These enable us to study not only mutations and RNA expression of genes but also study the epigenetic modifications of the DNA-associated histones. And in addition genes can now be manipulated in cell lines and living tissues. 
+Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally.
+Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from Neuroblastoma tumors and cell lines. 
 Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which is neural crest derived. During embryogenesis, cells delaminate from the neural crest, migrate ventrally and differentiate into adrenaline- or noradrenaline-producing cells. Neuroblastomas typically express enzymes for the adrenaline-synthesis route. High-stage neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease.
-Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of Neuroblastoma tumors. From single patients we obtained two biopsies that were cultured as separate cell lines.    
+Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of Neuroblastoma tumors. From four patients we obtained tumor biopsies that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines  
 
 
-Tumors and lineages: clustering data
+Tumors and origins: clustering data
 ---------------------------------------
 
-For a start we'll investigate so called "classical" cell lines of Neuroblastoma tumors. Classical cell lines are cultured cell lines that can be grown and passaged indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do these profiles relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of other tumor cell lines and see how they relate. 
+For a start we'll investigate established childhood tumor cell lines, including neuroblastoma. Established cell lines can be grown and passaged in culture indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do profiles of neuroblastoma cell lines relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of other tumor cell lines and see how they relate. 
 
 *Data used:*  
-* 86 classical cell lines derived from 6 different childhood tumors (Cellline Childhood cancer - ITCC - 86 - MAS5.0 - u133p2)
+* 86 cell lines derived from 6 different childhood tumors (Cellline Childhood cancer - ITCC - 86 - MAS5.0 - u133p2)
 
 *Techniques used:*   
 * mRNA Microarray expression
 
 *Analysis used*  
 * t-SNE: t-distributed stochastic neighbor embedding statistics
+
+*References*
+* Chapter 2.2 & 2.3 Weinberg
 
 ##### A first impression of your data; expression of key genes
 
@@ -62,17 +65,10 @@ For a start we'll investigate so called "classical" cell lines of Neuroblastoma 
   * In field 3 type the name of the gene and click next
   * Leave all settings at default and click **next**
   * A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values along of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. Hovering with your mouse over data points will show additional information.
-
----------
-  ![](_static/images/R2d2_logo.png)**Do you observe a difference between different cell lines?**
-
-<br>
-<br>
-
----------
+  * The expression values on the y-axis are logarithmic; for **use track** choose the appropriate track and set the **Transform** option to **none**, and select **Track and Gene sort** for the **Extra Graph Option** to obtain a more explicit picture.  
   
 
-  * If you did not already choose this gene, now try the gene MYCN (Click the **Go to Main** link in the left upper corner)
+  * Now try the gene MYCN (Click the **Go to Main** link in the left upper corner)
   
 ---------
   ![](_static/images/R2d2_logo.png)**Can you say something about the role this gene can play in cancer?**
@@ -80,7 +76,7 @@ For a start we'll investigate so called "classical" cell lines of Neuroblastoma 
 <br>
 <br>
 
-  ![](_static/images/R2d2_logo.png)**What do you observe from the data annotation track below?**
+  ![](_static/images/R2d2_logo.png)**Using the data annotation track below the graph, what can you say about neuroblastoma?**
 
 <br>
 <br>
@@ -112,19 +108,19 @@ For a start we'll investigate so called "classical" cell lines of Neuroblastoma 
 <br>
 
 
-  ![](_static/images/R2d2_logo.png)**What is their lineage, can you relate this to a type of tissue?**
+  ![](_static/images/R2d2_logo.png)**What is their lineage of origin, can you relate this to a type of tissue?**
 
 <br>
 <br>
 
 
-  ![](_static/images/R2d2_logo.png)**What do you note about the Neuroblastoma cell lines?**
+  ![](_static/images/R2d2_logo.png)**What do you note about the clustering of neuroblastoma cell lines with respect to the lineage of origin?**
 
 <br>
 <br>
 
 
-  ![](_static/images/R2d2_logo.png)**If you had to choose two cell lines for further investigation of Neuroblastoma, which would you choose?**
+  ![](_static/images/R2d2_logo.png)**If you had to choose two cell lines for further investigation of lineage identity in neuroblastoma, which would you choose?**
 
 <br>
 <br>
@@ -206,7 +202,7 @@ We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of
 
 ---------
 
-  ![](_static/images/R2d2_logo.png)**Given these observations, what lineage can you assign to each group?**
+  ![](_static/images/R2d2_logo.png)**Given these observations, what origin can you assign to each group?**
 
 <br>
 <br>
