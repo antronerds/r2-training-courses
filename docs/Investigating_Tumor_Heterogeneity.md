@@ -432,7 +432,7 @@ Proving causes; manipulating cell lines
 From experiments it is known that cells can change their nature, some cells exhibit a certain plasticity.
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you think of any such processes that are of relevance to cancer?**
+  ![](_static/images/R2d2_logo.png)**Can you explain why this is of relevance to cancer?**
 
 <br>
 <br>
@@ -494,8 +494,6 @@ Creating hypotheses; relating to chromatin modification data
 ---------------------------------------------------------------
 
 Apparently this TF is capable of shifting cells from state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIP–seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
-
-Epigenetic versus genetic; the concept of re-programming
 
 *Data used:*
 * 
@@ -798,5 +796,6 @@ Suggesting therapy
 <br>
 
 ---------
+
 
 
