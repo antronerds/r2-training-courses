@@ -13,9 +13,9 @@ Introduction
 
 Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. During the lectures you’ve been shown how this works in colorectal cancer, where a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
 
-  ![Figure1: Mutation paths during cancer progression.](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure1: Mutation paths during cancer progression.")
+  ![Figure 1: Mutation paths during cancer progression.](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression.")
 	
-  [**Figure1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
+  [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
 Although there has been extensive research into similar mutation mechanisms in Neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you to the cutting edge of research into this often deadly childhood tumor. From the lectures you should have learned already that this tumor consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of Neuroblastoma. Children developing a relapse almost always die. 
 Fortunately new technologies have become available to molecular biology. These enable us to study not only mutations and RNA expression of genes but also study the epigenetic modifications of the DNA-associated histones. And in addition genes can now be manipulated in cell lines and living tissues. 
@@ -199,9 +199,9 @@ For this analysis we'll directly go to one of the analysis tools of R2; Topliste
 * The cell line pairs from the patient were also investigated for the tumor stem cell marker gene CD133 and for their migration capability. See the results in the figure below:
 
 
-  ![Figure1: CD133 Facs analysis and transwell migration assay of isogenic pairs](_static/images/TumorHeterogeneity_PairsCD133Migrate.png "CD133 Facs analysis and transwell migration assay of isogenic pairs")
+  ![Figure 3: CD133 Facs analysis and transwell migration assay of isogenic pairs](_static/images/TumorHeterogeneity_PairsCD133Migrate.png "Figure 3: CD133 Facs analysis and transwell migration assay of isogenic pairs")
 	
-  [**Figure1: CD133 Facs analysis and transwell migration assay of isogenic pairs**](_static/images/TumorHeterogeneity_PairsCD133Migrate.png)
+  [**Figure 3: CD133 Facs analysis and transwell migration assay of isogenic pairs**](_static/images/TumorHeterogeneity_PairsCD133Migrate.png)
 
 
 ---------
@@ -346,9 +346,9 @@ Using scores for further characterization
 
 The expression patterns of these specific signatures can be used to compare cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one value; a signature score. The figure below shows the signature score of the MES part of the signature in a specific sample.  
 
-  ![Figure 3: The signature score as calculated for a specific sample in the MES signature.](_static/images/TumorHeterogeneity_SignatureScoreDetail.png "Figure 3: The signature score as calculated for a specific sample in the MES signature.")
+  ![Figure 4: The signature score as calculated for a specific sample in the MES signature.](_static/images/TumorHeterogeneity_SignatureScores.png "Figure 4: The signature score as calculated for a specific sample in the MES signature.")
 	
-  [**Figure 3: The signature score as calculated for a specific ample in the MES signature.**](_static/images/TumorHeterogeneity_SignatureScores.png)
+  [**Figure 4: The signature score as calculated for a specific ample in the MES signature.**](_static/images/TumorHeterogeneity_SignatureScores.png)
 
 
  R2 has calculated these scores for all samples in both signatures. We're going to find out how they relate.
