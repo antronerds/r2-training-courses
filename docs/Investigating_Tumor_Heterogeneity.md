@@ -769,13 +769,12 @@ Apparently this TF is capable of shifting cells from state to the other. How can
 
 <form name="tfdifexprform" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
 <input type='hidden' name='minpres' value='1'>
-<input type='hidden' name='option' value='high_ana3'>
-<input type='hidden' name='table' value='ps_avgpres_gsenatgen2017geo52_u133p2'>
+<input type='hidden' name='option' value='display'>
+<input type='hidden' name='table' value='ps_avgpres_gsenatgengeo34_u133p2'>
 <input type='hidden' name='hugoonce' value='yes'>
 <input type='hidden' name='cortype' value='transform_2log'>
 <input type='hidden' name='genecat' value='TF'>
 <input type='hidden' name='selectedtrack' value='mes_adrn_nc'>
-<input type='hidden' name='table' value='ps_avgpres_gsenatgengeo34_u133p2'>
 <input type='hidden' name='test' value='anova'>
 <input type='hidden' name='factor' value='NG_mes_adrn_nc'>
 <button type="submit" >Go to R2 differential expression of TF's</button>
