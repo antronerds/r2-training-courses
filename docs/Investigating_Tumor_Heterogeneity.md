@@ -87,18 +87,20 @@ For a start we'll investigate established childhood tumor cell lines, including 
 
 * We've seen that the expression of genes changes through the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map.  
 
-* Go to the main screen in R2
+
+* Click the button below to show the tSNE map in R2 
+
+<form name='tsne_map' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='_gv'>
+<input type='hidden' name='switch' value='2'>
+<input type='hidden' name='minpres' value='1'>
+<input type='hidden' name='perplexity' value='28'>
+<input type='hidden' name='option' value='plot_tsne'>
+<input type='hidden' name='table' value='ps_avgpres_itcccellline86_u133p2'>
+<input type='hidden' name='cortype' value='transform_zscore'>
+<button type="submit" >Go to R2 tSNE map</button>
+</form>
 
 
-<form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
-  <button type="submit" >Go to R2</button>
-</form>  
-
-
-* In the left menu bar select the **tSNE maps** option
-* A selection of available tSNE maps appears; select *Cellline Childhood Cancer (public) - Versteeg - 86 - MAS5.0 - u133p2* 
-* Click **Plot the t-SNE Default** result
 * Colors are not set by default, under **ColorMode** select **Color by Track** and try different tracks, click next to show the changes 
 
 ---------
