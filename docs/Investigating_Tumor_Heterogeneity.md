@@ -94,7 +94,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <input type='hidden' name='switch' value='2'>
 <input type='hidden' name='minpres' value='1'>
 <input type='hidden' name='perplexity' value='5'>
-<input type='hidden' name='dotsize' value='5'>
+<input type='hidden' name='dotsize' value='6'>
 <input type='hidden' name='option' value='plot_tsne'>
 <input type='hidden' name='table' value='ps_avgpres_itcccellline86_u133p2'>
 <input type='hidden' name='cortype' value='transform_zscore'>
@@ -755,7 +755,7 @@ Apparently this TF is capable of shifting cells from state to the other. How can
 
 ---------
 
-* The chromatin state is especially important for transcription factors; we'll re-visit the list of transcription factors that are differentially expressed between the MES and ADRN cell lines
+* The chromatin state is especially important for transcription factors; we'll re-visit the list of transcription factors that are differentially expressed between the MES and ADRN cell lines.
 
 ---------
   ![](_static/images/R2d2_logo.png)**Why are Transcription Factors of interest in this setting?**
@@ -765,8 +765,24 @@ Apparently this TF is capable of shifting cells from state to the other. How can
 
 ---------
 
+* Perform the differential expression analysis again by clicking on the button below
 
-* Use both differential expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate.
+<form name="tfdifexprform" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<input type='hidden' name='minpres' value='1'>
+<input type='hidden' name='option' value='high_ana3'>
+<input type='hidden' name='table' value='ps_avgpres_gsenatgen2017geo52_u133p2'>
+<input type='hidden' name='hugoonce' value='yes'>
+<input type='hidden' name='cortype' value='transform_2log'>
+<input type='hidden' name='genecat' value='TF'>
+<input type='hidden' name='selectedtrack' value='mes_adrn_nc'>
+<input type='hidden' name='table' value='ps_avgpres_gsenatgengeo34_u133p2'>
+<input type='hidden' name='test' value='anova'>
+<input type='hidden' name='factor' value='NG_mes_adrn_nc'>
+<button type="submit" >Go to R2 differential expression of TF's</button>
+</form>
+
+* Click next, select the appropriate categories and click next
+* Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate.
 
 
 ---------
