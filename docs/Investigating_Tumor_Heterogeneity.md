@@ -93,7 +93,8 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <form name='tsne_map' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='_gv'>
 <input type='hidden' name='switch' value='2'>
 <input type='hidden' name='minpres' value='1'>
-<input type='hidden' name='perplexity' value='28'>
+<input type='hidden' name='perplexity' value='5'>
+<input type='hidden' name='dotsize' value='5'>
 <input type='hidden' name='option' value='plot_tsne'>
 <input type='hidden' name='table' value='ps_avgpres_itcccellline86_u133p2'>
 <input type='hidden' name='cortype' value='transform_zscore'>
@@ -134,11 +135,11 @@ For a start we'll investigate established childhood tumor cell lines, including 
 Urgency of research: patient material
 ----------------------------------------
 
-In the former step we derived that Neuroblastoma cell lines seem to be less homogeneous than other childhood tumor classical cell lines. These so called classical cell lines have gone through numerous cloning cycles and usually are pretty far off their original genomic composition. We have recently established new cell lines from neuroblastoma patients. In some cases multiple cell lines were obtained from the same biopsy. These are so called isogenic cell line pairs. A microscopic image is provided below. 
+In the former step we derived that neuroblastoma cell lines seem to group with cell lines of different developmental lineages. We have recently established new cell line pairs from neuroblastoma patients. In some cases multiple cell lines were obtained from the same biopsy. These cell lines share genetic defects and are therefore called *isogenic* cell line pairs. A microscopic image of each pair is provided below. 
 
-  ![Figure1: Bright field image of isogenic pairs.](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure1: Bright field image of isogenic pairs.")
+  ![Figure 2: Bright field image of isogenic cell line pairs.](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure 2: Bright field image of isogenic cell line pairs.")
 	
-  [**Figure1: Bright field image of isogenic pairs.**](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png)
+  [**Figure 2: Bright field image of isogenic cell line pairs.**](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png)
 
 ---------
   ![](_static/images/R2d2_logo.png)**What do you note about the morphology of the cell lines?**
@@ -147,7 +148,7 @@ In the former step we derived that Neuroblastoma cell lines seem to be less homo
 
 ---------
 
-We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of these pairs and of two classical Neuroblastoma cell lines that behave very different. The resulting gene expression patterns can be used perform a hierarchical clustering. 
+We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of these pairs and of a previously established neuroblastoma cell line that after culturing gave rise to two very divergent phenotypes. The resulting gene expression patterns can be used perform to a hierarchical clustering. 
 
 *Data used:*  
   * Cell lines recently derived from three tumors from one patient. Two biopsies per tumor were taken. This dataset is combined with two classical Neuroblastoma cell lines that clustered far apart: SHEP and SY5Y (Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2) 
@@ -160,7 +161,8 @@ We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of
 * Heatmap visualization
 
 
-* For this analysis we'll directly go to one of the analysis tools of R2; Toplister. The Toplister can assess which genes behave different throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples.
+For this analysis we'll directly go to one of the analysis tools of R2; Toplister. The Toplister can assess which genes behave different throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
+
 * Goto R2 by clicking the button below
 
 <form name="toplisterform" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
@@ -177,7 +179,7 @@ We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of
 * Click **next**; a list of genes appears
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Do you recognize any genes?**
+  ![](_static/images/R2d2_logo.png)**Do you recognize any genes that explain the difference in phenotype?**
 
 <br>
 <br>
@@ -216,7 +218,7 @@ We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of
 Which genes make a difference? Creating signatures
 -----------------------------------------------------
 
-We have identified two different types of cells that occur in a single biopsy in the same patient. Neuroblastoma apparently has a heterogenous nature. What genes determine the difference between the two types? We’ll use RNA expression data again but now the other way around; based on a predefined classification in groups we look for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
+We have identified two different types of cells that occur within the same patient. neuroblastoma apparently has a heterogenous nature. What genes determine the difference between the two types? We’ll use RNA expression data again but now we will use a predefined, supervised classification in groups to search for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
 
 *Data used:*  
 * Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2 (same as above)
@@ -274,26 +276,14 @@ We have identified two different types of cells that occur in a single biopsy in
 <br>
 <br>
 
----------
-
-* Another type of sets of genes that can be used for over-representation calculations are pathways. KEGG is a database containing curated biological pathways. Perform the same analysis as above for the KEGG pathways database
-
----------
-  ![](_static/images/R2d2_logo.png)**Which pathways do you consider interesting from a oncology point of view?**
-
-<br>
-<br>
-
----------
-
 
 Identifying groups: using signatures to classify other datasets
 ------------------------------------------------------------------
 
-We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis. We've assembled a more complex dataset by gathering the dataset of the 4 pairs of cell lines, additional classical cell lines from the first dataset and publicly available data of cell lines derived from normal neural crest tissue. This is the tissue where neuroblastoma tumors are known to initiate.
+We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis. We've assembled a more complex dataset by gathering the dataset of the 4 pairs of cell lines, additional neuroblastoma cell lines from the first dataset and publicly available data of non-malignant human neural crest tissue. The neural crest undergoes a mesenchymal transition and gives rise to cell types from the adrenergic lineage.
 
 *Data used:*
-* A combination of the 8 cell lines above, additional classical Neuroblastoma cell lines and cells from the neural crest lineage (Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2)
+* A combination of the 8 cell lines above, additional neuroblastoma cell lines and cells from the neural crest lineage (Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2)
 
 *Techniques used:* 
 * mRNA expression data
@@ -302,6 +292,7 @@ We now have a signature that distinguishes between the two types of cells. We al
 * Heatmap analysis
 
 *References*
+* -
  
 * Go to the main portal of R2 by clicking the button below; the dataset described above is automatically selected
 
@@ -314,10 +305,10 @@ We now have a signature that distinguishes between the two types of cells. We al
 * In field 3 select **View Geneset**
 * Click next and select *geneset_r2provided_genelists* 
 * Click next, leave selection as is and click **next**
-* Select both signatures that were derived before by CTRL click on the MES (*r2_mesadrn_mes*) and ADNR (*r2_mesadrn_mes*) signatures and click **next**
+* Select both signatures that were derived before by CTRL click on the MES (*r2_mesadrn_mes*) and ADRN (*r2_mesadrn_adrn*) signatures and click **next**
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Which samples group together?**
+  ![](_static/images/R2d2_logo.png)**Which cell types group together?**
 
 <br>
 <br>
@@ -332,17 +323,17 @@ We now have a signature that distinguishes between the two types of cells. We al
 
 ---------
 
-* When observing such clearcut patterns you immediately have to wonder whether something special is going on. We'll check the signature in another dataset, in this case a publicly available Colon Cancer dataset. Click on the button below to go there and perform the same analysis.
+* When observing such clearcut patterns it is good scientific practice to test this in additional datasets. The database of R2 contains an additional dataset consisting of neuroblastoma cell lines that were profiled by a French research team. Click on the button below to go there and perform the same analysis.
 
 
 <form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_colonmicrosat84_u133p2">
-  <button type="submit" >Go to R2 colon data</button>
+  <input type="hidden" name="table" value="ps_avgpres_gse90683geo48_gse90683r1">
+  <button type="submit" >Go to R2 additional NB dataset</button>
 </form>  
 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Do you observe similar patterns? Can you explain this?**
+  ![](_static/images/R2d2_logo.png)**Do you observe similar patterns?**
 
 <br>
 <br>
@@ -350,12 +341,17 @@ We now have a signature that distinguishes between the two types of cells. We al
 ---------
 
 
-* If you have time left you might want to check other datasets, some might show similar patterns of interest!
-
 Using scores for further characterization
 --------------------------------------------
 
-The expression patterns of these specific signatures can be used to compare cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one value; a signature score. R2 has calculated these scores for all samples in both signatures. We're going to find out how they relate.
+The expression patterns of these specific signatures can be used to compare cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one value; a signature score. The figure below shows the signature score of the MES part of the signature in a specific sample.  
+
+  ![Figure 3: The signature score as calculated for a specific sample in the MES signature.](_static/images/TumorHeterogeneity_SignatureScoreDetail.png "Figure 3: The signature score as calculated for a specific sample in the MES signature.")
+	
+  [**Figure 3: The signature score as calculated for a specific ample in the MES signature.**](_static/images/TumorHeterogeneity_SignatureScores.png)
+
+
+ R2 has calculated these scores for all samples in both signatures. We're going to find out how they relate.
 
 *Data used:*
 * Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2
