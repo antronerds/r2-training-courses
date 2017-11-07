@@ -457,7 +457,7 @@ From experiments it is known that cells can change their nature, some cells exhi
 
 ---------
 
-From experiments in our lab it became evident that the two cell types found in Neuroblastoma were able to switch. After a given period of time cells is dishes changed their nature as became evident from the expression of certain marker proteins on their surface.
+From experiments in our lab it became evident that the two cell types found in Neuroblastoma were able to switch. After a given period of time cells in dishes changed their nature as became evident from the expression of certain marker proteins on their surface.
 Now that we have a candidate Transcription Factor we can try to investigate its relevance in this plasticity by manipulating the gene in cell lines we grow in the lab. 
 
 ---------
@@ -519,11 +519,9 @@ Apparently this TF is capable of shifting cells from state to the other. How can
 *Techniques used:* 
 * ChIP–seq analysis
 
-*Analysis used*
-* 
 
 *References*
-*
+* Chapter 1.8 Weinberg
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you explain what the goal of this experiment was?**
@@ -799,7 +797,6 @@ Apparently this TF is capable of shifting cells from state to the other. How can
 <button type="submit" >Go to R2 differential expression of TF's</button>
 </form>
 
-* Click next, select the appropriate categories and click next
 * Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate.
 
 
@@ -821,7 +818,7 @@ Suggesting therapy
 * Hints: 
   * There is a category "drugtargets" in R2 to select druggable proteins
   * Knowledge about pathways can be exploited as well
-  * The NCBI database can 
+  * The NCBI database can provide additional information from literature about the genes of interest.
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which strategy do you suggest?**
