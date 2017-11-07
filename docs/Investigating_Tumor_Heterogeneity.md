@@ -3,9 +3,9 @@
 Investigating Intra-tumor Heterogeneity
 =================================
 
-*Learn how to use the R2 data analysis platform to analyse tumor heterogeneity in Neuroblastoma*
+*Analyse tumor heterogeneity in Neuroblastoma using the R2 data analysis platform*
 
-**NOTE:** This document is under construction.
+This resource is located online at http://r2-training-courses.readthedocs.io
 
 
 Introduction
@@ -148,7 +148,13 @@ In the former step we derived that neuroblastoma cell lines seem to group with c
 
 ---------
 
-We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of these pairs and of a previously established neuroblastoma cell line that after culturing gave rise to two very divergent phenotypes. The resulting gene expression patterns can be used perform to a hierarchical clustering. 
+We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of these pairs and of a previously established neuroblastoma cell line that after culturing gave rise to two very divergent phenotypes. The resulting gene expression patterns can be used perform to a hierarchical clustering. An example of such clustering resulting in a heatmap is provided below 
+
+  ![Figure 3: Heatmap: unsupervised clustering of samples using the distribution of the expression data combined with the clustering of genes based on their expression through the samples.](_static/images/TumorHeterogeneity_HeatmapClustering.png "Figure 2: Bright field image of isogenic cell line pairs.")
+	
+  [**Figure 3: Bright field image of isogenic cell line pairs.**](_static/images/TumorHeterogeneity_HeatmapClustering.png)
+
+
 
 *Data used:*  
   * Cell lines recently derived from three tumors from one patient. Two biopsies per tumor were taken. This dataset is combined with two classical Neuroblastoma cell lines that clustered far apart: SHEP and SY5Y (Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2) 
@@ -218,7 +224,7 @@ For this analysis we'll directly go to one of the analysis tools of R2; Topliste
 Which genes make a difference? Creating signatures
 -----------------------------------------------------
 
-We have identified two different types of cells that occur within the same patient. neuroblastoma apparently has a heterogenous nature. What genes determine the difference between the two types? We’ll use RNA expression data again but now we will use a predefined, supervised classification in groups to search for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
+We have identified two different types of cells that occur within the same patient. Neuroblastoma apparently has a heterogenous nature. What genes determine the difference between the two types? We’ll use RNA expression data again but now we will use a predefined, supervised classification in groups to search for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
 
 *Data used:*  
 * Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2 (same as above)
@@ -257,6 +263,16 @@ We have identified two different types of cells that occur within the same patie
 * For future use the genes that make the difference have been stored for you in R2 as signatures (aka genesets or categories). One set of genes that is highly expressed in the MES type of samples (r2_mesadrn_mes) and one set of genes highly expressed in the ADRN type of samples (r2_mesadrn_adrn) R2 provides additional analysis for sets of genes in the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene. R2 now calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. In the menu panel to the right select the **Gene Ontology Analysis** button 
 
 ---------
+  ![](_static/images/R2d2_logo.png)**What can you say about the function of the differentially expressed genes?**
+
+<br>
+<br>
+
+---------
+
+* Now scroll down to the end of the page (or click the filter button in the left upper corner of the page) and adapt the settings such that only the Biological Process branch of the Gene Ontology is selected, and select only the genes that are higher expressed in the MES type of cells 
+
+---------
   ![](_static/images/R2d2_logo.png)**What can you say about the function of the group of genes that are upregulated in the MES type of cells?**
 
 <br>
@@ -266,7 +282,7 @@ We have identified two different types of cells that occur within the same patie
 
 
 * In R2 there are much more sets of genes that have been found to be implemented in specific processes. The Broad institute has compiled quite some of these sets of genes that characterize hallmark biological processes   
-* Go back by clicking the back buttonn
+* Go back to the window with the differentially expressed genes. This is still open in one of your browser tabs.
 * Select the **Gene set analysis** option from the right menu
 * Select the *geneset_broad_2015_hallmark* geneset 
 
@@ -402,7 +418,9 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 * mRNA expression data
 
 *Analysis used*
-* Differential expression
+* Differential expression  
+
+
 
 * Go back to the main portal of R2 by clicking the button below.
 
