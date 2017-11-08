@@ -105,13 +105,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 * Colors are not set by default, under **ColorMode** select **Color by Track** and try different tracks, click next to show the changes 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What tumor types do you distinguish?**
-
-<br>
-<br>
-
-
-  ![](_static/images/R2d2_logo.png)**What is their lineage of origin, can you relate this to a type of tissue?**
+  ![](_static/images/R2d2_logo.png)**Can you relate the tumors to a type of tissue??**
 
 <br>
 <br>
