@@ -62,10 +62,10 @@ For a start we'll investigate established childhood tumor cell lines, including 
 
 ---------
 
-  * In field 3 type the name of the gene and click next
+  * In field 4 type the name of the gene and click next
   * Leave all settings at default and click **next**
   * A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values along of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. Hovering with your mouse over data points will show additional information.
-  * The expression values on the y-axis are logarithmic; for **use track** choose the appropriate track and set the **Transform** option to **none**, and select **Track and Gene sort** for the **Extra Graph Option** to obtain a more explicit picture.  
+  * The expression values on the y-axis are logarithmic; set the **Transform** option to **none**, and select **Track and Gene sort** for the **Extra Graph Option**. Sample annotation is stored in R2 in so called tracks, for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type and click **Adjust Settings** to obtain a more explicit picture.  
   
 
   * Now try the gene MYCN (Click the **Go to Main** link in the left upper corner)
@@ -102,7 +102,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 </form>
 
 
-* Colors are not set by default, under **ColorMode** select **Color by Track** and try different tracks, click next to show the changes 
+* Colors are not set by default, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click next to show the changes 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you relate the tumors to a type of tissue??**
@@ -491,7 +491,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
   <button type="submit" >Go to R2 main, inducible TF set</button>
 </form>  
 
-* Select in field 3 the **Relate 2 tracks** option. R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. Relate the two tracks, adapt the ColorMode to Color by Track and try appropriate tracks.
+* Select in field 3 the **Relate 2 tracks** option. R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. Relate the two tracks, adapt the **ColorMode** to **Color by Track** and try the *mes_adrn_time* track. This track contains information on the time that the PRRX1 gene was induced in the SKNBE cell line.
 
 ---------
   ![](_static/images/R2d2_logo.png)**What is your conclusion from this experiment?**
@@ -746,6 +746,7 @@ Apparently this TF is capable of shifting cells from state to the other. How can
 <button type="submit" >Go to R2 GenomeBrowser for DLK1</button>
 </form>
 
+* Scroll down to show the exact location of the DLK1 gene; coding exons are in darkgreen. 
 ---------
   ![](_static/images/R2d2_logo.png)**Does this graph convince you that enhancers are important here?**
 
