@@ -19,8 +19,8 @@ Cancer is a very complex disease. Much more complicated than originally anticipa
 
 Although there has been extensive research into similar mutation mechanisms in Neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you to the cutting edge of research into this often deadly childhood tumor. From the lectures you should have learned already that this tumor consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of Neuroblastoma. Children developing a relapse almost always die. 
 Fortunately new technologies have become available to molecular biology. These enable us to study not only mutations and RNA expression of genes but also study the epigenetic modifications of the DNA-associated histones. And in addition genes can now be manipulated in cell lines and living tissues. 
-Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally.
-Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from Neuroblastoma tumors and cell lines. 
+Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2.  
+R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from Neuroblastoma tumors and cell lines. 
 Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which is neural crest derived. During embryogenesis, cells delaminate from the neural crest, migrate ventrally and differentiate into adrenaline- or noradrenaline-producing cells. Neuroblastomas typically express enzymes for the adrenaline-synthesis route. High-stage neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease.
 Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of Neuroblastoma tumors. From four patients we obtained tumor biopsies that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines  
 
@@ -791,7 +791,7 @@ Apparently this TF is capable of shifting cells from state to the other. How can
 <button type="submit" >Go to R2 differential expression of TF's</button>
 </form>
 
-* Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate.
+* Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate. In the genomebrowser you can type the name of the gene in the left upper corner textfield.
 
 
 ---------
@@ -810,9 +810,10 @@ Suggesting therapy
 * With the current new knowledge you derived above, can you think of a strategy to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options?
 * Follow the links above to use the differential expression analysis and the genomebrowser information 
 * Hints: 
-  * There is a category "drugtargets" in R2 to select druggable proteins
+  * There is a category "drugtargets" in R2 to select druggable proteins; you can select these in the same dropdown where the TF selection was done
   * Knowledge about pathways can be exploited as well
   * The NCBI database can provide additional information from literature about the genes of interest.
+  * Be creative, you might find something interesting!
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which strategy do you suggest?**
