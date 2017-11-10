@@ -105,7 +105,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 * Colors are not set by default, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click next to show the changes 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you relate the tumors to a type of tissue??**
+  ![](_static/images/R2d2_logo.png)**Can you relate the tumors to a type of tissue?? (Note: ALL stands for Acute Lymphocytic Leukemia)**
 
 <br>
 <br>
@@ -241,7 +241,7 @@ We have identified two different types of cells that occur within the same patie
 </form>  
 
 
-* In Field 3 choose Find Differential expression between groups
+* In Field 3 choose *Find Differential expression* between groups
 * This dataset has been annotated with 'type' information. Each sample was assigned to either the MESenchymal or the ADReNergic type, in R2 this is called a *track*. Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to **No correction**
 * A list of differentially expressed genes appears; click on the hyperlinked name of your favorite gene to see its expression in the sample set; try an oppositely correlating gene also
 * Now click on the **Heatmap(zscore)** button in the right menu panel; a heatmap showing the expression of all differentially expressed genes with correlation p-value < 0.01 in this dataset is shown.    
@@ -811,7 +811,8 @@ Suggesting therapy
 * With the current new knowledge you derived above, can you think of a strategy to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options?
 * Follow the links above to use the differential expression analysis and the genomebrowser information 
 * Hints: 
-  * There is a category "drugtargets" in R2 to select druggable proteins; you can select these in the same dropdown where the TF selection was done
+  * There is a category "drugtargets" in R2 to select druggable proteins; you can select these in the same dropdown where the TF selection was done.
+  * Another very interesting one is the "kinase" category, this contains known kinases that have active roles in pathways.
   * Knowledge about pathways can be exploited as well
   * The NCBI database can provide additional information from literature about the genes of interest.
   * Be creative, you might find something interesting!
