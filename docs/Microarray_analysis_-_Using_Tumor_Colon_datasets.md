@@ -2,5 +2,6 @@ Practical Gene Expression analysis: AMC student course 2014
 =================================
 
 *Finding diffrenttial expressed genes using two Colon datasets
+* Under contruction
 
-Practical Gene Expression analysis using R2 : Marcel Kool , 2014
+
