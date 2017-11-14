@@ -10,7 +10,7 @@ Copyright (c) 2006-2018 Jan Koster
 
 .. toctree::
    :maxdepth: 2
-   :numbered: 2
+   :numbered: 3
    
    Investigating_Tumor_Heterogeneity
    Microarray_analysis_-_Using_Tumor_Colon_datasets
