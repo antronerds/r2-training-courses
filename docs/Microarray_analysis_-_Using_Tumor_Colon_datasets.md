@@ -30,7 +30,7 @@ The normalization was performed according to the MAS5.0 algorithm and we are dea
 We will use R2 to generate a list of genes which are differentially expressed between the Normal subgroup and Adenoma subgroup in the Marra dataset. Chapter 6 of the R2 tutorial book (“Differential expression of Genes ..”) describes how you can use the “Find differential expression between groups” module in more detail. 
 Multiple testing corrections adjust p-values derived from multiple statistical tests to correct for false positives. In microarray data analysis, false positives are genes that are found to be statistically different between conditions, but are not in reality. (For more on multiple testing correction: see chapter 6 step 7 in the tutorial book)
 
-Select the **Mixed Colon - Marra - 64 - MAS5.0 - u133p2** or
+Select the **Mixed Colon - Marra - 64 - MAS5.0 - u133p2** or click the button 
 
 <form name="Mara 64 set " action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_coloncombi64_u133p2">
@@ -38,14 +38,40 @@ Select the **Mixed Colon - Marra - 64 - MAS5.0 - u133p2** or
 </form>  
 
 
-In the Main menu, 3 ‘Select type of analysis’ select the “Find differential expression between groups” module. And click next. In the next panel you have to select a so called ‘track’.
-Tracks contain the annotation parameters of series of arrays of tumors or experiments. Choose the ‘tissue’ track, this contains assignment of each sample to the tumor or normal tissue group. Several other selection criteria can be adapted. Most settings are suited for regular analyses.
+In the Main menu, 3 ‘Select type of analysis’ select the “Find differential expression between groups” module. And click next or click the button 
+
 
 <form name='Find Diff' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='FindDiff'>
 <input type='hidden' name='option' value='findgene1'>
 <input type='hidden' name='table' value='ps_avgpres_coloncombi64_u133p2'>
-<button type="submit" >Go to Find diff </button>
+<button type="submit" >Go to Find differential </button>
 </form>
+
+
+In the next panel you have to select a so called ‘track’.
+Tracks contain the annotation parameters of series of arrays of tumors or experiments. Choose the ‘tissue’ track, this contains assignment of each sample to the tumor or normal tissue group. Several other selection criteria can be adapted. Most settings are suited for regular analyses
+
+Question 1a:
+
+You can also choose between several multiple testing correction methods. Which one is the most stringent?
+*Answer: At the end of this training course*
+
+Before we start the calculations, make sure you selected ‘log2’ as transformation and use p<0.01 as a p-value cutoff. Then click ‘next’, and leave the group selection as is, click next to start the analysis.
+
+Question 1b:
+R2 has generated a large list of genes which are differentially expressed between the selected subgroups. Can you say something about the distribution between up- or down-regulated genes? Are the groups equal in size?
+*Answer: At the end of this training course*
+
+Question 1c:
+Next to many publicly available datasets, R2 is also hosting a lot of curated lists of genes which we call **gene categories** (gene sets). These gene categories can be used to restrict an analysis as well. We can adapt our current search by scrolling down to the end of our gene list. In the ‘Adjustable Settings’ Panel in the Gene Filters box you can now use a Gene Category to filter your list. Re-generate a list that is specifically associated with (colorectal) cancer (hint: look in the gene category or KEGG pathway list to identify an interesting gene set).
+*Answer: At the end of this training course*
+
+
+
+
+
+
+
 
 
 
@@ -53,5 +79,24 @@ Tracks contain the annotation parameters of series of arrays of tumors or experi
 
 Answers
 --------
+
+Question 1a:
+
+*With high throughput experiments like micro-arrays it is important to correct for the random effects that good be falsely significant.  Therefore it is common practice to correct for those effects. The Bonferroni Method is the most stringed method R2 is offering. . A more detailed explanation you can find in the chapter of the the R2 tutorial. You can find the R2 tutorial in the left menu of R2 on the main screen.*
+
+Question 1b:
+*A small table below the grey buttons on the right provides the separate numbers of the up and down regulated genes. ~80000 genes in total. ~4000 genes are higher in adenomas of expressive and 3903 lower than in normal tissue.*
+
+Question 1c:
+
+![Figure 1: Mutation paths during cancer progression.](_static/images/practical_geneexpression_list.png "Find differenttial expression.")
+	
+[**Figure 1: Mutation paths during cancer progression.**](_static/images/practical_geneexpression_list.png)
+
+
+
+
+
+
 
 
