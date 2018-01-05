@@ -59,10 +59,12 @@ You can also choose between several multiple testing correction methods. Which o
 Before we start the calculations, make sure you selected ‘log2’ as transformation and use p<0.01 as a p-value cutoff. Then click ‘next’, and leave the group selection as is, click next to start the analysis.
 
 **Question 1b:**
-R2 has generated a large list of genes which are differentially expressed between the selected subgroups. Can you say something about the distribution between up- or down-regulated genes? Are the groups equal in size?
+
+R2 has generated a large list of genes which are differentially expressed between the selected subgroups. Can you say something about the distribution between up- or down-regulated genes? Are the groups equal in size?.
 *Answer: At the end of this training course*
 
 **Question 1c:**
+
 Next to many publicly available datasets, R2 is also hosting a lot of curated lists of genes which we call **gene categories** (gene sets). These gene categories can be used to restrict an analysis as well. We can adapt our current search by scrolling down to the end of our gene list. In the ‘Adjustable Settings’ Panel in the Gene Filters box you can now use a Gene Category to filter your list. Re-generate a list that is specifically associated with (colorectal) cancer (hint: look in the gene category or KEGG pathway list to identify an interesting gene set).
 *Answer: At the end of this training course*
 
@@ -76,11 +78,11 @@ Examine the expression signals of the 4 probe sets, what do you notice
 
 **Question 2b:**
 
-Can you think of an explanation for this observation? (Tip: Use the R2 genome browser by clicking the `R2 Tview’ link in the probeset verification table.
+Can you think of an explanation for this observation? (Tip: Use the R2 genome browser by clicking the 'R2 Tview'link in the probeset verification table.
 
 **Question 2c:**
 
-c) Do you think it is wise to represent AXIN2 by the average of the four probe sets. Why / why not? (Tip: Use the R2 genome browser by clicking the `R2 Tview’ link in the probeset verification table. 
+Do you think it is wise to represent AXIN2 by the average of the four probe sets. Why / why not? (Tip: Use the R2 genome browser by clicking the 'R2 Tview'link in the probeset verification table. 
 
 **Question 3a: Pathway heatmap**
 
@@ -88,9 +90,32 @@ The WNT pathway is an important signal transduction cascade in the development o
 Generate a list of genes which are differentially expressed comparing normal and adenoma within the WNT pathway KEGG, use the False Discovery Rate for multiple testing correction, log 2 values and P <0.01. You can use the KEGG Pathway from the Gene Categories selection menu.
 
 
-**Question 3b:
+**Question 3b:**
 
 Generate a heatmap (Menu to the right) from the differentially expressed genes and take a look at the resulting image. Are all tumors neatly separated from the normal samples? Is this a special finding?
+
+
+**Question 4a: Pathway Analysis**
+
+
+Often, you do not immediately have an idea which pathways you could look for in your comparisons between groups (normal versus adenoma in our case). A module within R2 providing you with some suggestions is the so called KEGG Pathway Finder by Groups. It assesses whether the number of genes that show significant differential expression between normal and adenoma is significantly higher than you would expect compared to all genes that are mentioned in KEGG. 
+
+Perform a KEGG pathway analysis from the ‘main’ page. Make sure that under Representation: all is selected (both under and overrepresentation) Are there KEGG pathways overrepresented in the differentially expressed genes between adenoma and normal tissue?
+
+If this is true which pathway (Set the p-value 0.01 for the analysis and select striking pathways).
+
+**Question 4b**
+
+In the current pathway analysis, the WNT pathway is not very pronounced. Click on the WNT pathway AMCmap (the blue A link) of the pathway in detail. 
+It appears that there are not many changes found? Can you explain the results of the analysis?
+
+
+**Question 5a Pathway heatmap specified**
+
+
+The previous task has shown that a number of WNT pathway genes were represented in the result list. We can also view all genes in the pathway via a heatmap. You can do this using the "View a geneset (Heatmap)" option from the main menu. 
+
+Take a look at the WNT pathway with 3: "View GeneSet (Heatmap)". You can find the WNT path way in in the KEGG>all section. Are all tumors neatly separated from the normals? Is this special? Why / why not? 
 
 
 
@@ -145,11 +170,32 @@ tissue: normal >= adenoma 33
 
 Question 3b:
 
+*Neatly separated, but not very special. Only the genes that make a difference between the two groups viewed here. The Heatmap is based on a pre-selection which is already found*
+
 ![Fig List.](_static/images/practical_geneexpression_heatmap1.png "heatmap.")
 
 [**Finding differential expression: heatmap **](_static/practical_geneexpression_heatmap1.png )
 
 
+Question 4a:
+
+*DNA replication and RNA transport are in the top off the list* 
+
+Question 4b:
+
+![Fig List.](_static/images/practical_geneexpression_pathway.png "pathway")
+[**Finding differential expression: Pathway **](_static/practical_geneexpression_pathway.png )
+
+Question 5a:
 
 
+*Samples are well separated. This is special, we have all the genes in the wnt pathway used without preselection.*
 
+![Fig List.](_static/images/practical_geneexpression_heatmap2.png "heatmap.")
+
+[**Finding differential expression: heatmap **](_static/practical_geneexpression_heatmap2.png)
+
+
+Question 5b:
+
+This time not only the genes are used that make a difference in the group shown.  The clustering in task3b was based on differentially expressed genes already found so it’s not surprising you find a heatmap with nice clusters.
