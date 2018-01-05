@@ -30,6 +30,9 @@ The normalization was performed according to the MAS5.0 algorithm and we are dea
 We will use R2 to generate a list of genes which are differentially expressed between the Normal subgroup and Adenoma subgroup in the Marra dataset. Chapter 6 of the R2 tutorial book (“Differential expression of Genes ..”) describes how you can use the “Find differential expression between groups” module in more detail. 
 Multiple testing corrections adjust p-values derived from multiple statistical tests to correct for false positives. In microarray data analysis, false positives are genes that are found to be statistically different between conditions, but are not in reality. (For more on multiple testing correction: see chapter 6 step 7 in the tutorial book)
 
+Questions
+------------
+
 Select the **Mixed Colon - Marra - 64 - MAS5.0 - u133p2** or click the button 
 
 <form name="Mara 64 set " action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
@@ -118,8 +121,18 @@ The previous task has shown that a number of WNT pathway genes were represented 
 Take a look at the WNT pathway with 3: "View GeneSet (Heatmap)". You can find the WNT path way in in the KEGG>all section. Are all tumors neatly separated from the normals? Is this special? Why / why not? 
 
 
+**Question 5b:**
 
 
+In what way does this result differ from task 3b?
+
+
+Classical pathway analyses, with sets of genes as members of a pathway, have been used extensively and yielded some valuable insights when applied on mRNA data. However, they are not necessarily informative, since many pathways have been characterized at the protein (modification) level. As such, activation of a pathway does not need to have an effect on the mRNA levels of the members of the pathway themselves. This realization has led to the development of ‘functional pathway signatures’, where pathway activity is induced/repressed in an experimental setup, and the impact thereof measured on all mRNAs. mRNA levels that are differentially expressed between active vs inactive pathway status, can then be used as an mRNA proxy for pathway activity. Published functional pathway signatures are collected by the MSigDB of the Broad Institute in a special section of their gene set database (oncogenic_signatures). Within R2, we can also use these sets via the “View a geneset (Heatmap)” option.
+
+
+**Question 5c:**
+
+Return to the main page and select “View a geneset (Heatmap)” again. Press ‘next’. Now from the gene selection dropdown list, select ‘geneset_broad_2012_oncogenic’ and press ‘next’. Again press next. Now, from the gene set(s), area select a complete beta catenin (BCAT) signature (Hold CTRL key to select a UP and a DN gene set combination). Press ‘next’ again to create a heatmap representation. Are the 2 groups also separated on the basis of the BCAT signature?
 
 
 
@@ -174,6 +187,7 @@ Question 3b:
 
 ![Fig List.](_static/images/practical_geneexpression_heatmap1.png "heatmap.")
 
+
 [**Finding differential expression: heatmap **](_static/practical_geneexpression_heatmap1.png )
 
 
@@ -184,6 +198,8 @@ Question 4a:
 Question 4b:
 
 ![Fig List.](_static/images/practical_geneexpression_pathway.png "pathway")
+
+
 [**Finding differential expression: Pathway **](_static/practical_geneexpression_pathway.png )
 
 Question 5a:
@@ -196,6 +212,16 @@ Question 5a:
 [**Finding differential expression: heatmap **](_static/practical_geneexpression_heatmap2.png)
 
 
-Question 5b:
+
 
 This time not only the genes are used that make a difference in the group shown.  The clustering in task3b was based on differentially expressed genes already found so it’s not surprising you find a heatmap with nice clusters.
+
+
+Question 5c:
+
+
+![Fig List.](_static/images/practical_geneexpression_heatmap3.png "heatmap.")
+
+[**Finding differential expression: heatmap **](_static/practical_geneexpression_heatmap3.png)
+
+*Yes, the groups are clearly also separated based on the BCAT signature.*
