@@ -51,22 +51,46 @@ In the Main menu, 3 ‘Select type of analysis’ select the “Find differentia
 In the next panel you have to select a so called ‘track’.
 Tracks contain the annotation parameters of series of arrays of tumors or experiments. Choose the ‘tissue’ track, this contains assignment of each sample to the tumor or normal tissue group. Several other selection criteria can be adapted. Most settings are suited for regular analyses
 
-Question 1a:
+**Question 1a:**
 
 You can also choose between several multiple testing correction methods. Which one is the most stringent?
 *Answer: At the end of this training course*
 
 Before we start the calculations, make sure you selected ‘log2’ as transformation and use p<0.01 as a p-value cutoff. Then click ‘next’, and leave the group selection as is, click next to start the analysis.
 
-Question 1b:
+**Question 1b:**
 R2 has generated a large list of genes which are differentially expressed between the selected subgroups. Can you say something about the distribution between up- or down-regulated genes? Are the groups equal in size?
 *Answer: At the end of this training course*
 
-Question 1c:
+**Question 1c:**
 Next to many publicly available datasets, R2 is also hosting a lot of curated lists of genes which we call **gene categories** (gene sets). These gene categories can be used to restrict an analysis as well. We can adapt our current search by scrolling down to the end of our gene list. In the ‘Adjustable Settings’ Panel in the Gene Filters box you can now use a Gene Category to filter your list. Re-generate a list that is specifically associated with (colorectal) cancer (hint: look in the gene category or KEGG pathway list to identify an interesting gene set).
 *Answer: At the end of this training course*
 
 
+**Question 2a:**
+
+The most significant gene in the list is the AXIN2 gene. Click on this entry from your result set to open the Gene View. The graph shows a neat separation in groups. Scroll down to investigate the probesets that were used. AXIN2 is represented by no fewer than four reporters (probe sets) on the Affymetrix U133 Plus 2.0 chip. 
+
+Examine the expression signals of the 4 probe sets, what do you notice
+*Answer: At the end of this training course*
+
+**Question 2b:**
+
+Can you think of an explanation for this observation? (Tip: Use the R2 genome browser by clicking the `R2 Tview’ link in the probeset verification table.
+
+**Question 2c:**
+
+c) Do you think it is wise to represent AXIN2 by the average of the four probe sets. Why / why not? (Tip: Use the R2 genome browser by clicking the `R2 Tview’ link in the probeset verification table. 
+
+**Question 3a: Pathway heatmap**
+
+The WNT pathway is an important signal transduction cascade in the development of colon cancer.
+Generate a list of genes which are differentially expressed comparing normal and adenoma within the WNT pathway KEGG, use the False Discovery Rate for multiple testing correction, log 2 values and P <0.01. You can use the KEGG Pathway from the Gene Categories selection menu.
+
+
+**Question 3b:
+
+Generate a heatmap (Menu to the right) from the differentially expressed genes and take a look at the resulting image. Are all tumors neatly separated from the normal samples? Is this a special finding?
 
 
 
@@ -89,12 +113,41 @@ Question 1b:
 
 Question 1c:
 
-![Figure 1: Mutation paths during cancer progression.](_static/images/practical_geneexpression_list.png "Find differenttial expression.")
+*Also using Oncogenesis Category or KEGG colorectal cancer , AXIN2 is number one. Table below is the toplist of the analysis in 1b*
+
+![Fig List.](_static/images/practical_geneexpression_list.png "Find differenttial expression.")
 	
-[**Figure 1: Mutation paths during cancer progression.**](_static/images/practical_geneexpression_list.png)
+[**Finding differential expression progression.**](_static/images/practical_geneexpression_list.png)
 
+Question 2a:
 
+*In the perfect world each probeset should provide a more or less equal absolute value which is not the case.  The 222696_at signal is much higher compared to the other N-MYC probeset.*
 
+![Fig List.](_static/images/practical_geneexpression_probesettable.png "Find differenttial expression.")
+	
+[**Finding differential expression :probeset table **](_static/images/practical_geneexpression_probesettable.png)
+
+Question 2b:
+
+![Fig List.](_static/images/practical_geneexpression_probesetverification.png " Verification.")
+
+[**Finding differential expression: probeset verification **](_static/images/practical_geneexpression_probesetverification.png)
+
+Question 2c:
+
+*Due to the large difference in the signals wit will not be smart in this case to take the average. The successors of this platform are designed differently as well as the isolation methods. For the newer platforms there is no degradation and the probesets designed for the same gene give more or less the same signal.*
+
+Question 3a:
+
+64 genes
+tissue: normal < adenoma 31
+tissue: normal >= adenoma 33 
+
+Question 3b:
+
+![Fig List.](_static/images/practical_geneexpression_heatmap1.png "heatmap.")
+
+[**Finding differential expression: heatmap **](_static/practical_geneexpression_heatmap1.png )
 
 
 
