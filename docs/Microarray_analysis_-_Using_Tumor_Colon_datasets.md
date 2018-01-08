@@ -180,7 +180,7 @@ Question 1a:
 *With high throughput experiments like micro-arrays it is important to correct for the random effects that good be falsely significant.  Therefore it is common practice to correct for those effects. The Bonferroni Method is the most stringed method R2 is offering. . A more detailed explanation you can find in the chapter of the the R2 tutorial. You can find the R2 tutorial in the left menu of R2 on the main screen.*
 
 Question 1b:
-*A small table below the grey buttons on the right provides the separate numbers of the up and down regulated genes. ~80000 genes in total. ~4000 genes are higher in adenomas of expressive and 3903 lower than in normal tissue.*
+*A small table below the grey buttons on the right provides the separate numbers of the up and down regulated genes. ~8000 genes in total. ~4000 genes are higher in adenomas of expressive and 3903 lower than in normal tissue.*
 
 Question 1c:
 
@@ -246,8 +246,8 @@ Question 5a:
 
 
 
-
-This time not only the genes are used that make a difference in the group shown.  The clustering in task3b was based on differentially expressed genes already found so it’s not surprising you find a heatmap with nice clusters.
+*
+This time not only the genes are used that make a difference in the group shown.  The clustering in task3b was based on differentially expressed genes already found so it’s not surprising you find a heatmap with nice clusters.*
 
 
 Question 5c:
@@ -258,3 +258,92 @@ Question 5c:
 [**Finding differential expression: heatmap **](_static/practical_geneexpression_heatmap3.png)
 
 *Yes, the groups are clearly also separated based on the BCAT signature.*
+
+Question 6a Clinical relevance
+
+
+![Fig List.](_static/images/practical_geneexpression_megasampler.png "heatmap.")
+[**Finding differential expression: megasampler **](_static/practical_geneexpression_megasampler.png)
+
+Question 6b 
+
+
+*In case there are drug targets listed in the the list generated with the differentially expressed genes these are indicated in the description after the gene names in red. The up regulated genes are possible candidates for drugs. You can also use a genecategory of drugtargets in the Adjustable Settings panel as filter to select drugtargets exclusively.
+Find diff expression (genecategory drugtargets) > 608 genes*
+
+*tissue: normal < adenoma 283* 
+*tissue: normal >= adenoma 325*
+
+Question 7a
+
+
+
+![Fig List.](_static/images/practical_geneexpression_singlegenecorrelation.png "cor list.")
+
+[**Finding differential expression: List **](_static/practical_geneexpression_singlegenecorrelation.png)
+
+
+Question 7b
+
+![Fig List.](_static/images/practical_geneexpression_2geneview.png "2 gene view.")
+
+[**Finding differential expression: 2 gene view **](_static/practical_geneexpression_2geneview.png)
+
+*Investigate the correlation for two genes for each subgroup with the two gene view if there is still a significant correlation you can conclude that there is no bias.*
+
+Question 7c
+
+
+*2d shows the distribution of multiple colonic rnf43 sets a significant correlation, the Kia shows this to  a lesser extend*
+
+*Tumor Colon MS - Jorissen - 155 0.734*
+
+*Ref Common Reference - na - 50 0.758*
+
+*Tumor Colon - Watanabe - 84 0.764*
+
+*Tumor Colon - Sieber - 290 0.779*
+
+*Tumor Colon - Smith - 232 0.797*
+
+*Mixed Colon - Skrzypczak - 145 0.820*
+
+*Mixed Colon - Uddin - 59 0.831*
+
+*Mixed Colon - Matsuyama - 111 0.842*
+
+*Tumor Colon - EXPO - 315 0.842*
+
+*Tumor Colon Rectum - EXPO - 38 0.878*
+
+*Mixed Colon - Balazs - 53 0.928*
+
+*Mixed Colon - Marra - 64 0.949*
+
+
+![Fig List.](_static/images/practical_geneexpression_2dview.png "2d view.")
+
+[**Finding differential expression: 2 gene view **](_static/practical_geneexpression_2dview.png)
+
+
+**Second Part: Colon versus Normal tissue**
+
+Second series of tasks: MSI in Colon tumors
+The next section we will use another dataset. Select "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2" 
+This data set consists entirely of colon tumors (84 samples), 33 tumors are characterized by microsatellite instability (MSI). The remaining 51 tumors were microsatellite stable (MSS) and are characterized by chromosomal instability. 
+In MSI colon cancer, genes of the DNA mismatch repair system play an important role. Germline mutations in these genes are a major cause of the inherited form of colon cancer, namely HNPCC (hereditary nonpolyposis colon cancer). 
+In sporadic forms of colon cancer however, these genes are frequently inactivated. Inactivation is often achieved via hypermethylation, switching the gene off. Hypermethylation of genes in colon cancer is most common in colon tumors with a proximal location in the colon and much less in colon tumors with a distal location. 
+Sporadic MSI colon tumors usually have a proximal location. MSI tumors are also found distally, however it is not clear which genes are exactly involved 
+In this data set of 84 tumors, we will also look at differences in expression between proximal and distal colon tumors. We can analyze the complete set or look at sub selection (only MSI, MSS, etc).
+
+
+
+
+
+
+
+
+
+
+
+
