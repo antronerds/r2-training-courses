@@ -135,6 +135,39 @@ Classical pathway analyses, with sets of genes as members of a pathway, have bee
 Return to the main page and select “View a geneset (Heatmap)” again. Press ‘next’. Now from the gene selection dropdown list, select ‘geneset_broad_2012_oncogenic’ and press ‘next’. Again press next. Now, from the gene set(s), area select a complete beta catenin (BCAT) signature (Hold CTRL key to select a UP and a DN gene set combination). Press ‘next’ again to create a heatmap representation. Are the 2 groups also separated on the basis of the BCAT signature?
 
 
+**Question 6a: Clinical relevance**
+
+Genes that show a big difference in their expression between normal and adenoma tissue can be of clinical relevance. To see whether this is the case we can investigate their expression in multiple datasets
+
+Try to find out whether the three most differentially expressed genes identified in Question 1b (AXIN2, SORD and CDH3) show a similar expression pattern in other tumors. Do this by using Mega Sampler. (Chapter 10 of the tutorial book). In the main menu select in section I , Across datasets Use the preset: Practicum001.
+
+**Question 6b:**
+
+Are there drug targets listed in the list of differentially expressed genes? If so, in which of the 2 possible groups are they listed?
+
+
+**Question 7a:Investigate specific genes**
+
+
+In the previous exercises we have focused on the differences between two groups within the colon dataset. Another starting point of your analyses could be a gene of interest. We already encountered AXIN2 in our analysis.
+
+Try to analyze which genes show a correlated expression pattern with AXIN2 in our dataset. Which genes are in the top3? (See chapter 7 of the tutorial, “Find genes correlating with your genes of interest”)
+
+**Question 7b:**
+
+In the differential expression analysis between normal and adenoma samples, we also found AXIN2 to be differentially expressed. Therefore it is possible that the correlation analysis is biased (in other words, the correlation is solely caused by the 2 groups of samples).
+
+To investigate whether there is a bias, we can inspect the correlations for the top 3 genes of the correlation analysis in 2GeneView by clicking on the gene name. Tip: You can use 2GeneView to select for a subset of samples (so you can assess the significance of correlation in only the adenoma’s or only the normal samples).
+
+
+**Question 7c:**
+
+You can strengthen the argument of a correlation between 2 genes if such a relation can be identified in other cohorts as well. In R2, we can easily check this relation in all datasets that are available by using the ‘2D-distribution’ from the 2GeneView page.
+
+Examine the 2D distribution of the gene which is most promising. Is this correlation only found in our dataset or does this correlation also apply to other datasets?
+
+
+
 
 
 
