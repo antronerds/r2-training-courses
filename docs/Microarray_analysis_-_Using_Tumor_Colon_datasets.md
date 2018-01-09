@@ -329,12 +329,51 @@ Question 7c
 **Second Part: Colon versus Normal tissue**
 
 Second series of tasks: MSI in Colon tumors
-The next section we will use another dataset. Select "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2" 
+The next section we will use another dataset. Select **"Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"** 
 This data set consists entirely of colon tumors (84 samples), 33 tumors are characterized by microsatellite instability (MSI). The remaining 51 tumors were microsatellite stable (MSS) and are characterized by chromosomal instability. 
 In MSI colon cancer, genes of the DNA mismatch repair system play an important role. Germline mutations in these genes are a major cause of the inherited form of colon cancer, namely HNPCC (hereditary nonpolyposis colon cancer). 
 In sporadic forms of colon cancer however, these genes are frequently inactivated. Inactivation is often achieved via hypermethylation, switching the gene off. Hypermethylation of genes in colon cancer is most common in colon tumors with a proximal location in the colon and much less in colon tumors with a distal location. 
 Sporadic MSI colon tumors usually have a proximal location. MSI tumors are also found distally, however it is not clear which genes are exactly involved 
 In this data set of 84 tumors, we will also look at differences in expression between proximal and distal colon tumors. We can analyze the complete set or look at sub selection (only MSI, MSS, etc).
+
+
+**Question 8a: Overrepresentation on chromosome regions**
+
+
+This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors.
+
+Use the “Find Differential expressed genes between groups” module to generate a list of genes that is differentially expressed between MSI and MSS characterized tumors.
+
+**Question 8b:**
+
+
+Can you identify chromosomes where genes of this set are overrepresented? If so, is there a possible explanation? To see whether differentially expressed genes are more frequently expressed than expected on certain chromosomes, click on the 'Chromosome map', which can be found on the right hand side of the page with all the differentially expressed genes.
+
+**Question 8c:**
+
+If you want to examine genes differentially expressed on a particular chromosome more closely, we can re-analyze the dataset with gene category as a filter. Instead of all differentially expressed genes, now select the desired chromosome. Do this once (for example for chromosome 18).
+
+**Question 8d:**
+
+Are genes equally distributed for the up regulated and down regulated genes? Can you think of an explanation for this result?
+
+**Question 9a: Finding genetic causes**
+
+
+Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes. 
+
+How many of the DNA repair genes have a higher expression in MSI tumors, and how many have a higher expression in MSS tumors?
+
+
+
+
+
+
+
+answers
+
+A list of ~3320 is generated
+
 
 
 
