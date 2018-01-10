@@ -33,7 +33,7 @@ The normalization was performed according to the MAS5.0 algorithm and we are dea
 We will use R2 to generate a list of genes which are differentially expressed between the Normal subgroup and Adenoma subgroup in the Marra dataset. Chapter 6 of the R2 tutorial book (“Differential expression of Genes ..”) describes how you can use the “Find differential expression between groups” module in more detail. 
 Multiple testing corrections adjust p-values derived from multiple statistical tests to correct for false positives. In microarray data analysis, false positives are genes that are found to be statistically different between conditions, but are not in reality. (For more on multiple testing correction: see chapter 6 step 7 in the tutorial book)
 
-#### Questions
+##### Questions: part I
 
 
 Select the **Mixed Colon - Marra - 64 - MAS5.0 - u133p2** or click the button 
@@ -175,8 +175,8 @@ Examine the 2D distribution of the gene which is most promising. Is this correla
 
 
 
-Answers
---------
+##### Answers: Part I
+
 
 Question 1a:
 
@@ -329,9 +329,10 @@ Question 7c
 [**Finding differential expression: 2 gene view **](_static/practical_geneexpression_2dview.png)
 
 
-**Second Part: Colon versus Normal tissue**
+Second Part: MSI in Colon tumors.
+----------------------------
 
-Second series of tasks: MSI in Colon tumors.
+
 
 
 The next section we will use another dataset. Select **"Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"** 
@@ -341,6 +342,7 @@ In sporadic forms of colon cancer however, these genes are frequently inactivate
 Sporadic MSI colon tumors usually have a proximal location. MSI tumors are also found distally, however it is not clear which genes are exactly involved 
 In this data set of 84 tumors, we will also look at differences in expression between proximal and distal colon tumors. We can analyze the complete set or look at sub selection (only MSI, MSS, etc).
 
+##### Questions: Part II
 
 **Question 8a: Overrepresentation on chromosome regions**
 
@@ -483,7 +485,7 @@ In the graphics section , select at ColorMode, color by track and choose ‘tumo
 
 If there is still time left you can investigate other datasets with a MSI-MSS annotation such as Tumor Colon (UICC II) - Hummel - 53 - MAS5.0 - u133p2 for relations between tracks and clinical annotation. 
 
-**answers**
+##### Answers: part II
 
 Question 8a:
 
