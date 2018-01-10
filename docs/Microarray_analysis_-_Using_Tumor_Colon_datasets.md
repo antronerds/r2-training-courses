@@ -20,7 +20,7 @@ This resource is located online at http://r2-training-courses.readthedocs.io
 Introduction
 ------------
 
-**First Part: Colon versus Normal tissue**
+##### First Part: Colon versus Normal tissue
 
 In the first part we start by analyzing a dataset that has been used to identify the differences between normal tissue and colon adenomas. This dataset can be found in R2 as "Mixed Colon - Marra - 64 - MAS5.0 - u133p2".
 For more information on the background of this dataset click on the infobox icon ‘i’ next to the current selected dataset.
