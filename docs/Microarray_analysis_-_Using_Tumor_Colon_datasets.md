@@ -20,7 +20,10 @@ This resource is located online at http://r2-training-courses.readthedocs.io
 Introduction
 ------------
 
-##### First Part: Colon versus Normal tissue
+First Part: Colon versus Normal tissue
+------------
+
+
 
 In the first part we start by analyzing a dataset that has been used to identify the differences between normal tissue and colon adenomas. This dataset can be found in R2 as "Mixed Colon - Marra - 64 - MAS5.0 - u133p2".
 For more information on the background of this dataset click on the infobox icon ‘i’ next to the current selected dataset.
@@ -30,8 +33,8 @@ The normalization was performed according to the MAS5.0 algorithm and we are dea
 We will use R2 to generate a list of genes which are differentially expressed between the Normal subgroup and Adenoma subgroup in the Marra dataset. Chapter 6 of the R2 tutorial book (“Differential expression of Genes ..”) describes how you can use the “Find differential expression between groups” module in more detail. 
 Multiple testing corrections adjust p-values derived from multiple statistical tests to correct for false positives. In microarray data analysis, false positives are genes that are found to be statistically different between conditions, but are not in reality. (For more on multiple testing correction: see chapter 6 step 7 in the tutorial book)
 
-Questions
-------------
+#### Questions
+
 
 Select the **Mixed Colon - Marra - 64 - MAS5.0 - u133p2** or click the button 
 
