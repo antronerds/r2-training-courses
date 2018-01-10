@@ -33,7 +33,7 @@ The normalization was performed according to the MAS5.0 algorithm and we are dea
 We will use R2 to generate a list of genes which are differentially expressed between the Normal subgroup and Adenoma subgroup in the Marra dataset. Chapter 6 of the R2 tutorial book (“Differential expression of Genes ..”) describes how you can use the “Find differential expression between groups” module in more detail. 
 Multiple testing corrections adjust p-values derived from multiple statistical tests to correct for false positives. In microarray data analysis, false positives are genes that are found to be statistically different between conditions, but are not in reality. (For more on multiple testing correction: see chapter 6 step 7 in the tutorial book)
 
-##### Questions: part I
+##### Questions: Part I
 
 
 Select the **Mixed Colon - Marra - 64 - MAS5.0 - u133p2** or click the button 
@@ -485,7 +485,7 @@ In the graphics section , select at ColorMode, color by track and choose ‘tumo
 
 If there is still time left you can investigate other datasets with a MSI-MSS annotation such as Tumor Colon (UICC II) - Hummel - 53 - MAS5.0 - u133p2 for relations between tracks and clinical annotation. 
 
-##### Answers: part II
+##### Answers: Part II
 
 Question 8a:
 
