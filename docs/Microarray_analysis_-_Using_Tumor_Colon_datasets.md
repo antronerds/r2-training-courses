@@ -578,7 +578,7 @@ Question 10c:
 
 ![Fig List.](_static/images/practical_geneexpression_genecatsveen2.png "survival.")
 
-[**Finding differential expression: Survival **](_static/practical_geneexpression_genecatsveen.png)
+[**Finding differential expression: Survival**](_static/practical_geneexpression_genecatsveen.png)
 
 *By just ‘eyeballing’ suggest there is something going on. Most of the “No” samples of the disease free survival status track correspond with the msi-h status. 
 This is also in line with the diffuse pattern within the MSI subgroup when looking at the MLH1 gene expression as shown in the previous task (MLH1 expression of the Wanatabe dataset.)*
