@@ -20,7 +20,10 @@ This resource is located online at http://r2-training-courses.readthedocs.io
 Introduction
 ------------
 
-**First Part: Colon versus Normal tissue**
+First Part: Colon versus Normal tissue
+------------
+
+
 
 In the first part we start by analyzing a dataset that has been used to identify the differences between normal tissue and colon adenomas. This dataset can be found in R2 as "Mixed Colon - Marra - 64 - MAS5.0 - u133p2".
 For more information on the background of this dataset click on the infobox icon ‘i’ next to the current selected dataset.
@@ -30,8 +33,8 @@ The normalization was performed according to the MAS5.0 algorithm and we are dea
 We will use R2 to generate a list of genes which are differentially expressed between the Normal subgroup and Adenoma subgroup in the Marra dataset. Chapter 6 of the R2 tutorial book (“Differential expression of Genes ..”) describes how you can use the “Find differential expression between groups” module in more detail. 
 Multiple testing corrections adjust p-values derived from multiple statistical tests to correct for false positives. In microarray data analysis, false positives are genes that are found to be statistically different between conditions, but are not in reality. (For more on multiple testing correction: see chapter 6 step 7 in the tutorial book)
 
-Questions
-------------
+##### Questions: Part I
+
 
 Select the **Mixed Colon - Marra - 64 - MAS5.0 - u133p2** or click the button 
 
@@ -172,8 +175,8 @@ Examine the 2D distribution of the gene which is most promising. Is this correla
 
 
 
-Answers
---------
+##### Answers: Part I
+
 
 Question 1a:
 
@@ -326,9 +329,12 @@ Question 7c
 [**Finding differential expression: 2 gene view **](_static/practical_geneexpression_2dview.png)
 
 
-**Second Part: Colon versus Normal tissue**
+Second Part: MSI in Colon tumors.
+----------------------------
 
-Second series of tasks: MSI in Colon tumors
+
+
+
 The next section we will use another dataset. Select **"Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"** 
 This data set consists entirely of colon tumors (84 samples), 33 tumors are characterized by microsatellite instability (MSI). The remaining 51 tumors were microsatellite stable (MSS) and are characterized by chromosomal instability. 
 In MSI colon cancer, genes of the DNA mismatch repair system play an important role. Germline mutations in these genes are a major cause of the inherited form of colon cancer, namely HNPCC (hereditary nonpolyposis colon cancer). 
@@ -336,6 +342,7 @@ In sporadic forms of colon cancer however, these genes are frequently inactivate
 Sporadic MSI colon tumors usually have a proximal location. MSI tumors are also found distally, however it is not clear which genes are exactly involved 
 In this data set of 84 tumors, we will also look at differences in expression between proximal and distal colon tumors. We can analyze the complete set or look at sub selection (only MSI, MSS, etc).
 
+##### Questions: Part II
 
 **Question 8a: Overrepresentation on chromosome regions**
 
@@ -364,15 +371,259 @@ Because we know that DNA repair genes play an important role in microsatellite (
 
 How many of the DNA repair genes have a higher expression in MSI tumors, and how many have a higher expression in MSS tumors?
 
+**Question 9b:**
+
+One of the genes differentially expressed in the generated is MLH1 which is also lised in the article of Watanabe et al. Look at the expression pattern of MLH1 in colon tumors, both sets (MSI vs. MSS). 
+
+What do you notice? 
+
+**Question 9c:**
+
+Could it be that the expression of MLH1 is different in certain subsets of the MSI and / or MSS tumors compared to other tumors? Which subset (s) is / are they? 
+
+**Question 9d:**
+
+Do you have a possible explanation for these differences? 
+
+**Question 9e:**
+
+Which gene correlates strongly with the expression of MLH1?
+
+**Question 9f:**
+
+Click on the best correlating gene to generate a correlation plot. What is known about this gene? This can be investigated by using the Pubsniffer tool, a convenient tool for structured Pubmed searches. Click on the gene names in the left panel to use it.
+
+**Question 9g:**
+
+On which chromosomes are MLH1 and this gene located? Use the R2 Tview link and zoom out if necessary.
+
+**Question 9h:**
+
+Do you note anything remarkable?
+
+**Question 9i:**
+
+ Can you explain why the expression of these two genes are so closely correlated?
+ 
+ **Question 9j:**
+ 
+ Amongst the genes that correlate with the expression of MLH1, there is a striking amount of genes originating from a single chromosome.
+ 
+ Which chromosome is it?
+ 
+**Question 9k:**
+  
+ Do you have a possible explanation for this event?
+ 
+ 
+**Question 9l:**
+ 
+ Search for genes that correlate with the MLH1 expression, but only in the MSI tumors. In the selection Criteria panel use the sample filter to select for the right subgroup. Do click the red  **<span style="color:red">confirm </span>**link!  Can you find other genes which are correlated with MLH1? Such as? 
+
+
+**Question 9m:**
+
+By which Gene Ontology process are these genes are primarily characterized? (Select from the menu to the right)
+
+**Tips for to do:**
+
+In Question 8a you generated a list of differential expressed genes. It is interesting to check or validate your genelist with other datasets present in R2. The set used in this section also has survival annotation.
+
+
+**Question 10a Relating tracks**
+
+
+*Note: To store genecategories and/or tracks you have to be logged in).  For this part creating a user account and/or login if you haven't done so is neccessary*
+
+Generate a list of differentially expressed genes between MSI-MSS annotated tumors. Select again the ‘Tumor Colon - Watanabe - 84 - MAS5.0 - u133p2’ dataset. Select “Find Differential expression between groups. Adapt the following settings in the “selection criteria” panel, set test p-value to 0.001 and Correct for Multiple testing to Bonferroni.
+
+
+In the right panel you can store your result as a genecategory. Give the list a meaningful name and store you result in the personal track section (Note: The 24 hrs option deletes your stored results automatically after 24 hrs).
+
+
+**Question 10b**
+
+We’re now going to use this gene category as a set to explore other datasets. 
+Select ‘Tumor Colon (Core-Transcript) - Sveen - 333 - rma_sketch - huex10t’ in the main menu (take care: don’t select the Tumor Colon (Core-Exon) - Sveen - 333 - rma_sketch - huex10p version).
+
+At the main page select at 3: ‘Type of analysis’-> ‘View a geneset (Heatmap)’ and click next. In the ‘adjustable settings’ panel you can select a subset of the patients with the ‘sample filter’. Select the msi-status from the droplist, and subsequently select mss, msi-h and msi-l. Do not forget to click the red **<span style="color:red">confirm </span>** link. In the Genecategory section select the genecategory you just generated in the personal track section. This can be done by first selecting ‘My GeneCategories’, and click next, click next and select the category just created.
+
+The heatmap clearly shows a pattern, suggesting a different gene expression pattern between the MSI and MSS group. Does the disease free survival track correspond with the gene expression pattern?
+
+
+**Question 10c**
+
+ 
+Use the “Find differential Expressed genes between Groups” module to generate a list of differentially expressed genes between the msi-l and msi-h subgroups.  Select the Bonferroni method for the multiple testing correction and store the genelist as a gene category again giving it a meaningful name. 
+
+In your browser, go back to the tab with the list of genes and click on Heatmap (z-score) button. Do you think that there is a relation between the disease free survival event track and the MSI status?
+
+**Question 10d**
+
+The second generated heatmap suggests that there is a relation. However this is not statistically proven. Combining two R2 modules allows you to calculate the significance of the relation between subgroups in your dataset.
+
+We can use our list of differentially expressed genes as a signature in R2, and separate the patient cohort on the basis of this gene-category. For this, we can make use of the k-means function in the platform. (For more on the K-means clustering algorithm see chapter 11 in the tutorials book on that subject)
+
+In the Main menu, select ‘Type of analysis’ -> ‘K-means’, and click next, in the Adjustable settings panel select the msi diagnosed tumors only at sample filter , click confirm !! , select at Gene category section the geneset you generated and stored at task 10a (Wanatabe msi-mss..). Leave all the default settings and click next.  
+
+R2 has clustered your data making use of the K-means algorithm into two groups based on the expression of the genes of the selected Gene-category. On the top of the screen click the store as track button, this allows you to save the two groups as a track for later use. Give the track a meaning full name and click ‘buildset’.
+
+Repeat this procedure to make another track based on the Gene category created in Task 10b (Sveen , msi-l and mssi-h only).
+
+Relations between the tracks established with the K-means module can be statistically compared using the fisher exact test. An example is the relation between the tracks created based on the gene signatures and ‘the disease free survival track’. This is explained in more detail in chapter 5 of the tutorial ‘Annotation Analysis’ 
+
+**Question 10e**
+
+In the main menu select ‘Relate two tracks’ and click next. In the next screen select the ‘Disease free survival track’ for the X-track and the K-means-Wanatabe you generated as the Y-track. In the sample filter track select the msi tumors only (don’t forget to click ‘confirm’ ) and click next. Save the picture or right click with the right mouse button on ’go to main’ and repeat the ‘relate two tracks’ analyses for the survival and the Kmeans-msi-only track. Compare the two fisher-exact test results. What do you conclude?
+
+**Question 10f**
+
+In the graphics section , select at ColorMode, color by track and choose ‘tumor_stage(cat)’ at track for color, click adjust settings. Now the individual sample are colored by their tumor-stage. Does this result hint toward a relation between tumor stage and survival ?.
+
+**Question 10g**
+
+
+If there is still time left you can investigate other datasets with a MSI-MSS annotation such as Tumor Colon (UICC II) - Hummel - 53 - MAS5.0 - u133p2 for relations between tracks and clinical annotation. 
+
+##### Answers: Part II
+
+Question 8a:
+
+*A list of ~3320 is generated*
+
+
+Question 8b:
+
+![Fig List.](_static/images/practical_geneexpression_chromtable.png "chrom table.")
+
+[**Finding differential expression: Chrom tabl **](_static/practical_geneexpression_chromtable.png)
+
+*Chromosome 18 is frequently found , possible associated with loss or gain*
+
+Question 8d:
+
+*ms_status: mss < msi ~88* 
+*ms_status: mss >= msi ~12*
+
+*88 are higher expressed in MSI tumors. This is probably because MSS tumors characterized by chromosome instability frequently chrom 18 losses.*
+
+
+Question 9a:
+
+*52 genes; 31 : 20*
+
+Question 9b:
+
+![Fig List.](_static/images/practical_geneexpression_ms_status.png "ms status.")
+
+[**Finding differential expression: Chrom tabl **](_static/practical_geneexpression_ms_status.png)
+
+*MSI tumors give a very heterogeneous picture. This could be an indication that with in the MSI tumor group also an subgroup could be identified. This also becomes clear when analyzing other Colon datasets  used further in the practicum.*
+
+Question 9c:
+
+*MLH1 is reduced in proximal tumors*
+
+
+Question 9d:
+
+*MLH1 is frequently mutated in inherited forms of colon cancers which are associated with MSI. In that case, the expression of MLH1 does not necessarily change. The gene is only mutated and thereby inactive. In sporadic forms of colon cancer with MSI, MLH1 is very frequently inactivated by hypermethylation. This greatly reduces the expression. Hypermethylation of genes is especially common in colon tumors with proximal location. Indeed we see in that subset, the majority of tumors with a greatly reduced MLH1 expression.*
+
+Question 9e:
+
+*EPM2AIP1*
+
+Question 9g:
+
+*Chromosoom 3*
+
+Question 9h:
+
+*MLH1 and EPMAIP1 lie close together on chromosome 3*
+
+Question 9i:
+
+*Hypermethylation of the MLH1 promoter region may also affect the expression of EPM2AIP1 resulting in a strong correlation.*
+
+Question 9j:
+
+*Chromosome 18*
+
+Question 9k:
+
+*MLH1 expression was higher in MSS tumors compared to MSI tumors. MSS tumors frequently have chromosomal instability such as loss of chromosoom 18. Thus many genes on chrom 18 show a lower expression when MLH1 expression is high.*
+
+Question 9l:
+
+*Yes, BNIP3, a pro-apoptotic gene, strongly down-regulated in tumors with low MLH1expression.* 
+
+
+Question 9m:
+
+*Mini ontology on the webpage (apoptosis), gene ontology search Death*
+
+
+Question 10b: Relating tracks
+
+![Fig List.](_static/images/practical_geneexpression_genecatsveen.png "ms status.")
+
+[**Finding differential expression: Heatmap**](_static/practical_geneexpression_genecatsveen.png)
+
+
+*No, taking a close look at the survival track at the top of the heatmap you can already see that survival status does not correlate with the expression pattern of the heatmap.
+In the publication where the Sveen dataset was published, high and low risk groups within the MSI group where identified. However, this is not clear in the heatmap that we just created.*
+
+Question 10c:
+
+
+![Fig List.](_static/images/practical_geneexpression_genecatsveen2.png "survival.")
+
+[**Finding differential expression: Survival**](_static/practical_geneexpression_genecatsveen.png)
+
+*By just ‘eyeballing’ suggest there is something going on. Most of the “No” samples of the disease free survival status track correspond with the msi-h status. 
+This is also in line with the diffuse pattern within the MSI subgroup when looking at the MLH1 gene expression as shown in the previous task (MLH1 expression of the Wanatabe dataset.)*
+
+Question 10d:
+
+
+![Fig List.](_static/images/practical_geneexpression_kmeans.png "k-means.")
+
+
+[**Finding differential expression: K-mneans **](_static/practical_geneexpression_kmeans.png)
+
+
+*K-means clustering with the “store as track button”*
+
+Question 10e:
+
+![Fig List.](_static/images/practical_geneexpression_fisher1.png "relate 2 tracks.")
+
+
+[**Finding differential expression: relate 2 tracks1 **](_static/practical_geneexpression_fisher1.png)
+
+*In the first picture a fisher exact test is performed with the two tracks.  There is no significant correlation between the survival status track and the track based derived from the K-means separation with mss-msi differentially expressed genes.*
+
+![Fig List.](_static/images/practical_geneexpression_fisher2.png "relate 2 tracks.")
+
+
+[**Finding differential expression: relate 2 tracks1 **](_static/practical_geneexpression_fisher2.png)
+
+*The second picture shows a significant correlation between he survival status tracks and the track derived from msi-l and msi-h differentially expressed genes. This illustrates that there is a biological relevance between the survival status and the msi subgroups.
+Note: The relate tracks module also allows you to flag the individual samples with clinical annotation in this case with the stage (red and green).*
+
+
+Question 10f:
+
+*No*
 
 
 
 
 
 
-answers
 
-A list of ~3320 is generated
+
+
 
 
 
