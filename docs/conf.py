@@ -6,7 +6,7 @@ templates_path = ['_templates']
 master_doc = 'index'
 
 project = u'R2 training courses'
-copyright = u'2017, Jan Koster'
+copyright = u'2018, R2 support team'
 author = u'R2 support team'
 
 version = datetime.date.today().strftime('%Y-%m-%d')
