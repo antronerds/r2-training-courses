@@ -41,7 +41,7 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 
 ---------
   
-Historically only several genomic aberrations are known:
+Historically only several genomic aberrations were known:
 
 <table>
 <tr><th>  Gene  </th><th>Type        </th><th>Reference</th></tr>
@@ -56,11 +56,6 @@ Historically only several genomic aberrations are known:
 <tr><td>LIN28B</td><td>1%</td><td>(Molenaar et al., 2012)</td></tr>
 </table>
 
-
-This can of course be seen in the 
-
-
-TODO: create click through link to the MYCN amplicon  
 
 To extend these data the Oncogenomics department of the AMC set out to sequence 86 neuroblastoma tumors from this set.
 
@@ -89,8 +84,10 @@ A comprehensive list of the mutations can be accessed through R2.
 ---------
 
   
-  * There are no mutations recurring more than a few times. Go to one of them, (e.g. TIAM or ALK) and select the **view** link (note: this is separate from the detail link). In a new tab this mutation is shown in the genomebrowser. Explore the view. 
+  * There are no mutations recurring more than a few times. Go to one of them, (e.g. TIAM or ALK) and select the **view** link (note: this is separate from the detail link). In a new tab this mutation is shown in the genomebrowser. Explore the view.
+  * TODO: explain the view for NIH epigenome roadmap
   * Now go back using the back button in your browser, select the **detail** link. R2 now shows additional information on the expression of the gene and its location on the genome. 
+  * TODO ask a question in each of the views of the detail link
   
 
 Further use of WGS data; structural variants
@@ -136,7 +133,7 @@ WGS enables further analysis; especially the paired end technique that enables t
 
 Chromothripsis
 --------------
-While investigating the WGS data an interesting phenomenon was observed. In some tumor samples parts of the genome appered to be riddled with structural variants, resulting in a shredded chromosomal structure.
+While investigating the WGS data an interesting phenomenon was observed. In some tumor samples parts of the genome appeared to be riddled with structural variants, resulting in a shredded chromosomal structure.
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you spot an example of chromothripsis from the circos overview?**
@@ -147,16 +144,18 @@ While investigating the WGS data an interesting phenomenon was observed. In some
 ---------
 
 
-
 Locations of structural variants, hotspots?
 -------------------------------------------
-TODO: how to locate TERT?
+TODO: how to locate TERT, an option is selection through the cohort overview although there are no links in there....
+
 
 Final remarks / future directions
 ---------------------------------
-In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across childhood cancers. The data is accessible in R2 also as a Datascope. Click the button below to access this.
+In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize your genomics data. Click the button below to access this.
 
-<form name="itcc_68_cell_lines" action="http://hgserver1.amc.nl/cgi-bin/r2/main.cgi?&dscope=DKFZ_PED&option=about_dscope" enctype="multipart/form-data" target="R2" method="post">
+<form name="dkfz-scope" action="http://hgserver1.amc.nl/cgi-bin/r2/main.cgi?" enctype="multipart/form-data" target="R2" method="post">  
+  <input type="hidden" name="option" value="about_dscope">
+  <input type="hidden" name="dscope" value="DKFZ_PED">
   <button type="submit" >Go to R2</button>
 </form>  
 
