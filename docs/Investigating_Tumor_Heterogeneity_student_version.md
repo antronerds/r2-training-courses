@@ -5,8 +5,6 @@ Investigating Intra-tumor Heterogeneity
 
 *Analyse tumor heterogeneity in Neuroblastoma using the R2 data analysis platform*
 
-In this tutorial we'll introduce R2, the web based genomics analysis and visualization application. Throughout the tutorial an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa new insights can be derived.
-
 This resource is located online at http://r2-training-courses.readthedocs.io
 
 
@@ -19,7 +17,7 @@ Cancer is a very complex disease. Much more complicated than originally anticipa
 	
   [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
-Although there has been extensive research into similar mutation mechanisms in Neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you to the cutting edge of research into this often deadly childhood tumor. Recent research suggests that Neuroblastoma consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of Neuroblastoma. Children developing a relapse almost always die. 
+Although there has been extensive research into similar mutation mechanisms in Neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you to the cutting edge of research into this often deadly childhood tumor. From the lectures you should have learned already that this tumor consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of Neuroblastoma. Children developing a relapse almost always die. 
 Fortunately new technologies have become available to molecular biology. These enable us to study not only mutations and RNA expression of genes but also study the epigenetic modifications of the DNA-associated histones. And in addition genes can now be manipulated in cell lines and living tissues. 
 Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2.  
 R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from Neuroblastoma tumors and cell lines. 
@@ -40,6 +38,9 @@ For a start we'll investigate established childhood tumor cell lines, including 
 
 *Analysis used*  
 * t-SNE: t-distributed stochastic neighbor embedding statistics
+
+*References*
+* Chapter 2.2 & 2.3 Weinberg
 
 ##### A first impression of your data; expression of key genes
 
@@ -230,6 +231,8 @@ We have identified two different types of cells that occur within the same patie
 *Analysis used*  
 * Overrepresentation calculation
 
+*References*   
+
 * Go to the main page of R2 by clicking the button below
 
 <form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
@@ -283,20 +286,6 @@ We have identified two different types of cells that occur within the same patie
 <br>
 <br>
 
----------
-
-* If you have your own set of genes of interest this can be introduced as geneset into R2 as well. From the left menu go to **My Settings > Categories > Build Category** 
-* Enter your genes in the input box (or load your textfile) and give your category a descriptive name. By default R2 stores the category temporarily, if you register yourself you can store categories for future use. For now we'll leave it as is and click **Next**
-* R2 replies that the set has been added. You can now use this set in a similar way as the the sets in the previous steps. 
-
----------
-  ![](_static/images/R2d2_logo.png)**Repeat the previous analysis but now select _My 24h genecategories_. Is your genecategory overrepresented in the differentially expressed genes?**
-
-<br>
-<br>
-
----------
-
 
 Identifying groups: using signatures to classify other datasets
 ------------------------------------------------------------------
@@ -311,6 +300,9 @@ We now have a signature that distinguishes between the two types of cells. We al
 
 *Analysis used*
 * Heatmap analysis
+
+*References*
+* -
  
 * Go to the main portal of R2 by clicking the button below; the dataset described above is automatically selected
 
@@ -380,6 +372,7 @@ The expression patterns of these specific signatures can be used to compare cell
 *Analysis used*
 * Signature scores 
 
+*References*
 
 * Go back to the main portal of R2 by clicking the button below.
 
@@ -521,6 +514,8 @@ Apparently this TF is capable of shifting cells from state to the other. How can
 * ChIP–seq analysis
 
 
+*References*
+* Chapter 1.8 Weinberg
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you explain what the goal of this experiment was?**

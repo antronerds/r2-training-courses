@@ -14,8 +14,6 @@ Copyright (c) 2006-2018 Jan Koster
    
    Investigating_Tumor_Heterogeneity
    Finding_structural_variants
-   Transcription_Factors_and_Expression
-   Microarray_analysis_-_Using_Tumor_Colon_datasets
    
 ..   
    
