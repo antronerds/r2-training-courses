@@ -5,7 +5,6 @@ Investigating Intra-tumor Heterogeneity
 
 *Analyse tumor heterogeneity in Neuroblastoma using the R2 data analysis platform*
 
-In this tutorial we'll introduce R2, the web based genomics analysis and visualization application. Throughout the tutorial an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa new insights can be derived.
 
 This resource is located online at http://r2-training-courses.readthedocs.io
 
@@ -13,19 +12,7 @@ This resource is located online at http://r2-training-courses.readthedocs.io
 Introduction
 ------------
 
-Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. During the lectures you’ve been shown how this works in colorectal cancer, where a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
-
-  ![Figure 1: Mutation paths during cancer progression.](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression.")
-	
-  [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
-
-Although there has been extensive research into similar mutation mechanisms in Neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you to the cutting edge of research into this often deadly childhood tumor. Recent research suggests that Neuroblastoma consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of Neuroblastoma. Children developing a relapse almost always die. 
-Fortunately new technologies have become available to molecular biology. These enable us to study not only mutations and RNA expression of genes but also study the epigenetic modifications of the DNA-associated histones. And in addition genes can now be manipulated in cell lines and living tissues. 
-Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2.  
-R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from Neuroblastoma tumors and cell lines. 
-Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which is neural crest derived. During embryogenesis, cells delaminate from the neural crest, migrate ventrally and differentiate into adrenaline- or noradrenaline-producing cells. Neuroblastomas typically express enzymes for the adrenaline-synthesis route. High-stage neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease.
-Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of Neuroblastoma tumors. From four patients we obtained tumor biopsies that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines  
-
+In this section we'll use 
 
 Tumors and origins: clustering data
 ---------------------------------------

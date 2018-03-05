@@ -9,11 +9,12 @@ Copyright (c) 2006-2018 Jan Koster
 .. rubric:: Table of Contents
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :numbered: 3
    
    Investigating_Tumor_Heterogeneity
    Finding_structural_variants
+   graduatecourse/index
    
 ..   
    
