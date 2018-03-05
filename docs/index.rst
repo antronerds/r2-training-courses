@@ -13,10 +13,7 @@ Copyright (c) 2006-2018 Jan Koster
    :numbered: 3
    
    Finding_structural_variants
-<<<<<<< HEAD
-=======
    Investigating_Tumor_Heterogeneity
->>>>>>> branch 'master' of https://github.com/antronerds/r2-training-courses.git
    graduatecourse/index
    
 ..   
