@@ -3,7 +3,7 @@
 Finding structural variants
 ===========================
 
-*omatic mutations. using the full power of WGS data relevant structural variants can be traced also and linked to potential causes of disease*
+*Not every cancer has determining somatic mutations. Using the full power of WGS data relevant structural variants can be traced also and linked to potential causes of disease*
 
 In this tutorial we'll introduce R2, the web based genomics analysis and visualization application. Throughout the tutorial an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa new insights can be derived. Throughout this course we'll focus on data of the childhood tumor Neuroblastoma.
 
