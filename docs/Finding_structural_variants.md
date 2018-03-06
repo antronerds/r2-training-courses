@@ -3,11 +3,11 @@
 Finding structural variants
 ===========================
 
-*Somatic mutations are not always determining, using the full power of WGS data structural variants can be found also*
+*omatic mutations. using the full power of WGS data relevant structural variants can be traced also and linked to potential causes of disease*
 
 In this tutorial we'll introduce R2, the web based genomics analysis and visualization application. Throughout the tutorial an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa new insights can be derived. Throughout this course we'll focus on data of the childhood tumor Neuroblastoma.
 
-In this tutorial we hope to show how R2 can be used to visualize and analyze your WGS data. As an example datasets from childhood tumors will be used. 
+We hope to show how R2 can be used to visualize and analyze your WGS data. As an example datasets from childhood tumors will be used. 
 
 This resource is located online at http://r2-training-courses.readthedocs.io
 
@@ -75,7 +75,8 @@ To extend these data the Oncogenomics department of the AMC set out to sequence 
 Somatic mutations in Neuroblastoma
 ----------------------------------
 
-For this the samples where sent The R2 development team has processed the WGS data, through several filtering steps the somatic mutations were determined with respect to the reference genome.
+For this the samples where sent to the Complete Genomics sequencing facility, now taken over by BGI. They provide a sequence as a service model.The R2 development team has processed the WGS data, through several filtering steps the somatic mutations were determined with respect to the reference genome.
+
 
   ![Figure 1: Comparing with the reference genome.](_static/images/structural_variants_reference_genome.png "Figure 1: Comparing with the reference genome.")
 	
@@ -97,11 +98,51 @@ A comprehensive list of the mutations can be accessed through R2.
 ---------
 
   
-  * There are no mutations recurring more than a few times. Go to one of them, (e.g. TIAM or ALK) and select the **view** link (note: this is separate from the detail link). In a new tab this mutation is shown in the genomebrowser. Explore the view.
-  * TODO: explain the view for NIH epigenome roadmap
-  * Now go back using the back button in your browser, select the **detail** link. R2 now shows additional information on the expression of the gene and its location on the genome. 
-  * TODO ask a question in each of the views of the detail link
-  
+* There are no mutations recurring more than a few times. Go to the ALK gene and select the **view** link (note: this is separate from the detail link). In a new tab this mutation is shown in the genomebrowser zoomed in on the genome to the base level. All samples are drawn beneath this stretch. Annotation of the cosmic mutation database is provided
+
+---------
+  ![](_static/images/R2d2_logo.png)**What type of aberrations does the ALK gene suffer?**
+
+<br>
+<br>
+
+---------
+
+* The buttons on top of the page can be used to zoom in and out. Zoom out 3 times with a factor 10. 
+
+---------
+  ![](_static/images/R2d2_logo.png)**Can you explain what changes occur? How many bases does the ALK gene span?**
+
+<br>
+<br>
+
+---------
+
+* The genomebrowser has a tremendous number of parameters that can be set. Scroll down to the bottom of the page. A form with quite some parameter fields appears. These provide additional annotations and settings for the algorithms used. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin data. This annotation however, is only provided on another Human Genome build. In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
+* An unannotated version of the reference genome is shown. Find and switch the Refseq(R2) annotation on. Click **redraw**
+
+---------
+  ![](_static/images/R2d2_logo.png)**What has happened to the ALK gene?**
+
+<br>
+<br>
+
+---------
+
+* Locate the ALK gene (hint type in the gene name in the left upper **Find gene** field) 
+* For clarity you can now switch off the cosmic annotation (in the Genome Variation box) and the Calldif Somatic Genome annotation (in the X:Complete Genomics => Variants box). Set the NIH Epigenome Roadmap annotation to all (int the TranscriptView annotation box)
+* Locate your gene of interest and investigate it for existing mutations in the cosmic database.
+* Now go back to the AMC datascope, select the Somatic mutations tile and now click the  **detail** link. R2 now shows additional information on the expression of the gene and its location on the genome. 
+
+---------
+  ![](_static/images/R2d2_logo.png)**What is remark?**
+
+<br>
+<br>
+
+---------
+ 
+*   
 
 Further use of WGS data; structural variants
 --------------------------------------------
@@ -148,6 +189,8 @@ Chromothripsis
 --------------
 While investigating the WGS data an interesting phenomenon was observed. In some tumor samples parts of the genome appeared to be riddled with structural variants, resulting in a shredded chromosomal structure.
 
+* Go to the overview page with circos plots.
+
 ---------
   ![](_static/images/R2d2_logo.png)**Can you spot an example of chromothripsis from the circos overview?**
 
@@ -156,15 +199,21 @@ While investigating the WGS data an interesting phenomenon was observed. In some
 
 ---------
 
+To see how chromothripsis relates to clinical data we can investigate survival data in R2. 
+
+* From  the left menu select Kaplan Meier > By annotated parameter
+* A selection menu appears, select the track and 
+* 
+
 
 Locations of structural variants, hotspots?
 -------------------------------------------
-TODO: how to locate TERT, an option is selection through the cohort overview although there are no links in there....
+Chromothripsis can be seen as an extreme case of concentration of structural variants in one sample. The question arises whether there other hotspots of structural variation on the genome that are found in multiple samples. These might point to functional interactions. 
 
 
 Final remarks / future directions
 ---------------------------------
-In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize your genomics data. Click the button below to access this.
+In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize your genomics data. Click the button below to explore this wealth of data.
 
 <form name="dkfz-scope" action="http://hgserver1.amc.nl/cgi-bin/r2/main.cgi?" enctype="multipart/form-data" target="R2" method="post">  
   <input type="hidden" name="option" value="about_dscope">

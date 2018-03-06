@@ -11,7 +11,7 @@ This resource is located online at http://r2-training-courses.readthedocs.io
 
 Introduction
 ------------
-In this section we'll integrate RNA expression data with 
+In this section we'll integrate RNA expression data with sequence data, specifically ChIP seq data, to further unravel Neuroblastoma data. 
 Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which is neural crest derived. During embryogenesis, cells delaminate from the neural crest, migrate ventrally and differentiate into adrenaline- or noradrenaline-producing cells. Neuroblastomas typically express enzymes for the adrenaline-synthesis route. High-stage neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease.
 
 Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of Neuroblastoma tumors. From four patients we obtained tumor biopsies that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines  
