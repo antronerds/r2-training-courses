@@ -135,14 +135,13 @@ A comprehensive list of the mutations can be accessed through R2.
 * Now go back to the AMC datascope, select the Somatic mutations tile and now click the  **detail** link. R2 now shows additional information on the expression of the gene and its location on the genome. 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What is remark?**
+  ![](_static/images/R2d2_logo.png)**What is remarkable about the expression of the ALK gene?**
 
 <br>
 <br>
 
 ---------
  
-*   
 
 Further use of WGS data; structural variants
 --------------------------------------------
