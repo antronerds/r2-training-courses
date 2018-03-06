@@ -9,7 +9,7 @@ Copyright (c) 2006-2018 Jan Koster
 .. rubric:: Table of Contents
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    :numbered: 3
    
    Finding_structural_variants
