@@ -12,8 +12,8 @@ Copyright (c) 2006-2018 Jan Koster
    :maxdepth: 2
    :numbered: 3
    
-   graduatecourse/index
    Finding_structural_variants
    Investigating_Tumor_Heterogeneity
+   graduatecourse/Investigating_Tumor_Heterogeneity_student
    
    

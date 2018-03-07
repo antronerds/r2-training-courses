@@ -1,6 +1,6 @@
 <a id="finding_structural_variants"> </a>
 
-Finding structural variants
+Investigating structural variants
 ===========================
 
 *Not every cancer has determining somatic mutations. Using the full power of WGS data relevant structural variants can be traced also and linked to potential causes of disease*
@@ -32,15 +32,6 @@ Exploring the dataset
 
 The oncogenomics department of the AMC has gathered a richly annotated set of neuroblastoma tumors. To easily explore this the R2 development team has devised the concept of Datascopes; a convenient view on the data with some pre-built analyses readily available.
 
-*Data used:*  
-* Tumor Neuroblastoma (combat) - Versteeg - 122 - MAS5.0(bc) - u133p2
-
-*Techniques used:*   
-* -
-
-*Analysis used*  
-* -
-
  
 * In the left menu click on **Change Data Scope** > **Neuroblastoma (AMC)**
 * An additional choice step appears; click **Goto Neuroblastoma (AMC) home**
@@ -54,7 +45,7 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 
 ---------
   
-Historically only several genomic aberrations were known:
+Until recently only several genomic aberrations were known:
 
 <table>
 <tr><th>  Gene  </th><th>Type        </th><th>Reference</th></tr>
@@ -130,8 +121,22 @@ A comprehensive list of the mutations can be accessed through R2.
 ---------
 
 * Locate the ALK gene (hint type in the gene name in the left upper **Find gene** field) 
-* For clarity you can now switch off the cosmic annotation (in the Genome Variation box) and the Calldif Somatic Genome annotation (in the X:Complete Genomics => Variants box). Set the NIH Epigenome Roadmap annotation to all (int the TranscriptView annotation box)
-* Locate your gene of interest and investigate it for existing mutations in the cosmic database.
+
+* For clarity you can now switch off the cosmic annotation (in the Genome Variation box) and the Calldif Somatic Genome annotation (in the X:Complete Genomics => Variants box). Set the NIH Epigenome Roadmap annotation to all (in the TranscriptView annotation box). This annotation provides information on public datasets that have established whether chromatin regions are subject to active transcription (green), enhancer regions or are part of a transcription start site.
+
+* Select the front end of the gene by selecting a region; see image (hint the color of the transcript denotes the reading direction; green means the regular direction, red the opposite direction) Click redraw (Note: the NIH annotation only appears for regions under 200.000 bp)
+
+  ![Figure 2: Selecting a region.](_static/images/structural_variants_selecting_region.png "Figure 2: Selecting a region.")
+	
+  [**Figure 2: Selecting a region.**](_static/images/structural_variants_selecting_region.png)
+
+* The NIH Epigenome Roadmap annotation can be further detailed by selecting the detail view in the toolbox that appears when you click the tools icon, see image below. This box appears at more settings fields if available.
+
+  ![Figure 3: Opening the NIH parameter settings toolbox.](_static/images/structural_variants_selecting_toolbox.png "Figure 3: Opening the NIH parameter settings toolbox.")
+	
+  [**Figure 3: Opening the NIH parameter settings toolbox.**](_static/images/structural_variants_selecting_toolbox.png)
+
+
 * Now go back to the AMC datascope, select the Somatic mutations tile and now click the  **detail** link. R2 now shows additional information on the expression of the gene and its location on the genome. 
 
 ---------
@@ -142,14 +147,15 @@ A comprehensive list of the mutations can be accessed through R2.
 
 ---------
  
+* From this detail view other analysis tools within R2 can be approached by clicking on the links below.
 
 Further use of WGS data; structural variants
 --------------------------------------------
 WGS enables further analysis; especially the paired end technique that enables the discovery of structural variants.
 
-  ![Figure 2: Paired end sequencing makes discovery of structural variants possible.](_static/images/structural_variants_paired_end.png "Figure 2: Paired end sequencing makes discovery of structural variants possible.")
+  ![Figure 4: Paired end sequencing makes discovery of structural variants possible.](_static/images/structural_variants_paired_end.png "Figure 4: Paired end sequencing makes discovery of structural variants possible.")
 	
-  [**Figure 2: Paired end sequencing makes discovery of structural variants possible.**](_static/images/structural_variants_paired_end.png)
+  [**Figure 4: Paired end sequencing makes discovery of structural variants possible.**](_static/images/structural_variants_paired_end.png)
 
 * These structural variations are best visualized as so called _circosplots_. To access these in R2 go to the Neuroblastoma (AMC) datascope and click the **circos archive** tile.
 * An overview of all sequences appears displayed as circos plots. These give an immediate comprensive view on the state of the genome. Click on one of the circos plots.
@@ -207,7 +213,29 @@ To see how chromothripsis relates to clinical data we can investigate survival d
 
 Locations of structural variants, hotspots?
 -------------------------------------------
-Chromothripsis can be seen as an extreme case of concentration of structural variants in one sample. The question arises whether there other hotspots of structural variation on the genome that are found in multiple samples. These might point to functional interactions. 
+Chromothripsis can be seen as an extreme case of concentration of structural variants in one sample. The question arises whether there are other hotspots of structural variation on the genome that are found in multiple samples. These might point to functional interactions.
+
+* One of the genes that exhibited such a hotspot is the TERT gene. Go back to the startpage of the Neuroblastoma datascope and select the GenomeBrowser tile. This brings you to the TERT gene on the genome with some preset annotations. 
+
+---------
+  ![](_static/images/R2d2_logo.png)**What do the arrows and colored tracks mean? (Hint: hovering with the mouse provides additional information)**
+
+<br>
+<br>
+
+---------
+
+* Red arrows depict translocations to other loactions in the genome. Locate the translocation to chromosome 11 (hint; sample 724) and click on the arrow.
+* R2 brings you to the other side of the translocation. In the TranscriptView panel switch on the SuperEnhancers NB annotation and click redraw.
+ 
+---------
+  ![](_static/images/R2d2_logo.png)**What advantage would a tumor have from this translocation?**
+
+<br>
+<br>
+
+---------
+
 
 
 Final remarks / future directions
