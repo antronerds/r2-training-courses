@@ -1,6 +1,6 @@
 <a id="investigating_tumor_heterogeneity"> </a>
 
-Investigating Intra-tumor Heterogeneity
+Student Course: Investigating Intra-tumor Heterogeneity
 =================================
 
 *Analyse tumor heterogeneity in Neuroblastoma using the R2 data analysis platform*

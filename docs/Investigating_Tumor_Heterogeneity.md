@@ -828,6 +828,7 @@ In the March 1st 2018 issue of Nature a paper was published describing a landsca
   <button type="submit" >Go to R2</button>
 </form>  
 
+This ends the Graduate Course part of these course materials. Feel free to further explore the course materials or our tutorials.
 
 We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
 
