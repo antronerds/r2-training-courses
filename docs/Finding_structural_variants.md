@@ -207,8 +207,18 @@ While investigating the WGS data an interesting phenomenon was observed. In some
 To see how chromothripsis relates to clinical data we can investigate survival data in R2. 
 
 * From  the left menu select Kaplan Meier > By annotated parameter
-* A selection menu appears, select the track and 
-* 
+* A selection menu appears, select the track cg_chromothripsis and click next 
+
+---------
+  ![](_static/images/R2d2_logo.png)**How does chromothripsis affect survival?**
+
+<br>
+<br>
+
+---------
+
+* Filtering for subsets allows you to further isolate specific survival characteristics. If you like you can toy around with different parameters.
+
 
 
 Locations of structural variants, hotspots?
@@ -216,6 +226,16 @@ Locations of structural variants, hotspots?
 Chromothripsis can be seen as an extreme case of concentration of structural variants in one sample. The question arises whether there are other hotspots of structural variation on the genome that are found in multiple samples. These might point to functional interactions.
 
 * One of the genes that exhibited such a hotspot is the TERT gene. Go back to the startpage of the Neuroblastoma datascope and select the GenomeBrowser tile. This brings you to the TERT gene on the genome with some preset annotations. 
+
+---------
+  ![](_static/images/R2d2_logo.png)**How does this region qualify as a hotspot?**
+
+<br>
+<br>
+
+---------
+ 
+ * As is obvious from the high number of peaks around the TERT gene there is a hotspot of structural variants in that area. The types of variants are annotated below the stretch on the genome.   
 
 ---------
   ![](_static/images/R2d2_logo.png)**What do the arrows and colored tracks mean? (Hint: hovering with the mouse provides additional information)**
@@ -237,17 +257,8 @@ Chromothripsis can be seen as an extreme case of concentration of structural var
 ---------
 
 
-
-Final remarks / future directions
+Remarks
 ---------------------------------
-In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize your genomics data. Click the button below to explore this wealth of data.
-
-<form name="dkfz-scope" action="http://hgserver1.amc.nl/cgi-bin/r2/main.cgi?" enctype="multipart/form-data" target="R2" method="post">  
-  <input type="hidden" name="option" value="about_dscope">
-  <input type="hidden" name="dscope" value="DKFZ_PED">
-  <button type="submit" >Go to R2</button>
-</form>  
-
 
 We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
 
