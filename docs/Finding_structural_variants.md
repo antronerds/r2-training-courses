@@ -5,15 +5,15 @@ Investigating structural variants
 
 *Not every cancer has determining somatic mutations. Using the full power of WGS data relevant structural variants can be traced also and linked to potential causes of disease*
 
-In this tutorial we'll introduce R2, the web based genomics analysis and visualization application. Throughout the tutorial an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa new insights can be derived. Throughout this course we'll focus on data of the childhood tumor Neuroblastoma.
+In this course we'll introduce R2, the web based genomics analysis and visualization application. Throughout the course an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa new insights can be derived. Throughout this course we'll focus on data of the childhood tumor Neuroblastoma.
 
-We hope to show how R2 can be used to visualize and analyze your WGS data. As an example datasets from childhood tumors will be used. 
+We hope to show how R2 can be used to visualize and analyze your WGS data. 
 
 This resource is located online at http://r2-training-courses.readthedocs.io
 
 Introduction 
 ------------
-Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. During the lectures you’ve been shown how this works in colorectal cancer, where a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
+Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. At that time, for colorectal cancer, a well defined path of subsequently gained mutations was found to lead to more aggressive tumorigenic cell types (the Vogelstein model).
 
   ![Figure 1: Mutation paths during cancer progression.](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression.")
 	
@@ -89,7 +89,7 @@ A comprehensive list of the mutations can be accessed through R2.
 ---------
 
   
-* There are no mutations recurring more than a few times. Go to the ALK gene and select the **view** link (note: this is separate from the detail link). In a new tab this mutation is shown in the genomebrowser zoomed in on the genome to the base level. All samples are drawn beneath this stretch. Annotation of the cosmic mutation database is provided
+* There are no mutations recurring more than a few times. Go to the ALK gene and select the **view** link (note: this is separate from the detail link). In a new tab this mutation is shown in the R2 genomebrowser zoomed in on the genome to the base level. All samples are drawn beneath this stretch. Annotation of the publicly available cosmic mutation database is provided as well.
 
 ---------
   ![](_static/images/R2d2_logo.png)**What type of aberrations does the ALK gene suffer?**
@@ -109,8 +109,8 @@ A comprehensive list of the mutations can be accessed through R2.
 
 ---------
 
-* The genomebrowser has a tremendous number of parameters that can be set. Scroll down to the bottom of the page. A form with quite some parameter fields appears. These provide additional annotations and settings for the algorithms used. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin data. This annotation however, is only provided on another Human Genome build. In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
-* An unannotated version of the reference genome is shown. Find and switch the Refseq(R2) annotation on. Click **redraw**
+* The genomebrowser has a tremendous number of parameters that can be set. Scroll down to the bottom of the page. A form shows quite some parameter fields. These provide additional annotations and settings for the algorithms used. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data based on methylation and acetylation patterns of the genome. This annotation however, is only provided on another Human Genome build. In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
+* An unannotated version of the reference genome is shown. Find and set the **Refseq(R2)** annotation on. Click **redraw**
 
 ---------
   ![](_static/images/R2d2_logo.png)**What has happened to the ALK gene?**
@@ -122,7 +122,7 @@ A comprehensive list of the mutations can be accessed through R2.
 
 * Locate the ALK gene (hint type in the gene name in the left upper **Find gene** field) 
 
-* For clarity you can now switch off the cosmic annotation (in the Genome Variation box) and the Calldif Somatic Genome annotation (in the X:Complete Genomics => Variants box). Set the NIH Epigenome Roadmap annotation to all (in the TranscriptView annotation box). This annotation provides information on public datasets that have established whether chromatin regions are subject to active transcription (green), enhancer regions or are part of a transcription start site.
+* For clarity you can now switch off the cosmic annotation (in the Genome Variation box) and the Calldif Somatic Genome annotation (in the X:Complete Genomics => Variants box). Set the NIH Epigenome Roadmap annotation to all (in the TranscriptView annotation box). This annotation provides information on public datasets that have established whether chromatin regions are subject to active transcription (green), enhancer regions (yellow) or are part of a transcription start site (red).
 
 * Select the front end of the gene by selecting a region; see image (hint the color of the transcript denotes the reading direction; green means the regular direction, red the opposite direction) Click redraw (Note: the NIH annotation only appears for regions under 200.000 bp)
 
@@ -132,9 +132,18 @@ A comprehensive list of the mutations can be accessed through R2.
 
 * The NIH Epigenome Roadmap annotation can be further detailed by selecting the detail view in the toolbox that appears when you click the tools icon, see image below. This box appears at more settings fields if available.
 
+
   ![Figure 3: Opening the NIH parameter settings toolbox.](_static/images/structural_variants_selecting_toolbox.png "Figure 3: Opening the NIH parameter settings toolbox.")
 	
   [**Figure 3: Opening the NIH parameter settings toolbox.**](_static/images/structural_variants_selecting_toolbox.png)
+
+---------
+  ![](_static/images/R2d2_logo.png)**What chromatin modification patterns are visible at the start of the ALK gene?**
+
+<br>
+<br>
+
+---------
 
 
 * Now go back to the AMC datascope, select the Somatic mutations tile and now click the  **detail** link. R2 now shows additional information on the expression of the gene and its location on the genome. 

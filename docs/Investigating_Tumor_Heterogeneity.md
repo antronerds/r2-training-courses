@@ -1,6 +1,6 @@
 <a id="investigating_tumor_heterogeneity"> </a>
 
-Investigating Intra-tumor Heterogeneity
+Analyse Intra-tumor Heterogeneity
 =================================
 
 *Analyse tumor heterogeneity in Neuroblastoma using the R2 data analysis platform*
@@ -41,7 +41,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 </form>  
 
 
-* You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to your develop your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
+* You're now on the R2 regular main page. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to your develop your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumor models?**
@@ -117,7 +117,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 Urgency of research: patient material
 ----------------------------------------
 
-In the former step we derived that neuroblastoma cell lines seem to group with cell lines of different developmental lineages. We have recently established new cell line pairs from neuroblastoma patients. In some cases multiple cell lines were obtained from the same biopsy. These cell lines share genetic defects and are therefore called *isogenic* cell line pairs. A microscopic image of each pair is provided below. 
+In the former step we derived that neuroblastoma cell lines seem to group with cell lines of different developmental lineages. Researchers of the Oncogenomics department recently established new cell line pairs from neuroblastoma patients. In some cases multiple cell lines were obtained from the same biopsy. These cell lines share genetic defects and are therefore called *isogenic* cell line pairs. A microscopic image of each pair is provided below. 
 
   ![Figure 2: Bright field image of isogenic cell line pairs.](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure 2: Bright field image of isogenic cell line pairs.")
 	
