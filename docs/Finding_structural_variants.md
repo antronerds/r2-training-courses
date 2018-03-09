@@ -137,16 +137,16 @@ A comprehensive list of the mutations can be accessed through R2.
 
 * Select the front end of the gene by selecting a region; see image (hint the color of the transcript denotes the reading direction; green means the regular direction, red the opposite direction) Click redraw (Note: the NIH annotation only appears for regions under 200.000 bp)
 
-  ![Figure 2: Selecting a region.](_static/images/structural_variants_selecting_region.png "Figure 2: Selecting a region.")
+  ![Figure 3: Selecting a region.](_static/images/structural_variants_selecting_region.png "Figure 3: Selecting a region.")
 	
-  [**Figure 2: Selecting a region.**](_static/images/structural_variants_selecting_region.png)
+  [**Figure 3: Selecting a region.**](_static/images/structural_variants_selecting_region.png)
 
 * The NIH Epigenome Roadmap annotation can be further detailed by selecting the detail view in the toolbox that appears when you click the tools icon, see image below. This box appears at more settings fields if available.
 
 
-  ![Figure 3: Opening the NIH parameter settings toolbox.](_static/images/structural_variants_selecting_toolbox.png "Figure 3: Opening the NIH parameter settings toolbox.")
+  ![Figure 4: Opening the NIH parameter settings toolbox.](_static/images/structural_variants_selecting_toolbox.png "Figure 4: Opening the NIH parameter settings toolbox.")
 	
-  [**Figure 3: Opening the NIH parameter settings toolbox.**](_static/images/structural_variants_selecting_toolbox.png)
+  [**Figure 4: Opening the NIH parameter settings toolbox.**](_static/images/structural_variants_selecting_toolbox.png)
 
 ---------
   ![](_static/images/R2d2_logo.png)**What chromatin annotation is available for the start of the ALK gene?**
@@ -173,11 +173,11 @@ Further use of WGS data; structural variants
 --------------------------------------------
 WGS data allows for further analysis; the paired end technique enables the discovery of structural variants.
 
-  ![Figure 4: Paired end sequencing makes discovery of structural variants possible.](_static/images/structural_variants_paired_end.png "Figure 4: Paired end sequencing makes discovery of structural variants possible.")
+  ![Figure 5: Paired end sequencing makes discovery of structural variants possible.](_static/images/structural_variants_paired_end.png "Figure 5: Paired end sequencing makes discovery of structural variants possible.")
 	
-  [**Figure 4: Paired end sequencing makes discovery of structural variants possible.**](_static/images/structural_variants_paired_end.png)
+  [**Figure 5: Paired end sequencing makes discovery of structural variants possible.**](_static/images/structural_variants_paired_end.png)
 
-* These structural variations are best visualized as so called _circosplots_. To access these in R2 go to the Neuroblastoma (AMC) datascope and click the **circos archive** tile.
+* These structural variations are best visualized as so called _circosplots_. To access these in R2 go to the Neuroblastoma datascope and click the **circos archive** tile.
 * An overview of all sequences appears displayed as circos plots. These give an immediate comprensive view on the state of the genome. Click on one of the circos plots.
 * In a new tab a detailed view of this specific tumor genome is shown. When hovering over the plot the mouse opens a magnifier window.
 
@@ -199,10 +199,10 @@ WGS data allows for further analysis; the paired end technique enables the disco
 
 ---------
 
-* Now open the _Gene affecting structural variants_ panel.  
+* Now open the _Somatic Structural Variants_ panel.  
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you locate a structural variant that involves a gene and spans over two chromosomes?**
+  ![](_static/images/R2d2_logo.png)**Can you locate a structural variant that involves a gene and spans two chromosomes? (Note: clicking on the _view_ link shows the actual locations on the genome)**
 
 <br>
 <br>
@@ -265,7 +265,7 @@ Chromothripsis can be seen as an extreme case of concentration of structural var
 
 ---------
 
-* Red arrows depict translocations to other loactions in the genome. Locate the translocation to chromosome 11 (hint; sample 724) and click on the arrow.
+* Red arrows depict translocations to other loactions in the genome. Locate the translocation to chromosome 11 (hint; hovering over the arrows gives sample information; sample 724 is one of the samples) and click on the arrow.
 * R2 brings you to the other side of the translocation. In the TranscriptView panel switch on the SuperEnhancers NB annotation and click redraw.
  
 ---------
@@ -276,10 +276,23 @@ Chromothripsis can be seen as an extreme case of concentration of structural var
 
 ---------
 
+* To further corroborate this we can go to the Circos plots panel again. Go back to the Neuroblastoma datascope overview panel and click the **circos archive** tile again.
+* Locate the N724 tumor sample and click on the image.
+* Open the **Gene Expression list** tab
 
+---------
+  ![](_static/images/R2d2_logo.png)**How is the expression of the TERT gene affected?**
+
+<br>
+<br>
+
+---------
+
+* This can be further explored by clicking on the probeset link (left column in the list) and on the Detailed link.
 Remarks
 ---------------------------------
 
+This ends the first part of this course. You can continue with the analysis of intra-tumor heterogeneity.
 We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
 
 The R2 support team.
