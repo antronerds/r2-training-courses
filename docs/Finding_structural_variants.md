@@ -24,7 +24,7 @@ Fortunately new technologies have become available to molecular biology. These e
 Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2.  
 R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from Neuroblastoma tumors and cell lines. 
 
-Despite decades of research high stage neuroblastoma still has a very poor prognosis. Since cancer is a disease of genomic aberrations we're going to investigate what aberrations are present and how these might relate to the onset of neuroblastoma. 
+Despite decades of research high stage neuroblastoma still has a very poor prognosis. Since cancer is a disease of genomic aberrations we're first going to investigate what aberrations are present and how these might relate to the onset of neuroblastoma. 
 
 
 Exploring the dataset
@@ -32,10 +32,19 @@ Exploring the dataset
 
 The oncogenomics department of the AMC has gathered a richly annotated set of neuroblastoma tumors. To easily explore this the R2 development team has devised the concept of Datascopes; a convenient view on the data with some pre-built analyses readily available.
 
- 
-* In the left menu click on **Change Data Scope** > **Neuroblastoma (AMC)**
-* An additional choice step appears; click **Goto Neuroblastoma (AMC) home**
-* For a quick impression of the data select the **Cohort Overview** R2 presents the tumor series with it's annotation, feel free to explore the distribution of the parameters.
+
+* Go to R2 (http://r2.amc.nl) by clicking on the button below:  
+
+
+<form name="Accessing-R2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <button type="submit" >Go to R2</button>
+</form>  
+
+
+* Log on to the R2 platform with your credentials that were provided. (or apply for a login using the link) 
+* In the left menu click on **Change Data Scope** > **Neuroblastoma**
+* An additional choice step appears; click **Goto Neuroblastoma home**
+* For a quick impression of the data select the **Cohort Overview** R2 presents the tumor series with it's annotation. Explore the distribution of the parameters.
 
 ---------
   ![](_static/images/R2d2_logo.png)**How many tumors have a MYCN amplification?**
@@ -61,22 +70,24 @@ Until recently only several genomic aberrations were known:
 </table>
 
 
-To extend these data the Oncogenomics department of the AMC set out to sequence 86 neuroblastoma tumors from this set.
+To extend these data the Oncogenomics department of the AMC set out to sequence 87 untreated primary neuroblastoma tumours of all stages from this set.
 
 Somatic mutations in Neuroblastoma
 ----------------------------------
 
-For this the samples where sent to the Complete Genomics sequencing facility, now taken over by BGI. They provide a sequence as a service model.The R2 development team has processed the WGS data, through several filtering steps the somatic mutations were determined with respect to the reference genome.
+For this the samples where sent to the Complete Genomics sequencing facility, now taken over by BGI, for whole-genome paired-end sequencing. They provide a sequence as a service model. Genomes were sequenced at an average coverage of 50. Compared to the HG18 reference genome an average of 3,347,592 singlenucleotide variants (SNVs) per genome were obtained, in accordance with reported frequencies of interpersonal variants. 
+
+The R2 development team has processed these WGS data further using the CGAtools software to compare tumor with lymphocyte genomes. This provided a somatic score estimating the likelihood of mutations to be somatic, through several filtering steps the somatic mutations were determined with respect to the reference genome.
 
 
-  ![Figure 1: Comparing with the reference genome.](_static/images/structural_variants_reference_genome.png "Figure 1: Comparing with the reference genome.")
+  ![Figure 2: Comparing Tumor data with the reference genome from Lymphocytes.](_static/images/structural_variants_reference_genome.png "Figure 2: Comparing Tumor data with the reference genome from Lymphocytes.")
 	
-  [**Figure 1: Comparing with the reference genome.**](_static/images/structural_variants_reference_genome.png)
+  [**Figure 2: Comparing Tumor data with a reference genome from Lymphocytes.**](_static/images/structural_variants_reference_genome.png)
 
 
 A comprehensive list of the mutations can be accessed through R2. 
 
-  * Go back to the Neuroblastoma (AMC) datascope
+  * Go back to the Neuroblastoma datascope
   * Select the **somatic variants** tile
   * A table with all mutations in the 86 tumors appears. It is basically a view on a database table. Ordering on its columns is possible by clicking on the column header. Sort the column by gene name. 
 
