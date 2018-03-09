@@ -36,10 +36,10 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 * Go to R2 (http://r2.amc.nl) by clicking on the button below:  
 
 
-<form name="Accessing-R2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="accessing_r2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_nbadam88_u133p2">
   <button type="submit" >Go to R2</button>
 </form>  
-
 
 * Log on to the R2 platform with your credentials that were provided. (or apply for a login using the link) 
 * In the left menu click on **Change Data Scope** > **Neuroblastoma**
@@ -113,7 +113,7 @@ A comprehensive list of the mutations can be accessed through R2.
 * The buttons on top of the page can be used to zoom in and out. Zoom out 3 times with a factor 10. 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you explain what changes occur? How many bases does the ALK gene span?**
+  ![](_static/images/R2d2_logo.png)**How many bases does the ALK gene span?**
 
 <br>
 <br>
@@ -149,7 +149,7 @@ A comprehensive list of the mutations can be accessed through R2.
   [**Figure 3: Opening the NIH parameter settings toolbox.**](_static/images/structural_variants_selecting_toolbox.png)
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What chromatin modification patterns are visible at the start of the ALK gene?**
+  ![](_static/images/R2d2_logo.png)**What chromatin annotation is available for the start of the ALK gene?**
 
 <br>
 <br>
@@ -157,7 +157,7 @@ A comprehensive list of the mutations can be accessed through R2.
 ---------
 
 
-* Now go back to the AMC datascope, select the Somatic mutations tile and now click the  **detail** link. R2 now shows additional information on the expression of the gene and its location on the genome. 
+* Now go back to the AMC datascope, select the Somatic mutations tile and now click the  **detail** link. R2 shows additional information on the expression of the gene and its location on the genome. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What is remarkable about the expression of the ALK gene?**
@@ -167,11 +167,11 @@ A comprehensive list of the mutations can be accessed through R2.
 
 ---------
  
-* From this detail view other analysis tools within R2 can be approached by clicking on the links below.
+* From this detail view other analysis tools within R2 can be approached by clicking on the links below the graphs. Feel free to explore these further.
 
 Further use of WGS data; structural variants
 --------------------------------------------
-WGS enables further analysis; especially the paired end technique that enables the discovery of structural variants.
+WGS data allows for further analysis; the paired end technique enables the discovery of structural variants.
 
   ![Figure 4: Paired end sequencing makes discovery of structural variants possible.](_static/images/structural_variants_paired_end.png "Figure 4: Paired end sequencing makes discovery of structural variants possible.")
 	
