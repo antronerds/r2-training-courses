@@ -487,6 +487,8 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
   <button type="submit" >Go to R2 main, inducible TF set</button>
 </form>  
 
+<form name="dscope_1" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method="POST" target="_gv"><input type="hidden" name="username" value="pietmolenaar"><input type="hidden" name="ssid" value="d6c8e043764d1daf0aa5ff36c4db7adf"></form>
+
 * Select in field 3 the **Relate 2 tracks** option. R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. Relate the two tracks, adapt the **ColorMode** to **Color by Track** and try the *mes_adrn_time* track. This track contains information on the time that the PRRX1 gene was induced in the SKNBE cell line.
 
 ---------
@@ -496,6 +498,29 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 <br>
 
 ---------
+
+* This conclusion is even more obvious when the sequence of events is highlighted as can be done in R2. Click the button below to view the graph annotated in this way.
+
+<form name="timepath" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
+<input type="hidden" name="species" value="hs">
+<input type="hidden" name="subset" value="experiment-group-nb-celllines,neural_crest_cells,pair:,0,1,2,3,4,5,6,7,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51">
+<input type="hidden" name="selectedtrack" value="adrn_score">
+<input type="hidden" name="selectedtracky" value="mes_score">
+<input type="hidden" name="subsettracksubset" value="experiment-group">
+<input type="hidden" name="graphtype" value="XY">
+<input type="hidden" name="colormode" value="colorbytrack">
+<input type="hidden" name="trackforcolor" value="g-amc-cell_type_jk">
+<input type="hidden" name="option" value="display2">
+<input type="hidden" name="exageratemark" value="no">
+<input type="hidden" name="chainedsams" value="gsm2413241,gsm2413246:#eeeeee;gsm2413239,gsm2413243:#eeeeee;gsm2413242,gsm2413245:#eeeeee;gsm2413240,gsm2413244:#eeeeee;gsm2413257,gsm2413247,gsm2413248,gsm2413249:#222222:2;gsm2413249,gsm2413250,gsm2413251,gsm2413252,gsm2413253,gsm2413254:#222222:3;gsm2413254,gsm2413255,gsm2413256:#222222:4">
+<input type="hidden" name="fontsize_ruler" value="25">
+<input type="hidden" name="fontsize_y" value="30">
+<input type="hidden" name="dotsize" value="track">
+<input type="hidden" name="trackforsize" value="g-amc-size_3">
+<button type="submit" >Show time path annotation in R2</button>
+</form>  
+ 
 
 
 Creating hypotheses; relating to chromatin modification data
