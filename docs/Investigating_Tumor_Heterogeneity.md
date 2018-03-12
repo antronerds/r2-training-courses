@@ -499,7 +499,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 
 ---------
 
-* This conclusion is even more obvious when the sequence of events is highlighted as can be done in R2. Click the button below to view the graph annotated in this way.
+* This conclusion is even more obvious when the sequence of events is highlighted, as can be done in R2. The relations between the isogenic pairs are also illustrated. Click the button below to view the graph annotated in this way, a figure that can be incorporated in a publication right away. 
 
 <form name="timepath" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
