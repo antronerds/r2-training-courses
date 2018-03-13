@@ -87,9 +87,9 @@ The R2 development team has processed these WGS data further using the CGAtools 
 
 A comprehensive list of the mutations can be accessed through R2. 
 
-  * Go back to the Graduate Training Course datascope
+  * Go back to the Graduate Training Course datascope (still open in another tab)
   * Select the **somatic variants** tile
-  * A table with all mutations in the 86 tumors appears. It is basically a view on a database table. Ordering on its columns is possible by clicking on the column header. Sort the column by gene name. 
+  * A table with all mutations in the 86 tumors appears in a new tab. It is basically a view on a database table. Ordering on its columns is possible by clicking on the column header. Sort the column by gene name. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you spot recurring mutations?**
@@ -141,7 +141,7 @@ A comprehensive list of the mutations can be accessed through R2.
 	
   [**Figure 3: Selecting a region.**](_static/images/structural_variants_selecting_region.png)
 
-* The NIH Epigenome Roadmap annotation can be further detailed by selecting the detail view in the toolbox that appears when you click the tools icon, see image below. This box appears at more settings fields if available.
+* This NIH Epigenome Roadmap annotation is actually a sum of data from a lot of datasources. These can be further detailed by selecting the detail view in the toolbox that appears when you click the tools icon, see image below. This box appears at more settings fields if available.
 
 
   ![Figure 4: Opening the NIH parameter settings toolbox.](_static/images/structural_variants_selecting_toolbox.png "Figure 4: Opening the NIH parameter settings toolbox.")
@@ -226,8 +226,9 @@ While investigating the WGS data an interesting phenomenon was observed. In some
 
 To see how chromothripsis relates to clinical data we can investigate survival data in R2. 
 
-* From  the left menu select Kaplan Meier > By annotated parameter
-* A selection menu appears, select the track cg_chromothripsis and click next 
+* From the left menu in the main Graduate Training Course datascope panel select Kaplan Meier > By annotated parameter
+* Click next in the dataselection panel, the appropriate Neuroblastoma set has already been selected.
+* A selection menu appears, in the **use track** field select the track cg_chromothripsis and click next 
 
 ---------
   ![](_static/images/R2d2_logo.png)**How does chromothripsis affect survival?**
@@ -289,10 +290,11 @@ Chromothripsis can be seen as an extreme case of concentration of structural var
 ---------
 
 * This can be further explored by clicking on the probeset link (left column in the list) and on the Detailed link.
+
 Remarks
 ---------------------------------
 
-This ends the first part of this course. You can continue with the analysis of intra-tumor heterogeneity.
+This ends the first part of this course. You can continue now with the analysis of intra-tumor heterogeneity.
 We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
 
 The R2 support team.
