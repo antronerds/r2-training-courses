@@ -32,7 +32,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 
 ##### A first impression of your data; expression of key genes
 
-* Go to R2 by clicking on the button below:  
+* Go to the R2 by clicking on the button below:  
 
 
 <form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
@@ -41,7 +41,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 </form>  
 
 
-* You're now on the R2 regular main page. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to your develop your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
+* You're now on the R2 regular main page (from here on it's not necessary anymore to be logged in) Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to your develop your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumor models?**
