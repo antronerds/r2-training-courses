@@ -42,8 +42,8 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 </form>  
 
 * Log on to the R2 platform with your credentials that were provided. (or apply for a login using the link) 
-* In the left menu click on **Change Data Scope** > **Neuroblastoma**
-* An additional choice step appears; click **Goto Neuroblastoma home**
+* In the left menu click on **Change Data Scope** > **Graduate Training Course**
+* An additional choice step appears; click **Goto Graduate Training Course home**
 * For a quick impression of the data select the **Cohort Overview** R2 presents the tumor series with it's annotation. Explore the distribution of the parameters.
 
 ---------
@@ -87,7 +87,7 @@ The R2 development team has processed these WGS data further using the CGAtools 
 
 A comprehensive list of the mutations can be accessed through R2. 
 
-  * Go back to the Neuroblastoma datascope
+  * Go back to the Graduate Training Course datascope
   * Select the **somatic variants** tile
   * A table with all mutations in the 86 tumors appears. It is basically a view on a database table. Ordering on its columns is possible by clicking on the column header. Sort the column by gene name. 
 
@@ -157,7 +157,7 @@ A comprehensive list of the mutations can be accessed through R2.
 ---------
 
 
-* Now go back to the AMC datascope, select the Somatic mutations tile and now click the  **detail** link. R2 shows additional information on the expression of the gene and its location on the genome. 
+* Now go back to the Graduate Training Course datascope, select the Somatic mutations tile and now click the  **detail** link. R2 shows additional information on the expression of the gene and its location on the genome. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What is remarkable about the expression of the ALK gene?**
@@ -177,7 +177,7 @@ WGS data allows for further analysis; the paired end technique enables the disco
 	
   [**Figure 5: Paired end sequencing makes discovery of structural variants possible.**](_static/images/structural_variants_paired_end.png)
 
-* These structural variations are best visualized as so called _circosplots_. To access these in R2 go to the Neuroblastoma datascope and click the **circos archive** tile.
+* These structural variations are best visualized as so called _circosplots_. To access these in R2 go to the Graduate Training Course datascope and click the **circos archive** tile.
 * An overview of all sequences appears displayed as circos plots. These give an immediate comprensive view on the state of the genome. Click on one of the circos plots.
 * In a new tab a detailed view of this specific tumor genome is shown. When hovering over the plot the mouse opens a magnifier window.
 
@@ -245,7 +245,7 @@ Locations of structural variants, hotspots?
 -------------------------------------------
 Chromothripsis can be seen as an extreme case of concentration of structural variants in one sample. The question arises whether there are other hotspots of structural variation on the genome that are found in multiple samples. These might point to functional interactions.
 
-* One of the genes that exhibited such a hotspot is the TERT gene. Go back to the startpage of the Neuroblastoma datascope and select the GenomeBrowser tile. This brings you to the TERT gene on the genome with some preset annotations. 
+* One of the genes that exhibited such a hotspot is the TERT gene. Go back to the startpage of the Graduate Training Course datascope and select the GenomeBrowser tile. This brings you to the TERT gene on the genome with some preset annotations. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**How does this region qualify as a hotspot?**
@@ -276,7 +276,7 @@ Chromothripsis can be seen as an extreme case of concentration of structural var
 
 ---------
 
-* To further corroborate this we can go to the Circos plots panel again. Go back to the Neuroblastoma datascope overview panel and click the **circos archive** tile again.
+* To further corroborate this we can go to the Circos plots panel again. Go back to the Graduate Training Course datascope overview panel and click the **circos archive** tile again.
 * Locate the N724 tumor sample and click on the image.
 * Open the **Gene Expression list** tab
 
