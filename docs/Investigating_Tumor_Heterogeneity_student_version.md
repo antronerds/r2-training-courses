@@ -17,15 +17,17 @@ Cancer is a very complex disease. Much more complicated than originally anticipa
 	
   [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
-Although there has been extensive research into similar mutation mechanisms in Neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you to the cutting edge of research into this often deadly childhood tumor. From the lectures you should have learned already that this tumor consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of Neuroblastoma. Children developing a relapse almost always die. 
+Although there has been extensive research into similar mutation mechanisms in Neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you to the cutting edge of research into this often deadly childhood tumor.  
+
+From the lectures you should have learned already that this tumor consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of Neuroblastoma. Children developing a relapse almost always die. 
 Fortunately new technologies have become available to molecular biology. These enable us to study not only mutations and RNA expression of genes but also study the epigenetic modifications of the DNA-associated histones. And in addition genes can now be manipulated in cell lines and living tissues. 
-Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2.  
-R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from Neuroblastoma tumors and cell lines. 
+Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from Neuroblastoma tumors and cell lines.  
+
 Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which is neural crest derived. During embryogenesis, cells delaminate from the neural crest, migrate ventrally and differentiate into adrenaline- or noradrenaline-producing cells. Neuroblastomas typically express enzymes for the adrenaline-synthesis route. High-stage neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease.
-Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of Neuroblastoma tumors. From four patients we obtained tumor biopsies that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines  
+Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of Neuroblastoma tumors. From four patients we obtained tumor biopsies that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines.  
 
 
-Tumors and origins: clustering data
+Tumors and origins: a first impression of your data
 ---------------------------------------
 
 For a start we'll investigate established childhood tumor cell lines, including neuroblastoma. Established cell lines can be grown and passaged in culture indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do profiles of neuroblastoma cell lines relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of other tumor cell lines and see how they relate. 
@@ -42,7 +44,10 @@ For a start we'll investigate established childhood tumor cell lines, including 
 *References*
 * Chapter 2.2 & 2.3 Weinberg
 
-##### A first impression of your data; expression of key genes
+<br>
+<br>
+
+##### Expression of key genes
 
 * Go to R2 by clicking on the button below:  
 
@@ -83,9 +88,9 @@ For a start we'll investigate established childhood tumor cell lines, including 
 
 ---------
 
-##### A first impression of your data; tSNE maps
+##### Clustering with tSNE maps
 
-* We've seen that the expression of genes changes through the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map.  
+We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map.  
 
 
 * Click the button below to show the tSNE map in R2 
@@ -105,23 +110,20 @@ For a start we'll investigate established childhood tumor cell lines, including 
 * Colors are not set by default, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click next to show the changes 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you relate the tumors to a type of tissue?? (Note: ALL stands for Acute Lymphocytic Leukemia)**
+  ![](_static/images/R2d2_logo.png)**Can you relate the tumors to a type of tissue? (Note: ALL stands for Acute Lymphocytic Leukemia)**
 
 <br>
 <br>
-
 
   ![](_static/images/R2d2_logo.png)**What do you note about the clustering of neuroblastoma cell lines with respect to the lineage of origin?**
 
 <br>
 <br>
 
-
   ![](_static/images/R2d2_logo.png)**If you had to choose two cell lines for further investigation of lineage identity in neuroblastoma, which would you choose?**
 
 <br>
 <br>
-
 
 ---------
 
@@ -142,7 +144,7 @@ In the former step we derived that neuroblastoma cell lines seem to group with c
 
 ---------
 
-We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of these pairs and of a previously established neuroblastoma cell line that after culturing gave rise to two very divergent phenotypes. The resulting gene expression patterns can be used perform to a hierarchical clustering. An example of such clustering resulting in a heatmap is provided below 
+We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of these pairs and of a previously established neuroblastoma cell line that after culturing gave rise to two very divergent phenotypes. The resulting gene expression patterns can be used perform to a hierarchical clustering. An example of such clustering resulting in an ordered heatmap is provided below 
 
   ![Figure 3: Heatmap: unsupervised clustering of samples using the distribution of the expression data combined with the clustering of genes based on their expression through the samples.](_static/images/TumorHeterogeneity_HeatmapClustering.png "Figure 3: Heatmap: unsupervised clustering of samples using the distribution of the expression data combined with the clustering of genes based on their expression through the samples.")
 	
@@ -160,8 +162,10 @@ We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of
 * Unsupervised hierarchical clustering
 * Heatmap visualization
 
+<br>
+<br>
 
-For this analysis we'll directly go to one of the analysis tools of R2; Toplister. The Toplister can assess which genes behave different throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
+For this analysis we'll directly go to one of the analysis tools of R2: Toplister. The Toplister can assess which genes behave different throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
 
 * Goto R2 by clicking the button below
 
@@ -196,7 +200,9 @@ For this analysis we'll directly go to one of the analysis tools of R2; Topliste
 ---------
 
 * Click on **Heatmap(z-score)**
-* The cell line pairs from the patient were also investigated for the tumor stem cell marker gene CD133 and for their migration capability. See the results in the figure below:
+  
+  
+The cell line pairs from the patient were also investigated for the tumor stem cell marker gene CD133 and for their migration capability. See the results in the figure below:
 
 
   ![Figure 4: CD133 Facs analysis and transwell migration assay of isogenic pairs](_static/images/TumorHeterogeneity_PairsCD133Migrate.png "Figure 4: CD133 Facs analysis and transwell migration assay of isogenic pairs")
@@ -205,7 +211,6 @@ For this analysis we'll directly go to one of the analysis tools of R2; Topliste
 
 
 ---------
-
   ![](_static/images/R2d2_logo.png)**Given these observations, what origin can you assign to each group?**
 
 <br>
@@ -230,8 +235,9 @@ We have identified two different types of cells that occur within the same patie
 
 *Analysis used*  
 * Overrepresentation calculation
-
-*References*   
+ 
+<br>
+<br>
 
 * Go to the main page of R2 by clicking the button below
 
@@ -241,10 +247,13 @@ We have identified two different types of cells that occur within the same patie
 </form>  
 
 
-* In Field 3 choose *Find Differential expression* between groups
-* This dataset has been annotated with 'type' information. Each sample was assigned to either the MESenchymal or the ADReNergic type, in R2 this is called a *track*. Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to **No correction**
-* A list of differentially expressed genes appears; click on the hyperlinked name of your favorite gene to see its expression in the sample set; try an oppositely correlating gene also
-* Now click on the **Heatmap(zscore)** button in the right menu panel; a heatmap showing the expression of all differentially expressed genes with correlation p-value < 0.01 in this dataset is shown.    
+* In Field 3 choose *Find Differential expression* between groups and click **next**
+
+This dataset has been annotated with 'type' information. Each sample was assigned to either the MESenchymal or the ADReNergic type, in R2 this is called a *track*. 
+* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to **No correction**. Click **next** twice
+* A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset is shown. Click on the hyperlinked name of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well
+* Go back to the window with the differentially expressed genes. This is still open in one of your browser tabs. 
+* Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
 
 ---------
   ![](_static/images/R2d2_logo.png)**How is this figure different from the former?**
@@ -254,7 +263,10 @@ We have identified two different types of cells that occur within the same patie
 
 ---------
 
-* For future use the genes that make the difference have been stored for you in R2 as signatures (aka genesets or categories). One set of genes that is highly expressed in the MES type of samples (r2_mesadrn_mes) and one set of genes highly expressed in the ADRN type of samples (r2_mesadrn_adrn) R2 provides additional analysis for sets of genes in the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematic ordered biological terms that is used to formally describe the biological role of each gene. R2 now calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. In the menu panel to the right select the **Gene Ontology Analysis** button 
+For future use, this list of genes has been stored for you in R2 as signatures (aka genesets or categories). The list has been split into two categories: one set of genes that is highly expressed in the MES type of samples (r2_mesadrn_mes) and one set of genes highly expressed in the ADRN type of samples (r2_mesadrn_adrn).  
+R2 provides additional analysis for sets of genes that can be accessed from the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematically ordered biological terms that is used to formally describe the biological role of each gene. The Gene Ontology Analysis tool in R2 calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. 
+
+* On the page with the differentially expressed genes, select the **Gene Ontology Analysis** button in the menu on the right 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What can you say about the function of the differentially expressed genes?**
@@ -275,16 +287,19 @@ We have identified two different types of cells that occur within the same patie
 ---------
 
 
-* In R2 there are much more sets of genes that have been found to be implemented in specific processes. The Broad institute has compiled quite some of these sets of genes that characterize hallmark biological processes   
-* Go back to the window with the differentially expressed genes. This is still open in one of your browser tabs.
+In R2 there are much more sets of genes that have been found to be implemented in specific processes. The Broad Institute has compiled quite some of these sets of genes that characterize hallmark biological processes.  
+
+* Go back to the window with the differentially expressed genes. 
 * Select the **Gene set analysis** option from the right menu
-* Select the *geneset_broad_2015_hallmark* geneset 
+* Select the *geneset_broad_2015_hallmark* geneset and click **next**
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which hallmark category of genes pops up as most important? Can you explain this?**
 
 <br>
 <br>
+
+---------
 
 
 Identifying groups: using signatures to classify other datasets
@@ -301,8 +316,8 @@ We now have a signature that distinguishes between the two types of cells. We al
 *Analysis used*
 * Heatmap analysis
 
-*References*
-* -
+<br>
+<br>
  
 * Go to the main portal of R2 by clicking the button below; the dataset described above is automatically selected
 
@@ -323,9 +338,6 @@ We now have a signature that distinguishes between the two types of cells. We al
 <br>
 <br>
 
----------
-
----------
   ![](_static/images/R2d2_logo.png)**How does this relate to the above?**
 
 <br>
@@ -333,7 +345,9 @@ We now have a signature that distinguishes between the two types of cells. We al
 
 ---------
 
-* When observing such clearcut patterns it is good scientific practice to test this in additional datasets. The database of R2 contains an additional dataset consisting of neuroblastoma cell lines that were profiled by a French research team. Click on the button below to go there and perform the same analysis.
+When observing such clearcut patterns it is good scientific practice to test this in additional datasets. The database of R2 contains an additional dataset consisting of neuroblastoma cell lines that were profiled by a French research team. 
+
+* Click on the button below to go there and perform the same analysis.
 
 
 <form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
@@ -372,7 +386,8 @@ The expression patterns of these specific signatures can be used to compare cell
 *Analysis used*
 * Signature scores 
 
-*References*
+<br>
+<br>
 
 * Go back to the main portal of R2 by clicking the button below.
 
@@ -385,7 +400,7 @@ The expression patterns of these specific signatures can be used to compare cell
 * In field 3 choose **Relate 2 tracks** and click next
 * First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (lab\_id) and on the Y-axis the signature score track that R2 has generated for the MES signature (u-34\_mesadrn\_mes(#)). Click next.
 * A graph is generated for each sample the signature score for the mesadrn\_mes signature is shown, select **Color by Track** for ColorMode and try different tracks. Click **Adjust Settings** to view the result.
-* Now select for the Y-axis the ADRN part of the signature, click Adjust Settings to view the result.
+* Now select for the Y-axis the ADRN part of the signature, click **Adjust Settings** to view the result.
 * Now we're going to compare the signature scores; select the MES signature for the X track
 * If you have time you can also try the **Color by Gene ColorMode**, choose a gene of interest (Note: the dropdown selection is linked to the database, wait for the proper selections to popup...)
 
@@ -398,10 +413,10 @@ The expression patterns of these specific signatures can be used to compare cell
 ---------
 
 
-Finding causes; homing in on transcription factors
+Finding causes: homing in on transcription factors
 -----------------------------------------------------
 
-Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we determine which TF’s might determine the difference between both of these cell lines?
+Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we find out which TF’s might influence the difference between both of these cell lines?
 
 *Data used:*
 * Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2
@@ -414,7 +429,8 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 *Analysis used*
 * Differential expression  
 
-
+<br>
+<br>
 
 * Go back to the main portal of R2 by clicking the button below.
 
@@ -424,10 +440,12 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 </form>  
 
 
-* Again we're going to find out which genes make a difference, but now in a specific subset that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. In field 3 select **Find Differential expression between groups** Click **next**
-* Make sure to select the proper track **Select a track** We're now also going to filter for a specific **GeneCategory**; select the Transcription factors (*TF(945)*). Click **Next**. 
+Again we're going to find out which genes make a difference, but now in a specific subset that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. 
+* In field 3 select **Find Differential expression between groups** Click **next**
+* Make sure to select the proper track **Select a track**. We're now also going to filter for a specific **GeneCategory**; select the Transcription factors (*TF(945)*). Click **Next**. 
 * In the next screen we're asked to further filter for a specific type of samples to compare, we're focusing on the difference between ADRN and MES; select these. Click **Next**. 
-* A list of genes appears. Investigate the top 4 by clicking on the hyperlinked gene symbols. This brings you to the expression view of the gene. From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the top table.
+* A list of genes appears. Investigate the top 4 by clicking on the hyperlinked gene symbols. This brings you to the expression view of the gene. 
+* From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the top table.
 
 ---------
   ![](_static/images/R2d2_logo.png)**Armed with this information, which gene would you choose for further research? Why?**
@@ -438,7 +456,7 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 ---------
 
 
-Proving causes; manipulating cell lines
+Proving causes: manipulating cell lines
 ------------------------------------------
 
 From experiments it is known that cells can change their nature, some cells exhibit a certain plasticity.
@@ -451,7 +469,7 @@ From experiments it is known that cells can change their nature, some cells exhi
 
 ---------
 
-From experiments in our lab it became evident that the two cell types found in Neuroblastoma were able to switch. After a given period of time cells in dishes changed their nature as became evident from the expression of certain marker proteins on their surface.
+From experiments in our lab it became evident that the two cell types found in Neuroblastoma were able to switch. After a given period of time cells in dishes changed their nature as was proven by the expression of certain marker proteins on their surface.  
 Now that we have a candidate Transcription Factor we can try to investigate its relevance in this plasticity by manipulating the gene in cell lines we grow in the lab. 
 
 ---------
@@ -462,7 +480,7 @@ Now that we have a candidate Transcription Factor we can try to investigate its 
 
 ---------
 
-The TF was inducibly expressed in the SKNBE cell line and this was monitored through time for their gene expression using Affymetrix mRNA arrays. The resulting data was added to the dataset we used above for comparison. 
+The TF was inducibly expressed in the SKNBE cell line and this was monitored through time for its gene expression using Affymetrix mRNA arrays. The resulting data was added to the dataset we used above for comparison. 
 
 
 ---------
@@ -484,6 +502,9 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 *Analysis used*
 * Signature score comparison
 
+<br>
+<br>
+  
 * Go to the R2 main page by clicking the button below, the correct dataset will be selected.  
 
 <form name="52_pairs_crest_exp" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
@@ -491,7 +512,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
   <button type="submit" >Go to R2 main, inducible TF set</button>
 </form>  
 
-* Select in field 3 the **Relate 2 tracks** option. R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. Relate the two tracks, adapt the **ColorMode** to **Color by Track** and try the *mes_adrn_time* track. This track contains information on the time that the PRRX1 gene was induced in the SKNBE cell line.
+* Select in field 3 the **Relate 2 tracks** option. R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. Relate the two tracks, adapt the **ColorMode** to **Color by Track** and try the *mes_adrn_time* track. This track contains information on the time that the PRRX1 gene expression was induced in the SKNBE cell line.
 
 ---------
   ![](_static/images/R2d2_logo.png)**What is your conclusion from this experiment?**
@@ -502,17 +523,16 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 ---------
 
 
-Creating hypotheses; relating to chromatin modification data
+Creating hypotheses: relating to chromatin modification data
 ---------------------------------------------------------------
 
-Apparently this TF is capable of shifting cells from state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIP–seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
+Apparently this TF is capable of shifting cells from one state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIP–seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
 
 *Data used:*
-* 
+* Four MES and five ADRN neuroblastoma cell lines, including three isogenic cell line pairs. 
 
 *Techniques used:* 
 * ChIP–seq analysis
-
 
 *References*
 * Chapter 1.8 Weinberg
@@ -526,7 +546,7 @@ Apparently this TF is capable of shifting cells from state to the other. How can
 ---------
 
 
-* First we'll check one of the marker genes for Neuroblastoma: DLK1 
+First we'll check one of the marker genes for Neuroblastoma: DLK1 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What do you expect for the H3K27ac signals?**
@@ -536,7 +556,7 @@ Apparently this TF is capable of shifting cells from state to the other. How can
 
 ---------
 
-* Click on the button below to show the ChIP-Seq data for DLK1 in the four cell line pairs. For your convenience the signals are colored according to the type (MES or ADRN) of cell line. 
+* Click on the button below to show the ChIP-Seq data for DLK1 in the four mesenchymal and five andrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line. 
 
 <form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype=\"multipart/form-data\" method='POST' target='_gv'>
 <input type='hidden' name='option' value='gbv2_base'>
@@ -766,7 +786,7 @@ Apparently this TF is capable of shifting cells from state to the other. How can
 
 ---------
 
-* The chromatin state is especially important for transcription factors; we'll re-visit the list of transcription factors that are differentially expressed between the MES and ADRN cell lines.
+The chromatin state is especially important for transcription factors; we'll re-visit the list of transcription factors that are differentially expressed between the MES and ADRN cell lines.
 
 ---------
   ![](_static/images/R2d2_logo.png)**Why are Transcription Factors of interest in this setting?**
