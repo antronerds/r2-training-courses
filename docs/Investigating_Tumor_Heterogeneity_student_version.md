@@ -786,7 +786,8 @@ First we'll check one of the HAND genes, known to play a role in the development
 <br>
 
 
-* Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, coding exons are darker. 
+Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, coding exons are darker. 
+
 ---------
   ![](_static/images/R2d2_logo.png)**Can you explain this graph? What do you expect for the expression of this gene?**
 
