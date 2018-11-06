@@ -546,7 +546,7 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 ---------
 
 
-First we'll check one of the marker genes for Neuroblastoma: DLK1 
+First we'll check one of the HAND genes, known to play a role in the development of the sympatho-adrenal lineage from the neural crest.
 
 ---------
   ![](_static/images/R2d2_logo.png)**What do you expect for the H3K27ac signals?**
@@ -556,7 +556,7 @@ First we'll check one of the marker genes for Neuroblastoma: DLK1
 
 ---------
 
-* Click on the button below to show the ChIP-Seq data for DLK1 in the four mesenchymal and five andrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line. 
+* Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line. 
 
 <form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype=\"multipart/form-data\" method='POST' target='_gv'>
 <input type='hidden' name='option' value='gbv2_base'>
@@ -766,25 +766,13 @@ First we'll check one of the marker genes for Neuroblastoma: DLK1
 <button type="submit" >Go to R2 GenomeBrowser for DLK1</button>
 </form>
 
-* Scroll down to show the exact location of the DLK1 gene; coding exons are in darkgreen. 
+* Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, coding exons are darker. 
 ---------
-  ![](_static/images/R2d2_logo.png)**Does this graph convince you that enhancers are important here?**
+  ![](_static/images/R2d2_logo.png)**Can you explain this graph? What do you expect for the expression of this gene?**
 
 <br>
 <br>
 
----------
-
-
-* At the top of the page click on the **zoom out 10X** button
-
----------
-  ![](_static/images/R2d2_logo.png)**And now?**
-
-<br>
-<br>
-
----------
 
 The chromatin state is especially important for transcription factors; we'll re-visit the list of transcription factors that are differentially expressed between the MES and ADRN cell lines.
 
@@ -812,7 +800,7 @@ The chromatin state is especially important for transcription factors; we'll re-
 <button type="submit" >Go to R2 differential expression of TF's</button>
 </form>
 
-* Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate. In the genomebrowser you can type the name of the gene in the left upper corner textfield.
+* Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate. In the genomebrowser you can type the name of the gene in the left upper corner textfield. To further explore the larger region around the gene you can use the zoom buttons at the top of the page
 
 
 ---------
