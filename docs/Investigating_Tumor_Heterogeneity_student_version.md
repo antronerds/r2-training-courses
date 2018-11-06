@@ -599,7 +599,7 @@ First we'll check one of the marker genes for Neuroblastoma: DLK1
 <input type='hidden' name='chip_slider' value='no'>
 <input type='hidden' name='chip_slider_value' value='3'>
 <input type='hidden' name='chip_table' value='chip_raw'>
-<input type='hidden' name='chrom' value='chr14'>
+<input type='hidden' name='chrom' value='chr5'>
 <input type='hidden' name='clinvar' value='off'>
 <input type='hidden' name='combiset' value='ps_amc_ticcellcheck43_u133p2'>
 <input type='hidden' name='cosmic' value='off'>
@@ -627,7 +627,7 @@ First we'll check one of the marker genes for Neuroblastoma: DLK1
 <input type='hidden' name='elmer_nm_var_all' value='off'>
 <input type='hidden' name='encode_bed_data_v1' value='off'>
 <input type='hidden' name='encode_tf_v1' value='off'>
-<input type='hidden' name='end' value='101202467'>
+<input type='hidden' name='end' value='154120827'>
 <input type='hidden' name='epi_roadmap' value='off'>
 <input type='hidden' name='exomevarserver' value='off'>
 <input type='hidden' name='express_background' value=''>
@@ -712,7 +712,7 @@ First we'll check one of the marker genes for Neuroblastoma: DLK1
 <input type='hidden' name='sample' value='dataset_track'>
 <input type='hidden' name='snp138' value='off'>
 <input type='hidden' name='snp_array' value='off'>
-<input type='hidden' name='start' value='101192201'>
+<input type='hidden' name='start' value='153591527'>
 <input type='hidden' name='superenhancer_nb_george' value='off'>
 <input type='hidden' name='sv_delly_pedcan1' value='off'>
 <input type='hidden' name='sv_ivo_mb500' value='off'>
