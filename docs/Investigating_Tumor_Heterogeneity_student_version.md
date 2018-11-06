@@ -763,8 +763,9 @@ First we'll check one of the HAND genes, known to play a role in the development
 <input type='hidden' name='wgs_somatic_strelka' value='off'>
 <input type='hidden' name='wgs_somatic_varscan2' value='off'>
 <input type='hidden' name='wgs_varfileb_maris_20' value='off'>
-<button type="submit" >Go to R2 GenomeBrowser for DLK1</button>
+<button type="submit" >Go to R2 GenomeBrowser for HAND1</button>
 </form>
+
 
 * Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, coding exons are darker. 
 ---------
