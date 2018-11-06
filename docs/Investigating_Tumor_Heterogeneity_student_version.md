@@ -56,7 +56,8 @@ For a start we'll investigate established childhood tumor cell lines, including 
   <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
   <button type="submit" >Go to R2</button>
 </form>  
-
+<br>
+<br>
 
 * You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to your develop your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
 
@@ -105,6 +106,8 @@ We've seen that the expression of genes differs among the samples and some types
 <input type='hidden' name='cortype' value='transform_zscore'>
 <button type="submit" >Go to R2 tSNE map</button>
 </form>
+<br>
+<br>
 
 
 * Colors are not set by default, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click next to show the changes 
@@ -179,6 +182,8 @@ For this analysis we'll directly go to one of the analysis tools of R2: Topliste
 <input type='hidden' name='cortype' value='transform_2log'>
 <button type="submit" >Go to R2 Toplister</button>
 </form>
+<br>
+<br>
 
 * Click **next**; a list of genes appears
 
@@ -245,6 +250,8 @@ We have identified two different types of cells that occur within the same patie
   <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
   <button type="submit" >Go to R2 main portal</button>
 </form>  
+<br>
+<br>
 
 
 * In Field 3 choose *Find Differential expression* between groups and click **next**
@@ -325,6 +332,8 @@ We now have a signature that distinguishes between the two types of cells. We al
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
   <button type="submit" >Go to R2</button>
 </form>  
+<br>
+<br>
 
 
 * In field 3 select **View Geneset**
@@ -354,6 +363,8 @@ When observing such clearcut patterns it is good scientific practice to test thi
   <input type="hidden" name="table" value="ps_avgpres_gse90683geo48_gse90683r1">
   <button type="submit" >Go to R2 additional NB dataset</button>
 </form>  
+<br>
+<br>
 
 
 ---------
@@ -395,6 +406,8 @@ The expression patterns of these specific signatures can be used to compare cell
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
   <button type="submit" >Go to R2</button>
 </form>  
+<br>
+<br>
 
 
 * In field 3 choose **Relate 2 tracks** and click next
@@ -438,6 +451,8 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
   <button type="submit" >Go to R2 main</button>
 </form>  
+<br>
+<br>
 
 
 Again we're going to find out which genes make a difference, but now in a specific subset that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. 
@@ -511,6 +526,8 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
   <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
   <button type="submit" >Go to R2 main, inducible TF set</button>
 </form>  
+<br>
+<br>
 
 * Select in field 3 the **Relate 2 tracks** option. R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. Relate the two tracks, adapt the **ColorMode** to **Color by Track** and try the *mes_adrn_time* track. This track contains information on the time that the PRRX1 gene expression was induced in the SKNBE cell line.
 
@@ -765,6 +782,8 @@ First we'll check one of the HAND genes, known to play a role in the development
 <input type='hidden' name='wgs_varfileb_maris_20' value='off'>
 <button type="submit" >Go to R2 GenomeBrowser for HAND1</button>
 </form>
+<br>
+<br>
 
 
 * Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, coding exons are darker. 
@@ -800,6 +819,8 @@ The chromatin state is especially important for transcription factors; we'll re-
 <input type='hidden' name='subset' value='TRACKER:,0,1,2,3,4,5,6,7,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33'>
 <button type="submit" >Go to R2 differential expression of TF's</button>
 </form>
+<br>
+<br>
 
 * Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate. In the genomebrowser you can type the name of the gene in the left upper corner textfield. To further explore the larger region around the gene you can use the zoom buttons at the top of the page
 
