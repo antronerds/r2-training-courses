@@ -59,7 +59,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <br>
 <br>
 
-You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to your develop your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
+You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to develop your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumor models?**
@@ -70,7 +70,8 @@ You're now on the R2 main page. This web based molecular biology data analysis p
 
   * In field 4 type the name of the gene and click **Next**
   * Leave all settings at default and click **Next**
-  * A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values along of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. Hovering with your mouse over data points will show additional information.
+A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. 
+  * Hover with your mouse over data points to show additional information.
   * The expression values on the y-axis are logarithmic; set the **Transform** option to **none**, and select **Track and Gene sort** for the **Extra Graph Option**. Sample annotation is stored in R2 in so called tracks, for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type and click **Adjust Settings** to obtain a more explicit picture.  
   
 
@@ -134,7 +135,7 @@ We've seen that the expression of genes differs among the samples and some types
 Urgency of research: patient material
 ----------------------------------------
 
-In the former step we derived that neuroblastoma cell lines seem to group with cell lines of different developmental lineages. We have recently established new cell line pairs from neuroblastoma patients. In some cases multiple cell lines were obtained from the same biopsy. These cell lines share genetic defects and are therefore called *isogenic* cell line pairs. A microscopic image of each pair is provided below. 
+In the former step we derived that neuroblastoma cell lines seem to group with cell lines of different developmental lineages. We have recently established new cell line pairs from neuroblastoma patients. In some cases multiple cell lines were obtained from the same biopsy. These cell lines share genetic defects and are therefore called *isogenic* cell line pairs. A microscopy image of each pair is provided below. 
 
   ![Figure 2: Bright field image of isogenic cell line pairs.](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure 2: Bright field image of isogenic cell line pairs.")
 	
@@ -147,7 +148,7 @@ In the former step we derived that neuroblastoma cell lines seem to group with c
 
 ---------
 
-We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of these pairs and of a previously established neuroblastoma cell line that after culturing gave rise to two very divergent phenotypes. The resulting gene expression patterns can be used perform to a hierarchical clustering. An example of such clustering resulting in an ordered heatmap is provided below 
+We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of these pairs and of a previously established neuroblastoma cell line that after culturing gave rise to two very divergent phenotypes. The resulting gene expression patterns can be used to perform a hierarchical clustering. An example of such clustering resulting in an ordered heatmap is provided below 
 
   ![Figure 3: Heatmap: unsupervised clustering of samples using the distribution of the expression data combined with the clustering of genes based on their expression through the samples.](_static/images/TumorHeterogeneity_HeatmapClustering.png "Figure 3: Heatmap: unsupervised clustering of samples using the distribution of the expression data combined with the clustering of genes based on their expression through the samples.")
 	
