@@ -69,7 +69,8 @@ You're now on the R2 main page. This web based molecular biology data analysis p
 ---------
 
   * In field 4 type the name of the gene and click **Next**
-  * Leave all settings at default and click **Next**
+  * Leave all settings at default and click **Next**  
+  
 A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. 
   * Hover with your mouse over data points to show additional information.
   * The expression values on the y-axis are logarithmic; set the **Transform** option to **none**, and select **Track and Gene sort** for the **Extra Graph Option**. Sample annotation is stored in R2 in so called tracks, for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type and click **Adjust Settings** to obtain a more explicit picture.  
