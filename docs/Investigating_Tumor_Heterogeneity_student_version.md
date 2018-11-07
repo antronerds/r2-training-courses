@@ -59,7 +59,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <br>
 <br>
 
-* You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to your develop your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
+You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to your develop your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumor models?**
@@ -68,8 +68,8 @@ For a start we'll investigate established childhood tumor cell lines, including 
 
 ---------
 
-  * In field 4 type the name of the gene and click next
-  * Leave all settings at default and click **next**
+  * In field 4 type the name of the gene and click **Next**
+  * Leave all settings at default and click **Next**
   * A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values along of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. Hovering with your mouse over data points will show additional information.
   * The expression values on the y-axis are logarithmic; set the **Transform** option to **none**, and select **Track and Gene sort** for the **Extra Graph Option**. Sample annotation is stored in R2 in so called tracks, for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type and click **Adjust Settings** to obtain a more explicit picture.  
   
@@ -110,7 +110,7 @@ We've seen that the expression of genes differs among the samples and some types
 <br>
 
 
-* Colors are not set by default, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click next to show the changes 
+* Colors are not set by default, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click **Next** to show the changes 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you relate the tumors to a type of tissue? (Note: ALL stands for Acute Lymphocytic Leukemia)**
@@ -170,7 +170,7 @@ We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of
 
 For this analysis we'll directly go to one of the analysis tools of R2: Toplister. The Toplister can assess which genes behave different throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
 
-* Goto R2 by clicking the button below
+* Go to R2 by clicking the button below
 
 <form name="toplisterform" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
 <input type='hidden' name='minpres' value='1'>
@@ -185,7 +185,7 @@ For this analysis we'll directly go to one of the analysis tools of R2: Topliste
 <br>
 <br>
 
-* Click **next**; a list of genes appears
+* Click **Next**; a list of genes appears
 
 ---------
   ![](_static/images/R2d2_logo.png)**Do you recognize any genes that explain the difference in phenotype?**
@@ -195,7 +195,9 @@ For this analysis we'll directly go to one of the analysis tools of R2: Topliste
 
 ---------
 
-* Use the mousewheel to scroll to the bottom of the page (or click on the shoe-print at the top of the page). Here you can choose to perform an additional analysis. The heatmap vizualization produces a hierarchically clustered view of the expression values of the top 100 genes.  
+* Use the mousewheel to scroll to the bottom of the page (or click on the shoe-print at the top of the page). 
+
+Here you can choose to perform an additional analysis. The heatmap vizualization produces a hierarchically clustered view of the expression values of the top 100 genes.  
 
 ---------
   ![](_static/images/R2d2_logo.png)**What number of groups do you expect?**
@@ -254,10 +256,10 @@ We have identified two different types of cells that occur within the same patie
 <br>
 
 
-* In Field 3 choose *Find Differential expression* between groups and click **next**
+* In Field 3 choose *Find Differential expression* between groups and click **Next**
 
 This dataset has been annotated with 'type' information. Each sample was assigned to either the MESenchymal or the ADReNergic type, in R2 this is called a *track*. 
-* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to **No correction**. Click **next** twice
+* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to **No correction**. Click **Next** twice
 * A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset is shown. Click on the hyperlinked name of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well
 * Go back to the window with the differentially expressed genes. This is still open in one of your browser tabs. 
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
@@ -271,6 +273,7 @@ This dataset has been annotated with 'type' information. Each sample was assigne
 ---------
 
 For future use, this list of genes has been stored for you in R2 as signatures (aka genesets or categories). The list has been split into two categories: one set of genes that is highly expressed in the MES type of samples (r2_mesadrn_mes) and one set of genes highly expressed in the ADRN type of samples (r2_mesadrn_adrn).  
+
 R2 provides additional analysis for sets of genes that can be accessed from the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematically ordered biological terms that is used to formally describe the biological role of each gene. The Gene Ontology Analysis tool in R2 calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. 
 
 * On the page with the differentially expressed genes, select the **Gene Ontology Analysis** button in the menu on the right 
@@ -298,7 +301,7 @@ In R2 there are much more sets of genes that have been found to be implemented i
 
 * Go back to the window with the differentially expressed genes. 
 * Select the **Gene set analysis** option from the right menu
-* Select the *geneset_broad_2015_hallmark* geneset and click **next**
+* Select the *geneset_broad_2015_hallmark* geneset and click **Next**
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which hallmark category of genes pops up as most important? Can you explain this?**
@@ -337,9 +340,9 @@ We now have a signature that distinguishes between the two types of cells. We al
 
 
 * In field 3 select **View Geneset**
-* Click next and select *geneset_r2provided_genelists* 
-* Click next, leave selection as is and click **next**
-* Select both signatures that were derived before by CTRL click on the MES (*r2_mesadrn_mes*) and ADRN (*r2_mesadrn_adrn*) signatures and click **next**
+* Click **Next** and select *geneset_r2provided_genelists* 
+* Click **Next**, leave selection as is and click **Next**
+* Select both signatures that were derived before by CTRL click on the MES (*r2_mesadrn_mes*) and ADRN (*r2_mesadrn_adrn*) signatures and click **Next**
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which cell types group together?**
@@ -410,8 +413,8 @@ The expression patterns of these specific signatures can be used to compare cell
 <br>
 
 
-* In field 3 choose **Relate 2 tracks** and click next
-* First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (lab\_id) and on the Y-axis the signature score track that R2 has generated for the MES signature (u-34\_mesadrn\_mes(#)). Click next.
+* In field 3 choose **Relate 2 tracks** and click **Next**
+* First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (lab\_id) and on the Y-axis the signature score track that R2 has generated for the MES signature (u-34\_mesadrn\_mes(#)). Click **Next**.
 * A graph is generated for each sample the signature score for the mesadrn\_mes signature is shown, select **Color by Track** for ColorMode and try different tracks. Click **Adjust Settings** to view the result.
 * Now select for the Y-axis the ADRN part of the signature, click **Adjust Settings** to view the result.
 * Now we're going to compare the signature scores; select the MES signature for the X track
@@ -456,7 +459,7 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 
 Again we're going to find out which genes make a difference, but now in a specific subset that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. 
-* In field 3 select **Find Differential expression between groups** Click **next**
+* In field 3 select **Find Differential expression between groups** Click **Next**
 * Make sure to select the proper track **Select a track**. We're now also going to filter for a specific **GeneCategory**; select the Transcription factors (*TF(945)*). Click **Next**. 
 * In the next screen we're asked to further filter for a specific type of samples to compare, we're focusing on the difference between ADRN and MES; select these. Click **Next**. 
 * A list of genes appears. Investigate the top 4 by clicking on the hyperlinked gene symbols. This brings you to the expression view of the gene. 
