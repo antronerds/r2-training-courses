@@ -38,7 +38,8 @@ For a start we'll investigate established childhood tumor cell lines, including 
 *Techniques used:*   
 * mRNA Microarray expression
 
-*Analysis used*  
+*Analysis used* 
+* individual gene selection
 * t-SNE: t-distributed stochastic neighbor embedding statistics
 
 *References*
@@ -164,6 +165,7 @@ We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of
 * mRNA Microarray expression
 
 *Analysis used*  
+* Toplister: unsupervised gene selection
 * Unsupervised hierarchical clustering
 * Heatmap visualization
 
@@ -243,7 +245,8 @@ We have identified two different types of cells that occur within the same patie
 * mRNA arrays
 
 *Analysis used*  
-* Overrepresentation calculation
+* Differential Expression: supervised gene selection
+* Gene Ontology Analysis: Overrepresentation calculation
  
 <br>
 <br>
@@ -446,7 +449,7 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 * mRNA expression data
 
 *Analysis used*
-* Differential expression  
+* Differential expression: supervised gene selection  
 
 <br>
 <br>
@@ -559,6 +562,10 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 
 *References*
 * Chapter 1.8 Weinberg
+
+*Analysis*
+* Genome Browser: analyzing histone modifications marking active enhancers
+* Differential Expression
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you explain what the goal of this experiment was?**
