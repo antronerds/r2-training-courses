@@ -201,7 +201,7 @@ For this analysis we'll directly go to one of the analysis tools of R2: Topliste
 
 * Use the mousewheel to scroll to the bottom of the page (or click on the shoe-print at the top of the page). 
 
-Here you can choose to perform an additional analysis. The heatmap vizualization produces a hierarchically clustered view of the expression values of the top 100 genes.  
+Here you can choose to perform an additional analysis. The heatmap vizualization produces a hierarchically clustered view of the expression values for the top 100 genes.  
 
 ---------
   ![](_static/images/R2d2_logo.png)**What number of groups do you expect?**
