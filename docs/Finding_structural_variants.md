@@ -3,7 +3,7 @@
 Investigating structural variants
 ===========================
 
-*Not every cancer has determining somatic mutations. Using the full power of WGS data relevant structural variants can be traced also and linked to potential causes of disease*
+*Not every cancer has determining somatic mutations. Using the full power of WGS data, relevant structural variants can be traced also and linked to potential causes of disease*
 
 In this course we'll introduce R2, the web based genomics analysis and visualization application. Throughout the course an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa new insights can be derived. Throughout this course we'll focus on data of the childhood tumor Neuroblastoma.
 
@@ -19,10 +19,10 @@ Cancer is a very complex disease. Much more complicated than originally anticipa
 	
   [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
-Although there has been extensive research into similar mutation mechanisms in Neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you to the cutting edge of research into this often deadly childhood tumor. Recent research suggests that Neuroblastoma consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of Neuroblastoma. Children developing a relapse almost always die. 
-Fortunately new technologies have become available to molecular biology. These enable us to study not only mutations and RNA expression of genes but also study the epigenetic modifications of the DNA-associated histones. And in addition genes can now be manipulated in cell lines and living tissues. 
-Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2.  
-R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from Neuroblastoma tumors and cell lines. 
+Although there has been extensive research into similar mutation mechanisms in Neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you cutting edge research in this often deadly childhood tumor.  
+Recent research suggests that Neuroblastoma consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of Neuroblastoma. Children developing a relapse almost always die. 
+Fortunately new technologies have become available to molecular biology. These enable us to not only study mutations and RNA expression of genes, but to study the epigenetic modifications of the DNA-associated histones as well. And in addition, genes can now be manipulated in cell lines and living tissues.  
+Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from Neuroblastoma tumors and cell lines. 
 
 Despite decades of research high stage neuroblastoma still has a very poor prognosis. Since cancer is a disease of genomic aberrations we're first going to investigate what aberrations are present and how these might relate to the onset of neuroblastoma. 
 
@@ -42,8 +42,8 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 </form>  
 
 * Log on to the R2 platform with your credentials that were provided. (or apply for a login using the link) 
-* In the left menu click on **Change Data Scope** > **Graduate Training Course**
-* An additional choice step appears; click **Goto Graduate Training Course home**
+* In the left menu click on **Change Data Scope** > **Training** > **Graduate Training Course**
+* In the middle section of the page, an additional choice step appears; click **Goto Graduate Training Course home**
 * For a quick impression of the data select the **Cohort Overview** R2 presents the tumor series with it's annotation. Explore the distribution of the parameters.
 
 ---------
@@ -63,7 +63,7 @@ Until recently only several genomic aberrations were known:
 <tr><td>CyclinD1</td><td>amplification 4%</td><td>(Molenaar et al., 2003)</td></tr>
 <tr><td>PHOX2B</td><td>4%</td><td>(van Limpt et al., 2004)</td></tr>
 <tr><td>PTPRD</td><td>4%</td><td>(Stallings et al. 2006)</td></tr>
-<tr><td>NF1</td><td>3%</td><td>(Hölzel et al., 2010)</td></tr>
+<tr><td>NF1</td><td>3%</td><td>(HÃ¶lzel et al., 2010)</td></tr>
 <tr><td>PTPN11</td><td>2%</td><td>(Merks et al., 2004, Bentires-Alj et al., 2004)</td></tr>
 <tr><td>FOXR1</td><td>1%</td><td>(Santo et al., 2011)</td></tr>
 <tr><td>LIN28B</td><td>1%</td><td>(Molenaar et al., 2012)</td></tr>
@@ -77,8 +77,8 @@ Somatic mutations in Neuroblastoma
 
 For this the samples where sent to the Complete Genomics sequencing facility, now taken over by BGI, for whole-genome paired-end sequencing. They provide a sequence as a service model. Genomes were sequenced at an average coverage of 50. Compared to the HG18 reference genome an average of 3,347,592 singlenucleotide variants (SNVs) per genome were obtained, in accordance with reported frequencies of interpersonal variants. 
 
-The R2 development team has processed these WGS data further using the CGAtools software to compare tumor with lymphocyte genomes. This provided a somatic score estimating the likelihood of mutations to be somatic, through several filtering steps the somatic mutations were determined with respect to the reference genome.
-
+The R2 development team has processed these WGS data further using the CGAtools software to compare tumor with lymphocyte genomes. This provided a somatic score estimating the likelihood of mutations to be somatic. Through several filtering steps the somatic mutations were determined with respect to the reference genome.
+0
 
   ![Figure 2: Comparing Tumor data with the reference genome from Lymphocytes.](_static/images/structural_variants_reference_genome.png "Figure 2: Comparing Tumor data with the reference genome from Lymphocytes.")
 	
@@ -120,8 +120,8 @@ A comprehensive list of the mutations can be accessed through R2.
 
 ---------
 
-* The genomebrowser has a tremendous number of parameters that can be set. Scroll down to the bottom of the page. A form shows quite some parameter fields. These provide additional annotations and settings for the algorithms used. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data based on methylation and acetylation patterns of the genome. This annotation however, is only provided on another Human Genome build. In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
-* An unannotated version of the reference genome is shown. Find and set the **Refseq(R2)** annotation on. Click **redraw**
+* The GenomeBrowser has a tremendous number of parameters that can be set. Scroll down to the lower half of the page. A form shows quite some parameter fields. These provide additional annotations and settings for the algorithms used. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data, which is based on methylation and acetylation patterns of the genome. This annotation however, is only provided on another Human Genome build. In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
+* An unannotated version of the reference genome is shown. Find the **Refseq(R2)** and switch the annotation on. Click **redraw**
 
 ---------
   ![](_static/images/R2d2_logo.png)**What has happened to the ALK gene?**
@@ -141,7 +141,7 @@ A comprehensive list of the mutations can be accessed through R2.
 	
   [**Figure 3: Selecting a region.**](_static/images/structural_variants_selecting_region.png)
 
-* This NIH Epigenome Roadmap annotation is actually a sum of data from a lot of datasources. These can be further detailed by selecting the detail view in the toolbox that appears when you click the tools icon, see image below. This box appears at more settings fields if available.
+* This NIH Epigenome Roadmap annotation is actually a sum of data from a lot of data sources. These sources can be further detailed by selecting the detail view in the toolbox that appears when you click the tools icon, see image below. This box appears at more settings fields if available.
 
 
   ![Figure 4: Opening the NIH parameter settings toolbox.](_static/images/structural_variants_selecting_toolbox.png "Figure 4: Opening the NIH parameter settings toolbox.")
