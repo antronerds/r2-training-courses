@@ -1,6 +1,6 @@
 <a id="investigating_tumor_heterogeneity"> </a>
 
-Student Course: Investigating Intra-tumor Heterogeneity
+Graduate Course: Investigating Intra-tumor Heterogeneity
 =================================
 
 *Analyse tumor heterogeneity in Neuroblastoma using the R2 data analysis platform*
@@ -11,20 +11,10 @@ This resource is located online at http://r2-training-courses.readthedocs.io
 Introduction
 ------------
 
-Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. During the lectures you’ve been shown how this works in colorectal cancer, where a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
-
-  ![Figure 1: Mutation paths during cancer progression.](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression.")
-	
-  [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
-
-Although there has been extensive research into similar mutation mechanisms in Neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you to the cutting edge of research into this often deadly childhood tumor.  
-
-From the lectures you should have learned already that this tumor consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of Neuroblastoma. Children developing a relapse almost always die. 
-Fortunately new technologies have become available to molecular biology. These enable us to study not only mutations and RNA expression of genes but also study the epigenetic modifications of the DNA-associated histones. And in addition genes can now be manipulated in cell lines and living tissues. 
-Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from Neuroblastoma tumors and cell lines.  
-
+In this section we'll integrate RNA expression data with sequence data, specifically ChIP seq data, to further unravel Neuroblastoma data. 
 Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which is neural crest derived. During embryogenesis, cells delaminate from the neural crest, migrate ventrally and differentiate into adrenaline- or noradrenaline-producing cells. Neuroblastomas typically express enzymes for the adrenaline-synthesis route. High-stage neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease.
-Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of Neuroblastoma tumors. From four patients we obtained tumor biopsies that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines.  
+
+Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of Neuroblastoma tumors. From four patients we obtained tumor biopsies that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines    
 
 
 Tumors and origins: a first impression of your data
@@ -53,14 +43,15 @@ For a start we'll investigate established childhood tumor cell lines, including 
 * Go to R2 by clicking on the button below:  
 
 
-<form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="itcc_68_cell_lines" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
   <button type="submit" >Go to R2</button>
 </form>  
 <br>
 <br>
 
-You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to develop your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
+You're now on the R2 main page. For this course you do not need to be logged in. The web based molecular biology data analysis platform R2 contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to develop your analysis of choice.  
+In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumor models?**
@@ -73,8 +64,9 @@ You're now on the R2 main page. This web based molecular biology data analysis p
   * Leave all settings at default and click **Next**  
   
 A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. 
-  * Hover with your mouse over data points to show additional information.
-  * The expression values on the y-axis are logarithmic; set the **Transform** option to **none**, and select **Track and Gene sort** for the **Extra Graph Option**. Sample annotation is stored in R2 in so called tracks, for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type and click **Adjust Settings** to obtain a more explicit picture.  
+  * Hover with your mouse over data points to show additional information.  
+At the bottom of teh page you can find a table with adjustable settings.   
+  * The expression values on the y-axis are logarithmic; set the **Transform** option to **none**, and the **Extra Graph Option** to **Track and Gene sort**. Sample annotation is stored in R2 in so called tracks; for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type and click **Adjust Settings** to obtain a more explicit picture.  
   
 
   * Now try the gene MYCN (Click the **Go to Main** link in the left upper corner)
@@ -113,7 +105,7 @@ We've seen that the expression of genes differs among the samples and some types
 <br>
 
 
-* Colors are not set by default, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click **Next** to show the changes 
+* Colors are not set by default. In the 'Adjustable settings' table at th ebottom of the page, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click **Next** to show the changes 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you relate the tumors to a type of tissue? (Note: ALL stands for Acute Lymphocytic Leukemia)**
@@ -550,6 +542,9 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
   <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
   <button type="submit" >Go to R2 main, inducible TF set</button>
 </form>  
+
+<form name="dscope_1" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method="POST" target="_gv"><input type="hidden" name="username" value="pietmolenaar"><input type="hidden" name="ssid" value="d6c8e043764d1daf0aa5ff36c4db7adf"></form>
+
 <br>
 <br>
 
@@ -613,7 +608,7 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 ---------
 
 
-* First we'll check one of the marker genes for Neuroblastoma: DLK1 
+First we'll check one of the HAND genes, known to play a role in the development of the sympatho-adrenal lineage from the neural crest.  
 
 ---------
   ![](_static/images/R2d2_logo.png)**What do you expect for the H3K27ac signals?**
@@ -623,7 +618,7 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 
 ---------
 
-* Click on the button below to show the ChIP-Seq data for DLK1 in the four cell line pairs. For your convenience the signals are colored according to the type (MES or ADRN) of cell line. 
+* Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.  
 
 <form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype=\"multipart/form-data\" method='POST' target='_gv'>
 <input type='hidden' name='option' value='gbv2_base'>
@@ -666,7 +661,7 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 <input type='hidden' name='chip_slider' value='no'>
 <input type='hidden' name='chip_slider_value' value='3'>
 <input type='hidden' name='chip_table' value='chip_raw'>
-<input type='hidden' name='chrom' value='chr14'>
+<input type='hidden' name='chrom' value='chr5'>
 <input type='hidden' name='clinvar' value='off'>
 <input type='hidden' name='combiset' value='ps_amc_ticcellcheck43_u133p2'>
 <input type='hidden' name='cosmic' value='off'>
@@ -694,7 +689,7 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 <input type='hidden' name='elmer_nm_var_all' value='off'>
 <input type='hidden' name='encode_bed_data_v1' value='off'>
 <input type='hidden' name='encode_tf_v1' value='off'>
-<input type='hidden' name='end' value='101202467'>
+<input type='hidden' name='end' value='154120827'>
 <input type='hidden' name='epi_roadmap' value='off'>
 <input type='hidden' name='exomevarserver' value='off'>
 <input type='hidden' name='express_background' value=''>
@@ -779,7 +774,7 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 <input type='hidden' name='sample' value='dataset_track'>
 <input type='hidden' name='snp138' value='off'>
 <input type='hidden' name='snp_array' value='off'>
-<input type='hidden' name='start' value='101192201'>
+<input type='hidden' name='start' value='153591527'>
 <input type='hidden' name='superenhancer_nb_george' value='off'>
 <input type='hidden' name='sv_delly_pedcan1' value='off'>
 <input type='hidden' name='sv_ivo_mb500' value='off'>
@@ -830,12 +825,15 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 <input type='hidden' name='wgs_somatic_strelka' value='off'>
 <input type='hidden' name='wgs_somatic_varscan2' value='off'>
 <input type='hidden' name='wgs_varfileb_maris_20' value='off'>
-<button type="submit" >Go to R2 GenomeBrowser for DLK1</button>
+<button type="submit" >Go to R2 GenomeBrowser for HAND1</button>
 </form>
+<br>
+<br>
 
-* Scroll down to show the exact location of the DLK1 gene; coding exons are in darkgreen. 
+Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, coding exons are darker.  
+
 ---------
-  ![](_static/images/R2d2_logo.png)**Does this graph convince you that enhancers are important here?**
+  ![](_static/images/R2d2_logo.png)**Can you explain this graph? What do you expect for the expression of this gene?**
 
 <br>
 <br>
@@ -843,16 +841,7 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 ---------
 
 
-* At the top of the page click on the **zoom out 10X** button
-
----------
-  ![](_static/images/R2d2_logo.png)**And now?**
-
-<br>
-<br>
-
----------
-
+* At the top of the page click on the **zoom out 10X** button. Look at the differences between the cell lines 
 
 
 The chromatin state is especially important for transcription factors; we'll re-visit the list of transcription factors that are differentially expressed between the MES and ADRN cell lines.
@@ -883,7 +872,7 @@ The chromatin state is especially important for transcription factors; we'll re-
 <br>
 <br>
 
-* Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate. In the genomebrowser you can type the name of the gene in the left upper corner textfield. To further explore the larger region around the gene you can use the zoom buttons at the top of the page
+* Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate. In the genomebrowser you can type the name of the gene in the left upper corner textfield. To further explore the larger region around the gene you can use the zoom buttons at the top of the page.  
 
 
 ---------
