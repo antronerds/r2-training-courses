@@ -909,12 +909,6 @@ Final remarks / future directions
 ---------------------------------
 In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize your genomics data. Click the button below to explore this wealth of data.
 
-<form name="dkfz-scope" action="http://hgserver1.amc.nl/cgi-bin/r2/main.cgi?" enctype="multipart/form-data" target="R2" method="post">  
-  <input type="hidden" name="option" value="about_dscope">
-  <input type="hidden" name="dscope" value="DKFZ_PED">
-  <button type="submit" >Go to R2</button>
-</form>  
-
 This ends the Graduate Course part of these course materials. Feel free to further explore the course materials or our tutorials.
 
 We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
