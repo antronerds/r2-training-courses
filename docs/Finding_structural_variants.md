@@ -302,7 +302,9 @@ Remarks
 ---------------------------------
 
 This ends the first part of this course. You can continue now with the analysis of intra-tumor heterogeneity.
-We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
+We hope that this course has been helpful. At the end of the workshop, please provide feedback on the course with <a href="https://docs.google.com/forms/d/e/1FAIpQLScy5xoA4btrYfuOOhc5qFKmYkV9_SBv1PQABPgV7eVJY8gk4A/viewform" target="_blank">this form</a>.  
+
+If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
 
 The R2 support team.
 
