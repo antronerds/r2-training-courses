@@ -147,9 +147,17 @@ A comprehensive list of the mutations can be accessed through R2.
   ![Figure 4: Opening the NIH parameter settings toolbox.](_static/images/structural_variants_selecting_toolbox.png "Figure 4: Opening the NIH parameter settings toolbox.")
 	
   [**Figure 4: Opening the NIH parameter settings toolbox.**](_static/images/structural_variants_selecting_toolbox.png)
+  
+  
+   ![Figure 5: Annotation colors with the chromatin state description.](_static/images/NIHepiRoadmap.png "Figure 5: Annotation colors with the chromatin state description.")
+	
+  [**Figure 5: Annotation colors with the chromatin state description.**](_static/images/NIHepiRoadmap.png)
+  
+  
+  
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What chromatin annotation is available for the start of the ALK gene? (Hint: hover over the annotation bars to look at the Category information) **
+  ![](_static/images/R2d2_logo.png)**What chromatin annotation is available for the start of the ALK gene? (You can hover over the annotation bars to see the ) **
 
 <br>
 <br>
@@ -173,9 +181,9 @@ Further use of WGS data; structural variants
 --------------------------------------------
 WGS data allows for further analysis; the paired end technique enables the discovery of structural variants.
 
-  ![Figure 5: Paired end sequencing makes discovery of structural variants possible.](_static/images/structural_variants_paired_end.png "Figure 5: Paired end sequencing makes discovery of structural variants possible.")
+  ![Figure 6: Paired end sequencing makes discovery of structural variants possible.](_static/images/structural_variants_paired_end.png "Figure 6: Paired end sequencing makes discovery of structural variants possible.")
 	
-  [**Figure 5: Paired end sequencing makes discovery of structural variants possible.**](_static/images/structural_variants_paired_end.png)
+  [**Figure 6: Paired end sequencing makes discovery of structural variants possible.**](_static/images/structural_variants_paired_end.png)
 
 * These structural variations are best visualized as so called _circosplots_. To access these in R2 go to the Graduate Training Course datascope and click the **circos archive** tile.
 * An overview of all sequences appears displayed as circos plots. These give an immediate comprensive view on the state of the genome. Click on one of the circos plots.
