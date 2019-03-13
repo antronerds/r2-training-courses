@@ -111,15 +111,6 @@ A comprehensive list of the mutations can be accessed through R2.
 ---------
 
 * The buttons on top of the page can be used to zoom in and out. Zoom out 4 times with a factor 20. 
-
----------
-  ![](_static/images/R2d2_logo.png)**How many bases does the ALK gene span approximately?**
-
-<br>
-<br>
-
----------
-
 * The GenomeBrowser has a tremendous number of parameters that can be set. Scroll down to the lower half of the page. A form shows quite some parameter fields. These provide additional annotations and settings for the algorithms used. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data, which is based on methylation and acetylation patterns of the genome. This annotation however, is only provided on another Human Genome build. In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
 * An unannotated version of the reference genome is shown. Find the **Refseq(R2)** and switch the annotation on. Click **redraw**
 
