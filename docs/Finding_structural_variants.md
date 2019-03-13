@@ -3,9 +3,9 @@
 Investigating structural variants
 ===========================
 
-*Not every cancer has determining somatic mutations. Using the full power of WGS data relevant structural variants can be traced also and linked to potential causes of disease*
+*Not every cancer has determining somatic mutations. Using the full power of WGS data, relevant structural variants can be traced also and linked to potential causes of disease*
 
-In this course we'll introduce R2, the web based genomics analysis and visualization application. Throughout the course an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa new insights can be derived. Throughout this course we'll focus on data of the childhood tumor Neuroblastoma.
+In this course we'll introduce R2, the web based genomics analysis and visualization application. Throughout the course an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa new insights can be derived. Throughout this course we'll focus on data of the childhood tumor neuroblastoma.
 
 We hope to show how R2 can be used to visualize and analyze your WGS data. 
 
@@ -19,10 +19,10 @@ Cancer is a very complex disease. Much more complicated than originally anticipa
 	
   [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
-Although there has been extensive research into similar mutation mechanisms in Neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you to the cutting edge of research into this often deadly childhood tumor. Recent research suggests that Neuroblastoma consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of Neuroblastoma. Children developing a relapse almost always die. 
-Fortunately new technologies have become available to molecular biology. These enable us to study not only mutations and RNA expression of genes but also study the epigenetic modifications of the DNA-associated histones. And in addition genes can now be manipulated in cell lines and living tissues. 
-Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2.  
-R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from Neuroblastoma tumors and cell lines. 
+Although there has been extensive research into similar mutation mechanisms in neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you cutting edge research in this often deadly childhood tumor.  
+Recent research suggests that neuroblastoma consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of neuroblastoma. Children developing a relapse almost always die. 
+Fortunately new technologies have become available to molecular biology. These enable us to not only study mutations and RNA expression of genes, but to study the epigenetic modifications of the DNA-associated histones as well. And in addition, genes can now be manipulated in cell lines and living tissues.  
+Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from neuroblastoma tumors and cell lines. 
 
 Despite decades of research high stage neuroblastoma still has a very poor prognosis. Since cancer is a disease of genomic aberrations we're first going to investigate what aberrations are present and how these might relate to the onset of neuroblastoma. 
 
@@ -36,18 +36,18 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 * Go to R2 (http://r2.amc.nl) by clicking on the button below:  
 
 
-<form name="accessing_r2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_nbadam88_u133p2">
   <button type="submit" >Go to R2</button>
 </form>  
 
 * Log on to the R2 platform with your credentials that were provided. (or apply for a login using the link) 
-* In the left menu click on **Change Data Scope** > **Graduate Training Course**
-* An additional choice step appears; click **Goto Graduate Training Course home**
+* In the left menu click on **Change Data Scope** > **Training** > **Graduate Training Course**
+* In the middle section of the page, an additional choice step appears; click **Goto Graduate Training Course home**
 * For a quick impression of the data select the **Cohort Overview** R2 presents the tumor series with it's annotation. Explore the distribution of the parameters.
 
 ---------
-  ![](_static/images/R2d2_logo.png)**How many tumors have a MYCN amplification?**
+  ![](_static/images/R2d2_logo.png)**Click on the distributions of different parameters. How many samples have a MYCN amplification?**
 
 <br>
 <br>
@@ -63,21 +63,21 @@ Until recently only several genomic aberrations were known:
 <tr><td>CyclinD1</td><td>amplification 4%</td><td>(Molenaar et al., 2003)</td></tr>
 <tr><td>PHOX2B</td><td>4%</td><td>(van Limpt et al., 2004)</td></tr>
 <tr><td>PTPRD</td><td>4%</td><td>(Stallings et al. 2006)</td></tr>
-<tr><td>NF1</td><td>3%</td><td>(Hölzel et al., 2010)</td></tr>
+<tr><td>NF1</td><td>3%</td><td>(HÃ¶lzel et al., 2010)</td></tr>
 <tr><td>PTPN11</td><td>2%</td><td>(Merks et al., 2004, Bentires-Alj et al., 2004)</td></tr>
 <tr><td>FOXR1</td><td>1%</td><td>(Santo et al., 2011)</td></tr>
 <tr><td>LIN28B</td><td>1%</td><td>(Molenaar et al., 2012)</td></tr>
 </table>
 
 
-To extend these data the Oncogenomics department of the AMC set out to sequence 87 untreated primary neuroblastoma tumours of all stages from this set.
+To extend these data, the Oncogenomics department of the AMC set out to sequence 87 untreated primary neuroblastoma tumours of all stages from this set.
 
-Somatic mutations in Neuroblastoma
+Somatic mutations in neuroblastoma
 ----------------------------------
 
 For this the samples where sent to the Complete Genomics sequencing facility, now taken over by BGI, for whole-genome paired-end sequencing. They provide a sequence as a service model. Genomes were sequenced at an average coverage of 50. Compared to the HG18 reference genome an average of 3,347,592 singlenucleotide variants (SNVs) per genome were obtained, in accordance with reported frequencies of interpersonal variants. 
 
-The R2 development team has processed these WGS data further using the CGAtools software to compare tumor with lymphocyte genomes. This provided a somatic score estimating the likelihood of mutations to be somatic, through several filtering steps the somatic mutations were determined with respect to the reference genome.
+The R2 development team has processed these WGS data further using the CGAtools software to compare tumor with lymphocyte genomes. This provided a somatic score, estimating the likelihood of mutations to be somatic. Through several filtering steps the somatic mutations were determined with respect to the reference genome.
 
 
   ![Figure 2: Comparing Tumor data with the reference genome from Lymphocytes.](_static/images/structural_variants_reference_genome.png "Figure 2: Comparing Tumor data with the reference genome from Lymphocytes.")
@@ -110,18 +110,18 @@ A comprehensive list of the mutations can be accessed through R2.
 
 ---------
 
-* The buttons on top of the page can be used to zoom in and out. Zoom out 3 times with a factor 10. 
+* The buttons on top of the page can be used to zoom in and out. Zoom out 4 times with a factor 20. 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**How many bases does the ALK gene span?**
+  ![](_static/images/R2d2_logo.png)**How many bases does the ALK gene span approximately?**
 
 <br>
 <br>
 
 ---------
 
-* The genomebrowser has a tremendous number of parameters that can be set. Scroll down to the bottom of the page. A form shows quite some parameter fields. These provide additional annotations and settings for the algorithms used. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data based on methylation and acetylation patterns of the genome. This annotation however, is only provided on another Human Genome build. In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
-* An unannotated version of the reference genome is shown. Find and set the **Refseq(R2)** annotation on. Click **redraw**
+* The GenomeBrowser has a tremendous number of parameters that can be set. Scroll down to the lower half of the page. A form shows quite some parameter fields. These provide additional annotations and settings for the algorithms used. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data, which is based on methylation and acetylation patterns of the genome. This annotation however, is only provided on another Human Genome build. In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
+* An unannotated version of the reference genome is shown. Find the **Refseq(R2)** and switch the annotation on. Click **redraw**
 
 ---------
   ![](_static/images/R2d2_logo.png)**What has happened to the ALK gene?**
@@ -131,7 +131,7 @@ A comprehensive list of the mutations can be accessed through R2.
 
 ---------
 
-* Locate the ALK gene (hint type in the gene name in the left upper **Find gene** field) 
+* If ALK gene is out of scope, locate the ALK gene (hint type in the gene name in the left upper **Find gene** field) 
 
 * For clarity you can now switch off the cosmic annotation (in the Genome Variation box) and the Calldif Somatic Genome annotation (in the X:Complete Genomics => Variants box). Set the NIH Epigenome Roadmap annotation to all (in the TranscriptView annotation box). This annotation provides information on public datasets that have established whether chromatin regions are subject to active transcription (green), enhancer regions (yellow) or are part of a transcription start site (red).
 
@@ -141,15 +141,23 @@ A comprehensive list of the mutations can be accessed through R2.
 	
   [**Figure 3: Selecting a region.**](_static/images/structural_variants_selecting_region.png)
 
-* This NIH Epigenome Roadmap annotation is actually a sum of data from a lot of datasources. These can be further detailed by selecting the detail view in the toolbox that appears when you click the tools icon, see image below. This box appears at more settings fields if available.
+* This NIH Epigenome Roadmap annotation is actually a sum of data from a lot of data sources. These sources can be further detailed by selecting the detail view in the toolbox that appears when you click the tools icon, see image below. This box appears at more settings fields if available.
 
 
   ![Figure 4: Opening the NIH parameter settings toolbox.](_static/images/structural_variants_selecting_toolbox.png "Figure 4: Opening the NIH parameter settings toolbox.")
 	
   [**Figure 4: Opening the NIH parameter settings toolbox.**](_static/images/structural_variants_selecting_toolbox.png)
+  
+  
+   ![Figure 5: Annotation colors with the chromatin state description.](_static/images/NIHepiRoadmap.png "Figure 5: Annotation colors with the chromatin state description.")
+	
+  [**Figure 5: Annotation colors with the chromatin state description.**](_static/images/NIHepiRoadmap.png)
+  
+  
+  
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What chromatin annotation is available for the start of the ALK gene?**
+  ![](_static/images/R2d2_logo.png)**What chromatin annotation is available for the start of the ALK gene? (You can hover over the annotation bars to see the ) **
 
 <br>
 <br>
@@ -157,7 +165,7 @@ A comprehensive list of the mutations can be accessed through R2.
 ---------
 
 
-* Now go back to the Graduate Training Course datascope, select the Somatic mutations tile and now click the  **detail** link. R2 shows additional information on the expression of the gene and its location on the genome. 
+* Now go back to the Graduate Training Course datascope, select the Somatic Variants Table tile and now click the  **detail** link. R2 shows additional information on the expression of the gene and its location on the genome. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What is remarkable about the expression of the ALK gene?**
@@ -173,9 +181,9 @@ Further use of WGS data; structural variants
 --------------------------------------------
 WGS data allows for further analysis; the paired end technique enables the discovery of structural variants.
 
-  ![Figure 5: Paired end sequencing makes discovery of structural variants possible.](_static/images/structural_variants_paired_end.png "Figure 5: Paired end sequencing makes discovery of structural variants possible.")
+  ![Figure 6: Paired end sequencing makes discovery of structural variants possible.](_static/images/structural_variants_paired_end.png "Figure 6: Paired end sequencing makes discovery of structural variants possible.")
 	
-  [**Figure 5: Paired end sequencing makes discovery of structural variants possible.**](_static/images/structural_variants_paired_end.png)
+  [**Figure 6: Paired end sequencing makes discovery of structural variants possible.**](_static/images/structural_variants_paired_end.png)
 
 * These structural variations are best visualized as so called _circosplots_. To access these in R2 go to the Graduate Training Course datascope and click the **circos archive** tile.
 * An overview of all sequences appears displayed as circos plots. These give an immediate comprensive view on the state of the genome. Click on one of the circos plots.
@@ -212,7 +220,7 @@ WGS data allows for further analysis; the paired end technique enables the disco
 
 Chromothripsis
 --------------
-While investigating the WGS data an interesting phenomenon was observed. In some tumor samples parts of the genome appeared to be riddled with structural variants, resulting in a shredded chromosomal structure.
+While investigating the WGS data, an interesting phenomenon was observed. In some tumor samples parts of the genome appeared to be riddled with structural variants, resulting in a shredded chromosomal structure.
 
 * Go to the overview page with circos plots.
 
@@ -226,8 +234,8 @@ While investigating the WGS data an interesting phenomenon was observed. In some
 
 To see how chromothripsis relates to clinical data we can investigate survival data in R2. 
 
-* From the left menu in the main Graduate Training Course datascope panel select Kaplan Meier > By annotated parameter
-* Click next in the dataselection panel, the appropriate Neuroblastoma set has already been selected.
+* From the left menu in the main Graduate Training Course datascope panel select **Kaplan Meier > By annotated parameter**
+* Make sure that the appropriate neuroblastoma set has been selected in the dataselection panel: 'Tumor Neuroblastoma (combat) - Versteeg - 122 - MAS5.0(bc) - u133p2'. Click **Next**.
 * A selection menu appears, in the **use track** field select the track cg_chromothripsis and click next 
 
 ---------
@@ -266,7 +274,7 @@ Chromothripsis can be seen as an extreme case of concentration of structural var
 
 ---------
 
-* Red arrows depict translocations to other loactions in the genome. Locate the translocation to chromosome 11 (hint; hovering over the arrows gives sample information; sample 724 is one of the samples) and click on the arrow.
+* Red arrows depict translocations to other loactions in the genome. Locate the translocation to chromosome 11 for sample 724 (Hint: hovering over the arrows gives sample information) and click on the arrow.
 * R2 brings you to the other side of the translocation. In the TranscriptView panel switch on the SuperEnhancers NB annotation and click redraw.
  
 ---------
@@ -280,6 +288,7 @@ Chromothripsis can be seen as an extreme case of concentration of structural var
 * To further corroborate this we can go to the Circos plots panel again. Go back to the Graduate Training Course datascope overview panel and click the **circos archive** tile again.
 * Locate the N724 tumor sample and click on the image.
 * Open the **Gene Expression list** tab
+* This can be further explored by clicking on the probeset link (left column in the list) and on the Detailed link.
 
 ---------
   ![](_static/images/R2d2_logo.png)**How is the expression of the TERT gene affected?**
@@ -288,14 +297,14 @@ Chromothripsis can be seen as an extreme case of concentration of structural var
 <br>
 
 ---------
-
-* This can be further explored by clicking on the probeset link (left column in the list) and on the Detailed link.
-
+ 
 Remarks
 ---------------------------------
 
 This ends the first part of this course. You can continue now with the analysis of intra-tumor heterogeneity.
-We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
+We hope that this course has been helpful. At the end of the workshop, please provide feedback on the course with <a href="https://docs.google.com/forms/d/e/1FAIpQLScy5xoA4btrYfuOOhc5qFKmYkV9_SBv1PQABPgV7eVJY8gk4A/viewform" target="_blank">this form</a>.  
+
+If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
 
 The R2 support team.
 
