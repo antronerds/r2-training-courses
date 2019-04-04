@@ -55,13 +55,14 @@ div.r2didyouknow th {
 /* 
 Images are parsed into an reference external class; we want these centered and block just
 like their annotation text in strong
-*/
+
 a.reference.external strong{
 	display: block;
 	text-align: center;
   	padding: 10px 10px;	
 }
 
+*/
 img{
 	display: block;
     margin-left: auto;
