@@ -189,7 +189,7 @@ Question 1c:
 
 *Also using Oncogenesis Category or KEGG colorectal cancer , AXIN2 is number one. Table below is the toplist of the analysis in 1b*
 
-![](_static/images/practical_geneexpression_list.png "Find differenttial expression.")
+![](_static/images/practical_geneexpression_list.png "Find differential expression.")
 	
 [**Finding differential expression progression.**](_static/images/practical_geneexpression_list.png)
 
@@ -199,13 +199,13 @@ Question 2a:
 
 ![](_static/images/practical_geneexpression_probesettable.png "Find differenttial expression.")
 	
-[**Finding differential expression :probeset table **](_static/images/practical_geneexpression_probesettable.png)
+[**Finding differential expression :probeset table**](_static/images/practical_geneexpression_probesettable.png)
 
 Question 2b:
 
 ![](_static/images/practical_geneexpression_probesetverification.png " Verification.")
 
-[**Finding differential expression: probeset verification **](_static/images/practical_geneexpression_probesetverification.png)
+[**Finding differential expression: probeset verification**](_static/images/practical_geneexpression_probesetverification.png)
 
 Question 2c:
 
@@ -224,7 +224,7 @@ Question 3b:
 ![](_static/images/practical_geneexpression_heatmap1.png "heatmap.")
 
 
-[**Finding differential expression: heatmap **](_static/practical_geneexpression_heatmap1.png )
+[**Finding differential expression: heatmap**](_static/practical_geneexpression_heatmap1.png )
 
 
 Question 4a:
@@ -236,7 +236,7 @@ Question 4b:
 ![](_static/images/practical_geneexpression_pathway.png "pathway")
 
 
-[**Finding differential expression: Pathway **](_static/practical_geneexpression_pathway.png )
+[**Finding differential expression: Pathway**](_static/practical_geneexpression_pathway.png )
 
 Question 5a:
 
@@ -245,7 +245,7 @@ Question 5a:
 
 ![](_static/images/practical_geneexpression_heatmap2.png "heatmap.")
 
-[**Finding differential expression: heatmap **](_static/practical_geneexpression_heatmap2.png)
+[**Finding differential expression: heatmap**](_static/practical_geneexpression_heatmap2.png)
 
 
 
@@ -258,7 +258,7 @@ Question 5c:
 
 ![](_static/images/practical_geneexpression_heatmap3.png "heatmap.")
 
-[**Finding differential expression: heatmap **](_static/practical_geneexpression_heatmap3.png)
+[**Finding differential expression: heatmap**](_static/practical_geneexpression_heatmap3.png)
 
 *Yes, the groups are clearly also separated based on the BCAT signature.*
 
@@ -266,7 +266,7 @@ Question 6a Clinical relevance
 
 
 ![](_static/images/practical_geneexpression_megasampler.png "heatmap.")
-[**Finding differential expression: megasampler **](_static/practical_geneexpression_megasampler.png)
+[**Finding differential expression: megasampler**](_static/practical_geneexpression_megasampler.png)
 
 Question 6b 
 
@@ -283,14 +283,14 @@ Question 7a
 
 ![](_static/images/practical_geneexpression_singlegenecorrelation.png "cor list.")
 
-[**Finding differential expression: List **](_static/practical_geneexpression_singlegenecorrelation.png)
+[**Finding differential expression: List**](_static/practical_geneexpression_singlegenecorrelation.png)
 
 
 Question 7b
 
 ![](_static/images/practical_geneexpression_2geneview.png "2 gene view.")
 
-[**Finding differential expression: 2 gene view **](_static/practical_geneexpression_2geneview.png)
+[**Finding differential expression: 2 gene view**](_static/practical_geneexpression_2geneview.png)
 
 *Investigate the correlation for two genes for each subgroup with the two gene view if there is still a significant correlation you can conclude that there is no bias.*
 
@@ -326,7 +326,7 @@ Question 7c
 
 ![](_static/images/practical_geneexpression_2dview.png "2d view.")
 
-[**Finding differential expression: 2 gene view **](_static/practical_geneexpression_2dview.png)
+[**Finding differential expression: 2 gene view**](_static/practical_geneexpression_2dview.png)
 
 
 Second Part: MSI in Colon tumors.
