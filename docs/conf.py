@@ -17,7 +17,7 @@ exclude_patterns = ['_build']
 pygments_style = 'sphinx'
 
 import sphinx_rtd_theme
-html_theme = "default"
+html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 def setup(app):
  app.add_stylesheet( "css/r2tutorials.css" )
