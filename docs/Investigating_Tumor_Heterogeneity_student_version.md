@@ -14,8 +14,6 @@ Introduction
 Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. During the lectures you’ve been shown how this works in colorectal cancer, where a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
 
   ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression.")	
-
-  !["Figure 1: Mutation paths during cancer progression."](_static/images/TumorHeterogeneity_CancerProgression.jpg)	
   
   [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
@@ -141,7 +139,7 @@ Urgency of research: patient material
 
 In the former step we derived that neuroblastoma cell lines seem to group with cell lines of different developmental lineages. We have recently established new cell line pairs from neuroblastoma patients. In some cases multiple cell lines were obtained from the same biopsy. These cell lines share genetic defects and are therefore called *isogenic* cell line pairs. A microscopy image of each pair is provided below. 
 
-  ![Figure 2: Bright field image of isogenic cell line pairs.](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure 2: Bright field image of isogenic cell line pairs.")
+  ![](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure 2: Bright field image of isogenic cell line pairs.")
 	
   [**Figure 2: Bright field image of isogenic cell line pairs.**](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png)
 
@@ -154,7 +152,7 @@ In the former step we derived that neuroblastoma cell lines seem to group with c
 
 We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of these pairs and of a previously established neuroblastoma cell line that after culturing gave rise to two very divergent phenotypes. The resulting gene expression patterns can be used to perform a hierarchical clustering. An example of such clustering resulting in an ordered heatmap is provided below 
 
-  ![Figure 3: Heatmap: unsupervised clustering of samples using the distribution of the expression data combined with the clustering of genes based on their expression through the samples.](_static/images/TumorHeterogeneity_HeatmapClustering.png "Figure 3: Heatmap: unsupervised clustering of samples using the distribution of the expression data combined with the clustering of genes based on their expression through the samples.")
+  ![](_static/images/TumorHeterogeneity_HeatmapClustering.png "Figure 3: Heatmap: unsupervised clustering of samples using the distribution of the expression data combined with the clustering of genes based on their expression through the samples.")
 	
   [**Figure 3: Heatmap: unsupervised clustering of samples using the distribution of the expression data combined with the clustering of genes based on their expression through the samples.**](_static/images/TumorHeterogeneity_HeatmapClustering.png)
 
@@ -218,7 +216,7 @@ Here you can choose to perform an additional analysis. The heatmap vizualization
 The cell line pairs from the patient were also investigated for the tumor stem cell marker gene CD133 and for their migration capability. See the results in the figure below:
 
 
-  ![Figure 4: CD133 Facs analysis and transwell migration assay of isogenic pairs](_static/images/TumorHeterogeneity_PairsCD133Migrate.png "Figure 4: CD133 Facs analysis and transwell migration assay of isogenic pairs")
+  ![](_static/images/TumorHeterogeneity_PairsCD133Migrate.png "Figure 4: CD133 Facs analysis and transwell migration assay of isogenic pairs")
 	
   [**Figure 4: CD133 Facs analysis and transwell migration assay of isogenic pairs**](_static/images/TumorHeterogeneity_PairsCD133Migrate.png)
 
@@ -236,7 +234,7 @@ The cell line pairs from the patient were also investigated for the tumor stem c
 Which genes make a difference? Creating signatures
 -----------------------------------------------------
 
-We have identified two different types of cells that occur within the same patient. Neuroblastoma apparently has a heterogenous nature. What genes determine the difference between the two types? We’ll use RNA expression data again but now we will use a predefined, supervised classification in groups to search for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
+We have identified two different types of cells that occur within the same patient. Neuroblastoma apparently has a heterogenous nature. What genes determine the difference between the two types? We�ll use RNA expression data again but now we will use a predefined, supervised classification in groups to search for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
 
 *Data used:*  
 * Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2 (same as above)
@@ -392,7 +390,7 @@ Using scores for further characterization
 
 The expression patterns of these specific signatures can be used to compare cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one value; a signature score. The figure below shows the signature score of the MES part of the signature in a specific sample.  
 
-  ![Figure 5: The signature score as calculated for a specific sample in the MES signature.](_static/images/TumorHeterogeneity_SignatureScores.png "Figure 5: The signature score as calculated for a specific sample in the MES signature.")
+  ![](_static/images/TumorHeterogeneity_SignatureScores.png "Figure 5: The signature score as calculated for a specific sample in the MES signature.")
 	
   [**Figure 5: The signature score as calculated for a specific ample in the MES signature.**](_static/images/TumorHeterogeneity_SignatureScores.png)
 

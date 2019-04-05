@@ -33,7 +33,7 @@ Any text between restarts numbering
 
 Images are formatted as follows:
 
-![Figure 11: the extra settings Panel](_static/images/OneGene_Adapting.png)
+![](_static/images/OneGene_Adapting.png)
 
 [**Figure 11: the extra settings Panel**](_static/images/OneGene_Adapting.png)
 

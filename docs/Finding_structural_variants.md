@@ -15,7 +15,7 @@ Introduction
 ------------
 Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. At that time, for colorectal cancer, a well defined path of subsequently gained mutations was found to lead to more aggressive tumorigenic cell types (the Vogelstein model).
 
-  ![Figure 1: Mutation paths during cancer progression](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression")
+  ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression")
   
   [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
@@ -82,7 +82,7 @@ For this the samples where sent to the Complete Genomics sequencing facility, no
 The R2 development team has processed these WGS data further using the CGAtools software to compare tumor with lymphocyte genomes. This provided a somatic score, estimating the likelihood of mutations to be somatic. Through several filtering steps the somatic mutations were determined with respect to the reference genome.
 
 
-  ![Figure 2: Comparing Tumor data with the reference genome from Lymphocytes.](_static/images/structural_variants_reference_genome.png "Figure 2: Comparing Tumor data with the reference genome from Lymphocytes.")
+  ![](_static/images/structural_variants_reference_genome.png "Figure 2: Comparing Tumor data with the reference genome from Lymphocytes.")
 	
   [**Figure 2: Comparing Tumor data with a reference genome from Lymphocytes.**](_static/images/structural_variants_reference_genome.png)
 
@@ -130,19 +130,19 @@ A comprehensive list of the mutations can be accessed through R2.
 
 * Select the front end of the gene by selecting a region; see image (hint the color of the transcript denotes the reading direction; green means the regular direction, red the opposite direction) Click redraw (Note: the NIH annotation only appears for regions under 200.000 bp)
 
-  ![Figure 3: Selecting a region.](_static/images/structural_variants_selecting_region.png "Figure 3: Selecting a region.")
+  ![](_static/images/structural_variants_selecting_region.png "Figure 3: Selecting a region.")
 	
   [**Figure 3: Selecting a region.**](_static/images/structural_variants_selecting_region.png)
 
 * This NIH Epigenome Roadmap annotation is actually a sum of data from a lot of data sources. These sources can be further detailed by selecting the detail view in the toolbox that appears when you click the tools icon, see image below. This box appears at more settings fields if available.
 
 
-  ![Figure 4: Opening the NIH parameter settings toolbox.](_static/images/structural_variants_selecting_toolbox.png "Figure 4: Opening the NIH parameter settings toolbox.")
+  ![](_static/images/structural_variants_selecting_toolbox.png "Figure 4: Opening the NIH parameter settings toolbox.")
 	
   [**Figure 4: Opening the NIH parameter settings toolbox.**](_static/images/structural_variants_selecting_toolbox.png)
   
   
-   ![Figure 5: Annotation colors with the chromatin state description.](_static/images/NIHepiRoadmap.png "Figure 5: Annotation colors with the chromatin state description.")
+   ![](_static/images/NIHepiRoadmap.png "Figure 5: Annotation colors with the chromatin state description.")
 	
   [**Figure 5: Annotation colors with the chromatin state description.**](_static/images/NIHepiRoadmap.png)
   
@@ -174,7 +174,7 @@ Further use of WGS data; structural variants
 --------------------------------------------
 WGS data allows for further analysis; the paired end technique enables the discovery of structural variants.
 
-  ![Figure 6: Paired end sequencing makes discovery of structural variants possible.](_static/images/structural_variants_paired_end.png "Figure 6: Paired end sequencing makes discovery of structural variants possible.")
+  ![](_static/images/structural_variants_paired_end.png "Figure 6: Paired end sequencing makes discovery of structural variants possible.")
 	
   [**Figure 6: Paired end sequencing makes discovery of structural variants possible.**](_static/images/structural_variants_paired_end.png)
 

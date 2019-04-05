@@ -189,7 +189,7 @@ Question 1c:
 
 *Also using Oncogenesis Category or KEGG colorectal cancer , AXIN2 is number one. Table below is the toplist of the analysis in 1b*
 
-![Fig List.](_static/images/practical_geneexpression_list.png "Find differenttial expression.")
+![](_static/images/practical_geneexpression_list.png "Find differenttial expression.")
 	
 [**Finding differential expression progression.**](_static/images/practical_geneexpression_list.png)
 
@@ -197,13 +197,13 @@ Question 2a:
 
 *In the perfect world each probeset should provide a more or less equal absolute value which is not the case.  The 222696_at signal is much higher compared to the other N-MYC probeset.*
 
-![Fig List.](_static/images/practical_geneexpression_probesettable.png "Find differenttial expression.")
+![](_static/images/practical_geneexpression_probesettable.png "Find differenttial expression.")
 	
 [**Finding differential expression :probeset table **](_static/images/practical_geneexpression_probesettable.png)
 
 Question 2b:
 
-![Fig List.](_static/images/practical_geneexpression_probesetverification.png " Verification.")
+![](_static/images/practical_geneexpression_probesetverification.png " Verification.")
 
 [**Finding differential expression: probeset verification **](_static/images/practical_geneexpression_probesetverification.png)
 
@@ -221,7 +221,7 @@ Question 3b:
 
 *Neatly separated, but not very special. Only the genes that make a difference between the two groups viewed here. The Heatmap is based on a pre-selection which is already found*
 
-![Fig List.](_static/images/practical_geneexpression_heatmap1.png "heatmap.")
+![](_static/images/practical_geneexpression_heatmap1.png "heatmap.")
 
 
 [**Finding differential expression: heatmap **](_static/practical_geneexpression_heatmap1.png )
@@ -233,7 +233,7 @@ Question 4a:
 
 Question 4b:
 
-![Fig List.](_static/images/practical_geneexpression_pathway.png "pathway")
+![](_static/images/practical_geneexpression_pathway.png "pathway")
 
 
 [**Finding differential expression: Pathway **](_static/practical_geneexpression_pathway.png )
@@ -243,7 +243,7 @@ Question 5a:
 
 *Samples are well separated. This is special, we have all the genes in the wnt pathway used without preselection.*
 
-![Fig List.](_static/images/practical_geneexpression_heatmap2.png "heatmap.")
+![](_static/images/practical_geneexpression_heatmap2.png "heatmap.")
 
 [**Finding differential expression: heatmap **](_static/practical_geneexpression_heatmap2.png)
 
@@ -256,7 +256,7 @@ This time not only the genes are used that make a difference in the group shown.
 Question 5c:
 
 
-![Fig List.](_static/images/practical_geneexpression_heatmap3.png "heatmap.")
+![](_static/images/practical_geneexpression_heatmap3.png "heatmap.")
 
 [**Finding differential expression: heatmap **](_static/practical_geneexpression_heatmap3.png)
 
@@ -265,7 +265,7 @@ Question 5c:
 Question 6a Clinical relevance
 
 
-![Fig List.](_static/images/practical_geneexpression_megasampler.png "heatmap.")
+![](_static/images/practical_geneexpression_megasampler.png "heatmap.")
 [**Finding differential expression: megasampler **](_static/practical_geneexpression_megasampler.png)
 
 Question 6b 
@@ -281,14 +281,14 @@ Question 7a
 
 
 
-![Fig List.](_static/images/practical_geneexpression_singlegenecorrelation.png "cor list.")
+![](_static/images/practical_geneexpression_singlegenecorrelation.png "cor list.")
 
 [**Finding differential expression: List **](_static/practical_geneexpression_singlegenecorrelation.png)
 
 
 Question 7b
 
-![Fig List.](_static/images/practical_geneexpression_2geneview.png "2 gene view.")
+![](_static/images/practical_geneexpression_2geneview.png "2 gene view.")
 
 [**Finding differential expression: 2 gene view **](_static/practical_geneexpression_2geneview.png)
 
@@ -324,7 +324,7 @@ Question 7c
 *Mixed Colon - Marra - 64 0.949*
 
 
-![Fig List.](_static/images/practical_geneexpression_2dview.png "2d view.")
+![](_static/images/practical_geneexpression_2dview.png "2d view.")
 
 [**Finding differential expression: 2 gene view **](_static/practical_geneexpression_2dview.png)
 
@@ -494,7 +494,7 @@ Question 8a:
 
 Question 8b:
 
-![Fig List.](_static/images/practical_geneexpression_chromtable.png "chrom table.")
+![](_static/images/practical_geneexpression_chromtable.png "chrom table.")
 
 [**Finding differential expression: Chrom tabl **](_static/practical_geneexpression_chromtable.png)
 
@@ -514,7 +514,7 @@ Question 9a:
 
 Question 9b:
 
-![Fig List.](_static/images/practical_geneexpression_ms_status.png "ms status.")
+![](_static/images/practical_geneexpression_ms_status.png "ms status.")
 
 [**Finding differential expression: Chrom tabl **](_static/practical_geneexpression_ms_status.png)
 
@@ -565,7 +565,7 @@ Question 9m:
 
 Question 10b: Relating tracks
 
-![Fig List.](_static/images/practical_geneexpression_genecatsveen.png "ms status.")
+![](_static/images/practical_geneexpression_genecatsveen.png "ms status.")
 
 [**Finding differential expression: Heatmap**](_static/practical_geneexpression_genecatsveen.png)
 
@@ -576,7 +576,7 @@ In the publication where the Sveen dataset was published, high and low risk grou
 Question 10c:
 
 
-![Fig List.](_static/images/practical_geneexpression_genecatsveen2.png "survival.")
+![](_static/images/practical_geneexpression_genecatsveen2.png "survival.")
 
 [**Finding differential expression: Survival**](_static/practical_geneexpression_genecatsveen.png)
 
@@ -586,7 +586,7 @@ This is also in line with the diffuse pattern within the MSI subgroup when looki
 Question 10d:
 
 
-![Fig List.](_static/images/practical_geneexpression_kmeans.png "k-means.")
+![](_static/images/practical_geneexpression_kmeans.png "k-means.")
 
 
 [**Finding differential expression: K-mneans **](_static/practical_geneexpression_kmeans.png)
@@ -596,14 +596,14 @@ Question 10d:
 
 Question 10e:
 
-![Fig List.](_static/images/practical_geneexpression_fisher1.png "relate 2 tracks.")
+![](_static/images/practical_geneexpression_fisher1.png "relate 2 tracks.")
 
 
 [**Finding differential expression: relate 2 tracks1 **](_static/practical_geneexpression_fisher1.png)
 
 *In the first picture a fisher exact test is performed with the two tracks.  There is no significant correlation between the survival status track and the track based derived from the K-means separation with mss-msi differentially expressed genes.*
 
-![Fig List.](_static/images/practical_geneexpression_fisher2.png "relate 2 tracks.")
+![](_static/images/practical_geneexpression_fisher2.png "relate 2 tracks.")
 
 
 [**Finding differential expression: relate 2 tracks1 **](_static/practical_geneexpression_fisher2.png)
