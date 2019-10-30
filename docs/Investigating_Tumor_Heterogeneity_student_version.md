@@ -353,7 +353,7 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 <br>
 <br>
 
-  ![](_static/images/R2d2_logo.png)**How does this relate to the above?**
+  ![](_static/images/R2d2_logo.png)**How does this relate to the earlier observations on cell lineage?**
 
 <br>
 <br>
@@ -463,10 +463,10 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 Again we're going to find out which genes make a difference, but now in a specific subset that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. 
 * In field 3 select **Find Differential expression between groups** Click **Next**
-* Make sure to select the proper track **Select a track**. We're now also going to filter for a specific **GeneCategory**; select the Transcription factors (*TF(945)*). Click **Next**. 
+* Make sure to select the proper track under **Select a track**. We're now also going to filter for a specific **GeneCategory**; select the Transcription factors (*TF(945)*). Click **Next**. 
 * In the next screen we're asked to further filter for a specific type of samples to compare, we're focusing on the difference between ADRN and MES; select these. Click **Next**. 
 * A list of genes appears. Investigate the top 4 by clicking on the hyperlinked gene symbols. This brings you to the expression view of the gene. 
-* From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the top table.
+* From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the top table. You'll arrive at a website that gathers all known information on genes; a useful section is the **Bibliography** containing short summaries of relevant scientific papers.
 
 ---------
   ![](_static/images/R2d2_logo.png)**Armed with this information, which gene would you choose for further research? Why?**
