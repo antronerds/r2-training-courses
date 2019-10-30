@@ -11,7 +11,7 @@ This resource is located online at http://r2-training-courses.readthedocs.io
 Introduction
 ------------
 
-Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. During the lectures you’ve been shown how this works in colorectal cancer, where a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
+Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. During the lectures youâ€™ve been shown how this works in colorectal cancer, where a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
 
   ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression.")	
   
@@ -30,7 +30,7 @@ Using recent molecular biology data gathering techniques and advanced bioinforma
 Tumors and origins: a first impression of your data
 ---------------------------------------
 
-For a start we'll investigate established childhood tumor cell lines, including neuroblastoma. Established cell lines can be grown and passaged in culture indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do profiles of neuroblastoma cell lines relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of other tumor cell lines and see how they relate. 
+For a start we'll investigate established childhood tumor cell lines, including neuroblastoma. Established cell lines can be grown and passaged in culture indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do profiles of neuroblastoma cell lines relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of 86 other cell lines derived from 6 different childhood tumors and see how they relate. 
 
 *Data used:*  
 * 86 cell lines derived from 6 different childhood tumors (Cellline Childhood cancer - ITCC - 86 - MAS5.0 - u133p2)
@@ -41,9 +41,6 @@ For a start we'll investigate established childhood tumor cell lines, including 
 *Analysis used* 
 * individual gene selection
 * t-SNE: t-distributed stochastic neighbor embedding statistics
-
-*References*
-* Chapter 2.2 & 2.3 Weinberg
 
 <br>
 <br>
@@ -74,7 +71,7 @@ You're now on the R2 main page. This web based molecular biology data analysis p
   
 A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. 
   * Hover with your mouse over data points to show additional information.
-  * The expression values on the y-axis are logarithmic; set the **Transform** option to **none**, and select **Track and Gene sort** for the **Extra Graph Option**. Sample annotation is stored in R2 in so called tracks, for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type and click **Adjust Settings** to obtain a more explicit picture.  
+  * The expression values on the y-axis are logarithmic; set the **Transform** option to **none**, and select **Track and Gene sort** for the **Extra Graph Option**. Sample annotation is stored in R2 in so called tracks, for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type. Click on **More Settings** and set the **draw legend** dropdown to *yes* and click **Adjust Settings** to obtain a more explicit picture.  
   
 
   * Now try the gene MYCN (Click the **Go to Main** link in the left upper corner)
@@ -234,7 +231,7 @@ The cell line pairs from the patient were also investigated for the tumor stem c
 Which genes make a difference? Creating signatures
 -----------------------------------------------------
 
-We have identified two different types of cells that occur within the same patient. Neuroblastoma apparently has a heterogenous nature. What genes determine the difference between the two types? We�ll use RNA expression data again but now we will use a predefined, supervised classification in groups to search for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
+We have identified two different types of cells that occur within the same patient. Neuroblastoma apparently has a heterogenous nature. What genes determine the difference between the two types? We’ll use RNA expression data again but now we will use a predefined, supervised classification in groups to search for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
 
 *Data used:*  
 * Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2 (same as above)
@@ -438,7 +435,7 @@ The expression patterns of these specific signatures can be used to compare cell
 Finding causes: homing in on transcription factors
 -----------------------------------------------------
 
-Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we find out which TF’s might influence the difference between both of these cell lines?
+Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we find out which TFâ€™s might influence the difference between both of these cell lines?
 
 *Data used:*
 * Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2
@@ -552,13 +549,13 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 Creating hypotheses: relating to chromatin modification data
 ---------------------------------------------------------------
 
-Apparently this TF is capable of shifting cells from one state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIP–seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
+Apparently this TF is capable of shifting cells from one state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIPâ€“seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
 
 *Data used:*
 * Four MES and five ADRN neuroblastoma cell lines, including three isogenic cell line pairs. 
 
 *Techniques used:* 
-* ChIP–seq analysis
+* ChIPâ€“seq analysis
 
 *References*
 * Chapter 1.8 Weinberg
