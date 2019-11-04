@@ -549,13 +549,13 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 Creating hypotheses: relating to chromatin modification data
 ---------------------------------------------------------------
 
-Apparently this TF is capable of shifting cells from one state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIPâ€“seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
+Apparently this TF is capable of shifting cells from one state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIP-Seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
 
 *Data used:*
 * Four MES and five ADRN neuroblastoma cell lines, including three isogenic cell line pairs. 
 
 *Techniques used:* 
-* ChIPâ€“seq analysis
+* ChIP-Seq analysis
 
 *References*
 * Chapter 1.8 Weinberg
@@ -849,15 +849,15 @@ The chromatin state is especially important for transcription factors; we'll re-
 Suggesting therapy
 ---------------------
 
-* With the current new knowledge you derived above, can you think of a strategy to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options?
-* Follow the links above to use the differential expression analysis and the genomebrowser information 
-* Hints: 
-  * There is a category "drugtargets" in R2 to select druggable proteins; you can select these in the same dropdown where the TF selection was done.
-  * Another very interesting one is the "kinase" category, this contains known kinases that have active roles in pathways.
-  * Knowledge about pathways can be exploited as well
-  * The NCBI database can provide additional information from literature about the genes of interest.
-  * Be creative, you might find something interesting!
-
+* With the current new knowledge you derived above, can you think of a strategy to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options? This is an open question, so be creative, you might find something interesting! If you want, you can follow the suggestions below.  
+  
+* Use the button of 1.9 to perform a differential expression analysis. This time explore other gene categories that could be interesting for drug development. Look at the expression profiles of some genes of your choice. 
+  * Hint: There is a category "drugtargets" in R2 to select druggable proteins; you can select this in the same dropdown where the TF selection was done.  
+  * Another very interesting gene category is the "kinase" category, this contains known kinases that have active roles in pathways.
+* The first button in 1.9 takes you to the Genome Browser at the position of the HAND1 gene. In the upper left corner of that page, you can fill in other genes of interest to look at the ChIP-Seq profiles of the samples at these locations of the genome. Do this for the genes whose expression profiles you just have studied. Try to find genes that show consistent chromatin modification profiles for the one type of neuroblastoma cell lines and a different consistent profile for the other type. 
+* Knowledge about pathways can be exploited as well.
+* The NCBI database can provide additional information from literature about the genes of interest.
+  
 ---------
   ![](_static/images/R2d2_logo.png)**Which strategy do you suggest?**
 
