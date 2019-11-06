@@ -435,7 +435,7 @@ The expression patterns of these specific signatures can be used to compare cell
 Finding causes: homing in on transcription factors
 -----------------------------------------------------
 
-Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we find out which TFâ€™s might influence the difference between both of these cell lines?
+Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors (TFs) are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we find out which TFs might influence the difference between both of these cell lines?
 
 *Data used:*
 * Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2
