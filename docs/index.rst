@@ -13,7 +13,7 @@ Copyright (c) 2006-2020 Jan Koster
    :numbered: 3
    :caption: RNAseq data analysis
 
-   RNA_seq_data_analysis_-_Using_Rheumatoid_Arthritis_Data
+   RNA_seq_data_analysis_-_Using_Rheumatoid_Arthritis_data
 
 .. toctree::
    :maxdepth: 2
