@@ -4,10 +4,10 @@
 RNAseq data analysis using rheumatoid arthritis data
 ===========================================
 
-*Subtitle between asterisk creates italic style*
+*This page is under construction*
 
 
-Subheader (H2) also appears in TOC
+Under construction; subheader
 -----
 
 -  A bulleted list is created by a minus, plus or asterisk followed by two spaces
@@ -15,7 +15,7 @@ Subheader (H2) also appears in TOC
   -  Subitem by two spaces
 
 
-Third subheader 
+Under construction; subheader
 -----
 
 1.  This will give a numbered list
