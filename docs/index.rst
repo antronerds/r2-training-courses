@@ -14,3 +14,5 @@ Copyright (c) 2006-2018 Jan Koster
    :caption: Students Course
 
    Investigating_Tumor_Heterogeneity_student_version
+   
+   RNA_seq_data_analysis_-_Using_Rheumatoid_Arthritis_Data
