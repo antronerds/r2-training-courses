@@ -4,18 +4,34 @@
 RNAseq data analysis using rheumatoid arthritis data
 ===========================================
 
-*This page is under construction*
+*Using a dataset from Rheumatoid Arthritis a generic approach for RNA data analysis is explored*
 
 
-Under construction; subheader
+Introduction
 -----
 
--  A bulleted list is created by a minus, plus or asterisk followed by two spaces
--  Next item
-  -  Subitem by two spaces
+-  A general workflow of RNA data analysis consists of the following steps 
+1.  Explore your samples
+  -  Unbiased unsupervised clustering
+  	- PCA, tSNE, UMAP 
+  - Goals
+  	- Data check; bias?
+	- Groups?
+2. Explore differences between groups
+  - Differential expression
+  - Specific (groups of) genes
+
+3. Explore patterns
+  - Overrepresentation
+    - Gene Ontology
+    - Pathways
+
+4. Explore relations
+  - Generate a signature
+  - Compare with other signatures
 
 
-Under construction; subheader
+Explore your samples
 -----
 
 1.  This will give a numbered list
