@@ -33,50 +33,18 @@ Introduction
 
 Explore your samples
 -----
+*Data used:*  
+* Disease Rheumatoid arthritis (MTX) monotherapy - Okuzono - 336 - deseq2_vst - gpl17303
+* 337 samples of T cells in each developmental stages in healthy volunteers and patients with rheumatoid arthritis 
 
-1.  This will give a numbered list
-2.  Next item
-	
-	To continue numbering after enter or figure, indent the whole paragraph with a tab, or more tabs when in sublist
-	
-3.  And the third continues
+*Techniques used:*   
+* RNA Seq
 
-Any text between restarts numbering
+*Analysis used* 
+* t-SNE: t-distributed stochastic neighbor embedding statistics
+* PCA: Principle Components Analysis
 
-4.  Next list
-  1. Two spaces create a sublist
-  *  They can be mixed
-
-Images are formatted as follows:
-
-![](_static/images/OneGene_Adapting.png)
-
-[**Figure 11: the extra settings Panel**](_static/images/OneGene_Adapting.png)
-
-Note the enter between the lines; this is to guarantee proper formatting in pdf
-
-The Did you know box is formatted as follows
-
----------
-  ![](_static/images/R2d2_logo.png)**Did you know box**
-
-
-> *Three or more minusses preceded by a return create a line; the > sign in front of a paragraph indents the whole paragraph and the single asterisks put it in italic*
-
----------
-
-You'll have to get used to the use of spaces and enters in Markdown; these are used for formatting
-
-
-  Two spaces at the start of a line creates a paragraph
-Type on here below  
-
-
-  
-
-
-
-
-
+*References*
+* [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
 
 
