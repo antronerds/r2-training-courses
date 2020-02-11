@@ -1,14 +1,8 @@
 <a id="rna_seq_data_analysis_-_using_rheumatoid_arthritis_data"> </a>
 
-
-RNAseq data analysis using rheumatoid arthritis data
+Introduction
 ===========================================
 
-*Using two datasets from Rheumatoid Arthritis a generic approach for RNA data analysis is explored*
-
-
-Introduction
------
 
 -  A general workflow of RNA data analysis consists of the following steps 
 1.  Explore your samples
@@ -35,7 +29,7 @@ Introduction
 
 
 Finding drug responsive pathways in RA 
------
+===========================================
 
 *Data used:*  
 * Exp Rheumatoid arthritis tocilizumab - Takeshita - 22 - deseq2_rlog - gse113156
@@ -44,16 +38,26 @@ Finding drug responsive pathways in RA
 *Techniques used:*   
 * RNA Seq
 
-*Analyses used* 
-* PCA
-
 *References*
 * [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
 
+Explore your samples
+------
+*Analyses used* 
+* PCA
+
+Explore differences between groups
+------
+
+Explore patterns
+------
+
+Explore relations
+------
 
 
 Determine a lineage specific RA signature
------
+===========================================
 
 *Data used:*  
 * Disease Rheumatoid arthritis (MTX) monotherapy - Okuzono - 336 - deseq2_vst - gpl17303
@@ -62,9 +66,19 @@ Determine a lineage specific RA signature
 *Techniques used:*   
 * RNA Seq
 
-*Analyses used* 
-* t-SNE: t-distributed stochastic neighbor embedding statistics
-
 *References*
 * [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
 
+Explore your samples
+------
+*Analyses used* 
+* t-SNE: t-distributed stochastic neighbor embedding statistics
+
+Explore differences between groups
+------
+
+Explore patterns
+------
+
+Explore relations
+------
