@@ -84,6 +84,7 @@ At the bottom of teh page you can find a table with adjustable settings.
 
 ---------
 
+
 ##### Clustering with tSNE maps
 
 We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map.  
@@ -620,7 +621,7 @@ First we'll check one of the HAND genes, known to play a role in the development
 
 * Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.  
 
-<form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype=\"multipart/form-data\" method='POST' target='_gv'>
+<form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='_gv'>
 <input type='hidden' name='option' value='gbv2_base'>
 <input type='hidden' name='|a01giemsa' value='on'>
 <input type='hidden' name='a02bsequence' value='off'>
