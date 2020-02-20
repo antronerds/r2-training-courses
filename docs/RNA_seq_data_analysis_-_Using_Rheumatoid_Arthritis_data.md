@@ -56,7 +56,9 @@ Explore your samples
 <input type="hidden" name="cortype" value="transform_zscore">
 <input type="hidden" name="subset" value="">
 <button type="submit" >Go to PCA Analysis</button>
-</form>
+</form>  
+  
+  
 
 ##### Clustering with tSNE maps
 
