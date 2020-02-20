@@ -47,7 +47,7 @@ Explore your samples
 * PCA
 
 ##### Clustering with PCA analysis
-<form name="pca_form" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method="POST">
+<form name="pca_form" target="_blank" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method="POST">
 <input type="hidden" name="option" value="plot_pca">
 <input type="hidden" name="switch" value="2">
 <input type="hidden" name="pca_projections" value="PC2:PC3">
