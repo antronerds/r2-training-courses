@@ -55,7 +55,7 @@ We've seen that the expression of genes differs among the samples and some types
 <form name='tsne_map' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='_gv'>
 <input type='hidden' name='switch' value='2'>
 <input type='hidden' name='minpres' value='1'>
-<input type='hidden' name='perplexity' value='30'>
+<input type='hidden' name='perplexity' value='7'>
 <input type='hidden' name='dotsize' value='6'>
 <input type='hidden' name='option' value='plot_tsne'>
 <input type='hidden' name='table' value='ps_avgpres_gse113156geo22_gse113156'>
