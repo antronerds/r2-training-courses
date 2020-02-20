@@ -83,16 +83,7 @@ At the bottom of teh page you can find a table with adjustable settings.
 <br>
 
 ---------
-##### Clustering with PCA analysis
-<form name="pca_form" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method="POST">
-<input type="hidden" name="option" value="plot_pca">
-<input type="hidden" name="switch" value="2">
-<input type="hidden" name="table" value="ps_avgpres_daoybmi15_u133p2">
-<input type="hidden" name="pcafile" value="pca-a0b21298bb295a796057d2927259c695.txt">
-<input type="hidden" name="cortype" value="transform_zscore">
-<input type="hidden" name="subset" value="">
-<button type="submit" >Go to PCA Analysis</button>
-</form>
+
 
 ##### Clustering with tSNE maps
 
@@ -630,7 +621,7 @@ First we'll check one of the HAND genes, known to play a role in the development
 
 * Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.  
 
-<form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype=\"multipart/form-data\" method='POST' target='_gv'>
+<form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='_gv'>
 <input type='hidden' name='option' value='gbv2_base'>
 <input type='hidden' name='|a01giemsa' value='on'>
 <input type='hidden' name='a02bsequence' value='off'>
