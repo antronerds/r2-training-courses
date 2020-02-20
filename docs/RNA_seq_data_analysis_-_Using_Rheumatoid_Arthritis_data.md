@@ -45,6 +45,18 @@ Explore your samples
 ------
 *Analyses used* 
 * PCA
+
+##### Clustering with PCA analysis
+<form name="pca_form" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method="POST">
+<input type="hidden" name="option" value="plot_pca">
+<input type="hidden" name="switch" value="2">
+<input type="hidden" name="table" value="ps_avgpres_daoybmi15_u133p2">
+<input type="hidden" name="pcafile" value="pca-a0b21298bb295a796057d2927259c695.txt">
+<input type="hidden" name="cortype" value="transform_zscore">
+<input type="hidden" name="subset" value="">
+<button type="submit" >Go to PCA Analysis</button>
+</form>
+
 ##### Clustering with tSNE maps
 
 We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map.  
