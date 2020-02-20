@@ -50,8 +50,8 @@ Explore your samples
 <form name="pca_form" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method="POST">
 <input type="hidden" name="option" value="plot_pca">
 <input type="hidden" name="switch" value="2">
-<input type="hidden" name="table" value="ps_avgpres_daoybmi15_u133p2">
-<input type="hidden" name="pcafile" value="pca-a0b21298bb295a796057d2927259c695.txt">
+<input type="hidden" name="table" value="ps_avgpres_gse118829geo336_gpl17303">
+<input type="hidden" name="pcafile" value="pca-db9ec72f427b1110512c63a8b91ad2c1.txt">
 <input type="hidden" name="cortype" value="transform_zscore">
 <input type="hidden" name="subset" value="">
 <button type="submit" >Go to PCA Analysis</button>
