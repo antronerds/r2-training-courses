@@ -45,6 +45,28 @@ Explore your samples
 ------
 *Analyses used* 
 * PCA
+##### Clustering with tSNE maps
+
+We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map.  
+
+
+* Click the button below to show the tSNE map in R2 
+
+<form name='tsne_map' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='_gv'>
+<input type='hidden' name='switch' value='2'>
+<input type='hidden' name='minpres' value='1'>
+<input type='hidden' name='perplexity' value='30'>
+<input type='hidden' name='dotsize' value='6'>
+<input type='hidden' name='option' value='plot_tsne'>
+<input type='hidden' name='table' value='ps_avgpres_gse113156geo22_gse113156'>
+<input type='hidden' name='cortype' value='transform_zscore'>
+<button type="submit" >Go to R2 tSNE map</button>
+</form>
+<br>
+<br>
+
+
+* Colors are not set by default, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click **Next** to show the changes 
 
 Explore differences between groups
 ------
