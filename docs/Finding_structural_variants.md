@@ -42,6 +42,7 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
   <button type="submit" >Go to R2</button>
 </form>  
 <br>
+
 * Log on to the R2 platform with your credentials that were provided. (or apply for a login using the link)  
 
 * For a quick impression of the data select the **Cohort Overview**. R2 presents the tumor series with its annotation. Hover your mouse over the different slices of the **inss** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
@@ -53,7 +54,9 @@ The pie charts in the cohort overview allow you to look at the distribution of t
 <br><br>
 
 ---------
-  ![](_static/images/R2d2_logo.png)**With the dropdown menu below the main pie chart, select the 'mycn_amp' annotation.  Click on the 'yes' slice and watch how the inss pie chart changes. How many samples have a MYCN amplification?**
+  ![](_static/images/R2d2_logo.png)**With the dropdown menu below the main pie chart, select the 'mycn_amp' annotation. Click on the 'yes' slice and watch how the inss pie chart and the table at the bottom change.**  
+   
+  **How many samples have a MYCN amplification?**
 
 <br><br>
 
