@@ -43,7 +43,8 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 <br>
 <br>
 * Log on to the R2 platform with your credentials that were provided. (or apply for a login using the link)  
-* For a quick impression of the data select the **Cohort Overview**. R2 presents the tumor series with its annotation. Hover your mouse over the different slices of the *inss* annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.
+
+* For a quick impression of the data select the **Cohort Overview**. R2 presents the tumor series with its annotation. Hover your mouse over the different slices of the **inss** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
 <br>
 <br>
 The samples of a dataset can be annotated with e.g clinical data or molecular biology parameters, each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics. 
