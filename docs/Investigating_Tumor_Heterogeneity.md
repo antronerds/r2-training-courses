@@ -65,7 +65,7 @@ In this case we're first going to see if and how the mRNA expression of several 
   
 A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. 
   * Hover with your mouse over data points to show additional information.  
-At the bottom of teh page you can find a table with adjustable settings.   
+At the bottom of the page you can find a table with adjustable settings.   
   * The expression values on the y-axis are logarithmic; set the **Transform** option to **none**, and the **Extra Graph Option** to **Track and Gene sort**. Sample annotation is stored in R2 in so called tracks; for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type and click **Adjust Settings** to obtain a more explicit picture.  
   
 

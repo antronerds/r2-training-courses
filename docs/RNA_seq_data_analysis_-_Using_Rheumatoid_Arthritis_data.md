@@ -41,12 +41,21 @@ Finding drug responsive pathways in RA
 *References*
 * [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
 
+
 Explore your samples
 ------
-*Analyses used* 
-* PCA
+We've seen that the expression of genes differs among the samples and some types of cells seem to specifically express certain genes. 
+To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea.  
+PCA and t-SNE are two commonly used algorithms to obtain a visual representation of which samples show similar expression profiles.  
 
 ##### Clustering with PCA analysis
+*Analyses used* 
+* PCA and t-SNE
+
+First we will have a look at the dataset with 336 samples of Okuzono. 
+ 
+* Click the button below to show the 2D PCA plot in R2 
+
 <form name="pca_form" target="_blank" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method="POST">
 <input type="hidden" name="option" value="plot_pca">
 <input type="hidden" name="switch" value="2">
@@ -57,12 +66,25 @@ Explore your samples
 <input type="hidden" name="subset" value="">
 <button type="submit" >Go to PCA Analysis</button>
 </form>  
-  
-  
+<br>
+<br>  
 
+* Colors are not set by default, under **ColorMode** select **Color by Track** and use the *cell_type (7cat)* track, click **Next** to show the changes 
+* PC stands for Principal Component. Each PC shows a different important variation in the dataset. You can  
+---------
+  ![](_static/images/R2d2_logo.png)**Can you relate the samples to a type of cell?**
+
+<br>
+<br>
+
+  ![](_static/images/R2d2_logo.png)**What do you note about the ordering of the cell types with respect to their developmental stage?**
+
+<br>
+<br>
+
+---------
 ##### Clustering with tSNE maps
 
-We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map.  
 
 
 * Click the button below to show the tSNE map in R2 

@@ -36,20 +36,22 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 
 
 * Go to R2 (http://r2.amc.nl) by clicking on the button below:  
-
-
 <form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_nbadam88_u133p2">
   <button type="submit" >Go to R2</button>
 </form>  
-
+<br>
+<br>
 * Log on to the R2 platform with your credentials that were provided. (or apply for a login using the link) 
-* In the left menu click on **Change Data Scope** > **Training** > **Graduate Training Course**
-* In the middle section of the page, an additional choice step appears; click **Goto Graduate Training Course home**
-* For a quick impression of the data select the **Cohort Overview** R2 presents the tumor series with it's annotation. Explore the distribution of the parameters.
-
+* For a quick impression of the data select the **Cohort Overview**. R2 presents the tumor series with its annotation. Hover your mouse over the different slices of the *inss* annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.
+<br>
+<br>
+The samples of a dataset can be annotated with e.g clinical data or molecular biology parameters, each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics. 
+<br>
+The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now show only the samples with the selected value.  
+<br><br>
 ---------
-  ![](_static/images/R2d2_logo.png)**Click on the distributions of different parameters. How many samples have a MYCN amplification?**
+  ![](_static/images/R2d2_logo.png)** With the dropdown menu below the main pie chart, select the 'mycn_amp' annotation.  Click on the 'yes' slice and watch how the inss pie chart changes. How many samples have a MYCN amplification?**
 
 <br>
 <br>
