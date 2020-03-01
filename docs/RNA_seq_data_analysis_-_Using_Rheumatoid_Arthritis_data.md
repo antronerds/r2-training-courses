@@ -2,12 +2,15 @@
 
 Introduction
 ===========================================
+Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by lymphocyte infiltration and chronic inflammation of the synovial tissues and progressive joint disability.  
+Both genetic and environmental factors influence its pathogenesis, and the strongest contributor to disease heritability is the major histocompatibility complex (MHC) class II, which is involved in antigen presentation to CD4+ T cells.  
+Genes associated with RA risk alleles outside the MHC locus are also preferentially expressed in CD4+ T cells,3 4 and multiple lines of evidence from both genetic and clinical research indicate a central role for autoreactive CD4+ T cells in RA pathogenesis.5 Emerging evidence also points to a role for CD8+ T cells in RA.6 A subset of CD8+ T cells was found to be essential for ectopic germinal centre formation in the synovial membrane in RA,7 and clonal expansion was observed for CD8+ T cells but not for CD4+ T cells in newly diagnosed patients with RA.8
 
 
 -  A general workflow of RNA data analysis consists of the following steps 
 1.  Explore your samples
   -  Unbiased unsupervised clustering
-  	- PCA, tSNE, UMAP 
+  	-0 PCA, tSNE, UMAP 
   -  Toplister
   	- Genes that do make a difference in this set
   - Goals

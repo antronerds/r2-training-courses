@@ -32,7 +32,7 @@ Despite decades of research high stage neuroblastoma still has a very poor progn
 Exploring the dataset
 ---------------------
 
-The oncogenomics department of the AMC has gathered a richly annotated set of neuroblastoma tumors. To easily explore this the R2 development team has devised the concept of Datascopes; a convenient view on the data with some pre-built analyses readily available.  
+The oncogenomics department of the AMC has gathered a richly annotated set of neuroblastoma tumors. To easily explore this, the R2 development team has devised the concept of Datascopes; a convenient view on the data with some pre-built analyses readily available.  
   
   
 * Go to R2 (http://r2.amc.nl) by clicking on the button below:  
@@ -43,25 +43,23 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 </form>  
 <br>
 
-* Log on to the R2 platform with your credentials that were provided. (or apply for a login using the link)  
-
+* Log on to the R2 platform with your credentials that were provided (or apply for a login using the link).  
+* In the left menu click on **Change Data Scope** > **Training** > **Graduate Training Course**
+* In the middle section of the page, an additional choice step appears; click **Goto Graduate Training Course home**
 * For a quick impression of the data select the **Cohort Overview**. R2 presents the tumor series with its annotation. Hover your mouse over the different slices of the **inss** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
 
-The samples of a dataset can be annotated with e.g clinical data or molecular biology parameters, each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics.  
+The samples of a dataset can be annotated with e.g clinical data or molecular biology parameters, each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data with e.g. different phenotypes or demographic characteristics.  
   
-The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now show only the samples with the selected value.  
-
-<br><br>
-
+The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value.  
+<br>
 ---------
   ![](_static/images/R2d2_logo.png)**With the dropdown menu below the main pie chart, select the 'mycn_amp' annotation. Click on the 'yes' slice and watch how the inss pie chart and the table at the bottom change.**  
    
   **How many samples have a MYCN amplification?**
-
-<br><br>
+<br>
 
 ---------
-  
+<br>  
 Until recently only several genomic aberrations were known:
 
 <table>
@@ -83,7 +81,7 @@ To extend these data, the Oncogenomics department of the AMC set out to sequence
 Somatic mutations in neuroblastoma
 ----------------------------------
 
-For this the samples where sent to the Complete Genomics sequencing facility, now taken over by BGI, for whole-genome paired-end sequencing. They provide a sequence as a service model. Genomes were sequenced at an average coverage of 50. Compared to the HG18 reference genome an average of 3,347,592 singlenucleotide variants (SNVs) per genome were obtained, in accordance with reported frequencies of interpersonal variants. 
+For this the samples were sent to the Complete Genomics sequencing facility, now taken over by BGI, for whole-genome paired-end sequencing. They provide a sequence as a service model. Genomes were sequenced at an average coverage of 50. Compared to the HG18 reference genome an average of 3,347,592 singlenucleotide variants (SNVs) per genome were obtained, in accordance with reported frequencies of interpersonal variants. 
 
 The R2 development team has processed these WGS data further using the CGAtools software to compare tumor with lymphocyte genomes. This provided a somatic score, estimating the likelihood of mutations to be somatic. Through several filtering steps the somatic mutations were determined with respect to the reference genome.
 
