@@ -15,6 +15,10 @@ Despite convincing evidence for T-cell involvement in RA pathogenesis, the speci
 
 *Functionally*, CD4+ T cells are classified into many subfractions, such as Th1, Th17, Treg, Tfh9 10 and, recently, peripheral helper T (Tph) many of which have been reported to be involved in RA.  
 
+![](_static/images/KIT_Important-CD4-T-cell-subsets.png "Important CD4 T-cell subsets in Rheumatoid Arthritis Synovial Fluid")
+  
+  [**Figure 2:  Important CD4 T-cell subsets in Rheumatoid Arthritis Synovial Fluid**](_static/images/KIT_Important-CD4-T-cell-subsets.png)
+
 By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into four stages (naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem)), whereas CD8+ T cells are classified into five stages (Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra)).  
   
 Different treatments for RA have been studied, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ).  
