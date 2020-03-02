@@ -3,11 +3,12 @@
 Introduction
 ===========================================
 Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by lymphocyte infiltration and chronic inflammation of the synovial tissues and progressive joint disability.  
+
 Both genetic and environmental factors influence its pathogenesis, and the strongest contributor to disease heritability is the major histocompatibility complex (MHC) class II, which is involved in antigen presentation to CD4+ T cells. Emerging evidence also points to a role for CD8+ T cells in RA.
 
-![](_static/images/KIT_fimmu-06-00384-g001.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors involved in rheumatoid arthritis development (Rodríguez-Frade, 2015)")
+![](_static/images/KIT_fimmu-06-00384-g001_small.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors involved in rheumatoid arthritis development (Rodríguez-Frade, 2015)")
   
-  [**Figure 1:  Cell types, cytokines, and chemokine receptors involved in rheumatoid arthritis development (Rodríguez-Frade, 2015)**](_static/images/KIT_fimmu-06-00384-g001.jpg)
+  [**Figure 1:  Cell types, cytokines, and chemokine receptors involved in rheumatoid arthritis development (Rodríguez-Frade, 2015)**](_static/images/KIT_fimmu-06-00384-g001_small.jpg)
   
   
 Despite convincing evidence for T-cell involvement in RA pathogenesis, the specific cell subsets and states that drive the disease have been challenging to identify since T cells are highly heterogeneous, displaying diverse surface markers, developmental and activation states, and effector functions, which has led to multiple systems of classification.  
