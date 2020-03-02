@@ -3,11 +3,25 @@
 Introduction
 ===========================================
 Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by lymphocyte infiltration and chronic inflammation of the synovial tissues and progressive joint disability.  
-Both genetic and environmental factors influence its pathogenesis, and the strongest contributor to disease heritability is the major histocompatibility complex (MHC) class II, which is involved in antigen presentation to CD4+ T cells.  
-Genes associated with RA risk alleles outside the MHC locus are also preferentially expressed in CD4+ T cells,3 4 and multiple lines of evidence from both genetic and clinical research indicate a central role for autoreactive CD4+ T cells in RA pathogenesis.5 Emerging evidence also points to a role for CD8+ T cells in RA.6 A subset of CD8+ T cells was found to be essential for ectopic germinal centre formation in the synovial membrane in RA,7 and clonal expansion was observed for CD8+ T cells but not for CD4+ T cells in newly diagnosed patients with RA.8
+Both genetic and environmental factors influence its pathogenesis, and the strongest contributor to disease heritability is the major histocompatibility complex (MHC) class II, which is involved in antigen presentation to CD4+ T cells. Emerging evidence also points to a role for CD8+ T cells in RA.
+
+![](_static/images/KIT_fimmu-06-00384-g001.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors involved in rheumatoid arthritis development (Rodríguez-Frade, 2015)")
+  
+  [**Figure 1:  Cell types, cytokines, and chemokine receptors involved in rheumatoid arthritis development (Rodríguez-Frade, 2015)**](_static/images/KIT_fimmu-06-00384-g001.jpg)
+  
+  
+Despite convincing evidence for T-cell involvement in RA pathogenesis, the specific cell subsets and states that drive the disease have been challenging to identify since T cells are highly heterogeneous, displaying diverse surface markers, developmental and activation states, and effector functions, which has led to multiple systems of classification.  
+
+*Functionally*, CD4+ T cells are classified into many subfractions, such as Th1, Th17, Treg, Tfh9 10 and, recently, peripheral helper T (Tph) many of which have been reported to be involved in RA.  
+
+By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into four stages (naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem)), whereas CD8+ T cells are classified into five stages (Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra)).  
+  
+Different treatments for RA have been studied, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ).  
+Takeshita and Okuzono et al. have collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data has been uploaded into our platform R2 and we will make use of these and other datasets to clarify the characteristics of T cells in RA and study the transcriptomic features of T cells in RA.  
 
 
--  A general workflow of RNA data analysis consists of the following steps 
+ TAKE OUT: A general workflow of RNA data analysis consists of the following steps 
+===========
 1.  Explore your samples
   -  Unbiased unsupervised clustering
   	-0 PCA, tSNE, UMAP 
