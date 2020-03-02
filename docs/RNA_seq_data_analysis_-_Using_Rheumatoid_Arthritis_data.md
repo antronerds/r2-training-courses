@@ -49,6 +49,46 @@ Takeshita and Okuzono et al. have collected a large number of samples from clini
   - Generate a signature
   - Compare with other signatures
 
+Exploring the dataset
+===============================
+*Data used:*  
+* Disease Rheumatoid arthritis (MTX) monotherapy - Okuzono - 336 - deseq2_vst - gpl17303
+* 336 samples of T cells in each developmental stages in healthy volunteers and patients with rheumatoid arthritis 
+
+*Techniques used:*   
+* RNA Seq
+
+*References*
+* [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
+
+<br>  
+
+
+* Go to R2 (http://r2.amc.nl) by clicking on the button below:  
+ 
+<form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_nbadam88_u133p2">
+  <button type="submit" >Go to R2</button>
+</form>  
+<br>
+<br>  
+
+* Log on to the R2 platform with your credentials that were provided (or apply for a login using the link).
+* For a quick impression of the data select the **Cohort Overview**. R2 presents the tumor series with its annotation. Hover your mouse over the different slices of the **inss** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
+
+The samples of a dataset can be annotated with e.g clinical data or molecular biology parameters, each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data with e.g. different phenotypes or demographic characteristics.  
+  
+The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value.  
+<br>
+---------
+  ![](_static/images/R2d2_logo.png)**With the dropdown menu below the main pie chart, select the 'cell_type' annotation. Click on the 'tn_cd4' to see what proportion of which cell type is available in the dataset.  
+  Now choose the annotation 'tissue' from the dropdown and double click on the 'synovial fluid' slice.**  
+   
+  **How many synovial fluid samples does this dataset have?**
+<br>
+
+---------
+<br>  
 
 Finding drug responsive pathways in RA 
 ===========================================
@@ -142,7 +182,7 @@ Determine a lineage specific RA signature
 
 *Data used:*  
 * Disease Rheumatoid arthritis (MTX) monotherapy - Okuzono - 336 - deseq2_vst - gpl17303
-* 337 samples of T cells in each developmental stages in healthy volunteers and patients with rheumatoid arthritis 
+* 336 samples of T cells in each developmental stages in healthy volunteers and patients with rheumatoid arthritis 
 
 *Techniques used:*   
 * RNA Seq
