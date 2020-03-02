@@ -13,11 +13,7 @@ Both genetic and environmental factors influence its pathogenesis, and the stron
   
 Despite convincing evidence for T-cell involvement in RA pathogenesis, the specific cell subsets and states that drive the disease have been challenging to identify since T cells are highly heterogeneous, displaying diverse surface markers, developmental and activation states, and effector functions, which has led to multiple systems of classification.  
 
-*Functionally*, CD4+ T cells are classified into many subfractions, such as Th1, Th17, Treg, Tfh9 10 and, recently, peripheral helper T (Tph) many of which have been reported to be involved in RA.  
 
-![](_static/images/KIT_Important-CD4-T-cell-subsets.png "Important CD4 T-cell subsets in Rheumatoid Arthritis Synovial Fluid")
-  
-  [**Figure 2:  Important CD4 T-cell subsets in Rheumatoid Arthritis Synovial Fluid**](_static/images/KIT_Important-CD4-T-cell-subsets.png)
 
 By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into four stages (naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem)), whereas CD8+ T cells are classified into five stages (Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra)).  
   
@@ -67,7 +63,7 @@ Exploring the dataset
 * Go to R2 (http://r2.amc.nl) by clicking on the button below:  
  
 <form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_nbadam88_u133p2">
+  <input type="hidden" name="table" value="ps_avgpres_gse118829geo336_gpl17303">
   <button type="submit" >Go to R2</button>
 </form>  
 <br>
@@ -90,24 +86,9 @@ The pie charts in the cohort overview allow you to look at the distribution of t
 ---------
 <br>  
 
-Finding drug responsive pathways in RA 
-===========================================
-
-*Data used:*  
-* Exp Rheumatoid arthritis tocilizumab - Takeshita - 22 - deseq2_rlog - gse113156
-* 22 samples taken before and after tocilizumab treatment of CD4 and CD8 T cell in rheumatoid arthritis patients
-
-*Techniques used:*   
-* RNA Seq
-
-*References*
-* [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
-
-
 Explore your samples
 ------
-We've seen that the expression of genes differs among the samples and some types of cells seem to specifically express certain genes. 
-To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea.  
+
 PCA and t-SNE are two commonly used algorithms to obtain a visual representation of which samples show similar expression profiles.  
 
 ##### Clustering with PCA analysis
@@ -145,9 +126,6 @@ First we will have a look at the dataset with 336 samples of Okuzono.
 <br>
 
 ---------
-##### Clustering with tSNE maps
-
-
 
 * Click the button below to show the tSNE map in R2 
 
@@ -169,6 +147,24 @@ First we will have a look at the dataset with 336 samples of Okuzono.
 
 Explore differences between groups
 ------
+*Functionally*, CD4+ T cells are classified into many subfractions, such as Th1, Th17, Treg, Tfh9 10 and, recently, peripheral helper T (Tph) many of which have been reported to be involved in RA.  
+
+![](_static/images/KIT_Important-CD4-T-cell-subsets.png "Important CD4 T-cell subsets in Rheumatoid Arthritis Synovial Fluid")
+  
+  [**Figure 2:  Important CD4 T-cell subsets in Rheumatoid Arthritis Synovial Fluid**](_static/images/KIT_Important-CD4-T-cell-subsets.png)
+
+Let's have a look if we can find such differences in our dataset.  
+
+* Click in the upper left corner on **Go to Main**
+* The default analysis type is set to View a gene. In box 4, type **CXCR5** or any gene of your preference. 
+* Click **Next** and click on the following page **Next** again.  
+
+You can see a diverse expression of the gene CXCR5. In Adjustable Settings underneath the graph, select 'cell_type (7 cat)' for group separation. Set graphtype to 'Boxplot with circles' and ColorMode to 'Color by Track' and click 'Adjust settings'. 
+
+  
+  
+
+
 
 Explore patterns
 ------
@@ -203,3 +199,16 @@ Explore patterns
 
 Explore relations
 ------
+
+Finding drug responsive pathways in RA 
+===========================================
+
+*Data used:*  
+* Exp Rheumatoid arthritis tocilizumab - Takeshita - 22 - deseq2_rlog - gse113156
+* 22 samples taken before and after tocilizumab treatment of CD4 and CD8 T cell in rheumatoid arthritis patients
+
+*Techniques used:*   
+* RNA Seq
+
+*References*
+* [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
