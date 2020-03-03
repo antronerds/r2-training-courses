@@ -78,16 +78,14 @@ The main page of R2 shows 5 boxes to choose datasets and different klind of anal
 
 XXXX
 
-* R2 presents the datasets with its annotation. Hover your mouse over the different slices of the **inss** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
+* R2 presents the datasets with its annotation. Hover your mouse over the different slices of the **cell_type** annotation pie chart. Do the same for the other annotations. Explore with which percentage of samples each cell type is present in the current dataset.  
 
-The samples of a dataset can be annotated with e.g clinical data or molecular biology parameters, each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data with e.g. different phenotypes or demographic characteristics.  
+The samples of a dataset can be annotated with e.g clinical data or molecular biology parameters, each group of annotated data is called a **track** in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data with e.g. different phenotypes or demographic characteristics.  
   
-The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value.  
-
 <br>
 
 ---------
-  ![](_static/images/R2d2_logo.png)**With the dropdown menu below the main pie chart, select the 'cell_type' annotation. Click on the 'tn_cd4' to see what proportion of which cell type is available in the dataset.  
+  ![](_static/images/R2d2_logo.png)**With the dropdown menu below the main pie chart, select the 'subtype' annotation. Click on the 'tn_cd4' to see what proportion of which cell subtype is available in the dataset.  
   Now choose the annotation 'tissue' from the dropdown and double click on the 'synovial fluid' slice.**  
    
   **How many synovial fluid samples does this dataset have?**
