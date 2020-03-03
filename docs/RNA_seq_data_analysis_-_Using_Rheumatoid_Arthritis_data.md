@@ -2,25 +2,17 @@
 
 Introduction
 ===========================================
-Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by lymphocyte infiltration and chronic inflammation of the synovial tissues and progressive joint disability.  
+Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by inflammatory cell infiltration, such as T cells, B cells, macrophages and plasma cells. Production of cytokines and proteases lead to chronic inflammation of the synovial tissues and progressive joint disability. RA affects as much as 1% of the worldwide population. Although the exact causes are unknown, decades of research has led to increasingly detailed understanding of multiple disease mechanisms. Different treatments for RA have been proposed, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ). However, a significant proportion of patients do not respond to initial treatment or reach remission. Others experience recurrence or deterioration of their disease.   
+   
+This has led to extensive efforts to find more specific diagnostic markers. The complexity of the disease mechanisms have spurred unbiased searches using genetics, transcriptomics or proteomics. Because of difficulties in measuring markers in the inflamed joints, efforts have, to a large extent focused on analyses of peripheral blood. However, as Lee et al. point out ([Cytokine, March 2020](https://doi.org/10.1016/j.cyto.2019.154960)), clinical translation has proven difficult. They hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.   
+ 
+ ![](_static/images/KIT_rheumatoid-arthritis-drug-targets-16.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors involved in rheumatoid arthritis development (Rodríguez-Frade, 2015)"){:target="_blank" rel="noopener"}
+   
+   [**Figure 1:  Cell types, cytokines, and chemokine receptors involved in rheumatoid arthritis development (Rodríguez-Frade, 2015)**](_static/images/KIT_rheumatoid-arthritis-drug-targets-16.jpg)
 
-Both genetic and environmental factors influence its pathogenesis, and the strongest contributor to disease heritability is the major histocompatibility complex (MHC) class II, which is involved in antigen presentation to CD4+ T cells. Emerging evidence also points to a role for CD8+ T cells in RA.
-
-![](_static/images/KIT_fimmu-06-00384-g001_small.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors involved in rheumatoid arthritis development (Rodríguez-Frade, 2015)")
+Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate patient and experimental data.
+Takeshita and Okuzono et al. have collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data and other similar studies have been uploaded into our platform R2. We will make use of these datasets to study the characteristics of T cells, look at differences and similarities between peripheral blood and synovial fluid and to look at possible effects of treatments.  
   
-  [**Figure 1:  Cell types, cytokines, and chemokine receptors involved in rheumatoid arthritis development (Rodríguez-Frade, 2015)**](_static/images/KIT_fimmu-06-00384-g001_small.jpg)
-  
-  
-Despite convincing evidence for T-cell involvement in RA pathogenesis, the specific cell subsets and states that drive the disease have been challenging to identify since T cells are highly heterogeneous, displaying diverse surface markers, developmental and activation states, and effector functions, which has led to multiple systems of classification.  
-
-
-
-By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into four stages (naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem)), whereas CD8+ T cells are classified into five stages (Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra)).  
-  
-Different treatments for RA have been studied, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ).  
-Takeshita and Okuzono et al. have collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data has been uploaded into our platform R2 and we will make use of these and other datasets to clarify the characteristics of T cells in RA and study the transcriptomic features of T cells in RA.  
-
-
  TAKE OUT: A general workflow of RNA data analysis consists of the following steps 
 ===========
 1.  Explore your samples
@@ -45,7 +37,7 @@ Takeshita and Okuzono et al. have collected a large number of samples from clini
   - Generate a signature
   - Compare with other signatures
 
-Exploring the dataset
+Exploring a dataset
 ===============================
 *Data used:*  
 * Disease Rheumatoid arthritis (MTX) monotherapy - Okuzono - 336 - deseq2_vst - gpl17303
@@ -54,10 +46,14 @@ Exploring the dataset
 *Techniques used:*   
 * RNA Seq
 
+*Analyses used*
+* Cohort Overview
+
 *References*
-* [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
+* Paper: [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
 
 <br>  
+
 
 
 * Go to R2 (http://r2.amc.nl) by clicking on the button below:  
@@ -116,6 +112,16 @@ First we will have a look at the dataset with 336 samples of Okuzono.
 
 * Colors are not set by default, under **ColorMode** select **Color by Track** and use the *cell_type (7cat)* track, click **Next** to show the changes 
 * PC stands for Principal Component. Each PC shows a different important variation in the dataset. You can  
+
+Despite convincing evidence for T-cell involvement in RA pathogenesis, the specific cell subsets and states that drive the disease have been challenging to identify since T cells are highly heterogeneous, displaying diverse surface markers, developmental and activation states, and effector functions, which has led to multiple systems of classification.  
+
+![](_static/images/KIT_fimmu-06-00384-g001_small.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors involved in rheumatoid arthritis development (Rodríguez-Frade, 2015)")
+  
+  [**Figure 1:  Cell types, cytokines, and chemokine receptors involved in rheumatoid arthritis development (Rodríguez-Frade, 2015)**](_static/images/KIT_fimmu-06-00384-g001_small.jpg)
+  
+  
+By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into four stages (naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem)), whereas CD8+ T cells are classified into five stages (Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra)).  
+
 ---------
   ![](_static/images/R2d2_logo.png)**Can you relate the samples to a type of cell?**
 
