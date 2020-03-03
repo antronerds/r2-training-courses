@@ -62,7 +62,7 @@ In the following steps we will explore the dataset of Okuzono. It is an RNSseq d
  
 <form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse118829geo336_gpl17303">
-  <input type="hidden" name="option" value="cg_sampleannotation1">
+  <input type="hidden" rel="studyview" value="cg_sampleannotation1">
   <button type="submit" >Go to R2</button>
 </form>  
 <br>
