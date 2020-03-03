@@ -13,7 +13,7 @@ This has led to extensive efforts to find more specific diagnostic markers. The 
 Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate patient and experimental data.
 Takeshita and Okuzono et al. have collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data and other similar studies have been uploaded into our platform R2. We will make use of these datasets to study the characteristics of T cells, look at differences and similarities between peripheral blood and synovial fluid and to look at possible effects of treatments.  
   
- TAKE OUT: A general workflow of RNA data analysis consists of the following steps 
+ XXX TODO: TAKE OUT: A general workflow of RNA data analysis consists of the following steps 
 ===========
 1.  Explore your samples
   -  Unbiased unsupervised clustering
@@ -61,8 +61,9 @@ In the following steps we will explore the dataset of Okuzono. It is an RNSseq d
 * Go to R2 (http://r2.amc.nl) by clicking on the button below:  
  
 <form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gse118829geo336_gpl17303">
-  <input type="hidden" name="option" rel="studyview" value="cg_sampleannotation1">
+  <input type="hidden" name="option" value="cg_sampleannotation1">
+  <input type="hidden" name="set_id" value="1">
+  <input type="hidden" name="ctable" value="ps_avgpres_gse118829geo336_gpl17303">
   <button type="submit" >Go to R2</button>
 </form>  
 <br>
@@ -70,8 +71,14 @@ In the following steps we will explore the dataset of Okuzono. It is an RNSseq d
 
 * Log on to the R2 platform with your credentials that were provided (or apply for a login using the link).  
 
+XXX TODO: Or select manually  
+
 The main page of R2 shows 5 boxes to choose datasets and different klind of analysis. In box 2 you can see the dataset of Okuzono already selected. In box 3 you can select an analysis to perform on this dataset.  
 * For a quick impression of the data select the **Cohort Overview** from the dropdown menu. R2 presents the tumor series with its annotation. Hover your mouse over the different slices of the **inss** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
+
+XXXX
+
+* R2 presents the datasets with its annotation. Hover your mouse over the different slices of the **inss** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
 
 The samples of a dataset can be annotated with e.g clinical data or molecular biology parameters, each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data with e.g. different phenotypes or demographic characteristics.  
   
