@@ -36,6 +36,36 @@ Takeshita and Okuzono et al. have collected a large number of samples from clini
 4. Explore relations
   - Generate a signature
   - Compare with other signatures
+  
+ The R2 platform
+ =============================== 
+  Let's first take a glance at the platform. Click on the following button to go to R2:  
+  
+<form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_gse118829geo336_gpl17303">
+  <button type="submit" >Go to R2</button>
+</form>  
+<br>
+<br>
+
+* Log on to the R2 platform with your credentials that were provided (or apply for a login using the link).  
+
+The main page of R2 shows five numbered boxes to choose a dataset and a type of analysis. In box 2 you can see the dataset of Okuzono already selected. In box 3 you can select an analysis to perform on this dataset. 
+
+* The default analysis is View a gene. Type in the textbox **Gene / Probeset**: CD4  
+ Click on **Next** and click **Next** again in the following page.  
+ 
+ ---------
+   ![](_static/images/R2d2_logo.png)**The dots in the graph show the expression value of each sample of the dataset for the gene CD4. Under the graph you can see different types of annotation.**  
+    
+   **Do you notice anything in the expression between the green colored cell_types and the red colored cell types? Hover with your mouse over the green and red colors of this first annotation row. Which cell type has high expression of CD4?**
+ <br>
+ 
+ ---------   
+  
+
+
+
 
 Exploring a dataset
 ===============================
@@ -54,9 +84,9 @@ Exploring a dataset
 
 <br>  
 
+The samples of a dataset can be annotated with e.g clinical data or molecular biology parameters, each group of annotated data is called a **track** in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data with e.g. different phenotypes or demographic characteristics.  
 
-
-In the following steps we will explore the dataset of Okuzono. It is an RNSseq dataset with 336 samples. The button below will take you to the main page of R2.  
+In the following steps we will explore the dataset of Okuzono. This is an RNSseq dataset with 336 samples. The button below will take you to the main page of R2.  
 
 * Go to R2 (http://r2.amc.nl) by clicking on the button below:  
  
@@ -64,7 +94,7 @@ In the following steps we will explore the dataset of Okuzono. It is an RNSseq d
   <input type="hidden" name="option" value="cg_sampleannotation1">
   <input type="hidden" name="set_id" value="1">
   <input type="hidden" name="ctable" value="ps_avgpres_gse118829geo336_gpl17303">
-  <button type="submit" >Go to R2</button>
+  <button type="submit" >Go to Cohort Overview</button>
 </form>  
 <br>
 <br>  
@@ -73,14 +103,12 @@ In the following steps we will explore the dataset of Okuzono. It is an RNSseq d
 
 XXX TODO: Or select manually  
 
-The main page of R2 shows 5 boxes to choose datasets and different klind of analysis. In box 2 you can see the dataset of Okuzono already selected. In box 3 you can select an analysis to perform on this dataset.  
+ 
 * For a quick impression of the data select the **Cohort Overview** from the dropdown menu. R2 presents the tumor series with its annotation. Hover your mouse over the different slices of the **inss** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
 
 XXXX
 
 * R2 presents the datasets with its annotation. Hover your mouse over the different slices of the **cell_type** annotation pie chart. Do the same for the other annotations. Explore with which percentage of samples each cell type is present in the current dataset.  
-
-The samples of a dataset can be annotated with e.g clinical data or molecular biology parameters, each group of annotated data is called a **track** in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data with e.g. different phenotypes or demographic characteristics.  
   
 <br>
 
@@ -94,8 +122,7 @@ The samples of a dataset can be annotated with e.g clinical data or molecular bi
 ---------
 <br>  
 
-Explore your samples
-------
+
 
 PCA and t-SNE are two commonly used algorithms to obtain a visual representation of which samples show similar expression profiles.  
 
