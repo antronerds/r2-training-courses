@@ -52,8 +52,8 @@ Takeshita and Okuzono et al. have collected a large number of samples from clini
 
 The main page of R2 shows five numbered boxes to choose a dataset and a type of analysis. In box 2 you can see the dataset of Okuzono already selected. In box 3 you can select an analysis to perform on this dataset. 
 
-* The default analysis is View a gene. Type in the textbox **Gene / Probeset**: CD4  
- Click on **Next** and click **Next** again in the following page.  
+* The default analysis is View a gene. Type in the textbox **Gene / Probeset**: CD4   
+* Click the **Next** button and click **Next** again in the following page.  
  
  ---------
    ![](_static/images/R2d2_logo.png)**The dots in the graph show the expression value of each sample of the dataset for the gene CD4. Under the graph you can see different types of annotation.**  
