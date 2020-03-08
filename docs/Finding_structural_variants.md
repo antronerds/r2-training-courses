@@ -234,9 +234,8 @@ While investigating the WGS data, an interesting phenomenon was observed. In som
 
 The Shredding pattern is known by the term chromothripsis. Patients containing such a phenomenon have also been annotated in the neuroblastoma cohort. Within the Circos archive we can also use filters to focus on intersections of the cohort. In the top of the screen select 'chromothripsis' from the 'select a track' dropdown and subsequently click on 'yes' and then 'ok' to apply a filter. Then press redraw to depict only cases with marks of chromothripsis.
 
-	
+![](_static/images/select_track_cg_circos.png "Figure 7: Selection of a cohort intersection via a track")	
   [**Figure 7: Selection of a cohort intersection via a track.**](_static/images/select_track_cg_circos.png)
-
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you spot a chromosomal pattern in the chromothripsis cases?**
