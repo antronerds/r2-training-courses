@@ -119,7 +119,7 @@ A comprehensive list of the mutations can be accessed through R2.
 
 ---------
 
-* The buttons on top of the page can be used to zoom in and out. Zoom out 4 times with a factor 20. 
+* The buttons on top of the page can be used to zoom in and out. Zoom out 20x, 20x, 5x times resulting in a region of approximately 100.000 bp. 
 * The GenomeBrowser has a tremendous number of parameters that can be set. Scroll down to the lower half of the page. A form shows quite some parameter fields. These provide additional annotations and settings for the algorithms used. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data, which is based on methylation and acetylation patterns of the genome. This annotation however, is only provided on another Human Genome build. In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
 * An unannotated version of the reference genome is shown. Find the **Refseq(R2)** and switch the annotation on. Click **redraw**
 
@@ -168,7 +168,7 @@ A comprehensive list of the mutations can be accessed through R2.
 * Now go back to the Graduate Training Course datascope, select the Somatic Variants Table tile and now click the  **detail** link. R2 shows additional information on the expression of the gene and its location on the genome. 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What is remarkable about the expression of the ALK gene?**
+  ![](_static/images/R2d2_logo.png)**What is remarkable about the expression of the ALK gene in neuroblastoma?**
 
 <br>
 <br>
@@ -190,7 +190,7 @@ WGS data allows for further analysis; the paired end technique enables the disco
 * In a new tab a detailed view of this specific tumor genome is shown. When hovering over the plot the mouse opens a magnifier window.
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What do the green and red areas mean? And the lines crossing the circle?**
+  ![](_static/images/R2d2_logo.png)**What do the green and red areas mean? And the arches crossing the circle?**
 
 <br>
 <br>
@@ -225,7 +225,21 @@ While investigating the WGS data, an interesting phenomenon was observed. In som
 * Go to the overview page with circos plots.
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you spot an example of chromothripsis from the circos overview?**
+  ![](_static/images/R2d2_logo.png)**Can you spot an example of such shredding from the circos overview?**
+
+<br>
+<br>
+
+---------
+
+The Shredding pattern is known by the term chromothripsis. Patients containing such a phenomenon have also been annotated in the neuroblastoma cohort. Within the Circos archive we can also use filters to focus on intersections of the cohort. In the top of the screen select 'chromothripsis' from the 'select a track' dropdown and subsequently click on 'yes' and then 'ok' to apply a filter. Then press redraw to depict only cases with marks of chromothripsis.
+
+	
+  [**Figure 7: Selection of a cohort intersection via a track.**](_static/images/select_track_cg_circos.png)
+
+
+---------
+  ![](_static/images/R2d2_logo.png)**Can you spot a chromosomal pattern in the chromothripsis cases?**
 
 <br>
 <br>
