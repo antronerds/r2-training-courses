@@ -5,9 +5,9 @@ Investigating structural variants
 
 *Not every cancer has determining somatic mutations. Using the full power of WGS data, relevant structural variants can be traced also and linked to potential causes of disease*
 
-In this course we'll introduce R2, the web based genomics analysis and visualization application. Throughout the course an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa new insights can be derived. Throughout this course we'll focus on data of the childhood tumor neuroblastoma.
+In this course we will introduce R2, the web based genomics analysis and visualization application. Throughout the course an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa new insights can be derived. Throughout this course we'll focus on data of the childhood tumor neuroblastoma.
 
-We hope to show how R2 can be used to visualize and analyze your WGS data. 
+We hope to show how R2 can be used to visualize and analyze your WGS data. Please note that this training session requires accounts with additional access. Please make sure you have obtained a proper account from the tutors. 
 
 This resource is located online at http://r2-training-courses.readthedocs.io
 
@@ -49,10 +49,13 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 * For a quick impression of the data select the **Cohort Overview**. R2 presents the tumor series with its annotation. Hover your mouse over the different slices of the **inss** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
 
 The samples of a dataset can be annotated with e.g clinical data or molecular biology parameters, each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data with e.g. different phenotypes or demographic characteristics.  
-  
+
+Pie Charts
+----------
+
 The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value.  
 <br>
----------
+
   ![](_static/images/R2d2_logo.png)**With the dropdown menu below the main pie chart, select the 'mycn_amp' annotation. Click on the 'yes' slice and watch how the inss pie chart and the table at the bottom change.**  
    
   **How many samples have a MYCN amplification?**
