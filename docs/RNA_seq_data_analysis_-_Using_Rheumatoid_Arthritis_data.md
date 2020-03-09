@@ -117,7 +117,7 @@ R2 presents the dataset with its available annotation. Each pie chart shows a di
   <br>
 
 ---------
-We would also like to have a kind of overview of the different behavior of the samples. Do some behave similarly, considering their expression profiles? Before we used the analysis of One Gene View to plot the gene expression of a single gene. Often a dataset has about 20.000 genes. We cannot check all these genes one by one. Let's see if we can find out more information with a Principle Component Analysis.  
+ of overview of the different behavior of the samples. Do some behave similarly, considering their expression profiles? Before we used the analysis of One Gene View to plot the gene expression of a single gene. Often a dataset has about 20.000 genes. We cannot check all these genes one by one. Let's see if we can find out more information with a Principle Component Analysis.  
 
 Clustering with PCA analysis
 ===
@@ -143,19 +143,38 @@ Principle Component Analysis or PCA analysis, can summarize the characteristics 
 <br>  
 
 Each dot is a sample and the axes are the more abstract PC variables. To have a better understanding what biological process might determine the similarity in expression profiles, we can try to color the dots with a track. 
-* Colors are not set by default. Under the graph, first adjust **ColorMode: Color by Track** and **Track for color: drug-group**; click next for the changes to take effect.  
+* Colors are not set by default. Under the graph, first adjust **ColorMode: Color by Track** and **Track for color: tissue (2 cat)**; click next for the changes to take effect.  
 
-Clearly the drug-group does not explain the similarities and differences as found by these PCs.
-*  Try instead the **tcell-stage-type (7cat)** track as **Track for Color**. Click next to show the changes.
+*  Now try the **tcell-stage-type (7cat)** track as **Track for Color**. Click next to show the changes. Also try the other annotation options.
   
   
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you relate the samples to a type of cell?**
-
+  ![](_static/images/R2d2_logo.png)**Can you relate the clusters of samples to a developmental stage?**  
+     
+ **What biological conditions seem to be relevant in the distinctions and similarities between the expression profiles of the samples?**
 <br>
-
-  ![](_static/images/R2d2_logo.png)**What do you note about the ordering of the cell types with respect to their developmental stage?**
-
-<br>
-
 ---------
+We have seen that the expression profiles of the same cell types can show quite some differences in peripheral blood and synovial fluid. It would be interesting to understand better which genes and pathways cause the biggest differences. 
+
+* From the main page, select the analysis **Find Differential expression between groups**; click Next.  
+* In the next page with selection criteria, choose **Select a track: tissue (2cat)**  
+* The rest of the settings we leave as is. Note that by default the anova test is selected with a p-value treshold of 0.01. Click Next and click NExt in the group selection where both blood and synovial fluid are selected.
+
+ R2 now performs a one-way Anova statistical test on the fly with a correction for multiple testing. The result is a list of genes that is ordered by the most significant differential expression between the groups that we chose before (PB and SF). 
+  
+  * Do you recognize any genes related to the immune sysem? You can hover your mouse over the names of the genes to read a summary of information about e.g. its function and alternative names. Or, you can click on the name to see the gene expression per sample in a One Gene View graph.  
+    
+ * To understand in which biological processes this list of genes play an important role, we can use the Gene Set Analysis. On the menu to the right of your list of genes click the button **Gene Set Analysis**.
+ The returned table shows you  the processes in which the genes are involved as known to the [KEGG (Kyoto Encyclopedia of Genes and Genomes) database](https://www.genome.jp/kegg/). 
+ * Which biological processes could be of importance for understanding the respective roles that T cells play in peripheral blood and synovial fluid? You can click on the little green K icon in front of a gene set to look at th epathway in a KEGG pathway. 
+ 
+ * Above the table, you can read the meaning of the color coding. Which tissue has a larger expression of most of the genes. What does that mean biologically? 
+ 
+ * What is the conclusion that you draw with respect to the treatment of RA based on analysis from peripheral blood instead of synovial fluid?
+  
+  
+  ====
+  
+  
+   
+ 
