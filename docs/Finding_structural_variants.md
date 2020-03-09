@@ -136,6 +136,7 @@ A comprehensive list of the mutations can be accessed through R2.
 * For clarity you can now switch off the cosmic annotation (in the Genome Variation box) and the Calldif Somatic Genome annotation (in the X:Complete Genomics => Variants box). Set the NIH Epigenome Roadmap annotation to all (in the TranscriptView annotation box). This annotation provides information on public datasets that have established whether chromatin regions are subject to active transcription (green), enhancer regions (yellow) or are part of a transcription start site (red).
 
 <form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type='hidden' name='option' value='gbv2_base'>
   <input type='hidden' name='modus' value='geneview'>
   <input type='hidden' name='genome_build' value='hg19'>
   <input type='hidden' name='chrom' value='chr2'>
