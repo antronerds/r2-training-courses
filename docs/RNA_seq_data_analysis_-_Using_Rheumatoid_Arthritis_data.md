@@ -13,29 +13,7 @@ This has led to extensive efforts to find more specific diagnostic markers. The 
 Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate patient and experimental data.
 Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) have collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data and other similar studies have been uploaded into our platform R2. We will make use of these datasets to explore the  differences and similarities between peripheral blood and synovial fluid, to study the characteristics of T cells, and to look for possible effects of treatments.  
   
- XXX TODO: TAKE OUT: A general workflow of RNA data analysis consists of the following steps 
-===========
-1.  Explore your samples
-  -  Unbiased unsupervised clustering
-  	-0 PCA, tSNE, UMAP 
-  -  Toplister
-  	- Genes that do make a difference in this set
-  - Goals
-  	- Data check; bias?
-	- Groups?
-	
-2. Explore differences between groups
-  - Differential expression
-  - Specific (groups of) genes
-
-3. Explore patterns
-  - Overrepresentation
-    - Gene Ontology
-    - Pathways
-
-4. Explore relations
-  - Generate a signature
-  - Compare with other signatures
+ 
   
  A first look at gene expression with the R2 platform
  =============================== 
@@ -169,22 +147,15 @@ Each dot is a sample and the axes are the more abstract PC variables. To have a 
 
 Clearly the drug-group does not explain the similarities and differences as found by these PCs.
 *  Try instead the **tcell-stage-type (7cat)** track as **Track for Color**. Click next to show the changes.
-
-
   
-
+  
 ---------
   ![](_static/images/R2d2_logo.png)**Can you relate the samples to a type of cell?**
 
-<br>
 <br>
 
   ![](_static/images/R2d2_logo.png)**What do you note about the ordering of the cell types with respect to their developmental stage?**
 
 <br>
-<br>
 
 ---------
-
-
-2. 
