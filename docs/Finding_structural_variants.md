@@ -5,9 +5,9 @@ Investigating structural variants
 
 *Not every cancer has determining somatic mutations. Using the full power of WGS data, relevant structural variants can be traced also and linked to potential causes of disease*
 
-In this course we'll introduce R2, the web based genomics analysis and visualization application. Throughout the course an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa new insights can be derived. Throughout this course we'll focus on data of the childhood tumor neuroblastoma.
+In this course we will introduce R2, the web based genomics analysis and visualization application. Throughout the course an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa new insights can be derived. Throughout this course we'll focus on data of the childhood tumor neuroblastoma.
 
-We hope to show how R2 can be used to visualize and analyze your WGS data. 
+We hope to show how R2 can be used to visualize and analyze your WGS data. Please note that this training session requires accounts with additional access. Please make sure you have obtained a proper account from the tutors. 
 
 This resource is located online at http://r2-training-courses.readthedocs.io
 
@@ -49,10 +49,13 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 * For a quick impression of the data select the **Cohort Overview**. R2 presents the tumor series with its annotation. Hover your mouse over the different slices of the **inss** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
 
 The samples of a dataset can be annotated with e.g clinical data or molecular biology parameters, each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data with e.g. different phenotypes or demographic characteristics.  
-  
+
+Pie Charts
+----------
+
 The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value.  
 <br>
----------
+
   ![](_static/images/R2d2_logo.png)**With the dropdown menu below the main pie chart, select the 'mycn_amp' annotation. Click on the 'yes' slice and watch how the inss pie chart and the table at the bottom change.**  
    
   **How many samples have a MYCN amplification?**
@@ -116,7 +119,7 @@ A comprehensive list of the mutations can be accessed through R2.
 
 ---------
 
-* The buttons on top of the page can be used to zoom in and out. Zoom out 4 times with a factor 20. 
+* The buttons on top of the page can be used to zoom in and out. Zoom out 20x, 20x, 5x times resulting in a region of approximately 100.000 bp. 
 * The GenomeBrowser has a tremendous number of parameters that can be set. Scroll down to the lower half of the page. A form shows quite some parameter fields. These provide additional annotations and settings for the algorithms used. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data, which is based on methylation and acetylation patterns of the genome. This annotation however, is only provided on another Human Genome build. In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
 * An unannotated version of the reference genome is shown. Find the **Refseq(R2)** and switch the annotation on. Click **redraw**
 
@@ -165,7 +168,7 @@ A comprehensive list of the mutations can be accessed through R2.
 * Now go back to the Graduate Training Course datascope, select the Somatic Variants Table tile and now click the  **detail** link. R2 shows additional information on the expression of the gene and its location on the genome. 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What is remarkable about the expression of the ALK gene?**
+  ![](_static/images/R2d2_logo.png)**What is remarkable about the expression of the ALK gene in neuroblastoma?**
 
 <br>
 <br>
@@ -187,7 +190,7 @@ WGS data allows for further analysis; the paired end technique enables the disco
 * In a new tab a detailed view of this specific tumor genome is shown. When hovering over the plot the mouse opens a magnifier window.
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What do the green and red areas mean? And the lines crossing the circle?**
+  ![](_static/images/R2d2_logo.png)**What do the green and red areas mean? And the arches crossing the circle?**
 
 <br>
 <br>
@@ -222,7 +225,21 @@ While investigating the WGS data, an interesting phenomenon was observed. In som
 * Go to the overview page with circos plots.
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you spot an example of chromothripsis from the circos overview?**
+  ![](_static/images/R2d2_logo.png)**Can you spot an example of such shredding from the circos overview?**
+
+<br>
+<br>
+
+---------
+
+The Shredding pattern is known by the term chromothripsis. Patients containing such a phenomenon have also been annotated in the neuroblastoma cohort. Within the Circos archive we can also use filters to focus on intersections of the cohort. In the top of the screen select 'chromothripsis' from the 'select a track' dropdown and subsequently click on 'yes' and then 'ok' to apply a filter. Then press redraw to depict only cases with marks of chromothripsis.
+
+![](_static/images/select_track_cg_circos.png "Figure 7: Selection of a cohort intersection via a track")
+
+[**Figure 7: Selection of a cohort intersection via a track.**](_static/images/select_track_cg_circos.png)
+
+---------
+  ![](_static/images/R2d2_logo.png)**Can you spot a chromosomal pattern in the chromothripsis cases?**
 
 <br>
 <br>
