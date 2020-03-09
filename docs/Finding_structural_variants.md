@@ -144,8 +144,8 @@ A comprehensive list of the mutations can be accessed through R2.
   <input type='hidden' name='end' value='30163600'>
   <input type='hidden' name='a10refseq' value='on'>
   <input type='hidden' name='epi_roadmap' value='all'>
-  <button type="submit" >Cleaned up View</button>
-</form> 
+  <button type="submit" >Cleaned up View in R2</button>
+</form><br> 
 
 * Select the front end of the gene by selecting a region; see image (hint the color of the transcript denotes the reading direction; green means the regular direction, red the opposite direction) Click redraw (Note: the NIH annotation only appears for regions under 200.000 bp)
 
