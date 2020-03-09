@@ -32,10 +32,10 @@ Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) have collected a 
   
  
 --- 
- Let's first take a glance at the platform. Click on the following button to go to R2:  
+ Let's take a first glance at the platform. Click on the following button to go to R2:  
   
 <form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gse118829geo336_gpl17303">
+  <input type="hidden" name="table" value="ps_avgpres_gse118829geo75_gpl17303">
   <button type="submit" >Go to R2</button>
 </form>  
 <br>
@@ -43,10 +43,10 @@ Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) have collected a 
 
 * Log on to the R2 platform with your credentials that were provided (or apply for a login using the link).  
 
-The main page of R2 shows five numbered boxes, or steps, in the middle with which you can choose a dataset and a type of analysis. In box 2 you can see the dataset of Okuzono already selected. In box 3 you can select an analysis to perform on this dataset. 
+The five numbered boxes or steps in the middle of the R2 main page allow you to choose a dataset and a type of analysis. In box 2 you can see that the dataset of Okuzono has already been selected. In box 3 you can select an analysis to perform on this dataset. 
 
-* The default analysis is View a gene. Type in the textbox **Gene / Probeset: CD4**.   
-* Click the **Next** button and click **Next** again in the following page.  
+* The default analysis is View a gene. Type in the textbox of step 4 **Gene / Probeset: CD4**.   
+* Click the **Next** button. To read a description of your provided gene, hover your mouse over the bold **CD4** letters next to the radiobutton.  Leave all settings as is and click **Next** again to get a result.  
  
  ---------
    ![](_static/images/R2d2_logo.png)**The dots in the graph show the expression value of each sample of the dataset for the gene CD4. Under the graph you can see different types of annotation.**  
@@ -133,8 +133,8 @@ Principle Component Analysis or PCA analysis, can summarize the characteristics 
 <input type="hidden" name="option" value="plot_pca">
 <input type="hidden" name="switch" value="2">
 <input type="hidden" name="pca_projections" value="PC2:PC3">
-<input type="hidden" name="table" value="ps_avgpres_gse118829geo336_gpl17303">
-<input type="hidden" name="pcafile" value="pca-db9ec72f427b1110512c63a8b91ad2c1.txt">
+<input type="hidden" name="table" value="ps_avgpres_gse118829geo75_gpl17303">
+<input type="hidden" name="pcafile" value="pca-231fb695c3dceba9892f0d8730e97a15.txt">
 <input type="hidden" name="cortype" value="transform_zscore">
 <input type="hidden" name="subset" value="">
 <button type="submit" >Go to PCA Analysis</button>
