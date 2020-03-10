@@ -18,8 +18,8 @@ Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) have collected a 
  A first look at gene expression with the R2 platform
  =============================== 
  *Data used:*  
- * Disease Rheumatoid arthritis subset (drugs) - Okuzono - 75 - deseq2 - gpl17303
- * 75 blood and synovial T cell samples of RA patients with rheumatoid arthritis 
+ * R2 titel: Disease Rheumatoid arthritis subset (drugs) - Okuzono - 75 - deseq2 - gpl17303
+ * Description: 75 blood and synovial T cell samples of RA patients with rheumatoid arthritis 
  
  *Techniques used:*   
  * RNA Seq
