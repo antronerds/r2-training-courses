@@ -27,7 +27,7 @@ Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) have collected a 
  *References*
  * Paper: [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
  
- *Analyses used*
+ *Analysis used*
  * One Gene View 
  
 --- 
@@ -94,11 +94,8 @@ By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into
  
 Exploring a dataset
 ==
-*Analyses used*
+*Analysis used*
 * Cohort Overview
-
-*References*
-* Paper: [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
 
 <br>  
 
@@ -125,7 +122,7 @@ R2 presents the dataset with its available annotation. Each pie chart shows a di
 Clustering with PCA analysis
 ===
 
-*Analyses used* 
+*Analysis used* 
 * t-SNE
 ---
 t-SNE, can summarize the characteristics of many genes in new, more abstract variables. t-SNE will plot the samples that show similarity in their expression profiles closer together. This type of analysis is very useful to see if we will be able to find interesting groups with different expression profiles among our samples or if there are outliers that we might want to exclude from our dataset. 
@@ -136,7 +133,7 @@ t-SNE, can summarize the characteristics of many genes in new, more abstract var
 <input type="hidden" name="option" value="plot_tsne">
 <input type="hidden" name="switch" value="2">
 <input type="hidden" name="perplexity" value="20">
-<input type="hidden" name="table" value="ps_avgpres_gse118829geo75_gpl17303">
+<input type="hidden" name="table" value="ps_avgpres_gse118829subsgeo75_gpl17303">
 <input type="hidden" name="tsnefile" value="tsne-3ac5538442388896c3406cce49f09871.txt">
 <input type="hidden" name="cortype" value="transform_zscore">
 <input type="hidden" name="subset" value="">
@@ -162,9 +159,9 @@ Understanding differences in genes and pathways
 *Analyses used* 
 * Differential Expression between groups
 * Gene set analysis
-* KEGG 
+* KEGG mapping
 ---
-We have seen that the expression profiles of the same cell types show quite some differences in peripheral blood and synovial fluid. It would be interesting to understand better which genes and pathways cause the biggest differences and whether they are relevant to RA. 
+We have seen that the expression profiles of the same cell types can show differences in peripheral blood and synovial fluid. It would be interesting to understand better which genes and pathways cause the biggest differences and whether they are relevant to RA. 
 
 * From the main page, select the analysis **Find Differential expression between groups**; click Next.  
 * In the next page with selection criteria, choose **Select a track: tissue (2cat)**  
@@ -189,8 +186,8 @@ We have seen that the expression profiles of the same cell types show quite some
   ===
   
    *Data used:*  
-   * Disease Rheumatoid arthritis (MTX) monotherapy - Okuzono - 336 - deseq2_vst - gpl17303
-   * 336 samples of T cells in each developmental stages in healthy volunteers and patients with rheumatoid arthritis 
+   * R2 titel: Disease Rheumatoid arthritis (MTX) monotherapy - Okuzono - 336 - deseq2_vst - gpl17303
+   * Description: 336 samples of T cells in each developmental stages in healthy volunteers and patients with rheumatoid arthritis 
    
    *Techniques used:*   
    * RNA Seq
