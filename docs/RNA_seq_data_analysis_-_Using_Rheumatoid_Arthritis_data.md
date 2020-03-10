@@ -30,10 +30,11 @@ Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) have collected a 
  *Analysis used*
  * One Gene View 
  
---- 
+<br><br>
+
  Let's take a first glance at the platform. Click on the following button to go to R2:  
   
-<form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="accessing_r2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse118829geo75_gpl17303">
   <button type="submit" >Go to R2</button>
 </form>  
@@ -49,7 +50,8 @@ The five numbered boxes or steps in the middle of the R2 main page allow you to 
 
  The dots in the graph show the expression value of each sample of the dataset for the gene CD4. Under the graph you can see different types of annotation.
  
- ---------
+---------
+
    ![](_static/images/R2d2_logo.png)**Do you notice anything in the expression between the two colors of the t-cell annotation?**   
    
    **Hover with your mouse over the green and red colors of this first annotation row. Which cell type has high expression of CD4?**
@@ -82,8 +84,9 @@ The immune system is a complex system of different cell types that interact with
 [**Figure 2: Differentiation of T-cells, each subtype having its specific role in the immune system.**](_static/images/KIT_Tcelldifferentiation.png)
 
 By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into four stages: naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem), whereas CD8+ T cells are classified into five stages: Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra).
-
+ 
 ---------
+
    ![](_static/images/R2d2_logo.png)**What can you conclude about the expression of the gene TNF in blood tissue versus synovial fluid?**
    
  <br>
@@ -107,24 +110,24 @@ To get a better look at the available annotation of a dataset, we can use the to
 
 R2 presents the dataset with its available annotation. Each pie chart shows a different track. 
 * Hover your mouse over the different slices of the **gender** annotation pie chart.  Which percentage is male and which is female?
-* Explore the other pie charts as well: hover with your mouse over the slices and double click on a slice to apply a filter for that group of the samples (you can click on the button **Clear Filters** to undo your selection). Above the main pie chart you can read the number of samples in your current selection (the "n= " number). Glance over the table at the bottom that provides an overview of the selection
+* Explore the other pie charts as well: hover with your mouse over the slices and double click on a slice to apply a filter for that group of the samples (you can click on the button **Clear Filters** to undo your selection). Above the main pie chart you can read the number of samples in your current selection (the "n= " number). Glance over the table at the bottom that provides an overview of the selection  
   
-<br>
-
+  
+ 
 ---------
-  ![](_static/images/R2d2_logo.png)**How many synovial fluid samples are present in this dataset? And how many samples are CD4 Effector Memory T cells (Tem) in the blood tissue?**
-  <br>
 
+![](_static/images/R2d2_logo.png)**How many synovial fluid samples are present in this dataset? And how many samples are CD4 Effector Memory T cells (Tem) in the blood tissue?**  
+  
 ---------
 
  We would like to know, given their expression profiles, which samples look alike and which show different patterns? Before we used the analysis of One Gene View to plot the gene expression of a single gene. Often a dataset has about 20.000 genes. We cannot check all these genes one by one to find out which samples show similar expression profiles. Let's see if we can find out more information with a Principle Component Analysis.  
 
-Clustering with PCA analysis
+An unbiased look at sample (dis)similarity
 ===
 
 *Analysis used* 
 * t-SNE
----
+
 t-SNE, can summarize the characteristics of many genes in new, more abstract variables. t-SNE will plot the samples that show similarity in their expression profiles closer together. This type of analysis is very useful to see if we will be able to find interesting groups with different expression profiles among our samples or if there are outliers that we might want to exclude from our dataset. 
 
 * Click the button below to show a 2D t-SNE plot of the Okuzono dataset in R2
@@ -133,6 +136,7 @@ t-SNE, can summarize the characteristics of many genes in new, more abstract var
 <input type="hidden" name="option" value="plot_tsne">
 <input type="hidden" name="switch" value="2">
 <input type="hidden" name="perplexity" value="20">
+<input type="hidden" name="dotsize" value="6">
 <input type="hidden" name="table" value="ps_avgpres_gse118829subsgeo75_gpl17303">
 <input type="hidden" name="tsnefile" value="tsne-3ac5538442388896c3406cce49f09871.txt">
 <input type="hidden" name="cortype" value="transform_zscore">
@@ -150,9 +154,10 @@ Each dot is a sample and the axes are the more abstract t-SNE variables (v1 and 
   
   
 ---------
+
   ![](_static/images/R2d2_logo.png)**What biological information corresponds with the clustering of the expression profiles of the samples?**
-<br>
----------
+  
+ ---------
 
 Understanding differences in genes and pathways
 ===
@@ -177,7 +182,7 @@ We have seen that the expression profiles of the same cell types can show differ
  
  * Above the table, you can read the meaning of the color coding. Which tissue has a larger expression of most of the genes. What does that mean biologically? 
  
- * What are your thoughts on research and treatment of RA based on analysis of peripheral blood versus synovial fluid?
+ * What are your thoughts on research and treatment of RA, based on our analyses of peripheral blood versus synovial fluid so far?
   
   
   ====
@@ -185,19 +190,90 @@ We have seen that the expression profiles of the same cell types can show differ
   Understanding the effects of treatment
   ===
   
-   *Data used:*  
-   * R2 titel: Disease Rheumatoid arthritis (MTX) monotherapy - Okuzono - 336 - deseq2_vst - gpl17303
-   * Description: 336 samples of T cells in each developmental stages in healthy volunteers and patients with rheumatoid arthritis 
-   
-   *Techniques used:*   
-   * RNA Seq
-   
-   *Analyses used*
-   * One Gene View
-   
-   *References*
-   * Paper: [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
-    
+*Data used:*  
+* R2 titel: Disease Rheumatoid arthritis (drugs) - Lauwerys - 40 - MAS5.0 - u133p2
+* Description: Paired synovial biopsy samples were obtained from the affected knee of early RA patients before and 12 weeks after initiation of Tocilizumab (n=12) or Methotrexate (n=8) therapy 
+
+*Techniques used:*   
+* Affymetrix DNA Microarray 
+
+*References*
+* Paper: [Global Molecular Effects of Tocilizumab Therapy in Rheumatoid Arthritis Synovium](https://onlinelibrary.wiley.com/doi/full/10.1002/art.38202)
+     
+*Analyses used*
+* Cohort Overview
+* One Gene View
+* PCA
+
+Explore the provided information
+===
+How does treatment effect gene expression? Let's have a look at a dataset of Lauwerys et al. In the dataset we can find samples taken from the synovial fluid in the knee of 20 early RA patients, both before and after treatment. First, we take a look again with information that was provided. Let's start with the dataset Cohort Overview. Click the button below to go to R2 with the correct dataset selected.   
+
+<form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_gse45867geo40_u133p2">
+  <button type="submit" >Go to R2</button>
+</form>  
+<br>
+<br>
+
+* In box 3, select the Cohort Overview, click next and explore the available annotation.
+* To understand what the study is about, click on the i information balloon behind the dataset title. Which genes are important according to the description?     
+
+Since this set is treatment related, let's plot some data to see if treatment has any result.
+
+* Go back to the main page. Choose the analysis **Correlate gene with track** and type in box 4 any of the genes that in the description is mentioned to be downregulated by treatment. Click **Next**
+* Choose **Select a track: therapy (2cat)** and click **Next**
+* Every patient had a sample taken before the start (no) and after 12 weeks (yes) of therapy, it is a paired test. It would be nice to see which dots belong to the same patient. With Sample Paths we can connect the two samples of each patient. Because it is a bit labour intensive to get the correct syntax, we did this for you. Copy paste the following information in the textbox of **Sample Paths**: GSM1116933,GSM1116934;GSM1116935,GSM1116936;GSM1116937,GSM1116938;GSM1116939,GSM1116940;GSM1116941,GSM1116942;GSM1116943,GSM1116944;GSM1116945,GSM1116946;GSM1116947,GSM1116948;GSM1116949,GSM1116950;GSM1116951,GSM1116952;GSM1116953,GSM1116954;GSM1116955,GSM1116956;GSM1116957,GSM1116958;GSM1116959,GSM1116960;GSM1116961,GSM1116962;GSM1116963,GSM1116964;GSM1116965,GSM1116966;GSM1116967,GSM1116968;GSM1116969,GSM1116970;GSM1116971,GSM1116972
+* Click on **Adjust Settings**
+* Change **Colormode:  Color by Track** and **Track for Color: therapy (2 cat)**    
   
-   
+  
+---
+
+
+![](_static/images/R2d2_logo.png)**What can you tell about the effect of treatment on the expression of this gene?**  
  
+---
+
+* In the upper right corner is a text box **Change gene**. Change the gene to a different gene that you can find in the description of the study, or that you yourself wonder about. Click the Change Gene button under the textbox. 
+* By a slight adjustment of the graph, sometimes we can get different insights. Change under Group Separations **use track: pid_drug**. Which drug works best to downregulate this gene? Do any of the patients have remarkable results?  
+<br><br>  
+  
+
+An unbiased look into the dataset
+===
+
+Also in this set, we take a look at an unbiased view of expression profile sample similarity. This time, we will use PCA. Principle Component Analysis or PCA analysis, can summarize the characteristics of many genes in new more abstract variables as well, called principle components (PCs). Again, PCA will plot the samples that behave similarly in their expression profiles closer together.
+
+* Return to the main page from the Cohort Overview, using the top left link **Go to: Main** 
+* Select **Principle Component Analysis (PCA)** in box 3 and click **Next**. Also on the following page, click **next**, then click **Plot the PCA result**
+* R2 also allows you to color t-SNE and PCA with the expression of a gene. Under the plot select **ColorMode: Color by Gene** and type **Gene for Color: IL6**, select the first option IL6 (Reporter: 205207_at HO:1). Don't forget to click **next** in order for your changes to take effect. 
+
+The PCA calculation creates many principle components. The first PC explains most of the variation found between the samples. Every following PC explains less and less of the variation of the dataset, but expecially the first two or three R2 allows you also to view the first 3 PCs in 3D.
+* Under the graph, select **PCA Projection: PC1:PC2:PC3-3D** and click **next** to see the effect. You can play with the 3D cube by holding your right mouse button down while dragging your mouse around. 
+ 
+
+Showing pathways in heatmaps
+===
+We now want to know which pathways are affected by treatment with tocilizumab.
+* From the main page, select the analysis **Differential Expression between groups**, click **Next** 
+* Choose **Select a track: therapy**
+* Because we won't have many samples, we will not correct for multiple testing. Change **Corr. multiple testing: No correction** 
+* Under *Sample Filter* we want to select the subset of samples involved in the tocilizumab study, both before and after treatment. Therefore, select **Select a track (subset): group** and select **gr_tcz**. Click **Next**. Click **Next** again on the following page. 
+
+The list shows the genes that are differentially expressed before and after treatment. 
+* To see in which pathways these genes play a role, this time we click on **Gene Ontology Analysis**. What pathways have been changed? Look at the color scheme, therapy: no >= yes means that the genes where higher expressed before than after treatment. Is this what you would exprect?
+* The page with the list of differentiating genes is still opened. This time click the button Heatmap(zscore).
+---
+
+
+![](_static/images/R2d2_logo.png)**Do you see any patients that did not respond. Is there a patient that was that was not treated but shows a similar expression profile as treated people?**  
+ 
+--- 
+
+
+To Do
+- Titel diff exp gene selector wrong at group selection
+- create track pid_drug and track group with gr_tcz and gr_mtx
+- either plot fold over fold between the two treatments with theuma pathway enlightened, or boxplot grouped by drug 
+
