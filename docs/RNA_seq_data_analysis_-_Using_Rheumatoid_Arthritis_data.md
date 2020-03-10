@@ -18,18 +18,17 @@ Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) have collected a 
  A first look at gene expression with the R2 platform
  =============================== 
  *Data used:*  
- * Disease Rheumatoid arthritis (MTX) monotherapy - Okuzono - 336 - deseq2_vst - gpl17303
- * 336 samples of T cells in each developmental stages in healthy volunteers and patients with rheumatoid arthritis 
+ * Disease Rheumatoid arthritis subset (drugs) - Okuzono - 75 - deseq2 - gpl17303
+ * 75 blood and synovial T cell samples of RA patients with rheumatoid arthritis 
  
  *Techniques used:*   
  * RNA Seq
  
- *Analyses used*
- * One Gene View
- 
  *References*
  * Paper: [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
-  
+ 
+ *Analyses used*
+ * One Gene View 
  
 --- 
  Let's take a first glance at the platform. Click on the following button to go to R2:  
@@ -46,12 +45,14 @@ Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) have collected a 
 The five numbered boxes or steps in the middle of the R2 main page allow you to choose a dataset and a type of analysis. In box 2 you can see that the dataset of Okuzono has already been selected. In box 3 you can select an analysis to perform on this dataset. 
 
 * The default analysis is View a gene. Type in the textbox of step 4 **Gene / Probeset: CD4**.   
-* Click the **Next** button. To read a description of your provided gene, hover your mouse over the bold **CD4** letters next to the radiobutton.  Leave all settings as is and click **Next** again to get a result.  
+* Click the **Next** button. To read a description of your provided gene, hover your mouse over the bold **CD4** letters next to the radiobutton.  Leave all settings as is and click **Next** again to get a result.   
+
+ The dots in the graph show the expression value of each sample of the dataset for the gene CD4. Under the graph you can see different types of annotation.
  
  ---------
-   ![](_static/images/R2d2_logo.png)**The dots in the graph show the expression value of each sample of the dataset for the gene CD4. Under the graph you can see different types of annotation.**  
-    
-   **Do you notice anything in the expression between the two  colors of the t-cell annotation? Hover with your mouse over the green and red colors of this first annotation row. Which cell type has high expression of CD4?**
+   ![](_static/images/R2d2_logo.png)**Do you notice anything in the expression between the two colors of the t-cell annotation?**   
+   
+   **Hover with your mouse over the green and red colors of this first annotation row. Which cell type has high expression of CD4?**
  <br>
  
  ---------   
@@ -71,9 +72,10 @@ We can make use of the annotations to group the results of our samples in groups
 * After you selected your preferred adjustments, click **Adjust Settings** 
 
 
-The immune system is a complex system of different cell types that interact with each other with chemokines and other cytokines. T cells are one of two primary types of white blood cells —B cells being the second type—that determine the specificity of immune response to antigens (foreign substances) in the body. T cells originate in the bone marrow and mature in the thymus. In the thymus, T cells multiply and differentiate into helper, regulatory, or cytotoxic T cells or become memory T cells.  
+The immune system is a complex system of different cell types that interact with each other with chemokines and other cytokines. T cells are one of two primary types of white blood cells — B cells being the second type — that determine the specificity of immune response to antigens (foreign substances) in the body. T cells originate in the bone marrow and mature in the thymus. In the thymus, T cells multiply and differentiate into helper, regulatory, or cytotoxic T cells or become memory T cells.  
   
-  Despite convincing evidence for T-cell involvement in RA pathogenesis, the specific cell subsets and states that drive the disease have been challenging to identify since T cells are highly heterogeneous, displaying diverse surface markers, developmental and activation states, and effector functions, which has led to multiple systems of classification.  
+ Despite convincing evidence for T-cell involvement in RA pathogenesis, the specific cell subsets and states that drive the disease have been challenging to identify since T cells are highly heterogeneous, displaying diverse surface markers, developmental and activation states, and effector functions, which has led to multiple systems of classification.  
+ 
 ![](_static/images/KIT_Tcelldifferentiation.png "Figure 2: Differentiation of T-cells, each subtype having its specific role in the immune system.")
 
 
@@ -83,13 +85,15 @@ By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into
 
 ---------
    ![](_static/images/R2d2_logo.png)**What can you conclude about the expression of the gene TNF in blood tissue versus synovial fluid?**
- <br> <br>
+   
+ <br>
+ 
  **Under the graph, change "use track" to "t-cell-stage-type". What can you conclude about the expression of TNF in the different T-cell subtypes?**
+ 
  ---------
-<br>
-
+ 
 Exploring a dataset
-===============================
+==
 *Analyses used*
 * Cohort Overview
 
@@ -105,56 +109,62 @@ To get a better look at the available annotation of a dataset, we can use the to
 * Go back to the main page and select Cohort Overview as type of analysis in box 3.
 
 R2 presents the dataset with its available annotation. Each pie chart shows a different track. 
-* Hover your mouse over the different slices of the **drug-group** annotation pie chart.  Explore with which percentage of samples each cell type is present in the current dataset.
-* Do the same for the other pie charts and double click on a slice to explore that group of the samples (you can click on the button **Clear Filters** to undo your selection). 
+* Hover your mouse over the different slices of the **gender** annotation pie chart.  Which percentage is male and which is female?
+* Explore the other pie charts as well: hover with your mouse over the slices and double click on a slice to apply a filter for that group of the samples (you can click on the button **Clear Filters** to undo your selection). Above the main pie chart you can read the number of samples in your current selection (the "n= " number). Glance over the table at the bottom that provides an overview of the selection
   
 <br>
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Above the main pie chart you can read the number of samples in your current selection (the "n= " number).**  
-   
-  **Filter for synovial fluid samples with the "tissue" annotation. How many synovial fluid samples are present in this dataset? Glance over the table at the bottom that provides an overview of the selection**
+  ![](_static/images/R2d2_logo.png)**How many synovial fluid samples are present in this dataset? And how many samples are CD4 Effector Memory T cells (Tem) in the blood tissue?**
   <br>
 
 ---------
- of overview of the different behavior of the samples. Do some behave similarly, considering their expression profiles? Before we used the analysis of One Gene View to plot the gene expression of a single gene. Often a dataset has about 20.000 genes. We cannot check all these genes one by one. Let's see if we can find out more information with a Principle Component Analysis.  
+
+ We would like to know, given their expression profiles, which samples look alike and which show different patterns? Before we used the analysis of One Gene View to plot the gene expression of a single gene. Often a dataset has about 20.000 genes. We cannot check all these genes one by one to find out which samples show similar expression profiles. Let's see if we can find out more information with a Principle Component Analysis.  
 
 Clustering with PCA analysis
 ===
 
 *Analyses used* 
-* PCA
+* t-SNE
 ---
-Principle Component Analysis or PCA analysis, can summarize the characteristics of many genes in new, more abstract variables, called principle components (PCs). PCA will plot the samples that behave similarly in their expression profiles closer together. This type of analysis is very useful to see if we will be able to find interesting groups with different expression profiles among our samples or if there are outliers that we might want to exclude from our dataset.
+t-SNE, can summarize the characteristics of many genes in new, more abstract variables. t-SNE will plot the samples that show similarity in their expression profiles closer together. This type of analysis is very useful to see if we will be able to find interesting groups with different expression profiles among our samples or if there are outliers that we might want to exclude from our dataset. 
 
-* Click the button below to show a 2D PCA plot of the Okuzono dataset in R2
+* Click the button below to show a 2D t-SNE plot of the Okuzono dataset in R2
 
 <form name="pca_form" target="_blank" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method="POST">
-<input type="hidden" name="option" value="plot_pca">
+<input type="hidden" name="option" value="plot_tsne">
 <input type="hidden" name="switch" value="2">
-<input type="hidden" name="pca_projections" value="PC2:PC3">
+<input type="hidden" name="perplexity" value="20">
 <input type="hidden" name="table" value="ps_avgpres_gse118829geo75_gpl17303">
-<input type="hidden" name="pcafile" value="pca-231fb695c3dceba9892f0d8730e97a15.txt">
+<input type="hidden" name="tsnefile" value="tsne-3ac5538442388896c3406cce49f09871.txt">
 <input type="hidden" name="cortype" value="transform_zscore">
 <input type="hidden" name="subset" value="">
-<button type="submit" >Go to PCA Analysis</button>
+<button type="submit" >Go to t-SNE Analysis</button>
 </form>  
 <br>
 <br>  
 
-Each dot is a sample and the axes are the more abstract PC variables. To have a better understanding what biological process might determine the similarity in expression profiles, we can try to color the dots with a track. 
+Each dot is a sample and the axes are the more abstract t-SNE variables (v1 and v2). To have a better understanding what biological process might determine the similarity in expression profiles, we can color the dots with a track. Sometimes, biological or clinical annotation groups correspond with the t-SNE clusters of the samples. 
+ 
 * Colors are not set by default. Under the graph, first adjust **ColorMode: Color by Track** and **Track for color: tissue (2 cat)**; click next for the changes to take effect.  
 
-*  Now try the **tcell-stage-type (7cat)** track as **Track for Color**. Click next to show the changes. Also try the other annotation options.
+*  Now try the **tcell-stage (4cat)** track as **Track for Color**. Click next to show the changes. Also try the other annotation options.
   
   
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you relate the clusters of samples to a developmental stage?**  
-     
- **What biological conditions seem to be relevant in the distinctions and similarities between the expression profiles of the samples?**
+  ![](_static/images/R2d2_logo.png)**What biological information corresponds with the clustering of the expression profiles of the samples?**
 <br>
 ---------
-We have seen that the expression profiles of the same cell types can show quite some differences in peripheral blood and synovial fluid. It would be interesting to understand better which genes and pathways cause the biggest differences. 
+
+Understanding differences in genes and pathways
+===
+*Analyses used* 
+* Differential Expression between groups
+* Gene set analysis
+* KEGG 
+---
+We have seen that the expression profiles of the same cell types show quite some differences in peripheral blood and synovial fluid. It would be interesting to understand better which genes and pathways cause the biggest differences and whether they are relevant to RA. 
 
 * From the main page, select the analysis **Find Differential expression between groups**; click Next.  
 * In the next page with selection criteria, choose **Select a track: tissue (2cat)**  
@@ -165,16 +175,32 @@ We have seen that the expression profiles of the same cell types can show quite 
   * Do you recognize any genes related to the immune sysem? You can hover your mouse over the names of the genes to read a summary of information about e.g. its function and alternative names. Or, you can click on the name to see the gene expression per sample in a One Gene View graph.  
     
  * To understand in which biological processes this list of genes play an important role, we can use the Gene Set Analysis. On the menu to the right of your list of genes click the button **Gene Set Analysis**.
- The returned table shows you  the processes in which the genes are involved as known to the [KEGG (Kyoto Encyclopedia of Genes and Genomes) database](https://www.genome.jp/kegg/). 
- * Which biological processes could be of importance for understanding the respective roles that T cells play in peripheral blood and synovial fluid? You can click on the little green K icon in front of a gene set to look at th epathway in a KEGG pathway. 
+ The returned table shows you  the processes in which the genes are involved as defined by the [KEGG (Kyoto Encyclopedia of Genes and Genomes) database](https://www.genome.jp/kegg/). 
+ * Which biological processes could be of importance for understanding the respective roles that T cells play in peripheral blood and synovial fluid? You can click on the little green **K icon** in front of a gene set to see the genes projected in a KEGG pathway map. 
  
  * Above the table, you can read the meaning of the color coding. Which tissue has a larger expression of most of the genes. What does that mean biologically? 
  
- * What is the conclusion that you draw with respect to the treatment of RA based on analysis from peripheral blood instead of synovial fluid?
+ * What are your thoughts on research and treatment of RA based on analysis of peripheral blood versus synovial fluid?
   
   
   ====
   
+  Understanding the effects of treatment
+  ===
+  
+   *Data used:*  
+   * Disease Rheumatoid arthritis (MTX) monotherapy - Okuzono - 336 - deseq2_vst - gpl17303
+   * 336 samples of T cells in each developmental stages in healthy volunteers and patients with rheumatoid arthritis 
+   
+   *Techniques used:*   
+   * RNA Seq
+   
+   *Analyses used*
+   * One Gene View
+   
+   *References*
+   * Paper: [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
+    
   
    
  
