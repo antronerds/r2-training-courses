@@ -169,7 +169,7 @@ A comprehensive list of the mutations can be accessed through R2.
   
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What chromatin annotation is available for the start of the ALK gene? (You can hover over the annotation bars to see the ) **
+  ![](_static/images/R2d2_logo.png)**What chromatin annotation is available for the start of the ALK gene? (You can hover over the annotation bars to see the )**
 
 <br>
 <br>
