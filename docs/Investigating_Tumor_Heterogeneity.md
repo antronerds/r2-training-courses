@@ -43,7 +43,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 * Go to R2 by clicking on the button below:  
 
 
-<form name="itcc_68_cell_lines" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
   <button type="submit" >Go to R2</button>
 </form>  
@@ -544,7 +544,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
   <button type="submit" >Go to R2 main, inducible TF set</button>
 </form>  
 
-<form name="dscope_1" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method="POST" target="_gv"><input type="hidden" name="username" value="pietmolenaar"><input type="hidden" name="ssid" value="d6c8e043764d1daf0aa5ff36c4db7adf"></form>
+<form name="dscope_1" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method="POST" target="_gv"><input type="hidden" name="username" value="pietmolenaar"><input type="hidden" name="ssid" value="d6c8e043764d1daf0aa5ff36c4db7adf"></form>
 
 <br>
 <br>
