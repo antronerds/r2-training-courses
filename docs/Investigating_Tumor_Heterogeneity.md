@@ -14,7 +14,7 @@ Introduction
 In this section we'll integrate RNA expression data with sequence data, specifically ChIP seq data, to further unravel Neuroblastoma data. 
 Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which is neural crest derived. During embryogenesis, cells delaminate from the neural crest, migrate ventrally and differentiate into adrenaline- or noradrenaline-producing cells. Neuroblastomas typically express enzymes for the adrenaline-synthesis route. High-stage neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease.
 
-Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of Neuroblastoma tumors. From four patients we obtained tumor biopsies that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines    
+Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of Neuroblastoma tumors. From four patients we obtained tumor biopsies that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines.    
 
 
 Tumors and origins: a first impression of your data
@@ -51,13 +51,13 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <br>
 
 You're now on the R2 main page. For this course you do not need to be logged in. The web based molecular biology data analysis platform R2 contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to develop your analysis of choice.  
-In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
-
----------
-  ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumor models?**
-
-<br><br>
-
+In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already.  
+  
+ ---------
+ <br> 
+   
+  ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumor models?**  
+    
 ---------
 
   * In field 4 type the name of the gene and click **Next**
@@ -65,6 +65,7 @@ In this case we're first going to see if and how the mRNA expression of several 
   
 A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. 
   * Hover with your mouse over data points to show additional information.  
+
 At the bottom of the page you can find a table with adjustable settings.   
   * The expression values on the y-axis are logarithmic; set the **Transform** option to **none**, and the **Extra Graph Option** to **Track and Gene sort**. Sample annotation is stored in R2 in so called tracks; for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type and click **Adjust Settings** to obtain a more explicit picture.  
   
@@ -106,9 +107,11 @@ We've seen that the expression of genes differs among the samples and some types
 <br>
 
 
-* Colors are not set by default. In the 'Adjustable settings' table at th ebottom of the page, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click **Next** to show the changes 
-
+* Colors are not set by default. In the 'Adjustable settings' table at the bottom of the page, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click **Next** to show the changes.  
+  
+  
 ---------
+
   ![](_static/images/R2d2_logo.png)**Can you relate the tumors to a type of tissue? (Note: ALL stands for Acute Lymphocytic Leukemia)**
 
 <br>
@@ -120,13 +123,11 @@ We've seen that the expression of genes differs among the samples and some types
 <br>
 
   ![](_static/images/R2d2_logo.png)**If you had to choose two cell lines for further investigation of lineage identity in neuroblastoma, which would you choose?**
-
-<br>
-<br>
-
+  
+  
 ---------
-
-
+ <br><br>
+ 
 Urgency of research: patient material
 ----------------------------------------
 
