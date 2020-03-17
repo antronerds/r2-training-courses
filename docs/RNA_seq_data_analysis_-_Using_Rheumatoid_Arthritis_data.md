@@ -45,22 +45,22 @@ Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) have collected a 
 
 The five numbered boxes or steps in the middle of the R2 main page allow you to choose a dataset and a type of analysis. In box 2 you can see that the dataset of Okuzono has already been selected. In box 3 you can select an analysis to perform on this dataset. 
 
-* The default analysis is View a gene. Type in the textbox of step 4 **Gene / Probeset: CD4**.   
+* The default analysis is View a gene. Type in the textbox of step 4 *Gene / Probeset:* **CD4**.   
 * Click the **Next** button. To read a description of your provided gene, hover your mouse over the bold **CD4** letters next to the radiobutton.  Leave all settings as is and click **Next** again to get a result.   
 
- The dots in the graph show the expression value of each sample of the dataset for the gene CD4. Under the graph you can see different types of annotation.
+ The dots in the graph show the expression value of each sample of the dataset for the gene CD4. Under the graph you can see different types of *annotation*.
  
 ---------
 
    ![](_static/images/R2d2_logo.png)**Do you notice anything in the expression between the two colors of the t-cell annotation?**   
    
-   **Hover with your mouse over the green and red colors of this first annotation row. Which cell type has high expression of CD4?**
+   **Hover with your mouse over the two different colors of this cell type annotation row. Which cell type has high expression of CD4?**
  <br>
  
  ---------   
 Tumor necrosis factor‐alpha (TNF‐α) is a proinflammatory cytokine that plays a pivotal role in regulating the inflammatory response in rheumatoid arthritis (RA). 
 
-* Click the link of **Go to:  Main** in the upper left corner to go back to the main page.
+* In the upper left corner, click the link *Go to:*  **Main**  to go back to the main page.
  
 To understand better how this cytokine relates to different tissue and cell types, we do the same process but now we take a look at the gene TNF
 
@@ -69,9 +69,9 @@ To understand better how this cytokine relates to different tissue and cell type
 
 We can make use of the annotations to group the results of our samples in groups.
 
-* Scroll down in the page to make some adjustments in the *Adjustable settings* menu under the graph. Under Group Separations change use track to **use track: tissue (2cat)**
-* Adjust under Graphics **Graphtype: Boxplot with circles** and **ColorMode: Color by Track**.
-* After you selected your preferred adjustments, click **Adjust Settings** 
+* Scroll down in the page to make some adjustments in the *Adjustable settings* menu under the graph. Under Group Separations change use track to *use track:* **tissue (2cat)** to separate the samples of the tissue blood from those of synovial fluid.
+* Adjust under Graphics *Graphtype:* **Boxplot with circles** and *ColorMode:* **Color by Track**.
+* After you selected your preferred adjustments, click **Adjust Settings**. 
 
 
 The immune system is a complex system of different cell types that interact with each other with chemokines and other cytokines. T cells are one of two primary types of white blood cells — B cells being the second type — that determine the specificity of immune response to antigens (foreign substances) in the body. T cells originate in the bone marrow and mature in the thymus. In the thymus, T cells multiply and differentiate into helper, regulatory, or cytotoxic T cells or become memory T cells.  
