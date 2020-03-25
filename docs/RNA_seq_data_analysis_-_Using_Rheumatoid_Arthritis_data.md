@@ -205,17 +205,21 @@ We have seen that the expression profiles of the same cell types can show differ
  * Which pathway(s) could be of importance to understand the respective roles that T cells play in peripheral blood and synovial fluid? You can click on the little green **K icon** in front of a gene set to see the genes projected in a KEGG pathway map. 
  
  * Above the result table, you can read the meaning of the color coding. Which tissue has a larger expression of most of the genes. What does that mean biologically? 
+   
+   
+ ---------  
  
- ---------
   
-![](_static/images/R2d2_logo.png)** What are your thoughts on patient treatment of RA based on samples taken from peripheral blood, taking into account our analyses of peripheral blood versus synovial fluid so far?**
+![](_static/images/R2d2_logo.png)** What are your thoughts on patient treatment of RA based on samples taken from peripheral blood, taking into account our analyses of peripheral blood versus synovial fluid so far?**  
   
- ---------
-  
-  ====
+ ---------  
+ 
+ Now that we have a better understanding of T-cells and of the platform R2, let's have a look in a different dataset if we can find any effect of rheumatoid arthritis treatments on a genomic scale .    
+   
+   
   
   Understanding the effects of treatment
-  ===
+  ---
   
 *Data used:*  
 * R2 titel: Disease Rheumatoid arthritis (drugs) - Lauwerys - 40 - MAS5.0 - u133p2
@@ -234,14 +238,18 @@ We have seen that the expression profiles of the same cell types can show differ
 
 Explore the provided information
 ===
-How does treatment effect gene expression? Let's have a look at a dataset of Lauwerys et al. In the dataset we can find samples taken from the synovial fluid in the knee of 20 early RA patients, both before and after treatment. First, we take a look again with information that was provided. Let's start with the dataset Cohort Overview. Click the button below to go to R2 with the correct dataset selected.   
+How does treatment effect gene expression? Let's have a look at a dataset of Lauwerys et al. In the dataset we can find samples taken from the synovial fluid in the knee of 20 early RA patients, both before and after treatment.  
+  
+Click the button below to go to R2 with the correct dataset selected.   
 
-<form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="accessing_r2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse45867geo40_u133p2">
   <button type="submit" >Go to R2</button>
 </form>  
 <br>
 <br>
+
+First, we take a look again with information that was provided. Let's start with the dataset Cohort Overview.  
 
 * In box 3, select the Cohort Overview, click next and explore the available annotation.
 * To understand what the study is about, click on the i information balloon behind the dataset title. Which genes are important according to the description?     
