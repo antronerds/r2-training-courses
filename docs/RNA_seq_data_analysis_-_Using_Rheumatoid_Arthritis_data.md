@@ -52,7 +52,7 @@ The five numbered boxes or steps in the middle of the R2 main page allow you to 
  
 ---------
 
-   ![](_static/images/R2d2_logo.png)**Do you notice anything in the expression between the two colors of the t-cell annotation?**   
+   ![](_static/images/R2d2_logo.png)**Do you notice anything different about the expression levels between the two colors of the *t-cell* annotation?**   
    
    **Hover with your mouse over the two different colors of this cell type annotation row. Which cell type has high expression of CD4?**
  <br>
@@ -67,31 +67,43 @@ To understand better how this cytokine relates to different tissue and cell type
 * Type in the textbox **Gene / Probeset: TNF**.   
 * Click the **Next** button and click **Next** again in the following page.    
 
-We can make use of the annotations to group the results of our samples in groups.
+We can make use of the annotations to view the results of our samples in groups.
 
-* Scroll down in the page to make some adjustments in the *Adjustable settings* menu under the graph. Under Group Separations change use track to *use track:* **tissue (2cat)** to separate the samples of the tissue blood from those of synovial fluid.
-* Adjust under Graphics *Graphtype:* **Boxplot with circles** and *ColorMode:* **Color by Track**.
-* After you selected your preferred adjustments, click **Adjust Settings**. 
-
-
-The immune system is a complex system of different cell types that interact with each other with chemokines and other cytokines. T cells are one of two primary types of white blood cells — B cells being the second type — that determine the specificity of immune response to antigens (foreign substances) in the body. T cells originate in the bone marrow and mature in the thymus. In the thymus, T cells multiply and differentiate into helper, regulatory, or cytotoxic T cells or become memory T cells.  
+* Scroll down in the page to make some adjustments in the *Adjustable settings* menu under the graph. Under *Group Separations* change *use track:* **tissue (2cat)** to separate the samples of the tissue blood from those of synovial fluid.
+* Under *Graphics* adjust *Graphtype:* **Boxplot with circles** and *ColorMode:* **Color by Track**.
+* After you selected your preferred adjustments, click **Adjust Settings**.  
   
- Despite convincing evidence for T-cell involvement in RA pathogenesis, the specific cell subsets and states that drive the disease have been challenging to identify since T cells are highly heterogeneous, displaying diverse surface markers, developmental and activation states, and effector functions, which has led to multiple systems of classification.  
- 
+    
+---------
+
+   ![](_static/images/R2d2_logo.png)**What can you conclude about the expression of the gene TNF in blood tissue versus synovial fluid?**  
+   
+---------  
+
 ![](_static/images/KIT_Tcelldifferentiation.png "Figure 2: Differentiation of T-cells, each subtype having its specific role in the immune system.")
 
 
 [**Figure 2: Differentiation of T-cells, each subtype having its specific role in the immune system.**](_static/images/KIT_Tcelldifferentiation.png)
+   
+The immune system is a complex system of different cell types that interact with each other with chemokines and other cytokines. T cells are one of two primary types of white blood cells — B cells being the second type — that determine the specificity of immune response to antigens (foreign substances) in the body. T cells originate in the bone marrow and mature in the thymus. By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into four stages: naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem), whereas CD8+ T cells are classified into five stages: Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra). Each subset has its own markers as can be seen in the table below. This heterogeneity among Tcells has made it challenging to identify the specific cell subsets and states that drive RA pathogenesis.
 
-By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into four stages: naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem), whereas CD8+ T cells are classified into five stages: Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra).
- 
+<table>
+<tr><th>  T-cell  </th><th>Developmental stage</th><th>Markers</th></tr>
+<tr><td>CD4</td><td>tn</td><td></td></tr>
+<tr><td>CD4</td><td>tcm</td><td>(George/Mosse/Janoueix-Lerosey/Chen 2008)</td></tr>
+<tr><td>CD4</td><td>tem</td><td>(Molenaar et al., 2003)</td></tr>
+<tr><td>CD8</td><td>tn</td><td>(van Limpt et al., 2004)</td></tr>
+<tr><td>CD8</td><td>tcm</td><td>(Stallings et al. 2006)</td></tr>
+<tr><td>CD8</td><td>tem</td><td>(Hölzel et al., 2010)</td></tr>
+
+</table>
+
+  
 ---------
 
-   ![](_static/images/R2d2_logo.png)**What can you conclude about the expression of the gene TNF in blood tissue versus synovial fluid?**
+ **Under your latest graph, change "use track" to "t-cell-stage-type".**   
    
- <br>
- 
- **Under the graph, change "use track" to "t-cell-stage-type". What can you conclude about the expression of TNF in the different T-cell subtypes?**
+ ![](_static/images/R2d2_logo.png)**What can you conclude about the expression of TNF in the different T-cell subtypes?**
  
  ---------
  
