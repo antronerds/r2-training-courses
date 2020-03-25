@@ -54,7 +54,7 @@ The five numbered boxes or steps in the middle of the R2 main page allow you to 
 
    ![](_static/images/R2d2_logo.png)**Do you notice anything different about the expression levels between the two colors of the *t-cell* annotation?**   
    
-   **Hover with your mouse over the two different colors of this cell type annotation row. Which cell type has high expression of CD4?**
+   ![](_static/images/R2d2_logo.png)**Hover with your mouse over the two different colors of this cell type annotation row. Which cell type has high expression of CD4?**
  <br>
  
  ---------   
@@ -114,33 +114,33 @@ Exploring a dataset
 
 <br>  
 
-We have seen that the samples of a dataset can be annotated with e.g clinical data or molecular biology parameters. Each group of annotated data is called a **track** in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data with, for example, different phenotypes or demographic characteristics.  
+We have seen that the samples of a dataset can be annotated with e.g clinical data or molecular biology parameters such as demographic characteristics and different phenotypes. Each group of annotated data is called a **track** in R2. These tracks can be used to adapt your analysis based on your dataset specific anntotation: to filter your samples, to compare groups of samples, to color plots with meta information, or to correlate genomics patterns in your data.  
 
-To get a better look at the available annotation of a dataset, we can use the tool Cohort Overview in R2. 
+To get a better overview of the available annotation of a dataset, we can use the tool **Cohort Overview** in R2. 
 
-* Go back to the main page and select Cohort Overview as type of analysis in box 3.
+* Go back to the main page and select **Cohort Overview** as type of analysis in box 3.
 
-R2 presents the dataset with its available annotation. Each pie chart shows a different track. 
+R2 presents the Okuzo dataset samples with its available annotation in a table at the bottom of the page. Each pie chart above the table shows a different available track. 
 * Hover your mouse over the different slices of the **gender** annotation pie chart.  Which percentage is male and which is female?
-* Explore the other pie charts as well: hover with your mouse over the slices and double click on a slice to apply a filter for that group of the samples (you can click on the button **Clear Filters** to undo your selection). Above the main pie chart you can read the number of samples in your current selection (the "n= " number). Glance over the table at the bottom that provides an overview of the selection  
+* Explore the other pie charts as well: hover with your mouse over the slices and double click on a slice to select that group of the samples (you can click on the button **Clear Filters** to undo your selection). Above the main pie chart you can read the number of samples in your current selection (the "n= " number). Also note how the table at the bottom adapts the overview based on your selection.  
   
-  
- 
+   
 ---------
 
-![](_static/images/R2d2_logo.png)**How many synovial fluid samples are present in this dataset? And how many samples are CD4 Effector Memory T cells (Tem) in the blood tissue?**  
+![](_static/images/R2d2_logo.png)**How many synovial fluid samples are present in this dataset?** <br><br>
+![](_static/images/R2d2_logo.png)**And how many samples are CD4 Effector Memory T cells (Tem) in the blood tissue? (Hint: you will have to apply 3 different filters)**  
   
 ---------
 
- We would like to know, given their expression profiles, which samples look alike and which show different patterns? Before we used the analysis of One Gene View to plot the gene expression of a single gene. Often a dataset has about 20.000 genes. We cannot check all these genes one by one to find out which samples show similar expression profiles. Let's see if we can find out more information with a Principle Component Analysis.  
+ Based on the expression profiles of each sample, we would like to know which samples behave much alike and which show different patterns? Before we used the analysis of *One Gene View* to plot the gene expression of a single gene. Often a dataset contains expression values of about 20.000 genes for each sample. We cannot check all these genes one by one to find out which samples show similar expression profiles. Let's see if we can find out more information with a so called t-SNE analysis.  
 
-An unbiased look at sample (dis)similarity
+An unbiased look at sample similarity
 ===
 
 *Analysis used* 
 * t-SNE
 
-t-SNE, can summarize the characteristics of many genes in new, more abstract variables. t-SNE will plot the samples that show similarity in their expression profiles closer together. This type of analysis is very useful to see if we will be able to find interesting groups with different expression profiles among our samples or if there are outliers that we might want to exclude from our dataset. 
+A **t-SNE** analysis (t-Distributed Stochastic Neighbor Embedding) can summarize the characteristics of many genes in new, more abstract variables. t-SNE will plot the samples that show similarity in their expression profiles closer together. This type of analysis is useful to find interesting groups of samples that show similar expression profiles or if there are outliers that we might want to exclude from our dataset. 
 
 * Click the button below to show a 2D t-SNE plot of the Okuzono dataset in R2
 
@@ -158,16 +158,18 @@ t-SNE, can summarize the characteristics of many genes in new, more abstract var
 <br>
 <br>  
 
-Each dot is a sample and the axes are the more abstract t-SNE variables (v1 and v2). To have a better understanding what biological process might determine the similarity in expression profiles, we can color the dots with a track. Sometimes, biological or clinical annotation groups correspond with the t-SNE clusters of the samples. 
+Each dot is a sample and the axes are the more abstract t-SNE variables (v1 and v2).  
+  
+ So far the black dots do not give us much insight. To see whether any biological process might determine the similarity in expression profiles, we can color the dots with a track. Sometimes, biological or clinical annotation groups correspond with the t-SNE ordering of the samples in the plot. 
  
-* Colors are not set by default. Under the graph, first adjust **ColorMode: Color by Track** and **Track for color: tissue (2 cat)**; click next for the changes to take effect.  
+* Colors are not set by default. Under the graph, first adjust *ColorMode:* **Color by Track** and *Track for color:* **tissue (2 cat)**; click next for the changes to take effect.  
 
-*  Now try the **tcell-stage (4cat)** track as **Track for Color**. Click next to show the changes. Also try the other annotation options.
+*  Now try the **tcell-stage (4cat)** track as **Track for Color**. Click next to show the changes. Also try the other tracks for coloring.
   
   
 ---------
 
-  ![](_static/images/R2d2_logo.png)**What biological information corresponds with the clustering of the expression profiles of the samples?**
+  ![](_static/images/R2d2_logo.png)**What biological information corresponds with a similarity in expression profiles according to this t-SNE analysis?**
   
  ---------
 
@@ -178,24 +180,37 @@ Understanding differences in genes and pathways
 * Gene set analysis
 * KEGG mapping
 ---
-We have seen that the expression profiles of the same cell types can show differences in peripheral blood and synovial fluid. It would be interesting to understand better which genes and pathways cause the biggest differences and whether they are relevant to RA. 
+We have seen that the expression profiles of the same cell types can show differences in peripheral blood and synovial fluid. It would be interesting to have a better understanding which genes and pathways cause the biggest differences and whether they are relevant to RA. 
 
-* From the main page, select the analysis **Find Differential expression between groups**; click Next.  
-* In the next page with selection criteria, choose **Select a track: tissue (2cat)**  
-* The rest of the settings we leave as is. Note that by default the anova test is selected with a p-value treshold of 0.01. Click Next and click NExt in the group selection where both blood and synovial fluid are selected.
+* From the main page, select the analysis **Find Differential expression between groups** in box 3; click **Next**.  
+* In the next page with selection criteria, choose *Select a track:* **tissue (2cat)**.   
+* The rest of the settings we leave as is. Note that by default the *anova test* is selected with a p-value treshold of 0.01. Click **Next** and click **Next** in the group selection where both blood and synovial fluid are selected.
 
  R2 now performs a one-way Anova statistical test on the fly with a correction for multiple testing. The result is a list of genes that is ordered by the most significant differential expression between the groups that we chose before (PB and SF). 
   
-  * Do you recognize any genes related to the immune sysem? You can hover your mouse over the names of the genes to read a summary of information about e.g. its function and alternative names. Or, you can click on the name to see the gene expression per sample in a One Gene View graph.  
     
- * To understand in which biological processes this list of genes play an important role, we can use the Gene Set Analysis. On the menu to the right of your list of genes click the button **Gene Set Analysis**.
- The returned table shows you  the processes in which the genes are involved as defined by the [KEGG (Kyoto Encyclopedia of Genes and Genomes) database](https://www.genome.jp/kegg/). 
- * Which biological processes could be of importance for understanding the respective roles that T cells play in peripheral blood and synovial fluid? You can click on the little green **K icon** in front of a gene set to see the genes projected in a KEGG pathway map. 
  
- * Above the table, you can read the meaning of the color coding. Which tissue has a larger expression of most of the genes. What does that mean biologically? 
+ ---------
  
- * What are your thoughts on research and treatment of RA, based on our analyses of peripheral blood versus synovial fluid so far?
+   ![](_static/images/R2d2_logo.png)**Do you recognize any genes related to the immune system?**
+   
+   **You can hover your mouse over the names of the genes to read a summary of information about e.g. its function and alternative names. Or, you can click on the name to see the gene expression per sample in a *One Gene View* graph.**  
+   
+  ---------
+    
+ * To understand in which biological processes this list of genes play an important role, we can use the Gene Set Analysis. On the menu to the right of your list of genes click the button **Gene Set Analysis** and click **Next** in the following window.  
+ 
+ The returned table shows you the processes in which the genes are involved as defined by the [KEGG (Kyoto Encyclopedia of Genes and Genomes) database](https://www.genome.jp/kegg/).  
+ 
+ * Which pathway(s) could be of importance to understand the respective roles that T cells play in peripheral blood and synovial fluid? You can click on the little green **K icon** in front of a gene set to see the genes projected in a KEGG pathway map. 
+ 
+ * Above the result table, you can read the meaning of the color coding. Which tissue has a larger expression of most of the genes. What does that mean biologically? 
+ 
+ ---------
   
+![](_static/images/R2d2_logo.png)** What are your thoughts on patient treatment of RA based on samples taken from peripheral blood, taking into account our analyses of peripheral blood versus synovial fluid so far?**
+  
+ ---------
   
   ====
   
