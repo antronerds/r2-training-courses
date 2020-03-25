@@ -241,7 +241,7 @@ We have seen that the expression profiles of the same cell types can show differ
 * PCA
 
 Explore the provided information
-===
+---
 How does treatment effect gene expression? Let's have a look at a dataset of Lauwerys et al. In the dataset we can find samples taken from the synovial fluid in the knee of 20 early RA patients, both before and after treatment.  
   
 Click the button below to go to R2 with the correct dataset selected.   
@@ -255,13 +255,13 @@ Click the button below to go to R2 with the correct dataset selected.
 
 First, we take a look again with information that was provided. Let's start with the dataset Cohort Overview.  
 
-* In box 3, select the Cohort Overview, click next and explore the available annotation.
-* To understand what the study is about, click on the i information balloon behind the dataset title. Which genes are important according to the description?     
+* In box 3, select the **Cohort Overview**, click **next** and explore the available annotation.
+* To understand what the study is about, click on the **i information balloon** behind the dataset title. Which genes are important according to the description?     
 
 Since this set is treatment related, let's plot some data to see if treatment has any result.
 
-* Go back to the main page. Choose the analysis **Correlate gene with track** and type in box 4 any of the genes that in the description is mentioned to be downregulated by treatment. Click **Next**
-* Choose **Select a track: therapy (2cat)** and click **Next**
+* Go back to the main page. Choose the analysis **Correlate gene with track** and type in box 4 any of the genes that in the description is mentioned to be down regulated by treatment. Click **Next**.
+* Choose *Select a track:* **therapy (2cat)** and click **Next**.
 * Every patient had a sample taken before the start (no) and after 12 weeks (yes) of therapy, it is a paired test. It would be nice to see which dots belong to the same patient. With Sample Paths we can connect the two samples of each patient. Because it is a bit labour intensive to get the correct syntax, we did this for you. Copy paste the following information in the textbox of **Sample Paths**: GSM1116933,GSM1116934;GSM1116935,GSM1116936;GSM1116937,GSM1116938;GSM1116939,GSM1116940;GSM1116941,GSM1116942;GSM1116943,GSM1116944;GSM1116945,GSM1116946;GSM1116947,GSM1116948;GSM1116949,GSM1116950;GSM1116951,GSM1116952;GSM1116953,GSM1116954;GSM1116955,GSM1116956;GSM1116957,GSM1116958;GSM1116959,GSM1116960;GSM1116961,GSM1116962;GSM1116963,GSM1116964;GSM1116965,GSM1116966;GSM1116967,GSM1116968;GSM1116969,GSM1116970;GSM1116971,GSM1116972
 * Click on **Adjust Settings**
 * Change **Colormode:  Color by Track** and **Track for Color: therapy (2 cat)**    
@@ -280,7 +280,7 @@ Since this set is treatment related, let's plot some data to see if treatment ha
   
 
 An unbiased look into the dataset
-===
+---
 
 Also in this set, we take a look at an unbiased view of expression profile sample similarity. This time, we will use PCA. Principle Component Analysis or PCA analysis, can summarize the characteristics of many genes in new more abstract variables as well, called principle components (PCs). Again, PCA will plot the samples that behave similarly in their expression profiles closer together.
 
@@ -293,7 +293,7 @@ The PCA calculation creates many principle components. The first PC explains mos
  
 
 Showing pathways in heatmaps
-===
+---
 We now want to know which pathways are affected by treatment with tocilizumab.
 * From the main page, select the analysis **Differential Expression between groups**, click **Next** 
 * Choose **Select a track: therapy**
