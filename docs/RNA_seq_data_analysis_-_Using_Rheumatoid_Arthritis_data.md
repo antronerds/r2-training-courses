@@ -253,7 +253,7 @@ Click the button below to go to R2 with the correct dataset selected.
 <br>
 <br>
 
-First, we take a look again with information that was provided. Let's start with the dataset Cohort Overview.  
+First, we take a look at the information that was provided. Let's start with the dataset Cohort Overview.  
 
 * In box 3, select the **Cohort Overview**, click **next** and explore the available annotation.
 * To understand what the study is about, click on the **i information balloon** behind the dataset title. Which genes are important according to the description?     
@@ -282,13 +282,13 @@ Since this set is treatment related, let's plot some data to see if treatment ha
 An unbiased look into the dataset
 ---
 
-Also in this set, we take a look at an unbiased view of expression profile sample similarity. This time, we will use PCA. Principle Component Analysis or PCA analysis, can summarize the characteristics of many genes in new more abstract variables as well, called principle components (PCs). Again, PCA will plot the samples that behave similarly in their expression profiles closer together.
+Also in this set, we take a look at an unbiased view of expression profile sample similarity. This time, we will use **PCA** (Principle Component Analysis ). Like t-SNE, PCA analysis can summarize the characteristics of many genes in new abstract variables. The new variables are called principle components (PCs). PCA will plot the samples that behave similarly in their expression profiles closer together as well.
 
 * Return to the main page from the Cohort Overview, using the top left link **Go to: Main** 
 * Select **Principle Component Analysis (PCA)** in box 3 and click **Next**. Also on the following page, click **next**, then click **Plot the PCA result**
 * R2 also allows you to color t-SNE and PCA with the expression of a gene. Under the plot select **ColorMode: Color by Gene** and type **Gene for Color: IL6**, select the first option IL6 (Reporter: 205207_at HO:1). Don't forget to click **next** in order for your changes to take effect. 
 
-The PCA calculation creates many principle components. The first PC explains most of the variation found between the samples. Every following PC explains less and less of the variation of the dataset, but expecially the first two or three R2 allows you also to view the first 3 PCs in 3D.
+The PCA calculation creates many principle components. The first PC explains most of the variation found between the samples. Every following PC explains less and less of the variation of the dataset, R2 allows you to view the first 3 PCs in 3D.
 * Under the graph, select **PCA Projection: PC1:PC2:PC3-3D** and click **next** to see the effect. You can play with the 3D cube by holding your right mouse button down while dragging your mouse around. 
  
 
@@ -296,17 +296,17 @@ Showing pathways in heatmaps
 ---
 We now want to know which pathways are affected by treatment with tocilizumab.
 * From the main page, select the analysis **Differential Expression between groups**, click **Next** 
-* Choose **Select a track: therapy**
-* Because we won't have many samples, we will not correct for multiple testing. Change **Corr. multiple testing: No correction** 
-* Under *Sample Filter* we want to select the subset of samples involved in the tocilizumab study, both before and after treatment. Therefore, select **Select a track (subset): group** and select **gr_tcz**. Click **Next**. Click **Next** again on the following page. 
+* Choose *Select a track:* **therapy (2 cat)**
+* Because we won't have many samples, we will not correct for multiple testing. Change *Corr. multiple testing:* **No correction** 
+* Under *Sample Filter* we want to select the subset of samples involved in the tocilizumab study, both before and after treatment. Therefore, select *Select a track (subset):* **drug (3 cat)** and check both **tocilizumab (12)** and **untreated (20)**, click **ok**. Click **Next**. Click **Next** again on the following page. 
 
 The list shows the genes that are differentially expressed before and after treatment. 
-* To see in which pathways these genes play a role, this time we click on **Gene Ontology Analysis**. What pathways have been changed? Look at the color scheme, therapy: no >= yes means that the genes where higher expressed before than after treatment. Is this what you would exprect?
+* To see in which pathways these genes play a role, this time we click on **Gene Ontology Analysis**. What pathways show a difference before and after therapy? Look at the color scheme, therapy: no >= yes means that the genes where higher expressed before than after treatment. Is this what you would exprect?
 * The page with the list of differentiating genes is still opened. This time click the button Heatmap(zscore).
 ---
 
 
-![](_static/images/R2d2_logo.png)**Do you see any patients that did not respond. Is there a patient that was that was not treated but shows a similar expression profile as treated people?**  
+![](_static/images/R2d2_logo.png)**Do you see any patients that did not respond?**  
  
 --- 
 
