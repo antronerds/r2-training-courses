@@ -10,15 +10,13 @@ This has led to extensive efforts to find more specific diagnostic markers. The 
    
    [**Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)**](_static/images/KIT_rheumatoid-arthritis-drug-targets.jpg)
 
- 
-  
-T-cell gene expression profiles in patient material
+ Immune response in blood and synovial fluid  
 ===
  Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate patient and experimental data.  
    
  Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) have collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data and other similar studies have been uploaded into our platform R2. We will make use of these datasets to explore the  differences and similarities between peripheral blood and synovial fluid, to study the characteristics of T cells, and to look for possible effects of treatments. 
   
- A first look at gene expression with the R2 platform
+ A first look at T cell gene expression with the R2 platform
  --- 
  *Data used:*  
  * R2 titel: Disease Rheumatoid arthritis subset (drugs) - Okuzono - 75 - deseq2 - gpl17303
@@ -83,12 +81,16 @@ We can make use of the annotations to view the results of our samples in groups.
    
 ---------  
 
-![](_static/images/KIT_Tcelldifferentiation.png "Figure 2: Differentiation of T-cells, each subtype having its specific role in the immune system.")
-
-
-[**Figure 2: Differentiation of T-cells, each subtype having its specific role in the immune system.**](_static/images/KIT_Tcelldifferentiation.png)
-   
-The immune system is a complex system of different cell types that interact with each other with chemokines and other cytokines. T cells are one of two primary types of white blood cells — B cells being the second type — that determine the specificity of immune response to antigens (foreign substances) in the body. T cells originate in the bone marrow and mature in the thymus. By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into four stages: naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem), whereas CD8+ T cells are classified into five stages: Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra). Each subset has its own markers as can be seen in the table below. This heterogeneity among Tcells has made it challenging to identify the specific cell subsets and states that drive RA pathogenesis.
+The immune system is a complex system of different cell types that interact with each other with chemokines and other cytokines. T cells are one of two primary types of white blood cells — B cells being the second type — that determine the specificity of immune response to antigens (foreign substances) in the body. T cells originate in the bone marrow and mature in the thymus.  
+  
+  ![](_static/images/KIT_Tcelldifferentiation.png "Figure 2: Differentiation of T-cells, each subtype having its specific role in the immune system.")
+  
+  
+  [**Figure 2: Differentiation of T-cells, each subtype having its specific role in the immune system.**](_static/images/KIT_Tcelldifferentiation.png)
+  
+  By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into four stages: naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem), whereas CD8+ T cells are classified into five stages: Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra).  
+    
+ Each subset has its own markers as can be seen in the table below. This heterogeneity among Tcells has made it challenging to identify the specific cell subsets and states that drive RA pathogenesis.
 
 <table>
 <tr><th>  T-cell  </th><th>Developmental stage</th><th>Markers</th></tr>
@@ -110,7 +112,7 @@ The immune system is a complex system of different cell types that interact with
  
  ---------
  
-Exploring a dataset
+Exploring relevant annotation of a dataset
 ---
 *Analysis used*
 * Cohort Overview
@@ -176,14 +178,15 @@ Each dot is a sample and the axes are the more abstract t-SNE variables (v1 and 
   
  ---------
 
-
+Finding pathways that make a difference
 ---
+
 *Analyses used* 
 * Differential Expression between groups
 * Gene set analysis
 * KEGG mapping
----
-We have seen that the expression profiles of the same cell types can show differences in peripheral blood and synovial fluid. It would be interesting to have a better understanding which genes and pathways cause the biggest differences and whether they are relevant to RA. 
+
+We have seen that the expression profiles of the same cell types can show differences in peripheral blood and synovial fluid. It would be interesting to have a better understanding which genes and pathways cause the biggest differences and whether they are relevant to RA pathogenesis. 
 
 * From the main page, select the analysis **Find Differential expression between groups** in box 3; click **Next**.  
 * In the next page with selection criteria, choose *Select a track:* **tissue (2cat)**.   
@@ -192,20 +195,20 @@ We have seen that the expression profiles of the same cell types can show differ
  R2 now performs a one-way Anova statistical test on the fly with a correction for multiple testing. The result is a list of genes that is ordered by the most significant differential expression between the groups that we chose before (PB and SF). 
   
     
- 
  ---------
  
    ![](_static/images/R2d2_logo.png)**Do you recognize any genes related to the immune system?**
    
-   **You can hover your mouse over the names of the genes to read a summary of information about e.g. its function and alternative names. Or, you can click on the name to see the gene expression per sample in a *One Gene View* graph.**  
+   **Hover your mouse over the names of the genes to read a summary of information about its function and alternative names.  
+   Click on a gene name to see the gene expression per sample in a *One Gene View* graph.**  
    
   ---------
     
- * To understand in which biological processes this list of genes play an important role, we can use the Gene Set Analysis. On the menu to the right of your list of genes click the button **Gene Set Analysis** and click **Next** in the following window.  
+ * To find the biological processes that are affected by the genes in this list, we can use the Gene Set Analysis. On the menu to the right of your list of genes click the button **Gene Set Analysis** and click **Next** in the following window.  
  
  The returned table shows you the processes in which the genes are involved as defined by the [KEGG (Kyoto Encyclopedia of Genes and Genomes) database](https://www.genome.jp/kegg/).  
  
- * Which pathway(s) could be of importance to understand the respective roles that T cells play in peripheral blood and synovial fluid? You can click on the little green **K icon** in front of a gene set to see the genes projected in a KEGG pathway map. 
+ * To understand the respective roles that T cells play in peripheral blood and synovial fluid of patients with RA, which pathways seem relevant? You can click on the little green **K icon** in front of a gene set to see the genes projected in a KEGG pathway map. 
  
  * Above the result table, you can read the meaning of the color coding. Which tissue has a larger expression of most of the genes. What does that mean biologically? 
    
@@ -213,16 +216,14 @@ We have seen that the expression profiles of the same cell types can show differ
  ---------  
  
   
-![](_static/images/R2d2_logo.png)** What are your thoughts on patient treatment of RA based on samples taken from peripheral blood, taking into account our analyses of peripheral blood versus synovial fluid so far?**  
+![](_static/images/R2d2_logo.png)**What are your thoughts on RA treatment based on peripheral blood samples?**  
   
  ---------  
  
-  
-   
    
  Effects of treatment
   ===
- Now that we have a better understanding of T-cells and of the platform R2, let's have a look in a different dataset if we can find any effect of rheumatoid arthritis treatments on a genomic scale .    
+ Now that we have a better understanding of gene expression of T-cells, let's have a look if we can find any effect of rheumatoid arthritis treatments on a genomic scale.    
  
 *Data used:*  
 * R2 titel: Disease Rheumatoid arthritis (drugs) - Lauwerys - 40 - MAS5.0 - u133p2
