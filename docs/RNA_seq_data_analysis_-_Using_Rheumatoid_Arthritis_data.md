@@ -10,14 +10,12 @@ This has led to extensive efforts to find more specific diagnostic markers. The 
    
    [**Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)**](_static/images/KIT_rheumatoid-arthritis-drug-targets.jpg)
 
-
-Understanding gene expression in the immune system 
-===
-
-Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate patient and experimental data.
-Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) have collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data and other similar studies have been uploaded into our platform R2. We will make use of these datasets to explore the  differences and similarities between peripheral blood and synovial fluid, to study the characteristics of T cells, and to look for possible effects of treatments.  
-  
  
+  
+T-cell gene expression profiles in patient material
+===
+ Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate patient and experimental data.
+ Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) have collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data and other similar studies have been uploaded into our platform R2. We will make use of these datasets to explore the  differences and similarities between peripheral blood and synovial fluid, to study the characteristics of T cells, and to look for possible effects of treatments. 
   
  A first look at gene expression with the R2 platform
  --- 
@@ -177,7 +175,7 @@ Each dot is a sample and the axes are the more abstract t-SNE variables (v1 and 
   
  ---------
 
-Understanding differences in genes and pathways
+
 ---
 *Analyses used* 
 * Differential Expression between groups
@@ -218,13 +216,13 @@ We have seen that the expression profiles of the same cell types can show differ
   
  ---------  
  
- Now that we have a better understanding of T-cells and of the platform R2, let's have a look in a different dataset if we can find any effect of rheumatoid arthritis treatments on a genomic scale .    
-   
-   
   
-  Understanding the effects of treatment
+   
+   
+ Effects of treatment
   ===
-  
+ Now that we have a better understanding of T-cells and of the platform R2, let's have a look in a different dataset if we can find any effect of rheumatoid arthritis treatments on a genomic scale .    
+ 
 *Data used:*  
 * R2 titel: Disease Rheumatoid arthritis (drugs) - Lauwerys - 40 - MAS5.0 - u133p2
 * Description: Paired synovial biopsy samples were obtained from the affected knee of early RA patients before and 12 weeks after initiation of Tocilizumab (n=12) or Methotrexate (n=8) therapy 
