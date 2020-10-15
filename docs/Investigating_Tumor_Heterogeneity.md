@@ -93,12 +93,13 @@ We've seen that the expression of genes differs among the samples and some types
 
 * Click the button below to show the tSNE map in R2 
 
-<form name="itcc_86_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f" enctype="multipart/form-data" target="R2" method="post">
-<button type="submit" >Go to R2</button>
+
+<form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
+  <button type="submit" >Go to t-SNE</button>
 </form>  
 <br>
 <br>
-
 
 * Colors are not set by default. In the 'Adjustable settings' table at the bottom of the page, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click **Next** to show the changes.  
   
