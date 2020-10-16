@@ -97,7 +97,7 @@ We've seen that the expression of genes differs among the samples and some types
   <input type="submit" value="Go to tSNE"/>
 </form>
 
-<button onclick="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f">Go to the t-SNE map</button>
+<button onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button>
  
 <br>
 <br>
