@@ -93,7 +93,7 @@ We've seen that the expression of genes differs among the samples and some types
 
 * Click the button below to show the tSNE map in R2 
 
-<form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f" enctype="multipart/form-data" target="R2">
+<form action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f">
   <input type="submit" value="Go to tSNE"/>
 </form>
 
