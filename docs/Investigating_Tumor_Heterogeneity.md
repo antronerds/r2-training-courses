@@ -93,12 +93,7 @@ We've seen that the expression of genes differs among the samples and some types
 
 * Click the button below to show the tSNE map in R2 
 
-<form action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f">
-  <input type="submit" value="Go to tSNE"/>
-</form>
-
-<button onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button>
- 
+<button onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
 <br>
 <br>
 
@@ -310,7 +305,7 @@ Identifying groups: using signatures to classify other datasets
 ------------------------------------------------------------------
 
 We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis.   
-We've assembled a more complex dataset by gathering the dataset of the 4 pairs of cell lines, additional neuroblastoma cell lines from the first dataset and publicly available data of non-malignant human neural crest tissue. The neural crest undergoes a mesenchymal transition and gives rise to cell types from the adrenergic lineage.
+ We've assembled a more complex dataset by gathering the dataset of the 4 pairs of cell lines, additional neuroblastoma cell lines from the first dataset and publicly available data of non-malignant human neural crest tissue. The neural crest undergoes a mesenchymal transition and gives rise to cell types from the adrenergic lineage.
 
 *Data used:*
 * A combination of the 8 cell lines above, additional neuroblastoma cell lines and cells from the neural crest lineage (Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2)
@@ -455,8 +450,9 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 Again we're going to find out which genes make a difference, but now in a specific subset that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. 
 * In field 3 select **Find Differential expression between groups** Click **Next**
-* Make sure to select the proper track **Select a track**. We're now also going to filter for a specific **GeneCategory**; select the *transcription factor (945)*. Click **Next**. 
-* In the next screen we're asked to further filter for a specific type of samples to compare, we're focusing on the difference between ADRN and MES; select these. Click **Next**. 
+* Make sure to select the proper track **Select a track**.  
+* We're now also going to filter for a specific **Gene Filter**; In the third dropdown from the Gene Filters section, where you can select a **Gene set**, click on category *C: geneannot*. Now click again on the same dropdown, and you will see that the dropdown list has expanded with different subcategories. Select the subcategory transcription factors *SC: TF (945)*. Click **Next**. 
+* In the next screen we're asked to further filter for the specific types of samples to compare. Here we're focusing on the difference between ADRN and MES; select these (i.e. uncheck neural_crest). Click **Next**. 
 * A list of genes appears. Investigate the top 4 by clicking on the hyperlinked gene symbols. This brings you to the expression view of the gene. 
 * From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the top table.
 
@@ -483,7 +479,7 @@ From experiments it is known that cells can change their nature, some cells exhi
 ---------
 
 From experiments in our lab it became evident that the two cell types found in Neuroblastoma were able to switch. After a given period of time cells in dishes changed their nature as was proven by the expression of certain marker proteins on their surface.  
-Now that we have a candidate Transcription Factor (TF) we can try to investigate its relevance in this plasticity by manipulating the gene in cell lines we grow in the lab. 
+ Now that we have a candidate Transcription Factor (TF), we can try to investigate its relevance in this plasticity by manipulating the gene in cell lines we grow in the lab. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you think of ways to manipulate genes in cell lines?**
