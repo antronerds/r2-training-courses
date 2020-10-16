@@ -5,11 +5,12 @@ Investigating structural variants
 
 *Not every cancer has determining somatic mutations. Using the full power of WGS data, relevant structural variants can be traced also and linked to potential causes of disease*
 
-In this course we will introduce R2, the web based genomics analysis and visualization application. Throughout the course an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa new insights can be derived. Throughout this course we'll focus on data of the childhood tumor neuroblastoma.
+In this course we will introduce R2, the web based genomics analysis and visualization application. Throughout the course an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa, new insights can be derived. Throughout this course we'll focus on data of the childhood tumor neuroblastoma.
 
-We hope to show how R2 can be used to visualize and analyze your WGS data. Please note that this training session requires accounts with additional access. Please make sure you have obtained a proper account from the tutors. 
+We hope to show how R2 can be used to visualize and analyze your WGS data. Please note that this training session requires accounts with additional access. Therefore, make sure that you have obtained a proper account from the tutors. 
 
-This resource is located online at http://r2-training-courses.readthedocs.io
+This resource is located online at http://r2-training-courses.readthedocs.io  
+Additional courses can be found at the same address.
 
 Introduction 
 ------------
@@ -45,10 +46,10 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 
 * Log on to the R2 platform with your credentials that were provided (or apply for a login using the link).  
 * In the left menu click on **Change Data Scope** > **Training** > **Graduate Training Course**
-* In the middle section of the page, an additional choice step appears; click **Goto Graduate Training Course home**
-* For a quick impression of the data select the **Cohort Overview**. R2 presents the tumor series with its annotation. Hover your mouse over the different slices of the **inss** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
+* In the middle section of the page, an additional choice step appears; click **Go to the Graduate Training Course Portal**
+* For a quick impression of the data select the **Cohort Overview**. R2 presents the tumor series with its annotation. Hover your mouse over the different slices of the **stage(inss)** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
 
-The samples of a dataset can be annotated with for example clinical data or molecular biology parameters, each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns with, say, different phenotypes or demographic characteristics.  
+The samples of a dataset can be annotated with, for example, clinical data or molecular biology parameters. Each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns with e.g. different phenotypes or demographic characteristics.  
 
 Pie Charts
 ----------
@@ -56,7 +57,7 @@ Pie Charts
 The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value.  
 <br>
 
-  ![](_static/images/R2d2_logo.png)**With the dropdown menu below the main pie chart, select the 'mycn_amp' annotation. Click on the 'yes' slice and watch how the inss pie chart and the table at the bottom change.**  
+  ![](_static/images/R2d2_logo.png)**With the dropdown menu below the main pie chart, select the 'mycn_amp' annotation. Click on the 'yes' slice and watch how the stage(inss) pie chart and the table at the bottom change.**  
    
   **How many samples have a MYCN amplification?**
 <br>
@@ -79,12 +80,12 @@ Until recently only several genomic aberrations were known:
 </table>
 
 
-To extend these data, the Oncogenomics department of the AMC set out to sequence 87 untreated primary neuroblastoma tumours of all stages from this set.
+To gain further insight, the Oncogenomics department of the AMC set out to sequence 87 untreated primary neuroblastoma tumours of all stages from this set.
 
 Somatic mutations in neuroblastoma
 ----------------------------------
 
-For this the samples were sent to the Complete Genomics sequencing facility, now taken over by BGI, for whole-genome paired-end sequencing. They provide a sequence as a service model. Genomes were sequenced at an average coverage of 50. Compared to the HG18 reference genome an average of 3,347,592 singlenucleotide variants (SNVs) per genome were obtained, in accordance with reported frequencies of interpersonal variants. 
+The samples were sent to the Complete Genomics sequencing facility, now taken over by BGI, for whole-genome paired-end sequencing. They provide a sequence as a service model. Genomes were sequenced at an average coverage of 50. Compared to the HG18 reference genome, an average of 3,347,592 singlenucleotide variants (SNVs) per genome were obtained, which is in accordance with reported frequencies of interpersonal variants. 
 
 The R2 development team has processed these WGS data further using the CGAtools software to compare tumor with lymphocyte genomes. This provided a somatic score, estimating the likelihood of mutations to be somatic. Through several filtering steps the somatic mutations were determined with respect to the reference genome.
 
@@ -169,7 +170,7 @@ A comprehensive list of the mutations can be accessed through R2.
   
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What chromatin annotation is available for the start of the ALK gene? (You can hover over the annotation bars to see the )**
+  ![](_static/images/R2d2_logo.png)**What chromatin annotation is available for the start of the ALK gene?**
 
 <br>
 <br>
@@ -260,9 +261,9 @@ The Shredding pattern is known by the term chromothripsis. Patients containing s
 
 To see how chromothripsis relates to clinical data we can investigate survival data in R2. 
 
-* From the left menu in the main Graduate Training Course datascope panel select **Kaplan Meier > By annotated parameter**
-* Make sure that the appropriate neuroblastoma set has been selected in the dataselection panel: 'Tumor Neuroblastoma (combat) - Versteeg - 122 - MAS5.0(bc) - u133p2'. Click **Next**.
-* A selection menu appears, in the **use track** field select the track cg_chromothripsis and click next 
+* From the left menu in the main Graduate Training Course datascope panel select **Kaplan Meier > By track (category)**
+* Make sure that the correct Data Type 'Expression data(H. sapiens)' and neuroblastoma set has been selected in the dataselection panel: 'Tumor Neuroblastoma (combat) - Versteeg - 122 - MAS5.0(bc) - u133p2'. Click **Next**.
+* A selection menu appears, in the **Separate by** field select *track* and in **use track** select the track cg_chromothripsis. Then click **Next** 
 
 ---------
   ![](_static/images/R2d2_logo.png)**How does chromothripsis affect survival?**
@@ -280,7 +281,7 @@ Locations of structural variants, hotspots?
 -------------------------------------------
 Chromothripsis can be seen as an extreme case of concentration of structural variants in one sample. The question arises whether there are other hotspots of structural variation on the genome that are found in multiple samples. These might point to functional interactions.
 
-* One of the genes that exhibited such a hotspot is the TERT gene. Go back to the startpage of the Graduate Training Course datascope and select the GenomeBrowser tile. This brings you to the TERT gene on the genome with some preset annotations. 
+* One of the genes that exhibited such a hotspot is the TERT gene. Go back to the startpage of the Graduate Training Course portal and select the GenomeBrowser tile. This brings you to the TERT gene on the genome with some preset annotations. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**How does this region qualify as a hotspot?**

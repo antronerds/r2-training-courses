@@ -11,7 +11,7 @@ This resource is located online at http://r2-training-courses.readthedocs.io
 Introduction
 ------------
 
-Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. During the lectures youâ€™ve been shown how this works in colorectal cancer, where a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
+Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. During the lectures you've been shown how this works in colorectal cancer, where a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
 
   ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression.")	
   
@@ -71,7 +71,7 @@ You're now on the R2 main page. This web based molecular biology data analysis p
   
 A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. 
   * Hover with your mouse over data points to show additional information.
-  * The expression values on the y-axis are logarithmic; set the **Transform** option to **none**, and select **Track and Gene sort** for the **Extra Graph Option**. Sample annotation is stored in R2 in so called tracks, for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type. Click on **More Settings** and set the **draw legend** dropdown to *yes* and click **Adjust Settings** to obtain a more explicit picture.  
+  * The expression values on the y-axis are logarithmic by default; Many settings of the graph can be adapted. Try out a different view of the same data with the following changes to the settings. Set the **Transform** option to **none**. Sample annotation is stored in R2 in so called tracks, for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type. Click on **More Settings** and set the **draw legend** dropdown to *yes* and click **Adjust Settings** to obtain the graph with these adaptations.  
   
 
   * Now try the gene MYCN (Click the **Go to Main** link in the left upper corner)
@@ -96,21 +96,15 @@ We've seen that the expression of genes differs among the samples and some types
 
 * Click the button below to show the tSNE map in R2 
 
-<form name='tsne_map' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='_gv'>
-<input type='hidden' name='switch' value='2'>
-<input type='hidden' name='minpres' value='1'>
-<input type='hidden' name='perplexity' value='5'>
-<input type='hidden' name='dotsize' value='6'>
-<input type='hidden' name='option' value='plot_tsne'>
-<input type='hidden' name='table' value='ps_avgpres_itcccellline86_u133p2'>
-<input type='hidden' name='cortype' value='transform_zscore'>
-<button type="submit" >Go to R2 tSNE map</button>
-</form>
+<button onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
 <br>
 <br>
+
 
 
 * Colors are not set by default, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click **Next** to show the changes 
+
+* The t-SNE map has a parameter called **perplexity**, which determines how much attraction points on a map have towards each other.  Set the perplexity value to *5* and click **next** again.
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you relate the tumors to a type of tissue? (Note: ALL stands for Acute Lymphocytic Leukemia)**
@@ -463,8 +457,8 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 Again we're going to find out which genes make a difference, but now in a specific subset that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. 
 * In field 3 select **Find Differential expression between groups** Click **Next**
-* Make sure to select the proper track under **Select a track**. We're now also going to filter for a specific **GeneCategory**; select the Transcription factors (*TF(945)*). Click **Next**. 
-* In the next screen we're asked to further filter for a specific type of samples to compare, we're focusing on the difference between ADRN and MES; select these. Click **Next**. 
+* We're now also going to filter for a specific **Gene Filter**; In the third dropdown from the Gene Filters section, where you can select a **Gene set**, click on category *C: geneannot*. Now click again on the same dropdown, and you will see that the dropdown list has expanded with different subcategories. Select the subcategory transcription factors *SC: TF (945)*. Click **Next**. 
+* In the next screen we're asked to further filter for the specific types of samples to compare. Here we're focusing on the difference between ADRN and MES; select these (i.e. uncheck neural_crest). Click **Next**. 
 * A list of genes appears. Investigate the top 4 by clicking on the hyperlinked gene symbols. This brings you to the expression view of the gene. 
 * From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the top table. You'll arrive at a website that gathers all known information on genes; a useful section is the **Bibliography** containing short summaries of relevant scientific papers.
 
