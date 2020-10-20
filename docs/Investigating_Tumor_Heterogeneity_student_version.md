@@ -91,7 +91,7 @@ A graph shows the expression of this gene's mRNA in the whole set of childhood t
 
 ##### Clustering with tSNE maps
 
-We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map.  
+We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map. Similar cells will clump together on the map.   
 
 
 * Click the button below to show the tSNE map in R2 
@@ -102,9 +102,9 @@ We've seen that the expression of genes differs among the samples and some types
 
 
 
-* Colors are not set by default, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click **Next** to show the changes 
+* Under the graph, a menu allows the user to adapt settings. Colors are not set by default, to color the graph with a biologically meaningful annotation, find the **ColorMode** dropdown and select *Color by Track*. Now set the **Track for Color** dropdown to use the *itcc_model* track, and click **Next** to show the changes. 
 
-* The t-SNE map has a parameter called **perplexity**, which determines how much attraction points on a map have towards each other.  Set the perplexity value to *5* and click **next** again.
+* The t-SNE algorithm has a parameter called **perplexity**, which determines how much attraction points on a map have towards each other.  Set the perplexity value to *5* and click **next** again.
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you relate the tumors to a type of tissue? (Note: ALL stands for Acute Lymphocytic Leukemia)**
@@ -411,10 +411,10 @@ The expression patterns of these specific signatures can be used to compare cell
 
 
 * In field 3 choose **Relate 2 tracks** and click **Next**
-* First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (lab\_id) and on the Y-axis the signature score track that R2 has generated for the MES signature (u-34\_mesadrn\_mes(#)). Click **Next**.
-* A graph is generated for each sample the signature score for the mesadrn\_mes signature is shown, select **Color by Track** for ColorMode and try different tracks. Click **Adjust Settings** to view the result.
-* Now select for the Y-axis the ADRN part of the signature, click **Adjust Settings** to view the result.
-* Now we're going to compare the signature scores; select the MES signature for the X track
+* First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (*lab\_id*) and on the Y-axis the signature score track that R2 has generated for the ADRN signature (u-34\_mesadrn\_adrn(#)). Click **Next**.
+* A graph is generated. For each sample the signature score for the mesadrn\_adrn signature is shown. Select **Color by Track** for ColorMode and try different tracks. Click **Adjust Settings** to view the result.
+* Now select for the Y-axis the MES part of the signature, click **Adjust Settings** to view the result.
+*  To compare the signature scores, select the ADRN signature for the X track
 * If you have time you can also try the **Color by Gene ColorMode**, choose a gene of interest (Note: the dropdown selection is linked to the database, wait for the proper selections to popup...)
 
 ---------
