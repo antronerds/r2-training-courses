@@ -411,7 +411,7 @@ The expression patterns of these specific signatures can be used to compare cell
 
 
 * In field 3 choose **Relate 2 tracks** and click **Next**
-* First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (*lab\_id*) and on the Y-axis the signature score track that R2 has generated for the ADRN signature (u-34\_mesadrn\_adrn(#)). Click **Next**.
+* First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (*lab\_id*) and on the Y-axis the signature score track that R2 has generated for the ADRN signature (s\_mesadrn\_adrn(#)). Click **Next**.
 * A graph is generated. For each sample the signature score for the mesadrn\_adrn signature is shown. Select **Color by Track** for ColorMode and try different tracks. Click **Adjust Settings** to view the result.
 * Now select for the Y-axis the MES part of the signature, click **Adjust Settings** to view the result.
 *  To compare the signature scores, select the ADRN signature for the X track
@@ -455,12 +455,13 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 <br>
 
 
-Again we're going to find out which genes make a difference, but now in a specific subset that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. 
+Again we're going to find out which genes make a difference, but now in a specific subset of genes that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. 
 * In field 3 select **Find Differential expression between groups** Click **Next**
-* We're now also going to filter for a specific **Gene Filter**; In the third dropdown from the Gene Filters section, where you can select a **Gene set**, click on category *C: geneannot*. Now click again on the same dropdown, and you will see that the dropdown list has expanded with different subcategories. Select the subcategory transcription factors *SC: TF (945)*. Click **Next**. 
+* Like before, select the track that contains information about the cell types, *mes_adrn_nc (3cat)*.
+* We're now also going to filter for a specific gene filter. In the **Gene Filters** section, choose from the bottom dropdown the category *C: geneannot* as **Gene set**. Now click again on the **same dropdown**, and you will see that the dropdown list has expanded with different subcategories. Select the subcategory transcription factors, *SC: TF (945)*. Click **Next**. 
 * In the next screen we're asked to further filter for the specific types of samples to compare. Here we're focusing on the difference between ADRN and MES; select these (i.e. uncheck neural_crest). Click **Next**. 
 * A list of genes appears. Investigate the top 4 by clicking on the hyperlinked gene symbols. This brings you to the expression view of the gene. 
-* From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the top table. You'll arrive at a website that gathers all known information on genes; a useful section is the **Bibliography** containing short summaries of relevant scientific papers.
+* From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the top table. You'll arrive at a website that gathers all known information on genes. A useful section is the **Bibliography** containing short summaries of relevant scientific papers.
 
 ---------
   ![](_static/images/R2d2_logo.png)**Armed with this information, which gene would you choose for further research? Why?**
