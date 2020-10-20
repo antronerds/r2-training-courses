@@ -818,7 +818,7 @@ The chromatin state is especially important for transcription factors; we'll re-
 <input type='hidden' name='table' value='ps_avgpres_gsenatgengeo34_u133p2'>
 <input type='hidden' name='hugoonce' value='yes'>
 <input type='hidden' name='cortype' value='transform_2log'>
-<input type='hidden' name='genecat' value='TF'>
+<input type='hidden' id="geneset0-geneset-select" name="geneset" value="geneannot::TF::transcription factor">
 <input type='hidden' name='selectedtrack' value='mes_adrn_nc'>
 <input type='hidden' name='test' value='anova'>
 <input type='hidden' name='factor' value='NG_mes_adrn_nc'>
