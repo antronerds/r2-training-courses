@@ -57,7 +57,8 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <br>
 <br>
 
-You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of data analysis possibilities. R2's main page shows this principle; step through each of the fields to develop your analysis of choice. In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
+You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of data analysis possibilities. R2's main page shows this principle; step through each of the fields to develop your analysis of choice.  
+In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumor models?**
@@ -70,7 +71,9 @@ You're now on the R2 main page. This web based molecular biology data analysis p
   * Leave all settings at default and click **Next**  
   
 A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. 
-  * Hover with your mouse over data points to show additional information.
+  * Hover with your mouse over data points to show additional information.  
+
+At the bottom of the page you can find a table with adjustable settings.   
   * The expression values on the y-axis are logarithmic by default; Many settings of the graph can be adapted. Try out a different view of the same data with the following changes to the settings. Set the **Transform** option to **none**. Sample annotation is stored in R2 in so called tracks, for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type. Click on **More Settings** and set the **draw legend** dropdown to *yes* and click **Adjust Settings** to obtain the graph with these adaptations.  
   
 
@@ -102,7 +105,7 @@ We've seen that the expression of genes differs among the samples and some types
 
 
 
-* Under the graph, a menu allows the user to adapt settings. Colors are not set by default, to color the graph with a biologically meaningful annotation, find the **ColorMode** dropdown and select *Color by Track*. Now set the **Track for Color** dropdown to use the *itcc_model* track, and click **Next** to show the changes. 
+* Under the graph, a menu allows the user to adapt settings. Colors of the graph points are not set by default. To color the graph with a biologically meaningful annotation, find the **ColorMode** dropdown and select *Color by Track*. Now set the **Track for Color** dropdown to use the *itcc_model* track, and click **Next** to show the changes. 
 
 * The t-SNE algorithm has a parameter called **perplexity**, which determines how much attraction points on a map have towards each other.  Set the perplexity value to *5* and click **next** again.
 
@@ -118,10 +121,9 @@ We've seen that the expression of genes differs among the samples and some types
 <br>
 
   ![](_static/images/R2d2_logo.png)**If you had to choose two cell lines for further investigation of lineage identity in neuroblastoma, which would you choose?**
-
+  
 <br>
 <br>
-
 ---------
 
 
@@ -165,7 +167,7 @@ We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of
 
 For this analysis we'll directly go to one of the analysis tools of R2: Toplister. The Toplister can assess which genes behave different throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
 
-* Go to R2 by clicking the button below. R2 will find the 100 genes having the largest variation in gene expression throught these 8 cell lines; three pairs from three tumors of a patient and two classical neuroblastoma cell lines. 
+* Go to R2 by clicking the button below. R2 will find the 100 genes that have the largest variation in gene expression among these 8 cell lines, three pairs from three tumors of a patient and two classical neuroblastoma cell lines. 
 
 <form name="toplisterform" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
 <input type='hidden' name='minpres' value='1'>
@@ -174,7 +176,7 @@ For this analysis we'll directly go to one of the analysis tools of R2: Topliste
 <input type='hidden' name='table' value='ps_avgpres_gse90803geo8_u133p2'>
 <input type='hidden' name='hugoonce' value='yes'>
 <input type='hidden' name='set' value='standard_deviation'>
-<input type='hidden' name='cortype' value='transform_2log'>
+<input type='hidden' name='cortype' value='transform_log2'>
 <button type="submit" >Go to R2 Toplister</button>
 </form>
 <br>
@@ -201,7 +203,7 @@ Here you can choose to perform an additional analysis. The heatmap vizualization
 
 ---------
 
-* Click on **Heatmap(z-score)**
+* Click on **Heatmap (z-score)**
   
   
 The cell line pairs from the patient were also investigated for the tumor stem cell marker gene CD133 and for their migration capability. See the results in the figure below:
@@ -252,10 +254,10 @@ We have identified two different types of cells that occur within the same patie
 <br>
 
 
-* In Field 3 choose *Find Differential expression* between groups and click **Next**
+* In Field 3 choose *Find Differential expression between groups* and click **Next**
 
 This dataset has been annotated with 'cell type' information. Each sample was assigned to either the MESenchymal or the ADReNergic cell type, in R2 this is called a *track*. 
-* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to **No correction**. (More information on Multiple Testing is [here](https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting)) Click **Next** twice
+* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to **No correction**. (More information on Multiple Testing can be found [here](https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting)) Click **Next** twice.
 * A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset is shown. Click on the hyperlinked name of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well
 * Go back to the window with the differentially expressed genes. This is still open in one of your browser tabs. 
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
@@ -414,7 +416,7 @@ The expression patterns of these specific signatures can be used to compare cell
 * First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (*lab\_id*) and on the Y-axis the signature score track that R2 has generated for the ADRN signature (s\_mesadrn\_adrn(#)). Click **Next**.
 * A graph is generated. For each sample the signature score for the mesadrn\_adrn signature is shown. Select **Color by Track** for ColorMode and try different tracks. Click **Adjust Settings** to view the result.
 * Now select for the Y-axis the MES part of the signature, click **Adjust Settings** to view the result.
-*  To compare the signature scores, select the ADRN signature for the X track
+* To compare the signature scores, select the ADRN signature for the X track
 * If you have time you can also try the **Color by Gene ColorMode**, choose a gene of interest (Note: the dropdown selection is linked to the database, wait for the proper selections to popup...)
 
 ---------
@@ -429,7 +431,7 @@ The expression patterns of these specific signatures can be used to compare cell
 Finding causes: homing in on transcription factors
 -----------------------------------------------------
 
-Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors (TFs) are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we find out which TFs might influence the difference between both of these cell lines?
+Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors (TF's) are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we find out which TF's might influence the difference between both of these cell lines?
 
 *Data used:*
 * Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2
@@ -457,7 +459,7 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 Again we're going to find out which genes make a difference, but now in a specific subset of genes that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. 
 * In field 3 select **Find Differential expression between groups** Click **Next**
-* Like before, select the track that contains information about the cell types, *mes\_adrn\_nc (3 cat)*.
+* Like before, select the track that contains information about the cell types*.
 * We're now also going to filter for a specific gene filter. In the **Gene Filters** section, choose from the bottom dropdown the category *C: geneannot* as **Gene set**. Now click again on the **same dropdown**, and you will see that the dropdown list has expanded with different subcategories. Select the subcategory transcription factors, *SC: TF (945)*. Click **Next**. 
 * In the next screen we're asked to further filter for the specific types of samples to compare. Here we're focusing on the difference between ADRN and MES; select these (i.e. uncheck neural\_crest). Click **Next**. 
 * A list of genes appears. Investigate the top 4 by clicking on the hyperlinked gene symbols. This brings you to the expression view of the gene. 
@@ -540,6 +542,28 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 
 ---------
 
+* This conclusion is even more obvious when the sequence of events is highlighted, as can be done in R2. The relations between the isogenic pairs are also illustrated. Click the button below to view the graph annotated in this way, a figure that can be incorporated in a publication right away. 
+
+<form name="timepath" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
+<input type="hidden" name="species" value="hs">
+<input type="hidden" name="selectedtrack" value="adrn_score">
+<input type="hidden" name="selectedtracky" value="mes_score">
+<input type="hidden" name="subsettracksubset" value="experiment-group">
+<input type="hidden" name="graphtype" value="XY">
+<input type="hidden" name="colormode" value="colorbytrack">
+<input type="hidden" name="trackforcolor" value="mes_adrn_time">
+<input type="hidden" name="option" value="display2">
+<input type="hidden" name="exageratemark" value="no">
+<input type="hidden" name="chainedsams" value="gsm2413241,gsm2413246:#eeeeee;gsm2413239,gsm2413243:#eeeeee;gsm2413242,gsm2413245:#eeeeee;gsm2413240,gsm2413244:#eeeeee;gsm2413257,gsm2413247,gsm2413248,gsm2413249:#222222:2;gsm2413249,gsm2413250,gsm2413251,gsm2413252,gsm2413253,gsm2413254:#222222:3;gsm2413254,gsm2413255,gsm2413256:#222222:4">
+<input type="hidden" name="fontsize_ruler" value="25">
+<input type="hidden" name="fontsize_y" value="30">
+<input type="hidden" name="dotsize" value="5">
+<button type="submit" >Show time path annotation in R2</button>
+</form>  
+<br>
+<br>
+
 
 Creating hypotheses: relating to chromatin modification data
 ---------------------------------------------------------------
@@ -568,7 +592,7 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 ---------
 
 
-First we'll check one of the HAND genes, known to play a role in the development of the sympatho-adrenal lineage from the neural crest.
+First we'll check one of the HAND genes, known to play a role in the development of the sympatho-adrenal lineage from the neural crest.  
 
 ---------
   ![](_static/images/R2d2_logo.png)**What do you expect for the H3K27ac signals?**
@@ -578,7 +602,7 @@ First we'll check one of the HAND genes, known to play a role in the development
 
 ---------
 
-* Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line. 
+* Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.  
 
 <form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype=\"multipart/form-data\" method='POST' target='_gv'>
 <input type='hidden' name='option' value='gbv2_base'>
@@ -790,14 +814,18 @@ First we'll check one of the HAND genes, known to play a role in the development
 <br>
 <br>
 
-
-Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, coding exons are darker. 
+Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, coding exons are darker.  
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you explain this graph? What do you expect for the expression of this gene?**
 
 <br>
 <br>
+
+---------
+
+
+* At the top of the page click on the **zoom out 10X** button. Look at the differences between the cell lines 
 
 
 The chromatin state is especially important for transcription factors; we'll re-visit the list of transcription factors that are differentially expressed between the MES and ADRN cell lines.
@@ -828,7 +856,7 @@ The chromatin state is especially important for transcription factors; we'll re-
 <br>
 <br>
 
-* Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate. In the genomebrowser you can type the name of the gene in the left upper corner textfield. To further explore the larger region around the gene you can use the zoom buttons at the top of the page
+* Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate. In the genomebrowser you can type the name of the gene in the left upper corner textfield. To further explore the larger region around the gene you can use the zoom buttons at the top of the page.  
 
 
 ---------
@@ -861,5 +889,14 @@ Suggesting therapy
 
 ---------
 
+Final remarks / future directions
+---------------------------------
+In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize your genomics data. 
+
+This ends the Student Course. Feel free to further explore the course materials or our tutorials.
+
+We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
+
+The R2 support team.
 
 

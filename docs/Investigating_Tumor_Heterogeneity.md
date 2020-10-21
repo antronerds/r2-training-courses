@@ -3,7 +3,7 @@
 Graduate Course: Investigating Intra-tumor Heterogeneity
 =================================
 
-*Analyse tumor heterogeneity in Neuroblastoma using the R2 data analysis platform*
+*Analyse tumor heterogeneity in neuroblastoma using the R2 data analysis platform*
 
 This resource is located online at http://r2-training-courses.readthedocs.io
 
@@ -11,16 +11,16 @@ This resource is located online at http://r2-training-courses.readthedocs.io
 Introduction
 ------------
 
-In this section we'll integrate RNA expression data with sequence data, specifically ChIP seq data, to further unravel Neuroblastoma data. 
+In this section we'll integrate RNA expression data with sequence data, specifically ChIP seq data, to further unravel neuroblastoma data. 
 Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which is neural crest derived. During embryogenesis, cells delaminate from the neural crest, migrate ventrally and differentiate into adrenaline- or noradrenaline-producing cells. Neuroblastomas typically express enzymes for the adrenaline-synthesis route. High-stage neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease.
 
-Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of Neuroblastoma tumors. From four patients we obtained tumor biopsies that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines.    
+Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of neuroblastoma tumors. We obtained tumor biopsies from four patients that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines.    
 
 
 Tumors and origins: a first impression of your data
 ---------------------------------------
 
-For a start we'll investigate established childhood tumor cell lines, including neuroblastoma. Established cell lines can be grown and passaged in culture indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do profiles of neuroblastoma cell lines relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of other tumor cell lines and see how they relate. 
+For a start we'll investigate established childhood tumor cell lines, including neuroblastoma. Established cell lines can be grown and passaged in culture indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do profiles of neuroblastoma cell lines relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of 86 other cell lines derived from 6 different childhood tumors and see how they relate. 
 
 *Data used:*  
 * 86 cell lines derived from 6 different childhood tumors (Cellline Childhood cancer - ITCC - 86 - MAS5.0 - u133p2)
@@ -31,9 +31,6 @@ For a start we'll investigate established childhood tumor cell lines, including 
 *Analysis used* 
 * individual gene selection
 * t-SNE: t-distributed stochastic neighbor embedding statistics
-
-*References*
-* Chapter 2.2 & 2.3 Weinberg
 
 <br>
 <br>
@@ -50,14 +47,14 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <br>
 <br>
 
-You're now on the R2 main page. For this course you do not need to be logged in. The web based molecular biology data analysis platform R2 contains a wealth of data and methods to analyze these. Step by step researchers are guided through a web of data analysis possibilities. The portal of R2 shows this principle; step through each of the fields to develop your analysis of choice.  
-In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already.  
-  
- ---------
- <br> 
-   
-  ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumor models?**  
-    
+You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of data analysis possibilities. R2's main page shows this principle; step through each of the fields to develop your analysis of choice.  
+In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
+
+---------
+  ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumor models?**
+
+<br><br>
+
 ---------
 
   * In field 4 type the name of the gene and click **Next**
@@ -67,7 +64,7 @@ A graph shows the expression of this gene's mRNA in the whole set of childhood t
   * Hover with your mouse over data points to show additional information.  
 
 At the bottom of the page you can find a table with adjustable settings.   
-  * The expression values on the y-axis are logarithmic; set the **Transform** option to **none**, and the **Extra Graph Option** to **Track and Gene sort**. Sample annotation is stored in R2 in so called tracks; for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type and click **Adjust Settings** to obtain a more explicit picture.  
+  * The expression values on the y-axis are logarithmic by default; Many settings of the graph can be adapted. Try out a different view of the same data with the following changes to the settings. Set the **Transform** option to **none**. Sample annotation is stored in R2 in so called tracks, for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type. Click on **More Settings** and set the **draw legend** dropdown to *yes* and click **Adjust Settings** to obtain the graph with these adaptations.  
   
 
   * Now try the gene MYCN (Click the **Go to Main** link in the left upper corner)
@@ -85,10 +82,9 @@ At the bottom of the page you can find a table with adjustable settings.
 
 ---------
 
-
 ##### Clustering with tSNE maps
 
-We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map.  
+We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map. Similar cells will clump together on the map.   
 
 
 * Click the button below to show the tSNE map in R2 
@@ -97,11 +93,13 @@ We've seen that the expression of genes differs among the samples and some types
 <br>
 <br>
 
-* Colors are not set by default. In the 'Adjustable settings' table at the bottom of the page, under **ColorMode** select **Color by Track** and use the *itcc_model* track, click **Next** to show the changes.  
-  
-  
----------
 
+
+* Under the graph, a menu allows the user to adapt settings. Colors of the graph points are not set by default. To color the graph with a biologically meaningful annotation, find the **ColorMode** dropdown and select *Color by Track*. Now set the **Track for Color** dropdown to use the *itcc_model* track, and click **Next** to show the changes. 
+
+* The t-SNE algorithm has a parameter called **perplexity**, which determines how much attraction points on a map have towards each other.  Set the perplexity value to *5* and click **next** again.
+
+---------
   ![](_static/images/R2d2_logo.png)**Can you relate the tumors to a type of tissue? (Note: ALL stands for Acute Lymphocytic Leukemia)**
 
 <br>
@@ -114,10 +112,11 @@ We've seen that the expression of genes differs among the samples and some types
 
   ![](_static/images/R2d2_logo.png)**If you had to choose two cell lines for further investigation of lineage identity in neuroblastoma, which would you choose?**
   
-  
+<br>
+<br>
 ---------
- <br><br>
- 
+
+
 Urgency of research: patient material
 ----------------------------------------
 
@@ -158,7 +157,7 @@ We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of
 
 For this analysis we'll directly go to one of the analysis tools of R2: Toplister. The Toplister can assess which genes behave different throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
 
-* Go to R2 by clicking the button below
+* Go to R2 by clicking the button below. R2 will find the 100 genes that have the largest variation in gene expression among these 8 cell lines, three pairs from three tumors of a patient and two classical neuroblastoma cell lines. 
 
 <form name="toplisterform" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
 <input type='hidden' name='minpres' value='1'>
@@ -167,7 +166,7 @@ For this analysis we'll directly go to one of the analysis tools of R2: Topliste
 <input type='hidden' name='table' value='ps_avgpres_gse90803geo8_u133p2'>
 <input type='hidden' name='hugoonce' value='yes'>
 <input type='hidden' name='set' value='standard_deviation'>
-<input type='hidden' name='cortype' value='transform_2log'>
+<input type='hidden' name='cortype' value='transform_log2'>
 <button type="submit" >Go to R2 Toplister</button>
 </form>
 <br>
@@ -247,8 +246,8 @@ We have identified two different types of cells that occur within the same patie
 
 * In Field 3 choose *Find Differential expression between groups* and click **Next**
 
-This dataset has been annotated with 'type' information. Each sample was assigned to either the MESenchymal or the ADReNergic type, in R2 this is called a *track*. 
-* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to **No correction**. Click **Next** twice
+This dataset has been annotated with 'cell type' information. Each sample was assigned to either the MESenchymal or the ADReNergic cell type, in R2 this is called a *track*. 
+* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to **No correction**. (More information on Multiple Testing can be found [here](https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting)) Click **Next** twice.
 * A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset is shown. Click on the hyperlinked name of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well
 * Go back to the window with the differentially expressed genes. This is still open in one of your browser tabs. 
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
@@ -305,7 +304,7 @@ Identifying groups: using signatures to classify other datasets
 ------------------------------------------------------------------
 
 We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis.   
- We've assembled a more complex dataset by gathering the dataset of the 4 pairs of cell lines, additional neuroblastoma cell lines from the first dataset and publicly available data of non-malignant human neural crest tissue. The neural crest undergoes a mesenchymal transition and gives rise to cell types from the adrenergic lineage.
+We've assembled a more complex dataset by gathering the dataset of the 4 pairs of cell lines, additional neuroblastoma cell lines from the first dataset and publicly available data of non-malignant human neural crest tissue. The neural crest undergoes a mesenchymal transition and gives rise to cell types from the adrenergic lineage.
 
 *Data used:*
 * A combination of the 8 cell lines above, additional neuroblastoma cell lines and cells from the neural crest lineage (Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2)
@@ -340,7 +339,7 @@ We now have a signature that distinguishes between the two types of cells. We al
 <br>
 <br>
 
-  ![](_static/images/R2d2_logo.png)**How does this relate to the above?**
+  ![](_static/images/R2d2_logo.png)**How does this relate to the earlier observations on cell lineage?**
 
 <br>
 <br>
@@ -404,10 +403,10 @@ The expression patterns of these specific signatures can be used to compare cell
 
 
 * In field 3 choose **Relate 2 tracks** and click **Next**
-* First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (lab\_id) and on the Y-axis the signature score track that R2 has generated for the MES signature (u-34\_mesadrn\_mes(#)). Click **Next**.
-* A graph is generated for each sample the signature score for the mesadrn\_mes signature is shown, select **Color by Track** for ColorMode and try different tracks. Click **Adjust Settings** to view the result.
-* Now select for the Y-axis the ADRN part of the signature, click **Adjust Settings** to view the result.
-* Now we're going to compare the signature scores; select the MES signature for the X track
+* First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (*lab\_id*) and on the Y-axis the signature score track that R2 has generated for the ADRN signature (s\_mesadrn\_adrn(#)). Click **Next**.
+* A graph is generated. For each sample the signature score for the mesadrn\_adrn signature is shown. Select **Color by Track** for ColorMode and try different tracks. Click **Adjust Settings** to view the result.
+* Now select for the Y-axis the MES part of the signature, click **Adjust Settings** to view the result.
+* To compare the signature scores, select the ADRN signature for the X track
 * If you have time you can also try the **Color by Gene ColorMode**, choose a gene of interest (Note: the dropdown selection is linked to the database, wait for the proper selections to popup...)
 
 ---------
@@ -422,7 +421,7 @@ The expression patterns of these specific signatures can be used to compare cell
 Finding causes: homing in on transcription factors
 -----------------------------------------------------
 
-Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we find out which TF’s might influence the difference between both of these cell lines?
+Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors (TF's) are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we find out which TF's might influence the difference between both of these cell lines?
 
 *Data used:*
 * Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2
@@ -448,13 +447,13 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 <br>
 
 
-Again we're going to find out which genes make a difference, but now in a specific subset that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. 
+Again we're going to find out which genes make a difference, but now in a specific subset of genes that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. 
 * In field 3 select **Find Differential expression between groups** Click **Next**
-* Make sure to select the proper track **Select a track**.  
-* We're now also going to filter for a specific **Gene Filter**; In the third dropdown from the Gene Filters section, where you can select a **Gene set**, click on category *C: geneannot*. Now click again on the same dropdown, and you will see that the dropdown list has expanded with different subcategories. Select the subcategory transcription factors *SC: TF (945)*. Click **Next**. 
-* In the next screen we're asked to further filter for the specific types of samples to compare. Here we're focusing on the difference between ADRN and MES; select these (i.e. uncheck neural_crest). Click **Next**. 
+* Like before, select the track that contains information about the cell types*.
+* We're now also going to filter for a specific gene filter. In the **Gene Filters** section, choose from the bottom dropdown the category *C: geneannot* as **Gene set**. Now click again on the **same dropdown**, and you will see that the dropdown list has expanded with different subcategories. Select the subcategory transcription factors, *SC: TF (945)*. Click **Next**. 
+* In the next screen we're asked to further filter for the specific types of samples to compare. Here we're focusing on the difference between ADRN and MES; select these (i.e. uncheck neural\_crest). Click **Next**. 
 * A list of genes appears. Investigate the top 4 by clicking on the hyperlinked gene symbols. This brings you to the expression view of the gene. 
-* From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the top table.
+* From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the top table. You'll arrive at a website that gathers all known information on genes. A useful section is the **Bibliography** containing short summaries of relevant scientific papers.
 
 ---------
   ![](_static/images/R2d2_logo.png)**Armed with this information, which gene would you choose for further research? Why?**
@@ -479,7 +478,7 @@ From experiments it is known that cells can change their nature, some cells exhi
 ---------
 
 From experiments in our lab it became evident that the two cell types found in Neuroblastoma were able to switch. After a given period of time cells in dishes changed their nature as was proven by the expression of certain marker proteins on their surface.  
- Now that we have a candidate Transcription Factor (TF), we can try to investigate its relevance in this plasticity by manipulating the gene in cell lines we grow in the lab. 
+Now that we have a candidate Transcription Factor we can try to investigate its relevance in this plasticity by manipulating the gene in cell lines we grow in the lab. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you think of ways to manipulate genes in cell lines?**
@@ -520,9 +519,6 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
   <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
   <button type="submit" >Go to R2 main, inducible TF set</button>
 </form>  
-
-<form name="dscope_1" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method="POST" target="_gv"><input type="hidden" name="username" value="pietmolenaar"><input type="hidden" name="ssid" value="d6c8e043764d1daf0aa5ff36c4db7adf"></form>
-
 <br>
 <br>
 
@@ -562,13 +558,13 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 Creating hypotheses: relating to chromatin modification data
 ---------------------------------------------------------------
 
-Apparently this TF is capable of shifting cells from one state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIP–seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
+Apparently this TF is capable of shifting cells from one state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIP-Seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
 
 *Data used:*
 * Four MES and five ADRN neuroblastoma cell lines, including three isogenic cell line pairs. 
 
 *Techniques used:* 
-* ChIP–seq analysis
+* ChIP-Seq analysis
 
 *References*
 * Chapter 1.8 Weinberg
@@ -598,7 +594,7 @@ First we'll check one of the HAND genes, known to play a role in the development
 
 * Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.  
 
-<form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='_gv'>
+<form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype=\"multipart/form-data\" method='POST' target='_gv'>
 <input type='hidden' name='option' value='gbv2_base'>
 <input type='hidden' name='|a01giemsa' value='on'>
 <input type='hidden' name='a02bsequence' value='off'>
@@ -839,9 +835,9 @@ The chromatin state is especially important for transcription factors; we'll re-
 <input type='hidden' name='option' value='display'>
 <input type='hidden' name='table' value='ps_avgpres_gsenatgengeo34_u133p2'>
 <input type='hidden' name='hugoonce' value='yes'>
-<input type='hidden' name='cortype' value='transform_2log'>
-<input type='hidden' name='genecat' value='TF'>
-<input type='hidden' name='selectedtrack' value='mes_adrn_nc'>
+<input type='hidden' name='cortype' value='transform_log2'>
+<input type='hidden' id="geneset0-geneset-select" name="geneset" value="geneannot::TF::transcription factor">
+<input type='hidden' name='selectedtrack' value='cell_type'>
 <input type='hidden' name='test' value='anova'>
 <input type='hidden' name='factor' value='NG_mes_adrn_nc'>
 <input type='hidden' name='subset' value='TRACKER:,0,1,2,3,4,5,6,7,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33'>
@@ -866,15 +862,15 @@ The chromatin state is especially important for transcription factors; we'll re-
 Suggesting therapy
 ---------------------
 
-* With the current new knowledge you derived above, can you think of a strategy to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options?
-* Follow the links above to use the differential expression analysis and the genomebrowser information 
-* Hints: 
-  * There is a category "drugtargets" in R2 to select druggable proteins; you can select these in the same dropdown where the TF selection was done.
-  * Another very interesting one is the "kinase" category, this contains known kinases that have active roles in pathways.
-  * Knowledge about pathways can be exploited as well
-  * The NCBI database can provide additional information from literature about the genes of interest.
-  * Be creative, you might find something interesting!
-
+* With the current new knowledge that you derived above, can you think of a strategy to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options? This is an open question, so be creative, you might find something interesting! If you want, you can follow the suggestions below.  
+  
+* Use the button of 1.9 to perform a differential expression analysis. This time explore other gene categories that could be interesting for drug development. Look at the expression profiles of some genes of your choice. 
+  * Hint: There is a category "drugtargets" in R2 to select druggable proteins; you can select this in the same dropdown where the TF selection was done.  
+  * Another very interesting gene category is the "kinase" category, this contains known kinases that have active roles in pathways.
+* The first button in 1.9 takes you to the Genome Browser at the position of the HAND1 gene. In the upper left corner of that page, you can fill in other genes of interest to look at the ChIP-Seq profiles of the samples at these locations of the genome. Do this for the genes whose expression profiles you just have studied. Try to find genes that show consistent chromatin modification profiles for the one type of neuroblastoma cell lines and a different consistent profile for the other type. 
+* Knowledge about pathways can be exploited as well.
+* The NCBI database can provide additional information from literature about the genes of interest.
+  
 ---------
   ![](_static/images/R2d2_logo.png)**Which strategy do you suggest?**
 
@@ -885,7 +881,7 @@ Suggesting therapy
 
 Final remarks / future directions
 ---------------------------------
-In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize your genomics data. Click the button below to explore this wealth of data.
+In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize your genomics data. 
 
 This ends the Graduate Course part of these course materials. Feel free to further explore the course materials or our tutorials.
 
