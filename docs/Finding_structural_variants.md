@@ -1,7 +1,8 @@
 <a id="finding_structural_variants"> </a>
 
+#################################
 Investigating structural variants
-===
+#################################
 *Not every cancer has determining somatic mutations. Using the full power of WGS data, relevant structural variants can be traced also and linked to potential causes of disease*
 
 In this course we will introduce R2, the web based genomics analysis and visualization application. Throughout the course an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa, new insights can be derived. Throughout this course we'll focus on data of the childhood tumor neuroblastoma.
@@ -11,8 +12,10 @@ We hope to show how R2 can be used to visualize and analyze your WGS data. Pleas
 This resource is located online at http://r2-training-courses.readthedocs.io  
 Additional courses can be found at the same address.
 
+************
 Introduction 
----
+************
+
 Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. At that time, for colorectal cancer, a well defined path of subsequently gained mutations was found to lead to more aggressive tumorigenic cell types (the Vogelstein model).
 
   ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression")
