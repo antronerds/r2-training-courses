@@ -10,14 +10,12 @@ Copyright (c) 2006-2020 Jan Koster
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
    :caption: Student Course
 
    Investigating_Tumor_Heterogeneity
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
    :caption: Graduate Course
 
    Finding_structural_variants
@@ -25,7 +23,6 @@ Copyright (c) 2006-2020 Jan Koster
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
    :caption: Additional Course Materials
    
    Microarray_analysis_-_Using_Tumor_Colon_datasets
