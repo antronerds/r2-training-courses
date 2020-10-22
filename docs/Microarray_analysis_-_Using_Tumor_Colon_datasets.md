@@ -26,8 +26,8 @@ First Part: Colon versus Normal tissue
 
 
 In the first part we start by analyzing a dataset that has been used to identify the differences between normal tissue and colon adenomas. This dataset can be found in R2 as "Mixed Colon - Marra - 64 - MAS5.0 - u133p2".
-For more information on the background of this dataset click on the infobox icon â€˜iâ€™ next to the current selected dataset.
-The name of a dataset is composed of a number of elements, separated with a â€˜-â€™. The Marra set consists of 64 samples and is of a mixed type (32 normal and 32 adenomas).
+For more information on the background of this dataset click on the infobox icon **i** next to the current selected dataset.
+The name of a dataset is composed of a number of elements, separated with a "-". The Marra set consists of 64 samples and is of a mixed type (32 normal and 32 adenomas).
 The normalization was performed according to the MAS5.0 algorithm and we are dealing with an Affymetrix U133 plus 2.0 microarray consisting of ~54,000 so called probe-sets (reporters).
 
 We will use R2 to generate a list of genes which are differentially expressed between the Normal subgroup and Adenoma subgroup in the Marra dataset. Chapter 6 of the R2 tutorial book (Differential expression of Genes) describes how you can use the *Find differential expression between groups* module in more detail. 
@@ -106,7 +106,7 @@ Generate a heatmap (Menu to the right) from the differentially expressed genes a
 
 Often, you do not immediately have an idea which pathways you could look for in your comparisons between groups (normal versus adenoma in our case). A module within R2 providing you with some suggestions is the so called KEGG Pathway Finder by Groups. It assesses whether the number of genes that show significant differential expression between normal and adenoma is significantly higher than you would expect compared to all genes that are mentioned in KEGG. 
 
-Perform a KEGG pathway analysis from the â€˜mainâ€™ page. Make sure that under Representation: all is selected (both under and overrepresentation) Are there KEGG pathways overrepresented in the differentially expressed genes between adenoma and normal tissue?
+Perform a KEGG pathway analysis from the mainpage. Make sure that under Representation: all is selected (both under and overrepresentation) Are there KEGG pathways overrepresented in the differentially expressed genes between adenoma and normal tissue?
 
 If this is true which pathway (Set the p-value 0.01 for the analysis and select striking pathways).
 
@@ -130,12 +130,12 @@ Take a look at the WNT pathway with 3: "View GeneSet (Heatmap)". You can find th
 In what way does this result differ from task 3b?
 
 
-Classical pathway analyses, with sets of genes as members of a pathway, have been used extensively and yielded some valuable insights when applied on mRNA data. However, they are not necessarily informative, since many pathways have been characterized at the protein (modification) level. As such, activation of a pathway does not need to have an effect on the mRNA levels of the members of the pathway themselves. This realization has led to the development of â€˜functional pathway signaturesâ€™, where pathway activity is induced/repressed in an experimental setup, and the impact thereof measured on all mRNAs. mRNA levels that are differentially expressed between active vs inactive pathway status, can then be used as an mRNA proxy for pathway activity. Published functional pathway signatures are collected by the MSigDB of the Broad Institute in a special section of their gene set database (oncogenic_signatures). Within R2, we can also use these sets via the â€œView a geneset (Heatmap)â€� option.
+Classical pathway analyses, with sets of genes as members of a pathway, have been used extensively and yielded some valuable insights when applied on mRNA data. However, they are not necessarily informative, since many pathways have been characterized at the protein (modification) level. As such, activation of a pathway does not need to have an effect on the mRNA levels of the members of the pathway themselves. This realization has led to the development of 'functional pathway signatures', where pathway activity is induced/repressed in an experimental setup, and the impact thereof measured on all mRNAs. mRNA levels that are differentially expressed between active vs inactive pathway status, can then be used as an mRNA proxy for pathway activity. Published functional pathway signatures are collected by the MSigDB of the Broad Institute in a special section of their gene set database (oncogenic_signatures). Within R2, we can also use these sets via the *View a geneset (Heatmap)* option.
 
 
 **Question 5c:**
 
-Return to the main page and select â€œView a geneset (Heatmap)â€� again. Press â€˜nextâ€™. Now from the gene selection dropdown list, select â€˜geneset_broad_2012_oncogenicâ€™ and press â€˜nextâ€™. Again press next. Now, from the gene set(s), area select a complete beta catenin (BCAT) signature (Hold CTRL key to select a UP and a DN gene set combination). Press â€˜nextâ€™ again to create a heatmap representation. Are the 2 groups also separated on the basis of the BCAT signature?
+Return to the main page and select *View a geneset (Heatmap)* again. Press **next**. Now from the gene selection dropdown list, select *geneset_broad_2012_oncogenic* and press **next**. Again press next. Now, from the gene set(s), area select a complete beta catenin (BCAT) signature (Hold CTRL key to select a UP and a DN gene set combination). Press **next** again to create a heatmap representation. Are the 2 groups also separated on the basis of the BCAT signature?
 
 
 **Question 6a: Clinical relevance**
@@ -154,18 +154,18 @@ Are there drug targets listed in the list of differentially expressed genes? If 
 
 In the previous exercises we have focused on the differences between two groups within the colon dataset. Another starting point of your analyses could be a gene of interest. We already encountered AXIN2 in our analysis.
 
-Try to analyze which genes show a correlated expression pattern with AXIN2 in our dataset. Which genes are in the top3? (See chapter 7 of the tutorial, â€œFind genes correlating with your genes of interestâ€�)
+Try to analyze which genes show a correlated expression pattern with AXIN2 in our dataset. Which genes are in the top3? (See chapter 7 of the tutorial, *Find genes correlating with your genes of interest*)
 
 **Question 7b:**
 
 In the differential expression analysis between normal and adenoma samples, we also found AXIN2 to be differentially expressed. Therefore it is possible that the correlation analysis is biased (in other words, the correlation is solely caused by the 2 groups of samples).
 
-To investigate whether there is a bias, we can inspect the correlations for the top 3 genes of the correlation analysis in 2GeneView by clicking on the gene name. Tip: You can use 2GeneView to select for a subset of samples (so you can assess the significance of correlation in only the adenomaâ€™s or only the normal samples).
+To investigate whether there is a bias, we can inspect the correlations for the top 3 genes of the correlation analysis in 2GeneView by clicking on the gene name. Tip: You can use 2GeneView to select for a subset of samples (so you can assess the significance of correlation in only the adenoma's or only the normal samples).
 
 
 **Question 7c:**
 
-You can strengthen the argument of a correlation between 2 genes if such a relation can be identified in other cohorts as well. In R2, we can easily check this relation in all datasets that are available by using the â€˜2D-distributionâ€™ from the 2GeneView page.
+You can strengthen the argument of a correlation between 2 genes if such a relation can be identified in other cohorts as well. In R2, we can easily check this relation in all datasets that are available by using the *2D-distribution* from the 2GeneView page.
 
 Examine the 2D distribution of the gene which is most promising. Is this correlation only found in our dataset or does this correlation also apply to other datasets?
 
@@ -250,7 +250,7 @@ Question 5a:
 
 
 *
-This time not only the genes are used that make a difference in the group shown.  The clustering in task3b was based on differentially expressed genes already found so itâ€™s not surprising you find a heatmap with nice clusters.*
+This time not only the genes are used that make a difference in the group shown.  The clustering in task3b was based on differentially expressed genes already found so it's not surprising you find a heatmap with nice clusters.*
 
 
 Question 5c:
@@ -349,7 +349,7 @@ In this data set of 84 tumors, we will also look at differences in expression be
 
 This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors.
 
-Use the â€œFind Differential expressed genes between groupsâ€� module to generate a list of genes that is differentially expressed between MSI and MSS characterized tumors.
+Use the *Find Differential expressed genes between groups* module to generate a list of genes that is differentially expressed between MSI and MSS characterized tumors.
 
 **Question 8b:**
 
@@ -367,7 +367,7 @@ Are genes equally distributed for the up regulated and down regulated genes? Can
 **Question 9a: Finding genetic causes**
 
 
-Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the â€˜DNA repairâ€™ genes. There are 247 genes annotated as DNA repair genes. 
+Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'Gene set' the *DNA repair* genes. There are 247 genes annotated as DNA repair genes. 
 
 How many of the DNA repair genes have a higher expression in MSI tumors, and how many have a higher expression in MSS tumors?
 
@@ -435,7 +435,7 @@ In Question 8a you generated a list of differential expressed genes. It is inter
 
 *Note: To store genecategories and/or tracks you have to be logged in).  For this part creating a user account and/or login if you haven't done so is neccessary*
 
-Generate a list of differentially expressed genes between MSI-MSS annotated tumors. Select again the â€˜Tumor Colon - Watanabe - 84 - MAS5.0 - u133p2â€™ dataset. Select â€œFind Differential expression between groups. Adapt the following settings in the â€œselection criteriaâ€� panel, set test p-value to 0.001 and Correct for Multiple testing to Bonferroni.
+Generate a list of differentially expressed genes between MSI-MSS annotated tumors. Select again the *Tumor Colon - Watanabe - 84 - MAS5.0 - u133p2* dataset. Select *Find Differential expression between groups*. Adapt the following settings in the **selection criteria** panel, set test **p-value** to *0.001* and **Correct for Multiple testing** to *Bonferroni*.
 
 
 In the right panel you can store your result as a genecategory. Give the list a meaningful name and store you result in the personal track section (Note: The 24 hrs option deletes your stored results automatically after 24 hrs).
@@ -443,10 +443,10 @@ In the right panel you can store your result as a genecategory. Give the list a 
 
 **Question 10b**
 
-Weâ€™re now going to use this gene category as a set to explore other datasets. 
-Select â€˜Tumor Colon (Core-Transcript) - Sveen - 333 - rma_sketch - huex10tâ€™ in the main menu (take care: donâ€™t select the Tumor Colon (Core-Exon) - Sveen - 333 - rma_sketch - huex10p version).
+We're now going to use this gene category as a set to explore other datasets. 
+Select *Tumor Colon (Core-Transcript) - Sveen - 333 - rma_sketch - huex10t* in the main menu (take care: don't select the *Tumor Colon (Core-Exon) - Sveen - 333 - rma_sketch - huex10p* version).
 
-At the main page select at 3: â€˜Type of analysisâ€™-> â€˜View a geneset (Heatmap)â€™ and click next. In the â€˜adjustable settingsâ€™ panel you can select a subset of the patients with the â€˜sample filterâ€™. Select the msi-status from the droplist, and subsequently select mss, msi-h and msi-l. Do not forget to click the red **<span style="color:red">confirm </span>** link. In the Genecategory section select the genecategory you just generated in the personal track section. This can be done by first selecting â€˜My GeneCategoriesâ€™, and click next, click next and select the category just created.
+At the main page select at 3: **Type of analysis** *View a geneset (Heatmap)* and click **next**. In the **adjustable settings** panel you can select a subset of the patients with the **sample filter**. Select the msi-status from the droplist, and subsequently select mss, msi-h and msi-l. Do not forget to click the red **<span style="color:red">confirm </span>** link. In the Genecategory section select the genecategory you just generated in the personal track section. This can be done by first selecting *My GeneCategories*, and click **next**, click **next** and select the set just created.
 
 The heatmap clearly shows a pattern, suggesting a different gene expression pattern between the MSI and MSS group. Does the disease free survival track correspond with the gene expression pattern?
 
@@ -454,7 +454,7 @@ The heatmap clearly shows a pattern, suggesting a different gene expression patt
 **Question 10c**
 
  
-Use the â€œFind differential Expressed genes between Groupsâ€� module to generate a list of differentially expressed genes between the msi-l and msi-h subgroups.  Select the Bonferroni method for the multiple testing correction and store the genelist as a gene category again giving it a meaningful name. 
+Use the *Find differential expression between Groups* module to generate a list of differentially expressed genes between the msi-l and msi-h subgroups.  Select the Bonferroni method for the multiple testing correction and store the genelist as a gene category again giving it a meaningful name. 
 
 In your browser, go back to the tab with the list of genes and click on Heatmap (z-score) button. Do you think that there is a relation between the disease free survival event track and the MSI status?
 
@@ -462,28 +462,28 @@ In your browser, go back to the tab with the list of genes and click on Heatmap 
 
 The second generated heatmap suggests that there is a relation. However this is not statistically proven. Combining two R2 modules allows you to calculate the significance of the relation between subgroups in your dataset.
 
-We can use our list of differentially expressed genes as a signature in R2, and separate the patient cohort on the basis of this gene-category. For this, we can make use of the k-means function in the platform. (For more on the K-means clustering algorithm see chapter 11 in the tutorials book on that subject)
+We can use our list of differentially expressed genes as a signature in R2, and separate the patient cohort on the basis of this gene set. For this, we can make use of the k-means function in the platform. (For more on the K-means clustering algorithm see chapter 11 in the tutorials book on that subject)
 
-In the Main menu, select â€˜Type of analysisâ€™ -> â€˜K-meansâ€™, and click next, in the Adjustable settings panel select the msi diagnosed tumors only at sample filter , click confirm !! , select at Gene category section the geneset you generated and stored at task 10a (Wanatabe msi-mss..). Leave all the default settings and click next.  
+In the Main menu, select for **Type of analysis** *K-means*, and click **next**, in the Adjustable settings panel select the msi diagnosed tumors only at **sample filter** , and click **confirm**! Select at **Gene set** section the geneset you generated and stored at task 10a (Wanatabe msi-mss..). Leave all the default settings and click **next**.  
 
-R2 has clustered your data making use of the K-means algorithm into two groups based on the expression of the genes of the selected Gene-category. On the top of the screen click the store as track button, this allows you to save the two groups as a track for later use. Give the track a meaning full name and click â€˜buildsetâ€™.
+R2 has clustered your data making use of the K-means algorithm into two groups based on the expression of the genes of the selected Gene set. Click the **store as track** button, this allows you to save the two groups as a track for later use. Give the track a meaning full name and click **buildset**.
 
-Repeat this procedure to make another track based on the Gene category created in Task 10b (Sveen , msi-l and mssi-h only).
+Repeat this procedure to make another track based on the Gene set created in Task 10b (Sveen , msi-l and mssi-h only).
 
-Relations between the tracks established with the K-means module can be statistically compared using the fisher exact test. An example is the relation between the tracks created based on the gene signatures and â€˜the disease free survival trackâ€™. This is explained in more detail in chapter 5 of the tutorial â€˜Annotation Analysisâ€™ 
+Relations between the tracks established with the K-means module can be statistically compared using the fisher exact test. An example is the relation between the tracks created based on the gene signatures and the *disease free survival* track. This is explained in more detail in the tutorial in chapter *Annotation Analysis*. 
 
 **Question 10e**
 
-In the main menu select â€˜Relate two tracksâ€™ and click next. In the next screen select the â€˜Disease free survival trackâ€™ for the X-track and the K-means-Wanatabe you generated as the Y-track. In the sample filter track select the msi tumors only (donâ€™t forget to click â€˜confirmâ€™ ) and click next. Save the picture or right click with the right mouse button on â€™go to mainâ€™ and repeat the â€˜relate two tracksâ€™ analyses for the survival and the Kmeans-msi-only track. Compare the two fisher-exact test results. What do you conclude?
+In the main menu select *Relate two tracks* as analysis and click **next**. In the next screen select the *Disease free survival track* for the **X-track** and the *K-means-Wanatabe* you generated as the **Y-track**. In the **sample filter** track select the *msi tumors* only (don't forget to click **confirm**) and click **next**. Save the picture or right click with the right mouse button on **go to main** and repeat the *relate two tracks* analysis for the *survival* and the *Kmeans-msi-only* track. Compare the two fisher-exact test results. What do you conclude?
 
 **Question 10f**
 
-In the graphics section , select at ColorMode, color by track and choose â€˜tumor_stage(cat)â€™ at track for color, click adjust settings. Now the individual sample are colored by their tumor-stage. Does this result hint toward a relation between tumor stage and survival ?.
+In the graphics section , select at **ColorMode**, *color by track* and choose *tumor_stage(cat)* at **track for color**, click **adjust settings**. Now the individual sample are colored by their tumor-stage. Does this result hint toward a relation between tumor stage and survival ?.
 
 **Question 10g**
 
 
-If there is still time left you can investigate other datasets with a MSI-MSS annotation such as Tumor Colon (UICC II) - Hummel - 53 - MAS5.0 - u133p2 for relations between tracks and clinical annotation. 
+If there is still time left you can investigate other datasets with a MSI-MSS annotation such as *Tumor Colon (UICC II) - Hummel - 53 - MAS5.0 - u133p2* for relations between tracks and clinical annotation. 
 
 ##### Answers: Part II
 
@@ -580,7 +580,7 @@ Question 10c:
 
 [**Finding differential expression: Survival**](_static/practical_geneexpression_genecatsveen.png)
 
-*By just â€˜eyeballingâ€™ suggest there is something going on. Most of the â€œNoâ€� samples of the disease free survival status track correspond with the msi-h status. 
+*By just 'eyeballing' suggest there is something going on. Most of the samples of the disease free survival status track correspond with the msi-h status. 
 This is also in line with the diffuse pattern within the MSI subgroup when looking at the MLH1 gene expression as shown in the previous task (MLH1 expression of the Wanatabe dataset.)*
 
 Question 10d:
@@ -592,7 +592,7 @@ Question 10d:
 [**Finding differential expression: K-mneans **](_static/practical_geneexpression_kmeans.png)
 
 
-*K-means clustering with the â€œstore as track buttonâ€�*
+*K-means clustering with the **store as track** button
 
 Question 10e:
 
