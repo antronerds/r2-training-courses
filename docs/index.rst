@@ -19,10 +19,10 @@ Copyright (c) 2006-2020 Jan Koster
    :maxdepth: 2
    :numbered:
    :caption: Graduate Course
-   
+
    Finding_structural_variants
    Investigating_Tumor_Heterogeneity
-   
+
 .. toctree::
    :maxdepth: 2
    :numbered:
