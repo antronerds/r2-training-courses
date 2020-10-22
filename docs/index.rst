@@ -10,7 +10,7 @@ Copyright (c) 2006-2020 Jan Koster
 
 .. toctree::
    :maxdepth: 2
-   :numbered: 3
+   :numbered:
    :caption: Student Course
 
    Investigating_Tumor_Heterogeneity
@@ -31,7 +31,7 @@ Copyright (c) 2006-2020 Jan Koster
 
 .. toctree::
    :maxdepth: 2
-   :numbered: 3
+   :numbered:
    :caption: Gene expression in Rheumatoid Arthritis
 
    RNA_seq_data_analysis_-_Using_Rheumatoid_Arthritis_data
