@@ -224,8 +224,7 @@ The cell line pairs from the patient were also investigated for the tumor stem c
 
 
 Which genes make a difference? Creating signatures
------------------------------------------------------
-
+---
 We have identified two different types of cells that occur within the same patient. Neuroblastoma apparently has a heterogenous nature. What genes determine the difference between the two types? We’ll use RNA expression data again but now we will use a predefined, supervised classification in groups to search for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
 
 *Data used:*  
@@ -310,8 +309,7 @@ In R2 there are much more sets of genes that have been found to be implemented i
 
 
 Identifying groups: using signatures to classify other datasets
-------------------------------------------------------------------
-
+---
 We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis.   
 We've assembled a more complex dataset by gathering the dataset of the 4 pairs of cell lines, additional neuroblastoma cell lines from the first dataset and publicly available data of non-malignant human neural crest tissue. The neural crest undergoes a mesenchymal transition and gives rise to cell types from the adrenergic lineage.
 
@@ -378,8 +376,7 @@ When observing such clear-cut patterns it is good scientific practice to test th
 
 
 Using scores for further characterization
---------------------------------------------
-
+---
 The expression patterns of these specific signatures can be used to compare cell types. We can do this by summarizing the expression data of all genes in the signature in each cell type in one value; a signature score. The figure below shows the signature score of the MES part of the signature in a specific sample.  
 
   ![](_static/images/TumorHeterogeneity_SignatureScores.png "Figure 5: The signature score as calculated for a specific sample in the MES signature.")
@@ -428,8 +425,7 @@ The expression patterns of these specific signatures can be used to compare cell
 
 
 Finding causes: homing in on transcription factors
------------------------------------------------------
-
+---
 Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors (TF's) are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we find out which TF's might influence the difference between both of these cell lines?
 
 *Data used:*
@@ -474,8 +470,7 @@ Again we're going to find out which genes make a difference, but now in a specif
 
 
 Proving causes: manipulating cell lines
-------------------------------------------
-
+---
 From experiments it is known that cells can change their nature, some cells exhibit a certain plasticity.
 
 ---------
@@ -565,8 +560,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 
 
 Creating hypotheses: relating to chromatin modification data
----------------------------------------------------------------
-
+---
 Apparently this TF is capable of shifting cells from one state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIP-Seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
 
 *Data used:*
@@ -869,8 +863,7 @@ The chromatin state is especially important for transcription factors; we'll re-
 
 
 Suggesting therapy
----------------------
-
+---
 * With the current new knowledge that you derived above, can you think of a strategy to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options? This is an open question, so be creative, you might find something interesting! If you want, you can follow the suggestions below.  
   
 * Use the button of 1.9 to perform a differential expression analysis. This time explore other gene categories that could be interesting for drug development. Look at the expression profiles of some genes of your choice. 
@@ -889,7 +882,7 @@ Suggesting therapy
 ---------
 
 Final remarks / future directions
----------------------------------
+---
 In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize your genomics data. 
 
 This ends the course. Feel free to further explore the course materials or our tutorials.

@@ -1,8 +1,7 @@
 <a id="finding_structural_variants"> </a>
 
 Investigating structural variants
-===========================
-
+===
 *Not every cancer has determining somatic mutations. Using the full power of WGS data, relevant structural variants can be traced also and linked to potential causes of disease*
 
 In this course we will introduce R2, the web based genomics analysis and visualization application. Throughout the course an integrative approach to genomics data will be used. By combining sequencing data with expression data and vice versa, new insights can be derived. Throughout this course we'll focus on data of the childhood tumor neuroblastoma.
@@ -13,7 +12,7 @@ This resource is located online at http://r2-training-courses.readthedocs.io
 Additional courses can be found at the same address.
 
 Introduction 
-------------
+---
 Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. At that time, for colorectal cancer, a well defined path of subsequently gained mutations was found to lead to more aggressive tumorigenic cell types (the Vogelstein model).
 
   ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression")
@@ -31,8 +30,7 @@ Despite decades of research high stage neuroblastoma still has a very poor progn
 
 
 Exploring the dataset
----------------------
-
+---
 The oncogenomics department of the AMC has gathered a richly annotated set of neuroblastoma tumors. To easily explore this, the R2 development team has devised the concept of Datascopes; a convenient view on the data with some pre-built analyses readily available.  
   
   
@@ -52,8 +50,7 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 The samples of a dataset can be annotated with, for example, clinical data or molecular biology parameters. Each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns with e.g. different phenotypes or demographic characteristics.  
 
 Pie Charts
-----------
-
+---
 The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value.  
 <br>
 
@@ -83,8 +80,7 @@ Until recently only several genomic aberrations were known:
 To gain further insight, the Oncogenomics department of the AMC set out to sequence 87 untreated primary neuroblastoma tumours of all stages from this set.
 
 Somatic mutations in neuroblastoma
-----------------------------------
-
+---
 The samples were sent to the Complete Genomics sequencing facility, now taken over by BGI, for whole-genome paired-end sequencing. They provide a sequence as a service model. Genomes were sequenced at an average coverage of 50. Compared to the HG18 reference genome, an average of 3,347,592 singlenucleotide variants (SNVs) per genome were obtained, which is in accordance with reported frequencies of interpersonal variants. 
 
 The R2 development team has processed these WGS data further using the CGAtools software to compare tumor with lymphocyte genomes. This provided a somatic score, estimating the likelihood of mutations to be somatic. Through several filtering steps the somatic mutations were determined with respect to the reference genome.
@@ -232,7 +228,7 @@ WGS data allows for further analysis; the paired end technique enables the disco
 
 
 Chromothripsis
---------------
+---
 While investigating the WGS data, an interesting phenomenon was observed. In some tumor samples parts of the genome appeared to be riddled with structural variants, resulting in a shredded chromosomal structure.
 
 * Go to the overview page with circos plots.
@@ -278,7 +274,7 @@ To see how chromothripsis relates to clinical data we can investigate survival d
 
 
 Locations of structural variants, hotspots?
--------------------------------------------
+---
 Chromothripsis can be seen as an extreme case of concentration of structural variants in one sample. The question arises whether there are other hotspots of structural variation on the genome that are found in multiple samples. These might point to functional interactions.
 
 * One of the genes that exhibited such a hotspot is the TERT gene. Go back to the startpage of the Graduate Training Course portal and select the GenomeBrowser tile. This brings you to the TERT gene on the genome with some preset annotations. 
@@ -326,8 +322,7 @@ Chromothripsis can be seen as an extreme case of concentration of structural var
 ---------
  
 Remarks
----------------------------------
-
+---
 This ends the first part of this course. You can continue now with the analysis of intra-tumor heterogeneity.
 We hope that this course has been helpful. At the end of the workshop, please provide feedback on the course with <a href="https://docs.google.com/forms/d/e/1FAIpQLScy5xoA4btrYfuOOhc5qFKmYkV9_SBv1PQABPgV7eVJY8gk4A/viewform" target="_blank">this form</a>.  
 
