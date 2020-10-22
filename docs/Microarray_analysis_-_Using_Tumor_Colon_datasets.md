@@ -3,7 +3,9 @@
 Differential gene expression in micro-array colon cancer data
 =================================
 
-*Typical analysis that can be performed using micro-array data, in this case from Colon cancer dataset*
+*I this document you will be guided through typical analysis steps that can be performed using micro-array data. In this case we will be using two colorectal cancer datasets.*  
+   
+If you find any question, text or button in this document deviating from what you see in the platform, please do not hesitate to contact us at r2-support@amc.nl. Any question or comment is welcome. *
 <br>
 
 Introduction
