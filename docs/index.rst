@@ -17,7 +17,6 @@ Copyright (c) 2006-2020 Jan Koster
 
 .. toctree::
    :maxdepth: 3
-   :numbered: 3
    :caption: Graduate Course
    
    Finding_structural_variants
