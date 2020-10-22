@@ -24,7 +24,7 @@ Copyright (c) 2006-2020 Jan Koster
    
 .. toctree::
    :maxdepth: 2
-   :numbered: 3
+   :numbered:
    :caption: Additional Course Materials
    
    Microarray_analysis_-_Using_Tumor_Colon_datasets
