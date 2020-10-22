@@ -15,7 +15,7 @@ An online step by step tutorial book is available in the help section of R2.
 We will often refer to these tutorials.  
   
   
-**Answers to the questions can be found at the bottom of this course.**   
+*Answers to the questions can be found at the bottom of this course.*   
   
 This resource is located online at http://r2-training-courses.readthedocs.io
 
