@@ -11,16 +11,9 @@ Copyright (c) 2006-2020 Jan Koster
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: Gene expression in Rheumatoid Arthritis
-
-   RNA_seq_data_analysis_-_Using_Rheumatoid_Arthritis_data
-
-.. toctree::
-   :maxdepth: 2
-   :numbered: 3
    :caption: Students Course
 
-   Investigating_Tumor_Heterogeneity_student_version
+   Investigating_Tumor_Heterogeneity
 
 .. toctree::
    :maxdepth: 2
@@ -36,3 +29,10 @@ Copyright (c) 2006-2020 Jan Koster
    :caption: Additional Course Materials
    
    Microarray_analysis_-_Using_Tumor_Colon_datasets
+
+.. toctree::
+   :maxdepth: 2
+   :numbered: 3
+   :caption: Gene expression in Rheumatoid Arthritis
+
+   RNA_seq_data_analysis_-_Using_Rheumatoid_Arthritis_data
