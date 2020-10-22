@@ -12,8 +12,11 @@ the Department of Oncogenomics at the Academic Medical Center (AMC) in Amsterdam
 the Netherlands. The principles and features you will encounter during this workshop
 are well established in the community that analyze and visualize microarray data.
 An online step by step tutorial book is available in the help section of R2.
-We will often refer to these tutorials.
-
+We will often refer to these tutorials.  
+  
+  
+**Answers to the questions can be found at the bottom of this course.**   
+  
 This resource is located online at http://r2-training-courses.readthedocs.io
 
 
@@ -59,20 +62,20 @@ So called tracks contain the annotation parameters of series of arrays of tumors
 **Question 1a:**
 
 You can also choose between several multiple testing correction methods. Which one is the most stringent?
-*Answer: At the end of this training course*
+
 
 Before we start the calculations, make sure you selected *log2* as transformation and use *p<0.01* as a p-value cutoff. Then click **next**, and leave the group selection as is, click **next** again to start the analysis.
 
 **Question 1b:**
 
 R2 has generated a large list of genes which are differentially expressed between the selected subgroups. Can you say something about the distribution between up- or down-regulated genes?  Are the groups equal in size? (Hint: On the right side you can find buttons for further analyses, but also tables with summaries of the data).
-*Answer: At the end of this training course*
+
 
 **Question 1c:**
 
 Next to many publicly available datasets, R2 also hosts a lot of curated lists of genes which we call gene sets. These gene sets can be used to restrict an analysis as well. We can adapt our current search by scrolling down to the end of our gene list. There we find the Adjustable settings menu with which several settings can be chosen to adapt the analysis.   
 We are going to limit our analysis to genes specifically known to be involved in colorectal cancer. In the **Gene Filters** box you can use a **Gene set** to filter your list. Use the last dropdown of this Gene Filters box to first select the category with gene annotation from KEGG, *C: geneannot_kegg*. Click again on the **same dropdown menu** to now see an expended list of subcategories, and choose *SC: Human Diseases*. Again use the **same dropdpwn field** to find that the list of options has been expanded to show gene sets (GS). Select the one that you think is appropriate for our analysis. Click on **Adjust Cutoff** at the bottom of the Adjustable settings menu to 
-*Answer: At the end of this training course*
+
 
 
 **Question 2a:**
@@ -80,7 +83,7 @@ We are going to limit our analysis to genes specifically known to be involved in
 The most significant gene in the list is the AXIN2 gene. Click on this entry from your result set to open the Gene View. The graph shows a neat separation in groups. Scroll down to investigate the probesets that were used. AXIN2 is represented by no fewer than four reporters (probe sets) on the Affymetrix U133 Plus 2.0 chip. 
 
 Examine the expression signals of the 4 probe sets, what do you notice
-*Answer: At the end of this training course*
+
 
 **Question 2b:**
 
