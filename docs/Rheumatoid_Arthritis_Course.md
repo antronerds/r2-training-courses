@@ -1,2 +1,0 @@
-https://www.frontiersin.org/articles/10.3389/fimmu.2018.02832/full
-The deep analysis of immune functions at the single cell level combined with a better understanding of the generation and maintenance of the various atypical memory CD4+ T cell subsets with a naive-like phenotype will be important in immune-monitoring of vaccination and immunotherapies in infectious diseases.
