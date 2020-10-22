@@ -25,8 +25,8 @@ Copyright (c) 2006-2020 Jan Koster
    :maxdepth: 1
    :caption: Additional Course Materials
    
-   Microarray_analysis_-_Using_Tumor_Colon_datasets
-   RNA_seq_data_analysis_-_Using_Rheumatoid_Arthritis_data
+   Microarray_analysis_Using_Tumor_Colon_datasets
+   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
 
 
 
