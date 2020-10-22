@@ -1,7 +1,10 @@
 <a id="rna_seq_data_analysis_-_using_rheumatoid_arthritis_data"> </a>
 
+Gene expression in Rheumatoid Arthritis
+=======
+
 Introduction
-===
+---
 Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by inflammatory cell infiltration, such as T cells, B cells, macrophages and plasma cells. Production of cytokines and proteases lead to chronic inflammation of the synovial tissues and progressive joint disability. RA affects as much as 1% of the worldwide population. Although the exact causes are unknown, decades of research has led to increasingly detailed understanding of multiple disease mechanisms. Different treatments for RA have been proposed, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ). However, a significant proportion of patients do not respond to initial treatment or reach remission. Others experience recurrence or deterioration of their disease.   
    
 This has led to extensive efforts to find more specific diagnostic markers. The complexity of the disease mechanisms have spurred unbiased searches using genetics, transcriptomics or proteomics. Because of difficulties in measuring markers in the inflamed joints, efforts have, to a large extent focused on analyses of peripheral blood. However, as Lee et al. point out ([Cytokine, March 2020](https://doi.org/10.1016/j.cyto.2019.154960)), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.   
@@ -11,13 +14,13 @@ This has led to extensive efforts to find more specific diagnostic markers. The 
    [**Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)**](_static/images/KIT_rheumatoid-arthritis-drug-targets.jpg)
 
  Immune response in blood and synovial fluid  
-===
+---
  Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate patient and experimental data.  
    
  Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) have collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data and other similar studies have been uploaded into our platform R2. We will make use of these datasets to explore the  differences and similarities between peripheral blood and synovial fluid, to study the characteristics of T cells, and to look for possible effects of treatments. 
   
- A first look at T cell gene expression with the R2 platform
- --- 
+##### A first look at T cell gene expression with the R2 platform
+
  *Data used:*  
  * R2 titel: Disease Rheumatoid arthritis subset (drugs) - Okuzono - 75 - deseq2 - gpl17303
  * Description: 75 blood and synovial T cell samples of RA patients with rheumatoid arthritis 
@@ -112,8 +115,8 @@ The immune system is a complex system of different cell types that interact with
  
  ---------
  
-Exploring relevant annotation of a dataset
----
+##### Exploring relevant annotation of a dataset
+
 *Analysis used*
 * Cohort Overview
 
@@ -139,8 +142,7 @@ R2 presents the Okuzo dataset samples with its available annotation in a table a
 
  Based on the expression profiles of each sample, we would like to know which samples behave much alike and which show different patterns? Before we used the analysis of *One Gene View* to plot the gene expression of a single gene. Often a dataset contains expression values of about 20.000 genes for each sample. We cannot check all these genes one by one to find out which samples show similar expression profiles. Let's see if we can find out more information with a so called t-SNE analysis.  
 
-An unbiased look at sample similarity
----
+##### An unbiased look at sample similarity
 
 *Analysis used* 
 * t-SNE
@@ -178,8 +180,7 @@ Each dot is a sample and the axes are the more abstract t-SNE variables (v1 and 
   
  ---------
 
-Finding pathways that make a difference
----
+##### Finding pathways that make a difference
 
 *Analyses used* 
 * Differential Expression between groups
@@ -222,7 +223,7 @@ We have seen that the expression profiles of the same cell types can show differ
  
    
  Effects of treatment
-  ===
+---
  Now that we have a better understanding of gene expression of T-cells, let's have a look if we can find any effect of rheumatoid arthritis treatments on a genomic scale.    
  
 *Data used:*  
@@ -240,8 +241,8 @@ We have seen that the expression profiles of the same cell types can show differ
 * One Gene View
 * PCA
 
-Explore the provided information
----
+##### Explore the provided information
+
 How does treatment effect gene expression? Let's have a look at a dataset of Lauwerys et al. In the dataset we can find samples taken from the synovial fluid in the knee of 20 early RA patients, both before and after treatment.  
   
 Click the button below to go to R2 with the correct dataset selected.   
@@ -279,8 +280,7 @@ Since this set is treatment related, let's plot some data to see if treatment ha
 <br><br>  
   
 
-An unbiased look into the dataset
----
+##### An unbiased look into the dataset
 
 Also in this set, we take a look at an unbiased view of expression profile sample similarity. This time, we will use **PCA** (Principle Component Analysis ). Like t-SNE, PCA analysis can summarize the characteristics of many genes in new abstract variables. The new variables are called principle components (PCs). PCA will plot the samples that behave similarly in their expression profiles closer together as well.
 
@@ -292,8 +292,8 @@ The PCA calculation creates many principle components. The first PC explains mos
 * Under the graph, select **PCA Projection: PC1:PC2:PC3-3D** and click **next** to see the effect. You can play with the 3D cube by holding your right mouse button down while dragging your mouse around. 
  
 
-Showing pathways in heatmaps
----
+##### Showing pathways in heatmaps
+
 We now want to know which pathways are affected by treatment with tocilizumab.
 * From the main page, select the analysis **Differential Expression between groups**, click **Next** 
 * Choose *Select a track:* **therapy (2 cat)**
@@ -310,9 +310,4 @@ The list shows the genes that are differentially expressed before and after trea
  
 --- 
 
-
-To Do
-- Titel diff exp gene selector wrong at group selection
-- create track pid_drug and track group with gr_tcz and gr_mtx
-- either plot fold over fold between the two treatments with theuma pathway enlightened, or boxplot grouped by drug 
 

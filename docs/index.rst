@@ -26,9 +26,7 @@ Copyright (c) 2006-2020 Jan Koster
    :caption: Additional Course Materials
    
    Microarray_analysis_-_Using_Tumor_Colon_datasets
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Gene expression in Rheumatoid Arthritis
-
    RNA_seq_data_analysis_-_Using_Rheumatoid_Arthritis_data
+
+
+

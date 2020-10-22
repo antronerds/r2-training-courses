@@ -1,5 +1,12 @@
 <a id="rna_seq_data_analysis_-_using_rheumatoid_arthritis_data"> </a>
 
+// To Do
+- Titel diff exp gene selector wrong at group selection
+- create track pid_drug and track group with gr_tcz and gr_mtx
+- either plot fold over fold between the two treatments with theuma pathway enlightened, or boxplot grouped by drug */
+
+
+
 Introduction
 ===========================================
 
