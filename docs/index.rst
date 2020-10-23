@@ -10,6 +10,7 @@ Copyright (c) 2006-2020 Jan Koster
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
    :caption: Student Course
 
    Investigating_Tumor_Heterogeneity_student_version_bu
