@@ -25,7 +25,7 @@ Using advanced data analysis, statistics and clustering methods, the field of bi
 
 Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which is neural crest derived. During embryogenesis, cells delaminate from the neural crest, migrate ventrally and differentiate into adrenaline- or noradrenaline-producing cells. Neuroblastomas typically express enzymes for the adrenaline-synthesis route. High-stage neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease.
 
-Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this nasty characteristic of neuroblastoma tumors. We obtained tumor biopsies from four patients that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines.    
+Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this aggressive characteristic of neuroblastoma tumors. We obtained tumor biopsies from four patients that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines.    
 
 
 Tumors and origins: a first impression of your data
@@ -75,7 +75,7 @@ A graph shows the expression of this gene's mRNA in the whole set of childhood t
   * Hover with your mouse over data points to show additional information.  
 
 At the bottom of the page you can find a table with adjustable settings.   
-  * The expression values on the y-axis are logarithmic by default; Many settings of the graph can be adapted. Try out a different view of the same data with the following changes to the settings. Set the **Transform** option to **none**. Sample annotation is stored in R2 in so called tracks, for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type. Click on **More Settings** and set the **draw legend** dropdown to *yes* and click **Adjust Settings** to obtain the graph with these adaptations.  
+  * The expression values on the y-axis are logarithmic by default; Many settings of the graph can be adapted. Try out a different view of the same data with the following changes to the settings. Set the **Transform** option to *none*. Sample annotation is stored in R2 in so called "tracks", for **use track** choose the *itcc_model* track that contains the information which sample belongs to which tumor type. Click on **More Settings** and set the **draw legend** dropdown to *yes* and click **Adjust Settings** to obtain the graph with these adaptations.  
   
 
   * Now try the gene MYCN (Click the **Go to Main** link in the left upper corner)
@@ -210,9 +210,9 @@ Here you can choose to perform an additional analysis. The heatmap vizualization
 The cell line pairs from the patient were also investigated for the tumor stem cell marker gene CD133 and for their migration capability. See the results in the figure below:
 
 
-  ![](_static/images/TumorHeterogeneity_PairsCD133Migrate.png "Figure 4: CD133 Facs analysis and transwell migration assay of isogenic pairs")
+  ![](_static/images/TumorHeterogeneity_PairsCD133Migrate.png "Figure 4: CD133 FACS analysis and transwell migration assay of isogenic pairs")
 	
-  [**Figure 4: CD133 Facs analysis and transwell migration assay of isogenic pairs**](_static/images/TumorHeterogeneity_PairsCD133Migrate.png)
+  [**Figure 4: CD133 FACS analysis and transwell migration assay of isogenic pairs**](_static/images/TumorHeterogeneity_PairsCD133Migrate.png)
 
 
 ---------
@@ -296,7 +296,7 @@ R2 provides additional analysis for sets of genes that can be accessed from the 
 ---------
 
 
-In R2 there are much more sets of genes that have been found to be implemented in specific processes. The Broad Institute has compiled quite some of these sets of genes that characterize hallmark biological processes.  
+In R2 there are many more sets of genes that have been found to be implemented in specific processes. The Broad Institute has compiled quite some of these sets of genes that characterize hallmark biological processes.  
 
 * Go back to the window with the differentially expressed genes. 
 * Select the **Gene set analysis** option from the right menu
