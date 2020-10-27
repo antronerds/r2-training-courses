@@ -47,6 +47,12 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <br>
 
 ##### Expression of key genes
+* The button below brings you to the form in which you can submit your answers for section 1.2. 
+
+<button onclick="window.open('https://forms.gle/j8QTHdd6pwB3SAy2A','_blank');" type="button">Open the answer form of section 1.2</button> 
+<br>
+<br>
+
 
 * Go to R2 by clicking on the button below:  
 
@@ -97,6 +103,12 @@ At the bottom of the page you can find a table with adjustable settings.
 
 We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map. Similar cells will clump together on the map.   
 
+* The button below brings you to the form in which you can submit your asnwers for section 1.3
+  
+<button onclick="window.open('https://forms.gle/B1S9TNSai9eevprbA','_blank');" type="button">Open the answer form of section 1.3</button> 
+<br>
+<br>
+
 
 * Click the button below to show the tSNE map in R2 
 
@@ -136,6 +148,11 @@ In the former step we derived that neuroblastoma cell lines seem to group with c
   ![](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure 2: Bright field image of isogenic cell line pairs.")
 	
   [**Figure 2: Bright field image of isogenic cell line pairs.**](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png)
+
+* Open the answering for for section 1.4 with the button below  
+<button onclick="window.open('https://forms.gle/Bmm69yproWW82sCK8','_blank');" type="button">Open the answer form of section 1.4</button> 
+<br>
+<br>
 
 ---------
   ![](_static/images/R2d2_logo.png)**What do you note about the morphology of the cell lines?**
@@ -257,8 +274,8 @@ We have identified two different types of cells that occur within the same patie
 
 * In Field 3 choose *Find Differential expression between groups* and click **Next**
 
-This dataset has been annotated with 'cell type' information. Each sample was assigned to either the MESenchymal or the ADReNergic cell type, in R2 this is called a *track*. 
-* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to **No correction**. (More information on Multiple Testing can be found [here](https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting)) Click **Next** twice.
+This dataset has been annotated with 'cell type' information. Each sample was assigned to either the MESenchymal or the ADReNergic cell type. The information is stored in R2 in a track. 
+* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to *No correction*. (More information on Multiple Testing can be found [here](https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting)) Click **Next** twice.
 * A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset is shown. Click on the hyperlinked name of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well
 * Go back to the window with the differentially expressed genes. This is still open in one of your browser tabs. 
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
@@ -339,7 +356,7 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 <br>
 
 
-* In field 3 select **View Geneset**
+* In field 3 select *View Geneset* that you can find under the red header *Meta-analysis*.
 * Click **Next** and select *geneset_r2provided_genelists* 
 * Click **Next**, leave selection as is and click **Next**
 * Select both signatures that were derived before by CTRL click on the MES (*r2_mesadrn_mes*) and ADRN (*r2_mesadrn_adrn*) signatures and click **Next**
