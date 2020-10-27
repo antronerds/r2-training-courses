@@ -48,8 +48,8 @@ For a start we'll investigate established childhood tumor cell lines, including 
 
 ##### Expression of key genes
 * The button below brings you to the form in which you can submit your answers for section 1.2. 
-
-<button onclick="window.open('https://forms.gle/j8QTHdd6pwB3SAy2A','_blank');" type="button">Open the answer form of section 1.2</button> 
+<br>
+<button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfo7ZeKEaVRflzEmXkFZsErDShYHs8PaZO1tBmVrnLeyobkyg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
 <br>
 <br>
 
@@ -103,13 +103,6 @@ At the bottom of the page you can find a table with adjustable settings.
 
 We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map. Similar cells will clump together on the map.   
 
-* The button below brings you to the form in which you can submit your asnwers for section 1.3
-  
-<button onclick="window.open('https://forms.gle/B1S9TNSai9eevprbA','_blank');" type="button">Open the answer form of section 1.3</button> 
-<br>
-<br>
-
-
 * Click the button below to show the tSNE map in R2 
 
 <button onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
@@ -149,8 +142,9 @@ In the former step we derived that neuroblastoma cell lines seem to group with c
 	
   [**Figure 2: Bright field image of isogenic cell line pairs.**](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png)
 
-* Open the answering for for section 1.4 with the button below  
-<button onclick="window.open('https://forms.gle/Bmm69yproWW82sCK8','_blank');" type="button">Open the answer form of section 1.4</button> 
+* The button below brings you to the form in which you can submit your answers for section 1.3
+<br>
+<button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc0dGfEl9zDS7Yh-ZtrcKAn4IVgcwNxsZKNjQQtTj35JjgQng/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button> 
 <br>
 <br>
 
@@ -262,6 +256,12 @@ We have identified two different types of cells that occur within the same patie
 <br>
 <br>
 
+* The button below brings you to the form in which you can submit your answers for section 1.4
+<br>
+<button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScesiEn-9mU9rGCIct4oHkplP6RxXNkccCCkVHBKzioYuczPg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.4</button> 
+<br>
+<br>
+  
 * Go to the main page of R2 by clicking the button below
 
 <form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
@@ -345,7 +345,14 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 
 <br>
 <br>
- 
+<br>
+
+* The button below brings you to the form in which you can submit your answers for section 1.5
+<br>
+<button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSephAsX9i-d_QUh7Gu7ZRWUKkL9XgtAuEzglGnBgBU4Nd3VrQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.5</button> 
+<br>
+<br>
+
 * Go to the main portal of R2 by clicking the button below; the dataset described above is automatically selected
 
 <form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
@@ -419,6 +426,13 @@ The expression patterns of these specific signatures can be used to compare cell
 
 <br>
 <br>
+<br>
+
+* The button below brings you to the form in which you can submit your answers for section 1.6
+<br>
+<button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfeDhhvV2hQQ4erzjf18OX27jelvYxFVIyovPOxWin3GUxekg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.6</button> 
+<br>
+<br>
 
 * Go back to the main portal of R2 by clicking the button below.
 
@@ -464,6 +478,13 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 <br>
 <br>
+<br>
+
+* The button below brings you to the form in which you can submit your answers for section 1.7
+<br>
+<button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfbXuvePyJg5CKj_mE1UygJwrI-GJD39FrM16nY2Uh7YrtsHw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.7</button> 
+<br>
+<br>
 
 * Go back to the main portal of R2 by clicking the button below.
 
@@ -495,7 +516,13 @@ Again we're going to find out which genes make a difference, but now in a specif
 Proving causes: manipulating cell lines
 ------------------------------------------
 
-From experiments it is known that cells can change their nature, some cells exhibit a certain plasticity.
+From experiments it is known that cells can change their nature, some cells exhibit a certain plasticity.  
+
+* The button below brings you to the form in which you can submit your answers for section 1.8
+<br>
+<button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScdjNTEfcu5vuyskvWbKASj3xani-_eMwvN26N1_-F5gYF0tw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.8</button> 
+<br>
+<br>
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you explain why this is of relevance to cancer?**
@@ -600,6 +627,15 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 *Analysis*
 * Genome Browser: analyzing histone modifications marking active enhancers
 * Differential Expression
+<br>
+<br>
+<br>
+
+* The button below brings you to the form in which you can submit your answers for section 1.9
+<br>
+<button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScQC2N5QsLOOUJULFuooscO4gAKzxyE_0nk-OM1n5MLvlslRw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.9</button> 
+<br>
+<br>
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you explain what the goal of this experiment was?**
@@ -898,6 +934,16 @@ Suggesting therapy
 * The first button in 1.9 takes you to the Genome Browser at the position of the HAND1 gene. In the upper left corner of that page, you can fill in other genes of interest to look at the ChIP-Seq profiles of the samples at these locations of the genome. Do this for the genes whose expression profiles you just have studied. Try to find genes that show consistent chromatin modification profiles for the one type of neuroblastoma cell lines and a different consistent profile for the other type. 
 * Knowledge about pathways can be exploited as well.
 * The NCBI database can provide additional information from literature about the genes of interest.
+ 
+ <br>
+ <br>
+ <br>
+ 
+ * The button below brings you to the form in which you can submit your answers for section 1.10
+ <br>
+ <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSd7iB8d2ozHEsYx4KidGxLdhQRefUw2-03gGGnmpJ6eoqhdlA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.10</button> 
+ <br>
+ <br>
   
 ---------
   ![](_static/images/R2d2_logo.png)**Which strategy do you suggest?**
