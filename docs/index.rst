@@ -30,4 +30,4 @@ Copyright (c) 2006-2020 Jan Koster
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
 
 
-
+If you want to learn what you can do with R2 and how to do that, then please visit our R2 tutorials section, where we will explain this using simple examples https://r2-tutorials.readthedocs.io/en/latest/
