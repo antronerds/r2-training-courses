@@ -6,7 +6,7 @@ Investigating Intra-tumor Heterogeneity in Neuroblastoma
 *Analyse tumor heterogeneity in neuroblastoma using the R2 data analysis platform*
 
 This resource is located online at http://r2-training-courses.readthedocs.io
-
+Buttons in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The green buttons in this document will open up a Google form, one per section, with which you can submit your answers per section. 
 
 Introduction
 ------------
@@ -21,7 +21,7 @@ Although there has been extensive research into similar mutation mechanisms in n
 
 As you may have learned from your lectures by now, this tumor consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of neuroblastoma. Children developing a relapse almost always die. 
 Fortunately, new technologies have become available to molecular biology. These enable us to study not only mutations and RNA expression of genes, but also study the epigenetic modifications of the DNA-associated histones. In addition, genes can now be manipulated in cell lines and in living tissues. 
-Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and to help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from neuroblastoma tumors and cell lines.  
+Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and to help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from neuroblastoma tumors and cell lines. 
 
 Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which is neural crest derived. During embryogenesis, cells delaminate from the neural crest, migrate ventrally and differentiate into adrenaline- or noradrenaline-producing cells. Neuroblastomas typically express enzymes for the adrenaline-synthesis route. High-stage neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease.
 
@@ -116,7 +116,7 @@ We've seen that the expression of genes differs among the samples and some types
 * The t-SNE algorithm has a parameter called **perplexity**, which determines how much attraction points on a map have towards each other.  Set the perplexity value to *5* and click **next** again.
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you relate the tumors to a type of tissue? (Note: ALL stands for Acute Lymphocytic Leukemia)**
+  ![](_static/images/R2d2_logo.png)**Can you classify each of the tumors as mensenchymal, neuroectodermal or hematopoetic? (Note: ALL stands for Acute Lymphocytic Leukemia)**
 
 <br>
 <br>
