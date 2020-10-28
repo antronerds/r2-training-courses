@@ -29,7 +29,7 @@ div.noshow{
 Creates an R2 did you know box; a table containing header with R2D2 image
 */
 
-.googleform {
+.button .googleform {
 	background-color: #4CAF50; /* Green */
 	border: #4CAF50;
 	color: white;
