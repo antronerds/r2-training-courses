@@ -116,7 +116,7 @@ We've seen that the expression of genes differs among the samples and some types
 * The t-SNE algorithm has a parameter called **perplexity**, which determines how much attraction points on a map have towards each other.  Set the perplexity value to *5* and click **next** again.
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you classify each of the tumors as mensenchymal, neuroectodermal or hematopoetic? (Note: ALL stands for Acute Lymphocytic Leukemia)**
+  ![](_static/images/R2d2_logo.png)**Can you classify each of the tumors as mesenchymal, neuroectodermal or hematopoetic? (Note: ALL stands for Acute Lymphocytic Leukemia)**
 
 <br>
 <br>

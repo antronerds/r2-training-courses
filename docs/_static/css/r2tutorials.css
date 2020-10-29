@@ -37,14 +37,14 @@ button.googleform {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 16px;
-	border-radius: 15px;
+	border-radius: 5px;
 	transition-duration: 0.4s;
 }
 
 .googleform:hover {
 	background-color: #5fb962; /* Green */
 	color: black;
-	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 7px 7px 0 rgba(0,0,0,0.19);
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 2px 2px 0 rgba(0,0,0,0.19);
 }
 
 
