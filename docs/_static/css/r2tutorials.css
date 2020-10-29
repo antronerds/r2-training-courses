@@ -32,7 +32,7 @@ Creates an R2 did you know box; a table containing header with R2D2 image
 button.googleform {
 	background-color: #95d097; /* Green */
 	color: black;
-	padding: 1px 6px;
+	padding: 2px 6px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
