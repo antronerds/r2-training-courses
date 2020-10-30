@@ -28,7 +28,7 @@ div.noshow{
 /* 
 Creates an R2 did you know box; a table containing header with R2D2 image
 */
-/*button.course {
+/* button.course {
 	border-radius: 4px;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.22), 0 2px 2px 0 rgba(0,0,0,0.17);
 }
@@ -49,7 +49,7 @@ button.googleform {
 }
 
 .googleform:hover {
-	background-color: #5fb962; /* Green */
+	background-color: #5fb962;
 	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.24), 0 2px 2px 0 rgba(0,0,0,0.19);
 }
 */
