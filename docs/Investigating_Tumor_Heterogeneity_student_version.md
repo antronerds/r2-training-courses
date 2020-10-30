@@ -5,8 +5,9 @@ Investigating Intra-tumor Heterogeneity in Neuroblastoma
 
 *Analyse tumor heterogeneity in neuroblastoma using the R2 data analysis platform*
 
-This resource is located online at http://r2-training-courses.readthedocs.io
-Buttons in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The green buttons in this document will open up a Google form, one per section, with which you can submit your answers per section. 
+This resource is located online at http://r2-training-courses.readthedocs.io  
+  
+  The grey buttons in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The green buttons in this document will open up a Google form, one per section, with which you can submit your answers. 
 
 Introduction
 ------------
@@ -64,7 +65,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <br>
 <br>
 
-You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of data analysis possibilities. R2's main page shows this principle; step through each of the fields to develop your analysis of choice.  
+You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
 In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
 
 ---------
@@ -275,7 +276,7 @@ We have identified two different types of cells that occur within the same patie
 * In Field 3 choose *Find Differential expression between groups* and click **Next**
 
 This dataset has been annotated with 'cell type' information. Each sample was assigned to either the MESenchymal or the ADReNergic cell type. The information is stored in R2 in a track. 
-* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to *No correction*. (More information on Multiple Testing can be found [here](https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting)) Click **Next** twice.
+* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to *No correction*. (More information on Multiple Testing can be found [here](https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting){:target="_blank"}) Click **Next** twice.
 * A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset is shown. Click on the hyperlinked name of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well
 * Go back to the window with the differentially expressed genes. This is still open in one of your browser tabs. 
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
@@ -621,9 +622,6 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 *Techniques used:* 
 * ChIP-Seq analysis
 
-*References*
-* Chapter 1.8 Weinberg
-
 *Analysis*
 * Genome Browser: analyzing histone modifications marking active enhancers
 * Differential Expression
@@ -658,7 +656,7 @@ First we'll check one of the HAND genes, known to play a role in the development
 
 * Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.  
 
-<form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype=\"multipart/form-data\" method='POST' target='_gv'>
+<form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='_gv'>
 <input type='hidden' name='option' value='gbv2_base'>
 <input type='hidden' name='|a01giemsa' value='on'>
 <input type='hidden' name='a02bsequence' value='off'>
