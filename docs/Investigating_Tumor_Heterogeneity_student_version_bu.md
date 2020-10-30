@@ -49,7 +49,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 ##### Expression of key genes
 * The button below brings you to the form in which you can submit your answers for section 1.2. 
 
-<button class="button googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfo7ZeKEaVRflzEmXkFZsErDShYHs8PaZO1tBmVrnLeyobkyg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
+<button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfo7ZeKEaVRflzEmXkFZsErDShYHs8PaZO1tBmVrnLeyobkyg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
 <br>
 <br>
 
@@ -59,7 +59,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 
 <form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
-  <button type="submit" >Go to R2</button>
+  <button type="submit" class="button course" >Go to R2</button>
 </form>  
 <br>
 <br>
@@ -105,7 +105,7 @@ We've seen that the expression of genes differs among the samples and some types
 
 * Click the button below to show the tSNE map in R2 
 
-<button onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
+<button class="button course" onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
 <br>
 <br>
 
@@ -144,7 +144,7 @@ In the former step we derived that neuroblastoma cell lines seem to group with c
 
 * The button below brings you to the form in which you can submit your answers for section 1.3
 
-<button class="button googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc0dGfEl9zDS7Yh-ZtrcKAn4IVgcwNxsZKNjQQtTj35JjgQng/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button> 
+<button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc0dGfEl9zDS7Yh-ZtrcKAn4IVgcwNxsZKNjQQtTj35JjgQng/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button> 
 <br>
 <br>
 
@@ -189,7 +189,7 @@ For this analysis we'll directly go to one of the analysis tools of R2: Topliste
 <input type='hidden' name='hugoonce' value='yes'>
 <input type='hidden' name='set' value='standard_deviation'>
 <input type='hidden' name='cortype' value='transform_log2'>
-<button type="submit" >Go to R2 Toplister</button>
+<button type="submit" class="button course" >Go to R2 Toplister</button>
 </form>
 <br>
 <br>
@@ -258,7 +258,7 @@ We have identified two different types of cells that occur within the same patie
 
 * The button below brings you to the form in which you can submit your answers for section 1.4
 
-<button class="button googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScesiEn-9mU9rGCIct4oHkplP6RxXNkccCCkVHBKzioYuczPg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.4</button> 
+<button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScesiEn-9mU9rGCIct4oHkplP6RxXNkccCCkVHBKzioYuczPg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.4</button> 
 <br>
 <br>
   
@@ -266,7 +266,7 @@ We have identified two different types of cells that occur within the same patie
 
 <form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
-  <button type="submit" >Go to R2 main portal</button>
+  <button type="submit" class="button course" >Go to R2 main portal</button>
 </form>  
 <br>
 <br>
@@ -349,7 +349,7 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 
 * The button below brings you to the form in which you can submit your answers for section 1.5
 
-<button class="button googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSephAsX9i-d_QUh7Gu7ZRWUKkL9XgtAuEzglGnBgBU4Nd3VrQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.5</button> 
+<button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSephAsX9i-d_QUh7Gu7ZRWUKkL9XgtAuEzglGnBgBU4Nd3VrQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.5</button> 
 <br>
 <br>
 
@@ -357,7 +357,7 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 
 <form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
-  <button type="submit" >Go to R2</button>
+  <button type="submit" class="button course" >Go to R2</button>
 </form>  
 <br>
 <br>
@@ -388,7 +388,7 @@ When observing such clear-cut patterns it is good scientific practice to test th
 
 <form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse90683geo48_gse90683r1">
-  <button type="submit" >Go to R2 additional NB dataset</button>
+  <button type="submit" class="button course" >Go to R2 additional NB dataset</button>
 </form>  
 <br>
 <br>
@@ -430,7 +430,7 @@ The expression patterns of these specific signatures can be used to compare cell
 
 * The button below brings you to the form in which you can submit your answers for section 1.6
 
-<button class="button googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfeDhhvV2hQQ4erzjf18OX27jelvYxFVIyovPOxWin3GUxekg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.6</button> 
+<button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfeDhhvV2hQQ4erzjf18OX27jelvYxFVIyovPOxWin3GUxekg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.6</button> 
 <br>
 <br>
 
@@ -438,7 +438,7 @@ The expression patterns of these specific signatures can be used to compare cell
 
 <form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
-  <button type="submit" >Go to R2</button>
+  <button type="submit" class="button course" >Go to R2</button>
 </form>  
 <br>
 <br>
@@ -482,7 +482,7 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 * The button below brings you to the form in which you can submit your answers for section 1.7
 
-<button button class="button googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfbXuvePyJg5CKj_mE1UygJwrI-GJD39FrM16nY2Uh7YrtsHw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.7</button> 
+<button button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfbXuvePyJg5CKj_mE1UygJwrI-GJD39FrM16nY2Uh7YrtsHw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.7</button> 
 <br>
 <br>
 
@@ -490,7 +490,7 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 <form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
-  <button type="submit" >Go to R2 main</button>
+  <button type="submit" class="button course" >Go to R2 main</button>
 </form>  
 <br>
 <br>
@@ -520,7 +520,7 @@ From experiments it is known that cells can change their nature, some cells exhi
 
 * The button below brings you to the form in which you can submit your answers for section 1.8
 
-<button class="button googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScdjNTEfcu5vuyskvWbKASj3xani-_eMwvN26N1_-F5gYF0tw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.8</button> 
+<button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScdjNTEfcu5vuyskvWbKASj3xani-_eMwvN26N1_-F5gYF0tw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.8</button> 
 <br>
 <br>
 
@@ -572,7 +572,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 
 <form name="52_pairs_crest_exp" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
-  <button type="submit" >Go to R2 main, inducible TF set</button>
+  <button type="submit" class="button course" >Go to R2 main, inducible TF set</button>
 </form>  
 <br>
 <br>
@@ -604,7 +604,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 <input type="hidden" name="fontsize_ruler" value="25">
 <input type="hidden" name="fontsize_y" value="30">
 <input type="hidden" name="dotsize" value="5">
-<button type="submit" >Show time path annotation in R2</button>
+<button type="submit" class="button course" >Show time path annotation in R2</button>
 </form>  
 <br>
 <br>
@@ -633,7 +633,7 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 
 * The button below brings you to the form in which you can submit your answers for section 1.9
 
-<button class="button googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScQC2N5QsLOOUJULFuooscO4gAKzxyE_0nk-OM1n5MLvlslRw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.9</button> 
+<button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScQC2N5QsLOOUJULFuooscO4gAKzxyE_0nk-OM1n5MLvlslRw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.9</button> 
 <br>
 <br>
 
@@ -863,7 +863,7 @@ First we'll check one of the HAND genes, known to play a role in the development
 <input type='hidden' name='wgs_somatic_strelka' value='off'>
 <input type='hidden' name='wgs_somatic_varscan2' value='off'>
 <input type='hidden' name='wgs_varfileb_maris_20' value='off'>
-<button type="submit" >Go to R2 GenomeBrowser for HAND1</button>
+<button type="submit" class="button course" >Go to R2 GenomeBrowser for HAND1</button>
 </form>
 <br>
 <br>
@@ -905,7 +905,7 @@ The chromatin state is especially important for transcription factors; we'll re-
 <input type='hidden' name='test' value='anova'>
 <input type='hidden' name='factor' value='NG_mes_adrn_nc'>
 <input type='hidden' name='subset' value='TRACKER:,0,1,2,3,4,5,6,7,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33'>
-<button type="submit" >Go to R2 differential expression of TF's</button>
+<button type="submit" class="button course" >Go to R2 differential expression of TF's</button>
 </form>
 <br>
 <br>
@@ -941,7 +941,7 @@ Suggesting therapy
  
  * The button below brings you to the form in which you can submit your answers for section 1.10
 
- <button class="button googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSd7iB8d2ozHEsYx4KidGxLdhQRefUw2-03gGGnmpJ6eoqhdlA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.10</button> 
+ <button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSd7iB8d2ozHEsYx4KidGxLdhQRefUw2-03gGGnmpJ6eoqhdlA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.10</button> 
  <br>
  <br>
   
