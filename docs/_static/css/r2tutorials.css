@@ -29,6 +29,7 @@ div.noshow{
 Styling the buttons of the courses
 */
 .course {
+	border-width: 1px;
 	border-radius: 4px;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.22), 0 2px 2px 0 rgba(0,0,0,0.17);
 }
@@ -38,7 +39,8 @@ Styling the buttons of the courses
 }
 
 .googleform {
-	background-color: #95d097;
+	/*background-color: #95d097;*/
+	background-color: #bdd;
 	color: black;
 	padding: 2px 6px;
 	text-align: center;
@@ -46,6 +48,8 @@ Styling the buttons of the courses
 	display: inline-block;
 	font-size: 16px;
 	transition-duration: 0.4s;
+	border-width: 0px;
+	border-color: #bdd;
 }
 
 .googleform:hover {
