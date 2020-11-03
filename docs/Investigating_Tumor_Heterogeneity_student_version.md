@@ -86,6 +86,7 @@ At the bottom of the page you can find a table with adjustable settings.
   * Now try the gene MYCN (Click the **Go to Main** link in the left upper corner)
   
 ---------
+
   ![](_static/images/R2d2_logo.png)**Can you say something about the role this gene can play in cancer?**
 
 <br>
@@ -94,6 +95,7 @@ At the bottom of the page you can find a table with adjustable settings.
   ![](_static/images/R2d2_logo.png)**Using the data annotation track below the graph, what can you say about neuroblastoma?**
 <br>
 <br>
+
 ---------
 
 ##### Clustering with tSNE maps
@@ -146,8 +148,10 @@ In the former step we derived that neuroblastoma cell lines seem to group with c
 <br>
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**What do you note about the morphology of the cell lines?**
 <br><br>
+
 ---------
 
 We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of these pairs and of a previously established neuroblastoma cell line that after culturing gave rise to two very divergent phenotypes. The resulting gene expression patterns can be used to perform a hierarchical clustering. An example of such clustering resulting in an ordered heatmap is provided below 
@@ -192,8 +196,10 @@ For this analysis we'll directly go to one of the analysis tools of R2: Topliste
 * Click **Next**; a list of genes appears
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**Do you recognize any genes that explain the difference in phenotype?**
 <br><br>
+
 ---------
 
 * Use the mousewheel to scroll to the bottom of the page (or click on the shoe-print at the top of the page). 
@@ -201,8 +207,10 @@ For this analysis we'll directly go to one of the analysis tools of R2: Topliste
 Here you can choose to perform an additional analysis. The heatmap vizualization produces a hierarchically clustered view of the expression values for the top 100 genes.  
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**What number of groups do you expect?**
 <br><br>
+
 ---------
 
 * Click on **Heatmap (z-score)**
@@ -217,8 +225,10 @@ The cell line pairs from the patient were also investigated for the tumor stem c
 
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**Given these observations, what origin can you assign to each group?**
 <br><br>
+
 ---------
 <br>
 
@@ -267,8 +277,10 @@ This dataset has been annotated with 'cell type' information. Each sample was as
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**How is this figure different from the former?**
 <br><br>
+
 ---------
 <br>
 For future use, this list of genes has been stored for you in R2 as signatures (aka genesets or categories). The list has been split into two categories: one set of genes that is highly expressed in the MES type of samples (r2_mesadrn_mes) and one set of genes highly expressed in the ADRN type of samples (r2_mesadrn_adrn).  
@@ -286,8 +298,10 @@ R2 provides additional analysis for sets of genes that can be accessed from the 
 * Now scroll down to the end of the page (or click the filter button in the left upper corner of the page) and adapt the settings such that only the Biological Process branch of the Gene Ontology is selected, and select only the genes that are higher expressed in the MES type of cells 
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**What can you say about the function of the group of genes that are upregulated in the MES type of cells?**
 <br><br>
+
 ---------
 <br>
 
@@ -344,12 +358,14 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 * Select both signatures that were derived before by CTRL click on the MES (*r2_mesadrn_mes*) and ADRN (*r2_mesadrn_adrn*) signatures and click **Next**
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**Which cell types group together?**
 <br>
 <br>
   ![](_static/images/R2d2_logo.png)**How does this relate to the earlier observations on cell lineage?**
 <br>
 <br>
+
 ---------
 
 When observing such clear-cut patterns it is good scientific practice to test this in additional datasets. The database of R2 contains an additional dataset consisting of neuroblastoma cell lines that were profiled by a French research team. 
@@ -366,9 +382,11 @@ When observing such clear-cut patterns it is good scientific practice to test th
 
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**Do you observe similar patterns?**
 <br>
 <br>
+
 ---------
 
 
@@ -421,9 +439,11 @@ The expression patterns of these specific signatures can be used to compare cell
 * If you have time you can also try the **Color by Gene ColorMode**, choose a gene of interest (Note: the dropdown selection is linked to the database, wait for the proper selections to popup...)
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**What conclusion would you draw from these figures?**
 <br>
 <br>
+
 ---------
 
 
@@ -472,9 +492,11 @@ Again we're going to find out which genes make a difference, but now in a specif
 * From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the top table. You'll arrive at a website that gathers all known information on genes. A useful section is the **Bibliography** containing short summaries of relevant scientific papers.
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**Armed with this information, which gene would you choose for further research? Why?**
 <br>
 <br>
+
 ---------
 
 
@@ -490,27 +512,33 @@ From experiments it is known that cells can change their nature, some cells exhi
 <br>
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**Can you explain why this is of relevance to cancer?**
 <br>
 <br>
+
 ---------
 
 From experiments in our lab it became evident that the two cell types found in Neuroblastoma were able to switch. After a given period of time cells in dishes changed their nature as was proven by the expression of certain marker proteins on their surface.  
 Now that we have a candidate Transcription Factor we can try to investigate its relevance in this plasticity by manipulating the gene in cell lines we grow in the lab. 
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**Can you think of ways to manipulate genes in cell lines?**
 <br>
 <br>
+
 ---------
 
 The TF was inducibly expressed in the SKNBE cell line and this was monitored through time for its gene expression using Affymetrix mRNA arrays. The resulting data was added to the dataset we used above for comparison. 
 
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**To which of the cell types does SKNBE belong?**
 <br>
 <br>
+
 ---------
 
 *Data used:*
@@ -539,9 +567,11 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 * Select in field 3 the **Relate 2 tracks** option. R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. Relate the two tracks, adapt the **ColorMode** to **Color by Track** and try the *mes_adrn_time* track. This track contains information on the time that the PRRX1 gene expression was induced in the SKNBE cell line.
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**What is your conclusion from this experiment?**
 <br>
 <br>
+
 ---------
 
 * This conclusion is even more obvious when the sequence of events is highlighted, as can be done in R2. The relations between the isogenic pairs are also illustrated. Click the button below to view the graph annotated in this way, a figure that can be incorporated in a publication right away. 
@@ -592,18 +622,22 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 <br>
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**Can you explain what the goal of this experiment was?**
 <br>
 <br>
+
 ---------
 
 
 First we'll check one of the HAND genes, known to play a role in the development of the sympatho-adrenal lineage from the neural crest.  
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**What do you expect for the H3K27ac signals?**
 <br>
 <br>
+
 ---------
 
 * Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.  
@@ -821,9 +855,11 @@ First we'll check one of the HAND genes, known to play a role in the development
 Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, coding exons are darker.  
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**Can you explain this graph? What do you expect for the expression of this gene?**
 <br>
 <br>
+
 ---------
 
 
@@ -833,9 +869,11 @@ Regions encoding genes are drawn at the bottom of the graph. When in red they're
 The chromatin state is especially important for transcription factors; we'll re-visit the list of transcription factors that are differentially expressed between the MES and ADRN cell lines.
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**Why are Transcription Factors of interest in this setting?**
 <br>
 <br>
+
 ---------
 
 * Perform the differential expression analysis again by clicking on the button below
@@ -856,13 +894,15 @@ The chromatin state is especially important for transcription factors; we'll re-
 <br>
 <br>
 
-* Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate. In the genomebrowser you can type the name of the gene in the left upper corner textfield. To further explore the larger region around the gene you can use the zoom buttons at the top of the page.  
+* Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate. In the genomebrowser that was still open from the previous question, type the name of the gene in the left upper corner textfield. To further explore the larger region around the gene you can use the zoom buttons at the top of the page.  
 
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**Which Transcription Factor would you consider for further study?**
 <br>
 <br>
+
 ---------
 
 
@@ -890,9 +930,11 @@ Suggesting therapy
  <br>
   
 ---------
+
   ![](_static/images/R2d2_logo.png)**Which strategy do you suggest?**
 <br>
 <br>
+
 ---------
 
 Final remarks / future directions
