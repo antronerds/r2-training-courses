@@ -69,8 +69,10 @@ You're now on the R2 main page. This web based molecular biology data analysis p
 In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumor models?**
 <br><br>
+
 ---------
 
   * In field 4 type the name of the gene and click **Next**
@@ -290,8 +292,10 @@ R2 provides additional analysis for sets of genes that can be accessed from the 
 * On the page with the differentially expressed genes, select the **Gene Ontology Analysis** button in the menu on the right 
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**What can you say about the function of the differentially expressed genes?**
 <br><br>
+
 ---------
 <br>
 
@@ -312,8 +316,10 @@ In R2 there are many more sets of genes that have been found to be implemented i
 * Select the *geneset_broad_2015_hallmark* geneset and click **Next**
 
 ---------
+
   ![](_static/images/R2d2_logo.png)**Which hallmark category of genes pops up as most important? Can you explain this?**
 <br><br>
+
 ---------
 <br>
 
