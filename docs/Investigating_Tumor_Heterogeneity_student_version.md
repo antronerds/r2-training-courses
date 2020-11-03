@@ -50,7 +50,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 ##### Expression of key genes
 * The button below brings you to the form in which you can submit your answers for section 1.2. 
 
-<button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfo7ZeKEaVRflzEmXkFZsErDShYHs8PaZO1tBmVrnLeyobkyg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfo7ZeKEaVRflzEmXkFZsErDShYHs8PaZO1tBmVrnLeyobkyg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
 <br>
 <br>
 
@@ -60,7 +60,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 
 <form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
-  <button type="submit" class="button course" >Go to R2</button>
+  <button type="submit" class="course r2submit" >Go to R2</button>
 </form>  
 <br>
 <br>
@@ -70,9 +70,7 @@ In this case we're first going to see if and how the mRNA expression of several 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumor models?**
-
 <br><br>
-
 ---------
 
   * In field 4 type the name of the gene and click **Next**
@@ -94,10 +92,8 @@ At the bottom of the page you can find a table with adjustable settings.
 <br>
 
   ![](_static/images/R2d2_logo.png)**Using the data annotation track below the graph, what can you say about neuroblastoma?**
-
 <br>
 <br>
-
 ---------
 
 ##### Clustering with tSNE maps
@@ -106,7 +102,7 @@ We've seen that the expression of genes differs among the samples and some types
 
 * Click the button below to show the tSNE map in R2 
 
-<button class="button course" onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
+<button class="course" onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
 <br>
 <br>
 
@@ -114,9 +110,11 @@ We've seen that the expression of genes differs among the samples and some types
 
 * Under the graph, a menu allows the user to adapt settings. Colors of the graph points are not set by default. To color the graph with a biologically meaningful annotation, find the **ColorMode** dropdown and select *Color by Track*. Now set the **Track for Color** dropdown to use the *itcc_model* track, and click **Next** to show the changes. 
 
-* The t-SNE algorithm has a parameter called **perplexity**, which determines how much attraction points on a map have towards each other.  Set the perplexity value to *5* and click **next** again.
+* The t-SNE algorithm has a parameter called **perplexity**, which determines how much attraction points on a map have towards each other.  Set the perplexity value to *5* and click **next** again.  
+  
+------
 
----------
+
   ![](_static/images/R2d2_logo.png)**Can you classify each of the tumors as mesenchymal, neuroectodermal or hematopoetic? (Note: ALL stands for Acute Lymphocytic Leukemia)**
 
 <br>
@@ -129,9 +127,7 @@ We've seen that the expression of genes differs among the samples and some types
 
   ![](_static/images/R2d2_logo.png)**If you had to choose two cell lines for further investigation of lineage identity in neuroblastoma, which would you choose?**
   
-<br>
-<br>
----------
+------
 
 
 Urgency of research: patient material
@@ -145,15 +141,13 @@ In the former step we derived that neuroblastoma cell lines seem to group with c
 
 * The button below brings you to the form in which you can submit your answers for section 1.3
 
-<button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc0dGfEl9zDS7Yh-ZtrcKAn4IVgcwNxsZKNjQQtTj35JjgQng/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc0dGfEl9zDS7Yh-ZtrcKAn4IVgcwNxsZKNjQQtTj35JjgQng/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button> 
 <br>
 <br>
 
 ---------
   ![](_static/images/R2d2_logo.png)**What do you note about the morphology of the cell lines?**
-
 <br><br>
-
 ---------
 
 We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of these pairs and of a previously established neuroblastoma cell line that after culturing gave rise to two very divergent phenotypes. The resulting gene expression patterns can be used to perform a hierarchical clustering. An example of such clustering resulting in an ordered heatmap is provided below 
@@ -190,7 +184,7 @@ For this analysis we'll directly go to one of the analysis tools of R2: Topliste
 <input type='hidden' name='hugoonce' value='yes'>
 <input type='hidden' name='set' value='standard_deviation'>
 <input type='hidden' name='cortype' value='transform_log2'>
-<button type="submit" class="button course" >Go to R2 Toplister</button>
+<button type="submit" class="course r2submit" >Go to R2 Toplister</button>
 </form>
 <br>
 <br>
@@ -199,10 +193,7 @@ For this analysis we'll directly go to one of the analysis tools of R2: Topliste
 
 ---------
   ![](_static/images/R2d2_logo.png)**Do you recognize any genes that explain the difference in phenotype?**
-
-<br>
-<br>
-
+<br><br>
 ---------
 
 * Use the mousewheel to scroll to the bottom of the page (or click on the shoe-print at the top of the page). 
@@ -211,9 +202,7 @@ Here you can choose to perform an additional analysis. The heatmap vizualization
 
 ---------
   ![](_static/images/R2d2_logo.png)**What number of groups do you expect?**
-
 <br><br>
-
 ---------
 
 * Click on **Heatmap (z-score)**
@@ -229,13 +218,9 @@ The cell line pairs from the patient were also investigated for the tumor stem c
 
 ---------
   ![](_static/images/R2d2_logo.png)**Given these observations, what origin can you assign to each group?**
-
-<br>
-<br>
-
+<br><br>
 ---------
-
-
+<br>
 
 Which genes make a difference? Creating signatures
 -----------------------------------------------------
@@ -259,7 +244,7 @@ We have identified two different types of cells that occur within the same patie
 
 * The button below brings you to the form in which you can submit your answers for section 1.4
 
-<button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScesiEn-9mU9rGCIct4oHkplP6RxXNkccCCkVHBKzioYuczPg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.4</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScesiEn-9mU9rGCIct4oHkplP6RxXNkccCCkVHBKzioYuczPg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.4</button> 
 <br>
 <br>
   
@@ -267,7 +252,7 @@ We have identified two different types of cells that occur within the same patie
 
 <form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
-  <button type="submit" class="button course" >Go to R2 main portal</button>
+  <button type="submit" class="course r2submit" >Go to R2 main portal</button>
 </form>  
 <br>
 <br>
@@ -276,19 +261,16 @@ We have identified two different types of cells that occur within the same patie
 * In Field 3 choose *Find Differential expression between groups* and click **Next**
 
 This dataset has been annotated with 'cell type' information. Each sample was assigned to either the MESenchymal or the ADReNergic cell type. The information is stored in R2 in a track. 
-* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to *No correction*. (More information on Multiple Testing can be found [here](https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting){:target="_blank"}) Click **Next** twice.
+* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to *No correction*.  Click **Next** twice. (More information on Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>).
 * A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset is shown. Click on the hyperlinked name of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well
 * Go back to the window with the differentially expressed genes. This is still open in one of your browser tabs. 
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
 
 ---------
   ![](_static/images/R2d2_logo.png)**How is this figure different from the former?**
-
-<br>
-<br>
-
+<br><br>
 ---------
-
+<br>
 For future use, this list of genes has been stored for you in R2 as signatures (aka genesets or categories). The list has been split into two categories: one set of genes that is highly expressed in the MES type of samples (r2_mesadrn_mes) and one set of genes highly expressed in the ADRN type of samples (r2_mesadrn_adrn).  
 
 R2 provides additional analysis for sets of genes that can be accessed from the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematically ordered biological terms that is used to formally describe the biological role of each gene. The Gene Ontology Analysis tool in R2 calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. 
@@ -297,22 +279,17 @@ R2 provides additional analysis for sets of genes that can be accessed from the 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What can you say about the function of the differentially expressed genes?**
-
-<br>
-<br>
-
+<br><br>
 ---------
+<br>
 
 * Now scroll down to the end of the page (or click the filter button in the left upper corner of the page) and adapt the settings such that only the Biological Process branch of the Gene Ontology is selected, and select only the genes that are higher expressed in the MES type of cells 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What can you say about the function of the group of genes that are upregulated in the MES type of cells?**
-
-<br>
-<br>
-
+<br><br>
 ---------
-
+<br>
 
 In R2 there are many more sets of genes that have been found to be implemented in specific processes. The Broad Institute has compiled quite some of these sets of genes that characterize hallmark biological processes.  
 
@@ -322,12 +299,9 @@ In R2 there are many more sets of genes that have been found to be implemented i
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which hallmark category of genes pops up as most important? Can you explain this?**
-
-<br>
-<br>
-
+<br><br>
 ---------
-
+<br>
 
 Identifying groups: using signatures to classify other datasets
 ------------------------------------------------------------------
@@ -350,7 +324,7 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 
 * The button below brings you to the form in which you can submit your answers for section 1.5
 
-<button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSephAsX9i-d_QUh7Gu7ZRWUKkL9XgtAuEzglGnBgBU4Nd3VrQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.5</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSephAsX9i-d_QUh7Gu7ZRWUKkL9XgtAuEzglGnBgBU4Nd3VrQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.5</button> 
 <br>
 <br>
 
@@ -358,7 +332,7 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 
 <form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
-  <button type="submit" class="button course" >Go to R2</button>
+  <button type="submit" class="course r2submit" >Go to R2</button>
 </form>  
 <br>
 <br>
@@ -371,15 +345,11 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which cell types group together?**
-
 <br>
 <br>
-
   ![](_static/images/R2d2_logo.png)**How does this relate to the earlier observations on cell lineage?**
-
 <br>
 <br>
-
 ---------
 
 When observing such clear-cut patterns it is good scientific practice to test this in additional datasets. The database of R2 contains an additional dataset consisting of neuroblastoma cell lines that were profiled by a French research team. 
@@ -389,7 +359,7 @@ When observing such clear-cut patterns it is good scientific practice to test th
 
 <form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse90683geo48_gse90683r1">
-  <button type="submit" class="button course" >Go to R2 additional NB dataset</button>
+  <button type="submit" class="course r2submit" >Go to R2 additional NB dataset</button>
 </form>  
 <br>
 <br>
@@ -397,10 +367,8 @@ When observing such clear-cut patterns it is good scientific practice to test th
 
 ---------
   ![](_static/images/R2d2_logo.png)**Do you observe similar patterns?**
-
 <br>
 <br>
-
 ---------
 
 
@@ -431,7 +399,7 @@ The expression patterns of these specific signatures can be used to compare cell
 
 * The button below brings you to the form in which you can submit your answers for section 1.6
 
-<button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfeDhhvV2hQQ4erzjf18OX27jelvYxFVIyovPOxWin3GUxekg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.6</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfeDhhvV2hQQ4erzjf18OX27jelvYxFVIyovPOxWin3GUxekg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.6</button> 
 <br>
 <br>
 
@@ -439,7 +407,7 @@ The expression patterns of these specific signatures can be used to compare cell
 
 <form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
-  <button type="submit" class="button course" >Go to R2</button>
+  <button type="submit" class="course r2submit" >Go to R2</button>
 </form>  
 <br>
 <br>
@@ -454,10 +422,8 @@ The expression patterns of these specific signatures can be used to compare cell
 
 ---------
   ![](_static/images/R2d2_logo.png)**What conclusion would you draw from these figures?**
-
 <br>
 <br>
-
 ---------
 
 
@@ -483,7 +449,7 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 * The button below brings you to the form in which you can submit your answers for section 1.7
 
-<button button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfbXuvePyJg5CKj_mE1UygJwrI-GJD39FrM16nY2Uh7YrtsHw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.7</button> 
+<button button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfbXuvePyJg5CKj_mE1UygJwrI-GJD39FrM16nY2Uh7YrtsHw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.7</button> 
 <br>
 <br>
 
@@ -491,7 +457,7 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 <form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
-  <button type="submit" class="button course" >Go to R2 main</button>
+  <button type="submit" class="course r2submit" >Go to R2 main</button>
 </form>  
 <br>
 <br>
@@ -507,10 +473,8 @@ Again we're going to find out which genes make a difference, but now in a specif
 
 ---------
   ![](_static/images/R2d2_logo.png)**Armed with this information, which gene would you choose for further research? Why?**
-
 <br>
 <br>
-
 ---------
 
 
@@ -521,16 +485,14 @@ From experiments it is known that cells can change their nature, some cells exhi
 
 * The button below brings you to the form in which you can submit your answers for section 1.8
 
-<button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScdjNTEfcu5vuyskvWbKASj3xani-_eMwvN26N1_-F5gYF0tw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.8</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScdjNTEfcu5vuyskvWbKASj3xani-_eMwvN26N1_-F5gYF0tw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.8</button> 
 <br>
 <br>
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you explain why this is of relevance to cancer?**
-
 <br>
 <br>
-
 ---------
 
 From experiments in our lab it became evident that the two cell types found in Neuroblastoma were able to switch. After a given period of time cells in dishes changed their nature as was proven by the expression of certain marker proteins on their surface.  
@@ -538,10 +500,8 @@ Now that we have a candidate Transcription Factor we can try to investigate its 
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you think of ways to manipulate genes in cell lines?**
-
 <br>
 <br>
-
 ---------
 
 The TF was inducibly expressed in the SKNBE cell line and this was monitored through time for its gene expression using Affymetrix mRNA arrays. The resulting data was added to the dataset we used above for comparison. 
@@ -549,10 +509,8 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 
 ---------
   ![](_static/images/R2d2_logo.png)**To which of the cell types does SKNBE belong?**
-
 <br>
 <br>
-
 ---------
 
 *Data used:*
@@ -573,7 +531,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 
 <form name="52_pairs_crest_exp" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
-  <button type="submit" class="button course" >Go to R2 main, inducible TF set</button>
+  <button type="submit" class="course r2submit" >Go to R2 main, inducible TF set</button>
 </form>  
 <br>
 <br>
@@ -582,10 +540,8 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 
 ---------
   ![](_static/images/R2d2_logo.png)**What is your conclusion from this experiment?**
-
 <br>
 <br>
-
 ---------
 
 * This conclusion is even more obvious when the sequence of events is highlighted, as can be done in R2. The relations between the isogenic pairs are also illustrated. Click the button below to view the graph annotated in this way, a figure that can be incorporated in a publication right away. 
@@ -605,7 +561,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 <input type="hidden" name="fontsize_ruler" value="25">
 <input type="hidden" name="fontsize_y" value="30">
 <input type="hidden" name="dotsize" value="5">
-<button type="submit" class="button course" >Show time path annotation in R2</button>
+<button type="submit" class="course r2submit" >Show time path annotation in R2</button>
 </form>  
 <br>
 <br>
@@ -631,16 +587,14 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 
 * The button below brings you to the form in which you can submit your answers for section 1.9
 
-<button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScQC2N5QsLOOUJULFuooscO4gAKzxyE_0nk-OM1n5MLvlslRw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.9</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScQC2N5QsLOOUJULFuooscO4gAKzxyE_0nk-OM1n5MLvlslRw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.9</button> 
 <br>
 <br>
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you explain what the goal of this experiment was?**
-
 <br>
 <br>
-
 ---------
 
 
@@ -648,10 +602,8 @@ First we'll check one of the HAND genes, known to play a role in the development
 
 ---------
   ![](_static/images/R2d2_logo.png)**What do you expect for the H3K27ac signals?**
-
 <br>
 <br>
-
 ---------
 
 * Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.  
@@ -861,7 +813,7 @@ First we'll check one of the HAND genes, known to play a role in the development
 <input type='hidden' name='wgs_somatic_strelka' value='off'>
 <input type='hidden' name='wgs_somatic_varscan2' value='off'>
 <input type='hidden' name='wgs_varfileb_maris_20' value='off'>
-<button type="submit" class="button course" >Go to R2 GenomeBrowser for HAND1</button>
+<button type="submit" class="course r2submit" >Go to R2 GenomeBrowser for HAND1</button>
 </form>
 <br>
 <br>
@@ -870,10 +822,8 @@ Regions encoding genes are drawn at the bottom of the graph. When in red they're
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you explain this graph? What do you expect for the expression of this gene?**
-
 <br>
 <br>
-
 ---------
 
 
@@ -884,10 +834,8 @@ The chromatin state is especially important for transcription factors; we'll re-
 
 ---------
   ![](_static/images/R2d2_logo.png)**Why are Transcription Factors of interest in this setting?**
-
 <br>
 <br>
-
 ---------
 
 * Perform the differential expression analysis again by clicking on the button below
@@ -903,7 +851,7 @@ The chromatin state is especially important for transcription factors; we'll re-
 <input type='hidden' name='test' value='anova'>
 <input type='hidden' name='factor' value='NG_mes_adrn_nc'>
 <input type='hidden' name='subset' value='TRACKER:,0,1,2,3,4,5,6,7,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33'>
-<button type="submit" class="button course" >Go to R2 differential expression of TF's</button>
+<button type="submit" class="course r2submit" >Go to R2 differential expression of TF's</button>
 </form>
 <br>
 <br>
@@ -913,10 +861,8 @@ The chromatin state is especially important for transcription factors; we'll re-
 
 ---------
   ![](_static/images/R2d2_logo.png)**Which Transcription Factor would you consider for further study?**
-
 <br>
 <br>
-
 ---------
 
 
@@ -939,16 +885,14 @@ Suggesting therapy
  
  * The button below brings you to the form in which you can submit your answers for section 1.10
 
- <button class="button course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSd7iB8d2ozHEsYx4KidGxLdhQRefUw2-03gGGnmpJ6eoqhdlA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.10</button> 
+ <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSd7iB8d2ozHEsYx4KidGxLdhQRefUw2-03gGGnmpJ6eoqhdlA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.10</button> 
  <br>
  <br>
   
 ---------
   ![](_static/images/R2d2_logo.png)**Which strategy do you suggest?**
-
 <br>
 <br>
-
 ---------
 
 Final remarks / future directions
