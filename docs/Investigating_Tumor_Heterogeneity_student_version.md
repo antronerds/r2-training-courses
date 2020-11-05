@@ -98,7 +98,7 @@ At the bottom of the page you can find a table with adjustable settings. Many se
 <br>
 <br>
 
-  ![](_static/images/R2d2_logo.png)**What might the expression level of this gene in neurblastoma signify about the function of the gene in this cancer?**
+  ![](_static/images/R2d2_logo.png)**What might the expression level of this gene in neuroblastoma signify about the function of the gene in this cancer?**
 <br>
 <br>
 
@@ -124,7 +124,7 @@ We've seen that the expression of genes differs among the samples and some types
 
 ![](_static/images/R2d2_logo.png)**What do you note about the clustering of the neuroblastoma samples?**
 
-  ![](_static/images/R2d2_logo.png)**With which tumor models cluster the  neuroblastoma cell lines together?**
+  ![](_static/images/R2d2_logo.png)**With which other tumor models do the neuroblastoma cell lines cluster?**
 
 <br>
 <br>
