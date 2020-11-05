@@ -66,11 +66,11 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <br>
 
 You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
-In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. 
+In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. In this dataset 86 cell lines derived from 6 different childhood tumor types can be found (ewing sarcoma, medulloblastoma, neuroblastoma, osteosarcoma, acute lymphocytic leukemia and rhabdomyosarcoma).
 
 ---------
 
-  ![](_static/images/R2d2_logo.png)**Can you think of a gene that might mark differences between these tumor models?**
+  ![](_static/images/R2d2_logo.png)**From knowledge acquired in previous lectures, or just from quick Googling on the web... Can you think of a gene that might show different expression between some of these 6 tumor models?**
 <br><br>
 
 ---------
@@ -78,23 +78,27 @@ In this case we're first going to see if and how the mRNA expression of several 
   * In field 4 type the name of the gene and click **Next**
   * Leave all settings at default and click **Next**  
   
-A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. In R2, samples can be annotated with e.g clinical data or biological information. Each group of annotated data is called a “Track” in R2. These tracks can be used to filter, color or split data in all types of R2 analyses. 
+A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. In R2, samples can be annotated with e.g clinical data or biological information. Each group of annotated data is called a “Track” in R2. These tracks can be used to filter, color or split data in all types of R2 analyses.  
+Sometimes you can see the categorical tracks displayed underneath a graph. But often more annotation is available for the samples. You can hover your mouse above dots in a graph or over the tracks underneath the graph to get more information per sample.  
+
   * Hover with your mouse over data points to show additional information.  
 
-At the bottom of the page you can find a table with adjustable settings.   
-  * The expression values on the y-axis are logarithmic by default; Many settings of the graph can be adapted. Try out a different view of the same data with the following changes to the settings. Set the **Transform** option to *none*. Split the data in groups with the setting **use track**: choose the *itcc_model* track that contains the information which sample belongs to which tumor type. Click on **More Settings** and set the **draw legend** dropdown to *yes* and click **Adjust Settings** to obtain the graph with these adaptations.  
-  
+At the bottom of the page you can find a table with adjustable settings. Many settings of the graph can be adapted.  
 
-  * Now try the gene MYCN (Click the **Go to Main** link in the left upper corner)
+* Try out a different view of the same data with the following changes to the settings:  
+ The expression values on the y-axis are logarithmic by default, in the settings menu set the **Transform** option to *none* instead. Split the data in groups with the setting **use track** under Group separations: choose the *itcc_model* track that contains the information which sample belongs to which tumor type. Also sort the samples again on expression with **Extra Graph Option** set to *Track and Gene sort*. Finally, click **Adjust Settings** to obtain the graph with these adaptations.  
+  
+* Now try the gene MYCN (Type *MYCN* in the **Change Gene** box in the upper right corner to keep all your settings, but to change your gene).  
+* Hover with your mouse over the track underneath the graph or over the data points, to find out which itcc_model belongs to which group of samples. 
   
 ---------
 
-  ![](_static/images/R2d2_logo.png)**Can you say something about the role this gene can play in cancer?**
+  ![](_static/images/R2d2_logo.png)**What can you say about the expression of this gene in the different tumor models?**
 
 <br>
 <br>
 
-  ![](_static/images/R2d2_logo.png)**Using the data annotation track below the graph, what can you say about neuroblastoma?**
+  ![](_static/images/R2d2_logo.png)**What might the expression level of this gene in neurblastoma signify about the function of the gene in this cancer?**
 <br>
 <br>
 
@@ -118,18 +122,14 @@ We've seen that the expression of genes differs among the samples and some types
   
 ------
 
+![](_static/images/R2d2_logo.png)**What do you note about the clustering of the neuroblastoma samples?**
 
-  ![](_static/images/R2d2_logo.png)**Can you classify each of the tumors as mesenchymal, neuroectodermal or hematopoetic? (Note: ALL stands for Acute Lymphocytic Leukemia)**
-
-<br>
-<br>
-
-  ![](_static/images/R2d2_logo.png)**What do you note about the clustering of neuroblastoma cell lines with respect to the lineage of origin?**
+  ![](_static/images/R2d2_logo.png)**With which tumor models cluster the  neuroblastoma cell lines together?**
 
 <br>
 <br>
 
-  ![](_static/images/R2d2_logo.png)**If you had to choose two cell lines for further investigation of lineage identity in neuroblastoma, which would you choose?**
+  ![](_static/images/R2d2_logo.png)**Based on the above, what would you do to further investigate your observations**
   
 ------
 
