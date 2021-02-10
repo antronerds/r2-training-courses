@@ -519,7 +519,7 @@ From experiments it is known that cells can change their nature, some cells exhi
 
 ---------
 
-  ![](_static/images/R2d2_logo.png)**Can you explain why this is of relevance to cancer?**
+  ![](_static/images/R2d2_logo.png)**From your own biomedical knowledge, can you explain why this is of relevance to cancer?**
 <br>
 <br>
 

@@ -22,7 +22,7 @@ This has led to extensive efforts to find more specific diagnostic markers. The 
 ##### A first look at T cell gene expression with the R2 platform
 
  *Data used:*  
- * R2 titel: Disease Rheumatoid arthritis subset (drugs) - Okuzono - 75 - deseq2 - gpl17303
+ * R2 dataset: Disease Rheumatoid arthritis subset (drugs) - Okuzono - 75 - deseq2 - gpl17303
  * Description: 75 blood and synovial T cell samples of RA patients with rheumatoid arthritis 
  
  *Techniques used:*   
@@ -227,7 +227,7 @@ We have seen that the expression profiles of the same cell types can show differ
  Now that we have a better understanding of gene expression of T-cells, let's have a look if we can find any effect of rheumatoid arthritis treatments on a genomic scale.    
  
 *Data used:*  
-* R2 titel: Disease Rheumatoid arthritis (drugs) - Lauwerys - 40 - MAS5.0 - u133p2
+* R2 dataset: Disease Rheumatoid arthritis (drugs) - Lauwerys - 40 - MAS5.0 - u133p2
 * Description: Paired synovial biopsy samples were obtained from the affected knee of early RA patients before and 12 weeks after initiation of Tocilizumab (n=12) or Methotrexate (n=8) therapy 
 
 *Techniques used:*   
