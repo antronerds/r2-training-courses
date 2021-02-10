@@ -52,13 +52,18 @@ The five numbered boxes or steps in the middle of the R2 main page allow you to 
 * The default analysis is View a gene. Type in the textbox of step 4 *Gene / Probeset:* **CD4**.   
 * Click the **Next** button. To read a description of your provided gene, hover your mouse over the bold **CD4** letters next to the radiobutton.  Leave all settings as is and click **Next** again to get a result.   
 
- The dots in the graph show the expression value of each sample of the dataset for the gene CD4. Under the graph you can see different types of *annotation*.
+ The dots in the graph show the expression value of each sample of the dataset for the gene CD4. Under the graph you can see different types of *annotation*. 
+ In R2 the samples of a dataset can be annotated with extra information, such as clinical data of the patients the sample were taken from, or biological characteristics of the cells that were observed in the lab.  
+   
+ Each group of annotated data is called a *Track* in R2. You will see the annotation often displayed underneath a plot, or if you hover your mouse of the dots in a plot. Try it out with your mouse in the graph that you have generated to view the expression of the gene CD4.  
+ Furthermore, these tracks can be used in most of the analyses in R2 to add a layer of complexity. Tracks will allow you for instance to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to lets say different phenotypes or demographic characteristics.
  
 ---------
 
-   ![](_static/images/R2d2_logo.png)**Do you notice anything different about the expression levels between the two colors of the *t-cell* annotation?**   
+   ![](_static/images/R2d2_logo.png)**Look at the *t-cell* track underneath the graph. The two colors represent two different cell types. Hover with your mouse over the two different colors of this cell type annotation row. Which cell types are present in the dataset?**
+       
    
-   ![](_static/images/R2d2_logo.png)**Hover with your mouse over the two different colors of this cell type annotation row. Which cell type has high expression of CD4?**
+   ![](_static/images/R2d2_logo.png)**Do you notice anything different about the expression levels between the two cell types?**
  <br>
  
  ---------   
