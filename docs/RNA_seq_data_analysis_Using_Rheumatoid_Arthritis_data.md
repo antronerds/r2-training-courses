@@ -88,12 +88,15 @@ We can make use of the annotations to view the results of our samples in groups.
  
  * Next to the visual representation, R2 also provides the five number summary in textual format. Hover your mouse over each box to compare the summarizing values of the two groups. 
  
-The circles on top of the boxplot show the individual value of each sample, which is a good way to stay aware of the raw data and the distribution behind the summary.
+ The circles on top of the boxplot show the individual value of each sample, which is a good way to stay aware of the raw data and the distribution behind the summary.
  We can see that the two groups show different values for the boxplots. But how certain are we that the group means vary by more than that random chance allows? To answer that question R2 shows you the results of an analysis of variance (ANOVA): you can find the F-value, the test statistic of the ANOVA test, and the p-value of the ANOVA test in the table above the plot.  
+ 
 ---------  
   
-   ![](_static/images/R2d2_logo.png)**What can you conclude about the expression of the gene TNF in blood tissue versus synovial fluid?**
- <br>
+  ![](_static/images/R2d2_logo.png)**What can you conclude about the expression of the gene TNF in blood tissue versus synovial fluid?**   
+   
+ <br>  
+ 
 ---------  
 
 The immune system is a complex system of different cell types that interact with each other with chemokines and other cytokines. T cells are one of two primary types of white blood cells — B cells being the second type — that determine the specificity of immune response to antigens (foreign substances) in the body. T cells originate in the bone marrow and mature in the thymus.  
@@ -177,7 +180,7 @@ A **t-SNE** analysis (t-Distributed Stochastic Neighbor Embedding) can summarize
 
 Each dot is a sample and the axes are the more abstract t-SNE variables (v1 and v2).  
   
- So far the black dots do not give us much insight. To see whether any biological process might determine the similarity in expression profiles, we can color the dots with a track. Sometimes, biological or clinical annotation groups correspond with the t-SNE ordering of the samples in the plot. 
+ So far the black dots do not give us much insight. To see whether any biological process might determine the similarity in expression profiles. We can color the dots with a track. Sometimes, biological or clinical annotation groups correspond with the t-SNE ordering of the samples in the plot. 
  
 * Colors are not set by default. Under the graph, first adjust *ColorMode:* **Color by Track** and *Track for color:* **tissue (2 cat)**; click next for the changes to take effect.  
 
