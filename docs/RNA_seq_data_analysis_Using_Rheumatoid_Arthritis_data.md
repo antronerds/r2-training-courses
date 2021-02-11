@@ -86,9 +86,9 @@ We can make use of the annotations to view the results of our samples in groups.
   
  Often you use a boxplot to assess whether the expression values between groups of samples differ for a particular gene and to quickly identify average values, outliers, the dispersion of the data set, and signs of skewness.  
  
- * Next to the visual representation, R2 also provides the five number summary in textual format. Hover your mouse over each box to compare the summarizing values of the two groups. 
- 
- The circles on top of the boxplot show the individual value of each sample, which is a good way to stay aware of the raw data and the distribution behind the summary.
+ * Next to the visual representation, R2 also provides the five number summary in textual format. Hover your mouse over each box to compare the summarizing values of the two groups.  
+   
+  The circles on top of the boxplot show the individual value of each sample, which is a good way to stay aware of the raw data and the distribution behind the summary.
  We can see that the two groups show different values for the boxplots. But how certain are we that the group means vary by more than that random chance allows? To answer that question R2 shows you the results of an analysis of variance (ANOVA): you can find the F-value, the test statistic of the ANOVA test, and the p-value of the ANOVA test in the table above the plot.  
  
 ---------  
@@ -203,8 +203,8 @@ Each dot is a sample and the axes are the more abstract t-SNE variables (v1 and 
 We have seen that the expression profiles of the same cell types can show differences in peripheral blood and synovial fluid. It would be interesting to have a better understanding which genes and pathways cause the biggest differences and whether they are relevant to RA pathogenesis. 
 
 * From the main page, select the analysis **Find Differential expression between groups** in box 3; click **Next**.  
-* In the next page with selection criteria, choose *Select a track:* **tissue (2cat)**.   
-* The rest of the settings we leave as is. Note that by default the *anova test* is selected with a p-value treshold of 0.01. Click **Next** and click **Next** in the group selection where both blood and synovial fluid are selected.
+* In the next page with selection criteria, choose *Select a track:* **tissue (2cat)**. R2 will look for most differentially expressed genes between the groups of samples as defined by the track that is chosen in this setting. Thus, in our case, R2 will look for those genes that are most differing in expression values in blood samples as compared to synovial fluid samples.   
+* Note that by default the *anova test* is selected with a p-value treshold of 0.01. We leave all these settings as is. Click **Next** and click **Next** in the group selection where both blood and synovial fluid are selected.
 
  R2 now performs a one-way Anova statistical test on the fly with a correction for multiple testing. The result is a list of genes that is ordered by the most significant differential expression between the groups that we chose before (PB and SF). 
   
