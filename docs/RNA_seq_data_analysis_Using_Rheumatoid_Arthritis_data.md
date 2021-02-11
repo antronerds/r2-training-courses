@@ -55,7 +55,9 @@ The five numbered boxes or steps in the middle of the R2 main page allow you to 
  The dots in the graph show the expression value of each sample of the dataset for the gene CD4. Under the graph you can see different types of *annotation*. 
  In R2 the samples of a dataset can be annotated with extra information, such as clinical data of the patients the sample were taken from, or biological characteristics of the cells that were observed in the lab.  
    
- Each group of annotated data is called a *Track* in R2. You will see the annotation often displayed underneath a plot, or if you hover your mouse of the dots in a plot. Try it out with your mouse in the graph that you have generated to view the expression of the gene CD4.  
+ Each group of annotated data is called a *Track* in R2. You will see the annotation often displayed underneath a plot, or if you hover your mouse of the dots in a plot. 
+ * Try it out with your mouse in the graph that you have generated to view the expression of the gene CD4.  
+ 
  Furthermore, these tracks can be used in most of the analyses in R2 to add a layer of complexity. Tracks will allow you for instance to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to lets say different phenotypes or demographic characteristics.
  
 ---------
@@ -82,11 +84,16 @@ We can make use of the annotations to view the results of our samples in groups.
 * Under *Graphics* adjust *Graphtype:* **Boxplot with circles** and *ColorMode:* **Color by Track**.
 * After you selected your preferred adjustments, click **Adjust Settings**.  
   
-    
----------
-
-   ![](_static/images/R2d2_logo.png)**What can you conclude about the expression of the gene TNF in blood tissue versus synovial fluid?**  
-   
+ Often you use a boxplot to assess whether the expression values between groups of samples differ for a particular gene and to quickly identify average values, outliers, the dispersion of the data set, and signs of skewness.  
+ 
+ * Next to the visual representation, R2 also provides the five number summary in textual format. Hover your mouse over each box to compare the summarizing values of the two groups. 
+ 
+The circles on top of the boxplot show the individual value of each sample, which is a good way to stay aware of the raw data and the distribution behind the summary.
+ We can see that the two groups show different values for the boxplots. But how certain are we that the group means vary by more than that random chance allows? To answer that question R2 shows you the results of an analysis of variance (ANOVA): you can find the F-value, the test statistic of the ANOVA test, and the p-value of the ANOVA test in the table above the plot.  
+---------  
+  
+   ![](_static/images/R2d2_logo.png)**What can you conclude about the expression of the gene TNF in blood tissue versus synovial fluid?**
+ <br>
 ---------  
 
 The immune system is a complex system of different cell types that interact with each other with chemokines and other cytokines. T cells are one of two primary types of white blood cells — B cells being the second type — that determine the specificity of immune response to antigens (foreign substances) in the body. T cells originate in the bone marrow and mature in the thymus.  
@@ -127,8 +134,7 @@ The immune system is a complex system of different cell types that interact with
 
 <br>  
 
-We have seen that the samples of a dataset can be annotated with e.g clinical data or molecular biology parameters such as demographic characteristics and different phenotypes. Each group of annotated data is called a **track** in R2. These tracks can be used to adapt your analysis based on your dataset specific anntotation: to filter your samples, to compare groups of samples, to color plots with meta information, or to correlate genomics patterns in your data.  
-
+We have seen before that the samples of a dataset can be annotated with extra annotation, or tracks. 
 To get a better overview of the available annotation of a dataset, we can use the tool **Cohort Overview** in R2. 
 
 * Go back to the main page and select **Cohort Overview** as type of analysis in box 3.
@@ -157,12 +163,11 @@ A **t-SNE** analysis (t-Distributed Stochastic Neighbor Embedding) can summarize
 * Click the button below to show a 2D t-SNE plot of the Okuzono dataset in R2
 
 <form name="pca_form" target="_blank" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method="POST">
-<input type="hidden" name="option" value="plot_tsne">
-<input type="hidden" name="switch" value="2">
+<input type="hidden" name="option" value="tsne_plot">
+<input type="hidden" name="tsne_id" value="45159a5e2c4c234999cb70b745fbc72b">
 <input type="hidden" name="perplexity" value="20">
 <input type="hidden" name="dotsize" value="6">
 <input type="hidden" name="table" value="ps_avgpres_gse118829subsgeo75_gpl17303">
-<input type="hidden" name="tsnefile" value="tsne-3ac5538442388896c3406cce49f09871.txt">
 <input type="hidden" name="cortype" value="transform_zscore">
 <input type="hidden" name="subset" value="">
 <button type="submit" >Go to t-SNE Analysis</button>
