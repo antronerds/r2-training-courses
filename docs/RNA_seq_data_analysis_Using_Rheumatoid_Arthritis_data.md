@@ -213,12 +213,13 @@ We have seen that the expression profiles of the same cell types can show differ
  
    ![](_static/images/R2d2_logo.png)**Do you recognize any genes related to the immune system?**
    
-   **Hover your mouse over the names of the genes to read a summary of information about its function and alternative names.  
-   Click on a gene name to see the gene expression per sample in a *One Gene View* graph.**  
+   ![](_static/images/R2d2_logo.png)**Hover your mouse over the names of the genes to read a summary of information about its function and alternative names.  
+   
+   ![](_static/images/R2d2_logo.png)Click on a gene name to see the gene expression per sample in a *One Gene View* graph, separated by the tissue track. Note that underneath the graph, you can adapt the graph to your liking, to e.g. a boxplot with circles again.**  
    
   ---------
     
- * To find the biological processes that are affected by the genes in this list, we can use the Gene Set Analysis. On the menu to the right of your list of genes click the button **Gene Set Analysis** and click **Next** in the following window.  
+ * On the page with the list of differentially expressed genes, the buttons on the righthand side of the page show further analysis options that you can do with this list of genes. To find the biological processes that are affected by the genes in this list, we can use the Gene set analysis. Click the button **Gene set analysis** and click **Next** in the following window.  
  
  The returned table shows you the processes in which the genes are involved as defined by the [KEGG (Kyoto Encyclopedia of Genes and Genomes) database](https://www.genome.jp/kegg/).  
  
@@ -226,11 +227,12 @@ We have seen that the expression profiles of the same cell types can show differ
  
  * Above the result table, you can read the meaning of the color coding. Which tissue has a larger expression of most of the genes. What does that mean biologically? 
    
+ To obtain a synovial fluid sample for a patient is an invasive procedure. One of the bigger research questions is whether blood samples could provide enough information for treatment decisions.
    
  ---------  
  
   
-![](_static/images/R2d2_logo.png)**What are your thoughts on RA treatment based on peripheral blood samples?**  
+![](_static/images/R2d2_logo.png)**What can you say about the likelihood that peripheral blood and synovial fluid can be used interchangeably as sample base for RA treatment decisions?**  
   
  ---------  
  
@@ -274,9 +276,9 @@ First, we take a look at the information that was provided. Let's start with the
 
 Since this set is treatment related, let's plot some data to see if treatment has any result.
 
-* Go back to the main page. Choose the analysis **Correlate gene with track** and type in box 4 any of the genes that in the description is mentioned to be down regulated by treatment. Click **Next**.
+* Go back to the main page. Choose the analysis **Correlate gene with track** and type in box 4 any of the genes that in the description is mentioned to be down regulated by treatment. A "-" can be left out of the gene name in R2, e.g. "IL-6" becomes "IL6". Click **Next**.
 * Choose *Select a track:* **therapy (2cat)** and click **Next**.
-* Every patient had a sample taken before the start (no) and after 12 weeks (yes) of therapy, it is a paired test. It would be nice to see which dots belong to the same patient. With Sample Paths we can connect the two samples of each patient. Because it is a bit labour intensive to get the correct syntax, we did this for you. Copy paste the following information in the textbox of **Sample Paths**: GSM1116933,GSM1116934;GSM1116935,GSM1116936;GSM1116937,GSM1116938;GSM1116939,GSM1116940;GSM1116941,GSM1116942;GSM1116943,GSM1116944;GSM1116945,GSM1116946;GSM1116947,GSM1116948;GSM1116949,GSM1116950;GSM1116951,GSM1116952;GSM1116953,GSM1116954;GSM1116955,GSM1116956;GSM1116957,GSM1116958;GSM1116959,GSM1116960;GSM1116961,GSM1116962;GSM1116963,GSM1116964;GSM1116965,GSM1116966;GSM1116967,GSM1116968;GSM1116969,GSM1116970;GSM1116971,GSM1116972
+* Every patient had a sample taken before the start (no) and after 12 weeks (yes) of therapy, it is a paired test. It would be nice to see which dots belong to the same patient. With Sample Paths we can connect the two samples of each patient with the format Samplename1,Samplename2; etc. Because it is a bit labour intensive to get the correct syntax, we did this for you. Copy paste the following information in the textbox of **Sample Paths**: ```GSM1116933,GSM1116934;GSM1116935,GSM1116936;GSM1116937,GSM1116938;GSM1116939,GSM1116940;GSM1116941,GSM1116942;GSM1116943,GSM1116944;GSM1116945,GSM1116946;GSM1116947,GSM1116948;GSM1116949,GSM1116950;GSM1116951,GSM1116952;GSM1116953,GSM1116954;GSM1116955,GSM1116956;GSM1116957,GSM1116958;GSM1116959,GSM1116960;GSM1116961,GSM1116962;GSM1116963,GSM1116964;GSM1116965,GSM1116966;GSM1116967,GSM1116968;GSM1116969,GSM1116970;GSM1116971,GSM1116972```
 * Click on **Adjust Settings**
 * Change **Colormode:  Color by Track** and **Track for Color: therapy (2 cat)**    
   
