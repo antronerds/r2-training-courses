@@ -294,7 +294,6 @@ Since this set is treatment related, let's plot some data to see if treatment ha
 ---
 
 * In the upper right corner is a text box **Change gene**. Change the gene to a different gene that you can find in the description of the study, or that you yourself wonder about. Click the Change Gene button under the textbox. 
-* By a slight adjustment of the graph, sometimes we can get different insights. Change under Group Separations **use track: pid_drug**. Which drug works best to downregulate this gene? Do any of the patients have remarkable results?  
 <br><br>  
   
 
@@ -319,7 +318,7 @@ We now want to know which pathways are affected by treatment with tocilizumab.
 * Under *Sample Filter* we want to select the subset of samples involved in the tocilizumab study, both before and after treatment. Therefore, select *Select a track (subset):* **drug (3 cat)** and check both **tocilizumab (12)** and **untreated (20)**, click **ok**. Click **Next**. Click **Next** again on the following page. 
 
 The list shows the genes that are differentially expressed before and after treatment. 
-* To see in which pathways these genes play a role, this time we click on **Gene Ontology Analysis**. What pathways show a difference before and after therapy? Look at the color scheme, therapy: no >= yes means that the genes where higher expressed before than after treatment. Is this what you would exprect?
+* To see in which pathways these genes play a role, this time we click on **Gene Ontology Analysis**. What pathways show a difference before and after therapy? Look at the color scheme, therapy: no >= yes means that the genes were higher expressed before than after treatment. Is this what you would expect?
 * The page with the list of differentiating genes is still opened. This time click the button Heatmap(zscore).
 ---
 
