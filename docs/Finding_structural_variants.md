@@ -8,8 +8,8 @@ In this course we will introduce R2, the web based genomics analysis and visuali
 
 We hope to show how R2 can be used to visualize and analyze your WGS data. Please note that this training session requires accounts with additional access. Therefore, make sure that you have obtained a proper account from the tutors. 
 
-This resource is located online at http://r2-training-courses.readthedocs.io  
-Additional courses can be found at the same address.
+This resource is located online at http://r2-training-courses.readthedocs.io   
+ Additional courses can be found at the same address.
 
 Introduction 
 ---
