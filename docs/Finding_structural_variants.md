@@ -10,8 +10,11 @@ We hope to show how R2 can be used to visualize and analyze your WGS data. Pleas
 
 This resource is located online at [http://r2-training-courses.readthedocs.io](http://r2-training-courses.readthedocs.io). Additional courses can be found at the same address.  
   
-  The grey buttons in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The green buttons in this document will open up a Google form, one per section, with which you can submit your answers. 
+  The grey buttons in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily.  
+  
+ This green button will open up a Google form with which you can submit your answers. 
 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScLLO8_RAjyTMrLvhEdMqUAxmSwgUDbnHKe1gbFvOXOX8dTeA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
 
 Introduction 
 ---
