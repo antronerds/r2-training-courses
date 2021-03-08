@@ -8,7 +8,10 @@ In this course we will introduce R2, the web based genomics analysis and visuali
 
 We hope to show how R2 can be used to visualize and analyze your WGS data. Please note that this training session requires accounts with additional access. Therefore, make sure that you have obtained a proper account from the tutors. 
 
-This resource is located online at [http://r2-training-courses.readthedocs.io](http://r2-training-courses.readthedocs.io). Additional courses can be found at the same address.
+This resource is located online at [http://r2-training-courses.readthedocs.io](http://r2-training-courses.readthedocs.io). Additional courses can be found at the same address.  
+  
+  The grey buttons in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The green buttons in this document will open up a Google form, one per section, with which you can submit your answers. 
+
 
 Introduction 
 ---
@@ -21,17 +24,15 @@ Cancer is a very complex disease. Much more complicated than originally anticipa
 Although there has been extensive research into similar mutation mechanisms in neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this type of cancer. In this practical work session we will try to bring you cutting edge research in this often deadly childhood tumor.
   
   
-Recent research suggests that neuroblastoma consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of neuroblastoma. Children developing a relapse almost always die. 
-Fortunately new technologies have become available to molecular biology. These enable us to not only study mutations and RNA expression of genes, but to study the epigenetic modifications of the DNA-associated histones as well. And in addition, genes can now be manipulated in cell lines and living tissues.  
+Recent research suggests that neuroblastoma consists of different cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of neuroblastoma. Children developing a relapse almost always die. 
+Fortunately, new technologies have become available to molecular biology. These enable us to not only study mutations and RNA expression of genes, but to study the epigenetic modifications of the DNA-associated histones as well. In addition, genes can now be manipulated in cell lines and living tissues.  
 Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from neuroblastoma tumors and cell lines. 
 
 Despite decades of research high stage neuroblastoma still has a very poor prognosis. Since cancer is a disease of genomic aberrations we're first going to investigate what aberrations are present and how these might relate to the onset of neuroblastoma. 
 
-
 Exploring the dataset
 ---
 The oncogenomics department of the AMC has gathered a richly annotated set of neuroblastoma tumors. To easily explore this, the R2 development team has devised the concept of Datascopes; a convenient view on the data with some pre-built analyses readily available.  
-  
   
 * Go to R2 (http://r2.amc.nl) by clicking on the button below:  
  
@@ -59,7 +60,7 @@ The pie charts in the cohort overview allow you to look at the distribution of t
 --------
 
   ![](_static/images/R2d2_logo.png) 
-  **How did the stage(inss) pie chart adapt to the selection of mycn amplified samples and what do you know about these stages in Neuroblastoma?** 
+  **How did the stage(inss) pie chart adapt to the selection of mycn amplified samples and what do you know about these stages in neuroblastoma?** 
 <br>
 <br>
 
@@ -111,18 +112,25 @@ A comprehensive list of the mutations can be accessed through R2.
 ---------
 
   
-* There are no mutations recurring more than a few times. Go to the ALK gene and select the **view** link (note: this is separate from the detail link). In a new tab this mutation is shown in the R2 genomebrowser zoomed in on the genome to the base level. All samples are drawn beneath this stretch. Annotation of the publicly available cosmic mutation database is provided as well.
+* Notice that no mutations recur more than a few times. 
+* Go to the ALK gene and select the **view** link (note: this is separate from the detail link). 
+
+In a new tab this mutation is shown in the R2 GenomeBrowser zoomed in on the genome to the base level. All samples are drawn beneath this stretch. Annotation of the publicly available COSMIC, the Catalogue Of Somatic Mutations In Cancer, is shown as well in the GenomeBrowser. COSMIC is the world's largest and most comprehensive resource for exploring the impact of somatic mutations in human cancer.
 
 ---------
   ![](_static/images/R2d2_logo.png)**What type of aberrations does the ALK gene suffer?**
-
-<br>
 <br>
 
 ---------
 
-* The buttons on top of the page can be used to zoom in and out. Zoom out 20x, 20x, 5x times resulting in a region of approximately 100.000 bp. 
-* The GenomeBrowser has a tremendous number of parameters that can be set. Scroll down to the lower half of the page. A form shows quite some parameter fields. These provide additional annotations and settings for the algorithms used. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data, which is based on methylation and acetylation patterns of the genome. This annotation however, is only provided on another Human Genome build. In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
+The buttons on top of the page can be used to zoom in and out and to move your position. This way you can "walk" over the genome, for instance to have a closer look at the transcription start site of a gene.  
+* Try out a view of the buttons.  
+
+The GenomeBrowser has a tremendous number of parameters that can be set. 
+* Scroll down to the lower half of the page.  
+
+A form shows quite some parameter fields. These provide additional annotations and settings for the algorithms used. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data, which is based on methylation and acetylation patterns of the genome. This annotation however, is only provided on another Human Genome build. 
+* In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
 * An unannotated version of the reference genome is shown. Find the **Refseq(R2)** and switch the annotation on. Click **redraw**
 
 ---------
@@ -133,11 +141,15 @@ A comprehensive list of the mutations can be accessed through R2.
 
 ---------
 
-* If ALK gene is out of scope, locate the ALK gene (hint type in the gene name in the left upper **Find gene** field) 
+* If the ALK gene is out of scope, you can jump back to the gene with the help of the text field in the left upper corner **Find gene**: type in the gene name *ALK*. 
 
-* For clarity you can now switch off the cosmic annotation (in the Genome Variation box) and the Calldif Somatic Genome annotation (in the X:Complete Genomics => Variants box). Set the NIH Epigenome Roadmap annotation to all (in the TranscriptView annotation box). This annotation provides information on public datasets that have established whether chromatin regions are subject to active transcription (green), enhancer regions (yellow) or are part of a transcription start site (red).
+The button below brings you to the transcription start site of the ALK gene. Several genome annotations have been switched on or off. You can try them out yourself first:
+* Switch *off* the **cosmic** annotation (in the Genome Variation box) and the **Calldif Somatic Genome** annotation (in the X:Complete Genomics => Variants box). 
+* Set the **NIH Epigenome Roadmap** annotation to *all* (in the TranscriptView annotation box). This annotation provides information on public datasets that have established whether chromatin regions are subject to active transcription (green), enhancer regions (yellow) or are part of a transcription start site (red). Click **redraw**.  
 
-<form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+In order to be at the correct position, simply click the button below:
+
+<form name="accessing_r2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type='hidden' name='option' value='gbv2_base'>
   <input type='hidden' name='modus' value='geneview'>
   <input type='hidden' name='genome_build' value='hg19'>
@@ -149,13 +161,15 @@ A comprehensive list of the mutations can be accessed through R2.
   <button type="submit" >Cleaned up View in R2</button>
 </form><br> 
 
-* Select the front end of the gene by selecting a region; see image (hint the color of the transcript denotes the reading direction; green means the regular direction, red the opposite direction) Click redraw (Note: the NIH annotation only appears for regions under 200.000 bp)
+* Zoom in more on the front end of the gene by selecting a region; see image (hint the color of the transcript denotes the reading direction; green means the regular direction, red the opposite direction) 
+* Click **redraw** (Note: the NIH annotation only appears for regions under 200.000 bp)
 
   ![](_static/images/structural_variants_selecting_region.png "Figure 3: Selecting a region.")
 	
   [**Figure 3: Selecting a region.**](_static/images/structural_variants_selecting_region.png)
 
-* This NIH Epigenome Roadmap annotation is actually a sum of data from a lot of data sources. These sources can be further detailed by selecting the detail view in the toolbox that appears when you click the tools icon, see image below. This box appears at more settings fields if available.
+This NIH Epigenome Roadmap annotation is actually a sum of data from a lot of data sources. These sources can be further detailed by selecting the detail view in the toolbox that appears when you click the tools icon, see image below.
+ * Select **mode:** *detail*, and click **redraw**. 
 
 
   ![](_static/images/structural_variants_selecting_toolbox.png "Figure 4: Opening the NIH parameter settings toolbox.")
@@ -179,7 +193,8 @@ A comprehensive list of the mutations can be accessed through R2.
 ---------
 
 
-* Now go back to the Graduate Training Course datascope, select the Somatic Variants Table tile and now click the  **detail** link. R2 shows additional information on the expression of the gene and its location on the genome. 
+* Now go back to the Graduate Training Course datascope (click in th etop left corner on the link **Graduate Training Course portal**)
+* Select the Somatic Variants Table tile and now click the  **detail** link of ALK. R2 shows additional information on the expression of the gene and its location on the genome. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What is remarkable about the expression of the ALK gene in neuroblastoma?**
@@ -189,7 +204,8 @@ A comprehensive list of the mutations can be accessed through R2.
 
 ---------
  
-* From this detail view other analysis tools within R2 can be approached by clicking on the links below the graphs. Feel free to explore these further.
+From this detail view other analysis tools within R2 can be approached by clicking on the links below the graphs.
+* Feel free to explore these further.
 
 Further use of WGS data; structural variants
 --------------------------------------------
