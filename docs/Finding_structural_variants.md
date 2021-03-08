@@ -61,7 +61,7 @@ The pie charts in the cohort overview allow you to look at the distribution of t
 ---------
 <br>  
 Until recently only several genomic aberrations were known:  
-<br>
+<br><br> 
 <table>
 <tr><th>  Gene  </th><th>Type        </th><th>Reference</th></tr>
 <tr><td>MYCN</td><td>amplification 20%</td><td>(Schwab et al., 1983)</td></tr>
@@ -75,7 +75,9 @@ Until recently only several genomic aberrations were known:
 <tr><td>LIN28B</td><td>1%</td><td>(Molenaar et al., 2012)</td></tr>
 </table>
 <br>
-To gain further insight, the Oncogenomics department of the AMC set out to sequence 87 untreated primary neuroblastoma tumours of all stages from this set.
+To gain further insight, the Oncogenomics department of the AMC set out to sequence 87 untreated primary neuroblastoma tumours of all stages from this set.  
+  
+  
 
 Somatic mutations in neuroblastoma
 ---
