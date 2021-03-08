@@ -44,7 +44,7 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 * Log on to the R2 platform with your credentials that were provided (or apply for a login using the link).  
 * In the left menu click on **Change Data Scope** > **Training** > **Graduate Training Course**
 * In the middle section of the page, an additional choice step appears; click **Go to the Graduate Training Course Portal**
-* For a quick impression of the data select the **Cohort Overview**. R2 shows the tumor series with its annotation. Hover your mouse over the different slices of the **stage(inss)** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
+* For a quick impression of the data select the **Cohort Overview**. R2 shows the available samples in this tumor series with its annotation. In the table at the bottom, each row represents one sample with the respective annotation values. 
 
 The samples of a dataset can be annotated with extra information, for example, clinical data or molecular biology parameters. Each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns with e.g. different phenotypes or demographic characteristics.  
 
@@ -52,12 +52,13 @@ Pie Charts
 ---
 The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value.  
 <br>
-
-  ![](_static/images/R2d2_logo.png)**With the dropdown menu below the main pie chart, select the 'mycn_amp' annotation. Click on the 'yes' slice and watch how the stage(inss) pie chart and the table at the bottom change.**  
-   
-  **How many samples have a MYCN amplification?**
+* Hover your mouse over the different slices of the **stage(inss)** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
+* With the dropdown menu below the main pie chart, select the 'mycn_amp' annotation. 
+* Click on the 'yes' slice of the mycn_amp pie chart
+--------
+  ![](_static/images/R2d2_logo.png) 
+  **How did the stage(inss) pie chart change and what do you know about these stages in Neuroblastoma?**
 <br>
-
 ---------
 <br>  
 Until recently only several genomic aberrations were known:  
@@ -76,8 +77,7 @@ Until recently only several genomic aberrations were known:
 </table>
 <br>
 To gain further insight, the Oncogenomics department of the AMC set out to sequence 87 untreated primary neuroblastoma tumours of all stages from this set.  
-  
-  
+<br><br>
 
 Somatic mutations in neuroblastoma
 ---
