@@ -46,7 +46,7 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 * In the middle section of the page, an additional choice step appears; click **Go to the Graduate Training Course Portal**
 * For a quick impression of the data select the **Cohort Overview**. R2 shows the tumor series with its annotation. Hover your mouse over the different slices of the **stage(inss)** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
 
-The samples of a dataset can be annotated with, for example, clinical data or molecular biology parameters. Each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns with e.g. different phenotypes or demographic characteristics.  
+The samples of a dataset can be annotated with extra information, for example, clinical data or molecular biology parameters. Each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns with e.g. different phenotypes or demographic characteristics.  
 
 Pie Charts
 ---
@@ -60,8 +60,8 @@ The pie charts in the cohort overview allow you to look at the distribution of t
 
 ---------
 <br>  
-Until recently only several genomic aberrations were known:
-
+Until recently only several genomic aberrations were known:  
+<br>
 <table>
 <tr><th>  Gene  </th><th>Type        </th><th>Reference</th></tr>
 <tr><td>MYCN</td><td>amplification 20%</td><td>(Schwab et al., 1983)</td></tr>
@@ -74,8 +74,7 @@ Until recently only several genomic aberrations were known:
 <tr><td>FOXR1</td><td>1%</td><td>(Santo et al., 2011)</td></tr>
 <tr><td>LIN28B</td><td>1%</td><td>(Molenaar et al., 2012)</td></tr>
 </table>
-
-
+<br>
 To gain further insight, the Oncogenomics department of the AMC set out to sequence 87 untreated primary neuroblastoma tumours of all stages from this set.
 
 Somatic mutations in neuroblastoma
