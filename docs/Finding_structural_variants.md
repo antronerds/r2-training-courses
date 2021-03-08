@@ -8,8 +8,7 @@ In this course we will introduce R2, the web based genomics analysis and visuali
 
 We hope to show how R2 can be used to visualize and analyze your WGS data. Please note that this training session requires accounts with additional access. Therefore, make sure that you have obtained a proper account from the tutors. 
 
-This resource is located online at Paper: [http://r2-training-courses.readthedocs.io](http://r2-training-courses.readthedocs.io).  
-Additional courses can be found at the same address.
+This resource is located online at [http://r2-training-courses.readthedocs.io](http://r2-training-courses.readthedocs.io). Additional courses can be found at the same address.
 
 Introduction 
 ---
@@ -45,7 +44,7 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 * Log on to the R2 platform with your credentials that were provided (or apply for a login using the link).  
 * In the left menu click on **Change Data Scope** > **Training** > **Graduate Training Course**
 * In the middle section of the page, an additional choice step appears; click **Go to the Graduate Training Course Portal**
-* For a quick impression of the data select the **Cohort Overview**. R2 presents the tumor series with its annotation. Hover your mouse over the different slices of the **stage(inss)** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
+* For a quick impression of the data select the **Cohort Overview**. R2 shows the tumor series with its annotation. Hover your mouse over the different slices of the **stage(inss)** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
 
 The samples of a dataset can be annotated with, for example, clinical data or molecular biology parameters. Each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns with e.g. different phenotypes or demographic characteristics.  
 
