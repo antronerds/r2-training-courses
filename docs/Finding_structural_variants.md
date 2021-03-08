@@ -54,12 +54,17 @@ The pie charts in the cohort overview allow you to look at the distribution of t
 <br>
 * Hover your mouse over the different slices of the **stage(inss)** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
 * With the dropdown menu below the main pie chart, select the 'mycn_amp' annotation. 
-* Click on the 'yes' slice of the mycn_amp pie chart
+* Filter the overview of the dataset for samples with a mycn amplification by a click on the 'yes' slice in the pie chart.
+
 --------
+
   ![](_static/images/R2d2_logo.png) 
-  **How did the stage(inss) pie chart change and what do you know about these stages in Neuroblastoma?**
+  **How did the stage(inss) pie chart adapt to the selection of mycn amplified samples and what do you know about these stages in Neuroblastoma?** 
 <br>
+<br>
+
 ---------
+
 <br>  
 Until recently only several genomic aberrations were known:  
 <br><br> 
