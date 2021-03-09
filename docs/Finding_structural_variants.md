@@ -36,7 +36,7 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
   
 * Go to R2 (http://r2.amc.nl) by clicking on the button below:  
  
-<form name="accessing_r2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_nbadam88_u133p2">
   <button type="submit" class="course r2submit" >Go to R2</button>
 </form>  
@@ -154,7 +154,7 @@ The button below ('Cleaned up View in R2') brings you to the transcription start
 
 In order to be at the correct position, simply click the button below:
 
-<form name="accessing_r2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type='hidden' name='option' value='gbv2_base'>
   <input type='hidden' name='modus' value='geneview'>
   <input type='hidden' name='genome_build' value='hg19'>
