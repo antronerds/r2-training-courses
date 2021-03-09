@@ -52,8 +52,9 @@ The samples of a dataset can be annotated with extra information, for example, c
 Pie Charts
 ---
 
-This green button will open up the Google form with which you can submit your answers for the first sections. 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScLLO8_RAjyTMrLvhEdMqUAxmSwgUDbnHKe1gbFvOXOX8dTeA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3 and 1.4</button> 
+This green button will open up the Google form with which you can submit your answers for the first sections.
+
+ <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScLLO8_RAjyTMrLvhEdMqUAxmSwgUDbnHKe1gbFvOXOX8dTeA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3 and 1.4</button> 
 
 The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value.  
 <br>
@@ -228,8 +229,9 @@ An overview of all sequences appears displayed as circos plots. These give an im
 
 In a new tab a detailed view of this specific tumor genome is shown. When hovering over the plot the mouse opens a magnifier window.
 
-This green button will open up the Google form with which you can submit your answers for sections 1.5 and 1.6. 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScJf_kpFbMQx6Y6xW8Yb4SdMGlXir3Tbpsip-oUZKwzNVAQ1g/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.5 and 1.6</button> 
+This green button will open up the Google form with which you can submit your answers for sections 1.5 and 1.6.
+
+ <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScJf_kpFbMQx6Y6xW8Yb4SdMGlXir3Tbpsip-oUZKwzNVAQ1g/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.5 and 1.6</button> 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What do the green and red areas mean? And the arches crossing the circle?**
@@ -302,8 +304,9 @@ To see how chromothripsis relates to clinical data we can investigate survival d
 Locations of structural variants, hotspots?
 ---
 
-This green button will open up the Google form with which you can submit your answers for section 1.7. 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSec1Us3rWYcdAh3ZDNirrnTbaJtjdvEmLNlIkE1nAyXF7z87w/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.7</button> 
+This green button will open up the Google form with which you can submit your answers for section 1.7.
+
+ <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSec1Us3rWYcdAh3ZDNirrnTbaJtjdvEmLNlIkE1nAyXF7z87w/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.7</button> 
 
 Chromothripsis can be seen as an extreme case of concentration of structural variants in one sample. The question arises whether there are other hotspots of structural variation on the genome that are found in multiple samples. These might point to functional interactions.
 
