@@ -168,7 +168,7 @@ In order to be at the correct position, simply click the button below:
   <button type="submit" class="course r2submit" >Cleaned up View in R2</button>
 </form><br> 
 
-* Zoom in more on the front end of the gene by selecting a region; see image (hint the color of the transcript denotes the reading direction; green means the regular direction, red the opposite direction) 
+* Zoom in more on the transcription start site of the gene by selecting a region; see image (hint the color of the transcript denotes the reading direction; green means 5' to 3' (sense), red reads from 3' to 5') 
 * Click **redraw** (Note: the NIH annotation only appears for regions under 200.000 bp)
 
   ![](_static/images/structural_variants_selecting_region.png "Figure 3: Selecting a region.")
