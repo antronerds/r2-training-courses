@@ -147,7 +147,7 @@ A form shows quite some parameter fields. These provide additional annotations a
 
 * If the ALK gene is out of scope, you can jump back to the gene with the help of the text field in the left upper corner **Find gene**: type in the gene name *ALK*. 
 
-The button below brings you to the transcription start site of the ALK gene. Several genome annotations have been switched on or off. You can try them out yourself first:
+The button below ('Cleaned up View in R2') brings you to the transcription start site of the ALK gene. Several genome annotations have been switched on or off in that view. You can try them out yourself first:
 * Switch *off* the **cosmic** annotation (in the Genome Variation box) and the **Calldif Somatic Genome** annotation (in the X:Complete Genomics => Variants box). 
 * Set the **NIH Epigenome Roadmap** annotation to *all* (in the TranscriptView annotation box). This annotation provides information on public datasets that have established whether chromatin regions are subject to active transcription (green), enhancer regions (yellow) or are part of a transcription start site (red). Click **redraw**.  
 
