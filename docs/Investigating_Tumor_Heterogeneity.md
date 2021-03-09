@@ -38,9 +38,9 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <br>
 
 ##### Expression of key genes
-* The button below brings you to the form in which you can submit your answers for section 1.2. 
+* The button below brings you to the form in which you can submit your answers for section 2.2. 
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScp4X4rhSQZbtTqvDZvCq2pjhq_-rPK2MJEh6xeFkxwYnxW3g/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScp4X4rhSQZbtTqvDZvCq2pjhq_-rPK2MJEh6xeFkxwYnxW3g/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.2</button> 
 <br>
 <br>
 
@@ -133,9 +133,9 @@ In the former step we derived that neuroblastoma cell lines seem to group with c
 	
   [**Figure 2: Bright field image of isogenic cell line pairs.**](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png)
 
-* The button below brings you to the form in which you can submit your answers for section 1.3
+* The button below brings you to the form in which you can submit your answers for section 2.3
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScftQsw3Lzt0Hxy9RdWDTMLleY1gWwqBX7mFOxr6dTpGcaoLQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScftQsw3Lzt0Hxy9RdWDTMLleY1gWwqBX7mFOxr6dTpGcaoLQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.3</button> 
 <br>
 <br>
 
@@ -244,9 +244,9 @@ We have identified two different types of cells that occur within the same patie
 <br>
 <br>
 
-* The button below brings you to the form in which you can submit your answers for section 1.4
+* The button below brings you to the form in which you can submit your answers for section 2.4
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf67wf77wj_icofEEKhxhaarCRSX_7bwI3jW6WZ-zDx3lQUNQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.4</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf67wf77wj_icofEEKhxhaarCRSX_7bwI3jW6WZ-zDx3lQUNQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.4</button> 
 <br>
 <br>
   
@@ -332,9 +332,9 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 <br>
 <br>
 
-* The button below brings you to the form in which you can submit your answers for section 1.5
+* The button below brings you to the form in which you can submit your answers for section 2.5
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf1MYlmtI7N8awkkD77zXOlKCPeZFoLP48W_eCzmuz1lL_NwQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.5</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf1MYlmtI7N8awkkD77zXOlKCPeZFoLP48W_eCzmuz1lL_NwQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.5</button> 
 <br>
 <br>
 
@@ -411,9 +411,9 @@ The expression patterns of these specific signatures can be used to compare cell
 <br>
 <br>
 
-* The button below brings you to the form in which you can submit your answers for section 1.6
+* The button below brings you to the form in which you can submit your answers for section 2.6
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdFCOwZWCElmt_CGV5xwyavekIDbpBDBqyKsabcp_4RpBDtag/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.6</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdFCOwZWCElmt_CGV5xwyavekIDbpBDBqyKsabcp_4RpBDtag/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.6</button> 
 <br>
 <br>
 
@@ -463,9 +463,9 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 <br>
 <br>
 
-* The button below brings you to the form in which you can submit your answers for section 1.7
+* The button below brings you to the form in which you can submit your answers for section 2.7
 
-<button button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScOKKI_IdJTzkVTniMN83quFI5NrJbE9YnT9-OyDK2f6dO0Nw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.7</button> 
+<button button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScOKKI_IdJTzkVTniMN83quFI5NrJbE9YnT9-OyDK2f6dO0Nw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.7</button> 
 <br>
 <br>
 
@@ -501,9 +501,9 @@ Proving causes: manipulating cell lines
 
 From experiments it is known that cells can change their nature, some cells exhibit a certain plasticity.  
 
-* The button below brings you to the form in which you can submit your answers for section 1.8
+* The button below brings you to the form in which you can submit your answers for section 2.8
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScpq77cSHN5a5pPit1K0wP-9hNaHnu0v3dSowRqquuGk0jiag/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.8</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScpq77cSHN5a5pPit1K0wP-9hNaHnu0v3dSowRqquuGk0jiag/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.8</button> 
 <br>
 <br>
 
@@ -611,9 +611,9 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 <br>
 <br>
 
-* The button below brings you to the form in which you can submit your answers for section 1.9
+* The button below brings you to the form in which you can submit your answers for section 2.9
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeud4Q4wi5eCYKsyAHB-G5zVlMJObUgxqtAEEl9eHMdzD44Fg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.9</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeud4Q4wi5eCYKsyAHB-G5zVlMJObUgxqtAEEl9eHMdzD44Fg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.9</button> 
 <br>
 <br>
 
@@ -919,9 +919,9 @@ Suggesting therapy
  <br>
  <br>
  
- * The button below brings you to the form in which you can submit your answers for section 1.10
+ * The button below brings you to the form in which you can submit your answers for section 2.10
 
- <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdUEKHBVtlCR50GCoocIsIbNoLqAgaPHn2kOnMx5dv99uITiw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.10</button> 
+ <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdUEKHBVtlCR50GCoocIsIbNoLqAgaPHn2kOnMx5dv99uITiw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.10</button> 
  <br>
  <br>
   
