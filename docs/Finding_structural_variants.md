@@ -44,7 +44,6 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 
 * Log on to the R2 platform with your credentials that were provided (or apply for a login using the link).  
 * In the left menu click on **Change Data Scope** > **Training** > **Graduate Training Course**
-* In the middle section of the page, an additional choice step appears; click **Go to the Graduate Training Course Portal**
 * For a quick impression of the data select the **Cohort Overview**. R2 shows the available samples in this tumor series with its annotation. In the table at the bottom, each row represents one sample with the respective annotation values. 
 
 The samples of a dataset can be annotated with extra information, for example, clinical data or molecular biology parameters. Each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns with e.g. different phenotypes or demographic characteristics.  
