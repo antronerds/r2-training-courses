@@ -117,15 +117,18 @@ A comprehensive list of the mutations can be accessed through R2.
 
   
 * Notice that no mutations recur more than a few times. 
-* Go to the ALK gene and select the **view** link (note: this is separate from the detail link). 
-
-In a new tab this mutation is shown in the R2 GenomeBrowser zoomed in on the genome to the base level. All samples are drawn beneath this stretch. Annotation of the publicly available COSMIC, the Catalogue Of Somatic Mutations In Cancer, is shown as well in the GenomeBrowser. COSMIC is the world's largest and most comprehensive resource for exploring the impact of somatic mutations in human cancer.
+* Go to the ALK gene 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What type of aberrations does the ALK gene suffer?**
 <br>
 
 ---------
+
+
+* Select the **view** link (note: this is separate from the detail link). 
+
+In a new tab this mutation is shown in the R2 GenomeBrowser zoomed in on the genome to the base level. All samples are drawn beneath this stretch. Annotation of the publicly available COSMIC, the Catalogue Of Somatic Mutations In Cancer, is shown as well in the GenomeBrowser. COSMIC is the world's largest and most comprehensive resource for exploring the impact of somatic mutations in human cancer.
 
 The buttons on top of the page can be used to zoom in and out and to move your position. This way you can "walk" over the genome, for instance to have a closer look at the transcription start site of a gene.  
 * Try out a view of the buttons.  
@@ -138,7 +141,7 @@ A form shows quite some parameter fields. These provide additional annotations a
 * An unannotated version of the reference genome is shown. Find the **Refseq(R2)** and switch the annotation on. Click **redraw**
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What has happened to the ALK gene?**
+  ![](_static/images/R2d2_logo.png)**Notice that ALK is no longer in frame at the same position on the genome. Can you think of a reason why this is the case?**
 
 <br>
 <br>
