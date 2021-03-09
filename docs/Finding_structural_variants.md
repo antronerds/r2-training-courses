@@ -38,7 +38,7 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
  
 <form name="accessing_r2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_nbadam88_u133p2">
-  <button type="submit" >Go to R2</button>
+  <button type="submit" class="course r2submit" >Go to R2</button>
 </form>  
 <br>
 
@@ -163,7 +163,7 @@ In order to be at the correct position, simply click the button below:
   <input type='hidden' name='end' value='30163600'>
   <input type='hidden' name='a10refseq' value='on'>
   <input type='hidden' name='epi_roadmap' value='all'>
-  <button type="submit" >Cleaned up View in R2</button>
+  <button type="submit" class="course r2submit" >Cleaned up View in R2</button>
 </form><br> 
 
 * Zoom in more on the front end of the gene by selecting a region; see image (hint the color of the transcript denotes the reading direction; green means the regular direction, red the opposite direction) 
