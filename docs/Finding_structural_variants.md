@@ -34,7 +34,7 @@ Exploring the dataset
 ---
 The oncogenomics department of the AMC has gathered a richly annotated set of neuroblastoma tumors. To easily explore this, the R2 development team has devised the concept of Datascopes; a convenient view on the data with some pre-built analyses readily available.  
   
-* Go to R2 (http://r2.amc.nl) by clicking on the button below:  
+* Go to R2 by clicking on the button below:  
  
 <form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_nbadam88_u133p2">
