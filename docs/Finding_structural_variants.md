@@ -237,7 +237,6 @@ This green button will open up the Google form with which you can submit your an
   ![](_static/images/R2d2_logo.png)**What do the green and red areas mean? And the arches crossing the circle?**
 
 <br>
-<br>
 
 ---------
 
@@ -249,7 +248,6 @@ In the tabbed panel to the right of the circos plot all information is detailed.
 ---------
   ![](_static/images/R2d2_logo.png)**Can you locate a structural variant that involves a gene and spans two chromosomes? (Note: clicking on the _view_ link shows the actual locations on the genome)**
 
-<br>
 <br>
 
 ---------
@@ -265,7 +263,6 @@ While investigating the WGS data, an interesting phenomenon was observed. In som
   ![](_static/images/R2d2_logo.png)**Can you spot an example of such shredding from the circos overview?**
 
 <br>
-<br>
 
 ---------
 
@@ -279,7 +276,6 @@ The Shredding pattern is known by the term chromothripsis. Patients containing s
   ![](_static/images/R2d2_logo.png)**Can you spot a chromosomal pattern in the chromothripsis cases?**
 
 <br>
-<br>
 
 ---------
 
@@ -292,7 +288,6 @@ To see how chromothripsis relates to clinical data we can investigate survival d
 ---------
   ![](_static/images/R2d2_logo.png)**How does chromothripsis affect survival?**
 
-<br>
 <br>
 
 ---------
