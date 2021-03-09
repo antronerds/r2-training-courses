@@ -10,11 +10,8 @@ We hope to show how R2 can be used to visualize and analyze your WGS data. Pleas
 
 This resource is located online at [http://r2-training-courses.readthedocs.io](http://r2-training-courses.readthedocs.io). Additional courses can be found at the same address.  
   
-  The grey buttons in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily.  
+  The grey buttons in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The green buttons in this document will open up a Google form, with which you can submit your answers for the respective part of the course.  
   
- This green button will open up a Google form with which you can submit your answers. 
-
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScLLO8_RAjyTMrLvhEdMqUAxmSwgUDbnHKe1gbFvOXOX8dTeA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
 
 Introduction 
 ---
@@ -54,6 +51,10 @@ The samples of a dataset can be annotated with extra information, for example, c
 
 Pie Charts
 ---
+
+This green button will open up the Google form with which you can submit your answers for the first sections. 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScLLO8_RAjyTMrLvhEdMqUAxmSwgUDbnHKe1gbFvOXOX8dTeA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3 and 1.4</button> 
+
 The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value.  
 <br>
 * Hover your mouse over the different slices of the **stage(inss)** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
@@ -209,6 +210,7 @@ This NIH Epigenome Roadmap annotation is actually a sum of data from a lot of da
  
 From this detail view other analysis tools within R2 can be approached by clicking on the links below the graphs.
 * Feel free to explore these further.
+* Submit your form with answers of sections 1.3 and 1.4
 
 Further use of WGS data; structural variants
 --------------------------------------------
@@ -218,9 +220,16 @@ WGS data allows for further analysis; the paired end technique enables the disco
 	
   [**Figure 6: Paired end sequencing makes discovery of structural variants possible.**](_static/images/structural_variants_paired_end.png)
 
-* These structural variations are best visualized as so called _circosplots_. To access these in R2 go to the Graduate Training Course datascope and click the **circos archive** tile.
-* An overview of all sequences appears displayed as circos plots. These give an immediate comprensive view on the state of the genome. Click on one of the circos plots.
-* In a new tab a detailed view of this specific tumor genome is shown. When hovering over the plot the mouse opens a magnifier window.
+These structural variations are best visualized as so called _circosplots_. 
+* To access these circosplots in R2, go to the Graduate Training Course datascope and click the **circos archive** tile.  
+
+An overview of all sequences appears displayed as circos plots. These give an immediate comprehensive view on the state of the genome. 
+* Click on one of the circos plots in which you can see many structural variants.  
+
+In a new tab a detailed view of this specific tumor genome is shown. When hovering over the plot the mouse opens a magnifier window.
+
+This green button will open up the Google form with which you can submit your answers for sections 1.5 and 1.6. 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScJf_kpFbMQx6Y6xW8Yb4SdMGlXir3Tbpsip-oUZKwzNVAQ1g/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.5 and 1.6</button> 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What do the green and red areas mean? And the arches crossing the circle?**
@@ -230,17 +239,10 @@ WGS data allows for further analysis; the paired end technique enables the disco
 
 ---------
 
-* In the tabbed panel to the right of the circos plot all information is detailed. Open the _sample annotation_ tab.
-
----------
-  ![](_static/images/R2d2_logo.png)**What are the patient characteristics?**
-
-<br>
-<br>
-
----------
-
-* Now open the _Somatic Structural Variants_ panel.  
+In the tabbed panel to the right of the circos plot all information is detailed. 
+* Open the _sample annotation_ tab if it is still closed.
+* Scan the patient characteristics
+* Now open the _Somatic Structural Variants_ panel   
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you locate a structural variant that involves a gene and spans two chromosomes? (Note: clicking on the _view_ link shows the actual locations on the genome)**
@@ -282,7 +284,7 @@ The Shredding pattern is known by the term chromothripsis. Patients containing s
 To see how chromothripsis relates to clinical data we can investigate survival data in R2. 
 
 * From the left menu in the main Graduate Training Course datascope panel select **Kaplan Meier > By track (category)**
-* Make sure that the correct Data Type 'Expression data(H. sapiens)' and neuroblastoma set has been selected in the dataselection panel: 'Tumor Neuroblastoma (combat) - Versteeg - 122 - MAS5.0(bc) - u133p2'. Click **Next**.
+* Make sure that the correct **Data Type** *'Expression data(H. sapiens)'* and that the correct neuroblastoma dataset has been selected in the dataselection panel: *'Tumor Neuroblastoma (combat) - Versteeg - 122 - MAS5.0(bc) - u133p2'*. Click **Next**.
 * A selection menu appears, in the **Separate by** field select *track* and in **use track** select the track cg_chromothripsis. Then click **Next** 
 
 ---------
@@ -299,6 +301,10 @@ To see how chromothripsis relates to clinical data we can investigate survival d
 
 Locations of structural variants, hotspots?
 ---
+
+This green button will open up the Google form with which you can submit your answers for section 1.7. 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSec1Us3rWYcdAh3ZDNirrnTbaJtjdvEmLNlIkE1nAyXF7z87w/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.7</button> 
+
 Chromothripsis can be seen as an extreme case of concentration of structural variants in one sample. The question arises whether there are other hotspots of structural variation on the genome that are found in multiple samples. These might point to functional interactions.
 
 * One of the genes that exhibited such a hotspot is the TERT gene. Go back to the startpage of the Graduate Training Course portal and select the GenomeBrowser tile. This brings you to the TERT gene on the genome with some preset annotations. 
