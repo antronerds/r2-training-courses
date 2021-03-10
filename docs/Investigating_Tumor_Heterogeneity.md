@@ -119,7 +119,7 @@ We've seen that the expression of genes differs among the samples and some types
 <br>
 <br>
 
-  ![](_static/images/R2d2_logo.png)**Based on the above, what would you do to further investigate your observations**
+  ![](_static/images/R2d2_logo.png)**Based on the above, what would you do to further investigate your observations? **
   
 ------
 

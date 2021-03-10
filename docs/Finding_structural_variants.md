@@ -23,9 +23,11 @@ Cancer is a very complex disease. Much more complicated than originally anticipa
 
 Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which is neural crest derived. During embryogenesis, cells delaminate from the neural crest, migrate ventrally and differentiate into adrenaline- or noradrenaline-producing cells. Neuroblastomas typically express enzymes for the adrenaline-synthesis route. High-stage neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease.  
 
-Although there has been extensive research (also in the AMC Oncogenomics group) into mutation mechanisms such as described by the Vogelstein model, such a mechanism has not been found for neuroblastoma. In this practical work session we will try to bring you cutting edge research in this potentially aggressive childhood tumor.
+Although there has been extensive research (also in the AMC Oncogenomics group) into mutation mechanisms such as described by the Vogelstein model, such a mechanism has not been found for neuroblastoma. In this practical work session we will explore cutting edge research in the field of this potentially aggressive childhood tumor.
   
-Despite decades of research high stage neuroblastoma still has a very poor prognosis. Fortunately, new technologies have become available to molecular biology. These enable us to not only study mutations and RNA expression of genes, but to study the epigenetic modifications of the DNA-associated histones as well. In addition, genes can now be manipulated in cell lines and living tissues.  
+Despite decades of research high stage neuroblastoma still has a very poor prognosis. Fortunately, new technologies have become available to molecular biology. These enable us to not only study mutations and RNA expression of genes, but to study the epigenetic modifications of the DNA-associated histones as well. In addition, genes can now be manipulated in cell lines and living tissues.
+<br>
+
 Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from neuroblastoma tumors and cell lines. 
 
  Since cancer is a disease of genomic aberrations we're first going to investigate what aberrations are present and how these might relate to the onset of neuroblastoma. 
@@ -55,7 +57,7 @@ This green button will open up the Google form with which you can submit your an
 
  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScLLO8_RAjyTMrLvhEdMqUAxmSwgUDbnHKe1gbFvOXOX8dTeA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3 and 1.4</button> 
 
-The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value.  
+The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value. Note that you can scroll down at the right hand side display of piecharts to see more track pie charts. You can also use the dropdown menus to adjust the display.   
 <br>
 * Hover your mouse over the different slices of the **stage(inss)** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
 * With the dropdown menu below the main pie chart, select the 'mycn_amp' annotation. 
@@ -103,8 +105,8 @@ The R2 development team has processed these WGS data further using the CGAtools 
 
 A comprehensive list of the mutations can be accessed through R2. 
 
-  * Go back to the Graduate Training Course datascope (still open in another tab)
-  * Select the **somatic variants** tile
+  * Go back to the Graduate Training Course datascope (still open in another tab).
+  * Select the **somatic variants** tile.
   * A table with all mutations in the 86 tumors appears in a new tab. It is basically a view on a database table. Ordering on its columns is possible by clicking on the column header. Sort the column by gene name. 
 
 ---------
@@ -117,7 +119,7 @@ A comprehensive list of the mutations can be accessed through R2.
 
   
 * Notice that no mutations recur more than a few times. 
-* Go to the ALK gene 
+* Go to the *ALK* gene. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**What type of aberrations does the ALK gene suffer?**
@@ -128,20 +130,20 @@ A comprehensive list of the mutations can be accessed through R2.
 
 * Select the **view** link (note: this is separate from the detail link). 
 
-In a new tab this mutation is shown in the R2 GenomeBrowser zoomed in on the genome to the base level. All samples are drawn beneath this stretch. Annotation of the publicly available COSMIC, the Catalogue Of Somatic Mutations In Cancer, is shown as well in the GenomeBrowser. COSMIC is the world's largest and most comprehensive resource for exploring the impact of somatic mutations in human cancer.
+In a new tab this mutation is shown in the R2 GenomeBrowser zoomed in on the genome to the base level. All samples are drawn beneath this stretch. Annotation of the publicly available COSMIC database, the Catalogue Of Somatic Mutations In Cancer, is shown in the GenomeBrowser as well. COSMIC is the world's largest and most comprehensive resource for exploring the impact of somatic mutations in human cancer.
 
 The buttons on top of the page can be used to zoom in and out and to move your position. This way you can "walk" over the genome, for instance to have a closer look at the transcription start site of a gene.  
-* Try out a view of the buttons.  
+* Try out a few of the buttons.  
 
 The GenomeBrowser has a tremendous number of parameters that can be set. 
 * Scroll down to the lower half of the page.  
 
-A form shows quite some parameter fields. These provide additional annotations and settings for the algorithms used. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data, which is based on methylation and acetylation patterns of the genome. This annotation however, is only provided on another Human Genome build. 
+A form shows quite some parameter fields. These provide additional optional annotations and settings for the GenomeBrowser. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data, which is based on methylation and acetylation patterns of the genome. This annotation, however, is only provided on another Human Genome build. 
 * In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
-* An unannotated version of the reference genome is shown. Find the **Refseq(R2)** and switch the annotation on. Click **redraw**
+* An unannotated version of the reference genome is shown. Find the **Refseq(R2)** and switch the annotation on. Click **redraw**.
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Notice that ALK is no longer in frame at the same position on the genome. Can you think of a reason why this is the case?**
+  ![](_static/images/R2d2_logo.png)**ALK is no longer in frame at the same position on the genome. Can you think of a reason why this is the case?**
 
 <br>
 <br>
@@ -150,7 +152,7 @@ A form shows quite some parameter fields. These provide additional annotations a
 
 * If the ALK gene is out of scope, you can jump back to the gene with the help of the text field in the left upper corner **Find gene**: type in the gene name *ALK*. 
 
-The button below ('Cleaned up View in R2') brings you to the transcription start site of the ALK gene. Several genome annotations have been switched on or off in that view. You can try them out yourself first:
+The button below ('Cleaned up View in R2') brings you to the transcription start site of the ALK gene. Several genome annotations will be switched on or off in that view. You can try them out yourself first:
 * Switch *off* the **cosmic** annotation (in the Genome Variation box) and the **Calldif Somatic Genome** annotation (in the X:Complete Genomics => Variants box). 
 * Set the **NIH Epigenome Roadmap** annotation to *all* (in the TranscriptView annotation box). This annotation provides information on public datasets that have established whether chromatin regions are subject to active transcription (green), enhancer regions (yellow) or are part of a transcription start site (red). Click **redraw**.  
 
@@ -168,7 +170,7 @@ In order to be at the correct position, simply click the button below:
   <button type="submit" class="course r2submit" >Cleaned up View in R2</button>
 </form><br> 
 
-* Zoom in more on the transcription start site of the gene by selecting a region; see image (hint the color of the transcript denotes the reading direction; green means 5' to 3' (sense), red reads from 3' to 5') 
+* Zoom in more on the transcription start site of the gene by selecting a region; see image (hint the color of the transcript denotes the reading direction; green means 5'-to-3' (sense), red reads from 3'-to-5' (antisense)) 
 * Click **redraw** (Note: the NIH annotation only appears for regions under 200.000 bp)
 
   ![](_static/images/structural_variants_selecting_region.png "Figure 3: Selecting a region.")
@@ -199,20 +201,6 @@ This NIH Epigenome Roadmap annotation is actually a sum of data from a lot of da
 
 ---------
 
-
-* Now go back to the Graduate Training Course datascope (click in th etop left corner on the link **Graduate Training Course portal**)
-* Select the Somatic Variants Table tile and now click the  **detail** link of ALK. R2 shows additional information on the expression of the gene and its location on the genome. 
-
----------
-  ![](_static/images/R2d2_logo.png)**What is remarkable about the expression of the ALK gene in neuroblastoma?**
-
-<br>
-<br>
-
----------
- 
-From this detail view other analysis tools within R2 can be approached by clicking on the links below the graphs.
-* Feel free to explore these further.
 * Submit your form with answers of sections 1.3 and 1.4
 
 Further use of WGS data; structural variants
@@ -227,7 +215,7 @@ These structural variations are best visualized as so called _circosplots_.
 * To access these circosplots in R2, go to the Graduate Training Course datascope and click the **circos archive** tile.  
 
 An overview of all sequences appears displayed as circos plots. These give an immediate comprehensive view on the state of the genome. 
-* Click on one of the circos plots in which you can see many structural variants.  
+* Click on one of the circos plots in which you can see many structural variants (many crossing arcs in the circle).  
 
 In a new tab a detailed view of this specific tumor genome is shown. When hovering over the plot the mouse opens a magnifier window.
 
@@ -268,7 +256,9 @@ While investigating the WGS data, an interesting phenomenon was observed. In som
 
 ---------
 
-The Shredding pattern is known by the term chromothripsis. Patients containing such a phenomenon have also been annotated in the neuroblastoma cohort. Within the Circos archive we can also use filters to focus on intersections of the cohort. In the top of the screen select 'chromothripsis' from the 'select a track' dropdown and subsequently click on 'yes' and then 'ok' to apply a filter. Then press redraw to depict only cases with marks of chromothripsis.
+The shredding pattern is known by the term *chromothripsis* (‘shattered chromosome’). The complex recombination pattern of alternating discrete copy numbers that is associated with the phenomenon is hypothesized to occur from a single catastrophic event. In this process, copies of oncogenes can become amplified and tumor suppressor genes can be lost.  
+
+Patients containing such a phenomenon have also been annotated in the neuroblastoma cohort. Within the Circos archive we can also use filters to focus on intersections of the cohort. In the top of the screen select 'chromothripsis' from the 'select a track' dropdown and subsequently click on 'yes' and then 'ok' to apply a filter. Then press redraw to depict only cases with marks of chromothripsis.
 
 ![](_static/images/select_track_cg_circos.png "Figure 7: Selection of a cohort intersection via a track")
 
@@ -327,8 +317,8 @@ Chromothripsis can be seen as an extreme case of concentration of structural var
 
 ---------
 
-* Red arrows depict translocations to other loactions in the genome. Locate the translocation to chromosome 11 for sample 724 (Hint: hovering over the arrows gives sample information) and click on the arrow.
-* R2 brings you to the other side of the translocation. In the TranscriptView panel switch on the SuperEnhancers NB annotation and click redraw.
+* Red arrows depict translocations to other locations in the genome. Locate the translocation to chromosome 11 for sample N724TL (Hint: hovering over the arrows gives sample information. ALternatively, you can select the sample annotation of *N724TL* in the dropdown of **Junction_diff** in the setting block **Genomics => Structural Variation**. Don't forget to **redraw** if you choose to display this sample annotation only.) **Click on the arrow**.
+* R2 brings you to the other side of the translocation. In the TranscriptView panel switch on the SuperEnhancers NB annotation and click **redraw**.
  
 ---------
   ![](_static/images/R2d2_logo.png)**What advantage would a tumor have from this translocation?**
@@ -337,11 +327,12 @@ Chromothripsis can be seen as an extreme case of concentration of structural var
 <br>
 
 ---------
-
-* To further corroborate this we can go to the Circos plots panel again. Go back to the Graduate Training Course datascope overview panel and click the **circos archive** tile again.
-* Locate the N724 tumor sample and click on the image.
+The effect of the 
+To further corroborate this we can go to the Circos plots panel again. 
+* Go back to the **Graduate Training Course datascope** overview panel and click the **circos archive** tile again.
+* Locate the N724TL tumor sample and **click on the image**.
 * Open the **Gene Expression list** tab
-* This can be further explored by clicking on the probeset link (left column in the list) and on the Detailed link.
+* This can be further explored by **clicking on the probeset link** (left column in the list) and on the Detailed link.
 
 ---------
   ![](_static/images/R2d2_logo.png)**How is the expression of the TERT gene affected?**
