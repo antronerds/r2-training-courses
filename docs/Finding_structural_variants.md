@@ -44,8 +44,9 @@ The oncogenomics department of the AMC has gathered a richly annotated set of ne
 </form>  
 <br>
 
-* Log on to the R2 platform with your credentials that were provided (or apply for a login using the link).  
+* Log on to the R2 platform with your credentials that were provided (or ask R2 Team members for a login).  
 * In the left menu click on **Change Data Scope** > **Training** > **Graduate Training Course**
+* If correct, you see 4 colorful tiles in the middle of the screen, one of which reads *Cohort Overview*. If instead you see a box 0 with a button **Go to Graduate Training Course portal**, please click this button. 
 * For a quick impression of the data select the **Cohort Overview**. R2 shows the available samples in this tumor series with its annotation. In the table at the bottom, each row represents one sample with the respective annotation values. 
 
 The samples of a dataset can be annotated with extra information, for example, clinical data or molecular biology parameters. Each group of annotated data is called a “track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns with e.g. different phenotypes or demographic characteristics.  
@@ -352,9 +353,10 @@ To further corroborate this we can go to the Circos plots panel again.
 * Locate the N724TL tumor sample and **click on the image**.
 * Open the **Gene Expression list** tab
 * This can be further explored by **clicking on the probeset link** (left column in the list) and on the Detailed link.
+* The graph with the expression values of TERT is depicted in none transformed values. Under the graph find the setting **Transform** and set it to *log2*.
 
 ---------
-  ![](_static/images/R2d2_logo.png)**How is the expression of the TERT gene affected?**
+  ![](_static/images/R2d2_logo.png)**How is the expression of the TERT gene of the affected sample?**
 
 <br>
 <br>
