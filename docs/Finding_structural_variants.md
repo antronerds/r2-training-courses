@@ -130,7 +130,7 @@ A comprehensive list of the mutations can be accessed through R2.
 
 * Select the **view** link (note: this is separate from the detail link). 
 
-In a new tab this mutation is shown in the R2 GenomeBrowser zoomed in on the genome to the base level. All samples are drawn beneath this stretch. Annotation of the publicly available COSMIC database, the Catalogue Of Somatic Mutations In Cancer, is shown in the GenomeBrowser as well. COSMIC is the world's largest and most comprehensive resource for exploring the impact of somatic mutations in human cancer.
+In a new tab this mutation is shown in the R2 GenomeBrowser zoomed in on the genome to the base level. All samples are drawn beneath this stretch showing the specific mutations that were found. Annotation of the publicly available COSMIC database, the Catalogue Of Somatic Mutations In Cancer, is shown in the GenomeBrowser as well. COSMIC is the world's largest and most comprehensive resource for exploring the impact of somatic mutations in human cancer.
 
 The buttons on top of the page can be used to zoom in and out and to move your position. This way you can "walk" over the genome, for instance to have a closer look at the transcription start site of a gene.  
 * Try out a few of the buttons.  
@@ -140,7 +140,7 @@ The GenomeBrowser has a tremendous number of parameters that can be set.
 
 A form shows quite some parameter fields. These provide additional optional annotations and settings for the GenomeBrowser. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data, which is based on methylation and acetylation patterns of the genome. This annotation, however, is only provided on another Human Genome build. 
 * In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
-* An unannotated version of the reference genome is shown. Find the **Refseq(R2)** and switch the annotation on. Click **redraw**.
+* Several annotations that were available for HG18 are not available for HG19. Find the **Refseq(R2)** and switch the setting on to obtain gene annotation for this genome build. Click **redraw**. 
 
 ---------
   ![](_static/images/R2d2_logo.png)**ALK is no longer in frame at the same position on the genome. Can you think of a reason why this is the case?**
@@ -152,8 +152,12 @@ A form shows quite some parameter fields. These provide additional optional anno
 
 * If the ALK gene is out of scope, you can jump back to the gene with the help of the text field in the left upper corner **Find gene**: type in the gene name *ALK*. 
 
-The button below ('Cleaned up View in R2') brings you to the transcription start site of the ALK gene. Several genome annotations will be switched on or off in that view. You can try them out yourself first:
-* Switch *off* the **cosmic** annotation (in the Genome Variation box) and the **Calldif Somatic Genome** annotation (in the X:Complete Genomics => Variants box). 
+The button below ('Cleaned up View in R2') brings you to the transcription start site of the ALK gene. Several genome annotations will be switched on or off in that view. If you want, you can try them out yourself first:
+* Switch *off* the following annotation settings by scrolling all the way down to the Tracks settings box. Settings that are on are highlighted in green:
+    * **cosmic** (in the Genome Variation box) to switch off the annotation from COSMIC, 
+    * **Calldif Somatic Genome** (in the X:Complete Genomics => Variants box) to switch off the Somatic mutations annotation. 
+    * **TestVar AMC v2e (Exome&1kup)** (also in the X:Complete Genomics => Variants box) to switch off the Cohort summary.
+   Don't forget to click **redraw** whenever you want your changes to take effect.
 * Set the **NIH Epigenome Roadmap** annotation to *all* (in the TranscriptView annotation box). This annotation provides information on public datasets that have established whether chromatin regions are subject to active transcription (green), enhancer regions (yellow) or are part of a transcription start site (red). Click **redraw**.  
 
 In order to be at the correct position, simply click the button below:
@@ -194,7 +198,7 @@ This NIH Epigenome Roadmap annotation is actually a sum of data from a lot of da
   
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What chromatin annotation is available for the start of the ALK gene?**
+  ![](_static/images/R2d2_logo.png)**What do the red colored chromatin annotations mean and what does that show you about the ALK TSS?**
 
 <br>
 <br>
