@@ -76,7 +76,10 @@ Sometimes you can see the categorical tracks displayed underneath a graph. But o
 At the bottom of the page you can find a table with adjustable settings. Many settings of the graph can be adapted.  
 
 * Try out a different view of the same data with the following changes to the settings:  
- The expression values on the y-axis are logarithmic by default, in the settings menu set the **Transform** option to *none* instead. Split the data in groups with the setting **use track** under Group separations: choose the *itcc_model* track that contains the information which sample belongs to which tumor type. Also sort the samples again on expression with **Extra Graph Option** set to *Track and Gene sort*. Finally, click **Adjust Settings** to obtain the graph with these adaptations.  
+    * The expression values on the y-axis are logarithmic by default, in the settings menu set the **Transform** option to *none* instead. 
+    * Split the data in groups with the setting **use track** under Group separations: choose the *itcc_model* track that contains the information which sample belongs to which tumor type. 
+    * The samples can be sorted by setting the **Extra Graph Option** to *Track and Gene* sort.
+    * Finally, click **Adjust Settings** to obtain the graph with these adaptations.  
   
 * Now try the gene MYCN (Type *MYCN* in the **Change Gene** box in the upper right corner to keep all your settings, but to change your gene).  
 * Hover with your mouse over the track underneath the graph or over the data points, to find out which itcc_model belongs to which group of samples. 
