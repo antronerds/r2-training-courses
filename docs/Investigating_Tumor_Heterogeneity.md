@@ -10,7 +10,7 @@ This resource is located online at http://r2-training-courses.readthedocs.io
 
 Introduction
 ---
-As was mentioned in the first part of the course, Investigating Structural Variants, no well defined path of subsequently gained mutations was found to lead to more aggressive tumorigenic cell types (the Vogelstein model) in neuroblastoma. 
+As was mentioned in the first part of the course, Investigating Structural Variants, no well defined path of subsequently gained mutations was found to lead to more aggressive tumorigenic cell types (the Vogelstein model) in neuroblastoma.  
 In this practical work session, we'll integrate RNA expression data with sequence data, specifically ChIP seq data, to further unravel neuroblastoma data.  
 
 Recent research suggests that neuroblastoma consists of different cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of neuroblastoma. Children developing a relapse almost always die.  
