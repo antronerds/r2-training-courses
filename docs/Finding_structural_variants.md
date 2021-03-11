@@ -228,7 +228,7 @@ This green button will open up the Google form with which you can submit your an
  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScJf_kpFbMQx6Y6xW8Yb4SdMGlXir3Tbpsip-oUZKwzNVAQ1g/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.5 and 1.6</button> 
 
 ---------
-  ![](_static/images/R2d2_logo.png)**What do the green and red areas mean? And the arches crossing the circle?**
+  ![](_static/images/R2d2_logo.png)**What do the green and red areas mean in the circosplots? And the arches crossing the circle?**
 
 <br>
 
@@ -236,7 +236,7 @@ This green button will open up the Google form with which you can submit your an
 
 In the tabbed panel to the right of the circos plot all information is detailed. 
 * Open the _sample annotation_ tab if it is still closed.
-* Scan the patient characteristics
+    *  Scan the patient characteristics
 * Now open the _Somatic Structural Variants_ panel   
 
 ---------
@@ -251,10 +251,15 @@ Chromothripsis
 ---
 While investigating the WGS data, an interesting phenomenon was observed. In some tumor samples parts of the genome appeared to be riddled with structural variants, resulting in a shredded chromosomal structure.
 
+![](_static/images/structural_variants_shredded_chromosomal_structure.png "Figure 7: Example of a shredded chromosomal structure")
+
+[**Figure 7: Example of a shredded chromosomal structure**](_static/images/structural_variants_shredded_chromosomal_structure.png)
+
+
 * Go to the overview page with circos plots.
 
 ---------
-  ![](_static/images/R2d2_logo.png)**Can you spot an example of such shredding from the circos overview?**
+  ![](_static/images/R2d2_logo.png)**Can you spot an example of such shredding from the circos overview? (Hint: remember how an SV is depicted in a Circos plot)**
 
 <br>
 
@@ -266,7 +271,7 @@ Patients containing such a phenomenon have also been annotated in the neuroblast
 
 ![](_static/images/select_track_cg_circos.png "Figure 7: Selection of a cohort intersection via a track")
 
-[**Figure 7: Selection of a cohort intersection via a track.**](_static/images/select_track_cg_circos.png)
+[**Figure 8: Selection of a cohort intersection via a track.**](_static/images/select_track_cg_circos.png)
 
 ---------
   ![](_static/images/R2d2_logo.png)**Can you spot a chromosomal pattern in the chromothripsis cases?**
