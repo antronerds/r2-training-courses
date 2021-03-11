@@ -11,12 +11,12 @@ This resource is located online at http://r2-training-courses.readthedocs.io
 Introduction
 ---
 As was mentioned in the first part of the course, Investigating Structural Variants, no well defined path of subsequently gained mutations was found to lead to more aggressive tumorigenic cell types (the Vogelstein model) in neuroblastoma.  
-In this practical work session, we'll integrate RNA expression data with sequence data, specifically ChIP seq data, to further unravel neuroblastoma data.  
+ In this practical work session, we'll integrate RNA expression data with sequence data, specifically ChIP seq data, to further unravel neuroblastoma data.  
 
 Recent research suggests that neuroblastoma consists of different cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of neuroblastoma. Children developing a relapse almost always die.  
-In this section, we will focus on heterogeneity in neuroblastoma. We will study not only mutations and RNA expression of genes, but also study the epigenetic modifications of the DNA-associated histones. And we will work with datasets in which genes have been manipulated in cell lines and in living tissues.  
+ In this section, we will focus on heterogeneity in neuroblastoma. We will study not only mutations and RNA expression of genes, but also study the epigenetic modifications of the DNA-associated histones. And we will work with datasets in which genes have been manipulated in cell lines and in living tissues.  
 
-Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this aggressive characteristic of neuroblastoma tumors. We obtained tumor biopsies from four patients that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines. In this course you will conduct the research yourself, following the lines of reasoning and the same data as was used in a paper by the AMC Oncogenomics group that was published in Nature Genetics in 2017.     .    
+Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this aggressive characteristic of neuroblastoma tumors. We obtained tumor biopsies from four patients that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines. In this course you will conduct the research yourself, following the lines of reasoning and the same data as was used in a paper by the AMC Oncogenomics group that was published in Nature Genetics in 2017.    
 
 
 Tumors and origins: a first impression of your data
