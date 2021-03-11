@@ -221,7 +221,7 @@ The cell line pairs from the patient were also investigated for the tumor stem c
 
 ---------
 
-  ![](_static/images/R2d2_logo.png)**Given these observations, what origin can you assign to each group?**
+  ![](_static/images/R2d2_logo.png)**Given these observations, what differentiation state can you assign to each group?**
 <br><br>
 
 ---------
@@ -266,7 +266,7 @@ We have identified two different types of cells that occur within the same patie
 * In Field 3 choose *Find Differential expression between groups* and click **Next**
 
 This dataset has been annotated with 'cell type' information. Each sample was assigned to either the MESenchymal or the ADReNergic cell type. The information is stored in R2 in a track. 
-* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to *No correction*.  Click **Next** twice. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>).
+* Choose the proper track in the upper most dropdown **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to *No correction*.  Click **Next** twice. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>).
 * A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset is shown. Click on the hyperlinked name of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well
 * Go back to the window with the differentially expressed genes. This is still open in one of your browser tabs. 
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
@@ -306,7 +306,7 @@ In R2 there are many more sets of genes that have been found to be implemented i
 
 * Go back to the window with the differentially expressed genes. 
 * Select the **Gene set analysis** option from the right menu
-* Select the *geneset_broad_2015_hallmark* geneset and click **Next**
+* Select the geneset *broad_2015_hallmark* and click **Next**
 
 ---------
 
@@ -351,8 +351,8 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 <br>
 
 
-* In field 3 select *View Geneset* that you can find under the red header *Meta-analysis*.
-* Click **Next** and select *geneset_r2provided_genelists* 
+* In field 3 select *View Geneset (Heatmap)* that you can find under the red header *Meta-analysis*.
+* Click **Next** and select geneset *r2provided_genelists* 
 * Click **Next**, leave selection as is and click **Next**
 * Select both signatures that were derived before by CTRL click on the MES (*r2_mesadrn_mes*) and ADRN (*r2_mesadrn_adrn*) signatures and click **Next**
 
