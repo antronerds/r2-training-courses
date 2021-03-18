@@ -237,7 +237,7 @@ From looking at large gene lists, the biological significance isn't always clear
    
  Effects of treatment
 ---
- Now that we have a better understanding of gene expression of T-cells, let's have a look if we can find any effect of rheumatoid arthritis treatments on a genomic scale.    
+ Now that we have a better understanding of gene expression of T-cells, let's have a look if we can find any effect of rheumatoid arthritis treatments.    
  
 *Data used:*  
 * R2 dataset: Disease Rheumatoid arthritis (drugs) - Lauwerys - 40 - MAS5.0 - u133p2
@@ -252,7 +252,7 @@ From looking at large gene lists, the biological significance isn't always clear
 *Analyses used*
 * Cohort Overview
 * One Gene View
-* PCA
+
 
 ##### Explore the provided information
 
@@ -270,11 +270,11 @@ Click the button below to go to R2 with the correct dataset selected.
 First, we take a look at the information that was provided. Let's start with the dataset Cohort Overview.  
 
 * In box 3, select the **Cohort Overview**, click **next** and explore the available annotation.
-* To understand what the study is about, click on the **i information balloon** behind the dataset title. Which genes are important according to the description?     
+* To understand what the study is about, click on the **i information balloon** behind the dataset title. Take a note of the cytokines & chemokines that are mentioned in the description box. Which genes are important according to the description?     
 
 Since this set is treatment related, let's plot some data to see if treatment has any result.
 
-* Go back to the main page. Choose the analysis **Correlate gene with track** and type in box 4 any of the genes that in the description is mentioned to be down regulated by treatment. The "-" can be left out of the gene name in R2, e.g. "IL-6" becomes "IL6". Click **Next**.
+* Go back to the main page. Choose the analysis **Correlate gene with track** and type in box 4 any of the genes that were  mentioned to be down regulated by treatment. The "-" can be left out of the gene name in R2, e.g. "IL-6" becomes "IL6". Click **Next**.
 * Choose *Select a track:* **therapy (2cat)** and click **Next**.
 * Every patient had a sample taken before the start (no) and after 12 weeks (yes) of therapy, it is a paired test. It would be nice to see which dots belong to the same patient. With Sample Paths we can connect the two samples of each patient with the format Samplename1,Samplename2; etc. Because it is a bit labour intensive to get the correct syntax, we did this for you. Copy paste the following information in the textbox of **Sample Paths**: ```GSM1116933,GSM1116934;GSM1116935,GSM1116936;GSM1116937,GSM1116938;GSM1116939,GSM1116940;GSM1116941,GSM1116942;  
 GSM1116943,GSM1116944;GSM1116945,GSM1116946;GSM1116947,GSM1116948;GSM1116949,GSM1116950;GSM1116951,GSM1116952;  
@@ -291,17 +291,9 @@ GSM1116963,GSM1116964;GSM1116965,GSM1116966;GSM1116967,GSM1116968;GSM1116969,GSM
  
 ---
 
-* In the upper right corner is a text box **Change gene**. Change the gene to a different gene that you can find in the description of the study, or that you yourself wonder about. Click the Change Gene button under the textbox. 
+* In the upper right corner is a text box **Change gene**. Change the gene to a different gene that you can find in the description of the study, or that you yourself wonder about. Click the **Change Gene** button under the textbox. 
 <br><br>  
   
-
-##### An unbiased look into the dataset
-
-Also in this set, we take a look at an unbiased view of expression profile sample similarity. This time, we will use **PCA** (Principle Component Analysis ). Like t-SNE, PCA analysis can summarize the characteristics of many genes in new abstract variables. The new variables are called principle components (PCs). PCA will plot the samples that behave similarly in their expression profiles closer together as well.
-
-* Return to the main page from the Cohort Overview, using the top left link **Go to: Main** 
-
- 
 
 ##### Showing pathways in heatmaps
 
@@ -309,18 +301,14 @@ We now want to know which pathways are affected by treatment with tocilizumab.
 * From the main page, select the analysis **Differential Expression between groups**, click **Next** 
 * Choose *Select a track:* **drug (3 cat)**
 * Because we won't have many samples, we will not correct for multiple testing. Change *Corr. multiple testing:* **No correction** 
+* Make sure there is only a check mark in front of *tocilizumab* and in front of *untreated* (i.e. uncheck the other treatment).
 
-The list shows the genes that are differentially expressed between the two treatments. 
-* To see in which pathways these genes play a role, this time we click on **Gene Ontology Analysis**. What pathways show a difference between the two drug types? Look at the color scheme, drug:  
+The list shows the genes that are differentially expressed between the tocilizumab treatment and untreated. 
+* To see in which processes these genes are involved in, this time we click on **Gene Ontology Analysis** button. What kind of processes seem to be affected by treatment? 
+* Look at the color scheme above the table. Are the genes involved in these processes higher or lower expressed before or after treatment? 
+The page with the list of differentiating genes is still open in a tab. On this page many buttons and links allow you to visualize and analyze the result further.
+* From the list of differentiating genes, choose one of the top genes and hover your mouse over the gene to read information about the gene. Now click on its name to be taken to the One Gene View for this gene. Of course you can adapt the graph again with the menu underneath the graph. 
+* From page with the list of differentiating genes, nowe click the button Heatmap(zscore) to get an overview of all the genes and the group seperations in a Heatmap.
 
-XX no >= yes means that the genes were higher expressed before than after treatment. Is this what you would expect?
-
-* The page with the list of differentiating genes is still opened. This time click the button Heatmap(zscore).
----
-
-
-![](_static/images/R2d2_logo.png)**Do you see any patients that did not respond?**  
- 
---- 
-
+* Redo the Differential Expression between groups analysis, except this time select the other treatment versus the untreated. Don't forget to switch off the *Corr. multiple testing:*.
 
