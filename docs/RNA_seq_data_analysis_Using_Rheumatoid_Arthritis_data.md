@@ -85,9 +85,10 @@ We can make use of the annotations to view the results of our samples in groups.
 * After you selected your preferred adjustments, click **Adjust Settings**.  
 
 The expression values are currently log2 transformed. Check out the difference when you display the expression values without a transformation: 
-* In the menu under the graph, change **Transform** into *log2* and click **Adjust Settings**  
+* In the menu under the graph, change **Transform** into *none* and click **Adjust Settings**  
 
  Often you use a boxplot to assess whether the expression values between groups of samples differ for a particular gene and to quickly identify average values, outliers, the dispersion of the data set, and signs of skewness.  
+ 
  Next to the visual representation, R2 also provides the five number summary in textual format.  
  * Hover your mouse over each box to compare the summarizing values of the two groups.  
    
@@ -111,25 +112,15 @@ The immune system is a complex system of different cell types that interact with
   
   By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into four stages: naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem), whereas CD8+ T cells are classified into five stages: Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra).  
     
- Each subset has its own markers as can be seen in the table below. This heterogeneity among Tcells has made it challenging to identify the specific cell subsets and states that drive RA pathogenesis.
+ This heterogeneity among Tcells has made it challenging to identify the specific cell subsets and states that drive RA pathogenesis.
 
-<table>
-<tr><th>  T-cell  </th><th>Developmental stage</th><th>Markers</th></tr>
-<tr><td>CD4</td><td>tn</td><td></td></tr>
-<tr><td>CD4</td><td>tcm</td><td>(George/Mosse/Janoueix-Lerosey/Chen 2008)</td></tr>
-<tr><td>CD4</td><td>tem</td><td>(Molenaar et al., 2003)</td></tr>
-<tr><td>CD8</td><td>tn</td><td>(van Limpt et al., 2004)</td></tr>
-<tr><td>CD8</td><td>tcm</td><td>(Stallings et al. 2006)</td></tr>
-<tr><td>CD8</td><td>tem</td><td>(Hölzel et al., 2010)</td></tr>
-
-</table>
-
+* Under your latest graph, change "use track" to "t-cell-stage-type". Click **Adjust Settings**.
+* Now change the transformation back to **log2**. Click **Adjust Settings** again.  
   
 ---------
-
- **Under your latest graph, change "use track" to "t-cell-stage-type".**   
    
- ![](_static/images/R2d2_logo.png)**What can you conclude about the expression of TNF in the different T-cell subtypes?**
+ ![](_static/images/R2d2_logo.png)**Which T-cell subtype has the lowest expression?**
+ ![](_static/images/R2d2_logo.png)**Which T-cell subtype has the highest expression of TNF?**
  
  ---------
  
@@ -145,7 +136,7 @@ To get a better overview of the available annotation of a dataset, we can use th
 
 * Go back to the main page and select **Cohort Overview** as type of analysis in box 3.
 
-R2 presents the Okuzo dataset samples with its available annotation in a table at the bottom of the page. Each pie chart above the table shows a different available track. 
+R2 presents the Okuzono dataset samples with its available annotation in a table at the bottom of the page. Each pie chart above the table shows a different available track. 
 * Hover your mouse over the different slices of the **gender** annotation pie chart.  Which percentage is male and which is female?
 * Explore the other pie charts as well: hover with your mouse over the slices and double click on a slice to select that group of the samples (you can click on the button **Clear Filters** to undo your selection). Above the main pie chart you can read the number of samples in your current selection (the "n= " number). Also note how the table at the bottom adapts the overview based on your selection.  
   
