@@ -76,17 +76,20 @@ Tumor necrosis factor‐alpha (TNF‐α) is a proinflammatory cytokine that play
 To understand better how this cytokine relates to different tissue and cell types, we do the same process but now we take a look at the gene TNF
 
 * Type in the textbox **Gene / Probeset: TNF**.   
-* Click the **Next** button and click **Next** again in the following page.    
+* Click the **Next** button and click **Next** again in the following page.   
 
 We can make use of the annotations to view the results of our samples in groups.
 
 * Scroll down in the page to make some adjustments in the *Adjustable settings* menu under the graph. Under *Group Separations* change *use track:* **tissue (2cat)** to separate the samples of the tissue blood from those of synovial fluid.
 * Under *Graphics* adjust *Graphtype:* **Boxplot with circles** and *ColorMode:* **Color by Track**.
 * After you selected your preferred adjustments, click **Adjust Settings**.  
-  
+
+The expression values are currently log2 transformed. Check out the difference when you display the expression values without a transformation: 
+* In the menu under the graph, change **Transform** into *log2* and click **Adjust Settings**  
+
  Often you use a boxplot to assess whether the expression values between groups of samples differ for a particular gene and to quickly identify average values, outliers, the dispersion of the data set, and signs of skewness.  
- 
- * Next to the visual representation, R2 also provides the five number summary in textual format. Hover your mouse over each box to compare the summarizing values of the two groups.  
+ Next to the visual representation, R2 also provides the five number summary in textual format.  
+ * Hover your mouse over each box to compare the summarizing values of the two groups.  
    
   The circles on top of the boxplot show the individual value of each sample, which is a good way to stay aware of the raw data and the distribution behind the summary.
  We can see that the two groups show different values for the boxplots. But how certain are we that the group means vary by more than that random chance allows? To answer that question R2 shows you the results of an analysis of variance (ANOVA): you can find the F-value, the test statistic of the ANOVA test, and the p-value of the ANOVA test in the table above the plot.  
@@ -223,9 +226,12 @@ We have seen that the expression profiles of the same cell types can show differ
  
  The returned table shows you the processes in which the genes are involved as defined by the [KEGG (Kyoto Encyclopedia of Genes and Genomes) database](https://www.genome.jp/kegg/).  
  
+ * Above the result table, you can read the meaning of the color coding. Which tissue has a larger expression of most of the genes. What does that mean biologically? 
+ 
+ R2 connects these results to other databases
  * To understand the respective roles that T cells play in peripheral blood and synovial fluid of patients with RA, which pathways seem relevant? You can click on the little green **K icon** in front of a gene set to see the genes projected in a KEGG pathway map. 
  
- * Above the result table, you can read the meaning of the color coding. Which tissue has a larger expression of most of the genes. What does that mean biologically? 
+ 
    
  To obtain a synovial fluid sample for a patient is an invasive procedure. One of the bigger research questions is whether blood samples could provide enough information for treatment decisions.
    
@@ -276,12 +282,12 @@ First, we take a look at the information that was provided. Let's start with the
 
 Since this set is treatment related, let's plot some data to see if treatment has any result.
 
-* Go back to the main page. Choose the analysis **Correlate gene with track** and type in box 4 any of the genes that in the description is mentioned to be down regulated by treatment. A "-" can be left out of the gene name in R2, e.g. "IL-6" becomes "IL6". Click **Next**.
+* Go back to the main page. Choose the analysis **Correlate gene with track** and type in box 4 any of the genes that in the description is mentioned to be down regulated by treatment. The "-" can be left out of the gene name in R2, e.g. "IL-6" becomes "IL6". Click **Next**.
 * Choose *Select a track:* **therapy (2cat)** and click **Next**.
-* Every patient had a sample taken before the start (no) and after 12 weeks (yes) of therapy, it is a paired test. It would be nice to see which dots belong to the same patient. With Sample Paths we can connect the two samples of each patient with the format Samplename1,Samplename2; etc. Because it is a bit labour intensive to get the correct syntax, we did this for you. Copy paste the following information in the textbox of **Sample Paths**: ```GSM1116933,GSM1116934;GSM1116935,GSM1116936;GSM1116937,GSM1116938;GSM1116939,GSM1116940;GSM1116941,GSM1116942; 
- GSM1116943,GSM1116944;GSM1116945,GSM1116946;GSM1116947,GSM1116948;GSM1116949,GSM1116950;GSM1116951,GSM1116952;  
- GSM1116953,GSM1116954;GSM1116955,GSM1116956;GSM1116957,GSM1116958;GSM1116959,GSM1116960;GSM1116961,GSM1116962;  
- GSM1116963,GSM1116964;GSM1116965,GSM1116966;GSM1116967,GSM1116968;GSM1116969,GSM1116970;GSM1116971,GSM1116972```
+* Every patient had a sample taken before the start (no) and after 12 weeks (yes) of therapy, it is a paired test. It would be nice to see which dots belong to the same patient. With Sample Paths we can connect the two samples of each patient with the format Samplename1,Samplename2; etc. Because it is a bit labour intensive to get the correct syntax, we did this for you. Copy paste the following information in the textbox of **Sample Paths**: ```GSM1116933,GSM1116934;GSM1116935,GSM1116936;GSM1116937,GSM1116938;GSM1116939,GSM1116940;GSM1116941,GSM1116942;  
+GSM1116943,GSM1116944;GSM1116945,GSM1116946;GSM1116947,GSM1116948;GSM1116949,GSM1116950;GSM1116951,GSM1116952;  
+GSM1116953,GSM1116954;GSM1116955,GSM1116956;GSM1116957,GSM1116958;GSM1116959,GSM1116960;GSM1116961,GSM1116962;  
+GSM1116963,GSM1116964;GSM1116965,GSM1116966;GSM1116967,GSM1116968;GSM1116969,GSM1116970;GSM1116971,GSM1116972```
 * Click on **Adjust Settings**
 * Change **Colormode:  Color by Track** and **Track for Color: therapy (2 cat)**    
   
@@ -302,23 +308,21 @@ Since this set is treatment related, let's plot some data to see if treatment ha
 Also in this set, we take a look at an unbiased view of expression profile sample similarity. This time, we will use **PCA** (Principle Component Analysis ). Like t-SNE, PCA analysis can summarize the characteristics of many genes in new abstract variables. The new variables are called principle components (PCs). PCA will plot the samples that behave similarly in their expression profiles closer together as well.
 
 * Return to the main page from the Cohort Overview, using the top left link **Go to: Main** 
-* Select **Principle Component Analysis (PCA)** in box 3 and click **Next**. Also on the following page, click **next**, then click **Plot the PCA result**
-* R2 also allows you to color t-SNE and PCA with the expression of a gene. Under the plot select **ColorMode: Color by Gene** and type **Gene for Color: IL6**, select the first option IL6 (Reporter: 205207_at HO:1). Don't forget to click **next** in order for your changes to take effect. 
 
-The PCA calculation creates many principle components. The first PC explains most of the variation found between the samples. Every following PC explains less and less of the variation of the dataset, R2 allows you to view the first 3 PCs in 3D.
-* Under the graph, select **PCA Projection: PC1:PC2:PC3-3D** and click **next** to see the effect. You can play with the 3D cube by holding your right mouse button down while dragging your mouse around. 
  
 
 ##### Showing pathways in heatmaps
 
 We now want to know which pathways are affected by treatment with tocilizumab.
 * From the main page, select the analysis **Differential Expression between groups**, click **Next** 
-* Choose *Select a track:* **therapy (2 cat)**
+* Choose *Select a track:* **drug (3 cat)**
 * Because we won't have many samples, we will not correct for multiple testing. Change *Corr. multiple testing:* **No correction** 
-* Under *Sample Filter* we want to select the subset of samples involved in the tocilizumab study, both before and after treatment. Therefore, select *Select a track (subset):* **drug (3 cat)** and check both **tocilizumab (12)** and **untreated (20)**, click **ok**. Click **Next**. Click **Next** again on the following page. 
 
-The list shows the genes that are differentially expressed before and after treatment. 
-* To see in which pathways these genes play a role, this time we click on **Gene Ontology Analysis**. What pathways show a difference before and after therapy? Look at the color scheme, therapy: no >= yes means that the genes were higher expressed before than after treatment. Is this what you would expect?
+The list shows the genes that are differentially expressed between the two treatments. 
+* To see in which pathways these genes play a role, this time we click on **Gene Ontology Analysis**. What pathways show a difference between the two drug types? Look at the color scheme, drug:  
+
+XX no >= yes means that the genes were higher expressed before than after treatment. Is this what you would expect?
+
 * The page with the list of differentiating genes is still opened. This time click the button Heatmap(zscore).
 ---
 
