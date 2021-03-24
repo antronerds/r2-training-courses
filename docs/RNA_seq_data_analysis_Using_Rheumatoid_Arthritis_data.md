@@ -46,20 +46,20 @@ This has led to extensive efforts to find more specific diagnostic markers. The 
 <br>
 <br>
 
-* Log on to the R2 platform with your credentials that were provided (or apply for a login using the link).  
+* You don't need to login for this course. However, when you register to the platform (withh the red link in the left side menu) and log in with your credentials, more datasets and analyses will become available to you. 
 
 The five numbered boxes or steps in the middle of the R2 main page allow you to choose a dataset and a type of analysis. In box 2 you can see that the dataset of Okuzono has already been selected. In box 3 you can select an analysis to perform on this dataset. 
 
-* The default analysis is View a gene. Type in the textbox of step 4 *Gene / Probeset:* **CD4**.   
-* Click the **Next** button. To read a description of your provided gene, hover your mouse over the bold **CD4** letters next to the radiobutton.  Leave all settings as is and click **Next** again to get a result.   
+* The default analysis is **View a gene** (box 3). Type in the textbox of step 4 *Gene / Probeset:* **CD4**.   
+* Click the **Next** button. To read a description of your provided gene, hover your mouse over the bold **CD4** letters next to the radiobutton. Leave all settings as is and click **Next** again to obtain the result.   
 
  The dots in the graph show the expression value of each sample of the dataset for the gene CD4. Under the graph you can see different types of *annotation*. 
  In R2 the samples of a dataset can be annotated with extra information, such as clinical data of the patients the sample were taken from, or biological characteristics of the cells that were observed in the lab.  
    
- Each group of annotated data is called a *Track* in R2. You will see the annotation often displayed underneath a plot, or if you hover your mouse of the dots in a plot. 
+ Each group of annotated data is called a *Track* in R2. You will see the annotation often displayed underneath a plot, and even more tracks if you hover your mouse over the dots in a plot. 
  * Try it out with your mouse in the graph that you have generated to view the expression of the gene CD4.  
  
- Furthermore, these tracks can be used in most of the analyses in R2 to add a layer of complexity. Tracks will allow you for instance to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to lets say different phenotypes or demographic characteristics.
+ Furthermore, these tracks can be used in most of the analyses in R2 to add a layer of complexity. Tracks will allow you for instance to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to, lets say, different phenotypes or demographic characteristics.
  
 ---------
 
@@ -83,7 +83,7 @@ We can make use of the annotations to view the results of our samples in groups.
 
 * Scroll down in the page to make some adjustments in the *Adjustable settings* menu under the graph. Under *Group Separations* change *use track:* **tissue (2cat)** to separate the samples of the tissue blood from those of synovial fluid.
 * Under *Graphics* adjust *Graphtype:* **Boxplot with circles** and *ColorMode:* **Color by Track**.
-* After you selected your preferred adjustments, click **Adjust Settings**.  
+* After you made adjustments to the menu, always click **Adjust Settings** for the adjustments to take effect.  
 
 The expression values are currently log2 transformed. Check out the difference when you display the expression values without a transformation: 
 * In the menu under the graph, change **Transform** into *none* and click **Adjust Settings**  
@@ -120,7 +120,8 @@ The immune system is a complex system of different cell types that interact with
   
 ---------
    
- ![](_static/images/R2d2_logo.png)**Which T-cell subtype has the lowest expression?**
+ ![](_static/images/R2d2_logo.png)**Which T-cell subtype has the lowest expression?**  
+ 
  ![](_static/images/R2d2_logo.png)**Which T-cell subtype has the highest expression of TNF?**
  
  ---------
