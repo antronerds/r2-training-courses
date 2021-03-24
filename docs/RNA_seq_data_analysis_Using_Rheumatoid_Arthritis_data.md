@@ -233,30 +233,39 @@ When you look at such large gene lists (read how many combinations meet our crit
   
 How does treatment effect gene expression? Let's have a look at a dataset of Lauwerys et al. In the dataset we can find samples taken from the synovial fluid in the knee of 20 early RA patients, both before and after treatment.  
   
-Click the button below to go to R2 with the correct dataset selected.   
+* Go to the Main page of R2 and click on **Change Dataset** in box 2  
 
-<form name="accessing_r2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gse45867geo40_u133p2">
-  <button type="submit" >Go to R2</button>
-</form>  
-<br>
-<br>
+A popup window appears that shows all the available datasets in a grid: each row represents one dataset, its
+main descriptive details split up in the columns. To use a dataset for further analysis, you click on the Select
+button in the first column.If you prefer to first read extra information about the dataset of your interest, click
+on any other part of the specific row. The headers of the columns each enable the user to search through datasets using keywords and other filter options.
+* Type in the text field under **Author** the name of the author of the data set *Lauwerys*
+* Click **Select** in front of the dataset that has 40 samples (N is 40).  
 
 First, we take a look at the information that was provided. Let's start with the dataset Cohort Overview.  
 
 * In box 3, select the **Cohort Overview**, click **next** and explore the available annotation.
-* To understand what the study is about, click on the **i information balloon** behind the dataset title. Take a note of the cytokines & chemokines that are mentioned in the description box. Which genes are important according to the description?     
+* To understand what the study is about, click on the **i information balloon** behind the dataset title. Take a note of the *cytokines & chemokines* that are mentioned in the description box.     
 
-Since this set is treatment related, let's plot some data to see if treatment has any result.
+Since this set is treatment related, let's plot the data to see if treatment has any result according to this study.
 
-* Go back to the main page. Choose the analysis **Correlate gene with track** and type in box 4 any of the genes that were  mentioned to be down regulated by treatment. The "-" can be left out of the gene name in R2, e.g. "IL-6" becomes "IL6". Click **Next**.
+* Go back to the main page. Choose the analysis **Correlate Gene with track** and type in box 4 one of the genes that were  mentioned to be down regulated by treatment, IL6. The "-" can be left out of the gene name in R2, e.g. "IL-6" becomes "IL6". Click **Next**.
 * Choose *Select a track:* **therapy (2cat)** and click **Next**.
-* Every patient had a sample taken before the start (no) and after 12 weeks (yes) of therapy, it is a paired test. It would be nice to see which dots belong to the same patient. With Sample Paths we can connect the two samples of each patient with the format Samplename1,Samplename2; etc. Because it is a bit labour intensive to get the correct syntax, we did this for you. Copy paste the following information in the textbox of **Sample Paths**: ```GSM1116933,GSM1116934;GSM1116935,GSM1116936;GSM1116937,GSM1116938;GSM1116939,GSM1116940;GSM1116941,GSM1116942;  
-GSM1116943,GSM1116944;GSM1116945,GSM1116946;GSM1116947,GSM1116948;GSM1116949,GSM1116950;GSM1116951,GSM1116952;  
-GSM1116953,GSM1116954;GSM1116955,GSM1116956;GSM1116957,GSM1116958;GSM1116959,GSM1116960;GSM1116961,GSM1116962;  
-GSM1116963,GSM1116964;GSM1116965,GSM1116966;GSM1116967,GSM1116968;GSM1116969,GSM1116970;GSM1116971,GSM1116972```
-* Click on **Adjust Settings**
-* Change **Colormode:  Color by Track** and **Track for Color: therapy (2 cat)**    
+* Every patient had a sample taken before the start (no) and after 12 weeks (yes) of therapy, it is a paired test. It would be nice to see which dots belong to the same patient. With Sample Paths we can connect the two samples of each patient with the format Samplename1,Samplename2; etc. Because it is rather labour intensive to get the correct syntax, we did this for you. 
+
+<form name="accessing_r2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input value="ps_avgpres_gse45867geo40_u133p2" name="table" type="hidden">
+  <input value="display2" name="option" type="hidden">
+  <input value="205207_at" name="factor" type="hidden">
+  <input value="205207_at" name="factor2" type="hidden">
+  <input value="" name="factorlist" type="hidden">
+  <input type="text" name="chainedsams" value="GSM1116933,GSM1116934;GSM1116935,GSM1116936;GSM1116937,GSM1116938;GSM1116939,GSM1116940;GSM1116941,GSM1116942;   GSM1116943,GSM1116944;GSM1116945,GSM1116946;GSM1116947,GSM1116948;GSM1116949,GSM1116950;GSM1116951,GSM1116952;   GSM1116953,GSM1116954;GSM1116955,GSM1116956;GSM1116957,GSM1116958;GSM1116959,GSM1116960;GSM1116961,GSM1116962;   GSM1116963,GSM1116964;GSM1116965,GSM1116966;GSM1116967,GSM1116968;GSM1116969,GSM1116970;GSM1116971,GSM1116972" size="25">
+  <button type="submit" >Display paired sample lines</button>
+</form>  
+<br>
+<br>
+
+* Change **Colormode:  Color by Track** and **Track for Color: therapy (2 cat)**. Click on **Adjust Settings**   
   
   
 ---
