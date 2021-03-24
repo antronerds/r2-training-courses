@@ -30,8 +30,8 @@ This has led to extensive efforts to find more specific diagnostic markers. The 
  * RNA Seq
  
  *References*
- * Paper: [Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell](https://ard.bmj.com/content/78/10/1346.long)
- 
+ * Paper: <a href="https://ard.bmj.com/content/78/10/1346.long" target="_blank">Multi-dimensional analysis identified rheumatoid arthritis-driving pathway in human T cell</a>
+  
  *Analysis used*
  * One Gene View 
  
