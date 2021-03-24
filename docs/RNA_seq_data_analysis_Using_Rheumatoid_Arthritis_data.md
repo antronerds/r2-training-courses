@@ -5,9 +5,10 @@ Gene expression in Rheumatoid Arthritis
 
 Introduction
 ---
-Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by inflammatory cell infiltration, such as T cells, B cells, macrophages and plasma cells. Production of cytokines and proteases lead to chronic inflammation of the synovial tissues and progressive joint disability. RA affects as much as 1% of the worldwide population. Although the exact causes are unknown, decades of research has led to increasingly detailed understanding of multiple disease mechanisms. Different treatments for RA have been proposed, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ). However, a significant proportion of patients do not respond to initial treatment or reach remission. Others experience recurrence or deterioration of their disease.   
-   
-This has led to extensive efforts to find more specific diagnostic markers. The complexity of the disease mechanisms have spurred unbiased searches using genetics, transcriptomics or proteomics. Because of difficulties in measuring markers in the inflamed joints, efforts have, to a large extent focused on analyses of peripheral blood. However, as Lee et al. point out ([Cytokine, March 2020](https://doi.org/10.1016/j.cyto.2019.154960)), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.   
+Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by inflammatory cell infiltration, such as T cells, B cells, macrophages and plasma cells. Production of cytokines and proteases lead to chronic inflammation of the synovial tissues and progressive joint disability. RA affects as much as 1% of the worldwide population. Although the exact causes are unknown, decades of research has led to increasingly detailed understanding of multiple disease mechanisms. Different treatments for RA have been proposed, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ). However, a significant proportion of patients do not respond to initial treatment or reach remission. Others experience recurrence or deterioration of their disease.    
+This has led to extensive efforts to find more specific diagnostic markers. The complexity of RA have spurred research to dive deeper into the disease mechanisms using genetics, transcriptomics or proteomics.  
+  
+  Because of difficulties in measuring markers in the inflamed joints, efforts have, to a large extent focused on analyses of peripheral blood. However, as Lee et al. point out (<a href="https://doi.org/10.1016/j.cyto.2019.154960" target="_blank">Cytokine, March 2020</a>), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.   
  
  ![](_static/images/KIT_rheumatoid-arthritis-drug-targets.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)")
    
@@ -195,44 +196,6 @@ From looking at large gene lists, the biological significance isn't always clear
   
   Based on the expression profiles of each sample, we would like to know which samples behave much alike and which show different patterns? Before we used the analysis of *One Gene View* to plot the gene expression of a single gene. Often a dataset contains expression values of about 20.000 genes for each sample. We cannot check all these genes one by one to find out which samples show similar expression profiles. Let's see if we can find out more information with a so called UMAP analysis.  
   
- ##### An unbiased look at sample similarity
- 
- *Analysis used* 
- * UMAP
- 
- A **UMAP** analysis (Uniform Manifold Approximation and Projection) can summarize the characteristics of many genes in new, more abstract variables. UMAP will plot the samples that show similarity in their expression profiles closer together. This type of analysis is useful to find interesting groups of samples that show similar expression profiles or if there are outliers that we might want to exclude from our dataset. 
- 
- * Click the button below to show a 2D UMAP plot of the Okuzono 336 dataset in R2
- XXXXXXXXX
- <form name="pca_form" target="_blank" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method="POST">
- <input type="hidden" name="option" value="tsne_plot">
- <input type="hidden" name="tsne_id" value="45159a5e2c4c234999cb70b745fbc72b">
- <input type="hidden" name="perplexity" value="20">
- <input type="hidden" name="dotsize" value="6">
- <input type="hidden" name="table" value="ps_avgpres_gse118829subsgeo75_gpl17303">
- <input type="hidden" name="cortype" value="transform_zscore">
- <input type="hidden" name="subset" value="">
- <button type="submit" >Go to t-SNE Analysis</button>
- </form>  
- <br>
- <br>  
- 
- Each dot is a sample and the axes are the more abstract UMAP variables (UMAP1 and UMAP2).  XXXXX dim red explanation, 1 sentence
- 
- 
- 
-  So far the black dots do not give us much insight. To see whether any biological process might determine the similarity in expression profiles. We can color the dots with a track. Sometimes, biological or clinical annotation groups correspond with the UMAP ordering of the samples in the plot. 
-  
- * Colors are not set by default. Under the graph, first adjust *ColorMode:* **Color by Track** and *Track for color:* **tissue (2 cat)**; click next for the changes to take effect.  
- 
- *  Now try the **tcell-stage (4cat)** track as **Track for Color**. Click next to show the changes. Also try the other tracks for coloring.
-   
-   
- ---------
- 
-   ![](_static/images/R2d2_logo.png)**What biological information corresponds with a similarity in expression profiles according to this UMAP analysis?**
-   
-  ---------
 
    
  Effects of treatment
@@ -306,9 +269,10 @@ We now want to know which pathways are affected by treatment with tocilizumab.
 The list shows the genes that are differentially expressed between the tocilizumab treatment and untreated. 
 * To see in which processes these genes are involved in, this time we click on **Gene Ontology Analysis** button. What kind of processes seem to be affected by treatment? 
 * Look at the color scheme above the table. Are the genes involved in these processes higher or lower expressed before or after treatment? 
-The page with the list of differentiating genes is still open in a tab. On this page many buttons and links allow you to visualize and analyze the result further.
+The page with the list of differentiating genes is still open in a tab. On this page many buttons and links allow you to visualize and analyze the result further. Try these options, or try to interpret the results that you obtain with one of the buttons on the right:
 * From the list of differentiating genes, choose one of the top genes and hover your mouse over the gene to read information about the gene. Now click on its name to be taken to the One Gene View for this gene. Of course you can adapt the graph again with the menu underneath the graph. 
-* From page with the list of differentiating genes, nowe click the button Heatmap(zscore) to get an overview of all the genes and the group seperations in a Heatmap.
+* From the page with the list of differentiating genes, click on the button **Plot all genes (xy, vulcano etc)**
+* From the page with the list of differentiating genes, now click the button **Heatmap(zscore)** to get an overview of all the genes and the group separations in a Heatmap.
 
 * Redo the Differential Expression between groups analysis, except this time select the other treatment versus the untreated. Don't forget to switch off the *Corr. multiple testing:*.
 
