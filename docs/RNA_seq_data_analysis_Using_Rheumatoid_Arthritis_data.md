@@ -36,7 +36,12 @@ This has led to extensive efforts to find more specific diagnostic markers. The 
  * One Gene View 
  
 <br><br>
+This green button will open a Google form in which you can submit the answers that you will find in the section below. 
 
+This green button will open up the Google form with which you can submit your answers for the first sections.
+
+ <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeffVprea-4JXE2wdqF6aVoCw-yDHodGzTKjIiHMUVKIkcQtw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2.1</button> 
+ 
  Let's take a first glance at the platform. Click on the following button to go to R2:  
   
 <form name="accessing_r2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
