@@ -10,6 +10,7 @@ Copyright (c) 2006-2020 Jan Koster
 
 .. toctree::
    :maxdepth: 1
+   :numbered:
    :caption: AMS Course Materials
 
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
