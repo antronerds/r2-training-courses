@@ -252,17 +252,10 @@ Since this set is treatment related, let's plot the data to see if treatment has
 
 * Go back to the main page. Choose the analysis **Correlate Gene with track** and type in box 4 one of the genes that were  mentioned to be down regulated by treatment, IL6. The "-" can be left out of the gene name in R2, e.g. "IL-6" becomes "IL6". Click **Next**.
 * Choose *Select a track:* **therapy (2cat)** and click **Next**.
-* Every patient had a sample taken before the start (no) and after 12 weeks (yes) of therapy, it is a paired test. It would be nice to see which dots belong to the same patient. With Sample Paths we can connect the two samples of each patient with the format Samplename1,Samplename2; etc. Because it is rather labour intensive to get the correct syntax, we did this for you. 
+* Every patient had a sample taken before the start (no) and after 12 weeks (yes) of therapy, it is a paired test. It would be nice to see which dots belong to the same patient. With Sample Paths we can connect the two samples of each patient with the format Samplename1,Samplename2; etc. Because it is rather labour intensive to get the correct syntax, we did this for you. Select all text in the textfield below (Ctrl+A) and paste it in the field **Sample Paths** 
 
-<form name="accessing_r2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input value="ps_avgpres_gse45867geo40_u133p2" name="table" type="hidden">
-  <input value="display2" name="option" type="hidden">
-  <input value="205207_at" name="factor" type="hidden">
-  <input value="205207_at" name="factor2" type="hidden">
-  <input value="" name="factorlist" type="hidden">
-  <input type="text" name="chainedsams" value="GSM1116933,GSM1116934;GSM1116935,GSM1116936;GSM1116937,GSM1116938;GSM1116939,GSM1116940;GSM1116941,GSM1116942;   GSM1116943,GSM1116944;GSM1116945,GSM1116946;GSM1116947,GSM1116948;GSM1116949,GSM1116950;GSM1116951,GSM1116952;   GSM1116953,GSM1116954;GSM1116955,GSM1116956;GSM1116957,GSM1116958;GSM1116959,GSM1116960;GSM1116961,GSM1116962;   GSM1116963,GSM1116964;GSM1116965,GSM1116966;GSM1116967,GSM1116968;GSM1116969,GSM1116970;GSM1116971,GSM1116972" size="25">
-  <button type="submit" >Display paired sample lines</button>
-</form>  
+  <input type="text" name="chainedsams" value="GSM1116933,GSM1116934;GSM1116935,GSM1116936;GSM1116937,GSM1116938;GSM1116939,GSM1116940;GSM1116941,GSM1116942;   GSM1116943,GSM1116944;GSM1116945,GSM1116946;GSM1116947,GSM1116948;GSM1116949,GSM1116950;GSM1116951,GSM1116952;   GSM1116953,GSM1116954;GSM1116955,GSM1116956;GSM1116957,GSM1116958;GSM1116959,GSM1116960;GSM1116961,GSM1116962;   GSM1116963,GSM1116964;GSM1116965,GSM1116966;GSM1116967,GSM1116968;GSM1116969,GSM1116970;GSM1116971,GSM1116972" size="25"> 
+
 <br>
 <br>
 
