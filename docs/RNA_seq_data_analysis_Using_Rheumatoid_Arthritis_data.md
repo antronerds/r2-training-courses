@@ -203,7 +203,7 @@ on any other part of the specific row. The headers of the columns each enable th
 First, we take a look at the information that was provided. Let's start with the dataset Cohort Overview.  
 
 * In box 3, select the **Cohort Overview**, click **next** and explore the available annotation.
-* To understand what the study is about, click on the **i information balloon** behind the dataset title. Take a note of the *cytokines & chemokines* that are mentioned in the description box.     
+* To understand what the study is about, click on the **i** information balloon behind the dataset title. Take a note of the *cytokines & chemokines* that are mentioned in the description box.     
 
 Since this set is treatment related, let's plot the data to see if treatment has any result according to this study.
 
