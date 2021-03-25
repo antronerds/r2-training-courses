@@ -204,6 +204,7 @@ When you look at such large gene lists (read how many combinations meet our crit
  In the introduction of this document you read the hypothesis of Lee et al. that inflammatory responses in peripheral blood are different from those in the arthritic joint.  
  Of course, this simple analysis pipeline does not answer the question whether perepheral blood samples can be used in stead of synovial fluid samples to guide rheumatoid arthritis treatment. We merely have provided an initial insight into the complexity of T cells and some differences between synovial fluid and perepheral blood gene expressions that are involved in immune respone.
  
+ * Please, submit your form. Thanks!
    
  Effects of treatment
 ---
@@ -276,8 +277,15 @@ Since this set is treatment related, let's plot the data to see if treatment has
 ---
 
 * In the upper right corner is a text box **Change gene**. Change the gene to a different gene that you can find in the description of the study, or that you yourself wonder about. Click the **Change Gene** button under the textbox. 
-<br><br>  
+<br><br>    
   
+  
+---
+
+
+![](_static/images/R2d2_logo.png)**Which gene did you choose and what can you tell about the effect of treatment on the expression of this gene?**  
+ 
+---  
 
 ##### Showing pathways in heatmaps
 
@@ -288,12 +296,33 @@ We now want to know which pathways are affected by treatment with tocilizumab.
 * Make sure there is only a check mark in front of *tocilizumab* and in front of *untreated* (i.e. uncheck the other treatment).
 
 The list shows the genes that are differentially expressed between the tocilizumab treatment and untreated. 
-* To see in which processes these genes are involved in, this time we click on **Gene Ontology Analysis** button. What kind of processes seem to be affected by treatment? 
-* Look at the color scheme above the table. Are the genes involved in these processes higher or lower expressed before or after treatment? 
+* To see in which processes these genes are involved in, this time we click on **Gene Ontology Analysis** button.    
+  
+  
+---
+
+
+ ![](_static/images/R2d2_logo.png)**What kind of processes seem to be affected by treatment?**  
+ 
+ ![](_static/images/R2d2_logo.png)**Are the genes involved in these processes mostly higher or lower expressed before or after treatment? (Hint: Look at the color scheme above the table)** 
+ 
+---
+
 The page with the list of differentiating genes is still open in a tab. On this page many buttons and links allow you to visualize and analyze the result further. Try these options, or try to interpret the results that you obtain with one of the buttons on the right:
 * From the list of differentiating genes, choose one of the top genes and hover your mouse over the gene to read information about the gene. Now click on its name to be taken to the One Gene View for this gene. Of course you can adapt the graph again with the menu underneath the graph. 
 * From the page with the list of differentiating genes, click on the button **Plot all genes (xy, vulcano etc)**
+* Underneath th eplot, change **Plot type** to *Vulcano plot*. In the textfield **Mark genes**, write the name of a gene that you are interested in. Click on **Redraw  Image**.
+* Hover with your mouse over some dots furthest to the left in the plot to read their names. Compare those names with the list of differentiating genes. 
 * From the page with the list of differentiating genes, now click the button **Heatmap(zscore)** to get an overview of all the genes and the group separations in a Heatmap.
 
-* Redo the Differential Expression between groups analysis, except this time select the other treatment versus the untreated. Don't forget to switch off the *Corr. multiple testing:*.
+* Redo the Differential Expression between groups analysis and Gene Ontology analysis, except this time select the other treatment versus the untreated. Don't forget to switch off the *Corr. multiple testing:*.    
+  
+  
+---
 
+ ![](_static/images/R2d2_logo.png)**What results do you get with this treatment?**  
+  
+ 
+---
+
+* Please, submit your form. Thanks!
