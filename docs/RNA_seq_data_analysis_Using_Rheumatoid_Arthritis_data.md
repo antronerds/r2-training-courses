@@ -137,8 +137,8 @@ The immune system is a complex system of different cell types that interact with
 * Cohort Overview
 
 <br>  
-This button will open up a Google form for section 1.2.2 and 1.2.3.
-
+This button will open up a Google form for section 1.2.2 and 1.2.3.  
+<br>
  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSezdWy9nyvckg3y0BNMKjbQLiYilykJreThl9_VCUyiYI9lmA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2.2 and 1.2.3</button> 
  
 We have seen before that the samples of a dataset can be annotated with extra annotation, or tracks. 
