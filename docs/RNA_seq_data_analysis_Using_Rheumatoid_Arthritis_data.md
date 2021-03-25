@@ -137,9 +137,13 @@ The immune system is a complex system of different cell types that interact with
 * Cohort Overview
 
 <br>  
-This button will open up a Google form for section 1.2.2 and 1.2.3.  
+This button will open up a Google form for section 1.2.2 and 1.2.3.   
 <br>
+<br>
+  
  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSezdWy9nyvckg3y0BNMKjbQLiYilykJreThl9_VCUyiYI9lmA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2.2 and 1.2.3</button> 
+<br>
+<br>
  
 We have seen before that the samples of a dataset can be annotated with extra annotation, or tracks. 
 To get a better overview of the available annotation of a dataset, we can use the tool **Cohort Overview** in R2. 
@@ -157,59 +161,13 @@ R2 presents the Okuzono dataset samples with its available annotation in a table
 ![](_static/images/R2d2_logo.png)**And how many samples are CD4 Effector Memory T cells (Tem) in the blood tissue? (Hint: you will have to apply 3 different filters)**  
   
 ---------
-
- 
-
-##### Finding pathways that make a difference
-
-*Analyses used* 
-* Differential Expression between groups
-* Gene set analysis
-* KEGG mapping
-
-We have seen that the expression profiles of the same cell types can show differences in peripheral blood and synovial fluid. It would be interesting to have a better understanding which genes and pathways cause the biggest differences and whether they are relevant to RA pathogenesis. 
-
-* From the main page, select the analysis **Find Differential expression between groups** in box 3; click **Next**.  
-* In the next page with selection criteria, choose *Select a track:* **tissue (2cat)**.  
-
-R2 will look for most differentially expressed genes between the groups of samples as defined by the track that is chosen in this setting. Thus, in our case, R2 will look for those genes that are most differing in expression values in blood samples as compared to synovial fluid samples.   
-* Note that by default the *anova test* is selected with a p-value treshold of 0.01. We leave all these settings as is. Click **Next** and click **Next** in the group selection where both blood and synovial fluid are selected.
-
- R2 now performs a one-way Anova statistical test on the fly with a correction for multiple testing. The result is a list of genes that is ordered by the most significant differential expression between the groups that we chose before (PB and SF).  
- 
- * Hover your mouse over the names of several genes to read a summary of information about its function and alternative names.  
- 
-When you look at such large gene lists (read how many combinations meet our criteria above the table), the biological significance isn't always clear at a glance. The buttons on the right-hand side of the page show further analysis options that you can perform on this list of genes.  
- *  To find the biological processes that are affected by the genes in this list, we can use the Gene set analysis. Click the button **Gene set analysis** and click **Next** in the following window.  
- 
- The returned table shows you the processes in which the genes are involved as defined by the <a href="https://www.genome.jp/kegg/" target="_blank">KEGG (Kyoto Encyclopedia of Genes and Genomes) database</a>.  Above the table you can read in the text a summary of the results and the analysis performed.
- In the first column of the table, you can find the name of the genesets where the number of genes from your list are present more than expected. In the fourth column you can read the p-value of the overrepresentation analysis of each geneset. 
- 
- ---------  
-  
- ![](_static/images/R2d2_logo.png)**Of the genesets in which a significant overrepresentation was found, can you find geneset(s) related to immune response? (Just one geneset name will suffice in the answering sheet)**  
-   
-  ---------  
- 
-  To obtain a synovial fluid sample for a patient is an invasive procedure. One of the research questions focuses on whether blood samples could provide enough information for treatment decisions.  
- 
- Above the result table, you can read the meaning of the color coding. 
-    
- ---------  
- 
-![](_static/images/R2d2_logo.png)**Are most genes higher expressed in synovial fluid or in blood?**  
-  
- ---------  
-
- In the introduction of this document you read the hypothesis of Lee et al. that inflammatory responses in peripheral blood are different from those in the arthritic joint.  
- Of course, this simple analysis pipeline does not answer the question whether perepheral blood samples can be used in stead of synovial fluid samples to guide rheumatoid arthritis treatment. We merely have provided an initial insight into the complexity of T cells and some differences between synovial fluid and perepheral blood gene expressions that are involved in immune respone.
  
  * Please, submit your form. Thanks!
    
  Effects of treatment
 ---
     
- Now that we have a better understanding of gene expression of T-cells, let's have a look if we can find any effect of rheumatoid arthritis treatments. 
+ Now that we have a better understanding of the biology involved in rheumatoid arthritis, let's have a look if we can find any effect of rheumatoid arthritis treatments. 
  
 *Data used:*  
 * R2 dataset: Disease Rheumatoid arthritis (drugs) - Lauwerys - 40 - MAS5.0 - u133p2
