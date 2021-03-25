@@ -239,7 +239,7 @@ Make sure to select all text: click in the textfield and hold Ctrl+A and copy-pa
  
 ---  
 
-##### Showing pathways in heatmaps
+##### Exploring differentially expressed processes
 
 We now want to know which pathways are affected by treatment with tocilizumab.
 * From the main page, select the analysis **Differential Expression between groups**, click **Next** 
