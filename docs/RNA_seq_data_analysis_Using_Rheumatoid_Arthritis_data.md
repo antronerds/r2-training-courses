@@ -326,3 +326,14 @@ The page with the list of differentiating genes is still open in a tab. On this 
 ---
 
 * Please, submit your form. Thanks!
+
+
+Final remarks / future directions
+---------------------------------
+In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize your genomics data. 
+
+You have reached the end of this course. Feel free to try one of the (Graduate) Student Courses that you can find in the sidebar of the Online Course documentation page at <a href="https://r2-training-courses.readthedocs.io/en/latest/" target="_blank">https://r2-training-courses.readthedocs.io/en/latest/</a>. 
+
+We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
+
+The R2 support team.
