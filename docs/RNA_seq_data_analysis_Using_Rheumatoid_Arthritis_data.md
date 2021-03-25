@@ -137,11 +137,11 @@ The immune system is a complex system of different cell types that interact with
 * Cohort Overview
 
 <br>  
-This button will open up a Google form for section 1.2.2 and 1.2.3.   
+This button will open up a Google form for section 1.2.2.   
 <br>
 <br>
   
- <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSezdWy9nyvckg3y0BNMKjbQLiYilykJreThl9_VCUyiYI9lmA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2.2 and 1.2.3</button> 
+ <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSezdWy9nyvckg3y0BNMKjbQLiYilykJreThl9_VCUyiYI9lmA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2.2</button> 
 <br>
 <br>
  
