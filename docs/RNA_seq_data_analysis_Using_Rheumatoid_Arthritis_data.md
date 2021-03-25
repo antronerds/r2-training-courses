@@ -144,7 +144,6 @@ This button will open up a Google form for section 1.2.2.
  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSezdWy9nyvckg3y0BNMKjbQLiYilykJreThl9_VCUyiYI9lmA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2.2</button> 
 <br>
 <br>
- 
 We have seen before that the samples of a dataset can be annotated with extra annotation, or tracks. 
 To get a better overview of the available annotation of a dataset, we can use the tool **Cohort Overview** in R2. 
 
