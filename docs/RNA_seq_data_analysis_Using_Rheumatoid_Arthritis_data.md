@@ -262,10 +262,10 @@ The list shows the genes that are differentially expressed between the tocilizum
 
 The page with the list of differentiating genes is still open in a tab. On this page many buttons and links allow you to visualize and analyze the result further. Try these options, or try to interpret the results that you obtain with one of the buttons on the right:
 * From the list of differentiating genes, choose one of the top genes and hover your mouse over the gene to read information about the gene. Now click on its name to be taken to the One Gene View for this gene. Of course you can adapt the graph again with the menu underneath the graph. 
-* From the page with the list of differentiating genes, click on the button **Plot all genes (xy, vulcano etc)**
-* Underneath th eplot, change **Plot type** to *Vulcano plot*. In the textfield **Mark genes**, write the name of a gene that you are interested in. Click on **Redraw  Image**.
+* From the page with the list of differentiating genes, click on the button **Plot all genes (xy, vulcano etc.)**
+* Underneath the plot, change **Plot type** to *Vulcano plot*. In the textfield **Mark genes**, write the name of a gene that you are interested in. Click on **Redraw Image**.
 * Hover with your mouse over some dots furthest to the left in the plot to read their names. Compare those names with the list of differentiating genes. 
-* From the page with the list of differentiating genes, now click the button **Heatmap(zscore)** to get an overview of all the genes and the group separations in a Heatmap.
+* From the page with the list of differentiating genes, now click the button **Heatmap (zscore)** to get an overview of all the genes and the group separations in a Heatmap.
 
 * Redo the Differential Expression between groups analysis and Gene Ontology analysis, except this time select the other treatment versus the untreated. Don't forget to switch off the *Corr. multiple testing:*.    
   
