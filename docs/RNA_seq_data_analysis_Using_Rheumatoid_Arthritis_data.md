@@ -185,7 +185,7 @@ R2 presents the Okuzono dataset samples with its available annotation in a table
 
 ##### Explore the provided information
 
- This button will open up a Google form for section 1.2.2 and 1.2.3.
+ This button will open up a Google form for section 1.3:
  
   <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdV8jh8L6Pkadh7xVffbyoMiUpdEYk9PwUesO3NWKjLRCu4FA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button> 
   
