@@ -315,9 +315,8 @@ The page with the list of differentiating genes is still open in a tab. On this 
   
 ---
 
- ![](_static/images/R2d2_logo.png)**What results do you get with this treatment?**  
+ ![](_static/images/R2d2_logo.png)**What results do you get with this treatment? Read the dataset description again. Do your results correspond with the study findings?**  
   
- 
 ---
 
 * Please, submit your form. Thanks!
