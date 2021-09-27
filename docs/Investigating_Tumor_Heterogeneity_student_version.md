@@ -35,7 +35,7 @@ Tumors and origins: a first impression of your data
 For a start we'll investigate established childhood tumor cell lines, including neuroblastoma. Established cell lines can be grown and passaged in culture indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do profiles of neuroblastoma cell lines relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of 86 other cell lines derived from 6 different childhood tumors and see how they relate. 
 
 *Data used:*  
-* 86 cell lines derived from 6 different childhood tumors (Cellline Childhood cancer - ITCC - 86 - MAS5.0 - u133p2)
+* 86 cell lines derived from 6 different childhood tumors (Cell line Childhood Cancer (public) -Versteeg - 86 - MAS5.0 - u133p2)
 
 *Techniques used:*   
 * mRNA Microarray expression
@@ -75,20 +75,24 @@ In this case we're first going to see if and how the mRNA expression of several 
 
 ---------
 
-  * In field 4 type the name of the gene and click **Next**
-  * Leave all settings at default and click **Next**  
+  * In field 3, an analysis type can be chosen. We will start with the default analysis *View a Gene*, and thus you can simply click **Next** in field 4.
+  * On the next page, the *Gene / Reporter* field is required. What gene did you think of that might show different expression between some of these 6 tumor models? Type the name of the gene in the *Search by Gene* field.  A dropdown list appears, that shows all the reporters that are found for the gene characters that you typed. 
+  * Select one from the list with a mouse click. It can happen that multiple reporters are found for one gene. In that case, choose the top one of the list to select the reporter with the highest average expression. 
+  * Click **Adjust Settings**.
+    
   
-A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis. Below the graph is the available annotation for the samples shown in colored tracks. In R2, samples can be annotated with e.g clinical data or biological information. Each group of annotated data is called a “Track” in R2. These tracks can be used to filter, color or split data in all types of R2 analyses.  
-Sometimes you can see the categorical tracks displayed underneath a graph. But often more annotation is available for the samples. You can hover your mouse above dots in a graph or over the tracks underneath the graph to get more information per sample.  
+A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis.  
+Below the graph is the available annotation for the samples shown in colored tracks. In R2, samples can be annotated with e.g clinical data or biological information. Each group of annotated data is called a *Track* in R2. These tracks can be used to filter, color or split data in all types of R2 analyses.  
+Sometimes you can see tracks displayed underneath a graph. But often more annotation is available for the samples. You can hover your mouse above sample dots in a graph or over the tracks underneath the graph to get more information per sample.  
 
-  * Hover with your mouse over data points to show additional information.  
+  * Hover with your mouse over some data points to show additional information.  
 
-At the bottom of the page you can find a table with adjustable settings. Many settings of the graph can be adapted.  
+Below the graph, you can find a table with adjustable settings. Many settings of the graph can be adapted.  
 
 * Try out a different view of the same data with the following changes to the settings:  
  The expression values on the y-axis are logarithmic by default, in the settings menu set the **Transform** option to *none* instead. Split the data in groups with the setting **use track** under Group separations: choose the *itcc_model* track that contains the information which sample belongs to which tumor type. Also sort the samples again on expression with **Extra Graph Option** set to *Track and Gene sort*. Finally, click **Adjust Settings** to obtain the graph with these adaptations.  
   
-* Now try the gene MYCN (Type *MYCN* in the **Change Gene** box in the upper right corner to keep all your settings, but to change your gene).  
+* Now try the gene MYCN. Type *MYCN* in the left text field **Gene / Reporter** in the Adjustable settings box underneath teh graph. Click **Adjust Settings** but to change your gene.  
 * Hover with your mouse over the track underneath the graph or over the data points, to find out which itcc_model belongs to which group of samples. 
   
 ---------
@@ -116,7 +120,7 @@ We've seen that the expression of genes differs among the samples and some types
 
 
 
-* Under the graph, a menu allows the user to adapt settings. Colors of the graph points are not set by default. To color the graph with a biologically meaningful annotation, find the **ColorMode** dropdown and select *Color by Track*. Now set the **Track for Color** dropdown to use the *itcc_model* track, and click **Next** to show the changes. 
+* Under the graph, a menu allows the user to adapt settings. Colors of the graph points are not set by default. To color the graph with a biologically meaningful annotation, find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the *itcc_model* track, and click **Next** to show the changes. 
 
 * The t-SNE algorithm has a parameter called **perplexity**, which determines how much attraction points on a map have towards each other.  Set the perplexity value to *5* and click **next** again.  
   
