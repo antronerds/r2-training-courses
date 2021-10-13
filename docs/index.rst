@@ -11,6 +11,13 @@ Copyright (c) 2006-2020 Jan Koster
 .. toctree::
    :maxdepth: 1
    :numbered:
+   :caption: VAGABOND R2 Course
+
+    VAGABOND_interim_course_R2
+
+.. toctree::
+   :maxdepth: 1
+   :numbered:
    :caption: AMS Course Materials
 
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
@@ -27,7 +34,6 @@ Copyright (c) 2006-2020 Jan Koster
    :numbered:
    :caption: Graduate Course
 
-   VAGABOND_interim_course_R2
    Finding_structural_variants
    Investigating_Tumor_Heterogeneity
 
