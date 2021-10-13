@@ -3,7 +3,7 @@
 Vagabond Course: Investigating Intra-tumor Heterogeneity in Neuroblastoma
 =================================
 
-*Analyse tumor heterogeneity in neuroblastoma using the R2 data analysis platform*
+*Analyse tumor heterogeneity in neuroblastoma using the web-based genomics analysis and visualization platform R2*
 
 This resource is located online at http://r2-training-courses.readthedocs.io  
   
