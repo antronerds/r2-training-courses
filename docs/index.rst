@@ -27,6 +27,7 @@ Copyright (c) 2006-2020 Jan Koster
    :numbered:
    :caption: Graduate Course
 
+   VAGABOND_interim_course_R2
    Finding_structural_variants
    Investigating_Tumor_Heterogeneity
 
