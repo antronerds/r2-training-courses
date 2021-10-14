@@ -55,6 +55,23 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <br>
 <br>
 
+##### Prognostic factors: 
+
+R2 enables the analysis of the prognostic value of any annotated parameter of a tumor series. These parameters are available in R2 as so called ‘tracks’. The neuroblastoma series NB88 is annotated for a number of clinical and molecular parameters. To get some insight in the tumor and the NB88 series, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene. 
+- start in the main menu
+- verify that you use the ‘Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2’ series
+- select in field 3: "Kaplan Meier > Kaplan Meier by annotated parameter".  next
+- We are going to separate the patients based on the INSS stating system. Within R2 grouping variables are referred to as tracks. Use the drop down menu of ‘use track’ under the Survival header, select ‘inss (cat 5)’,  next
+- The Kaplan Meier curves appear.
+
+---------
+
+  ![](_static/images/R2d2_logo.png)**What can you say about the expression of this gene in the different tumor models?**
+
+<br>
+<br>
+---------
+
 ##### Expression of key genes
 * The button below brings you to the form in which you can submit your answers for section 1.2. 
 
