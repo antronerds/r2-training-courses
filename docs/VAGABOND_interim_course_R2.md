@@ -28,6 +28,15 @@ Using recent molecular biology data gathering techniques and advanced bioinforma
   
 The **grey buttons** in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The **green buttons** in this document will open up a Google form, one per section, with which you can submit your answers. 
 
+Research questions:
+--------------------------------------  
+
+During this practical course, we will use the R2 bioinformatics tool to study two research questions:
+* Which molecular pathways are activated in neuroblastoma patients with an unfavorable prognosis?
+* What is the function of the MYCN gene in neuroblastoma?
+
+
+
 Tumors and origins: a first impression of your data
 ---------------------------------------
 
