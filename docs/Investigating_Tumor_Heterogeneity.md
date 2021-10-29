@@ -5,7 +5,7 @@ Investigating Intra-tumor Heterogeneity
 
 *Analyse tumor heterogeneity in neuroblastoma using the R2 data analysis platform*
 
-This resource is located online at http://r2-training-courses.readthedocs.io
+This resource is located online at http://r2-training-courses.readthedocs.io .
 
 
 Introduction
