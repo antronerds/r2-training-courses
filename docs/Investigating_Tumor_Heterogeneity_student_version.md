@@ -7,12 +7,11 @@ Investigating Intra-tumor Heterogeneity in Neuroblastoma
 
 This resource is located online at http://r2-training-courses.readthedocs.io  
   
-  The grey buttons in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The green buttons in this document will open up a Google form, one per section, with which you can submit your answers. 
-
+ 
 Introduction
 ------------
 
-Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. For insatnce, in colorectal cancer a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
+Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. For instance, in colorectal cancer a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
 
   ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression.")	
   
@@ -31,7 +30,8 @@ Using recent molecular biology data gathering techniques and advanced bioinforma
 
 Tumors and origins: a first impression of your data
 ---------------------------------------
-
+The grey buttons in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The green buttons in this document will open up a Google form, one per section, with which you can submit your answers.  
+  
 For a start we'll investigate established childhood tumor cell lines, including neuroblastoma. Established cell lines can be grown and passaged in culture indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do profiles of neuroblastoma cell lines relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of 86 other cell lines derived from 6 different childhood tumors and see how they relate. 
 
 *Data used:*  
@@ -50,7 +50,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 ##### Expression of key genes
 * The button below brings you to the form in which you can submit your answers for section 1.2. 
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfo7ZeKEaVRflzEmXkFZsErDShYHs8PaZO1tBmVrnLeyobkyg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1ZGSmm3oMSJKHBHosCJsDUuGbQDhUX-_JSesBLizcDwQ/','_blank');" type="button">Open the form for section 1.2</button> 
 <br>
 <br>
 
@@ -58,7 +58,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 * Go to R2 by clicking on the button below:  
 
 
-<form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="itcc_68_cell_lines" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
   <button type="submit" class="course r2submit" >Go to R2</button>
 </form>  
