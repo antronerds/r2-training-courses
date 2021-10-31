@@ -70,22 +70,23 @@ In this case we're first going to see if and how the mRNA expression of several 
 
 ---------
 
-  ![](_static/images/R2d2_logo.png)**From knowledge acquired in previous lectures, or just from quick Googling on the web... Can you think of a gene that might show different expression between some of these 6 tumor models?**
+  ![](_static/images/R2d2_logo.png)**Based on knowledge that you acquired in previous lectures, or just from a quick Google search on the web... Can you think of a gene that might show different expression between some of these 6 tumor models?**
 <br><br>
 
 ---------
 
   * In field 3, an analysis type can be chosen. We will start with the default analysis *View a Gene*, and thus you can simply click **Next** in field 4.
-  * On the next page, the *Gene / Reporter* field is required. What gene did you think of that might show different expression between some of these 6 tumor models? Type the name of the gene in the *Search by Gene* field.  A dropdown list appears, that shows all the reporters that are found for the gene characters that you typed. 
-  * Select one from the list with a mouse click. It can happen that multiple reporters are found for one gene. In that case, choose the top one of the list to select the reporter with the highest average expression. 
-  * Click **Adjust Settings**.
+  * On the next page, the *Gene / Reporter* field is required. What gene came to mind that might show different expression between some of these 6 tumor models? Type the name of the gene in the *Search by Gene* field.  A dropdown list appears, that shows all the reporters that are found for the gene characters that you typed. 
+  * It can happen that multiple reporters are found for one gene. In that case, choose the top one of the list to select the reporter with the highest average expression. Select the reporter of your choice in the list with a mouse click. 
+  * Click **Submit**.
     
   
 A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis.  
-Below the graph is the available annotation for the samples shown in colored tracks. In R2, samples can be annotated with e.g clinical data or biological information. Each group of annotated data is called a *Track* in R2. These tracks can be used to filter, color or split data in all types of R2 analyses.  
-Sometimes you can see tracks displayed underneath a graph. But often more annotation is available for the samples. You can hover your mouse above sample dots in a graph or over the tracks underneath the graph to get more information per sample.  
+In R2, samples can be annotated with e.g clinical data or biological information. Each group of annotated data is called a *Track* in R2. These tracks can be used to filter, color or split data in all types of R2 analyses.  
+Sometimes you can see such tracks displayed underneath a graph. In this case, below the graph colored blocks correspond to the values that each sample has for the categorical track *itcc_model*.   
+Often more annotation is available for the samples. You can hover your mouse above sample dots in a graph or over the tracks underneath the graph to get more information per sample.  
 
-  * Hover with your mouse over some data points to show additional information.  
+  * Hover with your mouse over some colored blocks, and then over their data points in the graph to look at additional information of those samples.  
 
 Below the graph, you can find a table with adjustable settings. Many settings of the graph can be adapted.  
 
