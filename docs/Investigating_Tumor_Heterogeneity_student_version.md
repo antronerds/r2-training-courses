@@ -91,7 +91,7 @@ Often more annotation is available for the samples. You can hover your mouse abo
 When you analyze data, different visualizations might help to gain better insight into your dataset. Below the graph, you can find a table with adjustable settings.   
 
 * Try out a different view of the same data with the following changes to the settings:  
- Split the data in groups by switching the dropdown of **Analysis type** above the box to **gene vs track**. In the box, set the dropdown of **Track** to *itcc_model (6 cat)*. This track contains the information which sample belongs to which tumor type and is the same track that you see displayed directly underneath the graph.<br>
+  Split the data in groups by switching the dropdown of **Analysis type** above the box to **gene vs track**. In the box, set the dropdown of **Track** to *itcc_model (6 cat)*. This track contains the information which sample belongs to which tumor type and is the same track that you see displayed directly underneath the graph.<br>
  The expression values on the y-axis are logarithmic by default, in the settings menu set the **Transformation** option to *None*. Also, sort the samples again on level of expression with **Extra Graph Option** set to *Track and Gene sort*. Finally, click **Submit** to obtain the graph with these adaptations.  
   
 * Now try the gene MYCN. Type *MYCN* in the left text field **Gene / Reporter** in the Adjustable settings box underneath the graph, and click on MYCN in the list that pops up. Click **Submit** in order to change your gene.  
