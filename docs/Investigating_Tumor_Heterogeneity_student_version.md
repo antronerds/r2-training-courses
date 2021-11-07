@@ -35,7 +35,7 @@ The grey buttons in this course will bring you to the R2 platform, often with pr
 For a start we'll investigate established childhood tumor cell lines, including neuroblastoma. Established cell lines can be grown and passaged in culture indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do profiles of neuroblastoma cell lines relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of 86 other cell lines derived from 6 different childhood tumors and see how they relate. 
 
 *Data used:*  
-* 86 cell lines derived from 6 different childhood tumors (Cell line Childhood Cancer (public) -Versteeg - 86 - MAS5.0 - u133p2)
+* 86 cell lines derived from 6 different childhood tumors (Cell line Childhood Cancer (public) - Versteeg - 86 - MAS5.0 - u133p2)
 
 *Techniques used:*   
 * mRNA Microarray expression
@@ -76,17 +76,17 @@ In this case we're first going to see if and how the mRNA expression of several 
 ---------
 
   * In field 3, an analysis type can be chosen. We will start with the default analysis *View a Gene*, and thus you can simply click **Next** in field 4.
-  * On the next page, the *Gene / Reporter* field is required. What gene came to mind that might show different expression between some of these 6 tumor models? Type the name of the gene in the *Search by Gene* field.  A dropdown list appears, that shows all the reporters that are found for the gene characters that you typed. 
+  * On the next page, the *Gene / Reporter* field is required. What gene came to mind that might show different expression between some of these 6 tumor models? Type the name of the gene in the *Search by Gene* field. A dropdown list appears, that shows all the reporters that are found for the gene characters that you typed. 
   * It can happen that multiple reporters are found for one gene. In that case, choose the top one of the list to select the reporter with the highest average expression. Select the reporter of your choice in the list with a mouse click. 
   * Click **Submit**.
     
   
 A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis.<br>
-In R2, samples can be annotated with e.g clinical data or biological information. Each group of annotated data is called a *Track* in R2. These tracks can be used to filter, color or split data in all types of R2 analyses.<br>
+In R2, samples can be annotated with e.g. clinical data or biological information. Each group of annotated data is called a *Track* in R2. These tracks can be used to filter, color or split data in all types of R2 analyses.<br>
 Sometimes you can see such tracks displayed underneath a graph. In this case, below the graph colored blocks correspond to the values that each sample has for the categorical track *itcc_model*.<br>
 Often more annotation is available for the samples. You can hover your mouse above sample dots in a graph or over the tracks underneath the graph to get more information per sample.  
 
-  * Hover with your mouse over some colored blocks, and then over their data points in the graph to look at additional information of those samples.  
+  * Hover with your mouse over some colored blocks, and then over their data points in the graph to look at additional information of those samples. Pay attention to which sample belongs to which tumor model.  
 
 When you analyze data, different visualizations might help to gain better insight into your dataset. Below the graph, you can find a table with adjustable settings.   
 
@@ -112,14 +112,13 @@ When you analyze data, different visualizations might help to gain better insigh
 
 ##### Clustering with tSNE maps
 
-We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. One recently developed algorithm is the tSNE map. Similar cells will clump together on the map.   
+We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of samples and will clump similar cells together on a map.   
 
 * Click the button below to show the tSNE map in R2 
 
-<button class="course" onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
+<button class="course" onclick="window.open('https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
 <br>
 <br>
-
 
 
 * Under the graph, a menu allows the user to adapt settings. Colors of the graph points are not set by default. To color the graph with a biologically meaningful annotation, find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the *itcc_model* track, and click **Next** to show the changes. 
