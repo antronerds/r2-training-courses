@@ -93,7 +93,7 @@ When you analyze data, different visualizations might help to gain better insigh
 * Try out a different view of the same data with the following changes to the settings:  
   Split the data in groups by switching the dropdown of **Analysis type** above the box to **gene vs track**. In the box, set the dropdown of **Track** to *itcc_model (6 cat)*. This track contains the information which sample belongs to which tumor type and is the same track that you see displayed directly underneath the graph.<br>
  The expression values on the y-axis are logarithmic by default, in the settings menu set the **Transformation** option to *None*. Also, sort the samples again on level of expression with **Extra Graph Option** set to *Track and Gene sort*. Finally, click **Submit** to obtain the graph with these adaptations.  
-  
+ <br>
 * Now try the gene MYCN. Type *MYCN* in the left text field **Gene / Reporter** in the Adjustable settings box underneath the graph, and click on MYCN in the list that pops up. Click **Submit** in order to change your gene.  
 * Hover with your mouse over the track underneath the graph or over the data points, to find out which itcc_model belongs to which group of samples. 
   
@@ -114,16 +114,15 @@ When you analyze data, different visualizations might help to gain better insigh
 
 We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of samples and will clump similar cells together on a map.   
 
-* Click the button below to show the tSNE map in R2 
+* Click the button below to show the t-SNE map in R2: 
 
 <button class="course" onclick="window.open('https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
 <br>
 <br>
 
+* Under the graph, a menu allows the user to adapt settings. Colors of the graph points are not set by default. To color the graph with a biologically meaningful annotation, find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the *itcc_model* track again, and click **Next** to show the changes. 
 
-* Under the graph, a menu allows the user to adapt settings. Colors of the graph points are not set by default. To color the graph with a biologically meaningful annotation, find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the *itcc_model* track, and click **Next** to show the changes. 
-
-* The t-SNE algorithm has a parameter called **perplexity**, which determines how much attraction points on a map have towards each other.  Set the perplexity value to *5* and click **next** again.  
+* The t-SNE algorithm has a parameter called **perplexity**, which determines how much attraction points have on a map towards each other. Set the perplexity value to *5* and click **next** again.  
   
 ------
 
@@ -150,7 +149,7 @@ In the former step we derived that neuroblastoma cell lines seem to group with c
 
 * The button below brings you to the form in which you can submit your answers for section 1.3
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc0dGfEl9zDS7Yh-ZtrcKAn4IVgcwNxsZKNjQQtTj35JjgQng/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSd6f9ml9IEQmh_vgXEac_uDJ2ehBskh8U0yJmaNSYZ6QnWRUA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button> 
 <br>
 <br>
 
