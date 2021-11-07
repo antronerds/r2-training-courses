@@ -184,7 +184,7 @@ We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of
 
 For this analysis we will use one of the analysis tools of R2: Toplister. The Toplister can assess which genes behave differently throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
 
-* Go to R2 by clicking the button below. The button brings you to the R2 will find the 100 genes that have the largest variation in gene expression among these 8 cell lines, three pairs from three tumors of a patient and two classical neuroblastoma cell lines. 
+* Go to R2 by clicking the button below. The button brings you to the R2 page and the correct dataset of 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
 <br>
 
 <form name="ps_avgpres_gse90803geo8_u133p2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
@@ -194,8 +194,8 @@ For this analysis we will use one of the analysis tools of R2: Toplister. The To
 <br>
 <br>
 
-* Select *Toplister (Gene filter stdev)* as the type of analysis in box **3** from the dropddown menu (scroll almost all the way down. You will find it listed under the header Meta analyses)
-* Click **Next**; a list of genes appears
+* Select *Toplister (Gene filter stdev)* as the type of analysis in box **3** from the dropddown menu (- scroll almost all the way down. You will find it listed under the header *Meta analyses*). Toplister will find the 100 genes that have the largest variation in gene expression among these 8 cell lines, three pairs from three tumors of a patient and two classical neuroblastoma cell lines. 
+* Click **Next**; leave the settings as is, and click **Next** again. A list of genes appears.
 
 ---------
 
