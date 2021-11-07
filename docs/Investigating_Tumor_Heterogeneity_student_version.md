@@ -187,7 +187,7 @@ For this analysis we will use one of the analysis tools of R2: Toplister. The To
 * Go to R2 by clicking the button below. The button brings you to the R2 will find the 100 genes that have the largest variation in gene expression among these 8 cell lines, three pairs from three tumors of a patient and two classical neuroblastoma cell lines. 
 <br>
 
-<form name="itcc_68_cell_lines" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="ps_avgpres_gse90803geo8_u133p2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
   <button type="submit" class="course r2submit" >Go to R2</button>
 </form>  
