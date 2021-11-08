@@ -182,7 +182,7 @@ We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of
 <br>
 <br>
 
-For this analysis we will use one of the analysis tools of R2: Toplister. The Toplister can assess which genes behave differently throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
+For this analysis we will use one of the analysis tools of R2: Toplister. The Toplister can assess which genes show the most different expression values throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
 
 * Go to R2 by clicking the button below. The button brings you to the R2 page and the correct dataset of 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
 <br>
@@ -576,8 +576,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 <br>
 <br>
 
-* Select in field 3 the **Relate 2 tracks** option. R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. Relate the two tracks, adapt the **ColorMode** to *Color by Track* and try the *mes_adrn_time* track. This track contains information on the time that the PRRX1 gene expression was induced in the SKNBE cell line. 
-* As **Graph type** choose *XY plot* and **Submit**
+* Select in field 3 the **Relate 2 tracks** option. R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. Relate the two tracks, choose *XY plot* as **Graph type** and adapt the **ColorMode** to *Color by Track* and try the *mes_adrn_time* track. This track contains information on the time that the PRRX1 gene expression was induced in the SKNBE cell line and **Submit**.
 
 ---------
 
@@ -613,7 +612,8 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 Creating hypotheses: relating to chromatin modification data
 ---------------------------------------------------------------
 
-Apparently this TF is capable of shifting cells from one state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIP-Seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
+Apparently this TF is capable of shifting cells from one state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? <br>
+A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIP-Seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
 
 *Data used:*
 * Four MES and five ADRN neuroblastoma cell lines, including three isogenic cell line pairs. 
