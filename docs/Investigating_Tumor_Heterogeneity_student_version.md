@@ -361,7 +361,7 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 
 
 * In field 3 select *View Geneset* that you can find under the header *Meta-analysis*.
-* Click **Next** and select *geneset_r2provided_genelists* 
+* Click **Next** and select *r2 provided gene lists* 
 * Click **Next**, leave selection as is and click **Next**
 * Select both signatures that were derived before by CTRL click on the MES (*r2_mesadrn_mes*) and ADRN (*r2_mesadrn_adrn*) signatures and click **Next**
 
@@ -381,7 +381,7 @@ When observing such clear-cut patterns it is good scientific practice to test th
 * Click on the button below to go there and perform the same analysis.
 
 
-<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="main_34_pairs_and_crest" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse90683geo48_gse90683r1">
   <button type="submit" class="course r2submit" >Go to R2 additional NB dataset</button>
 </form>  
@@ -425,13 +425,13 @@ The expression patterns of these specific signatures can be used to compare cell
 
 * The button below brings you to the form in which you can submit your answers for section 1.6
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfeDhhvV2hQQ4erzjf18OX27jelvYxFVIyovPOxWin3GUxekg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.6</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdnr2SR3ER3naDLKJG00rogvCf5WEnqfqyDB1MyydT6zkpolg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.6</button> 
 <br>
 <br>
 
 * Go back to the main portal of R2 by clicking the button below.
 
-<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="main_34_pairs_and_crest" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
   <button type="submit" class="course r2submit" >Go to R2</button>
 </form>  
