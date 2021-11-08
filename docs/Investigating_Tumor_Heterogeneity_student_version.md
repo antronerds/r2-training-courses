@@ -268,12 +268,16 @@ We have identified two different types of cells that occur within the same patie
 <br>
 
 
-* In Field 3 choose *Find Differential expression between groups* and click **Next**
-
+* In Field 3 choose *Find Differential expression between two groups* and click **Next**
+<br>
 This dataset has been annotated with 'cell type' information. Each sample was assigned to either the MESenchymal or the ADReNergic cell type. The information is stored in R2 in a track. 
-* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to *No correction*.  Click **Next** twice. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>).
-* A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset is shown. Click on the hyperlinked name of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well
-* Go back to the window with the differentially expressed genes. This is still open in one of your browser tabs. 
+* Choose the proper track in the **Group by** dropdown and click **Submit**.
+ An additional adjustable settings menu pops up.
+* Choose one of the types for **Group 1** and the other for **Group 2**.
+* Since we have only 8 samples make sure that the **multiple testing correction** is set to *No correction*. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>)
+* Set the **p-value cutoff** to *0.01* and click **Submit**.
+* A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset. Click on the magnifying glass icon in front of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well.
+* Go back to the tab with the differentially expressed genes. This is still open in one of your browser tabs. 
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
 
 ---------
@@ -283,9 +287,9 @@ This dataset has been annotated with 'cell type' information. Each sample was as
 
 ---------
 <br>
-For future use, this list of genes has been stored for you in R2 as signatures (aka genesets or categories). The list has been split into two categories: one set of genes that is highly expressed in the MES type of samples (r2_mesadrn_mes) and one set of genes highly expressed in the ADRN type of samples (r2_mesadrn_adrn).  
-
-R2 provides additional analysis for sets of genes that can be accessed from the right panel of menu buttons. As a first analysis step we can check a data resource called the Gene Ontology that provides a tree of systematically ordered biological terms that is used to formally describe the biological role of each gene. The Gene Ontology Analysis tool in R2 calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. 
+For future use, this list of genes has been stored for you in R2 as saved genesets. The list has been split into two categories: one set of genes that is highly expressed in the MES type of samples (r2_mesadrn_mes) and one set of genes highly expressed in the ADRN type of samples (r2_mesadrn_adrn).  
+<br><br>
+From the right panel of menu buttons, R2 provides several additional analyses for the list of genes that we just generated with the differential expression analysis. As a next analysis step, we can check a data resource called the Gene Ontology that provides a tree of systematically ordered biological terms that is used to formally describe the biological role of each gene. The Gene Ontology Analysis tool in R2 calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. 
 
 * On the page with the differentially expressed genes, select the **Gene Ontology Analysis** button in the menu on the right 
 
@@ -297,7 +301,7 @@ R2 provides additional analysis for sets of genes that can be accessed from the 
 ---------
 <br>
 
-* Now scroll down to the end of the page (or click the filter button in the left upper corner of the page) and adapt the settings such that only the Biological Process branch of the Gene Ontology is selected, and select only the genes that are higher expressed in the MES type of cells 
+* Now scroll down to the end of the page (or click the filter button in the left upper corner of the page) and adapt the settings such that only the *Biological Process* branch of the Gene **Ontology** is selected, and select only the genes that are higher expressed in the MES type of cells. Click **Redo analysis**.
 
 ---------
 
@@ -311,7 +315,7 @@ In R2 there are many more sets of genes that have been found to be implemented i
 
 * Go back to the window with the differentially expressed genes. 
 * Select the **Gene set analysis** option from the right menu
-* Select the *geneset_broad_2015_hallmark* geneset and click **Next**
+* Select the *Broad 2020 09 h hallmark* as Geneset and click **Next**
 
 ---------
 
