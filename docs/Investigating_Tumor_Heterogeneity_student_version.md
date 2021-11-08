@@ -275,8 +275,7 @@ This dataset has been annotated with 'cell type' information. Each sample was as
 <br>
 * Choose the proper track in the **Group by** dropdown and click **Submit**. An additional adjustable settings menu pops up.  
 * Choose one of the types for **Group 1** and the other for **Group 2**.  
-* Since we have only 8 samples make sure that the **Corr. voor multiple testing ** is set to *No correction*. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>)  
-* Set the **p-value cutoff** to *0.01* and click **Submit**.  
+* Since we have only 8 samples make sure that the **Corr. voor multiple testing ** is set to *No correction*. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>) and click **Submit**.  
 * A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset. Click on the magnifying glass icon in front of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well.  
 * Go back to the tab with the differentially expressed genes. This is still open in one of your browser tabs.  
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
@@ -442,8 +441,9 @@ The expression patterns of these specific signatures can be used to compare cell
 
 * In field 3 choose **Relate 2 tracks** and click **Next**
 * First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (*lab\_id*) and on the Y-axis the signature score track that R2 has generated for the ADRN signature (s\_mesadrn\_adrn(#)). 
-* Choose **Graph type** *XY* and click **Submit**.
-* A graph is generated. For each sample the signature score for the mesadrn\_adrn signature is shown. Select for **Color mode**  *Color by Track* and try the track *cell_type*. Click **Submit** to view the result.
+* Click **Submit**.<br>
+A graph is generated. For each sample the signature score for the mesadrn\_adrn signature is shown. <br>
+* Select for **Color mode**  *Color by Track* and try the track *cell_type*. Click **Submit** to view the result.
 * Now select for the Y-axis the MES part of the signature, click **Submit** to view the result.
 * To compare the signature scores, select the ADRN signature for the X track and submit your changes.
 * If you have time you can also try the *Color by Gene* as **ColorMode**, choose a gene of interest (Note: the dropdown selection is linked to the database, wait for the proper selections to popup...)
@@ -576,7 +576,9 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 <br>
 <br>
 
-* Select in field 3 the **Relate 2 tracks** option. R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. Relate the two tracks, choose *XY plot* as **Graph type** and adapt the **ColorMode** to *Color by Track* and try the *mes_adrn_time* track. This track contains information on the time that the PRRX1 gene expression was induced in the SKNBE cell line and **Submit**.
+* Select in field 3 the **Relate 2 tracks** option. <br>
+R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. 
+* Relate the two tracks and adapt the **ColorMode** to *Color by Track* and try the *mes_adrn_time* track. This track contains information on the time that the PRRX1 gene expression was induced in the SKNBE cell line and **Submit**.
 
 ---------
 
