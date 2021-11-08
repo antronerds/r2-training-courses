@@ -893,13 +893,14 @@ The chromatin state is especially important for transcription factors; we'll re-
 
 <form name="tfdifexprform" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
 <input type='hidden' name='minpres' value='1'>
-<input type='hidden' name='option' value='display'>
+<input type='hidden' name='option' value='displaygene'>
 <input type='hidden' name='table' value='ps_avgpres_gsenatgengeo34_u133p2'>
 <input type='hidden' name='hugoonce' value='yes'>
 <input type='hidden' name='cortype' value='transform_log2'>
-<input type='hidden' id="geneset0-geneset-select" name="geneset" value="geneannot::TF::transcription factor">
-<input type='hidden' name='selectedtrack' value='cell_type'>
+<input type='hidden' id="geneset0-geneset-select" name="geneset" value="geneannot::base::TF::transcription factor">
+<input type='hidden' name='group_track' value='cell_type'>
 <input type='hidden' name='test' value='anova'>
+<input type='hidden' name='test_mode' value='two_group_diff'>
 <input type='hidden' name='factor' value='NG_mes_adrn_nc'>
 <input type='hidden' name='subset' value='TRACKER:,0,1,2,3,4,5,6,7,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33'>
 <button type="submit" class="course r2submit" >Go to R2 differential expression of TF's</button>
