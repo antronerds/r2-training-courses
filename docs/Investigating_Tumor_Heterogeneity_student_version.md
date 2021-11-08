@@ -328,8 +328,8 @@ In R2 there are many more sets of genes that have been found to be implemented i
 Identifying groups: using signatures to classify other datasets
 ------------------------------------------------------------------
 
-We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis.   
-We've assembled a more complex dataset by gathering the dataset of the 4 pairs of cell lines, additional neuroblastoma cell lines from the first dataset and publicly available data of non-malignant human neural crest tissue. The neural crest undergoes a mesenchymal transition and gives rise to cell types from the adrenergic lineage.
+We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis. <br>  
+We've assembled a more complex dataset by gathering the dataset of the 4 pairs of cell lines, additional neuroblastoma cell lines from the first dataset and publicly available data of non-malignant human neural crest tissue. The neural crest undergoes a mesenchymal transition and gives rise to cell types from the adrenergic lineage.<br><br>
 
 *Data used:*
 * A combination of the 8 cell lines above, additional neuroblastoma cell lines and cells from the neural crest lineage (Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2)
@@ -346,13 +346,13 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 
 * The button below brings you to the form in which you can submit your answers for section 1.5
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSephAsX9i-d_QUh7Gu7ZRWUKkL9XgtAuEzglGnBgBU4Nd3VrQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.5</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeVhpdwUrMRo-TFI6MEL8yS12Z9MEXU_8zqRx2Tl6VbT8hyuQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.5</button> 
 <br>
 <br>
 
 * Go to the main portal of R2 by clicking the button below; the dataset described above is automatically selected
 
-<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="main_34_pairs_and_crest" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
   <button type="submit" class="course r2submit" >Go to R2</button>
 </form>  
