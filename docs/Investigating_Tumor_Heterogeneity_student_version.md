@@ -516,7 +516,7 @@ From experiments it is known that cells can change their nature, some cells exhi
 
 * The button below brings you to the form in which you can submit your answers for section 1.8
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScdjNTEfcu5vuyskvWbKASj3xani-_eMwvN26N1_-F5gYF0tw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.8</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfrG8VSptASAsQlxod5Yt5RmthDtNr5BSUaww0HJ_ef8SXSTw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.8</button> 
 <br>
 <br>
 
@@ -566,14 +566,15 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
   
 * Go to the R2 main page by clicking the button below, the correct dataset will be selected.  
 
-<form name="52_pairs_crest_exp" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="52_pairs_crest_exp" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
   <button type="submit" class="course r2submit" >Go to R2 main, inducible TF set</button>
 </form>  
 <br>
 <br>
 
-* Select in field 3 the **Relate 2 tracks** option. R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. Relate the two tracks, adapt the **ColorMode** to **Color by Track** and try the *mes_adrn_time* track. This track contains information on the time that the PRRX1 gene expression was induced in the SKNBE cell line.
+* Select in field 3 the **Relate 2 tracks** option. R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. Relate the two tracks, adapt the **ColorMode** to *Color by Track* and try the *mes_adrn_time* track. This track contains information on the time that the PRRX1 gene expression was induced in the SKNBE cell line. 
+* As **Graph type** choose *XY plot* and **Submit**
 
 ---------
 
@@ -585,7 +586,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 
 * This conclusion is even more obvious when the sequence of events is highlighted, as can be done in R2. The relations between the isogenic pairs are also illustrated. Click the button below to view the graph annotated in this way, a figure that can be incorporated in a publication right away. 
 
-<form name="timepath" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="timepath" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
 <input type="hidden" name="species" value="hs">
 <input type="hidden" name="selectedtrack" value="adrn_score">
@@ -626,7 +627,7 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 
 * The button below brings you to the form in which you can submit your answers for section 1.9
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScQC2N5QsLOOUJULFuooscO4gAKzxyE_0nk-OM1n5MLvlslRw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.9</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScwydRpxvzxEBI_FsXH56wc947Jdbhg1w0vpU4ZMIRaJFoP9g/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.9</button> 
 <br>
 <br>
 
@@ -651,7 +652,7 @@ First we'll check one of the HAND genes, known to play a role in the development
 
 * Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.  
 
-<form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='_gv'>
+<form name='genomebrowser_tf' action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='_gv'>
 <input type='hidden' name='option' value='gbv2_base'>
 <input type='hidden' name='|a01giemsa' value='on'>
 <input type='hidden' name='a02bsequence' value='off'>
@@ -887,7 +888,7 @@ The chromatin state is especially important for transcription factors; we'll re-
 
 * Perform the differential expression analysis again by clicking on the button below
 
-<form name="tfdifexprform" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="tfdifexprform" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
 <input type='hidden' name='minpres' value='1'>
 <input type='hidden' name='option' value='display'>
 <input type='hidden' name='table' value='ps_avgpres_gsenatgengeo34_u133p2'>
@@ -934,7 +935,7 @@ Suggesting therapy
  
  * The button below brings you to the form in which you can submit your answers for section 1.10
 
- <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSd7iB8d2ozHEsYx4KidGxLdhQRefUw2-03gGGnmpJ6eoqhdlA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.10</button> 
+ <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdLpBdzI6chwWT4Nl4b_aGCVEBG8eMEIapi2T7VowBvD0V71g/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.10</button> 
  <br>
  <br>
   
@@ -949,11 +950,11 @@ Suggesting therapy
 Final remarks / future directions
 ---------------------------------
 In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize your genomics data. 
-
+<br><br>
 This ends the course. Feel free to further explore the course materials or our tutorials.
-
+<br><br>
 We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
-
+<br><br>
 The R2 support team.
 
 
