@@ -275,7 +275,7 @@ This dataset has been annotated with 'cell type' information. Each sample was as
 <br>
 * Choose the proper track in the **Group by** dropdown and click **Submit**. An additional adjustable settings menu pops up.  
 * Choose one of the types for **Group 1** and the other for **Group 2**.  
-* Since we have only 8 samples make sure that the **multiple testing correction** is set to *No correction*. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>)  
+* Since we have only 8 samples make sure that the **Corr. voor multiple testing ** is set to *No correction*. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>)  
 * Set the **p-value cutoff** to *0.01* and click **Submit**.  
 * A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset. Click on the magnifying glass icon in front of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well.  
 * Go back to the tab with the differentially expressed genes. This is still open in one of your browser tabs.  
@@ -499,8 +499,7 @@ Again we're going to find out which genes make a difference, but now in a specif
 * Choose *adrn* for **Group 1** and *mes* for **Group 2**.
 * We're now also going to filter for a specific gene filter. In the **Gene Filters** section, click **Search Genesets**. 
 * Since we are interested in transcription factors, type *transcription* in the textfield on top and click the **search icon**.
-* Check the box of *Categories > base > transcription factor* with 945 genes and click on the green button **Use selected** on the left. Then click **Submit**.
-* In the next screen we're asked to further filter for the specific types of samples to compare. Here we're focusing on the difference between ADRN and MES; select these (i.e. uncheck neural\_crest). Click **Next**. 
+* Check the box of *Categories > base > transcription factor* with 945 genes and click on the green button **Use selected** on the left. Then click **Submit**. 
 * A list of genes appears. Investigate the top 4 by clicking on the loop icons in front of the gene names. This brings you to the expression view of the gene. 
 * From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the top table. You'll arrive at a website that gathers all known information about genes. A useful section further down the page is the **Bibliography** containing short summaries of relevant scientific papers.
 
