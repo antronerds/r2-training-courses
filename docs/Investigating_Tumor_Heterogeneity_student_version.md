@@ -268,7 +268,7 @@ We have identified two different types of cells that occur within the same patie
 <br>
 
 
-* In Field 3 choose *Find Differential expression between two groups* and click **Next**
+* In Field 3 choose *Differential expression between two groups* and click **Next**
 <br>
 
 This dataset has been annotated with 'cell type' information. Each sample was assigned to either the MESenchymal or the ADReNergic cell type. The information is stored in R2 in a track.
@@ -494,7 +494,7 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 
 Again we're going to find out which genes make a difference, but now in a specific subset of genes that has been annotated to have Transcription Factor activity. This is gathered from databases that collect that information from peer reviewed publications. 
-* In field 3 select **Find Differential expression between two groups**. Click **Next**.
+* In field 3 select **Differential expression between two groups**. Click **Next**.
 * Like before, select the track that contains information about the cell types and **Submit**.
 * Choose *adrn* for **Group 1** and *mes* for **Group 2**.
 * We're now also going to filter for a specific gene filter. In the **Gene Filters** section, click **Search Genesets**. 
