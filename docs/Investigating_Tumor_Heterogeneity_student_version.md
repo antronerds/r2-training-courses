@@ -271,14 +271,14 @@ We have identified two different types of cells that occur within the same patie
 * In Field 3 choose *Find Differential expression between two groups* and click **Next**
 <br>
 
-This dataset has been annotated with 'cell type' information. Each sample was assigned to either the MESenchymal or the ADReNergic cell type. The information is stored in R2 in a track.<br>
-* Choose the proper track in the **Group by** dropdown and click **Submit**.
- An additional adjustable settings menu pops up.
-* Choose one of the types for **Group 1** and the other for **Group 2**.
-* Since we have only 8 samples make sure that the **multiple testing correction** is set to *No correction*. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>)
-* Set the **p-value cutoff** to *0.01* and click **Submit**.
-* A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset. Click on the magnifying glass icon in front of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well.
-* Go back to the tab with the differentially expressed genes. This is still open in one of your browser tabs. 
+This dataset has been annotated with 'cell type' information. Each sample was assigned to either the MESenchymal or the ADReNergic cell type. The information is stored in R2 in a track.
+<br>
+* Choose the proper track in the **Group by** dropdown and click **Submit**. An additional adjustable settings menu pops up.  
+* Choose one of the types for **Group 1** and the other for **Group 2**.  
+* Since we have only 8 samples make sure that the **multiple testing correction** is set to *No correction*. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>)  
+* Set the **p-value cutoff** to *0.01* and click **Submit**.  
+* A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset. Click on the magnifying glass icon in front of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well.  
+* Go back to the tab with the differentially expressed genes. This is still open in one of your browser tabs.  
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
 
 ---------
