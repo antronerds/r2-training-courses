@@ -902,12 +902,12 @@ The chromatin state is especially important for transcription factors; we'll re-
 <input type='hidden' name='test' value='anova'>
 <input type='hidden' name='test_mode' value='two_group_diff'>
 <input type='hidden' name='factor' value='NG_mes_adrn_nc'>
-<input type='hidden' name='subset' value='TRACKER:,0,1,2,3,4,5,6,7,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33'>
+
 <button type="submit" class="course r2submit" >Go to R2 differential expression of TF's</button>
 </form>
 <br>
 <br>
-
+<!-- <input type='hidden' name='subset' value='TRACKER:,0,1,2,3,4,5,6,7,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33'> -->
 * Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate. In the genomebrowser that was still open from the previous question, type the name of the gene in the left upper corner textfield. To further explore the larger region around the gene you can use the zoom buttons at the top of the page.  
 
 
