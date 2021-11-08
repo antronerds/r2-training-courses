@@ -270,7 +270,8 @@ We have identified two different types of cells that occur within the same patie
 
 * In Field 3 choose *Find Differential expression between two groups* and click **Next**
 <br>
-This dataset has been annotated with 'cell type' information. Each sample was assigned to either the MESenchymal or the ADReNergic cell type. The information is stored in R2 in a track. 
+
+This dataset has been annotated with 'cell type' information. Each sample was assigned to either the MESenchymal or the ADReNergic cell type. The information is stored in R2 in a track.<br>
 * Choose the proper track in the **Group by** dropdown and click **Submit**.
  An additional adjustable settings menu pops up.
 * Choose one of the types for **Group 1** and the other for **Group 2**.
