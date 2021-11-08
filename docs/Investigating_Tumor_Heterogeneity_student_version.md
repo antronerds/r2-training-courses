@@ -360,7 +360,7 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 <br>
 
 
-* In field 3 select *View Geneset* that you can find under the red header *Meta-analysis*.
+* In field 3 select *View Geneset* that you can find under the header *Meta-analysis*.
 * Click **Next** and select *geneset_r2provided_genelists* 
 * Click **Next**, leave selection as is and click **Next**
 * Select both signatures that were derived before by CTRL click on the MES (*r2_mesadrn_mes*) and ADRN (*r2_mesadrn_adrn*) signatures and click **Next**
