@@ -204,13 +204,11 @@ For this analysis we will use one of the analysis tools of R2: Toplister. The To
 
 ---------
 
-* Use the mousewheel to scroll to the bottom of the page (or click on the shoe-print at the top of the page). 
-
-Here you can choose to perform an additional analysis. The heatmap vizualization produces a hierarchically clustered view of the expression values for the top 100 genes.  
+* On the right side of the page you can find several buttons that allow you to perform further analyses with the list of genes that you just obtained with Toplister. The heatmap visualization produces a hierarchically clustered view of the expression values for the top 100 genes.  
 
 ---------
 
-  ![](_static/images/R2d2_logo.png)**What number of groups do you expect?**
+  ![](_static/images/R2d2_logo.png)**Based on your own rationale, how many groups of samples do you expect in this dataset?**
 <br><br>
 
 ---------
@@ -228,7 +226,7 @@ The cell line pairs from the patient were also investigated for the tumor stem c
 
 ---------
 
-  ![](_static/images/R2d2_logo.png)**Given these observations, what origin can you assign to each group?**
+  ![](_static/images/R2d2_logo.png)**Given these observations, what origin can you assign to each group of samples?**
 <br><br>
 
 ---------
@@ -256,13 +254,13 @@ We have identified two different types of cells that occur within the same patie
 
 * The button below brings you to the form in which you can submit your answers for section 1.4
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScesiEn-9mU9rGCIct4oHkplP6RxXNkccCCkVHBKzioYuczPg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.4</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSee9vNt1hJuXrIAgO6feKHMCu-ASxDNiFeKqfJz5PrzuS6Zxg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.4</button> 
 <br>
 <br>
   
 * Go to the main page of R2 by clicking the button below
 
-<form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="main_4_pairs" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
   <button type="submit" class="course r2submit" >Go to R2 main portal</button>
 </form>  
