@@ -440,11 +440,12 @@ The expression patterns of these specific signatures can be used to compare cell
 
 
 * In field 3 choose **Relate 2 tracks** and click **Next**
-* First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (*lab\_id*) and on the Y-axis the signature score track that R2 has generated for the ADRN signature (s\_mesadrn\_adrn(#)). Click **Next**.
-* A graph is generated. For each sample the signature score for the mesadrn\_adrn signature is shown. Select **Color by Track** for ColorMode and try different tracks. Click **Adjust Settings** to view the result.
-* Now select for the Y-axis the MES part of the signature, click **Adjust Settings** to view the result.
-* To compare the signature scores, select the ADRN signature for the X track
-* If you have time you can also try the **Color by Gene ColorMode**, choose a gene of interest (Note: the dropdown selection is linked to the database, wait for the proper selections to popup...)
+* First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (*lab\_id*) and on the Y-axis the signature score track that R2 has generated for the ADRN signature (s\_mesadrn\_adrn(#)). 
+* Choose **Graph type** *XY* and click **Submit**.
+* A graph is generated. For each sample the signature score for the mesadrn\_adrn signature is shown. Select for **Color mode**  *Color by Track* and try the track *cell_type*. Click **Submit** to view the result.
+* Now select for the Y-axis the MES part of the signature, click **Submit** to view the result.
+* To compare the signature scores, select the ADRN signature for the X track and submit your changes.
+* If you have time you can also try the *Color by Gene* as **ColorMode**, choose a gene of interest (Note: the dropdown selection is linked to the database, wait for the proper selections to popup...)
 
 ---------
 
@@ -458,7 +459,7 @@ The expression patterns of these specific signatures can be used to compare cell
 Finding causes: homing in on transcription factors
 -----------------------------------------------------
 
-Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors (TF's) are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we find out which TF's might influence the difference between both of these cell lines?
+Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma seems to be a heterogenous tumor. Transcription factors (TF's) are known to determine gene expression programs in cells. These gene expression programs determine the development of the cell. Can we find out which TF's might influence the difference between both of these cell lines?<br><br>
 
 *Data used:*
 * Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2
@@ -477,13 +478,13 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 * The button below brings you to the form in which you can submit your answers for section 1.7
 
-<button button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfbXuvePyJg5CKj_mE1UygJwrI-GJD39FrM16nY2Uh7YrtsHw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.7</button> 
+<button button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfvVCOe1_PbYaeCSNkCw2V3enSO0Re8iGoOAmkMKyiQMhVcUA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.7</button> 
 <br>
 <br>
 
 * Go back to the main portal of R2 by clicking the button below.
 
-<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="main_34_pairs_and_crest" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
   <button type="submit" class="course r2submit" >Go to R2 main</button>
 </form>  
