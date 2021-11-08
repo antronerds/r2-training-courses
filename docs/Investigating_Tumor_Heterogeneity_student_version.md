@@ -58,7 +58,7 @@ For a start we'll investigate established childhood tumor cell lines, including 
 * Go to R2 by clicking on the button below:  
 
 
-<form name="itcc_68_cell_lines" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
   <button type="submit" class="course r2submit" >Go to R2</button>
 </form>  
@@ -116,7 +116,7 @@ We've seen that the expression of genes differs among the samples and some types
 
 * Click the button below to show the t-SNE map in R2: 
 
-<button class="course" onclick="window.open('https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
+<button class="course" onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
 <br>
 <br>
 
@@ -187,7 +187,7 @@ For this analysis we will use one of the analysis tools of R2: Toplister. The To
 * Go to R2 by clicking the button below. The button brings you to the R2 page and the correct dataset of 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
 <br>
 
-<form name="ps_avgpres_gse90803geo8_u133p2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="ps_avgpres_gse90803geo8_u133p2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
   <button type="submit" class="course r2submit" >Go to R2</button>
 </form>  
@@ -260,7 +260,7 @@ We have identified two different types of cells that occur within the same patie
   
 * Go to the main page of R2 by clicking the button below
 
-<form name="main_4_pairs" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
   <button type="submit" class="course r2submit" >Go to R2 main portal</button>
 </form>  
@@ -352,7 +352,7 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 
 * Go to the main portal of R2 by clicking the button below; the dataset described above is automatically selected
 
-<form name="main_34_pairs_and_crest" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
   <button type="submit" class="course r2submit" >Go to R2</button>
 </form>  
@@ -381,7 +381,7 @@ When observing such clear-cut patterns it is good scientific practice to test th
 * Click on the button below to go there and perform the same analysis.
 
 
-<form name="main_34_pairs_and_crest" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gse90683geo48_gse90683r1">
   <button type="submit" class="course r2submit" >Go to R2 additional NB dataset</button>
 </form>  
@@ -431,7 +431,7 @@ The expression patterns of these specific signatures can be used to compare cell
 
 * Go back to the main portal of R2 by clicking the button below.
 
-<form name="main_34_pairs_and_crest" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
   <button type="submit" class="course r2submit" >Go to R2</button>
 </form>  
@@ -484,7 +484,7 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 * Go back to the main portal of R2 by clicking the button below.
 
-<form name="main_34_pairs_and_crest" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
   <button type="submit" class="course r2submit" >Go to R2 main</button>
 </form>  
@@ -569,7 +569,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
   
 * Go to the R2 main page by clicking the button below, the correct dataset will be selected.  
 
-<form name="52_pairs_crest_exp" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="52_pairs_crest_exp" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
   <button type="submit" class="course r2submit" >Go to R2 main, inducible TF set</button>
 </form>  
@@ -588,7 +588,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 
 * This conclusion is even more obvious when the sequence of events is highlighted, as can be done in R2. The relations between the isogenic pairs are also illustrated. Click the button below to view the graph annotated in this way, a figure that can be incorporated in a publication right away. 
 
-<form name="timepath" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="timepath" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
 <input type="hidden" name="species" value="hs">
 <input type="hidden" name="selectedtrack" value="adrn_score">
@@ -655,7 +655,7 @@ First we'll check one of the HAND genes, known to play a role in the development
 
 * Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.  
 
-<form name='genomebrowser_tf' action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='_gv'>
+<form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='_gv'>
 <input type='hidden' name='option' value='gbv2_base'>
 <input type='hidden' name='|a01giemsa' value='on'>
 <input type='hidden' name='a02bsequence' value='off'>
@@ -891,7 +891,7 @@ The chromatin state is especially important for transcription factors; we'll re-
 
 * Perform the differential expression analysis again by clicking on the button below
 
-<form name="tfdifexprform" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="tfdifexprform" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
 <input type='hidden' name='minpres' value='1'>
 <input type='hidden' name='option' value='displaygene'>
 <input type='hidden' name='table' value='ps_avgpres_gsenatgengeo34_u133p2'>
