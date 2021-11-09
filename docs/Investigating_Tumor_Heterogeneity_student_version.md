@@ -90,11 +90,11 @@ Often more annotation is available for the samples. You can hover your mouse abo
 
 When you analyze data, different visualizations might help to gain better insight into your dataset. Below the graph, you can find a table with adjustable settings.   
 
-* Try out a different view of the same data with the following changes to the settings:  
+* Try out a different view of the same data with the following changes to the settings:<br>
   Split the data in groups by switching the dropdown of **Analysis type** above the box to **gene vs track**. In the box, set the dropdown of **Track** to *itcc_model (6 cat)*. This track contains the information which sample belongs to which tumor type and is the same track that you see displayed directly underneath the graph.<br>
  The expression values on the y-axis are logarithmic by default, in the settings menu set the **Transformation** option to *None*. Also, sort the samples again on level of expression with **Extra Graph Option** set to *Track and Gene sort*. Finally, click **Submit** to obtain the graph with these adaptations.  
- <br>
-* Now try the gene MYCN. Type *MYCN* in the left text field **Gene / Reporter** in the Adjustable settings box underneath the graph, and click on MYCN in the list that pops up. Click **Submit** in order to change your gene.  
+<br> 
+* Now try the gene MYCN. Type *MYCN* in the left input field **Gene / Reporter** in the Adjustable settings box underneath the graph, and click on MYCN in the list that pops up. Click **Submit** in order to change your gene.<br>  
 * Hover with your mouse over the track underneath the graph or over the data points, to find out which itcc_model belongs to which group of samples. 
   
 ---------
@@ -110,7 +110,7 @@ When you analyze data, different visualizations might help to gain better insigh
 
 ---------
 
-##### Clustering with tSNE maps
+##### Clustering with t-SNE maps
 
 We've seen that the expression of genes differs among the samples and some types of tumors seem to specifically express certain genes. To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of samples and will clump similar cells together on a map.   
 
@@ -120,9 +120,9 @@ We've seen that the expression of genes differs among the samples and some types
 <br>
 <br>
 
-* Under the graph, a menu allows the user to adapt settings. Colors of the graph points are not set by default. To color the graph with a biologically meaningful annotation, find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the *itcc_model* track again, and click **Next** to show the changes. 
+* Under the graph, a menu allows the user to adapt settings. Colors of the graph points are not set by default. To color the graph with a biologically meaningful annotation, find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the *itcc_model* track again, and click **Submit** to show the changes. 
 
-* The t-SNE algorithm has a parameter called **perplexity**, which determines how much attraction points have on a map towards each other. Set the perplexity value to *5* and click **next** again.  
+* The t-SNE algorithm has a parameter called **perplexity**, which determines how much attraction points have on a map towards each other. Set the perplexity value to *5* and click **Submit** again.  
   
 ------
 
@@ -169,7 +169,7 @@ We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of
 
 
 *Data used:*  
-  * Cell lines recently derived from three different patients. Two morphologically different looking cells were taken per patient. This dataset is combined with two classical Neuroblastoma cell lines that clustered differently in the tSNE: SHEP and SY5Y (Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2) 
+  * Cell lines that were recently derived from three different patients. Two morphologically different looking cells were taken per patient. This dataset is combined with two classical Neuroblastoma cell lines that clustered differently in the tSNE: SHEP and SY5Y (Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2) 
   
 *Techniques used:*  
 * mRNA Microarray expression
@@ -184,7 +184,7 @@ We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of
 
 For this analysis we will use one of the analysis tools of R2: Toplister. The Toplister can assess which genes show the most different expression values throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
 
-* Go to R2 by clicking the button below. The button brings you to the R2 page and the correct dataset of 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
+* Go to R2 by clicking the button below. TThe correct dataset containing 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
 <br>
 
 <form name="ps_avgpres_gse90803geo8_u133p2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
@@ -194,7 +194,7 @@ For this analysis we will use one of the analysis tools of R2: Toplister. The To
 <br>
 <br>
 
-* Select *Toplister (Gene filter stdev)* as the type of analysis in box **3** from the dropddown menu (- scroll almost all the way down. You will find it listed under the header *Meta analyses*). Toplister will find the 100 genes that have the largest variation in gene expression among these 8 cell lines, three pairs from three tumors of a patient and two classical neuroblastoma cell lines. 
+* Select *Toplister (Gene filter stdev)* as the type of analysis in box **3** from the dropddown menu (- scroll almost all the way down. You will find it listed under the header *Meta analyses*). Toplister will find the 100 genes that have the largest variation in gene expression among these 8 cell lines. 
 * Click **Next**; leave the settings as is, and click **Next** again. A list of genes appears.
 
 ---------
