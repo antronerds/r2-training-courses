@@ -247,7 +247,7 @@ We have identified two different types of cells that occur within the same patie
 
 *Analysis used*  
 * Differential Expression: supervised gene selection
-* Gene Ontology Analysis: Overrepresentation calculation
+* Gene Ontology Analysis: overrepresentation calculation
  
 <br>
 <br>
@@ -276,7 +276,7 @@ This dataset has been annotated with 'cell type' information. Each sample was as
 * Choose the proper track in the **Group by** dropdown and click **Submit**. An additional adjustable settings menu pops up.  
 * Choose one of the types for **Group 1** and the other for **Group 2**.  
 * Since we have only 8 samples make sure that the **Corr. voor multiple testing** is set to *No correction*. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>) and click **Submit**.  
-* A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset. Click on the magnifying glass icon in front of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well.  
+* A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset. Click on the magnifying glass icon in front of your favorite gene to see its expression in the sample set. Try an oppositely correlating gene as well.  
 * Go back to the tab with the differentially expressed genes. This is still open in one of your browser tabs.  
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
 
@@ -328,8 +328,14 @@ In R2 there are many more sets of genes that have been found to be implemented i
 Identifying groups: using signatures to classify other datasets
 ------------------------------------------------------------------
 
-We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis. <br>  
-We've assembled a more complex dataset by gathering the dataset of the 4 pairs of cell lines, additional neuroblastoma cell lines from the first dataset and publicly available data of non-malignant human neural crest tissue. The neural crest undergoes a mesenchymal transition and gives rise to cell types from the adrenergic lineage.<br><br>
+We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis. <br><br>
+
+We've assembled a more complex dataset by gathering the dataset consisting of: <br>
+* the 4 pairs of cell lines, 
+* additional neuroblastoma cell lines from the first dataset and 
+* publicly available data of non-malignant human neural crest tissue. 
+<br><br>
+The neural crest undergoes a mesenchymal transition and gives rise to cell types from the adrenergic lineage.<br><br>
 
 *Data used:*
 * A combination of the 8 cell lines above, additional neuroblastoma cell lines and cells from the neural crest lineage (Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2)
@@ -360,10 +366,10 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 <br>
 
 
-* In field 3 select *View Geneset* that you can find under the header *Meta-analysis*.
+* In field 3 select *View Geneset (Heatmap)* that you can find under the header *Meta-analysis*.
 * Click **Next** and select *r2 provided gene lists* 
 * Click **Next**, leave selection as is and click **Next**
-* Select both signatures that were derived before by CTRL click on the MES (*r2_mesadrn_mes*) and ADRN (*r2_mesadrn_adrn*) signatures and click **Next**
+* Select both signatures that were derived before by holding CTRL and clicking on both the MES (*r2_mesadrn_mes*) and the ADRN (*r2_mesadrn_adrn*) signatures and click **Next**
 
 ---------
 
@@ -405,7 +411,7 @@ The expression patterns of these specific signatures can be used to compare cell
 
   ![](_static/images/TumorHeterogeneity_SignatureScores.png "Figure 5: The signature score as calculated for a specific sample in the MES signature.")
 	
-  [**Figure 5: The signature score as calculated for a specific ample in the MES signature.**](_static/images/TumorHeterogeneity_SignatureScores.png)
+  [**Figure 5: The signature score as calculated for a specific sample in the MES signature.**](_static/images/TumorHeterogeneity_SignatureScores.png)
 
 
  R2 has calculated these scores for all samples in both signatures. We're going to find out how they relate.
@@ -497,7 +503,7 @@ Again we're going to find out which genes make a difference, but now in a specif
 * In field 3 select **Differential expression between two groups**. Click **Next**.
 * Like before, select the track that contains information about the cell types and **Submit**.
 * Choose *adrn* for **Group 1** and *mes* for **Group 2**.
-* We're now also going to filter for a specific gene filter. In the **Gene Filters** section, click **Search Genesets**. 
+* We're now also going to filter for specific genes, which can be done in the settings section **Gene Filters**. Next to **Gene set** click the button **Search GS**. 
 * Since we are interested in transcription factors, type *transcription* in the textfield on top and click the **search icon**.
 * Check the box of *Categories > base > transcription factor* with 945 genes and click on the green button **Use selected** on the left. Then click **Submit**. 
 * A list of genes appears. Investigate the top 4 by clicking on the loop icons in front of the gene names. This brings you to the expression view of the gene. 
@@ -576,7 +582,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 <br>
 <br>
 
-* Select in field 3 the **Relate 2 tracks** option. <br>
+* In field 3, select the **Relate 2 tracks** option. <br>
 R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. 
 * Relate the two tracks and adapt the **ColorMode** to *Color by Track* and try the *mes_adrn_time* track. This track contains information on the time that the PRRX1 gene expression was induced in the SKNBE cell line and **Submit**.
 
