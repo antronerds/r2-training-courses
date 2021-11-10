@@ -289,8 +289,10 @@ This dataset has been annotated with 'cell type' information. Each sample was as
 <br>
 For future use, this list of genes has been stored for you in R2 as saved genesets. The list has been split into two categories: one set of genes that is highly expressed in the MES type of samples (r2_mesadrn_mes) and one set of genes highly expressed in the ADRN type of samples (r2_mesadrn_adrn).  
 <br><br>
-From the right panel of menu buttons, R2 provides several additional analyses for the list of genes that we just generated with the differential expression analysis. As a next analysis step, we can check a data resource called the Gene Ontology that provides a tree of systematically ordered biological terms that is used to formally describe the biological role of each gene. The Gene Ontology Analysis tool in R2 calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. 
-
+From the right panel of menu buttons, R2 provides several additional analyses for the list of genes that we just generated with the differential expression analysis.<br>
+As a next analysis step, we can check a data resource called the Gene Ontology that provides a tree of systematically ordered biological terms that is used to formally describe the biological role of each gene.<br>
+The Gene Ontology Analysis tool in R2 calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. 
+<br>
 * On the page with the differentially expressed genes, select the **Gene Ontology Analysis** button in the menu on the right 
 
 ---------
@@ -301,7 +303,7 @@ From the right panel of menu buttons, R2 provides several additional analyses fo
 ---------
 <br>
 
-* Now scroll down to the end of the page (or click the filter button in the left upper corner of the page) and adapt the settings such that only the *Biological Process* branch of the Gene **Ontology** is selected, and select only the genes that are higher expressed in the MES type of cells. Click **Redo analysis**.
+* Now scroll down to the end of the page (or click the filter button in the left upper corner of the page) and adapt the settings such that only only the genes that are higher expressed in the MES type of cells are selected (check the mes>= adrn). Click **Redo analysis**.
 
 ---------
 
@@ -537,8 +539,8 @@ From experiments it is known that cells can change their nature, some cells exhi
 
 ---------
 
-From experiments in our lab it became evident that the two cell types found in Neuroblastoma were able to switch. After a given period of time cells in dishes changed their nature as was proven by the expression of certain marker proteins on their surface.<br>  
-Now that we have a candidate Transcription Factor we can try to investigate its relevance in this plasticity by manipulating the gene in cell lines we grow in the lab. 
+Experiments showed that the two cell types found in Neuroblastoma were able to switch. After a given period of time cells in dishes changed their nature as was proven by the expression of certain marker proteins on their surface.<br>  
+Now that we have a candidate Transcription Factor we can try to investigate its relevance for plasticity by manipulating the gene in cell lines that we grow in the lab. 
 
 ---------
 
@@ -594,7 +596,7 @@ R2 has calculated signature scores for all samples in both signatures; in this d
 
 ---------
 
-* This conclusion is even more obvious when the sequence of events is highlighted, as can be done in R2. The relations between the isogenic pairs are also illustrated. Click the button below to view the graph annotated in this way, a figure that can be incorporated in a publication right away. 
+* This conclusion is even more obvious when the sequence of events is highlighted. The relations between the isogenic pairs are also illustrated. Click the button below to view the graph annotated with this extra information.  
 
 <form name="timepath" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
@@ -621,7 +623,7 @@ Creating hypotheses: relating to chromatin modification data
 ---------------------------------------------------------------
 
 Apparently this TF is capable of shifting cells from one state to the other. How can we further determine causal relations and ideally targetable processes in these cancer cells? How is a switch dynamically possible? <br>
-A growing body of evidence implicates enhancers as key elements defining cell identity but the relationship of these enhancers to intratumoral heterogeneity is unknown. We performed ChIP-Seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
+A growing body of evidence implicates enhancers as key elements defining cell identity. The relationship of these enhancers to intratumoral heterogeneity is unknown though. We performed ChIP-Seq analysis of the H3K27ac histone modifications for the isogenic cell line pairs. 
 
 *Data used:*
 * Four MES and five ADRN neuroblastoma cell lines, including three isogenic cell line pairs. 
