@@ -901,24 +901,21 @@ The chromatin state is especially important for transcription factors; we'll re-
 
 * Perform the differential expression analysis again by clicking on the button below
 
-<form name="tfdifexprform" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-<input type='hidden' name='minpres' value='1'>
-<input type='hidden' name='option' value='displaygene'>
-<input type='hidden' name='table' value='ps_avgpres_gsenatgengeo34_u133p2'>
-<input type='hidden' name='hugoonce' value='yes'>
-<input type='hidden' name='cortype' value='transform_log2'>
-<input type='hidden' name="geneset" value="geneannot::base::TF::transcription factor">
-<input type='hidden' name='group_track' value='cell_type'>
-<input type='hidden' name='test' value='anova'>
-<input type='hidden' name='test_mode' value='two_group_diff'>
-<input type="hidden" name="group_1" value="adrn (22)">
-<input type="hidden" name="group_2" value="mes (7)">
-<button type="submit" class="course r2submit" >Go to R2 differential expression of TF's</button>
-</form>
+<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
+  <button type="submit" class="course r2submit" >Go to R2 main</button>
+</form>  
 <br>
 <br>
 
-* Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate. In the genomebrowser that was still open from the previous question, type the name of the gene in the left upper corner textfield. To further explore the larger region around the gene you can use the zoom buttons at the top of the page.  
+* In field 3 select **Differential expression between two groups**. Click **Next**.
+* Like before, select the track that contains information about the cell types and **Submit**.
+* Choose *adrn* for **Group 1** and *mes* for **Group 2**.
+* We're now also going to filter for specific genes, which can be done in the settings section **Gene Filters**. Next to **Gene set** click the button **Search GS**. 
+* Since we are interested in transcription factors, type *transcription* in the textfield on top and click the **search icon**.
+
+
+* Use both expression analysis and the enhancer data in the genomebrowser to decide which transcription factors would be worthwhile to further investigate. In the genomebrowser that was still open from the previous question, type the name of the gene in the left upper corner textfield to look at the ChIP-Seq profiles of the samples at that location of the genome. To further explore the larger region around the gene you can use the zoom buttons at the top of the page.  
 
 
 ---------
@@ -937,9 +934,9 @@ Suggesting therapy
 * With the current new knowledge that you derived above, can you think of a strategy to use the fact that neuroblastoma is a heterogenous tumor consisting of a mesenchymal, motile cell type and a adrenergic, differentiated cell type for therapeutic options? This is an open question, so be creative, you might find something interesting! If you want, you can follow the suggestions below.  
   
 * Use the button of 1.9 to perform a differential expression analysis. This time explore other gene categories that could be interesting for drug development. Look at the expression profiles of some genes of your choice. 
-  * Hint: There is a category "drugtargets" in R2 to select druggable proteins; you can select this in the same dropdown where the TF selection was done.  
+  * There is a category "drug targets" in R2 to select druggable proteins; **Search GS** > Categories > base > drug target.  
   * Another very interesting gene category is the "kinase" category, this contains known kinases that have active roles in pathways.
-* The first button in 1.9 takes you to the Genome Browser at the position of the HAND1 gene. In the upper left corner of that page, you can fill in other genes of interest to look at the ChIP-Seq profiles of the samples at these locations of the genome. Do this for the genes whose expression profiles you just have studied. Try to find genes that show consistent chromatin modification profiles for the one type of neuroblastoma cell lines and a different consistent profile for the other type. 
+* The first button in 1.9 takes you to the Genome Browser at the position of the HAND1 gene. In the textfield in the upperleft corner of the Genome Browser you can chance th elocation to another gene again. Do this for the genes whose expression profiles you just have studied. Try to find genes that show consistent chromatin modification profiles for the one type of neuroblastoma cell lines and a different consistent profile for the other type. 
 * Knowledge about pathways can be exploited as well.
 * The NCBI database can provide additional information from literature about the genes of interest.
  
