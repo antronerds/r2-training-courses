@@ -1,9 +1,9 @@
 <a id="VAGABOND_interim_course_R2"> </a>
 
-Vagabond Course: Investigating Intra-tumor Heterogeneity in Neuroblastoma
+Vagabond R2 Bioinformatics Course Day 1: Finding causes in Neuroblastoma genomics data
 =================================
 
-*Analyse tumor heterogeneity in neuroblastoma using the web-based genomics analysis and visualization platform R2*
+*Introduction to bioinformatics tools using the web-based genomics analysis and visualization platform R2 and neuroblastoma data *
 
 This resource is located online at http://r2-training-courses.readthedocs.io  
   
@@ -16,16 +16,19 @@ Cancer is a very complex disease. Much more complicated than originally anticipa
   
   [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
-Although there has been extensive research into similar mutation mechanisms in neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this often deadly childhood tumor. In this practical work session, we'll integrate RNA expression data with sequence data, specifically ChIP seq data, to further unravel neuroblastoma data.  
 
-As you may have learned from your lectures by now, this tumor consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of neuroblastoma. Children developing a relapse almost always die. 
-Fortunately, new technologies have become available to molecular biology. These enable us to study not only mutations and RNA expression of genes, but also study the epigenetic modifications of the DNA-associated histones. In addition, genes can now be manipulated in cell lines and in living tissues. 
-Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and to help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from neuroblastoma tumors and cell lines. 
+##### Neuroblastoma 
 
-Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which is neural crest derived. During embryogenesis, cells delaminate from the neural crest, migrate ventrally and differentiate into adrenaline- or noradrenaline-producing cells. Neuroblastomas typically express enzymes for the adrenaline-synthesis route. High-stage neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease.
-
-Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this aggressive characteristic of neuroblastoma tumors. We obtained tumor biopsies from four patients that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines. In this course you will conduct the research yourself, following the lines of reasoning and the same data as was used in a paper by the AMC Oncogenomics group that was published in Nature Genetics in 2017.     
+Neuroblastoma is a childhood tumor of the peripheral sympathetic system. Primary tumors can arise in the adrenals and most patients are diagnosed between the age of 0 to 4 years. 
+ Neuroblastoma patients are classified by the INSS staging system. The increment in stages does not reflect progression of disease, as is the case for colon cancer, but represent different characteristics of the disease. Stage 1, 2 and 3 neuroblastomas have a very good prognosis. Stage 4 neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease. About 40% of stage 4 neuroblastoma have an amplification of the MYCN oncogene. This implies that instead of two DNA copies, each neuroblastoma cell has 30 to 100 copies of the MYCN gene. In addition to stage 1, 2, 3, and 4 neuroblastomas, there is the unusual stage 4S neuroblastoma, which is metastasized but goes into spontaneous regression. Over the last twenty years, the outcome for stage 4 neuroblastoma patients has not substantially improved.  <br><br>
   
+Although there has been extensive research into mutation mechanisms in neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this often deadly childhood tumor.
+
+
+##### Day 1: Finding differences and biological processes
+
+One of the technologies that can be used to study a disease or biological process is gene expression profiling. With this high throughput technology, we determine the mRNA expression of nearly all genes known in a single experiment. We'll look for different subgroups in our data and find pathways that are activated in neuroblastoma patients with an unfavorable prognosis.<br><br>
+
 The **grey buttons** in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The **green buttons** in this document will open up a Google form, one per section, with which you can submit your answers. 
 
 Research questions:
@@ -37,20 +40,19 @@ During this practical course, we will use the R2 bioinformatics tool to study tw
 
 
 
-Tumors and origins: a first impression of your data
+Finding prognostic factors in your data
 ---------------------------------------
 
-For a start we'll investigate established childhood tumor cell lines, including neuroblastoma. Established cell lines can be grown and passaged in culture indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do profiles of neuroblastoma cell lines relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of 86 other cell lines derived from 6 different childhood tumors and see how they relate. 
+R2 enables the analysis of the prognostic value of any annotated parameter of a tumor series. These parameters are available in R2 as so called ‘tracks’. The neuroblastoma series NB88 is annotated for a number of clinical and molecular parameters. To get some insight in the tumor and the NB88 series, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene. 
 
 *Data used:*  
-* 86 cell lines derived from 6 different childhood tumors (Cellline Childhood cancer - ITCC - 86 - MAS5.0 - u133p2)
+* 88 Human Neuroblastoma samples (Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2)
 
 *Techniques used:*   
 * mRNA Microarray expression
 
 *Analysis used* 
-* individual gene selection
-* t-SNE: t-distributed stochastic neighbor embedding statistics
+* Kaplan Meier by annotated parameter
 
 <br>
 <br>
