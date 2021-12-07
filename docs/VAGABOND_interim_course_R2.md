@@ -34,10 +34,10 @@ Extensive research into mutation mechanisms in neuroblastoma has been done (also
 One of the technologies that can be used to study a disease or biological process is gene expression profiling. With this high throughput technology, we determine the mRNA expression of nearly all genes known in a single experiment.<br>
 On this first day of the course, we will look for different subgroups in our data, find genes that make a difference and find cellular pathways that are activated in neuroblastoma patients with an unfavorable prognosis.<br>
 <br>
-The <font style="background-color: #000000;opacity: 0.2;">**grey buttons**</font> in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The <font style="background-color: #95d097">**green buttons**</font> in this document will open up a Google form, one per section, with which you can submit your answers. 
+The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The <font style="background-color: #95d097">**green buttons**</font> in this document will open up a Google form, one per section, with which you can submit your answers. 
 <br>
 
-##### Research questions:
+##### Research questions
 
 During this practical course, we will use the R2 bioinformatics tool to study two research questions:
 * Which genes make a difference between neuroblastoma subgroups? 
