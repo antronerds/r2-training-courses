@@ -35,10 +35,9 @@ One of the technologies that can be used to study a disease or biological proces
 On this first day of the course, we will look for different subgroups in our data, find genes that make a difference and find cellular pathways that are activated in neuroblastoma patients with an unfavorable prognosis.<br>
 <br>
 The **grey buttons** in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The **green buttons** in this document will open up a Google form, one per section, with which you can submit your answers. 
-<br><br>
+<br>
 
-Research questions:
---------------------------------------  
+##### Research questions:
 
 During this practical course, we will use the R2 bioinformatics tool to study two research questions:
 * Which molecular pathways are activated in neuroblastoma patients with an unfavorable prognosis?
