@@ -43,11 +43,15 @@ During this practical course, we will use the R2 bioinformatics tool to study tw
 * Which genes make a difference between neuroblastoma subgroups? 
 * Which molecular pathways are activated in neuroblastoma patients with an unfavorable prognosis?
 
+##### Go to the R2 platform
+
+* Go to <a href="http://r2.amc.nl">http://r2.amc.nl</a>.   
+
+You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
+<br><br>
 
 Finding prognostic factors in your data
 ---------------------------------------
-In R2 the samples of a dataset can be annotated with meta-information, e.g clinical data or molecular biology parameters. Each group of annotated data is called a “Track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics. <br>
-Another valuable use of such tracks is to evaluate their prognostic value with a Kaplan Meier curve.
 
 *Data used:*  
 * 88 Human Neuroblastoma samples (Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2)
@@ -61,22 +65,43 @@ Another valuable use of such tracks is to evaluate their prognostic value with a
 <br>
 <br>
 
-##### Kaplan Meier curve 
+Let's first make sure that the correct dataset is selected.
+- On the main page, you find a menu in the middle of the page that consists of several boxes.  
+- Verify that in box 2 the following dataset is selected: *Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2*
 
-We will now take a look at a dataset that consists of 88 human neuroblastoma samples. This dataset is annotated for a number of clinical and molecular parameters. To get some insight in the tumor, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene. <br> 
+If you see a different dataset selected, follow these steps: 
+- Click on the selected dataset, such that a popup is shown with a grid of datasets. Each row is one dataset and each column shows particular characteristics of that dataset. You can filter for specific datasets with the headers of the columns. <br>
+- In the textfield of column **Author** type *Versteeg* and in the column of samples **N** type 88.
+- Click on the **Select** button in front of the correct dataset. 
+   
+##### Using annotation and the Kaplan Meier curve 
+In R2 the samples of a dataset can be annotated with meta-information, e.g clinical data or molecular biology parameters. Each group of annotated data is called a “Track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics. <br>
+Another valuable use of such tracks is to evaluate their prognostic value with a Kaplan Meier curve. We will now take a look at a dataset that consists of 88 the above mentioned dataset that consists of human neuroblastoma samples. <br> 
+This dataset is annotated for a number of clinical and molecular parameters. To get some insight in the tumor, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene. 
 
-- start in the main menu
-- verify that you use the ‘Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2’ series
-- select in field 3: "Kaplan Meier > Kaplan Meier by annotated parameter".  next
-- We are going to separate the patients based on the INSS stating system. Within R2 grouping variables are referred to as tracks. Use the drop down menu of ‘use track’ under the Survival header, select ‘inss (cat 5)’,  next
-- The Kaplan Meier curves appear.
+- Use the dropdown in field 3 to select the correct Kaplan Meier analysis: *Kaplan Meier by annotated parameter*. .
+- We are going to separate the patients based on the INSS stating system. Choose for **Type of Survival** the value *overall-c1103* for the **Track** setting, select the value *inss (cat 5)*. Click **Next**.
+- The Kaplan Meier curves appear.  <br>
 
 ---------
 
-  ![](_static/images/R2d2_logo.png)**What can you say about the expression of this gene in the different tumor models?**
+  ![](_static/images/R2d2_logo.png)**What are the 5 year survival percentages for the different stages? Scroll over the curves to see clinical details of patients.**
 
 <br>
 <br>
+
+---------
+
+Below the graph, you can change several settings in the Adjustable Settings box. If you change settings, don't forget to click the button **Redraw Graph**.
+
+* Now select *agegroup* as prognostic value under de setting **Track**, click **Redraw Graph**. 
+* Do the same for MYCN amplification with the track *mycn_amp (cat2)*. 
+
+---------
+
+  ![](_static/images/R2d2_logo.png)**Do you observe a significant difference between the groups?**
+<br><br>
+
 ---------
 
 ##### Expression of key genes
@@ -87,17 +112,7 @@ We will now take a look at a dataset that consists of 88 human neuroblastoma sam
 <br>
 
 
-* Go to R2 by clicking on the button below:  
 
-
-<form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
-  <button type="submit" class="course r2submit" >Go to R2</button>
-</form>  
-<br>
-<br>
-
-You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
 In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. In this dataset 86 cell lines derived from 6 different childhood tumor types can be found (ewing sarcoma, medulloblastoma, neuroblastoma, osteosarcoma, acute lymphocytic leukemia and rhabdomyosarcoma).
 
 ---------
