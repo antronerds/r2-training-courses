@@ -40,9 +40,8 @@ The **grey buttons** in this course will bring you to the R2 platform, often wit
 ##### Research questions:
 
 During this practical course, we will use the R2 bioinformatics tool to study two research questions:
+* Which genes make a difference between neuroblastoma subgroups? 
 * Which molecular pathways are activated in neuroblastoma patients with an unfavorable prognosis?
-* What is the function of the MYCN gene in neuroblastoma?
-
 
 
 Finding prognostic factors in your data
