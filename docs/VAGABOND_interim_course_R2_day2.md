@@ -1,6 +1,6 @@
 <a id="VAGABOND_interim_course_R2"> </a>
 
-Vagabond R2 Bioinformatics Course Day 2: Investigating tumor heterogeneity
+Investigating tumor heterogeneity
 =================================
 
 *Analyse tumor heterogeneity in neuroblastoma using the web-based genomics analysis and visualization platform R2*

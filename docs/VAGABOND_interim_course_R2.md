@@ -1,6 +1,6 @@
 <a id="VAGABOND_interim_course_R2"> </a>
 
-Vagabond R2 Bioinformatics Course Day 1: Finding causes in Neuroblastoma genomics data
+Finding causes in Neuroblastoma genomics data
 =================================
 
 *Introduction to bioinformatics tools using the web-based genomics analysis and visualization platform R2 and neuroblastoma data *
@@ -14,22 +14,27 @@ Cancer is a very complex disease. Much more complicated than originally anticipa
 
   ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression.")	
   
-  [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
+  [**Figure 1: Mutation paths during cancer progression**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
 
 ##### Neuroblastoma 
 
-Neuroblastoma is a childhood tumor of the peripheral sympathetic system. Primary tumors can arise in the adrenals and most patients are diagnosed between the age of 0 to 4 years. 
- Neuroblastoma patients are classified by the INSS staging system. The increment in stages does not reflect progression of disease, as is the case for colon cancer, but represent different characteristics of the disease. Stage 1, 2 and 3 neuroblastomas have a very good prognosis. Stage 4 neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease. About 40% of stage 4 neuroblastoma have an amplification of the MYCN oncogene. This implies that instead of two DNA copies, each neuroblastoma cell has 30 to 100 copies of the MYCN gene. In addition to stage 1, 2, 3, and 4 neuroblastomas, there is the unusual stage 4S neuroblastoma, which is metastasized but goes into spontaneous regression. Over the last twenty years, the outcome for stage 4 neuroblastoma patients has not substantially improved.  <br><br>
+Neuroblastoma is a childhood tumor of the peripheral sympathetic system. Primary tumors can arise in the adrenals and most patients are diagnosed between the age of 0 to 4 years.<br>
+Neuroblastoma patients are classified by the INSS staging system. The increment in stages does not reflect progression of disease, as is the case for colon cancer, but represent different characteristics of the disease. Stage 1, 2 and 3 neuroblastomas have a very good prognosis. Stage 4 neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease. About 40% of stage 4 neuroblastoma have an amplification of the MYCN oncogene. This implies that instead of two DNA copies, each neuroblastoma cell has 30 to 100 copies of the MYCN gene. In addition to stage 1, 2, 3, and 4 neuroblastomas, there is the unusual stage 4S neuroblastoma, which is metastasized but goes into spontaneous regression. Over the last twenty years, the outcome for stage 4 neuroblastoma patients has not substantially improved.<br>
+<br>
+  ![](_static/images/Vagabond/Vagabond_lowvshighstages_neuroblastoma.png "Figure 2: Low tsgae versus high stage neuroblastoma")	
   
-Although there has been extensive research into mutation mechanisms in neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this often deadly childhood tumor.
+  [**Figure 2: Low tsgae versus high stage neuroblastoma**](_static/images/Vagabond/Vagabond_lowvshighstages_neuroblastoma.png)
+  
+Extensive research into mutation mechanisms in neuroblastoma has been done (also in the AMC Oncogenomics group). Unfortunately, such a mechanism has not been found for this often deadly childhood tumor.
 
 
-##### Day 1: Finding differences and biological processes
+##### Course day 1: Finding differences and biological processes
 
-One of the technologies that can be used to study a disease or biological process is gene expression profiling. With this high throughput technology, we determine the mRNA expression of nearly all genes known in a single experiment. We'll look for different subgroups in our data and find pathways that are activated in neuroblastoma patients with an unfavorable prognosis.<br><br>
-
+One of the technologies that can be used to study a disease or biological process is gene expression profiling. With this high throughput technology, we determine the mRNA expression of nearly all genes known in a single experiment. On this first day of the course, we will look for different subgroups in our data, find genes that make a difference and find cellular pathways that are activated in neuroblastoma patients with an unfavorable prognosis.<br>
+<br>
 The **grey buttons** in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The **green buttons** in this document will open up a Google form, one per section, with which you can submit your answers. 
+<br><br>
 
 Research questions:
 --------------------------------------  
