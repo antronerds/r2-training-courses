@@ -9,10 +9,10 @@ Copyright (c) 2006-2020 Jan Koster
 .. rubric:: Table of Contents
 
 .. toctree::
-   :maxdepth: 1
-   :numbered:
+   :maxdepth: 2
+   :numbered: 3
    :caption: VAGABOND R2 Course
 
-    VAGABOND_interim_course_R2
+   VAGABOND_interim_course_R2
 
 If you want to learn what you can do with R2, then please visit our R2 tutorials section. In the tutorials we explain how to do many different kind of analyses in R2 using simple examples: https://r2-tutorials.readthedocs.io/en/latest/
