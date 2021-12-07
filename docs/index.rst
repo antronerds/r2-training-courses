@@ -11,14 +11,14 @@ Copyright (c) 2006-2020 Jan Koster
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: Day 1 VAGABOND R2 Bioinformatics Course
+   :caption: Day 1 | VAGABOND<br>R2 Bioinformatics Course
 
    VAGABOND_interim_course_R2
 
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: Day 2 VAGABOND R2 Bioinformatics Course
+   :caption: Day 2 | VAGABOND<br>R2 Bioinformatics Course
 
    VAGABOND_interim_course_R2_day2
 
