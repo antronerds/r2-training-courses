@@ -34,7 +34,7 @@ Extensive research into mutation mechanisms in neuroblastoma has been done (also
 One of the technologies that can be used to study a disease or biological process is gene expression profiling. With this high throughput technology, we determine the mRNA expression of nearly all genes known in a single experiment.<br>
 On this first day of the course, we will look for different subgroups in our data, find genes that make a difference and find cellular pathways that are activated in neuroblastoma patients with an unfavorable prognosis.<br>
 <br>
-The **grey buttons** in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The **green buttons** in this document will open up a Google form, one per section, with which you can submit your answers. 
+The <font style="background-color: #000000;opacity: 0.2;">**grey buttons**</font> in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The <font style="background-color: #95d097">**green buttons**</font> in this document will open up a Google form, one per section, with which you can submit your answers. 
 <br>
 
 ##### Research questions:
@@ -46,8 +46,8 @@ During this practical course, we will use the R2 bioinformatics tool to study tw
 
 Finding prognostic factors in your data
 ---------------------------------------
-
-R2 enables the analysis of the prognostic value of any annotated parameter of a tumor series. These parameters are available in R2 as so called ‘tracks’. The neuroblastoma series NB88 is annotated for a number of clinical and molecular parameters. To get some insight in the tumor and the NB88 series, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene. 
+In R2 the samples of a dataset can be annotated with meta-information, e.g clinical data or molecular biology parameters. Each group of annotated data is called a “Track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics. <br>
+Another valuable use of such tracks is to evaluate their prognostic value with a Kaplan Meier curve.
 
 *Data used:*  
 * 88 Human Neuroblastoma samples (Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2)
@@ -61,9 +61,10 @@ R2 enables the analysis of the prognostic value of any annotated parameter of a 
 <br>
 <br>
 
-##### Prognostic factors: 
+##### Kaplan Meier curve 
 
-R2 enables the analysis of the prognostic value of any annotated parameter of a tumor series. These parameters are available in R2 as so called ‘tracks’. The neuroblastoma series NB88 is annotated for a number of clinical and molecular parameters. To get some insight in the tumor and the NB88 series, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene. 
+We will now take a look at a dataset that consists of 88 human neuroblastoma samples. This dataset is annotated for a number of clinical and molecular parameters. To get some insight in the tumor, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene. <br> 
+
 - start in the main menu
 - verify that you use the ‘Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2’ series
 - select in field 3: "Kaplan Meier > Kaplan Meier by annotated parameter".  next
