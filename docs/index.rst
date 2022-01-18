@@ -36,8 +36,8 @@ Copyright (c) 2006-2020 Jan Koster
    :numbered:
    :caption: Vagabond_course
 
-   Finding_structural_variants
-   Investigating_Tumor_Heterogeneity
+   VAGABOND_interim_course_R2
+   
 
 
 If you want to learn what you can do with R2, then please visit our R2 tutorials section. In the tutorials we explain how to do many different kind of analyses in R2 using simple examples: https://r2-tutorials.readthedocs.io/en/latest/
