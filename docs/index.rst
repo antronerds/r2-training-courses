@@ -34,9 +34,9 @@ Copyright (c) 2006-2020 Jan Koster
 .. toctree::
    :maxdepth: 1
    :numbered:
-   :caption: Vagabond_course
+   :caption: Vagabond_course / Undercontruction
 
-   VAGABOND_interim_course_R2
+  [//]: # VAGABOND_interim_course_R2
    
 
 
