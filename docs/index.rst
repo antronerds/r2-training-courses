@@ -31,5 +31,13 @@ Copyright (c) 2006-2020 Jan Koster
    Investigating_Tumor_Heterogeneity
 
 
+.. toctree::
+   :maxdepth: 1
+   :numbered:
+   :caption: Vagabond_course
+
+   Finding_structural_variants
+   Investigating_Tumor_Heterogeneity
+
 
 If you want to learn what you can do with R2, then please visit our R2 tutorials section. In the tutorials we explain how to do many different kind of analyses in R2 using simple examples: https://r2-tutorials.readthedocs.io/en/latest/
