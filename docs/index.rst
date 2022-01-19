@@ -36,7 +36,7 @@ Copyright (c) 2006-2020 Jan Koster
    :numbered:
    :caption: Vagabond_course / Undercontruction
 
-  [//]: # VAGABOND_interim_course_R2
+   VAGABOND_interim_course_R2
    
 
 
