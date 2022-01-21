@@ -1,50 +1,108 @@
 <a id="VAGABOND_interim_course_R2"> </a>
 
-Vagabond Course: Investigating Intra-tumor Heterogeneity in Neuroblastoma
+Finding causes in Neuroblastoma genomics data
 =================================
 
-*Analyse tumor heterogeneity in neuroblastoma using the R2 data analysis platform*
+*Introduction to bioinformatics tools using the web-based genomics analysis and visualization platform R2 and neuroblastoma data *
 
 This resource is located online at http://r2-training-courses.readthedocs.io  
   
 Introduction
 ------------
 
-Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. For insatnce, in colorectal cancer a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
+Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. For instance, in colorectal cancer a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
 
   ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression.")	
   
-  [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
+  [**Figure 1: Mutation paths during cancer progression**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
-Although there has been extensive research into similar mutation mechanisms in neuroblastoma (also in the AMC Oncogenomics group), such a mechanism has not been found for this often deadly childhood tumor. In this practical work session, we'll integrate RNA expression data with sequence data, specifically ChIP seq data, to further unravel neuroblastoma data.  
 
-As you may have learned from your lectures by now, this tumor consists of different cancer cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of neuroblastoma. Children developing a relapse almost always die. 
-Fortunately, new technologies have become available to molecular biology. These enable us to study not only mutations and RNA expression of genes, but also study the epigenetic modifications of the DNA-associated histones. In addition, genes can now be manipulated in cell lines and in living tissues. 
-Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to derive new insights from these experimental data and to help molecular biologists to generate hypotheses that can be tested experimentally. Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate recent patient and experimental data from neuroblastoma tumors and cell lines. 
+##### Neuroblastoma 
 
-Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which is neural crest derived. During embryogenesis, cells delaminate from the neural crest, migrate ventrally and differentiate into adrenaline- or noradrenaline-producing cells. Neuroblastomas typically express enzymes for the adrenaline-synthesis route. High-stage neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease.
-
-Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this aggressive characteristic of neuroblastoma tumors. We obtained tumor biopsies from four patients that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines. In this course you will conduct the research yourself, following the lines of reasoning and the same data as was used in a paper by the AMC Oncogenomics group that was published in Nature Genetics in 2017.     
+Neuroblastoma is a childhood tumor of the peripheral sympathetic system. Primary tumors can arise in the adrenals and most patients are diagnosed between the age of 0 to 4 years.<br>
+Neuroblastoma patients are classified by the INSS staging system. The increment in stages does not reflect progression of disease, as is the case for colon cancer, but represent different characteristics of the disease. Stage 1, 2 and 3 neuroblastomas have a very good prognosis. Stage 4 neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease. About 40% of stage 4 neuroblastoma have an amplification of the MYCN oncogene. This implies that instead of two DNA copies, each neuroblastoma cell has 30 to 100 copies of the MYCN gene. In addition to stage 1, 2, 3, and 4 neuroblastomas, there is the unusual stage 4S neuroblastoma, which is metastasized but goes into spontaneous regression. Over the last twenty years, the outcome for stage 4 neuroblastoma patients has not substantially improved.<br>
+<br>
+  ![](_static/images/Vagabond/Vagabond_lowvshighstages_neuroblastoma.png "Figure 2: Low stage versus high stage neuroblastoma")	
   
-The **grey buttons** in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The **green buttons** in this document will open up a Google form, one per section, with which you can submit your answers. 
+  [**Figure 2: Low stage versus high stage neuroblastoma**](_static/images/Vagabond/Vagabond_lowvshighstages_neuroblastoma.png)
+  
+Extensive research into mutation mechanisms in neuroblastoma has been done (also in the AMC Oncogenomics group). Unfortunately, such a mechanism has not been found for this often deadly childhood tumor.
 
-Tumors and origins: a first impression of your data
+
+##### Finding differences and biological processes
+
+One of the technologies that can be used to study a disease or biological process is gene expression profiling. With this high throughput technology, we determine the mRNA expression of nearly all genes known in a single experiment.<br>
+On this first day of the course, we will look for different subgroups in our data, find genes that make a difference and find cellular pathways that are activated in neuroblastoma patients with an unfavorable prognosis.<br>
+<br>
+The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The <font style="background-color: #95d097">**green buttons**</font> in this document will open up a Google form, one per section, with which you can submit your answers. 
+<br>
+
+##### Research questions
+
+During this practical course, we will use the R2 bioinformatics tool to study two research questions:
+* Which genes make a difference between neuroblastoma subgroups? 
+* Which molecular pathways are activated in neuroblastoma patients with an unfavorable prognosis?
+
+##### Go to the R2 platform
+
+* Go to <a href="http://r2.amc.nl">http://r2.amc.nl</a>.   
+
+You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
+<br><br>
+
+Finding prognostic factors in your data
 ---------------------------------------
 
-For a start we'll investigate established childhood tumor cell lines, including neuroblastoma. Established cell lines can be grown and passaged in culture indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do profiles of neuroblastoma cell lines relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of 86 other cell lines derived from 6 different childhood tumors and see how they relate. 
-
 *Data used:*  
-* 86 cell lines derived from 6 different childhood tumors (Cellline Childhood cancer - ITCC - 86 - MAS5.0 - u133p2)
+* 88 Human Neuroblastoma samples (Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2)
 
 *Techniques used:*   
 * mRNA Microarray expression
 
 *Analysis used* 
-* individual gene selection
-* t-SNE: t-distributed stochastic neighbor embedding statistics
+* Kaplan Meier by annotated parameter
 
 <br>
 <br>
+
+Let's first make sure that the correct dataset is selected.
+- On the main page, you find a menu in the middle of the page that consists of several boxes.  
+- Verify that in box 2 the following dataset is selected: *Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2*
+
+If you see a different dataset selected, follow these steps: 
+- Click on the selected dataset, such that a popup is shown with a grid of datasets. Each row is one dataset and each column shows particular characteristics of that dataset. You can filter for specific datasets with the headers of the columns. <br>
+- In the textfield of column **Author** type *Versteeg* and in the column of samples **N** type 88.
+- Click on the **Select** button in front of the correct dataset. 
+   
+##### Using annotation and the Kaplan Meier curve 
+In R2 the samples of a dataset can be annotated with meta-information, e.g clinical data or molecular biology parameters. Each group of annotated data is called a “Track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics. <br>
+Another valuable use of such tracks is to evaluate their prognostic value with a Kaplan Meier curve. We will now take a look at a dataset that consists of 88 the above mentioned dataset that consists of human neuroblastoma samples. <br> 
+This dataset is annotated for a number of clinical and molecular parameters. To get some insight in the tumor, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene. 
+
+- Use the dropdown in field 3 to select the correct Kaplan Meier analysis: *Kaplan Meier by annotated parameter*. .
+- We are going to separate the patients based on the INSS stating system. Choose for **Type of Survival** the value *overall-c1103* for the **Track** setting, select the value *inss (cat 5)*. Click **Next**.
+- The Kaplan Meier curves appear.  <br>
+
+---------
+
+  ![](_static/images/R2d2_logo.png)**What are the 5 year survival percentages for the different stages? Scroll over the curves to see clinical details of patients.**
+
+<br>
+<br>
+
+---------
+
+Below the graph, you can change several settings in the Adjustable Settings box. If you change settings, don't forget to click the button **Redraw Graph**.
+
+* Now select *agegroup* as prognostic value under de setting **Track**, click **Redraw Graph**. 
+* Do the same for MYCN amplification with the track *mycn_amp (cat2)*. 
+
+---------
+
+  ![](_static/images/R2d2_logo.png)**Do you observe a significant difference between the groups?**
+<br><br>
+
+---------
 
 ##### Expression of key genes
 * The button below brings you to the form in which you can submit your answers for section 1.2. 
@@ -54,18 +112,8 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <br>
 
 
-* Go to R2 by clicking on the button below:  
 
-
-<form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
-  <button type="submit" class="course r2submit" >Go to R2</button>
-</form>  
-<br>
-<br>
-
-You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
-In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. In this dataset 86 cell lines derived from 6 different childhood tumor types can be found (ewing sarcoma, medulloblastoma, neuroblastoma, osteosarcoma, acute lymphocytic leukemia and rhabdomyosarcoma).
+In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already.  
 
 ---------
 
