@@ -51,7 +51,7 @@ Styling the buttons of the courses
 }
 
 .googleform:hover {
-	background-color: #5fb962;
+	background-color: #5fb963;
 }
 
 /*
@@ -68,6 +68,7 @@ div.r2didyouknow table {
 	width: 85%; 
 	padding: 6px;
 }
+
 div.r2didyouknow th {
 	color:#C45A58;
 	height: 32px;

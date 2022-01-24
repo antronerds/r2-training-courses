@@ -28,4 +28,4 @@ Copyright (c) 2006-2018 Jan Koster
    :numbered: 3
    :caption: Additional Course Materials
    
-   Microarray_analysis_-_Using_Tumor_Colon_datasets
+   Microarray_analysis_Using_Tumor_Colon_datasets

@@ -1,3 +1,5 @@
-sphinx-rtd-theme
-sphinx
-recommonmark
+sphinx-rtd-theme==0.4.3
+sphinx==1.8.5
+# myst-parser[sphinx]
+recommonmark==0.5.0
+docutils<0.18

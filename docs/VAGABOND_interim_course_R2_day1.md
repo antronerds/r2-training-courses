@@ -1,62 +1,119 @@
-<a id="investigating_tumor_heterogeneity"> </a>
+<a id="VAGABOND_interim_course_R2"> </a>
 
-Investigating Intra-tumor Heterogeneity
-===
+Finding causes in Neuroblastoma genomics data
+=================================
 
-*Analyse tumor heterogeneity in neuroblastoma using the R2 data analysis platform*
+*Introduction to bioinformatics tools using the web-based genomics analysis and visualization platform R2 and neuroblastoma data *
 
-This resource is located online at http://r2-training-courses.readthedocs.io .
-
-
+This resource is located online at http://r2-training-courses.readthedocs.io  
+  
 Introduction
----
-As was mentioned in the first part of the course, Investigating Structural Variants, no well defined path of subsequently gained mutations was found to lead to more aggressive tumorigenic cell types (the Vogelstein model) in neuroblastoma.  
- In this practical work session, we'll integrate RNA expression data with sequence data, specifically ChIP seq data, to further unravel neuroblastoma data.  
+------------
 
-Recent research suggests that neuroblastoma consists of different cell types. There is reason to believe that this heterogeneity causes the high percentage of relapses in the aggressive subtype of neuroblastoma. Children developing a relapse almost always die.  
- In this section, we will focus on heterogeneity in neuroblastoma. We will study not only mutations and RNA expression of genes, but also study the epigenetic modifications of the DNA-associated histones. And we will work with datasets in which genes have been manipulated in cell lines and in living tissues.  
+Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. For instance, in colorectal cancer a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
 
-Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this aggressive characteristic of neuroblastoma tumors. We obtained tumor biopsies from four patients that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines. In this course you will conduct the research yourself, following the lines of reasoning and the same data as was used in a paper by the AMC Oncogenomics group that was published in Nature Genetics in 2017.    
+  ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression.")	
+  
+  [**Figure 1: Mutation paths during cancer progression**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
 
-Tumors and origins: a first impression of your data
+##### Neuroblastoma 
+
+Neuroblastoma is a childhood tumor of the peripheral sympathetic system. Primary tumors can arise in the adrenals and most patients are diagnosed between the age of 0 to 4 years.<br>
+Neuroblastoma patients are classified by the INSS staging system. The increment in stages does not reflect progression of disease, as is the case for colon cancer, but represent different characteristics of the disease. Stage 1, 2 and 3 neuroblastomas have a very good prognosis. Stage 4 neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease. About 40% of stage 4 neuroblastoma have an amplification of the MYCN oncogene. This implies that instead of two DNA copies, each neuroblastoma cell has 30 to 100 copies of the MYCN gene. In addition to stage 1, 2, 3, and 4 neuroblastomas, there is the unusual stage 4S neuroblastoma, which is metastasized but goes into spontaneous regression. Over the last twenty years, the outcome for stage 4 neuroblastoma patients has not substantially improved.<br>
+<br>
+  ![](_static/images/Vagabond/Vagabond_lowvshighstages_neuroblastoma.png "Figure 2: Low stage versus high stage neuroblastoma")	
+  
+  [**Figure 2: Low stage versus high stage neuroblastoma**](_static/images/Vagabond/Vagabond_lowvshighstages_neuroblastoma.png)
+  
+Extensive research into mutation mechanisms in neuroblastoma has been done (also in the AMC Oncogenomics group). Unfortunately, such a mechanism has not been found for this often deadly childhood tumor.
+
+
+##### Finding differences and biological processes
+
+One of the technologies that can be used to study a disease or biological process is gene expression profiling. With this high throughput technology, we determine the mRNA expression of nearly all genes known in a single experiment.<br>
+On this first day of the course, we will look for different subgroups in our data, find genes that make a difference and find cellular pathways that are activated in neuroblastoma patients with an unfavorable prognosis.<br>
+<br>
+The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The <font style="background-color: #95d097">**green buttons**</font> in this document will open up a Google form, one per section, with which you can submit your answers. 
+<br>
+
+##### Research questions
+
+During this practical course, we will use the R2 bioinformatics tool to study two research questions:
+* Which genes make a difference between neuroblastoma subgroups? 
+* Which molecular pathways are activated in neuroblastoma patients with an unfavorable prognosis?
+
+##### Go to the R2 platform
+
+* Go to <a href="http://r2.amc.nl">http://r2.amc.nl</a>.   
+
+You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
+<br><br>
+
+Finding prognostic factors in your data
 ---------------------------------------
 
-For a start we'll investigate established childhood tumor cell lines, including neuroblastoma. Established cell lines can be grown and passaged in culture indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do profiles of neuroblastoma cell lines relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of 86 other cell lines derived from 6 different childhood tumors and see how they relate. 
-
 *Data used:*  
-* 86 cell lines derived from 6 different childhood tumors (Cellline Childhood cancer - ITCC - 86 - MAS5.0 - u133p2)
+* 88 Human Neuroblastoma samples (Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2)
 
 *Techniques used:*   
 * mRNA Microarray expression
 
 *Analysis used* 
-* individual gene selection
-* t-SNE: t-distributed stochastic neighbor embedding statistics
+* Kaplan Meier by annotated parameter
 
 <br>
 <br>
+
+Let's first make sure that the correct dataset is selected.
+- On the main page, you find a menu in the middle of the page that consists of several boxes.  
+- Verify that in box 2 the following dataset is selected: *Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2*
+
+If you see a different dataset selected, follow these steps: 
+- Click on the selected dataset, such that a popup is shown with a grid of datasets. Each row is one dataset and each column shows particular characteristics of that dataset. You can filter for specific datasets with the headers of the columns. <br>
+- In the textfield of column **Author** type *Versteeg* and in the column of samples **N** type 88.
+- Click on the **Select** button in front of the correct dataset. 
+   
+##### Using annotation and the Kaplan Meier curve 
+In R2 the samples of a dataset can be annotated with meta-information, e.g clinical data or molecular biology parameters. Each group of annotated data is called a “Track” in R2. These tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics. <br>
+Another valuable use of such tracks is to evaluate their prognostic value with a Kaplan Meier curve. We will now take a look at a dataset that consists of 88 the above mentioned dataset that consists of human neuroblastoma samples. <br> 
+This dataset is annotated for a number of clinical and molecular parameters. To get some insight in the tumor, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene. 
+
+- Use the dropdown in field 3 to select the correct Kaplan Meier analysis: *Kaplan Meier by annotated parameter*. .
+- We are going to separate the patients based on the INSS stating system. Choose for **Type of Survival** the value *overall-c1103* for the **Track** setting, select the value *inss (cat 5)*. Click **Next**.
+- The Kaplan Meier curves appear.  <br>
+
+---------
+
+  ![](_static/images/R2d2_logo.png)**What are the 5 year survival percentages for the different stages? Scroll over the curves to see clinical details of patients.**
+
+<br>
+<br>
+
+---------
+
+Below the graph, you can change several settings in the Adjustable Settings box. If you change settings, don't forget to click the button **Redraw Graph**.
+
+* Now select *agegroup* as prognostic value under de setting **Track**, click **Redraw Graph**. 
+* Do the same for MYCN amplification with the track *mycn_amp (cat2)*. 
+
+---------
+
+  ![](_static/images/R2d2_logo.png)**Do you observe a significant difference between the groups?**
+<br><br>
+
+---------
 
 ##### Expression of key genes
-* The button below brings you to the form in which you can submit your answers for section 2.2. 
+* The button below brings you to the form in which you can submit your answers for section 1.2. 
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScp4X4rhSQZbtTqvDZvCq2pjhq_-rPK2MJEh6xeFkxwYnxW3g/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.2</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfo7ZeKEaVRflzEmXkFZsErDShYHs8PaZO1tBmVrnLeyobkyg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
 <br>
 <br>
 
 
-* Go to R2 by clicking on the button below:  
 
-
-<form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
-  <button type="submit" class="course r2submit" >Go to R2</button>
-</form>  
-<br>
-<br>
-
-You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
-In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. In this dataset 86 cell lines derived from 6 different childhood tumor types can be found (ewing sarcoma, medulloblastoma, neuroblastoma, osteosarcoma, acute lymphocytic leukemia and rhabdomyosarcoma).
+In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already.  
 
 ---------
 
@@ -76,10 +133,7 @@ Sometimes you can see the categorical tracks displayed underneath a graph. But o
 At the bottom of the page you can find a table with adjustable settings. Many settings of the graph can be adapted.  
 
 * Try out a different view of the same data with the following changes to the settings:  
-    * The expression values on the y-axis are logarithmic by default, in the settings menu set the **Transform** option to *none* instead. 
-    * Split the data in groups with the setting **use track** under Group separations: choose the *itcc_model* track that contains the information which sample belongs to which tumor type. 
-    * The samples can be sorted by setting the **Extra Graph Option** to *Track and Gene* sort.
-    * Finally, click **Adjust Settings** to obtain the graph with these adaptations.  
+ The expression values on the y-axis are logarithmic by default, in the settings menu set the **Transform** option to *none* instead. Split the data in groups with the setting **use track** under Group separations: choose the *itcc_model* track that contains the information which sample belongs to which tumor type. Also sort the samples again on expression with **Extra Graph Option** set to *Track and Gene sort*. Finally, click **Adjust Settings** to obtain the graph with these adaptations.  
   
 * Now try the gene MYCN (Type *MYCN* in the **Change Gene** box in the upper right corner to keep all your settings, but to change your gene).  
 * Hover with your mouse over the track underneath the graph or over the data points, to find out which itcc_model belongs to which group of samples. 
@@ -122,7 +176,7 @@ We've seen that the expression of genes differs among the samples and some types
 <br>
 <br>
 
-  ![](_static/images/R2d2_logo.png)**Based on the above, what would you do to further investigate your observations? **
+  ![](_static/images/R2d2_logo.png)**Based on the above, what would you do to further investigate your observations**
   
 ------
 
@@ -136,9 +190,9 @@ In the former step we derived that neuroblastoma cell lines seem to group with c
 	
   [**Figure 2: Bright field image of isogenic cell line pairs.**](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png)
 
-* The button below brings you to the form in which you can submit your answers for section 2.3
+* The button below brings you to the form in which you can submit your answers for section 1.3
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScftQsw3Lzt0Hxy9RdWDTMLleY1gWwqBX7mFOxr6dTpGcaoLQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.3</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc0dGfEl9zDS7Yh-ZtrcKAn4IVgcwNxsZKNjQQtTj35JjgQng/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button> 
 <br>
 <br>
 
@@ -221,7 +275,7 @@ The cell line pairs from the patient were also investigated for the tumor stem c
 
 ---------
 
-  ![](_static/images/R2d2_logo.png)**Given these observations, what differentiation state can you assign to each group?**
+  ![](_static/images/R2d2_logo.png)**Given these observations, what origin can you assign to each group?**
 <br><br>
 
 ---------
@@ -247,9 +301,9 @@ We have identified two different types of cells that occur within the same patie
 <br>
 <br>
 
-* The button below brings you to the form in which you can submit your answers for section 2.4
+* The button below brings you to the form in which you can submit your answers for section 1.4
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf67wf77wj_icofEEKhxhaarCRSX_7bwI3jW6WZ-zDx3lQUNQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.4</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScesiEn-9mU9rGCIct4oHkplP6RxXNkccCCkVHBKzioYuczPg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.4</button> 
 <br>
 <br>
   
@@ -266,7 +320,7 @@ We have identified two different types of cells that occur within the same patie
 * In Field 3 choose *Find Differential expression between groups* and click **Next**
 
 This dataset has been annotated with 'cell type' information. Each sample was assigned to either the MESenchymal or the ADReNergic cell type. The information is stored in R2 in a track. 
-* Choose the proper track in the upper most dropdown **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to *No correction*.  Click **Next** twice. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>).
+* Choose the proper track in the **Select a track** dropdown. Since we have only 8 samples make sure that the multiple testing correction is set to *No correction*.  Click **Next** twice. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>).
 * A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset is shown. Click on the hyperlinked name of your favorite gene to see its expression in the sample set; try an oppositely correlating gene as well
 * Go back to the window with the differentially expressed genes. This is still open in one of your browser tabs. 
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
@@ -306,7 +360,7 @@ In R2 there are many more sets of genes that have been found to be implemented i
 
 * Go back to the window with the differentially expressed genes. 
 * Select the **Gene set analysis** option from the right menu
-* Select the geneset *broad_2015_hallmark* and click **Next**
+* Select the *geneset_broad_2015_hallmark* geneset and click **Next**
 
 ---------
 
@@ -335,9 +389,9 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 <br>
 <br>
 
-* The button below brings you to the form in which you can submit your answers for section 2.5
+* The button below brings you to the form in which you can submit your answers for section 1.5
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSf1MYlmtI7N8awkkD77zXOlKCPeZFoLP48W_eCzmuz1lL_NwQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.5</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSephAsX9i-d_QUh7Gu7ZRWUKkL9XgtAuEzglGnBgBU4Nd3VrQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.5</button> 
 <br>
 <br>
 
@@ -351,8 +405,8 @@ We've assembled a more complex dataset by gathering the dataset of the 4 pairs o
 <br>
 
 
-* In field 3 select *View Geneset (Heatmap)* that you can find under the red header *Meta-analysis*.
-* Click **Next** and select geneset *r2provided_genelists* 
+* In field 3 select *View Geneset* that you can find under the red header *Meta-analysis*.
+* Click **Next** and select *geneset_r2provided_genelists* 
 * Click **Next**, leave selection as is and click **Next**
 * Select both signatures that were derived before by CTRL click on the MES (*r2_mesadrn_mes*) and ADRN (*r2_mesadrn_adrn*) signatures and click **Next**
 
@@ -414,9 +468,9 @@ The expression patterns of these specific signatures can be used to compare cell
 <br>
 <br>
 
-* The button below brings you to the form in which you can submit your answers for section 2.6
+* The button below brings you to the form in which you can submit your answers for section 1.6
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdFCOwZWCElmt_CGV5xwyavekIDbpBDBqyKsabcp_4RpBDtag/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.6</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfeDhhvV2hQQ4erzjf18OX27jelvYxFVIyovPOxWin3GUxekg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.6</button> 
 <br>
 <br>
 
@@ -466,9 +520,9 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 <br>
 <br>
 
-* The button below brings you to the form in which you can submit your answers for section 2.7
+* The button below brings you to the form in which you can submit your answers for section 1.7
 
-<button button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScOKKI_IdJTzkVTniMN83quFI5NrJbE9YnT9-OyDK2f6dO0Nw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.7</button> 
+<button button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfbXuvePyJg5CKj_mE1UygJwrI-GJD39FrM16nY2Uh7YrtsHw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.7</button> 
 <br>
 <br>
 
@@ -504,9 +558,9 @@ Proving causes: manipulating cell lines
 
 From experiments it is known that cells can change their nature, some cells exhibit a certain plasticity.  
 
-* The button below brings you to the form in which you can submit your answers for section 2.8
+* The button below brings you to the form in which you can submit your answers for section 1.8
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScpq77cSHN5a5pPit1K0wP-9hNaHnu0v3dSowRqquuGk0jiag/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.8</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScdjNTEfcu5vuyskvWbKASj3xani-_eMwvN26N1_-F5gYF0tw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.8</button> 
 <br>
 <br>
 
@@ -614,9 +668,9 @@ Apparently this TF is capable of shifting cells from one state to the other. How
 <br>
 <br>
 
-* The button below brings you to the form in which you can submit your answers for section 2.9
+* The button below brings you to the form in which you can submit your answers for section 1.9
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeud4Q4wi5eCYKsyAHB-G5zVlMJObUgxqtAEEl9eHMdzD44Fg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.9</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScQC2N5QsLOOUJULFuooscO4gAKzxyE_0nk-OM1n5MLvlslRw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.9</button> 
 <br>
 <br>
 
@@ -922,9 +976,9 @@ Suggesting therapy
  <br>
  <br>
  
- * The button below brings you to the form in which you can submit your answers for section 2.10
+ * The button below brings you to the form in which you can submit your answers for section 1.10
 
- <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdUEKHBVtlCR50GCoocIsIbNoLqAgaPHn2kOnMx5dv99uITiw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2.10</button> 
+ <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSd7iB8d2ozHEsYx4KidGxLdhQRefUw2-03gGGnmpJ6eoqhdlA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.10</button> 
  <br>
  <br>
   
