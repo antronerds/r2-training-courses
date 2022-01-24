@@ -244,9 +244,9 @@ Two images on a row belong to one patient (e.g. 619-MES and 619-ADRN). As you ca
  
  Most neuroblastomas are located in the abdomen and are associated with adrenal glands or sympathetic ganglia. Cells of the sympatho-adrenal lineage develops from the neural crest, undergoing an Epithelial-to-Mesenchymal Transition as shown below.
  
- ![](_static/images/Vagabond/Vagabond_Development_of_the sympatho-adrenal_lineage_from_neural_crest.png "Figure 5: Development of the sympatho-adrenal lineage from the neural crest")
+ ![](_static/images/Vagabond/Vagabond_Development_of_the_sympatho-adrenal_lineage_from_neural_crest.png "Figure 5: Development of the sympatho-adrenal lineage from the neural crest")
   	
- [**Figure 5: Development of the sympatho-adrenal lineage from the neural crest**](_static/images/Vagabond/Vagabond_Development_of_the sympatho-adrenal_lineage_from_neural_crest.png)
+ [**Figure 5: Development of the sympatho-adrenal lineage from the neural crest**](_static/images/Vagabond/Vagabond_Development_of_the_sympatho-adrenal_lineage_from_neural_crest.png)
    
 
  
