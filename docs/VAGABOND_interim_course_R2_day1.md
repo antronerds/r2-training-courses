@@ -142,11 +142,13 @@ We can show the relation more clearly by grouping the tumors in the 'One Gene Vi
 - In the Adjustable Settings box on the second row, you now have to choose a **Track** by which you want to separate the samples. In the drop down menu, select *mycn-amp(cat)*. And click **Submit**. Check the plot.
 - Next select *alive*(cat 2) and click **Submit**. 
 - Optional: In this view, the samples are not ordered by their MYCN expression value by default. If you would want to adjust this, you could use the **Extra Graph Option** and choose the value *Track and Gene sort*.  
-   
+<br>
+ 
 ---------
 
  ![](_static/images/R2d2_logo.png)**What additional observations can you make from the graphs?**
  <br><br>
+
 ---------
 <br>
 Now we will use links on this page that lead to additional analyses. To learn basic properties of the gene, click on the link in the ‘Gene ID’ column in the top table. This brings us to the National Center for Bioinformatics database in Bethesda, USA.
@@ -156,6 +158,7 @@ Now we will use links on this page that lead to additional analyses. To learn ba
 
 ![](_static/images/R2d2_logo.png)**What is MYCN?**
 <br><br>
+
 ---------
  
 In the box on the left side of the page, more information can be gathered. 
