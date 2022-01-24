@@ -1,4 +1,4 @@
-<a id="VAGABOND_interim_course_R2"> </a>
+<a id="VAGABOND_interim_course_R2_day1"> </a>
 
 Finding causes in Neuroblastoma genomics data
 =================================
@@ -419,7 +419,7 @@ In R2 there are many more sets of genes that have been found to be implemented i
 
  
  
- 
+----- 
  This concludes our series of tasks for today. If you would like to use R2 for your research in the future, then just visit http://r2.amc.nl and get started. Upon free registration, additional features become available. Thank you for your attention and we hope that you have enjoyed this microarray practical.
 
 

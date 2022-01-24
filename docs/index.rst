@@ -11,29 +11,6 @@ Copyright (c) 2006-2022 Jan Koster
 .. toctree::
    :maxdepth: 1
    :numbered:
-   :caption: AMS Course Materials
-
-   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
-
-.. toctree::
-   :maxdepth: 1
-   :numbered:
-   :caption: Student Course
-
-   Investigating_Tumor_Heterogeneity_student_version
-
-.. toctree::
-   :maxdepth: 1
-   :numbered:
-   :caption: Graduate Course
-
-   Finding_structural_variants
-   Investigating_Tumor_Heterogeneity
-
-
-.. toctree::
-   :maxdepth: 1
-   :numbered:
    :caption: Vagabond_course / Undercontruction
 
    VAGABOND_interim_course_R2_day1
