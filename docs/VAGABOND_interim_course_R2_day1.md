@@ -269,7 +269,7 @@ Two images on a row belong to one patient (e.g. 619-MES and 619-ADRN). As you ca
  
  For this analysis we will use one of the analysis tools of R2: Toplister. The Toplister can assess which genes show the most different expression values throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
  
- * Go to R2 by clicking the button below. TThe correct dataset containing 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
+ * Go to R2 by clicking the button below. The correct dataset containing 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
  <br>
  
  <form name="ps_avgpres_gse90803geo8_u133p2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
@@ -321,8 +321,8 @@ Above the heatmap you can see two tracks of this dataset: cell_type and pairs. T
 ---------
 
   
-Which genes make a difference? Creating signatures
------------------------------------------------------
+#### Which genes make a difference? Creating signatures
+
 
 We have identified two different types of cells that occur within the same patient. Neuroblastoma apparently has a heterogenous nature. What genes determine the difference between the two types? We’ll use RNA expression data again but now we will use a predefined, supervised classification in groups to search for genes that characterize this classification best, or in other words, that are differentially expressed between these two groups.
 
