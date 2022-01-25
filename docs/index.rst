@@ -31,13 +31,13 @@ Copyright (c) 2006-2022 Jan Koster
    Investigating_Tumor_Heterogeneity
 
 
-.. toctree::
-   :maxdepth: 1
-   :numbered:
-   :caption: Vagabond_course / Undercontruction
+[//]: # .. toctree::
+ [//]: #   :maxdepth: 1
+ [//]: #   :numbered:
+  [//]: #  :caption: Vagabond_course / Underconstruction
 
-   VAGABOND_interim_course_R2_day1
-   VAGABOND_interim_course_R2_day2
+  [//]: #  VAGABOND_interim_course_R2_day1
+ [//]: #  VAGABOND_interim_course_R2_day2
 
 
 
