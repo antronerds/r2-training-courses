@@ -50,8 +50,8 @@ You're now on the R2 main page. This web based molecular biology data analysis p
 The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The <font style="background-color: #95d097">**green buttons**</font> in this document will open up a Google form, one per section, with which you can submit your answers. 
 <br><br>
 
-Finding prognostic factors in your data
----------------------------------------
+### Finding prognostic factors in your data
+
 
 *Data used:*  
 * 88 Human Neuroblastoma samples (Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2)
@@ -65,9 +65,11 @@ Finding prognostic factors in your data
 <br>
 <br>
 
+## Selecting datasets
+
 Let's first make sure that the correct dataset is selected.  
 - On the main page, you find a menu in the middle of the page that consists of several boxes.  
-- Verify that in box 2 the following dataset is selected: *Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2*
+- Verify that in box 2 the following dataset is selected: *Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2*. Clicking in the dataset enable a pop-grid where you can select
 
 <br> 
 
@@ -76,47 +78,16 @@ If you see a different dataset selected, you can change the dataset as follows:
 - Click on the selected dataset, which will make a grid popup, showing all the datasets that are available to you withing the platform. Each row is one dataset and each column shows particular characteristics of that dataset. You can filter for specific datasets with the headers of the columns. <br>
 - In the textfield of column **Author** type *Versteeg* and in the column of samples **N** type 88.
 - Click on the **Select** button in front of the correct dataset. 
-   
-##### Using annotation and the Kaplan Meier curve 
-In R2 the samples of a dataset can be annotated with meta-information, e.g clinical data or molecular biology parameters. Each group of annotated data is called a “Track” in R2. These tracks for a large variety of additional analysis and visualisation functions. To name a few, tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics. 
-<br><br>
-Another valuable use of such tracks is to evaluate their prognostic value with a Kaplan Meier curve. We will now take a look at the above mentioned dataset that consists of 88 human neuroblastoma samples. <br> 
-This dataset is annotated for a number of clinical and molecular parameters. To get a first look at some characteristics of this childhood tumor, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene. 
-
-- Use the dropdown in field 3 to select the correct Kaplan Meier analysis: *Kaplan Meier by annotated parameter*.
-- We are going to separate the patients based on the INSS staging system, that was explained in the introduction of neuroblastoma in the beginning. Choose for **Type of Survival** the value *overall-c1103* for the **Track** setting, select the value *inss (cat 5)*. Click **Next**.
-- The Kaplan Meier curves appear.  <br><br>
-
+ 
 ---------
 
-  ![](_static/images/R2d2_logo.png)**What does a drop in the curves mean? And the little verticle tick-mark on the horizontal parts of the curves?**<br>
-  **Scroll over the drops and the tick-marks of the curves to see clinical details of patients.**
-  <br><br>
-  ![](_static/images/R2d2_logo.png)**What are the 5 year survival percentages for the different stages?** 
-<br>
-<br>
-
----------
-
-Below the graph, you can change several settings in the Adjustable Settings box. If you change settings, don't forget to click the button **Redraw Graph**.
-
-* Now select *agegroup* as prognostic value under de setting **Track**, click **Redraw Graph**. 
-* Do the same for MYCN amplification with the track *mycn_amp (cat2)*. 
-
----------
-
-  ![](_static/images/R2d2_logo.png)**Do you observe a significant difference between the groups?**
-<br><br>
-
----------
-
-##### Expression of key genes
+##### Investigating singles genes / Expression of key genes
 * The button below brings you to the form in which you can submit your answers for section 1.2. 
 
 <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfo7ZeKEaVRflzEmXkFZsErDShYHs8PaZO1tBmVrnLeyobkyg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
 <br>
 <br>
-Amplification of the MYCN gene is evidently associated with a poor prognosis. Now we will analyze the mRNA expression of MYCN in the same dataset. We will use the R2 analysis module 'One Gene View'.  
+It is knwon that the Amplification of the MYCN gene is evidently associated with a poor prognosis. Now we will analyze the mRNA expression of MYCN in the same dataset. We will use the R2 analysis module 'One Gene View'.  
 - Go back to main page of R2. You can use the link in the upper left corner *Go to: **Main***
 - In field 3 select **View a gene**, which is also the selected analysis by default. Then click **Next**.
 - For this analysis, R2 needs to know which gene/ reporter to use. Fill in the text field **Search by Gene** the gene name of our interest: *mycn*. And select with a mouse click the mycn gene from the dropdown in order to select the correct reporter.
@@ -171,7 +142,7 @@ All the tumor samples in our dataset were analyzed by making sections of frozen 
 - Click on **Sample overview** at the upper right side of the screen. All samples of the dataset are available via the dropdown. 
 - Select *ITCC0001* and click on **View Sample**. Play with the magnifications (2x, 10x, 40x)
 - Go back to the tab with the grouped plot of the MYCN expression (N.B. you may close the other tabs) 
-- Below the graph for the MYCN gene, the table ‘Alternative Reporters’ shows that this gene is represented by 5 sets of reporters (probe sets) on the Affymetrix U133 Plus 2.0 microarray. Take a look at the signal intensities for the different reporters (the red numbers in brackets). By default, R2 chooses the reporter with the highest signal. 
+- Below the graph for the MYCN gene, the table ‘Alternative Reporters’ shows that this gene is represented by 5 sets of reporters (probe sets) on the Affymetrix U133 Plus 2.0 microarray. Take a look at the signal intensities for the different reporters (the red numbers in brackets).  It's good to realize that genes could have more then one reporter for a given platform in this case the Affymetrix platform. By default, R2 chooses the reporter with the highest signal which is in ~99.9% of the cases teh most representive for a gene. For many platforms which use reporters the genome location is also added. Clicking on the R2_Tview link in the probeset verification box leads you to the genome browser where exact location of the reporters can investigate. 
 <br>
 
 ---------
@@ -181,6 +152,11 @@ All the tumor samples in our dataset were analyzed by making sections of frozen 
 
 ---------
  
+
+
+
+
+
 Again from the box on the left, we can use a link to analyze the prognostic value of MYCN mRNA expression.  
 - Click in the left–upper menu of the **KaplanScanner** section the **MYCN (overall-2011/03)** link. 
 - Read above the graph which cut-off value is used to obtain two groups of high and low MYCN expression.
@@ -207,6 +183,44 @@ Now let's compare this survival analysis to the survival analysis with a median 
 
 ---------
 <br><br>
+
+
+
+##### Using annotation and the Kaplan Meier curve
+In R2 the samples of a dataset can be annotated with meta-information, e.g clinical data or molecular biology parameters. Each group of annotated data is called a “Track” in R2. These tracks for a large variety of additional analysis and visualisation functions. To name a few, tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics.
+<br><br>
+Another valuable use of such tracks is to evaluate their prognostic value with a Kaplan Meier curve. We will now take a look at the above mentioned dataset that consists of 88 human neuroblastoma samples. <br>
+This dataset is annotated for a number of clinical and molecular parameters. To get a first look at some characteristics of this childhood tumor, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene.
+
+- Use the dropdown in field 3 to select the correct Kaplan Meier analysis: *Kaplan Meier by annotated parameter*.
+- We are going to separate the patients based on the INSS staging system, that was explained in the introduction of neuroblastoma in the beginning. Choose for **Type of Survival** the value *overall-c1103* for the **Track** setting, select the value *inss (cat 5)*. Click **Next**.
+- The Kaplan Meier curves appear.  <br><br>
+
+---------
+
+![](_static/images/R2d2_logo.png)**What does a drop in the curves mean? And the little verticle tick-mark on the horizontal parts of the curves?**<br>
+**Scroll over the drops and the tick-marks of the curves to see clinical details of patients.**
+<br><br>
+![](_static/images/R2d2_logo.png)**What are the 5 year survival percentages for the different stages?**
+<br>
+<br>
+
+---------
+
+Below the graph, you can change several settings in the Adjustable Settings box. If you change settings, don't forget to click the button **Redraw Graph**.
+
+* Now select *agegroup* as prognostic value under de setting **Track**, click **Redraw Graph**.
+* Do the same for MYCN amplification with the track *mycn_amp (cat2)*.
+
+---------
+
+![](_static/images/R2d2_logo.png)**Do you observe a significant difference between the groups?**
+<br><br>
+
+
+
+
+
 
 Different expression patterns between subgroups and the underlying biology
 -------------------------------------------------
