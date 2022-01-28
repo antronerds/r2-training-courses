@@ -155,9 +155,30 @@ All the tumor samples in our dataset were analyzed by making sections of frozen 
  
 ### Finding Correlating genes
 
-Many approaches have been conducted to target the MYCN gene, historically  as a transcription factor MYCN has been regarded as "undrugable". A way to identify downstream targets of MYCN which are possible drugable  is to find genes which show the same expression pattern is use the find correlating genes with a single module.
+Many approaches have been conducted to target the MYCN gene, historically  as a transcription factor MYCN has been regarded as "undrugable". A way to identify downstream targets of MYCN which are possible drugable  is to find genes which show the same expression pattern is use the find correlating genes with a single gene.
 
-- In the main menu select in box 3 "Find Correlating genes with a single gene and click next. 
+- In the main menu select in box 3 "Find Correlating genes with a single gene" and click next.  Provide the mycn gene and click the reporter. In the corr cut-off field , change <span style="color: red">**0.05 to 0.01**</span>. and click submit.
+- In the next screen a table is generated splitted in a significant and negative and positive correlating genes. (**~2200 genes**). 
+- Click on the magnify symbols in the view column for both tables and generate graph with genes which are (inverse) correlated with the MYCN gene to get an impression.
+
+
+Of course we have some foreknowledge but it could be that there is a relation between the correlating genes with mycn and their chromesome position.
+
+- click on the "Chromsome map" in the right menu and investigate the table
+- To gain even more insight in what might me going on repeat teh analysis and in the adjustable settings menu, as correlation direction, only **negative** anbd click submit
+---------
+
+![](_static/images/R2d2_logo.png) **Which genes are overrepresented with respect to their chromesome location. ?**
+<br><br>
+
+---------
+
+In neuroblastoma MYCN amplification and loss of the 1-p arm is a well established correlation it's known that tumor suppressor are located on chromosome 1 and 1p loss of heterozygosity has a benifitial effect for the tumor. 
+
+
+
+
+
 
 
 
