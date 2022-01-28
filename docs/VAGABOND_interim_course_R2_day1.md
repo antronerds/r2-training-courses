@@ -81,13 +81,13 @@ If you see a different dataset selected, you can change the dataset as follows:
  
 ---------
 
-##### Investigating singles genes / Expression of key genes
+### Investigating singles genes / Expression of key genes
 * The button below brings you to the form in which you can submit your answers for section 1.2. 
 
 <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfo7ZeKEaVRflzEmXkFZsErDShYHs8PaZO1tBmVrnLeyobkyg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
 <br>
 <br>
-It is knwon that the Amplification of the MYCN gene is evidently associated with a poor prognosis. Now we will analyze the mRNA expression of MYCN in the same dataset. We will use the R2 analysis module 'One Gene View'.  
+It is known that the Amplification of the MYCN gene is evidently associated with a poor prognosis. Now we will analyze the mRNA expression of MYCN in the same dataset. We will use the R2 analysis module 'One Gene View'.  
 - Go back to main page of R2. You can use the link in the upper left corner *Go to: **Main***
 - In field 3 select **View a gene**, which is also the selected analysis by default. Then click **Next**.
 - For this analysis, R2 needs to know which gene/ reporter to use. Fill in the text field **Search by Gene** the gene name of our interest: *mycn*. And select with a mouse click the mycn gene from the dropdown in order to select the correct reporter.
@@ -112,7 +112,8 @@ We can show the relation more clearly by grouping the tumors in the 'One Gene Vi
 - Change this setting from single gene to *gene vs track*.
 - In the Adjustable Settings box on the second row, you now have to choose a **Track** by which you want to separate the samples. In the drop down menu, select *mycn-amp(cat)*. And click **Submit**. Check the plot.
 - Next select *alive*(cat 2) and click **Submit**. 
-- Optional: In this view, the samples are not ordered by their MYCN expression value by default. If you would want to adjust this, you could use the **Extra Graph Option** and choose the value *Track and Gene sort*.  
+- Optional 1: In this view, the samples are not ordered by their MYCN expression value by default. If you would want to adjust this, you could use the **Extra Graph Option** and choose the value *Track and Gene sort*.  
+- Optional 2: Click on the 'More settings sections' unfolds a new menu which enables the user to adapt the graphic parameters such as; font size , axis-with etc etc feel free to try them.  
 <br>
  
 ---------
@@ -152,6 +153,14 @@ All the tumor samples in our dataset were analyzed by making sections of frozen 
 
 ---------
  
+### Finding Correlating genes
+
+Many approaches have been conducted to target the MYCN gene, historically  as a transcription factor MYCN has been regarded as "undrugable". A way to identify downstream targets of MYCN which are possible drugable  is to find genes which show the same expression pattern is use the find correlating genes with a single module.
+
+- In the main menu select in box 3 "Find Correlating genes with a single gene and click next. 
+
+
+
 
 
 
