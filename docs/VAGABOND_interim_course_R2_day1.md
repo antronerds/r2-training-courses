@@ -165,7 +165,7 @@ Many approaches have been conducted to target the MYCN gene, historically  as a 
 Of course we have some foreknowledge but it could be that there is a relation between the correlating genes with mycn and their chromesome position.
 
 - click on the "Chromsome map" in the right menu and investigate the table
-- To gain even more insight in what might me going on repeat teh analysis and in the adjustable settings menu, as correlation direction, only **negative** anbd click submit
+- To gain even more insight in what might me going on repeat teh analysis and in the adjustable settings menu, as correlation direction, only **negative** and click submit
 ---------
 
 ![](_static/images/R2d2_logo.png) **Which genes are overrepresented with respect to their chromesome location. ?**
@@ -173,12 +173,24 @@ Of course we have some foreknowledge but it could be that there is a relation be
 
 ---------
 
-In neuroblastoma MYCN amplification and loss of the 1-p arm is a well established correlation it's known that tumor suppressor are located on chromosome 1 and 1p loss of heterozygosity has a benifitial effect for the tumor. 
+In neuroblastoma MYCN amplification and loss of the 1-p arm is a well established correlation it's known that tumor suppressor genes are located on chromosome 1 and 1p loss of heterozygosity has a benifitial effect for the tumor. 
 
 
 
+### Finding Differential expressed genes
 
 
+We have seen that MYCN expression has a clear clinical perspective.  Mostly you don't want to look at a single gene investigate if we can find biological group processes by looking at differentially expressed genes between groups. For example,  which genes are differentially expressed between the 'alive' or 'dead' group.
+
+- In the main menu select in box 3, section "Differential expression", **Differential Expression between two groups** and click next. In the next screen, use the T-test which is selected by default and click "alive (2 cat)" in the pulldown menu at group by and click submit. In the next adjustable settings panel all kinds of settings can be adjusted  but for now select "no" and "yes" for subsequently group 1 and 2 and click 'submit'. 
+
+
+![](_static/images/R2d2_logo.png) **How many genes have been are differentially expressed between the alive "no" and "yes" group.. ?**
+<br><br>
+
+---------
+
+- In the generated gene list you can find  marker genes or genes playing a key role in Neuroblasto. However, it would be nice to find out if certain genes are over represenetd
 
 
 
