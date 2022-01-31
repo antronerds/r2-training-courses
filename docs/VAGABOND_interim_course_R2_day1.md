@@ -84,7 +84,7 @@ If you see a different dataset selected, you can change the dataset as follows:
 ### Investigating singles genes / Expression of key genes
 * The button below brings you to the form in which you can submit your answers for section 1.2. 
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfo7ZeKEaVRflzEmXkFZsErDShYHs8PaZO1tBmVrnLeyobkyg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1AdLKLVAkgRFiQ_AEHwRyWu0gc3_UZ6XyT3G4KICGStQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
 <br>
 <br>
 It is known that the Amplification of the MYCN gene is evidently associated with a poor prognosis. Now we will analyze the mRNA expression of MYCN in the same dataset. We will use the R2 analysis module 'One Gene View'.  
@@ -173,14 +173,14 @@ Of course we have some foreknowledge but it could be that there is a relation be
 
 ---------
 
-In neuroblastoma MYCN amplification and loss of the 1-p arm is a well established correlation it's known that tumor suppressor genes are located on chromosome 1 and 1p loss of heterozygosity has a benifitial effect for the tumor. 
+In neuroblastoma MYCN amplification and loss of the 1p arm is a well established connection.  It is known that tumor suppressor genes are located on chromosome 1 and a 1p loss of heterozygosity has a benifitial effect for the tumor. 
 
 
 
 ### Finding Differential expressed genes
 
 
-We have seen that MYCN expression has a clear clinical perspective.  Mostly you don't want to look at a single gene investigate if we can find biological group processes by looking at differentially expressed genes between groups. For example,  which genes are differentially expressed between the 'alive' or 'dead' group.
+We have seen that MYCN expression has a clear clinical perspective.  Mostly you don't want to investigate  a single gene but perform a test to see if  we can find biological group processes by looking at differentially expressed genes between groups. For example, which genes are differentially expressed between the 'alive' or 'dead' group.
 
 - In the main menu select in box 3, section "Differential expression", **Differential Expression between two groups** and click next. In the next screen, use the T-test which is selected by default and click "alive (2 cat)" in the pulldown menu at group by and click submit. In the next adjustable settings panel all kinds of settings can be adjusted  but for now select "no" and "yes" for subsequently group 1 and 2 and click 'submit'. 
 
@@ -190,45 +190,25 @@ We have seen that MYCN expression has a clear clinical perspective.  Mostly you 
 
 ---------
 
-- In the generated gene list you can find  marker genes or genes playing a key role in Neuroblasto. However, it would be nice to find out if certain genes are over represenetd
+- In the generated gene list you can find  marker genes or genes playing a key role in Neuroblastoma. However, it would be of interest to find out if certain genes are overrepresented in e.g. Biological processes. In the the right menu next to the genelist, click on the button "geneset analysis". 
+- In the next screen select "KEGG" in the geneset collection pull down and click next;
+- In the next screen you find a collection off KEGG path were the genes from the analysis are over represented.
 
 
-
-
-
-
-
-
-Again from the box on the left, we can use a link to analyze the prognostic value of MYCN mRNA expression.  
-- Click in the left–upper menu of the **KaplanScanner** section the **MYCN (overall-2011/03)** link. 
-- Read above the graph which cut-off value is used to obtain two groups of high and low MYCN expression.
-
-The Kaplan Meier Scanner is a powerful tool in R2. This tool analyses the prognostic value of the expression level of an individual gene. In contrast to e.g. stage or MYCN amplification, expression data are not discrete (yes / no amplification), but a continuum of values. The question is then which expression value to take as a cut-off point to separate groups with ‘high’ and ‘low’ expression. Usually the average value or median value is taken. Within R2, however we can also make use of the Kaplan scanner. Within this analysis, every expression value in a series is used as cut-off point, after which the value that gives the most significant discrimination in a good and bad prognosis group is chosen.
-<br>
-
----------
-
-![](_static/images/R2d2_logo.png) **What is the 5-year survival for high and low MYCN expression?**
+![](_static/images/R2d2_logo.png) **Which KEGG pathway has is the most significant  ?**
 <br><br>
 
----------
- 
-Now let's compare this survival analysis to the survival analysis with a median or average expression value cut-off point. Underneath the graph you will find the Adjustable Settings box, where you can adjust your analysis.  
+- Click on the <span style="color: deepskyblue">**blue H**</span> which leads the user to an annotated KEGG map where uprelated genes are colored green and downregulated genes are colored red.
 
-- Switch to *median* in the **Cutoff mode** dropdown menu. Click **Redraw Graph**
-- Now analyze survival when we use *average* MYCN expression as **Cutoff mode**. Don't forget to redraw the graph.
- 
----------
-
-![](_static/images/R2d2_logo.png) **Which method gives the clearest prognostic groups? Is there a consequence for the statistics and P-value of the scanning method? 
-<br><br>
-
----------
+![](_static/images/R2d2_logo.png) **Which genes are remarkable espcially if you look at the genes which belong to the same complex.  ?**
 <br><br>
 
 
+- Also try the other <span style="color: deepskyblue">**blue G**</span> and <span style="color: Springgreen">**Green H**</span>.
 
-##### Using annotation and the Kaplan Meier curve
+
+
+### Using annotation and the Kaplan Meier curve
 In R2 the samples of a dataset can be annotated with meta-information, e.g clinical data or molecular biology parameters. Each group of annotated data is called a “Track” in R2. These tracks for a large variety of additional analysis and visualisation functions. To name a few, tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics.
 <br><br>
 Another valuable use of such tracks is to evaluate their prognostic value with a Kaplan Meier curve. We will now take a look at the above mentioned dataset that consists of 88 human neuroblastoma samples. <br>
@@ -258,6 +238,42 @@ Below the graph, you can change several settings in the Adjustable Settings box.
 
 ![](_static/images/R2d2_logo.png)**Do you observe a significant difference between the groups?**
 <br><br>
+
+
+
+
+### Kaplan Meier: Validating prognostic factors such as gene expression
+
+Again in box 3 from the main menu use the MYCN expression to investigate if there is a cut-off for the expression level  
+
+- Click in the left–upper menu of the **KaplanScanner** section the **MYCN (overall-2011/03)** link. 
+- Read above the graph which cut-off value is used to obtain two groups of high and low MYCN expression.
+
+The Kaplan Meier Scanner is a powerful tool in R2. This tool analyses the prognostic value of the expression level of an individual gene. In contrast to e.g. stage or MYCN amplification, expression data are not discrete (yes / no amplification), but a continuum of values. The question is then which expression value to take as a cut-off point to separate groups with ‘high’ and ‘low’ expression. Usually the average value or median value is taken. Within R2, however we can also make use of the Kaplan scanner. Within this analysis, every expression value in a series is used as cut-off point, after which the value that gives the most significant discrimination in a good and bad prognosis group is chosen.
+<br>
+
+---------
+
+![](_static/images/R2d2_logo.png) **What is the 5-year survival for high and low MYCN expression?**
+<br><br>
+
+---------
+ 
+Now let's compare this survival analysis to the survival analysis with a median or average expression value cut-off point. Underneath the graph you will find the Adjustable Settings box, where you can adjust your analysis.  
+
+- Switch to *median* in the **Cutoff mode** dropdown menu. Click **Redraw Graph**
+- Now analyze survival when we use *average* MYCN expression as **Cutoff mode**. Don't forget to redraw the graph.
+ 
+---------
+
+![](_static/images/R2d2_logo.png) **Which method gives the clearest prognostic groups? Is there a consequence for the statistics and P-value of the scanning method? 
+<br><br>
+
+---------
+<br><br>
+
+
+
 
 
 
