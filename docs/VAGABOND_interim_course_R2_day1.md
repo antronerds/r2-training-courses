@@ -60,6 +60,8 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
 * mRNA Microarray expression
 
 *Analysis used* 
+* Find Correlating Genes woth a singkle gene
+* Finding Differentially expressed genes
 * Kaplan Meier by annotated parameter
 
 <br>
@@ -84,7 +86,7 @@ If you see a different dataset selected, you can change the dataset as follows:
 ### Investigating singles genes / Expression of key genes
 * The button below brings you to the form in which you can submit your answers for section 1.2. 
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1AdLKLVAkgRFiQ_AEHwRyWu0gc3_UZ6XyT3G4KICGStQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1AdLKLVAkgRFiQ_AEHwRyWu0gc3_UZ6XyT3G4KICGStQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1</button> 
 <br>
 <br>
 It is known that the Amplification of the MYCN gene is evidently associated with a poor prognosis. Now we will analyze the mRNA expression of MYCN in the same dataset. We will use the R2 analysis module 'One Gene View'.  
@@ -112,8 +114,8 @@ We can show the relation more clearly by grouping the tumors in the 'One Gene Vi
 - Change this setting from single gene to *gene vs track*.
 - In the Adjustable Settings box on the second row, you now have to choose a **Track** by which you want to separate the samples. In the drop down menu, select *mycn-amp(cat)*. And click **Submit**. Check the plot.
 - Next select *alive*(cat 2) and click **Submit**. 
-- Optional 1: In this view, the samples are not ordered by their MYCN expression value by default. If you would want to adjust this, you could use the **Extra Graph Option** and choose the value *Track and Gene sort*.  
-- Optional 2: Click on the 'More settings sections' unfolds a new menu which enables the user to adapt the graphic parameters such as; font size , axis-with etc etc feel free to try them.  
+- In this view, the samples are not ordered by their MYCN expression value by default. If you would want to adjust this, you could use the **Extra Graph Option** and choose the value *Track and Gene sort*.  
+- Click on the 'More settings sections' unfolds a new menu which enables the user to adapt the graphic parameters such as; font size , axis-with etc etc feel free to try them.  
 <br>
  
 ---------
@@ -143,7 +145,7 @@ All the tumor samples in our dataset were analyzed by making sections of frozen 
 - Click on **Sample overview** at the upper right side of the screen. All samples of the dataset are available via the dropdown. 
 - Select *ITCC0001* and click on **View Sample**. Play with the magnifications (2x, 10x, 40x)
 - Go back to the tab with the grouped plot of the MYCN expression (N.B. you may close the other tabs) 
-- Below the graph for the MYCN gene, the table ‘Alternative Reporters’ shows that this gene is represented by 5 sets of reporters (probe sets) on the Affymetrix U133 Plus 2.0 microarray. Take a look at the signal intensities for the different reporters (the red numbers in brackets).  It's good to realize that genes could have more then one reporter for a given platform in this case the Affymetrix platform. By default, R2 chooses the reporter with the highest signal which is in ~99.9% of the cases teh most representive for a gene. For many platforms which use reporters the genome location is also added. Clicking on the R2_Tview link in the probeset verification box leads you to the genome browser where exact location of the reporters can investigate. 
+- Below the graph for the MYCN gene, the table ‘Alternative Reporters’ shows that this gene is represented by 5 sets of reporters (probe sets) on the Affymetrix U133 Plus 2.0 microarray. Take a look at the signal intensities for the different reporters (the red numbers in brackets).  It's good to realize that genes could have more then one reporter for a given platform in this case the Affymetrix platform. By default, R2 chooses the reporter with the highest signal which is in ~99.9% of the cases the most representive for a gene. For many platforms which use reporters the genome location is also added. Clicking on the R2_Tview link in the probeset verification box leads you to the genome browser where exact location of the reporters can investigate. 
 <br>
 
 ---------
@@ -155,21 +157,30 @@ All the tumor samples in our dataset were analyzed by making sections of frozen 
  
 ### Finding Correlating genes
 
-Many approaches have been conducted to target the MYCN gene, historically  as a transcription factor MYCN has been regarded as "undrugable". A way to identify downstream targets of MYCN which are possible drugable  is to find genes which show the same expression pattern is use the find correlating genes with a single gene.
+Many approaches have been conducted to target the MYCN gene, historically  as a transcription factor MYCN has been regarded as "undrugable". A way to identify downstream targets of MYCN which are possible drugable  is to find genes which show the same expression pattern is use the find correlating genes with a single gene analysis.
 
 - In the main menu select in box 3 "Find Correlating genes with a single gene" and click next.  Provide the mycn gene and click the reporter. In the corr cut-off field , change <span style="color: red">**0.05 to 0.01**</span>. and click submit.
-- In the next screen a table is generated splitted in a significant and negative and positive correlating genes. (**~2200 genes**). 
-- Click on the magnify symbols in the view column for both tables and generate graph with genes which are (inverse) correlated with the MYCN gene to get an impression.
+- In the next screen a table is generated splitted in a significant and negative and positive correlating genes. 
+
+---------
+
+![](_static/images/R2d2_logo.png) **Approximately, how many genes were found by the test?**
+<br><br>
+
+---------
+
+- Click on the magnify symbols in the view column for both tables and generate a graph with genes which are (inverse) correlated with the MYCN gene to get an impression.
 
 
 Of course we have some foreknowledge but it could be that there is a relation between the correlating genes with mycn and their chromesome position.
 
-- click on the "Chromsome map" in the right menu and investigate the table
-- To gain even more insight in what might me going on repeat teh analysis and in the adjustable settings menu, as correlation direction, only **negative** and click submit
+- click on the "Chromsome map" in the right menu and investigate the table.
+- 
+- To gain even more insight in what might me going on repeat the analysis and in the adjustable settings menu, as correlation direction, only **negative** and click submit
 ---------
 
 ![](_static/images/R2d2_logo.png) **Which genes are overrepresented with respect to their chromesome location. ?**
-<br><br>
+<br>
 
 ---------
 
@@ -184,9 +195,12 @@ We have seen that MYCN expression has a clear clinical perspective.  Mostly you 
 
 - In the main menu select in box 3, section "Differential expression", **Differential Expression between two groups** and click next. In the next screen, use the T-test which is selected by default and click "alive (2 cat)" in the pulldown menu at group by and click submit. In the next adjustable settings panel all kinds of settings can be adjusted  but for now select "no" and "yes" for subsequently group 1 and 2 and click 'submit'. 
 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1Iit16sf4mQxuUyZ9iyjHnJeeHrP-VAsCw5D-GdT83iI/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2</button>
 
-![](_static/images/R2d2_logo.png) **How many genes have been are differentially expressed between the alive "no" and "yes" group.. ?**
-<br><br>
+
+
+![](_static/images/R2d2_logo.png) **How many genes have been are differentially expressed between the alive "no" and "yes" group. ?**
+<br>
 
 ---------
 
@@ -195,14 +209,13 @@ We have seen that MYCN expression has a clear clinical perspective.  Mostly you 
 - In the next screen you find a collection off KEGG path were the genes from the analysis are over represented.
 
 
-![](_static/images/R2d2_logo.png) **Which KEGG pathway has is the most significant  ?**
+![](_static/images/R2d2_logo.png) **Which KEGG pathway is the most significant  ?**
 <br><br>
 
 - Click on the <span style="color: deepskyblue">**blue H**</span> which leads the user to an annotated KEGG map where uprelated genes are colored green and downregulated genes are colored red.
 
-![](_static/images/R2d2_logo.png) **Which genes are remarkable espcially if you look at the genes which belong to the same complex.  ?**
+![](_static/images/R2d2_logo.png) **Which genes are remarkable especially if you look at the genes which belong to the same complex.  ?**
 <br><br>
-
 
 - Also try the other <span style="color: deepskyblue">**blue G**</span> and <span style="color: Springgreen">**Green H**</span>.
 
@@ -223,7 +236,8 @@ This dataset is annotated for a number of clinical and molecular parameters. To 
 ![](_static/images/R2d2_logo.png)**What does a drop in the curves mean? And the little verticle tick-mark on the horizontal parts of the curves?**<br>
 **Scroll over the drops and the tick-marks of the curves to see clinical details of patients.**
 <br><br>
-![](_static/images/R2d2_logo.png)**What are the 5 year survival percentages for the different stages?**
+
+![](_static/images/R2d2_logo.png)~~What are the 5 year survival percentages for the different stages?~~
 <br>
 <br>
 
@@ -270,12 +284,12 @@ Now let's compare this survival analysis to the survival analysis with a median 
 <br><br>
 
 ---------
-<br><br>
+<br>
 
-- Another approach to find possible regulating genes is to use the groups based on the mycn expression cut-off value for further analysis. Below the Kaplan Meier graph , click on the "store as track"  button. In the next screen all the individual samples are lister each assiged to the "low" or "high" group. At the bottom you can store this Kaplan Meier Based group, in this example, we will store this track for Temporary (24hrs) but you can also store this track permanent. Click on the build set button. Now we can your this grouping in the many analysis modules R2 is offering.
+- Another approach to find possible regulating genes is to use the groups based on the mycn expression cut-off value for further analysis. Below the Kaplan Meier graph , click on the "store as track"  button. In the next screen all the individual samples are listed each assiged to the "low" or "high" group. At the bottom you can store this Kaplan Meier Based group, in this example, we will store this track for Temporary (24hrs) but you can also store this track permanent. Click on the build set button now the track is stored for furter usage.
 
-- Go to the "Find Differential Expression between two groups" , find the just stored track  you generated from the Kaplan Meier and click submit.  In next the screen select the low and high groupingvariables and click submit, now a list of Differentially Expressed genes have been found based on the Kaplan Meier MYCN values cut-off. Will wil leave it for here. These kind of tracks as a result of an analysis can be stored and used throughtout the many R2-analysis modules R2 is offering. 
 
+- Go to the "Find Differential Expression between two groups" , find the just stored track  you generated from the Kaplan Meier and click submit.  In next the screen select the low and high grouping variables and click submit, now a list of Differentially Expressed genes have been found based on the Kaplan Meier MYCN values cut-off. We will  leave it for here. These kind of tracks as a result of an analysis can be stored and used throughtout the many R2-analysis modules R2 is offering. 
 
 
 
