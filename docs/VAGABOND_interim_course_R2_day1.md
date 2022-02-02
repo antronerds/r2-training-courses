@@ -356,7 +356,7 @@ Two images on a row belong to one patient (e.g. 619-MES and 619-ADRN). As you ca
  <br>
  <br>
  
- For this analysis we will use one of the analysis tools of R2: Toplister. The Toplister can assess which genes show the most different expression values throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
+ For this analysis we will use one of the analysis tools of R2: Toplister. The toplister is a handy tool for a first start to analysis a given dataset. Particular, if you have a very poor dataset  clinical annoation. The Toplister can assess which genes show the most different expression values throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
  
  * Go to R2 by clicking the button below. The correct dataset containing 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
  <br>

@@ -15,6 +15,7 @@ Copyright (c) 2006-2022 Jan Koster
 
    VAGABOND_interim_course_R2_day1
    VAGABOND_interim_course_R2_day2
+   VAGABOND_snippets
 
 
 
