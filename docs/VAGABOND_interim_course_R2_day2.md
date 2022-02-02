@@ -170,9 +170,10 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
    ![](_static/images/structural_variants_selecting_toolbox.png "Figure 4: Opening the NIH parameter settings toolbox.")
  	
    [**Figure 4: Opening the NIH parameter settings toolbox.**](_static/images/structural_variants_selecting_toolbox.png)
+
+
    
-   
-    ![](_static/images/NIHepiRoadmap.png "Figure 5: Annotation colors with the chromatin state description.")
+   ![](_static/images/NIHepiRoadmap.png "Figure 5: Annotation colors with the chromatin state description.")
  	
    [**Figure 5: Annotation colors with the chromatin state description.**](_static/images/NIHepiRoadmap.png)
    

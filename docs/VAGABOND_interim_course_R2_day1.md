@@ -60,7 +60,7 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
 * mRNA Microarray expression
 
 *Analysis used* 
-* Find Correlating Genes woth a singkle gene
+* Find Correlating Genes with a single gene
 * Finding Differentially expressed genes
 * Kaplan Meier by annotated parameter
 
@@ -97,6 +97,7 @@ It is known that the Amplification of the MYCN gene is evidently associated with
 
 <br>
 The scatter plot in the central diagram shows the mRNA expression values of MYCN for all tumors of the 88 patients, next to each other. The samples are ordered according to increasing MYCN expression.  
+
 
 - The expression is given on a log scale by default. To switch to a linear scale, scroll down to the Adjustable Settings box under th eplot. In the field **Transformation**, select *None* and click **Submit**. 
 - Directly underneath the plot, tracks of this dataset are shown, with the values color codes. You can see the tracks for e.g. agegroup, INSS stage and MYCN amp(lification). Hover with your mouse over the different blocks.
@@ -142,10 +143,11 @@ In the box on the left side of the page, more information can be gathered.
 <br>
 All the tumor samples in our dataset were analyzed by making sections of frozen tumor tissue and selecting sections with more than 80% tumor cells under the microscope. The sections, from which the RNA used for this microarray analysis was isolated, can be seen in the Sample overview.  
 
+
 - Click on **Sample overview** at the upper right side of the screen. All samples of the dataset are available via the dropdown. 
-- Select *ITCC0001* and click on **View Sample**. Play with the magnifications (2x, 10x, 40x)
+- Select **ITCC0001** and click on **View Sample**. Play with the magnifications (2x, 10x, 40x)
 - Go back to the tab with the grouped plot of the MYCN expression (N.B. you may close the other tabs) 
-- Below the graph for the MYCN gene, the table ‘Alternative Reporters’ shows that this gene is represented by 5 sets of reporters (probe sets) on the Affymetrix U133 Plus 2.0 microarray. Take a look at the signal intensities for the different reporters (the red numbers in brackets).  It's good to realize that genes could have more then one reporter for a given platform in this case the Affymetrix platform. By default, R2 chooses the reporter with the highest signal which is in ~99.9% of the cases the most representive for a gene. For many platforms which use reporters the genome location is also added. Clicking on the R2_Tview link in the probeset verification box leads you to the genome browser where exact location of the reporters can investigate. 
+- Below the graph for the MYCN gene, the table ‘Alternative Reporters’ shows that this gene is represented by 5 sets of reporters (probe sets) on the Affymetrix U133 Plus 2.0 microarray. Take a look at the signal intensities for the different reporters (the red numbers in brackets).  It's good to realize that genes could have more then one reporter for a given platform in this case the Affymetrix platform. By default, R2 chooses the reporter with the highest signal which is in ~99.9% of the cases the most representive for a gene. For many platforms which use reporters the genome location is also added. Clicking on the R2_TView link in the probeset verification box leads you to the genome browser where the exact location of the reporters can be investigated. 
 <br>
 
 ---------
@@ -157,10 +159,10 @@ All the tumor samples in our dataset were analyzed by making sections of frozen 
  
 ### Finding Correlating genes
 
-Many approaches have been conducted to target the MYCN gene, historically  as a transcription factor MYCN has been regarded as "undrugable". A way to identify downstream targets of MYCN which are possible drugable  is to find genes which show the same expression pattern is use the find correlating genes with a single gene analysis.
+Many approaches have been conducted to target the MYCN gene, historically  as a transcription factor MYCN has been regarded as "undrugable". A way to identify downstream targets of MYCN which are possible drugable  is to find genes which show the same expression pattern, is the find correlating genes with a single gene analysis module.
 
 - In the main menu select in box 3 "Find Correlating genes with a single gene" and click next.  Provide the mycn gene and click the reporter. In the corr cut-off field , change <span style="color: red">**0.05 to 0.01**</span>. and click submit.
-- In the next screen a table is generated splitted in a significant and negative and positive correlating genes. 
+- In the next screen a table is generated; splitted in a significant negative and positive correlating gene table. 
 
 ---------
 
@@ -174,8 +176,8 @@ Many approaches have been conducted to target the MYCN gene, historically  as a 
 
 Of course we have some foreknowledge but it could be that there is a relation between the correlating genes with mycn and their chromesome position.
 
-- click on the "Chromsome map" in the right menu and investigate the table.
-- 
+- Click on the "Chromsome map" in the right menu and investigate the table.
+
 - To gain even more insight in what might me going on repeat the analysis and in the adjustable settings menu, as correlation direction, only **negative** and click submit
 ---------
 
@@ -184,7 +186,7 @@ Of course we have some foreknowledge but it could be that there is a relation be
 
 ---------
 
-In neuroblastoma MYCN amplification and loss of the 1p arm is a well established connection.  It is known that tumor suppressor genes are located on chromosome 1 and a 1p loss of heterozygosity has a benifitial effect for the tumor. 
+In neuroblastoma MYCN amplification and loss of the 1p arm is a well established connection.  It is known that tumor suppressor genes are located on chromosome 1 and a 1p loss of heterozygosity (LOH) has a benifitial effect for the tumor. 
 
 
 
@@ -237,7 +239,7 @@ This dataset is annotated for a number of clinical and molecular parameters. To 
 **Scroll over the drops and the tick-marks of the curves to see clinical details of patients.**
 <br><br>
 
-![](_static/images/R2d2_logo.png)~~What are the 5 year survival percentages for the different stages?~~
+![](_static/images/R2d2_logo.png)<del>What are the 5 year survival percentages for the different stages?</del>
 <br>
 <br>
 
@@ -286,12 +288,13 @@ Now let's compare this survival analysis to the survival analysis with a median 
 ---------
 <br>
 
-- Another approach to find possible regulating genes is to use the groups based on the mycn expression cut-off value for further analysis. Below the Kaplan Meier graph , click on the "store as track"  button. In the next screen all the individual samples are listed each assiged to the "low" or "high" group. At the bottom you can store this Kaplan Meier Based group, in this example, we will store this track for Temporary (24hrs) but you can also store this track permanent. Click on the build set button now the track is stored for furter usage.
+### Using tracks as result of an analysis
 
 
-- Go to the "Find Differential Expression between two groups" , find the just stored track  you generated from the Kaplan Meier and click submit.  In next the screen select the low and high grouping variables and click submit, now a list of Differentially Expressed genes have been found based on the Kaplan Meier MYCN values cut-off. We will  leave it for here. These kind of tracks as a result of an analysis can be stored and used throughtout the many R2-analysis modules R2 is offering. 
+- Another approach to find possible regulating genes is to use the groups based on the mycn expression cut-off value for further analysis. Below the Kaplan Meier graph , click on the "store as track"  button. In the next screen all the individual samples are listed each assiged to the "low" or "high" group. At the bottom you can store the two groups based on the Kaplan Meier, in this example, we will store this track for Temporary (24hrs) but you can also store this track permanent. Click on the build set button now the track is stored for further usage.
 
 
+- Go to the "Find Differential Expression between two groups" , find the just stored track  you generated from the Kaplan Meier and click submit.  In next the screen select the low and high grouping variables and click submit, now a list of Differentially Expressed genes have been found based on the Kaplan Meier MYCN values cut-off. We will  leave it for here. These kind of tracks as a result of an analysis can be stored and used throughout the many R2-analysis modules in R2.
 
 
 
