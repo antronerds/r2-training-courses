@@ -6,14 +6,14 @@ Finding causes in Neuroblastoma genomics data
 *Introduction to bioinformatics tools using the web-based genomics analysis and visualization platform R2 and neuroblastoma data*
 
 This resource is located online at http://r2-training-courses.readthedocs.io  
-  
+
 Introduction
 ------------
 
 Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. For instance, in colorectal cancer a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
 
   ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression.")	
-  
+
   [**Figure 1: Mutation paths during cancer progression**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
 
@@ -23,9 +23,9 @@ Neuroblastoma is a childhood tumor of the peripheral sympathetic system. Primary
 Neuroblastoma patients are classified by The International Neuroblastoma Staging System, the INSS. The increment in stages does not reflect progression of disease, as is the case for colon cancer, but represents different characteristics of the disease. Stage 1, 2 and 3 neuroblastomas have a very good prognosis. Stage 4 neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease. About 40% of stage 4 neuroblastoma have an amplification of the MYCN oncogene. This implies that instead of two DNA copies, each neuroblastoma cell has 30 to 100 copies of the MYCN gene. In addition to stage 1, 2, 3, and 4 neuroblastomas, there is the unusual stage 4S neuroblastoma, which is metastasized but goes into spontaneous regression. Over the last twenty years, the outcome for stage 4 neuroblastoma patients has not substantially improved.<br>
 <br>
   ![](_static/images/Vagabond/Vagabond_lowvshighstages_neuroblastoma.png "Figure 2: Low stage versus high stage neuroblastoma")	
-  
+
   [**Figure 2: Low stage versus high stage neuroblastoma**](_static/images/Vagabond/Vagabond_lowvshighstages_neuroblastoma.png)
-  
+
 Extensive research into mutation mechanisms in neuroblastoma has been done (also in the AMC Oncogenomics group). Unfortunately, such a mechanism has not been found for this often deadly childhood tumor.
 
 
@@ -80,7 +80,7 @@ If you see a different dataset selected, you can change the dataset as follows:
 - Click on the selected dataset, which will make a grid popup, showing all the datasets that are available to you withing the platform. Each row is one dataset and each column shows particular characteristics of that dataset. You can filter for specific datasets with the headers of the columns. <br>
 - In the textfield of column **Author** type *Versteeg* and in the column of samples **N** type 88.
 - Click on the **Select** button in front of the correct dataset. 
- 
+
 ---------
 
 ### Investigating singles genes / Expression of key genes
@@ -118,7 +118,7 @@ We can show the relation more clearly by grouping the tumors in the 'One Gene Vi
 - In this view, the samples are not ordered by their MYCN expression value by default. If you would want to adjust this, you could use the **Extra Graph Option** and choose the value *Track and Gene sort*.  
 - Click on the 'More settings sections' unfolds a new menu which enables the user to adapt the graphic parameters such as; font size , axis-with etc etc feel free to try them.  
 <br>
- 
+
 ---------
 
  ![](_static/images/R2d2_logo.png)**What additional observations can you make from the graphs?**
@@ -135,7 +135,7 @@ Now we will use links on this page that lead to additional analyses. To learn ba
 <br><br>
 
 ---------
- 
+
 In the box on the left side of the page, more information can be gathered. 
 - Click on the hyperlinked *MYCN* below **Pubsniffer**. In a new tab, Pubsniffer shows how many papers in PubMed mention MYCN in their abstracts or the words ‘MYCN’ and ‘neuroblastoma’. Click on the number to see these papers.
 - Go back to the open tab with the grouped plot for MYCN expression of our dataset.  
@@ -147,7 +147,7 @@ All the tumor samples in our dataset were analyzed by making sections of frozen 
 - Click on **Sample overview** at the upper right side of the screen. All samples of the dataset are available via the dropdown. 
 - Select **ITCC0001** and click on **View Sample**. Play with the magnifications (2x, 10x, 40x)
 - Go back to the tab with the grouped plot of the MYCN expression (N.B. you may close the other tabs) 
-- Below the graph for the MYCN gene, the table ‘Alternative Reporters’ shows that this gene is represented by 5 sets of reporters (probe sets) on the Affymetrix U133 Plus 2.0 microarray. Take a look at the signal intensities for the different reporters (the red numbers in brackets).  It's good to realize that genes could have more then one reporter for a given platform in this case the Affymetrix platform. By default, R2 chooses the reporter with the highest signal which is in ~99.9% of the cases the most representive for a gene. For many platforms which use reporters the genome location is also added. Clicking on the R2_TView link in the probeset verification box leads you to the genome browser where the exact location of the reporters can be investigated. 
+- Below the graph for the MYCN gene, the table ‘Alternative Reporters’ shows that this gene is represented by 5 sets of reporters (probe sets) on the Affymetrix U133 Plus 2.0 microarray. Take a look at the signal intensities for the different reporters (the red numbers in brackets).  It's good to realize that genes could have more then one reporter for a given platform in this case the Affymetrix platform. Also in RNAseq datasets, if transcripts (isoforms) are annotated, this can be very relevant. By default, R2 chooses the reporter with the highest signal which is in ~99.9% of the cases the most representive for a gene. For many platforms which use reporters the genome location is also added. Clicking on the R2_TView link in the probeset verification box leads you to the genome browser where the exact location of the reporters can be investigated. 
 <br>
 
 ---------
@@ -156,13 +156,13 @@ All the tumor samples in our dataset were analyzed by making sections of frozen 
 <br><br>
 
 ---------
- 
+
 ### Finding Correlating genes
 
-Many approaches have been conducted to target the MYCN gene, historically  as a transcription factor MYCN has been regarded as "undrugable". A way to identify downstream targets of MYCN which are possible drugable  is to find genes which show the same expression pattern, is the find correlating genes with a single gene analysis module.
+Many approaches have been conducted to target the MYCN gene, historically as a transcription factor MYCN has been regarded as "undrugable". A way to identify downstream targets of MYCN which may be potentially drugable, is to identify genes which show a similar expression pattern. In R2 these can be identified by using the 'correlating genes with a single gene' analysis module.
 
-- In the main menu select in box 3 "Find Correlating genes with a single gene" and click next.  Provide the mycn gene and click the reporter. In the corr cut-off field , change <span style="color: red">**0.05 to 0.01**</span>. and click submit.
-- In the next screen a table is generated; splitted in a significant negative and positive correlating gene table. 
+- In the main menu select in box 3 "Find Correlating genes with a single gene" and click next.  Provide the MYCN gene and make sure to click on the reporter in the dropdown. In the 'corr cut-off' field , change <span style="color: red">**0.05 to 0.01**</span>. and click submit.
+- In the next screen a set of tables is generated; split in a negative and positive correlating gene table. 
 
 ---------
 
@@ -171,29 +171,29 @@ Many approaches have been conducted to target the MYCN gene, historically  as a 
 
 ---------
 
-- Click on the magnify symbols in the view column for both tables and generate a graph with genes which are (inverse) correlated with the MYCN gene to get an impression.
+- All identified genes in the table are linked to a detailed view. Click on the magnify symbols in the view column for both tables and generate a graph with genes which are (inverse) correlated with the MYCN gene to get an impression.
 
 
-Of course we have some foreknowledge but it could be that there is a relation between the correlating genes with mycn and their chromesome position.
+Inspecting genes one by one quickly becomes a dull task. We can also analyze the complete results in some of the provided analysis options. Let's have a look at the chromosomal locations of our identified genes for this section. For this type of question, R2 has the 'Chromosome Map'. 
 
-- Click on the "Chromsome map" in the right menu and investigate the table.
+- Click on the "Chromosome map" in the right menu and investigate the result table. If you realize that MYCN is located on chromosome 2, did you expect to see the result you obtained (which chromosome has the most significant p-value)?
 
-- To gain even more insight in what might me going on repeat the analysis and in the adjustable settings menu, as correlation direction, only **negative** and click submit
+- One of the nice features in R2, is that you can easily explore results furter. Go back to the correlation analysis page and scroll to the bottom. Here you can make adaptations to the analysis. To gain more insight in what might be going on, in the adjustable settings menu,  change the correlation direction to only **negative** and click submit. Perform the chromosome map analysis again. 
 ---------
 
-![](_static/images/R2d2_logo.png) **Which genes are overrepresented with respect to their chromesome location. ?**
+![](_static/images/R2d2_logo.png) **Where are overrepresented genes primarily locatedwith respect to their chromosome location. ?**
 <br>
 
 ---------
 
-In neuroblastoma MYCN amplification and loss of the 1p arm is a well established connection.  It is known that tumor suppressor genes are located on chromosome 1 and a 1p loss of heterozygosity (LOH) has a benifitial effect for the tumor. 
+In neuroblastoma, at the DNA level, MYCN amplification and loss of 1 copy of the chromosome 1p arm is a well established connection.  It is described in literature that a number of tumor suppressor genes are located on chromosome 1p. 1p loss of heterozygosity (LOH) is frequently observed in MYCN amplified tumors. Interestingly, we can even 'see' this loss in the mRNA profiles, since at least a proporion of the genes show reduced expression in patients with elevated MYCN expression. 
 
 
 
 ### Finding Differential expressed genes
 
 
-We have seen that MYCN expression has a clear clinical perspective.  Mostly you don't want to investigate  a single gene but perform a test to see if  we can find biological group processes by looking at differentially expressed genes between groups. For example, which genes are differentially expressed between the 'alive' or 'dead' group.
+We have seen that MYCN expression has a clear preference for some chromosomal regions in the previous analysis. Next to looking for patterns that resemble the expression of a gene, you can also investigate the expression patterns between groups of patients in a differential expression analysis.  Can we find biological processes by looking at differentially expressed genes between groups. For example, which genes are differentially expressed between the 'alive' or 'dead' group.
 
 - In the main menu select in box 3, section "Differential expression", **Differential Expression between two groups** and click next. In the next screen, use the T-test which is selected by default and click "alive (2 cat)" in the pulldown menu at group by and click submit. In the next adjustable settings panel all kinds of settings can be adjusted  but for now select "no" and "yes" for subsequently group 1 and 2 and click 'submit'. 
 
@@ -210,26 +210,25 @@ We have seen that MYCN expression has a clear clinical perspective.  Mostly you 
 - In the next screen select "KEGG" in the geneset collection pull down and click next;
 - In the next screen you find a collection off KEGG path were the genes from the analysis are over represented.
 
-
 ![](_static/images/R2d2_logo.png) **Which KEGG pathway is the most significant  ?**
 <br><br>
 
-- Click on the <span style="color: deepskyblue">**blue H**</span> which leads the user to an annotated KEGG map where uprelated genes are colored green and downregulated genes are colored red.
+- Click on the <span style="color: deepskyblue">**blue A**</span> which leads the user to an annotated KEGG map where uprelated genes are colored green and downregulated genes are colored red.
 
 ![](_static/images/R2d2_logo.png) **Which genes are remarkable especially if you look at the genes which belong to the same complex.  ?**
 <br><br>
 
-- Also try the other <span style="color: deepskyblue">**blue G**</span> and <span style="color: Springgreen">**Green H**</span>.
+- Also try the other <span style="color: deepskyblue">**blue H**</span>.
 
 
 
 ### Using annotation and the Kaplan Meier curve
-In R2 the samples of a dataset can be annotated with meta-information, e.g clinical data or molecular biology parameters. Each group of annotated data is called a “Track” in R2. These tracks for a large variety of additional analysis and visualisation functions. To name a few, tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics.
+In R2 the samples of a dataset can be annotated with meta-information, e.g clinical data or molecular biology parameters. Each group of annotated data is called a “Track” in R2. These tracks can be informative / useful for a large variety of additional analysis and visualisation functions. To name a few, tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics.
 <br><br>
 Another valuable use of such tracks is to evaluate their prognostic value with a Kaplan Meier curve. We will now take a look at the above mentioned dataset that consists of 88 human neuroblastoma samples. <br>
-This dataset is annotated for a number of clinical and molecular parameters. To get a first look at some characteristics of this childhood tumor, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene.
+This dataset is annotated for a number of clinical and molecular parameters. To get an impression of some characteristics of this childhood tumor, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene.
 
-- Use the dropdown in box 3 to select the correct Kaplan Meier analysis: *Kaplan Meier by annotated parameter*.
+- Go back to the main page and use the dropdown in box 3 to select the correct Kaplan Meier analysis: *Kaplan Meier by annotated parameter*.
 - We are going to separate the patients based on the INSS staging system, that was explained in the introduction of neuroblastoma in the beginning. Choose for **Type of Survival** the value *overall-c1103* for the **Track** setting, select the value *inss (cat 5)*. Click **Next**.
 - The Kaplan Meier curves appear.  <br><br>
 
@@ -239,7 +238,7 @@ This dataset is annotated for a number of clinical and molecular parameters. To 
 **Scroll over the drops and the tick-marks of the curves to see clinical details of patients.**
 <br><br>
 
-![](_static/images/R2d2_logo.png)<del>What are the 5 year survival percentages for the different stages?</del>
+![](_static/images/R2d2_logo.png)**What are the 5 year survival percentages for the different stages? (tip: you can regenerate the graph with e.g. up to 60 months)**
 <br>
 <br>
 
@@ -247,7 +246,7 @@ This dataset is annotated for a number of clinical and molecular parameters. To 
 
 Below the graph, you can change several settings in the Adjustable Settings box. If you change settings, don't forget to click the button **Redraw Graph**.
 
-* Now select *agegroup* as prognostic value under de setting **Track**, click **Redraw Graph**.
+* Now select *age_group* as prognostic value under de setting **Track**, and remove the 60 from the 'only draw up to' and click **Redraw Graph**.
 * Do the same for MYCN amplification with the track *mycn_amp (cat2)*.
 
 ---------
@@ -260,29 +259,30 @@ Below the graph, you can change several settings in the Adjustable Settings box.
 
 ### Kaplan Meier: Validating prognostic factors such as gene expression
 
-Again in box 3 from the main menu use the MYCN expression to investigate if there is a cut-off for the expression level  
+Go back to the main page. We will now investigate if MYCN expression can be used to segregate our patient cohort in 2 groups that coincide with a difference in survival percentage.  
 
-- In box 3, select "Kaplan Meier by Gene Expression" and click next. 
+- In box 3, select "Kaplan Meier by Gene Expression" and click next.
+- Enter the MYCN gene and select 'overall' as Type of survival. 
 - Read above the graph which cut-off value is used to obtain two groups of high and low MYCN expression.
 
-The Kaplan Meier Scanner is a powerful tool in R2. This tool analyses the prognostic value of the expression level of an individual gene. In contrast to e.g. stage or MYCN amplification, expression data are not discrete (yes / no amplification), but a continuum of values. The question is then which expression value to take as a cut-off point to separate groups with ‘high’ and ‘low’ expression. Usually the average value or median value is taken. Within R2, however we can also make use of the Kaplan scanner. Within this analysis, every expression value in a series is used as cut-off point, after which the value that gives the most significant discrimination in a good and bad prognosis group is chosen.
+The Kaplan Meier Scanner is a powerful tool in R2. This tool analyses the prognostic value of the expression level of an individual gene. In contrast to e.g. stage or MYCN amplification, expression data are not discrete (yes / no amplification), but a continuum of values. The question is then which expression value to take as a cut-off point to separate groups with ‘high’ and ‘low’ expression. In many publications, the median value is taken as a separation between high and low expression. This however does not take into account that potentially a sub-group of the patients drives the separation. Within R2, we can make use of the to called Kaplan scanner. Within this analysis, every expression value in a series is used as cut-off point (scanned) after which the value that gives the most significant discrimination in a good and bad prognosis group is chosen.
 <br>
 
 ---------
 
-![](_static/images/R2d2_logo.png) **What is the 5-year survival for high and low MYCN expression?**
+![](_static/images/R2d2_logo.png) **What is the survival chance for high and low MYCN expression, as assessed by the kaplan scan (use the extreme right values)?**
 <br><br>
 
 ---------
- 
+
 Now let's compare this survival analysis to the survival analysis with a median or average expression value cut-off point. Underneath the graph you will find the Adjustable Settings box, where you can adjust your analysis.  
 
 - Switch to *median* in the **Cutoff mode** dropdown menu. Click **Redraw Graph**
 - Now analyze survival when we use *average* MYCN expression as **Cutoff mode**. Don't forget to redraw the graph.
- 
+
 ---------
 
-![](_static/images/R2d2_logo.png) **Which method gives the clearest prognostic groups? Is there a consequence for the statistics and P-value of the scanning method?** 
+![](_static/images/R2d2_logo.png) **Which method gives the clearest prognostic groups (best separation)? Is there a consequence for the statistics and P-value using the scanning method?** 
 <br><br>
 
 ---------
@@ -290,11 +290,14 @@ Now let's compare this survival analysis to the survival analysis with a median 
 
 ### Using tracks as result of an analysis
 
+If you are 'logged in' with an account in R2, then you can also create personal grouping variables, that can be used later on. In this way you can extend R2 with information that is useful for yourself.
 
-- Another approach to find possible regulating genes is to use the groups based on the mycn expression cut-off value for further analysis. Below the Kaplan Meier graph , click on the "store as track"  button. In the next screen all the individual samples are listed each assiged to the "low" or "high" group. At the bottom you can store the two groups based on the Kaplan Meier, in this example, we will store this track for Temporary (24hrs) but you can also store this track permanent. Click on the build set button now the track is stored for further usage.
+
+- Another approach to find possible regulating genes is to use the groups based on the mycn expression cut-off value for further analysis. Below the Kaplan Meier graph, click on the "store as track"  button. In the next screen all the individual samples are listed each assigned to the "low" or "high" group. At the bottom you can store the two groups based on the Kaplan Meier, in this example, we will store this track for Temporary (24hrs) but you can also store this track permanent. Click on the build set button now the track is stored for further usage.
 
 
-- Go to the "Find Differential Expression between two groups" , find the just stored track  you generated from the Kaplan Meier and click submit.  In next the screen select the low and high grouping variables and click submit, now a list of Differentially Expressed genes have been found based on the Kaplan Meier MYCN values cut-off. We will  leave it for here. These kind of tracks as a result of an analysis can be stored and used throughout the many R2-analysis modules in R2.
+- Go back to the main page. Select the "Find Differential Expression between two groups" , On the next page select the grouping variable that you just stored from the Kaplan Meier Scanner and click submit.  In next the screen select the low and high grouping variables and click submit, now a list of Differentially Expressed genes have been found based on the Kaplan Meier MYCN values cut-off. These kind of tracks as a result of an analysis can be stored and used throughout the many R2-analysis modules in R2.
+- ...
 
 
 
@@ -308,94 +311,94 @@ We have seen several characteristics of neuroblastoma patients that act as progn
 ![](_static/images/Vagabond/Vagabond_Neuroblastoma_Relapse.png "Figure 3: Bright field image of isogenic cell line pairs.")
  	
 [**Figure 3: Bright field image of isogenic cell line pairs.**](_static/images/Vagabond/Vagabond_Neuroblastoma_Relapse.png)
-  
-  
+
+
 The big question now is: if and why a few neuroblastoma cells are able to escpape the treatment.  
 New neuroblastoma patient material showed interesting morphological features in the tumor tissue. From several neuroblastoma patients multiple cell lines were obtained from the same biopsy. These cell lines share genetic defects and are therefore called *isogenic* cell line pairs.  
-  
+
 Remarkably, in each patient two *morphologically differing cell types* were observed. For three patients (identified by the numbers 619, 717 and 700) a microscopy image of each pair is provided below. 
- 
+
    ![](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure 4: Bright field image of isogenic cell line pairs.")
  	
    [**Figure 4: Bright field image of isogenic cell line pairs.**](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png)
- 
+
  * The button below brings you to the form in which you can submit your answers for section 1.3
-  
+
   <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc0dGfEl9zDS7Yh-ZtrcKAn4IVgcwNxsZKNjQQtTj35JjgQng/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button> 
   <br>
   <br>
-  
+
 Two images on a row belong to one patient (e.g. 619-MES and 619-ADRN). As you can see, the first image of the first patient  shows a strong resemblance to the first image of the other two patients. Same for the second image.   
- 
- ---------
- 
+
+---------
+
    ![](_static/images/R2d2_logo.png)**What do you note about the morphology of the cell lines?**
  <br><br>
- 
- ---------
- 
+
+---------
+
  Most neuroblastomas are located in the abdomen and are associated with adrenal glands or sympathetic ganglia. Cells of the sympatho-adrenal lineage develops from the neural crest, undergoing an Epithelial-to-Mesenchymal Transition as shown below.
- 
+
  ![](_static/images/Vagabond/Vagabond_Development_of_the_sympatho-adrenal_lineage_from_neural_crest.png "Figure 5: Development of the sympatho-adrenal lineage from the neural crest")
   	
  [**Figure 5: Development of the sympatho-adrenal lineage from the neural crest**](_static/images/Vagabond/Vagabond_Development_of_the_sympatho-adrenal_lineage_from_neural_crest.png)
-   
 
- 
+
+
  We profiled the mRNA expression of genes using Affymetrix mRNA chips of these pairs and of a previously established neuroblastoma cell line that after culturing gave rise to two very divergent phenotypes. We are now going to take a look at the differentially expressed genes between the morphologically differing cell types. 
- 
- 
+
+
  *Data used:*  
    * Cell lines recently derived from three different patients. Two morphologically different looking cells were taken per patient. This dataset is combined with two classical Neuroblastoma cell lines that showed this different morphology as well. 
-   
+
  *Techniques used:*  
  * mRNA Microarray expression
- 
+
  *Analysis used*  
  * Toplister: unsupervised gene selection
  * Unsupervised hierarchical clustering
  * Heatmap visualization
- 
+
  <br>
  <br>
- 
+
  For this analysis we will use one of the analysis tools of R2: Toplister. The toplister is a handy tool for a first start to analysis a given dataset. Particular, if you have a very poor dataset  clinical annoation. The Toplister can assess which genes show the most different expression values throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
- 
+
  * Go to R2 by clicking the button below. The correct dataset containing 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
  <br>
- 
+
  <form name="ps_avgpres_gse90803geo8_u133p2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
    <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
    <button type="submit" class="course r2submit" >Go to R2</button>
  </form>  
  <br>
  <br>
- 
- 
+
+
  #### Finding and visualizing genes that behave differently within a dataset
- 
+
  Genes that have a large variation in gene expression within one dataset are possibly interesting to look into. They might be able to explain different phenotypes within the dataset.
- 
+
  * Select *Toplister (Gene filter stdev)* as the type of analysis in box **3** from the dropddown menu (- scroll almost all the way down. You will find it listed under the header *Meta analyses*). Toplister will find the 100 genes that have the largest variation in gene expression among these 8 cell lines. 
  * Click **Next**. Leave the settings as is, and click **Next** again. A list of genes appears.  
-  
- ---------
- 
+
+---------
+
    ![](_static/images/R2d2_logo.png)**Do you recognize any genes from figure 5 when you scroll down through the list? I.e. genes that come into play in the development of the sympatho-adrenal lineage from the neural crest?**
  <br><br>
 
- ---------
+---------
 
 On the right side of the page you can find several buttons that allow you to perform further analyses with the list of genes that you just obtained with Toplister. 
  - Click on **Heatmap(zscore)**
- 
+
 Here you can choose to perform an additional analysis. The heatmap visualization produces a grid in which the samples are placed horizontally, and the genes from the Toplister list are placed vertically. One little colored square represents the expression value (transformed into a z-score) of the respective sample for the respective gene. A high z-score is here colored in red, a low z-score in blue, as you can see from the color bar underneath the heatmap. 
 This way we can see which samples show relative low expression of the gene and which ones a relative high expression of the gene.  
 
 You can also see that samples group together that show similar expression for certain genes. A hierarchical clustering algorithm looks at the z-score profiles of the samples and calculates which samples show similar profiles. The heatmap is reordered, such that the samples that show similar expression profiles cluster together and the ones that show different expression are positioned further away from each other. The same holds true for the genes. The clustering algorithm shows the genes together that show similar behavior in the cells.  
 
 ---------
- 
+
    ![](_static/images/R2d2_logo.png)**Roughly how many groups of samples do you see in the heatmap, showing similar expression profiles within that group? Is this what you expected?**
  <br><br>
 
@@ -404,15 +407,15 @@ You can also see that samples group together that show similar expression for ce
 Above the heatmap you can see two tracks of this dataset: cell_type and pairs. The cell_type track shows for each sample to which of the two morphological subtypes each sample belongs. The pairs track shows to which patient the sample belongs. 
 
 ---------
- 
+
    ![](_static/images/R2d2_logo.png)**When you hover your mouse over the squares of the tracks, you can see the detailed information of the sample. What feature determines the clustering of the samples?**  
-   
+
  (N.b. the color choices of the tracks are independent from the color scheme that is used for the heatmap grid. Check what the blue color and the orange color signifies in the cell_type track)
  <br><br>
 
 ---------
 
-  
+
 #### Which genes make a difference? Creating signatures
 
 
@@ -429,7 +432,7 @@ We have identified two different types of cells that occur within the same patie
 *Analysis used*  
 * Differential Expression: supervised gene selection
 * Gene Ontology Analysis: overrepresentation calculation
- 
+
 <br>
 <br>
 
@@ -438,7 +441,7 @@ We have identified two different types of cells that occur within the same patie
 <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSee9vNt1hJuXrIAgO6feKHMCu-ASxDNiFeKqfJz5PrzuS6Zxg/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.4</button> 
 <br>
 <br>
-  
+
 * Go to the main page of R2 by clicking the button below
 
 <form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
@@ -513,8 +516,7 @@ In R2 there are many more sets of genes that have been found to be implemented i
 <br>
 
  
- 
------ 
- This concludes our series of tasks for today. If you would like to use R2 for your research in the future, then just visit http://r2.amc.nl and get started. Upon free registration, additional features become available. Thank you for your attention and we hope that you have enjoyed this microarray practical.
 
+-----
+ This concludes our series of tasks for today. If you would like to use R2 for your research in the future, then just visit http://r2.amc.nl and get started. Upon free registration, additional features become available. Thank you for your attention and we hope that you have enjoyed this microarray practical.
 
