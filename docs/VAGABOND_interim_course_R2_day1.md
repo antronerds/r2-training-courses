@@ -199,10 +199,10 @@ We have seen that MYCN expression has a clear preference for some chromosomal re
 
 <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1Iit16sf4mQxuUyZ9iyjHnJeeHrP-VAsCw5D-GdT83iI/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2</button>
 
-
+---------
 
 ![](_static/images/R2d2_logo.png) **How many genes have been are differentially expressed between the alive "no" and "yes" group. ?**
-<br>
+<br><br>
 
 ---------
 
@@ -210,13 +210,21 @@ We have seen that MYCN expression has a clear preference for some chromosomal re
 - In the next screen select "KEGG" in the geneset collection pull down and click next;
 - In the next screen you find a collection off KEGG path were the genes from the analysis are over represented.
 
+---------
+
 ![](_static/images/R2d2_logo.png) **Which KEGG pathway is the most significant  ?**
 <br><br>
 
-- Click on the <span style="color: deepskyblue">**blue A**</span> which leads the user to an annotated KEGG map where uprelated genes are colored green and downregulated genes are colored red.
+---------
+
+Click on the <span style="color: deepskyblue">**blue A**</span> which leads the user to an annotated KEGG map where uprelated genes are colored green and downregulated genes are colored red.
+
+---------
 
 ![](_static/images/R2d2_logo.png) **Which genes are remarkable especially if you look at the genes which belong to the same complex.  ?**
 <br><br>
+
+---------
 
 - Also try the other <span style="color: deepskyblue">**blue H**</span>.
 
@@ -238,6 +246,10 @@ This dataset is annotated for a number of clinical and molecular parameters. To 
 **Scroll over the drops and the tick-marks of the curves to see clinical details of patients.**
 <br><br>
 
+---------
+
+
+
 ![](_static/images/R2d2_logo.png)**What are the 5 year survival percentages for the different stages? (tip: you can regenerate the graph with e.g. up to 60 months)**
 <br>
 <br>
@@ -254,7 +266,9 @@ Below the graph, you can change several settings in the Adjustable Settings box.
 ![](_static/images/R2d2_logo.png)**Do you observe a significant difference between the groups?**
 <br><br>
 
+---------
 
+ 
 
 
 ### Kaplan Meier: Validating prognostic factors such as gene expression
@@ -312,7 +326,6 @@ We have seen several characteristics of neuroblastoma patients that act as progn
  	
 [**Figure 3: Bright field image of isogenic cell line pairs.**](_static/images/Vagabond/Vagabond_Neuroblastoma_Relapse.png)
 
-
 The big question now is: if and why a few neuroblastoma cells are able to escpape the treatment.  
 New neuroblastoma patient material showed interesting morphological features in the tumor tissue. From several neuroblastoma patients multiple cell lines were obtained from the same biopsy. These cell lines share genetic defects and are therefore called *isogenic* cell line pairs.  
 
@@ -337,7 +350,7 @@ Two images on a row belong to one patient (e.g. 619-MES and 619-ADRN). As you ca
 
 ---------
 
- Most neuroblastomas are located in the abdomen and are associated with adrenal glands or sympathetic ganglia. Cells of the sympatho-adrenal lineage develops from the neural crest, undergoing an Epithelial-to-Mesenchymal Transition as shown below.
+Most neuroblastomas are located in the abdomen and are associated with adrenal glands or sympathetic ganglia. Cells of the sympatho-adrenal lineage develops from the neural crest, undergoing an Epithelial-to-Mesenchymal Transition as shown below.
 
  ![](_static/images/Vagabond/Vagabond_Development_of_the_sympatho-adrenal_lineage_from_neural_crest.png "Figure 5: Development of the sympatho-adrenal lineage from the neural crest")
   	
@@ -514,6 +527,83 @@ In R2 there are many more sets of genes that have been found to be implemented i
 
 ---------
 <br>
+
+As mentioned above, the lists of differentially expressed genes between the MES and ARDN groups are also stored in the gene sets databases of R2. We can use these genes as a proxy for mesenchymal- or adrenergic- ness. Let's first look at these 2 groups of genes in a heatmap, when these are applied to a dataset where a number of neuroblastoma cell lines are represented next to the 8 samples that we have looked at above.
+
+- Go to the main page and select '**Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2**' as a dataset to explore.
+- Now select 'View Geneset (Heatmap)' from option box 3 and press next.
+- As gene set collection, we choose 'r2 provided gene lists' and then press next (twice)
+- In the gene set box, we select 'r2_mesadrn_adrn' as well as 'r2_mesadrn_mes' (With the CTRL key you can select more than 1 gene sets). Then press next.
+
+A heatmap is now shown on your screen. You should see a clear separation in the genes, that correspond to the 2 different gene sets (The grey/red stripes correspond to the gene set a gene was coming from). In addition, you see a clear separation in the samples too.
+
+---------
+
+  ![](_static/images/R2d2_logo.png)**What cell_type of the samples are assocciated with the 2 groups?**
+<br><br>
+
+---------
+
+The current dataset also contains neural crest cells, which are naive (and still undifferentiated) cells from which neuroblasts develop. 
+
+---------
+
+  ![](_static/images/R2d2_logo.png)**In which cluster are the neural crest cells positioned, and does that make sense?**
+<br><br>
+
+---------
+
+Using a heatmap as we have just generated can be very helpful in determining how a list of genes is behaving within a dataset. However, it is not very scalable and requires detailed manual inspection to interpret. Condensing the information from all genes in a single value, opens some new possibilities. Within R2, we define a gene signature as the average value of what you see in the columns for every sample (effectively the average of all zscores, within every single gene set). These are automatically calculated in heatmaps, and are represented in the bottom of the pictures. We can store these signature scores as tracks in R2, and subsequently use them in R2 as if they are a gene (a meta-gene). Within the current dataset, the scores for MES and ADRN are already provided as separate tracks. Under normal conditions, you would store the signatures as tracks in your personal account.
+
+-  Go back to the main page. We will now look at the samples in this dataset as signature scores. To do this, we select 'relate 2 tracks' and press next.
+- As track for x, we select s_mesadr_adrn, and as track for s_mesardn_mes. and then press next again.
+
+You should now see an XY plot where the signature values are used to position the samples. 
+
+---------
+
+  ![](_static/images/R2d2_logo.png)**What is the relationship between MES and ADRN scores?**
+<br><br>
+
+---------
+
+- The samples can also be colored by a track or the expression of a gene. Set the 'color mode' dropdown to 'color by track' and then select cell type as track. Click the 'submit' button.
+
+The resulting graph is a very insightful representation that summarizes the 800 genes that we were looking at in the previous heatmap.
+
+Within this dataset, also the 4 pairs are represented from the earlier analyses. We can make these stand out a bit by drawing lines between the samples from every pair. For this, R2 has sample_paths, which are comma separated samples that will be connected by a line. These can have a thickness, and a color associated : separated. A new line can be started by using a ; .
+
+- within the sample paths paste 'gsm2413241,gsm2413246:#eeeeee;gsm2413239,gsm2413243:#eeeeee;gsm2413242,gsm2413245:#eeeeee;gsm2413240,gsm2413244:#eeeeee;' and press next. 
+- We can also make the samples stand out a bit better by marking them using the 'samples to mark'. Paste the following into this field 'gsm2413241,gsm2413246,gsm2413239,gsm2413243,gsm2413242,gsm2413245,gsm2413240,gsm2413244:#222222;'
+
+We have now seen the very basic usage of signature scores. R2 has many more options, that you can explore by yourself if you want.
+
+In the signature plot we can again see that the MES cell lines are mingled with the neural crest cells, which are the cells from which neuroblasts can develop.
+
+In the next analysis we are going to make use of a single cell dataset that describes the human adrenal medulla, a tissue that can generate neuroblasts. Single cell data is frequently depicted in 2 dimensional representations called UMAP , or tSNE. Both are dimensionality reduction algorithms that try to group cells together that on resemblance. Within R2, such representations are available in the 'sample maps', that can be accessed from the main page in the left set of menu items. 
+
+- Click on the sample maps and subsequently select the following resouce: '**Normal Adrenal Medulla - Westermann - 10739 - cp10k - 10x300hg19**' and make sure to select the 'UMAP' version.
+- The cells are not yet colored. So let's stain them by the track 'cell type'.
+
+---------
+
+  ![](_static/images/R2d2_logo.png)**Can you see the route(s) of development in the representation?**
+<br><br>
+
+---------
+
+- There are also tracks defined for the MES and ADRN signatures in this dataset. Try both.
+
+---------
+
+  ![](_static/images/R2d2_logo.png)**Do the signatures 'light up' the expected regions in the UMAP ?**
+<br><br>
+
+---------
+
+
+
+
 
  
 
