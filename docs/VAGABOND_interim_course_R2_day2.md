@@ -37,7 +37,8 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  
  This green button will open up the Google form with which you can submit your answers for the first sections.
  
-  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1TR2ifTrspxwtXQs5wFLfIsb-w8J8AIu5zPoZGGAmcCk/viewform?usp=sf_link','_blank');" type="button">Open the form 4 for day 2</button> 
+  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1TR2ifTrspxwtXQs5wFLfIsb-w8J8AIu5zPoZGGAmcCk/viewform?usp=sf_link','_blank');" type="button">Open the form 4 for day 2</button> 
+
 
 
 

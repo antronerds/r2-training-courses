@@ -245,8 +245,7 @@ This dataset is annotated for a number of clinical and molecular parameters. To 
 **Scroll over the drops and the tick-marks of the curves to see clinical details of patients.**
 <br><br>
 
-![](_static/images/R2d2_logo.png)<del>What are the 5 year survival percentages for the different stages?</del>
-<br>
+
 <br>
 
 ---------
@@ -330,10 +329,15 @@ Remarkably, in each patient two *morphologically differing cell types* were obse
  
  * The button below brings you to the form in which you can submit your answers for section 1.3
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/https://docs.google.com/forms/d/1C-jNtu4IlsyR5_hS8Q1y-mdUUpgj1kLo-RmoMRUVHfY/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button>
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1C-jNtu4IlsyR5_hS8Q1y-mdUUpgj1kLo-RmoMRUVHfY/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button>
 <br>
-  <
-  
+
+
+
+
+
+
+ 
 Two images on a row belong to one patient (e.g. 619-MES and 619-ADRN). As you can see, the first image of the first patient  shows a strong resemblance to the first image of the other two patients. Same for the second image.   
  
  ---------
