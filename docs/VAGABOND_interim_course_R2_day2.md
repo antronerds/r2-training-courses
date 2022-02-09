@@ -37,8 +37,10 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  
  This green button will open up the Google form with which you can submit your answers for the first sections.
  
-  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScLLO8_RAjyTMrLvhEdMqUAxmSwgUDbnHKe1gbFvOXOX8dTeA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3 and 1.4</button> 
- 
+  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1TR2ifTrspxwtXQs5wFLfIsb-w8J8AIu5zPoZGGAmcCk/viewform?usp=sf_link','_blank');" type="button">Open the form 4 for day 2</button> 
+
+
+
  The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value. Note that you can scroll down at the right hand side display of piecharts to see more track pie charts. You can also use the dropdown menus to adjust the display.   
  <br>
  * Hover your mouse over the different slices of the **stage(inss)** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
@@ -188,7 +190,7 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  
  ---------
  
- * Submit your form with answers of sections 1.3 and 1.4
+ * Submit your form with answers 
  
  Further use of WGS data; structural variants
  --------------------------------------------
@@ -206,9 +208,7 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  
  In a new tab a detailed view of this specific tumor genome is shown. When hovering over the plot the mouse opens a magnifier window.
  
- This green button will open up the Google form with which you can submit your answers for sections 1.5 and 1.6.
- 
-  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScJf_kpFbMQx6Y6xW8Yb4SdMGlXir3Tbpsip-oUZKwzNVAQ1g/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.5 and 1.6</button> 
+
  
  ---------
    ![](_static/images/R2d2_logo.png)**What do the green and red areas mean in the circosplots? And the arches crossing the circle?**
@@ -277,16 +277,13 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  ---------
  
  * Filtering for subsets allows you to further isolate specific survival characteristics. If you like you can toy around with different parameters.
- * Submit the Google form with your answers for section 1.5 and 1.6
+
  
  
  Locations of structural variants, hotspots?
  ---
  
- This green button will open up the Google form with which you can submit your answers for section 1.7.
- 
-  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSec1Us3rWYcdAh3ZDNirrnTbaJtjdvEmLNlIkE1nAyXF7z87w/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.7</button> 
- 
+
  Chromothripsis can be seen as an extreme case of concentration of structural variants in one sample. The question arises whether there are other hotspots of structural variation on the genome that are found in multiple samples. These might point to functional interactions.
  
  * One of the genes that exhibited such a hotspot is the TERT gene. Go back to the startpage of the Graduate Training Course portal and select the GenomeBrowser tile. This brings you to the TERT gene on the genome with some preset annotations. 
