@@ -77,7 +77,7 @@ Let's first make sure that the correct dataset is selected.
 
 If you see a different dataset selected, you can change the dataset as follows:  
 
-- Click on the selected dataset, which will make a grid popup, showing all the datasets that are available to you withing the platform. Each row is one dataset and each column shows particular characteristics of that dataset. You can filter for specific datasets with the headers of the columns. <br>
+- Click on the selected dataset, which will make a grid popup, showing all the datasets that are available to you within the platform. Each row is one dataset and each column shows particular characteristics of that dataset. You can filter for specific datasets with the headers of the columns. <br>
 - In the textfield of column **Author** type *Versteeg* and in the column of samples **N** type 88.
 - Click on the **Select** button in front of the correct dataset. 
 
@@ -99,8 +99,8 @@ It is known that the Amplification of the MYCN gene is evidently associated with
 The scatter plot in the central diagram shows the mRNA expression values of MYCN for all tumors of the 88 patients, next to each other. The samples are ordered according to increasing MYCN expression.  
 
 
-- The expression is given on a log scale by default. To switch to a linear scale, scroll down to the Adjustable Settings box under th eplot. In the field **Transformation**, select *None* and click **Submit**. 
-- Directly underneath the plot, tracks of this dataset are shown, with the values color codes. You can see the tracks for e.g. agegroup, INSS stage and MYCN amp(lification). Hover with your mouse over the different blocks.
+- The expression is given on a log scale by default. To switch to a linear scale, scroll down to the Adjustable Settings box under the plot. In the field **Transformation**, select *None* and click **Submit**. 
+- Directly underneath the plot the tracks of this dataset are shown with their values color coded. You can see the tracks for e.g. agegroup, INSS stage and MYCN amp(lification). Hover with your mouse over the different blocks.
 
 The track mycn_amp shows which samples have MYCN amplification.
 
@@ -113,10 +113,10 @@ The track mycn_amp shows which samples have MYCN amplification.
 
 We can show the relation more clearly by grouping the tumors in the 'One Gene View' according to a property in a track. Go to the Adjustable Settings box underneath the plot. Just on top of that box, you can adjust the **Analysis type** with a dropdown. 
 - Change this setting from single gene to *gene vs track*.
-- In the Adjustable Settings box on the second row, you now have to choose a **Track** by which you want to separate the samples. In the drop down menu, select *mycn-amp(cat)*. And click **Submit**. Check the plot.
-- Next select *alive*(cat 2) and click **Submit**. 
+- In the Adjustable Settings box on the second row, you now have to choose a **Track** by which you want to separate the samples. In the drop down menu, select *mycn-amp(2 cat)*. And click **Submit**. Check the plot.
+- Next select *alive*(2 cat) and click **Submit**. 
 - In this view, the samples are not ordered by their MYCN expression value by default. If you would want to adjust this, you could use the **Extra Graph Option** and choose the value *Track and Gene sort*.  
-- Click on the 'More settings sections' unfolds a new menu which enables the user to adapt the graphic parameters such as; font size , axis-with etc etc feel free to try them.  
+- Click on the 'More settings sections' unfolds a new menu which enables the user to adapt the graphic parameters such as; font size, axis-with etc etc feel free to try them.  
 <br>
 
 ---------
@@ -186,7 +186,7 @@ Inspecting genes one by one quickly becomes a dull task. We can also analyze the
 
 ---------
 
-In neuroblastoma, at the DNA level, MYCN amplification and loss of 1 copy of the chromosome 1p arm is a well established connection.  It is described in literature that a number of tumor suppressor genes are located on chromosome 1p. 1p loss of heterozygosity (LOH) is frequently observed in MYCN amplified tumors. Interestingly, we can even 'see' this loss in the mRNA profiles, since at least a proporion of the genes show reduced expression in patients with elevated MYCN expression. 
+In neuroblastoma, at the DNA level, MYCN amplification and loss of 1 copy of the chromosome 1p arm is a well established connection.  It is described in literature that a number of tumor suppressor genes are located on chromosome 1p. 1p loss of heterozygosity (LOH) is frequently observed in MYCN amplified tumors. Interestingly, we can even 'see' this loss in the mRNA profiles, since at least a proportion of the genes show reduced expression in patients with elevated MYCN expression. 
 
 
 
@@ -201,12 +201,12 @@ We have seen that MYCN expression has a clear preference for some chromosomal re
 
 ---------
 
-![](_static/images/R2d2_logo.png) **How many genes have been are differentially expressed between the alive "no" and "yes" group. ?**
+![](_static/images/R2d2_logo.png) **How many genes are differentially expressed between the alive "no" and "yes" group?**
 <br><br>
 
 ---------
 
-- In the generated gene list you can find  marker genes or genes playing a key role in Neuroblastoma. However, it would be of interest to find out if certain genes are overrepresented in e.g. Biological processes. In the the right menu next to the genelist, click on the button "geneset analysis". 
+- In the generated gene list you can find  marker genes or genes playing a key role in neuroblastoma. However, it would be of interest to find out if certain genes are overrepresented in e.g. biological processes. In the the right menu next to the genelist, click on the button "geneset analysis". 
 - In the next screen select "KEGG" in the geneset collection pull down and click next;
 - In the next screen you find a collection off KEGG path were the genes from the analysis are over represented.
 
@@ -216,7 +216,7 @@ We have seen that MYCN expression has a clear preference for some chromosomal re
 
 ---------
 
-Click on the <span style="color: deepskyblue">**blue A**</span> which leads the user to an annotated KEGG map where uprelated genes are colored green and downregulated genes are colored red.
+Click on the <span style="color: deepskyblue">**blue A**</span> which leads the user to an annotated KEGG map where upregulated genes are colored green and downregulated genes are colored red.
 
 ---------
 
@@ -230,13 +230,13 @@ Click on the <span style="color: deepskyblue">**blue A**</span> which leads the 
 
 
 ### Using annotation and the Kaplan Meier curve
-In R2 the samples of a dataset can be annotated with meta-information, e.g clinical data or molecular biology parameters. Each group of annotated data is called a “Track” in R2. These tracks can be informative / useful for a large variety of additional analysis and visualisation functions. To name a few, tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics.
+In R2 the samples of a dataset can be annotated with meta-information, e.g. clinical data or molecular biology parameters. Each group of annotated data is called a “Track” in R2. These tracks can be informative / useful for a large variety of additional analysis and visualisation functions. To name a few, tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics.
 <br><br>
 Another valuable use of such tracks is to evaluate their prognostic value with a Kaplan Meier curve. We will now take a look at the above mentioned dataset that consists of 88 human neuroblastoma samples. <br>
 This dataset is annotated for a number of clinical and molecular parameters. To get a first look at some characteristics of this childhood tumor, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene.
 
-- Use the dropdown in box 3 to select the correct Kaplan Meier analysis: *Kaplan Meier by annotated parameter*.
-- We are going to separate the patients based on the INSS staging system, that was explained in the introduction of neuroblastoma in the beginning. Choose for **Type of Survival** the value *overall-c1103* for the **Track** setting, select the value *inss (cat 5)*. Click **Next**.
+- Use the dropdown in box 3 to select the correct Kaplan Meier analysis: *Kaplan Meier by annotated parameter*. Click **Next**.
+- We are going to separate the patients based on the INSS staging system, that was explained in the introduction of neuroblastoma in the beginning. Choose for **Type of Survival** the value *overall-c1103*. For the **Track** setting, select the value *inss (cat 5)*. Click **Next**.
 - The Kaplan Meier curves appear.  <br><br>
 
 ---------
