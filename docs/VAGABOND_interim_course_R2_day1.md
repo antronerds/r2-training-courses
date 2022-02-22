@@ -300,7 +300,7 @@ Now let's compare this survival analysis to the survival analysis with a median 
 If you are 'logged in' with an account in R2, then you can also create personal grouping variables, that can be used later on. In this way you can extend R2 with information that is useful for yourself.
 
 
-- Another approach to find possible regulating genes is to use the groups based on the mycn expression cut-off value for further analysis. Below the Kaplan Meier graph , click on the "store as track"  button. In the next screen all the individual samples are listed each assiged to the "low" or "high" group. At the bottom you can store the two groups based on the Kaplan Meier, in this example, we will store this track for Temporary (24hrs) but you can also store this track permanent. Click on the build set button now the track is stored for further usage.
+- Another approach to find possible regulating genes is to use the groups based on the mycn expression cut-off value for further analysis. Below the Kaplan Meier graph, click on the "store as track"  button. In the next screen all the individual samples are listed each assiged to the "low" or "high" group. At the bottom you can store the two groups based on the Kaplan Meier. In this example we will store this track as Temporary (24hrs) but you can also store this track permanent. Click on the build set button. Now the track is stored for further usage.
 
 
 - Go back to the main page. Select the "Find Differential Expression between two groups" , On the next page select the grouping variable that you just stored from the Kaplan Meier Scanner and click submit.  In next the screen select the low and high grouping variables and click submit, now a list of Differentially Expressed genes have been found based on the Kaplan Meier MYCN values cut-off. These kind of tracks as a result of an analysis can be stored and used throughout the many R2-analysis modules in R2.
@@ -567,7 +567,7 @@ The current dataset also contains neural crest cells, which are naive (and still
 Using a heatmap as we have just generated can be very helpful in determining how a list of genes is behaving within a dataset. However, it is not very scalable and requires detailed manual inspection to interpret. Condensing the information from all genes in a single value, opens some new possibilities. Within R2, we define a gene signature as the average value of what you see in the columns for every sample (effectively the average of all zscores, within every single gene set). These are automatically calculated in heatmaps, and are represented in the bottom of the pictures. We can store these signature scores as tracks in R2, and subsequently use them in R2 as if they are a gene (a meta-gene). Within the current dataset, the scores for MES and ADRN are already provided as separate tracks. Under normal conditions, you would store the signatures as tracks in your personal account.
 
 -  Go back to the main page. We will now look at the samples in this dataset as signature scores. To do this, we select 'relate 2 tracks' and press next.
-- As track for x, we select s_mesadr_adrn, and as track for s_mesardn_mes. and then press next again.
+- As track for X, we select s_mesadr_adrn, and as track for Y, s_mesardn_mes. Click Submit.
 
 You should now see an XY plot where the signature values are used to position the samples. 
 
@@ -620,4 +620,5 @@ In the next analysis we are going to make use of a single cell dataset that desc
 
 -----
  This concludes our series of tasks for today. If you would like to use R2 for your research in the future, then just visit http://r2.amc.nl and get started. Upon free registration, additional features become available. Thank you for your attention and we hope that you have enjoyed this microarray practical.
+
 

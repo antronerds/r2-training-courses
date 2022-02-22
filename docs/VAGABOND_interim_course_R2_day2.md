@@ -2,9 +2,9 @@
 
 Investigating structural variants
  ===
- *Not every cancer has determining somatic mutations. Using the full power of WGS data, relevant structural variants can be traced also and linked to potential causes of disease*
+ *Not every cancer has determining somatic mutations. Using the full power of WGS data, relevant structural variants can be traced and also linked to potential causes of disease*
  
- In this course we combine sequencing data with expression data and vice versa, such that new insights can be derived. Again, throughout this course we'll focus on data of the childhood tumor neuroblastoma. Choose the course of day one to read an introduction about this pediatric cancer. 
+ In this course we combine sequencing data with expression data and vice versa, such that new insights can be derived. Again, throughout this course we'll focus on data of the childhood tumor neuroblastoma. Choose the course of day 1 to read an introduction about this pediatric cancer. 
  
  We hope to show how R2 can be used to visualize and analyze your WGS data. Please note that this training session requires accounts with additional access. Therefore, make sure that you have obtained a proper account from the tutors. 
  
@@ -44,14 +44,15 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
 
  The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value. Note that you can scroll down at the right hand side display of piecharts to see more track pie charts. You can also use the dropdown menus to adjust the display.   
  <br>
- * Hover your mouse over the different slices of the **stage(inss)** annotation pie chart. Explore with which percentage of samples each staging is present in the current dataset.  
- * With the dropdown menu below the main pie chart, select the 'mycn_amp' annotation. 
- * Filter the overview of the dataset for samples with a mycn amplification by a click on the 'yes' slice in the pie chart.
+ * In the right dropdown menu under the smaller pie diagrams, make sure inss is checked.
+ * Hover your mouse over the different slices of the **inss** annotation pie chart (You may need to scroll down). Explore the percentages of the samples for each staging in the current dataset.  
+ * With the dropdown menu below the main pie chart, select the 'cg_mycn' annotation. 
+ * Filter the overview of the dataset for samples with a mycn amplification by a click on the 'amp' slice in the pie chart.
  
  --------
  
    ![](_static/images/R2d2_logo.png) 
-   **How did the stage(inss) pie chart adapt to the selection of mycn amplified samples and what do you know about these stages in neuroblastoma?** 
+   **How did the inss pie chart adapt to the selection of mycn amplified samples and what do you know about these stages in neuroblastoma?** 
  <br>
  <br>
  
@@ -125,7 +126,7 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  
  A form shows quite some parameter fields. These provide additional optional annotations and settings for the GenomeBrowser. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data, which is based on methylation and acetylation patterns of the genome. This annotation, however, is only provided on another Human Genome build. 
  * In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
- * Several annotations that were available for HG18 are not available for HG19. Find the **Refseq(R2)** and switch the setting on to obtain gene annotation for this genome build. Click **redraw**. 
+ * Several annotations that were available for HG18 are not available for HG19. Find the **Refseq(R2)** option and switch the setting on to obtain gene annotation for this genome build. Click **redraw**. 
  
  ---------
    ![](_static/images/R2d2_logo.png)**ALK is no longer in frame at the same position on the genome. Can you think of a reason why this is the case?**
@@ -135,14 +136,16 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  
  ---------
  
- * If the ALK gene is out of scope, you can jump back to the gene with the help of the text field in the left upper corner **Find gene**: type in the gene name *ALK*. 
+ * If the ALK gene is out of scope, you can jump back to the gene with the help of the text field in the left upper corner **Find gene**: type in the gene name *ALK* and press GO. (don't press enter)
  
- The button below ('Cleaned up View in R2') brings you to the transcription start site of the ALK gene. Several genome annotations will be switched on or off in that view. If you want, you can try them out yourself first:
+ The button below this text called 'Cleaned up View in R2' brings you to the transcription start site of the ALK gene. Several genome annotations will be switched on or off in that view. If you want, you can try them out yourself first:
+ * Make sure our genome build is set to HG19.
  * Switch *off* the following annotation settings by scrolling all the way down to the Tracks settings box. Settings that are on are highlighted in green:
      * **cosmic** (in the Genome Variation box) to switch off the annotation from COSMIC, 
      * **Calldif Somatic Genome** (in the X:Complete Genomics => Variants box) to switch off the Somatic mutations annotation. 
      * **TestVar AMC v2e (Exome&1kup)** (also in the X:Complete Genomics => Variants box) to switch off the Cohort summary.
     Don't forget to click **redraw** whenever you want your changes to take effect.
+ 
  * Set the **NIH Epigenome Roadmap** annotation to *all* (in the TranscriptView annotation box). This annotation provides information on public datasets that have established whether chromatin regions are subject to active transcription (green), enhancer regions (yellow) or are part of a transcription start site (red). Click **redraw**.  
  
  In order to be at the correct position, simply click the button below:
@@ -266,9 +269,10 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  
  To see how chromothripsis relates to clinical data we can investigate survival data in R2. 
  
- * From the left menu in the main Graduate Training Course datascope panel select **Kaplan Meier > By track (category)**
- * Make sure that the correct **Data Type** *'Expression data(H. sapiens)'* and that the correct neuroblastoma dataset has been selected in the dataselection panel: *'Tumor Neuroblastoma (combat) - Versteeg - 122 - MAS5.0(bc) - u133p2'*. Click **Next**.
- * A selection menu appears, in the **Separate by** field select *track* and in **use track** select the track cg_chromothripsis. Then click **Next** 
+ * From the left menu in the main Graduate Training Course datascope panel select **Kaplan Meier**.
+ * Make sure 'Tumor Neuroblastoma (combat) - Versteeg - 122 - MAS5.0(bc) - u133p2' is selected as dataset. **Click next.**
+ * Select for **Type of Survival** any of the options.
+ * Select as **Track** the option: **the track cg_chromothripsis.** **Click next.**
  
  ---------
    ![](_static/images/R2d2_logo.png)**How does chromothripsis affect survival?**
@@ -297,7 +301,7 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  
  ---------
   
-  As is obvious from the high number of peaks around the TERT gene there is a hotspot of structural variants in that area. The types of variants are annotated below the stretch on the genome.   
+  As can be seen by the high number of peaks around the TERT gene there is a hotspot of structural variants in that area. The types of variants are annotated below the stretch on the genome.   
  
  ---------
    ![](_static/images/R2d2_logo.png)**What do the arrows and colored tracks mean? (Hint: hovering with the mouse provides additional information)**
@@ -315,7 +319,7 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
   
  In our department H3K27ac ChIP-seq data was produced for several neuroblastoma samples. 
  * Click on the button **Load/Store Profile** in the top right corner, click **Execute** and click **Goto the GenomeBrowser** to view the ChIP-seq data generated by our department on chromosome 11 at the translocation site of the TERT gene.
- * Now go back to TERT by typing the gene name into the textfield at **Find gene** in the top left corner. You can zoom out a bit to have a better overview of ChIP-seq profiles at the TERT gene location. 
+ * Now go back to TERT by typing the gene name into the textfield at **Find gene** in the top left corner and click on **Go** (don't press enter). You can zoom out a bit to have a better overview of ChIP-seq profiles at the TERT gene location. 
  
   ---------
    ![](_static/images/R2d2_logo.png)**How is the H3K27ac ChIP-seq data related to the information about superenhancers?**
@@ -324,15 +328,12 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
   <br>
   
   ---------   
- 
- 
- 
- this junction in more detail and produced methylation data 
- To further corroborate this we can go to the Circos plots panel again. 
+  
+ To further corroborate this junction in more detail we can go to the Circos plots panel again. 
  * Go back to the **Graduate Training Course datascope** overview panel and click the **circos archive** tile again.
  * Locate the N724TL tumor sample and **click on the image**.
  * Open the **Gene Expression list** tab
- * This can be further explored by **clicking on the probeset link** (left column in the list) and on the Detailed link.
+ * This can be further explored by **clicking on one of the probeset links** (left column in the list) and on the **Detailed links**.
  * The graph with the expression values of TERT is depicted in none transformed values. Under the graph find the setting **Transform** and set it to *log2*.
  
  ---------
