@@ -337,13 +337,13 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  * This can be further explored by **clicking on one of the probeset links** (left column in the list) and on the **Detailed links**.
  * The TERT gene was not in the list since the list was a pre-selection without the TERT-gene, in the adjustable setting box below the graph type TERT click the reporter which is popping up and click redraw. 
  * Select  **log2-zcore** in the transformation  panel and click next.
- * A graph with the log2-zscores of the TERT gene is depicted where the TERT activity is elevated in de the inss stage 4 group. However, based on this grahp the TERT-zscore is may be not very convincin so let's take a look at other Neuroblastoma dataset from other source .
- * In the main screen goto box 2 and select the following dataset, in the grid search for set using **SEQC** in the author field and/or **498** for the number of samples and select **Tumor Neuroblastoma - SEQC - 498 - RPM - seqcnb1**, select 'vieuw a gene' and click next.
- * This set is a rnaseq based expression dataset in contrast to the previous which was based on old affymetrix platform.   
+ * A graph with the log2-zscores of the TERT gene is depicted where the TERT activity is elevated in the inss stage 4 group. However, based on this grahp the TERT-zscore is may be not very convincing so let's take a look at another Neuroblastoma dataset from another source .
+ * In the main screen goto box 2 and select the following dataset, in the grid search for the dataset using **SEQC** in the author field and/or **498** for the number of samples and select **Tumor Neuroblastoma - SEQC - 498 - RPM - seqcnb1**, select 'view a gene' and click next.
+ * This set is a rnaseq based expression dataset in contrast to the previous one which was based on an old affymetrix platform. Type 'TERT and click submit.
+ * In the analysis type pulldown menu select **gene vs track**,  as track select **inss_stage**, for transformation the **log2 zscore**, one of the box plots in the graph type section and select **color by track** at color mode.  Click submit.
+ * This plot is again supporting the findingthat the TERT gene is involved in stage 4 neuroblastoma tumors. 
 
 
-
-Tumor Neuroblastoma - SEQC - 498 - RPM - seqcnb1
 
 
 literature:
