@@ -11,13 +11,6 @@ Copyright (c) 2006-2022 Jan Koster
 .. toctree::
    :maxdepth: 1
    :numbered:
-   :caption: AMS Course Materials
-
-   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
-
-.. toctree::
-   :maxdepth: 1
-   :numbered:
    :caption: Student Course
 
    Investigating_Tumor_Heterogeneity_student_version
@@ -30,15 +23,22 @@ Copyright (c) 2006-2022 Jan Koster
    Finding_structural_variants
    Investigating_Tumor_Heterogeneity
 
-..
- .. toctree::
-     :maxdepth: 1
-     :numbered:
-     :caption: Vagabond_course / Underconstruction
+.. toctree::
+   :maxdepth: 1
+   :numbered:
+   :caption: Vagabond_course
 
-     VAGABOND_interim_course_R2_day1
-     VAGABOND_interim_course_R2_day2
+   VAGABOND_interim_course_R2_day1
+   VAGABOND_interim_course_R2_day2
+   VAGABOND_snippets
 
-..
+.. toctree::
+   :comment:
+   :maxdepth: 1
+   :numbered:
+   :caption: Additional Course Materials
+
+   Microarray_analysis_Using_Tumor_Colon_datasets
+   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
 
 If you want to learn what you can do with R2, then please visit our R2 tutorials section. In the tutorials we explain how to do many different kind of analyses in R2 using simple examples: https://r2-tutorials.readthedocs.io/en/latest/
