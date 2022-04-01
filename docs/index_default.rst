@@ -29,3 +29,13 @@ Copyright (c) 2006-2018 Jan Koster
    :caption: Additional Course Materials
    
    Microarray_analysis_Using_Tumor_Colon_datasets
+
+ .. toctree::
+     :maxdepth: 1
+     :numbered:
+     :caption: Vagabond_course / Underconstruction
+
+     VAGABOND_interim_course_R2_day1
+     VAGABOND_interim_course_R2_day2
+
+*/
