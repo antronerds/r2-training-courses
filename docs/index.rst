@@ -24,7 +24,7 @@ Copyright (c) 2006-2022 Jan Koster
    Investigating_Tumor_Heterogeneity
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :numbered:
    :caption: Additional Course Materials
 
@@ -32,7 +32,7 @@ Copyright (c) 2006-2022 Jan Koster
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
 
 .. toctree::
-   :hidden:
+   :comment:
    :maxdepth: 1
    :numbered:
    :caption: Vagabond_course / Under contruction
