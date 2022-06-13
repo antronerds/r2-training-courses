@@ -8,7 +8,7 @@ Introduction
 Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by inflammatory cell infiltration, such as T cells, B cells, macrophages and plasma cells. Production of cytokines and proteases lead to chronic inflammation of the synovial tissues and progressive joint disability. RA affects as much as 1% of the worldwide population. Although the exact causes are unknown, decades of research has led to increasingly detailed understanding of multiple disease mechanisms. Different treatments for RA have been proposed, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ). However, a significant proportion of patients do not respond to initial treatment or reach remission. Others experience recurrence or deterioration of their disease.    
 The complexity of RA have spurred research to dive deeper into the disease mechanisms using genetics, transcriptomics or proteomics. Extensive efforts are made to find more specific diagnostic markers.    
   
-  Because of difficulties in measuring markers in the inflamed joints, efforts have to a large extent focused on analyses of peripheral blood. However, as Lee et al. point out (<a href="https://doi.org/10.1016/j.cyto.2019.154960" target="_blank">Cytokine, March 2020</a>), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.   
+  Because of difficulties in measuring markers in the inflamed joints, to a large extent efforts have been focused on analyses of peripheral blood. However, as Lee et al. point out (<a href="https://doi.org/10.1016/j.cyto.2019.154960" target="_blank">Cytokine, March 2020</a>), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.   
  
  ![](_static/images/KIT_rheumatoid-arthritis-drug-targets.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)")
    
@@ -20,7 +20,7 @@ The complexity of RA have spurred research to dive deeper into the disease mecha
 ---
  Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate patient and experimental data.  
    
- Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) have collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data and other similar studies have been uploaded into our platform R2. We will make use of these datasets to explore the  differences and similarities between peripheral blood and synovial fluid, to study the characteristics of T cells, and to look for possible effects of treatments. 
+ Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data and other similar studies have been uploaded into our platform R2. We will make use of these datasets to explore the differences and similarities between peripheral blood and synovial fluid, to study the characteristics of T cells, and to look for possible effects of treatments. 
   
 ##### A first look at T cell gene expression with the R2 platform
 
@@ -52,55 +52,57 @@ This green button will open up the Google form with which you can submit your an
 <br>
 <br>
 
-* You don't need to login for this course. However, when you register to the platform (withh the red link in the left side menu) and log in with your credentials, more datasets and analyses will become available to you. 
+* You don't need to login for this course. You can click on the **Guest sign-in (limited features)** button just underneath the sign in box. However, when you register to the platform and log in with your credentials, more datasets and analyses will become available to you. In order to register either use the **Register Now** button on the login page or, if you are already on the main page, use the red link in the left side menu.  
 
-The five numbered boxes or steps in the middle of the R2 main page allow you to choose a dataset and a type of analysis. In box 2 you can see that the dataset of Okuzono has already been selected. In box 3 you can select an analysis to perform on this dataset. 
+The five numbered boxes in the middle of the R2 main page allow you to choose a dataset and a type of analysis. In box 2 you can see that a dataset of Okuzono has already been selected that focuses on the disease Rheumatoid arthritis and that contains 75 samples. In box 3 you can select an analysis to perform on the selected dataset. Let's have a first look. 
 
-* The default analysis is **View a gene** (box 3). Type in the textbox of step 4 *Gene / Probeset:* **CD4**.   
-* Click the **Next** button. To read a description of your provided gene, hover your mouse over the bold **CD4** letters next to the radiobutton. Leave all settings as is and click **Next** again to obtain the result.   
+* The default analysis is **View a gene** (box 3). Keep this setting and click **Next** in box 4.
+* You now see The Adjustable settings box. Type in the textbox *Search by gene* of the setting *Gene / Reporter:* **CD4**. The pop-up dropdown shows all the available reporters of this dataset that contain the keyword CD4. Click on **CD4 / 11829_2914** and you will see that the reporter textfield on the right is filled in automatically.   
+* Click the **Submit** button to obtain the result: a plot with dots that show you the (log2) expression values for each sample of the dataset for gene CD4.   
 
- The dots in the graph show the expression value of each sample of the dataset for the gene CD4. Under the graph you can see different types of *annotation*. 
- In R2 the samples of a dataset can be annotated with extra information, such as clinical data of the patients the sample were taken from, or biological characteristics of the cells that were observed in the lab.  
+  Under the plot you can see different types of *annotation*. 
+ In R2 the samples of a dataset can be annotated with extra information, such as with clinical data of patient samples, or with biological characteristics of cell samples.  
    
- Each group of annotated data is called a *Track* in R2. You will see the annotation often displayed underneath a plot, and even more tracks if you hover your mouse over the dots in a plot. 
- * Try it out with your mouse in the graph that you have generated to view the expression of the gene CD4.  
+ Each group of annotated data is called a *Track* in R2. You will see the annotation often displayed underneath a plot. Even more tracks might be shown if you hover your mouse over the dots in a plot.  
+  
+ * Try it out with your mouse in the graph of the CD4 gene expression values.  
  
- Furthermore, these tracks can be used in most of the analyses in R2 to add a layer of complexity. Tracks will allow you for instance to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to, lets say, different phenotypes or demographic characteristics.
- 
+ Furthermore, these tracks can be used in most of the analyses in R2 to add a layer of complexity. Tracks will allow you for instance to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to, let's say, different phenotypes or demographic characteristics.  
+  
+T cells recognise foreign particles (antigens) by a surface expressed T cell receptor (TCR). There are two major types of T cells: the helper T cell and the cytotoxic T cell. The helper T cells aid other cells of the immune system by releasing cytokines and cytotoxic T cells kill infected cells and tumours. An antigen presenting cell (APC) binds to the T cells and presents fragments, or  peptides, of the antigen. The TCR requires co-receptors in order to establish a stable connection to the APC. Helper T cells express the CD4 co-receptor and cytotoxic T cells express the CD8 co-receptor. Although most T cells express either CD4 or CD8, some express both and some do not express either.
+
 ---------
 
-   ![](_static/images/R2d2_logo.png)**Look at the *t-cell* track underneath the graph. The two colors represent two different cell types. Hover with your mouse over the two different colors of this cell type annotation row. Which cell types are present in the dataset?**
+   ![](_static/images/R2d2_logo.png)**Look at the *t-cell* track underneath the graph. The two colors represent two different t-cell types. Hover with your mouse over the two different colors of this cell type annotation row. Which cell types are present in the dataset?**
        
    
    ![](_static/images/R2d2_logo.png)**Do you notice anything different about the expression levels between the two cell types?**
- <br>
- 
+
+   ![](_static/images/R2d2_logo.png)**Now hover over the *tissue* track, which two tissue types can be found in this study? Look back at the introduction of this course in which the hypothesis of Lee at al (2020) is provided about the inflammatory responses in these tissue types as stated.**
+ <br>  
+
  ---------   
+
 Tumor necrosis factor‐alpha (TNF‐α) is a proinflammatory cytokine that plays a pivotal role in regulating the inflammatory response in rheumatoid arthritis (RA). 
 
-* In the upper left corner, click the link *Go to:*  **Main**  to go back to the main page.
- 
-To understand better how this cytokine relates to different tissue and cell types, we do the same process but now we take a look at the gene TNF
+To understand better how this cytokine relates to different tissue and cell types, we take a look at the expression values of gene TNF. We can take a shortcut route underneath the CD4 graph while we also change some other plot settings.
 
-* Type in the textbox **Gene / Probeset: TNF**.   
-* Click the **Next** button and click **Next** again in the following page.   
-
-We can make use of the annotations to view the results of our samples in groups.
-
-* Scroll down in the page to make some adjustments in the *Adjustable settings* menu under the graph. Under *Group Separations* change *use track:* **tissue (2cat)** to separate the samples of the tissue blood from those of synovial fluid.
-* Under *Graphics* adjust *Graphtype:* **Boxplot with circles** and *ColorMode:* **Color by Track**.
-* After you made adjustments to the menu, always click **Adjust Settings** for the adjustments to take effect.  
+* Scroll down underneath the CD4 gene expression graph to find the **Adjustable settings** box.  
+* We can make use of the dataset's annotations to view the results of our samples in groups. At the top of the Adjustable settings box change *Analysis type* from **single gene** to  **gene vs track** and switch the *Track* setting to **tissue (2cat)** to separate the samples of the tissue blood from those of synovial fluid.
+* Type **TNF**  in stead of CD4 in the *Search by gene* textbox of *Gene / Reporter* and select the first value **TNF / 11829_18627** from the dropdown list of available genes / reporters.   
+* In order to have a look at the adjustments so far, click **Submit** for the adjustments to take effect. 
+* Scroll down again to change one more setting: in the *Graphics* settings adjust *Graph type:* to **Box/dot plot (dots)** and *Color mode:* to **Color by Track**.
+* Again click **Submit** for the adjustments to take effect.  
 
 The expression values are currently log2 transformed. Check out the difference when you display the expression values without a transformation: 
-* In the menu under the graph, change **Transform** into *none* and click **Adjust Settings**  
+* In the menu under the graph, change **Transformation** into *none* and click **Submit**  
 
- Often you use a boxplot to assess whether the expression values between groups of samples differ for a particular gene and to quickly identify average values, outliers, the dispersion of the data set, and signs of skewness.  
- 
- Next to the visual representation, R2 also provides the five number summary in textual format.  
+The circles on top of the boxplot show the individual value of each sample, which is a good way to stay aware of the distribution of the raw data points.  
+Often you use a boxplot to assess whether the expression values of a particular gene differ between groups of samples and to quickly identify their average values, outliers, the dispersion of the data set, and signs of skewness.  
+Next to the visual representation, R2 also provides this statistical information in textual format.  
  * Hover your mouse over each box to compare the summarizing values of the two groups.  
    
-  The circles on top of the boxplot show the individual value of each sample, which is a good way to stay aware of the raw data and the distribution behind the summary.
- We can see that the two groups show different values for the boxplots. But how certain are we that the group means vary by more than that random chance allows? To answer that question R2 shows you the results of an analysis of variance (ANOVA): you can find the F-value, the test statistic of the ANOVA test, and the p-value of the ANOVA test in the table above the plot.  
+The two groups clearly show different trends in their expression values of TNF. But how do we know whether the group means vary significantly, i.e. by more than random chance allows? To answer that question R2 shows you the results of an analysis of variance (ANOVA): you can find the F-value, the test statistic of the ANOVA test, and the p-value of the ANOVA test in the table above the plot.  
  
 ---------  
   
@@ -119,10 +121,10 @@ The immune system is a complex system of different cell types that interact with
   
   By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into four stages: naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem), whereas CD8+ T cells are classified into five stages: Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra).  
     
- This heterogeneity among Tcells has made it challenging to identify the specific cell subsets and states that drive RA pathogenesis.
+ This heterogeneity among T cells make it challenging to identify the specific cell subsets and states that drive RA pathogenesis.
 
-* Under your latest graph, change "use track" to "t-cell-stage-type". Click **Adjust Settings**.
-* Now change the transformation back to **log2**. Click **Adjust Settings** again.  
+* Under your latest graph, change the setting "Track" to "t-cell-stage-type". Click **Submit**.
+* Now change the transformation back to **log2**. Click **Submit** again.  
   
 ---------
    
@@ -149,11 +151,11 @@ This button will open up a Google form for section 1.2.2.
 We have seen before that the samples of a dataset can be annotated with extra annotation, or tracks. 
 To get a better overview of the available annotation of a dataset, we can use the tool **Cohort Overview** in R2. 
 
-* Go back to the main page and select **Cohort Overview** as type of analysis in box 3.
+* Go back to the main page (in th eupper left corner of the page, click on **Go to: Main**) and select **Cohort Overview** as type of analysis in box 3.
 
 R2 presents the Okuzono dataset samples with its available annotation in a table at the bottom of the page. Each pie chart above the table shows a different available track. 
-* Hover your mouse over the different slices of the **tissue** annotation pie chart.  What percentage is synovial fluid and what percentage is blood tissue?
-* Explore the other pie charts as well: hover with your mouse over the slices and double click on a slice to select that group of the samples (you can click on the button **Clear Filters** to undo your selection). Above the main pie chart you can read the number of samples in your current selection (the "n= " number). Also note how the table at the bottom adapts the overview based on your selection.  
+* Hover your mouse over the different slices of the **tissue** annotation pie chart. What percentage of the samples is synovial fluid and what percentage is blood tissue?
+* Explore the other pie charts as well: hover with your mouse over the slices and double click on a slice to select that group of the samples. Above the main pie chart you can read the number of samples in your current selection (the "n= " number). Also note how the table at the bottom adapts the overview based on your selection. You can click on the button **Clear Filters** to undo your selection.  
   
    
 ---------
@@ -193,27 +195,33 @@ R2 presents the Okuzono dataset samples with its available annotation in a table
   
 How does treatment effect gene expression? Let's have a look at a dataset of Lauwerys et al. In the dataset we can find samples taken from the synovial fluid in the knee of 20 early RA patients, both before and after treatment.  
   
-* Go to the Main page of R2 and click on **Change Dataset** in box 2  
+* Go to the Main page of R2 and click on the white area in box 2 with the Okuzono dataset title.  
 
 A popup window appears that shows all the available datasets in a grid: each row represents one dataset, its
-main descriptive details split up in the columns. To use a dataset for further analysis, you click on the Select
-button in the first column.If you prefer to first read extra information about the dataset of your interest, click
-on any other part of the specific row. The headers of the columns each enable the user to search through datasets using keywords and other filter options.
-* Type in the text field under **Author** the name of the author of the data set *Lauwerys*
-* Click **Select** in front of the dataset that has 40 samples (N is 40).  
+main descriptive details split up in the columns.  
 
-First, we take a look at the information that was provided. Let's start with the dataset Cohort Overview.  
+The headers of the columns each enable the user to search through datasets using keywords and other filter options. 
+* Type in the text field under **Author** the name of the author of the data set: *Lauwerys*
+
+We are interested in the dataset that has 40 samples (N is 40). To read extra information about a dataset, click on any part of the specific row, other than the Select button. 
+* Click on the row of the dataset of our interest. Underneath the grid you can now see more details about the study (you don't have to read it yet). Note that in this information overview you can also find a Pubmed link to the study.  
+* Click on the dataset's **Select** button in the grid.  
+
+First, we take a look at the provided annotation. Let's start with the dataset Cohort Overview.  
 
 * In box 3, select the **Cohort Overview**, click **next** and explore the available annotation.
-* To understand what the study is about, click on the **i** information balloon behind the dataset title. Take a note of the *cytokines & chemokines* that are mentioned in the description box.     
+  
+Since this dataset is treatment related, let's plot the data to see if treatment has any effect according to this study.
 
-Since this set is treatment related, let's plot the data to see if treatment has any result according to this study.
-
-* Go back to the main page. Choose the analysis **Correlate Gene with track** and type in box 4 one of the genes that were  mentioned to be down regulated by treatment, IL6. The "-" can be left out of the gene name in R2, e.g. "IL-6" becomes "IL6". Click **Next**.
+* Go back to the main page (click **Main** in the upper left corner). Choose the analysis **Correlate Gene with track**, click **Next**.
+  
+Throughout R2 you can view the extra information of the selected dataset, with a click on the **i** information balloon behind the dataset title on the top of the page.
+* Click on the information balloon **i** and take a note of the *cytokines & chemokines* that are mentioned in the description box. Close the box with the **x** in the upper right corner.
+* Fill in **IL6** in the *Search by Gene* field of the Gene / Reporter setting, i.e. one of the genes that were mentioned to be down regulated by treatment. The "-" can be left out of the gene name in R2, e.g. "IL-6" becomes "IL6". Choose the appropriate gene from the dropdown list.
 * Choose *Select a track:* **therapy (2cat)** and click **Next**.
-* Every patient had a sample taken before the start (no) and after 12 weeks (yes) of therapy, it is a paired test. It would be nice to see which dots belong to the same patient. With Sample Paths we can connect the two samples of each patient with the format Samplename1,Samplename2; etc. Because it is rather labour intensive to get the correct syntax, we did this for you. 
+* Every patient had a sample taken before the start (no) and after 12 weeks (yes) of therapy, it is a paired test. It would be nice to see which dots belong to the same patient. With Sample Paths we can connect the two samples of each patient with the format Samplename1,Samplename2; etc. Because it is rather labour intensive to get the correct syntax, we did this for you. Select all text from the text field below and copy-paste it in the field **Sample Paths**.
 
-<label for="chainedsams">Make sure to select all text: click in the textfield, then hold Ctrl+A and copy-paste the selected text in the field **Sample Paths**.</label><br><br>
+<label for="chainedsams">Click in the textfield, use Ctrl+A to select the text and Ctrl+C to copy the selected text. Paste in the R2 Sample Paths field with Ctrl+V </label><br>
 <input type="text" name="chainedsams" id="chainedsams" value="GSM1116933,GSM1116934;GSM1116935,GSM1116936;GSM1116937,GSM1116938;GSM1116939,GSM1116940;GSM1116941,GSM1116942; GSM1116943,GSM1116944;GSM1116945,GSM1116946;GSM1116947,GSM1116948;GSM1116949,GSM1116950;GSM1116951,GSM1116952; GSM1116953,GSM1116954;GSM1116955,GSM1116956;GSM1116957,GSM1116958;GSM1116959,GSM1116960;GSM1116961,GSM1116962; GSM1116963,GSM1116964;GSM1116965,GSM1116966;GSM1116967,GSM1116968;GSM1116969,GSM1116970;GSM1116971,GSM1116972" size="75"> 
 
 <br>
@@ -229,7 +237,7 @@ Since this set is treatment related, let's plot the data to see if treatment has
  
 ---
 
-* In the upper right corner is a text box **Change gene**. Change the gene to a different gene that you can find in the description of the study, or that you yourself wonder about. Click the **Change Gene** button under the textbox. 
+* Change the gene to a different gene that you can find in the description of the study, or that you yourself wonder about. Don't forget to submit the settings in order to see the changes.  
 <br><br>    
   
   
@@ -243,13 +251,13 @@ Since this set is treatment related, let's plot the data to see if treatment has
 ##### Exploring differentially expressed processes
 
 We now want to know which pathways are affected by treatment with tocilizumab.
-* From the main page, select the analysis **Differential Expression between groups**, click **Next** 
-* Choose *Select a track:* **drug (3 cat)**
-* Because we won't have many samples, we will not correct for multiple testing. Change *Corr. multiple testing:* **No correction** 
-* Make sure there is only a check mark in front of *tocilizumab* and in front of *untreated* (i.e. uncheck the other treatment).
+* From the main page, select the analysis **Differential Expression between multiple groups**, click **Next** 
+* Choose *Group by:* **drug (3 cat)** and click **Submit**. Extra settings will pop up.
+* Because we won't have many samples, we will not correct for multiple testing. Under Statistics change *Corr. multiple testing:* to **No correction**.
+* Choose *Group 1* **tocilizumab** and *Group 2* **untreated**.
 
 The list shows the genes that are differentially expressed between the tocilizumab treatment and untreated. 
-* To see in which processes these genes are involved in, this time we click on **Gene Ontology Analysis** button.    
+* To see in which processes these genes are involved, this time we click on **Gene Ontology Analysis** button.    
   
   
 ---
@@ -262,7 +270,7 @@ The list shows the genes that are differentially expressed between the tocilizum
 ---
 
 The page with the list of differentiating genes is still open in a tab. On this page many buttons and links allow you to visualize and analyze the result further. Try these options, or try to interpret the results that you obtain with one of the buttons on the right:
-* From the list of differentiating genes, choose one of the top genes and hover your mouse over the gene to read information about the gene. Now click on its name to be taken to the One Gene View for this gene. Of course you can adapt the graph again with the menu underneath the graph. 
+* From the list of differentiating genes, choose one of the top genes and hover your mouse over the glass icon in front of the gene to read information about the gene. Now click on the icon to be taken to the One Gene View for this gene. Of course you can adapt the graph again with the menu underneath the graph. 
 * From the page with the list of differentiating genes, click on the button **Plot all genes (xy, vulcano etc.)**
 * Underneath the plot, change **Plot type** to *Vulcano plot*. In the textfield **Mark genes**, write the name of a gene that you are interested in. Click on **Redraw Image**.
 * Hover with your mouse over some dots furthest to the left in the plot to read their names. Compare those names with the list of differentiating genes. 
