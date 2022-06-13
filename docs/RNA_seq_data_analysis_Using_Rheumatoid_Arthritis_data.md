@@ -41,7 +41,7 @@ The complexity of RA have spurred research to dive deeper into the disease mecha
 
 This green button will open up the Google form with which you can submit your answers for the first section. Only the questions with a R2D2 icon in front of them will have to be submitted.
 
- <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeffVprea-4JXE2wdqF6aVoCw-yDHodGzTKjIiHMUVKIkcQtw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2.1</button> 
+ <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhN-2QscR_9XL3tm_FJ5Oeq6r_Uayuw_ks_Cx6p4oVfHVcsA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2.1</button> 
  
  Let's take a first glance at the platform. Click on the following button to go to R2:  
   
@@ -145,7 +145,7 @@ This button will open up a Google form for section 1.2.2.
 <br>
 <br>
   
- <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSezdWy9nyvckg3y0BNMKjbQLiYilykJreThl9_VCUyiYI9lmA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2.2</button> 
+ <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdmKpl5sra2LPKKIAbQvJeVU_XL5MiEOsc7O2iFP2xxCcbfBw/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2.2</button> 
 <br>
 <br>
 We have seen before that the samples of a dataset can be annotated with extra annotation, or tracks. 
@@ -191,7 +191,7 @@ R2 presents the Okuzono dataset samples with its available annotation in a table
 
  This button will open up a Google form for section 1.3:
  
-  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdV8jh8L6Pkadh7xVffbyoMiUpdEYk9PwUesO3NWKjLRCu4FA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button> 
+  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdFJmTEueUGayV3zAsXl4Hbth5qb0sbwodRDeDW7RywMgqK2Q/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button> 
   
 How does treatment effect gene expression? Let's have a look at a dataset of Lauwerys et al. In the dataset we can find samples taken from the synovial fluid in the knee of 20 early RA patients, both before and after treatment.  
   
