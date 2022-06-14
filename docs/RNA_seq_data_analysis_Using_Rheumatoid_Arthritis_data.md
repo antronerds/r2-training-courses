@@ -218,8 +218,17 @@ Since this dataset is treatment related, let's plot the data to see if treatment
 Throughout R2 you can view the extra information of the selected dataset, with a click on the **i** information balloon behind the dataset title on the top of the page.
 * Click on the information balloon **i** and take a note of the *cytokines & chemokines* that are mentioned in the description box. Close the box with the **x** in the upper right corner.
 * Fill in **IL6** in the *Search by Gene* field of the Gene / Reporter setting, i.e. one of the genes that were mentioned to be down regulated by treatment. The "-" can be left out of the gene name in R2, e.g. "IL-6" becomes "IL6". Choose the appropriate gene from the dropdown list.
-* Choose *Select a track:* **therapy (2cat)** and click **Next**.
-* Every patient had a sample taken before the start (no) and after 12 weeks (yes) of therapy, it is a paired test. It would be nice to see which dots belong to the same patient. With Sample Paths we can connect the two samples of each patient with the format Samplename1,Samplename2; etc. Because it is rather labour intensive to get the correct syntax, we did this for you. Select all text from the text field below and copy-paste it in the field **Sample Paths**.
+* Choose *Track:* **therapy (2cat)** and click **Submit**.
+
+Every patient had a sample taken before the start (therapy: no, duration:t0) and after 12 weeks (therapy: yes, duration:t12) of therapy, it is a paired test. 
+* Check the annotation underneath the plot to see that the tracks therapy and duration are lined up with the according values.  
+
+For each patient there is one dot in each group of the plot, before and after treatment. The track *identifier* tells you which patient the sample belongs to.  
+* Check out the track **identifier**
+
+* It would be nice to see which data points belong to the same patient. 
+* Change *Graph type* to **XY plot**.
+* With Sample Paths we can connect the two samples of each patient with the format Samplename1,Samplename2; etc. Because it is rather labour intensive to get the correct syntax, we did this for you. Select all text from the text field below and copy-paste it in the field **Sample Paths**.
 
 <label for="chainedsams">Click in the textfield, use Ctrl+A to select the text and Ctrl+C to copy the selected text. Paste in the R2 Sample Paths field with Ctrl+V </label><br>
 <input type="text" name="chainedsams" id="chainedsams" value="GSM1116933,GSM1116934;GSM1116935,GSM1116936;GSM1116937,GSM1116938;GSM1116939,GSM1116940;GSM1116941,GSM1116942; GSM1116943,GSM1116944;GSM1116945,GSM1116946;GSM1116947,GSM1116948;GSM1116949,GSM1116950;GSM1116951,GSM1116952; GSM1116953,GSM1116954;GSM1116955,GSM1116956;GSM1116957,GSM1116958;GSM1116959,GSM1116960;GSM1116961,GSM1116962; GSM1116963,GSM1116964;GSM1116965,GSM1116966;GSM1116967,GSM1116968;GSM1116969,GSM1116970;GSM1116971,GSM1116972" size="75"> 
@@ -227,7 +236,7 @@ Throughout R2 you can view the extra information of the selected dataset, with a
 <br>
 <br>
 
-* Change **Colormode:  Color by Track** and **Track for Color: therapy (2 cat)**. Click on **Adjust Settings**   
+* Change **Color mode:  Color by Track** and **Color track: drug (3 cat)**. Click on **Adjust Settings**   
   
   
 ---
