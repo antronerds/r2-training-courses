@@ -218,16 +218,14 @@ Since this dataset is treatment related, let's plot the data to see if treatment
 Throughout R2 you can view the extra information of the selected dataset, with a click on the **i** information balloon behind the dataset title on the top of the page.
 * Click on the information balloon **i** and take a note of the *cytokines & chemokines* that are mentioned in the description box. Close the box with the **x** in the upper right corner.
 * Fill in **IL6** in the *Search by Gene* field of the Gene / Reporter setting, i.e. one of the genes that were mentioned to be down regulated by treatment. The "-" can be left out of the gene name in R2, e.g. "IL-6" becomes "IL6". Choose the appropriate gene from the dropdown list.
-* Choose *Track:* **therapy (2cat)** and click **Submit**.
+* Choose *Track:* **therapy (2cat)** and change *Graph type* to **XY plot**. This way we can find out if there is a correlation between the values before treatment and after treatment. Also, R2 will plot the data points in an XY plot with the gene expression value on the Y axis and the treatment groups on the X axis.  
+* Let's color the data by the drug treatment: *Color mode* **Color by Track** and *Color track* **drug (3 cat)**, then click **Submit**.
 
-Every patient had a sample taken before the start (therapy: no, duration:t0) and after 12 weeks (therapy: yes, duration:t12) of therapy, it is a paired test. 
-* Check the annotation underneath the plot to see that the tracks therapy and duration are lined up with the according values.  
+Every patient had a sample taken before the start and after 12 weeks of therapy; it is a paired test. For each patient there is one dot for the IL6 gene expression before treatment (colored blue, annotated with therapy: no, duration: t0, drug: untreated) and one dot fore the IL6 gene expression after treatment (colored green or red, annotated with therapy: yes, duration: t12, drug: tocilizumab or methotrexate). The track *identifier* tells you to which patient the sample belongs.
+* Hover your mouse over a couple of data points in the graph to see that the tracks **therapy** and **duration** are lined up with the according values. Also take note of the track **identifier**.
 
-For each patient there is one dot in each group of the plot, before and after treatment. The track *identifier* tells you which patient the sample belongs to.  
-* Check out the track **identifier**
+To see the effect of treatment on each patient, it would be more insightful to see the relation between data points that belong to the same patient. Also, we would like to see the statistical significance of treatment of the two different treatments. 
 
-* It would be nice to see which data points belong to the same patient. 
-* Change *Graph type* to **XY plot**.
 * With Sample Paths we can connect the two samples of each patient with the format Samplename1,Samplename2; etc. Because it is rather labour intensive to get the correct syntax, we did this for you. Select all text from the text field below and copy-paste it in the field **Sample Paths**.
 
 <label for="chainedsams">Click in the textfield, use Ctrl+A to select the text and Ctrl+C to copy the selected text. Paste in the R2 Sample Paths field with Ctrl+V </label><br>
@@ -236,16 +234,23 @@ For each patient there is one dot in each group of the plot, before and after tr
 <br>
 <br>
 
-* Change **Color mode:  Color by Track** and **Color track: drug (3 cat)**. Click on **Adjust Settings**   
-  
+* To see the result click on **Submit** and take note of the results of the ANOVA test above the plot.
+
+Let's compare the statistics of the individual treatments. We make use of the Sample Filter and the track *experiment*, that tells you to which drug experiment each sample (including the untreated samples) belongs. 
+* Under the graph select for the setting *Subset track* the value **experiment** and in the pop up, check mtx (16), click **ok**.
+* Take note of the ANOVA results above the graph.
+* Now change the Subset track to the other experiment. Click the **red cross* to deselect the previous value, from the dropdown select **experiment** and in the popup check the square **tcz (24)**. Click **ok** and then in the settings box, click **Submit**.
+* Take note of the results of the ANOVA test above the plot. 
+
   
 ---
 
 
-![](_static/images/R2d2_logo.png)**What can you tell about the effect of treatment on the expression of this gene?**  
+![](_static/images/R2d2_logo.png)**What can you tell about the effect of the different treatments on the expression of this gene? Does this confirm or oppose the description of the study?**  
  
 ---
 
+Optional:
 * Change the gene to a different gene that you can find in the description of the study, or that you yourself wonder about. Don't forget to submit the settings in order to see the changes.  
 <br><br>    
   
@@ -260,38 +265,46 @@ For each patient there is one dot in each group of the plot, before and after tr
 ##### Exploring differentially expressed processes
 
 We now want to know which pathways are affected by treatment with tocilizumab.
-* From the main page, select the analysis **Differential Expression between multiple groups**, click **Next** 
-* Choose *Group by:* **drug (3 cat)** and click **Submit**. Extra settings will pop up.
+* From the main page, select the analysis **Differential Expression between two groups**, click **Next** 
+* Choose *Group by:* **therapy (2 cat)**.
+* For *Subset track* choose **experiment** and check **tcz (24)**. Click **ok** and click **Submit**. Extra settings will pop-up.
+* Choose *Group 1* **yes (12)** and *Group 2* **no (12)**. 
 * Because we won't have many samples, we will not correct for multiple testing. Under Statistics change *Corr. multiple testing:* to **No correction**.
-* Choose *Group 1* **tocilizumab** and *Group 2* **untreated**.
 
-The list shows the genes that are differentially expressed between the tocilizumab treatment and untreated. 
-* To see in which processes these genes are involved, this time we click on **Gene Ontology Analysis** button.    
-  
-  
+The list shows the genes that are differentially expressed between the patients before treatment and after treatment. Above the table you can see how many genes have been found to be significantly differentially expressed with a p-value of at most 0.01. 
+* On the right side of the table, buttons allow to perform further analyses on the obtained list of differentially expressed genes. To see in which processes these genes are involved, we click on **Gene Ontology Analysis** button.
+
+The analysis connects to the Gene Ontology knowledgebase (<a href="http://geneontology.org/" target="_blank">http://geneontology.org/</a>), "the world’s largest source of information on the functions of genes". The knowledgebase contains information about which genes are involved in which biological processes. The R2 Gene Ontology algorithm checks for which processes the involved genes are overrepresented in our list of differentially expressed genes, i.e. it looks at the probability that the number of up or down regulated genes of that process, occur in our list by chance (randomly). 
+In this table each row contains information of one biological process: its name, the p-value of the overrepresentation and the involved genes that are up (yes >= no) or down (yes < no) regulated with therapy. Above the table you can find the meaning of the red and green color coding.   
+
 ---
 
 
  ![](_static/images/R2d2_logo.png)**What kind of processes seem to be affected by treatment?**  
  
- ![](_static/images/R2d2_logo.png)**Are the genes involved in these processes mostly higher or lower expressed before or after treatment? (Hint: Look at the color scheme above the table)** 
- 
+ ![](_static/images/R2d2_logo.png)**Are the genes that are involved in these processes mostly higher or lower expressed after treatment? (Hint: Look at the color scheme above the table)** 
+   
+
 ---
 
 The page with the list of differentiating genes is still open in a tab. On this page many buttons and links allow you to visualize and analyze the result further. Try these options, or try to interpret the results that you obtain with one of the buttons on the right:
-* From the list of differentiating genes, choose one of the top genes and hover your mouse over the glass icon in front of the gene to read information about the gene. Now click on the icon to be taken to the One Gene View for this gene. Of course you can adapt the graph again with the menu underneath the graph. 
-* From the page with the list of differentiating genes, click on the button **Plot all genes (xy, vulcano etc.)**
-* Underneath the plot, change **Plot type** to *Vulcano plot*. In the textfield **Mark genes**, write the name of a gene that you are interested in. Click on **Redraw Image**.
-* Hover with your mouse over some dots furthest to the left in the plot to read their names. Compare those names with the list of differentiating genes. 
-* From the page with the list of differentiating genes, now click the button **Heatmap (zscore)** to get an overview of all the genes and the group separations in a Heatmap.
-
-* Redo the Differential Expression between groups analysis and Gene Ontology analysis, except this time select the other treatment versus the untreated. Don't forget to switch off the *Corr. multiple testing:*.    
+* From the list of differentiating genes, choose one of the top genes and hover your mouse over the glass icon in front of the gene to read information about the gene. Now click on the icon to be taken to the One Gene View for this gene. Of course you can adapt the graph again with the menu underneath the graph.  
   
+
+* On the page with the list of differentiating genes, click on the button **Plot all genes (xy, vulcano etc.)**
+* Underneath the plot, change **Plot type** to *Vulcano plot*. In the textfield **Mark genes**, write the name of a gene that you are interested in. Click on **Redraw Image**.
+* Hover with your mouse over some dots furthest to the left in the plot to read their names. Compare those names with the list of differentiating genes.  
+  
+
+* On the page with the list of differentiating genes, now click the button **Heatmap (zscore)** to get an overview of all the genes and the (unsupervised) group separations in a Heatmap.
+
+* Redo the Differential Expression between groups analysis and Gene Ontology analysis for the other treatment. I.e. choose for *Subset track* **experiment** and check **mtx (16)**. Don't forget to switch off the *Corr. multiple testing:*. 
   
 ---
 
- ![](_static/images/R2d2_logo.png)**What results do you get with this treatment? Read the dataset description again. Do your results correspond with some of the study findings?**  
+ ![](_static/images/R2d2_logo.png)**What results do you get with this treatment? Read the dataset description again. Do your results correspond with results of the study?**  
   
+
 ---
 
 * Please, submit your form. Thanks!
@@ -299,8 +312,6 @@ The page with the list of differentiating genes is still open in a tab. On this 
 
 Final remarks / future directions
 ---------------------------------
-In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize your genomics data. 
-
 You have reached the end of this course. Feel free to try one of the (Graduate) Student Courses that you can find in the sidebar of this page <a href="https://r2-training-courses.readthedocs.io/en/latest/" target="_blank">https://r2-training-courses.readthedocs.io/en/latest/</a>. 
 
 We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
