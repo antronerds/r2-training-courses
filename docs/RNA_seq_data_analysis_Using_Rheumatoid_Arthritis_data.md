@@ -54,7 +54,7 @@ This green button will open up the Google form with which you can submit your an
 
 * You don't need to login for this course. You can click on the **Guest sign-in (limited features)** button just underneath the sign in box. However, when you register to the platform and log in with your credentials, more datasets and analyses will become available to you. In order to register either use the **Register Now** button on the login page or, if you are already on the main page, use the red link in the left side menu.  
 
-The five numbered boxes in the middle of the R2 main page allow you to choose a dataset and a type of analysis. In box 2 you can see that a dataset of Okuzono has already been selected that focuses on the disease Rheumatoid arthritis and that contains 75 samples. In box 3 you can select an analysis to perform on the selected dataset. Let's have a first look. 
+The four numbered boxes in the middle of the R2 main page allow you to choose a dataset and a type of analysis. In box 2 you can see that a dataset of Okuzono has already been selected that focuses on the disease Rheumatoid arthritis and that contains 75 samples. In box 3 you can select an analysis to perform on the selected dataset. Let's have a first look. 
 
 * The default analysis is **View a gene** (box 3). Keep this setting and click **Next** in box 4.
 * You now see The Adjustable settings box. Type in the textbox *Search by gene* of the setting *Gene / Reporter:* **CD4**. The pop-up dropdown shows all the available reporters of this dataset that contain the keyword CD4. Click on **CD4 / 11829_2914** and you will see that the reporter textfield on the right is filled in automatically.   
