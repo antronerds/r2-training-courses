@@ -54,7 +54,7 @@ This green button will open up the Google form with which you can submit your an
 
 * You don't need to login for this course. You can click on the **Guest sign-in (limited features)** button just underneath the sign in box. However, when you register to the platform and log in with your credentials, more datasets and analyses will become available to you. In order to register either use the **Register Now** button on the login page or, if you are already on the main page, use the red link in the left side menu.  
 
-The five numbered boxes in the middle of the R2 main page allow you to choose a dataset and a type of analysis. In box 2 you can see that a dataset of Okuzono has already been selected that focuses on the disease Rheumatoid arthritis and that contains 75 samples. In box 3 you can select an analysis to perform on the selected dataset. Let's have a first look. 
+The four numbered boxes in the middle of the R2 main page allow you to choose a dataset and a type of analysis. In box 2 you can see that a dataset of Okuzono has already been selected that focuses on the disease Rheumatoid arthritis and that contains 75 samples. In box 3 you can select an analysis to perform on the selected dataset. Let's have a first look. 
 
 * The default analysis is **View a gene** (box 3). Keep this setting and click **Next** in box 4.
 * You now see The Adjustable settings box. Type in the textbox *Search by gene* of the setting *Gene / Reporter:* **CD4**. The pop-up dropdown shows all the available reporters of this dataset that contain the keyword CD4. Click on **CD4 / 11829_2914** and you will see that the reporter textfield on the right is filled in automatically.   
@@ -239,7 +239,7 @@ To see the effect of treatment on each patient, it would be more insightful to s
 Let's compare the statistics of the individual treatments. We make use of the Sample Filter and the track *experiment*, that tells you to which drug experiment each sample (including the untreated samples) belongs. 
 * Under the graph select for the setting *Subset track* the value **experiment** and in the pop up, check mtx (16), click **ok**.
 * Take note of the ANOVA results above the graph.
-* Now change the Subset track to the other experiment. Click the **red cross* to deselect the previous value, from the dropdown select **experiment** and in the popup check the square **tcz (24)**. Click **ok** and then in the settings box, click **Submit**.
+* Now change the Subset track to the other experiment. Click the **red cross** to deselect the previous value, from the dropdown select **experiment** and in the popup check the square **tcz (24)**. Click **ok** and then in the settings box, click **Submit**.
 * Take note of the results of the ANOVA test above the plot. 
 
   
@@ -291,8 +291,10 @@ The page with the list of differentiating genes is still open in a tab. On this 
 * From the list of differentiating genes, choose one of the top genes and hover your mouse over the glass icon in front of the gene to read information about the gene. Now click on the icon to be taken to the One Gene View for this gene. Of course you can adapt the graph again with the menu underneath the graph.  
   
 
+
 * On the previous page with the list of differentiating genes, click on the button **Plot all genes (xy, vulcano etc.)**
-* Underneath the plot, change **Plot type** to *Vulcano plot*. In the textfield **Mark genes**, write the name of a gene that you are interested in. Click on **Redraw Image**.
+* Underneath the plot, change *Plot type* to **Vulcano plot**. In the textfield *Mark genes*, write the name of a gene that you are interested in. Click on **Redraw Image**.
+
 * Hover with your mouse over some dots furthest to the left in the plot to read their names. Compare those names with the list of differentiating genes.  
   
 
