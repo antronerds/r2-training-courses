@@ -151,7 +151,7 @@ This button will open up a Google form for section 1.2.2.
 We have seen before that the samples of a dataset can be annotated with extra annotation, or tracks. 
 To get a better overview of the available annotation of a dataset, we can use the tool **Cohort Overview** in R2. 
 
-* Go back to the main page (in th eupper left corner of the page, click on **Go to: Main**) and select **Cohort Overview** as type of analysis in box 3.
+* Go back to the main page (in the upper left corner of the page, click on **Go to: Main**) and select **Cohort Overview** as type of analysis in box 3.
 
 R2 presents the Okuzono dataset samples with its available annotation in a table at the bottom of the page. Each pie chart above the table shows a different available track. 
 * Hover your mouse over the different slices of the **tissue** annotation pie chart. What percentage of the samples is synovial fluid and what percentage is blood tissue?
