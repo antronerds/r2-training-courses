@@ -6,9 +6,9 @@ Gene expression in Rheumatoid Arthritis
 Introduction
 ---
 Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by inflammatory cell infiltration, such as T cells, B cells, macrophages and plasma cells. Production of cytokines and proteases lead to chronic inflammation of the synovial tissues and progressive joint disability. RA affects as much as 1% of the worldwide population. Although the exact causes are unknown, decades of research has led to increasingly detailed understanding of multiple disease mechanisms. Different treatments for RA have been proposed, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ). However, a significant proportion of patients do not respond to initial treatment or reach remission. Others experience recurrence or deterioration of their disease.    
-The complexity of RA have spurred research to dive deeper into the disease mechanisms using genetics, transcriptomics or proteomics. Extensive efforts are made to find more specific diagnostic markers.    
+The complexity of RA has spurred research to dive deeper into the disease mechanisms using genetics, transcriptomics or proteomics. Extensive efforts are made to find more specific diagnostic markers.    
   
-  Because of difficulties in measuring markers in the inflamed joints, to a large extent efforts have been focused on analyses of peripheral blood. However, as Lee et al. point out (<a href="https://doi.org/10.1016/j.cyto.2019.154960" target="_blank">Cytokine, March 2020</a>), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.   
+  Because of difficulties in measuring markers in the inflamed joints, to a large extent efforts have been focused on analyses of peripheral blood. However, as Lee et al. points out (<a href="https://doi.org/10.1016/j.cyto.2019.154960" target="_blank">Cytokine, March 2020</a>), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.   
  
  ![](_static/images/KIT_rheumatoid-arthritis-drug-targets.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)")
    
@@ -89,7 +89,7 @@ To understand better how this cytokine relates to different tissue and cell type
 
 * Scroll down underneath the CD4 gene expression graph to find the **Adjustable settings** box.  
 * We can make use of the dataset's annotations to view the results of our samples in groups. At the top of the Adjustable settings box change *Analysis type* from **single gene** to  **gene vs track** and switch the *Track* setting to **tissue (2cat)** to separate the samples of the tissue blood from those of synovial fluid.
-* Type **TNF**  in stead of CD4 in the *Search by gene* textbox of *Gene / Reporter* and select the first value **TNF / 11829_18627** from the dropdown list of available genes / reporters.   
+* Type **TNF**  instead of CD4 in the *Search by gene* textbox of *Gene / Reporter* and select the first value **TNF / 11829_18627** from the dropdown list of available genes / reporters.   
 * In order to have a look at the adjustments so far, click **Submit** for the adjustments to take effect. 
 * Scroll down again to change one more setting: in the *Graphics* settings adjust *Graph type:* to **Box/dot plot (dots)** and *Color mode:* to **Color by Track**.
 * Again click **Submit** for the adjustments to take effect.  
@@ -102,7 +102,7 @@ Often you use a boxplot to assess whether the expression values of a particular 
 Next to the visual representation, R2 also provides this statistical information in textual format.  
  * Hover your mouse over each box to compare the summarizing values of the two groups.  
    
-The two groups clearly show different trends in their expression values of TNF. But how do we know whether the group means vary significantly, i.e. by more than random chance allows? To answer that question R2 shows you the results of an analysis of variance (ANOVA): you can find the F-value, the test statistic of the ANOVA test, and the p-value of the ANOVA test in the table above the plot.  
+The two groups clearly show different trends in their expression values of TNF. But how do we know whether the group means vary significantly, i.e. by more than random chance allows? To answer that question, R2 shows you the results of an analysis of variance (ANOVA): you can find the F-value, the test statistic of the ANOVA test, and the p-value of the ANOVA test in the table above the plot.  
  
 ---------  
   
@@ -151,7 +151,7 @@ This button will open up a Google form for section 1.2.2.
 We have seen before that the samples of a dataset can be annotated with extra annotation, or tracks. 
 To get a better overview of the available annotation of a dataset, we can use the tool **Cohort Overview** in R2. 
 
-* Go back to the main page (in th eupper left corner of the page, click on **Go to: Main**) and select **Cohort Overview** as type of analysis in box 3.
+* Go back to the main page (in the upper left corner of the page, click on **Go to: Main**) and select **Cohort Overview** as type of analysis in box 3.
 
 R2 presents the Okuzono dataset samples with its available annotation in a table at the bottom of the page. Each pie chart above the table shows a different available track. 
 * Hover your mouse over the different slices of the **tissue** annotation pie chart. What percentage of the samples is synovial fluid and what percentage is blood tissue?
@@ -221,7 +221,7 @@ Throughout R2 you can view the extra information of the selected dataset, with a
 * Choose *Track:* **therapy (2cat)** and change *Graph type* to **XY plot**. This way we can find out if there is a correlation between the values before treatment and after treatment. Also, R2 will plot the data points in an XY plot with the gene expression value on the Y axis and the treatment groups on the X axis.  
 * Let's color the data by the drug treatment: *Color mode* **Color by Track** and *Color track* **drug (3 cat)**, then click **Submit**.
 
-Every patient had a sample taken before the start and after 12 weeks of therapy; it is a paired test. For each patient there is one dot for the IL6 gene expression before treatment (colored blue, annotated with therapy: no, duration: t0, drug: untreated) and one dot fore the IL6 gene expression after treatment (colored green or red, annotated with therapy: yes, duration: t12, drug: tocilizumab or methotrexate). The track *identifier* tells you to which patient the sample belongs.
+Every patient had a sample taken before the start and after 12 weeks of therapy; it is a paired test. For each patient there is one dot for the IL6 gene expression before treatment (colored blue, annotated with therapy: no, duration: t0, drug: untreated) and one dot for the IL6 gene expression after treatment (colored green or red, annotated with therapy: yes, duration: t12, drug: tocilizumab or methotrexate). The track *identifier* tells you to which patient the sample belongs.
 * Hover your mouse over a couple of data points in the graph to see that the tracks **therapy** and **duration** are lined up with the according values. Also take note of the track **identifier**.
 
 To see the effect of treatment on each patient, it would be more insightful to see the relation between data points that belong to the same patient. Also, we would like to see the statistical significance of treatment of the two different treatments. 
@@ -291,12 +291,12 @@ The page with the list of differentiating genes is still open in a tab. On this 
 * From the list of differentiating genes, choose one of the top genes and hover your mouse over the glass icon in front of the gene to read information about the gene. Now click on the icon to be taken to the One Gene View for this gene. Of course you can adapt the graph again with the menu underneath the graph.  
   
 
-* On the page with the list of differentiating genes, click on the button **Plot all genes (xy, vulcano etc.)**
+* On the previous page with the list of differentiating genes, click on the button **Plot all genes (xy, vulcano etc.)**
 * Underneath the plot, change **Plot type** to *Vulcano plot*. In the textfield **Mark genes**, write the name of a gene that you are interested in. Click on **Redraw Image**.
 * Hover with your mouse over some dots furthest to the left in the plot to read their names. Compare those names with the list of differentiating genes.  
   
 
-* On the page with the list of differentiating genes, now click the button **Heatmap (zscore)** to get an overview of all the genes and the (unsupervised) group separations in a Heatmap.
+* On the previous page with the list of differentiating genes, now click the button **Heatmap (zscore)** to get an overview of all the genes and the (unsupervised) group separations in a Heatmap.
 
 * Redo the Differential Expression between groups analysis and Gene Ontology analysis for the other treatment. I.e. choose for *Subset track* **experiment** and check **mtx (16)**. Don't forget to switch off the *Corr. multiple testing:*. 
   
