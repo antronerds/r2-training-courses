@@ -239,7 +239,7 @@ To see the effect of treatment on each patient, it would be more insightful to s
 Let's compare the statistics of the individual treatments. We make use of the Sample Filter and the track *experiment*, that tells you to which drug experiment each sample (including the untreated samples) belongs. 
 * Under the graph select for the setting *Subset track* the value **experiment** and in the pop up, check mtx (16), click **ok**.
 * Take note of the ANOVA results above the graph.
-* Now change the Subset track to the other experiment. Click the **red cross* to deselect the previous value, from the dropdown select **experiment** and in the popup check the square **tcz (24)**. Click **ok** and then in the settings box, click **Submit**.
+* Now change the Subset track to the other experiment. Click the **red cross** to deselect the previous value, from the dropdown select **experiment** and in the popup check the square **tcz (24)**. Click **ok** and then in the settings box, click **Submit**.
 * Take note of the results of the ANOVA test above the plot. 
 
   
@@ -292,7 +292,7 @@ The page with the list of differentiating genes is still open in a tab. On this 
   
 
 * On the page with the list of differentiating genes, click on the button **Plot all genes (xy, vulcano etc.)**
-* Underneath the plot, change **Plot type** to *Vulcano plot*. In the textfield **Mark genes**, write the name of a gene that you are interested in. Click on **Redraw Image**.
+* Underneath the plot, change *Plot type* to **Vulcano plot**. In the textfield *Mark genes*, write the name of a gene that you are interested in. Click on **Redraw Image**.
 * Hover with your mouse over some dots furthest to the left in the plot to read their names. Compare those names with the list of differentiating genes.  
   
 
