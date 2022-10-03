@@ -99,6 +99,7 @@ The expression values are currently log2 transformed. Check out the difference w
 
 The circles on top of the boxplot show the individual value of each sample, which is a good way to stay aware of the distribution of the raw data points.  
 Often you use a boxplot to assess whether the expression values of a particular gene differ between groups of samples and to quickly identify their average values, outliers, the dispersion of the data set, and signs of skewness.  
+
 Next to the visual representation, R2 also provides this statistical information in textual format.  
  * Hover your mouse over each box to compare the summarizing values of the two groups.  
    
