@@ -124,7 +124,7 @@ The immune system is a complex system of different cell types that interact with
     
  This heterogeneity among T cells make it challenging to identify the specific cell subsets and states that drive RA pathogenesis.
 
-* Under your latest graph, change the setting "Track" to "t-cell-stage-type". Click **Submit**.
+* Under your latest graph, change the setting *Track* to **t-cell-stage-type**. Click **Submit**.
 * Now change the transformation back to **log2**. Click **Submit** again.  
   
 ---------
@@ -152,7 +152,7 @@ This button will open up a Google form for section 1.2.2.
 We have seen before that the samples of a dataset can be annotated with extra annotation, or tracks. 
 To get a better overview of the available annotation of a dataset, we can use the tool **Cohort Overview** in R2. 
 
-* Go back to the main page (in the upper left corner of the page, click on **Go to: Main**) and select **Cohort Overview** as type of analysis in box 3.
+* Go back to the main page (in the upper left corner of the page, click on **Go to: Main**) and select **Cohort Overview** as type of analysis in box 3. Click **Next**.
 
 R2 presents the Okuzono dataset samples with its available annotation in a table at the bottom of the page. Each pie chart above the table shows a different available track. 
 * Hover your mouse over the different slices of the **tissue** annotation pie chart. What percentage of the samples is synovial fluid and what percentage is blood tissue?
@@ -210,7 +210,7 @@ We are interested in the dataset that has 40 samples (N is 40). To read extra in
 
 First, we take a look at the provided annotation. Let's start with the dataset Cohort Overview.  
 
-* In box 3, select the **Cohort Overview**, click **next** and explore the available annotation.
+* In box 3, select the **Cohort Overview**, click **Next** and explore the available annotation.
   
 Since this dataset is treatment related, let's plot the data to see if treatment has any effect according to this study.
 
@@ -235,13 +235,13 @@ To see the effect of treatment on each patient, it would be more insightful to s
 <br>
 <br>
 
-* To see the result click on **Submit** and take note of the results of the ANOVA test above the plot.
+* To see the result click on **Submit** and take note of the results of the ANOVA test underneath the plot.
 
 Let's compare the statistics of the individual treatments. We make use of the Sample Filter and the track *experiment*, that tells you to which drug experiment each sample (including the untreated samples) belongs. 
-* Under the graph select for the setting *Subset track* the value **experiment** and in the pop up, check mtx (16), click **ok**.
-* Take note of the ANOVA results above the graph.
+* Under the graph select for the setting *Subset track* the value **experiment** and in the pop up, check mtx (16), click **ok**. Click **Submit**
+* Take note of the ANOVA results underneath the graph.
 * Now change the Subset track to the other experiment. Click the **red cross** to deselect the previous value, from the dropdown select **experiment** and in the popup check the square **tcz (24)**. Click **ok** and then in the settings box, click **Submit**.
-* Take note of the results of the ANOVA test above the plot. 
+* Take note of the results of the ANOVA test underneath the plot. 
 
   
 ---
@@ -270,12 +270,14 @@ We now want to know which pathways are affected by treatment with tocilizumab.
 * Choose *Group by:* **therapy (2 cat)**.
 * For *Subset track* choose **experiment** and check **tcz (24)**. Click **ok** and click **Submit**. Extra settings will pop-up.
 * Choose *Group 1* **yes (12)** and *Group 2* **no (12)**. 
-* Because we won't have many samples, we will not correct for multiple testing. Under Statistics change *Corr. multiple testing:* to **No correction**.
+* Because we won't have many samples, we will not correct for multiple testing. Under Statistics change *Corr. multiple testing:* to **No correction**. Click **Submit**.
 
 The list shows the genes that are differentially expressed between the patients before treatment and after treatment. Above the table you can see how many genes have been found to be significantly differentially expressed with a p-value of at most 0.01. 
 * On the right side of the table, buttons allow to perform further analyses on the obtained list of differentially expressed genes. To see in which processes these genes are involved, we click on **Gene Ontology Analysis** button.
 
-The analysis connects to the Gene Ontology knowledgebase (<a href="http://geneontology.org/" target="_blank">http://geneontology.org/</a>), "the world’s largest source of information on the functions of genes". The knowledgebase contains information about which genes are involved in which biological processes. The R2 Gene Ontology algorithm checks for which processes the involved genes are overrepresented in our list of differentially expressed genes, i.e. it looks at the probability that the number of up or down regulated genes of that process, occur in our list by chance (randomly). 
+The analysis connects to the Gene Ontology knowledgebase (<a href="http://geneontology.org/" target="_blank">http://geneontology.org/</a>), "the world’s largest source of information on the functions of genes". The knowledgebase contains information about which genes are involved in which biological processes.  
+  
+The R2 Gene Ontology algorithm checks for which processes the involved genes are overrepresented in our list of differentially expressed genes, i.e. it looks at the probability that the number of up or down regulated genes of that process, occur in our list by chance (randomly).  
 In this table each row contains information of one biological process: its name, the p-value of the overrepresentation and the involved genes that are up (yes >= no) or down (yes < no) regulated with therapy. Above the table you can find the meaning of the red and green color coding.   
 
 ---
@@ -296,9 +298,9 @@ The page with the list of differentiating genes is still open in a tab. On this 
 * Underneath the plot, change *Plot type* to **Vulcano plot**. In the textfield *Mark genes*, write the name of a gene that you are interested in. Click on **Redraw Image**.
 
 * Hover with your mouse over some dots furthest to the left in the plot to read their names. Compare those names with the list of differentiating genes.  
-  
+* In the Adjustable settings box click on **Search GO** button. In the *GO description* column you can type in the white textfield (directly underneath  the header) to search for particular keywords and to find a Gene Ontology set of interest. Let us try the keyword **immune**. The table adjusts to those GO sets that contain the keyword immune. Select any GO set with the **Select** button in front of that row and check the graph to see if the genes marked by this GO set are mainly up- or downreguated. 
 
-* On the previous page with the list of differentiating genes, now click the button **Heatmap (zscore)** to get an overview of all the genes and the (unsupervised) group separations in a Heatmap.
+* On the tab with the list of differentiating genes, now click the button **Heatmap (zscore)** to get an overview of all the genes and the (unsupervised) group separations in a Heatmap.
 
 * Redo the Differential Expression between groups analysis and Gene Ontology analysis for the other treatment. I.e. choose for *Subset track* **experiment** and check **mtx (16)**. Don't forget to switch off the *Corr. multiple testing:*. 
   
