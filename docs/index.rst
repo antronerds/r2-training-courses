@@ -1,4 +1,4 @@
-R2 Training Courses: |version|
+R2 Introduction Workshop 2022: |version|
 ====================================
 
 ![](_static/images/R2IntroductionWorkshop/trainingpamflet.png)
