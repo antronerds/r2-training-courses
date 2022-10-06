@@ -1,11 +1,11 @@
-R2 Introduction Workshop 2022: |version|
+R2 Introduction Workshop 2022
 ====================================
 
 .. image:: https://r2-training-courses.readthedocs.io/en/latest/_static/images/R2IntroductionWorkshop/trainingpamflet.png
   :width: 400
   :alt: Alternative text
 
-R2 Introduction Workshop 2022
+Welcome
 =======
 R2 is a publicly accessible web-based program (`http://r2.amc.nl <http://r2.amc.nl>`_ allowing biomedical researchers, without bioinformatics training, to integrate clinical and genomics data. To help (bio)medical researchers get started, we offer this one day R2 Introduction Workshop.
 
@@ -14,8 +14,8 @@ We hope that you will find this day interesting. We would love to hear your thou
 `Evaluation form <https://forms.gle/M5E5Jzbms8zDATKz6>`_
 
 
-***Computer Login at the AMC***
----
+Computer Login at the AMC
+===
 You can login to the computers with the following credentials:
 
 User/ Gebruiker: func_user
@@ -25,8 +25,8 @@ Password/ Wachtwoord: Welkom01
 
 
 
-***Overview of resources***
----
+Overview of resources
+===
 
 The day consists of presentations and hands-on sessions. Experts will be available for questions while you can go through online step-by-step guides.
 Please find an overview of the guides per topic under R2 Introduction Workshop Overview.
