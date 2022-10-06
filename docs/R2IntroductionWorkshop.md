@@ -9,7 +9,15 @@ R2 is a publicly accessible web-based program (http://r2.amc.nl) allowing biomed
 We hope that you will find this day interesting. We would love to hear your thoughts about the workshop. We kindly ask you to fill in the following form during the workshop or at the end of the day:   
  [**Evaluation form**](https://forms.gle/M5E5Jzbms8zDATKz6 )
 
-func_user Welkom01
+Computer Login at the AMC
+---
+You can login to the computers with the following credentials:  
+
+User/ Gebruiker: func_user  
+
+Password/ Wachtwoord: Welkom01  
+  
+
 
 
 Overview of resources
@@ -140,6 +148,7 @@ Presentation 3
 ---
 
 **Integrative Analysis**  
+
 [ChIP-seq data](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_ChIP-Seq_data.html)
 
 [Across Platforms](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_expression_methylation.html)  
