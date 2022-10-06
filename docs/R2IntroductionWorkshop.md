@@ -43,7 +43,9 @@ Second presentation
 ---
 
 [Differential Expression](https://r2-tutorials.readthedocs.io/en/latest/Differential_Expression.html)  
-[View a gene in groups]()  
+
+[View a gene in groups](https://r2-tutorials.readthedocs.io/en/latest/One_Gene_View.html?#step-4-selecting-analysis-types-view-a-gene-in-groups)  
+
 [Differential expression between two / multiple groups]()  
 [KaplanScanner]()  
 [Gene Ontology analysis]()  
