@@ -10,7 +10,7 @@ We hope that you will find this day interesting. We would love to hear your thou
 [**Evaluation form**](https://forms.gle/M5E5Jzbms8zDATKz6 )
 
 
-Overview of materials
+Overview of resources
 ---
 
 The day consists of presentations and hands-on sessions. Experts will be available for questions while you can go through online step-by-step guides.
@@ -21,13 +21,27 @@ Alternatively, you could work partake in online courses that take you through la
 Go to the R2 platform at **http://r2.amc.nl**
 Find the complete tutorial at [**Tutorial**](https://r2-tutorials.readthedocs.io/en/latest), or direct links from the presentation to the chapters below: 
 
+First presentation
+--- 
+
 [Dataset Selection](https://r2-tutorials.readthedocs.io/en/latest/Using_Datasets.html)   
+
 [View a Gene](https://r2-tutorials.readthedocs.io/en/latest/One_Gene_View.html)  
-[Sample Filter](https://r2-tutorials.readthedocs.io/en/latest/One_Gene_View.html?highlight=View%20all%20reporters#step-7-selecting-subsets)
+
+[Sample Filter](https://r2-tutorials.readthedocs.io/en/latest/One_Gene_View.html?highlight=View%20all%20reporters#step-7-selecting-subsets)  
+
 [Clinisnitch](https://r2-tutorials.readthedocs.io/en/latest/One_Gene_View.html?highlight=clinisnitch#step-8-find-best-track-separation-with-clinisnitch)  
+
 [Sample Extremes](https://r2-tutorials.readthedocs.io/en/latest/Handyparts.html?highlight=Sample%20Extremes#collection-of-handy-tools-in-r2)  
+
 [View all reporters](https://r2-tutorials.readthedocs.io/en/latest/One_Gene_View.html?highlight=View%20all%20reporters#step-10-probeset-verification)  
+
 [Graphics settings/ Track visibility](https://r2-tutorials.readthedocs.io/en/latest/One_Gene_View.html?highlight=Graphics%20settings#step-6-adapting-plot)  
+  
+  
+Second presentation 
+---
+
 [Differential Expression](https://r2-tutorials.readthedocs.io/en/latest/Differential_Expression.html)  
 
 
