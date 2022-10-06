@@ -14,8 +14,9 @@ We hope that you will find this day interesting. We would love to hear your thou
 `Evaluation form <https://forms.gle/M5E5Jzbms8zDATKz6>`_
 
 
-Computer Login at the AMC
-===
+**Computer Login at the AMC**
+
+
 You can login to the computers with the following credentials:
 
 User/ Gebruiker: func_user
@@ -23,10 +24,8 @@ User/ Gebruiker: func_user
 Password/ Wachtwoord: Welkom01
 
 
+**Overview of resources**
 
-
-Overview of resources
-===
 
 The day consists of presentations and hands-on sessions. Experts will be available for questions while you can go through online step-by-step guides.
 Please find an overview of the guides per topic under R2 Introduction Workshop Overview.
