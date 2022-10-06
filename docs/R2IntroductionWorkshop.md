@@ -1,6 +1,6 @@
 <a id="r2_introduction_workshop_2022"> </a>
 
-![](_static/images/R2IntroductionWorkshop/trainingpamflet.png "Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)")
+![](_static/images/R2IntroductionWorkshop/trainingpamflet.png)
 
 R2 Introduction Workshop 2022 Overview
 =======
@@ -23,18 +23,12 @@ You can login to the computers with the following credentials:
 
 Overview of resources
 ---
-
-The day consists of presentations and hands-on sessions. Experts will be available for questions while you can go through online step-by-step guides.
 Please find an overview of the guides per topic below.  
   
 * [First Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation)  
 * [Second Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#second-presentation)
 * [Third Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#third-presentation)  
   
-
-Alternatively, you could partake in online courses that take you through larger analysis pipelines with different kinds of data. Links to these courses can be found underneath as well.  
-* 
-
 Go to the R2 platform at **http://r2.amc.nl**
 Find the complete tutorial at [**Tutorial**](https://r2-tutorials.readthedocs.io/en/latest), or direct links from the presentation to the chapters below: 
 

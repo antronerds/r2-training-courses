@@ -1,10 +1,43 @@
 R2 Training Courses: |version|
 ====================================
 
-This site contains the training resources for the R2 Introduction WOrkshop 2022 platform.
+![](_static/images/R2IntroductionWorkshop/trainingpamflet.png)
 
-  R2 is a biologist friendly, web based genomics analysis and visualization application developed by Jan Koster at the department of Oncogenomics in the Amsterdam University Medical Centers (AUMC), the Netherlands.
-For citations, please include the following webcite: 'R2: Genomics Analysis and Visualization Platform (http://r2.amc.nl http://r2platform.com)'
+R2 Introduction Workshop 2022 Overview
+=======
+R2 is a publicly accessible web-based program (http://r2.amc.nl) allowing biomedical researchers, without bioinformatics training, to integrate clinical and genomics data. To help (bio)medical researchers get started, we offer this one day R2 Introduction Workshop.
+
+We hope that you will find this day interesting. We would love to hear your thoughts about the workshop. We kindly ask you to fill in the following form during the workshop or at the end of the day:
+
+ [**Evaluation form**](https://forms.gle/M5E5Jzbms8zDATKz6 )
+
+Computer Login at the AMC
+---
+You can login to the computers with the following credentials:
+
+**User/ Gebruiker: func_user**
+
+**Password/ Wachtwoord: Welkom01**
+
+
+
+
+Overview of resources
+---
+
+The day consists of presentations and hands-on sessions. Experts will be available for questions while you can go through online step-by-step guides.
+Please find an overview of the guides per topic under R2 Introduction Workshop Overview.
+
+* [First Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation)
+* [Second Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#second-presentation)
+* [Third Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#third-presentation)
+
+
+Alternatively, you could partake in online courses that take you through larger analysis pipelines with different kinds of data. Links to these courses can be found underneath as well.
+*
+
+Go to the R2 platform at **http://r2.amc.nl**
+Find the complete tutorial at [**Tutorial**](https://r2-tutorials.readthedocs.io/en/latest), or direct links from the presentation to the chapters below:
 
 Copyright (c) 2006-2022 Jan Koster
 
