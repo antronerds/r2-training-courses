@@ -25,7 +25,8 @@ Find the complete tutorial at [**Tutorial**](https://r2-tutorials.readthedocs.io
 
 First presentation
 --- 
-
+  
+**Basics of R2:**  
 [Dataset Selection](https://r2-tutorials.readthedocs.io/en/latest/Using_Datasets.html)   
 
 [View a Gene](https://r2-tutorials.readthedocs.io/en/latest/One_Gene_View.html)  
@@ -44,12 +45,12 @@ First presentation
 Second presentation 
 ---
 
+**Differential Expression:**  
+
 [Differential Expression](https://r2-tutorials.readthedocs.io/en/latest/Differential_Expression.html)  
 
 [View a gene in groups](https://r2-tutorials.readthedocs.io/en/latest/One_Gene_View.html)  
   
-Differential Expression:  
-
 [Differential expression between two / multiple groups](https://r2-tutorials.readthedocs.io/en/latest/Differential_Expression.html)  
 
 [KaplanScanner](https://r2-tutorials.readthedocs.io/en/latest/Kaplan_Meier.html)  
@@ -64,7 +65,7 @@ Differential Expression:
 
 [Heatmap](https://r2-tutorials.readthedocs.io/en/latest/Using_And_Creating_Genesets.htmlp)  
   
-Correlations with a gene:  
+**Correlations with a gene:**  
 [Correlate with a gene](https://r2-tutorials.readthedocs.io/en/latest/Correlating_Genes.html)  
 
 [PubSniffer](https://r2-tutorials.readthedocs.io/en/latest/Correlating_Genes.html)
@@ -85,11 +86,20 @@ Correlations with a gene:
 
 [View a geneset/ cluster multiple genesets](https://r2-tutorials.readthedocs.io/en/latest/Using_And_Creating_Genesets.html)
   
-Cohort subgroups:  
+**Cohort subgroups:**  
 [Toplister](https://r2-tutorials.readthedocs.io/en/latest/Using_And_Creating_Genesets.html)
 
 [K-means clustering](https://r2-tutorials.readthedocs.io/en/latest/K_Means_Clustering.html#k-means-clustering-in-r2)
 
+[Principle Component Analysis](https://r2-tutorials.readthedocs.io/en/latest/Principle_Components_Analysis.html)  
 
+[Sample Maps: t-SNE and UMAP](https://r2-tutorials.readthedocs.io/en/latest/tSNE_dimensionality_reduction.html)
 
+[Timeseries](https://r2-tutorials.readthedocs.io/en/latest/Analysing_Time_Series.html)  
 
+[Signature Scores](https://r2-tutorials.readthedocs.io/en/latest/Using_Signatures.html) /  
+[Geneset vs Geneset correlation](https://r2-tutorials.readthedocs.io/en/latest/Using_Signatures.html)  
+  
+**More than 1 dataset**  
+
+[MegaSampler / MegaSearch](https://r2-tutorials.readthedocs.io/en/latest/Multiple_Datasets.html)
