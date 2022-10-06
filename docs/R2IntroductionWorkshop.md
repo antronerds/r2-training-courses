@@ -140,9 +140,17 @@ Presentation 3
 ---
 
 **Integrative Analysis**  
-[ChIP-seq data](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_ChIP-Seq_data.html)  
+[ChIP-seq data](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_ChIP-Seq_data.html)
 
 [Across Platforms](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_expression_methylation.html)  
 
 [Somatic mutation data: WGS/NGS](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_WGS_data.html)  
+  
+[Dataset Extender](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_expression_methylation.html#step-2-correlate-two-datatypes)
+
+[WGS: circos files](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_WGS_data.htm)  
+
+[Histone modification patterns: TSS graphs](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_ChIP-Seq_data.html#step-3-exploring-histone-modification-patterns)  
+
+[Super-enhancers](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_ChIP-Seq_data.html#super-enhancers)  
 
