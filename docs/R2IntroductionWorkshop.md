@@ -43,14 +43,12 @@ Second presentation
 ---
 
 [Differential Expression](https://r2-tutorials.readthedocs.io/en/latest/Differential_Expression.html)  
-
-
-View a gene in groups
-Differential expression between two / multiple groups 
-KaplanScanner
-Gene Ontology analysis
-Gene set analysis
-Chromosome map
-Storing of the result as personal gene set
-Saving the analysis as text
-Heatmap
+[View a gene in groups]()  
+[Differential expression between two / multiple groups]()  
+[KaplanScanner]()  
+[Gene Ontology analysis]()  
+[Gene set analysis]()  
+[Chromosome map]()  
+[Storing of the result as personal gene set]()   
+[Saving the analysis as text]()  
+[Heatmap]()  
