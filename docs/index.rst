@@ -7,7 +7,7 @@ R2 Introduction Workshop 2022
 
 Welcome
 =======
-R2 is a publicly accessible web-based program (`http://r2.amc.nl <http://r2.amc.nl>`_ allowing biomedical researchers, without bioinformatics training, to integrate clinical and genomics data. To help (bio)medical researchers get started, we offer this one day R2 Introduction Workshop.
+R2 is a publicly accessible web-based program (`http://r2.amc.nl <http://r2.amc.nl>`_) allowing biomedical researchers, without bioinformatics training, to integrate clinical and genomics data. To help (bio)medical researchers get started, we offer this one day R2 Introduction Workshop.
 
 We hope that you will find this day interesting. We would love to hear your thoughts about the workshop. We kindly ask you to fill in the following form during the workshop or at the end of the day:
 
@@ -37,7 +37,7 @@ Please find an overview of the guides per topic under R2 Introduction Workshop O
 
 Alternatively, you could partake in online courses that take you through larger analysis pipelines with different kinds of data. Links to these courses can be found in the side bar.
 
-Find the complete tutorial at `Tutorial <https://r2-tutorials.readthedocs.io/en/latest>`_, or direct links from the presentation to the chapters below:
+Find the complete tutorial at `Tutorial <https://r2-tutorials.readthedocs.io/en/latest>`_.
 
 Copyright (c) 2006-2022 Jan Koster
 
