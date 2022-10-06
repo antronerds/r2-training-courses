@@ -44,14 +44,14 @@ Copyright (c) 2006-2022 Jan Koster
 .. rubric:: Table of Contents
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :numbered:
    :caption: R2 Introduction Workshop
 
    R2IntroductionWorkshop.md
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :numbered:
    :caption: Course option 1: Rheumatoid Arthritis
 
