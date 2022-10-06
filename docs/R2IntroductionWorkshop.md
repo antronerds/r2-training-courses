@@ -128,3 +128,21 @@ Second presentation
 
 [Custom Genesets](https://r2-tutorials.readthedocs.io/en/latest/Adapting_R2.html#step-3-create-your-custom-genesets)  
   
+[Custom Tracks](https://r2-tutorials.readthedocs.io/en/latest/Adapting_R2.html#step-5-upload-your-own-tracks)  
+  
+[R2 Communities](https://r2-tutorials.readthedocs.io/en/latest/Adapting_R2.html#step-6-cooperate-through-r2-sharing-tracks-creating-communities)  
+
+[Export Data with the Datagrabber](https://r2-tutorials.readthedocs.io/en/latest/Exporting_Data.html)  
+  
+  
+
+Presentation 3
+---
+
+**Integrative Analysis**  
+[ChIP-seq data](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_ChIP-Seq_data.html)  
+
+[Across Platforms](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_expression_methylation.html)  
+
+[Somatic mutation data: WGS/NGS](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_WGS_data.html)  
+
