@@ -6,7 +6,8 @@ R2 Introduction Workshop 2022
 =======
 R2 is a publicly accessible web-based program (http://r2.amc.nl) allowing biomedical researchers, without bioinformatics training, to integrate clinical and genomics data. To help (bio)medical researchers get started, we offer this one day R2 Introduction Workshop.  
   
-We hope that you will find this day interesting. We would love to hear your thoughts about the workshop. We kindly ask you to fill in the following form during the workshop or at the end of the day:   
+We hope that you will find this day interesting. We would love to hear your thoughts about the workshop. We kindly ask you to fill in the following form during the workshop or at the end of the day:  
+
  [**Evaluation form**](https://forms.gle/M5E5Jzbms8zDATKz6 )
 
 Computer Login at the AMC
