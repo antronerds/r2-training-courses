@@ -26,8 +26,14 @@ Overview of resources
 
 The day consists of presentations and hands-on sessions. Experts will be available for questions while you can go through online step-by-step guides.
 Please find an overview of the guides per topic below.  
+  
+* [First Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation)  
+* [Second Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#second-presentation)
+* [Third Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#third-presentation)  
+  
 
-Alternatively, you could work partake in online courses that take you through larger analysis pipelines with different kins of data. Links to these courses can be found underneath as well.  
+Alternatively, you could partake in online courses that take you through larger analysis pipelines with different kinds of data. Links to these courses can be found underneath as well.  
+* 
 
 Go to the R2 platform at **http://r2.amc.nl**
 Find the complete tutorial at [**Tutorial**](https://r2-tutorials.readthedocs.io/en/latest), or direct links from the presentation to the chapters below: 
@@ -145,7 +151,7 @@ Second presentation
   
   
 
-Presentation 3
+Third presentation 
 ---
 
 **Integrative Analysis**  

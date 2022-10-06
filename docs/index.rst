@@ -9,6 +9,33 @@ Copyright (c) 2006-2022 Jan Koster
 .. rubric:: Table of Contents
 
 .. toctree::
+   :comment:
+   :maxdepth: 1
+   :numbered:
+   :caption: R2 Introduction Workshop
+
+   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
+
+.. toctree::
+   :comment:
+   :maxdepth: 1
+   :numbered:
+   :caption: Course option 1: Rheumatoid Arthritis
+
+   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
+
+.. toctree::
+   :comment:
+   :maxdepth: 1
+   :numbered:
+   :caption: Course option 2: Neuroblastoma
+
+   VAGABOND_interim_course_R2_day1
+   VAGABOND_interim_course_R2_day2
+   VAGABOND_snippets
+
+.. toctree::
+   :comment:
    :maxdepth: 1
    :numbered:
    :caption: Amsterdam Movement Sciences
@@ -16,6 +43,7 @@ Copyright (c) 2006-2022 Jan Koster
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
 
 .. toctree::
+   :comment:
    :maxdepth: 1
    :numbered:
    :caption: Student Course
@@ -23,6 +51,7 @@ Copyright (c) 2006-2022 Jan Koster
    Investigating_Tumor_Heterogeneity_student_version
 
 .. toctree::
+   :comment:
    :maxdepth: 1
    :numbered:
    :caption: Graduate Course
@@ -31,6 +60,7 @@ Copyright (c) 2006-2022 Jan Koster
    Investigating_Tumor_Heterogeneity
 
 .. toctree::
+   :comment:
    :maxdepth: 1
    :numbered:
    :caption: Vagabond course
