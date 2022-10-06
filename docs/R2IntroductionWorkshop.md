@@ -2,7 +2,7 @@
 
 ![](_static/images/R2IntroductionWorkshop/trainingpamflet.png "Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)")
 
-R2 Introduction Workshop 2022
+R2 Introduction Workshop 2022 Overview
 =======
 R2 is a publicly accessible web-based program (http://r2.amc.nl) allowing biomedical researchers, without bioinformatics training, to integrate clinical and genomics data. To help (bio)medical researchers get started, we offer this one day R2 Introduction Workshop.  
   

@@ -13,7 +13,7 @@ Copyright (c) 2006-2022 Jan Koster
    :numbered:
    :caption: R2 Introduction Workshop
 
-   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
+   R2IntroductionWorkshop.md
 
 .. toctree::
    :maxdepth: 1
