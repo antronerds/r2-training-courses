@@ -2,12 +2,16 @@
 
 ![](_static/images/R2IntroductionWorkshop/trainingpamflet.png)
 
-R2 Introduction Workshop 2022 Overview
+Tutorial guides
 =======
   
-Overview of resources
+From presentation to your own analysis
 ---
-Please find an overview of the guides per topic below.  
+The presentations provide a quick glance over most functionalities of R2. Many of these functionalities are described in the [Online Tutorial](https://r2-training-courses.readthedocs.io/en/latest/) as well.  
+The links below connect the topics of the presentation directly to the respective chapters in the tutorial where step by step instructions guide you through an analysis, which you can perform online within R2 yourself.  
+During these steps features related to the respective topic will be introduced, such as additional analyses or visualizations, thereby conveying the ease of using the interconnected R2 interface.  
+  
+Please find an overview of the chapters per presentation topic below:  
   
 * [First Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation)  
 * [Second Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#second-presentation)
