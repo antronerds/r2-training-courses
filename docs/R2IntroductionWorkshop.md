@@ -14,9 +14,9 @@ Computer Login at the AMC
 ---
 You can login to the computers with the following credentials:  
 
-User/ Gebruiker: func_user  
+**User/ Gebruiker: func_user**  
 
-Password/ Wachtwoord: Welkom01  
+**Password/ Wachtwoord: Welkom01**  
   
 
 
