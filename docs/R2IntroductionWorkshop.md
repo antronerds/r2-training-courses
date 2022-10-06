@@ -2,10 +2,10 @@
 
 ![](_static/images/R2IntroductionWorkshop/trainingpamflet.png)
 
-Tutorial guides
-=======
-  
 From presentation to your own analysis
+=======
+
+Overview
 ---
 The presentations provide a quick glance over most functionalities of R2. Many of these functionalities are described in the [Online Tutorial](https://r2-training-courses.readthedocs.io/en/latest/) as well.  
 
