@@ -68,6 +68,7 @@ Second presentation
 
 [Heatmap](https://r2-tutorials.readthedocs.io/en/latest/Using_And_Creating_Genesets.htmlp)  
   
+  
 **Correlations with a gene:**  
 
 [Correlate with a gene](https://r2-tutorials.readthedocs.io/en/latest/Correlating_Genes.html)  
@@ -90,6 +91,8 @@ Second presentation
 
 [View a geneset/ cluster multiple genesets](https://r2-tutorials.readthedocs.io/en/latest/Using_And_Creating_Genesets.html)
   
+  
+
 **Cohort subgroups:**  
 
 [Toplister](https://r2-tutorials.readthedocs.io/en/latest/Using_And_Creating_Genesets.html)
@@ -105,16 +108,23 @@ Second presentation
 [Signature Scores](https://r2-tutorials.readthedocs.io/en/latest/Using_Signatures.html) /  
 [Geneset vs Geneset correlation](https://r2-tutorials.readthedocs.io/en/latest/Using_Signatures.html)  
   
+  
 **More than 1 dataset:**  
 
 [MegaSampler / MegaSearch](https://r2-tutorials.readthedocs.io/en/latest/Multiple_Datasets.html)  
   
+  
 **Genome Browser:**  
 
 [Genome Broswer](https://r2-tutorials.readthedocs.io/en/latest/Using_The_Genome_Browser.html)  
+  
+  
+**Datascopes**  
 
-**Datascopes**
 [Datascopes](https://r2-tutorials.readthedocs.io/en/latest/DataScopes.html)  
+  
+  
+**Adapting R2**  
 
-**Adapting R2**
-[Custom Genesets](https://r2-tutorials.readthedocs.io/en/latest/Adapting_R2.html#step-3-create-your-custom-genesets)
+[Custom Genesets](https://r2-tutorials.readthedocs.io/en/latest/Adapting_R2.html#step-3-create-your-custom-genesets)  
+  
