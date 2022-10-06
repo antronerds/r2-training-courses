@@ -9,7 +9,6 @@ Copyright (c) 2006-2022 Jan Koster
 .. rubric:: Table of Contents
 
 .. toctree::
-   :comment:
    :maxdepth: 1
    :numbered:
    :caption: R2 Introduction Workshop
@@ -17,7 +16,6 @@ Copyright (c) 2006-2022 Jan Koster
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
 
 .. toctree::
-   :comment:
    :maxdepth: 1
    :numbered:
    :caption: Course option 1: Rheumatoid Arthritis
@@ -25,7 +23,6 @@ Copyright (c) 2006-2022 Jan Koster
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
 
 .. toctree::
-   :comment:
    :maxdepth: 1
    :numbered:
    :caption: Course option 2: Neuroblastoma
