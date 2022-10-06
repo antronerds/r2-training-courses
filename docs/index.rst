@@ -1,7 +1,9 @@
 R2 Training Courses: |version|
 ====================================
 
-This site contains a collection of training courses for the R2 platform. R2 is a biologist friendly, web based genomics analysis and visualization application developed by Jan Koster at the department of Oncogenomics in the Amsterdam University Medical Centers (AUMC), the Netherlands.
+This site contains the training resources for the R2 Introduction WOrkshop 2022 platform.
+
+  R2 is a biologist friendly, web based genomics analysis and visualization application developed by Jan Koster at the department of Oncogenomics in the Amsterdam University Medical Centers (AUMC), the Netherlands.
 For citations, please include the following webcite: 'R2: Genomics Analysis and Visualization Platform (http://r2.amc.nl http://r2platform.com)'
 
 Copyright (c) 2006-2022 Jan Koster
