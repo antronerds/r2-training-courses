@@ -17,9 +17,9 @@ We hope that you will find this day interesting. We would love to hear your thou
 
 You can login to the computers with the following credentials:
 
-User/ Gebruiker: func_user
+User/ Gebruiker: *func_user*
 
-Password/ Wachtwoord: Welkom01
+Password/ Wachtwoord: *Welkom01*
 
 
 **Overview of resources**
@@ -107,4 +107,3 @@ Copyright (c) 2006-2022 Jan Koster
    Microarray_analysis_Using_Tumor_Colon_datasets
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
 
-If you want to learn what you can do with R2, then please visit our R2 tutorials section. In the tutorials we explain how to do many different kind of analyses in R2 using simple examples: https://r2-tutorials.readthedocs.io/en/latest/
