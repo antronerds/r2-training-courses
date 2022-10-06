@@ -2,8 +2,8 @@ R2 Introduction Workshop 2022
 ====================================
 
 .. image:: https://r2-training-courses.readthedocs.io/en/latest/_static/images/R2IntroductionWorkshop/trainingpamflet.png
-  :width: 400
-  :alt: Alternative text
+  :width: 600
+  :alt: R2 Introduction Workshop
 
 Welcome
 =======
@@ -14,7 +14,6 @@ We hope that you will find this day interesting. We would love to hear your thou
 
 **Computer Login at the AMC**
 
-
 You can login to the computers with the following credentials:
 
 User/ Gebruiker: *func_user*
@@ -23,7 +22,6 @@ Password/ Wachtwoord: *Welkom01*
 
 
 **Overview of resources**
-
 
 The day consists of presentations and hands-on sessions. Experts will be available for questions while you can go through online step-by-step guides.
 Please find an overview of the guides per topic under R2 Introduction Workshop Overview.
