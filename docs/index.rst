@@ -7,40 +7,37 @@ R2 Introduction Workshop 2022: |version|
 
 R2 Introduction Workshop 2022
 =======
-R2 is a publicly accessible web-based program (http://r2.amc.nl) allowing biomedical researchers, without bioinformatics training, to integrate clinical and genomics data. To help (bio)medical researchers get started, we offer this one day R2 Introduction Workshop.
+R2 is a publicly accessible web-based program (`http://r2.amc.nl <http://r2.amc.nl>`_ allowing biomedical researchers, without bioinformatics training, to integrate clinical and genomics data. To help (bio)medical researchers get started, we offer this one day R2 Introduction Workshop.
 
 We hope that you will find this day interesting. We would love to hear your thoughts about the workshop. We kindly ask you to fill in the following form during the workshop or at the end of the day:
 
 `Evaluation form <https://forms.gle/M5E5Jzbms8zDATKz6>`_
 
 
-Computer Login at the AMC
+***Computer Login at the AMC***
 ---
 You can login to the computers with the following credentials:
 
-**User/ Gebruiker: func_user**
+User/ Gebruiker: func_user
 
-**Password/ Wachtwoord: Welkom01**
-
-
+Password/ Wachtwoord: Welkom01
 
 
-Overview of resources
+
+
+***Overview of resources***
 ---
 
 The day consists of presentations and hands-on sessions. Experts will be available for questions while you can go through online step-by-step guides.
 Please find an overview of the guides per topic under R2 Introduction Workshop Overview.
 
-* [First Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation)
-* [Second Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#second-presentation)
-* [Third Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#third-presentation)
+* `First Presentation <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation>`_
+* `Second Presentation <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#second-presentation>`_
+* `Third Presentation <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation>`_
 
+Alternatively, you could partake in online courses that take you through larger analysis pipelines with different kinds of data. Links to these courses can be found in the side bar.
 
-Alternatively, you could partake in online courses that take you through larger analysis pipelines with different kinds of data. Links to these courses can be found underneath as well.
-*
-
-Go to the R2 platform at **http://r2.amc.nl**
-Find the complete tutorial at [**Tutorial**](https://r2-tutorials.readthedocs.io/en/latest), or direct links from the presentation to the chapters below:
+Find the complete tutorial at `Tutorial <https://r2-tutorials.readthedocs.io/en/latest>`_, or direct links from the presentation to the chapters below:
 
 Copyright (c) 2006-2022 Jan Koster
 
