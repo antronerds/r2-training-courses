@@ -278,12 +278,14 @@ Below the graph, you can change several settings in the Adjustable Settings box.
 
 Go back to the main page. We will now investigate if MYCN expression can be used to segregate our patient cohort in 2 groups that coincide with a difference in survival percentage.  
 
-- In box 3, select "Kaplan Meier by Gene Expression" and click next. 
+- In box 3, select **Kaplan Meier by Gene Expression** and click next. 
 - Enter **mycn** and select the mycn gene in the *Search by Gene* field.
 - Choose for **Type of Survival** the value *overall-c1103* and click **Next**
 - Read above the graph which cut-off value is used to obtain two groups of high and low MYCN expression.
 
-The Kaplan Meier Scanner is a powerful tool in R2. This tool analyses the prognostic value of the expression level of an individual gene. In contrast to e.g. stage or MYCN amplification, expression data are not discrete (yes / no amplification), but a continuum of values. The question is then which expression value to take as a cut-off point to separate groups with ‘high’ and ‘low’ expression.  In many publications, the median value is taken as a separation between high and low expression. This however does not take into account that potentially a sub-group of the patients drives the separation. Within R2, we can make use of the to called Kaplan scanner. Within this analysis, every expression value in a series is used as cut-off point (scanned) after which the value that gives the most significant discrimination in a good and bad prognosis group is chosen.
+The Kaplan Meier Scanner is a powerful tool in R2. This tool analyzes the prognostic value of the expression level of an individual gene. In contrast to e.g. staging or MYCN amplification, expression data are not discrete (yes / no amplification), but a continuum of values.  
+
+The question then is, which expression value to take as a cut-off point to separate groups with ‘high’ and ‘low’ expression.  In many publications, the median value is taken as a separation between high and low expression. This however does not take into account that potentially a sub-group of the patients drives the separation. Within R2, we can make use of the to called KaplanScanner. Within this analysis, every expression value in a series is used as cut-off point (scanned) after which the value that gives the most significant discrimination in a good and bad prognosis group is chosen.
 <br>
 
 ---------
@@ -296,7 +298,8 @@ The Kaplan Meier Scanner is a powerful tool in R2. This tool analyses the progno
 Now let's compare this survival analysis to the survival analysis with a median or average expression value cut-off point. Underneath the graph you will find the Adjustable Settings box, where you can adjust your analysis.  
 
 - Switch to *median* in the **Cutoff mode** dropdown menu. Click **Redraw Graph**
-- Now analyze survival when we use *average* MYCN expression as **Cutoff mode**. Don't forget to redraw the graph.
+- Now analyze survival when we use *average* MYCN expression as **Cutoff mode**. Don't forget to redraw the graph. 
+
 
 ---------
 
@@ -310,11 +313,17 @@ Now let's compare this survival analysis to the survival analysis with a median 
 
 If you are 'logged in' with an account in R2, then you can also create personal grouping variables, that can be used later on. In this way you can extend R2 with information that is useful for yourself.
 
-
+- Switch back to the **scan** mode and Redraw, for the analysis below
 - Another approach to find possible regulating genes is to use the groups based on the mycn expression cut-off value for further analysis. Below the Kaplan Meier graph, click on the "store as track"  button. In the next screen all the individual samples are listed each assiged to the "low" or "high" group. At the bottom you can store the two groups based on the Kaplan Meier. In this example we will store this track as Temporary (24hrs) but you can also store this track permanent. Click on the build set button. Now the track is stored for further usage.
 
 
-- Go back to the main page. Select the "Find Differential Expression between two groups" , On the next page select the grouping variable that you just stored from the Kaplan Meier Scanner and click submit.  In next the screen select the low and high grouping variables and click submit, now a list of Differentially Expressed genes have been found based on the Kaplan Meier MYCN values cut-off. These kind of tracks as a result of an analysis can be stored and used throughout the many R2-analysis modules in R2.
+- Go back to the main page. Select the "Find Differential Expression between two groups" 
+- On the next page select the grouping variable that you just stored from the Kaplan Meier Scanner and click submit.  
+- In next the screen select the low and high grouping variables for Group 1 and Group 2 and click submit
+- Now a list of Differentially Expressed genes have been found based on the Kaplan Meier MYCN values cut-off.  
+
+
+Tracks that are generated as a result of an analysis can be stored and used throughout the many R2-analysis modules in R2.
 
 
 
