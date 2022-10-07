@@ -32,8 +32,8 @@ For large datasets such as single cel RNA datasets it takes a lot of resources f
 ---------
 Remarks
 ------
- This ends the  vagabond introduction . 
- We hope that this course has been helpful. At the end of the workshop, please provide feedback on the course with <a href="https://docs.google.com/forms/d/e/1FAIpQLScy5xoA4btrYfuOOhc5qFKmYkV9_SBv1PQABPgV7eVJY8gk4A/viewform" target="_blank">this form</a>.  
+ This ends this introductory course. 
+ We hope that the course has been helpful. At the end of the workshop, please provide feedback on the course with <a href="https://docs.google.com/forms/d/e/1FAIpQLScy5xoA4btrYfuOOhc5qFKmYkV9_SBv1PQABPgV7eVJY8gk4A/viewform" target="_blank">this form</a>.  
  
  If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
  
