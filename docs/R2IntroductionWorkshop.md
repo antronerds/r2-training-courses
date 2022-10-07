@@ -39,12 +39,6 @@ First presentation
 
 [Graphics settings/ Track visibility](https://r2-tutorials.readthedocs.io/en/latest/One_Gene_View.html)  
   
-  
-
-  
-Second presentation 
----
-
 **Differential Expression:**  
 
 [Differential Expression](https://r2-tutorials.readthedocs.io/en/latest/Differential_Expression.html)  
@@ -87,9 +81,13 @@ Second presentation
 [PathwayFinder](https://r2-tutorials.readthedocs.io/en/latest/Pathway_Finder.html)  
 
 [View a geneset/ cluster multiple genesets](https://r2-tutorials.readthedocs.io/en/latest/Using_And_Creating_Genesets.html)
-  
-  
 
+
+
+
+
+Second presentation
+---
 **Cohort subgroups:**  
 
 [Toplister](https://r2-tutorials.readthedocs.io/en/latest/Using_And_Creating_Genesets.html)

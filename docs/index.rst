@@ -23,14 +23,14 @@ Password/ Wachtwoord: *Welkom01*
 
 **Overview of resources**
 
-The day consists of presentations and hands-on sessions. Experts will be available for questions while you can go through online step-by-step guides.
-Please find an overview of the guides per topic under R2 Introduction Workshop Overview.
+The day consists of presentations and hands-on sessions. Experts will be available for questions while you can go through online step-by-step guides to do the analyses of your choice yourself.
+Please find an overview of the guides per topic of the presentation under `R2 Introduction Workshop Overview > From presentation to your own analysis <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html>`_.
 
 * `First Presentation <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation>`_
 * `Second Presentation <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#second-presentation>`_
 * `Third Presentation <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation>`_
 
-Alternatively, you could partake in online courses that take you through larger analysis pipelines with different kinds of data. Links to these courses can be found in the side bar.
+Alternatively, you could partake in online courses that take you through larger analysis pipelines with different kinds of data. Links to these courses can be found in the side bar and below in the table of contents.
 
 Find the complete tutorial at `Tutorial <https://r2-tutorials.readthedocs.io/en/latest>`_.
 
