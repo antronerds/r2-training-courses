@@ -43,7 +43,8 @@ During this practical course, we will use the R2 bioinformatics platform to stud
 
 ##### Go to the R2 platform
 
-* Go to <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a>.   
+* Go to <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a>
+* Optionally login with your R2 credentials.   
 
 You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
 <br><br>
@@ -71,7 +72,7 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
 
 Let's first make sure that the correct dataset is selected.  
 - On the main page, you find a menu in the middle of the page that consists of several boxes.  
-- Verify that in box 2 the following dataset is selected: *Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2*. Clicking in the dataset enable a pop-grid where you can select
+- Verify that in box 2 the following dataset is selected: *Tumor Neuroblastoma public - Versteeg - 88 - MAS5.0 - u133p2*. If not, follow the steps below. 
 
 <br> 
 
@@ -89,10 +90,9 @@ If you see a different dataset selected, you can change the dataset as follows:
 <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1AdLKLVAkgRFiQ_AEHwRyWu0gc3_UZ6XyT3G4KICGStQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1</button> 
 <br>
 <br>
-It is known that the Amplification of the MYCN gene is evidently associated with a poor prognosis. Now we will analyze the mRNA expression of MYCN in the same dataset. We will use the R2 analysis module 'One Gene View'.  
-- Go back to main page of R2. You can use the link in the upper left corner *Go to: **Main***
-- In field 3 select **View a gene**, which is also the selected analysis by default. Then click **Next**.
-- For this analysis, R2 needs to know which gene/ reporter to use. Fill in the text field **Search by Gene** the gene name of our interest: *mycn*. And select with a mouse click the mycn gene from the dropdown in order to select the correct reporter.
+It is known that the Amplification of the MYCN gene is evidently associated with a poor prognosis. Now we will analyze the mRNA expression of MYCN in the same dataset. We will use the R2 analysis module 'One Gene View'.
+- On the main page in field 3 select **View a gene**, which is also the selected analysis by default. Then click **Next**.
+- For this analysis, R2 needs to know which gene/ reporter to use. Fill in the text field *Search by Gene* the gene name of our interest: **mycn**. And select with a mouse click the mycn gene from the dropdown in order to select the correct reporter.
 - The rest of the settings we leave as is. Click **Submit**  
 
 <br>
@@ -111,12 +111,12 @@ The track mycn_amp shows which samples have MYCN amplification.
 
 ---------
 
-We can show the relation more clearly by grouping the tumors in the 'One Gene View' according to a property in a track. Go to the Adjustable Settings box underneath the plot. Just on top of that box, you can adjust the **Analysis type** with a dropdown. 
+We can show the relation more clearly by grouping the tumors in the 'One Gene View' according to a property in a track. Go to the Adjustable Settings box underneath the plot. At the top of that box, you can adjust the **Analysis type** with a dropdown. 
 - Change this setting from single gene to *gene vs track*.
-- In the Adjustable Settings box on the second row, you now have to choose a **Track** by which you want to separate the samples. In the drop down menu, select *mycn-amp(2 cat)*. And click **Submit**. Check the plot.
-- Next select *alive*(2 cat) and click **Submit**. 
-- In this view, the samples are not ordered by their MYCN expression value by default. If you would want to adjust this, you could use the **Extra Graph Option** and choose the value *Track and Gene sort*.  
-- Click on the 'More settings sections' unfolds a new menu which enables the user to adapt the graphic parameters such as; font size, axis-with etc etc feel free to try them.  
+- In the Adjustable Settings box you now have to choose a **Track** by which you want to separate the samples. In the drop down menu, select *mycn-amp(2 cat)*. And click **Submit**. Check the plot.
+- Try it out with a different track: select *alive*(2 cat) and click **Submit**. 
+- In this view, the samples are not ordered by their MYCN expression value by default. If you would want to adjust this, you could use the **Extra Graph Option** and choose the value *Track and Gene sort*. Always click **Submit** to see the results of adaptations in the settings.   
+- Click on the + sign in the *More settings* sections to unfold a new menu which enables the user to adapt the graphic parameters such as font size, axis-with etc. Feel free to try them.  
 <br>
 
 ---------
