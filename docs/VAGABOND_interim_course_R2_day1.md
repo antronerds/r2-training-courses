@@ -198,9 +198,12 @@ In neuroblastoma, at the DNA level, MYCN amplification and loss of 1 copy of the
 ### Finding Differentially expressed genes
 
 
-We have seen that MYCN expression has a clear preference for some chromosomal regions in the previous analysis. Next to looking for patterns that resemble the expression of a gene, you can also investigate the expression patterns between groups of patients in a differential expression analysis.  Can we find biological processes by looking at differentially expressed genes between groups. For example, which genes are differentially expressed between the 'alive' or 'dead' group.
+We have seen that MYCN expression has a clear preference for some chromosomal regions in the previous analysis. Next to looking for patterns that resemble the expression of a gene, you can also investigate the expression patterns between groups of patients in a differential expression analysis.  
 
-- In the main menu select in box 3, section "Differential expression", **Differential Expression between two groups** and click next. In the next screen, use the T-test which is selected by default and click "alive (2 cat)" in the pulldown menu at group by and click submit. In the next adjustable settings panel all kinds of settings can be adjusted  but for now select "no" and "yes" for subsequently group 1 and 2 and click 'submit'. 
+Can we find biological processes by looking at differentially expressed genes between groups? For example, which genes are differentially expressed between the 'alive' or 'dead' group? Let's have a look:
+
+- In the main page menu, select in box 3 section "Differential expression", **Differential Expression between two groups** and click next. In the next screen, use the T-test which is selected by default and click "alive (2 cat)" in the pulldown menu at *Group by* and click submit. 
+- In the next adjustable settings panel all kinds of settings can be adjusted  but for now select "no" and "yes" for subsequently group 1 and 2 and click 'submit'. 
 
 <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1Iit16sf4mQxuUyZ9iyjHnJeeHrP-VAsCw5D-GdT83iI/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2</button>
 
@@ -211,7 +214,8 @@ We have seen that MYCN expression has a clear preference for some chromosomal re
 
 ---------
 
-- In the generated gene list you can find  marker genes or genes playing a key role in neuroblastoma. However, it would be of interest to find out if certain genes are overrepresented in e.g. biological processes. In the the right menu next to the genelist, click on the button "geneset analysis". 
+In the generated gene list you can find  marker genes or genes playing a key role in neuroblastoma. However, it would be of interest to find out if certain genes are overrepresented in e.g. biological processes.  
+- In the the right menu next to the genelist, click on the button **Geneset analysis**. 
 - In the next screen select "KEGG" in the geneset collection pull down and click next;
 - In the next screen you find a collection off KEGG path were the genes from the analysis are over represented.
 
@@ -225,7 +229,7 @@ Click on the <span style="color: deepskyblue">**blue A**</span> which leads the 
 
 ---------
 
-![](_static/images/R2d2_logo.png) **Which genes are remarkable especially if you look at the genes which belong to the same complex.  ?**
+![](_static/images/R2d2_logo.png) **Which genes are remarkable, especially if you look at the genes which belong to the same complex?**
 <br><br>
 
 ---------
