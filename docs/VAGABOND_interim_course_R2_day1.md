@@ -460,8 +460,6 @@ We have identified two different types of cells that occur within the same patie
 <br>
 <br>
 
-* The button below brings you to the form in which you can submit your answers for section 1.4
-
 
 * Go to the main page of R2 by clicking the button below
 
