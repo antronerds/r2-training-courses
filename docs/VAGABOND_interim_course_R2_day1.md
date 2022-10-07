@@ -333,18 +333,15 @@ Different expression patterns between subgroups and the underlying biology
 We have seen several characteristics of neuroblastoma patients that act as prognostic factors of survival chances, such as MYCN amplification, age and INSS staging. The patient group with the aggressive subtype of neuroblastoma, INSS stage 4, shows a high percentage of relapses after treatment. Initially responsive to therapy, there is a seemingly complete remission of the tumor. Unfortunately this is often followed by a relapse that is resistant to therapy. Children developing a relapse almost always die. 
 
 
-
-
-
-
 ![](_static/images/Vagabond/Vagabond_Neuroblastoma_Relapse.png "Figure 3: Bright field image of isogenic cell line pairs.")
  	
 [**Figure 3: Bright field image of isogenic cell line pairs.**](_static/images/Vagabond/Vagabond_Neuroblastoma_Relapse.png)
 
 
-The big question now is: if and why a few neuroblastoma cells are able to escpape the treatment.  
+The big question now is: if and why a few neuroblastoma cells are able to escape the treatment.  
+  
 New neuroblastoma patient material showed interesting morphological features in the tumor tissue. From several neuroblastoma patients multiple cell lines were obtained from the same biopsy. These cell lines share genetic defects and are therefore called *isogenic* cell line pairs.  
-
+  
 Remarkably, in each patient two *morphologically differing cell types* were observed. For three patients (identified by the numbers 619, 717 and 700) a microscopy image of each pair is provided below. 
 
    ![](_static/images/TumorHeterogeneity_IsoGenicPairsBF.png "Figure 4: Bright field image of isogenic cell line pairs.")
