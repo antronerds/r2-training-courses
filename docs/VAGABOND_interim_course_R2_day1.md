@@ -162,8 +162,11 @@ All the tumor samples in our dataset were analyzed by making sections of frozen 
 
 Many approaches have been conducted to target the MYCN gene, historically as a transcription factor MYCN has been regarded as "undrugable". A way to identify downstream targets of MYCN which may be potentially drugable, is to identify genes which show a similar expression pattern. In R2 these can be identified by using the 'correlating genes with a single gene' analysis module.
 
-- In the main menu select in box 3 "Find Correlating genes with a single gene" and click next.  Provide the MYCN gene and make sure to click on the reporter in the dropdown. In the 'corr cut-off' field , change <span style="color: red">**0.05 to 0.01**</span>. and click submit.
-- In the next screen a set of tables is generated; split in a negative and positive correlating gene table. 
+- Go back to the main page buy the link **Main** in the upper left corner of the page.
+- In the main menu select in box 3 **Find Correlating genes with a single gene** and click next.  
+- Provide the MYCN gene in the *Search by Gene* field and make sure to click on the reporter in the dropdown. 
+- In the 'Corr. p <= cut-off' field , change <span style="color: red">**0.05 to 0.01**</span>. and click Submit.
+- In the next screen a set of tables is generated; one table for negative and one for positive correlating genes. 
 
 ---------
 
@@ -172,17 +175,18 @@ Many approaches have been conducted to target the MYCN gene, historically as a t
 
 ---------
 
-- All identified genes in the table are linked to a detailed view. Click on the magnify symbols in the view column for both tables and generate a graph with genes which are (inverse) correlated with the MYCN gene to get an impression.
+- All identified genes in the table are linked to a detailed view. Click on the magnify symbols in the view column for both tables and generate a graph with a gene which is (inverse) correlated with the MYCN gene to get an impression. You can close this tab again after you have looked at teh graph, leaving the tab open with the tables of (inverse)correlating genes.
 
 
 Inspecting genes one by one quickly becomes a dull task. We can also analyze the complete results in some of the provided analysis options. Let's have a look at the chromosomal locations of our identified genes for this section. For this type of question, R2 has the 'Chromosome Map'. 
 
 - Click on the "Chromosome map" in the right menu and investigate the result table. If you realize that MYCN is located on chromosome 2, did you expect to see the result you obtained (which chromosome has the most significant p-value)?
 
-- One of the nice features in R2, is that you can easily explore results furter. Go back to the correlation analysis page and scroll to the bottom. Here you can make adaptations to the analysis. To gain more insight in what might be going on, in the adjustable settings menu,  change the correlation direction to only **negative** and click submit. Perform the chromosome map analysis again. 
+- One of the nice features in R2, is that you can easily explore results further. Go back to the correlation analysis page and scroll to the bottom. Here you can make adaptations to the analysis. 
+- To gain more insight in what might be going on, in the adjustable settings menu,  change the correlation direction to only **negative** and click submit. Perform the chromosome map analysis again. 
 ---------
 
-![](_static/images/R2d2_logo.png) **Where are overrepresented genes primarily located with respect to their chromosome location. ?**
+![](_static/images/R2d2_logo.png) **Where are overrepresented genes primarily located with respect to their chromosome location?**
 <br>
 
 ---------
