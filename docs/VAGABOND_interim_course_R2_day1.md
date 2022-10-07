@@ -126,7 +126,8 @@ We can show the relation more clearly by grouping the tumors in the 'One Gene Vi
 
 ---------
 <br>
-Now we will use links on this page that lead to additional analyses. To learn basic properties of the gene, click on the link in the ‘Gene ID’ column in the top table. This brings us to the National Center for Bioinformatics database in Bethesda, USA.
+Now we will use links on this page that lead to additional analyses. 
+* To learn basic properties of the gene, look at the one line table above the Adjustable Settings box. You can click on the link in the ‘Gene ID’ column. This brings us to the National Center for Bioinformatics database in Bethesda, USA.
 <br><br>
 
 ---------
@@ -136,7 +137,7 @@ Now we will use links on this page that lead to additional analyses. To learn ba
 
 ---------
 
-In the box on the left side of the page, more information can be gathered. 
+In the top right corner of the page, links bring you to other recourses. 
 - Click on the hyperlinked *MYCN* below **Pubsniffer**. In a new tab, Pubsniffer shows how many papers in PubMed mention MYCN in their abstracts or the words ‘MYCN’ and ‘neuroblastoma’. Click on the number to see these papers.
 - Go back to the open tab with the grouped plot for MYCN expression of our dataset.  
 
@@ -144,10 +145,10 @@ In the box on the left side of the page, more information can be gathered.
 All the tumor samples in our dataset were analyzed by making sections of frozen tumor tissue and selecting sections with more than 80% tumor cells under the microscope. The sections, from which the RNA used for this microarray analysis was isolated, can be seen in the Sample overview.  
 
 
-- Click on **Sample overview** at the upper right side of the screen. All samples of the dataset are available via the dropdown. 
-- Select **ITCC0001** and click on **View Sample**. Play with the magnifications (2x, 10x, 40x)
+- Under the header *Data set* in the top right corner, click on **Sample overview**. All samples of the dataset are available via the dropdown. 
+- Select **ITCC0001** and click on **View Sample**. Play with the magnifications in the top left corner of the sample image (2x, 10x, 40x)
 - Go back to the tab with the grouped plot of the MYCN expression (N.B. you may close the other tabs) 
-- Below the graph for the MYCN gene, the table ‘Alternative Reporters’ shows that this gene is represented by 5 sets of reporters (probe sets) on the Affymetrix U133 Plus 2.0 microarray. Take a look at the signal intensities for the different reporters (the red numbers in brackets).  It's good to realize that genes could have more then one reporter for a given platform in this case the Affymetrix platform. Also in RNAseq datasets, if transcripts (isoforms) are annotated, this can be very relevant. By default, R2 chooses the reporter with the highest signal which is in ~99.9% of the cases the most representive for a gene. For many platforms which use reporters the genome location is also added. Clicking on the R2_TView link in the probeset verification box leads you to the genome browser where the exact location of the reporters can be investigated. 
+- Below the graph you can click on an arrow to **View additional details**. For the MYCN gene, the table ‘Alternative Reporters’ shows that this gene is represented by 5 sets of reporters (probe sets) on the Affymetrix U133 Plus 2.0 microarray. Take a look at the signal intensities for the different reporters (the red numbers in brackets). It's good to realize that genes could have more then one reporter for a given platform in this case the Affymetrix platform. Also in RNAseq datasets, if transcripts (isoforms) are annotated, this can be very relevant. By default, R2 chooses the reporter with the highest signal which is in ~99.9% of the cases the most representive for a gene. For many platforms which use reporters the genome location is also added. Clicking on the R2_TView link in the probeset verification box leads you to the genome browser where the exact location of the reporters can be investigated. 
 <br>
 
 ---------
