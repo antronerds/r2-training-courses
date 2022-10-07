@@ -393,7 +393,7 @@ Two images on a row belong to one patient (e.g. 619-MES and 619-ADRN). As you ca
  <br>
 
 
- For this analysis we will use one of the analysis tools of R2: Toplister. The toplister is a handy tool for a first start to analysis a given dataset. Particular, if you have a very poor dataset  clinical annotation. The Toplister can assess which genes show the most different expression values throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
+ For this analysis we will use one of the analysis tools of R2: Toplister. The toplister is a handy tool for a first start to analyze a given dataset. Particularly, if you have  poor dataset clinical annotation. The Toplister can assess which genes show the most different expression values throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This provides an unbiased view of the differences in gene expression.
 
 
  * Go to R2 by clicking the button below. The correct dataset containing 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
@@ -436,13 +436,13 @@ You can also see that samples group together that show similar expression for ce
 
 ---------
 
-Above the heatmap you can see two tracks of this dataset: cell_type and pairs. The cell_type track shows for each sample to which of the two morphological subtypes each sample belongs. The pairs track shows to which patient the sample belongs. 
+Above the heatmap you can see two tracks of this dataset: cell_type and pairs. The cell_type track shows for each sample to which of the two morphological subtypes the sample belongs. The pairs track shows to which patient the sample belongs. 
 
 ---------
 
    ![](_static/images/R2d2_logo.png)**When you hover your mouse over the squares of the tracks, you can see the detailed information of the sample. What feature determines the clustering of the samples?**  
 
- (N.b. the color choices of the tracks are independent from the color scheme that is used for the heatmap grid. Check what the blue color and the orange color signifies in the cell_type track)
+ (N.b. the color choices of the tracks are independent of the color scheme that is used for the heatmap grid. Check what the blue color and the orange color signifies in the cell_type track)
  <br><br>
 
 ---------
@@ -487,8 +487,9 @@ This dataset has been annotated with 'cell type' information. Each sample was as
 * Choose the proper track in the **Group by** dropdown and click **Submit**. An additional adjustable settings menu pops up.  
 * Choose one of the types for **Group 1** and the other for **Group 2**.  
 * Since we have only 8 samples make sure that the **Corr. voor multiple testing** is set to *No correction*. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>) and click **Submit**.  
-* A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset. Click on the magnifying glass icon in front of your favorite gene to see its expression in the sample set. Try an oppositely correlating gene as well.  
-* Go back to the tab with the differentially expressed genes. This is still open in one of your browser tabs.  
+* A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset. Click on the magnifying glass icon in front of a gene of your choice to see its expression in the sample set.  
+* Go back to the tab with result page of the differentially expressed genes. This is still open in one of your browser tabs. Try an oppositely correlating gene as well.  
+* Again go back to the result page.
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
 <br>
 
@@ -499,18 +500,16 @@ This dataset has been annotated with 'cell type' information. Each sample was as
 
 ---------
 <br>
-For future use, this list of genes has been stored for you in R2 as saved genesets. The list has been split into two categories: one set of genes that is highly expressed in the MES type of samples (r2_mesadrn_mes) and one set of genes highly expressed in the ADRN type of samples (r2_mesadrn_adrn).  
+For future use, this list of genes has been stored for you in R2 as saved genesets. The list has been split into two genesets: one set of genes that is highly expressed in the MES type of samples (r2_mesadrn_mes) and one set of genes highly expressed in the ADRN type of samples (r2_mesadrn_adrn).  
 <br><br>
-From the right panel of menu buttons, R2 provides several additional analyses for the list of genes that we just generated with the differential expression analysis.<br>
+On the result page of the differential expression analysis, from the right panel of menu buttons, R2 provides several additional analyses for the list of genes that we just generated.<br>
 As a next analysis step, we can check a data resource called the Gene Ontology that provides a tree of systematically ordered biological terms that is used to formally describe the biological role of each gene.<br>
 The Gene Ontology Analysis tool in R2 calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. 
-<br>
-* On the page with the differentially expressed genes, select the **Gene Ontology Analysis** button in the menu on the right 
+<br>  
+
+* On the page with the differentially expressed genes, select the **Gene Ontology Analysis** button in the menu on the right  
+
 <br><br>
-
-
-
-
 
 ---------
 
@@ -520,7 +519,7 @@ The Gene Ontology Analysis tool in R2 calculates for each of the thousands of gr
 ---------
 <br>
 
-* Now scroll down to the end of the page (or click the filter button in the left upper corner of the page) and adapt the settings such that only only the genes that are higher expressed in the MES type of cells are selected (check the mes>= adrn). Click **Redo analysis**.
+* Now scroll down to the end of the page (or click the filter button in the left upper corner of the page) and adapt the settings such that only the genes that are higher expressed in the MES type of cells are selected (check the adrn < mes). Click **Redo analysis**.
 <br><br>
 
 ---------
@@ -533,7 +532,7 @@ The Gene Ontology Analysis tool in R2 calculates for each of the thousands of gr
 
 In R2 there are many more sets of genes that have been found to be implemented in specific processes. The Broad Institute has compiled quite some of these sets of genes that characterize hallmark biological processes.  
 
-* Go back to the window with the differentially expressed genes. 
+* Go back to the result page with the differentially expressed genes. 
 * Select the **Gene set analysis** option from the right menu
 * Select the *Broad 2020 09 h hallmark* as Geneset and click **Next**
 <br><br>
@@ -546,19 +545,12 @@ In R2 there are many more sets of genes that have been found to be implemented i
 ---------
 <br>
 
-As mentioned above, the lists of differentially expressed genes between the MES and ARDN groups are also stored in the gene sets databases of R2. We can use these genes as a proxy for mesenchymal- or adrenergic- ness. Let's first look at these 2 groups of genes in a heatmap, when these are applied to a dataset where a number of neuroblastoma cell lines are represented next to the 8 samples that we have looked at above.
+As mentioned above, the lists of differentially expressed genes between the MES and ARDN groups are also stored in the gene sets databases of R2. We can use these genes as a proxy for mesenchymal- or adrenergic-ness. Let's first look at these 2 groups of genes in a heatmap, when these are applied to a dataset where a number of neuroblastoma cell lines are represented next to the 8 samples that we have looked at above.
 
-
- <form name="ps_avgpres_gsenatgengeo34_u133p2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-   <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
-   <button type="submit" class="course r2submit" >Go to R2</button>
- </form>  
- <br>
-
-
-- Go to the main page and select '**Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2**' as a dataset to explore.
-- Now select 'View Geneset (Heatmap)' from option box 3 and press next.
-- As gene set collection, we choose 'r2 provided gene lists' and then press next (twice)
+- Go to the main page and click on the dataset that is currently selected. 
+- A dataset selection grid pops up in which you can use the filters on top of the columns to find datasets of interest. Select '**Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2**' as a dataset to explore (e.g. fill in the grid **crest** in the textfield of the *Tissue/Tumor* column and click the *Select* button in front of the dataset that we are looking for). 
+- Now select **View Geneset (Heatmap)** from option box 3 and press next.
+- As gene set collection, we choose **r2 provided gene lists** and then press next twice
 - In the gene set box, we select 'r2_mesadrn_adrn' as well as 'r2_mesadrn_mes' (With the CTRL key you can select more than 1 gene sets). Then press next.
 
 A heatmap is now shown on your screen. You should see a clear separation in the genes, that correspond to the 2 different gene sets (The grey/red stripes correspond to the gene set a gene was coming from). In addition, you see a clear separation in the samples too.
@@ -579,7 +571,7 @@ The current dataset also contains neural crest cells, which are naive (and still
 
 ---------
 
-Using a heatmap as we have just generated can be very helpful in determining how a list of genes is behaving within a dataset. However, it is not very scalable and requires detailed manual inspection to interpret. Condensing the information from all genes in a single value, opens some new possibilities. Within R2, we define a gene signature as the average value of what you see in the columns for every sample (effectively the average of all zscores, within every single gene set). These are automatically calculated in heatmaps, and are represented in the bottom of the pictures. We can store these signature scores as tracks in R2, and subsequently use them in R2 as if they are a gene (a meta-gene). Within the current dataset, the scores for MES and ADRN are already provided as separate tracks. Under normal conditions, you would store the signatures as tracks in your personal account.
+Using a heatmap as we have just generated can be very helpful in determining how a list of genes is behaving within a dataset. However, it is not very scalable and requires detailed manual inspection to interpret. Condensing the information from all genes in a single value, opens some new possibilities. Within R2, we define a gene signature as the average value of what you see in the columns for every sample (effectively the average of all zscores, within every single gene set). These are automatically calculated during heatmap analyses, and are represented in the bottom of the pictures. We can store these signature scores as tracks in R2, and subsequently use them in R2 as if they are a gene (a meta-gene). Within the current dataset, the scores for MES and ADRN are already provided as separate tracks. Under normal conditions, you would store the signatures as tracks in your personal account.
 
 -  Go back to the main page. We will now look at the samples in this dataset as signature scores. To do this, we select 'relate 2 tracks' and press next.
 - As track for X, we select s_mesadr_adrn, and as track for Y, s_mesardn_mes. Click Submit.
