@@ -279,6 +279,8 @@ Below the graph, you can change several settings in the Adjustable Settings box.
 Go back to the main page. We will now investigate if MYCN expression can be used to segregate our patient cohort in 2 groups that coincide with a difference in survival percentage.  
 
 - In box 3, select "Kaplan Meier by Gene Expression" and click next. 
+- Enter **mycn** and select the mycn gene in the *Search by Gene* field.
+- Choose for **Type of Survival** the value *overall-c1103* and click **Next**
 - Read above the graph which cut-off value is used to obtain two groups of high and low MYCN expression.
 
 The Kaplan Meier Scanner is a powerful tool in R2. This tool analyses the prognostic value of the expression level of an individual gene. In contrast to e.g. stage or MYCN amplification, expression data are not discrete (yes / no amplification), but a continuum of values. The question is then which expression value to take as a cut-off point to separate groups with ‘high’ and ‘low’ expression.  In many publications, the median value is taken as a separation between high and low expression. This however does not take into account that potentially a sub-group of the patients drives the separation. Within R2, we can make use of the to called Kaplan scanner. Within this analysis, every expression value in a series is used as cut-off point (scanned) after which the value that gives the most significant discrimination in a good and bad prognosis group is chosen.
