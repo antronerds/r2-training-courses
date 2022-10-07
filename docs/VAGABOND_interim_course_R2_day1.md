@@ -50,7 +50,7 @@ You're now on the R2 main page. This web based molecular biology data analysis p
 The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The <font style="background-color: #95d097">**green buttons**</font> in this document will open up a Google form, one per section, with which you can submit your answers. 
 <br><br>
 
-### Finding prognostic factors in your data
+## Finding prognostic factors in your data
 
 
 *Data used:*  
@@ -67,7 +67,7 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
 <br>
 <br>
 
-## Selecting datasets
+### Selecting datasets
 
 Let's first make sure that the correct dataset is selected.  
 - On the main page, you find a menu in the middle of the page that consists of several boxes.  
@@ -190,7 +190,7 @@ In neuroblastoma, at the DNA level, MYCN amplification and loss of 1 copy of the
 
 
 
-### Finding Differential expressed genes
+### Finding Differentially expressed genes
 
 
 We have seen that MYCN expression has a clear preference for some chromosomal regions in the previous analysis. Next to looking for patterns that resemble the expression of a gene, you can also investigate the expression patterns between groups of patients in a differential expression analysis.  Can we find biological processes by looking at differentially expressed genes between groups. For example, which genes are differentially expressed between the 'alive' or 'dead' group.
