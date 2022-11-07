@@ -55,17 +55,17 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <br>
 
 
-* Go to R2 by clicking on the button below:  
+* Open a Chrome browser and go to the R2 platform address: <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a> 
 
-
-<form name="itcc_68_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+<form name="itcc_86_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
+  <input type="hidden" name="option" value="main">
   <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
   <button type="submit" class="course r2submit" >Go to R2</button>
 </form>  
 <br>
 <br>
 
-You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
+You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.<br><br>
 In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. In this dataset 86 cell lines derived from 6 different childhood tumor types can be found (ewing sarcoma, medulloblastoma, neuroblastoma, osteosarcoma, acute lymphocytic leukemia and rhabdomyosarcoma).
 
 ---------
