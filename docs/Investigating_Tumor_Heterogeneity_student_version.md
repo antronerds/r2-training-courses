@@ -55,18 +55,12 @@ For a start we'll investigate established childhood tumor cell lines, including 
 <br>
 
 
-* Open a Chrome browser and go to the R2 platform address: <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a> 
-
-<form name="itcc_86_cell_lines" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="option" value="main">
-  <input type="hidden" name="table" value="ps_avgpres_itcccellline86_u133p2">
-  <button type="submit" class="course r2submit" >Go to R2</button>
-</form>  
-<br>
-<br>
+* Open a Chrome browser and go to the R2 platform address: <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a> and choose the button **Use R2 without an account** under the sign in fields. 
 
 You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.<br><br>
-In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. The proper dataset described above has been selected already. In this dataset 86 cell lines derived from 6 different childhood tumor types can be found (ewing sarcoma, medulloblastoma, neuroblastoma, osteosarcoma, acute lymphocytic leukemia and rhabdomyosarcoma).
+In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. We use the dataset that is described above. In this dataset, 86 cell lines derived from 6 different childhood tumor types can be found (ewing sarcoma, medulloblastoma, neuroblastoma, osteosarcoma, acute lymphocytic leukemia and rhabdomyosarcoma). 
+* In order to find the dataset in R2, click on the text of the currently selected dataset in box 2. A grid pops up in which you can find all the datasets of R2 that are available to you. 
+* Each row is a dataset and each column contains the different searchable characteristics of a dataset. Under the header **Tissue/Tumor** type the keyword *Childhood Cancer* in the white textfield and see if the dataset with 86 samples shows up. Then click the **Select** button in front of the row to select this dataset. 
 
 ---------
 
@@ -76,25 +70,27 @@ In this case we're first going to see if and how the mRNA expression of several 
 ---------
 
   * In field 3, an analysis type can be chosen. We will start with the default analysis *View a Gene*, and thus you can simply click **Next** in field 4.
-  * On the next page, the *Gene / Reporter* field is required. What gene came to mind that might show different expression between some of these 6 tumor models? Type the name of the gene in the *Search by Gene* field. A dropdown list appears, that shows all the reporters that are found for the gene characters that you typed. 
+  * On the next page, the **Gene / Reporter** field is required. What gene came to mind that might show different expression between some of these 6 tumor models? Type the name of the gene in the **Search by Gene** field. A dropdown list appears, that shows all the reporters that are found for the gene characters that you typed. 
   * It can happen that multiple reporters are found for one gene. In that case, choose the top one of the list to select the reporter with the highest average expression. Select the reporter of your choice in the list with a mouse click. 
   * Click **Submit**.
     
   
-A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis.<br>
+A graph shows the expression of this gene's mRNA in the whole set of childhood tumor cell lines. Samples are along the x-axis, mRNA expression values of the gene in a sample are on the y-axis.<br><br>
 In R2, samples can be annotated with e.g. clinical data or biological information. Each group of annotated data is called a *Track* in R2. These tracks can be used to filter, color or split data in all types of R2 analyses.<br>
-Sometimes you can see such tracks displayed underneath a graph. In this case, below the graph colored blocks correspond to the values that each sample has for the categorical track *itcc_model*.<br>
+Sometimes you can see such tracks displayed underneath a graph. In this case, below the graph colored blocks correspond to the values that each sample has for the categorical track *itcc_model*.<br><br>
 Often more annotation is available for the samples. You can hover your mouse above sample dots in a graph or over the tracks underneath the graph to get more information per sample.  
 
   * Hover with your mouse over some colored blocks, and then over their data points in the graph to look at additional information of those samples. Pay attention to which sample belongs to which tumor model.  
 
 When you analyze data, different visualizations might help to gain better insight into your dataset. Below the graph, you can find a table with adjustable settings.   
 
-* Try out a different view of the same data with the following changes to the settings:<br>
-  Split the data in groups by switching the dropdown of **Analysis type** above the box to **gene vs track**. In the box, set the dropdown of **Track** to *itcc_model (6 cat)*. This track contains the information which sample belongs to which tumor type and is the same track that you see displayed directly underneath the graph.<br>
- The expression values on the y-axis are logarithmic by default, in the settings menu set the **Transformation** option to *None*. Also, sort the samples again on level of expression with **Extra Graph Option** set to *Track and Gene sort*. Finally, click **Submit** to obtain the graph with these adaptations.  
+Try out a different view of the same data with the following changes to the settings:<br>
+* Split the data in groups by switching the dropdown of **Analysis type** at the top of the box to *gene vs track*. In the box, set the dropdown of **Track** to *itcc_model (6 cat)*. This track contains the information which sample belongs to which tumor type and is the same track that you see displayed directly underneath the graph. Click **Submit** to see the result in the graph.
+* The expression values on the y-axis are logarithmic by default, in the settings menu set the **Transformation** option to *None*. 
+* Also, sort the samples again on level of expression with **Extra Graph Option** set to *Track and Gene sort*. 
+* Click **Submit** again to obtain the graph with these adaptations.  
 <br> 
-* Now try the gene MYCN. Type *MYCN* in the left input field **Gene / Reporter** in the Adjustable settings box underneath the graph, and click on MYCN in the list that pops up. Click **Submit** in order to change your gene.<br>  
+* Now try the gene MYCN. Type *MYCN* in the left input field **Gene / Reporter** in the Adjustable settings box underneath the graph, and click on *MYCN/ 209757_s_at* in the list that pops up. Click **Submit** in order to change your gene.<br>  
 * Hover with your mouse over the track underneath the graph or over the data points, to find out which itcc_model belongs to which group of samples. 
   
 ---------
@@ -116,13 +112,15 @@ We've seen that the expression of genes differs among the samples and some types
 
 * Click the button below to show the t-SNE map in R2: 
 
-<button class="course" onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=tsne_plot&tsne_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
+<button class="course" onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=map_scatter_plot&map_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
 <br>
 <br>
 
-* Under the graph, a menu allows the user to adapt settings. Colors of the graph points are not set by default. To color the graph with a biologically meaningful annotation, find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the *itcc_model* track again, and click **Submit** to show the changes. 
+The t-SNE algorithm has a perplexity parameter which determines how much attraction points have on a map towards each other. In R2 a wide range of perplexity values were run and added for this dataset. Under the graph, a menu allows the user to adapt settings.
+* It can be useful to choose a map in which clusters are clearly gathering together. The different maps can be found under de setting Versions. Set **Versions** to the value *5* and click **Submit** again. 
+* Colors of the graph points are not set by default. To color the graph with a biologically meaningful annotation, find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the *itcc_model* track again, and click **Submit** to show the changes. 
 
-* The t-SNE algorithm has a parameter called **perplexity**, which determines how much attraction points have on a map towards each other. Set the perplexity value to *5* and click **Submit** again.  
+  
   
 ------
 
@@ -184,7 +182,7 @@ We profiled the mRNA expression of genes using Affymetrix mRNA chips in three of
 
 For this analysis we will use one of the analysis tools of R2: Toplister. The Toplister can assess which genes show the most different expression values throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This gives an unbiased view of the differences in gene expression.
 
-* Go to R2 by clicking the button below. TThe correct dataset containing 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
+* Go to R2 by clicking the button below. The correct dataset containing 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
 <br>
 
 <form name="ps_avgpres_gse90803geo8_u133p2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
@@ -199,7 +197,7 @@ For this analysis we will use one of the analysis tools of R2: Toplister. The To
 
 ---------
 
-  ![](_static/images/R2d2_logo.png)**Do you recognize any genes that explain the difference in phenotype?**
+  ![](_static/images/R2d2_logo.png)**Do you recognize any genes that could explain the difference in phenotype?**
 <br><br>
 
 ---------
