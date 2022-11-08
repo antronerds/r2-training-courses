@@ -303,7 +303,7 @@ The Gene Ontology Analysis tool in R2 calculates for each of the thousands of gr
 ---------
 <br>
 
-* Now scroll down to the end of the page (or click the filter button in the left upper corner of the page) and adapt the settings such that only only the genes that are higher expressed in the MES type of cells are selected (check the mes>= adrn). Click **Redo analysis**.
+* Now scroll down to the end of the page (or click the filter button in the left upper corner of the page) and adapt the settings such that only the genes that are higher expressed in the MES type of cells are selected (check the mes>= adrn). Click **Redo analysis**.
 
 ---------
 
@@ -332,7 +332,7 @@ Identifying groups: using signatures to classify other datasets
 
 We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis. <br><br>
 
-We've assembled a more complex dataset by gathering the dataset consisting of: <br>
+We've assembled a more complex dataset that consists of: <br>
 * the 4 pairs of cell lines, 
 * additional neuroblastoma cell lines from the first dataset and 
 * publicly available data of non-malignant human neural crest tissue. 
