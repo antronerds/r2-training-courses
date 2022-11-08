@@ -552,7 +552,7 @@ Now that we have a candidate Transcription Factor we can try to investigate its 
 
 ---------
 
-The TF was inducibly expressed in the SKNBE cell line and this was monitored through time for its gene expression using Affymetrix mRNA arrays. The resulting data was added to the dataset we used above for comparison. 
+The TF was inducibly expressed in the SKNBE cell line and this was monitored through time for its gene expression using Affymetrix mRNA arrays. For comparison, the resulting data was added to the dataset that we used above. 
 
 
 ---------
@@ -588,7 +588,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 
 * In field 3, select the **Relate 2 tracks** option. <br>
 R2 has calculated signature scores for all samples in both signatures; in this dataset these tracks are called *adrn_score* and *mes_score*. 
-* Relate the two tracks and adapt the **ColorMode** to *Color by Track* and try the *mes_adrn_time* track. This track contains information on the time that the PRRX1 gene expression was induced in the SKNBE cell line and **Submit**.
+* Relate the two tracks and adapt the **ColorMode** to *Color by Track* and try the *mes_adrn_time* track. This track contains information about the time that the PRRX1 gene expression was induced in the SKNBE cell line. Click **Submit**.
 
 ---------
 
@@ -701,7 +701,7 @@ First we'll check one of the HAND genes, known to play a role in the development
 <input type='hidden' name='chip_height' value='45'>
 <input type='hidden' name='chip_label_size' value='12'>
 <input type='hidden' name='chip_libscale' value='20000000'>
-<input type='hidden' name='chip_max' value='10'>
+<input type='hidden' name='chip_max' value='a'>
 <input type='hidden' name='chip_min' value='a'>
 <input type='hidden' name='chip_ord_v2' value='undefined:,20161207-et200:a,20161185-et200:b,20150775-et200:e,20150766-et200:c,20150758-et200:d,20150756-et200:g,20150768-et200:f,20150473-et200:h,20150470-et200:i,'>
 <input type='hidden' name='chip_signif' value='false'>
