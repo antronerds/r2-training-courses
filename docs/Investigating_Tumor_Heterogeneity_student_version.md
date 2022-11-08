@@ -371,7 +371,7 @@ We've assembled a more complex dataset that consists of: <br>
 
 
 * In field 3 select *View Geneset (Heatmap)* that you can find under the header *Meta-analysis*.
-* Click **Next** and select *r2 provided gene lists* 
+* Click **Next** and select *r2 provided gene lists* for the **Gene set Collection**. 
 * Click **Next**, leave selection as is and click **Next**
 * Select both signatures that were derived before by holding CTRL and clicking on both the MES (*r2_mesadrn_mes*) and the ADRN (*r2_mesadrn_adrn*) signatures and click **Next**
 
@@ -451,9 +451,9 @@ The expression patterns of these specific signatures can be used to compare cell
 
 * In field 3 choose **Relate 2 tracks** and click **Next**
 * First we'll explore the scores in each signature separately; on the X-axis (**Select X track**) we'll use the unique sample id (*lab\_id*) and on the Y-axis the signature score track that R2 has generated for the ADRN signature (s\_mesadrn\_adrn(#)). 
-* Click **Submit**.<br>
-A graph is generated. For each sample the signature score for the mesadrn\_adrn signature is shown. <br>
-* Select for **Color mode**  *Color by Track* and try the track *cell_type*. Click **Submit** to view the result.
+* Click **Submit**.<br><br>
+A graph is generated. For each sample the signature score for the mesadrn\_adrn signature is shown. We can now perform some additional steps to make the graph more insightful:<br>
+* In the Adjustable Settings underneath the plot, select for **Color mode**  *Color by Track* and try the track *cell_type*. Click **Submit** to view the result.
 * Now select for the Y-axis the MES part of the signature, click **Submit** to view the result.
 * To compare the signature scores, select the ADRN signature for the X track and submit your changes.
 * If you have time you can also try the *Color by Gene* as **ColorMode**, choose a gene of interest (Note: the dropdown selection is linked to the database, wait for the proper selections to popup...)
@@ -510,8 +510,8 @@ Again we're going to find out which genes make a difference, but now in a specif
 * We're now also going to filter for specific genes, which can be done in the settings section **Gene Filters**. Next to **Gene set** click the button **Search GS**. 
 * Since we are interested in transcription factors, type *transcription* in the textfield on top and click the **search icon**.
 * Check the box of *Categories > base > transcription factor* with 945 genes and click on the green button **Use selected** on the left. Then click **Submit**. 
-* A list of genes appears. Investigate the top 4 by clicking on the loop icons in front of the gene names. This brings you to the expression view of the gene. 
-* From here you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the top table. You'll arrive at a website that gathers all known information about genes. A useful section further down the page is the **Bibliography** containing short summaries of relevant scientific papers.
+* A list of genes appears. Investigate the top 4 by clicking on the magnifying glasses in front of the gene names. This brings you to the expression view of the gene. 
+* From the page with the expression view of the gene, you can also access the NCBI gene database containing additional information on the function of the gene and related scientific publications. Do this by clicking on the hyperlinked **GeneID** number in the second table underneath the plot. You'll arrive at a website that gathers all known information about genes. A useful section further down the page is the **Bibliography** containing short summaries of relevant scientific papers.
 
 ---------
 
@@ -525,7 +525,7 @@ Again we're going to find out which genes make a difference, but now in a specif
 Proving causes: manipulating cell lines
 ------------------------------------------
 
-From experiments it is known that cells can change their nature, some cells exhibit a certain plasticity.  
+From lab experiments it is known that cells can change their nature, some cells exhibit a certain plasticity.  
 
 * The button below brings you to the form in which you can submit your answers for section 1.8
 
