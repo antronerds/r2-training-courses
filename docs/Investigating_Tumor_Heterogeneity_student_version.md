@@ -117,7 +117,9 @@ We've seen that the expression of genes differs among the samples and some types
 <br>
 <br>
 
-The t-SNE algorithm has a perplexity parameter which determines how much attraction points have on a map towards each other. In R2 a wide range of perplexity values were run for this dataset. Depending on your research question, you might be interested in the t-SNE map that shows the clusters very clearly as separate clumps or you might want to view samples in a more unified visualisation. Under the graph, a menu allows the user to adapt settings.
+The t-SNE algorithm has a perplexity parameter which determines how much attraction points have on a map towards each other. In R2 a wide range of perplexity values were run for this dataset. Depending on your research question, you might be interested in a t-SNE map that shows the clusters very clearly as separate clumps, or you might want to view samples in a more unified visualisation. <br><br>
+
+Under the graph, a menu allows the user to adapt settings.
 *  The different maps can be found under de setting Versions. Set **Versions** to the value *5* and click **Submit** again. 
 * Colors of the graph points are not set by default. To color the graph with a biologically meaningful annotation, find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the *itcc_model* track again, and click **Submit** to show the changes. 
 
