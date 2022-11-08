@@ -286,12 +286,13 @@ This dataset has been annotated with 'cell type' information. Each sample was as
 
 ---------
 <br>
-For future use, this list of genes has been stored for you in R2 as saved genesets. The list has been split into two categories: one set of genes that is highly expressed in the MES type of samples (r2_mesadrn_mes) and one set of genes highly expressed in the ADRN type of samples (r2_mesadrn_adrn).  
+For future use, this list of genes has been stored in R2 as saved genesets. The list has been split into two categories: one set of genes that is highly expressed in the MES type of samples (r2_mesadrn_mes) and one set of genes highly expressed in the ADRN type of samples (r2_mesadrn_adrn).  
 <br><br>
 From the right panel of menu buttons, R2 provides several additional analyses for the list of genes that we just generated with the differential expression analysis.<br>
 As a next analysis step, we can check a data resource called the Gene Ontology that provides a tree of systematically ordered biological terms that is used to formally describe the biological role of each gene.<br>
 The Gene Ontology Analysis tool in R2 calculates for each of the thousands of groups of genes that are annotated with a specific biological term whether your set of choice is over-represented in them. 
-<br>
+<br><br> 
+
 * On the page with the differentially expressed genes, select the **Gene Ontology Analysis** button in the menu on the right 
 
 ---------
