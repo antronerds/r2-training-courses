@@ -90,7 +90,8 @@ Try out a different view of the same data with the following changes to the sett
 * Also, sort the samples again on level of expression with **Extra Graph Option** set to *Track and Gene sort*. 
 * Click **Submit** again to obtain the graph with these adaptations.  
 <br> 
-* Now try the gene MYCN. Type *MYCN* in the left input field **Gene / Reporter** in the Adjustable settings box underneath the graph, and click on *MYCN/ 209757_s_at* in the list that pops up. Click **Submit** in order to change your gene.<br>  
+Let's change the gene of the graph: 
+* Try the gene MYCN: yype *MYCN* in the left input field **Gene / Reporter** in the Adjustable settings box underneath the graph, and click on *MYCN/ 209757_s_at* in the list that pops up. Click **Submit** in order to change your gene.<br  
 * Hover with your mouse over the track underneath the graph or over the data points, to find out which itcc_model belongs to which group of samples. 
   
 ---------
@@ -330,14 +331,13 @@ In R2 there are many more sets of genes that have been found to be implemented i
 Identifying groups: using signatures to classify other datasets
 ------------------------------------------------------------------
 
-We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis. <br><br>
+We now have a signature that distinguishes between the two types of cells. We also obtained some hints about functional characteristics of these cells. How does this signature behave in other datasets? Does the same set of genes tell us something about other sets of tumors or cell lines? This is the next step in our analysis. Also we keep in mind that the neural crest undergoes a mesenchymal transition and gives rise to cell types from the adrenergic lineage.<br><br><br><br>
 
 We've assembled a more complex dataset that consists of: <br>
 * the 4 pairs of cell lines, 
 * additional neuroblastoma cell lines from the first dataset and 
 * publicly available data of non-malignant human neural crest tissue. 
 <br><br>
-The neural crest undergoes a mesenchymal transition and gives rise to cell types from the adrenergic lineage.<br><br>
 
 *Data used:*
 * A combination of the 8 cell lines above, additional neuroblastoma cell lines and cells from the neural crest lineage (Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2)
