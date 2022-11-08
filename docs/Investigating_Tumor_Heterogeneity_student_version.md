@@ -116,8 +116,8 @@ We've seen that the expression of genes differs among the samples and some types
 <br>
 <br>
 
-The t-SNE algorithm has a perplexity parameter which determines how much attraction points have on a map towards each other. In R2 a wide range of perplexity values were run and added for this dataset. Under the graph, a menu allows the user to adapt settings.
-* It can be useful to choose a map in which clusters are clearly gathering together. The different maps can be found under de setting Versions. Set **Versions** to the value *5* and click **Submit** again. 
+The t-SNE algorithm has a perplexity parameter which determines how much attraction points have on a map towards each other. In R2 a wide range of perplexity values were run for this dataset. Depending on your research question, you might be interested in the t-SNE map that shows the clusters very clearly as separate clumps or you might want to view samples in a more unified visualisation. Under the graph, a menu allows the user to adapt settings.
+*  The different maps can be found under de setting Versions. Set **Versions** to the value *5* and click **Submit** again. 
 * Colors of the graph points are not set by default. To color the graph with a biologically meaningful annotation, find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the *itcc_model* track again, and click **Submit** to show the changes. 
 
   
@@ -274,7 +274,8 @@ This dataset has been annotated with 'cell type' information. Each sample was as
 * Choose the proper track in the **Group by** dropdown and click **Submit**. An additional adjustable settings menu pops up.  
 * Choose one of the types for **Group 1** and the other for **Group 2**.  
 * Since we have only 8 samples make sure that the **Corr. voor multiple testing** is set to *No correction*. (More information on Correction for Multiple Testing can be found <a href="https://r2-tutorials.readthedocs.io/en/latest/Did_You_Know.html#multipletesting" target="_blank">here</a>) and click **Submit**.  
-* A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset. Click on the magnifying glass icon in front of your favorite gene to see its expression in the sample set. Try an oppositely correlating gene as well.  
+* A list of differentially expressed genes appears with correlation p-value < 0.01 in this dataset. Click on the magnifying glass icon in front of a gene of your choice to see its expression in the sample set. 
+* The column **Difference** shows the correlation value between the track and the gene. Try an oppositely correlating gene as well.  
 * Go back to the tab with the differentially expressed genes. This is still open in one of your browser tabs.  
 * Click on the **Heatmap(zscore)** button in the right menu panel; a heatmap shows the expression of the differentially expressed genes for each sample.    
 
