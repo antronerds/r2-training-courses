@@ -5,7 +5,7 @@ Investigating Intra-tumor Heterogeneity in Neuroblastoma
 
 *Analyse tumor heterogeneity in neuroblastoma using the R2 data analysis platform*
 
-This resource is located online at http://r2-training-courses.readthedocs.io  
+This resource is located online at http://r2platform.com/mgcourse  
   
  
 Introduction
@@ -27,11 +27,17 @@ Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which i
 
 Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this aggressive characteristic of neuroblastoma tumors. We obtained tumor biopsies from four patients that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines. In this course you will conduct the research yourself, following the lines of reasoning and the same data as was used in a paper by the AMC Oncogenomics group that was published in Nature Genetics in 2017.   
 
+The grey buttons in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The green buttons in this document will open up a Google form, one per section, with which you can submit your answers.
+
+We would like to ask you to fill in the evaluation form about this R2 course during or at the end of the course. To open the form, click the button below:
+
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSflNJpsTcLIhwEC0ZlHksfnE0VwBay1I2KOGPArYu4Q_QhtrA/viewform?usp=sf_link','_blank');" type="button">Open the Evaluation form</button>
+<br>
+<br>
 
 Tumors and origins: a first impression of your data
 ---------------------------------------
-The grey buttons in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The green buttons in this document will open up a Google form, one per section, with which you can submit your answers.  
-  
+
 For a start we'll investigate established childhood tumor cell lines, including neuroblastoma. Established cell lines can be grown and passaged in culture indefinetely. A typical example is the classic HeLa cell line, taken from a cervical adenocarcinoma of Henrieta Lacks in 1951 that has been in culture since. How do profiles of neuroblastoma cell lines relate to cell lines of other tumors? Additional data about classical cell lines from other childhood tumors is available in the resources of the scientific community. For each publication scientists are required to make their data available in public repositories. We can use these in a larger public dataset of 86 other cell lines derived from 6 different childhood tumors and see how they relate. 
 
 *Data used:*  
@@ -957,6 +963,10 @@ Suggesting therapy
   ![](_static/images/R2d2_logo.png)**Which strategy do you suggest?**
 <br>
 <br>
+
+Please don't forget to fill in the evaluation form about this R2 course, if you haven't done so yet:
+
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSflNJpsTcLIhwEC0ZlHksfnE0VwBay1I2KOGPArYu4Q_QhtrA/viewform?usp=sf_link','_blank');" type="button">Open the Evaluation form</button>
 
 ---------
 
