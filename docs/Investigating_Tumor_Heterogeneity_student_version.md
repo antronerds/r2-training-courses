@@ -233,7 +233,7 @@ The cell line pairs from the patient were also investigated for the tumor stem c
 
 ---------
 
-  ![](_static/images/R2d2_logo.png)**Given these observations, what origin can you assign to each group of samples?**
+  ![](_static/images/R2d2_logo.png)**Given these observations, what characteristics can you assign to each group of samples?**
 <br><br>
 
 ---------
