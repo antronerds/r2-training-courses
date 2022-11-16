@@ -194,10 +194,7 @@ For this analysis we will use one of the analysis tools of R2: Toplister. The To
 * Go to R2 by clicking the button below. The correct dataset containing 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
 <br>
 
-<form name="ps_avgpres_gse90803geo8_u133p2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
-  <button type="submit" class="course r2submit" >Go to R2</button>
-</form>  
+<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=ccourse_molgen_main_8_patientdata" target="_blank">Go to R2</a>
 <br>
 <br>
 
@@ -267,13 +264,9 @@ We have identified two different types of cells that occur within the same patie
   
 * Go to the main page of R2 by clicking the button below
 
-<form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
-  <button type="submit" class="course r2submit" >Go to R2 main portal</button>
-</form>  
+<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_main_8_patientdata" target="_blank">Go to R2</a>
 <br>
 <br>
-
 
 * In Field 3 choose *Differential expression between two groups* and click **Next**
 <br>
@@ -368,10 +361,8 @@ We've assembled a more complex dataset that consists of: <br>
 
 * Go to the main portal of R2 by clicking the button below; the dataset described above is automatically selected
 
-<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
-  <button type="submit" class="course r2submit" >Go to R2</button>
-</form>  
+<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_main_34_pairs_and_crest" target="_blank">Go to R2</a>
+
 <br>
 <br>
 
@@ -396,11 +387,8 @@ When observing such clear-cut patterns it is good scientific practice to test th
 
 * Click on the button below to go there and perform the same analysis.
 
-
-<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gse90683geo48_gse90683r1">
-  <button type="submit" class="course r2submit" >Go to R2 additional NB dataset</button>
-</form>  
+<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_main_boeva" target="_blank">Go to R2</a>
+ 
 <br>
 <br>
 
@@ -447,10 +435,7 @@ The expression patterns of these specific signatures can be used to compare cell
 
 * Go back to the main portal of R2 by clicking the button below.
 
-<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
-  <button type="submit" class="course r2submit" >Go to R2</button>
-</form>  
+<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_main_34_pairs_and_crest" target="_blank">Go to R2</a>
 <br>
 <br>
 
@@ -501,10 +486,8 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 * Go back to the main portal of R2 by clicking the button below.
 
-<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
-  <button type="submit" class="course r2submit" >Go to R2 main</button>
-</form>  
+<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_main_34_pairs_and_crest" target="_blank">Go to R2</a>
+
 <br>
 <br>
 
@@ -585,10 +568,8 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
   
 * Go to the R2 main page by clicking the button below, the correct dataset will be selected.  
 
-<form name="52_pairs_crest_exp" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
-  <button type="submit" class="course r2submit" >Go to R2 main, inducible TF set</button>
-</form>  
+
+<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_main_52_pairs_crest_exp" target="_blank">Go to R2 main page wit the inducible TF set selected</a>
 <br>
 <br>
 
@@ -606,23 +587,8 @@ R2 has calculated signature scores for all samples in both signatures; in this d
 
 * This conclusion is even more obvious when the sequence of events is highlighted. The relations between the isogenic pairs are also illustrated. Click the button below to view the graph annotated with this extra information.  
 
-<form name="timepath" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gsenatgen2017geo52_u133p2">
-<input type="hidden" name="species" value="hs">
-<input type="hidden" name="selectedtrack" value="adrn_score">
-<input type="hidden" name="selectedtracky" value="mes_score">
-<input type="hidden" name="subsettracksubset" value="experiment-group">
-<input type="hidden" name="graphtype" value="XY">
-<input type="hidden" name="colormode" value="colorbytrack">
-<input type="hidden" name="trackforcolor" value="mes_adrn_time">
-<input type="hidden" name="option" value="display2">
-<input type="hidden" name="exageratemark" value="no">
-<input type="hidden" name="chainedsams" value="gsm2413241,gsm2413246:#eeeeee;gsm2413239,gsm2413243:#eeeeee;gsm2413242,gsm2413245:#eeeeee;gsm2413240,gsm2413244:#eeeeee;gsm2413257,gsm2413247,gsm2413248,gsm2413249:#222222:2;gsm2413249,gsm2413250,gsm2413251,gsm2413252,gsm2413253,gsm2413254:#222222:3;gsm2413254,gsm2413255,gsm2413256:#222222:4">
-<input type="hidden" name="fontsize_ruler" value="25">
-<input type="hidden" name="fontsize_y" value="30">
-<input type="hidden" name="dotsize" value="5">
-<button type="submit" class="course r2submit" >Show time path annotation in R2</button>
-</form>  
+<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_relate2tracks_timepath_52_pairs_crest_exp" target="_blank">Show time path annotation in R2</a>
+
 <br>
 <br>
 
@@ -671,215 +637,10 @@ First we'll check one of the HAND genes, known to play a role in the development
 
 ---------
 
-* Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.  
+* Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.
 
-<form name='genomebrowser_tf' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='_gv'>
-<input type='hidden' name='option' value='gbv2_base'>
-<input type='hidden' name='|a01giemsa' value='on'>
-<input type='hidden' name='a02bsequence' value='off'>
-<input type='hidden' name='a02csequence' value='off'>
-<input type='hidden' name='a04cons' value='off'>
-<input type='hidden' name='a10refseq' value='on'>
-<input type='hidden' name='a10refseq_cds' value='off'>
-<input type='hidden' name='a10refseq_features' value='off'>
-<input type='hidden' name='a15ensgene' value='off'>
-<input type='hidden' name='arrayreporters' value='off'>
-<input type='hidden' name='breadcrumbs' value=''>
-<input type='hidden' name='breast_basis_fisher_v1' value='off'>
-<input type='hidden' name='cg_annotvars' value='off'>
-<input type='hidden' name='cg_calldifso' value='off'>
-<input type='hidden' name='cg_calldifso_v25_18' value='off'>
-<input type='hidden' name='cg_cgh1k_seg' value='off'>
-<input type='hidden' name='cg_cgh1k_segv2' value='off'>
-<input type='hidden' name='cg_cgh1k_segv2_v2' value='off'>
-<input type='hidden' name='cg_evidence_bc' value='off'>
-<input type='hidden' name='cg_junction' value='off'>
-<input type='hidden' name='cg_junctiondif' value='off'>
-<input type='hidden' name='cg_mei_v1' value='off'>
-<input type='hidden' name='cg_varfileb_25' value='off'>
-<input type='hidden' name='cgh_acgh_kdp_v1' value='off'>
-<input type='hidden' name='cgh_cgcgh_pmc_v1' value='off'>
-<input type='hidden' name='cgh_mixed_seg' value='off'>
-<input type='hidden' name='cgh_public_ccle' value='off'>
-<input type='hidden' name='cgh_v4' value='off'>
-<input type='hidden' name='chip_col_v2' value='20150468:#c1c1c1,20150469:#129944,20150470:#366092,20150471:#c1c1c1,20150472:#129944,20150473:#366092,20150755:#c1c1c1,20150756:#366092,20150757:#c1c1c1,20150758:#E46D0A,20150759:#c1c1c1,20150760:#aa0000,20150761:#c1c1c1,20150762:#aa0000,20150763:#c1c1c1,20150764:#129944,20150765:#c1c1c1,20150766:#E46D0A,20150767:#c1c1c1,20150768:#366092,20150769:#c1c1c1,20150770:#aa0000,20150771:#129944,20150772:#129944,20150773:#129944,20150774:#129944,20150775:#366092,20150776:#129944,20150777:#129944,20150778:#129944,20160425:#0000AA,20160427:#0000AA,20160428:#0000AA,20160520:#0000aa,20160521:#129944,20160522:#129944,20160523:#aa0000,20160524:#aa0000,20161175:#c1c1c1,20161176:#0000aa,20161177:#c1c1c1,20161178:#129944,20161179:#aa0000,20161183:#c1c1c1,20161184:#129944,20161185:#E46D0A,20161202:#c1c1c1,20161203:#129944,20161204:#aa0000,20161205:#c1c1c1,20161206:#129944,20161207:#0,29160113:#0000aa,29160114:#129944,29160115:#129944,29160116:#aa0000,29160117:#aa0000,20150473_e200:#aa0000,20161178-e200:#129944,20161179-e200:#aa0000,C0018:#aa0000,C0018-et200:#aa0000,C0019:#aa0000,C0019-et200:#aa0000,C0020:#c1c1c1,C0021:#aa0000,C0021-et200:#aa0000,C0022:#aa0000,C0022-et200:#aa0000,ENCFF000KID:#aa0000,ENCFF000KIE:#aa0000,ENCFF000KIG:#aa0000,ENCFF000KIH:#aa0000,ENCFF001GFL:#aa0000,ENCFF001GFN:#aa0000,GSE71072:#aa0000,GSM1532401:#aa0000,GSM1532402:#aa0000,GSM1532405:#aa0000,GSM1532408:#aa0000,GSM1532409:#aa0000,GSM1532411:#aa0000,GSM1532414:#aa0000,GSM1532415:#aa0000,GSM1532417:#aa0000,GSM1602665:#aa0000,GSM1602665OG:#aa0000,GSM1602666:#0000aa,GSM1602667:#0000aa,GSM1602668:#0000aa,GSM1680101:#aa0000,GSM1680102:#0000aa,GSM1680104:#aa0000,GSM1680105:#0000aa,GSM1680107:#aa0000,GSM1693097:#0000aa,GSM1693098:#0000aa,GSM1693101:#0000AA,GSM1693102:#0000AA,GSM1693105:#c1c1c1,GSM1693117:#222222,GSM1693118:#222222,GSM1867061:#0000AA,GSM2027301:#222222,GSM2066632:#0000AA,GSM2113517:#aa0000,GSM2113518:#aa0000,GSM2113519:#129944,GSM2113521:#0000aa,GSM2113522:#aa0000,GSM2113523:#0000aa,GSM2113524:#aa0000,GSM2113526:#0000aa,GSM2113527:#aa0000,GSM2113529:#0000aa,GSM2113530:#aa0000,GSM2113532:#0000aa,GSM2113533:#0000aa,GSM2120699:#129944,GSM2120700:#aa0000,GSM2120701:#aa0000,GSM2120702:#aa0000,GSM2120703:#c1c1c1,GSM2120704:#129944,GSM2120705:#aa0000,GSM2120706:#aa0000,GSM2120707:#aa0000,GSM2120708:#c1c1c1,GSM2120709:#aa0000,GSM2120710:#c1c1c1,GSM2120711:#129944,GSM2120712:#aa0000,GSM2120713:#aa0000,GSM2120714:#aa0000,GSM2120715:#c1c1c1,GSM2120716:#aa0000,GSM2120717:#c1c1c1,og00001:#0000aa,zr1010_2:#aa0000,zr96905:#c1c1c1,zr96906:#aa0000,zr969_12:#aa0000,zr969_2:#aa0000,zr969_4:#aa0000,zr969_7:#aa0000,20150470-et200:#366092,20150473-et200:#366092,20150756-et200:#366092,20150768-et200:#366092,20150775-et200:#366092,20161185-et200:#E46D0A,20161207-et200:#E46D0A,20150766-et200:#E46D0A,20150758-et200:#E46D0A,'>
-<input type='hidden' name='chip_exp_v2' value='20150470-et200,20150473-et200,20150756-et200,20150758-et200,20150766-et200,20150768-et200,20150775-et200,20161185-et200,20161207-et200'>
-<input type='hidden' name='chip_height' value='45'>
-<input type='hidden' name='chip_label_size' value='12'>
-<input type='hidden' name='chip_libscale' value='20000000'>
-<input type='hidden' name='chip_max' value='a'>
-<input type='hidden' name='chip_min' value='a'>
-<input type='hidden' name='chip_ord_v2' value='undefined:,20161207-et200:a,20161185-et200:b,20150775-et200:e,20150766-et200:c,20150758-et200:d,20150756-et200:g,20150768-et200:f,20150473-et200:h,20150470-et200:i,'>
-<input type='hidden' name='chip_signif' value='false'>
-<input type='hidden' name='chip_slider' value='no'>
-<input type='hidden' name='chip_slider_value' value='3'>
-<input type='hidden' name='chip_table' value='chip_raw'>
-<input type='hidden' name='chrom' value='chr5'>
-<input type='hidden' name='clinvar' value='off'>
-<input type='hidden' name='combiset' value='ps_amc_ticcellcheck43_u133p2'>
-<input type='hidden' name='cosmic' value='off'>
-<input type='hidden' name='cosmic_mutascape' value='off'>
-<input type='hidden' name='cpct_bc' value='off'>
-<input type='hidden' name='cpct_design' value='off'>
-<input type='hidden' name='cpct_variants' value='off'>
-<input type='hidden' name='cpgisland' value='off'>
-<input type='hidden' name='custom_id' value='20150756,20150758,20150775,20161207,20161185,20150470,20150473,20150766,20150768'>
-<input type='hidden' name='custom_id_not' value=''>
-<input type='hidden' name='custom_jscan_dz' value='off'>
-<input type='hidden' name='dbsuper' value='off'>
-<input type='hidden' name='dbtss' value='off'>
-<input type='hidden' name='dkfz_cg_calldifso_v20_16' value='off'>
-<input type='hidden' name='dkfz_cg_cgh1k_seg' value='off'>
-<input type='hidden' name='dkfz_cg_evidence_bc' value='off'>
-<input type='hidden' name='dkfz_cg_testvar_v2e' value='off'>
-<input type='hidden' name='dkfz_cg_varfileb_20' value='off'>
-<input type='hidden' name='dkfz_junctiondif' value='off'>
-<input type='hidden' name='dkfzpdx1_450k_cn' value='off'>
-<input type='hidden' name='dkfzpdx2_450k_cn' value='off'>
-<input type='hidden' name='elmer_nm_1kg_e5' value='off'>
-<input type='hidden' name='elmer_nm_1kg_e5e5' value='off'>
-<input type='hidden' name='elmer_nm_rs_mac1_2' value='off'>
-<input type='hidden' name='elmer_nm_var_all' value='off'>
-<input type='hidden' name='encode_bed_data_v1' value='off'>
-<input type='hidden' name='encode_tf_v1' value='off'>
-<input type='hidden' name='end' value='154120827'>
-<input type='hidden' name='epi_roadmap' value='off'>
-<input type='hidden' name='exomevarserver' value='off'>
-<input type='hidden' name='express_background' value=''>
-<input type='hidden' name='express_drawtype' value=''>
-<input type='hidden' name='express_ext' value='yes'>
-<input type='hidden' name='express_height' value='60'>
-<input type='hidden' name='express_max' value='a'>
-<input type='hidden' name='express_min' value='a'>
-<input type='hidden' name='express_minpres' value='1'>
-<input type='hidden' name='express_selectedtrack' value='u-mesne_2016_c'>
-<input type='hidden' name='express_slider' value='no'>
-<input type='hidden' name='express_slider_value' value='3'>
-<input type='hidden' name='express_transform' value='transform_zscore'>
-<input type='hidden' name='fantom5_cage_test' value='off'>
-<input type='hidden' name='fantom5_enhancer_premissive' value='off'>
-<input type='hidden' name='fantom5_enhancer_robust' value='off'>
-<input type='hidden' name='fantom5_enhancer_tss_fdr' value='off'>
-<input type='hidden' name='filterfilein' value=''>
-<input type='hidden' name='fw_se_overlap_v1' value='off'>
-<input type='hidden' name='fw_se_overlap_v2' value='off'>
-<input type='hidden' name='g_position' value=''>
-<input type='hidden' name='genesets_v1' value='off'>
-<input type='hidden' name='genome_build' value='hg19'>
-<input type='hidden' name='gwascatalog' value='off'>
-<input type='hidden' name='hic_domains_lit' value='off'>
-<input type='hidden' name='hugoonce' value='yes'>
-<input type='hidden' name='icgc_snv_pbca' value='off'>
-<input type='hidden' name='imagewidth' value='1000'>
-<input type='hidden' name='inform_450k_baf' value='off'>
-<input type='hidden' name='inform_450k_cn' value='off'>
-<input type='hidden' name='inform_cg_cgh10k_segv2' value='off'>
-<input type='hidden' name='inform_cg_somatic_coding_v1' value='off'>
-<input type='hidden' name='ither_450k_cn' value='off'>
-<input type='hidden' name='ither_cgh10k_segv2' value='off'>
-<input type='hidden' name='ither_somatic_coding_v1' value='off'>
-<input type='hidden' name='lincipedia' value='off'>
-<input type='hidden' name='liver_enhancer_cell201501' value='off'>
-<input type='hidden' name='macs14_amc_og_v1' value='off'>
-<input type='hidden' name='macs14_geo_og_v1' value='off'>
-<input type='hidden' name='macs2_amc_og_v1' value='off'>
-<input type='hidden' name='macs2_broad_fw_v1' value='off'>
-<input type='hidden' name='macs2_broad_og_v1' value='off'>
-<input type='hidden' name='modus' value='complex:chip:ps'>
-<input type='hidden' name='mook_cgcgh' value='off'>
-<input type='hidden' name='nc_enhancer_prescott_2015' value='off'>
-<input type='hidden' name='newgene' value=''>
-<input type='hidden' name='ngs_cgcgh_mb_v1' value='off'>
-<input type='hidden' name='ngs_cgcgh_pdx1_v1' value='off'>
-<input type='hidden' name='ngs_cgcgh_ped_v1' value='off'>
-<input type='hidden' name='og_motif_b_gata3peaks' value='off'>
-<input type='hidden' name='og_motif_b_transfac' value='off'>
-<input type='hidden' name='og_motif_c' value='off'>
-<input type='hidden' name='og_se_overlap_v1' value='composition10'>
-<input type='hidden' name='og_se_overlap_v2' value='off'>
-<input type='hidden' name='pluginopt:a01giemsa:height' value='11'>
-<input type='hidden' name='pluginopt:a01giemsa:style' value='standard'>
-<input type='hidden' name='pluginopt:a10refseq:class' value='protein_coding'>
-<input type='hidden' name='pluginopt:a10refseq:detail_modes_full' value='10000'>
-<input type='hidden' name='pluginopt:a10refseq:height' value='18'>
-<input type='hidden' name='pluginopt:a10refseq:hilite' value=''>
-<input type='hidden' name='pluginopt:a10refseq:represent' value='merge_by_symbol'>
-<input type='hidden' name='pluginopt:og_se_overlap_v1:height' value='10'>
-<input type='hidden' name='pluginopt:og_se_overlap_v1:modus' value='default'>
-<input type='hidden' name='pluginopt:og_se_overlap_v1:overlap' value='0'>
-<input type='hidden' name='pluginopt:rose_se_r0_s0_t0_v1:height' value='9'>
-<input type='hidden' name='pluginopt:rose_se_r0_s0_t0_v1:is_super' value='1'>
-<input type='hidden' name='pluginopt:rose_se_r0_s0_t0_v1:modus' value='by_factor'>
-<input type='hidden' name='pluginopt:rose_se_r0_s0_t0_v1:rose_bam' value='0'>
-<input type='hidden' name='pluginopt:rose_se_r0_s0_t0_v1:rose_conf_size' value='0'>
-<input type='hidden' name='profilename' value='171010_wwtr1_mes_se'>
-<input type='hidden' name='rmsk' value='off'>
-<input type='hidden' name='rose_se_pub_rseg_m2_s0_t0_v1' value='off'>
-<input type='hidden' name='rose_se_r0_s0_t0_v1' value='off'>
-<input type='hidden' name='rose_se_r0_s0_t2500_v1' value='off'>
-<input type='hidden' name='rose_se_test' value='off'>
-<input type='hidden' name='rose_se_v1' value='off'>
-<input type='hidden' name='rseg_ac_me3_v1' value='off'>
-<input type='hidden' name='rseg_pub_og_v1' value='off'>
-<input type='hidden' name='rseg_v1' value='off'>
-<input type='hidden' name='rsegdiff_test' value='off'>
-<input type='hidden' name='rsegdiff_v1' value='off'>
-<input type='hidden' name='sample' value='dataset_track'>
-<input type='hidden' name='snp138' value='off'>
-<input type='hidden' name='snp_array' value='off'>
-<input type='hidden' name='start' value='153591527'>
-<input type='hidden' name='superenhancer_nb_george' value='off'>
-<input type='hidden' name='sv_delly_pedcan1' value='off'>
-<input type='hidden' name='sv_ivo_mb500' value='off'>
-<input type='hidden' name='svg' value='false'>
-<input type='hidden' name='switch' value='add'>
-<input type='hidden' name='target_ilmn_cgh_seg' value='off'>
-<input type='hidden' name='target_wxs_cgh_seg' value='off'>
-<input type='hidden' name='thiesen_cg_calldifso_v20_18' value='off'>
-<input type='hidden' name='thiesen_cg_cgh1k_segv2' value='off'>
-<input type='hidden' name='thiesen_cg_evidence_bc' value='off'>
-<input type='hidden' name='thiesen_cg_varfileb_20' value='off'>
-<input type='hidden' name='thiesen_junction' value='off'>
-<input type='hidden' name='thiesen_junctiondif' value='off'>
-<input type='hidden' name='tmp_bed' value='off'>
-<input type='hidden' name='tmp_bed2' value='off'>
-<input type='hidden' name='usergroup' value='personal'>
-<input type='hidden' name='vcfe_dkfz_som_mb500_v1' value='off'>
-<input type='hidden' name='vcfe_dkfz_som_pdx1_v1' value='off'>
-<input type='hidden' name='vcfe_dkfz_som_suz_v1' value='off'>
-<input type='hidden' name='vcfe_msk_impact_nat_med_17' value='off'>
-<input type='hidden' name='vista_enhancers' value='off'>
-<input type='hidden' name='vucghseq_mixed_seg' value='off'>
-<input type='hidden' name='vumc_cg_calldifso_v20_18' value='off'>
-<input type='hidden' name='vumc_cg_cgh1k_segv2' value='off'>
-<input type='hidden' name='vumc_cg_evidence_bc' value='off'>
-<input type='hidden' name='vumc_cg_mei_v1' value='off'>
-<input type='hidden' name='vumc_cg_varfileb_20' value='off'>
-<input type='hidden' name='vumc_junction' value='off'>
-<input type='hidden' name='vumc_junctiondif' value='off'>
-<input type='hidden' name='wgencoderegdnaseclusteredv2' value='off'>
-<input type='hidden' name='wgs_cgh1k_curie_seg' value='off'>
-<input type='hidden' name='wgs_cgh1k_nbrel_seg' value='off'>
-<input type='hidden' name='wgs_cgh1k_nbrel_segsqza' value='off'>
-<input type='hidden' name='wgs_cgh1k_nbrel_segsqza_pn' value='off'>
-<input type='hidden' name='wgs_cgh1k_seg' value='off'>
-<input type='hidden' name='wgs_curie_junction' value='off'>
-<input type='hidden' name='wgs_dcgh10k_curie_seg' value='off'>
-<input type='hidden' name='wgs_dcgh10k_nbrelsqza_seg' value='off'>
-<input type='hidden' name='wgs_junction' value='off'>
-<input type='hidden' name='wgs_maris_calldifso_v20_18' value='off'>
-<input type='hidden' name='wgs_maris_cgh1k_seg' value='off'>
-<input type='hidden' name='wgs_maris_junctiondif' value='off'>
-<input type='hidden' name='wgs_ploidy1k_curie_seg' value='off'>
-<input type='hidden' name='wgs_ploidy1k_seg' value='off'>
-<input type='hidden' name='wgs_sequenza1k_nbrel_seg' value='off'>
-<input type='hidden' name='wgs_somatic_snpsift' value='off'>
-<input type='hidden' name='wgs_somatic_snpsift_missense' value='off'>
-<input type='hidden' name='wgs_somatic_strelka' value='off'>
-<input type='hidden' name='wgs_somatic_varscan2' value='off'>
-<input type='hidden' name='wgs_varfileb_maris_20' value='off'>
-<button type="submit" class="course r2submit" >Go to R2 GenomeBrowser for HAND1</button>
-</form>
+
+<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_chipseq_gb_hand1_9_mes_adrn" target="_blank">Go to R2 GenomeBrowser for HAND1</a>
 <br>
 <br>
 
@@ -909,10 +670,8 @@ The chromatin state is especially important for transcription factors; we'll re-
 
 * Perform the differential expression analysis again by clicking on the button below
 
-<form name="main_34_pairs_and_crest" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gsenatgengeo34_u133p2">
-  <button type="submit" class="course r2submit" >Go to R2 main</button>
-</form>  
+
+<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_main_34_pairs_and_crest" target="_blank">Go to R2</a>
 <br>
 <br>
 
