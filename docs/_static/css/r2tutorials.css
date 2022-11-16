@@ -91,6 +91,9 @@ div.r2didyouknow th {
   border-radius: 4px;
 }
 
+.course_permalink:hover {
+  background-color: #DDDDDD;
+}
 /* 
 Images are parsed into an reference external class; we want these centered and block just
 like their annotation text in strong
