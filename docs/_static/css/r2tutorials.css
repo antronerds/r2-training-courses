@@ -79,7 +79,7 @@ div.r2didyouknow th {
 }
 
 .course_permalink {
-  font: bold 16px Arial;
+  font: 16px Arial;
   text-decoration: none;
   background-color: #EEEEEE;
   color: #333333;
@@ -89,10 +89,12 @@ div.r2didyouknow th {
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
   border-radius: 4px;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.28), 0 2px 2px 0 rgba(0,0,0,0.21);
 }
 
 .course_permalink:hover {
   background-color: #DDDDDD;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.28), 0 2px 2px 0 rgba(0,0,0,0.21);
 }
 /* 
 Images are parsed into an reference external class; we want these centered and block just
