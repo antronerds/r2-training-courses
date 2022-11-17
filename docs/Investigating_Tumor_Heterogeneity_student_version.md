@@ -107,7 +107,7 @@ Let's change the gene of the graph:<br>
 <br>
 <br>
 
-  ![](_static/images/R2d2_logo.png)**What might the expression level of this gene in neuroblastoma signify about the function of the gene in this cancer?**
+  ![](_static/images/R2d2_logo.png)**MYCN often shows mutations in neuroblastoma patients. Based on this knowledge and based on the expression levels that you observe, what could the function of this gene be in neuroblastoma?**
 <br>
 <br>
 
@@ -119,7 +119,7 @@ We've seen that the expression of genes differs among the samples and some types
 
 * Click the button below to show the t-SNE map in R2: 
 
-<button class="course" onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=map_scatter_plot&map_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
+<button class="course_button" onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=map_scatter_plot&map_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
 <br>
 <br>
 
@@ -133,14 +133,14 @@ Under the graph, a menu allows the user to adapt settings.
   
 ------
 
-![](_static/images/R2d2_logo.png)**What do you note about the clustering of the neuroblastoma samples?**
+  ![](_static/images/R2d2_logo.png)**What do you note about the clustering of the neuroblastoma samples?**
 
   ![](_static/images/R2d2_logo.png)**With which other tumor models do the neuroblastoma cell lines cluster?**
 
 <br>
 <br>
 
-  ![](_static/images/R2d2_logo.png)**Based on the above, what would you do to further investigate your observations**
+  ![](_static/images/R2d2_logo.png)**Based on the above, what would be an interesting next step to further investigate your observations**
   
 ------
 
