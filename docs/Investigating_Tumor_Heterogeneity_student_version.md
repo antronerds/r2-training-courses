@@ -96,8 +96,8 @@ Try out a different view of the same data with the following changes to the sett
 * Also, sort the samples again on level of expression with **Extra Graph Option** set to *Track and Gene sort*. 
 * Click **Submit** again to obtain the graph with these adaptations.  
 <br> 
-Let's change the gene of the graph:<br>
-* Try the gene MYCN: yype *MYCN* in the left input field **Gene / Reporter** in the Adjustable settings box underneath the graph, and click on *MYCN/ 209757_s_at* in the list that pops up. Click **Submit** in order to change your gene.<br>  
+Let's change the gene of the graph:<br>  
+* Try the gene MYCN: type *MYCN* in the left input field **Gene / Reporter** in the Adjustable settings box underneath the graph, and click on *MYCN/ 209757_s_at* in the list that pops up. Click **Submit** in order to change your gene.<br>  
 * Hover with your mouse over the track underneath the graph or over the data points, to find out which itcc_model belongs to which group of samples. 
   
 ---------
@@ -119,7 +119,7 @@ We've seen that the expression of genes differs among the samples and some types
 
 * Click the button below to show the t-SNE map in R2: 
 
-<button class="course_button" onclick="window.open('https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=map_scatter_plot&map_id=3b64db2654de88efccac21ddeae73a8f','_blank');" type="button">Go to the t-SNE map</button> 
+<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_tsne_86_6tumortypes" target="_blank">Go to the t-SNE map</a>
 <br>
 <br>
 
