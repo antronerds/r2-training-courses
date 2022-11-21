@@ -98,7 +98,7 @@ Try out a different view of the same data with the following changes to the sett
 <br> 
 Let's change the gene of the graph:<br>
   
-* Try the gene MYCN: type *MYCN* in the left input field **Gene / Reporter** in the Adjustable settings box underneath the graph, and click on *MYCN/ 209757_s_at* in the list that pops up. Click **Submit** in order to change your gene.<br>  
+* Try the gene MYCN: type *MYCN* in the left input field **Gene / Reporter** in the Adjustable settings box underneath the graph, and click on *MYCN/ 209757_s_at* in the list that pops up. Click **Submit** in order to change your gene.  
 * Hover with your mouse over the track underneath the graph or over the data points, to find out which itcc_model belongs to which group of samples. 
   
 ---------
