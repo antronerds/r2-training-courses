@@ -120,7 +120,7 @@ We've seen that the expression of genes differs among the samples and some types
 
 * Click the button below to show the t-SNE map in R2: 
 
-<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_tsne_86_6tumortypes" target="_blank">Go to the t-SNE map</a>
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_tsne_86_6tumortypes" target="_blank">Go to the t-SNE map</a>
 <br>
 <br>
 
@@ -195,7 +195,7 @@ For this analysis we will use one of the analysis tools of R2: Toplister. The To
 * Go to R2 by clicking the button below. The correct dataset containing 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
 <br>
 
-<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=ccourse_molgen_main_8_patientdata" target="_blank">Go to R2</a>
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_main_8_patientdata" target="_blank">Go to R2</a>
 <br>
 <br>
 
@@ -265,7 +265,7 @@ We have identified two different types of cells that occur within the same patie
   
 * Go to the main page of R2 by clicking the button below
 
-<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_main_8_patientdata" target="_blank">Go to R2</a>
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_main_8_patientdata" target="_blank">Go to R2</a>
 <br>
 <br>
 
@@ -362,7 +362,7 @@ We've assembled a more complex dataset that consists of: <br>
 
 * Go to the main portal of R2 by clicking the button below; the dataset described above is automatically selected
 
-<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_main_34_pairs_and_crest" target="_blank">Go to R2</a>
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_main_34_pairs_and_crest" target="_blank">Go to R2</a>
 
 <br>
 <br>
@@ -388,7 +388,7 @@ When observing such clear-cut patterns it is good scientific practice to test th
 
 * Click on the button below to go there and perform the same analysis.
 
-<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_main_boeva" target="_blank">Go to R2</a>
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_main_boeva" target="_blank">Go to R2</a>
  
 <br>
 <br>
@@ -436,7 +436,7 @@ The expression patterns of these specific signatures can be used to compare cell
 
 * Go back to the main portal of R2 by clicking the button below.
 
-<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_main_34_pairs_and_crest" target="_blank">Go to R2</a>
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_main_34_pairs_and_crest" target="_blank">Go to R2</a>
 <br>
 <br>
 
@@ -487,7 +487,7 @@ Apparently there are two types of cells in Neuroblastoma tumors. Neuroblastoma s
 
 * Go back to the main portal of R2 by clicking the button below.
 
-<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_main_34_pairs_and_crest" target="_blank">Go to R2</a>
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_main_34_pairs_and_crest" target="_blank">Go to R2</a>
 
 <br>
 <br>
@@ -570,7 +570,7 @@ The TF was inducibly expressed in the SKNBE cell line and this was monitored thr
 * Go to the R2 main page by clicking the button below, the correct dataset will be selected.  
 
 
-<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_main_52_pairs_crest_exp" target="_blank">Go to R2 main page wit the inducible TF set selected</a>
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_main_52_pairs_crest_exp" target="_blank">Go to R2 main page wit the inducible TF set selected</a>
 <br>
 <br>
 
@@ -588,7 +588,7 @@ R2 has calculated signature scores for all samples in both signatures; in this d
 
 * This conclusion is even more obvious when the sequence of events is highlighted. The relations between the isogenic pairs are also illustrated. Click the button below to view the graph annotated with this extra information.  
 
-<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_relate2tracks_timepath_52_pairs_crest_exp" target="_blank">Show time path annotation in R2</a>
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_relate2tracks_timepath_52_pairs_crest_exp" target="_blank">Show time path annotation in R2</a>
 
 <br>
 <br>
@@ -641,7 +641,7 @@ First we'll check one of the HAND genes, known to play a role in the development
 * Click on the button below to show the ChIP-Seq data for HAND1 in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.
 
 
-<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_chipseq_gb_hand1_9_mes_adrn" target="_blank">Go to R2 GenomeBrowser for HAND1</a>
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_chipseq_gb_hand1_9_mes_adrn" target="_blank">Go to R2 GenomeBrowser for HAND1</a>
 <br>
 <br>
 
@@ -672,7 +672,7 @@ The chromatin state is especially important for transcription factors; we'll re-
 * Perform the differential expression analysis again by clicking on the button below
 
 
-<a class="course_permalink" href="http://localhost:9080/cgi-bin/r2/main.cgi?permalink=course_molgen_main_34_pairs_and_crest" target="_blank">Go to R2</a>
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_main_34_pairs_and_crest" target="_blank">Go to R2</a>
 <br>
 <br>
 
