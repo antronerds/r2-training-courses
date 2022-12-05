@@ -48,7 +48,7 @@ During this practical course, we will use the R2 bioinformatics platform to stud
 
 You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
 <br><br>
-The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The <font style="background-color: #95d097">**green buttons**</font> in this document will open up a Google form, one per section, with which you can submit your answers. 
+The <a class="course_permalink" href="Investigating_Tumor_Heterogeneity_student_version.html" target="_blank">grey buttons</a> in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The <button class="course googleform">green buttons</button> in this document will open up a Google form, one per section, with which you can submit your answers. 
 <br><br>
 
 ## Finding prognostic factors in your data
