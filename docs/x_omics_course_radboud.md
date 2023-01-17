@@ -1,7 +1,7 @@
 <a id="x-omics_course_2023_radboud"> </a>
 
 BMS38: Computer Practicals multidimensional data analysis (including visualization), biomarker signatures and X-omics network and pathway analysis (2023)
-=================================
+================================
 
 * Associated learning objectives:
 
@@ -17,8 +17,12 @@ Introduction
 ------------
 The practical is based on the R2 tutorial. The pdf of the tutorial is on Brightspace and can also be found online:
 
-https://hgserver1.amc.nl/r2/help/r2_tutorials.pdf or the html version,
-https://r2-tutorials.readthedocs.io/en/latest/
+[tutorial PDF version](https://hgserver1.amc.nl/r2/help/r2_tutorials.pdf)
+
+or
+
+[Tutorial HTML version](https://r2-tutorials.readthedocs.io/en/latest/)
+
 
 
 
