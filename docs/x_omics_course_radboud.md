@@ -20,7 +20,7 @@ BMS38: Computer Practicals
 
 
 Introduction
-----
+=======
 The practical is based on the R2 tutorial. The pdf of the tutorial is on Brightspace and can also be found online:
 
 [tutorial PDF version](https://hgserver1.amc.nl/r2/help/r2_tutorials.pdf, ),(right mouse click)
@@ -36,13 +36,14 @@ or
 
 
 Assignment 1 (no answers necessary):
----
+
 
 
 Go through pages 5 - 9 of the tutorial, [Chapter 2: Using Datasets](https://r2-tutorials.readthedocs.io/en/latest/Using_Datasets.html)  to load the neuroblastoma data and to familiarize yourself with the different options for selecting and loading data. Please note: page numbers refer to the numbers on the pages, not the numbers in the pdf. Pages 5-9 are corresponding with chapter 2 of the tutorial.
 
 
-### Assignment 2: K-means clustering (answers in Italics):
+Assignment 2: K-means clustering (answers in Italics):
+----
 
 In this assignment, we will use an unsupervised, data-driven approach to identify subgroups of patients. We will check whether these subgroups have distinct clinical (such as tumour grade) and molecular characteristics (such as beta-catenin mutation or mutation in the PTCH1 gene (which is part of the sonic hedgehog (SHH) pathway). If we find such associations, we can conclude that the mRNA expression patterns associate with the clinical characteristics (and mutation status) of the tumour. This indicates that further exploration of the mRNA expression is useful.
 
