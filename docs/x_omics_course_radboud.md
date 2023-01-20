@@ -36,7 +36,7 @@ or
 
 
 Assignment 1 (no answers necessary):
-
+----
 
 
 Go through pages 5 - 9 of the tutorial, [Chapter 2: Using Datasets](https://r2-tutorials.readthedocs.io/en/latest/Using_Datasets.html)  to load the neuroblastoma data and to familiarize yourself with the different options for selecting and loading data. Please note: page numbers refer to the numbers on the pages, not the numbers in the pdf. Pages 5-9 are corresponding with chapter 2 of the tutorial.
@@ -77,7 +77,8 @@ consistent? – *K-means clustering is based on a random seeding of the initial 
 
 
 
-### Assignment 3: Principal component analysis (answers in Italics)
+Assignment 3: Principal component analysis (answers in Italics)
+----
 
 Principal component analysis (PCA) is another data-driven approach used to identify the major sources ofvariation in a multidimensional dataset. In the context of mRNA expression signatures in tumours, PCA may be used to identify subgroups of patients with similar mRNA expression profiles. This process is referred to as patient stratification.
 
@@ -92,7 +93,8 @@ Using the same medulloblastoma dataset, go through pages 155 – 160, [chapter 1
 
 10.	Using the lasso tool, select the samples with the lowest loadings on PC2, and make a separate sample groups from these. Perform a differential expression analysis between this groups of samples and the remaining samples (by selecting “Find differential expression between groups” from the main menu). Are some of the top differentially expressed in the expected pathways? What signalling pathway from KEGG is most differentially expressed? *– We selected the samples with high WNT signalling. AXIN2, DKK4 and WIF1 are among the top differentially expressed pathways. In the overrepresentation analysis the Wnt signalling pathway is significant, although other gene sets like “protein processing in the endoplasmatic reticulum” are even more significant*
 
-### Assignment 4: Identifying a biomarker signature in gene expression data
+Assignment 4: Identifying a biomarker signature in gene expression data
+----
 
 This assignment is about identifying genes that are differentially expressed (have different levels of mRNA) between different types of tumors. A basic differential expression analysis is usually done by linear regression (see also the lecture on integrative X-omics analysis). For each individual gene (mRNA), the mRNA expression level is expressed as a function of the outcome (such as survival after five years (yes/no)). A significant p-value reflects that the gene expression level is different between the tumor classes. In cases where there is just a single factor and no confounding effects (such as sex), the linear model simplifies to a Student’s t-test (two groups only) or one-way ANOVA (multiple groups). We usually assume that the data are normally distributed (although this is not always the case).
 
@@ -121,7 +123,8 @@ Go through pages 43-59 [Chapter 6: Differential expression](https://r2-tutorials
 
 17. Create X-Y plots and Volcano plots displaying the difference between survivors and non-survivors. What are the strong aspects of both visualizations and why do not all genes with large differences (fold-changes) have low p-values? You may want to inspect some individual genes for this. *– X-Y plots emphasize the genes with large differences (far from the diagonal) show differences as a function of the expression level (the higher expressed genes further to the top-right; Volcano plots show the relationship between fold-changes and p-values and facilitate the selection of genes with both high fold-changes and low p-values but disregard the level of expression. Genes with high fold-changes but low p-values display large intra-group variability.*
 
-### Assignment 5: pathway analysis
+Assignment 5: pathway analysis
+----
 
 In a pathway analysis, we evaluate in which molecular pathways or biological processes, the differentially expressed genes (or proteins or metabolites) function, and statistically evaluate whether there are many more genes (or proteins or metabolites) differentially expressed than would be expected by chance. This usually gives a stronger hint at the molecular pathways and biological processes that are altered than individual genes (or proteins or metabolites)
 
@@ -140,7 +143,8 @@ Go through pages 93-100 [Chapter 9: Pathway anaylsis](https://r2-tutorials.readt
 21. Create a visual representation of the pathway in which the deregulated genes are highlighted. Which protein complexes do the differentially expressed genes code for? *- Amongst others the helicase, ligase, DNA polymerase alpha, delta and epsilon, the MCM complex.*
 
 
-### Assignment 6: Integrative -omics analysis (methylation and expression)
+Assignment 6: Integrative -omics analysis (methylation and expression)
+----
 
 Now, we are going to correlate mRNA expression data with DNA methylation data. DNA methylation (in particular of promoter regions) is known to regulate gene expression levels. We will not have time to dive into very sophisticated multi-omics integration methods within the context of this assignment. Instead, we will look at simple (Pearson) correlations between the mRNA expression level of a gene and the methylation level of a genomic region in the neighborhood of that gene (so called associations in-cis). In a classical view on methylation, increased methylation levels of a genomic region is associated with more compact chromatin and suppression of gene expression levels. This means that the correlation value between mRNA and methylation level is negative, but positive associations may also occur.
 
