@@ -20,7 +20,7 @@ BMS38: Computer Practicals
 
 
 Introduction
-------------
+----
 The practical is based on the R2 tutorial. The pdf of the tutorial is on Brightspace and can also be found online:
 
 [tutorial PDF version](https://hgserver1.amc.nl/r2/help/r2_tutorials.pdf, ),(right mouse click)
@@ -35,7 +35,8 @@ or
 
 
 
-### Assignment 1 (no answers necessary):
+Assignment 1 (no answers necessary):
+---
 
 
 Go through pages 5 - 9 of the tutorial, [Chapter 2: Using Datasets](https://r2-tutorials.readthedocs.io/en/latest/Using_Datasets.html)  to load the neuroblastoma data and to familiarize yourself with the different options for selecting and loading data. Please note: page numbers refer to the numbers on the pages, not the numbers in the pdf. Pages 5-9 are corresponding with chapter 2 of the tutorial.
@@ -168,8 +169,7 @@ Follow the tutorial pages 195-203 [chapter 20:Integrated Analysis](https://r2-tu
 
 
 
-
-# *The End*
+*The End*
   
 
 -----
