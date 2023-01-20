@@ -96,7 +96,7 @@ This assignment is about identifying genes that are differentially expressed (ha
 
 **Do not forget to login with your username and password!**
 
-Go through pages 43-59 [Chapter 6: Differential expression](https://r2-tutorials.readthedocs.io/en/latest/Differential_Expression.html) of the tutorial and answer the following questions while going through the tutorial (questions 11-14 related to the assessment of expression patterns for single genes; questions 15-17 relate to differential expression analysis for all genes. Note that a different dataset is used for this assignment: It is the public Tumor neuroblastoma dataset (number 88). The GEO link is this one:[GEO neurblastoma, Versteeg et al](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE16476) The associated paper is this one: [Paper:Versteeg et al](https://pubmed.ncbi.nlm.nih.gov/22367537/)
+Go through pages 43-59 [Chapter 6: Differential expression](https://r2-tutorials.readthedocs.io/en/latest/Differential_Expression.html) of the tutorial and answer the following questions while going through the tutorial (questions 11-14 related to the assessment of expression patterns for single genes; questions 15-17 relate to differential expression analysis for all genes. Note that a different dataset is used for this assignment: It is the public Tumor neuroblastoma dataset (number 88). The GEO link is this one:[GEO neuroblastoma, Versteeg et al](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE16476) The associated paper is this one: [Paper:Versteeg et al](https://pubmed.ncbi.nlm.nih.gov/22367537/)
 
 11. We chose to work on log2 transformed gene expression measurements (in the case of microarrays fluorescent intensity measured from the chip). Why do we need this log2 transformation? *– We use statistical tests that depend on the normality assumption. Gene expression data are considered to be log normal distributed. Hence first the log transformation.*
 
@@ -123,7 +123,7 @@ Go through pages 43-59 [Chapter 6: Differential expression](https://r2-tutorials
 
 In a pathway analysis, we evaluate in which molecular pathways or biological processes, the differentially expressed genes (or proteins or metabolites) function, and statistically evaluate whether there are many more genes (or proteins or metabolites) differentially expressed than would be expected by chance. This usually gives a stronger hint at the molecular pathways and biological processes that are altered than individual genes (or proteins or metabolites)
 
-Go through pages 93-100 (chapter 9) of the tutorial and answer the following questions while going through the tutorial. **Note: we will use the same dataset (Tumor neuroblastoma public – Versteeg - 88) as in the previous assignment and not the dataset that is used in the tutorial!**
+Go through pages 93-100 [Chapter 9: Pathway anaylsis](https://r2-tutorials.readthedocs.io/en/stable/Pathway_Finder.html) of the tutorial and answer the following questions while going through the tutorial. **Note: we will use the same dataset (Tumor neuroblastoma public – Versteeg - 88) as in the previous assignment and not the dataset that is used in the tutorial!**
 
 
 18. What is the KEGG pathways most associated with survival? Does the direction of change of genes in this pathway make sense? *– The DNA replication pathway, these genes are upregulated in the non-survivors, and are associated with a more proliferative phenotype.*
