@@ -43,7 +43,7 @@ Assignment 1 (no answers necessary):
 Go through pages 5 - 9 of the tutorial, [Chapter 2: Using Datasets](https://r2-tutorials.readthedocs.io/en/latest/Using_Datasets.html)  to load the neuroblastoma data and to familiarize yourself with the different options for selecting and loading data. Please note: page numbers refer to the numbers on the pages, not the numbers in the pdf. Pages 5-9 are corresponding with chapter 2 of the tutorial.
 
 
-Assignment 2: K-means clustering (answers in Italics):
+Assignment 2: K-means clustering:
 ----
 
 In this assignment, we will use an unsupervised, data-driven approach to identify subgroups of patients. We will check whether these subgroups have distinct clinical (such as tumour grade) and molecular characteristics (such as beta-catenin mutation or mutation in the PTCH1 gene (which is part of the sonic hedgehog (SHH) pathway). If we find such associations, we can conclude that the mRNA expression patterns associate with the clinical characteristics (and mutation status) of the tumour. This indicates that further exploration of the mRNA expression is useful.
@@ -74,7 +74,7 @@ consistent?
 
 
 
-Assignment 3: Principal component analysis (answers in Italics)
+Assignment 3: Principal component analysis.
 ----
 
 Principal component analysis (PCA) is another data-driven approach used to identify the major sources ofvariation in a multidimensional dataset. In the context of mRNA expression signatures in tumours, PCA may be used to identify subgroups of patients with similar mRNA expression profiles. This process is referred to as patient stratification.
@@ -155,6 +155,7 @@ Follow the tutorial pages 195-203 [chapter 20:Integrated Analysis](https://r2-tu
 
 
 26. Next to DDX1, there is another gene at chromosome 2 with a strong negative association between methylation and expression. Which gene is that and what is the approximate distance (in kilobases) between this gene and DDX1?
+
 
 27. If one would be interested in all vs all associations, i.e. the association of the methylation status of any gene vs the methylation status of any other genes, how many tests would one perform? How would affect the multiple testing corrections and do you expect to find more or less significant correlations than in the within gene study?
 
