@@ -70,7 +70,7 @@ consistent?
 6. How do you identify the gene clusters associated with increased WNT signalling and those gene clusters with increased SHH signalling?
 
 
-7. Perform the clustering again with only the genes from the WNT signalling or only the genes from the SHH pathway. Hint – In “adjustable settings” choose a KEGG pathway related to WNT signalling from the gene filter menu. What do you observe? Relate your findings to the pathway information provided by [KEGG pathway:hsa4310](https://www.genome.jp/kegg/pathway/hsa/hsa04310.html) and [KEGG pathway:hsa4340](https://www.genome.jp/kegg-bin/show_pathway?hsa04340)
+7. Perform the clustering again with only the genes from the WNT signalling or only the genes from the SHH pathway. Hint – In “adjustable settings” choose a KEGG pathway related to WNT signalling from the gene filter menu. What do you observe? Relate your findings to the pathway information provided by [KEGG pathway:hsa4310](https://www.kegg.jp/entry/map04310) and [KEGG pathway:hsa4340](https://www.kegg.jp/entry/map04340)
 
 
 
