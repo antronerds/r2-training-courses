@@ -42,22 +42,28 @@ Multiple testing corrections adjust p-values derived from multiple statistical t
 ##### Questions: Part I
 
 
-Select the **Mixed Colon - Marra - 64 - MAS5.0 - u133p2** or click the button 
+Select the **Mixed Colon - Marra - 64 - MAS5.0 - u133p2** in the main screen
 
+<!---
+or click the button 
 <form name="Mara 64 set " action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
   <input type="hidden" name="table" value="ps_avgpres_coloncombi64_u133p2">
   <button type="submit" >Go to Mixed Colon Marra</button>
 </form>  
+-->
 <br>
 
-In the Main menu, **select type of analysis** in box 3 by clicking on the *Find differential expression between groups* module in the dropdown. And click **next**. Or click the button below.
+In the Main menu, **select type of analysis** in box 3 by clicking on the *Find differential expression between two groups* module in the dropdown. And click **next**. below.
 
 
+<!---
+Or click the button
 <form name='Find Diff' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='FindDiff'>
 <input type='hidden' name='option' value='findgene1'>
 <input type='hidden' name='table' value='ps_avgpres_coloncombi64_u133p2'>
 <button type="submit" >Go to Find differential </button>
 </form>
+-->
 <br>
 In the next panel you have to **select a track**.
 So called tracks contain the annotation parameters of series of arrays of tumors or experiments. Choose the *tissue* track, as this contains assignment of each sample to the tumor or normal tissue group. Several other selection criteria can be adapted. Most settings are suited for regular analyses.
@@ -77,13 +83,13 @@ R2 has generated a large list of genes which are differentially expressed betwee
 **Question 1c:**
 
 Next to many publicly available datasets, R2 also hosts a lot of curated lists of genes which we call gene sets. These gene sets can be used to restrict an analysis as well. We can adapt our current search by scrolling down to the end of our gene list. There we find the Adjustable settings menu with which several settings can be chosen to adapt the analysis.   
-We are going to limit our analysis to genes specifically known to be involved in colorectal cancer. In the **Gene Filters** box you can use a **Gene set** to filter your list. Use the last dropdown of this Gene Filters box to first select the category with gene annotation from KEGG, *C: geneannot_kegg*. Click again on the **same dropdown menu** to now see an expended list of subcategories, and choose *SC: Human Diseases*. Again use the **same dropdpwn field** to find that the list of options has been expanded to show gene sets (GS). Select the one that you think is appropriate for our analysis. Click on **Adjust Cutoff** at the bottom of the Adjustable settings menu to 
+We are going to limit our analysis to genes specifically known to be involved in colorectal cancer. In the **Gene Filters** box you can use a **Gene set**, click the search GS button to filter your list. In the grid box, click the triagle next to the KEGG-pathway record and select the human disease category. Click the GREEN button use selected.  
 
 
 
 **Question 2a:**
 
-The most significant gene in the list is the AXIN2 gene. Click on this entry from your result set to open the Gene View. The graph shows a neat separation in groups. Scroll down to investigate the probesets that were used. AXIN2 is represented by no fewer than four reporters (probe sets) on the Affymetrix U133 Plus 2.0 chip. 
+The most significant gene in the list is the AXIN2 gene. Click on this entry from your result set to open the Gene View. The graph shows a neat separation in groups. Click *View Additional details*, and  investigate the probesets that were used. AXIN2 is represented by no fewer than four reporters (probe sets) on the Affymetrix U133 Plus 2.0 chip. 
 
 Examine the expression signals of the 4 probe sets, what do you notice
 
@@ -98,7 +104,7 @@ Do you think it is wise to represent AXIN2 by the average of the four probe sets
 
 **Question 3a: Pathway heatmap**
 
-The WNT pathway is an important signal transduction cascade in the development of colon cancer.
+The WNT pathway is an important signal transduction cascade in the development of colon cancer. Go to the genefilter sectiopn.  Tip: Use the search option in the grid.
 Generate a list of genes which are differentially expressed comparing normal and adenoma within the WNT pathway KEGG, use the False Discovery Rate for multiple testing correction, log 2 values and P <0.01. You can use the KEGG Pathway from the Gene Categories selection menu.
 
 
@@ -141,14 +147,14 @@ Classical pathway analyses, with sets of genes as members of a pathway, have bee
 
 **Question 5c:**
 
-Return to the main page and select *View a geneset (Heatmap)* again. Press **next**. Now from the gene selection dropdown list, select *geneset_broad_2012_oncogenic* and press **next**. Again press next. Now, from the gene set(s), area select a complete beta catenin (BCAT) signature (Hold CTRL key to select a UP and a DN gene set combination). Press **next** again to create a heatmap representation. Are the 2 groups also separated on the basis of the BCAT signature?
+Return to the main page and select *View a geneset (Heatmap)* again. Press **next**. Now from the gene selection dropdown list, select *geneset_broad_2020_oncogenic* and press **next**. Again press next. Now, from the gene set(s), area select a complete beta catenin (BCAT_100_UP_V1_DN,BCAT_100_UP_V1_UP) signature (Hold CTRL key to select a UP and a DN gene set combination). Press **next** again to create a heatmap representation. Are the 2 groups also separated on the basis of the BCAT signature?
 
 
 **Question 6a: Clinical relevance**
 
 Genes that show a big difference in their expression between normal and adenoma tissue can be of clinical relevance. To see whether this is the case we can investigate their expression in multiple datasets
 
-Try to find out whether the three most differentially expressed genes identified in Question 1b (AXIN2, SORD and CDH3) show a similar expression pattern in other tumors. Do this by using Mega Sampler. (Chapter 10 of the tutorial book). In the main menu select in section I , Across datasets Use the preset: Practicum001.
+Try to find out whether the three most differentially expressed genes identified in Question 1b (AXIN2, SORD and CDH3) show a similar expression pattern in other tumors. Do this by using Mega Sampler. [Multiple_datasets:Chapter 10](https://r2-tutorials.readthedocs.io/en/latest/Multiple_Datasets.html). In the main menu select in section I , Across datasets Use the preset: Practicum001.
 
 **Question 6b:**
 
