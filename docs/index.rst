@@ -11,7 +11,7 @@ Copyright (c) 2006-2023 Jan Koster
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: Students Course
+   :caption: Students Course 1
 
    Investigating_Tumor_Heterogeneity_student_version
 
@@ -31,9 +31,9 @@ Copyright (c) 2006-2023 Jan Koster
    Microarray_analysis_Using_Tumor_Colon_datasets
 
  .. toctree::
-     :maxdepth: 1
-     :numbered:
-     :caption: Vagabond_course / Underconstruction
+     :maxdepth: 2
+     :numbered: 4
+     :caption: Vagabond_course
 
      VAGABOND_interim_course_R2_day1
      VAGABOND_interim_course_R2_day2
