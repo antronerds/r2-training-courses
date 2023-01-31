@@ -154,11 +154,11 @@ Return to the main page and select *View a geneset (Heatmap)* again. Press **nex
 
 Genes that show a big difference in their expression between normal and adenoma tissue can be of clinical relevance. To see whether this is the case we can investigate their expression in multiple datasets
 
-Try to find out whether the three most differentially expressed genes identified in Question 1b (AXIN2, SORD and CDH3) show a similar expression pattern in other tumors. Do this by using Mega Sampler. [Multiple_datasets:Chapter 10](https://r2-tutorials.readthedocs.io/en/latest/Multiple_Datasets.html). In the main menu select in section I , Across datasets Use the preset: Practicum001.
+Try to find out whether the three most differentially expressed genes identified in Question 1b (AXIN2, SORD and CDH3) show a similar expression pattern in other tumors. Do this by using Mega Sampler. [Multiple_datasets:Chapter 10](https://r2-tutorials.readthedocs.io/en/latest/Multiple_Datasets.html). In the main menu select in section I , Across datasets Use the preset: Student:Practicum001. TIP: Start with AXIN2 and give R2 the other genes "Find New Gene" box below the plot. 
 
 **Question 6b:**
 
-Are there drug targets listed in the list of differentially expressed genes? If so, in which of the 2 possible groups are they listed?
+Go back to the differentially expresses genes or generate the list again. Are there drug targets listed in the list of differentially expressed genes?  TIPS: Use the Gene filter option  to search for drug related gene categories or maybe the Enrichr tool in the right menu next to the DEG list and try to make a Drug Target heatmap in the Enrichr tool. So, in which of the 2 possible groups are they listed?
 
 
 **Question 7a:Investigate specific genes**
@@ -166,7 +166,8 @@ Are there drug targets listed in the list of differentially expressed genes? If 
 
 In the previous exercises we have focused on the differences between two groups within the colon dataset. Another starting point of your analyses could be a gene of interest. We already encountered AXIN2 in our analysis.
 
-Try to analyze which genes show a correlated expression pattern with AXIN2 in our dataset. Which genes are in the top3? (See chapter 7 of the tutorial, *Find genes correlating with your genes of interest*)
+Try to analyze which genes show a correlated expression pattern with AXIN2 in our dataset. Which genes are in the top3? [Find Correlation genes:Chapter 7](https://r2-tutorials.readthedocs.io/en/latest/Correlating_Genes.html).
+
 
 **Question 7b:**
 
@@ -180,8 +181,6 @@ To investigate whether there is a bias, we can inspect the correlations for the 
 You can strengthen the argument of a correlation between 2 genes if such a relation can be identified in other cohorts as well. In R2, we can easily check this relation in all datasets that are available by using the *2D-distribution* from the 2GeneView page.
 
 Examine the 2D distribution of the gene which is most promising. Is this correlation only found in our dataset or does this correlation also apply to other datasets?
-
-
 
 
 
@@ -346,7 +345,6 @@ Second Part: MSI in Colon tumors.
 
 
 
-
 The next section we will use another dataset. Select **"Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"** 
 This data set consists entirely of colon tumors (84 samples), 33 tumors are characterized by microsatellite instability (MSI). The remaining 51 tumors were microsatellite stable (MSS) and are characterized by chromosomal instability. 
 In MSI colon cancer, genes of the DNA mismatch repair system play an important role. Germline mutations in these genes are a major cause of the inherited form of colon cancer, namely HNPCC (hereditary nonpolyposis colon cancer). 
@@ -430,7 +428,8 @@ Do you note anything remarkable?
  
 **Question 9l:**
  
- Search for genes that correlate with the MLH1 expression, but only in the MSI tumors. In the selection Criteria panel use the sample filter to select for the right subgroup. Do click the red  **<span style="color:red">confirm </span>**link!  Can you find other genes which are correlated with MLH1? Such as? 
+ Search for genes that correlate with the MLH1 expression, but only in the MSI tumors. In the selection Criteria panel use the sample filter to select for the right subgroup. Can you find other genes which are correlated with MLH1? Such as? 
+
 
 
 **Question 9m:**
@@ -458,7 +457,7 @@ In the right panel you can store your result as a genecategory. Give the list a 
 We're now going to use this gene category as a set to explore other datasets. 
 Select *Tumor Colon (Core-Transcript) - Sveen - 333 - rma_sketch - huex10t* in the main menu (take care: don't select the *Tumor Colon (Core-Exon) - Sveen - 333 - rma_sketch - huex10p* version).
 
-At the main page select at 3: **Type of analysis** *View a geneset (Heatmap)* and click **next**. In the **adjustable settings** panel you can select a subset of the patients with the **sample filter**. Select the msi-status from the droplist, and subsequently select mss, msi-h and msi-l. Do not forget to click the red **<span style="color:red">confirm </span>** link. In the Genecategory section select the genecategory you just generated in the personal track section. This can be done by first selecting *My GeneCategories*, and click **next**, click **next** and select the set just created.
+At the main page select at 3: **Type of analysis** *View a geneset (Heatmap)* and click **next**. In the **adjustable settings** panel you can select a subset of the patients with the **sample filter**. Select the msi-status from the droplist, and subsequently select mss, msi-h and msi-l. In the Genecategory section select the genecategory you just generated in the personal track section. This can be done by first selecting *My GeneCategories*, and click **next**, click **next** and select the set just created.
 
 The heatmap clearly shows a pattern, suggesting a different gene expression pattern between the MSI and MSS group. Does the disease free survival track correspond with the gene expression pattern?
 
