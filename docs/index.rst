@@ -32,7 +32,7 @@ Copyright (c) 2006-2023 Jan Koster
 
 .. toctree::
      :maxdepth: 2
-     :numbered: 4
+     :numbered: 3
      :caption: Vagabond_course
 
      VAGABOND_interim_course_R2_day1
