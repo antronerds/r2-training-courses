@@ -31,5 +31,6 @@ Copyright (c) 2006-2023 Jan Koster
    Microarray_analysis_Using_Tumor_Colon_datasets
    VAGABOND_interim_course_R2_day1
    VAGABOND_interim_course_R2_day2
+   x_omics_course_radboud.md
 
 */
