@@ -48,7 +48,7 @@ During this practical course, we will use the R2 bioinformatics platform to stud
 
 You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
 <br><br>
-The <a class="course_permalink" href="Investigating_Tumor_Heterogeneity_student_version.html" target="_blank">grey buttons</a> in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The <button class="course googleform">green buttons</button> in this document will open up a Google form, one per section, with which you can submit your answers. 
+The <button class="course googleform">green buttons</button> in this document will open up a Google form, one per section, with which you can submit your answers. 
 <br><br>
 
 ## Finding prognostic factors in your data
@@ -111,7 +111,7 @@ The track mycn_amp shows which samples have MYCN amplification.
 
 ---------
 
-We can show the relation more clearly by grouping the tumors in the 'One Gene View' according to a property in a track. Go to the Adjustable Settings box underneath the plot. At the top of that box, you can adjust the **Analysis type** with a dropdown. 
+We can show the relation more clearly by grouping the tumors in the graph according to a property in a track. Go to the Adjustable Settings box underneath the plot. At the top of that box, you can adjust the **Analysis type** with a dropdown. 
 - Change this setting from single gene to *gene vs track*.
 - In the Adjustable Settings box you now have to choose a **Track** by which you want to separate the samples. In the drop down menu, select *mycn-amp(2 cat)*. And click **Submit**. Check the plot.
 - Try it out with a different track: select *alive*(2 cat) and click **Submit**. 
