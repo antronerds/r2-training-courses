@@ -27,7 +27,7 @@ Neuroblastoma is a pediatric tumor of the peripheral adrenergic lineage, which i
 
 Using recent molecular biology data gathering techniques and advanced bioinformatic data analysis algorithms we set out to investigate this aggressive characteristic of neuroblastoma tumors. We obtained tumor biopsies from four patients that were taken in culture. Each biopsy gave rise to two phenotypically divergent cell lines. In this course you will conduct the research yourself, following the lines of reasoning and the same data as was used in a paper by the AMC Oncogenomics group that was published in Nature Genetics in 2017.   
 
-The <a class="course_permalink" href="Investigating_Tumor_Heterogeneity_student_version.html" target="_blank">grey buttons</a> in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The <button class="course googleform">green buttons</button> in this document will open up a Google form, one per section, with which you can submit your answers.
+The <button class="course_permalink">grey buttons</button> in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The <button class="course googleform">green buttons</button> in this document will open up a Google form, one per section, with which you can submit your answers.
 
 We would like to ask you to fill in the evaluation form about this R2 course during or at the end of the course. To open the form, click the button below:
 
