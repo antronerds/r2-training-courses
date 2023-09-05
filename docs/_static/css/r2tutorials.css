@@ -28,15 +28,7 @@ div.noshow{
 /* 
 Styling the buttons of the courses
 */
-.course {
-	border-width: 1px;
-	border-radius: 4px;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.22), 0 2px 2px 0 rgba(0,0,0,0.17);
-}
 
-.course:hover {
-	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.28), 0 2px 2px 0 rgba(0,0,0,0.21);
-}
 
 .googleform {
 	background-color: #95d097;
@@ -48,6 +40,7 @@ Styling the buttons of the courses
 	font-size: 16px;
 	transition-duration: 0.4s;
 	border-width: 0;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.22), 0 2px 2px 0 rgba(0,0,0,0.17);
 }
 
 .googleform:hover {
@@ -77,8 +70,37 @@ div.r2didyouknow th {
 	background-repeat: no-repeat; 
 	background-position: left; 
 }
+.course_button {
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.22), 0 2px 2px 0 rgba(0,0,0,0.17);
+}
 
+.course_button:hover {
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.28), 0 2px 2px 0 rgba(0,0,0,0.21);
+}
 
+.course_permalink {
+    font: 16px Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #AAAAAA;
+    border-bottom: 1px solid #AAAAAA;
+    border-left: 1px solid #CCCCCC;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.28), 0 2px 2px 0 rgba(0,0,0,0.21);
+}
+
+.course_permalink:hover {
+    background-color: #DDDDDD;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.28), 0 2px 2px 0 rgba(0,0,0,0.21);
+}
 /* 
 Images are parsed into an reference external class; we want these centered and block just
 like their annotation text in strong

@@ -48,7 +48,7 @@ During this practical course, we will use the R2 bioinformatics platform to stud
 
 You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
 <br><br>
-The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The <font style="background-color: #95d097">**green buttons**</font> in this document will open up a Google form, one per section, with which you can submit your answers. 
+The <button class="course googleform">green buttons</button> in this document will open up a Google form, one per section, with which you can submit your answers. 
 <br><br>
 
 ## Finding prognostic factors in your data
@@ -111,7 +111,7 @@ The track mycn_amp shows which samples have MYCN amplification.
 
 ---------
 
-We can show the relation more clearly by grouping the tumors in the 'One Gene View' according to a property in a track. Go to the Adjustable Settings box underneath the plot. At the top of that box, you can adjust the **Analysis type** with a dropdown. 
+We can show the relation more clearly by grouping the tumors in the graph according to a property in a track. Go to the Adjustable Settings box underneath the plot. At the top of that box, you can adjust the **Analysis type** with a dropdown. 
 - Change this setting from single gene to *gene vs track*.
 - In the Adjustable Settings box you now have to choose a **Track** by which you want to separate the samples. In the drop down menu, select *mycn-amp(2 cat)*. And click **Submit**. Check the plot.
 - Try it out with a different track: select *alive*(2 cat) and click **Submit**. 
@@ -393,16 +393,13 @@ Two images on a row belong to one patient (e.g. 619-MES and 619-ADRN). As you ca
  <br>
 
 
- For this analysis we will use one of the analysis tools of R2: Toplister. The toplister is a handy tool for a first start to analyze a given dataset. Particularly, if you have  poor dataset clinical annotation. The Toplister can assess which genes show the most different expression values throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This provides an unbiased view of the differences in gene expression.
+For this analysis we will use one of the analysis tools of R2: Toplister. The toplister is a handy tool for a first start to analyze a given dataset. Particularly, if you have  poor dataset clinical annotation. The Toplister can assess which genes show the most different expression values throughout a dataset. It does so by selecting the genes whose expression values have the largest standard deviation within a given set of samples. This provides an unbiased view of the differences in gene expression.
 
 
- * Go to R2 by clicking the button below. The correct dataset containing 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines is already selected. 
- <br>
-
- <form name="ps_avgpres_gse90803geo8_u133p2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-   <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
-   <button type="submit" class="course r2submit" >Go to R2</button>
- </form>  
+* On the main page, click in box 2 on the selected dataset. The dataset grid pops up, showing all the datasets that are available to you within the platform. Let's use the headers of the columns to filter for the dataset that we need in the next section. <br>
+* In the textfield of column **Author** type *Versteeg* and in the column of samples **N** type 8.
+* Click on the **Select** button in front of the correct dataset.
+* Confirm that in box 2 the dataset '_Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2_' is selected, containing 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines.
  <br>
  <br>
 
@@ -469,12 +466,7 @@ We have identified two different types of cells that occur within the same patie
 <br>
 
 
-* Go to the main page of R2 by clicking the button below
-
-<form name="main_4_pairs" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gse90803geo8_u133p2">
-  <button type="submit" class="course r2submit" >Go to R2 main portal</button>
-</form>  
+* Go to the main page of R2 and confirm that in box 2 still the dataset '_Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2_' is selected.
 <br>
 <br>
 
