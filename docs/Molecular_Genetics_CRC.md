@@ -1,9 +1,9 @@
-<a id="investigating_tumor_heterogeneity"> </a>
+<a id="molecular_genetics_crc"> </a>
 
-Investigating Intra-tumor Heterogeneity in Neuroblastoma
+Molecular Genetics Course - Colorectal Cancer
 =================================
 
-*Analyse Colorectal Cancer  using the R2 data analysis platform*
+*Analyse Colorectal Cancer using the R2 data analysis platform*
 
 This resource is located online at http://r2platform.com/mgcourse  
   
