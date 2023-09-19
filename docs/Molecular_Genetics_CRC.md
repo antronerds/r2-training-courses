@@ -39,37 +39,11 @@ Normal vs Colon:
 
 
 **Datasets used:**
-* Mixed Colon - Marra - 64 - MAS5.0 - u133p2
+* Mixed Colon - Marra - 64 - MAS5.0 - u133p
 * Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode3
 
 
-R2 is hosting a large collection of all types omic datasets.  Use the grid box to search and get some grips on the datasets R2 is hosting, just  to get some feeling with the the large collections of the dateset in R2.
-
-* In the main page in R2, click on dataset  name  in box 2. Using the grid box 'Tissue/Tumor/Disease/Misc' and find out how many colon related sets R2 is hosting.
-
-**A:213**
-
-* How many sets has R2 when you only look for methylation sets.
-
-**A:6**
-
-Cancer is very complex disease to investigated. With a hugh variety of cancers types. This course is focussing mainly on CRCs. So start with lets see if we can see we start to look  for genes which make the difference in normal anc cancer tissue.
-
-* Look for the Mixed Colon - Marra - 64 - MAS5.0 - u133p2 set in the grid box and click confirm selection. 
-* Use the cohort overview in box 3, to inspect the the underlying sample annotation. Can you find how many  samples are Normal tissue and how many Samples are tumor, from how many location are the samples collected.
-* Ihe the  Main menu, 3 ‘Select type of analysis’ select the “Find differential expression between two  groups” module. And click next. In the next panel you have to select a so called ‘track’, choose the tissue track and select the two groups and click next. 
-* AXIN2 etc in the list. Maybe click on the magn glass for one Gene view.
-
-
-Clicking on the Marra dataset name also reveals some background information if available in R2 of the selected dataset. In what year is the Marra datasets listed. Howly cow old set, lets quickly look for a newer set. Select a mixed the mixed tcga set
-
-
-
-
-
-
-
-
+Use the grid box to search and get some grips on the datasets R2 is hosting, just  to get some feeling with the database (How many of them are me
 
 
 
