@@ -22,9 +22,49 @@ The <button class="course_permalink">grey buttons</button> in this course will b
 
 We would like to ask you to fill in the evaluation form about this R2 course during or at the end of the course. To open the form, click the button below:
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSflNJpsTcLIhwEC0ZlHksfnE0VwBay1I2KOGPArYu4Q_QhtrA/viewform?usp=sf_link','_blank');" type="button">Open the Evaluation form</button>
-<br>
-<br>
+
+
+
+The R2 platform:
+---------------------------------------
+ *Maybe a small introduction*
+
+
+
+
+Normal vs Colon: 
+---------------------------------------
+
+
+
+
+**Datasets used:**
+* Mixed Colon - Marra - 64 - MAS5.0 - u133p
+* Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode3
+
+
+Use the grid box to search and get some grips on the datasets R2 is hosting, just  to get some feeling with the database (How many of them are me
+
+
+
+
+
+
+
+Genes Affected by Mutations: 
+---------------------------------------
+
+
+
+
+
+
+MSI / MSS in CRC
+---------------------------------------
+
+
+
+
 
 Tumors and origins: a first impression of your data
 ---------------------------------------
@@ -687,6 +727,12 @@ The chromatin state is especially important for transcription factors; we'll re-
 <br>
 
 ---------
+
+
+
+
+
+
 
 
 
