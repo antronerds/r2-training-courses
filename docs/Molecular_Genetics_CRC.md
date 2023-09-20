@@ -99,6 +99,36 @@ again, and click **Submit** to show the changes.
 
 ------
 
+### Differences between the various CMS types
+
+Previously we looked into CMS subtype 1. We would like to understand what sets CMS 4 apart from the subtypes 2 and 3. 
+
+* From the main page choose the analysis Differential Expression Between Two Groups. 
+* ToDo: how to Choose the track cms4vs3
+* Look in the list of genes if you see anything familiar and hover over the magnifying glass icon of a few genes
+
+Gene set analysis helps researchers interpret the biological relevance of a group of genes. Instead of looking at individual 
+genes, it allows you to understand the collective functions or pathway involvements genes in your list. This can provide more 
+meaningful insights into the underlying biology of a particular condition or experiment.
+
+* Click on the top most button on the right that is labeled Gene set analysis.
+* Select the Gene set Collection Broad 2020 09 h hallmark
+* Switch the Representation setting to all 
+* Click Next
+
+
+ToDo: Remove picture
+![](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png "Figure 3: temp image of result Gene set analysis, todo remove")
+
+[**Figure 3: temp image of result Gene set analysis, todo remove**](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png)
+
+
+
+GeneSetAnalysis_create_permalink_later.png
+
+
+
+
 ## Experiment in cell lines
 ToDo: Now that we have discovered interesting mecanisms that influence teh development of CRC, can we influence the mechanisms by targeting a gene? 
 
