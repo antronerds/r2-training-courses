@@ -122,10 +122,17 @@ ToDo: Remove picture
 
 [**Figure 3: temp image of result Gene set analysis, todo remove**](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png)
 
+------
+
+![](_static/images/R2d2_logo.png)**Which gene sets do you see pop up and are they over or under expressed in CMS 4?**
+
+![](_static/images/R2d2_logo.png)**Explain the biological relevance for the CMS4 subtype for these over- or/and underexpression of these gene sets for CMS4 subtype CRC tumors**
+
+<br>
+<br>
 
 
-GeneSetAnalysis_create_permalink_later.png
-
+------
 
 
 
