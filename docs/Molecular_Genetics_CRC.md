@@ -74,22 +74,49 @@ Pathway heatmap
 
 The WNT pathway is an important signal transduction cascade in the development of colon cancer.
 
+Generate a list of genes which are differentially expressed comparing normal and adenoma within the WNT pathway KEGG, use the False Discovery Rate for multiple testing correction, log 2 values and P <0.01. You can use the KEGG Pathway from the Gene Categories selection menu.
+
+* How many genes are up / down regulated. 
+
+* In the left menu generate a heatmap. Inspect the heatmap did you expect this pronounced clustering.
+
+
+
+
+![](_static/images/MolGenCRC/marra_biased_wnt.png "Figure 2: heatmap")
+
+Pathway Analysis:
+---------------------------------------
+
+Often, you do not immediately have an idea which pathways you could look for in your comparisons between groups (normal versus adenoma in our case). A module within R2 providing you with some suggestions is the so called KEGG Pathway Finder by Groups. It assesses whether the number of genes that show significant differential expression between normal and adenoma is significantly higher than you would expect compared to all genes that are mentioned in KEGG.
+
+
+* Perform a KEGG pathway analysis from the ‘main’ page. Make sure that under Representation: all is selected (both under and overrepresentation) Are there KEGG pathways overrepresented in the differentially expressed genes between adenoma and normal tissue? If this is true which pathway (Set the p-value 0.01 for the analysis and select striking pathways).
+
+
+*A: DNA replication and cell cycle are in the top off the list*
+
+
+
+The previous task has shown that a number of WNT pathway genes were represented in the result list. Since we have generated a heatmap in the previous question  with the wnt pathway gene from th etest results. We can also  make a heatmap directly without any test.
+
+* Go to the main screen select generate a heatmap and select the wnt path way from the text database.
+
+
+![](_static/images/MolGenCRC/marra_unbiased_wnt.png "Figure 2: heatmap").
+
+* The samples are clearly separeted in normal vs adenoma. It's different and less pronounced compared to the previous heatmap. Do you think this is special? , Why or Why not.
+
+* In what way is the heatmap your generated different compared to the previous one.
+
+
+### MSI / MSS in CRC
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-Clicking on the Marra dataset name also reveals some background information if available in R2 of the selected dataset. In what year is the Marra datasets listed. Howly cow old set, lets quickly look for a newer set. Select a mixed the mixed tcga set
+Clicking on the Marra dataset name also reveals some background information if available in R2 of the selected dataset. In what year is the Marra datasets listed. Howly cow thats an old set. lets quickly look for a newer set. Select a mixed the mixed tcga set
 
 
 
@@ -104,7 +131,7 @@ Clicking on the Marra dataset name also reveals some background information if a
 
 
 
-### MSI / MSS in CRC
+
 
 
 
