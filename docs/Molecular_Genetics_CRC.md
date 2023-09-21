@@ -82,7 +82,6 @@ Generate a list of genes which are differentially expressed comparing normal and
 
 
 
-
 ![](_static/images/MolGenCRC/marra_biased_wnt.png "Figure 2: heatmap")
 
 Pathway Analysis:
@@ -113,16 +112,21 @@ The previous task has shown that a number of WNT pathway genes were represented 
 ### MSI / MSS in CRC
 
 
+Clicking on the Marra dataset name also reveals some background information if available in R2 of the selected dataset.. Howly cow thats an old set. lets quickly look for a newer set. Select a mixed the mixed tcga set
 
-
-
-Clicking on the Marra dataset name also reveals some background information if available in R2 of the selected dataset. In what year is the Marra datasets listed. Howly cow thats an old set. lets quickly look for a newer set. Select a mixed the mixed tcga set
-
-
+ In what year is the Marra datasets listed.
 
 
 
 
+
+A:
+
+
+A:
+
+
+![](_static/images/MolGenCRC/tcga_msimss_mlh1.png "Figure 2: MLH1").
 
 
 
