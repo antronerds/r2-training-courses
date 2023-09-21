@@ -43,7 +43,7 @@ Normal vs Colon:
 * Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode3
 
 
-R2 is hosting a large collection of all types omic datasets.  Use the grid box to search and get some grips on the datasets R2 is hosting, just  to get some feeling with the the large collections of the dateset in R2.
+R2 is hosting a large collection of all types omic datasets.  Use the grid box to search and get some grips on the datasets R2 is hosting, just  to get some feeling with the large collections of the dateset in R2.
 
 * In the main page in R2, click on dataset  name  in box 2. Using the grid box 'Tissue/Tumor/Disease/Misc' and find out how many colon related sets R2 is hosting.
 
@@ -55,10 +55,42 @@ R2 is hosting a large collection of all types omic datasets.  Use the grid box t
 
 Cancer is very complex disease to investigated. With a hugh variety of cancers types. This course is focussing mainly on CRCs. So start with lets see if we can see we start to look  for genes which make the difference in normal anc cancer tissue.
 
-* Look for the Mixed Colon - Marra - 64 - MAS5.0 - u133p2 set in the grid box and click confirm selection. 
-* Use the cohort overview in box 3, to inspect the the underlying sample annotation. Can you find how many  samples are Normal tissue and how many Samples are tumor, from how many location are the samples collected.
-* Ihe the  Main menu, 3 ‘Select type of analysis’ select the “Find differential expression between two  groups” module. And click next. In the next panel you have to select a so called ‘track’, choose the tissue track and select the two groups and click next. 
-* AXIN2 etc in the list. Maybe click on the magn glass for one Gene view.
+
+Of course it is nice to have a lot of RNA expression datasets tot analyse and explore but without proper sample annotation your have very limited analysis options. Let's explore the annotation for the Marra dataset.
+
+* Go to the cohort overview in box 2 and check  the samples annotation by using the pulldown menu, how many normal en tissue samples does the Marra set contain this set also contains the location such as tissue location etc etc.
+
+
+The R2 platform support a large  set of analysis types to explore datasets. One of these modules is the "Find differential expression between groups.
+
+* Check if you have selected the Marra set and select in the main menu box, "Find Differential expression between two groups. In the next screen, use the default select T-test and select "Tissue" in tjhe group by option, and click submit. Select Normal and Adenoma, make sure that log2 and p < 0.01 is selected  and click submit.
+
+* R2 has generated a large list of differentially expressed genes, can you say something about the distribution of the genes how many are up and down regulated.
+
+
+Next to many publicly available datasets, R2 is also hosting a lot of curated lists of genes which we call `gene categories` (gene sets). These gene categories can be used to restrict an analysis as well.  We can adapt our current search by scrolling down to the end of our gene list. In the Adjustable Settings Panel by hitting the "Search Select button" in the Gene Filters box you can now use a Gene Category to filter your list. Re-generate a list that is specifically associated with (colorectal) cancer (hint: look in the gene category or KEGG pathway list to identify an interesting gene set). You can look with keywords of inspect the KEGG pathway specific.
+
+* check some genes with single gene view (AXIN2) by clicking the magnifying glass, in the green bar in the top you can easily go to list. Also note te coloured bars beneath plot, containing the sample annotation, these groupin variables are called tracks. Also note you hoover over the dots in the graph to get more information of the individual samples.
+
+
+Pathway heatmap
+---------------------------------------
+
+The WNT pathway is an important signal transduction cascade in the development of colon cancer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 Clicking on the Marra dataset name also reveals some background information if available in R2 of the selected dataset. In what year is the Marra datasets listed. Howly cow old set, lets quickly look for a newer set. Select a mixed the mixed tcga set
