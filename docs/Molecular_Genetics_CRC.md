@@ -78,10 +78,10 @@ Generate a list of genes which are differentially expressed comparing normal and
 
 * How many genes are up / down regulated. 
 
-* In the left menu generate a heatmap. Inspect the heatmap did you expect this pronounced clustering.
+* In the left menu generate a heatmap. Inspect the heatmap did you expect this pronounced clustering?.
 
 
-
+A:
 ![](_static/images/MolGenCRC/marra_biased_wnt.png "Figure 2: heatmap")
 
 Pathway Analysis:
@@ -111,27 +111,102 @@ The previous task has shown that a number of WNT pathway genes were represented 
 
 ### MSI / MSS in CRC
 
+In the previous tasks we have introduced the R2 platform and looked at differences between Normal and Colon tissu by looking at differentially expressed genes. For many cancers types it is important to focus on subtyping meaning identifying subgroups within CRCdatasets R2 is hosting. As already discussed, CRC has 4 CMS subtypes, one of the characterics of CMS I, is MSI instability. 
 
-Clicking on the Marra dataset name also reveals some background information if available in R2 of the selected dataset.. Howly cow thats an old set. lets quickly look for a newer set. Select a mixed the mixed tcga set
 
- In what year is the Marra datasets listed.
+The genomic instability in colon cancer can be divided into at least two major types, microsatellite instability (MSI) or chromosomal instability (CIN). Microsatellite instability (MSI) is caused by mutations in DNA mismatch repair genes such as MLH1, MSH2, MSH6, and PMS2, and it is found in 10% to 15% of sporadic colorectal cancers (CRCs). The presence of MSI predicts a good outcome in colorectal cancer.
+
+In MSI colon cancer, genes of the DNA mismatch repair system play an important role. Germline mutations in these genes are a major cause of the inherited form of colon cancer, namely HNPCC (hereditary nonpolyposis colon cancer).  In sporadic forms of colon cancer however, these genes are frequently inactivated. Inactivation is often achieved via hypermethylation, switching the gene off. Hypermethylation of genes in colon cancer is most common in colon tumors with a proximal location in the colon and much less in colon tumors with a distal location.
+
+
+[comment]: <> (opzetje van de text)
+
+
+This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors.
+
+The next section we will use another dataset. Select "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"
+
+
+
+
+Use the “Find Differential expressed genes between groups” module to generate a list of genes that i differentially expressed between MSI and MSS characterized tumors.
+
+* Which one is in top list 
+
+* Inspect MH1 expression. 
+
+So we have indentified an important player as discussed in college. You have just selected the Wanatabe set. Inspect the background information and look at the data this dataset has been generated. This is very old set, of course this set still of biological relevance we will also try to find we can find out we can validate this other sets. Not only because this is an old set but it is always common research practice to validate your resuls from other sources
+
+
+[comment]: <> (small info  about tcga ?)
+
+select Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode3
+
+* Do the same test Find Diff test, again the MHL1 gene
+
+So clearly it seems that MHl plays is a key role and is possible affecting other genes
+
+* One way to find out which genes are possibly regulated by the MLH1 gene is to find genes which are (inverse) correlated with this gene.  
+
+* Run the Find correlated genes with a single gene module for the MLH1 gene.
+
+* The click on the best correlating gene to plot both genes together
+
+* Click on view additional details, on which chromosome are both genes located
+
+* Click T-view and zoom out 2 or 5 times, what can you say about their location 
+
+[comment]: <> (hier een klein text bruggetje waarom we de volgende stap doen?)
+
+* Go back to your genelist of correlating genes and select only neg corr genes and click chrom map,
+
+
+* A lot of genes are clearly over represented on a number of chromosome, especially chrom 18 with a high p-value.
+
+
+Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
+
+
+* Go back to the MLH1 correlating genelist make sure you have preselected the DNA-repair genes. CLick submit. Click on generated a heatmap. And do you see a clear associated with a CMS subgroup ?, and which one.
+
+In one of the first questions in this course we have seen there is an association with the genomics lo
+
 
 
 
 
 
 A:
-
-
+![](_static/images/MolGenCRC/tcga_msimss_mlh1.png "Figure 2: MLH1")
 A:
+![](_static/images/MolGenCRC/tcga_msimss_mlh1_512.png "Figure 2: MLH1")
+A:
+![](_static/images/MolGenCRC/Findcorgene_MHL1.png "Figure 2: MLH1")
+
+![](_static/images/MolGenCRC/Findcorgene_MHL1_EPM2IP1.png "Figure 2: MLH1")
+
+![](_static/images/MolGenCRC/viewadddetails.png "Figure 2: MLH1")
+
+![](_static/images/MolGenCRC/viewadddetails_genbr.png "Figure 2: MLH1")
+
+![](_static/images/MolGenCRC/chrommap.png "Figure 2: MLH1")
+chrom 18 loss is linked to msi/mss instability
+[**Figure 2: temp image, todo make permalink tSNE with CMS coloring**](_static/images/MolGenCRC/chrommap.png)
+
+![](_static/images/MolGenCRC/dnarepair.png "Figure 2: MLH1")
 
 
-![](_static/images/MolGenCRC/tcga_msimss_mlh1.png "Figure 2: MLH1").
 
-
+[comment]: <> (deze set wil ik mogelijk nog aanpassen met wat meer MSS / MSI)
 
 
 ### Genes Affected by Mutations: 
+
+BRAF
+KRAS mutation
+
+
+
 
 
 
