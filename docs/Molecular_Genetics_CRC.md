@@ -135,6 +135,11 @@ Use the “Find Differential expressed genes between groups” module to generat
 
 * Inspect MH1 expression. 
 
+A:
+![](_static/images/MolGen/CRCwatanabe_mlh1.png "Figure x: MLH1")
+
+
+
 So we have identified an important player as discussed in college. You have just selected the Wanatabe set. Inspect the background information and look at the data this dataset has been generated. This is very old set, of course this set still of biological relevance we will also try to find we can find out we can validate this other sets. Not only because this is an old set but it is always common research practice to validate your results with other sources
 
 
