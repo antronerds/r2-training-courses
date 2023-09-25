@@ -135,6 +135,11 @@ Use the “Find Differential expressed genes between groups” module to generat
 
 * Inspect MH1 expression. 
 
+A:
+![](_static/images/MolGenCRC/watanabe_mlh1.png "Figure x: MLH1")
+
+
+
 So we have identified an important player as discussed in college. You have just selected the Wanatabe set. Inspect the background information and look at the data this dataset has been generated. This is very old set, of course this set still of biological relevance we will also try to find we can find out we can validate this other sets. Not only because this is an old set but it is always common research practice to validate your results with other sources
 
 
@@ -144,15 +149,33 @@ select Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode3
 
 * Do the same test Find Diff test, again the MHL1 gene
 
+A:
+![](_static/images/MolGenCRC/tcga_msimss_mlh1.png "Figure x: MLH1")
+[**Figure x: 204 set**](_static/images/MolGenCRC/chrommap.png)
+
+A:
+![](_static/images/MolGenCRC/tcga_msimss_mlh1_512.png "Figure x: MLH1")
+[**Figure x: 512 set**](_static/images/MolGenCRC/chrommap.png)
+
 So clearly it seems that MHl plays is a key role and is possible affecting other genes
 
 * One way to find out which genes are possibly regulated by the MLH1 gene is to find genes which are (inverse) correlated with this gene.  
 
 * Run the Find correlated genes with a single gene module for the MLH1 gene.
 
+A:
+![](_static/images/MolGenCRC/Findcorgene_MHL1.png "Figure x: MLH1")
+
 * Then click on the best correlating gene to plot both genes together, in a two gene view
 
+A:
+![](_static/images/MolGenCRC/Findcorgene_MHL1_EPM2IP1.png "Figure x: MLH1")
+
 * Click on view additional details, on which chromosome are both genes located
+
+A:
+
+![](_static/images/MolGenCRC/viewadddetails.png "Figure x: MLH1")
 
 * Click T-view and zoom out 2 or 5 times, what can you say about their location 
 
@@ -160,14 +183,34 @@ So clearly it seems that MHl plays is a key role and is possible affecting other
 
 * Go back to your genelist of correlating genes and select only **neg corr** genes and click chrom map,
 
+A:
+
+![](_static/images/MolGenCRC/viewadddetails_genbr.png "Figure x: MLH1")
 
 * A lot of genes are clearly over-represented on a number of chromosome, especially chrom 18 with a high p-value.
+
+
+A:
+![](_static/images/MolGenCRC/chrommap.png "Figure x: MLH1")
+
+[**Figure x:**](_static/images/MolGenCRC/chrommap.png)
+
+chrom 18 loss is linked to msi/mss instability
 
 
 Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
 
 
+
 * Go back to the MLH1 correlating genelist make sure you have preselected the DNA-repair genes. CLick submit. Click on generated a heatmap. And do you see a clear associated with a CMS subgroup ?, and which one.
+
+
+A:
+![](_static/images/MolGenCRC/dnarepair.png "Figure 2: MLH1")
+
+* and take look at the CMS classification !!! what do you see ?? are you surprised
+
+CMS4, MSI had been associated with CM1 and CMS4
 
 In one of the first questions in this course we have seen there is an association with the genomic location. We have seen that a low MLH1 expression is associated with CRC subtypes. As briefly touched, the R2 platform has many types not only gene expression but also methylation arrays. Go to the main menu and select 
 
@@ -176,41 +219,17 @@ In one of the first questions in this course we have seen there is an associatio
 * Plot the one gene view for MLH1, do you see something special ?
 
 
-* In the Alternative box, unfold additional details,  click on the view all link below MLH, here a nice heatmap is plotted of the methyation ratios's what do you see. 
+* In the Alternative box, unfold additional details,  click on the view all link below MLH, here a nice heatmap is plotted of the methylation ratios's what do you see. 
 
 
 * A lot of samples are unfortunately not all the samples are annotated for Microsatelite instability, filter for those samples only and click submit. The MLH1 reporters for this gene (only 4), seem all methylated however, most likely these are not well designed and can maybe not distinguishe for the proper MLH1 reporters. However look at the other reporters on the same location, we also see a gene name we encountered before. Do you see an association with MSI/MSS.
 
-* and take look at the CMS classification !!! what do you see ?? are you surprised
 
 
 
-A:
-![](_static/images/MolGenCRC/tcga_msimss_mlh1.png "Figure x: MLH1")
-A:
-![](_static/images/MolGenCRC/tcga_msimss_mlh1_512.png "Figure x: MLH1")
-A:
-![](_static/images/MolGenCRC/Findcorgene_MHL1.png "Figure x: MLH1")
-A:
-![](_static/images/MolGenCRC/Findcorgene_MHL1_EPM2IP1.png "Figure x: MLH1")
-A:
-
-![](_static/images/MolGenCRC/viewadddetails.png "Figure x: MLH1")
-A:
-
-![](_static/images/MolGenCRC/viewadddetails_genbr.png "Figure x: MLH1")
-A:
-![](_static/images/MolGenCRC/chrommap.png "Figure x: MLH1")
-chrom 18 loss is linked to msi/mss instability
-[**Figure 2: temp image, todo make permalink tSNE with CMS coloring**](_static/images/MolGenCRC/chrommap.png)
-A:
-![](_static/images/MolGenCRC/dnarepair.png "Figure 2: MLH1")
 A:
 ![](_static/images/MolGenCRC/methylation_mlh1loc.png "Figure 2: heatmap")
 May be a little , maybe you expected CMS1 classification but also CMS4 has been associated with MSI. 
-
-
-
 
 
 [comment]: <> (deze set wil ik mogelijk nog aanpassen met wat meer MSS / MSI)
