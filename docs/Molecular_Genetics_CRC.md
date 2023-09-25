@@ -136,7 +136,7 @@ Use the “Find Differential expressed genes between groups” module to generat
 * Inspect MH1 expression. 
 
 A:
-![](_static/images/MolGen/CRCwatanabe_mlh1.png "Figure x: MLH1")
+![](_static/images/MolGenCRC/watanabe_mlh1.png "Figure x: MLH1")
 
 
 
