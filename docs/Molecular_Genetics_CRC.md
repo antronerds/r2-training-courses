@@ -418,7 +418,43 @@ PDGFRA, PDGFRB, PDGFC, and KIT, identifies CMS4 CRC with very high sensitivity a
 
 ------
 
-To assess the potential prognostic value of the treatment, we will make a signiture of the genes that were changed 
+### Proliferation vs metastases 
+
+ToDo: optional analysis - I have not made all the steps. If we want these three analyses in, I will write the actual 
+steps down.  
+Mesenchymal tumor phenotypes are generally accompanied by reduced proliferation. Indeed, high expression of
+proliferation signatures and Wnt target genes are associated with good prognosis and reduced metastatic capacity in CRC
+
+ToDo: Remove picture
+![](_static/images/MolGenCRC/temp/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
+multiple genes 4 gene signature, todo remove")
+
+[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+
+
+ToDo: Remove picture
+![](_static/images/MolGenCRC/temp/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
+multiple genes 4 gene signature, todo remove")
+
+[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+
+ToDo: Remove picture
+![](_static/images/MolGenCRC/temp/mtorc1_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
+multiple genes 4 gene signature, todo remove")
+
+[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/mtorc1_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+
+"The mesenchymal-to-epithelial phenotype shift following imatinib therapy coincided with increased expression of WNT- and
+MYC-target genes and signatures reflecting proliferation. Accelerated proliferation may – at first sight – not be
+considered a desired effect of any anti-cancer therapy. However, high expression of proliferation signatures and WNT
+target genes are associated with good prognosis and reduced metastatic capacity in CRC (36–38). Proliferation and
+invasion are often inversely regulated in tumor biology, supporting the notion that proliferating tumor cells have to
+switch their transcriptional state (through EMT) in order to acquire invasive and metastatic properties (40, 44, 45).
+Proliferating tumor cells require high expression of mTORC1 and its target genes to meet their anabolic demand (46). The
+high expression of mTORC1 in imatinib-treated tumors may therefore simply reflect the MET phenotype switch"
+
+### Assess the prognostic value of imatinib treatment
+To assess the potential prognostic value of the treatment, we will make a signature of the genes that were changed 
 after treatment. 
 
 * On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
@@ -453,6 +489,7 @@ cohort dataset with annotated CMS status and survival data.
 
 * On the main page, select the Guinney dataset again
 * Select the K-means analysis in box 3 and click Next
+* * In the subset 
 * Behind the setting *Gene set*, you find the button **Search GS**. Click on the button and find your previously 
   stored geneset under **User gene sets > - > impacct_imatinib_treatment_up** and hit the green button on the left 
   to use the selected gene set
