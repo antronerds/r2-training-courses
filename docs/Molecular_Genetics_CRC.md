@@ -503,7 +503,8 @@ from CMS 4 to cms 2, todo remove**](_static/images/MolGenCRC/temp/impacct_relate
 
 
 
-cluster the Stage II and III tumors in this cohort into low and high expression subgroups using the k-means algorithm
+cluster the Stage II and III tumors in this cohort into low and high expression subgroups using the k-means algorithm  
+
 ------
 
 ![](_static/images/R2d2_logo.png)**If the impact of imatinib shows a shift of the geneset shift from low expression to 
