@@ -375,8 +375,13 @@ signaling in colorectal cancer" (Mönch R, Scholz CJ, Waaga-Gasser AM, et al 202
 * The conclusion: 
 "PDGF recovered HT29 cell proliferation under simultaneous treatment with a VEGFR or EGFR inhibitor. Our results provide
 some of the first evidence for PDGF cross-signaling through alternative receptors in colorectal cancer and support
-anti-PDGF therapy as a combination strategy alongside VEGF and EGF targeting even in tumors lacking PDGFR expression."  
-* My thoughts:   
+anti-PDGF therapy as a combination strategy alongside VEGF and EGF targeting even in tumors lacking PDGFR expression.
+  "  
+  
+Also, Kranenburg refers to an older Kranenburg paper in which there is some cell line and mouse experiments. Are 
+they in R2? "PDGFRB Promotes Liver Metastasis Formation of Mesenchymal-Like Colorectal Tumor Cell"
+  
+  
 
 ## Trial in patiënts
 
