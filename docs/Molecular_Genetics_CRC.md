@@ -406,13 +406,13 @@ ToDo: Remove picture
   
 
 **ToDo: remove answers**  
-**1)expression of specific mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 was strongly and significantly 
+1)expression of specific mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 was strongly and significantly 
 reduced after imatinib treatment (here you cant read teh significance - we could choose a different visualization  
 2)- Zinc finger E-box binding homeobox 1 (ZEB1) is a transcription factor that promotes tumor 
 invasion and metastasis by inducing epithelial-mesenchymal transition (EMT) in carcinoma cells. EMT not only plays 
 an important role in embryonic development and malignant progression, but is also implicated in cancer therapy 
 resistance.  
-PDGFRA, PDGFRB, PDGFC, and KIT, identifies CMS4 CRC with very high sensitivity and specificity**
+PDGFRA, PDGFRB, PDGFC, and KIT, identifies CMS4 CRC with very high sensitivity and specificity
 <br>
 <br>
 
@@ -422,6 +422,7 @@ PDGFRA, PDGFRB, PDGFC, and KIT, identifies CMS4 CRC with very high sensitivity a
 
 ToDo: optional analysis - I have not made all the steps. If we want these three analyses in, I will write the actual 
 steps down.  
+
 Mesenchymal tumor phenotypes are generally accompanied by reduced proliferation. Indeed, high expression of
 proliferation signatures and Wnt target genes are associated with good prognosis and reduced metastatic capacity in CRC
 
@@ -474,7 +475,7 @@ post-imatinib) and how many genes were upregulated (imatinib: pre-imatinib < pos
 ![](_static/images/R2d2_logo.png)**How many upregulated and how many downregulated genes were found?** 
 
 **ToDo: remove answers**  
-**442 and 222**
+442 and 222
 ______
 
 * To use this genelist in other analyses within R2, click on the lowest button on the right side that is labeled 
@@ -485,13 +486,15 @@ ______
   
 The treatment resulted in a shift in gene expressions. To find out what the effect is of this shift, we will make 
 use of geneset of upregulated genes that we just saved, now in combination with the Guinney dataset, the 
-cohort dataset with annotated CMS status and survival data. 
+cohort dataset with annotated CMS status and survival data. We use the unsupervised k-means algoritm to find groups 
+in our cohort that sow similar expression patterns for our geneset. 
 
 * On the main page, select the Guinney dataset again
-* Select the K-means analysis in box 3 and click Next
-* * In the subset 
+* Select the **K-means analysis** in *box 3* and click Next
+* In the *Subset track* dropdown, select **lv_stage**, and in the pop up window check the boxes **2** and **3** , 
+  click **Ok**
 * Behind the setting *Gene set*, you find the button **Search GS**. Click on the button and find your previously 
-  stored geneset under **User gene sets > - > impacct_imatinib_treatment_up** and hit the green button on the left 
+  stored gene set under **User gene sets > - > impacct_imatinib_treatment_up** and hit the green button on the left 
   to use the selected gene set
 * We leave the number of groups at 2 
 * Set the *Cell* width to **1** and click on next
@@ -513,60 +516,72 @@ ToDo: Remove picture
 expression of the geneset?**
 
 **ToDo: remove answers**  
-**The yellow group is high (red) and the purple group shows low expression on average (blue)**
+The yellow group is high (red) and the purple group shows low expression on average (blue)
+The genes seem to be quite well coregulated in the two groups, on egroups seems to have upregulation and one group 
+shows downregulation. 
 ______
 
 Again this group division can be stored in R2 to use in a next analysis. 
-* To do so, hit the button **Store as track* that you can find on the left
+* To do so, hit the button **Store as track** that you can find on the left
 * On the following page, just click the button Next
-* To remember the results that the kmeans heatmap showed us, change the name of *Group 'cluster 1'* into 
-  **high** and of *Group 'cluster 2'* into **low** and change *Track name* into **kmeans_imatinib_induced**
+* To save the results in a way in which we will easily remember what the track was for and whic group showed wich
+  expression, change the name of *Group 'cluster 1'* into **high** and of *Group 'cluster 2'* into **low**. Also 
+  change *Track name* into **kmeans_imatinib_induced**
 * Click on Build set and go back to the main page
 
-Let's see which cms groups are represented in the two different groups
+Let's see which cms subtypes are represented in the two k-means sample clusters
 * On the main page, select the analysis **Relate 2 tracks**
 * For the *X track* scroll all the way down and select **kmeans_imatinib_induced**
 * For the *Y track* choose **lv_cms_final**
-* Change the *Graph type* into **Stacked bar plot (%)** and *Color mode* to **Color by Track**
+* In the *Subset track* dropdown, select **lv_stage**, and in the pop up window check the boxes **2** and **3** ,
+  click **Ok**
+* Change the *Graph type* into **Stacked bar plot (%)**
 * *Order Groups by* **group size** and hit **Submit**
 
 ToDo: Remove picture
 
-![](_static/images/MolGenCRC/temp/impacct_relate2tracks_stackedbars_delete_later.png "Figure 4: Relate 2 tracks shows a shift 
+![](_static/images/MolGenCRC/temp/impacct_relate2tracks_stackedbars_delete_later_stage23.png "Figure 4: Relate 2 tracks shows a shift 
 from CMS 4 to cms 2, todo remove")
 
 [**Relate 2 tracks shows a shift
-from CMS 4 to cms 2, todo remove**](_static/images/MolGenCRC/temp/impacct_relate2tracks_stackedbars_delete_later.png)  
+from CMS 4 to cms 2, todo remove**](_static/images/MolGenCRC/temp/impacct_relate2tracks_stackedbars_delete_later_stage23.png)  
 
 
-
-cluster the Stage II and III tumors in this cohort into low and high expression subgroups using the k-means algorithm  
 
 ------
 
-![](_static/images/R2d2_logo.png)**If the impact of imatinib shows a shift of the geneset shift from low expression to 
+![](_static/images/R2d2_logo.png)**If the impact of imatinib shows a shift of the geneset from low expression to 
 high expression values, what shift in CMS subtypes do we expect to see?**
 
 ![](_static/images/R2d2_logo.png)**What is known about the treatability of subtype 4 and cms 2 respectively?**
 
 **ToDo: remove answers**  
-**A shift from mostly CMS 4 to to mostly CMS 2**  
-**CMS 4 is more  CMS4 tumors have the highest propensity for developing distant metastases, and CMS2 has better prognosis**
+A shift from mostly CMS 4 to to mostly CMS 2  
+CMS 4 is more  CMS4 tumors have the highest propensity for developing distant metastases, and CMS2 has better prognosis
 ______
   
 ToDo: not sure we want to include this analysis
   
 * From the main page in the left menu click the **Survival (Kaplan Meier/Cox)** analysis
 * Check that the Guinney set is selected and that the separation is made by **a categorical track**. Click **Next**
-* Choose *overall* survival type and Track **kmeans_imatinib_induced**. Click Next
+* Choose *overall* survival type and *Track* **kmeans_stage23_imatinib_induced**. Click Next
 
 
-![](_static/images/MolGenCRC/temp/KaplanMeier_track_impacct_kMeans_result_delete_later.png "Figure 4: Survival 
+![](_static/images/MolGenCRC/temp/KaplanMeier_stage23_overall_impacct_kMeans_result_delete_later.png "Figure 4: Survival 
 chances that are linked to the gene shift, todo remove")
 
 [**Survival
-chances that are linked to the gene shift, todo remove**](_static/images/MolGenCRC/temp/KaplanMeier_track_impacct_kMeans_result_delete_later.png)
+chances that are linked to the gene shift, todo remove**](_static/images/MolGenCRC/temp/KaplanMeier_stage23_overall_impacct_kMeans_result_delete_later.png)
 
+* In the left menu click again the **Survival (Kaplan Meier/Cox)** analysis
+* Repeat the process but select the **relapse free** in stead of *overall* survival type. 
+
+![](_static/images/MolGenCRC/temp/KaplanMeier_stage23_relapsefree_impacct_kMeans_result_delete_later.png "Figure 4: 
+Survival
+chances that are linked to the gene shift, todo remove")
+
+[**Survival
+chances that are linked to the gene shift, todo remove**](_static/images/MolGenCRC/temp/KaplanMeier_stage23_relapsefree_impacct_kMeans_result_delete_later.png)
 
 ------
 
