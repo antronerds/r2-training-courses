@@ -357,7 +357,26 @@ set analysis, todo remove")
 ## Experiment in cell lines
 
 ToDo: Now that we have discovered interesting mechanisms that influence the development of CRC, the question rises:
-can we influence the mechanisms by targeting a gene or a pathway?
+can we influence the mechanisms by targeting a gene or a pathway?  
+
+* In Kranenburg paper, they say:  
+"In pre-clinical studies, **_inhibition of PDGFR/KIT signaling reduces tumor cell invasion and metastatic potential in
+models of mesenchymal-like CRC_** (7, 8, 11) and other cancer types (12–14), suggesting that imatinib may have value 
+as a CMS4-targeting drug."  11 is a study from 2006
+
+* One colon pdgf related experiment dataset is available in R2:  
+Exp Colon (PDGF/VEGF stimulation) - Waaga-Gasser - 24 - custom - affypv  
+* In the paper "Platelet-derived growth factor (PDGF) cross-signaling via non-corresponding receptors indicates bypassed
+signaling in colorectal cancer" (Mönch R, Scholz CJ, Waaga-Gasser AM, et al 2022) 
+* The aim of the study: "We have recently provided evidence for upregulation of PDGF expression in UICC stage I-IV
+  primary colorectal cancer (CRC) and demonstrated PDGF-mediated induction of PI3K/Akt/mTOR signaling in CRC cell lines.
+  The present study sought to follow up on our previous findings and explore the alternative receptor cross-binding
+  potential of PDGF in CRC.
+* The conclusion: 
+"PDGF recovered HT29 cell proliferation under simultaneous treatment with a VEGFR or EGFR inhibitor. Our results provide
+some of the first evidence for PDGF cross-signaling through alternative receptors in colorectal cancer and support
+anti-PDGF therapy as a combination strategy alongside VEGF and EGF targeting even in tumors lacking PDGFR expression."  
+* My thoughts:   
 
 ## Trial in patiënts
 
