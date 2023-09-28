@@ -242,6 +242,12 @@ KRAS mutation
 
 
 
+### Experiments
+
+
+Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo
+
+![](_static/images/MolGenCRC/atf3_sammons.png "Figure 2: heatmap")
 
 
 
