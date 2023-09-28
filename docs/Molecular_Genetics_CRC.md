@@ -618,6 +618,14 @@ ______
 
 
 ### Single cell?
+Maybe? Mixed Colon Adenoma-carcinoma - Shi - 43981 - cp10k - 10x300hg38
+"Adenoma-carcinoma sequence is a well-accepted roadmap for the development of sporadic colorectal carcinoma. However, cellular heterogeneity in aberrant epithelia and the complexity of tumor microenvironment limited the understanding of carcinogenesis. Here we performed a scRNA-seq survey from patient-matched samples, including blood, normal, para-cancer, polyp, and cancer tissues."
+
+
+![](_static/images/MolGenCRC/temp/Shi_-Singlecell.png "Figure 4:
+cell populations were visualized using t-SNE plots based on the cluster, tissue origin, and patient origin, todo remove")
+
+[**cell populations were visualized using t-SNE plots based on the cluster, tissue origin, and patient origin, todo remove**](_static/images/MolGenCRC/temp/Shi_-Singlecell.png)
 
 
 ## Evaluation
