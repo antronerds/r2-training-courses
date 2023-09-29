@@ -6,8 +6,8 @@ Molecular Genetics Course - Colorectal Cancer
 *Analyse Colorectal Cancer using the R2 data analysis platform*
 
 This resource is located online at http://r2platform.com/mgcourse  
-  
  
+  
 Introduction
 ------------
 
@@ -17,24 +17,24 @@ ToDo: Here we give in introduction into CRC CMS etc
   
   [**Figure 1: CMS classification**](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg)
 
+The <button class="course_permalink">grey buttons</button> in this course will bring you to the R2 platform, often with
+pre-set settings such that you can pick up an analysis easily. The <button class="course googleform">green
+buttons</button> in this document will open up a Google form, one per section, with which you can submit your answers.
 
-The <button class="course_permalink">grey buttons</button> in this course will bring you to the R2 platform, often with pre-set settings such that you can pick up an analysis easily. The <button class="course googleform">green buttons</button> in this document will open up a Google form, one per section, with which you can submit your answers.
-
-We would like to ask you to fill in the evaluation form about this R2 course during or at the end of the course. To open the form, click the button below:
+We would like to ask you to fill in the evaluation form about this R2 course during or at the end of the course. To open
+the form, click the button below:
 
 
 
 
 The R2 platform:
 ---------------------------------------
- *Maybe a small introduction*
+*Maybe a small introduction*
 
-
-
-
-## Normal vs Colon: 
+## Normal vs Colon:
 
 **Datasets used:**
+  
 * Mixed Colon - Marra - 64 - MAS5.0 - u133p2
 * Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode3
 
@@ -256,43 +256,64 @@ Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog
 
 
 ## CMS
+
 ToDo: Intro to CMS now in the words of the Guinney paper:
 
-"Thanks to collaborative bioinformatics work on the largest collection of CRC cohorts with molecular annotation to date, 
-and building upon previous efforts by the independent researchers, the consortium resulted in a consensus molecular 
-classification system that allows the categorization of most tumors into one of four robust subtypes. Marked differences 
-in the intrinsic biological underpinnings of each subtype support the new taxonomy of this disease (Fig. 5) that will 
-facilitate future research in this field and should be adopted by the community for CRC stratification: CMS1 (MSI Immune), 
-CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal)." (Guinney 2015et al., Nat Med. 2015 Nov; 21(11): 1350–1356. )
+"Thanks to collaborative bioinformatics work on the largest collection of CRC cohorts with molecular annotation to date,
+and building upon previous efforts by the independent researchers, the consortium resulted in a consensus molecular
+classification system that allows the categorization of most tumors into one of four robust subtypes. Marked differences
+in the intrinsic biological underpinnings of each subtype support the new taxonomy of this disease (Fig. 5) that will
+facilitate future research in this field and should be adopted by the community for CRC stratification: CMS1 (MSI
+Immune),
+CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal)." (Guinney 2015et al., Nat Med. 2015 Nov; 21(11):
+1350–1356. )
 
+#### Different survival chances for different CMS CRC subtypes? 
+
+* In the left side menu on the main page, click on Survival (Kaplan-Meier / Cox)
+* In the menu at the center of the page, click at the Dataset setting on the current Dataset name, and find the dataset 
+that  
+  Guinney dataset
+ 
 
 ##### Clustering with t-SNE maps
 
-We've seen that the expression of genes differs among the samples and the CRC subtypes seem to specifically express certain genes. 
-To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good idea. 
-The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of samples 
-and will clump similar cells together on a map.   
+We've seen that the expression of genes differs among the samples and the CRC subtypes seem to specifically express
+certain genes.
+To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good
+idea.
+The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of
+samples
+and will clump similar cells together on a map.
 
-* Click the button below to show the t-SNE map in R2: 
+* Click the button below to show the t-SNE map in R2:  
+
 
 ![](_static/images/MolGenCRC/temp/tSNE204_create_permalink_later.png "Figure 2: temp image, todo make permalink tSNE with CMS coloring")
 
 [**Figure 2: temp image, todo make permalink tSNE with CMS coloring**](_static/images/MolGenCRC/temp/tSNE204_create_permalink_later.png)
 
+
 ToDo make permalink to tSNE instead of image above  
-<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_tsne_86_6tumortypes" target="_blank">Go to the t-SNE map</a>
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_tsne_86_6tumortypes" target="_blank">
+Go to the t-SNE map</a>
 <br>
 <br>
 
 Under the graph, a menu allows the user to adapt settings.
-Colors of the graph points are not set by default.  
-* Find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the *cms_predicted* track 
-again, and click **Submit** to show the changes.
-* The different maps can be found under de setting Versions. Set **Versions** to the value *all* and click **Submit** again. 
+Colors of the graph points are not set by default.
+
+* Find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the
+  *cms_predicted* track
+  again, and click **Submit** to show the changes.
+* The different maps can be found under de setting Versions. Set **Versions** to the value *all* and click **Submit**
+  again.
 
   
   
-------
+
+------  
+
 
   ![](_static/images/R2d2_logo.png)**What insight did you obtain when you colored the plot with annotation?**
 
@@ -306,7 +327,7 @@ again, and click **Submit** to show the changes.
 
 ### Differences between the various CMS types
 
-Previously we looked into CMS subtype 1. We would like to understand what sets CMS 4 apart from the subtypes 2 and 3. 
+Previously we looked into CMS subtype 1. We would like to understand what sets CMS 4 apart from the subtypes 2 and 3.
 
 * From the main page choose the analysis Differential Expression Between Two Groups. 
 * ToDo: how to Choose the track cms4vs3
@@ -321,9 +342,9 @@ meaningful insights into the underlying biology of a particular condition or exp
 * Switch the Representation setting to all 
 * Click Next
 
-
 ToDo: Remove picture
-![](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png "Figure 3: temp image of result Gene set analysis, todo remove")
+![](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png "Figure 3: temp image of result Gene 
+set analysis, todo remove")
 
 [**Figure 3: temp image of result Gene set analysis, todo remove**](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png)
 
@@ -339,31 +360,299 @@ ToDo: Remove picture
 
 ------
 
-
-
 ## Experiment in cell lines
-ToDo: Now that we have discovered interesting mecanisms that influence teh development of CRC, can we influence the mechanisms by targeting a gene? 
+
+ToDo: Now that we have discovered interesting mechanisms that influence the development of CRC, the question rises:
+can we influence the mechanisms by targeting a gene or a pathway?  
+
+* In Kranenburg paper, they say:  
+"In pre-clinical studies, **_inhibition of PDGFR/KIT signaling reduces tumor cell invasion and metastatic potential in
+models of mesenchymal-like CRC_** (7, 8, 11) and other cancer types (12–14), suggesting that imatinib may have value 
+as a CMS4-targeting drug."  11 is a study from 2006
+
+* One colon pdgf related experiment dataset is available in R2:  
+Exp Colon (PDGF/VEGF stimulation) - Waaga-Gasser - 24 - custom - affypv  
+* In the paper "Platelet-derived growth factor (PDGF) cross-signaling via non-corresponding receptors indicates bypassed
+signaling in colorectal cancer" (Mönch R, Scholz CJ, Waaga-Gasser AM, et al 2022) 
+* The aim of the study: "We have recently provided evidence for upregulation of PDGF expression in UICC stage I-IV
+  primary colorectal cancer (CRC) and demonstrated PDGF-mediated induction of PI3K/Akt/mTOR signaling in CRC cell lines.
+  The present study sought to follow up on our previous findings and explore the alternative receptor cross-binding
+  potential of PDGF in CRC.
+* The conclusion: 
+"PDGF recovered HT29 cell proliferation under simultaneous treatment with a VEGFR or EGFR inhibitor. Our results provide
+some of the first evidence for PDGF cross-signaling through alternative receptors in colorectal cancer and support
+anti-PDGF therapy as a combination strategy alongside VEGF and EGF targeting even in tumors lacking PDGFR expression.
+  "  
+  
+Also, Kranenburg refers to an older Kranenburg paper in which there is some cell line and mouse experiments. Are 
+they in R2? "PDGFRB Promotes Liver Metastasis Formation of Mesenchymal-Like Colorectal Tumor Cell"
+  
+  
 
 ## Trial in patiënts
+
 Is a drug or treatment effective?
 
-### Single cell? 
+Mesenchymal Consensus Molecular Subtype 4 (CMS4) colon cancer is associated with poor prognosis and therapy resistance.
+MES signature is strongly correlated with CMS4 some MES genes  
+"In the ImPACCT trial, informed consent was obtained for molecular subtyping at initial diagnosis of colon cancer using
+a validated RT-qPCR CMS4-test on three biopsies per tumor (Phase-1, n=69 patients), and for neoadjuvant CMS4-targeting
+therapy with imatinib (Phase-2, n=5). Pre- and post-treatment tumor biopsies were analyzed by RNA-sequencing and
+immunohistochemistry. Imatinib-induced gene expression changes were associated with molecular subtypes and survival in
+an independent cohort of 3232 primary colon cancer."
+
+"The mesenchymal-to-epithelial phenotype shift following imatinib therapy coincided with increased expression of WNT- and
+MYC-target genes and signatures reflecting proliferation. Accelerated proliferation may – at first sight – not be
+considered a desired effect of any anti-cancer therapy. However, high expression of proliferation signatures and WNT
+target genes are associated with good prognosis and reduced metastatic capacity in CRC (36–38). Proliferation and
+invasion are often inversely regulated in tumor biology, supporting the notion that proliferating tumor cells have to
+switch their transcriptional state (through EMT) in order to acquire invasive and metastatic properties (40, 44, 45).
+Proliferating tumor cells require high expression of mTORC1 and its target genes to meet their anabolic demand (46). The
+high expression of mTORC1 in imatinib-treated tumors may therefore simply reflect the MET phenotype switch."
+
+We want to see how the expression changes between the pre and post treatment samples expression of specific 
+mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :
+(ToDo: or Wnt pathway etc uit Supplementary materials)
+* On the main page in the center menu, select the dataset **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**  
+* Choose the analysis **View Multiple Genes** and click Next
+* In the *Genes/Reporters to include* textbox, type **Zeb1,PDGFRA,PDGFRB,CD36**
+* Set Track to **imatinib** to divide the samples in the pretreatment and the posttreatment group and *Handle groups 
+  by* **lump by gene plot group** to show this per gene. 
+* Set *color by* to **Track** in order to make the box plots visually more dictinct.  
+* Click next
+
+ToDo: Remove picture
+![](_static/images/MolGenCRC/temp/impacct_Viewmultiplegenes_4genesign_result_delete_later.png "Figure 4: View  
+ multiple genes 4 gene signature, todo remove")
+
+[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/impacct_Viewmultiplegenes_4genesign_result_delete_later.png)
+
+
+------
+
+  ![](_static/images/R2d2_logo.png)**What can you say about the level of expression of these genes post treatment?**
+
+  ![](_static/images/R2d2_logo.png)**What is the role of ZEB1 in EMT?**
+  
+
+**ToDo: remove answers**  
+1)expression of specific mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 was strongly and significantly 
+reduced after imatinib treatment (here you cant read teh significance - we could choose a different visualization  
+2)- Zinc finger E-box binding homeobox 1 (ZEB1) is a transcription factor that promotes tumor 
+invasion and metastasis by inducing epithelial-mesenchymal transition (EMT) in carcinoma cells. EMT not only plays 
+an important role in embryonic development and malignant progression, but is also implicated in cancer therapy 
+resistance.  
+PDGFRA, PDGFRB, PDGFC, and KIT, identifies CMS4 CRC with very high sensitivity and specificity
+<br>
+<br>
+
+------
+
+### Proliferation vs metastases 
+
+ToDo: optional analysis - I have not made all the steps. If we want these three analyses in, I will write the actual 
+steps down.  
+
+Mesenchymal tumor phenotypes are generally accompanied by reduced proliferation. Indeed, high expression of
+proliferation signatures and Wnt target genes are associated with good prognosis and reduced metastatic capacity in CRC
+
+ToDo: Remove picture
+![](_static/images/MolGenCRC/temp/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
+multiple genes 4 gene signature, todo remove")
+
+[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+
+
+ToDo: Remove picture
+![](_static/images/MolGenCRC/temp/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
+multiple genes 4 gene signature, todo remove")
+
+[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+
+ToDo: Remove picture
+![](_static/images/MolGenCRC/temp/mtorc1_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
+multiple genes 4 gene signature, todo remove")
+
+[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/mtorc1_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+
+"The mesenchymal-to-epithelial phenotype shift following imatinib therapy coincided with increased expression of WNT- and
+MYC-target genes and signatures reflecting proliferation. Accelerated proliferation may – at first sight – not be
+considered a desired effect of any anti-cancer therapy. However, high expression of proliferation signatures and WNT
+target genes are associated with good prognosis and reduced metastatic capacity in CRC (36–38). Proliferation and
+invasion are often inversely regulated in tumor biology, supporting the notion that proliferating tumor cells have to
+switch their transcriptional state (through EMT) in order to acquire invasive and metastatic properties (40, 44, 45).
+Proliferating tumor cells require high expression of mTORC1 and its target genes to meet their anabolic demand (46). The
+high expression of mTORC1 in imatinib-treated tumors may therefore simply reflect the MET phenotype switch"
+
+### Assess the prognostic value of imatinib treatment
+To assess the potential prognostic value of the treatment, we will make a signature of the genes that were changed 
+after treatment. 
+
+* On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
+* Select the analysis **Differential expression between two groups**
+* Switch the *Group by* setting to **imatinib (2cat)** and click Submit
+* Extra settings appear. We can now fill in the groups for which we want to find the differentially expressed genes: 
+  *Group 1* **pre-imatinib (15)** and *Group 2* **post-imatinib (15)**
+* Set the *P-value cutoff* to a stricter value: **0.001** and click Submit
+
+A table shows the differentially expressed genes. On the right underneath buttons with follow up analyses, you can 
+find a small table that shows how many genes were downregulated by the imatinib treatment (imatinib: pre-imatinib >= 
+post-imatinib) and how many genes were upregulated (imatinib: pre-imatinib < post-imatinib). 
+
+
+------
+
+![](_static/images/R2d2_logo.png)**How many upregulated and how many downregulated genes were found?** 
+
+**ToDo: remove answers**  
+442 and 222
+______
+
+* To use this genelist in other analyses within R2, click on the lowest button on the right side that is labeled 
+  *Store result as custom gene set*
+* As a name, type **impacct_imatinib_treatment_up**
+* In the *Included groups* check only the upregulated genes
+* Click on **Save gene set**
+  
+The treatment resulted in a shift in gene expressions. To find out what the effect is of this shift, we will make 
+use of geneset of upregulated genes that we just saved, now in combination with the Guinney dataset, the 
+cohort dataset with annotated CMS status and survival data. We use the unsupervised k-means algoritm to find groups 
+in our cohort that sow similar expression patterns for our geneset. 
+
+* On the main page, select the Guinney dataset again
+* Select the **K-means analysis** in *box 3* and click Next
+* In the *Subset track* dropdown, select **lv_stage**, and in the pop up window check the boxes **2** and **3** , 
+  click **Ok**
+* Behind the setting *Gene set*, you find the button **Search GS**. Click on the button and find your previously 
+  stored gene set under **User gene sets > - > impacct_imatinib_treatment_up** and hit the green button on the left 
+  to use the selected gene set
+* We leave the number of groups at 2 
+* Set the *Cell* width to **1** and click on next
+
+The Kmeans algorithm looks at the expression of the samples for the selected genes and makes two groups of samples 
+that show most similar expression patterns. Then for each gene it shows the expression by a color code
+ToDo small insert about heatmaps. 
+
+ToDo: Remove picture  
+
+  ![](_static/images/MolGenCRC/temp/impacct_kMeans_result_delete_later.png "Figure 4: kmeans result, todo remove")
+
+  [**Figure 4: kmeans result, todo remove**](_static/images/MolGenCRC/temp/impacct_kMeans_result_delete_later.png)
+
+
+------
+
+  ![](_static/images/R2d2_logo.png)**Which group would you say shows high expression and which group shows low 
+expression of the geneset?**
+
+**ToDo: remove answers**  
+The yellow group is high (red) and the purple group shows low expression on average (blue)
+The genes seem to be quite well coregulated in the two groups, on egroups seems to have upregulation and one group 
+shows downregulation. 
+______
+
+Again this group division can be stored in R2 to use in a next analysis. 
+* To do so, hit the button **Store as track** that you can find on the left
+* On the following page, just click the button Next
+* To save the results in a way in which we will easily remember what the track was for and whic group showed wich
+  expression, change the name of *Group 'cluster 1'* into **high** and of *Group 'cluster 2'* into **low**. Also 
+  change *Track name* into **kmeans_imatinib_induced**
+* Click on Build set and go back to the main page
+
+Let's see which cms subtypes are represented in the two k-means sample clusters
+* On the main page, select the analysis **Relate 2 tracks**
+* For the *X track* scroll all the way down and select **kmeans_imatinib_induced**
+* For the *Y track* choose **lv_cms_final**
+* In the *Subset track* dropdown, select **lv_stage**, and in the pop up window check the boxes **2** and **3** ,
+  click **Ok**
+* Change the *Graph type* into **Stacked bar plot (%)**
+* *Order Groups by* **group size** and hit **Submit**
+
+ToDo: Remove picture
+
+![](_static/images/MolGenCRC/temp/impacct_relate2tracks_stackedbars_delete_later_stage23.png "Figure 4: Relate 2 tracks shows a shift 
+from CMS 4 to cms 2, todo remove")
+
+[**Relate 2 tracks shows a shift
+from CMS 4 to cms 2, todo remove**](_static/images/MolGenCRC/temp/impacct_relate2tracks_stackedbars_delete_later_stage23.png)  
+
+
+
+------
+
+![](_static/images/R2d2_logo.png)**If the impact of imatinib shows a shift of the geneset from low expression to 
+high expression values, what shift in CMS subtypes do we expect to see?**
+
+![](_static/images/R2d2_logo.png)**What is known about the treatability of subtype 4 and cms 2 respectively?**
+
+**ToDo: remove answers**  
+A shift from mostly CMS 4 to to mostly CMS 2  
+CMS 4 is more  CMS4 tumors have the highest propensity for developing distant metastases, and CMS2 has better prognosis
+______
+  
+ToDo: not sure we want to include this analysis
+  
+* From the main page in the left menu click the **Survival (Kaplan Meier/Cox)** analysis
+* Check that the Guinney set is selected and that the separation is made by **a categorical track**. Click **Next**
+* Choose *overall* survival type and *Track* **kmeans_stage23_imatinib_induced**. Click Next
+
+
+![](_static/images/MolGenCRC/temp/KaplanMeier_stage23_overall_impacct_kMeans_result_delete_later.png "Figure 4: Survival 
+chances that are linked to the gene shift, todo remove")
+
+[**Survival
+chances that are linked to the gene shift, todo remove**](_static/images/MolGenCRC/temp/KaplanMeier_stage23_overall_impacct_kMeans_result_delete_later.png)
+
+* In the left menu click again the **Survival (Kaplan Meier/Cox)** analysis
+* Repeat the process but select the **relapse free** in stead of *overall* survival type. 
+
+![](_static/images/MolGenCRC/temp/KaplanMeier_stage23_relapsefree_impacct_kMeans_result_delete_later.png "Figure 4: 
+Survival
+chances that are linked to the gene shift, todo remove")
+
+[**Survival
+chances that are linked to the gene shift, todo remove**](_static/images/MolGenCRC/temp/KaplanMeier_stage23_relapsefree_impacct_kMeans_result_delete_later.png)
+
+------
+
+![](_static/images/R2d2_logo.png)**What is your conclusion?**
+
+**ToDo: remove answers**  
+
+**Better survival chances**
+______
+
+
+### Single cell?
+Maybe? Mixed Colon Adenoma-carcinoma - Shi - 43981 - cp10k - 10x300hg38
+"Adenoma-carcinoma sequence is a well-accepted roadmap for the development of sporadic colorectal carcinoma. However, cellular heterogeneity in aberrant epithelia and the complexity of tumor microenvironment limited the understanding of carcinogenesis. Here we performed a scRNA-seq survey from patient-matched samples, including blood, normal, para-cancer, polyp, and cancer tissues."
+
+
+![](_static/images/MolGenCRC/temp/Shi_-Singlecell.png "Figure 4:
+cell populations were visualized using t-SNE plots based on the cluster, tissue origin, and patient origin, todo remove")
+
+[**cell populations were visualized using t-SNE plots based on the cluster, tissue origin, and patient origin, todo remove**](_static/images/MolGenCRC/temp/Shi_-Singlecell.png)
 
 
 ## Evaluation
+
 Please don't forget to fill in the evaluation form about this R2 course, if you haven't done so yet:
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSflNJpsTcLIhwEC0ZlHksfnE0VwBay1I2KOGPArYu4Q_QhtrA/viewform?usp=sf_link','_blank');" type="button">Open the Evaluation form</button>
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSflNJpsTcLIhwEC0ZlHksfnE0VwBay1I2KOGPArYu4Q_QhtrA/viewform?usp=sf_link','_blank');" type="button">
+Open the Evaluation form</button>
 
 ---------
 
 Final remarks / future directions
 ---------------------------------
-In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize your genomics data. 
+In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across
+childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize
+your genomics data.
 <br><br>
 This ends the course. Feel free to further explore the course materials or our tutorials.
 <br><br>
-We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
+We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2
+platform you can always consult r2-support@amc.nl
 <br><br>
 The R2 support team.
 
