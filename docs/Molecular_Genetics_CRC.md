@@ -243,6 +243,11 @@ KRAS mutation
 
 
 
+![](_static/images/MolGenCRC/temp/KaplanMeier_Guinney_cms_survivalchances_delete_later.png "Figure: Differences in 
+survival chances per CMS")
+
+[**Figure: Differences in
+survival chances per CMS**](_static/images/MolGenCRC/temp/KaplanMeier_Guinney_cms_survivalchances_delete_later.png)
 
 
 
@@ -265,9 +270,16 @@ CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal)." (Guinney 2015et al.
 #### Different survival chances for different CMS CRC subtypes? 
 
 * In the left side menu on the main page, click on Survival (Kaplan-Meier / Cox)
-* In the menu at the center of the page, click at the Dataset setting on the current Dataset name, and find the dataset 
-that  
-  Guinney dataset
+* In the menu at the center of the page, click at the Dataset setting on the current Dataset name, and find the 
+  dataset with *Author* is **Guinney** and the amount of samples *N* is **3232**
+* Click on the row to read its description in the information box underneath the dataset selection grid
+
+ToDo: Fill in the information about the dataset Summary Design etc
+
+* Leave *Separate by* at **categorical track (Kaplan-Meier)** and click **Next**
+* Choose *type of Survival* **overall* and *Track* **lv_cms_final**
+* 
+
  
 
 ##### Clustering with t-SNE maps
@@ -627,6 +639,7 @@ cell populations were visualized using t-SNE plots based on the cluster, tissue 
 
 [**cell populations were visualized using t-SNE plots based on the cluster, tissue origin, and patient origin, todo remove**](_static/images/MolGenCRC/temp/Shi_-Singlecell.png)
 
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8882672/
 
 ## Evaluation
 

@@ -44,59 +44,59 @@ Multiple testing corrections adjust p-values derived from multiple statistical t
 
 Select the **Mixed Colon - Marra - 64 - MAS5.0 - u133p2** in the main screen
 
-<!---
-or click the button 
-<form name="Mara 64 set " action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_coloncombi64_u133p2">
-  <button type="submit" >Go to Mixed Colon Marra</button>
-</form>  
--->
 <br>
 
-In the Main menu, **select type of analysis** in box 3 by clicking on the *Find differential expression between two groups* module in the dropdown. And click **next**. below.
+In the Main menu, **select type of analysis** in box 3 by clicking on the *Find differential expression between two groups* module in the dropdown. And click **next** below.
+  
 
-
-<!---
-Or click the button
-<form name='Find Diff' action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" method='POST' target='FindDiff'>
-<input type='hidden' name='option' value='findgene1'>
-<input type='hidden' name='table' value='ps_avgpres_coloncombi64_u133p2'>
-<button type="submit" >Go to Find differential </button>
-</form>
--->
-<br>
 In the next panel you have to **select a track**.
-So called tracks contain the annotation parameters of series of arrays of tumors or experiments. Choose the *tissue* track, as this contains assignment of each sample to the tumor or normal tissue group. Several other selection criteria can be adapted. Most settings are suited for regular analyses.
-
+So called tracks contain the annotation parameters of series of arrays of tumors or experiments. Choose the *tissue* track, as this contains assignment of each sample to the tumor or normal tissue group. Several other selection criteria can be adapted. 
+Click **Submit** such that extra settings become visible.  
+Select for *Group 1* **adenoma (32) and for *Gorup 2* **normal (32)**.
+Most default settings are suited for regular analyses.
+  
 **Question 1a:**
 
 You can also choose between several multiple testing correction methods. Which one is the most stringent?
 
 
-Before we start the calculations, make sure you selected *log2* as transformation and use *p<0.01* as a p-value cutoff. Then click **next**, and leave the group selection as is, click **next** again to start the analysis.
+Before we start the calculations, make sure you selected **log2** as *transformation* and use **0.01** as a *p-value 
+cutoff*. Then click **next** to start the analysis.
 
 **Question 1b:**
 
-R2 has generated a large list of genes which are differentially expressed between the selected subgroups. Can you say something about the distribution between up- or down-regulated genes?  Are the groups equal in size? (Hint: On the right side you can find buttons for further analyses, but also tables with summaries of the data).
+R2 has generated a large list of genes which are differentially expressed between the selected subgroups. 
+Can you say something about the distribution between up- or down-regulated genes?  Are the groups equal in size? 
+(Hint: On the right side you can find buttons for further analyses, but also tables with summaries of the data).
 
 
 **Question 1c:**
 
-Next to many publicly available datasets, R2 also hosts a lot of curated lists of genes which we call gene sets. These gene sets can be used to restrict an analysis as well. We can adapt our current search by scrolling down to the end of our gene list. There we find the Adjustable settings menu with which several settings can be chosen to adapt the analysis.   
-We are going to limit our analysis to genes specifically known to be involved in colorectal cancer. In the **Gene Filters** box you can use a **Gene set**, click the search GS button to filter your list. In the grid box, click the triagle next to the KEGG-pathway record and select the human disease category. Click the GREEN button use selected.  
+Next to many publicly available datasets, R2 also hosts a lot of curated lists of genes which we call gene sets. 
+These gene sets can be used to restrict an analysis as well. We can adapt our current search by scrolling down to 
+the end of our gene list. There we find the Adjustable settings menu with which several settings can be chosen to adapt the analysis.  
+We are going to limit our analysis to genes specifically known to be involved in colorectal cancer. 
+In the **Gene Filters** box you can use a *Gene set*, click the **search GS** button to filter your list. In the grid 
+box, click the triagle next to the **KEGG-pathway** record and select the **human disease category**. Click the GREEN 
+button use selected.  Click on **Submit** to redo the analysis of differentially expressed genes, now only for the 
+selected Gene subset
 
 
 
 **Question 2a:**
 
-The most significant gene in the list is the AXIN2 gene. Click on this entry from your result set to open the Gene View. The graph shows a neat separation in groups. Click *View Additional details*, and  investigate the probesets that were used. AXIN2 is represented by no fewer than four reporters (probe sets) on the Affymetrix U133 Plus 2.0 chip. 
+The most significant gene in the list of differentially expressed genes is the AXIN2 gene. Click on the magnifying 
+glass icon in front of the gene name to open the Gene View. 
+The graph shows a neat separation in groups. Click *View Additional details*, and  investigate the probesets that were used. 
+AXIN2 is represented by no fewer than four reporters (probe sets) on the Affymetrix U133 Plus 2.0 chip. 
 
 Examine the expression signals of the 4 probe sets, what do you notice
 
 
 **Question 2b:**
 
-Can you think of an explanation for this observation? (Tip: Use the R2 genome browser by clicking the 'R2 Tview' link in the probeset verification table.
+Can you think of an explanation for this observation? 
+(Tip: Use the R2 genome browser by clicking the 'R2 Tview' link in the probeset verification table.
 
 **Question 2c:**
 
