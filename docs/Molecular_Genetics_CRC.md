@@ -242,7 +242,11 @@ KRAS mutation
 
 
 
-### Experiments
+### Experiments TP53;Molecule of the year in 1994
+
+TP53 is mayor player of one of the tumor supressor mechanisms. 
+
+- Dysfunction 
 
 
 Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo
@@ -360,7 +364,7 @@ set analysis, todo remove")
 
 ------
 
-## Experiment in cell lines
+## Experiment in cell lines maybe skip this ?
 
 ToDo: Now that we have discovered interesting mechanisms that influence the development of CRC, the question rises:
 can we influence the mechanisms by targeting a gene or a pathway?  
