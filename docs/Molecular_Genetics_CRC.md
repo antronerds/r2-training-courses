@@ -126,12 +126,18 @@ This dataset consists of Microsatellite stable (MSS) tumors and microsatellite i
 
 The next section we will use another dataset. Select "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"
 
-
+![img_9.png](img_9.png)
 
 
 Use the “Find Differential expressed genes between groups” module to generate a list of genes that i differentially expressed between MSI and MSS characterized tumors.
 
 * Which one is in top list 
+
+
+Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
+
+
+
 
 * Inspect MH1 expression. 
 
@@ -242,11 +248,57 @@ KRAS mutation
 
 
 
-### Experiments TP53;Molecule of the year in 1994
+### Experiments TP53;Molecule of the year 1994
 
-TP53 is mayor player of one of the tumor supressor mechanisms. 
 
-- Dysfunction 
+The well-described tumor suppressor function of p53 primarily relies on
+transcriptional activation of these target genes and their ability to mitigate the consequences
+of damaged DNA.
+
+Nearly half of human malignancies harbor mutations in p53  that facilitate and promote metastasis, tumorigenesis, and resistance to apoptosis
+
+
+
+These mutations generally lead to loss of DNA binding and an inability to transactivate
+canonical anti proliferative p53 target genes.5 Genotoxic chemotherapeutics, like doxorubicin
+and etoposide, are clinically relevant activators of wild-type p53, but the potential
+risk of resistance and secondary malignancies due to increased mutational burden
+remains a significant concern.Given the powerful tumor suppression abilities of p53,
+restoration of the p53-regulated transcriptome without inducing additional DNA damage
+represents an intriguing approach for development of anticancer strategies and
+therapeutics.
+Nongenotoxic, small molecule activation of the p53 pathway has been proposed as
+a potential solution.
+
+Three drugs are used:
+
+
+**TP53 activation**
+Etoposide:  Clinically relevant activators of wild-type p53, Activates p53 via induction of  DNA double strand breaks. Initiation double strand breaks but leads of course to resitance and secondary malignancies. 
+Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non genotoxic
+
+
+
+
+**Integrated stress reponse  pathway:**
+
+Effector of anti-proliferative and cell death expression programs
+
+Tunicamycin: Activates the ISR (integrated stress repons pathway), via ER stress of accumulating 
+Histidinol: Activates the ISR (integrated stress repons pathway), via histinide depletion
+
+- ATF3 mRNA and protein levels increased under both p53 and ISR stimulating treatments
+in HCT116 WT cells
+
+- A second approach uses compounds like the MDM2 inhibitor nutlin-3A to activate wild-type p53 in a nongenotoxic
+
+- TP53 is mayor player of one of the tumor supressor mechanisms. 
+
+- Both the p53-dependent and the ATF4-driven ISR gene networks are antiproliferative,
+  either through induction of apoptosis or cell cycle control
+
+
+GADD45A
 
 
 Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo
