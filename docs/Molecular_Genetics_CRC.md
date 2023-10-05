@@ -332,6 +332,16 @@ Colors of the graph points are not set by default.
 
 ### Differences between the various CMS types
 
+#### Mutations
+
+Optionally perform a relate 2 tracks analysis to show the different percentages of braf and kras mutations per cms
+
+![](_static/images/MolGenCRC/temp/braf_and_kras_mutation_percms_guinney_stackedbars_delete_later.png "Figure 2: temp 
+image, Bras and Raf mutation ratios per CMS")
+
+[**Figure 2: temp image, Bras and Raf mutation ratios per CMS**](_static/images/MolGenCRC/temp/braf_and_kras_mutation_percms_guinney_stackedbars_delete_later.png)
+
+
 Previously we looked into CMS subtype 1. We would like to understand what sets CMS 4 apart from the subtypes 2 and 3.
 
 * From the main page choose the analysis Differential Expression Between Two Groups. 
@@ -347,9 +357,10 @@ meaningful insights into the underlying biology of a particular condition or exp
 * Switch the Representation setting to all 
 * Click Next
 
-ToDo: Remove picture
+ToDo: Remove picture  
+
 ![](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png "Figure 3: temp image of result Gene 
-set analysis, todo remove")
+set analysis, todo remove")  
 
 [**Figure 3: temp image of result Gene set analysis, todo remove**](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png)
 
