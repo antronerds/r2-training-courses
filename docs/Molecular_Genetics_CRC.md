@@ -337,9 +337,9 @@ Colors of the graph points are not set by default.
 Optionally perform a relate 2 tracks analysis to show the different percentages of braf and kras mutations per cms
 
 ![](_static/images/MolGenCRC/temp/braf_and_kras_mutation_percms_guinney_stackedbars_delete_later.png "Figure 2: temp 
-image, Bras and Raf mutation ratios per CMS")
+image, Braf and Kras mutation ratios per CMS")
 
-[**Figure 2: temp image, Bras and Raf mutation ratios per CMS**](_static/images/MolGenCRC/temp/braf_and_kras_mutation_percms_guinney_stackedbars_delete_later.png)
+[**Figure 2: temp image, Braf and Kras mutation ratios per CMS**](_static/images/MolGenCRC/temp/braf_and_kras_mutation_percms_guinney_stackedbars_delete_later.png)
 
 
 Previously we looked into CMS subtype 1. We would like to understand what sets CMS 4 apart from the subtypes 2 and 3.
