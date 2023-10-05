@@ -255,7 +255,7 @@ The well-described tumor suppressor function of p53 primarily relies on
 transcriptional activation of these target genes and their ability to mitigate the consequences
 of damaged DNA.
 
-Nearly half of human malignancies harbor mutations in p53  that facilitate and promote metastasis, tumorigenesis, and resistance to apoptosis
+Nearly half of human malignancies harbor mutations in p53  that facilitate and promote metastasis, tumorigenesis, and resistance to apoptosis.
 
 
 
@@ -270,36 +270,63 @@ therapeutics.
 Nongenotoxic, small molecule activation of the p53 pathway has been proposed as
 a potential solution.
 
-Three drugs are used:
+TP53 mutations were found in 60% of the CRCs. However, gene set enrichment analyses indicated that their transcriptional consequences varied among the CMSs and were most pronounced in CMS1-immune and CMS4-mesenchymal.
+
+Dataset being used:<br>
+**Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo**
+
+4 drugs are used:
+
+The four drugs can be diveded in two types.
 
 
-**TP53 activation**
+**TP53 activation:**
+
 Etoposide:  Clinically relevant activators of wild-type p53, Activates p53 via induction of  DNA double strand breaks. Initiation double strand breaks but leads of course to resitance and secondary malignancies. 
-Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non genotoxic
+Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non genotoxic, considered a proto-oncogene.
 
 
 
+  
 
 **Integrated stress reponse  pathway:**
 
 Effector of anti-proliferative and cell death expression programs
 
 Tunicamycin: Activates the ISR (integrated stress repons pathway), via ER stress of accumulating 
-Histidinol: Activates the ISR (integrated stress repons pathway), via histinide depletion
+Histidinol: Activates the ISR (integrated stress repons pathway), via histinide depletion.
 
-- ATF3 mRNA and protein levels increased under both p53 and ISR stimulating treatments
+
+
+* ATF3 mRNA and protein levels increased under both p53 and ISR stimulating treatments
 in HCT116 WT cells
-
-- A second approach uses compounds like the MDM2 inhibitor nutlin-3A to activate wild-type p53 in a nongenotoxic
-
-- TP53 is mayor player of one of the tumor supressor mechanisms. 
-
-- Both the p53-dependent and the ATF4-driven ISR gene networks are antiproliferative,
+* A second approach uses compounds like the MDM2 inhibitor nutlin-3A to activate wild-type p53 in a nongenotoxic
+* TP53 is mayor player of one of the tumor supressor mechanisms. 
+* Both the p53-dependent and the ATF4-driven ISR gene networks are antiproliferative,
   either through induction of apoptosis or cell cycle control
 
+**important genes:** 
 
-GADD45A
+GADD45A<br>
+MDM2<br>
+ATF3<br>
+ATf4
 
+
+
+* Check the TP53 level in this dataset. Is the dataset grouped by a different p53 expression
+A:
+![](_static/images/MolGenCRC/tp52wtvsko.png "Figure 2: heatmap")
+
+* Analyse which genes are affected by the compounds
+
+* Check dmso-drug1 with the P53 knock out
+
+* Check some paper ATF3 and ATF4
+
+
+
+In collega also MDM2 has been mentioned as negative P53 regulator.
 
 Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo
 
