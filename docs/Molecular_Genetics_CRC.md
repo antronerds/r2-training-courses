@@ -316,7 +316,7 @@ ATf4
 
 * Check the TP53 level in this dataset. Is the dataset grouped by a different p53 expression
 A:
-![](_static/images/MolGenCRC/tp52wtvsko.png "Figure 2: heatmap")
+![](_static/images/MolGenCRC/tp53wtvsko.png "Figure 2: heatmap")
 
 * Analyse which genes are affected by the compounds
 
