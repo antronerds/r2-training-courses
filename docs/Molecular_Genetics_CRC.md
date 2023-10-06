@@ -262,7 +262,7 @@ Immune),
 CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal)." (Guinney 2015et al., Nat Med. 2015 Nov; 21(11):
 1350–1356. )
 
-#### Different survival chances for different CMS CRC subtypes? 
+### Different survival chances for different CMS CRC subtypes? 
 
 * In the left side menu on the main page, click on Survival (Kaplan-Meier / Cox)
 * In the menu at the center of the page, click at the Dataset setting on the current Dataset name, and find the
@@ -309,7 +309,7 @@ CRC contains subtypes, of which we already looked at one subtype more in depth. 
 the subtypes further.
   
 
-##### Clustering with t-SNE maps
+### Clustering with t-SNE maps
 
 
 An unbiased unsupervised type of clustering analysis is a good starting point to familiarize yourself with a new 
