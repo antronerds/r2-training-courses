@@ -273,7 +273,7 @@ a potential solution.
 TP53 mutations were found in 60% of the CRCs. However, gene set enrichment analyses indicated that their transcriptional consequences varied among the CMSs and were most pronounced in CMS1-immune and CMS4-mesenchymal.
 
 Dataset being used:<br>
-**Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo**
+**Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo**.
 
 4 drugs are used:
 
@@ -287,9 +287,7 @@ Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non genotoxi
 
 
 
-  
-
-**Integrated stress reponse  pathway:**
+**Integrated stress repons  pathway:**
 
 Effector of anti-proliferative and cell death expression programs
 
@@ -320,22 +318,45 @@ A:
 
 * Analyse which genes are affected by the compounds
 
-* Check dmso-drug1 with the P53 knock out
+Let's start with drugs knownn to interact with tp53. In collegae also MDM2 has been mentioned as negative P53 regulator. 
+If you want to  find diffentially expressed genes in Tp53 dependent background which subgroups do you have to select.
 
-* Check some paper ATF3 and ATF4
+A: Select Nutlin-3a for the comparison and the P53 WT
+![](_static/images/MolGenCRC/list_DMSO_nutlin3a_sammons.png "list")
+
+* Do you see the MDM2 gene ?.
+
+* Inspect the MDM2 level in in a one gene view  are your surprised ?
+![](_static/images/MolGenCRC/MDM2-gene_sammons.png "MDM2")
+
+* Also check the relation with TP53
+  ![](_static/images/MolGenCRC/sammons_tp53MDM2.png. "TP53/MDM2")
+
+
+*  A very significant correlation. Can you think of a reason? Hint:you are looking at RNA expression levels, how does nutlin3a inhibits MDM2 ???
+
+A: protein interaction
+
+* And why is also TP53 increased ?
+
+A: ubiquitination
 
 
 
-In collega also MDM2 has been mentioned as negative P53 regulator.
+* ![](_static/images/MolGenCRC/Kegg_analysis.png "KEGG")
+
+* down regulated TP53 pathways and apoptosis pathway
+
+* Check of there is a overlap between genes affected
+
 
 Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo
 
 ![](_static/images/MolGenCRC/atf3_sammons.png "Figure 2: heatmap")
 
+![](_static/images/MolGenCRC/venn_drugsp53.png "Figure 2: heatmap")
 
-
-
-
+* Check some papers ATF3 and ATF4
 
 
 ## CMS
