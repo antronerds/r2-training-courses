@@ -262,6 +262,55 @@ Immune),
 CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal)." (Guinney 2015et al., Nat Med. 2015 Nov; 21(11):
 1350–1356. )
 
+### Clustering with t-SNE maps
+
+
+An unbiased unsupervised type of clustering analysis is a good starting point to familiarize yourself with a new
+dataset. The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of
+samples and will clump cells with similar expression profiles together on a map.
+
+* Click the button below to show the t-SNE map in R2:
+
+
+![](_static/images/MolGenCRC/temp/tSNE204_create_permalink_later.png "Figure 2: temp image, todo make permalink tSNE with CMS coloring")
+
+[**Figure 2: temp image, todo make permalink tSNE with CMS coloring**](_static/images/MolGenCRC/temp/tSNE204_create_permalink_later.png)
+
+
+ToDo make permalink to tSNE instead of image above  
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_tsne_86_6tumortypes" target="_blank">
+Go to the t-SNE map</a>
+<br>
+<br>
+
+Under the graph, a menu allows the user to adapt settings.
+Colors of the graph points are not set by default.
+
+* Find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the
+  *cms_predicted* track
+  again, and click **Submit** to show the changes.
+* The different maps can be found under de setting Versions. Set **Versions** to the value *all* and click **Submit**
+  again.  
+
+
+
+------  
+
+
+![](_static/images/R2d2_logo.png)**What insight did you obtain when you colored the plot with annotation?**
+
+![](_static/images/R2d2_logo.png)**Why do you think it is good practice to check different values for a parameter?**
+
+<br>
+<br>
+
+
+------  
+
+CRC contains subtypes, of which we already looked at one subtype more in depth. We will study differences among
+the subtypes further. To start, lets see if there is any difference in survival chances among the subtypes
+
+
 ### Different survival chances for different CMS CRC subtypes? 
 
 * In the left side menu on the main page, click on Survival (Kaplan-Meier / Cox)
@@ -305,61 +354,15 @@ survival probability and for relapse free survival.
 
 ------
 
-CRC contains subtypes, of which we already looked at one subtype more in depth. We will study differences among
-the subtypes further.
-  
-
-### Clustering with t-SNE maps
-
-
-An unbiased unsupervised type of clustering analysis is a good starting point to familiarize yourself with a new 
-dataset. The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of
-samples and will clump cells with similar expression profiles together on a map.
-
-* Click the button below to show the t-SNE map in R2:  
-
-
-![](_static/images/MolGenCRC/temp/tSNE204_create_permalink_later.png "Figure 2: temp image, todo make permalink tSNE with CMS coloring")
-
-[**Figure 2: temp image, todo make permalink tSNE with CMS coloring**](_static/images/MolGenCRC/temp/tSNE204_create_permalink_later.png)
-
-
-ToDo make permalink to tSNE instead of image above  
-<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_tsne_86_6tumortypes" target="_blank">
-Go to the t-SNE map</a>
-<br>
-<br>
-
-Under the graph, a menu allows the user to adapt settings.
-Colors of the graph points are not set by default.
-
-* Find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the
-  *cms_predicted* track
-  again, and click **Submit** to show the changes.
-* The different maps can be found under de setting Versions. Set **Versions** to the value *all* and click **Submit**
-  again.
-
-  
-  
-
-------  
-
-
-  ![](_static/images/R2d2_logo.png)**What insight did you obtain when you colored the plot with annotation?**
-
-  ![](_static/images/R2d2_logo.png)**Why do you think it is good practice to check different values for a parameter?**
-
-<br>
-<br>
-
-
-------
 
 ### Differences between the various CMS types
 
 #### Mutations
 
-Optionally perform a relate 2 tracks analysis to show the different percentages of braf and kras mutations per cms
+Optionally   
+* From the main page, select the Guinney choose a **relate 2 tracks** analysis to show the different percentages of  *y 
+  axis* **lv_braf_mut** or/and **lv_kras_mut** mutations and the *X axis* **lv_cms_final**
+* Select the **stacked bars** *graph type*
 
 ![](_static/images/MolGenCRC/temp/braf_and_kras_mutation_percms_guinney_stackedbars_delete_later.png "Figure 2: temp 
 image, Braf and Kras mutation ratios per CMS")
@@ -375,20 +378,23 @@ image, followup analysis Braf mutation -> WNT pathway, Axin2")
 
 [**Figure 2: temp image,  followup analysis Braf mutation -> WNT pathway, Axin2**](_static/images/MolGenCRC/temp/brafmutation_followup_analysis_pathwayfinder_wnt_AXIN2_delete_later.png)
 
+### Maybe here the MSI MSS part of Richard?
+  
 
+### What pathways drive subtype CMS4?
 Previously we looked into CMS subtype 1. We would like to understand what sets CMS 4 apart from the subtypes 2 and 3.
 
-* From the main page choose the analysis Differential Expression Between Two Groups. 
-* ToDo: how to Choose the track cms4vs3
+* From the main page choose the *analysis* **Differential Expression Between Two Groups**. 
+* ToDo: how to Choose the track **cms4vs3**
 * Look in the list of genes if you see anything familiar and hover over the magnifying glass icon of a few genes
 
 Gene set analysis helps researchers interpret the biological relevance of a group of genes. Instead of looking at individual 
 genes, it allows you to understand the collective functions or pathway involvements genes in your list. This can provide more 
 meaningful insights into the underlying biology of a particular condition or experiment.
 
-* Click on the top most button on the right that is labeled Gene set analysis.
-* Select the Gene set Collection Broad 2020 09 h hallmark
-* Switch the Representation setting to all 
+* Click on the top most button on the right that is labeled **Gene set analysis**.
+* Select the *Gene set Collection* **Broad 2020 09 h hallmark**
+* Switch the *Representation* setting to **all** to look at both overn- and underrepresentation 
 * Click Next
 
 ToDo: Remove picture  
