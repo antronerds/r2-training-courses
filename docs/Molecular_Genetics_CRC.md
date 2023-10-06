@@ -663,7 +663,7 @@ chances that are linked to the gene shift, todo remove**](_static/images/MolGenC
 ______
 
 
-### Single cell?
+## Single cell?
 Maybe? Mixed Colon Adenoma-carcinoma - Shi - 43981 - cp10k - 10x300hg38
 "Adenoma-carcinoma sequence is a well-accepted roadmap for the development of sporadic colorectal carcinoma. However, cellular heterogeneity in aberrant epithelia and the complexity of tumor microenvironment limited the understanding of carcinogenesis. Here we performed a scRNA-seq survey from patient-matched samples, including blood, normal, para-cancer, polyp, and cancer tissues."
 
@@ -683,8 +683,8 @@ Open the Evaluation form</button>
 
 ---------
 
-Final remarks / future directions
----------------------------------
+# Final remarks / future directions
+
 In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across
 childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize
 your genomics data.
