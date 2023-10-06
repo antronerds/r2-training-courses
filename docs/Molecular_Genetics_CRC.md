@@ -109,146 +109,6 @@ A:
 * In what way is the heatmap your generated different compared to the previous one.
 
 
-### MSI / MSS in CRC
-
-In the previous tasks we have introduced the R2 platform and looked at differences between Normal and Colon tissue by looking at differentially expressed genes. For many cancers types it is important to focus on subtyping meaning identifying subgroups within CRC datasets R2 is hosting. As already discussed, CRC has 4 CMS subtypes, one of the characterics of CMS I, is MSI instability. 
-
-
-The genomic instability in colon cancer can be divided into at least two major types, microsatellite instability (MSI) or chromosomal instability (CIN). Microsatellite instability (MSI) is caused by mutations in DNA mismatch repair genes such as MLH1, MSH2, MSH6, and PMS2, and it is found in 10% to 15% of sporadic colorectal cancers (CRCs). The presence of MSI predicts a good outcome in colorectal cancer.
-
-In MSI colon cancer, genes of the DNA mismatch repair system play an important role. Germline mutations in these genes are a major cause of the inherited form of colon cancer, namely HNPCC (hereditary nonpolyposis colon cancer).  In sporadic forms of colon cancer however, these genes are frequently inactivated. Inactivation is often achieved via hypermethylation, switching the gene off. Hypermethylation of genes in colon cancer is most common in colon tumors with a proximal location in the colon and much less in colon tumors with a distal location.
-
-
-[comment]: <> (opzetje van de text)
-
-
-This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors.
-
-The next section we will use another dataset. Select "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"
-
-
-
-
-Use the “Find Differential expressed genes between groups” module to generate a list of genes that i differentially expressed between MSI and MSS characterized tumors.
-
-* Which one is in top list 
-
-* Inspect MH1 expression. 
-
-A:
-![](_static/images/MolGenCRC/watanabe_mlh1.png "Figure x: MLH1")
-
-
-
-So we have identified an important player as discussed in college. You have just selected the Wanatabe set. Inspect the background information and look at the data this dataset has been generated. This is very old set, of course this set still of biological relevance we will also try to find we can find out we can validate this other sets. Not only because this is an old set but it is always common research practice to validate your results with other sources
-
-
-[comment]: <> (small info  about tcga ?)
-
-select Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode3
-
-* Do the same test Find Diff test, again the MHL1 gene
-
-A:
-![](_static/images/MolGenCRC/tcga_msimss_mlh1.png "Figure x: MLH1")
-[**Figure x: 204 set**](_static/images/MolGenCRC/chrommap.png)
-
-A:
-![](_static/images/MolGenCRC/tcga_msimss_mlh1_512.png "Figure x: MLH1")
-[**Figure x: 512 set**](_static/images/MolGenCRC/chrommap.png)
-
-So clearly it seems that MHl plays is a key role and is possible affecting other genes
-
-* One way to find out which genes are possibly regulated by the MLH1 gene is to find genes which are (inverse) correlated with this gene.  
-
-* Run the Find correlated genes with a single gene module for the MLH1 gene.
-
-A:
-![](_static/images/MolGenCRC/Findcorgene_MHL1.png "Figure x: MLH1")
-
-* Then click on the best correlating gene to plot both genes together, in a two gene view
-
-A:
-![](_static/images/MolGenCRC/Findcorgene_MHL1_EPM2IP1.png "Figure x: MLH1")
-
-* Click on view additional details, on which chromosome are both genes located
-
-A:
-
-![](_static/images/MolGenCRC/viewadddetails.png "Figure x: MLH1")
-
-* Click T-view and zoom out 2 or 5 times, what can you say about their location 
-
-[comment]: <> (hier een klein text bruggetje waarom we de volgende stap doen?)
-
-* Go back to your genelist of correlating genes and select only **neg corr** genes and click chrom map,
-
-A:
-
-![](_static/images/MolGenCRC/viewadddetails_genbr.png "Figure x: MLH1")
-
-* A lot of genes are clearly over-represented on a number of chromosome, especially chrom 18 with a high p-value.
-
-
-A:
-![](_static/images/MolGenCRC/chrommap.png "Figure x: MLH1")
-
-[**Figure x:**](_static/images/MolGenCRC/chrommap.png)
-
-chrom 18 loss is linked to msi/mss instability
-
-
-Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
-
-
-
-* Go back to the MLH1 correlating genelist make sure you have preselected the DNA-repair genes. CLick submit. Click on generated a heatmap. And do you see a clear associated with a CMS subgroup ?, and which one.
-
-
-A:
-![](_static/images/MolGenCRC/dnarepair.png "Figure 2: MLH1")
-
-* and take look at the CMS classification !!! what do you see ?? are you surprised
-
-CMS4, MSI had been associated with CM1 and CMS4
-
-In one of the first questions in this course we have seen there is an association with the genomic location. We have seen that a low MLH1 expression is associated with CRC subtypes. As briefly touched, the R2 platform has many types not only gene expression but also methylation arrays. Go to the main menu and select 
-
-*Tumor Colon adenocarcinoma - tcga - 296 - custom - ilmnhm450*
-
-* Plot the one gene view for MLH1, do you see something special ?
-
-
-* In the Alternative box, unfold additional details,  click on the view all link below MLH, here a nice heatmap is plotted of the methylation ratios's what do you see. 
-
-
-* A lot of samples are unfortunately not all the samples are annotated for Microsatelite instability, filter for those samples only and click submit. The MLH1 reporters for this gene (only 4), seem all methylated however, most likely these are not well designed and can maybe not distinguishe for the proper MLH1 reporters. However look at the other reporters on the same location, we also see a gene name we encountered before. Do you see an association with MSI/MSS.
-
-
-
-
-A:
-![](_static/images/MolGenCRC/methylation_mlh1loc.png "Figure 2: heatmap")
-May be a little , maybe you expected CMS1 classification but also CMS4 has been associated with MSI. 
-
-
-[comment]: <> (deze set wil ik mogelijk nog aanpassen met wat meer MSS / MSI)
-
-
-### Genes Affected by Mutations: 
-
-BRAF
-KRAS mutation
-
-
-
-
-
-
-
-
-
-
 ## CMS
 
 ToDo: Intro to CMS now in the words of the Guinney paper:
@@ -355,9 +215,7 @@ survival probability and for relapse free survival.
 ------
 
 
-### Differences between the various CMS types
-
-#### Mutations
+### Mutations
 
 Optionally   
 * From the main page, select the Guinney choose a **relate 2 tracks** analysis to show the different percentages of  *y 
@@ -377,8 +235,134 @@ Patwayfinder by group leads here too to Axin
 image, followup analysis Braf mutation -> WNT pathway, Axin2")
 
 [**Figure 2: temp image,  followup analysis Braf mutation -> WNT pathway, Axin2**](_static/images/MolGenCRC/temp/brafmutation_followup_analysis_pathwayfinder_wnt_AXIN2_delete_later.png)
+  
 
-### Maybe here the MSI MSS part of Richard?
+### MSI / MSS in CRC
+
+In the previous tasks we have introduced the R2 platform and looked at differences between Normal and Colon tissue by looking at differentially expressed genes. For many cancers types it is important to focus on subtyping meaning identifying subgroups within CRC datasets R2 is hosting. As already discussed, CRC has 4 CMS subtypes, one of the characterics of CMS I, is MSI instability.
+
+
+The genomic instability in colon cancer can be divided into at least two major types, microsatellite instability (MSI) or chromosomal instability (CIN). Microsatellite instability (MSI) is caused by mutations in DNA mismatch repair genes such as MLH1, MSH2, MSH6, and PMS2, and it is found in 10% to 15% of sporadic colorectal cancers (CRCs). The presence of MSI predicts a good outcome in colorectal cancer.
+
+In MSI colon cancer, genes of the DNA mismatch repair system play an important role. Germline mutations in these genes are a major cause of the inherited form of colon cancer, namely HNPCC (hereditary nonpolyposis colon cancer).  In sporadic forms of colon cancer however, these genes are frequently inactivated. Inactivation is often achieved via hypermethylation, switching the gene off. Hypermethylation of genes in colon cancer is most common in colon tumors with a proximal location in the colon and much less in colon tumors with a distal location.
+
+
+[comment]: <> (opzetje van de text)
+
+
+This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors.
+
+The next section we will use another dataset. Select "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"
+
+
+
+
+Use the “Find Differential expressed genes between groups” module to generate a list of genes that i differentially expressed between MSI and MSS characterized tumors.
+
+* Which one is in top list
+
+* Inspect MH1 expression.
+
+A:
+![](_static/images/MolGenCRC/watanabe_mlh1.png "Figure x: MLH1")
+
+
+
+So we have identified an important player as discussed in college. You have just selected the Wanatabe set. Inspect the background information and look at the data this dataset has been generated. This is very old set, of course this set still of biological relevance we will also try to find we can find out we can validate this other sets. Not only because this is an old set but it is always common research practice to validate your results with other sources
+
+
+[comment]: <> (small info  about tcga ?)
+
+select Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode3
+
+* Do the same test Find Diff test, again the MHL1 gene
+
+A:
+![](_static/images/MolGenCRC/tcga_msimss_mlh1.png "Figure x: MLH1")
+[**Figure x: 204 set**](_static/images/MolGenCRC/chrommap.png)
+
+A:
+![](_static/images/MolGenCRC/tcga_msimss_mlh1_512.png "Figure x: MLH1")
+[**Figure x: 512 set**](_static/images/MolGenCRC/chrommap.png)
+
+So clearly it seems that MHl plays is a key role and is possible affecting other genes
+
+* One way to find out which genes are possibly regulated by the MLH1 gene is to find genes which are (inverse) correlated with this gene.
+
+* Run the Find correlated genes with a single gene module for the MLH1 gene.
+
+A:
+![](_static/images/MolGenCRC/Findcorgene_MHL1.png "Figure x: MLH1")
+
+* Then click on the best correlating gene to plot both genes together, in a two gene view
+
+A:
+![](_static/images/MolGenCRC/Findcorgene_MHL1_EPM2IP1.png "Figure x: MLH1")
+
+* Click on view additional details, on which chromosome are both genes located
+
+A:
+
+![](_static/images/MolGenCRC/viewadddetails.png "Figure x: MLH1")
+
+* Click T-view and zoom out 2 or 5 times, what can you say about their location
+
+[comment]: <> (hier een klein text bruggetje waarom we de volgende stap doen?)
+
+* Go back to your genelist of correlating genes and select only **neg corr** genes and click chrom map,
+
+A:
+
+![](_static/images/MolGenCRC/viewadddetails_genbr.png "Figure x: MLH1")
+
+* A lot of genes are clearly over-represented on a number of chromosome, especially chrom 18 with a high p-value.
+
+
+A:
+![](_static/images/MolGenCRC/chrommap.png "Figure x: MLH1")
+
+[**Figure x:**](_static/images/MolGenCRC/chrommap.png)
+
+chrom 18 loss is linked to msi/mss instability
+
+
+Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
+
+
+
+* Go back to the MLH1 correlating genelist make sure you have preselected the DNA-repair genes. CLick submit. Click on generated a heatmap. And do you see a clear associated with a CMS subgroup ?, and which one.
+
+
+A:
+![](_static/images/MolGenCRC/dnarepair.png "Figure 2: MLH1")
+
+* and take look at the CMS classification !!! what do you see ?? are you surprised
+
+CMS4, MSI had been associated with CM1 and CMS4
+
+In one of the first questions in this course we have seen there is an association with the genomic location. We have seen that a low MLH1 expression is associated with CRC subtypes. As briefly touched, the R2 platform has many types not only gene expression but also methylation arrays. Go to the main menu and select
+
+*Tumor Colon adenocarcinoma - tcga - 296 - custom - ilmnhm450*
+
+* Plot the one gene view for MLH1, do you see something special ?
+
+
+* In the Alternative box, unfold additional details,  click on the view all link below MLH, here a nice heatmap is plotted of the methylation ratios's what do you see.
+
+
+* A lot of samples are unfortunately not all the samples are annotated for Microsatelite instability, filter for those samples only and click submit. The MLH1 reporters for this gene (only 4), seem all methylated however, most likely these are not well designed and can maybe not distinguishe for the proper MLH1 reporters. However look at the other reporters on the same location, we also see a gene name we encountered before. Do you see an association with MSI/MSS.
+
+
+
+
+A:
+![](_static/images/MolGenCRC/methylation_mlh1loc.png "Figure 2: heatmap")
+May be a little , maybe you expected CMS1 classification but also CMS4 has been associated with MSI.
+
+
+[comment]: <> (deze set wil ik mogelijk nog aanpassen met wat meer MSS / MSI)
+
+
   
 
 ### What pathways drive subtype CMS4?
@@ -394,7 +378,7 @@ meaningful insights into the underlying biology of a particular condition or exp
 
 * Click on the top most button on the right that is labeled **Gene set analysis**.
 * Select the *Gene set Collection* **Broad 2020 09 h hallmark**
-* Switch the *Representation* setting to **all** to look at both overn- and underrepresentation 
+* Switch the *Representation* setting to **all** to look at both over- and under-representation 
 * Click Next
 
 ToDo: Remove picture  
