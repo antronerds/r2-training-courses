@@ -280,16 +280,41 @@ result, different survival chances for different cms groups. ToDo: delete later"
 [**Figure 2: Kaplan Meier
 result, different survival chances for different cms groups. ToDo: delete later**](_static/images/MolGenCRC/temp/KaplanMeier_guinney_cmssurvivalchances_delete_later.png)
 
+* Now perform the same analysis, but choose **relapse-free** in stead of overall for teh setting *type of Survival*  
+
+![](_static/images/MolGenCRC/temp/KaplanMeier_Guinney_cms_relapsefree_delete_later.png "Figure 2: Kaplan Meier
+result, different relapse free Kaplan Meier curves for different cms groups. ToDo: delete later")
+
+[**Figure 2: Kaplan Meier
+result, different relapse free Kaplan Meier curves for different cms groups. ToDo: delete later**](_static/images/MolGenCRC/temp/KaplanMeier_Guinney_cms_relapsefree_delete_later.png)
+
+ 
+
+------  
+
+
+![](_static/images/R2d2_logo.png)**What does the first Kaplan Meier plot tell you?**
+
+![](_static/images/R2d2_logo.png)**And what is your conclusion from the second Kaplan Meier graph?**
+<br>
+<br>
+**ToDO: remove answer:**
+OS curves focus on overall mortality from any cause, while RFS curves specifically track the time until a particular
+event (e.g., disease relapse) occurs. In this casse you can see that CMS 4 has the worst prognosis, both for overall
+survival probability and for relapse free survival.
+
+------
+
+CRC contains subtypes, of which we already looked at one subtype more in depth. We will study differences among
+the subtypes further.
+  
 
 ##### Clustering with t-SNE maps
 
-We've seen that the expression of genes differs among the samples and the CRC subtypes seem to specifically express
-certain genes.
-To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good
-idea.
-The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of
-samples
-and will clump similar cells together on a map.
+
+An unbiased unsupervised type of clustering analysis is a good starting point to familiarize yourself with a new 
+dataset. The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of
+samples and will clump cells with similar expression profiles together on a map.
 
 * Click the button below to show the t-SNE map in R2:  
 
