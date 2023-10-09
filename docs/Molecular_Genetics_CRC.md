@@ -109,9 +109,137 @@ A:
 * In what way is the heatmap your generated different compared to the previous one.
 
 
+## CMS
+
+ToDo: Intro to CMS now in the words of the Guinney paper:
+
+"Thanks to collaborative bioinformatics work on the largest collection of CRC cohorts with molecular annotation to date,
+and building upon previous efforts by the independent researchers, the consortium resulted in a consensus molecular
+classification system that allows the categorization of most tumors into one of four robust subtypes. Marked differences
+in the intrinsic biological underpinnings of each subtype support the new taxonomy of this disease (Fig. 5) that will
+facilitate future research in this field and should be adopted by the community for CRC stratification: CMS1 (MSI
+Immune),
+CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal)." (Guinney 2015et al., Nat Med. 2015 Nov; 21(11):
+1350–1356. )
+
+### Clustering with t-SNE maps
+
+
+An unbiased unsupervised type of clustering analysis is a good starting point to familiarize yourself with a new
+dataset. The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of
+samples and will clump cells with similar expression profiles together on a map.
+
+* Click the button below to show the t-SNE map in R2:
+
+
+![](_static/images/MolGenCRC/temp/tSNE204_create_permalink_later.png "Figure 2: temp image, todo make permalink tSNE with CMS coloring")
+
+[**Figure 2: temp image, todo make permalink tSNE with CMS coloring**](_static/images/MolGenCRC/temp/tSNE204_create_permalink_later.png)
+
+
+ToDo make permalink to tSNE instead of image above  
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_tsne_86_6tumortypes" target="_blank">
+Go to the t-SNE map</a>
+<br>
+<br>
+
+Under the graph, a menu allows the user to adapt settings.
+Colors of the graph points are not set by default.
+
+* Find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the
+  *cms_predicted* track
+  again, and click **Submit** to show the changes.
+* The different maps can be found under de setting Versions. Set **Versions** to the value *all* and click **Submit**
+  again.  
+
+
+
+------  
+
+
+![](_static/images/R2d2_logo.png)**What insight did you obtain when you colored the plot with annotation?**
+
+![](_static/images/R2d2_logo.png)**Why do you think it is good practice to check different values for a parameter?**
+
+<br>
+<br>
+
+
+------  
+
+CRC contains subtypes, of which we already looked at one subtype more in depth. We will study differences among
+the subtypes further. To start, lets see if there is any difference in survival chances among the subtypes
+
+
+### Different survival chances for different CMS CRC subtypes? 
+
+* In the left side menu on the main page, click on Survival (Kaplan-Meier / Cox)
+* In the menu at the center of the page, click at the Dataset setting on the current Dataset name, and find the
+  dataset with *Author* is **Guinney** and the amount of samples *N* is **3232**
+* Click on the row to read its description in the information box underneath the dataset selection grid
+
+ToDo: Fill in the information about the dataset Summary Design etc
+
+* Leave *Separate by* at **categorical track (Kaplan-Meier)** and click **Next**
+* Choose *type of Survival* **overall* and *Track* **lv_cms_final**
+
+![](_static/images/MolGenCRC/temp/KaplanMeier_guinney_cmssurvivalchances_delete_later.png "Figure 2: Kaplan Meier 
+result, different survival chances for different cms groups. ToDo: delete later")
+
+[**Figure 2: Kaplan Meier
+result, different survival chances for different cms groups. ToDo: delete later**](_static/images/MolGenCRC/temp/KaplanMeier_guinney_cmssurvivalchances_delete_later.png)
+
+* Now perform the same analysis, but choose **relapse-free** in stead of overall for teh setting *type of Survival*  
+
+![](_static/images/MolGenCRC/temp/KaplanMeier_Guinney_cms_relapsefree_delete_later.png "Figure 2: Kaplan Meier
+result, different relapse free Kaplan Meier curves for different cms groups. ToDo: delete later")
+
+[**Figure 2: Kaplan Meier
+result, different relapse free Kaplan Meier curves for different cms groups. ToDo: delete later**](_static/images/MolGenCRC/temp/KaplanMeier_Guinney_cms_relapsefree_delete_later.png)
+
+ 
+
+------  
+
+
+![](_static/images/R2d2_logo.png)**What does the first Kaplan Meier plot tell you?**
+
+![](_static/images/R2d2_logo.png)**And what is your conclusion from the second Kaplan Meier graph?**
+<br>
+<br>
+**ToDO: remove answer:**
+OS curves focus on overall mortality from any cause, while RFS curves specifically track the time until a particular
+event (e.g., disease relapse) occurs. In this casse you can see that CMS 4 has the worst prognosis, both for overall
+survival probability and for relapse free survival.
+
+------
+
+
+### Mutations
+
+Optionally   
+* From the main page, select the Guinney choose a **relate 2 tracks** analysis to show the different percentages of  *y 
+  axis* **lv_braf_mut** or/and **lv_kras_mut** mutations and the *X axis* **lv_cms_final**
+* Select the **stacked bars** *graph type*
+
+![](_static/images/MolGenCRC/temp/braf_and_kras_mutation_percms_guinney_stackedbars_delete_later.png "Figure 2: temp 
+image, Braf and Kras mutation ratios per CMS")
+
+[**Figure 2: temp image, Braf and Kras mutation ratios per CMS**](_static/images/MolGenCRC/temp/braf_and_kras_mutation_percms_guinney_stackedbars_delete_later.png)
+
+ToDo: what more can I do with mutational analyses? https://r2-tutorials.readthedocs.io/en/latest/Pathway_Finder.html?highlight=mutation#step-3-finding-pathways-relevant-to-subgroups
+Patwayfinder by group leads here too to Axin
+
+
+![](_static/images/MolGenCRC/temp/brafmutation_followup_analysis_pathwayfinder_wnt_AXIN2_delete_later.png "Figure 2: temp
+image, followup analysis Braf mutation -> WNT pathway, Axin2")
+
+[**Figure 2: temp image,  followup analysis Braf mutation -> WNT pathway, Axin2**](_static/images/MolGenCRC/temp/brafmutation_followup_analysis_pathwayfinder_wnt_AXIN2_delete_later.png)
+  
+
 ### MSI / MSS in CRC
 
-In the previous tasks we have introduced the R2 platform and looked at differences between Normal and Colon tissue by looking at differentially expressed genes. For many cancers types it is important to focus on subtyping meaning identifying subgroups within CRC datasets R2 is hosting. As already discussed, CRC has 4 CMS subtypes, one of the characterics of CMS I, is MSI instability. 
+In the previous tasks we have introduced the R2 platform and looked at differences between Normal and Colon tissue by looking at differentially expressed genes. For many cancers types it is important to focus on subtyping meaning identifying subgroups within CRC datasets R2 is hosting. As already discussed, CRC has 4 CMS subtypes, one of the characterics of CMS I, is MSI instability.
 
 
 The genomic instability in colon cancer can be divided into at least two major types, microsatellite instability (MSI) or chromosomal instability (CIN). Microsatellite instability (MSI) is caused by mutations in DNA mismatch repair genes such as MLH1, MSH2, MSH6, and PMS2, and it is found in 10% to 15% of sporadic colorectal cancers (CRCs). The presence of MSI predicts a good outcome in colorectal cancer.
@@ -131,8 +259,9 @@ The next section we will use another dataset. Select "Colon Tumor - Watanabe - 8
 
 Use the “Find Differential expressed genes between groups” module to generate a list of genes that i differentially expressed between MSI and MSS characterized tumors.
 
-* Which one is in top list 
+* Which one is in top list
 
+* Inspect MH1 expression.
 
 Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
 
@@ -165,7 +294,7 @@ A:
 
 So clearly it seems that MHl plays is a key role and is possible affecting other genes
 
-* One way to find out which genes are possibly regulated by the MLH1 gene is to find genes which are (inverse) correlated with this gene.  
+* One way to find out which genes are possibly regulated by the MLH1 gene is to find genes which are (inverse) correlated with this gene.
 
 * Run the Find correlated genes with a single gene module for the MLH1 gene.
 
@@ -183,7 +312,7 @@ A:
 
 ![](_static/images/MolGenCRC/viewadddetails.png "Figure x: MLH1")
 
-* Click T-view and zoom out 2 or 5 times, what can you say about their location 
+* Click T-view and zoom out 2 or 5 times, what can you say about their location
 
 [comment]: <> (hier een klein text bruggetje waarom we de volgende stap doen?)
 
@@ -218,14 +347,14 @@ A:
 
 CMS4, MSI had been associated with CM1 and CMS4
 
-In one of the first questions in this course we have seen there is an association with the genomic location. We have seen that a low MLH1 expression is associated with CRC subtypes. As briefly touched, the R2 platform has many types not only gene expression but also methylation arrays. Go to the main menu and select 
+In one of the first questions in this course we have seen there is an association with the genomic location. We have seen that a low MLH1 expression is associated with CRC subtypes. As briefly touched, the R2 platform has many types not only gene expression but also methylation arrays. Go to the main menu and select
 
 *Tumor Colon adenocarcinoma - tcga - 296 - custom - ilmnhm450*
 
 * Plot the one gene view for MLH1, do you see something special ?
 
 
-* In the Alternative box, unfold additional details,  click on the view all link below MLH, here a nice heatmap is plotted of the methylation ratios's what do you see. 
+* In the Alternative box, unfold additional details,  click on the view all link below MLH, here a nice heatmap is plotted of the methylation ratios's what do you see.
 
 
 * A lot of samples are unfortunately not all the samples are annotated for Microsatelite instability, filter for those samples only and click submit. The MLH1 reporters for this gene (only 4), seem all methylated however, most likely these are not well designed and can maybe not distinguishe for the proper MLH1 reporters. However look at the other reporters on the same location, we also see a gene name we encountered before. Do you see an association with MSI/MSS.
@@ -235,17 +364,15 @@ In one of the first questions in this course we have seen there is an associatio
 
 A:
 ![](_static/images/MolGenCRC/methylation_mlh1loc.png "Figure 2: heatmap")
-May be a little , maybe you expected CMS1 classification but also CMS4 has been associated with MSI. 
+May be a little , maybe you expected CMS1 classification but also CMS4 has been associated with MSI.
 
 
 [comment]: <> (deze set wil ik mogelijk nog aanpassen met wat meer MSS / MSI)
 
 
-### Genes Affected by Mutations: 
+  
 
-BRAF
-KRAS mutation
-
+### What pathways drive subtype CMS4?
 
 
 ### Experiments TP53;Molecule of the year 1994
@@ -444,22 +571,23 @@ Colors of the graph points are not set by default.
 
 Previously we looked into CMS subtype 1. We would like to understand what sets CMS 4 apart from the subtypes 2 and 3.
 
-* From the main page choose the analysis Differential Expression Between Two Groups. 
-* ToDo: how to Choose the track cms4vs3
+* From the main page choose the *analysis* **Differential Expression Between Two Groups**. 
+* ToDo: how to Choose the track **cms4vs3**
 * Look in the list of genes if you see anything familiar and hover over the magnifying glass icon of a few genes
 
 Gene set analysis helps researchers interpret the biological relevance of a group of genes. Instead of looking at individual 
 genes, it allows you to understand the collective functions or pathway involvements genes in your list. This can provide more 
 meaningful insights into the underlying biology of a particular condition or experiment.
 
-* Click on the top most button on the right that is labeled Gene set analysis.
-* Select the Gene set Collection Broad 2020 09 h hallmark
-* Switch the Representation setting to all 
+* Click on the top most button on the right that is labeled **Gene set analysis**.
+* Select the *Gene set Collection* **Broad 2020 09 h hallmark**
+* Switch the *Representation* setting to **all** to look at both over- and under-representation 
 * Click Next
 
-ToDo: Remove picture
+ToDo: Remove picture  
+
 ![](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png "Figure 3: temp image of result Gene 
-set analysis, todo remove")
+set analysis, todo remove")  
 
 [**Figure 3: temp image of result Gene set analysis, todo remove**](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png)
 
@@ -738,7 +866,7 @@ chances that are linked to the gene shift, todo remove**](_static/images/MolGenC
 ______
 
 
-### Single cell?
+## Single cell?
 Maybe? Mixed Colon Adenoma-carcinoma - Shi - 43981 - cp10k - 10x300hg38
 "Adenoma-carcinoma sequence is a well-accepted roadmap for the development of sporadic colorectal carcinoma. However, cellular heterogeneity in aberrant epithelia and the complexity of tumor microenvironment limited the understanding of carcinogenesis. Here we performed a scRNA-seq survey from patient-matched samples, including blood, normal, para-cancer, polyp, and cancer tissues."
 
@@ -758,8 +886,8 @@ Open the Evaluation form</button>
 
 ---------
 
-Final remarks / future directions
----------------------------------
+# Final remarks / future directions
+
 In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across
 childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize
 your genomics data.
