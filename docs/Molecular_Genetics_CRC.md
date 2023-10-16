@@ -73,15 +73,22 @@ The R2 platform support a large  set of analysis types to explore datasets. One 
 
 Next to many publicly available datasets, R2 is also hosting a lot of curated lists of genes which we call `gene sets` (gene categories). These gene categories can be used to restrict or filter as well.  We can adapt our current search by scrolling down to the end of our gene list. In the Adjustable Settings Panel by hitting the **"Search GS"** in the Gene Filters box you can now use a Gene Set to filter your list. Re-generate a list that is specifically associated with (colorectal) cancer (hint: look in the gene category or KEGG pathway list to identify an interesting gene set). You can look with keywords of inspect the KEGG pathway specific.
 
-* check some genes with single gene view (AXIN2 etc etc) by clicking the magnifying glass, in the green bar in the top you can easily go to list. Note the coloured bars beneath plot, containing the sample annotation, these grouping variables are called tracks. Also note you hoover over the dots in the graph and the tracks to get more information of the individual samples.
+* Check some genes with single gene view (AXIN2 etc etc) by clicking the magnifying glass, in the green bar in the top you can easily go to list. Note the coloured bars beneath plot, containing the sample annotation, these grouping variables are called tracks. Also note you hoover over the dots in the graph and the tracks to get more information of the individual samples.
 
 
-## Pathway heatmap
+## A song of heatmaps and pathways
 
 
-The WNT pathway is an important signal transduction cascade in the development of colon cancer. 
+The WNT pathway is an important signal transduction cascade which plays an important role in many biological processes. The dysregulation of the Wnt pathway has been observed in many different cancers including colon cancer. 
 
-Generate a list of genes which are differentially expressed comparing normal and adenoma within the WNT pathway KEGG, use the False Discovery Rate for multiple testing correction, log 2 values and P <0.01. Find the Wnt pathway by clicking again the GS (Gene set button) and search by key word for Wnt or go through the KEGG pathways. 
+A:
+![](_static/images/MolGenCRC/marra_wnt_single_geneview.png "Figure 2: heatmap Find Diff")
+
+
+
+### The WNT pathway
+
+Generate a list of genes which are differentially expressed comparing normal and adenoma within the WNT pathway KEGG, use the False Discovery Rate for multiple testing correction, log 2 values and P <0.01. Find the **Wnt pathway** by clicking again the GS (Gene set button) and search by key word for Wnt or go through the KEGG pathways. 
 
 * How many genes are up / down regulated. 
 A:
@@ -92,28 +99,38 @@ A:
 
 
 A:
-![](_static/images/MolGenCRC/marra_biased_wnt.png "Figure 2: heatmap Find Diff")
+![](_static/images/MolGenCRC/marra_biased_wnt.png "Figure 2: heatmap Find Diff"). Yep, the genelist was biased  als result of tje Student T-test. 
 
 Pathway Analysis:
 ---------------------------------------
 
-Often, you do not immediately have an idea which pathways you could look for in your comparisons between groups (normal versus adenoma in our case). A module within R2 providing you with some suggestions is the so called KEGG Pathway Finder by Groups. It assesses whether the number of genes that show significant differential expression between normal and adenoma is significantly higher than you would expect compared to all genes that are mentioned in KEGG.
+Often, you do not immediately have an idea which pathways you could look at for in your comparisons between groups (normal versus adenoma in our case). A module within R2 providing you with some suggestions is the so called KEGG Pathway Finder by Groups. It assesses whether the number of genes that show significant differential expression between Normal and Adenoma is significantly higher than you would expect compared to all genes that are mentioned in KEGG. In other words are the genes you found regulated between the groups enriched in the KEGG pathway database. 
+
+[Info: The KEGG pathway Database]( https://www.genome.jp/kegg/pathway.html).
 
 
-* Perform a KEGG pathway analysis from the ‘main’ page. Make sure that under Representation: all is selected (both under and overrepresentation) Are there KEGG pathways overrepresented in the differentially expressed genes between adenoma and normal tissue? If this is true which pathway (Set the p-value 0.01 for the analysis and select striking pathways).
+* Perform a KEGG pathway analysis from the ‘main’ page. leave the re-presentation on **"over"** again with the Normal vs Adenoma group. Are there KEGG pathways over-represented in the differentially expressed genes  (Set the p-value 0.01 for the analysis and select striking pathways). And does it make sense that these are in the list ?.
+
+![](_static/images/MolGenCRC/keggpathway_select.png "Kegg select")
 
 
-*A: DNA replication and cell cycle are in the top off the list*
+*A: DNA replication and TP53 and Cell cycle are in  the list*, when you select over-representation
+
+![](_static/images/MolGenCRC/kegg_pathway.png "KEGG results")
 
 
-The previous task has shown that a number of WNT pathway genes were represented in the result list. Since we have generated a heatmap in the previous question with the wnt pathway gene from the latest results. We can also  make a heatmap directly without any test.
+* Perform the same task with the under-representation selected in de drop down menu. Do you see extra interesting pathways popping up.
+
+A: Under-representation e.g.  the mismatch repair pathway.
+
+In this test the WNT pathway was not really significant but still in the list at the bottom. One of the reasons why this is the case, is that in this case not all the genes  are assigned to the KEGG WNT pathway. Or that the pathway genes are in this case not sufficient to access pathway activity. However, visualizing the gene expression still hints you towards WNT pathway involvment. 
 
 * Go to the main screen select generate a heatmap and select the wnt path way from the text database.
 
 A:
 ![](_static/images/MolGenCRC/marra_unbiased_wnt.png "Figure 2: Heatmap - Wnt").
 
-* The samples are clearly seperated in normal vs adenoma. It's different and less pronounced compared to the previous heatmap. Do you think this is special? , Why or Why not.
+* The samples are clearly seperated in Normal vs Adenoma. It's different and less pronounced compared to the previous heatmap you generated.  Do you think this is special? , Why or Why not.
 
 * In what way is the heatmap your generated different compared to the previous one.  
 
