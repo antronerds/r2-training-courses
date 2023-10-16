@@ -17,18 +17,24 @@ In the late 1980s the Vogelstein model was proposed. It introduced the concept o
 
 [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
-While it has significantly advanced our understanding of colorectal cancer, research is still needed for several
-reasons. 
-Colorectal cancer treatments, such as chemotherapy and targeted therapies, can be effective
-initially but often lead to resistance over time. Research is needed to understand the mechanisms underlying treatment
-resistance and to develop strategies to overcome it. It is well known by now that colorectal cancer is not a monolithic 
-disease. There are multiple subtypes with different genetic mutations, epigenetic changes, and protein markers that can
-guide treatment decisions and improve the outcomes for individuals with colorectal cancer. While the Vogelstein model
-emphasizes the accumulation of mutations over time, there is a growing interest in early detection and prevention, which
+While it has significantly advanced our understanding of colorectal cancer, research is still urgently needed:  
+according to the World Health Organization colorectal cancer is the third most common cancer worldwide, accounting 
+for approximately 10% of all cancer cases, and it is the second leading cause of cancer-related deaths worldwide.  
+Research is needed to understand the mechanisms underlying treatment resistance and to develop strategies to 
+overcome it. While the Vogelstein model emphasizes the accumulation of mutations over time, it is well known by now 
+that colorectal cancer is not a monolithic disease. There are multiple subtypes with different genetic mutations, 
+epigenetic changes, and protein markers that can guide treatment decisions and improve the outcomes for individuals 
+with colorectal cancer. There is a growing interest in early detection and prevention, which
 might allow for interventions before advanced mutations occur. Also, the role of the immune system in 
-colorectal cancer has gained significant attention.  
-It is crucial to understand the diversity and complexity of colorectal cancer at all these different levels (and 
-more) in order to develop the needed effective treatment strategies.  
+colorectal cancer has gained significant attention. It is crucial to understand the diversity and complexity of 
+colorectal cancer at all different levels in order to develop new and effective targeted treatment strategies.  
+  
+
+  ![](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg "Figure 2: Subtypes in colorectal 
+ cancer: CMS classification (Guinney et al., 2015)")
+
+  [**Figure 2: Subtypes in colorectal cancer: CMS classification (Guinney et al., 2015)**](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg)
+  
 
 Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to support molecular 
 biologists in their search for new insights from experimental data and patient data.  
@@ -37,12 +43,6 @@ of the Amsterdam UMC.
 R2 provides you with a set of bioinformatics tools that allow you to investigate all kinds of experimental and
 patient data. You will explore, analyze and visualize publicly available data to gain insight and hands-on experience in
 how omics data can be used to deepen your understanding of colorectal cancer.
-  
-  ![](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg "Figure 2: Subtypes in 
-  colorectal cancer: CMS classification (Guinney et al., 2015)")	
-  
-  [**Figure 2: Subtypes in colorectal cancer: CMS classification (Guinney et al., 2015)**]
-  (_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg)
 
 The <button class="course_permalink">grey buttons</button> in this course will bring you to the R2 platform, often with
 pre-set settings such that you can pick up an analysis easily. The <button class="course googleform">green
