@@ -52,9 +52,9 @@ We would like to ask you to fill in the evaluation form about this R2 course dur
 the form, click the button below:
  
 
-## Normal vs Colon:
+## Normal vs Colorectal Cancer Tissue:
 
-R2 hosts a large collection of omic datasets. Let's get acquainted with R2 while exploring some differences in gene 
+Let's get acquainted with R2 and its large collection of omic datasets while exploring differences in gene 
 expressions between normal tissue and colorectal cancer tissue. 
 
 **Datasets used:**
