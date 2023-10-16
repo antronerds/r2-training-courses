@@ -11,11 +11,38 @@ This resource is located online at http://r2platform.com/mgcourse
 Introduction
 ------------
 
-ToDo: Here we give in introduction into CRC CMS etc
+In the late 1980s the Vogelstein model was proposed. It introduced the concept of a stepwise accumulation of genetic mutations leading to the development of this type of cancer. 
 
-  ![](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg "Figure 1: CMS classification")	
+![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression")
+
+[**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
+
+While it has significantly advanced our understanding of colorectal cancer, research is still needed for several
+reasons. 
+Colorectal cancer treatments, such as chemotherapy and targeted therapies, can be effective
+initially but often lead to resistance over time. Research is needed to understand the mechanisms underlying treatment
+resistance and to develop strategies to overcome it. It is well known by now that colorectal cancer is not a monolithic 
+disease. There are multiple subtypes with different genetic mutations, epigenetic changes, and protein markers that can
+guide treatment decisions and improve the outcomes for individuals with colorectal cancer. While the Vogelstein model
+emphasizes the accumulation of mutations over time, there is a growing interest in early detection and prevention, which
+might allow for interventions before advanced mutations occur. Also, the role of the immune system in 
+colorectal cancer has gained significant attention.  
+It is crucial to understand the diversity and complexity of colorectal cancer at all these different levels (and 
+more) in order to develop the needed effective treatment strategies.  
+
+Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to support molecular 
+biologists in their search for new insights from experimental data and patient data.  
+Today you will use the freely available and web-based genomics analysis and visualization platform R2, a Core Facility
+of the Amsterdam UMC.
+R2 provides you with a set of bioinformatics tools that allow you to investigate all kinds of experimental and
+patient data. You will explore, analyze and visualize publicly available data to gain insight and hands-on experience in
+how omics data can be used to deepen your understanding of colorectal cancer.
   
-  [**Figure 1: CMS classification**](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg)
+  ![](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg "Figure 2: Subtypes in 
+  colorectal cancer: CMS classification (Guinney et al., 2015)")	
+  
+  [**Figure 2: Subtypes in colorectal cancer: CMS classification (Guinney et al., 2015)**]
+  (_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg)
 
 The <button class="course_permalink">grey buttons</button> in this course will bring you to the R2 platform, often with
 pre-set settings such that you can pick up an analysis easily. The <button class="course googleform">green
@@ -23,19 +50,12 @@ buttons</button> in this document will open up a Google form, one per section, w
 
 We would like to ask you to fill in the evaluation form about this R2 course during or at the end of the course. To open
 the form, click the button below:
-
-
-
-
-The R2 platform:
----------------------------------------
-This course  will provide insight and hands-on experience in how omics data can be analyzed through the available Core Facilities at the Amsterdam UMC. 
-Here you will explore, analyze and visualize the expression data data set to extract and interpret biology from the experimenents and patient cohorts.  R2 stores high throughput data from many tumor/ disease series and cell lines experiments.
-
-
-R2 is hosting a large collection of all types omic datasets.  Use the grid box to search and get some grips on the datasets R2 is hosting, just  to get some feeling with the large collections of the dateset in R2.
+ 
 
 ## Normal vs Colon:
+
+R2 hosts a large collection of omic datasets. Let's get acquainted with R2 while exploring some differences in gene 
+expressions between normal tissue and colorectal cancer tissue. 
 
 **Datasets used:**
   
@@ -51,7 +71,7 @@ R2 is hosting a large collection of all types omic datasets.  Use the grid box t
 
 **A:7**
 
-Cancer is very complex disease to investigated. With a hugh variety of cancers types. This course is focussing mainly on CRCs. So start with lets see if we can see we start to look  for genes which make the difference in normal anc cancer tissue.
+
 
 Of course it is nice to have a lot of RNA expression datasets tot analyse and explore but without proper sample annotation your have very limited analysis options. Let's explore the annotation for the Marra dataset.
 
