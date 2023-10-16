@@ -55,7 +55,9 @@ the form, click the button below:
 ## Normal vs Colorectal Cancer Tissue:
 
 Let's get acquainted with R2 and its large collection of omic datasets while exploring differences in gene 
-expressions between normal tissue and colorectal cancer tissue. 
+expressions between normal tissue and colorectal cancer tissue.  
+
+To login, go to: [https://r2.amc.nl](https://r2.amc.nl) and login with your stud account.
 
 **Datasets used:**
   
