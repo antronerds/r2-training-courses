@@ -55,9 +55,9 @@ the form, click the button below:
 ## Normal vs Colorectal Cancer Tissue:
 
 Let's get acquainted with R2 and its large collection of omic datasets while exploring differences in gene 
-expressions between normal tissue and colorectal cancer tissue.  
+expressions between normal tissue and adenoma tumor tissue.
 
-To login, go to: [https://r2.amc.nl](https://r2.amc.nl) and login with your stud account.
+***To login, go to: [https://r2.amc.nl](https://r2.amc.nl) and use the student credentials that were provided to you.***
 
 **Datasets used:**
   
@@ -76,6 +76,14 @@ To login, go to: [https://r2.amc.nl](https://r2.amc.nl) and login with your stud
 
 
 Of course it is nice to have a lot of RNA expression datasets tot analyse and explore but without proper sample annotation your have very limited analysis options. Let's explore the annotation for the Marra dataset.
+
+
+
+![](_static/images/MolGenCRC/temp/CRCprogression.jpg "Figure 2: CRC progression from normal tissue to metastatic 
+cancer")
+
+[**Figure 2: CRC progression from normal tissue to metastatic cancer**](_static/images/MolGenCRC/temp/CRCprogression.
+jpg)
 
 
 * Find  and select the RNA expression dataset from Author Marra and select the one with 64 samples. *Note: Click the blue box with confirm selection*.
