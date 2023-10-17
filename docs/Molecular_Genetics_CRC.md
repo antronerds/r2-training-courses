@@ -262,7 +262,7 @@ image, followup analysis Braf mutation -> WNT pathway, Axin2")
 [**Figure 2: temp image,  followup analysis Braf mutation -> WNT pathway, Axin2**](_static/images/MolGenCRC/temp/brafmutation_followup_analysis_pathwayfinder_wnt_AXIN2_delete_later.png)
   
 
-### MSI / MSS in CRC
+## MSI / MSS in CRC
 
 In one the previous tasks we have introduced the R2 platform and looked at differences between Normal and Colon tissue by looking at differentially expressed genes. For many cancers types it is important to focus on subtyping meaning identifying subgroups within CRC datasets R2 is hosting. As already discussed, CRC has 4 CMS subtypes, one of the characteristics of CMS I, is MSI instability.
 
@@ -272,52 +272,55 @@ In MSI colon cancer, genes of the DNA mismatch repair system play an important r
 
 Dataset used: The next section we will use another dataset. * "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"*
 
-This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors, check the track MS_status.
+This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors.
 
-
+### Watanabe dataset
 
 * **Select "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"**
 
 
-Use the “Find Differential expressed genes between groups” module to generate a list of genes that i differentially expressed between MSI and MSS characterized tumors. Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
+Use the “Find Differential expressed genes between groups” module to generate a list of genes that differentially expressed between MSI and MSS characterized tumors. Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
 
 * Which one is in top list.
 
 A: TYMS
 
-*  One of the genes differentially expressed clearly is MLH1. Look at the expression pattern of MLH1 in colon tumors, both sets (MSI vs. MSS). What do you notice ?. The MHL1 expression came significant out our test as a down regulated gene. What did you expect and what do you see?. 
+*  One of the genes differentially expressed clearly is MLH1 (does this gene sounds familiar). Look at the expression pattern of MLH1 in colon tumors, both sets (MSI vs. MSS). What do you notice ?. The MHL1 expression came significant out our test as a down regulated gene. What did you expect and what do you see?. 
 
 
-A:
+**A:**
+
 ![](_static/images/MolGenCRC/watanabe_mlh1.png "Figure : MLH1")
 
-MSI tumors give a very heterogeneous picture. This could be an indication that within the MSI tumor group also a subgroup could be identified. Which one do you think ??.
+MSI tumors give a very heterogeneous picture. This could be an indication that within the MSI tumor group also a subgroup could be identified. Which one do you think ??. (note: Inspect the tracks or hoover)
 
-A: The proximal annotated group within the MSI 
+**A:**
+The proximal annotated group within the MSI 
 
-Taking a close look at te other tracks below the graph you already get an idea what might be the case. R2 has a analysis tool called *relate two tracks* where you investigate the relation between dataset annotations. Go back to the main menu and select **relate two tracks** and click next.  Select for the X-track he MS_status  and for the Y_track tMS_Orientation and click next. 
+Taking a close look at te other tracks below the graph you already get an idea what might be the case. R2 has an analysis tool called *relate two tracks* where you investigate the relation between dataset annotations. Go back to the main menu and select **relate two tracks** and click next.  Select for the X-track the MS_status  and for the Y_track MS_Orientation and click next. 
 
-Here the relation between Orientation and MSI is plotted and for the statistics a Fisher Exacit test has been performed.
+Here the relation between Orientation and MSI is plotted and for the statistics a Fisher Exact test has been performed.
 
 * In the previous question we saw the MLH1 expression was not equally distributed within the MSI group, select in Color mode,  Color by Gene and enter MLH1 and click submit.  What do you see?.
 
+
 A:
+This clearly illustrates the relation between MSI/MSS subgroups and MLH1 expression
+
 ![](_static/images/MolGenCRC/relatedtwotracks_msi.png "Relate two tracks: MLH1")
 [**Figure x: 204 set**](_static/images/MolGenCRC/chrommap.png)
 
 In many cases of proximal colon cancer with MSI, the high level of microsatellite instability is caused by the loss of MLH1 expression. MLH1 inactivation can occur due to mutations in the MLH1 gene or through epigenetic changes, such as promoter methylation. In summary, the loss of MLH1 expression is a common mechanism leading to MSI in proximal colon cancer. Understanding the relationship between MLH1 expression and MSI is crucial for diagnosing MMR deficiency, predicting prognosis, and guiding targeted therapies for patients with colorectal cancer.
 
 
-
-
-So we have identified an important player as discussed in college. You have just selected the Watanabe set. Inspect the background information and look at the data this dataset has been generated. This is very old set, of course this set still of biological relevance we will also try to find we can find out we can validate this other sets. Not only because this is an old set but it is always common research practice to validate your results with other sources
+So we have identified an important player as discussed in college. You have just selected the Watanabe set. Inspect the background information and look at the data this dataset has been generated. This is very old set, of course this set still of biological relevance we will also try to find we can find out we can validate this other sets. Not only because this is an old set, but it is always common practice in Research practice to validate your results with other sources
 
 
 [comment]: <> (small info  about tcga ?)
 
-select Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode3
+Select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
-* Do the same test Find Differential Expression for Microsatellite_instability, select in the GS fileter > Broad 2020, oncogenic and click again the MHL1 gene
+* Perform the **Find Differential Expression** for **Microsatellite_instability**, select in the GS button fileter > Broad 2020, oncogenic and click again the MHL1 gene
 
 A:
 ![](_static/images/MolGenCRC/tcga_msimss_mlh1.png "204 set: MLH1")
@@ -341,7 +344,7 @@ A:
 A:
 ![](_static/images/MolGenCRC/Findcorgene_MHL1_EPM2IP1.png "EPM2AIP1")
 
-* Click on view additional details, on which chromosome are both genes located
+* Click on view additional details, on which chromosomes are both genes located
 
 A:
 
@@ -349,7 +352,9 @@ A:
 
 * Click T-view and zoom out 2 or 5 times, what can you say about their location
 
-[comment]: <> (hier een klein text bruggetje waarom we de volgende stap doen?)
+[comment]: <> (hier een klein text bruggetje waarom we de volgende stap doen?).
+
+The MLH1 gene expression affects clearly some important pathways. S 
 
 * Go back to your genelist of correlating genes and select only **neg corr** genes and click chrom map,
 
