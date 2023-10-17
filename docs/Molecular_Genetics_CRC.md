@@ -62,20 +62,22 @@ expressions between normal tissue and adenoma tumor tissue.
 **Datasets used:**
   
 * Mixed Colon - Marra - 64 - MAS5.0 - u133p2
-* Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode3
+* Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36
 
+### Filtering and exploring
 
-* In the main page in R2, click on dataset  name  in box 2. Using the grid box 'Tissue/Tumor/Disease/Misc' and find out how many colon related sets R2 is hosting.
+* In the main page of R2, click on dataset name in box 2, a grid box with all kinds of filtering options is popping up. Use the grid box 'Tissue/Tumor/Disease/Misc' and find out how many colon related sets R2 is hosting. *(use keywords)*
 
 **A:225**
 
-* How many sets has R2 when you only look for methylation sets.
+* How many sets has R2 when you only look for colon methylation sets.
 
 **A:7**
 
+This first dataset that we will use, can be found in R2 as "Mixed Colon - Marra - 64 - MAS5.0 - u133p2". In te main 
+screen more background information is revealed bij clicking on the dataset name. In the rest of  R2 clicking on the exclamation marks next to the dataset name will also reveal additional information.
 
-
-Of course it is nice to have a lot of RNA expression datasets tot analyse and explore but without proper sample annotation your have very limited analysis options. Let's explore the annotation for the Marra dataset.
+Of course it is nice to have a lot of RNA expression datasets to analyse and explore but without proper sample annotation your have very limited analysis options. Let's explore the annotation for the Marra dataset.
 
 
 
@@ -90,26 +92,33 @@ jpg)
 
 * Go to the cohort overview in box 3 and check the samples annotation by using the pulldown menu. In the annotation section, check *cohort overview* how many normal en tissue samples does the **Marra** set contain this set also contains the location such as tissue location etc etc.
 
-The R2 platform support a large  set of analysis types to explore datasets. One of these modules is the "Find differential expression between groups.
+The R2 platform support a large  set of analysis types to explore datasets. One of these modules is the "Find differential expression between groups". The differential expression analysis aims to identify genes which are significant different between two groups. R2 offers a couple of statistical test in this case we use the T-test which is selected by default.
 
-* Check if you have selected the **Marra** set and select in the main menu box, "Find Differential expression between two groups. In the next screen, use the default select T-test and select "Tissue" in **the group by:** option, and click submit. Select Normal and Adenoma, make sure that log2 and p < 0.01 is selected  and click submit.
+* Check if you have selected the **Marra** set and select in the main menu box, "Find Differential expression between two groups. In the next screen, use the default select T-test and select "Tissue" in **the group by:** option, and click submit in the next screen,  Select Normal and Adenoma for subsequently group 1 and group 2, make sure that log2 and p < 0.01 is selected  and click submit.
 
-* R2 has generated a large list of differentially expressed genes, can you say something about the distribution of the genes how many are up and down regulated.
+* R2 has generated a large list of differentially expressed genes, can you say something about the distribution of the genes, how many are up and down regulated.
 
-A: A list of 8000 regulated genens has been found. A small tabel shows the numbers of up and down regulated genes. 
+**A: A list of 8000 regulated genens has been found. A small tabel shows the numbers of up and down regulated genes. ~4058 vs 3939 **. 
 
 
 Next to many publicly available datasets, R2 is also hosting a lot of curated lists of genes which we call `gene sets` (gene categories). These gene categories can be used to restrict or filter as well.  We can adapt our current search by scrolling down to the end of our gene list. In the Adjustable Settings Panel by hitting the **"Search GS"** in the Gene Filters box you can now use a Gene Set to filter your list. Re-generate a list that is specifically associated with (colorectal) cancer (hint: look in the gene category or KEGG pathway list to identify an interesting gene set). You can look with keywords of inspect the KEGG pathway specific.
 
-* check some genes with single gene view (AXIN2 etc etc) by clicking the magnifying glass, in the green bar in the top you can easily go to list. Note the coloured bars beneath plot, containing the sample annotation, these grouping variables are called tracks. Also note you hoover over the dots in the graph and the tracks to get more information of the individual samples.
+* Check some genes with single gene view (AXIN2 etc etc) by clicking the magnifying glass, in the green bar in the top you can easily go to list. Note the coloured bars beneath plot, containing the sample annotation, these grouping variables are called tracks. Also note you hoover over the dots in the graph and the tracks to get more information of the individual samples.
 
 
-Pathway heatmap
----------------------------------------
+## A song of heatmaps and pathways
 
-The WNT pathway is an important signal transduction cascade in the development of colon cancer. 
 
-Generate a list of genes which are differentially expressed comparing normal and adenoma within the WNT pathway KEGG, use the False Discovery Rate for multiple testing correction, log 2 values and P <0.01. Find the Wnt pathway by clicking again the GS (Gene set button) and search by key word for Wnt or go through the KEGG pathways. 
+The WNT pathway is an important signal transduction cascade which plays an important role in many biological processes. The dysregulation of the Wnt pathway has been observed in many different cancers including colon cancer. 
+
+A:
+![](_static/images/MolGenCRC/marra_wnt_single_geneview.png "Figure 2: heatmap Find Diff")
+
+
+
+### The WNT pathway
+
+Generate a list of genes which are differentially expressed comparing normal and adenoma within the WNT pathway KEGG, use the False Discovery Rate for multiple testing correction, log 2 values and P <0.01. Find the **Wnt pathway** by clicking again the GS (Gene set button) and search by key word for Wnt or go through the KEGG pathways. 
 
 * How many genes are up / down regulated. 
 A:
@@ -120,28 +129,38 @@ A:
 
 
 A:
-![](_static/images/MolGenCRC/marra_biased_wnt.png "Figure 2: heatmap Find Diff")
+![](_static/images/MolGenCRC/marra_biased_wnt.png "Figure 2: heatmap Find Diff"). Yep, the genelist was biased  als result of tje Student T-test. 
 
 Pathway Analysis:
 ---------------------------------------
 
-Often, you do not immediately have an idea which pathways you could look for in your comparisons between groups (normal versus adenoma in our case). A module within R2 providing you with some suggestions is the so called KEGG Pathway Finder by Groups. It assesses whether the number of genes that show significant differential expression between normal and adenoma is significantly higher than you would expect compared to all genes that are mentioned in KEGG.
+Often, you do not immediately have an idea which pathways you could look at for in your comparisons between groups (normal versus adenoma in our case). A module within R2 providing you with some suggestions is the so called KEGG Pathway Finder by Groups. It assesses whether the number of genes that show significant differential expression between Normal and Adenoma is significantly higher than you would expect compared to all genes that are mentioned in KEGG. In other words are the genes you found regulated between the groups enriched in the KEGG pathway database. 
+
+[Info: The KEGG pathway Database]( https://www.genome.jp/kegg/pathway.html).
 
 
-* Perform a KEGG pathway analysis from the ‘main’ page. Make sure that under Representation: all is selected (both under and overrepresentation) Are there KEGG pathways overrepresented in the differentially expressed genes between adenoma and normal tissue? If this is true which pathway (Set the p-value 0.01 for the analysis and select striking pathways).
+* Perform a KEGG pathway analysis from the ‘main’ page. leave the re-presentation on **"over"** again with the Normal vs Adenoma group. Are there KEGG pathways over-represented in the differentially expressed genes  (Set the p-value 0.01 for the analysis and select striking pathways). And does it make sense that these are in the list ?.
+
+![](_static/images/MolGenCRC/keggpathway_select.png "Kegg select")
 
 
-*A: DNA replication and cell cycle are in the top off the list*
+*A: DNA replication and TP53 and Cell cycle are in  the list*, when you select over-representation
+
+![](_static/images/MolGenCRC/kegg_pathway.png "KEGG results")
 
 
-The previous task has shown that a number of WNT pathway genes were represented in the result list. Since we have generated a heatmap in the previous question with the wnt pathway gene from the latest results. We can also  make a heatmap directly without any test.
+* Perform the same task with the under-representation selected in de drop down menu. Do you see extra interesting pathways popping up.
+
+A: Under-representation e.g.  the mismatch repair pathway.
+
+In this test the WNT pathway was not really significant but still in the list at the bottom. One of the reasons why this is the case, is that in this case not all the genes  are assigned to the KEGG WNT pathway. Or that the pathway genes are in this case not sufficient to access pathway activity. However, visualizing the gene expression still hints you towards WNT pathway involvment. 
 
 * Go to the main screen select generate a heatmap and select the wnt path way from the text database.
 
 A:
 ![](_static/images/MolGenCRC/marra_unbiased_wnt.png "Figure 2: Heatmap - Wnt").
 
-* The samples are clearly seperated in normal vs adenoma. It's different and less pronounced compared to the previous heatmap. Do you think this is special? , Why or Why not.
+* The samples are clearly seperated in Normal vs Adenoma. It's different and less pronounced compared to the previous heatmap you generated.  Do you think this is special? , Why or Why not.
 
 * In what way is the heatmap your generated different compared to the previous one.  
 
@@ -273,7 +292,7 @@ image, followup analysis Braf mutation -> WNT pathway, Axin2")
 [**Figure 2: temp image,  followup analysis Braf mutation -> WNT pathway, Axin2**](_static/images/MolGenCRC/temp/brafmutation_followup_analysis_pathwayfinder_wnt_AXIN2_delete_later.png)
   
 
-### MSI / MSS in CRC
+## MSI / MSS in CRC
 
 In one the previous tasks we have introduced the R2 platform and looked at differences between Normal and Colon tissue by looking at differentially expressed genes. For many cancers types it is important to focus on subtyping meaning identifying subgroups within CRC datasets R2 is hosting. As already discussed, CRC has 4 CMS subtypes, one of the characteristics of CMS I, is MSI instability.
 
@@ -283,114 +302,143 @@ In MSI colon cancer, genes of the DNA mismatch repair system play an important r
 
 Dataset used: The next section we will use another dataset. * "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"*
 
-This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors, check the track MS_status.
+This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors.
 
-
+### Watanabe dataset
 
 * **Select "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"**
 
 
-Use the “Find Differential expressed genes between groups” module to generate a list of genes that i differentially expressed between MSI and MSS characterized tumors. Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
+Use the “Find Differential expressed genes between groups” module to generate a list of genes that differentially expressed between MSI and MSS characterized tumors. Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
 
 * Which one is in top list.
 
 A: TYMS
 
-*  One of the genes differentially expressed clearly is MLH1. Look at the expression pattern of MLH1 in colon tumors, both sets (MSI vs. MSS). What do you notice ?. The MHL1 expression came significant out our test as a down regulated gene. What did you expect and what do you see?. 
+*  One of the genes differentially expressed clearly is MLH1 (does this gene sounds familiar). Look at the expression pattern of MLH1 in colon tumors, both sets (MSI vs. MSS). What do you notice ?. The MHL1 expression came significant out our test as a down regulated gene. What did you expect and what do you see?. 
 
 
-A:
+**A:**
+
 ![](_static/images/MolGenCRC/watanabe_mlh1.png "Figure : MLH1")
 
-MSI tumors give a very heterogeneous picture. This could be an indication that within the MSI tumor group also a subgroup could be identified. Which one do you think ??.
+MSI tumors give a very heterogeneous picture. This could be an indication that within the MSI tumor group also a subgroup could be identified. Which one do you think ??. (note: Inspect the tracks or hoover)
 
-A: The proximal annotated group within the MSI 
+**A:**
+The proximal annotated group within the MSI 
 
-Taking a close look at te other tracks below the graph you already get an idea what might be the case. R2 has a analysis tool called *relate two tracks* where you investigate the relation between dataset annotations. Go back to the main menu and select **relate two tracks** and click next.  Select for the X-track he MS_status  and for the Y_track tMS_Orientation and click next. 
+Taking a close look at te other tracks below the graph you already get an idea what might be the case. R2 has an analysis tool called *relate two tracks* where you investigate the relation between dataset annotations. Go back to the main menu and select **relate two tracks** and click next.  Select for the X-track the MS_status  and for the Y_track MS_Orientation and click next. 
 
-Here the relation between Orientation and MSI is plotted and for the statistics a Fisher Exacit test has been performed.
+Here the relation between Orientation and MSI is plotted and for the statistics a Fisher Exact test has been performed.
 
 * In the previous question we saw the MLH1 expression was not equally distributed within the MSI group, select in Color mode,  Color by Gene and enter MLH1 and click submit.  What do you see?.
 
+
 A:
+This clearly illustrates the relation between MSI/MSS subgroups and MLH1 expression
+
 ![](_static/images/MolGenCRC/relatedtwotracks_msi.png "Relate two tracks: MLH1")
-[**Figure x: 204 set**](_static/images/MolGenCRC/chrommap.png)
+
+[**relate two tracks : MLH1 expression**](_static/images/MolGenCRC/relatedtwotracks_msi.png)
+
 
 In many cases of proximal colon cancer with MSI, the high level of microsatellite instability is caused by the loss of MLH1 expression. MLH1 inactivation can occur due to mutations in the MLH1 gene or through epigenetic changes, such as promoter methylation. In summary, the loss of MLH1 expression is a common mechanism leading to MSI in proximal colon cancer. Understanding the relationship between MLH1 expression and MSI is crucial for diagnosing MMR deficiency, predicting prognosis, and guiding targeted therapies for patients with colorectal cancer.
 
 
-
-
-So we have identified an important player as discussed in college. You have just selected the Watanabe set. Inspect the background information and look at the data this dataset has been generated. This is very old set, of course this set still of biological relevance we will also try to find we can find out we can validate this other sets. Not only because this is an old set but it is always common research practice to validate your results with other sources
+So we have identified an important player as discussed in college. You have just selected the Watanabe set. Inspect the background information and look at the data this dataset has been generated. This is very old set, of course this set still of biological relevance we will also try to find we can find out we can validate this other sets. Not only because this is an old set, but it is always common practice in Research practice to validate your results with other sources
 
 
 [comment]: <> (small info  about tcga ?)
 
-select Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode3
+### MSI in tcga set
 
-* Do the same test Find Differential Expression for Microsatellite_instability, select in the GS fileter > Broad 2020, oncogenic and click again the MHL1 gene
+Select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
+
+* Perform the **Find Differential Expression** for **Microsatellite_instability**, select in the GS button filter > Broad 2020, oncogenic and click again the MHL1 gene.
+
+![](_static/images/MolGenCRC/filter_broad_oncogenic.png "204 set: MLH1")
+
+[**don't forget to use the filter option**](_static/images/MolGenCRC/chrommap.png)
+
+
 
 A:
 ![](_static/images/MolGenCRC/tcga_msimss_mlh1.png "204 set: MLH1")
-[**Figure x: 204 set**](_static/images/MolGenCRC/chrommap.png)
+[**204 set: MSI status only**](_static/images/MolGenCRC/chrommap.png)
 
 A:
 ![](_static/images/MolGenCRC/tcga_msimss_mlh1_512.png "512 set: MLH1")
-[**Figure x: 512 set**](_static/images/MolGenCRC/chrommap.png)
+[**In the 512:  set can be deleted**](_static/images/MolGenCRC/chrommap.png)
 
 So clearly it seems that MLH1 plays is a key role and is possible affecting other genes also in other independent generated datasets, 
 
 * One way to find out which genes are possibly regulated by the MLH1 gene is to find genes which are (inverse) correlated with this gene.
 
-* Run the Find correlated genes with a single gene module for the MLH1 gene.
+
+### Find genes correlating with a single gene
+
+* Run the Find correlated genes with a single gene module for the MLH1 gene do not forget to use the filter option for Broad 2020: Oncogenics further use.  the default settings. 
 
 A:
 ![](_static/images/MolGenCRC/Findcorgene_MHL1.png "Table")
+[**List of genes correlating with MLH1**](_static/images/MolGenCRC/chrommap.png)
 
-* Then click on the best correlating gene to plot both genes together, in a two gene view
+* Then click on the best correlating gene to plot both genes together, in a two gene view. Inspect the correlation. Can you think of reasons why the gene expression is highly correlated/
 
-A:
+**A:**
 ![](_static/images/MolGenCRC/Findcorgene_MHL1_EPM2IP1.png "EPM2AIP1")
 
-* Click on view additional details, on which chromosome are both genes located
+* Click on **view additional details**, on which chromosomes are both genes located
 
-A:
+**A:**
+Chrom 3.
+
+* Click T-view and zoom out 2 or 5 times, what can you say about their location of the two genes. 
 
 ![](_static/images/MolGenCRC/viewadddetails.png "Genome Browser")
 
-* Click T-view and zoom out 2 or 5 times, what can you say about their location
 
-[comment]: <> (hier een klein text bruggetje waarom we de volgende stap doen?)
 
-* Go back to your genelist of correlating genes and select only **neg corr** genes and click chrom map,
+[comment]: <> (hier een klein text bruggetje waarom we de volgende stap doen?).
 
-A:
+The MLH1 gene expression affects clearly some important pathways. In case you want to find genes which 
+
+* Go back to your genelist of correlating genes and select only **neg corr** genes and click chrom map, do not use a filter this take some seconds.
+
+
+
+![](_static/images/MolGenCRC/loading_page.png "Loading Page")
+
+**A:**
 
 ![](_static/images/MolGenCRC/viewadddetails_genbr.png "Figure x: MLH1")
 
 * A lot of genes are clearly over-represented on a number of chromosome, especially chrom 18 with a high p-value.
 
 
-A:
-![](_static/images/MolGenCRC/chrommap.png "Figure x: MLH1")
+**A:**
 
-[**Figure x:**](_static/images/MolGenCRC/chrommap.png)
+![](_static/images/MolGenCRC/chrommap.png "Chrom Table")
+
+[**Chromosome 18 instability**](_static/images/MolGenCRC/chrommap.png)
 
 chrom 18 loss is linked to msi/mss instability
 
 
-Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
+**DNA repair system**
 
+
+Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
 
 
 * Go back to the MLH1 correlating genelist make sure you have preselected the DNA-repair genes. CLick submit. Click on generated a heatmap. And do you see a clear associated with a CMS subgroup ?, and which one.
 
 
 A:
-![](_static/images/MolGenCRC/dnarepair.png "Figure 2: MLH1")
+![](_static/images/MolGenCRC/dnarepair.png "DNA repair")
+[**DNArepair**](_static/images/MolGenCRC/dnarepair.png)
 
 * and take look at the CMS classification !!! what do you see ?? are you surprised
-
 CMS4, MSI had been associated with CM1 and CMS4
 
 In one of the first questions in this course we have seen there is an association with the genomic location. We have seen that a low MLH1 expression is associated with CRC subtypes. As briefly touched, the R2 platform has many types not only gene expression but also methylation arrays. Go to the main menu and select
@@ -403,17 +451,14 @@ In one of the first questions in this course we have seen there is an associatio
 * In the Alternative box, unfold additional details,  click on the view all link below MLH, here a nice heatmap is plotted of the methylation ratios's what do you see.
 
 
-* A lot of samples are unfortunately not all the samples are annotated for Microsatelite instability, filter for those samples only and click submit. The MLH1 reporters for this gene (only 4), seem all methylated however, most likely these are not well designed and can maybe not distinguishe for the proper MLH1 reporters. However look at the other reporters on the same location, we also see a gene name we encountered before. Do you see an association with MSI/MSS.
+* A lot of samples are unfortunately not all the samples are annotated for Microsatelite instability, filter for those samples only and click submit. The MLH1 reporters for this gene (only 4), seem all methylated however, most likely these are not well designed and can maybe not distinguish for the proper MLH1 reporters. However look at the other reporters on the same location, we also see a gene name we encountered before. Do you see an association with MSI/MSS.
 
 
 
 
 A:
 ![](_static/images/MolGenCRC/methylation_mlh1loc.png "Figure 2: heatmap")
-May be a little , maybe you expected CMS1 classification but also CMS4 has been associated with MSI.
-
-
-[comment]: <> (deze set wil ik mogelijk nog aanpassen met wat meer MSS / MSI)
+May be a little , maybe you expected CMS1 classification but also CMS4 has been associated with MSI. 
 
 
   
@@ -456,16 +501,16 @@ The four drugs can be diveded in two types.
 **TP53 activation:**
 
 Etoposide:  Clinically relevant activators of wild-type p53, Activates p53 via induction of  DNA double strand breaks. Initiation double strand breaks but leads of course to resitance and secondary malignancies. 
-Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non genotoxic, considered a proto-oncogene.
+Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non-genotoxic, considered a proto-oncogene.
 
 
 
-**Integrated stress repons  pathway:**
+**Integrated stress response pathway:**
 
 Effector of anti-proliferative and cell death expression programs
 
-Tunicamycin: Activates the ISR (integrated stress repons pathway), via ER stress of accumulating 
-Histidinol: Activates the ISR (integrated stress repons pathway), via histinide depletion.
+Tunicamycin: Activates the ISR (integrated stress response pathway), via ER stress of accumulating 
+Histidinol: Activates the ISR (integrated stress response pathway), via histinide depletion.
 
 
 
@@ -476,12 +521,6 @@ in HCT116 WT cells
 * Both the p53-dependent and the ATF4-driven ISR gene networks are antiproliferative,
   either through induction of apoptosis or cell cycle control
 
-**important genes:** 
-
-GADD45A<br>
-MDM2<br>
-ATF3<br>
-ATf4
 
 
 
@@ -491,7 +530,7 @@ A:
 
 * Analyse which genes are affected by the compounds
 
-Let's start with drugs knownn to interact with tp53. In collegae also MDM2 has been mentioned as negative P53 regulator. 
+Let's start with drugs known to interact with tp53. In college also MDM2 has been mentioned as negative P53 regulator. 
 If you want to  find diffentially expressed genes in Tp53 dependent background which subgroups do you have to select.
 
 A: Select Nutlin-3a for the comparison and the P53 WT
@@ -499,7 +538,7 @@ A: Select Nutlin-3a for the comparison and the P53 WT
 
 * Do you see the MDM2 gene ?.
 
-* Inspect the MDM2 level in in a one gene view  are your surprised ?
+* Inspect the MDM2 level in a one gene view  are your surprised ?
 ![](_static/images/MolGenCRC/MDM2-gene_sammons.png "MDM2")
 
 * Also check the relation with TP53
@@ -529,7 +568,6 @@ Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog
 
 ![](_static/images/MolGenCRC/venn_drugsp53.png "Figure 2: heatmap")
 
-* Check some papers ATF3 and ATF4
 
 
 ## CMS
