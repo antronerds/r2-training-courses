@@ -308,7 +308,9 @@ A:
 This clearly illustrates the relation between MSI/MSS subgroups and MLH1 expression
 
 ![](_static/images/MolGenCRC/relatedtwotracks_msi.png "Relate two tracks: MLH1")
-[**Figure x: 204 set**](_static/images/MolGenCRC/chrommap.png)
+
+[**relate two tracks : MLH1 expression**](_static/images/MolGenCRC/relatedtwotracks_msi.png)
+
 
 In many cases of proximal colon cancer with MSI, the high level of microsatellite instability is caused by the loss of MLH1 expression. MLH1 inactivation can occur due to mutations in the MLH1 gene or through epigenetic changes, such as promoter methylation. In summary, the loss of MLH1 expression is a common mechanism leading to MSI in proximal colon cancer. Understanding the relationship between MLH1 expression and MSI is crucial for diagnosing MMR deficiency, predicting prognosis, and guiding targeted therapies for patients with colorectal cancer.
 
@@ -318,73 +320,95 @@ So we have identified an important player as discussed in college. You have just
 
 [comment]: <> (small info  about tcga ?)
 
+### MSI in tcga set
+
 Select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
-* Perform the **Find Differential Expression** for **Microsatellite_instability**, select in the GS button fileter > Broad 2020, oncogenic and click again the MHL1 gene
+* Perform the **Find Differential Expression** for **Microsatellite_instability**, select in the GS button filter > Broad 2020, oncogenic and click again the MHL1 gene.
+
+![](_static/images/MolGenCRC/filter_broad_oncogenic.png "204 set: MLH1")
+
+[**don't forget to use the filter option**](_static/images/MolGenCRC/chrommap.png)
+
+
 
 A:
 ![](_static/images/MolGenCRC/tcga_msimss_mlh1.png "204 set: MLH1")
-[**Figure x: 204 set**](_static/images/MolGenCRC/chrommap.png)
+[**204 set: MSI status only**](_static/images/MolGenCRC/chrommap.png)
 
 A:
 ![](_static/images/MolGenCRC/tcga_msimss_mlh1_512.png "512 set: MLH1")
-[**Figure x: 512 set**](_static/images/MolGenCRC/chrommap.png)
+[**In the 512:  set can be deleted**](_static/images/MolGenCRC/chrommap.png)
 
 So clearly it seems that MLH1 plays is a key role and is possible affecting other genes also in other independent generated datasets, 
 
 * One way to find out which genes are possibly regulated by the MLH1 gene is to find genes which are (inverse) correlated with this gene.
 
-* Run the Find correlated genes with a single gene module for the MLH1 gene.
+
+### Find genes correlating with a single gene
+
+* Run the Find correlated genes with a single gene module for the MLH1 gene do not forget to use the filter option for Broad 2020: Oncogenics further use.  the default settings. 
 
 A:
 ![](_static/images/MolGenCRC/Findcorgene_MHL1.png "Table")
+[**List of genes correlating with MLH1**](_static/images/MolGenCRC/chrommap.png)
 
-* Then click on the best correlating gene to plot both genes together, in a two gene view
+* Then click on the best correlating gene to plot both genes together, in a two gene view. Inspect the correlation. Can you think of reasons why the gene expression is highly correlated/
 
-A:
+**A:**
 ![](_static/images/MolGenCRC/Findcorgene_MHL1_EPM2IP1.png "EPM2AIP1")
 
-* Click on view additional details, on which chromosomes are both genes located
+* Click on **view additional details**, on which chromosomes are both genes located
 
-A:
+**A:**
+Chrom 3.
+
+* Click T-view and zoom out 2 or 5 times, what can you say about their location of the two genes. 
 
 ![](_static/images/MolGenCRC/viewadddetails.png "Genome Browser")
 
-* Click T-view and zoom out 2 or 5 times, what can you say about their location
+
 
 [comment]: <> (hier een klein text bruggetje waarom we de volgende stap doen?).
 
-The MLH1 gene expression affects clearly some important pathways. S 
+The MLH1 gene expression affects clearly some important pathways. In case you want to find genes which 
 
-* Go back to your genelist of correlating genes and select only **neg corr** genes and click chrom map,
+* Go back to your genelist of correlating genes and select only **neg corr** genes and click chrom map, do not use a filter this take some seconds.
 
-A:
+
+
+![](_static/images/MolGenCRC/loading_page.png "Loading Page")
+
+**A:**
 
 ![](_static/images/MolGenCRC/viewadddetails_genbr.png "Figure x: MLH1")
 
 * A lot of genes are clearly over-represented on a number of chromosome, especially chrom 18 with a high p-value.
 
 
-A:
-![](_static/images/MolGenCRC/chrommap.png "Figure x: MLH1")
+**A:**
 
-[**Figure x:**](_static/images/MolGenCRC/chrommap.png)
+![](_static/images/MolGenCRC/chrommap.png "Chrom Table")
+
+[**Chromosome 18 instability**](_static/images/MolGenCRC/chrommap.png)
 
 chrom 18 loss is linked to msi/mss instability
 
 
-Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
+**DNA repair system**
 
+
+Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
 
 
 * Go back to the MLH1 correlating genelist make sure you have preselected the DNA-repair genes. CLick submit. Click on generated a heatmap. And do you see a clear associated with a CMS subgroup ?, and which one.
 
 
 A:
-![](_static/images/MolGenCRC/dnarepair.png "Figure 2: MLH1")
+![](_static/images/MolGenCRC/dnarepair.png "DNA repair")
+[**DNArepair**](_static/images/MolGenCRC/dnarepair.png)
 
 * and take look at the CMS classification !!! what do you see ?? are you surprised
-
 CMS4, MSI had been associated with CM1 and CMS4
 
 In one of the first questions in this course we have seen there is an association with the genomic location. We have seen that a low MLH1 expression is associated with CRC subtypes. As briefly touched, the R2 platform has many types not only gene expression but also methylation arrays. Go to the main menu and select
@@ -397,17 +421,14 @@ In one of the first questions in this course we have seen there is an associatio
 * In the Alternative box, unfold additional details,  click on the view all link below MLH, here a nice heatmap is plotted of the methylation ratios's what do you see.
 
 
-* A lot of samples are unfortunately not all the samples are annotated for Microsatelite instability, filter for those samples only and click submit. The MLH1 reporters for this gene (only 4), seem all methylated however, most likely these are not well designed and can maybe not distinguishe for the proper MLH1 reporters. However look at the other reporters on the same location, we also see a gene name we encountered before. Do you see an association with MSI/MSS.
+* A lot of samples are unfortunately not all the samples are annotated for Microsatelite instability, filter for those samples only and click submit. The MLH1 reporters for this gene (only 4), seem all methylated however, most likely these are not well designed and can maybe not distinguish for the proper MLH1 reporters. However look at the other reporters on the same location, we also see a gene name we encountered before. Do you see an association with MSI/MSS.
 
 
 
 
 A:
 ![](_static/images/MolGenCRC/methylation_mlh1loc.png "Figure 2: heatmap")
-May be a little , maybe you expected CMS1 classification but also CMS4 has been associated with MSI.
-
-
-[comment]: <> (deze set wil ik mogelijk nog aanpassen met wat meer MSS / MSI)
+May be a little , maybe you expected CMS1 classification but also CMS4 has been associated with MSI. 
 
 
   
@@ -450,16 +471,16 @@ The four drugs can be diveded in two types.
 **TP53 activation:**
 
 Etoposide:  Clinically relevant activators of wild-type p53, Activates p53 via induction of  DNA double strand breaks. Initiation double strand breaks but leads of course to resitance and secondary malignancies. 
-Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non genotoxic, considered a proto-oncogene.
+Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non-genotoxic, considered a proto-oncogene.
 
 
 
-**Integrated stress repons  pathway:**
+**Integrated stress response pathway:**
 
 Effector of anti-proliferative and cell death expression programs
 
-Tunicamycin: Activates the ISR (integrated stress repons pathway), via ER stress of accumulating 
-Histidinol: Activates the ISR (integrated stress repons pathway), via histinide depletion.
+Tunicamycin: Activates the ISR (integrated stress response pathway), via ER stress of accumulating 
+Histidinol: Activates the ISR (integrated stress response pathway), via histinide depletion.
 
 
 
@@ -470,12 +491,6 @@ in HCT116 WT cells
 * Both the p53-dependent and the ATF4-driven ISR gene networks are antiproliferative,
   either through induction of apoptosis or cell cycle control
 
-**important genes:** 
-
-GADD45A<br>
-MDM2<br>
-ATF3<br>
-ATf4
 
 
 
@@ -485,7 +500,7 @@ A:
 
 * Analyse which genes are affected by the compounds
 
-Let's start with drugs knownn to interact with tp53. In collegae also MDM2 has been mentioned as negative P53 regulator. 
+Let's start with drugs known to interact with tp53. In college also MDM2 has been mentioned as negative P53 regulator. 
 If you want to  find diffentially expressed genes in Tp53 dependent background which subgroups do you have to select.
 
 A: Select Nutlin-3a for the comparison and the P53 WT
@@ -493,7 +508,7 @@ A: Select Nutlin-3a for the comparison and the P53 WT
 
 * Do you see the MDM2 gene ?.
 
-* Inspect the MDM2 level in in a one gene view  are your surprised ?
+* Inspect the MDM2 level in a one gene view  are your surprised ?
 ![](_static/images/MolGenCRC/MDM2-gene_sammons.png "MDM2")
 
 * Also check the relation with TP53
@@ -523,7 +538,6 @@ Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog
 
 ![](_static/images/MolGenCRC/venn_drugsp53.png "Figure 2: heatmap")
 
-* Check some papers ATF3 and ATF4
 
 
 ## CMS
