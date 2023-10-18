@@ -11,13 +11,18 @@ This resource is located online at http://r2platform.com/mgcourse
 Introduction
 ------------
 
-In the late 1980s the Vogelstein model was proposed. It introduced the concept of a stepwise accumulation of genetic mutations leading to the development of this type of cancer. 
+In the late 1980s the Vogelstein model was proposed. It introduced the concept of a stepwise accumulation of genetic
+mutations leading to the development of colorectal cancer (CRC).
 
 ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression")
 
 [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
-While it has significantly advanced our understanding of colorectal cancer, research is still urgently needed:  
+As shown in the picture above, the model highlights the importance of key genetic mutations, including APC, KRAS, and TP53, in this process.While the Vogelstein model has provided a valuable foundation for understanding 
+colorectal cancer, subsequent research
+has revealed that the disease is more complex and heterogeneous than initially described. Colorectal cancer can involve
+various genetic and epigenetic changes, and additional factors, such as the tumor microenvironment, inflammation, and
+the immune system, also play significant roles in the progression of the disease.  
 according to the World Health Organization colorectal cancer is the third most common cancer worldwide, accounting 
 for approximately 10% of all cancer cases, and it is the second leading cause of cancer-related deaths worldwide.  
 Research is needed to understand the mechanisms underlying treatment resistance and to develop strategies to 
@@ -30,11 +35,11 @@ colorectal cancer has gained significant attention. It is crucial to understand 
 colorectal cancer at all different levels in order to develop new and effective targeted treatment strategies.  
   
 
-  ![](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg "Figure 2: Subtypes in colorectal 
+![](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg "Figure 2: Subtypes in colorectal 
  cancer: CMS classification (Guinney et al., 2015)")
 
-  [**Figure 2: Subtypes in colorectal cancer: CMS classification (Guinney et al., 2015)**](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg)
-  
+[**Figure 2: Subtypes in colorectal cancer: CMS classification (Guinney et al., 2015)**](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg)
+
 
 Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to support molecular 
 biologists in their search for new insights from experimental data and patient data.  
