@@ -18,21 +18,22 @@ mutations leading to the development of colorectal cancer (CRC).
 
 [**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
-As shown in the picture above, the model highlights the importance of key genetic mutations, including APC, KRAS, and TP53, in this process.While the Vogelstein model has provided a valuable foundation for understanding 
-colorectal cancer, subsequent research
-has revealed that the disease is more complex and heterogeneous than initially described. Colorectal cancer can involve
-various genetic and epigenetic changes, and additional factors, such as the tumor microenvironment, inflammation, and
-the immune system, also play significant roles in the progression of the disease.  
-according to the World Health Organization colorectal cancer is the third most common cancer worldwide, accounting 
+As shown in the picture above, the model highlights the importance of key genetic mutations during CRC progression, 
+including mutations in APC, KRAS, and TP53. While the Vogelstein model has provided a valuable foundation for 
+understanding colorectal cancer, subsequent research has revealed that the disease is more complex and heterogeneous 
+than initially described. Colorectal cancer can involve various genetic and epigenetic changes, and additional 
+factors, such as the tumor microenvironment, inflammation, and the immune system, also play significant roles in the 
+progression of the disease.  
+Colorectal cancer is the third most common cancer worldwide, according to the World Health Organization, accounting 
 for approximately 10% of all cancer cases, and it is the second leading cause of cancer-related deaths worldwide.  
 Research is needed to understand the mechanisms underlying treatment resistance and to develop strategies to 
 overcome it. While the Vogelstein model emphasizes the accumulation of mutations over time, it is well known by now 
-that colorectal cancer is not a monolithic disease. There are multiple subtypes with different genetic mutations, 
-epigenetic changes, and protein markers that can guide treatment decisions and improve the outcomes for individuals 
-with colorectal cancer. There is a growing interest in early detection and prevention, which
-might allow for interventions before advanced mutations occur. Also, the role of the immune system in 
+that colorectal cancer is not a monolithic disease. Multiple CRC subtypes have been identified, possibly with different 
+genetic mutations, epigenetic changes, and protein markers that could guide treatment decisions and improve the 
+outcomes for individuals with colorectal cancer. Other CRC research focusses on early detection and 
+prevention, which might allow for interventions before advanced mutations occur. Also, the role of the immune system in 
 colorectal cancer has gained significant attention. It is crucial to understand the diversity and complexity of 
-colorectal cancer at all different levels in order to develop new and effective targeted treatment strategies.  
+colorectal cancer at all different levels in order to develop new and effective targeted treatment strategies.
   
 
 ![](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg "Figure 2: Subtypes in colorectal 
