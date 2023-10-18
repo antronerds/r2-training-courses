@@ -21,34 +21,28 @@ mutations leading to the development of colorectal cancer (CRC).
 As shown in the picture above, the model highlights the importance of key genetic mutations during CRC progression, 
 including mutations in APC, KRAS, and TP53. While the Vogelstein model has provided a valuable foundation for 
 understanding colorectal cancer, subsequent research has revealed that the disease is more complex and heterogeneous 
-than initially described. Colorectal cancer can involve various genetic and epigenetic changes, and additional 
+than initially described. Colorectal cancer can involve various genetic and epigenetic changes. Additional 
 factors, such as the tumor microenvironment, inflammation, and the immune system, also play significant roles in the 
-progression of the disease.  
+progression of the disease. <br>
 Colorectal cancer is the third most common cancer worldwide, according to the World Health Organization, accounting 
-for approximately 10% of all cancer cases, and it is the second leading cause of cancer-related deaths worldwide.  
-Research is needed to understand the mechanisms underlying treatment resistance and to develop strategies to 
-overcome it. While the Vogelstein model emphasizes the accumulation of mutations over time, it is well known by now 
-that colorectal cancer is not a monolithic disease. Multiple CRC subtypes have been identified, possibly with different 
-genetic mutations, epigenetic changes, and protein markers that could guide treatment decisions and improve the 
-outcomes for individuals with colorectal cancer. Other CRC research focusses on early detection and 
-prevention, which might allow for interventions before advanced mutations occur. Also, the role of the immune system in 
-colorectal cancer has gained significant attention. It is crucial to understand the diversity and complexity of 
-colorectal cancer at all different levels in order to develop new and effective targeted treatment strategies.
-  
+for approximately 10% of all cancer cases, and it is the second leading cause of cancer-related deaths worldwide. 
 
 ![](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg "Figure 2: Subtypes in colorectal 
  cancer: CMS classification (Guinney et al., 2015)")
 
 [**Figure 2: Subtypes in colorectal cancer: CMS classification (Guinney et al., 2015)**](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg)
 
+Research is needed to understand the mechanisms underlying treatment resistance and to develop strategies to
+overcome it. Better identification and characterization of multiple CRC subtypes could guide treatment decisions and
+improve the outcomes for individuals with colorectal cancer. Furthermore, markers for early detection and prevention
+might allow for interventions before advanced mutations occur. Clearly it is crucial to understand the diversity and
+complexity of colorectal cancer in order to develop new and effective targeted treatment strategies. <br>
 
-Using advanced data analysis, statistics and clustering methods, the field of bioinformatics tries to support molecular 
-biologists in their search for new insights from experimental data and patient data.  
-Today you will use the freely available and web-based genomics analysis and visualization platform R2, a Core Facility
-of the Amsterdam UMC.
-R2 provides you with a set of bioinformatics tools that allow you to investigate all kinds of experimental and
-patient data. You will explore, analyze and visualize publicly available data to gain insight and hands-on experience in
-how omics data can be used to deepen your understanding of colorectal cancer.
+Today you will use advanced bioinformatics tools to explore, analyze and visualize colorectal cancer data in
+search for a deeper understanding. You will use the freely available and web-based genomics analysis and 
+visualization platform R2, a Core Facility of the Amsterdam UMC. R2 provides the user with many experimental and 
+clinical data sets coupled to a wide variety of clickable bioinformatics tools. Without any coding you will gain
+hands-on research experience with colorectal cancer omics data and bioinformatics tools.
 
 The <button class="course_permalink">grey buttons</button> in this course will bring you to the R2 platform, often with
 pre-set settings such that you can pick up an analysis easily. The <button class="course googleform">green
