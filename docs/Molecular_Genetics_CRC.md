@@ -57,8 +57,6 @@ the form, click the button below:
 Let's get acquainted with R2 and its large collection of omic datasets while exploring differences in gene 
 expressions between normal tissue and adenoma tumor tissue.
 
-***To login, go to: [https://r2.amc.nl](https://r2.amc.nl) and use the student credentials that were provided to you.***
-
 **Datasets used:**
   
 * Mixed Colon - Marra - 64 - MAS5.0 - u133p2
@@ -66,7 +64,27 @@ expressions between normal tissue and adenoma tumor tissue.
 
 ### Filtering and exploring
 
-* In the main page of R2, click on dataset name in box 2, a grid box with all kinds of filtering options is popping up. Use the grid box 'Tissue/Tumor/Disease/Misc' and find out how many colon related sets R2 is hosting. *(use keywords)*
+* The button below brings you to the form in which you can submit your answers for section 1.2.
+
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1ZGSmm3oMSJKHBHosCJsDUuGbQDhUX-_JSesBLizcDwQ/','_blank');" type="button">Open the form for section 1.2</button>
+<br>
+<br>
+
+* Open a Chrome browser and go to the R2 platform
+  address: <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a> and choose the button **Use R2 without an
+  account** under the sign in fields.
+
+You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and
+methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's
+main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.<br><br>
+In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset.
+We use the dataset that is described above. In this dataset, 64 samples of   .
+
+* In order to find the dataset in R2, click on the text of the currently selected dataset in box 2. A grid pops up in
+  which you can find all the datasets of R2 that are available to you.
+* Each row is a dataset and each column contains the different searchable characteristics of a dataset. Under the header
+  **Tissue/Tumor** type the keyword *colon* in the white textfield to find out how many colon related sets R2 is 
+  hosting.
 
 **A:225**
 
