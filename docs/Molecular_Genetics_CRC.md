@@ -106,7 +106,7 @@ Of course it is nice to have a lot of RNA expression datasets to analyse and exp
 cancer")
 
 [**Figure 2: CRC progression from normal tissue to metastatic cancer**](_static/images/MolGenCRC/temp/CRCprogression_highres.jpg)
-source: https://www.sciencedirect.com/science/article/pii/S1936523321001236#fig0001
+<span class="citation_txt">(source: https://www.sciencedirect.com/science/article/pii/S1936523321001236#fig0001)</<span>
 
 * Find  and select the RNA expression dataset from Author Marra and select the one with 64 samples. *Note: Click the blue box with confirm selection*.
 
