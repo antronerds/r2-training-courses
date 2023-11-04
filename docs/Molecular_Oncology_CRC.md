@@ -14,9 +14,9 @@ Introduction
 In the late 1980s the Vogelstein model was proposed. It introduced the concept of a stepwise accumulation of genetic
 mutations leading to the development of colorectal cancer (CRC).  
 
-![](_static/images/MolGenCRC/temp/santos_ijms241311023_TumorProgression.png "Figure 1: Mutation paths during cancer progression")
+![](_static/images/MolOncCRC/santos_ijms241311023_TumorProgression.png "Figure 1: Mutation paths during cancer progression")
 
-[**Figure 1: Mutation paths during cancer progression**](_static/images/MolGenCRC/temp/santos_ijms241311023_TumorProgression.png)
+[**Figure 1: Mutation paths during cancer progression**](_static/images/MolOncCRC/santos_ijms241311023_TumorProgression.png)
 
 <span class="citation_txt">(source: https://doi.org/10.3390/ijms241311023)</span>
 
@@ -29,17 +29,19 @@ progression of the disease. <br>
 Colorectal cancer is the third most common cancer worldwide, according to the World Health Organization, accounting 
 for approximately 10% of all cancer cases, and it is the second leading cause of cancer-related deaths worldwide. 
 
-![](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg "Figure 2: Subtypes in colorectal 
+![](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.jpg "Figure 2: Subtypes in colorectal 
  cancer: CMS classification (Guinney et al., 2015)")
 
-[**Figure 2: Subtypes in colorectal cancer: CMS classification (Guinney et al., 2015)**](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg)
+[**Figure 2: Subtypes in colorectal cancer: CMS classification (Guinney et al., 2015)**](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.jpg)
 
 Research is needed to understand the mechanisms underlying treatment resistance and to develop strategies to
 overcome it. Better identification and characterization of multiple CRC subtypes could guide treatment decisions and
 improve the outcomes for individuals with colorectal cancer. Furthermore, markers for early detection and prevention
 might allow for interventions before advanced mutations occur. Clearly it is crucial to understand the diversity and
-complexity of colorectal cancer in order to develop new and effective targeted treatment strategies. <br>
-
+complexity of colorectal cancer in order to develop new and effective targeted treatment strategies. <br><br>
+Bioinformatics tools enable the analysis of vast amounts of omic and clinical data, helping researchers identify 
+genetic mutations, epigenetic aberrations, biomarkers, and potential therapeutic targets in order to better understand 
+and combat cancer.<br>
 Today you will use advanced bioinformatics tools to explore, analyze and visualize colorectal cancer data in
 search for a deeper understanding. You will use the freely available and web-based genomics analysis and 
 visualization platform R2, a Core Facility of the Amsterdam UMC. R2 provides the user with many experimental and 
@@ -52,18 +54,21 @@ buttons</button> in this document will open up a Google form, one per section, w
 
 We would like to ask you to fill in the evaluation form about this R2 course during or at the end of the course. To open
 the form, click the button below:
- 
 
-## Normal vs Colorectal Tumor Tissue: a first impression of genomic data
+<button class="course googleform" onclick="window.open('https://forms.gle/kfiE5vQiDmhJVS1f8','_blank');" type="button">Open the Evaluation form</button>
+<br>
+<br>
 
-A fundamental query in cancer research consistently revolves around understanding the distinctions between normal 
-and tumor tissues. Let's get acquainted with R2 and its large collection of omic datasets while imimediately exploring 
-differences in gene expressions between normal tissue and adenoma tumor tissue.
+## Normal colonic epithelium vs colorectal tumor tissue: a first impression of genomic data
+
+Colorectal cancers are believed to arise predominantly from adenomas. A fundamental query in cancer research 
+consistently revolves around understanding the distinctions between the transcriptomic profiles of normal tissue and 
+tumor tissues. Let's get acquainted with R2 and its large collection of omic datasets while immediately exploring 
+differences in gene expressions between normal colonic mucosa and colorectal adenomatous tissue. 
 
 **Datasets used:**
   
 * Mixed Colon - Marra - 64 - MAS5.0 - u133p2
-* Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36
 
 ### Filtering and exploring
 
@@ -89,11 +94,9 @@ We use the dataset that is described above. In this dataset, 64 samples of   .
   **Tissue/Tumor** type the keyword *colon* in the white textfield to find out how many colon related sets R2 is 
   hosting.
 
-**A:225**
 
 * How many sets has R2 when you only look for colon methylation sets.
 
-**A:7**
 
 This first dataset that we will use, can be found in R2 as "Mixed Colon - Marra - 64 - MAS5.0 - u133p2". In te main 
 screen more background information is revealed bij clicking on the dataset name. In the rest of  R2 clicking on the exclamation marks next to the dataset name will also reveal additional information.
@@ -102,10 +105,10 @@ Of course it is nice to have a lot of RNA expression datasets to analyse and exp
 
 
 
-![](_static/images/MolGenCRC/temp/CRCprogression_highres.jpg "Figure 2: CRC progression from normal tissue to metastatic 
+![](_static/images/MolOncCRC/CRCprogression_highres.jpg "Figure 2: CRC progression from normal tissue to metastatic 
 cancer")
 
-[**Figure 2: CRC progression from normal tissue to metastatic cancer**](_static/images/MolGenCRC/temp/CRCprogression_highres.jpg)
+[**Figure 2: CRC progression from normal tissue to metastatic cancer**](_static/images/MolOncCRC/CRCprogression_highres.jpg)
 <span class="citation_txt">(source: https://www.sciencedirect.com/science/article/pii/S1936523321001236#fig0001)</<span>
 
 * Find  and select the RNA expression dataset from Author Marra and select the one with 64 samples. *Note: Click the blue box with confirm selection*.
@@ -118,8 +121,6 @@ The R2 platform support a large  set of analysis types to explore datasets. One 
 
 * R2 has generated a large list of differentially expressed genes, can you say something about the distribution of the genes, how many are up and down regulated.
 
-**A: A list of 8000 regulated genens has been found. A small tabel shows the numbers of up and down regulated genes. ~4058 vs 3939 **. 
-
 
 Next to many publicly available datasets, R2 is also hosting a lot of curated lists of genes which we call `gene sets` (gene categories). These gene categories can be used to restrict or filter as well.  We can adapt our current search by scrolling down to the end of our gene list. In the Adjustable Settings Panel by hitting the **"Search GS"** in the Gene Filters box you can now use a Gene Set to filter your list. Re-generate a list that is specifically associated with (colorectal) cancer (hint: look in the gene category or KEGG pathway list to identify an interesting gene set). You can look with keywords of inspect the KEGG pathway specific.
 
@@ -131,25 +132,14 @@ Next to many publicly available datasets, R2 is also hosting a lot of curated li
 
 The WNT pathway is an important signal transduction cascade which plays an important role in many biological processes. The dysregulation of the Wnt pathway has been observed in many different cancers including colon cancer. 
 
-A:
-![](_static/images/MolGenCRC/marra_wnt_single_geneview.png "Figure 2: heatmap Find Diff")
-
-
-
 ### The WNT pathway
 
 Generate a list of genes which are differentially expressed comparing normal and adenoma within the WNT pathway KEGG, use the False Discovery Rate for multiple testing correction, log 2 values and P <0.01. Find the **Wnt pathway** by clicking again the GS (Gene set button) and search by key word for Wnt or go through the KEGG pathways. 
 
 * How many genes are up / down regulated. 
-A:
-33
-32
 
 * In the left menu generate a heatmap. Play a little bit with the color scheme, select e.g: the green-black-red scheme,  Inspect the heatmap did you expect this pronounced clustering?.
 
-
-A:
-![](_static/images/MolGenCRC/marra_biased_wnt.png "Figure 2: heatmap Find Diff"). Yep, the genelist was biased  als result of tje Student T-test. 
 
 ### Find relevant pathways
 
@@ -161,25 +151,14 @@ Often, you do not immediately have an idea which pathways you could look at for 
 
 * Perform a KEGG pathway analysis from the ‘main’ page. leave the re-presentation on **"over"** again with the Normal vs Adenoma group. Are there KEGG pathways over-represented in the differentially expressed genes  (Set the p-value 0.01 for the analysis and select striking pathways). And does it make sense that these are in the list ?.
 
-![](_static/images/MolGenCRC/keggpathway_select.png "Kegg select")
-
-
-*A: DNA replication and TP53 and Cell cycle are in  the list*, when you select over-representation
-
-![](_static/images/MolGenCRC/kegg_pathway.png "KEGG results")
-
 
 * Perform the same task with the under-representation selected in de drop down menu. Do you see interesting 
   pathways popping up?
-
-A: Under-representation e.g.  the mismatch repair pathway.
 
 In this test the WNT pathway was not really significant but still in the list at the bottom. One of the reasons why this is the case, is that in this case not all the genes  are assigned to the KEGG WNT pathway. Or that the pathway genes are in this case not sufficient to access pathway activity. However, visualizing the gene expression still hints you towards WNT pathway involvment. 
 
 * Go to the main screen select generate a heatmap and select the wnt path way from the text database.
 
-A:
-![](_static/images/MolGenCRC/marra_unbiased_wnt.png "Figure 2: Heatmap - Wnt").
 
 * The samples are clearly seperated in Normal vs Adenoma. It's different and less pronounced compared to the previous heatmap you generated.  Do you think this is special? , Why or Why not.
 
@@ -208,12 +187,7 @@ samples and will clump cells with similar expression profiles together on a map.
 * Click the button below to show the t-SNE map in R2:
 
 
-![](_static/images/MolGenCRC/temp/tSNE204_create_permalink_later.png "Figure 2: temp image, todo make permalink tSNE with CMS coloring")
-
-[**Figure 2: temp image, todo make permalink tSNE with CMS coloring**](_static/images/MolGenCRC/temp/tSNE204_create_permalink_later.png)
-
-
-ToDo make permalink to tSNE instead of image above  
+ToDo make permalink to tSNE 
 <a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_tsne_86_6tumortypes" target="_blank">
 Go to the t-SNE map</a>
 <br>
@@ -259,21 +233,10 @@ ToDo: Fill in the information about the dataset Summary Design etc
 * Leave *Separate by* at **categorical track (Kaplan-Meier)** and click **Next**
 * Choose *type of Survival* **overall* and *Track* **lv_cms_final**
 
-![](_static/images/MolGenCRC/temp/KaplanMeier_guinney_cmssurvivalchances_delete_later.png "Figure 2: Kaplan Meier 
-result, different survival chances for different cms groups. ToDo: delete later")
-
-[**Figure 2: Kaplan Meier
-result, different survival chances for different cms groups. ToDo: delete later**](_static/images/MolGenCRC/temp/KaplanMeier_guinney_cmssurvivalchances_delete_later.png)
 
 * Now perform the same analysis, but choose **relapse-free** in stead of overall for the setting *type of Survival*  
 
-![](_static/images/MolGenCRC/temp/KaplanMeier_Guinney_cms_relapsefree_delete_later.png "Figure 2: Kaplan Meier
-result, different relapse free Kaplan Meier curves for different cms groups. ToDo: delete later")
 
-[**Figure 2: Kaplan Meier
-result, different relapse free Kaplan Meier curves for different cms groups. ToDo: delete later**](_static/images/MolGenCRC/temp/KaplanMeier_Guinney_cms_relapsefree_delete_later.png)
-
- 
 
 ------  
 
@@ -283,10 +246,6 @@ result, different relapse free Kaplan Meier curves for different cms groups. ToD
 ![](_static/images/R2d2_logo.png)**And what is your conclusion from the second Kaplan Meier graph?**
 <br>
 <br>
-**ToDO: remove answer:**
-OS curves focus on overall mortality from any cause, while RFS curves specifically track the time until a particular
-event (e.g., disease relapse) occurs. In this casse you can see that CMS 4 has the worst prognosis, both for overall
-survival probability and for relapse free survival.
 
 ------
 
@@ -294,24 +253,42 @@ survival probability and for relapse free survival.
 ### Mutations
 
 Optionally   
-* From the main page, select the Guinney choose a **relate 2 tracks** analysis to show the different percentages of  *y 
-  axis* **lv_braf_mut** or/and **lv_kras_mut** mutations and the *X axis* **lv_cms_final**
-* Select the **stacked bars** *graph type*
+* From the main page, select the Guinney choose a **relate 2 tracks** analysis to show the different ratios of 
+  mutations per CMS subtype.
+* For the *y axis* choose **lv_braf_mut** mutations and for the *X axis* choose **lv_cms_final**.
+* Select the **stacked barplot (%)** *graph type* and click **Submit**
+* The Guinney dataset contains several datasets put together. To only look at the samples that looked at the 
+  mutational information, scroll down underneath the graph to Adjustable settings menu. Use the Sample Filter with 
+  the setting *Subset track*, select **lv_braf_mut** and in teh pop up check the boxes of **0 (776) and 1(87)**, click 
+  **ok**
+* For the changes to take effect click **Submit**
 
-![](_static/images/MolGenCRC/temp/braf_and_kras_mutation_percms_guinney_stackedbars_delete_later.png "Figure 2: temp 
-image, Braf and Kras mutation ratios per CMS")
-
-[**Figure 2: temp image, Braf and Kras mutation ratios per CMS**](_static/images/MolGenCRC/temp/braf_and_kras_mutation_percms_guinney_stackedbars_delete_later.png)
-
-ToDo: what more can I do with mutational analyses? https://r2-tutorials.readthedocs.io/en/latest/Pathway_Finder.html?highlight=mutation#step-3-finding-pathways-relevant-to-subgroups
-Patwayfinder by group leads here too to Axin
+------  
 
 
-![](_static/images/MolGenCRC/temp/brafmutation_followup_analysis_pathwayfinder_wnt_AXIN2_delete_later.png "Figure 2: temp
-image, followup analysis Braf mutation -> WNT pathway, Axin2")
+![](_static/images/R2d2_logo.png)**Which CMS group shows the highest amount of Braf mutations?**
 
-[**Figure 2: temp image,  followup analysis Braf mutation -> WNT pathway, Axin2**](_static/images/MolGenCRC/temp/brafmutation_followup_analysis_pathwayfinder_wnt_AXIN2_delete_later.png)
-  
+<br>
+<br>
+
+------
+
+Now we will look at the KRAS mutations
+* Underneath the graph in Adjustable settings menu, change the *y-axis* to **lv_kras_mut**. 
+* Use the red cross behind the setting *Subset track* to eliminate the braf mutation subset and click on the 
+  dropdown to now select **lv_kras_mut**. In the pop up check the boxes of **0 (560) and 1(336)**, click **ok**
+* Click **Submit** to see the result
+
+------  
+
+
+![](_static/images/R2d2_logo.png)**Which CMS group shows the highest amount of KRAS mutations?**
+
+<br>
+<br>
+
+------
+
 
 ### A dive into CMS1: MSI / MSS in CRC
 
@@ -334,34 +311,23 @@ Use the “Find Differential expressed genes between groups” module to generat
 
 * Which one is in top list.
 
-A: TYMS
+
 
 *  One of the genes differentially expressed clearly is MLH1 (does this gene sounds familiar). Look at the expression pattern of MLH1 in colon tumors, both sets (MSI vs. MSS). What do you notice ?. The MHL1 expression came significant out our test as a down regulated gene. What did you expect and what do you see?. 
 
 
-**A:**
-
-![](_static/images/MolGenCRC/watanabe_mlh1.png "Figure : MLH1")
 
 MSI tumors give a very heterogeneous picture. This could be an indication that within the MSI tumor group also a subgroup could be identified. Which one do you think ??. (note: Inspect the tracks or hoover)
 
-**A:**
-The proximal annotated group within the MSI 
+
 
 Taking a close look at te other tracks below the graph you already get an idea what might be the case. R2 has an analysis tool called *relate two tracks* where you investigate the relation between dataset annotations. Go back to the main menu and select **relate two tracks** and click next.  Select for the X-track the MS_status  and for the Y_track MS_Orientation and click next. 
 
 Here the relation between Orientation and MSI is plotted and for the statistics a Fisher Exact test has been performed.
 
-* In the previous question we saw the MLH1 expression was not equally distributed within the MSI group, select in Color mode,  Color by Gene and enter MLH1 and click submit.  What do you see?.
+* In the previous question we saw the MLH1 expression was not equally distributed within the MSI group, select in Color mode,  Color by Gene and enter MLH1 and click submit.  
 
-
-A:
-This clearly illustrates the relation between MSI/MSS subgroups and MLH1 expression
-
-![](_static/images/MolGenCRC/relatedtwotracks_msi.png "Relate two tracks: MLH1")
-
-[**relate two tracks : MLH1 expression**](_static/images/MolGenCRC/relatedtwotracks_msi.png)
-
+q: What do you see?
 
 In many cases of proximal colon cancer with MSI, the high level of microsatellite instability is caused by the loss of MLH1 expression. MLH1 inactivation can occur due to mutations in the MLH1 gene or through epigenetic changes, such as promoter methylation. In summary, the loss of MLH1 expression is a common mechanism leading to MSI in proximal colon cancer. Understanding the relationship between MLH1 expression and MSI is crucial for diagnosing MMR deficiency, predicting prognosis, and guiding targeted therapies for patients with colorectal cancer.
 
@@ -369,7 +335,7 @@ In many cases of proximal colon cancer with MSI, the high level of microsatellit
 So we have identified an important player as discussed in college. You have just selected the Watanabe set. Inspect the background information and look at the data this dataset has been generated. This is very old set, of course this set still of biological relevance we will also try to find we can find out we can validate this other sets. Not only because this is an old set, but it is always common practice in Research practice to validate your results with other sources
 
 
-[comment]: <> (small info  about tcga ?)
+ToDo (small info  about tcga ?)
 
 #### MSI in tcga set
 
@@ -377,19 +343,10 @@ Select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
 * Perform the **Find Differential Expression** for **Microsatellite_instability**, select in the GS button filter > Broad 2020, oncogenic and click again the MHL1 gene.
 
-![](_static/images/MolGenCRC/filter_broad_oncogenic.png "204 set: MLH1")
+![](_static/images/MolOncCRC/filter_broad_oncogenic.png "204 set: MLH1")
 
-[**don't forget to use the filter option**](_static/images/MolGenCRC/chrommap.png)
+[**don't forget to use the filter option**](_static/images/MolOncCRC/chrommap.png)
 
-
-
-A:
-![](_static/images/MolGenCRC/tcga_msimss_mlh1.png "204 set: MLH1")
-[**204 set: MSI status only**](_static/images/MolGenCRC/chrommap.png)
-
-A:
-![](_static/images/MolGenCRC/tcga_msimss_mlh1_512.png "512 set: MLH1")
-[**In the 512:  set can be deleted**](_static/images/MolGenCRC/chrommap.png)
 
 So clearly it seems that MLH1 plays is a key role and is possible affecting other genes also in other independent generated datasets, 
 
@@ -400,27 +357,20 @@ So clearly it seems that MLH1 plays is a key role and is possible affecting othe
 
 * Run the Find correlated genes with a single gene module for the MLH1 gene do not forget to use the filter option for Broad 2020: Oncogenics further use.  the default settings. 
 
-A:
-![](_static/images/MolGenCRC/Findcorgene_MHL1.png "Table")
-[**List of genes correlating with MLH1**](_static/images/MolGenCRC/chrommap.png)
 
 * Then click on the best correlating gene to plot both genes together, in a two gene view. Inspect the correlation. Can you think of reasons why the gene expression is highly correlated/
 
-**A:**
-![](_static/images/MolGenCRC/Findcorgene_MHL1_EPM2IP1.png "EPM2AIP1")
 
 * Click on **view additional details**, on which chromosomes are both genes located
 
-**A:**
-Chrom 3.
 
 * Click T-view and zoom out 2 or 5 times, what can you say about their location of the two genes. 
 
-![](_static/images/MolGenCRC/viewadddetails.png "Genome Browser")
+![](_static/images/MolOncCRC/viewadddetails.png "Genome Browser")
 
 
 
-[comment]: <> (hier een klein text bruggetje waarom we de volgende stap doen?).
+Todo: (hier een klein text bruggetje waarom we de volgende stap doen?).
 
 The MLH1 gene expression affects clearly some important pathways. In case you want to find genes which 
 
@@ -428,22 +378,12 @@ The MLH1 gene expression affects clearly some important pathways. In case you wa
 
 
 
-![](_static/images/MolGenCRC/loading_page.png "Loading Page")
+![](_static/images/MolOncCRC/loading_page.png "Loading Page")
 
-**A:**
 
-![](_static/images/MolGenCRC/viewadddetails_genbr.png "Figure x: MLH1")
 
 * A lot of genes are clearly over-represented on a number of chromosome, especially chrom 18 with a high p-value.
 
-
-**A:**
-
-![](_static/images/MolGenCRC/chrommap.png "Chrom Table")
-
-[**Chromosome 18 instability**](_static/images/MolGenCRC/chrommap.png)
-
-chrom 18 loss is linked to msi/mss instability
 
 
 #### DNA repair system
@@ -454,10 +394,6 @@ Because we know that DNA repair genes play an important role in microsatellite (
 
 * Go back to the MLH1 correlating genelist make sure you have preselected the DNA-repair genes. CLick submit. Click on generated a heatmap. And do you see a clear associated with a CMS subgroup ?, and which one.
 
-
-A:
-![](_static/images/MolGenCRC/dnarepair.png "DNA repair")
-[**DNArepair**](_static/images/MolGenCRC/dnarepair.png)
 
 * and take look at the CMS classification !!! what do you see ?? are you surprised
 CMS4, MSI had been associated with CM1 and CMS4
@@ -476,14 +412,6 @@ In one of the first questions in this course we have seen there is an associatio
 
 
 
-
-A:
-![](_static/images/MolGenCRC/methylation_mlh1loc.png "Figure 2: heatmap")
-May be a little , maybe you expected CMS1 classification but also CMS4 has been associated with MSI. 
-
-
-  
-
 ### What pathways drive subtype CMS4?
 
 Previously we looked into CMS subtype 1. We would like to understand what sets CMS 4 apart from the subtypes 2 and 3.
@@ -501,12 +429,6 @@ meaningful insights into the underlying biology of a particular condition or exp
 * Switch the *Representation* setting to **all** to look at both over- and under-representation
 * Click Next
 
-ToDo: Remove picture
-
-![](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png "Figure 3: temp image of result Gene
-set analysis, todo remove")
-
-[**Figure 3: temp image of result Gene set analysis, todo remove**](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png)
 
 ------
 
@@ -578,51 +500,37 @@ in HCT116 WT cells
 
 
 * Check the TP53 level in this dataset. Is the dataset grouped by a different p53 expression
-A:
-![](_static/images/MolGenCRC/tp53wtvsko.png "Figure 2: heatmap")
 
 * Analyse which genes are affected by the compounds
 
 Let's start with drugs known to interact with tp53. In college also MDM2 has been mentioned as negative P53 regulator. 
 If you want to  find diffentially expressed genes in Tp53 dependent background which subgroups do you have to select.
 
-A: Select Nutlin-3a for the comparison and the P53 WT
-![](_static/images/MolGenCRC/list_DMSO_nutlin3a_sammons.png "list")
-
 * Do you see the MDM2 gene ?.
 
 * Inspect the MDM2 level in a one gene view  are your surprised ?
-![](_static/images/MolGenCRC/MDM2-gene_sammons.png "MDM2")
+![](_static/images/MolOncCRC/MDM2-gene_sammons.png "MDM2")
 
 * Also check the relation with TP53
-  ![](_static/images/MolGenCRC/sammons_tp53MDM2.png "TP53/MDM2")
+  ![](_static/images/MolOncCRC/sammons_tp53MDM2.png "TP53/MDM2")
 
 
 *  A very significant correlation. Can you think of a reason? Hint:you are looking at RNA expression levels, how does nutlin3a inhibits MDM2 ???
 
-A: protein interaction
 
 * And why is also TP53 increased ?
 
-A: ubiquitination
 
-
-
-* ![](_static/images/MolGenCRC/Kegg_analysis.png "KEGG")
-
-* down regulated TP53 pathways and apoptosis pathway
-
-* Check of there is a overlap between genes affected
+* Check of there is an overlap between affected genes
 
 
 Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo
 
-![](_static/images/MolGenCRC/atf3_sammons.png "Figure 2: heatmap")
+![](_static/images/MolOncCRC/atf3_sammons.png "Figure 2: heatmap")
 
-![](_static/images/MolGenCRC/venn_drugsp53.png "Figure 2: heatmap")
+![](_static/images/MolOncCRC/venn_drugsp53.png "Figure 2: heatmap")
 
-
-  
+ 
 
 ## Effects of imatinib: shifts of signature profiles and molecular subtypes
 
@@ -654,12 +562,6 @@ mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :
 * Set *color by* to **Track** in order to make the box plots visually more dictinct.  
 * Click next
 
-ToDo: Remove picture
-![](_static/images/MolGenCRC/temp/impacct_Viewmultiplegenes_4genesign_result_delete_later.png "Figure 4: View  
- multiple genes 4 gene signature, todo remove")
-
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/impacct_Viewmultiplegenes_4genesign_result_delete_later.png)
-
 
 ------
 
@@ -668,16 +570,7 @@ ToDo: Remove picture
   ![](_static/images/R2d2_logo.png)**What is the role of ZEB1 in EMT?**
   
 
-**ToDo: remove answers**  
-1)expression of specific mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 was strongly and significantly 
-reduced after imatinib treatment (here you cant read teh significance - we could choose a different visualization  
-2)- Zinc finger E-box binding homeobox 1 (ZEB1) is a transcription factor that promotes tumor 
-invasion and metastasis by inducing epithelial-mesenchymal transition (EMT) in carcinoma cells. EMT not only plays 
-an important role in embryonic development and malignant progression, but is also implicated in cancer therapy 
-resistance.  
-PDGFRA, PDGFRB, PDGFC, and KIT, identifies CMS4 CRC with very high sensitivity and specificity
-<br>
-<br>
+
 
 ------
 
@@ -690,23 +583,23 @@ Mesenchymal tumor phenotypes are generally accompanied by reduced proliferation.
 proliferation signatures and Wnt target genes are associated with good prognosis and reduced metastatic capacity in CRC
 
 ToDo: Remove picture
-![](_static/images/MolGenCRC/temp/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
+![](_static/images/MolOncCRC/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
 multiple genes 4 gene signature, todo remove")
 
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolOncCRC/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
 
 
 ToDo: Remove picture
-![](_static/images/MolGenCRC/temp/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
+![](_static/images/MolOncCRC/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
 multiple genes 4 gene signature, todo remove")
 
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolOncCRC/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
 
 ToDo: Remove picture
-![](_static/images/MolGenCRC/temp/mtorc1_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
+![](_static/images/MolOncCRC/mtorc1_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
 multiple genes 4 gene signature, todo remove")
 
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/mtorc1_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolOncCRC/mtorc1_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
 
 "The mesenchymal-to-epithelial phenotype shift following imatinib therapy coincided with increased expression of WNT- and
 MYC-target genes and signatures reflecting proliferation. Accelerated proliferation may – at first sight – not be
@@ -716,6 +609,41 @@ invasion are often inversely regulated in tumor biology, supporting the notion t
 switch their transcriptional state (through EMT) in order to acquire invasive and metastatic properties (40, 44, 45).
 Proliferating tumor cells require high expression of mTORC1 and its target genes to meet their anabolic demand (46). The
 high expression of mTORC1 in imatinib-treated tumors may therefore simply reflect the MET phenotype switch"
+
+* On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
+* Select the analysis **View Geneset (Heatmap)
+* Select *Gene set Collection* **Broad 2020 09 h hallmark** and click **next**
+* Click **next** again
+* Click one time on *Gene set* **HALLMARK_MYC_TARGETS_V1 (200)** and click **Next**
+
+The heatmap for the z-scores of the expression values of the MYC targets geneset is shown. Underneath the heatmap 
+you find the geneset average z-value per sample, also known as the signature score. With an account you can save 
+such scores to use later in R2. For this course we added these scores to the public information.
+
+* Go back to the main page
+* Click **Relate 2 tracks**, click **Next**
+* Select *x-axis* **imatinib (2cat)** and *y-axis* **hallmark_myc_targets_v1_signsc**
+* Select *Graph type* **Box/dot plot (bands)**
+* Change *Color mode* to **Color by Track** and click **Submit**
+
+* In the Adjustable settings menu underneath the plot, change the *y track* to **wnt_impacct_signsc**
+* Optionally change the *Graph type* to one that you want to try out
+* Click **Submit**
+
+ToDo: check that this has been added in R2
+------
+
+![](_static/images/R2d2_logo.png)**What happened with the expression of WNT- and MYC-target genes post treatment?**
+
+![](_static/images/R2d2_logo.png)**Even though it is counterintuitive, can you think of a reason why this actually 
+could be good news?**
+
+<br>
+<br>
+
+
+------
+
 
 ### Assess the prognostic value of imatinib treatment
 To assess the potential prognostic value of the treatment, we will make a signature of the genes that were changed 
@@ -728,7 +656,7 @@ after treatment.
   *Group 1* **pre-imatinib (15)** and *Group 2* **post-imatinib (15)**
 * Set the *P-value cutoff* to a stricter value: **0.001** and click Submit
 
-A table shows the differentially expressed genes. On the right underneath buttons with follow up analyses, you can 
+A table shows the differentially expressed genes. On the right underneath buttons with followup analyses, you can 
 find a small table that shows how many genes were downregulated by the imatinib treatment (imatinib: pre-imatinib >= 
 post-imatinib) and how many genes were upregulated (imatinib: pre-imatinib < post-imatinib). 
 
@@ -737,8 +665,6 @@ post-imatinib) and how many genes were upregulated (imatinib: pre-imatinib < pos
 
 ![](_static/images/R2d2_logo.png)**How many upregulated and how many downregulated genes were found?** 
 
-**ToDo: remove answers**  
-442 and 222
 ______
 
 * To use this genelist in other analyses within R2, click on the lowest button on the right side that is labeled 
@@ -764,13 +690,6 @@ in our cohort that sow similar expression patterns for our geneset.
 
 The Kmeans algorithm looks at the expression of the samples for the selected genes and makes two groups of samples 
 that show most similar expression patterns. Then for each gene it shows the expression by a color code
-ToDo small insert about heatmaps. 
-
-ToDo: Remove picture  
-
-  ![](_static/images/MolGenCRC/temp/impacct_kMeans_result_delete_later.png "Figure 4: kmeans result, todo remove")
-
-  [**Figure 4: kmeans result, todo remove**](_static/images/MolGenCRC/temp/impacct_kMeans_result_delete_later.png)
 
 
 ------
@@ -778,10 +697,6 @@ ToDo: Remove picture
   ![](_static/images/R2d2_logo.png)**Which group would you say shows high expression and which group shows low 
 expression of the geneset?**
 
-**ToDo: remove answers**  
-The yellow group is high (red) and the purple group shows low expression on average (blue)
-The genes seem to be quite well coregulated in the two groups, on egroups seems to have upregulation and one group 
-shows downregulation. 
 ______
 
 Again this group division can be stored in R2 to use in a next analysis. 
@@ -801,15 +716,6 @@ Let's see which cms subtypes are represented in the two k-means sample clusters
 * Change the *Graph type* into **Stacked bar plot (%)**
 * *Order Groups by* **group size** and hit **Submit**
 
-ToDo: Remove picture
-
-![](_static/images/MolGenCRC/temp/impacct_relate2tracks_stackedbars_delete_later_stage23.png "Figure 4: Relate 2 tracks shows a shift 
-from CMS 4 to cms 2, todo remove")
-
-[**Relate 2 tracks shows a shift
-from CMS 4 to cms 2, todo remove**](_static/images/MolGenCRC/temp/impacct_relate2tracks_stackedbars_delete_later_stage23.png)  
-
-
 
 ------
 
@@ -818,9 +724,6 @@ high expression values, what shift in CMS subtypes do we expect to see?**
 
 ![](_static/images/R2d2_logo.png)**What is known about the treatability of subtype 4 and cms 2 respectively?**
 
-**ToDo: remove answers**  
-A shift from mostly CMS 4 to to mostly CMS 2  
-CMS 4 is more  CMS4 tumors have the highest propensity for developing distant metastases, and CMS2 has better prognosis
 ______
   
 ToDo: not sure we want to include this analysis
@@ -830,29 +733,14 @@ ToDo: not sure we want to include this analysis
 * Choose *overall* survival type and *Track* **kmeans_stage23_imatinib_induced**. Click Next
 
 
-![](_static/images/MolGenCRC/temp/KaplanMeier_stage23_overall_impacct_kMeans_result_delete_later.png "Figure 4: Survival 
-chances that are linked to the gene shift, todo remove")
-
-[**Survival
-chances that are linked to the gene shift, todo remove**](_static/images/MolGenCRC/temp/KaplanMeier_stage23_overall_impacct_kMeans_result_delete_later.png)
-
 * In the left menu click again the **Survival (Kaplan Meier/Cox)** analysis
 * Repeat the process but select the **relapse free** in stead of *overall* survival type. 
 
-![](_static/images/MolGenCRC/temp/KaplanMeier_stage23_relapsefree_impacct_kMeans_result_delete_later.png "Figure 4: 
-Survival
-chances that are linked to the gene shift, todo remove")
-
-[**Survival
-chances that are linked to the gene shift, todo remove**](_static/images/MolGenCRC/temp/KaplanMeier_stage23_relapsefree_impacct_kMeans_result_delete_later.png)
 
 ------
 
 ![](_static/images/R2d2_logo.png)**What is your conclusion?**
 
-**ToDo: remove answers**  
-
-**Better survival chances**
 ______
 
 ## Identifying key drivers of CRC: superenhancers controlling gene expression
@@ -867,9 +755,9 @@ In chapter [Integrative analysis: ChIP-seq data](https://r2-tutorials.readthedoc
 of Chipseq data analysis. 
 <br><br>
 
-![](_static/images/MolGenCRC/temp/IntAnalysis_ChIPSeq_ModificationTypes.png "Figure 4:Survival chances that are linked to the gene shift, todo remove")
+![](_static/images/MolOncCRC/IntAnalysis_ChIPSeq_ModificationTypes.png "Figure 4:Survival chances that are linked to the gene shift, todo remove")
 
-[**Survival chances that are linked to the gene shift, todo remove**](_static/images/MolGenCRC/temp/IntAnalysis_ChIPSeq_ModificationTypes.png)
+[**Survival chances that are linked to the gene shift, todo remove**](_static/images/MolOncCRC/IntAnalysis_ChIPSeq_ModificationTypes.png)
 
 (Fig source: https://www.nature.com/articles/s12276-020-0428-7)
 
@@ -894,16 +782,6 @@ ToDo: create new button to go to VEGFA
 <br>
 
 Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, coding exons are darker.
-
-## Single cell?
-Maybe? Mixed Colon Adenoma-carcinoma - Shi - 43981 - cp10k - 10x300hg38
-"Adenoma-carcinoma sequence is a well-accepted roadmap for the development of sporadic colorectal carcinoma. However, cellular heterogeneity in aberrant epithelia and the complexity of tumor microenvironment limited the understanding of carcinogenesis. Here we performed a scRNA-seq survey from patient-matched samples, including blood, normal, para-cancer, polyp, and cancer tissues."
-
-
-![](_static/images/MolGenCRC/temp/Shi_-Singlecell.png "Figure 4:
-cell populations were visualized using t-SNE plots based on the cluster, tissue origin, and patient origin, todo remove")
-
-[**cell populations were visualized using t-SNE plots based on the cluster, tissue origin, and patient origin, todo remove**](_static/images/MolGenCRC/temp/Shi_-Singlecell.png)
 
 
 ## Evaluation
