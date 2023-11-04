@@ -12,11 +12,13 @@ Introduction
 ------------
 
 In the late 1980s the Vogelstein model was proposed. It introduced the concept of a stepwise accumulation of genetic
-mutations leading to the development of colorectal cancer (CRC).
+mutations leading to the development of colorectal cancer (CRC).  
 
-![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression")
+![](_static/images/MolGenCRC/temp/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg "Figure 1: Mutation paths during cancer progression")
 
-[**Figure 1: Mutation paths during cancer progression.**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
+[**Figure 1: Mutation paths during cancer progression**](_static/images/MolGenCRC/temp/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg)
+  
+source: https://www.science.org/doi/10.1126/science.1235122
 
 As shown in the picture above, the model highlights the importance of key genetic mutations during CRC progression, 
 including mutations in APC, KRAS, and TP53. While the Vogelstein model has provided a valuable foundation for 
@@ -52,10 +54,11 @@ We would like to ask you to fill in the evaluation form about this R2 course dur
 the form, click the button below:
  
 
-## Normal vs Colorectal Cancer Tissue:
+## Normal vs Colorectal Tumor Tissue: a first impression of genomic data
 
-Let's get acquainted with R2 and its large collection of omic datasets while exploring differences in gene 
-expressions between normal tissue and adenoma tumor tissue.
+A fundamental query in cancer research consistently revolves around understanding the distinctions between normal 
+and tumor tissues. Let's get acquainted with R2 and its large collection of omic datasets while imimediately exploring 
+differences in gene expressions between normal tissue and adenoma tumor tissue.
 
 **Datasets used:**
   
@@ -99,12 +102,11 @@ Of course it is nice to have a lot of RNA expression datasets to analyse and exp
 
 
 
-![](_static/images/MolGenCRC/temp/CRCprogression.jpg "Figure 2: CRC progression from normal tissue to metastatic 
+![](_static/images/MolGenCRC/temp/CRCprogression_highres.jpg "Figure 2: CRC progression from normal tissue to metastatic 
 cancer")
 
-[**Figure 2: CRC progression from normal tissue to metastatic cancer**](_static/images/MolGenCRC/temp/CRCprogression.
-jpg)
-
+[**Figure 2: CRC progression from normal tissue to metastatic cancer**](_static/images/MolGenCRC/temp/CRCprogression_highres.jpg)
+source: https://www.sciencedirect.com/science/article/pii/S1936523321001236#fig0001
 
 * Find  and select the RNA expression dataset from Author Marra and select the one with 64 samples. *Note: Click the blue box with confirm selection*.
 
@@ -149,8 +151,8 @@ A:
 A:
 ![](_static/images/MolGenCRC/marra_biased_wnt.png "Figure 2: heatmap Find Diff"). Yep, the genelist was biased  als result of tje Student T-test. 
 
-Pathway Analysis:
----------------------------------------
+### Find relevant pathways
+
 
 Often, you do not immediately have an idea which pathways you could look at for in your comparisons between groups (normal versus adenoma in our case). A module within R2 providing you with some suggestions is the so called KEGG Pathway Finder by Groups. It assesses whether the number of genes that show significant differential expression between Normal and Adenoma is significantly higher than you would expect compared to all genes that are mentioned in KEGG. In other words are the genes you found regulated between the groups enriched in the KEGG pathway database. 
 
@@ -167,7 +169,8 @@ Often, you do not immediately have an idea which pathways you could look at for 
 ![](_static/images/MolGenCRC/kegg_pathway.png "KEGG results")
 
 
-* Perform the same task with the under-representation selected in de drop down menu. Do you see extra interesting pathways popping up.
+* Perform the same task with the under-representation selected in de drop down menu. Do you see interesting 
+  pathways popping up?
 
 A: Under-representation e.g.  the mismatch repair pathway.
 
@@ -184,19 +187,19 @@ A:
 
 
 
-## CMS
+## Identifying groups and their characteristics: CMS
 
-ToDo: Intro to CMS now in the words of the Guinney paper:
-
-"Thanks to collaborative bioinformatics work on the largest collection of CRC cohorts with molecular annotation to date, and building upon previous efforts by the independent researchers, the consortium resulted in a consensus molecular classification system that allows the categorization of most tumors into one of four robust subtypes. Marked differences
-in the intrinsic biological underpinnings of each subtype support the new taxonomy of this disease (Fig. 5) that will
-facilitate future research in this field and should be adopted by the community for CRC stratification: CMS1 (MSI
-Immune),
-CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal)." (Guinney 2015et al., Nat Med. 2015 Nov; 21(11):
-1350–1356. )
+Let us now move past the precancerous stage of adenomas and look at colorectal cancer. Colorectal cancer is a complex 
+and heterogeneous disease, characterized by a multitude of variations in its genetic, molecular, and clinical 
+attributes. This heterogeneity manifests in diverse ways, influencing the tumor's behavior, response to treatments, and patient outcomes. Understanding this heterogeneity is critical for tailoring effective therapies and improving patient care. In this context, we will explore the various dimensions of heterogeneity in colorectal cancer and its implications for diagnosis, treatment, and research.  
+  
+In 2015, Guinney et al. (Nat Med. 2015 Nov; 21(11):1350–1356) published a bioinformatics study on a vast collection 
+of colorectal cancer cohorts with detailed molecular annotation. The consortium developed a now widely accepted 
+molecular classification system that allows researchers to categorize most colorectal tumors into one of four 
+distinct and robust subtypes, each characterized by its unique biological features. These subtypes are: CMS1 (MSI 
+Immune), CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal), see Figure 2. 
 
 ### Clustering with t-SNE maps
-
 
 An unbiased unsupervised type of clustering analysis is a good starting point to familiarize yourself with a new
 dataset. The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of
@@ -262,7 +265,7 @@ result, different survival chances for different cms groups. ToDo: delete later"
 [**Figure 2: Kaplan Meier
 result, different survival chances for different cms groups. ToDo: delete later**](_static/images/MolGenCRC/temp/KaplanMeier_guinney_cmssurvivalchances_delete_later.png)
 
-* Now perform the same analysis, but choose **relapse-free** in stead of overall for teh setting *type of Survival*  
+* Now perform the same analysis, but choose **relapse-free** in stead of overall for the setting *type of Survival*  
 
 ![](_static/images/MolGenCRC/temp/KaplanMeier_Guinney_cms_relapsefree_delete_later.png "Figure 2: Kaplan Meier
 result, different relapse free Kaplan Meier curves for different cms groups. ToDo: delete later")
@@ -310,7 +313,7 @@ image, followup analysis Braf mutation -> WNT pathway, Axin2")
 [**Figure 2: temp image,  followup analysis Braf mutation -> WNT pathway, Axin2**](_static/images/MolGenCRC/temp/brafmutation_followup_analysis_pathwayfinder_wnt_AXIN2_delete_later.png)
   
 
-## MSI / MSS in CRC
+### A dive into CMS1: MSI / MSS in CRC
 
 In one the previous tasks we have introduced the R2 platform and looked at differences between Normal and Colon tissue by looking at differentially expressed genes. For many cancers types it is important to focus on subtyping meaning identifying subgroups within CRC datasets R2 is hosting. As already discussed, CRC has 4 CMS subtypes, one of the characteristics of CMS I, is MSI instability.
 
@@ -322,7 +325,7 @@ Dataset used: The next section we will use another dataset. * "Colon Tumor - Wat
 
 This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors.
 
-### Watanabe dataset
+#### Watanabe dataset
 
 * **Select "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"**
 
@@ -368,7 +371,7 @@ So we have identified an important player as discussed in college. You have just
 
 [comment]: <> (small info  about tcga ?)
 
-### MSI in tcga set
+#### MSI in tcga set
 
 Select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
@@ -393,7 +396,7 @@ So clearly it seems that MLH1 plays is a key role and is possible affecting othe
 * One way to find out which genes are possibly regulated by the MLH1 gene is to find genes which are (inverse) correlated with this gene.
 
 
-### Find genes correlating with a single gene
+#### Find genes correlating with a single gene
 
 * Run the Find correlated genes with a single gene module for the MLH1 gene do not forget to use the filter option for Broad 2020: Oncogenics further use.  the default settings. 
 
@@ -443,7 +446,7 @@ The MLH1 gene expression affects clearly some important pathways. In case you wa
 chrom 18 loss is linked to msi/mss instability
 
 
-**DNA repair system**
+#### DNA repair system
 
 
 Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
@@ -483,13 +486,45 @@ May be a little , maybe you expected CMS1 classification but also CMS4 has been 
 
 ### What pathways drive subtype CMS4?
 
+Previously we looked into CMS subtype 1. We would like to understand what sets CMS 4 apart from the subtypes 2 and 3.
 
-### Experiments TP53;Molecule of the year 1994
+* From the main page choose the *analysis* **Differential Expression Between Two Groups**.
+* ToDo: how to Choose the track **cms4vs3**
+* Look in the list of genes if you see anything familiar and hover over the magnifying glass icon of a few genes
+
+Gene set analysis helps researchers interpret the biological relevance of a group of genes. Instead of looking at individual
+genes, it allows you to understand the collective functions or pathway involvements genes in your list. This can provide more
+meaningful insights into the underlying biology of a particular condition or experiment.
+
+* Click on the top most button on the right that is labeled **Gene set analysis**.
+* Select the *Gene set Collection* **Broad 2020 09 h hallmark**
+* Switch the *Representation* setting to **all** to look at both over- and under-representation
+* Click Next
+
+ToDo: Remove picture
+
+![](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png "Figure 3: temp image of result Gene
+set analysis, todo remove")
+
+[**Figure 3: temp image of result Gene set analysis, todo remove**](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png)
+
+------
+
+![](_static/images/R2d2_logo.png)**Which gene sets do you see pop up and are they over or under expressed in CMS 4?**
+
+![](_static/images/R2d2_logo.png)**Explain the biological relevance for the CMS4 subtype for these over- or/and underexpression of these gene sets for CMS4 subtype CRC tumors**
+
+<br>
+<br>
 
 
-The well-described tumor suppressor function of p53 primarily relies on
-transcriptional activation of these target genes and their ability to mitigate the consequences
-of damaged DNA.
+------
+
+## Experiments TP53; Molecule of the year 1994
+
+
+The well-described tumor suppressor function of p53 primarily relies on transcriptional activation of these target 
+genes and their ability to mitigate the consequences of damaged DNA.
 
 Nearly half of human malignancies harbor mutations in p53  that facilitate and promote metastasis, tumorigenesis, and resistance to apoptosis.
 
@@ -516,7 +551,7 @@ Dataset being used:<br>
 The four drugs can be diveded in two types.
 
 
-**TP53 activation:**
+### TP53 activation
 
 Etoposide:  Clinically relevant activators of wild-type p53, Activates p53 via induction of  DNA double strand breaks. Initiation double strand breaks but leads of course to resitance and secondary malignancies. 
 Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non-genotoxic, considered a proto-oncogene.
@@ -587,156 +622,9 @@ Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog
 ![](_static/images/MolGenCRC/venn_drugsp53.png "Figure 2: heatmap")
 
 
-
-## CMS
-
-ToDo: Intro to CMS now in the words of the Guinney paper:
-
-"Thanks to collaborative bioinformatics work on the largest collection of CRC cohorts with molecular annotation to date,
-and building upon previous efforts by the independent researchers, the consortium resulted in a consensus molecular
-classification system that allows the categorization of most tumors into one of four robust subtypes. Marked differences
-in the intrinsic biological underpinnings of each subtype support the new taxonomy of this disease (Fig. 5) that will
-facilitate future research in this field and should be adopted by the community for CRC stratification: CMS1 (MSI
-Immune),
-CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal)." (Guinney 2015et al., Nat Med. 2015 Nov; 21(11):
-1350–1356. )
-
-#### Different survival chances for different CMS CRC subtypes? 
-
-* In the left side menu on the main page, click on Survival (Kaplan-Meier / Cox)
-* In the menu at the center of the page, click at the Dataset setting on the current Dataset name, and find the
-  dataset with *Author* is **Guinney** and the amount of samples *N* is **3232**
-* Click on the row to read its description in the information box underneath the dataset selection grid
-
-ToDo: Fill in the information about the dataset Summary Design etc
-
-* Leave *Separate by* at **categorical track (Kaplan-Meier)** and click **Next**
-* Choose *type of Survival* **overall* and *Track* **lv_cms_final**
-
-![](_static/images/MolGenCRC/temp/KaplanMeier_guinney_cmssurvivalchances_delete_later.png "Figure 2: Kaplan Meier 
-result, different survival chances for different cms groups. ToDo: delete later")
-
-[**Figure 2: Kaplan Meier
-result, different survival chances for different cms groups. ToDo: delete later**](_static/images/MolGenCRC/temp/KaplanMeier_guinney_cmssurvivalchances_delete_later.png)
-
-
-##### Clustering with t-SNE maps
-
-We've seen that the expression of genes differs among the samples and the CRC subtypes seem to specifically express
-certain genes.
-To further explore the type of data we're dealing with, an unbiased unsupervised type of clustering analysis is a good
-idea.
-The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of
-samples
-and will clump similar cells together on a map.
-
-* Click the button below to show the t-SNE map in R2:  
-
-
-![](_static/images/MolGenCRC/temp/tSNE204_create_permalink_later.png "Figure 2: temp image, todo make permalink tSNE with CMS coloring")
-
-[**Figure 2: temp image, todo make permalink tSNE with CMS coloring**](_static/images/MolGenCRC/temp/tSNE204_create_permalink_later.png)
-
-
-ToDo make permalink to tSNE instead of image above  
-<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_tsne_86_6tumortypes" target="_blank">
-Go to the t-SNE map</a>
-<br>
-<br>
-
-Under the graph, a menu allows the user to adapt settings.
-Colors of the graph points are not set by default.
-
-* Find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the
-  *cms_predicted* track
-  again, and click **Submit** to show the changes.
-* The different maps can be found under de setting Versions. Set **Versions** to the value *all* and click **Submit**
-  again.
-
-  
   
 
-------  
-
-
-  ![](_static/images/R2d2_logo.png)**What insight did you obtain when you colored the plot with annotation?**
-
-  ![](_static/images/R2d2_logo.png)**Why do you think it is good practice to check different values for a parameter?**
-
-<br>
-<br>
-
-
-------
-
-### Differences between the various CMS types
-
-Previously we looked into CMS subtype 1. We would like to understand what sets CMS 4 apart from the subtypes 2 and 3.
-
-* From the main page choose the *analysis* **Differential Expression Between Two Groups**. 
-* ToDo: how to Choose the track **cms4vs3**
-* Look in the list of genes if you see anything familiar and hover over the magnifying glass icon of a few genes
-
-Gene set analysis helps researchers interpret the biological relevance of a group of genes. Instead of looking at individual 
-genes, it allows you to understand the collective functions or pathway involvements genes in your list. This can provide more 
-meaningful insights into the underlying biology of a particular condition or experiment.
-
-* Click on the top most button on the right that is labeled **Gene set analysis**.
-* Select the *Gene set Collection* **Broad 2020 09 h hallmark**
-* Switch the *Representation* setting to **all** to look at both over- and under-representation 
-* Click Next
-
-ToDo: Remove picture  
-
-![](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png "Figure 3: temp image of result Gene 
-set analysis, todo remove")  
-
-[**Figure 3: temp image of result Gene set analysis, todo remove**](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png)
-
-------
-
-![](_static/images/R2d2_logo.png)**Which gene sets do you see pop up and are they over or under expressed in CMS 4?**
-
-![](_static/images/R2d2_logo.png)**Explain the biological relevance for the CMS4 subtype for these over- or/and underexpression of these gene sets for CMS4 subtype CRC tumors**
-
-<br>
-<br>
-
-
-------
-
-## Experiment in cell lines maybe skip this ?
-
-ToDo: Now that we have discovered interesting mechanisms that influence the development of CRC, the question rises:
-can we influence the mechanisms by targeting a gene or a pathway?  
-
-* In Kranenburg paper, they say:  
-"In pre-clinical studies, **_inhibition of PDGFR/KIT signaling reduces tumor cell invasion and metastatic potential in
-models of mesenchymal-like CRC_** (7, 8, 11) and other cancer types (12–14), suggesting that imatinib may have value 
-as a CMS4-targeting drug."  11 is a study from 2006
-
-* One colon pdgf related experiment dataset is available in R2:  
-Exp Colon (PDGF/VEGF stimulation) - Waaga-Gasser - 24 - custom - affypv  
-* In the paper "Platelet-derived growth factor (PDGF) cross-signaling via non-corresponding receptors indicates bypassed
-signaling in colorectal cancer" (Mönch R, Scholz CJ, Waaga-Gasser AM, et al 2022) 
-* The aim of the study: "We have recently provided evidence for upregulation of PDGF expression in UICC stage I-IV
-  primary colorectal cancer (CRC) and demonstrated PDGF-mediated induction of PI3K/Akt/mTOR signaling in CRC cell lines.
-  The present study sought to follow up on our previous findings and explore the alternative receptor cross-binding
-  potential of PDGF in CRC.
-* The conclusion: 
-"PDGF recovered HT29 cell proliferation under simultaneous treatment with a VEGFR or EGFR inhibitor. Our results provide
-some of the first evidence for PDGF cross-signaling through alternative receptors in colorectal cancer and support
-anti-PDGF therapy as a combination strategy alongside VEGF and EGF targeting even in tumors lacking PDGFR expression.
-  "  
-  
-Also, Kranenburg refers to an older Kranenburg paper in which there is some cell line and mouse experiments. Are 
-they in R2? "PDGFRB Promotes Liver Metastasis Formation of Mesenchymal-Like Colorectal Tumor Cell"
-  
-  
-
-## Trial in patiënts
-
-Is a drug or treatment effective?
+## Effects of imatinib: shifts of signature profiles and molecular subtypes
 
 Mesenchymal Consensus Molecular Subtype 4 (CMS4) colon cancer is associated with poor prognosis and therapy resistance.
 MES signature is strongly correlated with CMS4 some MES genes  
@@ -967,6 +855,45 @@ chances that are linked to the gene shift, todo remove**](_static/images/MolGenC
 **Better survival chances**
 ______
 
+## Identifying key drivers of CRC: superenhancers controlling gene expression
+
+An enhancer is a short (50-1500 bp) region of DNA that can be bound by proteins (activators) to increase the 
+likelihood transcription will occur at a gene. They can be located up to 1 Mbp (1,000,000 bp) away from the gene, 
+either upstream or downstream from the start site, and either in the forward or backward direction. A super-enhancer 
+is a region of the mammalian genome comprising multiple of these enhancers, collectively bound by an array of 
+transcription factor proteins to drive transcription of genes, often involved in regulation of cell identity. They 
+can be up to 20 times the size of an enhancer. <br>
+In chapter [Integrative analysis: ChIP-seq data](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_ChIP-Seq_data.html) of the R2 Tutorial, you can find a more detailed description 
+of Chipseq data analysis. 
+<br><br>
+
+![](_static/images/MolGenCRC/temp/IntAnalysis_ChIPSeq_ModificationTypes.png "Figure 4:Survival chances that are linked to the gene shift, todo remove")
+
+[**Survival chances that are linked to the gene shift, todo remove**](_static/images/MolGenCRC/temp/IntAnalysis_ChIPSeq_ModificationTypes.png)
+
+(Fig source: https://www.nature.com/articles/s12276-020-0428-7)
+
+
+Enhanced enhancer activity can lead to the overexpression of oncogenes, which promote cancer growth. Super-enhancers 
+often play a central role in determining cell identity and tumor initiation and progression. Identifying these active enhancers can help pinpoint key drivers of colorectal cancer, potentially revealing new therapeutic targets.  
+Different patients may have colorectal tumors with distinct enhancer landscapes. By characterizing enhancer activity, researchers can potentially classify patients into subgroups with different treatment responses or prognosis, enabling personalized medicine approaches.
+
+With Chromatine Immuno Precipitation binding of elements to the genome can be studied. Transcription of DNA to RNA
+is regulated by the binding of these elements. These can be Transcription Factors, that bind temporarily to start
+transcription, but also chemical modification of the histones (molecular structures that coil the DNA) by methylation, acetylation, etc. These modifications change the accessibility of the DNA for transcription.
+<br><br>
+When a specific antibody is used in the pulldown that recognizes these chemically modified regions, these specific regions can be studied. Regions with H3K27Ac acetylation mark active enhancers and active transcription, H3K4Me3 methylation marks active and poised transcription (Figure 2). Studying the relative contributions of both types of modifications allows a researcher to discern enhancer regions from active transcription sites.
+
+
+* Click on the button below to show the ChIP-Seq data for VEGFA in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.
+
+ToDo: create new button to go to VEGFA
+
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_chipseq_gb_hand1_9_mes_adrn" target="_blank">Go to R2 GenomeBrowser for HAND1</a>
+<br>
+<br>
+
+Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, coding exons are darker.
 
 ## Single cell?
 Maybe? Mixed Colon Adenoma-carcinoma - Shi - 43981 - cp10k - 10x300hg38
