@@ -509,10 +509,9 @@ If you want to  find diffentially expressed genes in Tp53 dependent background w
 * Do you see the MDM2 gene ?.
 
 * Inspect the MDM2 level in a one gene view  are your surprised ?
-![](_static/images/MolOncCRC/MDM2-gene_sammons.png "MDM2")
+
 
 * Also check the relation with TP53
-  ![](_static/images/MolOncCRC/sammons_tp53MDM2.png "TP53/MDM2")
 
 
 *  A very significant correlation. Can you think of a reason? Hint:you are looking at RNA expression levels, how does nutlin3a inhibits MDM2 ???
@@ -525,11 +524,6 @@ If you want to  find diffentially expressed genes in Tp53 dependent background w
 
 
 Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo
-
-![](_static/images/MolOncCRC/atf3_sammons.png "Figure 2: heatmap")
-
-![](_static/images/MolOncCRC/venn_drugsp53.png "Figure 2: heatmap")
-
  
 
 ## Effects of imatinib: shifts of signature profiles and molecular subtypes
