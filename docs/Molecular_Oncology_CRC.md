@@ -14,11 +14,13 @@ Introduction
 In the late 1980s the Vogelstein model was proposed. It introduced the concept of a stepwise accumulation of genetic
 mutations leading to the development of colorectal cancer (CRC).  
 
-![](_static/images/MolOncCRC/santos_ijms241311023_TumorProgression.png "Figure 1: Mutation paths during cancer progression")
+![](_static/images/MolOncCRC/CRCprogression_combined.jpg "Accumulation of mutations advancing colorectal 
+cancer development")
 
-[**Figure 1: Mutation paths during cancer progression**](_static/images/MolOncCRC/santos_ijms241311023_TumorProgression.png)
+[**Accumulation of mutations advancing colorectal cancer development**](_static/images/MolOncCRC/CRCprogression_combined.jpg)
 
-<span class="citation_txt">(source: https://doi.org/10.3390/ijms241311023)</span>
+<span class="citation_txt">(combined sources: https://doi.org/10.3390/ijms241311023, https://doi.org/10.1016/j.
+tranon.2021.101131)</span>
 
 Similar to the picture above, the model highlights the importance of key genetic mutations during CRC progression, 
 including mutations in APC, KRAS, and TP53. While the Vogelstein model has provided a valuable foundation for 
@@ -29,10 +31,12 @@ progression of the disease. <br>
 Colorectal cancer is the third most common cancer worldwide, according to the World Health Organization, accounting 
 for approximately 10% of all cancer cases, and it is the second leading cause of cancer-related deaths worldwide. 
 
-![](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.jpg "Figure 2: Subtypes in colorectal 
+![](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.jpg "Subtypes in colorectal 
  cancer: CMS classification (Guinney et al., 2015)")
 
-[**Figure 2: Subtypes in colorectal cancer: CMS classification (Guinney et al., 2015)**](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.jpg)
+[**Subtypes in colorectal cancer: CMS classification (Guinney et al., 2015)**](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.jpg)
+
+<span class="citation_txt">(source: https://doi.org/10.1038/nm.3967)</span>
 
 Research is needed to understand the mechanisms underlying treatment resistance and to develop strategies to
 overcome it. Better identification and characterization of multiple CRC subtypes could guide treatment decisions and
@@ -64,7 +68,13 @@ the form, click the button below:
 Colorectal cancers are believed to arise predominantly from adenomas. A fundamental query in cancer research 
 consistently revolves around understanding the distinctions between the transcriptomic profiles of normal tissue and 
 tumor tissues. Let's get acquainted with R2 and its large collection of omic datasets while immediately exploring 
-differences in gene expressions between normal colonic mucosa and colorectal adenomatous tissue. 
+differences in gene expressions between normal colonic mucosa and colorectal adenomatous tissue.  
+
+
+![](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg)
+
+  [**Normal tissue, precancerous adenomas and cancer growth**](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg)
+
 
 **Datasets used:**
   
@@ -103,13 +113,6 @@ screen more background information is revealed bij clicking on the dataset name.
 
 Of course it is nice to have a lot of RNA expression datasets to analyse and explore but without proper sample annotation your have very limited analysis options. Let's explore the annotation for the Marra dataset.
 
-
-
-![](_static/images/MolOncCRC/CRCprogression_highres.jpg "Figure 2: CRC progression from normal tissue to metastatic 
-cancer")
-
-[**Figure 2: CRC progression from normal tissue to metastatic cancer**](_static/images/MolOncCRC/CRCprogression_highres.jpg)
-<span class="citation_txt">(source: https://www.sciencedirect.com/science/article/pii/S1936523321001236#fig0001)</<span>
 
 * Find  and select the RNA expression dataset from Author Marra and select the one with 64 samples. *Note: Click the blue box with confirm selection*.
 
@@ -570,31 +573,7 @@ mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :
 
 ### Proliferation vs metastases 
 
-ToDo: optional analysis - I have not made all the steps. If we want these three analyses in, I will write the actual 
-steps down.  
-
-Mesenchymal tumor phenotypes are generally accompanied by reduced proliferation. Indeed, high expression of
-proliferation signatures and Wnt target genes are associated with good prognosis and reduced metastatic capacity in CRC
-
-ToDo: Remove picture
-![](_static/images/MolOncCRC/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
-multiple genes 4 gene signature, todo remove")
-
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolOncCRC/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
-
-
-ToDo: Remove picture
-![](_static/images/MolOncCRC/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
-multiple genes 4 gene signature, todo remove")
-
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolOncCRC/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
-
-ToDo: Remove picture
-![](_static/images/MolOncCRC/mtorc1_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
-multiple genes 4 gene signature, todo remove")
-
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolOncCRC/mtorc1_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
-
+ToDo: make the student story short
 "The mesenchymal-to-epithelial phenotype shift following imatinib therapy coincided with increased expression of WNT- and
 MYC-target genes and signatures reflecting proliferation. Accelerated proliferation may – at first sight – not be
 considered a desired effect of any anti-cancer therapy. However, high expression of proliferation signatures and WNT
@@ -602,7 +581,10 @@ target genes are associated with good prognosis and reduced metastatic capacity 
 invasion are often inversely regulated in tumor biology, supporting the notion that proliferating tumor cells have to
 switch their transcriptional state (through EMT) in order to acquire invasive and metastatic properties (40, 44, 45).
 Proliferating tumor cells require high expression of mTORC1 and its target genes to meet their anabolic demand (46). The
-high expression of mTORC1 in imatinib-treated tumors may therefore simply reflect the MET phenotype switch"
+high expression of mTORC1 in imatinib-treated tumors may therefore simply reflect the MET phenotype switch"  
+
+Mesenchymal tumor phenotypes are generally accompanied by reduced proliferation. Indeed, high expression of
+proliferation signatures and Wnt target genes are associated with good prognosis and reduced metastatic capacity in CRC
 
 * On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
 * Select the analysis **View Geneset (Heatmap)
@@ -749,11 +731,11 @@ In chapter [Integrative analysis: ChIP-seq data](https://r2-tutorials.readthedoc
 of Chipseq data analysis. 
 <br><br>
 
-![](_static/images/MolOncCRC/IntAnalysis_ChIPSeq_ModificationTypes.png "Figure 4:Survival chances that are linked to the gene shift, todo remove")
+![](_static/images/MolOncCRC/EpigeneticModifications.png "The epigenetic signatures at the promoter and enhancer of a gene")
 
-[**Survival chances that are linked to the gene shift, todo remove**](_static/images/MolOncCRC/IntAnalysis_ChIPSeq_ModificationTypes.png)
+[**The epigenetic signatures at the promoter and enhancer of a gene**](_static/images/MolOncCRC/EpigeneticModifications.png)
 
-(Fig source: https://www.nature.com/articles/s12276-020-0428-7)
+<span class="">(source: )</span
 
 
 Enhanced enhancer activity can lead to the overexpression of oncogenes, which promote cancer growth. Super-enhancers 
