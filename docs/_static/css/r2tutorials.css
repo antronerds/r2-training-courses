@@ -122,6 +122,10 @@ img{
 /*
 Except for the logo
 */
+img {
+	border: lightblue solid 1px;
+}
+
 
 img[src="_images/R2d2_logo.png"]{
 	display: inline;

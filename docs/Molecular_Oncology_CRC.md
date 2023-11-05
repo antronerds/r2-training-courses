@@ -19,7 +19,7 @@ cancer development")
 
 [**Accumulation of mutations advancing colorectal cancer development**](_static/images/MolOncCRC/CRCprogression_combined.jpg)
 
-<span class="citation_txt">(combined sources: https://doi.org/10.3390/ijms241311023, https://doi.org/10.1016/j.
+<span class="citation_txt">(Figure sources: https://doi.org/10.3390/ijms241311023, https://doi.org/10.1016/j.
 tranon.2021.101131)</span>
 
 Similar to the picture above, the model highlights the importance of key genetic mutations during CRC progression, 
@@ -31,13 +31,6 @@ progression of the disease. <br>
 Colorectal cancer is the third most common cancer worldwide, according to the World Health Organization, accounting 
 for approximately 10% of all cancer cases, and it is the second leading cause of cancer-related deaths worldwide. 
 
-![](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.jpg "Subtypes in colorectal 
- cancer: CMS classification (Guinney et al., 2015)")
-
-[**Subtypes in colorectal cancer: CMS classification (Guinney et al., 2015)**](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.jpg)
-
-<span class="citation_txt">(source: https://doi.org/10.1038/nm.3967)</span>
-
 Research is needed to understand the mechanisms underlying treatment resistance and to develop strategies to
 overcome it. Better identification and characterization of multiple CRC subtypes could guide treatment decisions and
 improve the outcomes for individuals with colorectal cancer. Furthermore, markers for early detection and prevention
@@ -46,6 +39,16 @@ complexity of colorectal cancer in order to develop new and effective targeted t
 Bioinformatics tools enable the analysis of vast amounts of omic and clinical data, helping researchers identify 
 genetic mutations, epigenetic aberrations, biomarkers, and potential therapeutic targets in order to better understand 
 and combat cancer.<br>
+
+
+![](_static/images/MolOncCRC/R2webplatform.png "Web-based genomics analysis and
+visualization platform R2")
+
+[**Web-based genomics analysis and
+visualization platform R2**](_static/images/MolOncCRC/R2webplatform.png)
+
+<span class="citation_txt">(Figure source: https://r2.amc.nl)</span>
+
 Today you will use advanced bioinformatics tools to explore, analyze and visualize colorectal cancer data in
 search for a deeper understanding. You will use the freely available and web-based genomics analysis and 
 visualization platform R2, a Core Facility of the Amsterdam UMC. R2 provides the user with many experimental and 
@@ -73,18 +76,16 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
 
 ![](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg)
 
-  [**Normal tissue, precancerous adenomas and cancer growth**](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg)
+  [**Normal tissue, precancerous adenomas and cancer growth**](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg) 
 
-
-**Datasets used:**
-  
-* Mixed Colon - Marra - 64 - MAS5.0 - u133p2
+<span class="citation_txt">(source: https://doi.org/10.1126/science.1235122)</span>
 
 ### Filtering and exploring
 
-* The button below brings you to the form in which you can submit your answers for section 1.2.
+The button below brings you to the form in which you can submit your answers for the first section.
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1ZGSmm3oMSJKHBHosCJsDUuGbQDhUX-_JSesBLizcDwQ/','_blank');" type="button">Open the form for section 1.2</button>
+<button class="course googleform" onclick="window.open('https://forms.gle/bezyoxAawZ6WU8cT9','_blank');" 
+type="button">Open the answering form for this section</button>
 <br>
 <br>
 
@@ -92,9 +93,11 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
   address: <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a> and choose the button **Use R2 without an
   account** under the sign in fields.
 
-You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and
-methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's
-main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.<br><br>
+You're now on the R2 main page. This genomics analysis and visualization platform R2 contains a wealth of data and
+bioinformatics tools to analyze the datasets. With clickable items, researchers are guided through a web of options 
+for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of 
+choice.<br><br>
+
 In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset.
 We use the dataset that is described above. In this dataset, 64 samples of   .
 
@@ -179,7 +182,14 @@ In 2015, Guinney et al. (Nat Med. 2015 Nov; 21(11):1350–1356) published a bioi
 of colorectal cancer cohorts with detailed molecular annotation. The consortium developed a now widely accepted 
 molecular classification system that allows researchers to categorize most colorectal tumors into one of four 
 distinct and robust subtypes, each characterized by its unique biological features. These subtypes are: CMS1 (MSI 
-Immune), CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal), see Figure 2. 
+Immune), CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal), see the figure below. 
+
+![](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.jpg "Subtypes in colorectal
+cancer: CMS classification")
+
+[**Subtypes in colorectal cancer: CMS classification**](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.jpg)
+
+<span class="citation_txt">(source: http://dx.doi.org/10.1002/ags3.12362)</span>
 
 ### Clustering with t-SNE maps
 
