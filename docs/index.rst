@@ -14,7 +14,7 @@ Copyright (c) 2006-2023 Jan Koster
    :caption: Students Course
 
    Investigating_Tumor_Heterogeneity_student_version
-   Molecular_Genetics_CRC
+   Molecular_Oncology_CRC
 
 .. toctree::
    :maxdepth: 2
