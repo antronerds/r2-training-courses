@@ -171,7 +171,7 @@ restrict your list.
 * Re-generate a list that is specifically associated with colorectal cancer. To do so, hit the **Search GS** button in 
   the Gene Filters section of the menu. 
 * Use search field on the top of the table and fill in **colorectal**, hit **enter**.
-* The KEGG (Kyoto Encyclopedia of Genes and Genomes) database is a comprehensive bioinformatics resource that 
+* [The KEGG (Kyoto Encyclopedia of Genes and Genomes) database]( https://www.genome.jp/kegg/pathway.html) is a comprehensive bioinformatics resource that 
   integrates information about genes, proteins, pathways, and diseases. Click on the tringles in fornt off KEGG 
   pathways and its subcollections till you find the **Colorectal_cancer (62)** geneset. Check the set and hit **Use 
   selected** button.
@@ -186,7 +186,7 @@ restrict your list.
 
 ------
 
-![](_static/images/R2d2_logo.png)**What did you observe for the gene expression of AXIN2 and MYC?**
+![](_static/images/R2d2_logo.png)**What did you observe about the gene expression of AXIN2 and MYC?**
 
 ______
 
@@ -199,22 +199,48 @@ processes. The dysregulation of the Wnt pathway has been observed in several can
 
 ### The WNT pathway
 
-Generate a list of genes which are differentially expressed comparing normal and adenoma within the WNT pathway KEGG,
-use the False Discovery Rate for multiple testing correction, log 2 values and P <0.01. Find the **Wnt pathway** by 
-clicking again the GS (Gene set button) and search by key word for **Wnt** or go through the KEGG pathways. 
+In the next section, we will be using a heatmaps are used to find subgroups of samples or genes that show 
+similar expression profiles. Heatmaps perform unsupervised hierarchical clustering of samples. The algorithm uses the 
+distribution of the (expression) data to find clusters that have similar (expression) profiles and shows the samples in the plot based on their (dis)similarity.
+This is combined with the clustering of the genes based on their expression throughout the samples. The heatmap is 
+colored by the z-scores of the samples' gene expression values. Often annotation tracks are shown above a heatmap. 
+Remember that _we can_ see this annotation but that the _heatmap algorithm did not use_ this information to look for 
+subgroups in the data. 
 
-* How many genes are up / down regulated. 
+![](_static/images/TumorHeterogeneity_HeatmapClustering.png "Example heatmap: finding subgroups in your data")
 
-* In the left menu generate a heatmap. Play a little bit with the color scheme, select e.g: the green-black-red scheme,  Inspect the heatmap did you expect this pronounced clustering?.
+[**Example heatmap: finding subgroups in your data**](_static/images/TumorHeterogeneity_HeatmapClustering.png)
+
+* Go back to gene list result page of the previous Differential Expression between two groups analysis, th etab 
+  should still be open. 
+* Generate a list of genes which are differentially expressed comparing normal and adenoma tissue within the KEGG WNT 
+  pathway by adjusting the settings if needed:
+  - Use the False Discovery Rate for multiple testing correction, 
+  - log 2 values 
+  - and P <0.01. 
+  - First clear the gene set filter with the red cross and use the Search GS button again. Find the KEGG **Wnt** 
+    pathway geneset (hint: use keyword **Wnt**). 
+  Don't forget to hit **Submit** in order to redo the analysis with the new settings.
+
+* Use the **Heatmap(zscore)** button on the right.   
+
+
+------
+
+![](_static/images/R2d2_logo.png)**Inspect the heatmap did you expect this pronounced clustering?**
+
+______
 
 
 ### Find relevant pathways
 
 
-Often, you do not immediately have an idea which pathways you could look at for in your comparisons between groups (normal versus adenoma in our case). A module within R2 providing you with some suggestions is the so called KEGG Pathway Finder by Groups. It assesses whether the number of genes that show significant differential expression between Normal and Adenoma is significantly higher than you would expect compared to all genes that are mentioned in KEGG. In other words are the genes you found regulated between the groups enriched in the KEGG pathway database. 
-
-[Info: The KEGG pathway Database]( https://www.genome.jp/kegg/pathway.html).
-
+Often, you do not immediately have an idea which pathways you could look for in your comparisons between groups 
+(normal versus adenoma in our case). A module within R2 providing you with some suggestions, is the so called KEGG 
+Pathway Finder by Groups. It assesses whether the number of genes that show significant differential expression 
+between normal and adenoma tissue is significantly higher than you would expect compared to all genes that are 
+mentioned in KEGG. In other words: are the differentially expressed genes that you found between the groups enriched in 
+the KEGG pathway database? 
 
 * Perform a KEGG pathway analysis from the ‘main’ page. leave the re-presentation on **"over"** again with the Normal vs Adenoma group. Are there KEGG pathways over-represented in the differentially expressed genes  (Set the p-value 0.01 for the analysis and select striking pathways). And does it make sense that these are in the list ?.
 
