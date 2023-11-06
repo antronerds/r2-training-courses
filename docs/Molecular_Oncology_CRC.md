@@ -279,9 +279,8 @@ samples and will clump cells with similar expression profiles together on a map.
 * Click the button below to show the t-SNE map in R2:
 
 
-ToDo make permalink to tSNE 
-<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_tsne_86_6tumortypes" target="_blank">
-Go to the t-SNE map</a>
+ToDo make permalink to tSNE <br>
+<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_tsne_86_6tumortypes" target="_blank">Go to the t-SNE map</a>
 <br>
 <br>
 

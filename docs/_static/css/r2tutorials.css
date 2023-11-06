@@ -130,6 +130,7 @@ img {
 img[src="_images/R2d2_logo.png"]{
 	display: inline;
 	float: left;
+	border: none;
 }
 
 .citation_txt{
