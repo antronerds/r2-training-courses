@@ -66,7 +66,7 @@ the form, click the button below:
 <br>
 <br>
 
-## Normal colonic epithelium vs colorectal tumor tissue: a first impression of genomic data
+## Normal colonic epithelium vs adenomatous tissue: a first impression of genomic data
 
 Colorectal cancers are believed to arise predominantly from adenomas. A fundamental query in cancer research 
 consistently revolves around understanding the distinctions between the transcriptomic profiles of normal tissue and 
@@ -129,7 +129,7 @@ analyses. The tissue annotation of the Marra set can thus be used to find, for i
 expression profiles of the adenoma and normal samples.
 <br>
 
-### Find different expression profiles of normal and adenoma tissue
+### Find different expression profiles between normal and adenoma tissue
 
 The button below brings you to the form in which you can submit your answers for the first section.
 
@@ -190,18 +190,15 @@ restrict your list.
 
 ______
 
-
-## A song of heatmaps and pathways
-
-
 The WNT pathway is an important signal transduction cascade which plays an important role in diverse biological 
 processes. The dysregulation of the Wnt pathway has been observed in several cancers including colon cancer. 
 
 ### The WNT pathway
 
-In the next section, we will be using a heatmaps are used to find subgroups of samples or genes that show 
+In the next sections we will regularly be using heatmaps to find subgroups of samples or genes that show 
 similar expression profiles. Heatmaps perform unsupervised hierarchical clustering of samples. The algorithm uses the 
-distribution of the (expression) data to find clusters that have similar (expression) profiles and shows the samples in the plot based on their (dis)similarity.
+distribution of the (expression) data to find clusters that have similar (expression) profiles and shows the 
+clusters of samples in the plot based on their (dis)similarity.
 This is combined with the clustering of the genes based on their expression throughout the samples. The heatmap is 
 colored by the z-scores of the samples' gene expression values. Often annotation tracks are shown above a heatmap. 
 Remember that _we can_ see this annotation but that the _heatmap algorithm did not use_ this information to look for 
@@ -231,32 +228,19 @@ subgroups in the data.
 
 ______
 
+Now let's generate a Wnt pathway heatmap from a different route:
+* Go to the main page
+* Select the analysis **View Geneset (Heatmap)**
+* On the next page, select **KEGG** *Gene set Collection*. Click **Next** and then **Next** again.
+* Now scroll all th eway down at the *Gene set* list and click on **Wnt_signaling_pathway**. Click **Next**.
 
-### Find relevant pathways
+------
 
+![](_static/images/R2d2_logo.png)**What does the annotation above the heatmap tell you?**
 
-Often, you do not immediately have an idea which pathways you could look for in your comparisons between groups 
-(normal versus adenoma in our case). A module within R2 providing you with some suggestions, is the so called KEGG 
-Pathway Finder by Groups. It assesses whether the number of genes that show significant differential expression 
-between normal and adenoma tissue is significantly higher than you would expect compared to all genes that are 
-mentioned in KEGG. In other words: are the differentially expressed genes that you found between the groups enriched in 
-the KEGG pathway database? 
+![](_static/images/R2d2_logo.png)**How and why does this heatmap differ from the previous Wnt pathway heatmap?**
 
-* Perform a KEGG pathway analysis from the ‘main’ page. leave the re-presentation on **"over"** again with the Normal vs Adenoma group. Are there KEGG pathways over-represented in the differentially expressed genes  (Set the p-value 0.01 for the analysis and select striking pathways). And does it make sense that these are in the list ?.
-
-
-* Perform the same task with the under-representation selected in de drop down menu. Do you see interesting 
-  pathways popping up?
-
-In this test the WNT pathway was not really significant but still in the list at the bottom. One of the reasons why this is the case, is that in this case not all the genes  are assigned to the KEGG WNT pathway. Or that the pathway genes are in this case not sufficient to access pathway activity. However, visualizing the gene expression still hints you towards WNT pathway involvment. 
-
-* Go to the main screen select generate a heatmap and select the wnt path way from the text database.
-
-
-* The samples are clearly seperated in Normal vs Adenoma. It's different and less pronounced compared to the previous heatmap you generated.  Do you think this is special? , Why or Why not.
-
-* In what way is the heatmap your generated different compared to the previous one.  
-
+______
 
 
 ## Identifying groups and their characteristics: CMS
@@ -271,12 +255,20 @@ molecular classification system that allows researchers to categorize most color
 distinct and robust subtypes, each characterized by its unique biological features. These subtypes are: CMS1 (MSI 
 Immune), CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal), see the figure below. 
 
-![](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.jpg "Subtypes in colorectal
+![](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.png "Subtypes in colorectal
 cancer: CMS classification")
 
-[**Subtypes in colorectal cancer: CMS classification**](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.jpg)
+[**Subtypes in colorectal cancer: CMS classification**](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.png)
 
 <span class="citation_txt">(source: http://dx.doi.org/10.1002/ags3.12362)</span>
+
+The button below brings you to the form in which you can submit your answers for the first section.
+
+<button class="course googleform" onclick="window.open('https://forms.gle/SnVY3NPnjEeHCFhM9','_blank');"
+type="button">Open the answering form for this section</button>
+<br>
+<br>
+
 
 ### Clustering with t-SNE maps
 
@@ -392,7 +384,7 @@ Now we will look at the KRAS mutations
 
 ### A dive into CMS1: MSI / MSS in CRC
 
-In one the previous tasks we have introduced the R2 platform and looked at differences between Normal and Colon tissue by looking at differentially expressed genes. For many cancers types it is important to focus on subtyping meaning identifying subgroups within CRC datasets R2 is hosting. As already discussed, CRC has 4 CMS subtypes, one of the characteristics of CMS I, is MSI instability.
+Let's try to understand better what is going on in CMS 1. One of the characteristics of CMS I, is MSI instability.
 
 The genomic instability in colon cancer can be divided into at least two major types, microsatellite instability (MSI) or chromosomal instability (CIN). Microsatellite instability (MSI) is caused by mutations in DNA mismatch repair genes such as MLH1, MSH2, MSH6, and PMS2, and it is found in 10% to 15% of sporadic colorectal cancers (CRCs). The presence of MSI predicts a good outcome in colorectal cancer.
 

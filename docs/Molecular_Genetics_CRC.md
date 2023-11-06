@@ -164,7 +164,7 @@ Often, you do not immediately have an idea which pathways you could look at for 
 ![](_static/images/MolGenCRC/keggpathway_select.png "Kegg select")
 
 
-*A: DNA replication and TP53 and Cell cycle are in  the list*, when you select over-representation
+*A: DNA replication and Cell cycle are in  the list*, when you select over-representation
 
 ![](_static/images/MolGenCRC/kegg_pathway.png "KEGG results")
 
