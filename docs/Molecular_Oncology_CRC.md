@@ -80,67 +80,128 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
 
 <span class="citation_txt">(source: https://doi.org/10.1126/science.1235122)</span>
 
+
+*Datasets used:*
+* Mixed Colon - Marra - 64 - MAS5.0 - u133p2
+
+
 ### Filtering and exploring
-
-The button below brings you to the form in which you can submit your answers for the first section.
-
-<button class="course googleform" onclick="window.open('https://forms.gle/bezyoxAawZ6WU8cT9','_blank');" 
-type="button">Open the answering form for this section</button>
-<br>
-<br>
 
 * Open a Chrome browser and go to the R2 platform
   address: <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a> and choose the button **Use R2 without an
   account** under the sign in fields.
 
-You're now on the R2 main page. This genomics analysis and visualization platform R2 contains a wealth of data and
-bioinformatics tools to analyze the datasets. With clickable items, researchers are guided through a web of options 
-for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of 
+You're now on the R2 main page. This genomics analysis and visualization platform contains a wealth of data and
+bioinformatics tools to analyze the datasets. Step by step, researchers are guided through a web of options 
+for data analysis with mostly clickable items. R2's main page shows this principle: follow the numbered 
+boxes to develop your analysis of 
 choice.<br><br>
 
-In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset.
-We use the dataset that is described above. In this dataset, 64 samples of   .
+We're first going to see if and how the mRNA expression of several genes changes through the single dataset with the 
+name "Mixed Colon - Marra - 64 - MAS5.0 - u133p2".<br>
+Datasets have a structured naming in R2, using the following rules: Category + Tissue/ Tumor -  author - 
+number_of_samples_N - normalization - chiptype. In our case the dataset name tells us that the dataset contains 
+normal and tumor samples (*mixed*) of *colon* tissue, that *Marra* is the author and that there are *64* samples.
 
-* In order to find the dataset in R2, click on the text of the currently selected dataset in box 2. A grid pops up in
-  which you can find all the datasets of R2 that are available to you.
-* Each row is a dataset and each column contains the different searchable characteristics of a dataset. Under the header
-  **Tissue/Tumor** type the keyword *colon* in the white textfield to find out how many colon related sets R2 is 
-  hosting.
+* In order to find the dataset in R2, click on the text of the currently selected dataset in box 2. 
+* A grid pops up that contains all the datasets that are currently available to you. Each row is a dataset and
+  each column contains a different searchable characteristic of datasets. In the bottom right corner of the grid, 
+  find the number of rows, i.e. available datasets.
+*  Under the header *Tissue/Tumor* type the keyword **colon** in the white text-field filter, and check the adapted 
+   number of rows in the bottom right corner to find out how many colon related sets R2 is hosting.
+* Find the RNA expression dataset from *Author* **Marra** and click on the row of the dataset that 
+  contains **64** samples (*N*). In the information panel below the grid, you find more information about this 
+  dataset. Quickly glance over the summary of the study. 
+* Select the dataset with a click on the blue box Confirm selection. Check on th emain page in box 2 that the 
+  correct set has been selected.
+
+Of course, it is nice to have a lot of RNA expression datasets to analyse and explore, but without proper sample 
+annotation your have very limited analysis options. Let's explore the annotation for the Marra dataset.
+
+* In box 3, select the analysis type **Cohort Overview** and click **Next**.
+* In the grid, you can see all the samples in rows, with the available annotation in the columns. Hover your mouse 
+  over the pie chart of the **tissue** annotation and optionally click on a slice to see the Cohort overview adapt 
+  to that sample subgroup. 
+
+In R2, samples of a dataset can be annotated with e.g. clinical data or biological information. Each group of annotated 
+data is called a **Track** in R2. These tracks can be used to filter, color or split data in all types of R2 
+analyses. The tissue annotation of the Marra set can thus be used to find, for instance, the differences between gene 
+expression profiles of the adenoma and normal samples.
+<br>
+
+### Find different expression profiles of normal and adenoma tissue
+
+The button below brings you to the form in which you can submit your answers for the first section.
+
+<button class="course googleform" onclick="window.open('https://forms.gle/bezyoxAawZ6WU8cT9','_blank');"
+type="button">Open the answering form for this section</button>
+<br>
+<br>
+
+The R2 platform supports a large set of analysis types to explore datasets. One of these modules is the "Find 
+differential expression between groups". The differential expression analysis aims to identify genes which are 
+significantly different between two groups. 
+
+* Click on **Main** in th eupper left corner.
+* Check if you have selected the **Marra** dataset and in box 3 *select type of analysis* _Find Differential expression 
+  between two groups_. CLick **Next**.
+* R2 offers a couple of statistical *test*, in this case we use the **T-test** which is selected by default.
+* Now we have to select which grouping variable to use. Select *Group by* **Tissue (2cat)** to use the previously 
+  seen tissue annotation. And click **Submit**.
+* An extra field of settings is shown. Select *Group 1* **normal** and *Group 2* **adenoma**. Check that the default 
+  _Transformation_ **Log2**  is selected, and _P-value cutoff_ **0.01**. Click **Submit**.
+
+R2 has generated a large list of differentially expressed genes. On the right hand side of the page you find buttons to follow-up analyses,
+and underneath the buttons are informative tables about the genes list. One table shows how many genes have higher 
+expression in adenomas compared to healthy tissue and the othter way around. 
+
+------
+
+![](_static/images/R2d2_logo.png)**How many genes have been found in total? How many were upregulated in adenomas 
+and how many were downregulated?**
+
+______
 
 
-* How many sets has R2 when you only look for colon methylation sets.
+Next to many the publicly available datasets, R2 is also hosting a lot of curated lists of genes which we call 
+**gene sets**. These gene sets can be used to restrict or filter an analysis as well. We can adapt our current 
+search by scrolling down to the end of our gene list. In the Adjustable Settings menu, you can now use a Gene Set to 
+restrict your list.  
 
+* Re-generate a list that is specifically associated with colorectal cancer. To do so, hit the **Search GS** button in 
+  the Gene Filters section of the menu. 
+* Use search field on the top of the table and fill in **colorectal**, hit **enter**.
+* The KEGG (Kyoto Encyclopedia of Genes and Genomes) database is a comprehensive bioinformatics resource that 
+  integrates information about genes, proteins, pathways, and diseases. Click on the tringles in fornt off KEGG 
+  pathways and its subcollections till you find the **Colorectal_cancer (62)** geneset. Check the set and hit **Use 
+  selected** button.
+* Check out the list and see if you recognize multiple genes. You can hover over the magnifying glasses in front of each row to learn more about the genes.
+* Now click on the magnifying glass in front of **AXIN2** to obtain a scatter plot of the expression of this gene 
+  for each sample in the dataset. 
+* You can see that the plot is split in two. Underneath the plot you can find two annotation tracks, one of which is the
+  **tissue** track. The colors show the different groups to which each sample belongs. If you hover your mouse over 
+  any of the blocks, you can see which side is adenoma and which side is normal tissue. Also note you hoover over the dots in the graph and the tracks to get more information of the individual samples.
+* The green bar in the top allows you to easily go to next or previous gene of your list. Click on the **arrow with 
+  MYC** on the right side of the green bar to view its gene expression in the samples. 
 
-This first dataset that we will use, can be found in R2 as "Mixed Colon - Marra - 64 - MAS5.0 - u133p2". In te main 
-screen more background information is revealed bij clicking on the dataset name. In the rest of  R2 clicking on the exclamation marks next to the dataset name will also reveal additional information.
+------
 
-Of course it is nice to have a lot of RNA expression datasets to analyse and explore but without proper sample annotation your have very limited analysis options. Let's explore the annotation for the Marra dataset.
+![](_static/images/R2d2_logo.png)**What did you observe for the gene expression of AXIN2 and MYC?**
 
-
-* Find  and select the RNA expression dataset from Author Marra and select the one with 64 samples. *Note: Click the blue box with confirm selection*.
-
-* Go to the cohort overview in box 3 and check the samples annotation by using the pulldown menu. In the annotation section, check *cohort overview* how many normal en tissue samples does the **Marra** set contain this set also contains the location such as tissue location etc etc.
-
-The R2 platform support a large  set of analysis types to explore datasets. One of these modules is the "Find differential expression between groups". The differential expression analysis aims to identify genes which are significant different between two groups. R2 offers a couple of statistical test in this case we use the T-test which is selected by default.
-
-* Check if you have selected the **Marra** set and select in the main menu box, "Find Differential expression between two groups. In the next screen, use the default select T-test and select "Tissue" in **the group by:** option, and click submit in the next screen,  Select Normal and Adenoma for subsequently group 1 and group 2, make sure that log2 and p < 0.01 is selected  and click submit.
-
-* R2 has generated a large list of differentially expressed genes, can you say something about the distribution of the genes, how many are up and down regulated.
-
-
-Next to many publicly available datasets, R2 is also hosting a lot of curated lists of genes which we call `gene sets` (gene categories). These gene categories can be used to restrict or filter as well.  We can adapt our current search by scrolling down to the end of our gene list. In the Adjustable Settings Panel by hitting the **"Search GS"** in the Gene Filters box you can now use a Gene Set to filter your list. Re-generate a list that is specifically associated with (colorectal) cancer (hint: look in the gene category or KEGG pathway list to identify an interesting gene set). You can look with keywords of inspect the KEGG pathway specific.
-
-* Check some genes with single gene view (AXIN2 etc etc) by clicking the magnifying glass, in the green bar in the top you can easily go to list. Note the coloured bars beneath plot, containing the sample annotation, these grouping variables are called tracks. Also note you hoover over the dots in the graph and the tracks to get more information of the individual samples.
+______
 
 
 ## A song of heatmaps and pathways
 
 
-The WNT pathway is an important signal transduction cascade which plays an important role in many biological processes. The dysregulation of the Wnt pathway has been observed in many different cancers including colon cancer. 
+The WNT pathway is an important signal transduction cascade which plays an important role in diverse biological 
+processes. The dysregulation of the Wnt pathway has been observed in several cancers including colon cancer. 
 
 ### The WNT pathway
 
-Generate a list of genes which are differentially expressed comparing normal and adenoma within the WNT pathway KEGG, use the False Discovery Rate for multiple testing correction, log 2 values and P <0.01. Find the **Wnt pathway** by clicking again the GS (Gene set button) and search by key word for Wnt or go through the KEGG pathways. 
+Generate a list of genes which are differentially expressed comparing normal and adenoma within the WNT pathway KEGG,
+use the False Discovery Rate for multiple testing correction, log 2 values and P <0.01. Find the **Wnt pathway** by 
+clicking again the GS (Gene set button) and search by key word for **Wnt** or go through the KEGG pathways. 
 
 * How many genes are up / down regulated. 
 
