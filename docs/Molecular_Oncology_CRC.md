@@ -1,10 +1,11 @@
-<a id="molecular_genetics_crc"> </a>
+<a id="molecular_oncology_crc"> </a>
 
-Molecular Genetics Course - Colorectal Cancer
+Molecular Oncology Course - Colorectal Cancer
 =================================
 
 *Analyse Colorectal Cancer using the R2 data analysis platform*
 
+ToDo: change mgcourse link to this document<br>
 This resource is located online at http://r2platform.com/mgcourse  
  
   
@@ -78,7 +79,7 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
 
   [**Normal tissue, precancerous adenomas and cancer growth**](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg) 
 
-<span class="citation_txt">(source: https://doi.org/10.1126/science.1235122)</span>
+<span class="citation_txt">(Figure source: https://doi.org/10.1126/science.1235122)</span>
 
 
 *Datasets used:*
@@ -274,24 +275,33 @@ type="button">Open the answering form for this section</button>
 
 An unbiased unsupervised type of clustering analysis is a good starting point to familiarize yourself with a new
 dataset. The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of
-samples and will clump cells with similar expression profiles together on a map.
+samples and will clump cells with similar expression profiles together on a map. In R2, these mps can be generated 
+by users with an account. Ones a dataset t-SNE has run, it is available to other users as well. This saves 
+processing time and costs. <br>
+We will use a dataset that was adapted from one of the resources of
+ [The Cancer Genome Atlas (TCGA)](https://www.cancer.gov/ccg/research/genome-sequencing/tcga). They provide a wealth 
+of omics data: "TCGA generated over 2.5 
+petabytes of genomic, epigenomic, transcriptomic, and proteomic data. The data, which has already led to improvements in our ability to diagnose, treat, and prevent cancer, will remain publicly available for anyone in the research community to use." 
 
-* Click the button below to show the t-SNE map in R2:
+*Dataset used:*
+* Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36
 
-
-ToDo make permalink to tSNE <br>
-<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_tsne_86_6tumortypes" target="_blank">Go to the t-SNE map</a>
-<br>
-<br>
+* In the left side menu on the main page, click on **Sample maps (UMAP/tSNE)**
+* In the grid, filter for the dataset **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36** and 
+  click its **Select** button
 
 Under the graph, a menu allows the user to adapt settings.
 Colors of the graph points are not set by default.
 
-* Find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the
-  *cms_predicted* track
-  again, and click **Submit** to show the changes.
-* The different maps can be found under de setting Versions. Set **Versions** to the value *all* and click **Submit**
-  again.  
+* Find the **Color mode** dropdown and select *Color by Track*. Now set the _Color track_ dropdown to use the
+  **cms_predicted** track, and click **Set colors** to show the changes.
+
+The most important parameter for the t-SNE algorithm is the perplexity value. The perplexity parameter controls 
+the balance between a focus on preserving local details or global structures of the data. When R2 receives the 
+  request to calculate the t-SNE map for a dataset, it immediately calculates and stores the t-SNE maps with 
+different perplexity values. The resulting maps can be found under de setting 
+  _Versions_. It is also possible to show all the available perplexity maps for the dataset at the same time. 
+* Set *Versions* to the value **all** and click **Submit** again.  
 
 
 
@@ -308,18 +318,19 @@ Colors of the graph points are not set by default.
 
 ------  
 
-CRC contains subtypes, of which we already looked at one subtype more in depth. We will study differences among
-the subtypes further. To start, lets see if there is any difference in survival chances among the subtypes
+Let's see if there is any difference in survival chances among the subtypes that were shown on the t-SNE map. 
 
 
 ### Different survival chances for different CMS CRC subtypes? 
+To see if there is a difference  the effect of different survival chances  
+*Dataset used*
+* Tumor Colon (CMS) - Guinney - 3232 - custom - ccrcst1
 
 * In the left side menu on the main page, click on Survival (Kaplan-Meier / Cox)
-* In the menu at the center of the page, click at the Dataset setting on the current Dataset name, and find the
-  dataset with *Author* is **Guinney** and the amount of samples *N* is **3232**
+* In the menu at the center of the page, click at the Dataset setting on the current Dataset name, and find the dataset with *Author* is **Guinney** and the amount of samples *N* is **3232**
 * Click on the row to read its description in the information box underneath the dataset selection grid
 
-ToDo: Fill in the information about the dataset Summary Design etc
+
 
 * Leave *Separate by* at **categorical track (Kaplan-Meier)** and click **Next**
 * Choose *type of Survival* **overall* and *Track* **lv_cms_final**
@@ -383,9 +394,9 @@ Now we will look at the KRAS mutations
 
 ### A dive into CMS1: MSI / MSS in CRC
 
-Let's try to understand better what is going on in CMS 1. One of the characteristics of CMS I, is MSI instability.
-
-The genomic instability in colon cancer can be divided into at least two major types, microsatellite instability (MSI) or chromosomal instability (CIN). Microsatellite instability (MSI) is caused by mutations in DNA mismatch repair genes such as MLH1, MSH2, MSH6, and PMS2, and it is found in 10% to 15% of sporadic colorectal cancers (CRCs). The presence of MSI predicts a good outcome in colorectal cancer.
+One of the characteristics of CMS I is MSI instability. Genomic instability in colon cancer can be divided 
+into at least two major types: microsatellite instability (MSI) or chromosomal instability (CIN). Microsatellite 
+instability (MSI) is caused by mutations in DNA mismatch repair genes such as MLH1, MSH2, MSH6, and PMS2, and it is found in 10% to 15% of sporadic colorectal cancers (CRCs). The presence of MSI predicts a good outcome in colorectal cancer.
 
 In MSI colon cancer, genes of the DNA mismatch repair system play an important role. Germline mutations in these genes are a major cause of the inherited form of colon cancer, namely HNPCC (hereditary nonpolyposis colon cancer).  In sporadic forms of colon cancer however, these genes are frequently inactivated. Inactivation is often achieved via hypermethylation, switching the gene off. Hypermethylation of genes in colon cancer is most common in colon tumors with a proximal location in the colon and much less in colon tumors with a distal location.
 
@@ -395,14 +406,12 @@ This dataset consists of Microsatellite stable (MSS) tumors and microsatellite i
 
 #### Watanabe dataset
 
-* **Select "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"**
-
-
-Use the “Find Differential expressed genes between groups” module to generate a list of genes that differentially expressed between MSI and MSS characterized tumors. Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
+* Select the dataset **Tumor Colon - Watanabe - 84 - MAS5.0 - u133p2**
+* Read the **Summary** in the information panel underneath the dataset selection grid
+* Use the **Find Differential expressed genes between two groups** module to generate a list of differentially expressed genes between **MSI** and **MSS** characterized tumors (*MS_status*) 
+* Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
 
 * Which one is in top list.
-
-
 
 *  One of the genes differentially expressed clearly is MLH1 (does this gene sounds familiar). Look at the expression pattern of MLH1 in colon tumors, both sets (MSI vs. MSS). What do you notice ?. The MHL1 expression came significant out our test as a down regulated gene. What did you expect and what do you see?. 
 
