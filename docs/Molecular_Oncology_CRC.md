@@ -626,11 +626,15 @@ in HCT116 WT cells
 * Analyse which genes are affected by the compounds
 
 Let's start with drugs known to interact with tp53. In college also MDM2 has been mentioned as negative P53 regulator. 
-If you want to  find diffentially expressed genes in Tp53 dependent background which subgroups do you have to select.
+If you want to find diffentially expressed genes in Tp53 dependent background which subgroups do you have to select. 
+
+**Hint: Filter for TP53 wild-type first before selecting your groups in the DESeq2 test (default) or select the proper groups in the treatment_small__genotype group.**
 
 * Do you see the MDM2 gene ?.
 
 * Inspect the MDM2 level in a one gene view  are your surprised ?
+
+* In the left menu you can store your found list of 162 genes with the "store result as custom geneset" button and save it with a proper name in temporary collection (default) for later usage/
 
 
 * Also check the relation with TP53
@@ -641,6 +645,7 @@ If you want to  find diffentially expressed genes in Tp53 dependent background w
 
 * And why is also TP53 increased ?
 
+Optional:  You can also perform the same test for Etoposide as you did for Nutlin-3A and store this list as well. So it is obvious that the innersection of genes for both drug treatments are of potential interest. With the VENN-diagram of gene categories option in box 3 of the main menu  you can check for overlapping genes. After selecting the VENN diagram try to find your stored genelistswith GS button, User genesets > Temporary etc. 
 
 * Check of there is an overlap between affected genes
 
