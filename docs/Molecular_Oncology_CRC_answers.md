@@ -434,39 +434,12 @@ Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog
 
 ## Effects of imatinib: shifts of signature profiles and molecular subtypes
 
-Mesenchymal Consensus Molecular Subtype 4 (CMS4) colon cancer is associated with poor prognosis and therapy resistance.
-MES signature is strongly correlated with CMS4 some MES genes  
-"In the ImPACCT trial, informed consent was obtained for molecular subtyping at initial diagnosis of colon cancer using
-a validated RT-qPCR CMS4-test on three biopsies per tumor (Phase-1, n=69 patients), and for neoadjuvant CMS4-targeting
-therapy with imatinib (Phase-2, n=5). Pre- and post-treatment tumor biopsies were analyzed by RNA-sequencing and
-immunohistochemistry. Imatinib-induced gene expression changes were associated with molecular subtypes and survival in
-an independent cohort of 3232 primary colon cancer."
-
-"The mesenchymal-to-epithelial phenotype shift following imatinib therapy coincided with increased expression of WNT- and
-MYC-target genes and signatures reflecting proliferation. Accelerated proliferation may – at first sight – not be
-considered a desired effect of any anti-cancer therapy. However, high expression of proliferation signatures and WNT
-target genes are associated with good prognosis and reduced metastatic capacity in CRC (36–38). Proliferation and
-invasion are often inversely regulated in tumor biology, supporting the notion that proliferating tumor cells have to
-switch their transcriptional state (through EMT) in order to acquire invasive and metastatic properties (40, 44, 45).
-Proliferating tumor cells require high expression of mTORC1 and its target genes to meet their anabolic demand (46). The
-high expression of mTORC1 in imatinib-treated tumors may therefore simply reflect the MET phenotype switch."
-
-We want to see how the expression changes between the pre and post treatment samples expression of specific 
-mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :
-(ToDo: or Wnt pathway etc uit Supplementary materials)
-* On the main page in the center menu, select the dataset **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**  
-* Choose the analysis **View Multiple Genes** and click Next
-* In the *Genes/Reporters to include* textbox, type **Zeb1,PDGFRA,PDGFRB,CD36**
-* Set Track to **imatinib** to divide the samples in the pretreatment and the posttreatment group and *Handle groups 
-  by* **lump by gene plot group** to show this per gene. 
-* Set *color by* to **Track** in order to make the box plots visually more dictinct.  
-* Click next
 
 ToDo: Remove picture
 ![](_static/images/MolGenCRC/temp/impacct_Viewmultiplegenes_4genesign_result_delete_later.png "Figure 4: View  
  multiple genes 4 gene signature, todo remove")
 
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/impacct_Viewmultiplegenes_4genesign_result_delete_later.png)
+[**View multiple genes 4 gene signature**](_static/images/MolGenCRC/temp/impacct_Viewmultiplegenes_4genesign_result_delete_later.png)
 
 
 ------
@@ -476,7 +449,7 @@ ToDo: Remove picture
   ![](_static/images/R2d2_logo.png)**What is the role of ZEB1 in EMT?**
   
 
-**ToDo: remove answers**  
+
 1)expression of specific mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 was strongly and significantly 
 reduced after imatinib treatment (here you cant read teh significance - we could choose a different visualization  
 2)- Zinc finger E-box binding homeobox 1 (ZEB1) is a transcription factor that promotes tumor 
@@ -484,68 +457,33 @@ invasion and metastasis by inducing epithelial-mesenchymal transition (EMT) in c
 an important role in embryonic development and malignant progression, but is also implicated in cancer therapy 
 resistance.  
 PDGFRA, PDGFRB, PDGFC, and KIT, identifies CMS4 CRC with very high sensitivity and specificity
-<br>
-<br>
+
 
 ------
 
 ### Proliferation vs metastases 
 
-ToDo: optional analysis - I have not made all the steps. If we want these three analyses in, I will write the actual 
-steps down.  
-
-Mesenchymal tumor phenotypes are generally accompanied by reduced proliferation. Indeed, high expression of
-proliferation signatures and Wnt target genes are associated with good prognosis and reduced metastatic capacity in CRC
-
-ToDo: Remove picture
-![](_static/images/MolGenCRC/temp/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
-multiple genes 4 gene signature, todo remove")
-
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
 
 
-ToDo: Remove picture
-![](_static/images/MolGenCRC/temp/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
-multiple genes 4 gene signature, todo remove")
+![](_static/images/MolGenCRC/temp/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "relate two tracks")
 
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+[**relate two tracks**](_static/images/MolGenCRC/temp/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
 
-ToDo: Remove picture
-![](_static/images/MolGenCRC/temp/mtorc1_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
-multiple genes 4 gene signature, todo remove")
 
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/mtorc1_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+![](_static/images/MolGenCRC/temp/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "")
 
-"The mesenchymal-to-epithelial phenotype shift following imatinib therapy coincided with increased expression of WNT- and
-MYC-target genes and signatures reflecting proliferation. Accelerated proliferation may – at first sight – not be
-considered a desired effect of any anti-cancer therapy. However, high expression of proliferation signatures and WNT
-target genes are associated with good prognosis and reduced metastatic capacity in CRC (36–38). Proliferation and
-invasion are often inversely regulated in tumor biology, supporting the notion that proliferating tumor cells have to
-switch their transcriptional state (through EMT) in order to acquire invasive and metastatic properties (40, 44, 45).
-Proliferating tumor cells require high expression of mTORC1 and its target genes to meet their anabolic demand (46). The
-high expression of mTORC1 in imatinib-treated tumors may therefore simply reflect the MET phenotype switch"
+[**optional relate two tracks**](_static/images/MolGenCRC/temp/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+
+
 
 ### Assess the prognostic value of imatinib treatment
-To assess the potential prognostic value of the treatment, we will make a signature of the genes that were changed 
-after treatment. 
-
-* On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
-* Select the analysis **Differential expression between two groups**
-* Switch the *Group by* setting to **imatinib (2cat)** and click Submit
-* Extra settings appear. We can now fill in the groups for which we want to find the differentially expressed genes: 
-  *Group 1* **pre-imatinib (15)** and *Group 2* **post-imatinib (15)**
-* Set the *P-value cutoff* to a stricter value: **0.001** and click Submit
-
-A table shows the differentially expressed genes. On the right underneath buttons with follow up analyses, you can 
-find a small table that shows how many genes were downregulated by the imatinib treatment (imatinib: pre-imatinib >= 
-post-imatinib) and how many genes were upregulated (imatinib: pre-imatinib < post-imatinib). 
 
 
 ------
 
 ![](_static/images/R2d2_logo.png)**How many upregulated and how many downregulated genes were found?** 
 
-**ToDo: remove answers**  
+**A**
 442 and 222
 ______
 
@@ -572,9 +510,7 @@ in our cohort that sow similar expression patterns for our geneset.
 
 The Kmeans algorithm looks at the expression of the samples for the selected genes and makes two groups of samples 
 that show most similar expression patterns. Then for each gene it shows the expression by a color code
-ToDo small insert about heatmaps. 
 
-ToDo: Remove picture  
 
   ![](_static/images/MolGenCRC/temp/impacct_kMeans_result_delete_later.png "Figure 4: kmeans result, todo remove")
 
@@ -588,26 +524,11 @@ expression of the geneset?**
 
 **ToDo: remove answers**  
 The yellow group is high (red) and the purple group shows low expression on average (blue)
-The genes seem to be quite well coregulated in the two groups, on egroups seems to have upregulation and one group 
+The genes seem to be quite well coregulated in the two groups, one groups seems to have upregulation and one group 
 shows downregulation. 
 ______
 
-Again this group division can be stored in R2 to use in a next analysis. 
-* To do so, hit the button **Store as track** that you can find on the left
-* On the following page, just click the button Next
-* To save the results in a way in which we will easily remember what the track was for and whic group showed wich
-  expression, change the name of *Group 'cluster 1'* into **high** and of *Group 'cluster 2'* into **low**. Also 
-  change *Track name* into **kmeans_imatinib_induced**
-* Click on Build set and go back to the main page
 
-Let's see which cms subtypes are represented in the two k-means sample clusters
-* On the main page, select the analysis **Relate 2 tracks**
-* For the *X track* scroll all the way down and select **kmeans_imatinib_induced**
-* For the *Y track* choose **lv_cms_final**
-* In the *Subset track* dropdown, select **lv_stage**, and in the pop up window check the boxes **2** and **3** ,
-  click **Ok**
-* Change the *Graph type* into **Stacked bar plot (%)**
-* *Order Groups by* **group size** and hit **Submit**
 
 ToDo: Remove picture
 

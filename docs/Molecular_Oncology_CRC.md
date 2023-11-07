@@ -730,7 +730,6 @@ such scores to use later in R2. For this course we added these scores to the pub
 * Optionally change the *Graph type* to one that you want to try out
 * Click **Submit**
 
-ToDo: check that this has been added in R2
 ------
 
 ![](_static/images/R2d2_logo.png)**What happened with the expression of WNT- and MYC-target genes post treatment?**
