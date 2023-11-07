@@ -354,7 +354,6 @@ To see if there is a difference  the effect of different survival chances
 
 ### Mutations
 
-Optionally   
 * From the main page, select the Guinney choose a **relate 2 tracks** analysis to show the different ratios of 
   mutations per CMS subtype.
 * For the *y axis* choose **lv_braf_mut** mutations and for the *X axis* choose **lv_cms_final**.
@@ -404,28 +403,51 @@ Dataset used: The next section we will use another dataset. * "Colon Tumor - Wat
 
 This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors.
 
-#### Watanabe dataset
+#### MSS vs MSI
 
-* Select the dataset **Tumor Colon - Watanabe - 84 - MAS5.0 - u133p2**
-* Read the **Summary** in the information panel underneath the dataset selection grid
-* Use the **Find Differential expressed genes between two groups** module to generate a list of differentially expressed genes between **MSI** and **MSS** characterized tumors (*MS_status*) 
-* Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
+* Find the dataset **Tumor Colon - Watanabe - 84 - MAS5.0 - u133p2** and read the **Summary** in the information panel underneath the dataset selection grid. Then **Select** the dataset.
+* Use the **Find Differential expressed genes between two groups** module to generate a list of differentially 
+  expressed genes between **MSI** and **MSS** characterized tumors (*MS_status*). Because we know that DNA repair 
+  genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine 
+  whether these genes indeed are differentially expressed between MSI and MSS tumors and which genes exactly make 
+  the difference. With the **Search GS** button, filter for **DNA repair** genes, and find them in **Categories**. There are 247 
+  genes annotated as DNA repair genes. Perform the analysis.
 
-* Which one is in top list.
-
-*  One of the genes differentially expressed clearly is MLH1 (does this gene sounds familiar). Look at the expression pattern of MLH1 in colon tumors, both sets (MSI vs. MSS). What do you notice ?. The MHL1 expression came significant out our test as a down regulated gene. What did you expect and what do you see?. 
-
-
-
-MSI tumors give a very heterogeneous picture. This could be an indication that within the MSI tumor group also a subgroup could be identified. Which one do you think ??. (note: Inspect the tracks or hoover)
+------  
 
 
+![](_static/images/R2d2_logo.png)**Do you recognize any gene(s) from the list? This is an open question**
+<br>
+<br>
+------
 
-Taking a close look at te other tracks below the graph you already get an idea what might be the case. R2 has an analysis tool called *relate two tracks* where you investigate the relation between dataset annotations. Go back to the main menu and select **relate two tracks** and click next.  Select for the X-track the MS_status  and for the Y_track MS_Orientation and click next. 
+* One of the genes differentially expressed clearly is MLH1. Click on its magnifying glass to look at the 
+  expression of MLH1 in the MSI vs. MSS samples. 
+
+------  
+
+![](_static/images/R2d2_logo.png)**The MHL1 expression came significant out our test as a down regulated gene. What 
+did you expect and what do you see?**
+<br>
+<br>
+------
+
+MSI tumors give a very heterogeneous picture. This could be an indication that within the MSI tumor group 
+also a subgroup could be identified. 
+
+* Hover with your mouse over data points or inspect the annotation underneath the graph to see if you can identify a 
+  subgroup of an annotation track in which low MLH1 expression occurs more often.
+* If you have a hinge as to which annotation track migh provide this insight, Scroll down to the Adjustable setting 
+  and change _Color mode_ to **Color by track** and choose your track to color the dots of the graph. Click **Submit**
+
+R2 has an analysis tool called *relate two tracks* where you investigate the relation between dataset annotations. 
+* Go back to the main menu and select **relate two tracks** and click **Next**. 
+* Select for the _X-track_ the **MS_status** and for the _Y_track_ **MS_Orientation** and click **Submit**. 
 
 Here the relation between Orientation and MSI is plotted and for the statistics a Fisher Exact test has been performed.
 
 * In the previous question we saw the MLH1 expression was not equally distributed within the MSI group, select in Color mode,  Color by Gene and enter MLH1 and click submit.  
+ToDo: hier willen we eigenlijk toch de teststatistiek weten van orientation vs MLH1 expressie?
 
 q: What do you see?
 
