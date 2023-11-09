@@ -5,7 +5,7 @@ Molecular Oncology Course - Colorectal Cancer
 
 *Analyse Colorectal Cancer using the R2 data analysis platform*
 
-ToDo: change mgcourse link to this document<br>
+
 This resource is located online at http://r2platform.com/mgcourse  
  
   
@@ -469,34 +469,41 @@ In many cases of proximal colon cancer with MSI, the high level of microsatellit
 of MLH1 expression. MLH1 inactivation can occur due to mutations in the MLH1 gene or through epigenetic changes, 
 such as promoter methylation. In summary, the loss of MLH1 expression is a common mechanism leading to MSI in 
 proximal colon cancer. Understanding the relationship between MLH1 expression and MSI is crucial for diagnosing MMR 
-(DNA mismatch repair) deficiency, predicting prognosis, and guiding targeted therapies for patients with colorectal 
+(mutation mismatch repair) deficiency, predicting prognosis, and guiding targeted therapies for patients with 
+colorectal 
 cancer.
 
 
-So we have identified an important player as discussed in college. You have just selected the Watanabe set. Inspect the background information and look at the data this dataset has been generated. This is very old set, of course this set still of biological relevance we will also try to find we can find out we can validate this other sets. Not only because this is an old set, but it is always common practice in Research practice to validate your results with other sources
-
-
-ToDo (small info  about tcga ?)
+So we have identified an important player as discussed in college. We identified this key player in the Watanabe 
+data set. We will now corroborate our findings in another dataset. Not only because this is an old set (look up  
+the background information in the information panel of the dataset selection grid), but it is  common practice in to 
+validate your results with other sources. We will use a dataset that we already looked at with the t-SNE clustering 
+algorithm.
 
 #### MSI in tcga set
 
-Select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
+* Select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
-* Perform the **Find Differential Expression** for **Microsatellite_instability**, select in the GS button filter > Broad 2020, oncogenic and click again the MHL1 gene.
+* Perform the **Find Differential Expression between two groups** analysis for **Microsatellite_instability** (no vs 
+  yes), and
+  select with the **Search GS** 
+  button the **Broad 2020 09 c6 oncogenic**. **Submit**
+* Click again on the MHL1 gene magnifying glass.
 
 ![](_static/images/MolOncCRC/filter_broad_oncogenic.png "204 set: MLH1")
 
-[**don't forget to use the filter option**](_static/images/MolOncCRC/chrommap.png)
+[**Don't forget to use the filter option**](_static/images/MolOncCRC/chrommap.png)
 
 
-So clearly it seems that MLH1 plays is a key role and is possible affecting other genes also in other independent generated datasets, 
+So in this set too MLH1 seems to play a key role and is possibly affecting other genes.
 
-* One way to find out which genes are possibly regulated by the MLH1 gene is to find genes which are (inverse) correlated with this gene.
+One way to find out which genes are possibly regulated by the MLH1 gene is to find genes which are (inverse) correlated with this gene.
 
 
 #### Find genes correlating with a single gene
 
-* Run the Find correlated genes with a single gene module for the MLH1 gene do not forget to use the filter option for Broad 2020: Oncogenics further use.  the default settings. 
+* From the main page, run the **Find Correlated Genes with a single Gene** module for the MLH1 gene. Use again
+  the filter option for the **Broad 2020 09 c6 oncogenic** geneset. 
 
 
 * Then click on the best correlating gene to plot both genes together, in a two gene view. Inspect the correlation. Can you think of reasons why the gene expression is highly correlated/
@@ -505,65 +512,94 @@ So clearly it seems that MLH1 plays is a key role and is possible affecting othe
 * Click on **view additional details**, on which chromosomes are both genes located
 
 
-* Click T-view and zoom out 2 or 5 times, what can you say about their location of the two genes. 
-
-![](_static/images/MolOncCRC/viewadddetails.png "Genome Browser")
+* Click T-view and zoom out 2 times
 
 
+![](_static/images/MolOncCRC/viewadddetails.png "Click TView to go to the Genome Browser")
 
-Todo: (hier een klein text bruggetje waarom we de volgende stap doen?).
+The Genome Browser allows you to "walk over the genome". Underneath the genome locations are annotated with the 
+genes that are located at the specific location. Genes colored in red are read in reverse direction. 
 
-The MLH1 gene expression affects clearly some important pathways. In case you want to find genes which 
+------  
 
-* Go back to your genelist of correlating genes and select only **neg corr** genes and click chrom map, do not use a filter this take some seconds.
+![](_static/images/R2d2_logo.png)**What can you say about their location of the two genes?**
+<br>
+<br>
 
+------
 
+The correlating genes result page shows two columns: the positively correlating genes on the left, the negatively 
+correlated genes on the right. Let's have a closer look at this last group.  
+
+* Go back to your genelist of correlating genes and scroll down to the Adjustable Settings menu at the bottom of the 
+  page. Adapt here the setting *Corr. r cutoff sign* to only look at the negatively correlated genes. Hit the red 
+  cross of the Gene Filter and click **Submit** to update the result page. This might take a while. 
+* Click the button on the right side of the page **Chromosome map**.
 
 ![](_static/images/MolOncCRC/loading_page.png "Loading Page")
 
+The overrepresentation is calculated of genes that negatively correlate with MLH1 expression with respect to all genes 
+present on (an arm of) a chromosome.
 
+* A lot of genes are clearly over-represented on a number of chromosomes, especially chrom 18 with a high p-value.
 
-* A lot of genes are clearly over-represented on a number of chromosome, especially chrom 18 with a high p-value.
+------  
 
+![](_static/images/R2d2_logo.png)**Which chromosomes show extreme significance in gene overrepresentation?**
+<br>
+<br>
 
+------
 
-#### DNA repair system
+Now let's see How strong MLH1 expression is associated with CMS subtypes.
 
+* From the main page select the **Correlate a Gene with a track** analysis to confirm the strong association of MLH1 
+  expression with the CMS1 subtype.
 
-Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
+#### DNA methylation
 
+The R2 platform hosts a variety of dataset types. Not only gene expression datasets but also methylation arrays can 
+be found.
 
-* Go back to the MLH1 correlating genelist make sure you have preselected the DNA-repair genes. CLick submit. Click on generated a heatmap. And do you see a clear associated with a CMS subgroup ?, and which one.
+* Go to the main menu and select the dataset **Tumor Colon adenocarcinoma - tcga - 296 - custom - ilmnhm450**
 
+* Create the **View a gene** plot for **MLH1**
+* Under the triangle of *View additional details* click on the **view all** link.
+* Scroll down to the bottom of the page to make a *Subset track* selection with **microsatellite_instability** to 
+  only select the samples that have been annotated for this characteristic (yes and no). Click **Next**.
 
-* and take look at the CMS classification !!! what do you see ?? are you surprised
-CMS4, MSI had been associated with CM1 and CMS4
+A heatmap is generated of methylation levels. Each column corresponds to a sample, and each row corresponds to a 
+feature (a single CpG site or a larger target region including multiple CpG sites, e.g. promoter regions). A 
+hierarchical clustering of the samples is performed. The MLH1 reporters themselves seem faulty, but in you find CpG 
+sites above that are located at the promotor sites of MLH1 and the gene that we have seen before as strongly 
+correlating in expression. 
 
-In one of the first questions in this course we have seen there is an association with the genomic location. We have seen that a low MLH1 expression is associated with CRC subtypes. As briefly touched, the R2 platform has many types not only gene expression but also methylation arrays. Go to the main menu and select
+* Hover with your mouse over the r2_at_cms track to see to which cms subtype the cluster of hypermethylated samples 
+  belong.  
 
-*Tumor Colon adenocarcinoma - tcga - 296 - custom - ilmnhm450*
+------  
 
-* Plot the one gene view for MLH1, do you see something special ?
+![](_static/images/R2d2_logo.png)**Which cms group did you find?**
 
+![](_static/images/R2d2_logo.png)**Why are we looking at methylation levels around the promotor of MLH1?**
+<br>
+<br>
 
-* In the Alternative box, unfold additional details,  click on the view all link below MLH, here a nice heatmap is plotted of the methylation ratios's what do you see.
-
-
-* A lot of samples are unfortunately not all the samples are annotated for Microsatelite instability, filter for those samples only and click submit. The MLH1 reporters for this gene (only 4), seem all methylated however, most likely these are not well designed and can maybe not distinguish for the proper MLH1 reporters. However look at the other reporters on the same location, we also see a gene name we encountered before. Do you see an association with MSI/MSS.
-
-
+------
 
 ### What pathways drive subtype CMS4?
 
-Previously we looked into CMS subtype 1. We would like to understand what sets CMS 4 apart from the subtypes 2 and 3.
+Previously we looked into CMS subtype 1. Let's now have a look at the other subtypes. We would like to understand what 
+sets CMS 4 apart from the subtypes 2 and 3.
 
-* From the main page choose the *analysis* **Differential Expression Between Two Groups**.
-* ToDo: how to Choose the track **cms4vs3**
-* Look in the list of genes if you see anything familiar and hover over the magnifying glass icon of a few genes
+* On the main page, select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
+* Choose the *analysis* **Differential Expression Between Two Groups**.
+* Choose the track **cms_predicted** and look at groups **cms2 and **cms4**
+* The analysis can take a while. 
 
-Gene set analysis helps researchers interpret the biological relevance of a group of genes. Instead of looking at individual
-genes, it allows you to understand the collective functions or pathway involvements genes in your list. This can provide more
-meaningful insights into the underlying biology of a particular condition or experiment.
+Gene set analysis helps researchers interpret the biological relevance of a group of genes. Instead of looking at 
+individual genes, it allows you to understand the collective functions or pathway involvements genes in your list. 
+This can provide more meaningful insights into the underlying biology of a particular condition or experiment.
 
 * Click on the top most button on the right that is labeled **Gene set analysis**.
 * Select the *Gene set Collection* **Broad 2020 09 h hallmark**
@@ -585,22 +621,16 @@ meaningful insights into the underlying biology of a particular condition or exp
 
 ## Experiments TP53; Molecule of the year 1994
 
-
-The well-described tumor suppressor function of p53 primarily relies on transcriptional activation of these target 
-genes and their ability to mitigate the consequences of damaged DNA.
-
-Nearly half of human malignancies harbor mutations in p53  that facilitate and promote metastasis, tumorigenesis, and resistance to apoptosis.
-
-
+Nearly half of human malignancies harbor mutations in tumor suppressor gene p53, mutations that facilitate and promote 
+metastasis, tumorigenesis, and resistance to apoptosis.
 
 These mutations generally lead to loss of DNA binding and an inability to transactivate
-canonical anti proliferative p53 target genes.5 Genotoxic chemotherapeutics, like doxorubicin
-and etoposide, are clinically relevant activators of wild-type p53, but the potential
-risk of resistance and secondary malignancies due to increased mutational burden
-remains a significant concern.Given the powerful tumor suppression abilities of p53,
-restoration of the p53-regulated transcriptome without inducing additional DNA damage
-represents an intriguing approach for development of anticancer strategies and
-therapeutics.
+canonical anti proliferative p53 target genes.
+Genotoxic chemotherapeutics, like doxorubicin and etoposide, are clinically relevant activators of wild-type p53, 
+but the potential risk of resistance and secondary malignancies due to increased mutational burden
+remains a significant concern. Given the powerful tumor suppression abilities of p53, restoration of the 
+p53-regulated transcriptome without inducing additional DNA damage represents an intriguing approach for development 
+of anticancer strategies and therapeutics.
 Nongenotoxic, small molecule activation of the p53 pathway has been proposed as
 a potential solution.
 
