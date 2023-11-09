@@ -362,6 +362,7 @@ This clearly illustrates the relation between MSI/MSS subgroups and MLH1 express
 
 [**relate two tracks : MLH1 expression**](_static/images/MolGenCRC/relatedtwotracks_msi.png)
 
+![](_static/images/MolOncCRC/relatetwotracks_ms_status-orientation-XYplot.png "Relate two tracks: MLH1")
 
 In many cases of proximal colon cancer with MSI, the high level of microsatellite instability is caused by the loss of MLH1 expression. MLH1 inactivation can occur due to mutations in the MLH1 gene or through epigenetic changes, such as promoter methylation. In summary, the loss of MLH1 expression is a common mechanism leading to MSI in proximal colon cancer. Understanding the relationship between MLH1 expression and MSI is crucial for diagnosing MMR deficiency, predicting prognosis, and guiding targeted therapies for patients with colorectal cancer.
 

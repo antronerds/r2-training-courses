@@ -293,7 +293,10 @@ petabytes of genomic, epigenomic, transcriptomic, and proteomic data. The data, 
 Under the graph, a menu allows the user to adapt settings.
 Colors of the graph points are not set by default.
 
-* Find the **Color mode** dropdown and select *Color by Track*. Now set the _Color track_ dropdown to use the
+* Click the button to **View standard plot** that you can find underneath the little menus
+* Find the **Color mode** dropdown and select *Color by Track*. Now set the 
+  _Color 
+  track_ dropdown to use the
   **cms_predicted** track, and click **Set colors** to show the changes.
 
 The most important parameter for the t-SNE algorithm is the perplexity value. The perplexity parameter controls 
@@ -301,6 +304,7 @@ the balance between a focus on preserving local details or global structures of 
   request to calculate the t-SNE map for a dataset, it immediately calculates and stores the t-SNE maps with 
 different perplexity values. The resulting maps can be found under de setting 
   _Versions_. It is also possible to show all the available perplexity maps for the dataset at the same time. 
+
 * Set *Versions* to the value **all** and click **Submit** again.  
 
 
@@ -368,7 +372,6 @@ To see if there is a difference  the effect of different survival chances
 
 
 ![](_static/images/R2d2_logo.png)**Which CMS group shows the highest amount of Braf mutations?**
-
 <br>
 <br>
 
@@ -377,14 +380,13 @@ To see if there is a difference  the effect of different survival chances
 Now we will look at the KRAS mutations
 * Underneath the graph in Adjustable settings menu, change the *y-axis* to **lv_kras_mut**. 
 * Use the red cross behind the setting *Subset track* to eliminate the braf mutation subset and click on the 
-  dropdown to now select **lv_kras_mut**. In the pop up check the boxes of **0 (560) and 1(336)**, click **ok**
+  dropdown to now select **lv_kras_mut**. In the pop-up check the boxes of **0 (560) and 1(336)**, click **ok**
 * Click **Submit** to see the result
 
 ------  
 
 
 ![](_static/images/R2d2_logo.png)**Which CMS group shows the highest amount of KRAS mutations?**
-
 <br>
 <br>
 
@@ -416,42 +418,59 @@ This dataset consists of Microsatellite stable (MSS) tumors and microsatellite i
 ------  
 
 
-![](_static/images/R2d2_logo.png)**Do you recognize any gene(s) from the list? This is an open question**
+![](_static/images/R2d2_logo.png)**Which gene is on top of the list?**
+
+
 <br>
-<br>
+
 ------
 
-* One of the genes differentially expressed clearly is MLH1. Click on its magnifying glass to look at the 
+* One of the genes that is differentially expressed, is MLH1. Click on its magnifying glass to look at the 
   expression of MLH1 in the MSI vs. MSS samples. 
 
 ------  
 
-![](_static/images/R2d2_logo.png)**The MHL1 expression came significant out our test as a down regulated gene. What 
-did you expect and what do you see?**
+![](_static/images/R2d2_logo.png)**In the list of differentially expressed genes, MLH1 is significantly lower 
+expressed in the msi group vs the mss group: msi < mss. When you look at the expression plot of MLH1, what do you 
+notice about the expression of the samples in this group? Do you see a clear-cut trend of lower MLH1 expression in the 
+MSI group?**
 <br>
 <br>
+
 ------
 
 MSI tumors give a very heterogeneous picture. This could be an indication that within the MSI tumor group 
 also a subgroup could be identified. 
 
-* Hover with your mouse over data points or inspect the annotation underneath the graph to see if you can identify a 
-  subgroup of an annotation track in which low MLH1 expression occurs more often.
-* If you have a hinge as to which annotation track migh provide this insight, Scroll down to the Adjustable setting 
-  and change _Color mode_ to **Color by track** and choose your track to color the dots of the graph. Click **Submit**
+* Hover with your mouse over data points or inspect the annotation underneath the graph to see if you can identify a subgroup of an annotation track in which low MLH1 expression occurs more often.
+* Scroll down to the Adjustable setting and change grouping setting _Track into **MS_orientation. To visuallly 
+  support the distinct group, also change _Color mode_ to **Color by a Track** and choose the same track to color 
+  the plot. Click **Submit**
 
-R2 has an analysis tool called *relate two tracks* where you investigate the relation between dataset annotations. 
+R2 has an analysis tool called *relate two tracks* where you visualize the relation between dataset annotations. 
 * Go back to the main menu and select **relate two tracks** and click **Next**. 
-* Select for the _X-track_ the **MS_status** and for the _Y_track_ **MS_Orientation** and click **Submit**. 
+* Select for the _X-track_ the **MS_status** and for the _Y_track_ **Orientation** and click **Submit**. 
+* In the MLH1 expression graph we saw that low gene expression was not equally distributed within the MSI group. 
+  Let's add this layer of information in this plot as well: select *Color mode* **Color by a Gene** and enter **MLH1** 
+  as gene to color the plot. Click **Submit**.  
 
-Here the relation between Orientation and MSI is plotted and for the statistics a Fisher Exact test has been performed.
 
-* In the previous question we saw the MLH1 expression was not equally distributed within the MSI group, select in Color mode,  Color by Gene and enter MLH1 and click submit.  
-ToDo: hier willen we eigenlijk toch de teststatistiek weten van orientation vs MLH1 expressie?
+------  
 
-q: What do you see?
+![](_static/images/R2d2_logo.png)**Concluding, with which two characteristics can you describe the subgroup that 
+more often has a low MLH1 expression?**
+<br>
+<br>
 
-In many cases of proximal colon cancer with MSI, the high level of microsatellite instability is caused by the loss of MLH1 expression. MLH1 inactivation can occur due to mutations in the MLH1 gene or through epigenetic changes, such as promoter methylation. In summary, the loss of MLH1 expression is a common mechanism leading to MSI in proximal colon cancer. Understanding the relationship between MLH1 expression and MSI is crucial for diagnosing MMR deficiency, predicting prognosis, and guiding targeted therapies for patients with colorectal cancer.
+------
+
+
+In many cases of proximal colon cancer with MSI, the high level of microsatellite instability is caused by the loss 
+of MLH1 expression. MLH1 inactivation can occur due to mutations in the MLH1 gene or through epigenetic changes, 
+such as promoter methylation. In summary, the loss of MLH1 expression is a common mechanism leading to MSI in 
+proximal colon cancer. Understanding the relationship between MLH1 expression and MSI is crucial for diagnosing MMR 
+(DNA mismatch repair) deficiency, predicting prognosis, and guiding targeted therapies for patients with colorectal 
+cancer.
 
 
 So we have identified an important player as discussed in college. You have just selected the Watanabe set. Inspect the background information and look at the data this dataset has been generated. This is very old set, of course this set still of biological relevance we will also try to find we can find out we can validate this other sets. Not only because this is an old set, but it is always common practice in Research practice to validate your results with other sources
