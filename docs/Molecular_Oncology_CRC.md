@@ -263,7 +263,7 @@ cancer: CMS classification")
 
 <span class="citation_txt">(source: http://dx.doi.org/10.1002/ags3.12362)</span>
 
-The button below brings you to the form in which you can submit your answers for the first section.
+The button below brings you to the form in which you can submit your answers for the second section.
 
 <button class="course googleform" onclick="window.open('https://forms.gle/SnVY3NPnjEeHCFhM9','_blank');"
 type="button">Open the answering form for this section</button>
@@ -636,17 +636,17 @@ a potential solution.
 
 TP53 mutations were found in 60% of the CRCs. However, gene set enrichment analyses indicated that their transcriptional consequences varied among the CMSs and were most pronounced in CMS1-immune and CMS4-mesenchymal.
 
-Dataset being used:<br>
-**Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo**.
-
-4 drugs are used:
-
-The four drugs can be diveded in two types.
+.
 
 
 ### TP53 activation
 
-Etoposide:  Clinically relevant activators of wild-type p53, Activates p53 via induction of  DNA double strand breaks. Initiation double strand breaks but leads of course to resitance and secondary malignancies. 
+In the coming analyses we will use the dataset:<br>
+**Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo**.
+
+In this expriment, 4 drugs were tested that can be diveded in two types.  
+Etoposide:  Clinically relevant activators of wild-type p53. Activates p53 via induction of  DNA double strand 
+breaks. Initiation double strand breaks but leads of course to resitance and secondary malignancies. 
 Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non-genotoxic, considered a proto-oncogene.
 
 
@@ -705,31 +705,26 @@ Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog
 ## Effects of imatinib: shifts of signature profiles and molecular subtypes
 
 Mesenchymal Consensus Molecular Subtype 4 (CMS4) colon cancer is associated with poor prognosis and therapy resistance.
-MES signature is strongly correlated with CMS4 some MES genes  
-"In the ImPACCT trial, informed consent was obtained for molecular subtyping at initial diagnosis of colon cancer using
-a validated RT-qPCR CMS4-test on three biopsies per tumor (Phase-1, n=69 patients), and for neoadjuvant CMS4-targeting
-therapy with imatinib (Phase-2, n=5). Pre- and post-treatment tumor biopsies were analyzed by RNA-sequencing and
-immunohistochemistry. Imatinib-induced gene expression changes were associated with molecular subtypes and survival in
-an independent cohort of 3232 primary colon cancer."
+In this proof-of-concept study, Kranenburg et al. assessed whether imatinib could shift cms4 subtype specific 
+characteritics.  
 
-"The mesenchymal-to-epithelial phenotype shift following imatinib therapy coincided with increased expression of WNT- and
-MYC-target genes and signatures reflecting proliferation. Accelerated proliferation may – at first sight – not be
-considered a desired effect of any anti-cancer therapy. However, high expression of proliferation signatures and WNT
-target genes are associated with good prognosis and reduced metastatic capacity in CRC (36–38). Proliferation and
-invasion are often inversely regulated in tumor biology, supporting the notion that proliferating tumor cells have to
-switch their transcriptional state (through EMT) in order to acquire invasive and metastatic properties (40, 44, 45).
-Proliferating tumor cells require high expression of mTORC1 and its target genes to meet their anabolic demand (46). The
-high expression of mTORC1 in imatinib-treated tumors may therefore simply reflect the MET phenotype switch."
+The button below brings you to the form in which you can submit your answers for the third section.
 
-We want to see how the expression changes between the pre and post treatment samples expression of specific 
+<button class="course googleform" onclick="window.open('https://forms.gle/SnVY3NPnjEeHCFhM9','_blank');"
+type="button">Open the answering form for this section</button>
+<br>
+<br>
+
+We want to see how the expression changes between the pre- and post-treatment samples' expression of specific 
 mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :
-(ToDo: or Wnt pathway etc uit Supplementary materials)
+
 * On the main page in the center menu, select the dataset **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**  
 * Choose the analysis **View Multiple Genes** and click Next
 * In the *Genes/Reporters to include* textbox, type **Zeb1,PDGFRA,PDGFRB,CD36**
-* Set Track to **imatinib** to divide the samples in the pretreatment and the posttreatment group and *Handle groups 
+* Set Track to **pre-post-imatinib** to divide the samples in the pretreatment and the posttreatment group and *Handle 
+  groups 
   by* **lump by gene plot group** to show this per gene. 
-* Set *color by* to **Track** in order to make the box plots visually more dictinct.  
+* Set *color by* to **Track** in order to make the box plots visually more distinct.  
 * Click next
 
 
@@ -740,43 +735,41 @@ mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :
   ![](_static/images/R2d2_logo.png)**What is the role of ZEB1 in EMT?**
   
 
-
-
 ------
 
 ### Proliferation vs metastases 
 
-ToDo: make the student story short
-"The mesenchymal-to-epithelial phenotype shift following imatinib therapy coincided with increased expression of WNT- and
-MYC-target genes and signatures reflecting proliferation. Accelerated proliferation may – at first sight – not be
-considered a desired effect of any anti-cancer therapy. However, high expression of proliferation signatures and WNT
-target genes are associated with good prognosis and reduced metastatic capacity in CRC (36–38). Proliferation and
-invasion are often inversely regulated in tumor biology, supporting the notion that proliferating tumor cells have to
-switch their transcriptional state (through EMT) in order to acquire invasive and metastatic properties (40, 44, 45).
-Proliferating tumor cells require high expression of mTORC1 and its target genes to meet their anabolic demand (46). The
-high expression of mTORC1 in imatinib-treated tumors may therefore simply reflect the MET phenotype switch"  
+
 
 Mesenchymal tumor phenotypes are generally accompanied by reduced proliferation. Indeed, high expression of
 proliferation signatures and Wnt target genes are associated with good prognosis and reduced metastatic capacity in CRC
 
 * On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
-* Select the analysis **View Geneset (Heatmap)
-* Select *Gene set Collection* **Broad 2020 09 h hallmark** and click **next**
-* Click **next** again
+* Select the analysis **View Geneset (Heatmap)**
+* Select *Gene set Collection* **Broad 2020 09 h hallmark** and click **Next**
+* Click **Next** again
 * Click one time on *Gene set* **HALLMARK_MYC_TARGETS_V1 (200)** and click **Next**
 
 The heatmap for the z-scores of the expression values of the MYC targets geneset is shown. Underneath the heatmap 
 you find the geneset average z-value per sample, also known as the signature score. With an account you can save 
-such scores to use later in R2. For this course we added these scores to the public information.
+such scores as a Track to use further analyses in R2. 
+
+* Click on the **store** link in the small table, a bit underneath the heatmap.
+* In the page that pop ups, you can adjust settings 
+* Check the name that is provided for this signature score: _hallmark_myc_targets_v1 and read the description
+* We leave everything as is and click on **Build set**
 
 * Go back to the main page
 * Click **Relate 2 tracks**, click **Next**
-* Select *x-axis* **imatinib (2cat)** and *y-axis* **hallmark_myc_targets_v1_signsc**
+* Select *x-axis* **pre-post-imatinib** and *y-axis* **hallmark_myc_targets_v1_signsc**
 * Select *Graph type* **Box/dot plot (bands)**
 * Change *Color mode* to **Color by Track** and click **Submit**
 
-* In the Adjustable settings menu underneath the plot, change the *y track* to **wnt_impacct_signsc**
-* Optionally change the *Graph type* to one that you want to try out
+* Do the same route (starting with View Geneset(heatmap)) for the Wnt target gene set **WNT_ImPACCT (student)** that 
+  you can find in the gene set collection **My R2 Communities** and store the signature score as a Track as well
+* In the Adjustable settings menu underneath the plot, change the *y track* to **wnt_impacct**
+* Again relate this signature score with the track **pre-post-imatinib**
+* Optionally change the *Graph type* to another type that you want to try out
 * Click **Submit**
 
 ------
@@ -799,10 +792,10 @@ after treatment.
 
 * On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
 * Select the analysis **Differential expression between two groups**
-* Switch the *Group by* setting to **imatinib (2cat)** and click Submit
+* Switch the *Group by* setting to **pre-post-imatinib** and click **Submit**
 * Extra settings appear. We can now fill in the groups for which we want to find the differentially expressed genes: 
   *Group 1* **pre-imatinib (15)** and *Group 2* **post-imatinib (15)**
-* Set the *P-value cutoff* to a stricter value: **0.001** and click Submit
+* Set the *P-value cutoff* to a stricter value: **0.001** and click **Submit**
 
 A table shows the differentially expressed genes. On the right underneath buttons with followup analyses, you can 
 find a small table that shows how many genes were downregulated by the imatinib treatment (imatinib: pre-imatinib >= 
@@ -811,20 +804,20 @@ post-imatinib) and how many genes were upregulated (imatinib: pre-imatinib < pos
 
 ------
 
-![](_static/images/R2d2_logo.png)**How many upregulated and how many downregulated genes were found?** 
+![](_static/images/R2d2_logo.png)**How many upregulated genes were found?** 
 
 ______
 
 * To use this genelist in other analyses within R2, click on the lowest button on the right side that is labeled 
-  *Store result as custom gene set*
+  **Store result as custom gene set**
 * As a name, type **impacct_imatinib_treatment_up**
 * In the *Included groups* check only the upregulated genes
 * Click on **Save gene set**
   
 The treatment resulted in a shift in gene expressions. To find out what the effect is of this shift, we will make 
-use of geneset of upregulated genes that we just saved, now in combination with the Guinney dataset, the 
+use of the geneset of upregulated genes that we just saved, now in combination with the Guinney dataset, the 
 cohort dataset with annotated CMS status and survival data. We use the unsupervised k-means algoritm to find groups 
-in our cohort that sow similar expression patterns for our geneset. 
+in our cohort that show similar expression patterns for our geneset. 
 
 * On the main page, select the Guinney dataset again
 * Select the **K-means analysis** in *box 3* and click Next
@@ -834,7 +827,7 @@ in our cohort that sow similar expression patterns for our geneset.
   stored gene set under **User gene sets > - > impacct_imatinib_treatment_up** and hit the green button on the left 
   to use the selected gene set
 * We leave the number of groups at 2 
-* Set the *Cell* width to **1** and click on next
+* Set the *Cell width* and *Cell height* to **1** and click on next
 
 The Kmeans algorithm looks at the expression of the samples for the selected genes and makes two groups of samples 
 that show most similar expression patterns. Then for each gene it shows the expression by a color code
