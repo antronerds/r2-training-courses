@@ -628,21 +628,7 @@ Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog
 ## Effects of imatinib: shifts of signature profiles and molecular subtypes
 
 Mesenchymal Consensus Molecular Subtype 4 (CMS4) colon cancer is associated with poor prognosis and therapy resistance.
-MES signature is strongly correlated with CMS4 some MES genes  
-"In the ImPACCT trial, informed consent was obtained for molecular subtyping at initial diagnosis of colon cancer using
-a validated RT-qPCR CMS4-test on three biopsies per tumor (Phase-1, n=69 patients), and for neoadjuvant CMS4-targeting
-therapy with imatinib (Phase-2, n=5). Pre- and post-treatment tumor biopsies were analyzed by RNA-sequencing and
-immunohistochemistry. Imatinib-induced gene expression changes were associated with molecular subtypes and survival in
-an independent cohort of 3232 primary colon cancer."
-
-"The mesenchymal-to-epithelial phenotype shift following imatinib therapy coincided with increased expression of WNT- and
-MYC-target genes and signatures reflecting proliferation. Accelerated proliferation may – at first sight – not be
-considered a desired effect of any anti-cancer therapy. However, high expression of proliferation signatures and WNT
-target genes are associated with good prognosis and reduced metastatic capacity in CRC (36–38). Proliferation and
-invasion are often inversely regulated in tumor biology, supporting the notion that proliferating tumor cells have to
-switch their transcriptional state (through EMT) in order to acquire invasive and metastatic properties (40, 44, 45).
-Proliferating tumor cells require high expression of mTORC1 and its target genes to meet their anabolic demand (46). The
-high expression of mTORC1 in imatinib-treated tumors may therefore simply reflect the MET phenotype switch."
+Therefore a study was conducted to see what 
 
 We want to see how the expression changes between the pre and post treatment samples expression of specific 
 mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :

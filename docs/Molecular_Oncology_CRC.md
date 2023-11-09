@@ -710,7 +710,7 @@ characteritics.
 
 The button below brings you to the form in which you can submit your answers for the third section.
 
-<button class="course googleform" onclick="window.open('https://forms.gle/SnVY3NPnjEeHCFhM9','_blank');"
+<button class="course googleform" onclick="window.open('https://forms.gle/F3NgZSunnbJ8815k8','_blank');"
 type="button">Open the answering form for this section</button>
 <br>
 <br>
@@ -778,7 +778,6 @@ such scores as a Track to use further analyses in R2.
 
 ![](_static/images/R2d2_logo.png)**Even though it is counterintuitive, can you think of a reason why this actually 
 could be good news?**
-
 <br>
 <br>
 
@@ -821,13 +820,13 @@ in our cohort that show similar expression patterns for our geneset.
 
 * On the main page, select the Guinney dataset again
 * Select the **K-means analysis** in *box 3* and click Next
-* In the *Subset track* dropdown, select **lv_stage**, and in the pop up window check the boxes **2** and **3** , 
+* In the *Subset track* dropdown, select **lv_stage**, and in the pop-up window check the boxes **2** and **3** , 
   click **Ok**
 * Behind the setting *Gene set*, you find the button **Search GS**. Click on the button and find your previously 
   stored gene set under **User gene sets > - > impacct_imatinib_treatment_up** and hit the green button on the left 
   to use the selected gene set
 * We leave the number of groups at 2 
-* Set the *Cell width* and *Cell height* to **1** and click on next
+* Set the *Cell width* to **1** and *Cell height* to **8** and click on **Next**
 
 The Kmeans algorithm looks at the expression of the samples for the selected genes and makes two groups of samples 
 that show most similar expression patterns. Then for each gene it shows the expression by a color code
@@ -843,7 +842,7 @@ ______
 Again this group division can be stored in R2 to use in a next analysis. 
 * To do so, hit the button **Store as track** that you can find on the left
 * On the following page, just click the button Next
-* To save the results in a way in which we will easily remember what the track was for and whic group showed wich
+* To save the results in a way in which we will easily remember what the track was for and which group showed which
   expression, change the name of *Group 'cluster 1'* into **high** and of *Group 'cluster 2'* into **low**. Also 
   change *Track name* into **kmeans_imatinib_induced**
 * Click on Build set and go back to the main page
@@ -867,8 +866,7 @@ high expression values, what shift in CMS subtypes do we expect to see?**
 
 ______
   
-ToDo: not sure we want to include this analysis
-  
+ 
 * From the main page in the left menu click the **Survival (Kaplan Meier/Cox)** analysis
 * Check that the Guinney set is selected and that the separation is made by **a categorical track**. Click **Next**
 * Choose *overall* survival type and *Track* **kmeans_stage23_imatinib_induced**. Click Next
@@ -900,8 +898,6 @@ of Chipseq data analysis.
 
 [**The epigenetic signatures at the promoter and enhancer of a gene**](_static/images/MolOncCRC/EpigeneticModifications.png)
 
-<span class="">(source: )</span
-
 
 Enhanced enhancer activity can lead to the overexpression of oncogenes, which promote cancer growth. Super-enhancers 
 often play a central role in determining cell identity and tumor initiation and progression. Identifying these active enhancers can help pinpoint key drivers of colorectal cancer, potentially revealing new therapeutic targets.  
@@ -913,33 +909,67 @@ transcription, but also chemical modification of the histones (molecular structu
 <br><br>
 When a specific antibody is used in the pulldown that recognizes these chemically modified regions, these specific regions can be studied. Regions with H3K27Ac acetylation mark active enhancers and active transcription, H3K4Me3 methylation marks active and poised transcription (Figure 2). Studying the relative contributions of both types of modifications allows a researcher to discern enhancer regions from active transcription sites.
 
+* From the main page select the analysis **ChIP Genome Browser** and click **Next**
+You are now at the GenomeBrowser at the genomic location of mycn.
+Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, 
+  coding exons are darker.<br>
 
-* Click on the button below to show the ChIP-Seq data for VEGFA in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.
+Li et al. (2021) sequence 73 pairs of colorectal cancer tissues and generated 147 H3K27ac ChIP-Seq, 144 RNA-Seq, 147 
+whole genome sequencing and 86 H3K4me3 ChIP-Seq samples. The patients were classified into the 4 CMS subtypes. 
+Therefore, we now have gene expression and chipseq data of this CMS classified patient cohort. Because it is 
+difficult to look at many profiles at the same time, we averaged the data per cms group. This way we created so 
+called ChIP seq meta profiles. Let's load them into your Genome Browser
+* In the right upper corner, click the button **Load / Store Profile**
+* In the Profile dropdown, seelect **student - Li_normal_tumor_cms1234** and click **Execute**. 
+* Click On the top button **Goto the GenomeBrowser**
 
-ToDo: create new button to go to VEGFA
+You now see the meta profiles of normal colon tissue, and CMS 1 to 4 meta profiles. For each group you see both 
+H3K27ac and H3K4me3. If you scroll down, you can see that you are at the location of the MYC gene. At an active 
+promotor site, you will find H3K4me3 peaks. You will also find peaks in the H3K27ac profiles at that location. _But_ 
+at an active enhancer site, you will _only_ find H3K27ac, **no H3K4me3**. Thus left from the myc gene location, you see
+H3K27ac peaks without H3K4me3, and that is a known superenhancer location of MYC. 
+Let's look for more superenhancers:
 
-<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_chipseq_gb_hand1_9_mes_adrn" target="_blank">Go to R2 GenomeBrowser for HAND1</a>
+* In the left upper corner, you can write the name of a gene and you will be taken to its location on the genome. 
+  Type **ascl2** in the textfield and click **Go**
+* Click the **View** button (if there are more View buttons, just take the top one) and scroll downn to check that 
+  you have arrived at ASCL2.
+* Now we need to zoom out to find possible superenhancers. Zoom out 10x with the button on top of the page. Then 
+  zoom out 5x. Do you see an area with high peaks of H3K27ac where no H3K4me3 can be found? There is a superenhancer.
+
+The difficulty is that you never know how far away from the gene the superenhancer is located. Also, it can be 
+upstream or downstream from the transcription start site of the gene. And... you might even find enhancer regions in 
+the introns of some oncogenes. 
+
+Lastly, above the ChIP-seq profiles, you can also find the averaged z-score of the gene expression of the subgroups 
+of patients. Hover your mouse over the colored dots to see to which group they belong and of which gene it shows the 
+average expression. This way you can see whether the expression itself differs between the CMS groups, and between 
+normal colon tissue and tumor tissue. 
 <br>
-<br>
+Ideally you should find oncogenes that are differently expressed in tumor tissue and normal tissue, and also show 
+different enhancer profiles between normal and tumor tissue. 
 
-Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, coding exons are darker.
+ 
+------
+
+![](_static/images/R2d2_logo.png)**Play around with the GenomeBrowser. Look for genes that you might remember from 
+the lectures and see if you can find superenhancer areas. Also check if you can see differences between the CMS
+groups, and try to explain the differences. Did you find an interesting gene?**
+
+______
+
+If you need some inspiration, you could check out genes from this list: IL20RA, LIF, IER3, PLAGL2, FAM3D, TNS1... Or 
+use Google to check literature.
 
 
 ## Evaluation
 
-Please don't forget to fill in the evaluation form about this R2 course, if you haven't done so yet:
-
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSflNJpsTcLIhwEC0ZlHksfnE0VwBay1I2KOGPArYu4Q_QhtrA/viewform?usp=sf_link','_blank');" type="button">
-Open the Evaluation form</button>
-
+Please don't forget to fill in the evaluation form about this R2 course
 ---------
 
 # Final remarks / future directions
 
-In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across
-childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize
-your genomics data.
-<br><br>
+
 This ends the course. Feel free to further explore the course materials or our tutorials.
 <br><br>
 We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2
