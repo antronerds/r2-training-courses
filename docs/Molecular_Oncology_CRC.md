@@ -667,36 +667,33 @@ in HCT116 WT cells
 * Both the p53-dependent and the ATF4-driven ISR gene networks are antiproliferative,
   either through induction of apoptosis or cell cycle control
 
+  
 
-
-
-* Check the TP53 level in this dataset. Is the dataset grouped by a different p53 expression
+* Check the TP53 level in this dataset. Is the dataset grouped by a different p53 expression.
 
 * Analyse which genes are affected by the compounds
 
 Let's start with drugs known to interact with tp53. In college also MDM2 has been mentioned as negative P53 regulator. 
-If you want to find diffentially expressed genes in Tp53 dependent background which subgroups do you have to select. 
+If you want to find differentially expressed genes in Tp53 dependent background which subgroups do you have to select. Once again use the Differential expression between two groups. For now we only focus on a small part of this experiment using Nultin-3a, a therapeutic agent which is a known P53 regulator via MDM2 inhibition. For this analysis we only want to use the TP53 wt genotype, since we want to inspect the effect of Nutlin-3a in a TP53 background
 
-**Hint: Filter for TP53 wild-type first before selecting your groups in the DESeq2 test (default) or select the proper groups in the treatment_small__genotype group.**
+* Group by treatment and filter for TP53 wild-type. Click submit and select the two groups in the DESeq2 test (default) use the DMSO vs Nutlin-3A group.**
 
 * Do you see the MDM2 gene ?.
 
-* Inspect the MDM2 level in a one gene view  are your surprised ?
+* Inspect the MDM2 level in a one gene view are your surprised ? 
 
-* In the left menu you can store your found list of 162 genes with the "store result as custom geneset" button and save it with a proper name in temporary collection (default) for later usage/
-
-
-* Also check the relation with TP53
+* In the left menu you can store your found list of 162 genes with the "store result as custom geneset" button and save it with a proper name in temporary collection (default) for later usage.
 
 
-*  A very significant correlation. Can you think of a reason? Hint:you are looking at RNA expression levels, how does nutlin3a inhibits MDM2 ???
+* Also check the relation with TP53 by using the gene vs gene option in the pull down menu. 
 
 
-* And why is also TP53 increased ?
+*  A very significant correlation. Can you think of a reason? Hint:you are looking at RNA expression levels, how does nutlin 3a inhibits MDM2 ???
+
 
 Optional:  You can also perform the same test for Etoposide as you did for Nutlin-3A and store this list as well. So it is obvious that the innersection of genes for both drug treatments are of potential interest. With the VENN-diagram of gene categories option in box 3 of the main menu  you can check for overlapping genes. After selecting the VENN diagram try to find your stored genelistswith GS button, User genesets > Temporary etc. 
 
-* Check of there is an overlap between affected genes
+* Check of there is an overlap between affected genes 
 
 
 Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo
