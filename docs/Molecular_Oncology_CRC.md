@@ -92,10 +92,13 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
   href="https://docs.google.com/spreadsheets/d/1VsANludkc3_ZgeF5bopq3ldzCv3BV1D7Mh_JWKfGHiQ/edit#gid=0" 
   target="blank">the student accounts check in form</a>
 * Go to the R2 platform
-  address: <a href="https://hgserver2.amc.nl/" target="_blank">https://hgserver2.amc.nl</a> De R2 platform is easily 
-  accessible by the link <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a>, but today we work from out 
-  developer server. Sign in with the account that you found in the Googledoc. 
-* 
+  address: <a href="https://hgserver2.amc.nl/" target="_blank">https://hgserver2.amc.nl</a> <br>
+
+Generally speaking, the R2 platform is easily accessible by the link <a href="http://r2.amc.nl" 
+target="_blank">http://r2.amc.nl</a>, but today we work from out developer server hgserver2. 
+
+* Sign in with the account that you found in the Googledoc. 
+
 
 You're now on the R2 main page. This genomics analysis and visualization platform contains a wealth of data and
 bioinformatics tools to analyze the datasets. Step by step, researchers are guided through a web of options 
