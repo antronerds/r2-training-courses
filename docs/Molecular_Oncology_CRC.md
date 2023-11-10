@@ -178,7 +178,7 @@ restrict your list.
   the Gene Filters section of the menu. 
 * Use search field on the top of the table and fill in **colorectal**, hit **enter**.
 * [The KEGG (Kyoto Encyclopedia of Genes and Genomes) database]( https://www.genome.jp/kegg/pathway.html) is a comprehensive bioinformatics resource that 
-  integrates information about genes, proteins, pathways, and diseases. Click on the tringles in fornt off KEGG 
+  integrates information about genes, proteins, pathways, and diseases. Click on the triangles in front of KEGG 
   pathways and its subcollections till you find the **Colorectal_cancer (62)** geneset. Check the set and hit **Use 
   selected** button.
 * Check out the list and see if you recognize multiple genes. You can hover over the magnifying glasses in front of each row to learn more about the genes.
@@ -215,7 +215,7 @@ subgroups in the data.
 
 [**Example heatmap: finding subgroups in your data**](_static/images/TumorHeterogeneity_HeatmapClustering.png)
 
-* Go back to gene list result page of the previous Differential Expression between two groups analysis, th etab 
+* Go back to gene list result page of the previous Differential Expression between two groups analysis, the tab 
   should still be open. 
 * Generate a list of genes which are differentially expressed comparing normal and adenoma tissue within the KEGG WNT 
   pathway by adjusting the settings if needed:
@@ -346,7 +346,7 @@ To see if there is a difference  the effect of different survival chances
 * Choose *type of Survival* **overall* and *Track* **lv_cms_final**
 
 
-* Now perform the same analysis, but choose **relapse-free** in stead of overall for the setting *type of Survival*  
+* Now perform the same analysis, but choose **relapse-free** instead of overall for the setting *type of Survival*  
 
 
 
@@ -657,7 +657,8 @@ mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :
 
   ![](_static/images/R2d2_logo.png)**What can you say about the level of expression of these genes post treatment?**
 
-  ![](_static/images/R2d2_logo.png)**What is the role of ZEB1 in EMT?**
+  ![](_static/images/R2d2_logo.png)**With every result, think about why you see the result. So, in this case, what 
+  is the role of ZEB1 in EMT? (Use Google or another informative source)**
   
 
 ------
@@ -680,7 +681,7 @@ you find the geneset average z-value per sample, also known as the signature sco
 such scores as a Track to use further analyses in R2. 
 
 * Click on the **store** link in the small table, a bit underneath the heatmap.
-* In the page that pop ups, you can adjust settings 
+* In the page that pop-ups, you can adjust settings 
 * Check the name that is provided for this signature score: _hallmark_myc_targets_v1 and read the description
 * We leave everything as is and click on **Build set**
 
@@ -760,8 +761,8 @@ that show most similar expression patterns. Then for each gene it shows the expr
 
 ------
 
-  ![](_static/images/R2d2_logo.png)**Which group would you say shows high expression and which group shows low 
-expression of the geneset?**
+  ![](_static/images/R2d2_logo.png)**Which color group would you say shows high expression and which color group shows 
+  low expression of the geneset? (Thus, high: yellow or purple and low: yellow or purple)**
 
 ______
 
@@ -777,7 +778,7 @@ Let's see which cms subtypes are represented in the two k-means sample clusters
 * On the main page, select the analysis **Relate 2 tracks**
 * For the *X track* scroll all the way down and select **kmeans_imatinib_induced**
 * For the *Y track* choose **lv_cms_final**
-* In the *Subset track* dropdown, select **lv_stage**, and in the pop up window check the boxes **2** and **3** ,
+* In the *Subset track* dropdown, select **lv_stage**, and in the pop-up window check the boxes **2** and **3** ,
   click **Ok**
 * Change the *Graph type* into **Stacked bar plot (%)**
 * *Order Groups by* **group size** and hit **Submit**
@@ -799,7 +800,7 @@ ______
 
 
 * In the left menu click again the **Survival (Kaplan Meier/Cox)** analysis
-* Repeat the process but select the **relapse free** in stead of *overall* survival type. 
+* Repeat the process but select the **relapse free** instead of *overall* survival type. 
 
 
 ------
@@ -894,7 +895,7 @@ Nearly half of human malignancies harbor mutations in tumor suppressor gene p53,
 metastasis, tumorigenesis, and resistance to apoptosis.
 
 These mutations generally lead to loss of DNA binding and an inability to transactivate
-canonical anti proliferative p53 target genes.
+canonical anti-proliferative p53 target genes.
 Genotoxic chemotherapeutics, like doxorubicin and etoposide, are clinically relevant activators of wild-type p53,
 but the potential risk of resistance and secondary malignancies due to increased mutational burden
 remains a significant concern. Given the powerful tumor suppression abilities of p53, restoration of the
@@ -904,9 +905,6 @@ Nongenotoxic, small molecule activation of the p53 pathway has been proposed as
 a potential solution.
 
 TP53 mutations were found in 60% of the CRCs. However, gene set enrichment analyses indicated that their transcriptional consequences varied among the CMSs and were most pronounced in CMS1-immune and CMS4-mesenchymal.
-
-.
-
 
 ### TP53 activation
 
@@ -949,7 +947,7 @@ If you want to find differentially expressed genes in Tp53 dependent background 
 
 * Do you see the MDM2 gene ?.
 
-* Inspect the MDM2 level in a one gene view are your surprised ?
+* Inspect the MDM2 level in a one gene view are you surprised ?
 
 * In the left menu you can store your found list of 162 genes with the "store result as custom geneset" button and save it with a proper name in temporary collection (default) for later usage.
 
