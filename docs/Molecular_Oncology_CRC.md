@@ -88,9 +88,14 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
 
 ### Filtering and exploring
 
-* Open a Chrome browser and go to the R2 platform
-  address: <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a> and choose the button **Use R2 without an
-  account** under the sign in fields.
+* Open a Chrome browser and put your name behind your assigned number for the student account at <a 
+  href="https://docs.google.com/spreadsheets/d/1VsANludkc3_ZgeF5bopq3ldzCv3BV1D7Mh_JWKfGHiQ/edit#gid=0" 
+  target="blank">the student accounts check in form</a>
+* Go to the R2 platform
+  address: <a href="https://hgserver2.amc.nl/" target="_blank">https://hgserver2.amc.nl</a> De R2 platform is easily 
+  accessible by the link <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a>, but today we work from out 
+  developer server. Sign in with the account that you found in the Googledoc. 
+* 
 
 You're now on the R2 main page. This genomics analysis and visualization platform contains a wealth of data and
 bioinformatics tools to analyze the datasets. Step by step, researchers are guided through a web of options 
@@ -187,7 +192,8 @@ restrict your list.
 
 ------
 
-![](_static/images/R2d2_logo.png)**What did you observe about the gene expression of AXIN2 and MYC?**
+![](_static/images/R2d2_logo.png)**What did you observe about the gene expression of AXIN2 and MYC? When you think 
+about biological processes, why would this be? (Axin 2**
 
 ______
 
@@ -802,86 +808,6 @@ ______
 
 ______
 
-## Experiments TP53; Molecule of the year 1994
-
-Nearly half of human malignancies harbor mutations in tumor suppressor gene p53, mutations that facilitate and promote
-metastasis, tumorigenesis, and resistance to apoptosis.
-
-These mutations generally lead to loss of DNA binding and an inability to transactivate
-canonical anti proliferative p53 target genes.
-Genotoxic chemotherapeutics, like doxorubicin and etoposide, are clinically relevant activators of wild-type p53,
-but the potential risk of resistance and secondary malignancies due to increased mutational burden
-remains a significant concern. Given the powerful tumor suppression abilities of p53, restoration of the
-p53-regulated transcriptome without inducing additional DNA damage represents an intriguing approach for development
-of anticancer strategies and therapeutics.
-Nongenotoxic, small molecule activation of the p53 pathway has been proposed as
-a potential solution.
-
-TP53 mutations were found in 60% of the CRCs. However, gene set enrichment analyses indicated that their transcriptional consequences varied among the CMSs and were most pronounced in CMS1-immune and CMS4-mesenchymal.
-
-.
-
-
-### TP53 activation
-
-In the coming analyses we will use the dataset:<br>
-**Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo**.
-
-In this expriment, 4 drugs were tested that can be diveded in two types.  
-Etoposide:  Clinically relevant activators of wild-type p53. Activates p53 via induction of  DNA double strand
-breaks. Initiation double strand breaks but leads of course to resitance and secondary malignancies.
-Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non-genotoxic, considered a proto-oncogene.
-
-
-
-**Integrated stress response pathway:**
-
-Effector of anti-proliferative and cell death expression programs
-
-Tunicamycin: Activates the ISR (integrated stress response pathway), via ER stress of accumulating
-Histidinol: Activates the ISR (integrated stress response pathway), via histinide depletion.
-
-
-
-* ATF3 mRNA and protein levels increased under both p53 and ISR stimulating treatments
-  in HCT116 WT cells
-* A second approach uses compounds like the MDM2 inhibitor nutlin-3A to activate wild-type p53 in a nongenotoxic
-* TP53 is mayor player of one of the tumor supressor mechanisms.
-* Both the p53-dependent and the ATF4-driven ISR gene networks are antiproliferative,
-  either through induction of apoptosis or cell cycle control
-
-
-
-* Check the TP53 level in this dataset. Is the dataset grouped by a different p53 expression.
-
-* Analyse which genes are affected by the compounds
-
-Let's start with drugs known to interact with tp53. In college also MDM2 has been mentioned as negative P53 regulator.
-If you want to find differentially expressed genes in Tp53 dependent background which subgroups do you have to select. Once again use the Differential expression between two groups. For now we only focus on a small part of this experiment using Nultin-3a, a therapeutic agent which is a known P53 regulator via MDM2 inhibition. For this analysis we only want to use the TP53 wt genotype, since we want to inspect the effect of Nutlin-3a in a TP53 background.
-
-* Group by treatment and filter for TP53 wild-type. Click submit and select the two groups in the DESeq2 test (default) use the DMSO vs Nutlin-3A group.**
-
-* Do you see the MDM2 gene ?.
-
-* Inspect the MDM2 level in a one gene view are your surprised ?
-
-* In the left menu you can store your found list of 162 genes with the "store result as custom geneset" button and save it with a proper name in temporary collection (default) for later usage.
-
-
-* Also check the relation with TP53 by using the gene vs gene option in the pull down menu.
-
-
-*  A very significant correlation. Can you think of a reason? Hint:you are looking at RNA expression levels, how does nutlin 3a inhibits MDM2 ???
-
-
-Optional:  You can also perform the same test for Etoposide as you did for Nutlin-3A and store this list as well. So it is obvious that the innersection of genes for both drug treatments are of potential interest. With the VENN-diagram of gene categories option in box 3 of the main menu  you can check for overlapping genes. After selecting the VENN diagram try to find your stored genelistswith GS button, User genesets > Temporary etc.
-
-* Check of there is an overlap between affected genes
-
-
-Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo
-
-
 ## Identifying key drivers of CRC: superenhancers controlling gene expression
 
 An enhancer is a short (50-1500 bp) region of DNA that can be bound by proteins (activators) to increase the 
@@ -960,6 +886,86 @@ ______
 
 If you need some inspiration, you could check out genes from this list: IL20RA, LIF, IER3, PLAGL2, FAM3D, TNS1... Or 
 use Google to check literature.
+
+
+## Optional exercise: Experiments TP53 - Molecule of the year 1994
+
+Nearly half of human malignancies harbor mutations in tumor suppressor gene p53, mutations that facilitate and promote
+metastasis, tumorigenesis, and resistance to apoptosis.
+
+These mutations generally lead to loss of DNA binding and an inability to transactivate
+canonical anti proliferative p53 target genes.
+Genotoxic chemotherapeutics, like doxorubicin and etoposide, are clinically relevant activators of wild-type p53,
+but the potential risk of resistance and secondary malignancies due to increased mutational burden
+remains a significant concern. Given the powerful tumor suppression abilities of p53, restoration of the
+p53-regulated transcriptome without inducing additional DNA damage represents an intriguing approach for development
+of anticancer strategies and therapeutics.
+Nongenotoxic, small molecule activation of the p53 pathway has been proposed as
+a potential solution.
+
+TP53 mutations were found in 60% of the CRCs. However, gene set enrichment analyses indicated that their transcriptional consequences varied among the CMSs and were most pronounced in CMS1-immune and CMS4-mesenchymal.
+
+.
+
+
+### TP53 activation
+
+In the coming analyses we will use the dataset:<br>
+**Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo**.
+
+In this expriment, 4 drugs were tested that can be diveded in two types.  
+Etoposide:  Clinically relevant activators of wild-type p53. Activates p53 via induction of  DNA double strand
+breaks. Initiation double strand breaks but leads of course to resitance and secondary malignancies.
+Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non-genotoxic, considered a proto-oncogene.
+
+
+
+**Integrated stress response pathway:**
+
+Effector of anti-proliferative and cell death expression programs
+
+Tunicamycin: Activates the ISR (integrated stress response pathway), via ER stress of accumulating
+Histidinol: Activates the ISR (integrated stress response pathway), via histinide depletion.
+
+
+
+* ATF3 mRNA and protein levels increased under both p53 and ISR stimulating treatments
+  in HCT116 WT cells
+* A second approach uses compounds like the MDM2 inhibitor nutlin-3A to activate wild-type p53 in a nongenotoxic
+* TP53 is mayor player of one of the tumor supressor mechanisms.
+* Both the p53-dependent and the ATF4-driven ISR gene networks are antiproliferative,
+  either through induction of apoptosis or cell cycle control
+
+
+
+* Check the TP53 level in this dataset. Is the dataset grouped by a different p53 expression.
+
+* Analyse which genes are affected by the compounds
+
+Let's start with drugs known to interact with tp53. In college also MDM2 has been mentioned as negative P53 regulator.
+If you want to find differentially expressed genes in Tp53 dependent background which subgroups do you have to select. Once again use the Differential expression between two groups. For now we only focus on a small part of this experiment using Nultin-3a, a therapeutic agent which is a known P53 regulator via MDM2 inhibition. For this analysis we only want to use the TP53 wt genotype, since we want to inspect the effect of Nutlin-3a in a TP53 background.
+
+* Group by treatment and filter for TP53 wild-type. Click submit and select the two groups in the DESeq2 test (default) use the DMSO vs Nutlin-3A group.**
+
+* Do you see the MDM2 gene ?.
+
+* Inspect the MDM2 level in a one gene view are your surprised ?
+
+* In the left menu you can store your found list of 162 genes with the "store result as custom geneset" button and save it with a proper name in temporary collection (default) for later usage.
+
+
+* Also check the relation with TP53 by using the gene vs gene option in the pull down menu.
+
+
+*  A very significant correlation. Can you think of a reason? Hint:you are looking at RNA expression levels, how does nutlin 3a inhibits MDM2 ???
+
+
+Optional:  You can also perform the same test for Etoposide as you did for Nutlin-3A and store this list as well. So it is obvious that the innersection of genes for both drug treatments are of potential interest. With the VENN-diagram of gene categories option in box 3 of the main menu  you can check for overlapping genes. After selecting the VENN diagram try to find your stored genelistswith GS button, User genesets > Temporary etc.
+
+* Check of there is an overlap between affected genes
+
+
+Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo
 
 
 ## Evaluation
