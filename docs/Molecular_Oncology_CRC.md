@@ -144,7 +144,7 @@ differential expression between groups". The differential expression analysis ai
 significantly different between two groups. 
 
 * Click on **Main** in th eupper left corner.
-* Check if you have selected the **Marra** dataset and in box 3 *select type of analysis* _Find Differential expression 
+* Check if you have selected the **Marra** dataset and in box 3 *select type of analysis*, Differential expression 
   between two groups_. CLick **Next**.
 * R2 offers a couple of statistical *test*, in this case we use the **T-test** which is selected by default.
 * Now we have to select which grouping variable to use. Select *Group by* **Tissue (2cat)** to use the previously 
@@ -408,7 +408,7 @@ This dataset consists of Microsatellite stable (MSS) tumors and microsatellite i
 #### MSS vs MSI
 
 * Find the dataset **Tumor Colon - Watanabe - 84 - MAS5.0 - u133p2** and read the **Summary** in the information panel underneath the dataset selection grid. Then **Select** the dataset.
-* Use the **Find Differential expressed genes between two groups** module to generate a list of differentially 
+* Use the **Differential expressed genes between two groups** module to generate a list of differentially 
   expressed genes between **MSI** and **MSS** characterized tumors (*MS_status*). Because we know that DNA repair 
   genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine 
   whether these genes indeed are differentially expressed between MSI and MSS tumors and which genes exactly make 
@@ -484,7 +484,7 @@ algorithm.
 
 * Select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
-* Perform the **Find Differential Expression between two groups** analysis for **Microsatellite_instability** (no vs 
+* Perform the **Differential Expression between two groups** analysis for **Microsatellite_instability** (no vs 
   yes), and
   select with the **Search GS** 
   button the **Broad 2020 09 c6 oncogenic**. **Submit**
@@ -685,7 +685,8 @@ such scores as a Track to use further analyses in R2.
 * Change *Color mode* to **Color by Track** and click **Submit**
 
 * Do the same route (starting with View Geneset(heatmap)) for the Wnt target gene set **WNT_ImPACCT (student)** that 
-  you can find in the gene set collection **My R2 Communities** and store the signature score as a Track as well
+  you can find in the gene set collection **My R2 Communities** and store the signature score as a track as well.
+* Go back to the **Relate 2 tracks** just as in the previous exercise.
 * In the Adjustable settings menu underneath the plot, change the *y track* to **wnt_impacct**
 * Again relate this signature score with the track **pre-post-imatinib**
 * Optionally change the *Graph type* to another type that you want to try out
