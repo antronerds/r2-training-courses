@@ -122,9 +122,19 @@ img{
 /*
 Except for the logo
 */
+img {
+	border: lightblue solid 1px;
+}
+
 
 img[src="_images/R2d2_logo.png"]{
 	display: inline;
 	float: left;
+	border: #333333;
+}
+
+.citation_txt{
+	font: italic 10px Arial;
+	color: #AAAAAA;
 }
 
