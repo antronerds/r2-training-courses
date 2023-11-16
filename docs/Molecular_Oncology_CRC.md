@@ -881,7 +881,7 @@ average expression. This way you can see whether the expression itself differs b
 normal colon tissue and tumor tissue. 
 <br>
 Ideally you should find oncogenes or transcription factors that are differently expressed in tumor tissue and normal 
-tissue, and also show different enhancer profiles between normal and tumor tissue. 
+tissue, and also show different enhancer profiles between normal and tumor tissue.
 
  
 ------
@@ -892,8 +892,8 @@ groups, and try to explain the differences. Did you find an interesting gene and
 
 ______
 
-If you need some inspiration, you could check out genes from this list: IL20RA, LIF, IER3, PLAGL2, FAM3D, TNS1... 
-Search the internet as to why these could be interesting genes to look up. 
+* If you need some inspiration, you could check out genes from this list: IL20RA, LIF, IER3, PLAGL2, FAM3D, TNS1... 
+* Search the internet as to why these could be interesting genes to look up. 
 
 
 ## Optional exercise: Experiments TP53 - Molecule of the year 1994
