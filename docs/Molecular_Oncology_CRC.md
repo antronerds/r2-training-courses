@@ -981,7 +981,7 @@ this R2 course.
 
 ---------
 
-# Final remarks / future directions
+## Final remarks / future directions
 
 
 This ends the course. Feel free to further explore the course materials or our tutorials.
