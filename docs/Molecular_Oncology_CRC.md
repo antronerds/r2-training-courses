@@ -6,7 +6,7 @@ Molecular Oncology Course - Colorectal Cancer
 *Analyse Colorectal Cancer using the R2 data analysis platform*
 
 
-This resource is located online at http://r2platform.com/mgcourse  
+This resource is located online at http://r2platform.com/studentcourse  
  
   
 Introduction
@@ -88,7 +88,7 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
 
 ### Filtering and exploring
 
-* Open a Chrome browser and put your name behind your assigned number for the student account at <a 
+* Open a Chrome browser and find your name behind your assigned number for the student account at <a 
   href="https://docs.google.com/spreadsheets/d/1VsANludkc3_ZgeF5bopq3ldzCv3BV1D7Mh_JWKfGHiQ/edit#gid=0" 
   target="blank">the student accounts check in form</a>
 * Go to the R2 platform
@@ -97,7 +97,7 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
 Generally speaking, the R2 platform is easily accessible by the link <a href="http://r2.amc.nl" 
 target="_blank">http://r2.amc.nl</a>, but today we work from out developer server hgserver2. 
 
-* Sign in with the account that you found in the Googledoc. 
+* Sign in with your assigned account that you found in the student account Googledoc. 
 
 
 You're now on the R2 main page. This genomics analysis and visualization platform contains a wealth of data and
@@ -166,13 +166,13 @@ expression in adenomas compared to healthy tissue and the othter way around.
 
 ------
 
-![](_static/images/R2d2_logo.png)**How many genes have been found in total? How many were upregulated in adenomas 
-and how many were downregulated?**
+![](_static/images/R2d2_logo.png)**How many genes were significantly upregulated in adenomas and how many were 
+downregulated?**
 
 ______
 
 
-Next to many the publicly available datasets, R2 is also hosting a lot of curated lists of genes which we call 
+Next to many publicly available datasets, R2 is also hosting a lot of curated lists of genes which we call 
 **gene sets**. These gene sets can be used to restrict or filter an analysis as well. We can adapt our current 
 search by scrolling down to the end of our gene list. In the Adjustable Settings menu, you can now use a Gene Set to 
 restrict your list.  
@@ -196,7 +196,7 @@ restrict your list.
 ------
 
 ![](_static/images/R2d2_logo.png)**What did you observe about the gene expression of AXIN2 and MYC? When you think 
-about biological processes, why would this be? (Axin 2**
+about biological processes, why would this be?  **
 
 ______
 
@@ -660,8 +660,8 @@ mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :
 
   ![](_static/images/R2d2_logo.png)**What can you say about the level of expression of these genes post treatment?**
 
-  ![](_static/images/R2d2_logo.png)**With every result, think about why you see the result. So, in this case, what 
-  is the role of ZEB1 in EMT? (Use Google or another informative source)**
+  ![](_static/images/R2d2_logo.png)**As with every result, think about why you see the result - does it make sense, 
+  what is the biological implication. So, in this case, what is the role of ZEB1 in EMT? (Use Google or another informative source)**
   
 
 ------
@@ -707,7 +707,7 @@ such scores as a Track to use further analyses in R2.
 ![](_static/images/R2d2_logo.png)**What happened with the expression of WNT- and MYC-target genes post treatment?**
 
 ![](_static/images/R2d2_logo.png)**Even though it is counterintuitive, can you think of a reason why this actually 
-could be good news?**
+could be a better outcome than before treatment?**
 <br>
 <br>
 
@@ -814,22 +814,23 @@ ______
 
 ## Identifying key drivers of CRC: superenhancers controlling gene expression
 
-An enhancer is a short (50-1500 bp) region of DNA that can be bound by proteins (activators) to increase the 
-likelihood transcription will occur at a gene. They can be located up to 1 Mbp (1,000,000 bp) away from the gene, 
+An enhancer is a 50-1500 bp region of DNA where activator proteins, such as transcription factors, bind and that 
+increase the likelihood transcription will occur at a gene. They can be located up to 1 Mbp away from the gene, 
 either upstream or downstream from the start site, and either in the forward or backward direction. A super-enhancer 
-is a region of the mammalian genome comprising multiple of these enhancers, collectively bound by an array of 
-transcription factor proteins to drive transcription of genes, often involved in regulation of cell identity. They 
-can be up to 20 times the size of an enhancer. <br>
-In chapter [Integrative analysis: ChIP-seq data](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_ChIP-Seq_data.html) of the R2 Tutorial, you can find a more detailed description 
-of Chipseq data analysis. 
+consists of multiple enhancer regions. This larger region is bound by more transcription factor proteins to drive 
+transcription of genes. They can be up to 20 times the size of an enhancer. <br>
+In chapter [Integrative analysis: ChIP-seq data](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_ChIP-Seq_data.html) of the R2 Tutorial, you can find a more detailed description of Chipseq data analysis. 
 <br><br>
 
-![](_static/images/MolOncCRC/EpigeneticModifications.png "The epigenetic signatures at the promoter and enhancer of a gene")
+![](_static/images/MolOncCRC/enhancer_histonemods.png "The histone modifications of active promoter sites and 
+(super-)enhancers of a gene")
 
-[**The epigenetic signatures at the promoter and enhancer of a gene**](_static/images/MolOncCRC/EpigeneticModifications.png)
+[**The histone modifications of active promoter sites and
+(super-)enhancers of a gene**](_static/images/MolOncCRC/enhancer_histonemods.png)
 
 
-Enhanced enhancer activity can lead to the overexpression of oncogenes, which promote cancer growth. Super-enhancers 
+
+Enhanced enhancer activity can lead to the overexpression of oncogenes, which promotes cancer growth. Super-enhancers 
 often play a central role in determining cell identity and tumor initiation and progression. Identifying these active enhancers can help pinpoint key drivers of colorectal cancer, potentially revealing new therapeutic targets.  
 Different patients may have colorectal tumors with distinct enhancer landscapes. By characterizing enhancer activity, researchers can potentially classify patients into subgroups with different treatment responses or prognosis, enabling personalized medicine approaches.
 
@@ -837,7 +838,10 @@ With Chromatine Immuno Precipitation binding of elements to the genome can be st
 is regulated by the binding of these elements. These can be Transcription Factors, that bind temporarily to start
 transcription, but also chemical modification of the histones (molecular structures that coil the DNA) by methylation, acetylation, etc. These modifications change the accessibility of the DNA for transcription.
 <br><br>
-When a specific antibody is used in the pulldown that recognizes these chemically modified regions, these specific regions can be studied. Regions with H3K27Ac acetylation mark active enhancers and active transcription, H3K4Me3 methylation marks active and poised transcription (Figure 2). Studying the relative contributions of both types of modifications allows a researcher to discern enhancer regions from active transcription sites.
+When a specific antibody is used in ChIP-seq that recognizes these chemically modified regions, these specific 
+regions can be studied. Regions with H3K27Ac acetylation mark active enhancers and active promotors (i.e. active
+transcription), H3K4Me3 methylation marks active promotors. Studying the relative contributions of both types of 
+modifications allows a researcher to discern enhancer regions from active transcription sites.
 
 * From the main page select the analysis **ChIP Genome Browser** and click **Next**
 You are now at the GenomeBrowser at the genomic location of mycn.
@@ -848,9 +852,9 @@ Li et al. (2021) sequence 73 pairs of colorectal cancer tissues and generated 14
 whole genome sequencing and 86 H3K4me3 ChIP-Seq samples. The patients were classified into the 4 CMS subtypes. 
 Therefore, we now have gene expression and chipseq data of this CMS classified patient cohort. Because it is 
 difficult to look at many profiles at the same time, we averaged the data per cms group. This way we created so 
-called ChIP seq meta profiles. Let's load them into your Genome Browser
+called _ChIP seq meta profiles_. Let's load them into your Genome Browser
 * In the right upper corner, click the button **Load / Store Profile**
-* In the Profile dropdown, seelect **student - Li_normal_tumor_cms1234** and click **Execute**. 
+* In the Profile dropdown, seelect **student - Li_CRC_normal_tumor_cms1234** and click **Execute**. 
 * Click On the top button **Goto the GenomeBrowser**
 
 You now see the meta profiles of normal colon tissue, and CMS 1 to 4 meta profiles. For each group you see both 
@@ -876,20 +880,20 @@ of patients. Hover your mouse over the colored dots to see to which group they b
 average expression. This way you can see whether the expression itself differs between the CMS groups, and between 
 normal colon tissue and tumor tissue. 
 <br>
-Ideally you should find oncogenes that are differently expressed in tumor tissue and normal tissue, and also show 
-different enhancer profiles between normal and tumor tissue. 
+Ideally you should find oncogenes or transcription factors that are differently expressed in tumor tissue and normal 
+tissue, and also show different enhancer profiles between normal and tumor tissue. 
 
  
 ------
 
 ![](_static/images/R2d2_logo.png)**Play around with the GenomeBrowser. Look for genes that you might remember from 
 the lectures and see if you can find superenhancer areas. Also check if you can see differences between the CMS
-groups, and try to explain the differences. Did you find an interesting gene?**
+groups, and try to explain the differences. Did you find an interesting gene and how much did you need to zoom out?**
 
 ______
 
-If you need some inspiration, you could check out genes from this list: IL20RA, LIF, IER3, PLAGL2, FAM3D, TNS1... Or 
-use Google to check literature.
+If you need some inspiration, you could check out genes from this list: IL20RA, LIF, IER3, PLAGL2, FAM3D, TNS1... 
+Search the internet as to why these could be interesting genes to look up. 
 
 
 ## Optional exercise: Experiments TP53 - Molecule of the year 1994
@@ -971,7 +975,10 @@ Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog
 
 ## Evaluation
 
-Please don't forget to fill in the evaluation form about this R2 course
+Please don't forget to fill in the evaluation form, which is the first form that you found in this document, about 
+this R2 course.
+
+
 ---------
 
 # Final remarks / future directions
