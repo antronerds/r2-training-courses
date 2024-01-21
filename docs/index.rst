@@ -32,6 +32,7 @@ Copyright (c) 2006-2023 Jan Koster
    Microarray_analysis_Using_Tumor_Colon_datasets
    VAGABOND_interim_course_R2_day1
    VAGABOND_interim_course_R2_day2
+   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data.md
    x_omics_course_radboud.md
 
 */
