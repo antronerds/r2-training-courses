@@ -43,18 +43,29 @@ This green button will open up the Google form with which you can submit your an
 
  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhN-2QscR_9XL3tm_FJ5Oeq6r_Uayuw_ks_Cx6p4oVfHVcsA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2.1</button> 
  
- Let's take a first glance at the platform. Click on the following button to go to R2:  
-  
-<form name="accessing_r2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gse118829subsgeo75_gpl17303">
-  <button type="submit" >Go to R2</button>
-</form>  
-<br>
-<br>
+ Let's take a first glance at the platform. 
+ 
+* Open a (preferably Chrome) browser and go to the webaddress: <a href="https://r2.amc.nl" target="_blank">r2.amc.nl</a> 
 
-* You don't need to login for this course. You can click on the **Guest sign-in (limited features)** button just underneath the sign in box. However, when you register to the platform and log in with your credentials, more datasets and analyses will become available to you. In order to register either use the **Register Now** button on the login page or, if you are already on the main page, use the red link in the left side menu.  
+* You don't need to login for this course. You can click on the grey **Use R2 without an account** button just 
+  underneath the sign in box. However, when you register to the platform and log in with your credentials, more 
+  datasets and analyses will become available to you. In order to register either use the blue **Register a free 
+  account** button on the login page or, if you are already on the main page, use the red link in the left side menu.  
 
-The four numbered boxes in the middle of the R2 main page allow you to choose a dataset and a type of analysis. In box 2 you can see that a dataset of Okuzono has already been selected that focuses on the disease Rheumatoid arthritis and that contains 75 samples. In box 3 you can select an analysis to perform on the selected dataset. Let's have a first look. 
+The four numbered boxes in the middle of the R2 main page allow you to choose a dataset and a type of analysis. In 
+box 2 you can see that a dataset can be selected. We will be using a dataset of Okuzono that 
+focuses on the disease Rheumatoid arthritis and that contains 75 samples. 
+
+* Click on the textfield of the currently selected dataset in box 2 and you will see a grid pop up.  
+ 
+This grid shows the datasets that are available to you. Every row is a dataset and every column contains a characteristic. The headers of the columns contain filter options with which you can find datasets of interest, such as based on Tissue /Tumor type or single cell data.  
+
+* Type **Okuzono** in the textfield underneath the header *Author* and click the row of the dataset with **75** 
+  samples (column *N*). This dataset is now selected and you can read more background information about the dataset 
+  in the information panel underneath the grid. To use this dataset for analyses, click the blue button **Confirm 
+  selection**.
+
+In box 3 you can select an analysis to perform on the selected dataset. Let's have a first look. 
 
 * The default analysis is **View a gene** (box 3). Keep this setting and click **Next** in box 4.
 * You now see The Adjustable settings box. Type in the textbox *Search by gene* of the setting *Gene / Reporter:* **CD4**. The pop-up dropdown shows all the available reporters of this dataset that contain the keyword CD4. Click on **CD4 / 11829_2914** and you will see that the reporter textfield on the right is filled in automatically.   
