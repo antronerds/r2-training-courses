@@ -5,7 +5,11 @@ Gene expression in Rheumatoid Arthritis
 
 Introduction
 ---
-Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by inflammatory cell infiltration, such as T cells, B cells, macrophages and plasma cells. Production of cytokines and proteases lead to chronic inflammation of the synovial tissues and progressive joint disability. RA affects as much as 1% of the worldwide population. Although the exact causes are unknown, decades of research has led to increasingly detailed understanding of multiple disease mechanisms. Different treatments for RA have been proposed, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ). However, a significant proportion of patients do not respond to initial treatment or reach remission. Others experience recurrence or deterioration of their disease.    
+Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by inflammatory cell infiltration, such as T 
+cells, B cells, macrophages and plasma cells. Production of cytokines and proteases lead to chronic inflammation of 
+the synovial tissues and progressive joint disability. RA affects as much as 1% of the worldwide population. 
+Although the exact causes are unknown, decades of research has led to increasingly detailed understanding of 
+multiple disease mechanisms. Different treatments for RA have been proposed, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ). However, a significant proportion of patients do not respond to initial treatment or reach remission. Others experience recurrence or deterioration of their disease.   <br> 
 The complexity of RA has spurred research to dive deeper into the disease mechanisms using genetics, transcriptomics or proteomics. Extensive efforts are made to find more specific diagnostic markers.    
   
   Because of difficulties in measuring markers in the inflamed joints, to a large extent efforts have been focused on analyses of peripheral blood. However, as the article of Lee et al. point out (<a href="https://doi.org/10.1016/j.cyto.2019.154960" target="_blank">Cytokine, March 2020</a>), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.   
@@ -14,12 +18,16 @@ The complexity of RA has spurred research to dive deeper into the disease mechan
    
    [**Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets**](_static/images/KIT_rheumatoid-arthritis-drug-targets.jpg)  
    
-(Source DOI: 10.1211/PJ.2016.20201090)  
+(Source DOI: 10.1211/PJ.2016.20201090)  <br><br>
+
+In this online course, you can right mouse click on the image titles and choose "Open link in a new tab" in order to 
+see a bigger version of the images and to zoom in. 
 
  Immune response in blood and synovial fluid  
 ---
- Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of bioinformatics tools to investigate patient and experimental data.  
-   
+ Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of 
+ bioinformatics tools to investigate publicly available patient data and experimental data.  <br>
+ <br>
  Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data and other similar studies have been uploaded into our platform R2. We will make use of these datasets to explore the differences and similarities between peripheral blood and synovial fluid, to study the characteristics of T cells, and to look for possible effects of treatments. 
   
 ##### A first look at T cell gene expression with the R2 platform
@@ -43,31 +51,68 @@ This green button will open up the Google form with which you can submit your an
 
  <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfhN-2QscR_9XL3tm_FJ5Oeq6r_Uayuw_ks_Cx6p4oVfHVcsA/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2.1</button> 
  
- Let's take a first glance at the platform. Click on the following button to go to R2:  
-  
-<form name="accessing_r2" action="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-  <input type="hidden" name="table" value="ps_avgpres_gse118829subsgeo75_gpl17303">
-  <button type="submit" >Go to R2</button>
-</form>  
-<br>
-<br>
+ Let's take a first glance at the platform. 
+ 
+* Open a (preferably Chrome) browser and go to the webaddress: <a href="https://r2.amc.nl" target="_blank">r2.amc.nl</a> 
 
-* You don't need to login for this course. You can click on the **Guest sign-in (limited features)** button just underneath the sign in box. However, when you register to the platform and log in with your credentials, more datasets and analyses will become available to you. In order to register either use the **Register Now** button on the login page or, if you are already on the main page, use the red link in the left side menu.  
+* You don't need to login for this course. You can click on the grey **Use R2 without an account** button just 
+  underneath the sign in box.<br>
+ However, when you do register to the platform and log in with your credentials, more 
+  datasets and analyses will become available to you. In order to register either use the blue **Register a free 
+  account** button on the login page or, if you are already on the main page, use the red link in the left side menu.  
 
-The four numbered boxes in the middle of the R2 main page allow you to choose a dataset and a type of analysis. In box 2 you can see that a dataset of Okuzono has already been selected that focuses on the disease Rheumatoid arthritis and that contains 75 samples. In box 3 you can select an analysis to perform on the selected dataset. Let's have a first look. 
+The four numbered boxes in the middle of the R2 main page allow you to choose a dataset and a type of analysis. In 
+box 2 you can see that a dataset can be selected. We will be using a dataset of Okuzono that 
+focuses on the disease Rheumatoid arthritis and that contains 75 samples. 
+
+* Click on the textfield of the currently selected dataset in box 2 and you will see a grid pop up.  
+ 
+This grid shows the datasets that are available to you. Every row is a dataset and every column contains a 
+characteristic. In order to find datasets of
+interest, you can use the filter and sorting options next and directly underneath the column headers.  
+
+* Type **Okuzono** in the textfield underneath the header *Author* and click the row of the dataset with **75** 
+  samples (column *N*).
+* This dataset is now selected and you can read more background information about the dataset 
+  in the information panel underneath the grid. 
+* To use this dataset for analyses, click the blue button **Confirm 
+  selection**.
+
+In box 3 you can select an analysis to perform on the selected dataset. Let's have a first look. 
 
 * The default analysis is **View a gene** (box 3). Keep this setting and click **Next** in box 4.
-* You now see The Adjustable settings box. Type in the textbox *Search by gene* of the setting *Gene / Reporter:* **CD4**. The pop-up dropdown shows all the available reporters of this dataset that contain the keyword CD4. Click on **CD4 / 11829_2914** and you will see that the reporter textfield on the right is filled in automatically.   
-* Click the **Submit** button to obtain the result: a plot with dots that show you the (log2) expression values for each sample of the dataset for gene CD4.   
+* The pop-up dropdown shows all the available reporters of this dataset that contain the keyword CD4. Click on **CD4 / 11829_2914** and you will see that the reporter textfield on the right is filled in automatically.   
+* Click the **Submit** button to obtain the result: a plot that shows you the gene CD4 expression values (log2, y-axis) 
+  for each sample (x-axis).   
 
-  Under the plot you can see different types of *annotation*. 
- In R2 the samples of a dataset can be annotated with extra information, such as with clinical data of patient samples, or with biological characteristics of cell samples.  
-   
- Each group of annotated data is called a *Track* in R2. You will see the annotation often displayed underneath a plot. Even more tracks might be shown if you hover your mouse over the dots in a plot.  
+Underneath the plot you can see different types of *annotation*, called *Tracks*. 
+ In R2 the samples of a dataset can be annotated with extra information, such as clinical data of patient samples, 
+or biological characteristics of cell samples.<br>
+Each group of annotated data is called a *Track* in R2. You will see the annotation often displayed underneath a plot. Even more tracks might be shown if you hover your mouse over the dots in a plot.  
   
- * Try it out with your mouse in the graph of the CD4 gene expression values.  
- 
- Furthermore, these tracks can be used in most of the analyses in R2 to add a layer of complexity. Tracks will allow you for instance to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to, let's say, different phenotypes or demographic characteristics.  
+ * Try it out with your mouse: hover over the colored blocks of a sample underneath the plot, then also over the 
+   sample's dot 
+   in the graph.
+
+At the bottom of the page, you find the *Adjustable settings* box again. Many result pages allow you to adjust you 
+  analysis quickly from the same page. Here you can, for instance, change the gene that you want to look at, but 
+also many other settings are available.
+* Change the setting *Transformation* from **Log2** to **None** and hit the **Submit** button in order for the 
+  adaptation to take effect. Now the plot shows you the untransformed expression values. You can see how the log2 
+  scale on the y-axis might change your perspective of the same information: the values in the lower range 
+
+
+Type at the 
+  setting *Gene / 
+  Reporter:* in the 
+  textbox *Search by 
+  Gene* **CD4**.
+  Furthermore, these tracks can be used in most of the analyses in R2 to add a layer of complexity. Tracks allow 
+ you for instance to filter datasets, to compare groups of samples, to color scatter plots of samples with meta 
+ information. Also, tracks enable you to correlate genomics patterns in your data, for instance to different 
+ phenotypes or 
+ demographic 
+ characteristics.  
   
 T cells recognise foreign particles (antigens) by a surface expressed T cell receptor (TCR). There are two major types of T cells: the helper T cell and the cytotoxic T cell. The helper T cells aid other cells of the immune system by releasing cytokines and cytotoxic T cells kill infected cells and tumours. An antigen presenting cell (APC) binds to the T cells and presents fragments, or  peptides, of the antigen. The TCR requires co-receptors in order to establish a stable connection to the APC. Helper T cells express the CD4 co-receptor and cytotoxic T cells express the CD8 co-receptor. Although most T cells express either CD4 or CD8, some express both and some do not express either.
 
