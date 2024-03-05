@@ -86,16 +86,6 @@ In box 3 you can select an analysis to perform on the selected dataset. Let's ha
 * Click the **Submit** button to obtain the result: a plot that shows you the gene CD4 expression values (log2, y-axis) 
   for each sample (x-axis).   
 
-Underneath the plot you can see different types of *annotation*, called *tracks*. 
- In R2 the samples of a dataset can be annotated with extra information, such as clinical data of patient samples, 
-or biological characteristics of cell samples.<br>
-Each group of annotated data is called a *track* in R2. You will see the annotation often displayed underneath a 
-plot. Even more tracks might be shown if you hover your mouse over the dots in a plot.  
-  
- * Try it out with your mouse: hover over the colored blocks of a sample underneath the plot, then also over the 
-   sample's dot 
-   in the graph.
-
 At the bottom of the page, you find the *Adjustable settings* box again. Many result pages allow you to adjust you 
   analysis quickly from the same page. Here you can, for instance, change the gene that you want to look at, but 
 also many other settings are available.
@@ -104,13 +94,18 @@ also many other settings are available.
   scale on the y-axis might change your perspective of the same information: the log2 values in the lower range of the 
   expression values are more spread out, it magnifies the relative differences between low expression values. For high expression values, the log2 transformation compresses the data.
 
-Type at the setting *Gene / Reporter:* in the textbox *Search by Gene* **CD4**.
-  Furthermore, these tracks can be used in most of the analyses in R2 to add a layer of complexity. Tracks allow 
+Underneath the plot you can see colored blocks. These are different types of *annotation*. In R2 the samples of a 
+dataset can be annotated with extra information, such as clinical data of patient samples, or biological characteristics of cell samples.<br>
+Each group of annotated data is called a *track* in R2. You will see the annotation often displayed underneath a
+plot. Even more tracks might be shown if you hover your mouse over the dots in a plot.
+
+* Try it out with your mouse: hover over the colored blocks of a sample underneath the plot, then also hover over 
+  the sample's dot in the graph.
+
+These tracks can be used in most of the analyses in R2 to add a layer of complexity. Tracks allow 
  you for instance to filter datasets, to compare groups of samples, to color scatter plots of samples with meta 
  information. Also, tracks enable you to correlate genomics patterns in your data, for instance to different 
- phenotypes or 
- demographic 
- characteristics.  
+ phenotypes or demographic characteristics.  
   
 T cells recognise foreign particles (antigens) by a surface expressed T cell receptor (TCR). There are two major types of T cells: the helper T cell and the cytotoxic T cell. The helper T cells aid other cells of the immune system by releasing cytokines and cytotoxic T cells kill infected cells and tumours. An antigen presenting cell (APC) binds to the T cells and presents fragments, or  peptides, of the antigen. The TCR requires co-receptors in order to establish a stable connection to the APC. Helper T cells express the CD4 co-receptor and cytotoxic T cells express the CD8 co-receptor. Although most T cells express either CD4 or CD8, some express both and some do not express either.
 
