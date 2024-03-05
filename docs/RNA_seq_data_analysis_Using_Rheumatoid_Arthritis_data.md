@@ -81,14 +81,16 @@ interest, you can use the filter and sorting options next and directly underneat
 In box 3 you can select an analysis to perform on the selected dataset. Let's have a first look. 
 
 * The default analysis is **View a gene** (box 3). Keep this setting and click **Next** in box 4.
+* You now see The Adjustable settings box. Type in the textbox *Search by gene* of the setting *Gene / Reporter:* **CD4**.
 * The pop-up dropdown shows all the available reporters of this dataset that contain the keyword CD4. Click on **CD4 / 11829_2914** and you will see that the reporter textfield on the right is filled in automatically.   
 * Click the **Submit** button to obtain the result: a plot that shows you the gene CD4 expression values (log2, y-axis) 
   for each sample (x-axis).   
 
-Underneath the plot you can see different types of *annotation*, called *Tracks*. 
+Underneath the plot you can see different types of *annotation*, called *tracks*. 
  In R2 the samples of a dataset can be annotated with extra information, such as clinical data of patient samples, 
 or biological characteristics of cell samples.<br>
-Each group of annotated data is called a *Track* in R2. You will see the annotation often displayed underneath a plot. Even more tracks might be shown if you hover your mouse over the dots in a plot.  
+Each group of annotated data is called a *track* in R2. You will see the annotation often displayed underneath a 
+plot. Even more tracks might be shown if you hover your mouse over the dots in a plot.  
   
  * Try it out with your mouse: hover over the colored blocks of a sample underneath the plot, then also over the 
    sample's dot 
@@ -102,11 +104,7 @@ also many other settings are available.
   scale on the y-axis might change your perspective of the same information: the values in the lower range 
 
 
-Type at the 
-  setting *Gene / 
-  Reporter:* in the 
-  textbox *Search by 
-  Gene* **CD4**.
+Type at the setting *Gene / Reporter:* in the textbox *Search by Gene* **CD4**.
   Furthermore, these tracks can be used in most of the analyses in R2 to add a layer of complexity. Tracks allow 
  you for instance to filter datasets, to compare groups of samples, to color scatter plots of samples with meta 
  information. Also, tracks enable you to correlate genomics patterns in your data, for instance to different 
