@@ -101,8 +101,8 @@ At the bottom of the page, you find the *Adjustable settings* box again. Many re
 also many other settings are available.
 * Change the setting *Transformation* from **Log2** to **None** and hit the **Submit** button in order for the 
   adaptation to take effect. Now the plot shows you the untransformed expression values. You can see how the log2 
-  scale on the y-axis might change your perspective of the same information: the values in the lower range 
-
+  scale on the y-axis might change your perspective of the same information: the log2 values in the lower range of the 
+  expression values are more spread out, it magnifies the relative differences between low expression values. For high expression values, the log2 transformation compresses the data.
 
 Type at the setting *Gene / Reporter:* in the textbox *Search by Gene* **CD4**.
   Furthermore, these tracks can be used in most of the analyses in R2 to add a layer of complexity. Tracks allow 
