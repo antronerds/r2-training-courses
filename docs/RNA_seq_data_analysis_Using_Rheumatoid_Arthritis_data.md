@@ -86,7 +86,7 @@ In box 3 you can select an analysis to perform on the selected dataset. Let's ha
 * Click the **Submit** button to obtain the result: a plot that shows you the gene CD4 expression values (log2, y-axis) 
   for each sample (x-axis).   
 
-At the bottom of the page, you find the *Adjustable settings* box again. Many result pages allow you to adjust you 
+At the bottom of the page, you find the *Adjustable settings* box again. Many result pages allow you to adjust your 
   analysis quickly from the same page. Here you can, for instance, change the gene that you want to look at, but 
 also many other settings are available.
 * Change the setting *Transformation* from **Log2** to **None** and hit the **Submit** button in order for the 
@@ -106,8 +106,12 @@ These tracks can be used in most of the analyses in R2 to add a layer of complex
  you for instance to filter datasets, to compare groups of samples, to color scatter plots of samples with meta 
  information. Also, tracks enable you to correlate genomics patterns in your data, for instance to different 
  phenotypes or demographic characteristics.  
-  
-T cells recognise foreign particles (antigens) by a surface expressed T cell receptor (TCR). There are two major types of T cells: the helper T cell and the cytotoxic T cell. The helper T cells aid other cells of the immune system by releasing cytokines and cytotoxic T cells kill infected cells and tumours. An antigen presenting cell (APC) binds to the T cells and presents fragments, or  peptides, of the antigen. The TCR requires co-receptors in order to establish a stable connection to the APC. Helper T cells express the CD4 co-receptor and cytotoxic T cells express the CD8 co-receptor. Although most T cells express either CD4 or CD8, some express both and some do not express either.
+
+There are two major types of T cells: the helper T cell and the cytotoxic T cell. The helper T cells aid other cells 
+of the immune system by releasing regulating molecules, called cytokines. <br>
+With the help of protein complexes found on the surface of T cells, T cell receptors (TCRs), T cells recognize 
+specific antigens, which are molecules that are found on the surface of pathogens or abnormal cells.  
+An antigen presenting cell (APC) binds to the T cells and presents fragments, or  peptides, of the antigen. The TCR requires co-receptors in order to establish a stable connection to the APC. Helper T cells express the CD4 co-receptor and cytotoxic T cells express the CD8 co-receptor. Although most T cells express either CD4 or CD8, some express both and some do not express either.
 
 ---------
 
