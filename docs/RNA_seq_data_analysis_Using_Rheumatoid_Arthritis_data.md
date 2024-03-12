@@ -12,7 +12,7 @@ Although the exact causes are unknown, decades of research has led to increasing
 multiple disease mechanisms. Different treatments for RA have been proposed, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ). However, a significant proportion of patients do not respond to initial treatment or reach remission. Others experience recurrence or deterioration of their disease.   <br> 
 The complexity of RA has spurred research to dive deeper into the disease mechanisms using genetics, transcriptomics or proteomics. Extensive efforts are made to find more specific diagnostic markers.    
   
-  Because of difficulties in measuring markers in the inflamed joints, to a large extent efforts have been focused on analyses of peripheral blood. However, as the article of Lee et al. point out (<a href="https://doi.org/10.1016/j.cyto.2019.154960" target="_blank">Cytokine, March 2020</a>), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.   
+  Because of difficulties in measuring markers in the synovial fluid of inflamed joints, to a large extent efforts have been focused on analyses of peripheral blood. However, as the article of Lee et al. point out (<a href="https://doi.org/10.1016/j.cyto.2019.154960" target="_blank">Cytokine, March 2020</a>), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.   
  
  ![](_static/images/KIT_rheumatoid-arthritis-drug-targets.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)")
    
@@ -69,7 +69,7 @@ focuses on the disease Rheumatoid arthritis and that contains 75 samples.
  
 This grid shows the datasets that are available to you. Every row is a dataset and every column contains a 
 characteristic. In order to find datasets of
-interest, you can use the filter and sorting options next and directly underneath the column headers.  
+interest, you can use the filter and sorting options next to and directly underneath the column headers.  
 
 * Type **Okuzono** in the textfield underneath the header *Author* and click the row of the dataset with **75** 
   samples (column *N*).
@@ -81,7 +81,8 @@ interest, you can use the filter and sorting options next and directly underneat
 In box 3 you can select an analysis to perform on the selected dataset. Let's have a first look. 
 
 * The default analysis is **View a gene** (box 3). Keep this setting and click **Next** in box 4.
-* You now see The Adjustable settings box. Type in the textbox *Search by gene* of the setting *Gene / Reporter:* **CD4**.
+* You now see the Adjustable settings box. Type in the textbox *Search by gene* of the setting *Gene / Reporter:* 
+  **CD4**.
 * The pop-up dropdown shows all the available reporters of this dataset that contain the keyword CD4. Click on **CD4 / 11829_2914** and you will see that the reporter textfield on the right is filled in automatically.   
 * Click the **Submit** button to obtain the result: a plot that shows you the gene CD4 expression values (log2, y-axis) 
   for each sample (x-axis).   
@@ -94,7 +95,7 @@ also many other settings are available.
   scale on the y-axis might change your perspective of the same information: the log2 values in the lower range of the 
   expression values are more spread out, it magnifies the relative differences between low expression values. For high expression values, the log2 transformation compresses the data.
 
-directly underneath x-axis of the plot you can see colored blocks. These are different types of *annotation*. In R2 
+Directly underneath x-axis of the plot you can see colored blocks. These are different types of *annotation*. In R2 
 the samples of a dataset can be annotated with extra information, such as clinical data of patient samples, or biological characteristics of cell samples.<br>
 Each group of annotated data is called a *track* in R2. You will see the annotation often displayed underneath a
 plot or by hovering over a plot. In this case, even more tracks are shown if you hover your mouse over the 
@@ -111,15 +112,18 @@ These tracks can be used in most of the analyses in R2 to add a layer of complex
 There are two major types of T cells: the helper T cell and the cytotoxic T cell. The helper T cells aid other cells 
 of the immune system by releasing regulating molecules, called cytokines. <br>
 With the help of protein complexes found on the surface of T cells, T cell receptors (TCRs), T cells recognize 
-specific antigens, which are molecules that are found on the surface of pathogens or abnormal cells.  
-An antigen presenting cell (APC) binds to the T cells and presents fragments, or  peptides, of the antigen. The TCR requires co-receptors in order to establish a stable connection to the APC. Helper T cells express the CD4 co-receptor and cytotoxic T cells express the CD8 co-receptor. Although most T cells express either CD4 or CD8, some express both and some do not express either.
+specific antigens, which are molecules that are found on the surface of pathogens or abnormal cells. <br> 
+An antigen presenting cell (APC) binds to the T cells and presents fragments, or  peptides, of the antigen. The TCR 
+requires co-receptors in order to establish a stable connection to the APC. for instance, helper T cells express the 
+CD4 co-receptor and cytotoxic T cells express the CD8 co-receptor. Although most T cells express either CD4 or CD8, some express both and some do not express either.
 
 ---------
 
    ![](_static/images/R2d2_logo.png)**Look at the *t-cell* track underneath the graph. The two colors represent two different t-cell types. Hover with your mouse over the two different colors of this cell type annotation row. Which cell types are present in the dataset?**
        
    
-   ![](_static/images/R2d2_logo.png)**Do you notice anything different about the expression levels between the two cell types?**
+   ![](_static/images/R2d2_logo.png)**Do you notice anything different about the expression levels of CD4 between the 
+   two cell types?**
 
    ![](_static/images/R2d2_logo.png)**Now hover over the *tissue* track, which two tissue types can be found in this study? Look back at the introduction of this course in which the hypothesis of Lee at al (2020) is provided about the inflammatory responses in these tissue types as stated.**
  <br>  
