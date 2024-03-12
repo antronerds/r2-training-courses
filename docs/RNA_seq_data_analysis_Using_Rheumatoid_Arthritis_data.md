@@ -14,9 +14,9 @@ The complexity of RA has spurred research to dive deeper into the disease mechan
   
   Because of difficulties in measuring markers in the synovial fluid of inflamed joints, to a large extent efforts have been focused on analyses of peripheral blood. However, as the article of Lee et al. point out (<a href="https://doi.org/10.1016/j.cyto.2019.154960" target="_blank">Cytokine, March 2020</a>), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.   
  
- ![](_static/images/KIT_rheumatoid-arthritis-drug-targets.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)")
+ ![](_static/images/RA_KIT/KIT_rheumatoid-arthritis-drug-targets.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)")
    
-   [**Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets**](_static/images/KIT_rheumatoid-arthritis-drug-targets.jpg)  
+   [**Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets**](_static/images/RA_KIT/KIT_rheumatoid-arthritis-drug-targets.jpg)  
    
 (Source DOI: 10.1211/PJ.2016.20201090)  <br><br>
 
@@ -109,13 +109,21 @@ These tracks can be used in most of the analyses in R2 to add a layer of complex
  information. Also, tracks enable you to correlate genomics patterns in your data, for instance to different 
  phenotypes or demographic characteristics.  
 
+![](_static/images/RA_KIT/KIT_CD4CD8_TcellAPC.png "Figure 2: CD4 co-receptors are expressed on the surface of helper 
+T cells and CD8 co-receptors are expressed on the surface of cytotoxic T cells. (Source: AssayWise Letters | 9.2)")
+
+[**Figure 2: CD4 co-receptors are expressed on the surface of helper T cells and CD8 co-receptors are expressed on the surface of cytotoxic T cells. (Source: AssayWise Letters | 9.2)**](_static/images/RA_KIT/KIT_CD4CD8_TcellAPC.png)
+
+
 There are two major types of T cells: the helper T cell and the cytotoxic T cell. The helper T cells aid other cells 
 of the immune system by releasing regulating molecules, called cytokines. <br>
 With the help of protein complexes found on the surface of T cells, T cell receptors (TCRs), T cells recognize 
 specific antigens, which are molecules that are found on the surface of pathogens or abnormal cells. <br> 
 An antigen presenting cell (APC) binds to the T cells and presents fragments, or  peptides, of the antigen. The TCR 
 requires co-receptors in order to establish a stable connection to the APC. for instance, helper T cells express the 
-CD4 co-receptor and cytotoxic T cells express the CD8 co-receptor. Although most T cells express either CD4 or CD8, some express both and some do not express either.
+CD4 co-receptor and cytotoxic T cells express the CD8 co-receptor (gene name: CD8A). Although most T cells express 
+either CD4 or CD8, 
+some express both and some do not express either.
 
 ---------
 
@@ -125,7 +133,8 @@ CD4 co-receptor and cytotoxic T cells express the CD8 co-receptor. Although most
    ![](_static/images/R2d2_logo.png)**Do you notice anything different about the expression levels of CD4 between the 
    two cell types?**
 
-   ![](_static/images/R2d2_logo.png)**Now hover over the *tissue* track, which two tissue types can be found in this study? Look back at the introduction of this course in which the hypothesis of Lee at al (2020) is provided about the inflammatory responses in these tissue types as stated.**
+   ![](_static/images/R2d2_logo.png)**Now hover over the *tissue* track, which two tissue types can be found in this 
+   study? Look back at the introduction of this course in which the hypothesis of Lee at al (2020) is provided, about the inflammatory responses in these tissue types.**
  <br>  
 
  ---------   
@@ -138,13 +147,12 @@ To understand better how this cytokine relates to different tissue and cell type
 * We can make use of the dataset's annotations to view the results of our samples in groups. At the top of the Adjustable settings box change *Analysis type* from **single gene** to  **gene vs track** and switch the *Track* setting to **tissue (2cat)** to separate the samples of the tissue blood from those of synovial fluid.
 * Type **TNF**  instead of CD4 in the *Search by gene* textbox of *Gene / Reporter* and select the first value **TNF / 11829_18627** from the dropdown list of available genes / reporters.   
 * In order to have a look at the adjustments so far, click **Submit** for the adjustments to take effect. 
-* Scroll down again to change one more setting: in the *Graphics* settings adjust *Graph type:* to **Box/dot plot (dots)** and *Color mode:* to **Color by Track**.
+* Scroll down again to change one more setting: in the *Graphics* settings adjust *Graph type:* to **Box/dot plot 
+  (dots)** and *Color mode (groups):* to **Color by Track**.
 * Again click **Submit** for the adjustments to take effect.  
 
-The expression values are currently log2 transformed. Check out the difference when you display the expression values without a transformation: 
-* In the menu under the graph, change **Transformation** into *none* and click **Submit**  
-
-The circles on top of the boxplot show the individual value of each sample, which is a good way to stay aware of the distribution of the raw data points.  
+The dots in the boxplot show the individual value of each sample, which is a good way to stay aware of the 
+distribution of the raw data points. <br>
 Often you use a boxplot to assess whether the expression values of a particular gene differ between groups of samples and to quickly identify their average values, outliers, the dispersion of the data set, and signs of skewness.  
 
 Next to the visual representation, R2 also provides this statistical information in textual format.  
@@ -162,10 +170,10 @@ The two groups clearly show different trends in their expression values of TNF. 
 
 The immune system is a complex system of different cell types that interact with each other with chemokines and other cytokines. T cells are one of two primary types of white blood cells — B cells being the second type — that determine the specificity of immune response to antigens (foreign substances) in the body. T cells originate in the bone marrow and mature in the thymus.  
   
-  ![](_static/images/KIT_Tcelldifferentiation.png "Figure 2: Differentiation of T-cells, each subtype having its specific role in the immune system.")
+  ![](_static/images/RA_KIT/KIT_Tcelldifferentiation.png "Figure 2: Differentiation of T-cells, each subtype having its specific role in the immune system.")
   
   
-  [**Figure 2: Differentiation of T-cells, each subtype having its specific role in the immune system.**](_static/images/KIT_Tcelldifferentiation.png)
+  [**Figure 2: Differentiation of T-cells, each subtype having its specific role in the immune system.**](_static/images/RA_KIT/KIT_Tcelldifferentiation.png)
   
   By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into four stages: naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem), whereas CD8+ T cells are classified into five stages: Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra).  
     
