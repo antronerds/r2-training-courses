@@ -252,9 +252,6 @@ R2 presents the Okuzono dataset samples with its available annotation in a table
 * R2 dataset: Disease Rheumatoid arthritis (drugs) - Lauwerys - 40 - MAS5.0 - u133p2
 * Description: Paired synovial biopsy samples were obtained from the affected knee of early RA patients before and 12 weeks after initiation of Tocilizumab (n=12) or Methotrexate (n=8) therapy 
 
-*Techniques used:*   
-* Affymetrix DNA Microarray 
-
 *References*
 * Paper: [Global Molecular Effects of Tocilizumab Therapy in Rheumatoid Arthritis Synovium](https://onlinelibrary.wiley.com/doi/full/10.1002/art.38202)
      
