@@ -366,7 +366,7 @@ The page with the list of differentiating genes is still open in a tab. On this 
 
 * On the tab with the list of differentiating genes, now click the button **Heatmap (zscore)** to get an overview of all the genes and the (unsupervised) group separations in a Heatmap.
 
-* Redo the Differential Expression between groups analysis and Gene Ontology analysis for the other treatment. I.e. choose for *Subset track* **experiment** and check **mtx (16)**. Don't forget to switch off the *Corr. multiple testing:*. 
+* Redo the Differential Expression between groups analysis and Gene Ontology analysis for the other treatment. I.e. choose for *Subset track* **experiment** and check **mtx (16)**. Don't forget to switch off the *Corr. multiple testing*. 
   
 ---
 
