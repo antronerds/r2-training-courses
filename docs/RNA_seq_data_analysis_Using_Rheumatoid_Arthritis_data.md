@@ -149,6 +149,7 @@ To understand better how this cytokine relates to different tissue and cell type
 * In order to have a look at the adjustments so far, click **Submit** for the adjustments to take effect. 
 * Scroll down again to change one more setting: in the *Graphics* settings adjust *Graph type:* to **Box/dot plot 
   (dots)** and *Color mode (groups):* to **Color by Track**.
+* Change *Color mode*
 * Again click **Submit** for the adjustments to take effect.  
 
 The dots in the boxplot show the individual value of each sample, which is a good way to stay aware of the 
@@ -179,8 +180,8 @@ The immune system is a complex system of different cell types that interact with
     
  This heterogeneity among T cells make it challenging to identify the specific cell subsets and states that drive RA pathogenesis.
 
-* Under your latest graph, change the setting *Track* to **t-cell-stage-type**. Click **Submit**.
-* Now change the transformation back to **log2**. Click **Submit** again.  
+* Under your latest graph, change the setting *Track* to **t-cell-stage-type**. 
+* Click **Submit**. 
   
 ---------
    
@@ -211,7 +212,10 @@ To get a better overview of the available annotation of a dataset, we can use th
 
 R2 presents the Okuzono dataset samples with its available annotation in a table at the bottom of the page. Each pie chart above the table shows a different available track. 
 * Hover your mouse over the different slices of the **tissue** annotation pie chart. What percentage of the samples is synovial fluid and what percentage is blood tissue?
-* Explore the other pie charts as well: hover with your mouse over the slices and double click on a slice to select that group of the samples. Above the main pie chart you can read the number of samples in your current selection (the "n= " number). Also note how the table at the bottom adapts the overview based on your selection. You can click on the button **Clear Filters** to undo your selection.  
+* Explore the other pie charts as well: hover with your mouse over the slices and click on a slice to select that 
+  group of the samples. Above the main pie chart you can read the number of samples in your current selection (the 
+  "n= " number). Also, you will see which selection you have made in the box Applied filters. Note how the 
+  table at the bottom adapts the overview based on your selection. You can click on the button **Clear Filters** to undo your selection.  
   
    
 ---------
@@ -251,17 +255,11 @@ R2 presents the Okuzono dataset samples with its available annotation in a table
   
 How does treatment effect gene expression? Let's have a look at a dataset of Lauwerys et al. In the dataset we can find samples taken from the synovial fluid in the knee of 20 early RA patients, both before and after treatment.  
   
-* Go to the Main page of R2 and click on the white area in box 2 with the Okuzono dataset title.  
-
-A popup window appears that shows all the available datasets in a grid: each row represents one dataset, its
-main descriptive details split up in the columns.  
-
-The headers of the columns each enable the user to search through datasets using keywords and other filter options. 
-* Type in the text field under **Author** the name of the author of the data set: *Lauwerys*
-
-We are interested in the dataset that has 40 samples (N is 40). To read extra information about a dataset, click on any part of the specific row, other than the Select button. 
-* Click on the row of the dataset of our interest. Underneath the grid you can now see more details about the study (you don't have to read it yet). Note that in this information overview you can also find a Pubmed link to the study.  
-* Click on the dataset's **Select** button in the grid.  
+* Go to the **Main page** of R2 and click on the text area in box 2 that currently contains the Okuzono dataset title.
+* The popup window appears that shows all the available datasets in the grid again. Type in the text field under 
+  **Author** the name of the author of the data set: *Lauwerys*
+* Click on the row of the dataset of our interest. Underneath the grid you can see more details about the study (you don't have to read it yet). Note that in this information overview you can also find a Pubmed link to the study.  
+* Click on the blue **Confirm Selection** button in the grid.  
 
 First, we take a look at the provided annotation. Let's start with the dataset Cohort Overview.  
 
@@ -324,7 +322,7 @@ We now want to know which pathways are affected by treatment with tocilizumab.
 * From the main page, select the analysis **Differential Expression between two groups**, click **Next** 
 * Choose *Group by:* **therapy (2 cat)**.
 * For *Subset track* choose **experiment** and check **tcz (24)**. Click **ok** and click **Submit**. Extra settings will pop-up.
-* Choose *Group 1* **yes (12)** and *Group 2* **no (12)**. 
+* Choose *Group 1* **no (12)** and *Group 2* **yes (12)**. 
 * Because we won't have many samples, we will not correct for multiple testing. Under Statistics change *Corr. multiple testing:* to **No correction**. Click **Submit**.
 
 The list shows the genes that are differentially expressed between the patients before treatment and after treatment. Above the table you can see how many genes have been found to be significantly differentially expressed with a p-value of at most 0.01. 
@@ -332,7 +330,9 @@ The list shows the genes that are differentially expressed between the patients 
 
 The analysis connects to the Gene Ontology knowledgebase (<a href="http://geneontology.org/" target="_blank">http://geneontology.org/</a>), "the world’s largest source of information on the functions of genes". The knowledgebase contains information about which genes are involved in which biological processes.  
   
-The R2 Gene Ontology algorithm checks for which processes the involved genes are overrepresented in our list of differentially expressed genes, i.e. it looks at the probability that the number of up or down regulated genes of that process, occur in our list by chance (randomly).  
+The R2 Gene Ontology algorithm checks for which processes the involved genes are overrepresented in our list of 
+differentially expressed genes, i.e. it looks at the probability that the number of up or down regulated genes of 
+that process, occur in our list by chance (randomly). <br>
 In this table each row contains information of one biological process: its name, the p-value of the overrepresentation and the involved genes that are up (yes >= no) or down (yes < no) regulated with therapy. Above the table you can find the meaning of the red and green color coding.   
 
 ---
@@ -347,13 +347,22 @@ In this table each row contains information of one biological process: its name,
 
 The page with the list of differentiating genes is still open in a tab. On this page many buttons and links allow you to visualize and analyze the result further. Try these options, or try to interpret the results that you obtain with one of the buttons on the right:
 * From the list of differentiating genes, choose one of the top genes and hover your mouse over the glass icon in front of the gene to read information about the gene. Now click on the icon to be taken to the One Gene View for this gene. Of course you can adapt the graph again with the menu underneath the graph.  
-  
-
-* On the previous page with the list of differentiating genes, click on the button **Plot all genes (xy, vulcano etc.)**
-* Underneath the plot, change *Plot type* to **Vulcano plot**. In the textfield *Mark genes*, write the name of a gene that you are interested in. Click on **Redraw Image**.
-
-* Hover with your mouse over some dots furthest to the left in the plot to read their names. Compare those names with the list of differentiating genes.  
-* In the Adjustable settings box click on **Search GO** button. In the *GO description* column you can type in the white textfield (directly underneath  the header) to search for particular keywords and to find a Gene Ontology set of interest. Let us try the keyword **immune**. The table adjusts to those GO sets that contain the keyword immune. Select any GO set with the **Select** button in front of that row and check the graph to see if the genes marked by this GO set are mainly up- or downreguated. 
+* On the page with the list of differentiating genes, still open in the other tab, click on the button **Plot all genes 
+  (xy, vulcano etc.)**
+* Underneath the plot, change *Plot type* to **Vulcano plot**.
+* Hover with your mouse over some dots furthest to the upperleft corner in the plot to read their names. Compare those 
+  names with the list of differentiating genes.   
+* In the Adjustable settings box, write the name of a gene in the text box of *Mark genes* and hit **Enter** to see if 
+  you can locate the gene in the vulcano plot. (E.g. you can use one of the genes from the dataset description "We found that Tocilizumab induces a significant down-regulation of genes included in specific pathways: cytokines & chemokines (e.g. IL-6, IL-7, IL-22, CCL8, CCL11, CCL13, CCL19, CCL20)")
+* To see what the expression difference looks like of a gene, click on any dot in the Vulcano plot, first with a left 
+  mouse click to mark the gene in the plot in an interactive way. Then right click to see the expression of the gene in 
+  the two different therapy groups "no" vs "yes". 
+* Back in the tab with the vulcano plot, in the Adjustable settings box, click on **Search GO** button. In the *GO 
+  description* column you can type in the white textfield (directly underneath  the header) to search for particular 
+  keywords and to find a Gene Ontology set of interest. Let us try the keyword **immune**. The table adjusts to 
+  those GO sets that contain the keyword immune. Select any GO set (e.g. **activation of immune response**) with the 
+  **Select** button in front of that row and click the button **Update Genes** to see if the genes marked by this GO set are mainly up- or 
+  downreguated. 
 
 * On the tab with the list of differentiating genes, now click the button **Heatmap (zscore)** to get an overview of all the genes and the (unsupervised) group separations in a Heatmap.
 
