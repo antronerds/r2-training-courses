@@ -122,8 +122,7 @@ specific antigens, which are molecules that are found on the surface of pathogen
 An antigen presenting cell (APC) binds to the T cells and presents fragments, or  peptides, of the antigen. The TCR 
 requires co-receptors in order to establish a stable connection to the APC. for instance, helper T cells express the 
 CD4 co-receptor and cytotoxic T cells express the CD8 co-receptor (gene name: CD8A). Although most T cells express 
-either CD4 or CD8, 
-some express both and some do not express either.
+either CD4 or CD8, some express both and some do not express either.
 
 ---------
 
@@ -141,7 +140,8 @@ some express both and some do not express either.
 
 Tumor necrosis factor‐alpha (TNF‐α) is a proinflammatory cytokine that plays a pivotal role in regulating the inflammatory response in rheumatoid arthritis (RA). 
 
-To understand better how this cytokine relates to different tissue and cell types, we take a look at the expression values of gene TNF. We can take a shortcut route underneath the CD4 graph while we also change some other plot settings.
+To gain an iinitial understanding in how this cytokine relates to different tissue and cell types, we take a look at 
+the expression values of gene TNF. We can take a shortcut route underneath the CD4 graph while we also change some other plot settings.
 
 * Scroll down underneath the CD4 gene expression graph to find the **Adjustable settings** box.  
 * We can make use of the dataset's annotations to view the results of our samples in groups. At the top of the Adjustable settings box change *Analysis type* from **single gene** to  **gene vs track** and switch the *Track* setting to **tissue (2cat)** to separate the samples of the tissue blood from those of synovial fluid.
@@ -159,8 +159,11 @@ Often you use a boxplot to assess whether the expression values of a particular 
 Next to the visual representation, R2 also provides this statistical information in textual format.  
  * Hover your mouse over each box to compare the summarizing values of the two groups.  
    
-The two groups clearly show different trends in their expression values of TNF. But how do we know whether the group means vary significantly, i.e. by more than random chance allows? To answer that question R2 shows you the results of an analysis of variance (ANOVA): you can find the F-value, the test statistic of the ANOVA test, and the p-value of the ANOVA test in the table underneath the plot.  
- 
+The two groups clearly show different trends in their expression values of TNF. But how do we know whether the group 
+means vary significantly, i.e. by more than random chance allows? To answer that question R2 shows you the results 
+of an analysis of variance (ANOVA): you can find the F-value, the test statistic of the ANOVA test, and the p-value 
+of the ANOVA test in the table underneath the plot. <br><br>
+
 ---------  
   
   ![](_static/images/R2d2_logo.png)**What can you conclude about the expression of the gene TNF in blood tissue versus synovial fluid?**   
@@ -168,17 +171,29 @@ The two groups clearly show different trends in their expression values of TNF. 
  <br>  
  
 ---------  
+Remember that one of the main questions of this study was whether peripheral blood samples can replace samples of
+synovial fluid that are hard to obtain from patients. Of course, we can't say anything about that yet, but we gained 
+some awareness of the tissue specific expression levels.
+<br><br>
+T cells originate from hematopoietic stem cells in the bone marrow that migrate to the thymus. They undergo several developmental 
+stages to differentiate into mature, naïve T cells. These  exit the thymus and enter the peripheral circulation, where 
+they undergo further maturation and differentiation into effector or memory T cells upon encountering antigens presented by antigen-presenting cells.
 
-The immune system is a complex system of different cell types that interact with each other with chemokines and other cytokines. T cells are one of two primary types of white blood cells — B cells being the second type — that determine the specificity of immune response to antigens (foreign substances) in the body. T cells originate in the bone marrow and mature in the thymus.  
+---------
   
-  ![](_static/images/RA_KIT/KIT_Tcelldifferentiation.png "Figure 2: Differentiation of T-cells, each subtype having its specific role in the immune system.")
+  ![](_static/images/RA_KIT/KIT_Tcelldifferentiation.png "Figure 3: Differentiation of T-cells, each subtype having 
+  its specific role in the immune system.")
   
   
-  [**Figure 2: Differentiation of T-cells, each subtype having its specific role in the immune system.**](_static/images/RA_KIT/KIT_Tcelldifferentiation.png)
-  
-  By *developmental stage*, peripheral blood (PB) CD4+ T cells are classified into four stages: naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem), whereas CD8+ T cells are classified into five stages: Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra).  
+  [**Figure 3: Differentiation of T-cells, each subtype having its specific role in the immune system.**]
+  (_static/images/RA_KIT/KIT_Tcelldifferentiation.png)
+
+-------
+
+By developmental stage, CD4+ T cells are classified into four stages: naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem), whereas CD8+ T cells are classified into five stages: Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra).  
     
- This heterogeneity among T cells make it challenging to identify the specific cell subsets and states that drive RA pathogenesis.
+This heterogeneity among T cells makes it challenging to identify the specific cell subsets and states that drive RA 
+pathogenesis.
 
 * Under your latest graph, change the setting *Track* to **t-cell-stage-type**. 
 * Click **Submit**. 
@@ -190,6 +205,8 @@ The immune system is a complex system of different cell types that interact with
  ![](_static/images/R2d2_logo.png)**Which T-cell subtype has the highest expression of TNF?**
  
  ---------
+Naive T cells are in a quiescent state and have not undergone differentiation into effector or memory T cells. Effector T cells, including effector memory T cells, are specialized to carry out immune responses, including cytokine production such as TNF.
+
  * Submit your Google form with answers of the above section
  
 ##### Exploring relevant annotation of a dataset
