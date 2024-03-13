@@ -13,7 +13,7 @@ Copyright (c) 2006-2024 Jan Koster
    :numbered: 3
    :caption: Amsterdam Movement Sciences
 
-    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
+   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
 
 .. toctree::
    :maxdepth: 2
