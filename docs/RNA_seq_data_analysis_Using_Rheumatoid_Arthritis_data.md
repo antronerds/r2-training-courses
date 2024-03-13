@@ -120,7 +120,7 @@ of the immune system by releasing regulating molecules, called cytokines. <br>
 With the help of protein complexes found on the surface of T cells, T cell receptors (TCRs), T cells recognize 
 specific antigens, which are molecules that are found on the surface of pathogens or abnormal cells. <br> 
 An antigen presenting cell (APC) binds to the T cells and presents fragments, or  peptides, of the antigen. The TCR 
-requires co-receptors in order to establish a stable connection to the APC. for instance, helper T cells express the 
+requires co-receptors in order to establish a stable connection to the APC. For instance, helper T cells express the 
 CD4 co-receptor and cytotoxic T cells express the CD8 co-receptor (gene name: CD8A). Although most T cells express 
 either CD4 or CD8, some express both and some do not express either.
 
@@ -149,7 +149,6 @@ the expression values of gene TNF. We can take a shortcut route underneath the C
 * In order to have a look at the adjustments so far, click **Submit** for the adjustments to take effect. 
 * Scroll down again to change one more setting: in the *Graphics* settings adjust *Graph type:* to **Box/dot plot 
   (dots)** and *Color mode (groups):* to **Color by Track**.
-* Change *Color mode*
 * Again click **Submit** for the adjustments to take effect.  
 
 The dots in the boxplot show the individual value of each sample, which is a good way to stay aware of the 
@@ -275,7 +274,8 @@ How does treatment effect gene expression? Let's have a look at a dataset of Lau
 * Go to the **Main page** of R2 and click on the text area in box 2 that currently contains the Okuzono dataset title.
 * The popup window appears that shows all the available datasets in the grid again. Type in the text field under 
   **Author** the name of the author of the data set: *Lauwerys*
-* Click on the row of the dataset of our interest. Underneath the grid you can see more details about the study (you don't have to read it yet). Note that in this information overview you can also find a Pubmed link to the study.  
+* Click on the row of the dataset of our interest with 40 samples. Underneath the grid you can see more details about 
+  the study (you don't have to read it yet). Note that in this information overview you can also find a Pubmed link to the study.  
 * Click on the blue **Confirm Selection** button in the grid.  
 
 First, we take a look at the provided annotation. Let's start with the dataset Cohort Overview.  
@@ -383,7 +383,9 @@ The page with the list of differentiating genes is still open in a tab. On this 
 
 * On the tab with the list of differentiating genes, now click the button **Heatmap (zscore)** to get an overview of all the genes and the (unsupervised) group separations in a Heatmap.
 
-* Redo the Differential Expression between groups analysis and Gene Ontology analysis for the other treatment. I.e. choose for *Subset track* **experiment** and check **mtx (16)**. Don't forget to switch off the *Corr. multiple testing*. 
+* Redo the Differential Expression between groups analysis and Gene Ontology analysis for the other treatment. Thus 
+  choose for *Subset track* **experiment** and check **mtx (16)**, while keeping all the other settings the same. Don't 
+  forget to switch off the *Corr. multiple testing*. 
   
 ---
 
