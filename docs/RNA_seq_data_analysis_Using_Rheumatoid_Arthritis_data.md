@@ -95,7 +95,7 @@ also many other settings are available.
   scale on the y-axis might change your perspective of the same information: the log2 values in the lower range of the 
   expression values are more spread out, it magnifies the relative differences between low expression values. For high expression values, the log2 transformation compresses the data.
 
-Directly underneath x-axis of the plot you can see colored blocks. These are different types of *annotation*. In R2 
+Directly underneath the x-axis of the plot you can see colored blocks. These are different types of *annotation*. In R2 
 the samples of a dataset can be annotated with extra information, such as clinical data of patient samples, or biological characteristics of cell samples.<br>
 Each group of annotated data is called a *track* in R2. You will see the annotation often displayed underneath a
 plot or by hovering over a plot. In this case, even more tracks are shown if you hover your mouse over the 
