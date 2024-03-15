@@ -103,6 +103,7 @@ dots in a plot.
 
 * Try it out with your mouse: hover over the colored blocks of a sample underneath the plot, then also hover over 
   the sample's dot in the graph.
+* Also, switch back to the **log2** transformation. Don't forget to **Submit** any time that you change a setting. 
 
 These tracks can be used in most of the analyses in R2 to add a layer of complexity. Tracks allow 
  you for instance to filter datasets, to compare groups of samples, to color scatter plots of samples with meta 
@@ -140,12 +141,12 @@ either CD4 or CD8, some express both and some do not express either.
 
 Tumor necrosis factor‐alpha (TNF‐α) is a proinflammatory cytokine that plays a pivotal role in regulating the inflammatory response in rheumatoid arthritis (RA). 
 
-To gain an iinitial understanding in how this cytokine relates to different tissue and cell types, we take a look at 
+To gain an initial understanding in how this cytokine relates to different tissue and cell types, we take a look at 
 the expression values of gene TNF. We can take a shortcut route underneath the CD4 graph while we also change some other plot settings.
 
 * Scroll down underneath the CD4 gene expression graph to find the **Adjustable settings** box.  
 * We can make use of the dataset's annotations to view the results of our samples in groups. At the top of the Adjustable settings box change *Analysis type* from **single gene** to  **gene vs track** and switch the *Track* setting to **tissue (2cat)** to separate the samples of the tissue blood from those of synovial fluid.
-* Type **TNF**  instead of CD4 in the *Search by gene* textbox of *Gene / Reporter* and select the first value **TNF / 11829_18627** from the dropdown list of available genes / reporters.   
+* Type **TNF**  instead of CD4 in the *Search by gene* textbox of *Gene / Reporter* and select the first value **TNF / 11829_18627** from the dropdown list of available genes / reporters.
 * In order to have a look at the adjustments so far, click **Submit** for the adjustments to take effect. 
 * Scroll down again to change one more setting: in the *Graphics* settings adjust *Graph type:* to **Box/dot plot 
   (dots)** and *Color mode (groups):* to **Color by Track**.
