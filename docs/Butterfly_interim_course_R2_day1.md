@@ -366,7 +366,7 @@ In the next screen all the individual samples are listed each assiged to the "lo
   will be called **kaplanscan-mycn (2cat)** and click submit.  
 - In next the screen select the low and high grouping variables for Group 1 and Group 2 and click submit
 Now a list of differentially expressed genes have been found based on the Kaplan Meier most prognostic MYCN values cut-off.  
-<br><r>
+<br><br>
 Tracks that are generated as a result of an analysis can be stored and used throughout the many R2-analysis modules in R2.
 
 
