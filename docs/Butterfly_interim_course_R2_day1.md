@@ -79,8 +79,8 @@ Let's first make sure that the correct dataset is selected.
 If you see a different dataset selected, you can change the dataset as follows:  
 
 - Click on the selected dataset, which will make a grid popup, showing all the datasets that are available to you within the platform. Each row is one dataset and each column shows particular characteristics of that dataset. You can filter for specific datasets with the headers of the columns. <br>
-- In the textfield of column **Author** type *Versteeg* and in the column of samples **N** type 88.
-- Click on the **Select** button in front of the correct dataset. 
+- In the textfield of column **Author** type *Versteeg* and in the column of number of samples **N** type 88.
+- Click on the row of the correct dataset and then on the blue button to **Confirm Selection**
 
 ---------
 
@@ -118,7 +118,8 @@ The track mycn_amp shows which samples have MYCN amplification.
 
 We can show the relation more clearly by grouping the tumors in the graph according to a property in a track. Go to the Adjustable Settings box underneath the plot. At the top of that box, you can adjust the **Analysis type** with a dropdown. 
 - Change this setting from single gene to *gene vs track*.
-- In the Adjustable Settings box you now have to choose a **Track** by which you want to separate the samples. In the drop down menu, select *mycn-amp(2 cat)*. And click **Submit**. Check the plot.
+- In the Adjustable Settings box you now have to choose a **Track** by which you want to separate the samples. In 
+  the drop down menu, select *mycn_amp (2cat)*. And click **Submit**. Check the plot.
 - Try it out with a different track: select *alive*(2 cat) and click **Submit**. 
 - In this view, the samples are not ordered by their MYCN expression value by default. If you would want to adjust this, you could use the **Extra Graph Option** and choose the value *Track and Gene sort*. Always click **Submit** to see the results of adaptations in the settings.   
 - Click on the + sign in the *More settings* sections to unfold a new menu which enables the user to adapt the graphic parameters such as font size, axis-with etc. Feel free to try them.  
@@ -157,7 +158,7 @@ All the tumor samples in our dataset were analyzed by making sections of frozen 
 - Below the graph you can click on an arrow to **View additional details**. For the MYCN gene, the table 
   ‘Alternative Reporters’ shows that this gene is represented by 5 sets of reporters (probe sets) on the Affymetrix 
   U133 Plus 2.0 microarray. Take a look at the signal intensities for the different reporters (the red numbers in 
-  brackets). It's good to realize that genes could have more then one reporter for a given platform in this case the 
+  brackets). It's good to realize that genes could have more than one reporter for a given platform in this case the 
   Affymetrix platform. Also in RNAseq datasets, if transcripts (isoforms) are annotated, this can be very relevant. 
   By default, R2 chooses the reporter with the highest signal which is in ~99.9% of the cases the most representive 
   for a gene. 
@@ -244,7 +245,7 @@ Can we find biological processes by looking at differentially expressed genes be
 
 In the generated gene list you can find  marker genes or genes playing a key role in neuroblastoma. However, it would be of interest to find out if certain genes are overrepresented in e.g. biological processes.  
 - In the right menu next to the genelist, click on the button **Geneset analysis**. 
-- In the next screen select "KEGG" in the geneset collection pull down and click next.
+- In the next screen select **KEGG pathways** in the *Gene set collection* pull down and click next.
 - In the next screen you find a collection of annotated KEGG genesets in which the genes from the analysis are overrepresented.
 
 ---------
@@ -441,8 +442,9 @@ For this analysis we will use one of the analysis tools of R2: Toplister. The to
 
 
 * On the main page, click in box 2 on the selected dataset. The dataset grid pops up, showing all the datasets that are available to you within the platform. Let's use the headers of the columns to filter for the dataset that we need in the next section. <br>
-* In the textfield of column **Author** type *Versteeg* and in the column of samples **N** type 8.
-* Click on the **Select** button in front of the correct dataset.
+* In the textfield of column **Author** type *Versteeg* and in the column of number of samples **N** type 8.
+* Click on the correct dataset. Optionally read the dataset details in teh information box underneath the grid
+* Select the dataset for further analysis by a click on the blue button **Confirm selection** 
 * Confirm that in box 2 the dataset '_Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2_' is selected, containing 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines.
  <br>
  <br>
@@ -452,8 +454,11 @@ For this analysis we will use one of the analysis tools of R2: Toplister. The to
 
  Genes that have a large variation in gene expression within one dataset are possibly interesting to look into. They might be able to explain different phenotypes within the dataset.
 
- * Select *Toplister (Gene filter stdev)* as the type of analysis in box **3** from the dropddown menu (- scroll almost all the way down. You will find it listed under the header *Meta analyses*). Toplister will find the 100 genes that have the largest variation in gene expression among these 8 cell lines. 
- * Click **Next**. Leave the settings as is, and click **Next** again. A list of genes appears.  
+ * Select **Toplister (Gene filter stdev)** as the type of analysis in box *3* from the dropdown menu (- scroll 
+   almost all the way down. You will find it listed under the header *Meta analyses*). Click **Next**
+* With the default 
+   settings, Toplister will find the 100 genes that have the largest variation in gene expression among these 8 cell 
+   lines. Leave the settings as is, and click **Next** again. A list of genes appears.  
 
 ---------
 
@@ -584,12 +589,19 @@ In R2 there are many more sets of genes that have been found to be implemented i
 As mentioned above, the lists of differentially expressed genes between the MES and ARDN groups are also stored in the gene sets databases of R2. We can use these genes as a proxy for mesenchymal- or adrenergic-ness. Let's first look at these 2 groups of genes in a heatmap, when these are applied to a dataset where a number of neuroblastoma cell lines are represented next to the 8 samples that we have looked at above.
 
 - Go to the main page and click on the dataset that is currently selected. 
-- A dataset selection grid pops up in which you can use the filters on top of the columns to find datasets of interest. Select '**Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2**' as a dataset to explore (e.g. fill in the grid **crest** in the textfield of the *Tissue/Tumor* column and click the *Select* button in front of the dataset that we are looking for). 
+- A dataset selection grid pops up in which you can use the filters on top of the columns to find datasets of 
+  interest. Select '**Mixed Neuroblastoma (MES-ADRN-CREST) - Versteeg/Etchevers - 34 - MAS5.0 - u133p2**' as a 
+  dataset to explore (e.g. fill in the grid **crest** in the textfield of the *Tissue/Tumor* column and click on the 
+  correct row and apply your selection with the **Confirm selection** button) 
 - Now select **View Geneset (Heatmap)** from option box 3 and press next.
-- As gene set collection, we choose **r2 provided gene lists** and then press next twice
-- In the gene set box, we select 'r2_mesadrn_adrn' as well as 'r2_mesadrn_mes' (With the CTRL key you can select more than 1 gene sets). Then press next.
+- We click on the field behind *Gene set*, such that a grid opens where we can select a gene set.
+- Click on the arrow in front of **r2 provided gene lists** then the arrow of 
+  **oncogenomics_groningen_NatGen_2017**, next of **functional_genesignature** and then check **r2_mesadrn_adrn** as 
+  well as **r2_mesadrn_mes**. Press **Comfirm selection** and **Submit**.
 
-A heatmap is now shown on your screen. You should see a clear separation in the genes, that correspond to the 2 different gene sets (The grey/red stripes correspond to the gene set a gene was coming from). In addition, you see a clear separation in the samples too.
+A heatmap is now shown on your screen. You should see a clear separation in the genes, that correspond to the 2 
+different gene sets.<br>
+The vertically aligned grey/red stripes on the side correspond to the gene set a gene was coming from. In addition, you see a clear separation in the samples too.
 
 ---------
 
@@ -609,8 +621,9 @@ The current dataset also contains neural crest cells, which are naive (and still
 
 Using a heatmap as we have just generated can be very helpful in determining how a list of genes is behaving within a dataset. However, it is not very scalable and requires detailed manual inspection to interpret. Condensing the information from all genes in a single value, opens some new possibilities. Within R2, we define a gene signature as the average value of what you see in the columns for every sample (effectively the average of all zscores, within every single gene set). These are automatically calculated during heatmap analyses, and are represented in the bottom of the pictures. We can store these signature scores as tracks in R2, and subsequently use them in R2 as if they are a gene (a meta-gene). Within the current dataset, the scores for MES and ADRN are already provided as separate tracks. Under normal conditions, you would store the signatures as tracks in your personal account.
 
--  Go back to the main page. We will now look at the samples in this dataset as signature scores. To do this, we select 'relate 2 tracks' and press next.
-- As track for X, we select s_mesadr_adrn, and as track for Y, s_mesardn_mes. Click Submit.
+-  Go back to the main page. We will now look at the samples in this dataset as signature scores. To do this, we 
+   select **relate 2 tracks** and press next.
+- As track for X, we select **s_mesadr_adrn**, and as track for Y, **s_mesardn_mes**. Click Submit.
 
 You should now see an XY plot where the signature values are used to position the samples. 
 
@@ -621,23 +634,36 @@ You should now see an XY plot where the signature values are used to position th
 
 ---------
 
-- The samples can also be colored by a track or the expression of a gene. Set the 'color mode' dropdown to 'color by track' and then select cell type as track. Click the 'submit' button.
+- The samples can also be colored by a track or the expression of a gene. Set the *Color mode* dropdown to 'Color by 
+ a Track' and then select **cell type (4 cat)** as track. Click the **Submit** button.
 
 The resulting graph is a very insightful representation that summarizes the 800 genes that we were looking at in the previous heatmap.
 
 Within this dataset, also the 4 pairs are represented from the earlier analyses. We can make these stand out a bit by drawing lines between the samples from every pair. For this, R2 has sample_paths, which are comma separated samples that will be connected by a line. These can have a thickness, and a color associated : separated. A new line can be started by using a ; .
 
-- within the sample paths paste 'gsm2413241,gsm2413246:#eeeeee;gsm2413239,gsm2413243:#eeeeee;gsm2413242,gsm2413245:#eeeeee;gsm2413240,gsm2413244:#eeeeee;' and press next. 
-- We can also make the samples stand out a bit better by marking them using the 'samples to mark'. Paste the following into this field 'gsm2413241,gsm2413246,gsm2413239,gsm2413243,gsm2413242,gsm2413245,gsm2413240,gsm2413244:#222222;'
+- within the sample paths paste **gsm2413241,gsm2413246:#eeeeee;gsm2413239,gsm2413243:#eeeeee;gsm2413242,
+  gsm2413245:#eeeeee;gsm2413240,gsm2413244:#eeeeee;** and press Submit. 
+- We can also make the samples stand out a bit better by marking them using the 'samples to mark'. Paste the 
+  following into this field **gsm2413241,gsm2413246,gsm2413239,gsm2413243,gsm2413242,gsm2413245,gsm2413240,
+  gsm2413244:#222222;** and press Submit.
 
 We have now seen the very basic usage of signature scores. R2 has many more options, that you can explore by yourself if you want.
 
 In the signature plot we can again see that the MES cell lines are mingled with the neural crest cells, which are the cells from which neuroblasts can develop.
 
-In the next analysis we are going to make use of a single cell dataset that describes the human adrenal medulla, a tissue that can generate neuroblasts. Single cell data is frequently depicted in 2 dimensional representations called UMAP , or tSNE. Both are dimensionality reduction algorithms that try to group cells together that on resemblance. Within R2, such representations are available in the 'sample maps', that can be accessed from the main page in the left set of menu items. 
+In the next analysis we are going to make use of a single cell dataset that describes the human adrenal medulla, a 
+tissue that can generate neuroblasts. Single cell data is frequently depicted in 2 dimensional representations 
+called UMAP , or tSNE. Both are dimensionality reduction algorithms that try to group cells together based on 
+resemblance of their expression profiles. Within R2, such representations are available in the 'sample maps', that 
+can be accessed from the main page in the left set of menu items. 
 
-- Click on the sample maps and subsequently select the following resouce: '**Normal Adrenal Medulla - Westermann - 10739 - cp10k - 10x300hg19**' and make sure to select the 'UMAP' version.
-- The cells are not yet colored. So let's stain them by the track 'cell type'.
+- On th emain page, click on the **Sample maps (UMAP/tSNE) and subsequently select the following resource: '**Normal 
+  Adrenal 
+  Medulla - 
+  Westermann - 
+  10739 - cp10k - 10x300hg19**' and make sure to select the 'manuscript' version.
+- The cells are not yet colored. So let's stain them with the setting *Color by a Track* and *Color track* 
+  **cell_type (11 cat)**.
 
 ---------
 
