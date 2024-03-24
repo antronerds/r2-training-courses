@@ -101,6 +101,10 @@ The scatter plot in the central diagram shows the mRNA expression values of MYCN
 
 
 - The expression is given on a log scale by default. To switch to a linear scale, scroll down to the Adjustable Settings box under the plot. In the field **Transformation**, select *None* and click **Submit**. 
+
+In R2 the samples of a dataset can be annotated with meta-information, e.g. clinical data or molecular biology
+  parameters. Each group of annotated data is called a “Track” in R2. These tracks can be informative / useful for a large variety of additional analysis and visualization functions. To name a few, tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics.
+  
 - Directly underneath the plot the tracks of this dataset are shown with their values color coded. You can see the tracks for e.g. agegroup, INSS stage and MYCN amp(lification). Hover with your mouse over the different blocks.
 
 The track mycn_amp shows which samples have MYCN amplification.
@@ -271,12 +275,14 @@ are considered as promising cancer biomarkers.
 
 
 ### Using annotation and the Kaplan Meier curve
-In R2 the samples of a dataset can be annotated with meta-information, e.g. clinical data or molecular biology parameters. Each group of annotated data is called a “Track” in R2. These tracks can be informative / useful for a large variety of additional analysis and visualisation functions. To name a few, tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics.
-<br><br>
-Another valuable use of such tracks is to evaluate their prognostic value with a Kaplan Meier curve. We will now take a look at the above mentioned dataset that consists of 88 human neuroblastoma samples. <br>
-This dataset is annotated for a number of clinical and molecular parameters. To get a first look at some characteristics of this childhood tumor, we will analyze the prognostic value of stage, age at diagnosis and amplification of the MYCN oncogene.
+We have seen that annoation tracks in R2 can be used to group the samples in a dataset for comparative analysis of 
+gene expression. Another valuable use of tracks is to evaluate their prognostic value with a Kaplan Meier curve.
+We will now take a look at the above mentioned dataset that consists of 88 human neuroblastoma samples. <br>
+This dataset is annotated for a number of clinical and molecular parameters. We will analyze the prognostic value of 
+stage, age at diagnosis and amplification of the MYCN oncogene.
 
-- Use the dropdown in box 3 to select the correct Kaplan Meier analysis: *Kaplan Meier by annotated parameter*. Click **Next**.
+- On the main page, use the dropdown in box 3 to select the correct Kaplan Meier analysis: *Kaplan Meier by annotated 
+  parameter*. Click **Next**.
 - We are going to separate the patients based on the INSS staging system, that was explained in the introduction of neuroblastoma in the beginning. Choose for **Type of Survival** the value *overall-c1103*. For the **Track** setting, select the value *inss (cat 5)*. Click **Next**.
 - The Kaplan Meier curves appear.  <br><br>
 
@@ -329,7 +335,7 @@ The question then is, which expression value to take as a cut-off point to separ
 
 Now let's compare this survival analysis to the survival analysis with a median or average expression value cut-off point. Underneath the graph you will find the Adjustable Settings box, where you can adjust your analysis.  
 
-- Switch to *median* in the **Cutoff mode** dropdown menu. Click **Redraw Graph**
+- Switch to **median** in the *Cutoff mode* dropdown menu. Click **Redraw Graph**
 - Now analyze survival when we use *average* MYCN expression as **Cutoff mode**. Don't forget to redraw the graph. 
 
 
@@ -345,16 +351,22 @@ Now let's compare this survival analysis to the survival analysis with a median 
 
 If you are 'logged in' with an account in R2, then you can also create personal grouping variables, that can be used later on. In this way you can extend R2 with information that is useful for yourself.
 
-- Switch back to the **scan** mode and Redraw, for the analysis below
-- Another approach to find possible regulating genes is to use the groups based on the mycn expression cut-off value for further analysis. Below the Kaplan Meier graph, click on the "store as track"  button. In the next screen all the individual samples are listed each assiged to the "low" or "high" group. At the bottom you can store the two groups based on the Kaplan Meier. In this example we will store this track as Temporary (24hrs) but you can also store this track permanent. Click on the build set button. Now the track is stored for further usage.
+- Switch back to the **scan** mode and **Redraw**, for the analysis below.
+- Another approach to find possible regulating genes is to use the groups based on the mycn expression cut-off value 
+  for further analysis. Below the Kaplan Meier graph, click on the "store as track"  button.<br>
 
+In the next screen all the individual samples are listed each assiged to the "low" or "high" group. At the bottom you can store the two groups based on the Kaplan Meier. In this example we will store this track as Temporary (24hrs) but you can also store this track permanent. 
 
-- Go back to the main page. Select the "Find Differential Expression between two groups" 
-- On the next page select the grouping variable that you just stored from the Kaplan Meier Scanner and click submit.  
+- Click on the **Build set** button. Now the track is stored for further usage.
+
+<br><br>
+- Go back to the main page. Select the **Differential Expression between two groups** 
+- On the next page select the grouping variable that you just stored from the Kaplan Meier Scanner. If you can't 
+  remember the name but didn't change the naming you will find the track underneath the header *temp_24hrs* and it 
+  will be called **kaplanscan-mycn (2cat)** and click submit.  
 - In next the screen select the low and high grouping variables for Group 1 and Group 2 and click submit
-- Now a list of Differentially Expressed genes have been found based on the Kaplan Meier MYCN values cut-off.  
-
-
+Now a list of differentially expressed genes have been found based on the Kaplan Meier most prognostic MYCN values cut-off.  
+<br><r>
 Tracks that are generated as a result of an analysis can be stored and used throughout the many R2-analysis modules in R2.
 
 
