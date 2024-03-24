@@ -1,4 +1,4 @@
-<a id="VAGABOND_interim_course_R2_day1"> </a>
+<a id="BUTTERFLY_course_R2_day1"> </a>
 
 Finding causes in Neuroblastoma genomics data
 =================================
@@ -10,7 +10,7 @@ This resource is located online at http://r2-training-courses.readthedocs.io
 Introduction
 ------------
 
-Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. For instance, in colorectal cancer a well defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
+Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. For instance, in colorectal cancer a well-defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
 
   ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression.")	
 
@@ -84,13 +84,14 @@ If you see a different dataset selected, you can change the dataset as follows:
 
 ---------
 
-### Investigating singles genes / Expression of key genes
+### Investigating single genes / Expression of key genes
 * The button below brings you to the form in which you can submit your answers for section 1.2. 
 
 <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1AdLKLVAkgRFiQ_AEHwRyWu0gc3_UZ6XyT3G4KICGStQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1</button> 
 <br>
 <br>
-It is known that the Amplification of the MYCN gene is evidently associated with a poor prognosis. Now we will analyze the mRNA expression of MYCN in the same dataset. We will use the R2 analysis module 'One Gene View'.
+It is known that the amplification of the MYCN gene is associated with a poor prognosis. Now we will 
+analyze the mRNA expression of MYCN in the selected dataset. We will use the R2 analysis module 'One Gene View'.
 - On the main page in field 3 select **View a gene**, which is also the selected analysis by default. Then click **Next**.
 - For this analysis, R2 needs to know which gene/ reporter to use. Fill in the text field *Search by Gene* the gene name of our interest: **mycn**. And select with a mouse click the mycn gene from the dropdown in order to select the correct reporter.
 - The rest of the settings we leave as is. Click **Submit**  
@@ -137,7 +138,7 @@ Now we will use links on this page that lead to additional analyses.
 
 ---------
 
-In the top right corner of the page, links bring you to other recourses. 
+In the top right corner of the R2 mycn expression plot page, links bring you to other recourses. 
 - Click on the hyperlinked *MYCN* below **Pubsniffer**. In a new tab, Pubsniffer shows how many papers in PubMed mention MYCN in their abstracts or the words ‘MYCN’ and ‘neuroblastoma’. Click on the number to see these papers.
 - Go back to the open tab with the grouped plot for MYCN expression of our dataset.  
 
@@ -148,7 +149,15 @@ All the tumor samples in our dataset were analyzed by making sections of frozen 
 - Under the header *Data set* in the top right corner, click on **Sample overview**. All samples of the dataset are available via the dropdown. 
 - Select **ITCC0001** and click on **View Sample**. Play with the magnifications in the top left corner of the sample image (2x, 10x, 40x)
 - Go back to the tab with the grouped plot of the MYCN expression (N.B. you may close the other tabs) 
-- Below the graph you can click on an arrow to **View additional details**. For the MYCN gene, the table ‘Alternative Reporters’ shows that this gene is represented by 5 sets of reporters (probe sets) on the Affymetrix U133 Plus 2.0 microarray. Take a look at the signal intensities for the different reporters (the red numbers in brackets). It's good to realize that genes could have more then one reporter for a given platform in this case the Affymetrix platform. Also in RNAseq datasets, if transcripts (isoforms) are annotated, this can be very relevant. By default, R2 chooses the reporter with the highest signal which is in ~99.9% of the cases the most representive for a gene. For many platforms which use reporters the genome location is also added. Clicking on the R2_TView link in the probeset verification box leads you to the genome browser where the exact location of the reporters can be investigated. 
+- Below the graph you can click on an arrow to **View additional details**. For the MYCN gene, the table 
+  ‘Alternative Reporters’ shows that this gene is represented by 5 sets of reporters (probe sets) on the Affymetrix 
+  U133 Plus 2.0 microarray. Take a look at the signal intensities for the different reporters (the red numbers in 
+  brackets). It's good to realize that genes could have more then one reporter for a given platform in this case the 
+  Affymetrix platform. Also in RNAseq datasets, if transcripts (isoforms) are annotated, this can be very relevant. 
+  By default, R2 chooses the reporter with the highest signal which is in ~99.9% of the cases the most representive 
+  for a gene. 
+-  For many platforms which use reporters the genome location is also added. Click on the **MYCN** link in the 
+   *ProbesetVerification* box leads you to the genome browser where the exact location of the reporters can be investigated. 
 <br>
 
 ---------
@@ -160,13 +169,15 @@ All the tumor samples in our dataset were analyzed by making sections of frozen 
 
 ### Finding Correlating genes
 
-Many approaches have been conducted to target the MYCN gene, historically as a transcription factor MYCN has been regarded as "undrugable". A way to identify downstream targets of MYCN which may be potentially drugable, is to identify genes which show a similar expression pattern. In R2 these can be identified by using the 'correlating genes with a single gene' analysis module.
+Many approaches have been conducted to target the MYCN gene. Historically as a transcription factor MYCN has been 
+regarded as "undrugable". A way to identify downstream targets of MYCN which may be potentially drugable, is to identify genes which show a similar expression pattern. In R2 these can be identified by using the 'correlating genes with a single gene' analysis module.
 
-- Go back to the main page buy the link **Main** in the upper left corner of the page.
-- In the main menu select in box 3 **Find Correlating genes with a single gene** and click next.  
+- Go back to the main page using the link **Main** in the upper left corner of the page.
+- In the main menu select in box 3 **Find Correlated Genes with a single Gene** and click next.  
 - Provide the MYCN gene in the *Search by Gene* field and make sure to click on the reporter in the dropdown. 
-- In the 'Corr. p <= cut-off' field , change <span style="color: red">**0.05 to 0.01**</span>. and click Submit.
-- In the next screen a set of tables is generated; one table for negative and one for positive correlating genes. 
+- In the 'Corr. p <= cut-off' field , change <span style="color: red">**0.05 to 0.01**</span> (0,01 if your 
+  Windows system is set the Dutch) and click Submit.
+In the next screen a set of tables is generated; one table for negative and one for positive correlating genes. 
 
 ---------
 
@@ -175,12 +186,20 @@ Many approaches have been conducted to target the MYCN gene, historically as a t
 
 ---------
 
-- All identified genes in the table are linked to a detailed view. Click on the magnify symbols in the view column for both tables and generate a graph with a gene which is (inverse) correlated with the MYCN gene to get an impression. You can close this tab again after you have looked at teh graph, leaving the tab open with the tables of (inverse)correlating genes.
+- All identified genes in the table are linked to a detailed view. First hover your mouse over and then click on the 
+  **magnify glass symbols** in the View 
+  column 
+  for both tables and generate a graph with a gene which is (inverse) correlated with the MYCN gene to get an 
+  impression. While leaving the tab open with the tables of (inverse)correlating genes, you can close thdetailed plot  
+  tab(s) again after you have looked at the graph(s).
 
 
-Inspecting genes one by one quickly becomes a dull task. We can also analyze the complete results in some of the provided analysis options. Let's have a look at the chromosomal locations of our identified genes for this section. For this type of question, R2 has the 'Chromosome Map'. 
+Inspecting genes one by one quickly becomes a dull task. We can also analyze the complete results with several of the 
+provided analysis options on the right. Let's have a look at the chromosomal locations of our identified genes for this 
+section. For this type of question, R2 has the 'Chromosome Map'. 
 
-- Click on the "Chromosome map" in the right menu and investigate the result table. If you realize that MYCN is located on chromosome 2, did you expect to see the result you obtained (which chromosome has the most significant p-value)?
+- Click on the **Chromosome map** in the right menu and investigate the result table. If you realize that MYCN is 
+  located on chromosome 2, did you expect to see the result you obtained (which chromosome has the most significant p-value)?
 
 - One of the nice features in R2, is that you can easily explore results further. Go back to the correlation analysis page and scroll to the bottom. Here you can make adaptations to the analysis. 
 - To gain more insight in what might be going on, in the adjustable settings menu,  change the correlation direction to only **negative** and click submit. Perform the chromosome map analysis again. 
@@ -203,7 +222,9 @@ We have seen that MYCN expression has a clear preference for some chromosomal re
 Can we find biological processes by looking at differentially expressed genes between groups? For example, which genes are differentially expressed between the 'alive' or 'dead' group? Let's have a look:
 
 - In the main page menu, select in box 3 section "Differential expression", **Differential Expression between two groups** and click next. In the next screen, use the T-test which is selected by default and click "alive (2 cat)" in the pulldown menu at *Group by* and click submit. 
-- In the next adjustable settings panel all kinds of settings can be adjusted  but for now select "no" and "yes" for subsequently group 1 and 2 and click 'submit'. 
+- In the next adjustable settings panel all kinds of settings can be adjusted  but for now select **no** and **yes** 
+  for 
+  subsequently *group 1* and *2* and click **Submit**. 
 
 <button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1Iit16sf4mQxuUyZ9iyjHnJeeHrP-VAsCw5D-GdT83iI/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2</button>
 

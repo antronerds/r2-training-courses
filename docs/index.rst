@@ -11,6 +11,13 @@ Copyright (c) 2006-2024 Jan Koster
 .. toctree::
    :maxdepth: 2
    :numbered: 3
+   :caption: Butterfly
+
+   Butterfly_interim_course_R2_day1
+
+.. toctree::
+   :maxdepth: 2
+   :numbered: 3
    :caption: Amsterdam Movement Sciences
 
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
