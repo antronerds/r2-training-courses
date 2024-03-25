@@ -17,15 +17,11 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  ---
  The oncogenomics department of the AMC has gathered a richly annotated set of neuroblastoma tumors. To easily explore this, the R2 development team has devised the concept of Datascopes; a convenient view on the data with some pre-built analyses readily available.  
    
- * Go to R2 by clicking on the button below:  
-  
- <form name="accessing_r2" action="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi" enctype="multipart/form-data" target="R2" method="post">
-   <input type="hidden" name="table" value="ps_avgpres_nbadam88_u133p2">
-   <button type="submit" class="course r2submit" >Go to R2</button>
- </form>  
- <br>
+ * Go to R2 <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a>
  
- * Log on to the R2 platform with your credentials that were provided (or ask R2 Team members for a login).  
+ * Log on to the R2 platform with your own credentials, credentials that were provided (or ask R2 Team members 
+   for a login).  If you use your own credentials, make sure that your user account received the upgrade from r2 
+   support.
  * In the left menu click on **Change Data Scope** > **Training** > **Graduate Training Course**
  * If correct, you see 4 colorful tiles in the middle of the screen, one of which reads *Cohort Overview*. If instead you see a box 0 with a button **Go to Graduate Training Course portal**, please click this button. 
  * For a quick impression of the data select the **Cohort Overview**. R2 shows the available samples in this tumor series with its annotation. In the table at the bottom, each row represents one sample with the respective annotation values. 
