@@ -351,14 +351,18 @@ The red arrows depict translocations to other locations in the genome.
    Setting box below the graph. Type **TERT** and click the reporter you want to look at from the pop up and click 
    **Submit**. 
  * Select  **log2-zcore** in the transformation  panel and click **Submit**.
- * A graph with the log2-zscores of the TERT gene is depicted where the TERT activity is elevated in the inss stage 4 group. However, based on this graph the TERT-zscore  may be not very convincing so let's take a look at another Neuroblastoma dataset from another source .
- * In the main screen goto box 2 and select the following dataset, in the grid search for the dataset using **SEQC** in the author field and/or **498** for the number of samples and select **Tumor Neuroblastoma - SEQC - 498 - RPM - seqcnb1**, select 'view a gene' and click next.
- * This set is a rnaseq based expression dataset in contrast to the previous one which was based on an old 
-   affymetrix platform. Perform the **View a gene** analysis with the gene 'TERT.
- * In the analysis type pulldown menu select **gene vs track**,  as track select **inss_stage**, for transformation 
-   the **log2 zscore**, **Box/dot plot (bands) in the graph type section and select **Color by Track** at Color mode
+A graph with the log2-zscores of the TERT gene is depicted where the TERT activity is elevated in the inss stage 4 group. However, based on this graph the TERT-zscore  may be not very convincing so let's take a look at another Neuroblastoma dataset from another source .
+ * In the main screen goto box 2 and select the following dataset, in the grid search for the dataset using **SEQC** 
+   in the author field and/or **498** for the number of samples and select **Tumor Neuroblastoma - SEQC - 498 - RPM - seqcnb1**.
+This set is a rnaseq based expression dataset in contrast to the previous one which was based on an old 
+   affymetrix platform. 
+ * Perform the **View a gene** analysis with the gene **TERT**.
+ * In the Adjustable Settings box underneath teh graph, in the analysis type pulldown, select **gene vs track**, 
+   as Track select **inss_stage**, for transformation 
+   the **log2 zscore**, select **Box/dot plot (bands)** in the graph type section and select **Color by Track** at 
+   Color mode
    (groups). Click **Submit**.
- * This plot is again supporting the finding that the TERT gene is involved in stage 4 neuroblastoma tumors. 
+This plot is again supporting the finding that the TERT gene is involved in stage 4 neuroblastoma tumors. 
 
 To read further on Tert rearrangements in neuroblastoma, you could read the article that was published by our 
 group: [TERT rearrangements article](https://pubmed.ncbi.nlm.nih.gov/26523776/)
@@ -375,11 +379,14 @@ group: [TERT rearrangements article](https://pubmed.ncbi.nlm.nih.gov/26523776/)
   
  Remarks
  ---
- This ends this part of this course. You can continue now with playing around e.g: with dataset fitting your own area of interest you can search for interesting dataset in the main screen box 2. Trying the R2  analysis modules or take a look  
-
+ This ends this part of this course. You can continue now with playing around. E.g.: select a dataset fitting your 
+ own area of interest in box 2 of the main page. Don't forget to exit the datascope if you are done with the course. 
+<br>
  We hope that this course has been helpful. At the end of the workshop, please provide feedback on the course with <a href="https://docs.google.com/forms/d/e/1FAIpQLScy5xoA4btrYfuOOhc5qFKmYkV9_SBv1PQABPgV7eVJY8gk4A/viewform" target="_blank">this form</a>.  
- 
- If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult r2-support@amc.nl
- 
+ <br>
+ If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult 
+ r2-support@amsterdamumc.nl
+ <br>
+ We hope to see you around on the platform!<br>
  The R2 support team.
  
