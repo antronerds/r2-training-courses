@@ -40,7 +40,7 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
 
  The pie charts in the cohort overview allow you to look at the distribution of the annotation values of each available track. If you click on one of the pie slices, this value is used as a filter: both the charts and the table at the bottom now only show the characteristics of the samples with the filtered value. Note that you can scroll down at the right hand side display of piecharts to see more track pie charts. You can also use the dropdown menus to adjust the display.   
  <br>
- * In the right dropdown menu under the smaller pie diagrams, make sure inss is checked.
+ * Under the smaller pie diagrams, make sure **inss** is checked.
  * Hover your mouse over the different slices of the **inss** annotation pie chart (You may need to scroll down). Explore the percentages of the samples for each staging in the current dataset.  
  * With the dropdown menu below the main pie chart, select the 'cg_mycn' annotation. 
  * Filter the overview of the dataset for samples with a mycn amplification by a click on the 'amp' slice in the pie chart.
@@ -101,7 +101,7 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  
    
  * Notice that no mutations recur more than a few times. 
- * Go to the *ALK* gene (optionally use the normal text search key shortcut like ctrl+f)
+ * Go to the *ALK* gene
  
  ---------
    ![](_static/images/R2d2_logo.png)**What type of aberrations does the ALK gene suffer?**
