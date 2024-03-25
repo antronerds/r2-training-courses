@@ -14,6 +14,7 @@ Copyright (c) 2006-2024 Jan Koster
    :caption: Butterfly
 
    Butterfly_interim_course_R2_day1
+   Butterfly_interim_course_R2_day2
 
 .. toctree::
    :maxdepth: 2
