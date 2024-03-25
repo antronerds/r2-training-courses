@@ -684,6 +684,8 @@ can be accessed from the main page in the left set of menu items.
 Resources:<br>
 - Presentation R2 Introduction Workshop Day 1, 25-02-2024 morning session:
   <a href="https://hgserver1.amc.nl/r2/help/workshop/Butterfly_R2IntroductionWorkshop_Basics1_25Mar2024.pdf" target="_blank">Butterfly_R2IntroductionWorkshop_Basics1_25Mar2024.pdf</a>
+- Presentation R2 Introduction Workshop Day 1, 25-02-2024 morning session:
+  <a href="https://hgserver1.amc.nl/r2/help/workshop/Butterfly_R2IntroductionWorkshop_Basics2_25Mar2024.pdf" target="_blank">Butterfly_R2IntroductionWorkshop_Basics2_25Mar2024.pdf</a>
 
 
 
