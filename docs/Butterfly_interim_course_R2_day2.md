@@ -306,15 +306,16 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
   As can be seen by the high number of peaks around the TERT gene there is a hotspot of structural variants in that area. The types of variants are annotated below the stretch on the genome.   
  
  ---------
-   ![](_static/images/R2d2_logo.png)**What do the arrows and colored tracks mean? (Hint: hovering with the mouse provides additional information)**
+   ![](_static/images/R2d2_logo.png)**Check out what the arrows and colored tracks mean? (Hint: hovering with the mouse provides additional information)**
  
  <br>
  <br>
  
  ---------
  
-* The red arrows depict translocations to other locations in the genome. 
-* Hoover over the red triangle to see the information in the info boxes you can also click on them to jump to the linked translocation.
+The red arrows depict translocations to other locations in the genome. 
+* Hover over the red triangle to see the information in the info boxes. You can also click on them to jump to the 
+  linked translocation.
 * In the track section, in the junction_diff pull down menu select N724TL and click redraw.
 * Locate the translocation to chromosome 11 for sample N724TL (Hint: hovering over the arrows gives sample information. Alternatively, you can select the sample annotation of *N724TL* in the dropdown of **Junction_diff** in the setting block **Genomics => Structural Variation**. Don't forget to **redraw** if you choose to display this sample annotation only.) 
 * Click on **the red arrow**.  
