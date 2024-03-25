@@ -110,7 +110,7 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  ---------
  
  
- * Select the **view** link (note: this is separate from the detail link). 
+ * Select the **view** link in front of of one of the ALK mutations (note: this is separate from the detail link). 
  
  In a new tab this mutation is shown in the R2 GenomeBrowser zoomed in on the genome to the base level. All samples are drawn beneath this stretch showing the specific mutations that were found. Annotation of the publicly available COSMIC database, the Catalogue Of Somatic Mutations In Cancer, is shown in the GenomeBrowser as well. COSMIC is the world's largest and most comprehensive resource for exploring the impact of somatic mutations in human cancer.
  
@@ -120,7 +120,8 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  The GenomeBrowser has a tremendous number of parameters that can be set. 
  * Scroll down to the lower half of the page.  
  
- A form shows quite some parameter fields. These provide additional optional annotations and settings for the GenomeBrowser. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data, which is based on methylation and acetylation patterns of the genome. This annotation, however, is only provided on another Human Genome build. 
+ A grey Tracks settings form shows quite some parameter fields. These provide additional optional annotations and settings 
+ for the GenomeBrowser. A useful annotation is provided by the NIH epigenome roadmap that annotates the genome with chromatin modification data, which is based on methylation and acetylation patterns of the genome. This annotation, however, is only provided on another Human Genome build. 
  * In the **Adjustable settings** form change the **GenomeBuild** to **HG19** (note that other builds as well as mouse data is available also). Click **redraw**
  * Several annotations that were available for HG18 are not available for HG19. Find the **Refseq(R2)** option and switch the setting on to obtain gene annotation for this genome build. Click **redraw**. 
  
@@ -132,7 +133,8 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  
  ---------
  
- * If the ALK gene is out of scope, you can jump back to the gene with the help of the text field in the left upper corner **Find gene**: type in the gene name *ALK* and press GO. (don't press enter)
+ * If the ALK gene is out of scope, you can jump back to the gene with the help of the text field in the left upper 
+   corner **Find gene**: type in the gene name *ALK* and press GO (hitting enter won't work).
  
  The button below this text called 'Cleaned up View in R2' brings you to the transcription start site of the ALK gene. Several genome annotations will be switched on or off in that view. If you want, you can try them out yourself first:
  * Make sure our genome build is set to HG19.
@@ -200,9 +202,11 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
    [**Figure 6: Paired end sequencing makes discovery of structural variants possible.**](_static/images/structural_variants_paired_end.png)
  
  These structural variations are best visualized as so called _circosplots_. 
- * To access these circosplots in R2, go to the Graduate Training Course datascope and click the **circos archive** tile.  
+ * To access these circosplots in R2 within this datascope, go back to the **Graduate Training Course portal** 
+   (left upper link) and click the **circos archive** tile.  
  
- An overview of all sequences appears displayed as circos plots. These give an immediate comprehensive view on the state of the genome. 
+ An overview of all sequences appears displayed as circos plots. A circos plot gives an immediate comprehensive 
+ view on the state of the genome of a sample. 
  * Click on one of the circos plots in which you can see many structural variants (many crossing arcs in the circle).  
  
  In a new tab a detailed view of this specific tumor genome is shown. When hovering over the plot the mouse opens a magnifier window.
@@ -249,14 +253,16 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  
  The shredding pattern is known by the term *chromothripsis* (‘shattered chromosome’). The complex recombination pattern of alternating discrete copy numbers that is associated with the phenomenon is hypothesized to occur from a single catastrophic event. In this process, copies of oncogenes can become amplified and tumor suppressor genes can be lost.  
  
- Patients containing such a phenomenon have also been annotated in the neuroblastoma cohort. Within the Circos archive we can also use filters to focus on intersections of the cohort. In the top of the screen select 'chromothripsis' from the 'select a track' dropdown and subsequently click on 'yes' and then 'ok' to apply a filter. Then press redraw to depict only cases with marks of chromothripsis.
+ Patients containing such a phenomenon have also been annotated in the neuroblastoma cohort. Within the Circos archive we can also use filters to focus on intersections of the cohort. 
+ * In the top of the screen select **chromothripsis** from the *Subset track* dropdown and subsequently click on 
+ **yes** and then **ok** to apply a filter. Then press **Update** to depict only cases with marks of chromothripsis.
  
  ![](_static/images/select_track_cg_circos.png "Figure 7: Selection of a cohort intersection via a track")
  
  [**Figure 8: Selection of a cohort intersection via a track.**](_static/images/select_track_cg_circos.png)
  
  ---------
-   ![](_static/images/R2d2_logo.png)**Can you spot a chromosomal pattern in the chromothripsis cases?**
+   ![](_static/images/R2d2_logo.png)**Which chromosome is affected by chromothripsis in multiple samples?**
  
  <br>
  
@@ -265,11 +271,10 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  To see how chromothripsis relates to clinical data we can investigate survival data in R2. 
  
  * From the left menu in the main Graduate Training Course datascope panel select **Survival (Kaplan-Meier/Cox**.
- * Make sure 'Tumor Neuroblastoma (combat) - Versteeg - 122 - MAS5.0(bc) - u133p2' is selected as dataset. 
- * Make sure the option **a categorical track (Kaplan-Meier)** is already (pre)selected. Click **next**.
- * Separate by track is already selected
+ * Select **Tumor Neuroblastoma (combat) - Versteeg - 122 - MAS5.0(bc) - u133p2** as dataset. 
+ * Make sure the option **a categorical track (Kaplan-Meier)** is already (pre)selected. Click **Next**.
  * Select for **Type of Survival** any of the options.
- * Select as **Track** the option: **cg_chromothripsis.** Click **next.**
+ * Separate by track is already selected. Select as *Track* the option: **cg_chromothripsis.** Click **Next.**
  
  ---------
    ![](_static/images/R2d2_logo.png)**How does chromothripsis affect survival?**
