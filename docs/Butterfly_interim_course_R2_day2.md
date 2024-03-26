@@ -1,4 +1,4 @@
-<a id="VAGABOND_interim_course_R2_day2"> </a>
+<a id="Butterfly_interim_course_R2_day2"> </a>
 
 Investigating structural variants
  ===
@@ -17,10 +17,10 @@ The <font style="background-color: rgba(0,0,0,0.22)">**grey buttons**</font> in 
  ---
  The oncogenomics department of the AMC has gathered a richly annotated set of neuroblastoma tumors. To easily explore this, the R2 development team has devised the concept of Datascopes; a convenient view on the data with some pre-built analyses readily available.  
    
- * Go to R2 <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a>
+ * Go to R2 <a href="http://r2.amc.nl" target="_blank">http://r2platform.com</a>
  
- * Log on to the R2 platform with your own credentials, credentials that were provided (or ask R2 Team members 
-   for a login).  If you use your own credentials, make sure that your user account received the upgrade from r2 
+ * Log on to the R2 platform with your own credentials, or with credentials that were provided (or ask R2 Team members 
+   for a login).  If you use your own credentials, make sure that your user account received the upgrade from R2 
    support.
  * In the left menu click on **Change Data Scope** > **Training** > **Graduate Training Course**
  * If correct, you see 4 colorful tiles in the middle of the screen, one of which reads *Cohort Overview*. If instead you see a box 0 with a button **Go to Graduate Training Course portal**, please click this button. 
