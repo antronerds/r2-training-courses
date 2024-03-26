@@ -379,14 +379,15 @@ group: [TERT rearrangements article](https://pubmed.ncbi.nlm.nih.gov/26523776/)
   
  Remarks
  ---
- This ends this part of this course. You can continue now with playing around. E.g.: select a dataset fitting your 
+ This ends this part of this course. You can continue now with playing around. Get started by selecting a dataset 
+ that fits your 
  own area of interest in box 2 of the main page. Don't forget to exit the datascope if you are done with the course. 
-<br>
- We hope that this course has been helpful. At the end of the workshop, please provide feedback on the course with <a href="https://docs.google.com/forms/d/e/1FAIpQLScy5xoA4btrYfuOOhc5qFKmYkV9_SBv1PQABPgV7eVJY8gk4A/viewform" target="_blank">this form</a>.  
+<br><br>
+ At the end of the workshop, please provide feedback on the course with <a href="https://docs.google.com/forms/d/e/1FAIpQLScy5xoA4btrYfuOOhc5qFKmYkV9_SBv1PQABPgV7eVJY8gk4A/viewform" target="_blank">this form</a>.  
  <br>
  If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult 
  r2-support@amsterdamumc.nl
  <br>
- We hope to see you around on the platform!<br>
+ We hope that this course has been helpful and to see you around on the platform!<br>
  The R2 support team.
  
