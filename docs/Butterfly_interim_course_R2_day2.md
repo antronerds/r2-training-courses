@@ -387,7 +387,7 @@ group: [TERT rearrangements article](https://pubmed.ncbi.nlm.nih.gov/26523776/)
  <br>
  If you want to have your genomics data visualized and analyzed using the R2 platform you can always consult 
  r2-support@amsterdamumc.nl
- <br>
- We hope that this course has been helpful and to see you around on the platform!<br>
+ <br><br>
+ We hope that this course has been helpful and to see you around on the platform!<br><br>
  The R2 support team.
  
