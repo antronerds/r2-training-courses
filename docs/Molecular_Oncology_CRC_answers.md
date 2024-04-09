@@ -576,7 +576,7 @@ chances that are linked to the gene shift, todo remove")
 chances that are linked to the gene shift, todo remove**](_static/images/MolGenCRC/temp/KaplanMeier_stage23_relapsefree_impacct_kMeans_result_delete_later.png)
 
 ------
-
+ 
 ![](_static/images/R2d2_logo.png)**What is your conclusion?**
 
 **ToDo: remove answers**  
