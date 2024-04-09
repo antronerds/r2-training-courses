@@ -3,32 +3,43 @@
 Gene expression in Rheumatoid Arthritis
 =======
 
-Introduction
----
-Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by inflammatory cell infiltration, such as T 
-cells, B cells, macrophages and plasma cells. Production of cytokines and proteases lead to chronic inflammation of 
-the synovial tissues and progressive joint disability. RA affects as much as 1% of the worldwide population. 
-Although the exact causes are unknown, decades of research has led to increasingly detailed understanding of 
-multiple disease mechanisms. Different treatments for RA have been proposed, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ). However, a significant proportion of patients do not respond to initial treatment or reach remission. Others experience recurrence or deterioration of their disease.   <br> 
-The complexity of RA has spurred research to dive deeper into the disease mechanisms using genetics, transcriptomics or proteomics. Extensive efforts are made to find more specific diagnostic markers.    
-  
-  Because of difficulties in measuring markers in the synovial fluid of inflamed joints, to a large extent efforts have been focused on analyses of peripheral blood. However, as the article of Lee et al. point out (<a href="https://doi.org/10.1016/j.cyto.2019.154960" target="_blank">Cytokine, March 2020</a>), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.   
- 
- ![](_static/images/RA_KIT/KIT_rheumatoid-arthritis-drug-targets.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)")
-   
-   [**Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets**](_static/images/RA_KIT/KIT_rheumatoid-arthritis-drug-targets.jpg)  
-   
-(Source DOI: 10.1211/PJ.2016.20201090)  <br><br>
 
-In this online course, you can right mouse click on the image titles and choose "Open link in a new tab" in order to 
-see a bigger version of the images and to zoom in. 
 
- Immune response in blood and synovial fluid  
+Immune response in blood and synovial fluid  
 ---
  Today you will use the web-based genomics analysis and visualization platform R2. R2 provides you with a set of 
  bioinformatics tools to investigate publicly available patient data and experimental data.  <br>
  <br>
  Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data and other similar studies have been uploaded into our platform R2. We will make use of these datasets to explore the differences and similarities between peripheral blood and synovial fluid, to study the characteristics of T cells, and to look for possible effects of treatments. 
+
+<details>
+  <summary>Introduction Rheuma</summary>
+
+
+Introduction
+---
+Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by inflammatory cell infiltration, such as T
+cells, B cells, macrophages and plasma cells. Production of cytokines and proteases lead to chronic inflammation of
+the synovial tissues and progressive joint disability. RA affects as much as 1% of the worldwide population.
+Although the exact causes are unknown, decades of research has led to increasingly detailed understanding of
+multiple disease mechanisms. Different treatments for RA have been proposed, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ). However, a significant proportion of patients do not respond to initial treatment or reach remission. Others experience recurrence or deterioration of their disease.   <br>
+The complexity of RA has spurred research to dive deeper into the disease mechanisms using genetics, transcriptomics or proteomics. Extensive efforts are made to find more specific diagnostic markers.
+
+Because of difficulties in measuring markers in the synovial fluid of inflamed joints, to a large extent efforts have been focused on analyses of peripheral blood. However, as the article of Lee et al. point out (<a href="https://doi.org/10.1016/j.cyto.2019.154960" target="_blank">Cytokine, March 2020</a>), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.
+
+![](_static/images/RA_KIT/KIT_rheumatoid-arthritis-drug-targets.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)")
+
+[**Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets**](_static/images/RA_KIT/KIT_rheumatoid-arthritis-drug-targets.jpg)
+
+(Source DOI: 10.1211/PJ.2016.20201090)  <br><br>
+
+In this online course, you can right mouse click on the image titles and choose "Open link in a new tab" in order to
+see a bigger version of the images and to zoom in.
+
+</details>
+
+
+
   
 ##### A first look at T cell gene expression with the R2 platform
 
@@ -110,8 +121,10 @@ These tracks can be used in most of the analyses in R2 to add a layer of complex
  information. Also, tracks enable you to correlate genomics patterns in your data, for instance to different 
  phenotypes or demographic characteristics.  
 
-![](_static/images/RA_KIT/KIT_CD4CD8_TcellAPC.png "Figure 2: CD4 co-receptors are expressed on the surface of helper 
-T cells and CD8 co-receptors are expressed on the surface of cytotoxic T cells. (Source: AssayWise Letters | 9.2)")
+<details>
+  <summary>APC and T-cells</summary>
+
+![](_static/images/RA_KIT/KIT_CD4CD8_TcellAPC.png "Figure 2: CD4 co-receptors are expressed on the surface of helper T cells and CD8 co-receptors are expressed on the surface of cytotoxic T cells. (Source: AssayWise Letters | 9.2)")
 
 [**Figure 2: CD4 co-receptors are expressed on the surface of helper T cells and CD8 co-receptors are expressed on the surface of cytotoxic T cells. (Source: AssayWise Letters | 9.2)**](_static/images/RA_KIT/KIT_CD4CD8_TcellAPC.png)
 
@@ -124,6 +137,8 @@ An antigen presenting cell (APC) binds to the T cells and presents fragments, or
 requires co-receptors in order to establish a stable connection to the APC. For instance, helper T cells express the 
 CD4 co-receptor and cytotoxic T cells express the CD8 co-receptor (gene name: CD8A). Although most T cells express 
 either CD4 or CD8, some express both and some do not express either.
+
+</details>
 
 ---------
 
@@ -175,6 +190,10 @@ Remember that one of the main questions of this study was whether peripheral blo
 synovial fluid that are hard to obtain from patients. Of course, we can't say anything about that yet, but we gained 
 some awareness of the tissue specific expression levels.
 <br><br>
+
+<details>
+  <summary>APC and T-cells</summary>
+
 T cells originate from hematopoietic stem cells in the bone marrow that migrate to the thymus. They undergo several developmental 
 stages to differentiate into mature, naïve T cells. These  exit the thymus and enter the peripheral circulation, where 
 they undergo further maturation and differentiation into effector or memory T cells upon encountering antigens presented by antigen-presenting cells.
@@ -183,12 +202,14 @@ they undergo further maturation and differentiation into effector or memory T ce
   
   ![](_static/images/RA_KIT/KIT_Tcelldifferentiation.png "Figure 3: Differentiation of T-cells, each subtype having 
   its specific role in the immune system.")
-  
-  
-  [**Figure 3: Differentiation of T-cells, each subtype having its specific role in the immune system.**]
-  (_static/images/RA_KIT/KIT_Tcelldifferentiation.png)
+
+[**Figure 3: Differentiation of T-cells, each subtype having its specific role in the immune system.**](_static/images/RA_KIT/KIT_Tcelldifferentiation.png)
+
+
 
 -------
+
+</details>
 
 By developmental stage, CD4+ T cells are classified into four stages: naïve (Tn), stem cell memory (Tscm), central memory (Tcm) and effector memory (Tem), whereas CD8+ T cells are classified into five stages: Tn, Tscm, Tcm, Tem and CD45RA-positive effector memory (Temra).  
     
@@ -246,7 +267,7 @@ R2 presents the Okuzono dataset samples with its available annotation in a table
    
  Effects of treatment
 ---
-    
+
  Now that we have a better understanding of the biology involved in rheumatoid arthritis, let's have a look if we can find any effect of rheumatoid arthritis treatments. 
  
 *Data used:*  
