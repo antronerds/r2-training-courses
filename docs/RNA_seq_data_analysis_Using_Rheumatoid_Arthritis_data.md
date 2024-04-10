@@ -12,8 +12,8 @@ Immune response in blood and synovial fluid
  <br>
  Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data and other similar studies have been uploaded into our platform R2. We will make use of these datasets to explore the differences and similarities between peripheral blood and synovial fluid, to study the characteristics of T cells, and to look for possible effects of treatments. 
 
-<details>
-  <summary>Introduction Rheuma</summary>
+::: collapse Click to expand
+
 
 
 Introduction
@@ -36,7 +36,7 @@ Because of difficulties in measuring markers in the synovial fluid of inflamed j
 In this online course, you can right mouse click on the image titles and choose "Open link in a new tab" in order to
 see a bigger version of the images and to zoom in.
 
-</details>
+:::
 
 
 
