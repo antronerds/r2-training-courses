@@ -12,26 +12,26 @@ Immune response in blood and synovial fluid
  <br>
  Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data and other similar studies have been uploaded into our platform R2. We will make use of these datasets to explore the differences and similarities between peripheral blood and synovial fluid, to study the characteristics of T cells, and to look for possible effects of treatments. 
 
-::: collapse Click me
+.. collapse::  Click me
 
 
 
-Introduction-test
----
-Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by inflammatory cell infiltration, such as T
-cells, B cells, macrophages and plasma cells. Production of cytokines and proteases lead to chronic inflammation of
-the synovial tissues and progressive joint disability. RA affects as much as 1% of the worldwide population.
-Although the exact causes are unknown, decades of research has led to increasingly detailed understanding of
-multiple disease mechanisms. Different treatments for RA have been proposed, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ). However, a significant proportion of patients do not respond to initial treatment or reach remission. Others experience recurrence or deterioration of their disease.   <br>
-The complexity of RA has spurred research to dive deeper into the disease mechanisms using genetics, transcriptomics or proteomics. Extensive efforts are made to find more specific diagnostic markers.
+ Introduction-test
+ ---
+ Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by inflammatory cell infiltration, such as T
+ cells, B cells, macrophages and plasma cells. Production of cytokines and proteases lead to chronic inflammation of
+ the synovial tissues and progressive joint disability. RA affects as much as 1% of the worldwide population.
+ Although the exact causes are unknown, decades of research has led to increasingly detailed understanding of
+ multiple disease mechanisms. Different treatments for RA have been proposed, e.g. infliximab (IFX), methotrexate (MTX), tocilizumab (TCZ). However, a significant proportion of patients do not respond to initial treatment or reach remission. Others experience   recurrence or deterioration of their disease.   <br>
+ The complexity of RA has spurred research to dive deeper into the disease mechanisms using genetics, transcriptomics or proteomics. Extensive efforts are made to find more specific diagnostic markers.
 
-Because of difficulties in measuring markers in the synovial fluid of inflamed joints, to a large extent efforts have been focused on analyses of peripheral blood. However, as the article of Lee et al. point out (<a href="https://doi.org/10.1016/j.cyto.2019.154960" target="_blank">Cytokine, March 2020</a>), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.
+ Because of difficulties in measuring markers in the synovial fluid of inflamed joints, to a large extent efforts have been focused on analyses of peripheral blood. However, as the article of Lee et al. point out (<a href="https://doi.org/10.1016/j.cyto.2019.154960"  target="_blank">Cytokine, March 2020</a>), clinical translation has proven difficult. Lee et al. hypothesize that inflammatory responses in peripheral blood are different from those in the arthritic joint.
 
-![](_static/images/RA_KIT/KIT_rheumatoid-arthritis-drug-targets.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)")
+ ![](_static/images/RA_KIT/KIT_rheumatoid-arthritis-drug-targets.jpg "Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets (Source DOI: 10.1211/PJ.2016.20201090)")
 
-[**Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets**](_static/images/RA_KIT/KIT_rheumatoid-arthritis-drug-targets.jpg)
+ [**Figure 1:  Cell types, cytokines, and chemokine receptors as rheumatoid arthritis drug targets**](_static/images/RA_KIT/KIT_rheumatoid-arthritis-drug-targets.jpg)
 
-(Source DOI: 10.1211/PJ.2016.20201090)  <br><br>
+ (Source DOI: 10.1211/PJ.2016.20201090)  <br><br>
 
 In this online course, you can right mouse click on the image titles and choose "Open link in a new tab" in order to
 see a bigger version of the images and to zoom in.
