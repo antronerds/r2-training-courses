@@ -19,7 +19,7 @@ Immune response in blood and synovial fluid
 <details><summary>click for more info</summary>
 
 Introduction-test
---------
+
 
  Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by inflammatory cell infiltration, such as T
  cells, B cells, macrophages and plasma cells. Production of cytokines and proteases lead to chronic inflammation of
