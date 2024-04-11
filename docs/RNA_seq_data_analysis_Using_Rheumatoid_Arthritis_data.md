@@ -12,12 +12,12 @@ Immune response in blood and synovial fluid
  <br>
  Takeshita and Okuzono et al. (2019) and Lauwerys et al. (2014) collected a large number of samples from clinically well-defined cohorts of patients with RA and age-matched healthy controls (HCs). This data and other similar studies have been uploaded into our platform R2. We will make use of these datasets to explore the differences and similarities between peripheral blood and synovial fluid, to study the characteristics of T cells, and to look for possible effects of treatments. 
 
-.. collapse::  Unfold Introduction
-
 
 
  Introduction-test
- ---
+ --------
+<details><summary>click for more info</summary>
+
  Rheumatoid arthritis (RA) is a common autoimmune disorder characterised by inflammatory cell infiltration, such as T
  cells, B cells, macrophages and plasma cells. Production of cytokines and proteases lead to chronic inflammation of
  the synovial tissues and progressive joint disability. RA affects as much as 1% of the worldwide population.
@@ -36,7 +36,7 @@ Immune response in blood and synovial fluid
 In this online course, you can right mouse click on the image titles and choose "Open link in a new tab" in order to
 see a bigger version of the images and to zoom in.
 
-
+</details>
 
 
 
