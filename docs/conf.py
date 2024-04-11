@@ -2,10 +2,10 @@ import datetime
 
 extensions = []
 # extensions = ["myst_parser"]
-extensions = [
-    'sphinx_toolbox.confval',
-    'sphinx_toolbox.collapse',
-]
+#extensions = [
+#    'sphinx_toolbox.confval',
+#    'sphinx_toolbox.collapse',
+#]
 
 
 
