@@ -2,6 +2,14 @@ import datetime
 
 extensions = []
 # extensions = ["myst_parser"]
+#extensions = [
+#    'sphinx_toolbox.confval',
+#    'sphinx_toolbox.collapse',
+#]
+
+
+
+
 templates_path = ['_templates']
 
 master_doc = 'index'
@@ -63,6 +71,8 @@ texinfo_documents = [
    'Miscellaneous'),
 ]
 
+
+
 from recommonmark.parser import CommonMarkParser
 
 # The suffix of source filenames.
@@ -71,3 +81,4 @@ source_suffix = ['.rst', '.md']
 source_parsers = {
 	'.md': CommonMarkParser,
 }
+
