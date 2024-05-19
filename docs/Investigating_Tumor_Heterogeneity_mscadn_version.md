@@ -62,8 +62,8 @@ For a start we'll investigate established childhood tumor cell lines, including 
 
 
 * Open a (preferably Chrome) browser and go to the R2 platform address: <a href="https://hgserver2.amc.nl" target="_blank">https://hgserver2.amc.nl/</a> and **sign in**. 
-N.B. You could choose the button **Use R2 without an account** under the sign in fields instead, but signing in will give you more options to play with. 
-Also, the main address of R2 is the well tested version at <a href="http://r2.amc.nl" target="_blank">https://hgserver2.amc.nl/</a>, but we will be using the development environment, where the newest functionalities are, kind of like a beta version of R2. 
+<br>N.B. You could choose the button **Use R2 without an account** under the sign in fields instead, but signing in will give you more options to play with. 
+<br>Also, <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl/</a> is the default web address of our platform, but we will be using the development environment today where the newest functionalities get tested by users. 
 
 You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.<br><br>
 In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. We use the dataset that is described above. In this dataset, 86 cell lines derived from 6 different childhood tumor types can be found (ewing sarcoma, medulloblastoma, neuroblastoma, osteosarcoma, acute lymphocytic leukemia and rhabdomyosarcoma). 
