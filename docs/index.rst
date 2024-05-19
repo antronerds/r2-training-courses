@@ -8,12 +8,12 @@ Copyright (c) 2006-2024 Jan Koster
 
 .. rubric:: Table of Contents
 
-.. .. toctree::
-..    :maxdepth: 2
-..    :numbered: 3
-..    :caption: MSCA-DN
-..
-..    MSCADN_interim_course_R2
+. toctree::
+   :maxdepth: 2
+   :numbered: 3
+   :caption: MSCA-DN
+
+   MSCADN_interim_course_R2
 
 .. toctree::
    :maxdepth: 2
