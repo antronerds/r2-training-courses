@@ -68,7 +68,8 @@ Also, the main address of R2 is the well tested version at <a href="http://r2.am
 You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.<br><br>
 In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. We use the dataset that is described above. In this dataset, 86 cell lines derived from 6 different childhood tumor types can be found (ewing sarcoma, medulloblastoma, neuroblastoma, osteosarcoma, acute lymphocytic leukemia and rhabdomyosarcoma). 
 * In order to find the dataset in R2, click on the text of the currently selected dataset in box 2. A grid pops up in which you can find all the datasets of R2 that are available to you. 
-* Each row is a dataset and each column contains the different searchable characteristics of a dataset. Under the header **Tissue/Tumor** type the keyword *Childhood Cancer* in the white textfield and see if the dataset with 86 samples shows up. Then click the **Select** button in front of the row to select this dataset. 
+* Each row is a dataset and each column contains the different searchable characteristics of a dataset. Under the header **Tissue/Tumor** type the keyword *Childhood Cancer* in the white textfield and see if the dataset with 86 samples shows up. 
+* Click anywhere on the dataset row in order to select the dataset and click the blue button **Confirm selection**. 
 
 ---------
 
