@@ -13,7 +13,7 @@ Copyright (c) 2006-2024 Jan Koster
 ..    :numbered: 3
 ..    :caption: MSCA-DN
 ..
-..    Investigating_Tumor_Heterogeneity_mscadn_version
+..    MSCADN_interim_course_R2
 
 .. toctree::
    :maxdepth: 2
