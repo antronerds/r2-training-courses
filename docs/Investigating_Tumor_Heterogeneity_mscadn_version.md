@@ -56,12 +56,12 @@ For a start we'll investigate established childhood tumor cell lines, including 
 ##### Expression of key genes
 * The button below brings you to the form in which you can submit your answers for section 1.2. 
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1ZGSmm3oMSJKHBHosCJsDUuGbQDhUX-_JSesBLizcDwQ/','_blank');" type="button">Open the form for section 1.2</button> 
+<button class="course googleform" onclick="window.open('https://forms.gle/jty5bDrwvWBMDNLK9','_blank');" type="button">Open the form for section 1.2</button> 
 <br>
 <br>
 
 
-* Open a Chrome browser and go to the R2 platform address: <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a> and choose the button **Use R2 without an account** under the sign in fields. 
+* Open a (preferably Chrome) browser and go to the R2 platform address: <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a> and choose the button **Use R2 without an account** under the sign in fields. 
 
 You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.<br><br>
 In this case we're first going to see if and how the mRNA expression of several genes changes through a single dataset. We use the dataset that is described above. In this dataset, 86 cell lines derived from 6 different childhood tumor types can be found (ewing sarcoma, medulloblastoma, neuroblastoma, osteosarcoma, acute lymphocytic leukemia and rhabdomyosarcoma). 
