@@ -10,23 +10,28 @@ This resource is located online at http://r2-training-courses.readthedocs.io
 Introduction
 ------------
 
-Cancer is a very complex disease. Much more complicated than originally anticipated when the first mutations were found to be causal for specific cancers. For instance, in colorectal cancer a well-defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model).
-
-  ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 1: Mutation paths during cancer progression.")	
-
-  [**Figure 1: Mutation paths during cancer progression**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
 
 
 ##### Neuroblastoma 
 
-Neuroblastoma is a childhood tumor of the peripheral sympathetic system. Primary tumors can arise in the adrenals and most patients are diagnosed between the age of 0 to 4 years.<br>
+Neuroblastoma is a childhood tumor of the peripheral sympathetic system. Primary tumors typically occur in 
+ the adrenal glands, which are located on top of the kidneys, but they can also manifest in other areas of the body. Most patients are diagnosed between the age of 0 to 4 years.<br>
 Neuroblastoma patients are classified by The International Neuroblastoma Staging System, the INSS. The increment in stages does not reflect progression of disease, as is the case for colon cancer, but represents different characteristics of the disease. Stage 1, 2 and 3 neuroblastomas have a very good prognosis. Stage 4 neuroblastomas usually go into complete remission upon therapy but often relapse as therapy-resistant disease. About 40% of stage 4 neuroblastoma have an amplification of the MYCN oncogene. This implies that instead of two DNA copies, each neuroblastoma cell has 30 to 100 copies of the MYCN gene. In addition to stage 1, 2, 3, and 4 neuroblastomas, there is the unusual stage 4S neuroblastoma, which is metastasized but goes into spontaneous regression. Over the last twenty years, the outcome for stage 4 neuroblastoma patients has not substantially improved.<br>
 <br>
-  ![](_static/images/Vagabond/Vagabond_lowvshighstages_neuroblastoma.png "Figure 2: Low stage versus high stage neuroblastoma")	
+  ![](_static/images/Vagabond/Vagabond_lowvshighstages_neuroblastoma.png "Figure 1: Low stage versus high stage neuroblastoma")	
 
-  [**Figure 2: Low stage versus high stage neuroblastoma**](_static/images/Vagabond/Vagabond_lowvshighstages_neuroblastoma.png)
+  [**Figure 1: Low stage versus high stage neuroblastoma**](_static/images/Vagabond/Vagabond_lowvshighstages_neuroblastoma.png)
 
-Extensive research into mutation mechanisms in neuroblastoma has been done (also in the AMC Oncogenomics group). Unfortunately, such a mechanism has not been found for this often deadly childhood tumor.
+
+Several cancer types, such as pancreatic cancer and colon cancer, follow a multi-step process involving a series of genetic alterations, similar to Vogelstein’s multi-step genetic mutation framework as whon below. 
+These mutations accumulate over time and lead to the transformation of normal cells into cancerous cells. show progressive mutations were found to be causal for specific cancers. For instance, in colorectal cancer a well-defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model, shown below for pancreatic cancer).
+
+![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 2: Mutation paths during cancer progression.")
+
+[**Figure 2: Mutation paths during cancer progression**](_static/images/TumorHeterogeneity_CancerProgression.jpg)
+
+Extensive research into possible mutation mechanisms in neuroblastoma has been done (also in the AMC Oncogenomics group). 
+Unfortunately, such a mechanism has not been found for this often deadly childhood tumor.
 
 
 ##### Finding differences and biological processes
