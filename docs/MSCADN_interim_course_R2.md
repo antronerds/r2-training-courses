@@ -205,8 +205,9 @@ In the next screen a set of tables is generated; one table for negative and one 
 ---------
 
 - All identified genes in the table are linked to a detailed view. Choose a gene and first hover your mouse over the 
-  **magnify glass symbols** in the View column and then click on the icon. Do this with one gene for both tables to get an impression of the graphs for (inverse) correlated with the MYCN gene. While leaving the tab open with the tables of (inverse)correlating genes. 
-You can close the detailed plot tab(s) again after you have looked at the graph(s).
+  **magnify glass symbols** in the View column and then click on the icon. Do this with one gene for both tables to get an impression of the graphs for (inverse) correlated with the MYCN gene. 
+<br>
+While leaving the tab open with the tables of (inverse)correlating genes, you can close the detailed plot tab(s) again after you have looked at the graph(s).
 <br><br>
 Inspecting genes one by one quickly becomes a dull task. We can also analyze the complete results with several of the 
 provided analysis options on the right. Let's have a look at the chromosomal locations of our identified genes for this 
@@ -366,20 +367,21 @@ If you are 'logged in' with an account in R2, then you can also create personal 
 In the next screen all the individual samples are listed each assiged to the "low" or "high" group. At the bottom you can store the two groups based on the Kaplan Meier. In this example we will store this track as Temporary (24hrs) but you can also store this track permanent.<br>
 - Click on the **Build set** button. Now the track is stored for further usage.
 
-Let's find genes that differ between the two groups that we just found with the Kaplan Scan:
-- Go back to the main page. Select the **Differential Expression between two groups** 
+Let's find genes that differ between the two groups that we just found with the Kaplan Scan:<br>
+
+- Go back to the main page. Select the **Differential Expression between two groups**.   
 - On the next page select the grouping variable that you just stored from the Kaplan Meier Scanner. If you can't 
   remember the name but didn't change the naming you will find the track underneath the header *temp_24hrs* and it 
   will be called **kaplanscan-mycn (2cat)** and click submit.  
 - In next the screen select the **low** and **high** grouping variables for *Group 1* and *Group 2* and click **Submit**.<br>
 Now a list of differentially expressed genes has been found based on the Kaplan Meier most prognostic MYCN values cut-off.<br><br>
-Again, this result can be taken for further analysis:<br>
-- On the right side of the page, click on **Plot all genes (xy, volcano etc)
-- Change **plot type** to *Vulcano plot*
+<br>Again, this result can be taken for further analysis:<br>
+- On the right side of the page, click on **Plot all genes (xy, volcano etc) 
+- Change **plot type** to *Vulcano plot* 
 - Hover over a few of the dots with the highest -log10 pvalue and the highest and lowest logfold. <br><br>
-- Notice how, if you click on the dots with the left mouse button, they get marked, and a menu on the left appears with which you can change their colors. 
-- Notice how, if you click on the dots with the right mouse button, you get the detailed gene expression values plot, grouped by the chosen track.
-- Go back to the result page of the "Differential Expression between two groups" analysis and hit the button **Store result as custom gene set**.
+- Notice how, if you click on the dots with the left mouse button, they get marked, and a menu on the left appears with which you can change their colors.  
+- Notice how, if you click on the dots with the right mouse button, you get the detailed gene expression values plot, grouped by the chosen track.  
+- Go back to the result page of the "Differential Expression between two groups" analysis and hit the button **Store result as custom gene set**.  
 - Type in a name, e.g. **kaplanscan_mycn_deg** and click **Save gene set**.<br><br>
 
 Tracks and gene sets that are generated as a result of an analysis can be stored and used throughout the many R2-analysis modules in R2.
