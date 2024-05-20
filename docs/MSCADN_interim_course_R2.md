@@ -137,14 +137,14 @@ Additional options to get familiar with settings in R2:
 - Also try out the *Graphics* options. For instance, try **Graph type** *Box* and **Add Scatter** *True* to see the data points in the box plots. 
 You can use **Color mode (groups)** *Color by Track* to add the color of the track categories to your boxes. Don't forget to **Submit**.
 - Lastly, when you click on the gear icon in the left top corner of the graph, you can either save your plot, copy it to clipboard. You can also  
-use the **General** tab to find options to adapt the graphic parameters such as font size, axis-with etc. Most of these options are directly responsive, so you don't have to hit a Submit button. IF you don't see changes, or 
+use the **General** tab to find options to adapt the graphic parameters such as font size, axis-with etc. Most of these options are directly responsive, so you don't have to hit a Submit button. If you don't see changes, or 
 the plot needs a bit of space reorganisation, you can hit the **redraw plot** button. Feel free to try them.  
 <br>
 
 
 <br>
-Now we will use links on this page that lead to additional analyses. 
-* To learn basic properties of the gene, look at the one line table above the Adjustable Settings box. You can click on the link in the ‘Gene ID’ column. This brings us to the National Center for Bioinformatics database in Bethesda, USA.
+Now we will use links on this page that lead to additional analyses.<br>
+- To learn basic properties of the gene, look at the one line table above the Adjustable Settings box. You can click on the link in the ‘Gene ID’ column. This brings us to the National Center for Bioinformatics database in Bethesda, USA.
 <br><br>
 
 ---------
@@ -190,7 +190,7 @@ regarded as "undrugable". A way to identify downstream targets of MYCN which may
 
 - Go back to the main page using the link **Main** in the upper left corner of the page.
 - In the main menu select in box 3 **Find Correlated Genes with a single Gene** and click next.  
-- Provide the MYCN gene in the *Search by Gene* field and make sure to click on the reporter in the dropdown. 
+- Provide the **MYCN** gene in the *Search by Gene* field and make sure to click on the reporter in the dropdown. 
 - In the 'Corr. p <= cut-off' field , change <span style="color: red">**0.05 to 0.01**</span> (0,01 if your 
   Windows system is set the Dutch) and click Submit.
 In the next screen a set of tables is generated; one table for negative and one for positive correlating genes. 
@@ -202,14 +202,10 @@ In the next screen a set of tables is generated; one table for negative and one 
 
 ---------
 
-- All identified genes in the table are linked to a detailed view. First hover your mouse over and then click on the 
-  **magnify glass symbols** in the View 
-  column 
-  for both tables and generate a graph with a gene which is (inverse) correlated with the MYCN gene to get an 
-  impression. While leaving the tab open with the tables of (inverse)correlating genes, you can close thdetailed plot  
-  tab(s) again after you have looked at the graph(s).
-
-
+- All identified genes in the table are linked to a detailed view. Choose a gene and first hover your mouse over the 
+  **magnify glass symbols** in the View column and then click on the icon. Do this with one gene for both tables to get an impression of the graphs for (inverse) correlated with the MYCN gene. While leaving the tab open with the tables of (inverse)correlating genes. 
+You can close the detailed plot tab(s) again after you have looked at the graph(s).
+<br><br>
 Inspecting genes one by one quickly becomes a dull task. We can also analyze the complete results with several of the 
 provided analysis options on the right. Let's have a look at the chromosomal locations of our identified genes for this 
 section. For this type of question, R2 has the 'Chromosome Map'. 
@@ -218,7 +214,7 @@ section. For this type of question, R2 has the 'Chromosome Map'.
   located on chromosome 2, did you expect to see the result you obtained (which chromosome has the most significant p-value)?
 
 - One of the nice features in R2, is that you can easily explore results further. Go back to the correlation analysis page and scroll to the bottom. Here you can make adaptations to the analysis. 
-- To gain more insight in what might be going on, in the adjustable settings menu,  change the correlation direction to only **negative** and click submit. Perform the chromosome map analysis again. 
+- To gain more insight in what might be going on, in the adjustable settings menu of the correlation analysis result page, change the correlation direction to only **negative** and click submit. Perform the chromosome map analysis again. 
 ---------
 
 ![](_static/images/R2d2_logo.png) **Where are overrepresented genes primarily located with respect to their chromosome location?**
@@ -272,16 +268,15 @@ are considered as promising cancer biomarkers.
 
 ---------
 
-![](_static/images/R2d2_logo.png) **Can you find the function of the MCM2-7 complex in the picture? For which group of our analysis are these genes upregulated**
+![](_static/images/R2d2_logo.png) **Can you find the function of the MCM2-7 complex in the picture? For which group of our analysis are these genes upregulated? (Look at the color coding on top of the table)**
 <br><br>
 
 ---------
 
-- Also try the other <span style="color: deepskyblue">**blue H**</span>. The genes as well as the samples are 
-  ordered by an unsupervised, hierarchical clustering algorithm. Look at the 
-  high vs low expression 
-  groups, and their values of the inss and mycn_amp 
-  annotation above the graph.
+- Also try the other <span style="color: deepskyblue">**blue H**</span>. The genes of the KEGG pathway that you clicked on
+are shown in a heatmap on the vertical axis. The samples of the dataset or on the horizontal axis and their expression values are shown in  colors in the cells.<br>
+The genes as well as the samples are ordered by an unsupervised, hierarchical clustering algorithm based on their expression values for this gene set. For additional information, R2 shows the available annotation 
+above the heatmap. Look at the high vs low expression groups, and their values of the inss and mycn_amp annotation above the graph.
 
 
 
