@@ -281,7 +281,7 @@ above the heatmap. Look at the high vs low expression groups, and their values o
 
 
 ### Using annotation and the Kaplan Meier curve
-We have seen that annoation tracks in R2 can be used to group the samples in a dataset for comparative analysis of 
+We have seen that annotation tracks in R2 can be used to group the samples in a dataset for comparative analysis of 
 gene expression. Another valuable use of tracks is to evaluate their prognostic value with a Kaplan Meier curve.
 We will now take a look at the above mentioned dataset that consists of 88 human neuroblastoma samples. <br>
 This dataset is annotated for a number of clinical and molecular parameters. We will analyze the prognostic value of 
@@ -364,18 +364,27 @@ If you are 'logged in' with an account in R2, then you can also create personal 
 In the next screen all the individual samples are listed each assiged to the "low" or "high" group. At the bottom you can store the two groups based on the Kaplan Meier. In this example we will store this track as Temporary (24hrs) but you can also store this track permanent. 
 
 - Click on the **Build set** button. Now the track is stored for further usage.
-
-<br><br>
+<br>
+Let's find genes that differ between the two groups that we just found with the Kaplan Scan:
 - Go back to the main page. Select the **Differential Expression between two groups** 
 - On the next page select the grouping variable that you just stored from the Kaplan Meier Scanner. If you can't 
   remember the name but didn't change the naming you will find the track underneath the header *temp_24hrs* and it 
   will be called **kaplanscan-mycn (2cat)** and click submit.  
-- In next the screen select the low and high grouping variables for Group 1 and Group 2 and click submit
-Now a list of differentially expressed genes have been found based on the Kaplan Meier most prognostic MYCN values cut-off.  
-<br><br>
-Tracks that are generated as a result of an analysis can be stored and used throughout the many R2-analysis modules in R2.
+- In next the screen select the **low** and **high** grouping variables for *Group 1* and *Group 2* and click **Submit**.<br>
+Now a list of differentially expressed genes has been found based on the Kaplan Meier most prognostic MYCN values cut-off.<br><br>
+Again, this result can be taken for further analysis:<br>
+- On the right side of the page, click on **Plot all genes (xy, volcano etc)
+- Change **plot type** to *Vulcano plot*
+- Hover over a few of the dots with the highest -log10 pvalue and the highest and lowest logfold. <br><br>
+- Notice how, if you click on the dots with the left mouse button, they get marked, and a menu on the left appears with which you can change their colors. 
+- Notice how, if you click on the dots with the right mouse button, you get the detailed gene expression values plot, grouped by the chosen track.
+- Go back to the result page of the "Differential Expression between two groups" analysis and hit the button **Store result as custom gene set**.
+- Type in a name, e.g. **kaplanscan_mycn_deg** and click **Save gene set**.<br><br>
 
-
+Tracks and gene sets that are generated as a result of an analysis can be stored and used throughout the many R2-analysis modules in R2.
+You can see in them in overview and edit them in User Options:
+- On the main page, go to **User Options** from the menu on the left, and choose **Custom gene sets**. The gene set that you just made, should be visible under *_TEMPORRARY*.
+- Go to **User Options** again and choose **Tracks** and then **Manage Temp Tracks**. Since tracks are dataset dependent, you choose te dataset that we have been working with, and click **Next**. You should find the kaplanscan_mycn track listed. 
 
 Different expression patterns between subgroups and the underlying biology
 -------------------------------------------------
