@@ -144,7 +144,9 @@ the plot needs a bit of space reorganisation, you can hit the **redraw plot** bu
 
 <br>
 Now we will use links on this page that lead to additional analyses.<br>
-- To learn basic properties of the gene, look at the one line table above the Adjustable Settings box. You can click on the link in the ‘Gene ID’ column. This brings us to the National Center for Bioinformatics database in Bethesda, USA.
+
+- To learn basic properties of the gene, look at the one line table above the Adjustable Settings box. 
+- Click on the link in the ‘Gene ID’ column. This brings us to the National Center for Bioinformatics database in Bethesda, USA.
 <br><br>
 
 ---------
@@ -361,10 +363,9 @@ If you are 'logged in' with an account in R2, then you can also create personal 
 - Another approach to find possible regulating genes is to use the groups based on the mycn expression cut-off value 
   for further analysis. Below the Kaplan Meier graph, click on the "store as track"  button.<br>
 
-In the next screen all the individual samples are listed each assiged to the "low" or "high" group. At the bottom you can store the two groups based on the Kaplan Meier. In this example we will store this track as Temporary (24hrs) but you can also store this track permanent. 
-
+In the next screen all the individual samples are listed each assiged to the "low" or "high" group. At the bottom you can store the two groups based on the Kaplan Meier. In this example we will store this track as Temporary (24hrs) but you can also store this track permanent.<br>
 - Click on the **Build set** button. Now the track is stored for further usage.
-<br>
+
 Let's find genes that differ between the two groups that we just found with the Kaplan Scan:
 - Go back to the main page. Select the **Differential Expression between two groups** 
 - On the next page select the grouping variable that you just stored from the Kaplan Meier Scanner. If you can't 
