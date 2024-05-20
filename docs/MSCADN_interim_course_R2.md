@@ -23,8 +23,8 @@ Neuroblastoma patients are classified by The International Neuroblastoma Staging
   [**Figure 1: Low stage versus high stage neuroblastoma**](_static/images/Vagabond/Vagabond_lowvshighstages_neuroblastoma.png)
 
 
-Several cancer types, such as pancreatic cancer and colon cancer, follow a multi-step process involving a series of genetic alterations, similar to Vogelstein’s multi-step genetic mutation framework as whon below. 
-These mutations accumulate over time and lead to the transformation of normal cells into cancerous cells. show progressive mutations were found to be causal for specific cancers. For instance, in colorectal cancer a well-defined path of subsequently gained mutations leads to more aggressive tumorigenic cell types (the Vogelstein model, shown below for pancreatic cancer).
+Several cancer types, such as pancreatic cancer and colon cancer, follow a multi-step process involving a series of genetic alterations, similar to Vogelstein’s multi-step genetic mutation framework as shown below. 
+These mutations accumulate over time and lead to the transformation of normal cells into cancerous cells. 
 
 ![](_static/images/TumorHeterogeneity_CancerProgression.jpg "Figure 2: Mutation paths during cancer progression.")
 
