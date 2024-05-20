@@ -37,7 +37,7 @@ Unfortunately, such a mechanism has not been found for this often deadly childho
 ##### Finding differences and biological processes
 
 One of the technologies that can be used to study a disease or biological process is gene expression profiling. With this high throughput technology, we determine the mRNA expression of nearly all genes known in a single experiment.<br>
-On this first day of the course, we will look for different subgroups in our data, find genes that make a difference and find cellular pathways that are activated in neuroblastoma patients with an unfavorable prognosis.<br>
+We will look for different subgroups in our data, find genes that make a difference and find cellular pathways that are activated in neuroblastoma patients with an unfavorable prognosis.<br>
 <br>
 
 ##### Research questions
@@ -48,8 +48,9 @@ During this practical course, we will use the R2 bioinformatics platform to stud
 
 ##### Go to the R2 platform
 
-* Go to <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a>
-* Optionally login with your R2 credentials.   
+* Go to our development environment <a href="https://hgserver2.amc.nl/" target="_blank">https://hgserver2.amc.nl/</a>, such that you get the newest functionalities.
+  N.B. Our main and tested environment is <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a>.
+* Login with your R2 credentials.   
 
 You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
 <br><br>
@@ -110,7 +111,7 @@ The scatter plot in the central diagram shows the mRNA expression values of MYCN
 In R2 the samples of a dataset can be annotated with meta-information, e.g. clinical data or molecular biology
   parameters. Each group of annotated data is called a “Track” in R2. These tracks can be informative / useful for a large variety of additional analysis and visualization functions. To name a few, tracks can be used to filter datasets, to compare groups of samples, to color scatter plots of samples with meta information, or to correlate genomics patterns in your data to e.g. different phenotypes or demographic characteristics.
   
-- Directly underneath the plot the tracks of this dataset are shown with their values color coded. You can see the tracks for e.g. agegroup, INSS stage and MYCN amp(lification). Hover with your mouse over the different blocks.
+- Directly underneath the plot the tracks of this dataset are shown with their color coded values. You can see the tracks for e.g. agegroup, INSS stage and MYCN amp(lification). Hover with your mouse over the different blocks.
 
 The track mycn_amp shows which samples have MYCN amplification.
 
@@ -119,24 +120,28 @@ The track mycn_amp shows which samples have MYCN amplification.
   ![](_static/images/R2d2_logo.png)**What is the relation between the track MYCN amplification and MYCN expression?**
 <br><br>
 
+![](_static/images/R2d2_logo.png)**What do you notice about inss staging versus mycn amplification when you look at
+the annotation underneath the graph?**
+<br><br>
+
 ---------
 
-We can show the relation more clearly by grouping the tumors in the graph according to a property in a track. Go to the Adjustable Settings box underneath the plot. At the top of that box, you can adjust the **Analysis type** with a dropdown. 
+We can show such relationships more clearly by grouping the tumors in the graph according to a property in a track. Go to the Adjustable Settings box underneath the plot. At the top of that box, you can adjust the **Analysis type** with a dropdown. 
 - Change this setting from single gene to *gene vs track*.
 - In the Adjustable Settings box you now have to choose a **Track** by which you want to separate the samples. In 
   the drop down menu, select *mycn_amp (2cat)*. And click **Submit**. Check the plot.
-- Try it out with a different track: select *alive*(2 cat) and click **Submit**. 
-- In this view, the samples are not ordered by their MYCN expression value by default. If you would want to adjust this, you could use the **Extra Graph Option** and choose the value *Track and Gene sort*. Always click **Submit** to see the results of adaptations in the settings.   
-- Click on the + sign in the *More settings* sections to unfold a new menu which enables the user to adapt the graphic parameters such as font size, axis-with etc. Feel free to try them.  
+- In this view, the samples are not ordered by their MYCN expression value by default. If you would want to adjust this, you could use the **Extra Graph Option** and choose the value *Track and Gene sort*. Always click **Submit** to see the results of adaptations in the settings.
+<br><Br>
+Additional options to get familiar with settings in R2:
+- Try it out with a different track: select **Track** *inss*(2 cat) and click **Submit**. 
+- Also try out the *Graphics* options. For instance, try **Graph type** *Box* and **Add Scatter** *True* to see the data points in the box plots. 
+You can use **Color mode (groups)** *Color by Track* to add the color of the track categories to your boxes. Don't forget to **Submit**.
+- Lastly, when you click on the gear icon in the left top corner of the graph, you can either save your plot, copy it to clipboard. You can also  
+use the **General** tab to find options to adapt the graphic parameters such as font size, axis-with etc. Most of these options are directly responsive, so you don't have to hit a Submit button. IF you don't see changes, or 
+the plot needs a bit of space reorganisation, you can hit the **redraw plot** button. Feel free to try them.  
 <br>
 
----------
 
- ![](_static/images/R2d2_logo.png)**What do you notice about inss staging versus mycn amplification when you look at 
- the annotation underneath the graph?**
- <br><br>
-
----------
 <br>
 Now we will use links on this page that lead to additional analyses. 
 * To learn basic properties of the gene, look at the one line table above the Adjustable Settings box. You can click on the link in the ‘Gene ID’ column. This brings us to the National Center for Bioinformatics database in Bethesda, USA.
