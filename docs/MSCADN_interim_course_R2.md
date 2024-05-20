@@ -276,10 +276,20 @@ are considered as promising cancer biomarkers.
 
 ---------
 
-- Also try the other <span style="color: deepskyblue">**blue H**</span>. The genes of the KEGG pathway that you clicked on
-are shown in a heatmap on the vertical axis. The samples of the dataset or on the horizontal axis and their expression values are shown in  colors in the cells.<br>
-The genes as well as the samples are ordered by an unsupervised, hierarchical clustering algorithm based on their expression values for this gene set. For additional information, R2 shows the available annotation 
-above the heatmap. Look at the high vs low expression groups, and their values of the inss and mycn_amp annotation above the graph.
+- Also try the other <span style="color: deepskyblue">**blue H**</span>. 
+
+
+The heatmap visualization produces a grid in which the samples are placed horizontally, and the genes from the KEGG gene set that you clicked on are placed vertically.
+One little colored square represents the expression value (transformed into a z-score) of the respective sample for the respective gene. A high z-score is here colored in red, a low z-score in blue, as you can see from the color bar underneath the heatmap.
+This way we can see which samples show relative low expression of the gene and which ones a relative high expression of the gene.  
+You can see from the colorscheme which samples show relative low expression of the gene and which ones a relative high expression of the gene.
+You can also see that samples group together that show similar expression for certain genes.
+A hierarchical clustering algorithm looks at the z-score profiles of the samples and calculates which samples show similar profiles.
+The heatmap is reordered, such that the samples that show similar expression profiles cluster together and the ones that show different expression are positioned further away from each other.
+The same holds true for the genes. The clustering algorithm shows the genes together that show similar behavior in the cells.
+
+- Look at the high vs low expression groups, and their values of the inss and mycn_amp annotation above the graph.
+See if the clusters that you find in the heatmap correspond to these tracks. 
 
 
 
@@ -381,12 +391,13 @@ Now a list of differentially expressed genes has been found based on the Kaplan 
 - Hover over a few of the dots with the highest -log10 pvalue and the highest and lowest logfold. <br><br>
 - Notice how, if you click on the dots with the left mouse button, they get marked, and a menu on the left appears with which you can change their colors.  
 - Notice how, if you click on the dots with the right mouse button, you get the detailed gene expression values plot, grouped by the chosen track.  
-- Go back to the result page of the "Differential Expression between two groups" analysis and hit the button **Store result as custom gene set**.  
+- Go back to the result page of the "Differential Expression between two groups" analysis and in the Adjustable settings menu set **Max number of results** to 100 to get the top 100 differing genes.
+- After the new result list has come in, hit the button **Store result as custom gene set**.  
 - Type in a name, e.g. **kaplanscan_mycn_deg** and click **Save gene set**.<br><br>
 
 Tracks and gene sets that are generated as a result of an analysis can be stored and used throughout the many R2-analysis modules in R2.
 You can see in them in overview and edit them in User Options:
-- On the main page, go to **User Options** from the menu on the left, and choose **Custom gene sets**. The gene set that you just made, should be visible under *_TEMPORRARY*.
+- On the main page, go to **User Options** from the menu on the left, and choose **Custom gene sets**. The gene set that you just made, should be visible under *_TEMPORARY*.
 - Go to **User Options** again and choose **Tracks** and then **Manage Temp Tracks**. Since tracks are dataset dependent, you choose te dataset that we have been working with, and click **Next**. You should find the kaplanscan_mycn track listed. 
 
 Different expression patterns between subgroups and the underlying biology
@@ -460,7 +471,7 @@ For this analysis we will use one of the analysis tools of R2: Toplister. The to
 
 * On the main page, click in box 2 on the selected dataset. The dataset grid pops up, showing all the datasets that are available to you within the platform. Let's use the headers of the columns to filter for the dataset that we need in the next section. <br>
 * In the textfield of column **Author** type *Versteeg* and in the column of number of samples **N** type 8.
-* Click on the correct dataset. Optionally read the dataset details in teh information box underneath the grid
+* Click on the correct dataset. Optionally read the dataset details in the information box underneath the grid
 * Select the dataset for further analysis by a click on the blue button **Confirm selection** 
 * Confirm that in box 2 the dataset '_Mixed Neuroblastoma (MES-ADRN) - Versteeg - 8 - MAS5.0 - u133p2_' is selected, containing 6 recently patient derived cell lines (2 per patient) plus the 2 classical Neuroblastoma cell lines.
  <br>
@@ -487,10 +498,8 @@ For this analysis we will use one of the analysis tools of R2: Toplister. The to
 On the right side of the page you can find several buttons that allow you to perform further analyses with the list of genes that you just obtained with Toplister. 
  - Click on **Heatmap(zscore)**
 
-Here you can choose to perform an additional analysis. The heatmap visualization produces a grid in which the samples are placed horizontally, and the genes from the Toplister list are placed vertically. One little colored square represents the expression value (transformed into a z-score) of the respective sample for the respective gene. A high z-score is here colored in red, a low z-score in blue, as you can see from the color bar underneath the heatmap. 
-This way we can see which samples show relative low expression of the gene and which ones a relative high expression of the gene.  
-
-You can also see that samples group together that show similar expression for certain genes. A hierarchical clustering algorithm looks at the z-score profiles of the samples and calculates which samples show similar profiles. The heatmap is reordered, such that the samples that show similar expression profiles cluster together and the ones that show different expression are positioned further away from each other. The same holds true for the genes. The clustering algorithm shows the genes together that show similar behavior in the cells.  
+The 100 genes of the Toplister result list are shown on teh vertical axis, the samples on the horizontal axis.
+The unsupervised clustering algorithm reordered the samples and the genes again according to their z-score values. 
 
 ---------
 
@@ -592,7 +601,7 @@ In R2 there are many more sets of genes that have been found to be implemented i
 
 * Go back to the result page with the differentially expressed genes. 
 * Select the **Gene set analysis** option from the right menu
-* Select the *Broad 2020 09 h hallmark* as Geneset and click **Next**
+* Select the *Custom collection* and then for **Gene set** *Broad 2020 09 h hallmark*, **Confirm selection** and click **Next**
 <br><br>
 
 ---------
@@ -656,15 +665,15 @@ You should now see an XY plot where the signature values are used to position th
 
 The resulting graph is a very insightful representation that summarizes the 800 genes that we were looking at in the previous heatmap.
 
-Within this dataset, also the 4 pairs are represented from the earlier analyses. We can make these stand out a bit by drawing lines between the samples from every pair. For this, R2 has sample_paths, which are comma separated samples that will be connected by a line. These can have a thickness, and a color associated : separated. A new line can be started by using a ; .
+Within this dataset, also the 4 pairs are represented from the earlier analyses. We can make these stand out a bit by drawing lines between the samples from every pair. For this, R2 has sample_paths, which are comma separated samples that will be connected by a line. These can have a thickness, and a color associated, separated by a _:_. A new line can be started by using a *;* .
 
-- within the sample paths paste **gsm2413241,gsm2413246:#eeeeee;gsm2413239,gsm2413243:#eeeeee;gsm2413242,
+- within the *Sample paths* field paste **gsm2413241,gsm2413246:#eeeeee;gsm2413239,gsm2413243:#eeeeee;gsm2413242,
   gsm2413245:#eeeeee;gsm2413240,gsm2413244:#eeeeee;** and press Submit. 
 - We can also make the samples stand out a bit better by marking them using the 'samples to mark'. Paste the 
   following into this field **gsm2413241,gsm2413246,gsm2413239,gsm2413243,gsm2413242,gsm2413245,gsm2413240,
   gsm2413244:#222222;** and press Submit.
 
-We have now seen the very basic usage of signature scores. R2 has many more options, that you can explore by yourself if you want.
+We have now seen the very basic usage of signature scores. 
 
 In the signature plot we can again see that the MES cell lines are mingled with the neural crest cells, which are the cells from which neuroblasts can develop.
 
@@ -674,11 +683,11 @@ called UMAP , or tSNE. Both are dimensionality reduction algorithms that try to 
 resemblance of their expression profiles. Within R2, such representations are available in the 'sample maps', that 
 can be accessed from the main page in the left set of menu items. 
 
-- On th emain page, click on the **Sample maps (UMAP/tSNE) and subsequently select the following resource: '**Normal 
+- On the main page, click on the **Sample maps (UMAP/tSNE)** and subsequently select the following resource: '**Normal 
   Adrenal 
   Medulla - 
   Westermann - 
-  10739 - cp10k - 10x300hg19**' and make sure to select the 'manuscript' version.
+  10739 - cp10k - 10x300hg19**' and make sure to select the **Manuscript** version.
 - The cells are not yet colored. So let's stain them with the setting *Color by a Track* and *Color track* 
   **cell_type (11 cat)**.
 
@@ -698,17 +707,23 @@ can be accessed from the main page in the left set of menu items.
 
 ---------
 
-Resources:<br>
-- Presentation R2 Introduction Workshop Day 1, 25-02-2024 morning session:
-  <a href="https://hgserver1.amc.nl/r2/help/workshop/Butterfly_R2IntroductionWorkshop_Basics1_25Mar2024.pdf" target="_blank">Butterfly_R2IntroductionWorkshop_Basics1_25Mar2024.pdf</a>
-- Presentation R2 Introduction Workshop Day 1, 25-02-2024 morning session:
-  <a href="https://hgserver1.amc.nl/r2/help/workshop/Butterfly_R2IntroductionWorkshop_Basics2_25Mar2024.pdf" target="_blank">Butterfly_R2IntroductionWorkshop_Basics2_25Mar2024.pdf</a>
+[//]: # (Resources:<br>)
 
+[//]: # (- Presentation R2 Introduction Workshop Day 1, 25-02-2024 morning session:)
+
+[//]: # (  <a href="https://hgserver1.amc.nl/r2/help/workshop/Butterfly_R2IntroductionWorkshop_Basics1_25Mar2024.pdf" target="_blank">Butterfly_R2IntroductionWorkshop_Basics1_25Mar2024.pdf</a>)
+
+[//]: # (- Presentation R2 Introduction Workshop Day 1, 25-02-2024 morning session:)
+
+[//]: # (  <a href="https://hgserver1.amc.nl/r2/help/workshop/Butterfly_R2IntroductionWorkshop_Basics2_25Mar2024.pdf" target="_blank">Butterfly_R2IntroductionWorkshop_Basics2_25Mar2024.pdf</a>)
+
+[//]: # ()
 
 
  
 
 -----
- This concludes our series of tasks for today. If you would like to use R2 for your research in the future, then just visit http://r2.amc.nl and get started. Upon free registration, additional features become available. Thank you for your attention and we hope that you have enjoyed this microarray practical.
+R2 has many more options, that you can explore by yourself if you want. You can try to find a publicly available dataset that corresponds to your line of research. Try and see if some of the analysis pipelines from this practical could be applied to that dataset.<br>
+<br>This concludes our series of tasks for today. If you would like to use R2 for your research in the future, then just visit http://r2.amc.nl and get started. 
 
 
