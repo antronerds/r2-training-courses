@@ -11,7 +11,7 @@ Copyright (c) 2006-2024 Jan Koster
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: MSCA-DN
+   :caption: PRESSURE
 
    MSCADN_interim_course_R2
 
