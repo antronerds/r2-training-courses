@@ -53,3 +53,6 @@ Copyright (c) 2006-2024 Jan Koster
    
    Microarray_analysis_Using_Tumor_Colon_datasets
    x_omics_course_radboud.md
+
+
+Version: |version|
