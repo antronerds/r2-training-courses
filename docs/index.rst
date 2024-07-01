@@ -37,6 +37,7 @@ Copyright (c) 2006-2024 Jan Koster
    :maxdepth: 2
    :numbered: 3
    :caption: Group Specific Classes
+
    Butterfly Course Day 1 <Butterfly_interim_course_R2_day1>
    Butterfly Course Day 2 <Butterfly_interim_course_R2_day2>
    Pressure Course <MSCADN_interim_course_R2>
