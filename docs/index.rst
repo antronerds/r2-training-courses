@@ -11,28 +11,6 @@ Copyright (c) 2006-2024 Jan Koster
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: PRESSURE
-
-   MSCADN_interim_course_R2
-
-.. toctree::
-   :maxdepth: 2
-   :numbered: 3
-   :caption: Butterfly
-
-   Butterfly_interim_course_R2_day1
-   Butterfly_interim_course_R2_day2
-
-.. toctree::
-   :maxdepth: 2
-   :numbered: 3
-   :caption: Amsterdam Movement Sciences
-
-   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
-
-.. toctree::
-   :maxdepth: 2
-   :numbered: 3
    :caption: Students Course
 
    Investigating_Tumor_Heterogeneity_student_version
@@ -51,8 +29,12 @@ Copyright (c) 2006-2024 Jan Koster
    :numbered: 3
    :caption: Additional Course Materials
    
+   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
    Microarray_analysis_Using_Tumor_Colon_datasets
    x_omics_course_radboud.md
+   Butterfly_interim_course_R2_day1
+   Butterfly_interim_course_R2_day2
+   MSCADN_interim_course_R2
 
 
 Version: |version|
