@@ -1,4 +1,4 @@
-R2 Training Courses: |version|
+R2 Training Courses
 ====================
 
 This page contains a collection of training courses for the R2 platform: a biologist friendly, web based genomics analysis and visualization application developed by Jan Koster at the department of Oncogenomics in the Academic Medical Center (AMC) Amsterdam, the Netherlands.
