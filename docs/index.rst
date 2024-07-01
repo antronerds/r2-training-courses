@@ -31,13 +31,13 @@ Copyright (c) 2006-2024 Jan Koster
    
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
    Microarray_analysis_Using_Tumor_Colon_datasets
-   x_omics_course_radboud.md
 
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: Group Specific Classes
+   :caption: Tailored Workshops
 
+   Radboud Omics Course <x_omics_course_radboud.md>
    Butterfly Course Day 1 <Butterfly_interim_course_R2_day1>
    Butterfly Course Day 2 <Butterfly_interim_course_R2_day2>
    Pressure Course <MSCADN_interim_course_R2>
