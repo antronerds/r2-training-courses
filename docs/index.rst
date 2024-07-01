@@ -34,7 +34,7 @@ Copyright (c) 2006-2024 Jan Koster
    x_omics_course_radboud.md
    Butterfly Course Day 1 <Butterfly_interim_course_R2_day1>
    Butterfly Course Day 2 <Butterfly_interim_course_R2_day2>
-   MSCADN_interim_course_R2
+   Pressure Course <MSCADN_interim_course_R2>
 
 
 Version: |version|
