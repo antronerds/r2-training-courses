@@ -23,6 +23,7 @@ The two workshop days consist each of a presentation followed by a hands-on sess
 You can go through online step-by-step guides to do the analyses of your choice yourself and ask questions when needed.
 
 There are two types of step-by-step guides to work through during the hands-on sessions:
+
 * You can choose one of the courses from the left side menu to follow bigger pipelines of multiple coupled analyses to arrive deeper insight into your data. The first course follows the same research line that was performed in a Nature article in 2017.
 * You can choose a topic in the Online Tutorial to follow smaller guides about specific analyses of your interest.
 
@@ -45,7 +46,7 @@ Copyright (c) 2006-2024 Jan Koster
    :numbered:
    :caption: Basics Courses
 
-   Neuroblastoma R2IntroductionWorkshop2024_day1
+   R2IntroductionWorkshop2024_day1
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
 
 .. toctree::
