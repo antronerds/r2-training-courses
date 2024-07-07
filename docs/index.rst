@@ -44,17 +44,17 @@ Copyright (c) 2006-2024 Jan Koster
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: Basics Courses
+   :caption: R2 Introduction Workshop
 
-   R2IntroductionWorkshop2024_day1
-   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
+   R2IntroductionWorkshop
 
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: Advanced Courses
+   :caption: Basics Courses
 
-   Butterfly_interim_course_R2_day2
+   R2IntroductionWorkshop2024_day1
+   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
 
 .. toctree::
    :maxdepth: 2
@@ -67,6 +67,7 @@ Copyright (c) 2006-2024 Jan Koster
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: R2 Introduction Workshop
+   :caption: Advanced Courses
 
-   R2IntroductionWorkshop
+   Butterfly_interim_course_R2_day2
+
