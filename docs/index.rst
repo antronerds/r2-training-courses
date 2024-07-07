@@ -43,7 +43,7 @@ Copyright (c) 2006-2024 Jan Koster
 
 .. toctree::
    :maxdepth: 2
-   :numbered:
+   :numbered: 3
    :caption: Basics Courses
 
    R2IntroductionWorkshop2024_day1
@@ -52,7 +52,7 @@ Copyright (c) 2006-2024 Jan Koster
 .. toctree::
    :maxdepth: 1
    :numbered:
-   :caption: Advanced Course
+   :caption: Advanced Courses
 
    VAGABOND_interim_course_R2_day2
 
@@ -62,6 +62,7 @@ Copyright (c) 2006-2024 Jan Koster
    :numbered:
    :caption: Additional Course Materials
 
+   Molecular_Oncology_CRC
    Microarray_analysis_Using_Tumor_Colon_datasets
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
    VAGABOND_snippets
