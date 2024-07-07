@@ -19,13 +19,14 @@ You can find the generic workshop information at `http://r2platform.com/workshop
 
 **Overview of resources**
 
-The two workshop days consist each of a presentation followed by a hands-on session. Experts will be available for questions in the R2 Support Breakout Room.<br>
-You can go through online step-by-step guides to do the analyses of your choice yourself and ask questions when needed.<br>
+The two workshop days consist each of a presentation followed by a hands-on session. Experts will be available for questions in the R2 Support Breakout Room.
+You can go through online step-by-step guides to do the analyses of your choice yourself and ask questions when needed.
+
 There are two types of step-by-step guides to work through during the hands-on sessions:
 * You can choose one of the courses from the left side menu to follow bigger pipelines of multiple coupled analyses to arrive deeper insight into your data. The first course follows the same research line that was performed in a Nature article in 2017.
 * You can choose a topic in the Online Tutorial to follow smaller guides about specific analyses of your interest.
 
-Please find an overview of the guides per topic of the presentation under
+Please find an overview of the guides per topic of the presentation with the links below:
 
 `R2 Introduction Workshop > From presentation to your own analysis <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html>`_.
 
