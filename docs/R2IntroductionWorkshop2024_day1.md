@@ -720,6 +720,11 @@ can be accessed from the main page in the left set of menu items.
 
 <br>
 
+#### Answers
+
+You can find detailed answers and extra tips per question of this course in the following link:
+<a href="https://hgserver2.amc.nl/r2/help/workshop/online_r2introductionworkshop/Answers_R2IntroductionWorkshop.pdf" target="_blank">Document with answers to the questions</a>
+
 #### Thanks
 R2 has many more options, that you can explore by yourself if you want. You can try to find a publicly available dataset that corresponds to your line of research. Try and see if some of the analysis pipelines from this practical could be applied to that dataset.<br>
 <br>Also, other courses from the left side bar might provide further inspiration for the type of analyse sequences that can be performed in R2 to gain more insight in your own or publicly available data.
