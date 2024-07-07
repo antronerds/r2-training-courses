@@ -1,4 +1,4 @@
-Summer School 2024: R2 Introduction Workshop Basics 1 and Basics 2
+Summer School 2024: R2 Introduction Workshop
 ====================================
 
 .. image:: https://r2-training-courses.readthedocs.io/en/latest/_static/images/R2IntroductionWorkshop/trainingpamflet.png
@@ -14,7 +14,7 @@ We hope that you will find this day interesting. We would love to hear your thou
 
 **Generic Workshop page**
 
-http://r2platform.com/workshop
+`http://r2platform.com/workshop <http://r2platform.com/workshop>`_
 
 
 **Overview of resources**
