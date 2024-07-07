@@ -14,12 +14,17 @@ We hope that you will find this day interesting. We would love to hear your thou
 
 **Generic Workshop page**
 
-`http://r2platform.com/workshop <http://r2platform.com/workshop>`_
+You can find the generic workshop information at `http://r2platform.com/workshop <http://r2platform.com/workshop>`_
 
 
 **Overview of resources**
 
-The day consists of presentations and hands-on sessions. Experts will be available for questions in the R2 Support Breakout Room while you can go through online step-by-step guides to do the analyses of your choice yourself.
+The two workshop days consist each of a presentation followed by a hands-on session. Experts will be available for questions in the R2 Support Breakout Room.<br>
+You can go through online step-by-step guides to do the analyses of your choice yourself and ask questions when needed.<br>
+There are two types of step-by-step guides to work through during the hands-on sessions:
+* You can choose one of the courses from the left side menu to follow bigger pipelines of multiple coupled analyses to arrive deeper insight into your data. The first course follows the same research line that was performed in a Nature article in 2017.
+* You can choose a topic in the Online Tutorial to follow smaller guides about specific analyses of your interest.
+
 Please find an overview of the guides per topic of the presentation under
 
 `R2 Introduction Workshop > From presentation to your own analysis <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html>`_.
@@ -27,8 +32,6 @@ Please find an overview of the guides per topic of the presentation under
 * `First Presentation <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation>`_
 * `Second Presentation <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#second-presentation>`_
 * `More advanced topics that might interest some <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#third-presentation>`_
-
-Alternatively, you could partake in online courses that take you through larger analysis pipelines with different kinds of data. Links to these courses can be found in the side bar and below in the table of contents.
 
 Find the complete tutorial at `Tutorial <https://r2-tutorials.readthedocs.io/en/latest>`_.
 
