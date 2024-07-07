@@ -19,7 +19,7 @@ Please find an overview of the chapters per presentation topic below:
   
 * [First presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation)  
 * [Second presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#second-presentation)
-* [More advanced topics](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#third-presentation)  
+* [More advanced topics](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#more-advanced-topics)  
   
 
 First presentation
