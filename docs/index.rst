@@ -42,60 +42,17 @@ Copyright (c) 2006-2024 Jan Koster
 .. toctree::
    :maxdepth: 2
    :numbered:
-   :caption: R2 Introduction Workshop
+   :caption: Basics Courses
 
-   R2IntroductionWorkshop.md
-
-.. toctree::
-   :maxdepth: 2
-   :numbered:
-   :caption: Course option 1: Genomic data
-
+   Neuroblastoma R2IntroductionWorkshop2024_day1
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
 
 .. toctree::
    :maxdepth: 1
    :numbered:
-   :caption: Course option 2: Neuroblastoma
+   :caption: Advanced Course
 
-   VAGABOND_interim_course_R2_day1
    VAGABOND_interim_course_R2_day2
-   VAGABOND_snippets
-
-.. toctree::
-   :comment:
-   :maxdepth: 1
-   :numbered:
-   :caption: Amsterdam Movement Sciences
-
-   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
-
-.. toctree::
-   :comment:
-   :maxdepth: 1
-   :numbered:
-   :caption: Student Course
-
-   Investigating_Tumor_Heterogeneity_student_version
-
-.. toctree::
-   :comment:
-   :maxdepth: 1
-   :numbered:
-   :caption: Graduate Course
-
-   Finding_structural_variants
-   Investigating_Tumor_Heterogeneity
-
-.. toctree::
-   :comment:
-   :maxdepth: 1
-   :numbered:
-   :caption: Vagabond course
-
-   VAGABOND_interim_course_R2_day1
-   VAGABOND_interim_course_R2_day2
-   VAGABOND_snippets
 
 .. toctree::
    :comment:
@@ -105,4 +62,11 @@ Copyright (c) 2006-2024 Jan Koster
 
    Microarray_analysis_Using_Tumor_Colon_datasets
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
+   VAGABOND_snippets
 
+.. toctree::
+   :maxdepth: 2
+   :numbered:
+   :caption: R2 Introduction Workshop
+
+   R2IntroductionWorkshop
