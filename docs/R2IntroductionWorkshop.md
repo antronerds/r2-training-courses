@@ -133,8 +133,9 @@ Second presentation
   
   
 
-More Advanced topics 
+More advanced topics 
 ---
+The following are not part of the Basics workshops, but they could be interesting topics for some researchers
 
 **Integrative Analysis**  
 
