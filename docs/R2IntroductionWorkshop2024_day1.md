@@ -707,17 +707,22 @@ can be accessed from the main page in the left set of menu items.
 
 ---------
 
-Resources:<br>
-- Presentation R2 Introduction Workshop Part 1: <a href="https://hgserver2.amc.nl/r2/help/workshop/pressure_bijlsma/Bijlsma_R2IntroductionWorkshop_1_20240521.pdf" target="_blank">Bijlsma_R2IntroductionWorkshop_1_20240521.pdf</a>
-- Presentation R2 Introduction Workshop Part 2: <a href="https://hgserver2.amc.nl/r2/help/workshop/pressure_bijlsma/Bijlsma_R2IntroductionWorkshop_2_20240521.pdf" target="_blank">Bijlsma_R2IntroductionWorkshop_2_20240521.pdf</a>
+[//]: # (Resources:<br>)
 
+[//]: # (- Presentation R2 Introduction Workshop Part 1: <a href="https://hgserver2.amc.nl/r2/help/workshop/pressure_bijlsma/Bijlsma_R2IntroductionWorkshop_1_20240521.pdf" target="_blank">Bijlsma_R2IntroductionWorkshop_1_20240521.pdf</a>)
 
+[//]: # (- Presentation R2 Introduction Workshop Part 2: <a href="https://hgserver2.amc.nl/r2/help/workshop/pressure_bijlsma/Bijlsma_R2IntroductionWorkshop_2_20240521.pdf" target="_blank">Bijlsma_R2IntroductionWorkshop_2_20240521.pdf</a>)
 
+[//]: # ()
+[//]: # ()
+[//]: # ()
+[//]: # ()
 
+<br>
 
-
------
+#### Thanks
 R2 has many more options, that you can explore by yourself if you want. You can try to find a publicly available dataset that corresponds to your line of research. Try and see if some of the analysis pipelines from this practical could be applied to that dataset.<br>
-<br>This concludes our series of tasks for today. If you would like to use R2 for your research in the future, then just visit http://r2.amc.nl and get started. 
+<br>Also, other courses from the left side bar might provide further inspiration for the type of analyse sequences that can be performed in R2 to gain more insight in your own or publicly available data.
+<br><br>If you would like to use R2 for your research in the future, then just visit http://r2.amc.nl and get started. 
 
 
