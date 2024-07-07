@@ -1,4 +1,4 @@
-<a id="r2_introduction_workshop_2022"> </a>
+<a id="r2_introduction_workshop_2024"> </a>
 
 ![](_static/images/R2IntroductionWorkshop/trainingpamflet.png)
 
@@ -17,9 +17,9 @@ You choose which modules you find interesting and try them out following the ste
   
 Please find an overview of the chapters per presentation topic below:  
   
-* [First Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation)  
-* [Second Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#second-presentation)
-* [Third Presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#third-presentation)  
+* [First presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation)  
+* [Second presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#second-presentation)
+* [More advanced topics](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#third-presentation)  
   
 
 First presentation
@@ -133,7 +133,7 @@ Second presentation
   
   
 
-Third presentation 
+More Advanced topics 
 ---
 
 **Integrative Analysis**  
