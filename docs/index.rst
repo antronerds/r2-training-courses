@@ -59,7 +59,7 @@ Copyright (c) 2006-2024 Jan Koster
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: Additional Course Materials
+   :caption: Additional Course Material
 
    Molecular_Oncology_CRC
    Microarray_analysis_Using_Tumor_Colon_datasets
