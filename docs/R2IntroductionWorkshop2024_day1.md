@@ -48,9 +48,8 @@ During this practical course, we will use the R2 bioinformatics platform to stud
 
 ##### Go to the R2 platform
 
-* Go to our development environment <a href="https://hgserver2.amc.nl/" target="_blank">https://hgserver2.amc.nl/</a>, such that you get the newest functionalities.
-  N.B. Our main and tested environment is <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a>.
-* Login with your R2 credentials.   
+* Go to <a href="http://r2.amc.nl" target="_blank">http://r2.amc.nl</a>
+* Optionally login with your R2 credentials. 
 
 You're now on the R2 main page. This web based molecular biology data analysis platform contains a wealth of data and methods to analyze the datasets. Step by step, researchers are guided through a web of options for data analysis. R2's main page shows this principle: step through each of the numbered boxes to develop your analysis of choice.  
 <br><br>
