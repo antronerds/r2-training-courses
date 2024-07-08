@@ -1,7 +1,7 @@
 Summer School 2024: R2 Introduction Workshop
 ====================================
 
-.. image:: https://r2-training-courses.readthedocs.io/en/latest/_static/images/R2IntroductionWorkshop/trainingpamflet.png
+.. image:: https://r2-training-courses.readthedocs.io/en/latest/_static/images/R2IntroductionWorkshop/r2_training_banner_docs.png
   :width: 600
   :alt: R2 Introduction Workshop
 
