@@ -7,7 +7,7 @@ From presentation to your own analysis
 
 Overview
 ---
-The presentations provide a quick glance over most functionalities of R2. Many of these functionalities are described in the [Online Tutorial](https://r2-training-courses.readthedocs.io/en/latest/) as well.  
+The presentations provide a quick glance over most functionalities of R2. Many of these functionalities are described in the [Online Tutorial](https://r2-tutorials.readthedocs.io/) as well.  
 
 You might wonder how to do the shown analyses yourself. The links below connect the topics of the presentation directly to the respective chapters in the tutorial where step by step instructions guide you through an analysis, which you can perform online within R2 yourself. 
 
@@ -15,7 +15,9 @@ During these steps features related to the respective topic will be introduced, 
 
 You choose which modules you find interesting and try them out following the step by step guides on the R2 platform. Above all, we encourage you to tweak the guides to your interest: find datasets that are closely related to your research topic and play around with the modules; fill in settings (genes, gene sets, chromosome locations etc) that are aligned with your research questions. 
   
-Please find an overview of the chapters per presentation topic below:  
+Our platform interface undergoes frequent improvements. It might be that you come across small interface discrepancies. Most of the time, you will find the relocation of the button or name change of teh functionality. IF not, please ask us for help in the R2 Support Breakout Room or email us at r2-support@amsterdamumc.nl.  
+
+You can find an overview of the chapters per presentation topic below:  
   
 * [First presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation)  
 * [Second presentation](https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#second-presentation)
