@@ -26,15 +26,9 @@ There are two types of step-by-step guides to work through during the hands-on s
 
 * You can choose one of the courses from the left side menu to follow bigger pipelines of multiple coupled analyses to arrive deeper insight into your data. We recommend the first course, `Finding causes in Neuroblastoma genomics data <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop2024_day1.html>`_ , that follows the same research line as was performed in a Nature article in 2017.
 
-* You can choose a topic in the Online Tutorial to follow smaller guides about specific analyses of your interest.
-
-Please find an overview of the guides per topic of the presentation with the links below:
-
+* You can choose a topic in the Online Tutorial to follow smaller guides about specific analyses of your interest. Please find an overview of the guides per topic of the presentation with the links below:
 `R2 Introduction Workshop > From presentation to your own analysis <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html>`_.
 
-* `First Presentation <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#first-presentation>`_
-* `Second Presentation <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#second-presentation>`_
-* `More advanced topics that might interest some <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html#third-presentation>`_
 
 Find the complete tutorial at `Tutorial <https://r2-tutorials.readthedocs.io/en/latest>`_.
 
