@@ -24,12 +24,9 @@ You can go through online step-by-step guides to do the analyses of your choice 
 
 There are two types of step-by-step guides to work through during the hands-on sessions:
 
-* You can choose one of the courses from the left side menu to follow bigger pipelines of multiple coupled analyses to arrive deeper insight into your data. We recommend the first course, `Finding causes in Neuroblastoma genomics data <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop2024_day1.html>`_ , that follows the same research line as was performed in a Nature article in 2017.
+* You can choose one of the courses from the left side menu to follow bigger pipelines of multiple coupled analyses to learn how to gain deeper insight into genomic data. We recommend the first course, `Finding causes in Neuroblastoma genomics data <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop2024_day1.html>`_ , that follows the same research line as was performed in a Nature article in 2017.
 
-* You can choose a topic in the Online Tutorial to follow smaller guides about specific analyses of your interest. Please find an overview of the guides per topic of the presentation at the page `From presentation to your own analysis <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html>`_.
-
-
-Find the complete tutorial at `Tutorial <https://r2-tutorials.readthedocs.io/en/latest>`_.
+* You can choose a topic in the Online Tutorial to follow smaller guides about specific analyses of your interest. Please find an overview of the guides per topic of the presentation at the page `From presentation to your own analysis <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html>`_. You can find the complete online R2 tutorial `here <https://r2-tutorials.readthedocs.io/en/latest>`_.
 
 Copyright (c) 2006-2024 Jan Koster
 
