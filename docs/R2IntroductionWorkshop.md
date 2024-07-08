@@ -7,7 +7,7 @@ From presentation to your own analysis
 
 Overview
 ---
-The presentations provide a quick glance over most functionalities of R2. Many of these functionalities are described in the [Online Tutorial](https://r2-tutorials.readthedocs.io/) as well.  
+The presentations provide a quick glance over most functionalities of R2. Many of these functionalities are described in the [Online Tutorial (r2platform.com/tutorial)](https://r2-tutorials.readthedocs.io/) as well.  
 
 You might wonder how to do the shown analyses yourself. The links below connect the topics of the presentation directly to the respective chapters in the tutorial where step by step instructions guide you through an analysis, which you can perform online within R2 yourself. 
 
