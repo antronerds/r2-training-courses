@@ -106,22 +106,23 @@ for data analysis with mostly clickable items. R2's main page shows this princip
 boxes to develop your analysis of 
 choice.<br><br>
 
-We're first going to see if and how the mRNA expression of several genes changes through the single dataset with the 
-name "Mixed Colon - Marra - 64 - MAS5.0 - u133p2".<br>
+Let's follow these steps to get a first look at gene expressions in one of the colon cancer datasets that is hosted in R2, a
+dataset that is called "Mixed Colon - Marra - 64 - MAS5.0 - u133p2".<br>
 Datasets have a structured naming in R2, using the following rules: Category + Tissue/ Tumor -  author - 
 number_of_samples_N - normalization - chiptype. In our case the dataset name tells us that the dataset contains 
-normal and tumor samples (*mixed*) of *colon* tissue, that *Marra* is the author and that there are *64* samples.
+normal and tumor samples (*mixed*) of *colon* tissue; *Marra* is the author and there are *64* samples.
 
-* In order to find the dataset in R2, click on the text of the currently selected dataset in box 2. 
-* A grid pops up that contains all the datasets that are currently available to you. Each row is a dataset and
-  each column contains a different searchable characteristic of datasets. In the bottom right corner of the grid, 
+* We leave Box 1 as is, because we will look only in a single dataset. 
+* In order to find the above-mentioned dataset in R2, click on the text of the currently selected dataset in box 2. 
+* A grid pops up that shows all the datasets that are currently available to you. Each row is a dataset and
+  each column contains a different searchable characteristic of the datasets. In the bottom right corner of the grid, 
   find the number of rows, i.e. available datasets.
 *  Under the header *Tissue/Tumor* type the keyword **colon** in the white text-field filter, and check the adapted 
    number of rows in the bottom right corner to find out how many colon related sets R2 is hosting.
 * Find the RNA expression dataset from *Author* **Marra** and click on the row of the dataset that 
   contains **64** samples (*N*). In the information panel below the grid, you find more information about this 
   dataset. Quickly glance over the summary of the study. 
-* Select the dataset with a click on the blue box Confirm selection. Check on th emain page in box 2 that the 
+* Select the dataset with a click on the blue button **Confirm selection**. Check on the main page in box 2 that the 
   correct set has been selected.
 
 Of course, it is nice to have a lot of RNA expression datasets to analyse and explore, but without proper sample 
@@ -134,8 +135,8 @@ annotation your have very limited analysis options. Let's explore the annotation
 
 In R2, samples of a dataset can be annotated with e.g. clinical data or biological information. Each group of annotated 
 data is called a **Track** in R2. These tracks can be used to filter, color or split data in all types of R2 
-analyses. The tissue annotation of the Marra set can thus be used to find, for instance, the differences between gene 
-expression profiles of the adenoma and normal samples.
+analyses. The tissue annotation of the Marra set can thus be used, for instance,  to find the differences between the gene 
+expression profiles of the adenoma samples and normal samples.
 <br>
 
 ### Find different expression profiles between normal and adenoma tissue
