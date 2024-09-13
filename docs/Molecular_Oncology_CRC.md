@@ -151,7 +151,7 @@ The R2 platform supports a large set of analysis types to explore datasets. One 
 differential expression between groups". The differential expression analysis aims to identify genes which are 
 significantly different between two groups. 
 
-* Click on **Main** in th eupper left corner.
+* Click on **Main** in the upper left corner.
 * Check if you have selected the **Marra** dataset and in box 3 *select type of analysis*, Differential expression 
   between two groups_. CLick **Next**.
 * R2 offers a couple of statistical *test*, in this case we use the **T-test** which is selected by default.
@@ -177,13 +177,11 @@ Next to many publicly available datasets, R2 is also hosting a lot of curated li
 search by scrolling down to the end of our gene list. In the Adjustable Settings menu, you can now use a Gene Set to 
 restrict your list.  
 
-* Re-generate a list that is specifically associated with colorectal cancer. To do so, hit the **Search GS** button in 
-  the Gene Filters section of the menu. 
+* Re-generate a list that is specifically associated with colorectal cancer. To do so, click on the box next to geneset and grid box will pop-up.
 * Use search field on the top of the table and fill in **colorectal**, hit **enter**.
 * [The KEGG (Kyoto Encyclopedia of Genes and Genomes) database]( https://www.genome.jp/kegg/pathway.html) is a comprehensive bioinformatics resource that 
-  integrates information about genes, proteins, pathways, and diseases. Click on the triangles in front of KEGG 
-  pathways and its subcollections till you find the **Colorectal_cancer (62)** geneset. Check the set and hit **Use 
-  selected** button.
+  integrates information about genes, proteins, pathways, and diseases. In case you didnt use a search term,  Click on the triangles in front of KEGG to explore other available patheays
+  pathways and its subcollections till you find the **Colorectal_cancer (62)** geneset. Check the set and click the <span style="color: green;">green<span> confirm button. 
 * Check out the list and see if you recognize multiple genes. You can hover over the magnifying glasses in front of each row to learn more about the genes.
 * Now click on the magnifying glass in front of **AXIN2** to obtain a scatter plot of the expression of this gene 
   for each sample in the dataset. 
@@ -299,10 +297,8 @@ petabytes of genomic, epigenomic, transcriptomic, and proteomic data. The data, 
 * In the grid, filter for the dataset **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36** and 
   click its **Select** button
 
-Under the graph, a menu allows the user to adapt settings.
 Colors of the graph points are not set by default.
 
-* Click the button to **View standard plot** that you can find underneath the little menus
 * Find the **Color mode** dropdown and select *Color by Track*. Now set the 
   _Color 
   track_ dropdown to use the
@@ -369,11 +365,11 @@ To see if there is a difference  the effect of different survival chances
 
 * From the main page, select the Guinney choose a **relate 2 tracks** analysis to show the different ratios of 
   mutations per CMS subtype.
-* For the *y axis* choose **lv_braf_mut** mutations and for the *X axis* choose **lv_cms_final**.
+* For the the *X axis* choose **lv_cms_final** and for *y axis* choose **lv_braf_mut** mutations  .
 * Select the **stacked barplot (%)** *graph type* and click **Submit**
 * The Guinney dataset contains several datasets put together. To only look at the samples that looked at the 
   mutational information, scroll down underneath the graph to Adjustable settings menu. Use the Sample Filter with 
-  the setting *Subset track*, select **lv_braf_mut** and in teh pop up check the boxes of **0 (776) and 1(87)**, click 
+  the setting *Subset track*, select **lv_braf_mut** and in the pop up check the boxes of **0 (776) and 1(87)**, click 
   **ok**
 * For the changes to take effect click **Submit**
 
@@ -451,7 +447,7 @@ MSI group?**
 MSI tumors give a very heterogeneous picture. This could be an indication that within the MSI tumor group 
 also a subgroup could be identified. 
 
-* Hover with your mouse over data points or inspect the annotation underneath the graph to see if you can identify a subgroup of an annotation track in which low MLH1 expression occurs more often.
+* Hover with your mouse over data points or inspect the annotation underneath in the YY-plot the graph to see if you can identify a subgroup of an annotation track in which low MLH1 expression occurs more often.
 * Scroll down to the Adjustable setting and change grouping setting _Track into **MS_orientation. To visuallly 
   support the distinct group, also change _Color mode_ to **Color by a Track** and choose the same track to color 
   the plot. Click **Submit**
@@ -496,8 +492,8 @@ algorithm.
 * Perform the **Differential Expression between two groups** analysis for **Microsatellite_instability** (no vs 
   yes), and
   select with the **Search GS** 
-  button the **Broad 2020 09 c6 oncogenic**. **Submit**
-* Click again on the MHL1 gene magnifying glass.
+  button the **Broad 2020 09 c6 oncogenic**. Hit the **green** button to confirm the selecttion and click **Submit**
+* MLH1 is even on top, Click again on the MHL1 gene magnifying glass.
 
 ![](_static/images/MolOncCRC/filter_broad_oncogenic.png "204 set: MLH1")
 
@@ -541,8 +537,7 @@ The correlating genes result page shows two columns: the positively correlating 
 correlated genes on the right. Let's have a closer look at this last group.  
 
 * Go back to your genelist of correlating genes and scroll down to the Adjustable Settings menu at the bottom of the 
-  page. Adapt here the setting *Corr. r cutoff sign* to only look at the negatively correlated genes. Hit the red 
-  cross of the Gene Filter and click **Submit** to update the result page. This might take a while. 
+  page. Adapt here the setting *Corr. r cutoff sign* to only look at the negatively correlated genes. Go to the geneset selection filter, clear the selection and do not forget the green confirm button.
 * Click the button on the right side of the page **Chromosome map**.
 
 ![](_static/images/MolOncCRC/loading_page.png "Loading Page")
@@ -633,7 +628,7 @@ This can provide more meaningful insights into the underlying biology of a parti
 ## Effects of imatinib: shifts of signature profiles and molecular subtypes
 
 Mesenchymal Consensus Molecular Subtype 4 (CMS4) colon cancer is associated with poor prognosis and therapy resistance.
-In this proof-of-concept study, Kranenburg et al. assessed whether imatinib could shift cms4 subtype specific 
+In this proof-of-concept study, Kranenburg et al. assessed whether Imatinib could shift cms4 subtype specific 
 characteritics.  
 
 The button below brings you to the form in which you can submit your answers for the third section.
@@ -652,7 +647,7 @@ mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :
 * Set Track to **pre-post-imatinib** to divide the samples in the pretreatment and the posttreatment group and *Handle 
   groups 
   by* **lump by gene plot group** to show this per gene. 
-* Set *color by* to **Track** in order to make the box plots visually more distinct.  
+* Set *color by* to **Track** in order to make the box plots visually more distinct. Also try this  by adapting the transformation to none.
 * Click next
 
 

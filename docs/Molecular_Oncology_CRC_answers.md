@@ -218,7 +218,7 @@ Here the relation between Orientation and MSI is plotted and for the statistics 
 
 A:
 
-This clearly illustrates the relation between MSI/MSS subgroups and MLH1 expression. Also here you can see that the proximal group has a higher MLH1 expression
+This clearly illustrates the relation between MSI/MSS subgroups and MLH1 expression. Also here you can see that the distal group has a higher MLH1 expression
 
 ![](_static/images/MolGenCRC/relatedtwotracks_msi.png "Relate two tracks: MLH1")
 
@@ -581,7 +581,7 @@ chances that are linked to the gene shift, todo remove**](_static/images/MolGenC
 
 **ToDo: remove answers**  
 
-**Better survival chances**
+**Better survival chances** 
 ______
 
 ## Identifying key drivers of CRC: superenhancers controlling gene expression
