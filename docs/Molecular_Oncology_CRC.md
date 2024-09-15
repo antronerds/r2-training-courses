@@ -135,24 +135,40 @@ annotation your have very limited analysis options. Let's explore the annotation
 
 In R2, samples of a dataset can be annotated with e.g. clinical data or biological information. Each group of annotated 
 data is called a **Track** in R2. These tracks can be used to filter, color or split data in all types of R2 
-analyses. The tissue annotation of the Marra set can thus be used, for instance,  to find the differences between the gene 
-expression profiles of the adenoma samples and normal samples.
-<br>
+analyses.
 
-### Find different expression profiles between normal and adenoma tissue
+[comment]: The tissue annotation of the Marra set can thus be used, for instance,  to find the differences between the gene
+expression profiles of the adenoma samples and normal samples.
+
+<br>
 
 The button below brings you to the form in which you can submit your answers for the first section.
 
 <button class="course googleform" onclick="window.open('https://forms.gle/bezyoxAawZ6WU8cT9','_blank');"
-type="button">Open the answering form for this section</button>
+type="button">Open the first answering form</button>
 <br>
 <br>
+
+-----------------
+![](_static/images/R2d2_logo.png)***Group question***
+
+>*Look at the available tracks for this dataset. In the summary of the dataset information panel, you can read:*<br>
+> 
+>"Colorectal cancers are believed to arise predominantly from adenomas. Although these precancerous lesions have been 
+> subjected to extensive clinical, pathological, and molecular analyses, little is currently known about the global gene expression changes accompanying their formation."<br>
+> 
+>*Which track could be useful to study gene expression changes accompanying adenoma formation?*
+>*Can you think of specific genes that you expect to show a difference in expression between the groups?*
+
+------------------
+
+### Find different expression profiles between normal and adenoma tissue
 
 The R2 platform supports a large set of analysis types to explore datasets. One of these modules is the "Find 
 differential expression between groups". The differential expression analysis aims to identify genes which are 
 significantly different between two groups. 
 
-* Click on **Main** in th eupper left corner.
+* Click on **Main** in the upper left corner.
 * Check if you have selected the **Marra** dataset and in box 3 *select type of analysis*, Differential expression 
   between two groups_. CLick **Next**.
 * R2 offers a couple of statistical *test*, in this case we use the **T-test** which is selected by default.
