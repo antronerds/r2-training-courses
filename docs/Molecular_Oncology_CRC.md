@@ -670,9 +670,10 @@ proliferation signatures and Wnt target genes are associated with good prognosis
 
 * On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
 * Select the analysis **View Geneset (Heatmap)**
-* Select *Gene set Collection* **Broad 2020 09 h hallmark** and click **Next**
-* Click **Next** again
-* Click one time on *Gene set* **HALLMARK_MYC_TARGETS_V1 (200)** and click **Next**
+* 
+* Click on geneset to apply the fiter  *Gene set Collection* **Broad 2020 09 h hallmark** subsequently select the sub-geneset,
+  **HALLMARK_MYC_TARGETS_V1 (200)** and click confirm.
+
 
 The heatmap for the z-scores of the expression values of the MYC targets geneset is shown. Underneath the heatmap 
 you find the geneset average z-value per sample, also known as the signature score. With an account you can save 
@@ -690,7 +691,7 @@ such scores as a Track to use further analyses in R2.
 * Change *Color mode* to **Color by Track** and click **Submit**
 
 * Do the same route (starting with View Geneset(heatmap)) for the Wnt target gene set **WNT_ImPACCT (student)** that 
-  you can find in the gene set collection **My R2 Communities** and store the signature score as a track as well.
+  you can find in the gene set collection **Communuty genesets.Student** and store the signature score as a track as well.
 * Go back to the **Relate 2 tracks** just as in the previous exercise.
 * In the Adjustable settings menu underneath the plot, change the *y track* to **wnt_impacct**
 * Again relate this signature score with the track **pre-post-imatinib**
@@ -838,7 +839,7 @@ regions can be studied. Regions with H3K27Ac acetylation mark active enhancers a
 transcription), H3K4Me3 methylation marks active promotors. Studying the relative contributions of both types of 
 modifications allows a researcher to discern enhancer regions from active transcription sites.
 
-* From the main page select the analysis **ChIP Genome Browser** and click **Next**
+* From the main page in the left menu,Select **ChiP data** and in the middle  select the analysis **ChIP Genome Browser** and click **Next**
 You are now at the GenomeBrowser at the genomic location of mycn.
 Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, 
   coding exons are darker.<br>
@@ -849,7 +850,7 @@ Therefore, we now have gene expression and chipseq data of this CMS classified p
 difficult to look at many profiles at the same time, we averaged the data per cms group. This way we created so 
 called _ChIP seq meta profiles_. Let's load them into your Genome Browser
 * In the right upper corner, click the button **Load / Store Profile**
-* In the Profile dropdown, seelect **student - Li_CRC_normal_tumor_cms1234** and click **Execute**. 
+* In the Profile dropdown, select **student - Li_CRC_normal_tumor_cms1234** and click **Execute**. 
 * Click On the top button **Goto the GenomeBrowser**
 
 You now see the meta profiles of normal colon tissue, and CMS 1 to 4 meta profiles. For each group you see both 
