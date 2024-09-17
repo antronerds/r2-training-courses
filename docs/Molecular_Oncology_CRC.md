@@ -894,16 +894,14 @@ ______
 
 ## Optional exercise: Experiments TP53 - Molecule of the year 1994
 
-Nearly half of human malignancies harbor mutations in tumor suppressor gene p53, mutations that facilitate and promote
-metastasis, tumorigenesis, and resistance to apoptosis.
+Nearly half of human malignancies harbor mutations in tumor suppressor gene p53, mutations that facilitate and promote metastasis, tumorigenesis, and resistance to apoptosis.
 
 These mutations generally lead to loss of DNA binding and an inability to transactivate
 canonical anti-proliferative p53 target genes.
 Genotoxic chemotherapeutics, like doxorubicin and etoposide, are clinically relevant activators of wild-type p53,
 but the potential risk of resistance and secondary malignancies due to increased mutational burden
 remains a significant concern. Given the powerful tumor suppression abilities of p53, restoration of the
-p53-regulated transcriptome without inducing additional DNA damage represents an intriguing approach for development
-of anticancer strategies and therapeutics.
+p53-regulated transcriptome without inducing additional DNA damage represents an intriguing approach for development of anticancer strategies and therapeutics.
 Nongenotoxic, small molecule activation of the p53 pathway has been proposed as
 a potential solution.
 
@@ -914,7 +912,7 @@ TP53 mutations were found in 60% of the CRCs. However, gene set enrichment analy
 In the coming analyses we will use the dataset:<br>
 **Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo**.
 
-In this expriment, 4 drugs were tested that can be diveded in two types.  
+In this experiment, 4 drugs were tested that can be diveded in two types.  
 Etoposide:  Clinically relevant activators of wild-type p53. Activates p53 via induction of  DNA double strand
 breaks. Initiation double strand breaks but leads of course to resitance and secondary malignancies.
 Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non-genotoxic, considered a proto-oncogene.
@@ -927,7 +925,6 @@ Effector of anti-proliferative and cell death expression programs
 
 Tunicamycin: Activates the ISR (integrated stress response pathway), via ER stress of accumulating
 Histidinol: Activates the ISR (integrated stress response pathway), via histinide depletion.
-
 
 
 * ATF3 mRNA and protein levels increased under both p53 and ISR stimulating treatments
@@ -943,16 +940,16 @@ Histidinol: Activates the ISR (integrated stress response pathway), via histinid
 
 * Analyse which genes are affected by the compounds
 
-Let's start with drugs known to interact with tp53. In college also MDM2 has been mentioned as negative P53 regulator.
+Let's start with drugs known to interact with TP53. In college also MDM2 has been mentioned as negative P53 regulator.
 If you want to find differentially expressed genes in Tp53 dependent background which subgroups do you have to select. Once again use the Differential expression between two groups. For now we only focus on a small part of this experiment using Nultin-3a, a therapeutic agent which is a known P53 regulator via MDM2 inhibition. For this analysis we only want to use the TP53 wt genotype, since we want to inspect the effect of Nutlin-3a in a TP53 background.
 
-* Group by treatment and filter for TP53 wild-type. Click submit and select the two groups in the DESeq2 test (default) use the DMSO vs Nutlin-3A group.**
+* Group by treatment and filter for TP53 wild-type. Click Next and select the two groups in the DESeq2 test (default) use the DMSO vs Nutlin-3A group.**
 
 * Do you see the MDM2 gene ?.
 
 * Inspect the MDM2 level in a one gene view are you surprised ?
 
-* In the left menu you can store your found list of 162 genes with the "store result as custom geneset" button and save it with a proper name in temporary collection (default) for later usage.
+* In the left menu you can store your found list of 146 genes with the "store result as custom geneset" button and save it with a proper name in temporary collection (default) for later usage.
 
 
 * Also check the relation with TP53 by using the gene vs gene option in the pull down menu.
