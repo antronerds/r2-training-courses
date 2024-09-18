@@ -137,8 +137,8 @@ In R2, samples of a dataset can be annotated with e.g. clinical data or biologic
 data is called a **Track** in R2. These tracks can be used to filter, color or split data in all types of R2 
 analyses.
 
-[comment]: The tissue annotation of the Marra set can thus be used, for instance,  to find the differences between the gene
-expression profiles of the adenoma samples and normal samples.
+[comment]: # (The tissue annotation of the Marra set can thus be used, for instance,  to find the differences between the gene
+expression profiles of the adenoma samples and normal samples.)
 
 <br>
 
@@ -171,7 +171,7 @@ significantly different between two groups.
 * Click on **Main** in the upper left corner.
 * Check if you have selected the **Marra** dataset and in box 3 *select type of analysis*, Differential expression 
   between two groups_. CLick **Next**.
-* R2 offers a couple of statistical *test*, in this case we use the **T-test** which is selected by default.
+* R2 offers a couple of statistical *Test* options, in this case we use the **T-test** which is selected by default.
 * Now we have to select which grouping variable to use. Select *Group by* **Tissue (2cat)** to use the previously 
   seen tissue annotation. And click **Submit**.
 * An extra field of settings is shown. Select *Group 1* **normal** and *Group 2* **adenoma**. Check that the default 
@@ -194,8 +194,7 @@ Next to many publicly available datasets, R2 is also hosting a lot of curated li
 search by scrolling down to the end of our gene list. In the Adjustable Settings menu, you can now use a Gene Set to 
 restrict your list.  
 
-* Re-generate a list that is specifically associated with colorectal cancer. To do so, hit the **Search GS** button in 
-  the Gene Filters section of the menu. 
+* Re-generate a list that is specifically associated with colorectal cancer. To do so, click on the button next to *geneset* and grid box will pop-up.
 * Use search field on the top of the table and fill in **colorectal**, hit **enter**.
 * [The KEGG (Kyoto Encyclopedia of Genes and Genomes) database]( https://www.genome.jp/kegg/pathway.html) is a comprehensive bioinformatics resource that 
   integrates information about genes, proteins, pathways, and diseases. Click on the triangles in front of KEGG 
