@@ -129,13 +129,14 @@ Of course, it is nice to have a lot of RNA expression datasets to analyse and ex
 annotation your have very limited analysis options. Let's explore the annotation for the Marra dataset.
 
 * In box 3, select the analysis type **Cohort Overview** and click **Next**.
-* In the grid, you can see all the samples in rows, with the available annotation in the columns. Hover your mouse 
-  over the pie chart of the **tissue** annotation and optionally click on a slice to see the Cohort overview adapt 
-  to that sample subgroup. 
+* In the grid, you can see all the samples in rows, with the available annotation in the columns. Scroll quickly down the 
+grid to take a glance at the possible values for each annotation.
 
-In R2, samples of a dataset can be annotated with e.g. clinical data or biological information. Each group of annotated 
-data is called a **Track** in R2. These tracks can be used to filter, color or split data in all types of R2 
-analyses.
+In R2, samples of a dataset can be annotated with e.g. clinical data or biological information. Each group of annotated
+ data is called a **Track** in R2. These tracks can be used to filter, color or split data in all types of R2 analyses.
+
+Above the grid you can find an interactive pie chart for each track. The pie charts present an overview of the track values in the dataset, detailing the percentage of samples in each category. You can hover over the tracks and click on a section to filter the grid underneath for samples with that track value. 
+* Check the different values in the pie charts of the location track, the tissue track and the nt_size track. 
 
 [comment]: # (The tissue annotation of the Marra set can thus be used, for instance,  to find the differences between the gene
 expression profiles of the adenoma samples and normal samples.)
@@ -152,21 +153,22 @@ type="button">Open the first answering form</button>
 -----------------
 ![](_static/images/R2d2_logo.png)***Group question***
 
->*Look at the available tracks for this dataset. In the summary of the dataset information panel, you can read:*<br>
+>In the dataset information panel you could read in the summary of the Marra dataset:<br>
 > 
 >"Colorectal cancers are believed to arise predominantly from adenomas. Although these precancerous lesions have been 
-> subjected to extensive clinical, pathological, and molecular analyses, little is currently known about the global gene expression changes accompanying their formation."<br>
+> subjected to extensive clinical, pathological, and molecular analyses, little is currently known about the global gene expression changes accompanying their formation. 
+> To characterize the molecular processes underlying the transformation of normal colonic epithelium, we compared the transcriptomes of 32 prospectively collected adenomas with those of normal mucosa from the same individuals."<br>
 > 
->*Which track could be useful to study gene expression changes accompanying adenoma formation?*
->*Can you think of specific genes that you expect to show a difference in expression between the groups?*
+>* **Which of the tracks could be useful to start with to study gene expression changes accompanying adenoma formation from normal colonic epithelium?**<br>
+>* **Can you think of specific genes that you expect to show a difference in expression between the groups?**
 
 ------------------
 
 ### Find different expression profiles between normal and adenoma tissue
 
-The R2 platform supports a large set of analysis types to explore datasets. One of these modules is the "Find 
-differential expression between groups". The differential expression analysis aims to identify genes which are 
-significantly different between two groups. 
+R2 provides access to thousands of datasets, and all these datasets can be readily analyzed with a comprehensive range of bioinformatics tools without coding. 
+One of these tools is the "Find differential expression between groups". The differential expression analysis aims to identify genes which are 
+significantly different between two groups of a dataset. As we saw above, tracks can be used to provide.   
 
 * Click on **Main** in the upper left corner.
 * Check if you have selected the **Marra** dataset and in box 3 *select type of analysis*, Differential expression 
@@ -189,7 +191,7 @@ downregulated?**
 ______
 
 
-Next to many publicly available datasets, R2 is also hosting a lot of curated lists of genes which we call 
+Next to the many publicly available datasets, R2 also hosts a many curated lists of genes which we call 
 **gene sets**. These gene sets can be used to restrict or filter an analysis as well. We can adapt our current 
 search by scrolling down to the end of our gene list. In the Adjustable Settings menu, you can now use a Gene Set to 
 restrict your list.  
