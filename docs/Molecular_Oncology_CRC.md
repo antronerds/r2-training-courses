@@ -108,17 +108,19 @@ choice.<br><br>
 
 Let's follow these steps to get a first look at gene expressions in one of the colon cancer datasets that is hosted in R2, a
 dataset that is called "Mixed Colon - Marra - 64 - MAS5.0 - u133p2".<br>
-Datasets have a structured naming in R2, using the following rules: Category + Tissue/ Tumor -  author - 
-number_of_samples_N - normalization - chiptype. In our case the dataset name tells us that the dataset contains 
+Datasets have a structured naming in R2, using the following rules:<br>
+Category - Tissue/ Tumor -  author - number of samples (N) - normalization - chiptype.<br>
+In our case the dataset name tells us that the dataset contains 
 normal and tumor samples (*mixed*) of *colon* tissue; *Marra* is the author and there are *64* samples.
 
 * We leave Box 1 as is, because we will look only in a single dataset. 
 * In order to find the above-mentioned dataset in R2, click on the text of the currently selected dataset in box 2. 
-* A grid pops up that shows all the datasets that are currently available to you. Each row is a dataset and
-  each column contains a different searchable characteristic of the datasets. In the bottom right corner of the grid, 
-  find the number of rows, i.e. available datasets.
+
+A grid pops up that shows all the datasets that are currently available to you. Each row is a dataset and
+  each column contains a different searchable characteristic of the datasets.<br>
+ In the bottom right corner of the grid, you can find the number of rows, i.e. available datasets.
 *  Under the header *Tissue/Tumor* type the keyword **colon** in the white text-field filter, and check the adapted 
-   number of rows in the bottom right corner to find out how many colon related sets R2 is hosting.
+   number of rows in the bottom right corner to find out how many data sets R2 is hosting with the keyword colon in its name.
 * Find the RNA expression dataset from *Author* **Marra** and click on the row of the dataset that 
   contains **64** samples (*N*). In the information panel below the grid, you find more information about this 
   dataset. Quickly glance over the summary of the study. 
