@@ -122,7 +122,8 @@ A grid pops up that shows all the datasets that are currently available to you. 
 *  Under the header *Tissue/Tumor* type the keyword **colon** in the white text-field filter, and check the adapted 
    number of rows in the bottom right corner to find out how many data sets R2 is hosting with the keyword colon in its name.
 * Find the RNA expression dataset from *Author* **Marra** and click on the row of the dataset that 
-  contains **64** samples (*N*). In the information panel below the grid, you find more information about this 
+  contains **64** samples (*N*). 
+* In the information panel below the grid, you find more information about this 
   dataset. Quickly glance over the summary of the study. 
 * Select the dataset with a click on the blue button **Confirm selection**. Check on the main page in box 2 that the 
   correct set has been selected.
@@ -138,7 +139,7 @@ In R2, samples of a dataset can be annotated with e.g. clinical data or biologic
  data is called a **Track** in R2. These tracks can be used to filter, color or split data in all types of R2 analyses.
 
 Above the grid you can find an interactive pie chart for each track. The pie charts present an overview of the track values in the dataset, detailing the percentage of samples in each category. You can hover over the tracks and click on a section to filter the grid underneath for samples with that track value. 
-* Check the different group values in the pie charts of the tissue track and the proportion of samples for each group. 
+* Check the different group values in the pie chart of the tissue track and the proportion of samples for each group. 
 
 [comment]: # (The tissue annotation of the Marra set can thus be used, for instance,  to find the differences between the gene
 expression profiles of the adenoma samples and normal samples.)
@@ -161,8 +162,8 @@ type="button">Open the first answering form</button>
 > subjected to extensive clinical, pathological, and molecular analyses, little is currently known about the global gene expression changes accompanying their formation. 
 > To characterize the molecular processes underlying the transformation of normal colonic epithelium, we compared the transcriptomes of 32 prospectively collected adenomas with those of normal mucosa from the same individuals."<br>
 > 
->* **Which of the tracks could be useful to start with to study gene expression changes accompanying adenoma formation from normal colonic epithelium?**<br>
->* **Can you think of specific genes that you expect to show a difference in expression between the groups?**
+> We had a look at the track tissue above. This track annotates which samples originate from **normal** mucosa and which were obtained from **adenomas**.
+>* **Can you think of specific genes or pathways that you expect to show a difference in expression between the groups?**
 
 ------------------
 
