@@ -381,7 +381,7 @@ Now we would like to look into colorectal cancer associated mutations and see is
   mutations per CMS subtype.
 * For the *X track* choose **cms_final (5 cat)** and for the *Y track* choose **mutant_braf (3 cat)** mutations.
 * Select the *Graph type* **stacked barplot (%)**  
-* The Guinney dataset contains several datasets put together. To only look at the samples from studies that looked at the 
+*The Guinney dataset contains several datasets put together. To only look at the samples from studies that looked at the 
 mutational aberrations, use the Sample Filter with the setting *Subset track*, select **mutant_braf (3 cat)** and in the 
 pop-up check the boxes of **0 (776) and 1(87)**. We thus eliminate the samples from this analysis for which it is not known whether they have a BRAF mutations (value nd gets omitted). Click 
   **Ok** and then **Submit**.
@@ -419,7 +419,7 @@ instability (MSI) is caused by mutations in DNA mismatch repair genes such as ML
 
 In MSI colon cancer, genes of the DNA mismatch repair system play an important role. Germline mutations in these genes are a major cause of the inherited form of colon cancer, namely HNPCC (hereditary nonpolyposis colon cancer).  In sporadic forms of colon cancer however, these genes are frequently inactivated. Inactivation is often achieved via hypermethylation, switching the gene off. Hypermethylation of genes in colon cancer is most common in colon tumors with a proximal location in the colon and much less in colon tumors with a distal location.
 
-Dataset used: The next section we will use another dataset. *"Tumor Colon- Watanabe - 84 - MAS5.0 - u133p2"*
+The next section we will use another dataset. *"Tumor Colon- Watanabe - 84 - MAS5.0 - u133p2"*
 
 This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors.
 
@@ -429,6 +429,7 @@ This dataset consists of Microsatellite stable (MSS) tumors and microsatellite i
 * Then **Confirm selection** of the dataset.
 * Use the **Differential expression between two groups** module to generate a list of differentially 
   expressed genes between **MSI** and **MSS** characterized tumors (*MS_status*). 
+
 Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine 
 whether these genes indeed are differentially expressed between MSI and MSS tumors and which genes exactly make the difference. 
 * With the **Select gene set** button, filter for **DNA repair** genes, and find them in **Categories**. There are 247 
@@ -450,7 +451,7 @@ One of the genes that is differentially expressed, is MLH1.
 ------  
 
 ![](_static/images/R2d2_logo.png)**In the list of differentially expressed genes, MLH1 is significantly lower 
-expressed in the msi group vs the mss group: msi < mss.<br>
+expressed in the msi group vs the mss group: msi < mss.<br><br>
 When you look at the expression plot of MLH1, what do you notice about the expression of the samples in this group? Do you see a clear-cut trend of lower MLH1 expression in the 
 MSI group?**
 <br>
@@ -467,6 +468,7 @@ also a subgroup could be identified.
 Let's visualize the relation between these dataset annotations in an other way. 
 * Go back to the main menu and select **relate two tracks** and click **Next**. 
 * Select for the _X track_ the **MS_status** and for the _Y track_ **Orientation** and click **Submit**. 
+
 In the MLH1 expression graph we saw that low gene expression was not equally distributed within the MSI group. 
 * Let's add this layer of information in this plot as well: select *Color mode* **Color by a Gene** and enter **MLH1** 
   as gene to color the plot. Click **Submit**.  
@@ -484,16 +486,17 @@ more often has a low MLH1 expression?**
 
 In many cases of proximal colon cancer with MSI, the high level of microsatellite instability is caused by the loss 
 of MLH1 expression. MLH1 inactivation can occur due to mutations in the MLH1 gene or through epigenetic changes, 
-such as promoter methylation. In summary, the loss of MLH1 expression is a common mechanism leading to MSI in 
+such as promoter methylation.  
+
+In summary, the loss of MLH1 expression is a common mechanism leading to MSI in 
 proximal colon cancer. Understanding the relationship between MLH1 expression and MSI is crucial for diagnosing MMR 
 (mutation mismatch repair) deficiency, predicting prognosis, and guiding targeted therapies for patients with 
-colorectal 
-cancer.
+colorectal cancer.
 
 
-So we have identified an important player as discussed in college. We identified this key player in the Watanabe 
-data set. We will now corroborate our findings in another dataset. Not only because this is an old set (look up  
-the background information in the information panel of the dataset selection grid), but it is  common practice in to 
+Colorectal tumors with MSI do not have the same response to chemotherapeutics and are an important subgroup to look at for specialized treatments. 
+In the Watanabe data set we found MLH1 as a possibly important player. We will now corroborate our findings in another dataset. Not only because this is an old set (look up  
+the background information in the information panel of the dataset selection grid), but it is  common practice to 
 validate your results with other sources. We will use a dataset that we already looked at with the t-SNE clustering 
 algorithm.
 
@@ -501,32 +504,26 @@ algorithm.
 
 * Select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
-* Perform the **Differential Expression between two groups** analysis for **Microsatellite_instability** (no vs 
-  yes), and
-  select with the **Search GS** 
-  button the **Broad 2020 09 c6 oncogenic**. **Submit**
+* Perform the **Differential Expression between two groups** analysis for **microsatellite_instability** (no vs 
+  yes), and perform the analysis on the gene set **Broad 2020 09 c6 oncogenic**. **Submit**
 * Click again on the MHL1 gene magnifying glass.
 
-![](_static/images/MolOncCRC/filter_broad_oncogenic.png "204 set: MLH1")
-
-[**Don't forget to use the filter option**](_static/images/MolOncCRC/chrommap.png)
-
-
-So in this set too MLH1 seems to play a key role and is possibly affecting other genes.
-
-One way to find out which genes are possibly regulated by the MLH1 gene is to find genes which are (inverse) correlated with this gene.
+In this set too MLH1 seems to play a key role for MSI related CRCs. It would be interesting to find out which genes are possibly regulated by the MLH1 gene.
+One way to find genes that are possibly affected by MLH1 is to look at (inversely) correlated genes.
 
 
 #### Find genes correlating with a single gene
 
 * From the main page, run the **Find Correlated Genes with a single Gene** module for the MLH1 gene. Use again
-  the filter option for the **Broad 2020 09 c6 oncogenic** geneset. 
+  the filter option for the **Broad 2020 09 c6 oncogenic** gene set. 
 
 
-* Then click on the best correlating gene to plot both genes together, in a two gene view. Inspect the correlation. Can you think of reasons why the gene expression is highly correlated/
+* On the result page, click on the best correlating gene to plot both genes together, in a two gene view. Inspect the correlation. Can you think of reasons why the gene expression is highly correlated?
 
 
-* Click on **view additional details**, on which chromosomes are both genes located
+* Click on **view additional details**, look at the Probeset Genome Location table.
+
+On which chromosomes are both genes located?
 
 
 * Click T-view and zoom out 2 times
@@ -534,8 +531,9 @@ One way to find out which genes are possibly regulated by the MLH1 gene is to fi
 
 ![](_static/images/MolOncCRC/viewadddetails.png "Click TView to go to the Genome Browser")
 
-The Genome Browser allows you to "walk over the genome". Underneath the genome locations are annotated with the 
-genes that are located at the specific location. Genes colored in red are read in reverse direction. 
+You arrived at the Genome browser. The Genome Browser allows you to "walk over the genome".
+
+Underneath the genome locations are annotated with the genes that are located at the specific location. Genes colored in red are read in reverse direction. 
 
 ------  
 
@@ -548,14 +546,16 @@ genes that are located at the specific location. Genes colored in red are read i
 The correlating genes result page shows two columns: the positively correlating genes on the left, the negatively 
 correlated genes on the right. Let's have a closer look at this last group.  
 
-* Go back to your genelist of correlating genes and scroll down to the Adjustable Settings menu at the bottom of the 
-  page. Adapt here the setting *Corr. r cutoff sign* to only look at the negatively correlated genes. Hit the red 
-  cross of the Gene Filter and click **Submit** to update the result page. This might take a while. 
-* Click the button on the right side of the page **Chromosome map**.
+* Go back to your genelist of correlating genes (this should still be open in the previous tab) and scroll down to the Adjustable Settings menu at the bottom of the 
+  page. Adapt here the setting *Corr. r cutoff sign* to only look at the **negatively** correlated genes. 
+* Click on the currently selected gene set such that you can **Clear selection**
+* Click **Submit** to update the result page. This might take a while. 
 
 ![](_static/images/MolOncCRC/loading_page.png "Loading Page")
 
-The overrepresentation is calculated of genes that negatively correlate with MLH1 expression with respect to all genes 
+* Click the button on the right side of the page **Chromosome map**.
+
+The over-representation is calculated of genes that negatively correlate with MLH1 expression with respect to all genes 
 present on (an arm of) a chromosome.
 
 * A lot of genes are clearly over-represented on a number of chromosomes, especially chrom 18 with a high p-value.
@@ -568,10 +568,10 @@ present on (an arm of) a chromosome.
 
 ------
 
-Now let's see How strong MLH1 expression is associated with CMS subtypes.
+Now let's see how strong MLH1 expression is associated with CMS subtypes.
 
-* From the main page select the **Correlate a Gene with a track** analysis to confirm the strong association of MLH1 
-  expression with the CMS1 subtype.
+* From the main page select the **Correlate Gene with a track** analysis to confirm the strong association of MLH1 
+  expression with the CMS1 subtype (track **cms_predicted (4 cat)**).
 
 #### DNA methylation
 
@@ -587,11 +587,11 @@ be found.
 
 A heatmap is generated of methylation levels. Each column corresponds to a sample, and each row corresponds to a 
 feature (a single CpG site or a larger target region including multiple CpG sites, e.g. promoter regions). A 
-hierarchical clustering of the samples is performed. The MLH1 reporters themselves seem faulty, but in you find CpG 
+hierarchical clustering of the samples is performed. The MLH1 reporters themselves seem faulty (complete blue colored rows), but you find CpG 
 sites above that are located at the promotor sites of MLH1 and the gene that we have seen before as strongly 
 correlating in expression. 
 
-* Hover with your mouse over the r2_at_cms track to see to which cms subtype the cluster of hypermethylated samples 
+* Hover with your mouse over the _r2_at_cms_ track to see to which CMS subtype the cluster of hypermethylated samples 
   belong.  
 
 ------  
@@ -611,7 +611,7 @@ sets CMS 4 apart from the subtypes 2 and 3.
 
 * On the main page, select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 * Choose the *analysis* **Differential Expression Between Two Groups**.
-* Choose the track **cms_predicted** and look at groups **cms2 and **cms4**
+* Choose the track **cms_predicted** and look at groups **cms2** and **cms4**
 * The analysis can take a while. 
 
 Gene set analysis helps researchers interpret the biological relevance of a group of genes. Instead of looking at 
