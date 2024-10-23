@@ -174,8 +174,8 @@ One of these tools is the "Find differential expression between groups". The dif
 significantly different between two groups of a dataset.    
 
 * Click on **Main** in the upper left corner.
-* Check if you have selected the **Marra** dataset and in box 3 *select type of analysis*, Differential expression 
-  between two groups_. CLick **Next**.
+* Check if you have selected the **Marra** dataset with 64 samples in box 2 and in box 3 *select type of analysis*, **Differential expression 
+  between two groups**. CLick **Next**.
 * R2 offers a couple of statistical *Test* options, in this case we use the **T-test** which is selected by default.
 * Now we have to select which grouping variable to use. Select *Group by* **Tissue (2cat)** to use the previously 
   seen tissue annotation. And click **Submit**.
@@ -195,8 +195,8 @@ ______
 
 
 Next to the many publicly available datasets, R2 also hosts many curated lists of genes which we call 
-**gene sets**. These gene sets can be used to restrict or filter an analysis as well. We can adapt our current 
-search by scrolling down to the end of page, where you find the Adjustable Settings menu. You can now use a Gene set to 
+**gene sets**. These gene sets can be used to restrict or filter an analysis as well.<br>
+We can adapt our current search by scrolling down to the end of page, where you find the Adjustable Settings menu. You can now use a Gene set to 
 restrict your list of differentially expressed genes between normal tissue and adenomas that is specifically associated with colorectal cancer.  
 
 * Click on **Select gene set** and a grid box will pop-up.
@@ -207,16 +207,16 @@ restrict your list of differentially expressed genes between normal tissue and a
 * Always click **Submit** afer you have changed something in the Adjustable settings menu in order for the changes to take effect.
 * Check out the list and see if you recognize multiple genes. You can hover over the magnifying glasses in front of each row to learn more about the genes.
 * Now click on the magnifying glass in front of **AXIN2** to obtain a violin plot with the scatter points of the expression value of this gene 
-  for each sample in the dataset.
-  The plot shows the two groups the tissue track. The colors show the different groups to which each sample belongs. If you hover your mouse over 
-  any of the blocks, you can see which side is adenoma and which side is normal tissue. Also note you hoover over the dots in the graph and the tracks to get more information of the individual samples.
+  for each sample in the dataset.<br>
+  The plot shows the two groups of the tissue track in violin plots  with the individual sample values showing as scatter on top. If you hover your mouse over 
+  any of the violins, you can see the group statistics. Also note you can hoover over the dots in the graph and the tracks to get more information of the individual samples.
 * The green bar in the top allows you to easily go to next or previous gene of your list. Click on the **arrow with 
-  MYC** on the right side of the green bar to view its gene expression in the samples. 
+  MYC** on the right side of the green bar to view this gene's expression in the samples. 
 
 ------
 
 ![](_static/images/R2d2_logo.png)**What did you observe about the gene expression of AXIN2 and MYC? When you think 
-about biological processes, why would this be?  **
+about biological processes, why would this be?**
 
 ______
 
@@ -238,14 +238,14 @@ subgroups in the data.
 
 [**Example heatmap: finding subgroups in your data**](_static/images/TumorHeterogeneity_HeatmapClustering.png)
 
-* Go back to gene list result page of the previous Differential Expression between two groups analysis, the tab 
+* Go back to the gene list result page of the previous Differential Expression between two groups analysis, the tab 
   should still be open. 
 * Generate a list of genes which are differentially expressed comparing normal and adenoma tissue within the KEGG WNT 
   pathway by adjusting the settings if needed:
   - Use the False Discovery Rate for multiple testing correction, 
   - log 2 values 
   - and P <0.01. 
-  - First clear the gene set filter with the red cross and use the Search GS button again. Find the KEGG **Wnt** 
+  - Click on the currently selected gene set, **Clear selection** with the red button and find the KEGG **Wnt** 
     pathway geneset (hint: use keyword **Wnt**). 
   Don't forget to hit **Submit** in order to redo the analysis with the new settings.
 
@@ -261,14 +261,14 @@ ______
 Now let's generate a Wnt pathway heatmap from a different route:
 * Go to the main page
 * Select the analysis **View Geneset (Heatmap)**
-* On the next page, select **KEGG** *Gene set Collection*. Click **Next** and then **Next** again.
-* Now scroll all th eway down at the *Gene set* list and click on **Wnt_signaling_pathway**. Click **Next**.
+* On the next page, click on *Select gene set* to find the **KEGG** **Wnt_signaling_pathway**. Click **Submit**.
 
 ------
 
 ![](_static/images/R2d2_logo.png)**What does the annotation above the heatmap tell you?**
 
-![](_static/images/R2d2_logo.png)**How and why does this heatmap differ from the previous Wnt pathway heatmap?**
+![](_static/images/R2d2_logo.png)**How and why does this heatmap differ from the previous Wnt pathway heatmap?<br>
+(Hint: Which genes are you looking at exactly in each heatmap?)**
 
 ______
 
@@ -304,37 +304,32 @@ type="button">Open the answering form for this section</button>
 
 An unbiased unsupervised type of clustering analysis is a good starting point to familiarize yourself with a new
 dataset. The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of
-samples and will clump cells with similar expression profiles together on a map. In R2, these mps can be generated 
-by users with an account. Ones a dataset t-SNE has run, it is available to other users as well. This saves 
-processing time and costs. <br>
+samples and will place cells with similar expression profiles together on a map.<br>
+In R2, these maps can be generated by users with an account. Once a dataset t-SNE has run, it is available to other users as well. This saves 
+processing time and costs. <br><br>
+
 We will use a dataset that was adapted from one of the resources of
  [The Cancer Genome Atlas (TCGA)](https://www.cancer.gov/ccg/research/genome-sequencing/tcga). They provide a wealth 
 of omics data: "TCGA generated over 2.5 
-petabytes of genomic, epigenomic, transcriptomic, and proteomic data. The data, which has already led to improvements in our ability to diagnose, treat, and prevent cancer, will remain publicly available for anyone in the research community to use." 
-
-*Dataset used:*
-* Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36
-
+petabytes of genomic, epigenomic, transcriptomic, and proteomic data. The data, which has already led to improvements in our ability to diagnose, treat, and prevent cancer, will remain publicly available for anyone in the research community to use."
 * In the left side menu on the main page, click on **Sample maps (UMAP/tSNE)**
 * In the grid, filter for the dataset **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36** and 
-  click its **Select** button
+  click its **Select** button.
 
 Under the graph, a menu allows the user to adapt settings.
 Colors of the graph points are not set by default.
 
-* Click the button to **View standard plot** that you can find underneath the little menus
-* Find the **Color mode** dropdown and select *Color by Track*. Now set the 
-  _Color 
-  track_ dropdown to use the
-  **cms_predicted** track, and click **Set colors** to show the changes.
+* Find the _Color mode_ dropdown and select **Color by Track**. Now set the 
+  _Color track_ dropdown to use the
+  **cms_predicted (4 cat)** track, and click **Set colors** to show the changes.
 
 The most important parameter for the t-SNE algorithm is the perplexity value. The perplexity parameter controls 
 the balance between a focus on preserving local details or global structures of the data. When R2 receives the 
   request to calculate the t-SNE map for a dataset, it immediately calculates and stores the t-SNE maps with 
 different perplexity values. The resulting maps can be found under de setting 
-  _Versions_. It is also possible to show all the available perplexity maps for the dataset at the same time. 
+  _Version_. It is also possible to show all the available perplexity maps for the dataset at the same time. 
 
-* Set *Versions* to the value **all** and click **Submit** again.  
+* Set *Version* to the value **all**.  
 
 
 
@@ -343,7 +338,8 @@ different perplexity values. The resulting maps can be found under de setting
 
 ![](_static/images/R2d2_logo.png)**What insight did you obtain when you colored the plot with annotation?**
 
-![](_static/images/R2d2_logo.png)**Why do you think it is good practice to check different values for a parameter?**
+![](_static/images/R2d2_logo.png)**You looked at several embeddings of the t-SNE plot that were created with different perplexity values.
+roughly what is your impression of the clustering of the samples. Why do you think it is good practice to check different values for a parameter?**
 
 <br>
 <br>
@@ -351,27 +347,21 @@ different perplexity values. The resulting maps can be found under de setting
 
 ------  
 
-Let's see if there is any difference in survival chances among the subtypes that were shown on the t-SNE map. 
+Let's see if these cms subtypes that cluster separately on the t-SNE map hold any prognostic survival value. 
 
 
 ### Different survival chances for different CMS CRC subtypes? 
-To see if there is a difference  the effect of different survival chances  
+  
 *Dataset used*
 * Tumor Colon (CMS) - Guinney - 3232 - custom - ccrcst1
 
 * In the left side menu on the main page, click on Survival (Kaplan-Meier / Cox)
-* In the menu at the center of the page, click at the Dataset setting on the current Dataset name, and find the dataset with *Author* is **Guinney** and the amount of samples *N* is **3232**
+* In the menu at the center of the page, click at the Data set setting on **Select a data set**, and find the dataset with *Author* **Guinney** and the amount of samples *N* is **3232**
 * Click on the row to read its description in the information box underneath the dataset selection grid
 
-
-
 * Leave *Separate by* at **categorical track (Kaplan-Meier)** and click **Next**
-* Choose *type of Survival* **overall* and *Track* **lv_cms_final**
-
-
+* Choose *Type of Survival* **overall** and *Track* **cms_final** and click **Next**
 * Now perform the same analysis, but choose **relapse-free** instead of overall for the setting *type of Survival*  
-
-
 
 ------  
 
@@ -384,32 +374,31 @@ To see if there is a difference  the effect of different survival chances
 
 ------
 
-
 ### Mutations
-
-* From the main page, select the Guinney choose a **relate 2 tracks** analysis to show the different ratios of 
+Now we would like to look into colorectal cancer associated mutations and see is they are specific for one of the CMS groups
+* On the main page, select the Guinney dataset if it is not selected in box 2 yet
+* Choose the **relate 2 tracks** analysis to show the different ratios of 
   mutations per CMS subtype.
-* For the *y axis* choose **lv_braf_mut** mutations and for the *X axis* choose **lv_cms_final**.
-* Select the **stacked barplot (%)** *graph type* and click **Submit**
-* The Guinney dataset contains several datasets put together. To only look at the samples that looked at the 
-  mutational information, scroll down underneath the graph to Adjustable settings menu. Use the Sample Filter with 
-  the setting *Subset track*, select **lv_braf_mut** and in teh pop up check the boxes of **0 (776) and 1(87)**, click 
-  **ok**
-* For the changes to take effect click **Submit**
+* For the *X track* choose **cms_final (5 cat)** and for the *Y track* choose **mutant_braf (3 cat)** mutations.
+* Select the *Graph type* **stacked barplot (%)**  
+* The Guinney dataset contains several datasets put together. To only look at the samples from studies that looked at the 
+mutational aberrations, use the Sample Filter with the setting *Subset track*, select **mutant_braf (3 cat)** and in the 
+pop-up check the boxes of **0 (776) and 1(87)**. We thus eliminate the samples from this analysis for which it is not known whether they have a BRAF mutations (value nd gets omitted). Click 
+  **Ok** and then **Submit**.
 
 ------  
 
 
-![](_static/images/R2d2_logo.png)**Which CMS group shows the highest amount of Braf mutations?**
+![](_static/images/R2d2_logo.png)**Which CMS group shows the highest amount of BRAF mutations?**
 <br>
 <br>
 
 ------
 
 Now we will look at the KRAS mutations
-* Underneath the graph in Adjustable settings menu, change the *y-axis* to **lv_kras_mut**. 
+* Underneath your stacked bar plot, scroll down to the **Adjustable settings** menu, change the *y-axis* to **mutant_kras**. 
 * Use the red cross behind the setting *Subset track* to eliminate the braf mutation subset and click on the 
-  dropdown to now select **lv_kras_mut**. In the pop-up check the boxes of **0 (560) and 1(336)**, click **ok**
+  dropdown to now select **mutant_kras**. In the pop-up check the boxes of **0 (560) and 1(336)** (thus omit the nd value samples), click **Ok**
 * Click **Submit** to see the result
 
 ------  
@@ -430,19 +419,20 @@ instability (MSI) is caused by mutations in DNA mismatch repair genes such as ML
 
 In MSI colon cancer, genes of the DNA mismatch repair system play an important role. Germline mutations in these genes are a major cause of the inherited form of colon cancer, namely HNPCC (hereditary nonpolyposis colon cancer).  In sporadic forms of colon cancer however, these genes are frequently inactivated. Inactivation is often achieved via hypermethylation, switching the gene off. Hypermethylation of genes in colon cancer is most common in colon tumors with a proximal location in the colon and much less in colon tumors with a distal location.
 
-Dataset used: The next section we will use another dataset. * "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"*
+Dataset used: The next section we will use another dataset. *"Tumor Colon- Watanabe - 84 - MAS5.0 - u133p2"*
 
 This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors.
 
 #### MSS vs MSI
 
-* Find the dataset **Tumor Colon - Watanabe - 84 - MAS5.0 - u133p2** and read the **Summary** in the information panel underneath the dataset selection grid. Then **Select** the dataset.
-* Use the **Differential expressed genes between two groups** module to generate a list of differentially 
-  expressed genes between **MSI** and **MSS** characterized tumors (*MS_status*). Because we know that DNA repair 
-  genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine 
-  whether these genes indeed are differentially expressed between MSI and MSS tumors and which genes exactly make 
-  the difference. With the **Search GS** button, filter for **DNA repair** genes, and find them in **Categories**. There are 247 
-  genes annotated as DNA repair genes. Perform the analysis.
+* Find the dataset **Tumor Colon - Watanabe - 84 - MAS5.0 - u133p2** and read the **Summary** in the information panel underneath the dataset selection grid. 
+* Then **Confirm selection** of the dataset.
+* Use the **Differential expression between two groups** module to generate a list of differentially 
+  expressed genes between **MSI** and **MSS** characterized tumors (*MS_status*). 
+Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine 
+whether these genes indeed are differentially expressed between MSI and MSS tumors and which genes exactly make the difference. 
+* With the **Select gene set** button, filter for **DNA repair** genes, and find them in **Categories**. There are 247 
+  genes annotated as DNA repair genes. Perform the analysis by clicking on **Submit**.
 
 ------  
 
@@ -454,14 +444,14 @@ This dataset consists of Microsatellite stable (MSS) tumors and microsatellite i
 
 ------
 
-* One of the genes that is differentially expressed, is MLH1. Click on its magnifying glass to look at the 
-  expression of MLH1 in the MSI vs. MSS samples. 
+One of the genes that is differentially expressed, is MLH1. 
+* Click on its magnifying glass to look at the expression of MLH1 in the MSI vs. MSS samples. 
 
 ------  
 
 ![](_static/images/R2d2_logo.png)**In the list of differentially expressed genes, MLH1 is significantly lower 
-expressed in the msi group vs the mss group: msi < mss. When you look at the expression plot of MLH1, what do you 
-notice about the expression of the samples in this group? Do you see a clear-cut trend of lower MLH1 expression in the 
+expressed in the msi group vs the mss group: msi < mss.<br>
+When you look at the expression plot of MLH1, what do you notice about the expression of the samples in this group? Do you see a clear-cut trend of lower MLH1 expression in the 
 MSI group?**
 <br>
 <br>
@@ -471,16 +461,14 @@ MSI group?**
 MSI tumors give a very heterogeneous picture. This could be an indication that within the MSI tumor group 
 also a subgroup could be identified. 
 
-* Hover with your mouse over data points or inspect the annotation underneath the graph to see if you can identify a subgroup of an annotation track in which low MLH1 expression occurs more often.
-* Scroll down to the Adjustable setting and change grouping setting _Track into **MS_orientation. To visuallly 
-  support the distinct group, also change _Color mode_ to **Color by a Track** and choose the same track to color 
-  the plot. Click **Submit**
+* Hover with your mouse over data points to see if you can identify a subgroup of an annotation track in which low MLH1 expression occurs more often.
+* Scroll down to the Adjustable settings menu and change grouping setting _Track_ into **MS_orientation**. Click **Submit**
 
-R2 has an analysis tool called *relate two tracks* where you visualize the relation between dataset annotations. 
+Let's visualize the relation between these dataset annotations in an other way. 
 * Go back to the main menu and select **relate two tracks** and click **Next**. 
-* Select for the _X-track_ the **MS_status** and for the _Y_track_ **Orientation** and click **Submit**. 
-* In the MLH1 expression graph we saw that low gene expression was not equally distributed within the MSI group. 
-  Let's add this layer of information in this plot as well: select *Color mode* **Color by a Gene** and enter **MLH1** 
+* Select for the _X track_ the **MS_status** and for the _Y track_ **Orientation** and click **Submit**. 
+In the MLH1 expression graph we saw that low gene expression was not equally distributed within the MSI group. 
+* Let's add this layer of information in this plot as well: select *Color mode* **Color by a Gene** and enter **MLH1** 
   as gene to color the plot. Click **Submit**.  
 
 
