@@ -615,18 +615,18 @@ sets CMS 4 apart from the subtypes 2 and 3.
 * The analysis can take a while. 
 
 Gene set analysis helps researchers interpret the biological relevance of a group of genes. Instead of looking at 
-individual genes, it allows you to understand the collective functions or pathway involvements genes in your list. 
+individual genes, it allows you to understand the collective functions or pathway involvements of genes in your list. 
 This can provide more meaningful insights into the underlying biology of a particular condition or experiment.
 
 * Click on the top most button on the right that is labeled **Gene set analysis**.
-* Select the *Gene set Collection* **Broad 2020 09 h hallmark**
+* Select the *Gene set Collection* **Custom collection** and select *Gene set* **Broad 2020 09 h hallmark**
 * Switch the *Representation* setting to **all** to look at both over- and under-representation
-* Click Next
+* Click **Next**
 
 
 ------
 
-![](_static/images/R2d2_logo.png)**Which gene sets do you see pop up and are they over or under expressed in CMS 4?**
+![](_static/images/R2d2_logo.png)**Which gene sets do you recognize from the first column of the table? Name a few that are overexpressed in CMS 2 and name a few that are overexpressed in CMS 4.**
 
 ![](_static/images/R2d2_logo.png)**Explain the biological relevance for the CMS4 subtype for these over- or/and underexpression of these gene sets for CMS4 subtype CRC tumors**
 
@@ -668,8 +668,8 @@ mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :
 
   ![](_static/images/R2d2_logo.png)**What can you say about the level of expression of these genes post treatment?**
 
-  ![](_static/images/R2d2_logo.png)**As with every result, think about why you see the result - does it make sense, 
-  what is the biological implication. So, in this case, what is the role of ZEB1 in EMT? (Use Google or another informative source)**
+  ![](_static/images/R2d2_logo.png)**What is the role of ZEB1 in EMT? (Use Google or another informative source)<br>
+  What is the biological implication of this experiment?**
   
 
 ------
@@ -683,9 +683,8 @@ proliferation signatures and Wnt target genes are associated with good prognosis
 
 * On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
 * Select the analysis **View Geneset (Heatmap)**
-* Select *Gene set Collection* **Broad 2020 09 h hallmark** and click **Next**
-* Click **Next** again
-* Click one time on *Gene set* **HALLMARK_MYC_TARGETS_V1 (200)** and click **Next**
+* In the *Gene set* selection grid, look in the sub gene set collections of **Broad 2023 10 h hallmark** for **HALLMARK_MYC_TARGETS_V1 (200)** and **Confirm selection**
+* **Submit**
 
 The heatmap for the z-scores of the expression values of the MYC targets geneset is shown. Underneath the heatmap 
 you find the geneset average z-value per sample, also known as the signature score. With an account you can save 
@@ -698,17 +697,14 @@ such scores as a Track to use further analyses in R2.
 
 * Go back to the main page
 * Click **Relate 2 tracks**, click **Next**
-* Select *x-axis* **pre-post-imatinib** and *y-axis* **hallmark_myc_targets_v1_signsc**
-* Select *Graph type* **Box/dot plot (bands)**
-* Change *Color mode* to **Color by Track** and click **Submit**
-
-* Do the same route (starting with View Geneset(heatmap)) for the Wnt target gene set **WNT_ImPACCT (student)** that 
-  you can find in the gene set collection **My R2 Communities** and store the signature score as a track as well.
-* Go back to the **Relate 2 tracks** just as in the previous exercise.
-* In the Adjustable settings menu underneath the plot, change the *y track* to **wnt_impacct**
-* Again relate this signature score with the track **pre-post-imatinib**
+* Select *X track* **pre-post-imatinib** and for the Y axis we choose the signature score that we just generated: *Y track* **hallmark_myc_targets_v1**
+* Select *Graph type* **Dot**
+* Change *Color mode (groups)* to **Color by Track** and click **Submit**
+<br><br>
+* Do the same route, starting with View Geneset (heatmap), for the Wnt target gene set: find **WNT_ImPACCT** that 
+  you can find in the gene set collection **Community gene sets** (use the search field of the grid) and store the signature score as a track as well.
+* Again perform the **Relate 2 tracks** just as in the previous exercise, this time with your WNT target gene signature on the Y axis.
 * Optionally change the *Graph type* to another type that you want to try out
-* Click **Submit**
 
 ------
 
