@@ -694,14 +694,16 @@ such scores as a Track to use further analyses in R2.
 * In the page that pop-ups, you can adjust settings 
 * Check the name that is provided for this signature score: _hallmark_myc_targets_v1 and read the description
 * We leave everything as is and click on **Build set**
-
+<br><br>
+Now that we have an average expression value for the MYC target genes per sample, we would like to assess how the treatment influenced these values.
 * Go back to the main page
 * Click **Relate 2 tracks**, click **Next**
 * Select *X track* **pre-post-imatinib** and for the Y axis we choose the signature score that we just generated: *Y track* **hallmark_myc_targets_v1**
 * Select *Graph type* **Dot**
 * Change *Color mode (groups)* to **Color by Track** and click **Submit**
 <br><br>
-* Do the same route, starting with View Geneset (heatmap), for the Wnt target gene set: find **WNT_ImPACCT** that 
+We also would like to know the influence of the treatment on WNT target gene expressions. 
+* Do the same route, starting with View Geneset (heatmap), for the WNT target gene set: find **WNT_ImPACCT** that 
   you can find in the gene set collection **Community gene sets** (use the search field of the grid) and store the signature score as a track as well.
 * Again perform the **Relate 2 tracks** just as in the previous exercise, this time with your WNT target gene signature on the Y axis.
 * Optionally change the *Graph type* to another type that you want to try out
@@ -725,9 +727,8 @@ after treatment.
 
 * On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
 * Select the analysis **Differential expression between two groups**
-* Switch the *Group by* setting to **pre-post-imatinib** and click **Submit**
-* Extra settings appear. We can now fill in the groups for which we want to find the differentially expressed genes: 
-  *Group 1* **pre-imatinib (15)** and *Group 2* **post-imatinib (15)**
+* Switch the *Group by* setting to **pre-post-imatinib** and click **Next**
+* Choose *Group 1* **pre-imatinib (15)** and *Group 2* **post-imatinib (15)**
 * Set the *P-value cutoff* to a stricter value: **0.001** and click **Submit**
 
 A table shows the differentially expressed genes. On the right underneath buttons with followup analyses, you can 
@@ -741,7 +742,7 @@ post-imatinib) and how many genes were upregulated (imatinib: pre-imatinib < pos
 
 ______
 
-* To use this genelist in other analyses within R2, click on the lowest button on the right side that is labeled 
+* To use this gene list in other analyses within R2, click on the lowest button on the right side that is labeled 
   **Store result as custom gene set**
 * As a name, type **impacct_imatinib_treatment_up**
 * In the *Included groups* check only the upregulated genes
@@ -754,13 +755,12 @@ in our cohort that show similar expression patterns for our geneset.
 
 * On the main page, select the Guinney dataset again
 * Select the **K-means analysis** in *box 3* and click Next
-* In the *Subset track* dropdown, select **lv_stage**, and in the pop-up window check the boxes **2** and **3** , 
+* In the *Subset track* dropdown, select **stage**, and in the pop-up window check the boxes **2** and **3** , 
   click **Ok**
-* Behind the setting *Gene set*, you find the button **Search GS**. Click on the button and find your previously 
-  stored gene set under **User gene sets > - > impacct_imatinib_treatment_up** and hit the green button on the left 
-  to use the selected gene set
+* Behind the setting *Gene set*, click **Select gene set** to find your previously 
+  stored gene set under **Personal gene sets > _TEMPORARY > impacct_imatinib_treatment_up**. Check the box in front of your gene set and **Confirm selection**.
 * We leave the number of groups at 2 
-* Set the *Cell width* to **1** and *Cell height* to **8** and click on **Next**
+* Set the *Cell width* to **1** and *Cell height* to **8** and click on **next**
 
 The Kmeans algorithm looks at the expression of the samples for the selected genes and makes two groups of samples 
 that show most similar expression patterns. Then for each gene it shows the expression by a color code
@@ -769,25 +769,26 @@ that show most similar expression patterns. Then for each gene it shows the expr
 ------
 
   ![](_static/images/R2d2_logo.png)**Which color group would you say shows high expression and which color group shows 
-  low expression of the geneset? (Thus, high: yellow or purple and low: yellow or purple)**
+  low expression of the geneset?<br>
+  (Thus, high: yellow or purple and low: yellow or purple)**
 
 ______
 
 Again this group division can be stored in R2 to use in a next analysis. 
-* To do so, hit the button **Store as track** that you can find on the left
-* On the following page, just click the button Next
+* To do so, hit the button **Store as track** that you can find on the left above the k-means heatmap  
+* On the following page, just click the button **Next**
 * To save the results in a way in which we will easily remember what the track was for and which group showed which
   expression, change the name of *Group 'cluster 1'* into **high** and of *Group 'cluster 2'* into **low**. Also 
   change *Track name* into **kmeans_imatinib_induced**
-* Click on Build set and go back to the main page
+* Click on **Build set** and go back to the main page
 
-Let's see which cms subtypes are represented in the two k-means sample clusters
+Let's see which CMS subtypes are represented in the two k-means sample clusters
 * On the main page, select the analysis **Relate 2 tracks**
-* For the *X track* scroll all the way down and select **kmeans_imatinib_induced**
-* For the *Y track* choose **lv_cms_final**
-* In the *Subset track* dropdown, select **lv_stage**, and in the pop-up window check the boxes **2** and **3** ,
+* For the *X track* scroll all the way down and select **kmeans_imatinib_induced (3 cat)**
+* For the *Y track* choose **cms_final (5 cat)**
+* In the *Subset track* dropdown, select **stage**, and in the pop-up window check the boxes **2** and **3** ,
   click **Ok**
-* Change the *Graph type* into **Stacked bar plot (%)**
+* Change the *Graph type* into **Stacked bar (%)** and use *Color mode (groups) **Color by Track**
 * *Order Groups by* **group size** and hit **Submit**
 
 
@@ -803,9 +804,8 @@ ______
  
 * From the main page in the left menu click the **Survival (Kaplan Meier/Cox)** analysis
 * Check that the Guinney set is selected and that the separation is made by **a categorical track**. Click **Next**
-* Choose *overall* survival type and *Track* **kmeans_stage23_imatinib_induced**. Click Next
-
-
+* Choose *overall* survival type and *Track* **kmeans_stage23_imatinib_induced** (scroll all the way down). Click **Next**
+<br><br>
 * In the left menu click again the **Survival (Kaplan Meier/Cox)** analysis
 * Repeat the process but select the **relapse free** instead of *overall* survival type. 
 
@@ -847,19 +847,20 @@ regions can be studied. Regions with H3K27Ac acetylation mark active enhancers a
 transcription), H3K4Me3 methylation marks active promotors. Studying the relative contributions of both types of 
 modifications allows a researcher to discern enhancer regions from active transcription sites.
 
-* From the main page select the analysis **ChIP Genome Browser** and click **Next**
-You are now at the GenomeBrowser at the genomic location of mycn.
-Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, 
+* From the main page left side menu, select the module **ChIP data** and click on **ChIP Genome Browser** 
+<br.
+You are now at the Genome Browser at the genomic location of the gene MYCN.
+Regions encoding genes are drawn at the bottom of the graph. When in red they are encoded in the reverse direction, 
   coding exons are darker.<br>
 
-Li et al. (2021) sequence 73 pairs of colorectal cancer tissues and generated 147 H3K27ac ChIP-Seq, 144 RNA-Seq, 147 
+Li et al. (2021) sequenced 73 pairs of colorectal cancer tissues and generated 147 H3K27ac ChIP-Seq, 144 RNA-Seq, 147 
 whole genome sequencing and 86 H3K4me3 ChIP-Seq samples. The patients were classified into the 4 CMS subtypes. 
 Therefore, we now have gene expression and chipseq data of this CMS classified patient cohort. Because it is 
-difficult to look at many profiles at the same time, we averaged the data per cms group. This way we created so 
+difficult to look at many profiles at the same time, we averaged the data per CMS group. This way we created so 
 called _ChIP seq meta profiles_. Let's load them into your Genome Browser
 * In the right upper corner, click the button **Load / Store Profile**
-* In the Profile dropdown, seelect **student - Li_CRC_normal_tumor_cms1234** and click **Execute**. 
-* Click On the top button **Goto the GenomeBrowser**
+* In the Profile dropdown, select **student - Li_CRC_normal_tumor_cms1234** and click **Execute**. 
+* Click on the button **Goto the GenomeBrowser** at the top.
 
 You now see the meta profiles of normal colon tissue, and CMS 1 to 4 meta profiles. For each group you see both 
 H3K27ac and H3K4me3. If you scroll down, you can see that you are at the location of the MYC gene. At an active 
@@ -868,9 +869,9 @@ at an active enhancer site, you will _only_ find H3K27ac, **no H3K4me3**. Thus l
 H3K27ac peaks without H3K4me3, and that is a known superenhancer location of MYC. 
 Let's look for more superenhancers:
 
-* In the left upper corner, you can write the name of a gene and you will be taken to its location on the genome. 
+* In the left upper corner, you can write the name of a gene, and you will be taken to its location on the genome. 
   Type **ascl2** in the textfield and click **Go**
-* Click the **View** button (if there are more View buttons, just take the top one) and scroll downn to check that 
+* Click the **View** button (if there are more View buttons, just take the top one) and scroll down to check that 
   you have arrived at ASCL2.
 * Now we need to zoom out to find possible superenhancers. Zoom out 10x with the button on top of the page. Then 
   zoom out 5x. Do you see an area with high peaks of H3K27ac where no H3K4me3 can be found? There is a superenhancer.
