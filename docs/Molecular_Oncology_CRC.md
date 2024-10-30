@@ -633,12 +633,25 @@ This can provide more meaningful insights into the underlying biology of a parti
 <br>
 <br>
 
+------
+
+
+##  A song of Genomic Alterations en Oncogenes
+
+- Thus far we looked and colon cancer characteristics mainly based on gene expression. Recently there is paper published were a large cohor of CRC patient is discribed and analysed. The datasets used in this articles comprehend and genome and transciptome data and on top of that this set is surprisingly well annotated with a lot of clinical information.  [Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3).
+
+- Good common scientific practice always to check validate other datasets to  validate your analysis.
+- start with T-SNE map to get a litte bit familiar with the Nunes dataset
+- Select 
+  
+
+
+
 
 ------
 
 
-
-## Effects of imatinib: shifts of signature profiles and molecular subtypes
+## Therapeutic: Effects of imatinib: shifts of signature profiles and molecular subtypes
 
 Mesenchymal Consensus Molecular Subtype 4 (CMS4) colon cancer is associated with poor prognosis and therapy resistance.
 In this proof-of-concept study, Kranenburg et al. assessed whether imatinib could shift cms4 subtype specific 
