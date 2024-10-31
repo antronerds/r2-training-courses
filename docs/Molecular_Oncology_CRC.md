@@ -638,14 +638,60 @@ This can provide more meaningful insights into the underlying biology of a parti
 
 ##  A song of Genomic Alterations en Oncogenes
 
-- Thus far we looked and colon cancer characteristics mainly based on gene expression. Recently there is paper published were a large cohor of CRC patient is discribed and analysed. The datasets used in this articles comprehend and genome and transciptome data and on top of that this set is surprisingly well annotated with a lot of clinical information.  [Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3).
+- Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently there is paper published were a large cohort of CRC patients  discribed and analysed. The datasets used in this article comprehend  genome and transciptome data and on top of that this set is surprisingly well annotated with a lot of clinical information which is not often in de case.  [Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3).
+
+Another
 
 - Good common scientific practice always to check validate other datasets to  validate your analysis.
-- start with T-SNE map to get a litte bit familiar with the Nunes dataset
-- Select 
+- start with T-SNE map to get a little bit familiar with the Nunes dataset
+- Select Tumor Colon - Nunes - 1063 - tpm - ensh38e98
+- Generate TSNE map, just check if the CMS classification also results in clear CMS clusters
+- explain here how to get there
+- small text to introdice CGH profiles
+- generate CHG profiles per CMS clusters below
+- looking CGH profiles, do you see  difference between several CMS classifications for the CGH profiles
+
+
+![](_static/images/MolOncCRC/tcga_nunes_tsnecompare.png "Subtypes in colorectal
+cancer: CMS classification")
+
+It has been shown that genome aberrations gains and losses do not completely overlap with hypermutations.
+
+
+
+- not HM in CMS1 prevalence for e.g CMS2
+
+![](_static/images/MolOncCRC/CGH_profiles_CMS_nunes.png "Subtypes in colorectal
+cancer: CMS classification")
+
+- Generate now the CGH profiles separate for the hypermutations in this set to investigate if this also hold for this set.
+
+
+![](_static/images/MolOncCRC/CGH_profiles_nHM_nunes.png "Hypermutation profiles").
+
+This clearly shows that hypermutions do not overlap with the CGH profiles, unfortunately you can not identify which CMS class has a higher incidence.
+
+- Analyse the cohort to see how the hypermutations are divided  for each sub-type.
+  (relate two tracks)
+
+
+![](_static/images/MolOncCRC/CMS_nHM_nunes.png "Hypermutation vs CMS").
+
+Comparing this picture with the CMS-CHG profiles you can see that hypermutations corresponds for each CMS cgh profile.
+
+
   
 
+#### to use and remarks:
 
+Q: Can you think of a reason why hypermutations occur less in tumor with genomic gains and losses and the otherway arround. 
+
+Q:
+- Can you think of  possible reason why in after a BRAF mut analysis the MAP/ERK which is activated pathy in the most of the tumors where you can find a BRAF mutation. (not detect with expression, phosphorylation)
+
+opm: Plaatjes naar answers doc
+
+- why are tumors with MSI hypermutated -> MSI broken DNA repair system -> lot of mutations -> Hypermutated
 
 
 ------
@@ -902,7 +948,7 @@ Ideally you should find oncogenes or transcription factors that are differently 
 tissue, and also show different enhancer profiles between normal and tumor tissue.
 
  
-------
+---
 
 ![](_static/images/R2d2_logo.png)**Play around with the GenomeBrowser. Look for genes that you might remember from 
 the lectures and see if you can find superenhancer areas. Also check if you can see differences between the CMS
