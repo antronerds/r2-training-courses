@@ -647,7 +647,7 @@ Another
 - Select Tumor Colon - Nunes - 1063 - tpm - ensh38e98
 - Generate TSNE map, just check if the CMS classification also results in clear CMS clusters
 - explain here how to get there
-- small text to introdice CGH profiles
+- small text to introduce CGH profiles
 - generate CHG profiles per CMS clusters below
 - looking CGH profiles, do you see  difference between several CMS classifications for the CGH profiles
 
@@ -657,7 +657,7 @@ cancer: CMS classification")
 
 It has been shown that genome aberrations gains and losses do not completely overlap with hypermutations.
 
-
+![](_static/images/MolOncCRC/WES-menu_nunes.png "onco_plot_nunes.png").
 
 - not HM in CMS1 prevalence for e.g CMS2
 
@@ -682,10 +682,48 @@ Comparing this picture with the CMS-CHG profiles you can see that hypermutations
 The CMS subclasses each have the  own characterics we have seen that CMS has a signifant lower amount of mutation we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver genes , but we cannot see in the hypermution parameters we have seen which one.  The nice thing of this dataset no onlu the transcriptome has been analysed but also the genomes. Let's see which mutation have been found in this data how there relate to activating pathways.
 
 - Shown with mutations have been reported
-- 
-
 
 ![](_static/images/MolOncCRC/onco_plot_nunes.png "onco_plot_nunes.png").
+
+- So we have an overview of most occurring mutations in our complete cohort since many CRC oncodrivin genes haven been reported we can user R2 to investigate which mutations occur and also information about the type like missence , nonsense , frameshifs etc are reported in detail.
+
+To investigate mution in each individual sample for this cohort select in the main menu the WES/WES module and select somatic mutations. Select as variant hg38 - CRC nunes (Nature 2024) OncoKB only. If you choose as list mode summary you see immediately a list of genes which look familiar do you see genes which play in pivotal role in (CRC) cancers.
+
+Now switch to de detailed list mode and click 'next'. Here you see all the reported mutation with  their specifics at you disposal. In which patient is which  mutation reported. If you click on details of a patient at top and this will guide you to the genomic location of e.g APC mutations if you zoom out 2 x  20 times. You see all the different reported mutatios for the APC gene. Hoovering over the small coloured blocks you can also see the details for the different mutation categories.
+
+![](_static/images/MolOncCRC/APCexample_detail.png "APCexample_detail.png").
+
+KRAS and BRAF mutations oncogenecis driver genes in cancer. Do the same as for the APC gene for  KRAS and  BRAF, it is more convenient to entr the gene symbols in the box and click next.
+
+Q: After some zooming what do you notice  when comparing  by eye balling the mutation of APC vs BRAF / KRAS. 
+
+![](_static/images/MolOncCRC/KRASexample_detail.png "KRAS_detail.png").
+
+![](_static/images/MolOncCRC/BRAFexample_detail.png "BRAF example_detail.png").
+
+A: APC has many and different mutations on multiple  locations compared to KRAS and BRAF.
+
+Q: Which mutation type in BRAF is the most prominent. 
+A: V640E also often reported as V600R and is an activation mutation.
+
+
+Up to now we have investigated the transcriptome and genomics data separately except some annotation of hypermutations which was the result of the genomics analysys.
+
+Q: If you want find out what patient with or without a certain mutation  have certain effect on regualtion or you want to analyse specific mutation with clinical parameters of the patients. What do you need
+
+A: Annotate this cohort with the mutations for each patient.
+
+In r2 you can easely with somatic variation module annotated each individual samples.
+
+
+
+
+
+
+
+
+
+
 
 
   
