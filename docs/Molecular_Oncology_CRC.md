@@ -139,7 +139,7 @@ In R2, samples of a dataset can be annotated with e.g. clinical data or biologic
  data is called a **Track** in R2. These tracks can be used to filter, color or split data in all types of R2 analyses.
 
 Above the grid you can find an interactive pie chart for each track. The pie charts present an overview of the track values in the dataset, detailing the percentage of samples in each category. You can hover over the tracks and click on a section to filter the grid underneath for samples with that track value. 
-* Check the different group values in the pie chart of the tissue track and the proportion of samples for each group. 
+* Check the different group values in the pie chart of the **tissue** track and the proportion of samples for each group. 
 
 [comment]: # (The tissue annotation of the Marra set can thus be used, for instance,  to find the differences between the gene
 expression profiles of the adenoma samples and normal samples.)
@@ -198,7 +198,8 @@ Next to the many publicly available datasets, R2 also hosts many curated lists o
 **gene sets**. These gene sets can be used to restrict or filter an analysis as well.<br>
 We can adapt our current search by scrolling down to the end of page, where you find the Adjustable Settings menu. You can now use a Gene set to 
 restrict your list of differentially expressed genes between normal tissue and adenomas that is specifically associated with colorectal cancer.  
-
+<br>
+We are going to re-generate a list of significantly differentially expressed genes that are specifically associated with colorectal cancer.
 * Click on **Select gene set** and a grid box will pop-up.
 * Use the search field on the top of the table and fill in **colorectal**, hit **enter**.
 * [The KEGG (Kyoto Encyclopedia of Genes and Genomes) database]( https://www.genome.jp/kegg/pathway.html) is a comprehensive bioinformatics resource that 
@@ -347,13 +348,12 @@ roughly what is your impression of the clustering of the samples. Why do you thi
 
 ------  
 
-Let's see if these cms subtypes that cluster separately on the t-SNE map hold any prognostic survival value. 
+Let's see if these CMS subtypes, that cluster separately on the t-SNE map, hold any prognostic survival value. 
 
 
 ### Different survival chances for different CMS CRC subtypes? 
   
-*Dataset used*
-* Tumor Colon (CMS) - Guinney - 3232 - custom - ccrcst1
+We will use the Guinney dataset: _Tumor Colon (CMS) - Guinney - 3232 - custom - ccrcst1_
 
 * In the left side menu on the main page, click on Survival (Kaplan-Meier / Cox)
 * In the menu at the center of the page, click at the Data set setting on **Select a data set**, and find the dataset with *Author* **Guinney** and the amount of samples *N* is **3232**
@@ -870,7 +870,7 @@ H3K27ac peaks without H3K4me3, and that is a known superenhancer location of MYC
 Let's look for more superenhancers:
 
 * In the left upper corner, you can write the name of a gene, and you will be taken to its location on the genome. 
-  Type **ascl2** in the textfield and click **Go**
+  Type **ascl2** in the textfield and click **Go**.
 * Click the **View** button (if there are more View buttons, just take the top one) and scroll down to check that 
   you have arrived at ASCL2.
 * Now we need to zoom out to find possible superenhancers. Zoom out 10x with the button on top of the page. Then 
