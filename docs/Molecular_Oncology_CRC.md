@@ -679,6 +679,14 @@ This clearly shows that hypermutions do not overlap with the CGH profiles, unfor
 
 Comparing this picture with the CMS-CHG profiles you can see that hypermutations corresponds for each CMS cgh profile.
 
+The CMS subclasses each have the  own characterics we have seen that CMS has a signifant lower amount of mutation we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver genes , but we cannot see in the hypermution parameters we have seen which one.  The nice thing of this dataset no onlu the transcriptome has been analysed but also the genomes. Let's see which mutation have been found in this data how there relate to activating pathways.
+
+- Shown with mutations have been reported
+- 
+
+
+![](_static/images/MolOncCRC/onco_plot_nunes.png "onco_plot_nunes.png").
+
 
   
 
