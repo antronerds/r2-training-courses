@@ -709,11 +709,32 @@ A: V640E also often reported as V600R and is an activation mutation.
 
 Up to now we have investigated the transcriptome and genomics data separately except some annotation of hypermutations which was the result of the genomics analysys.
 
-Q: If you want find out what patient with or without a certain mutation  have certain effect on regualtion or you want to analyse specific mutation with clinical parameters of the patients. What do you need
+Q: If you want find out what patient with or without a certain mutation  have certain effect on regualtion or you want to analyse specific mutation with clinical parameters of the patients. What do you need ??.
 
 A: Annotate this cohort with the mutations for each patient.
 
-In r2 you can easely with somatic variation module annotated each individual samples.
+In r2 you can easeiy with somatic variation module annotate each sample in a cohort.
+
+![](_static/images/MolOncCRC/BRAF_select_som.png "BRAF.png").
+
+In ths case you see the tabe again for each BRAF mutation the cohort, scroll down and click build a track, select the proper column for track annotation and OK. Select the 1063 dataset and click next. You can name the track, change group name and / or the track color.
+
+![](_static/images/MolOncCRC/Create_track.png "BRAF.png").
+
+You can also do the same for APC and KRAS. Now these tracks or group parameters are stored and can be found in R2 in most of the analysis modules.
+
+Let's start to see if what we have learned so for of co-occurring mutations in the CMS classification.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
