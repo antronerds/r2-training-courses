@@ -638,13 +638,21 @@ This can provide more meaningful insights into the underlying biology of a parti
 
 ##  A song of Genomic Alterations en Oncogenes
 
-- Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently there is paper published were a large cohort of CRC patients  discribed and analysed. The datasets used in this article comprehend  genome and transciptome data and on top of that this set is surprisingly well annotated with a lot of clinical information which is not often in de case.  [Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3).
+- Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently,  there is paper published were a large cohort of CRC patients discribed and analysed. The data used in this article comprehend  genome and transciptome data and on top of that this set is surprisingly well annotated with a lot of clinical information which is not often in de case.  [Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3).
 
-Another
+It is good common scientific practise to validate and check your analysis in other resources. We have already have seen that the Molecular signature classification (CMS) are nicely clustered in the previous datasets.  Let's start to check whether this is also the case for the Nunes RNA seq dataset.
 
-- Good common scientific practice always to check validate other datasets to  validate your analysis.
-- start with T-SNE map to get a little bit familiar with the Nunes dataset
-- Select Tumor Colon - Nunes - 1063 - tpm - ensh38e98
+
+
+* Select on the mainpage Sample Maps (UMAP/tSNE) and select **Tumor Colon - Nunes - 1063 - tpm - ensh38e98**.
+* Click on Select
+* In the plotted tSNE map you can take a look several versions (nn=5_mindist=0.3) and  select in "Color settings" , Color by track and select cms_tumour.
+
+
+It is nice to see that again the CMS clusters nice separate this set into 4 clusters.
+
+* Going back to the main of R2 this set should still be selected
+
 - Generate TSNE map, just check if the CMS classification also results in clear CMS clusters
 - explain here how to get there
 - small text to introduce CGH profiles
