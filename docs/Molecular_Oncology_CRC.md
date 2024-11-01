@@ -695,9 +695,9 @@ cancer: CMS classification")
 [**CGH profiles per CMS**](_static/images/MolOncCRC/CGH_profiles_CMS_nunes.png)
 
 Q: looking CGH profiles, do you see adifference between the several CMS classifications for the CGH profiles, what do you observe.?
-A: CMS1 clearly less gen ab
+A: CMS1 clearly less genomic  abarrations
 
-In cancer a high rate of mutations occur in the genome and could sometimes even reach hundreds and thousand of genes per megabase. In general, tumors are classified as hypermutated when they exibit more then 10-12 mutation per megabase. Also this dataset is annotated for each  patient with the hypermutation status.
+In cancer a high rate of mutations occur in the genome and could sometimes even reach hundreds and thousand of genes per megabase. In general, tumors are classified as hypermutated when they exibit more than 10-12 mutation per megabase. Also this dataset is annotated for each patient with the hypermutation status.
 
 
 * Again generate CHG profile for the hypermutation status 
@@ -719,15 +719,16 @@ This clearly shows that hypermutions do correlate with the CGH profiles, unfortu
   (relate two tracks)
 * Go to relate two tracks and select the hypermutation status and the CMS profiles
 
-Q: what do observe and was this expected lookin when checking the CGH profiles.
+Q: what do observe and was this expected when keeping the CGH profiles in mind
+A: As expected for CMS1 specific much less pronounced genomic aberrations. 
 
 ![](_static/images/MolOncCRC/CMS_nHM_nunes.png "Hypermutation vs CMS").
 
-Comparing this picture with the CMS-CHG profiles you can see that hypermutations corresponds for each CMS cgh profile.
 
-The CMS subclasses each have the  own characterics we have seen that CMS has a signifant lower amount of mutation we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver genes , but we cannot see in the hypermution parameters we have seen which one.  The nice thing of this dataset no onlu the transcriptome has been analysed but also the genomes. Let's see which mutation have been found in this data how there relate to activating pathways.
 
-- Shown with mutations have been reported
+The CMS subclasses each have their own characterics we have seen that CMS2 classed  has a signifant lower amount of mutation and  we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver gene. But we cannot see in the hypermution parameters we have seen which one so lets zoom i.  Let's see which mutations have been found in this data how there relate to activating pathways.
+
+
 
 ![](_static/images/MolOncCRC/onco_plot_nunes.png "onco_plot_nunes.png").
 
