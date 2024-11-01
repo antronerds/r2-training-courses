@@ -645,17 +645,23 @@ Thus far we looked at colon cancer characteristics mainly based on gene expressi
 
 It is good common scientific practice to validate and check your analysis in other resources. We have already have seen that the Molecular signature classification (CMS) are nicely clustered in the previous datasets.  Let's start to check whether this is also the case for the Nunes RNA seq dataset.
 
-### Nunusdata 
+### Nunus data 
 
 * Select on the mainpage Sample Maps (UMAP/tSNE) and select **Tumor Colon - Nunes - 1063 - tpm - ensh38e98**.
-* Click on Select
+* Click on Select.
 * In the plotted tSNE map you can take a look several versions (nn=5_mindist=0.3) and  select in "Color settings" , Color by track and select cms_tumour.
 
 
 It is nice to see that again the CMS clusters clearly separates this set into 4 clusters.
 
+
+![](_static/images/MolOncCRC/tcga_nunes_tsnecompare.png "Subtypes in colorectal
+cancer: CMS classification")
+
+
+
 * Going back to the main of R2 the  **Nunes** set should still be selected.
-* Also check in the cohort the annotation to see what kind is annotation is provided which could be handy to query this dataset.
+* Also check in the **Cohort Overview**  the annotation to see what kind is annotation is provided which could be handy to query this dataset.
 
 Q: Do you seen any interesting parameter(s) which have already been discussed during in the lectures (ignore all the metastasis tracks).
 
@@ -665,40 +671,55 @@ A: MSI status, hypoxia condition etc etc
 #### Genomic data.
 
 
-Up until now, we have mainly looked at gene expression profiles this data provides us with the means to also examine genomic data in more detail. 
+Up to now, we have mainly looked at gene expression profiles this Nunes data provides us with the means also to  examine genomic data in more detail. 
 
-In the context of colorectal cance,  Comparative Genomic Hybridization CGH profiels are used to detect copy numer variation acc
+In the context of colorectal cancer,  **Comparative Genomic Hybridization (CGH)** profiles are used to detect** copy numebr variation (CNV)** across the genome. Those CNV's include amplifications (gains) and deletions (losses). This type of genomic event can lead to overexpression of oncogenes and or loss of tumor expression genes.
 
-
-
-
-- small text to introduce CGH profiles
-- generate CHG profiles per CMS clusters below
-- looking CGH profiles, do you see  difference between several CMS classifications for the CGH profiles
+![](_static/images/MolOncCRC/CGH_examples.jpg "CGH example")
+[**Example of CGH profiles:CGH profile of malignant melonama: A is a Control sample**](_static/images/MolOncCRC/CGH_examples.jpg)
 
 
-![](_static/images/MolOncCRC/tcga_nunes_tsnecompare.png "Subtypes in colorectal
-cancer: CMS classification")
+CGH profiling plays in important role in understanding CRC by revealing genomic instability which is a Hallmark of cancer. Since we could als obtain the genomic dat the CGH profiles could be generated and added to R2. Let's take a look at the CGH profiles to investigate if  we can say something about CGH properties when plotting the profiles per characteristic. 
 
-It has been shown that genome aberrations gains and losses do not completely overlap with hypermutations.
 
-![](_static/images/MolOncCRC/WES-menu_nunes.png "onco_plot_nunes.png").
+![](_static/images/MolOncCRC/WES-menu_nunes.png "onco_plot_nunes.png")
 
-- not HM in CMS1 prevalence for e.g CMS2
+[**Selecting CGH profiles**](_static/images/MolOncCRC/WES-menu_nunes.png)
+
+* On the main page select in left menu **WGS/WES data** and click on plot CGH karyograms intrack. Select CRC Nunes 2024 (copy number) and click next. A general CGH plot combining all the 1063 profiles  with Gains (in red) and Losses ( in Blue) is summarized in one plot.
+
+* In second pull down men, select CMS_tumour and click redraw.
 
 ![](_static/images/MolOncCRC/CGH_profiles_CMS_nunes.png "Subtypes in colorectal
 cancer: CMS classification")
+[**CGH profiles per CMS**](_static/images/MolOncCRC/CGH_profiles_CMS_nunes.png)
 
-- Generate now the CGH profiles separate for the hypermutations in this set to investigate if this also hold for this set.
+Q: looking CGH profiles, do you see adifference between the several CMS classifications for the CGH profiles, what do you observe.?
+A: CMS1 clearly less gen ab
+
+In cancer a high rate of mutations occur in the genome and could sometimes even reach hundreds and thousand of genes per megabase. In general, tumors are classified as hypermutated when they exibit more then 10-12 mutation per megabase. Also this dataset is annotated for each  patient with the hypermutation status.
+
+
+* Again generate CHG profile for the hypermutation status 
+Q: what do you observe??.
+A: CHG profile show significant less gains and losses in nHM status vs the HM status.
 
 
 ![](_static/images/MolOncCRC/CGH_profiles_nHM_nunes.png "Hypermutation profiles").
 
-This clearly shows that hypermutions do not overlap with the CGH profiles, unfortunately you can not identify which CMS class has a higher incidence.
+It has been shown that genome aberrations gains and losses do not completely overlap with hypermutation satus
 
-- Analyse the cohort to see how the hypermutations are divided  for each sub-type.
+Q: Can you think of a reason why this does not correspond ?
+A: For tumour survival is makes sense that once a tumor is hypermutated genomic abbaration is less needed for tumour survival they otherway arround
+
+
+This clearly shows that hypermutions do correlate with the CGH profiles, unfortunately you can not identify which CMS class has a higher incidence.
+
+* Analyse the cohort to see how the hypermutations are divided  for each sub-type.
   (relate two tracks)
+* Go to relate two tracks and select the hypermutation status and the CMS profiles
 
+Q: what do observe and was this expected lookin when checking the CGH profiles.
 
 ![](_static/images/MolOncCRC/CMS_nHM_nunes.png "Hypermutation vs CMS").
 
