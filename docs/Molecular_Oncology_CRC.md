@@ -720,7 +720,7 @@ This clearly shows that hypermutions do correlate with the CGH profiles, unfortu
 * Go to relate two tracks and select the hypermutation status and the CMS profiles
 
 Q: what do observe and was this expected when keeping the CGH profiles in mind
-A: As expected for CMS1 specific much less pronounced genomic aberrations. 
+A: As expected and for CMS1 specific much less pronounced genomic aberrations are witnessed.
 
 ![](_static/images/MolOncCRC/CMS_nHM_nunes.png "Hypermutation vs CMS").
 
