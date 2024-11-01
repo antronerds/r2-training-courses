@@ -710,14 +710,14 @@ A: CHG profile show significant less gains and losses in nHM status vs the HM st
 It has been shown that genome aberrations gains and losses do not completely overlap with hypermutation satus
 
 Q: Can you think of a reason why this does not correspond ?
-A: For tumour survival is makes sense that once a tumor is hypermutated genomic abbaration is less needed for tumour survival they otherway arround
+A: For tumour survival is makes sense that once a tumor is hypermutated genomic abbaration is less needed for tumour survival then the otherway arround
 
 
-This clearly shows that hypermutions do correlate with the CGH profiles, unfortunately you can not identify which CMS class has a higher incidence.
+This clearly shows that hypermutions do correlate negative with the CGH profiles, unfortunately you can not identify which CMS class has a higher incidence.
 
 * Analyse the cohort to see how the hypermutations are divided  for each sub-type.
   (relate two tracks)
-* Go to relate two tracks and select the hypermutation status and the CMS profiles
+* Go to relate in te main menu  two tracks and select the hypermutation status and the CMS profiles
 
 Q: what do observe and was this expected when keeping the CGH profiles in mind
 A: As expected and for CMS1 specific much less pronounced genomic aberrations are witnessed.
@@ -725,16 +725,21 @@ A: As expected and for CMS1 specific much less pronounced genomic aberrations ar
 ![](_static/images/MolOncCRC/CMS_nHM_nunes.png "Hypermutation vs CMS").
 
 
+The CMS subclasses each have their own characteristics we have seen that CMS2 classed  has a signifant lower amount of mutations and  we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver genes. But we cannot see in the hypermution group which genes are actualle hypermutated.
 
-The CMS subclasses each have their own characterics we have seen that CMS2 classed  has a signifant lower amount of mutation and  we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver gene. But we cannot see in the hypermution parameters we have seen which one so lets zoom i.  Let's see which mutations have been found in this data how there relate to activating pathways.
+Go to te mainscreen and select in again WGS/WES and select the oncoplot
+
+
+![](_static/images/MolOncCRC/oncoplot_selectnunes.png "Select2 Oncoplot").
+
+So we have an overview of most occurring mutations in our complete cohort since many CRC oncodrivin genes haven been reported we can user R2 to investigate which mutations occur and also information about the type like missence , nonsense , frameshifs etc are reported in detail.
+
+
+![](_static/images/MolOncCRC/onco_plot_nunes.png "onco_plot_nunes.png"). 
 
 
 
-![](_static/images/MolOncCRC/onco_plot_nunes.png "onco_plot_nunes.png").
-
-- So we have an overview of most occurring mutations in our complete cohort since many CRC oncodrivin genes haven been reported we can user R2 to investigate which mutations occur and also information about the type like missence , nonsense , frameshifs etc are reported in detail.
-
-To investigate mution in each individual sample for this cohort select in the main menu the WES/WES module and select somatic mutations. Select as variant hg38 - CRC nunes (Nature 2024) OncoKB only. If you choose as list mode summary you see immediately a list of genes which look familiar do you see genes which play in pivotal role in (CRC) cancers.
+To investigate mutation in each individual sample for this cohort select in the main menu the WES/WES module and select somatic mutations. Select as variant hg38 - CRC nunes (Nature 2024) OncoKB only. If you choose as list mode summary you see immediately a list of genes which look familiar do you see genes which play in pivotal role in (CRC) cancers.
 
 Now switch to de detailed list mode and click 'next'. Here you see all the reported mutation with  their specifics at you disposal. In which patient is which  mutation reported. If you click on details of a patient at top and this will guide you to the genomic location of e.g APC mutations if you zoom out 2 x  20 times. You see all the different reported mutatios for the APC gene. Hoovering over the small coloured blocks you can also see the details for the different mutation categories.
 
