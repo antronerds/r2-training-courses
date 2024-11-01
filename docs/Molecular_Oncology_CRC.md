@@ -465,7 +465,7 @@ also a subgroup could be identified.
 * Hover with your mouse over data points to see if you can identify a subgroup of an annotation track in which low MLH1 expression occurs more often.
 * Scroll down to the Adjustable settings menu and change grouping setting _Track_ into **MS_orientation**. Click **Submit**
 
-Let's visualize the relation between these dataset annotations in an other way. 
+Let's visualize the relation between these dataset annotations inan other way. 
 * Go back to the main menu and select **relate two tracks** and click **Next**. 
 * Select for the _X track_ the **MS_status** and for the _Y track_ **Orientation** and click **Submit**. 
 
@@ -638,23 +638,40 @@ This can provide more meaningful insights into the underlying biology of a parti
 
 ##  A song of Genomic Alterations en Oncogenes
 
-- Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently,  there is paper published were a large cohort of CRC patients discribed and analysed. The data used in this article comprehend  genome and transciptome data and on top of that this set is surprisingly well annotated with a lot of clinical information which is not often in de case.  [Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3).
-
-It is good common scientific practise to validate and check your analysis in other resources. We have already have seen that the Molecular signature classification (CMS) are nicely clustered in the previous datasets.  Let's start to check whether this is also the case for the Nunes RNA seq dataset.
 
 
+
+Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently,  there is paper published were a large cohort of CRC patients discribed and analysed. The data used in this article comprehend  genome and transciptome data and on top of that this set is surprisingly well annotated with a lot of clinical information which is not often in de case.  [Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3).
+
+It is good common scientific practice to validate and check your analysis in other resources. We have already have seen that the Molecular signature classification (CMS) are nicely clustered in the previous datasets.  Let's start to check whether this is also the case for the Nunes RNA seq dataset.
+
+### Nunusdata 
 
 * Select on the mainpage Sample Maps (UMAP/tSNE) and select **Tumor Colon - Nunes - 1063 - tpm - ensh38e98**.
 * Click on Select
 * In the plotted tSNE map you can take a look several versions (nn=5_mindist=0.3) and  select in "Color settings" , Color by track and select cms_tumour.
 
 
-It is nice to see that again the CMS clusters nice separate this set into 4 clusters.
+It is nice to see that again the CMS clusters clearly separates this set into 4 clusters.
 
-* Going back to the main of R2 this set should still be selected
+* Going back to the main of R2 the  **Nunes** set should still be selected.
+* Also check in the cohort the annotation to see what kind is annotation is provided which could be handy to query this dataset.
 
-- Generate TSNE map, just check if the CMS classification also results in clear CMS clusters
-- explain here how to get there
+Q: Do you seen any interesting parameter(s) which have already been discussed during in the lectures (ignore all the metastasis tracks).
+
+A: MSI status, hypoxia condition etc etc
+
+
+#### Genomic data.
+
+
+Up until now, we have mainly looked at gene expression profiles this data provides us with the means to also examine genomic data in more detail. 
+
+In the context of colorectal cance,  Comparative Genomic Hybridization CGH profiels are used to detect copy numer variation acc
+
+
+
+
 - small text to introduce CGH profiles
 - generate CHG profiles per CMS clusters below
 - looking CGH profiles, do you see  difference between several CMS classifications for the CGH profiles
