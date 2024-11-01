@@ -713,7 +713,7 @@ Q: Can you think of a reason why this does not correspond ?
 A: For tumour survival is makes sense that once a tumor is hypermutated genomic abbaration is less needed for tumour survival then the otherway arround
 
 
-This clearly shows that hypermutions do correlate negative with the CGH profiles, unfortunately you can not identify which CMS class has a higher incidence.
+This clearly shows that hypermutations do correlate negative with the CGH profiles, unfortunately you can not identify which CMS class has a higher incidence.
 
 * Analyse the cohort to see how the hypermutations are divided  for each sub-type.
   (relate two tracks)
@@ -738,38 +738,42 @@ So we have an overview of most occurring mutations in our complete cohort since 
 ![](_static/images/MolOncCRC/onco_plot_nunes.png "onco_plot_nunes.png"). 
 
 
+To investigate mutation in each individual sample for this cohort select in the main menu the WES/WES module and select somatic mutations. 
 
-To investigate mutation in each individual sample for this cohort select in the main menu the WES/WES module and select somatic mutations. Select as variant hg38 - CRC nunes (Nature 2024) OncoKB only. If you choose as list mode summary you see immediately a list of genes which look familiar do you see genes which play in pivotal role in (CRC) cancers.
+* Select as variant hg38 - CRC nunes (Nature 2024) OncoKB only. If you choose as list mode summary you see immediately a list of genes which look familiar do you see genes which play in pivotal role in (CRC) cancers.
 
-Now switch to de detailed list mode and click 'next'. Here you see all the reported mutation with  their specifics at you disposal. In which patient is which  mutation reported. If you click on details of a patient at top and this will guide you to the genomic location of e.g APC mutations if you zoom out 2 x  20 times. You see all the different reported mutatios for the APC gene. Hoovering over the small coloured blocks you can also see the details for the different mutation categories.
+* Now switch to de detailed list mode and click 'next'. Here you see all the reported mutation with  their specifics at you disposal. In which patient is which  mutation reported. If you click on details view  of a patient at the  top and this will guide you to the genomic location of e.g APC mutations if you zoom out 2 x  20 times. You see all the different reported mutations for the APC gene. Hoovering over the small coloured blocks you can also see the details for the different mutation categories.
 
 ![](_static/images/MolOncCRC/APCexample_detail.png "APCexample_detail.png").
 
-KRAS and BRAF mutations oncogenecis driver genes in cancer. Do the same as for the APC gene for  KRAS and  BRAF, it is more convenient to entr the gene symbols in the box and click next.
+KRAS and BRAF mutations are oncogenecis driver genes in cancer. Do the same as for the APC gene for  KRAS and  BRAF, it is more convenient to enter the gene symbols in the box and click next.
 
-Q: After some zooming what do you notice  when comparing  by eye balling the mutation of APC vs BRAF / KRAS. 
+Q: After some zooming what do you notice  when comparing  by eye balling the mutation of APC vs BRAF / KRAS.
+A: APC has many and different mutations on multiple  locations compared to KRAS and BRAF.
 
 ![](_static/images/MolOncCRC/KRASexample_detail.png "KRAS_detail.png").
 
 ![](_static/images/MolOncCRC/BRAFexample_detail.png "BRAF example_detail.png").
 
-A: APC has many and different mutations on multiple  locations compared to KRAS and BRAF.
+
 
 Q: Which mutation type in BRAF is the most prominent. 
-A: V640E also often reported as V600R and is an activation mutation.
+A: V640E also often reported as V600R and is an activating mutation.
 
 
-Up to now we have investigated the transcriptome and genomics data separately except some annotation of hypermutations which was the result of the genomics analysys.
+Up to now we have investigated the transcriptome and the genomics data separately except some annotation of hypermutations which was the result of the genomics analyys.
 
-Q: If you want find out what patient with or without a certain mutation  have certain effect on regualtion or you want to analyse specific mutation with clinical parameters of the patients. What do you need ??.
+Q: If you want find out what patient with or without a certain mutation  have  effect on regulation you want to analyse specific mutation with clinical parameters of the patients. What do you need ??.
 
 A: Annotate this cohort with the mutations for each patient.
 
-In r2 you can easeiy with somatic variation module annotate each sample in a cohort.
+In r2 you can easely with somatic variation module annotate each sample withthe mutation status in a cohort.
 
 ![](_static/images/MolOncCRC/BRAF_select_som.png "BRAF.png").
 
-In ths case you see the tabe again for each BRAF mutation the cohort, scroll down and click build a track, select the proper column for track annotation and OK. Select the 1063 dataset and click next. You can name the track, change group name and / or the track color.
+
+* Make a track for BRAF and KRAS mutation. 
+In ths case you see the tabe again for each BRAF mutation the cohort, scroll down and click build a track, select the proper columnor track annotation and OK. Select the 1063 dataset and click next. You can name the track, change group name and / or the track colr.
 
 ![](_static/images/MolOncCRC/Create_track.png "BRAF.png").
 
