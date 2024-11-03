@@ -671,9 +671,9 @@ A: MSI status, hypoxia condition etc etc
 #### Genomic data.
 
 
-Up to now, we have mainly looked at gene expression profiles this Nunes data provides us with the means also to  examine genomic data in more detail. 
+Up to now, we have mainly looked at gene expression profiles the Nunes data provides us with the means also to examine genomic data in more detail. 
 
-In the context of colorectal cancer,  **Comparative Genomic Hybridization (CGH)** profiles are used to detect** copy numebr variation (CNV)** across the genome. Those CNV's include amplifications (gains) and deletions (losses). This type of genomic event can lead to overexpression of oncogenes and or loss of tumor expression genes.
+In the context of colorectal cancer,  **Comparative Genomic Hybridization (CGH)** profiles are used to detect** copy numebr variation (CNV)** across the genome. Those CNV's include amplifications (gains) and deletions (losses). This type of genomic event can lead to overexpression of oncogenes and or loss of tumor supression genes.
 
 ![](_static/images/MolOncCRC/CGH_examples.jpg "CGH example")
 [**Example of CGH profiles:CGH profile of malignant melonama: A is a Control sample**](_static/images/MolOncCRC/CGH_examples.jpg)
