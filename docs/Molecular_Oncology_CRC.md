@@ -749,6 +749,7 @@ To investigate mutation in each individual sample for this cohort select in the 
 KRAS and BRAF mutations are oncogenecis driver genes in cancer. Do the same as for the APC gene for  KRAS and  BRAF, it is more convenient to enter the gene symbols in the box and click next.
 
 Q: After some zooming what do you notice  when comparing  by eye balling the mutation of APC vs BRAF / KRAS.
+
 A: APC has many and different mutations on multiple  locations compared to KRAS and BRAF.
 
 ![](_static/images/MolOncCRC/KRASexample_detail.png "KRAS_detail.png").
