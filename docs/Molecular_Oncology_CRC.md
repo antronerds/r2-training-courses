@@ -761,21 +761,26 @@ Q: Which mutation type in BRAF is the most prominent.
 A: V640E also often reported as V600R and is an activating mutation.
 
 
-Up to now we have investigated the transcriptome and the genomics data separately except some annotation of hypermutations which was the result of the genomics analyys.
+Up to now we have investigated the transcriptome and the genomics data separately except for  some annotation of hypermutations which was the result of the genomics analyys.
 
-Q: If you want find out what patient with or without a certain mutation  have  effect on regulation you want to analyse specific mutation with clinical parameters of the patients. What do you need ??.
+Q: If you want to find out what patient with or without a certain mutation have an effect on  pathway (in)activation of other means of gene regulation.  What do you need for further analysis in the R2 platform??.
 
 A: Annotate this cohort with the mutations for each patient.
 
-In r2 you can easely with somatic variation module annotate each sample withthe mutation status in a cohort.
+In r2 you can easily with somatic variation module annotate each sample with  mutation status in a cohort.
+
+* Make a track for BRAF and KRAS mutation.
+  In this caseuse the table grid agai for each BRAF mutation the cohort, scroll down and click build a track, select the proper column or track annotation and OK. Select the 1063 dataset and click next. You can name the track, change group name and / or the track color. 
 
 ![](_static/images/MolOncCRC/BRAF_select_som.png "BRAF.png").
 
+[**Create a track in R2**](_static/images/MolOncCRC/BRAF_select_som.png)
 
-* Make a track for BRAF and KRAS mutation. 
-In ths case you see the tabe again for each BRAF mutation the cohort, scroll down and click build a track, select the proper columnor track annotation and OK. Select the 1063 dataset and click next. You can name the track, change group name and / or the track colr.
+
+
 
 ![](_static/images/MolOncCRC/Create_track.png "BRAF.png").
+[**Create a track in R2**](_static/images/MolOncCRC/BRAF_select_som.png)
 
 You can also do the same for APC and KRAS. Now these tracks or group parameters are stored and can be found in R2 in most of the analysis modules.
 
