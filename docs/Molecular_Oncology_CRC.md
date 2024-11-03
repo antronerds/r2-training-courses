@@ -661,9 +661,9 @@ cancer: CMS classification")
 
 
 * Going back to the main of R2 the  **Nunes** set should still be selected.
-* Also check in the **Cohort Overview**  the annotation to see what kind is annotation is provided which could be handy to query this dataset.
+* Also check in the **Cohort Overview**  the annotation to see what kind is annotation is provided which could be handy to analyse this dataset.
 
-Q: Do you seen any interesting parameter(s) which have already been discussed during in the lectures (ignore all the metastasis tracks).
+Q: Do you see any interesting parameter(s) which have already been discussed during in the lectures (ignore all the metastasis tracks).
 
 A: MSI status, hypoxia condition etc etc
 
@@ -671,46 +671,49 @@ A: MSI status, hypoxia condition etc etc
 #### Genomic data.
 
 
-Up to now, we have mainly looked at gene expression profiles this Nunes data provides us with the means also to  examine genomic data in more detail. 
+Up to now, we have mainly looked at gene expression profiles. The Nunes data also provides us with the means to  examine genomic data in more detail. 
 
-In the context of colorectal cancer,  **Comparative Genomic Hybridization (CGH)** profiles are used to detect** copy numebr variation (CNV)** across the genome. Those CNV's include amplifications (gains) and deletions (losses). This type of genomic event can lead to overexpression of oncogenes and or loss of tumor expression genes.
+In the context of colorectal cancer,  **Comparative Genomic Hybridization (CGH)** profiles are used to detect **copy numebr variation (CNV)** across the genome. Those CNV's include amplifications (gains) and deletions (losses). This type of genomic events can lead to overexpression of oncogenes and/or loss of tumor suppression genes.
 
 ![](_static/images/MolOncCRC/CGH_examples.jpg "CGH example")
 [**Example of CGH profiles:CGH profile of malignant melonama: A is a Control sample**](_static/images/MolOncCRC/CGH_examples.jpg)
 
 
-CGH profiling plays in important role in understanding CRC by revealing genomic instability which is a Hallmark of cancer. Since we could als obtain the genomic dat the CGH profiles could be generated and added to R2. Let's take a look at the CGH profiles to investigate if  we can say something about CGH properties when plotting the profiles per characteristic. 
+CGH profiling plays in important role in understanding CRC by revealing genomic instability which is a Hallmark of cancer. Since we could als obtain the genomic data, the CGH profiles hve been generated and added to R2. Let's take a look at the CGH profiles to investigate if  we can say something about copy number variation  when plotting the profiles for a certain characteristic. 
 
 
 ![](_static/images/MolOncCRC/WES-menu_nunes.png "onco_plot_nunes.png")
 
 [**Selecting CGH profiles**](_static/images/MolOncCRC/WES-menu_nunes.png)
 
-* On the main page select in left menu **WGS/WES data** and click on plot CGH karyograms intrack. Select CRC Nunes 2024 (copy number) and click next. A general CGH plot combining all the 1063 profiles  with Gains (in red) and Losses ( in Blue) is summarized in one plot.
+* On the main page select in left menu **WGS/WES data** and click on plot CGH karyograms in track... Select CRC Nunes 2024 (copy number) and click next. A general CGH plot combining all the 1063 profiles  with Gains (in red) and Losses ( in Blue) are summarized in one plot.
 
-* In second pull down men, select CMS_tumour and click redraw.
+* In the second pull down menu, select CMS_tumour and click redraw.
 
 ![](_static/images/MolOncCRC/CGH_profiles_CMS_nunes.png "Subtypes in colorectal
 cancer: CMS classification")
 [**CGH profiles per CMS**](_static/images/MolOncCRC/CGH_profiles_CMS_nunes.png)
 
-Q: looking CGH profiles, do you see adifference between the several CMS classifications for the CGH profiles, what do you observe.?
-A: CMS1 clearly less genomic  abarrations
+Q: looking at CGH profiles, do you see a difference between the several CMS classifications for the CGH profiles, what do you observe.?
+A: CMS1 has clearly less genomic  abarrations.
 
 In cancer a high rate of mutations occur in the genome and could sometimes even reach hundreds and thousand of genes per megabase. In general, tumors are classified as hypermutated when they exibit more than 10-12 mutation per megabase. Also this dataset is annotated for each patient with the hypermutation status.
 
 
-* Again generate CHG profile for the hypermutation status 
+* Again generate CHG profile for the hypermutation status.
+
 Q: what do you observe??.
 A: CHG profile show significant less gains and losses in nHM status vs the HM status.
 
 
 ![](_static/images/MolOncCRC/CGH_profiles_nHM_nunes.png "Hypermutation profiles").
+[**CGH profiles per HM status**](_static/images/MolOncCRC/CGH_profiles_CMS_nunes.png)
 
-It has been shown that genome aberrations gains and losses do not completely overlap with hypermutation satus
+
+It has been shown that genome aberrations gains and losses do not completely overlap with the hypermutation status
 
 Q: Can you think of a reason why this does not correspond ?
-A: For tumour survival is makes sense that once a tumor is hypermutated genomic abbaration is less needed for tumour survival then the otherway arround
+A: For tumour survival is makes sense that once a tumor is hypermutated genomic abbaration is less needed for tumour survival or the otherway arround
 
 
 This clearly shows that hypermutations do correlate negative with the CGH profiles, unfortunately you can not identify which CMS class has a higher incidence.
@@ -723,39 +726,45 @@ Q: what do observe and was this expected when keeping the CGH profiles in mind
 A: As expected and for CMS1 specific much less pronounced genomic aberrations are witnessed.
 
 ![](_static/images/MolOncCRC/CMS_nHM_nunes.png "Hypermutation vs CMS").
+[**CMS profiles and HM status**](_static/images/MolOncCRC/CMS_nHM_nunes.png)
 
 
-The CMS subclasses each have their own characteristics we have seen that CMS2 classed  has a signifant lower amount of mutations and  we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver genes. But we cannot see in the hypermution group which genes are actualle hypermutated.
 
-Go to te mainscreen and select in again WGS/WES and select the oncoplot
+The CMS subclasses each have their own characteristics, we have seen that CMS2 class has a signifant lower amount of mutations and we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver genes. But we cannot see in the hypermution group which genes are actualle hypermutated.
 
-
-![](_static/images/MolOncCRC/oncoplot_selectnunes.png "Select2 Oncoplot").
-
-So we have an overview of most occurring mutations in our complete cohort since many CRC oncodrivin genes haven been reported we can user R2 to investigate which mutations occur and also information about the type like missence , nonsense , frameshifs etc are reported in detail.
+Go to te mainscreen and select again WGS/WES, click "Scan mutations with maftools" and select the oncoplot with the Nunes data.
 
 
-![](_static/images/MolOncCRC/onco_plot_nunes.png "onco_plot_nunes.png"). 
+![](_static/images/MolOncCRC/oncoplot_selectnunes.png "Select Oncoplot").
+
+[**Select Oncoplot**](_static/images/MolOncCRC/oncoplot_selectnunes.png)
+
+
+Here you see we have an overview of the most occurring mutations in our complete cohort,  since many CRC oncodriving genes haven been reported we can use R2 to investigate which mutations occur and also information about the types like missence , nonsense , frameshifs,  etc which are reported in detail.
+
+
+![](_static/images/MolOncCRC/onco_plot_nunes.png "onco_plot_nunes.png").
+[**Oncoplot**](_static/images/MolOncCRC/onco_plot_nunes.png)  
 
 
 To investigate mutation in each individual sample for this cohort select in the main menu the WES/WES module and select somatic mutations. 
 
 * Select as variant hg38 - CRC nunes (Nature 2024) OncoKB only. If you choose as list mode summary you see immediately a list of genes which look familiar do you see genes which play in pivotal role in (CRC) cancers.
 
-* Now switch to de detailed list mode and click 'next'. Here you see all the reported mutation with  their specifics at you disposal. In which patient is which  mutation reported. If you click on details view  of a patient at the  top and this will guide you to the genomic location of e.g APC mutations if you zoom out 2 x  20 times. You see all the different reported mutations for the APC gene. Hoovering over the small coloured blocks you can also see the details for the different mutation categories.
+* Now switch to de detailed list mode and click 'next'. Here you see all the reported mutations with  their specifics at you disposal. In which patient is which  mutation reported. If you click on details view  of a patient at the  top and this will guide you to the genomic location of e.g APC mutations if you zoom out 2 x  20 times. You see all the different reported mutations for the APC gene. Hoovering over the small coloured blocks you can also see the details for the different mutation categories.
 
-![](_static/images/MolOncCRC/APCexample_detail.png "APCexample_detail.png").
+![](_static/images/MolOncCRC/APCexample_detail.png "APCexample_detail.png")
 
-KRAS and BRAF mutations are oncogenecis driver genes in cancer. Do the same as for the APC gene for  KRAS and  BRAF, it is more convenient to enter the gene symbols in the box and click next.
+KRAS and BRAF mutations are oncogenetic  driver genes in cancer. Do the same as for the APC gene for  KRAS and  BRAF, it is more convenient to enter the gene symbols in the box and click next.
 
 Q: After some zooming what do you notice  when comparing  by eye balling the mutation of APC vs BRAF / KRAS.
-A: APC has many and different mutations on multiple  locations compared to KRAS and BRAF.
+A: APC has many and different mutations on multiple locations compared to KRAS and BRAF. APC is a very large gene
 
 ![](_static/images/MolOncCRC/KRASexample_detail.png "KRAS_detail.png").
 
 ![](_static/images/MolOncCRC/BRAFexample_detail.png "BRAF example_detail.png").
 
-
+Taking a closer look at the coloured blocks
 
 Q: Which mutation type in BRAF is the most prominent. 
 A: V640E also often reported as V600R and is an activating mutation.
