@@ -713,17 +713,17 @@ The CMS subclasses each have their own characteristics we have seen that the CMS
 Go the main menu , go to  WGS/WES and select Pers. Med. Oncoprint (fixed data) and as resource the CRC OncoKB hotspots Nunes.
 
 
-![](_static/images/MolOncCRC/select_oncoprint_nunes.png "Select  Oncoprint ")
+![](_static/images/MolOncCRC/select_oncoprint_nunes.png "Select  Oncoprint")
 
 [**Select oncoprint**](_static/images/MolOncCRC/select_oncoprint_nunes.png)
 
 
-In this so called oncoprint Here we have an overview of most occurring mutations in our complete cohort since many CRC oncodriving genes haven been reported we can use R2 to investigate which mutations occur and also information about the mutations type like missence, nonsense, frameshifs etc which are reported in detail.
+In this so called oncoprint Here we have an overview of most occurring mutations in our complete cohort since many CRC oncodriving genes haven been reported we can use R2 to investigate which mutations occur and also information about the mutations type like missence, nonsense, frameshifs, etc which are reported in detail.
 
-Scrolling down, you will find in Settings menu all sort of interesting options you can toggle on/off wich revealing more insights of this cohort and CRC in general also adding extra tracks to plot on top of the oncoprint picture could be of interest,
+Scrolling down, you will find in Settings menu all sort of interesting options you can toggle on/off wich revealing more insights of this cohort and CRC in general also adding extra tracks to plot on top of the oncoprint picture could be of interest.
 
-![](_static/images/MolOncCRC/oncoprint_settings.png "Select  Oncoprint ")
-[**Settings**](_static/images/MolOncCRC/Select_oncoprint_nunes.png)
+![](_static/images/MolOncCRC/oncoprint_settings.png "Select  Oncoprint")
+[**Oncoprint Settings**](_static/images/MolOncCRC/Select_oncoprint_nunes.png)
 
 Q: Name some genes which have been listed in the top.
 
@@ -747,26 +747,28 @@ Hoovering over de coloured blocks below the genomic location of BRAF reveals the
 Q: Which mutation type in BRAF is the most prominent. 
 
 
-
 Up to now we have investigated the transcriptome and the genomics data separately except for  some annotation of hypermutations which was the result of the genomics analysis.
 
 Q: If you want to find out what patient with or without a certain mutation have an effect on  pathway (in)activation of other means of gene regulation.  What do you need for further analysis in the R2 platform??. Suppose we want to find differential expressed genes with or without a mutated BRAF gene.
 
 A: Annotate this cohort with the mutations for each patient.
 
-In r2 you can easily with somatic variation module annotate each sample with the  mutation status in a cohort.
+In r2 you can easily with somatic variation module annotate each sample with the  mutation status in a cohort. With te
 
 * Make a track for BRAF and KRAS mutation.
 USe  the table grid again  for each BRAF mutation the cohort, scroll down and click build a track, select the proper column or track annotation and OK. Select the 1063 dataset and click next. You can name the track, change group name and / or the track color. 
 
-![](_static/images/MolOncCRC/BRAF_select_som.png "BRAF.png")
-
-[**Create a track in R2**](_static/images/MolOncCRC/BRAF_select_som.png)
 
 
+![](_static/images/MolOncCRC/mutation_track_usage.png "mutation_track_usage.png")
+[**Use track in R2**](_static/images/MolOncCRC/BRAF_select_som.png)
 
-![](_static/images/MolOncCRC/Create_track.png "BRAF.png").
-[**Create a track in R2**](_static/images/MolOncCRC/BRAF_select_som.png)
+
+
+
+
+
+
 
 You can also do the same for APC and KRAS. Now these tracks (or group parameters) are stored and can be found in R2 in most of the analysis modules.  Also do the same for a sub-cohort of this dataset, this set is a subcollection of the Nunes set with normal and tumor tissue of the same patients, **Mixed Colon (pairs) - Nunes.
 
