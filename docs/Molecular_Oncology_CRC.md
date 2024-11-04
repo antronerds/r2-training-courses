@@ -765,7 +765,19 @@ In r2 you can easily with the somatic variation module annotate each sample with
 Explain signature scores here..
 
 
-A Differential Expression genes has already been performed for APC mutants in the cohort versus non-APC mutantsin in the Nunes set. A signature score has been generated for the genes which were upregulated (activated) as result of this test.  Go the main screen and select the 
+A Differential Expression genes has already been performed for APC mutants in the cohort versus non-APC mutants  in the Nunes set. We have already stored a list genes which are upregulated and will be used to find correlations for for the sigature scores of other pathways.   Go the main screen and select the geneset correlation modules select the list activated genes in in Geneset(source) and for geneset (target) select the collection of broad 2023 Hallmark genesets. 
+
+Q: Which pathway do you expect to pop-up as a result of this test. 
+
+
+
+
+Click next. R2 is now performing  a correlation test on the signature score of the activated genelist in APC mutants against  the signature scores of all the genesets in the broad hallark collecting.
+
+Q: Name other pathways in the list which you recognize and can be associated witg e.g CMS classes.
+
+
+
 
 
 
