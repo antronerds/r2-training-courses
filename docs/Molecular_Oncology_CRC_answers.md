@@ -361,73 +361,146 @@ set analysis, todo remove")
 <br>
 
 
-------
-
-## Experiments TP53; Molecule of the year 1994
+##  A song of Genomic Alterations en Oncogenes
 
 
-T
+Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently,  there is a paper published were a large cohort of CRC patients described and analysed. The data used in this article comprehend  genome and transciptome data and on top of that this set is surprisingly well annotated with a lot of clinical information which is not often in de case.  [Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3).
 
-Dataset being used:<br>
-**Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo**.
+It is good common scientific practice to validate and check your analysis in other resources. We already have seen that the Molecular signature classification (CMS) are nicely clustered in the previous datasets.  Let's start to check whether this is also the case for the Nunes RNA seq dataset.
 
-4 drugs are used:
+### Nunes data
 
-The four drugs can be diveded in two types.
-
-
-### TP53 activation
-
-
-* Check the TP53 level in this dataset. Is the dataset grouped by a different p53 expression
-A:
-![](_static/images/MolGenCRC/tp53wtvsko.png "Figure 2: heatmap")
-  [**TP53 gene**](_static/images/MolGenCRC/relatedtwotracks_msi.png)
+* Select on the mainpage Sample Maps (UMAP/tSNE) and select **Tumor Colon - Nunes - 1063 - tpm - ensh38e98**.
+* Click on Select.
+* In the plotted tSNE map you can take a look several versions (e.g:nn=5_mindist=0.3) and  select in "Color settings" , Color by track and select cms_tumour.
+* Take a quick look at the graph may be check some  versions
 
 
-* Analyse which genes are affected by the compounds
-
-Let's start with drugs known to interact with tp53. In college also MDM2 has been mentioned as negative P53 regulator. 
-If you want to  find diffentially expressed genes in Tp53 dependent background which subgroups do you have to select.
-
-A: Select Nutlin-3a for the comparison and the P53 WT
-![](_static/images/MolGenCRC/list_DMSO_nutlin3a_sammons.png "list")
-[**List**](_static/images/MolGenCRC/relatedtwotracks_msi.png)
-
-* Do you see the MDM2 gene ?.
-
-* Inspect the MDM2 level in a one gene view  are your surprised ?
-![](_static/images/MolGenCRC/MDM2-gene_sammons.png "MDM2")
-[**MDM2 gene**](_static/images/MolGenCRC/relatedtwotracks_msi.png)
-
-* Also check the relation with TP53
-  ![](_static/images/MolGenCRC/sammons_tp53MDM2.png "TP53/MDM2")
-[**MDM2/TP53 gene**](_static/images/MolGenCRC/relatedtwotracks_msi.png)
+It is nice to see that again the CMS clusters clearly separates this set into 4 clusters.
 
 
+![](_static/images/MolOncCRC/tcga_nunes_tsnecompare.png "Subtypes in colorectal
+cancer: CMS classification")
 
-*  A very significant correlation. Can you think of a reason? Hint:you are looking at RNA expression levels, how does nutlin3a inhibits MDM2 ???
+* Going back to the main of R2 the  **Nunes set**  should still be selected.
+* Also check in the **Cohort Overview** the annotation to investiagte  what kind is annotation is provided which could be handy to query this dataset.
 
-A: protein interaction
+Q: Do you seen any interesting parameter(s) which have already been discussed during in the lectures (ignore all the metastasis tracks).
 
-* And why is also TP53 increased ? TP53 is not effected so you get a positive feedback loop on RNA expression level/
+A: MSI status, hypoxia conditions, hypermuations.  etc etc
 
-A: ubiquitination
-
-
-
-* ![](_static/images/MolGenCRC/Kegg_analysis.png "KEGG")
-
-* down regulated TP53 pathways and apoptosis pathway
-
-* Check of there is a overlap between genes affected
+#### Genomic data.
 
 
-Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo
+Up to now, we have mainly looked at gene expression profiles,the Nunes data provides us with the means also to examine genomic data in more detail.
 
-![](_static/images/MolGenCRC/atf3_sammons.png "Figure 2: heatmap")
+In the context of colorectal cancer,  **Comparative Genomic Hybridization (CGH)** profiles are used to detect** copy numebr variation (CNV)** across the genome. Those CNV's include amplifications (gains) and deletions (losses). This type of genomic event can lead to overexpression of oncogenes and or loss of tumor supression genes.
 
-![](_static/images/MolGenCRC/venn_drugsp53.png "Figure 2: heatmap")
+![](_static/images/MolOncCRC/CGH_examples.jpg "CGH example")
+[**Example of CGH profiles:CGH profile of malignant melonama:  A is a Control sample**](_static/images/MolOncCRC/CGH_examples.jpg)
+
+
+CGH profiling plays an important role in understanding CRC by revealing genomic instability which is a Hallmark of cancer. Since we could als obtain the genomic data, he CGH profiles could be generated and added to R2. Let's take a look at the CGH profiles to investigate if  we can say something about CGH properties when plotting the profiles per characteristic.
+
+![](_static/images/MolOncCRC/WES-menu_nunes.png "onco_plot_nunes.png")
+
+[**Selecting CGH profiles**](_static/images/MolOncCRC/WES-menu_nunes.png)
+
+* On the main page select in left menu **WGS/WES data** and click on plot CGH karyograms intrack. Select CRC Nunes 2024 (copy number) and click next. A general CGH plot combining all the 1063 profiles  with Gains (in red) and Losses ( in Blue) is summarized in one plot.
+
+Now let see how the CGH profiles look for the CMS sub-category.
+
+* In second pull down men, select CMS_tumour and click redraw.
+
+![](_static/images/MolOncCRC/CGH_profiles_CMS_nunes.png "Subtypes in colorectal
+cancer: CMS classification")
+[**CGH profiles per CMS**](_static/images/MolOncCRC/CGH_profiles_CMS_nunes.png)
+
+Q: looking CGH profiles, do you see a difference between the several CMS classifications for the CGH profiles, what do you observe.?
+
+A: CMS1  has clearly less genomic aberrations
+
+In cancer a high rate of mutations occur in the genome and could sometimes even reach hundreds and thousand of genes per megabase.  In general, tumors are classified as hypermutated when they exibit more than 10-12 mutation per megabase. Also, this dataset is annotated for each patient with the hypermutation status.
+
+
+* Again generate CHG profile for the hypermutation status.
+
+Q: what do you observe??.
+A: CHG profile show significant less gains and losses in nHM status vs the HM status.
+
+
+![](_static/images/MolOncCRC/CGH_profiles_nHM_nunes.png "Hypermutation profiles").
+
+It has been shown that genome aberrations gains and losses do not completely overlap wit  hypermutation.
+
+Q: Can you think of a reason why this does not correspond ?
+A: For tumour survival is makes sense that once a tumor is hypermutated genomic abbaration is less needed for tumour survival o the otherway arround
+
+This clearly shows that hypermutations do correlate negative with the CGH profiles, unfortunately you can not identify which CMS class has a higher incidence.
+
+* Analyse the cohort to see how the hypermutations are divided  for each sub-type.
+  (relate two tracks)
+* Go to relate in te main menu  two tracks and select the hypermutation status and the CMS profiles
+
+Q: what do observe and was this expected when keeping the CGH profiles in mind
+A: As expected and for CMS1 specific much less pronounced genomic aberrations are witnessed.
+
+![](_static/images/MolOncCRC/CMS_nHM_nunes.png "Hypermutation vs CMS")
+
+The CMS subclasses each have their own characteristics we have seen that the CMS2 class has a significant lower amount of mutations and we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver genes. But we cannot see in the hypermution group which genes are actually hypermutated.
+
+
+
+Go the main menu , go to  WGS/WES and select Pers. Med. Oncoprint (fixed data) and as resource the CRC OncoKB hotspots Nunes.
+
+![](_static/images/MolOncCRC/Select_oncoprint_nunes.png "Select  Oncoprint ")
+
+[**Select oncoprint**](_static/images/MolOncCRC/Select_oncoprint_nunes.png)
+
+Q: Name some genes which have been listed in top.
+
+
+In this so called oncoprint Here we have an overview of most occurring mutations in our complete cohort since many CRC oncodriving genes haven been reported we can use R2 to investigate which mutations occur and also information about the mutations type like missence, nonsense, frameshifs etc which are reported in detail.
+
+Scrolling down, you will find in Settings menu all sort of interesting options you can toggle on/off wich revealing more insights of this cohort and CRC in general also adding extra tracks to plot on top of the oncoprint picture could be of interest,
+
+![](_static/images/MolOncCRC/oncoprint_settings.png "Select  Oncoprint ")
+[**Settings**](_static/images/MolOncCRC/Select_oncoprint_nunes.png)
+
+
+
+
+![](_static/images/MolOncCRC/onco_print_nunes.png "onco_print_nunes.png")
+[**Select oncoprint result**](_static/images/MolOncCRC/onco_print_nunes.png)
+
+![](_static/images/MolOncCRC/onco_print_nunes2.png "onco_print_nunes.png")
+[**Select oncoprint2 result**](_static/images/MolOncCRC/onco_print_nunes.png)
+
+### Somatic variants
+
+To investigate mutations in each individual sample for this cohort. Select in the main menu the WES/WES module and select somatic mutations.
+
+* Select as variant hg38 - CRC nunes (Nature 2024) OncoKB only. If you choose as list mode summary you see immediately a list of genes which look familiar do you see genes which play in pivotal role in (CRC) cancers.
+
+* Now switch to de detailed list mode and click 'next'. Here you see all the reported mutation with  their specifics at you disposal. In which patient is which  mutation reported. If you click on details view  of a patient at the  top this will guide you to the genomic location of e.g APC mutations if you zoom out 2 x  20 times. You see all the different reported mutations for the APC gene. Hoovering over the small coloured blocks you can also investigate the details for the different mutation categories.
+
+![](_static/images/MolOncCRC/APCexample_detail.png "APCexample_detail.png")
+
+KRAS and BRAF mutations are oncogenetic driver genes in cancer. Do the same for  KRAS and  BRAF, it is more convenient to enter the gene symbols in the box and click next.
+
+Q: After some zooming what do you notice  when comparing  by eye balling the mutation of APC vs BRAF / KRAS.
+
+A: APC has many and different mutations on multiple  locations compared to KRAS and BRAF.
+
+![](_static/images/MolOncCRC/KRASexample_detail.png "KRAS_detail.png")
+
+![](_static/images/MolOncCRC/BRAFexample_detail.png "BRAF example_detail.png")
+
+
+
+
+
+
 
 
   
@@ -473,6 +546,11 @@ PDGFRA, PDGFRB, PDGFC, and KIT, identifies CMS4 CRC with very high sensitivity a
 ![](_static/images/MolGenCRC/temp/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "")
 
 [**optional relate two tracks**](_static/images/MolGenCRC/temp/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+
+
+
+
+
 
 
 
@@ -643,6 +721,78 @@ Please don't forget to fill in the evaluation form about this R2 course, if you 
 Open the Evaluation form</button>
 
 ---------
+------
+
+## Experiments TP53; Molecule of the year 1994
+
+
+
+
+Dataset being used:<br>
+**Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo**.
+
+4 drugs are used:
+
+The four drugs can be diveded in two types.
+
+
+### TP53 activation
+
+
+* Check the TP53 level in this dataset. Is the dataset grouped by a different p53 expression
+  A:
+  ![](_static/images/MolGenCRC/tp53wtvsko.png "Figure 2: heatmap")
+  [**TP53 gene**](_static/images/MolGenCRC/relatedtwotracks_msi.png)
+
+
+* Analyse which genes are affected by the compounds
+
+Let's start with drugs known to interact with tp53. In college also MDM2 has been mentioned as negative P53 regulator.
+If you want to  find diffentially expressed genes in Tp53 dependent background which subgroups do you have to select.
+
+A: Select Nutlin-3a for the comparison and the P53 WT
+![](_static/images/MolGenCRC/list_DMSO_nutlin3a_sammons.png "list")
+[**List**](_static/images/MolGenCRC/relatedtwotracks_msi.png)
+
+* Do you see the MDM2 gene ?.
+
+* Inspect the MDM2 level in a one gene view  are your surprised ?
+  ![](_static/images/MolGenCRC/MDM2-gene_sammons.png "MDM2")
+  [**MDM2 gene**](_static/images/MolGenCRC/relatedtwotracks_msi.png)
+
+* Also check the relation with TP53
+  ![](_static/images/MolGenCRC/sammons_tp53MDM2.png "TP53/MDM2")
+  [**MDM2/TP53 gene**](_static/images/MolGenCRC/relatedtwotracks_msi.png)
+
+
+
+*  A very significant correlation. Can you think of a reason? Hint:you are looking at RNA expression levels, how does nutlin3a inhibits MDM2 ???
+
+A: protein interaction
+
+* And why is also TP53 increased ? TP53 is not effected so you get a positive feedback loop on RNA expression level/
+
+A: ubiquitination
+
+
+
+* ![](_static/images/MolGenCRC/Kegg_analysis.png "KEGG")
+
+* down regulated TP53 pathways and apoptosis pathway
+
+* Check of there is a overlap between genes affected
+
+
+Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo
+
+![](_static/images/MolGenCRC/atf3_sammons.png "Figure 2: heatmap")
+
+![](_static/images/MolGenCRC/venn_drugsp53.png "Figure 2: heatmap")
+
+
+
+
+
 
 # Final remarks / future directions
 

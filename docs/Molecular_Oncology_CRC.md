@@ -639,7 +639,6 @@ This can provide more meaningful insights into the underlying biology of a parti
 ##  A song of Genomic Alterations en Oncogenes
 
 
-
 Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently,  there is a paper published were a large cohort of CRC patients described and analysed. The data used in this article comprehend  genome and transciptome data and on top of that this set is surprisingly well annotated with a lot of clinical information which is not often in de case.  [Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3).
 
 It is good common scientific practice to validate and check your analysis in other resources. We already have seen that the Molecular signature classification (CMS) are nicely clustered in the previous datasets.  Let's start to check whether this is also the case for the Nunes RNA seq dataset.
@@ -649,37 +648,29 @@ It is good common scientific practice to validate and check your analysis in oth
 * Select on the mainpage Sample Maps (UMAP/tSNE) and select **Tumor Colon - Nunes - 1063 - tpm - ensh38e98**.
 * Click on Select.
 * In the plotted tSNE map you can take a look several versions (e.g:nn=5_mindist=0.3) and  select in "Color settings" , Color by track and select cms_tumour.
-
+* Take a quick look at the graph may be check some  versions
 
 It is nice to see that again the CMS clusters clearly separates this set into 4 clusters.
 
 
-![](_static/images/MolOncCRC/tcga_nunes_tsnecompare.png "Subtypes in colorectal
-cancer: CMS classification")
-
-
-
-* Going back to the main of R2 the  **Nunes** set should still be selected.
-* Also check in the **Cohort Overview**  the annotation to see what kind is annotation is provided which could be handy to query this dataset.
+* Going back to the main of R2 the  **Nunes set**  should still be selected.
+* Also check in the **Cohort Overview** the annotation to investiagte  what kind is annotation is provided which could be handy to query this dataset.
 
 Q: Do you seen any interesting parameter(s) which have already been discussed during in the lectures (ignore all the metastasis tracks).
-
-A: MSI status, hypoxia condition etc etc
 
 
 #### Genomic data.
 
 
-Up to now, we have mainly looked at gene expression profiles, the Nunes data provides us with the means also to examine genomic data in more detail. 
+Up to now, we have mainly looked at gene expression profiles,the Nunes data provides us with the means also to examine genomic data in more detail. 
 
 In the context of colorectal cancer,  **Comparative Genomic Hybridization (CGH)** profiles are used to detect** copy numebr variation (CNV)** across the genome. Those CNV's include amplifications (gains) and deletions (losses). This type of genomic event can lead to overexpression of oncogenes and or loss of tumor supression genes.
 
 ![](_static/images/MolOncCRC/CGH_examples.jpg "CGH example")
-[**Example of CGH profiles:CGH profile of malignant melonama: A is a Control sample**](_static/images/MolOncCRC/CGH_examples.jpg)
+[**Example of CGH profiles:CGH profile of malignant melonama:  A is a Control sample**](_static/images/MolOncCRC/CGH_examples.jpg)
 
 
-CGH profiling plays an important role in understanding CRC by revealing genomic instability which is a Hallmark of cancer. Since we could als obtain the genomic data, he CGH profiles could be generated and added to R2. Let's take a look at the CGH profiles to investigate if  we can say something about CGH properties when plotting the profiles per characteristic. 
-
+CGH profiling plays an important role in understanding CRC by revealing genomic instability which is a Hallmark of cancer. Since we could als obtain the genomic data, he CGH profiles could be generated and added to R2. Let's take a look at the CGH profiles to investigate if  we can say something about CGH properties when plotting the profiles per characteristic.
 
 ![](_static/images/MolOncCRC/WES-menu_nunes.png "onco_plot_nunes.png")
 
@@ -691,28 +682,21 @@ Now let see how the CGH profiles look for the CMS sub-category.
 
 * In second pull down men, select CMS_tumour and click redraw.
 
-![](_static/images/MolOncCRC/CGH_profiles_CMS_nunes.png "Subtypes in colorectal
-cancer: CMS classification")
-[**CGH profiles per CMS**](_static/images/MolOncCRC/CGH_profiles_CMS_nunes.png)
 
 Q: looking CGH profiles, do you see a difference between the several CMS classifications for the CGH profiles, what do you observe.?
-A: CMS1 clearly less genomic aberrations
 
-In cancer a high rate of mutations occur in the genome and could sometimes even reach hundreds and thousand of genes per megabase. In general, tumors are classified as hypermutated when they exibit more than 10-12 mutation per megabase. Also, this dataset is annotated for each patient with the hypermutation status.
 
+In cancer a high rate of mutations occur in the genome and could sometimes even reach hundreds and thousand of genes per megabase.  In general, tumors are classified as hypermutated when they exibit more than 10-12 mutation per megabase.  Also, this dataset is annotated for each patient with the hypermutation status.
 
 * Again generate CHG profile for the hypermutation status.
 
 Q: what do you observe??.
-A: CHG profile show significant less gains and losses in nHM status vs the HM status.
 
-
-![](_static/images/MolOncCRC/CGH_profiles_nHM_nunes.png "Hypermutation profiles").
 
 It has been shown that genome aberrations gains and losses do not completely overlap wit  hypermutation.
 
 Q: Can you think of a reason why this does not correspond ?
-A: For tumour survival is makes sense that once a tumor is hypermutated genomic abbaration is less needed for tumour survival o the otherway arround
+A: For tumour survival is makes sense that once a tumor is hypermutated genomic abbaration is less needed for tumour survival o the otherway arround.
 
 
 This clearly shows that hypermutations do correlate negative with the CGH profiles, unfortunately you can not identify which CMS class has a higher incidence.
@@ -724,23 +708,27 @@ This clearly shows that hypermutations do correlate negative with the CGH profil
 Q: what do observe and was this expected when keeping the CGH profiles in mind
 A: As expected and for CMS1 specific much less pronounced genomic aberrations are witnessed.
 
-![](_static/images/MolOncCRC/CMS_nHM_nunes.png "Hypermutation vs CMS")
+
+The CMS subclasses each have their own characteristics we have seen that the CMS2 class has a significant lower amount of mutations and we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver genes. But we cannot see in the hypermution group which genes are actually hypermutated.
+
+Go the main menu , go to  WGS/WES and select Pers. Med. Oncoprint (fixed data) and as resource the CRC OncoKB hotspots Nunes.
+
+![](_static/images/MolOncCRC/Select_oncoprint_nunes.png "Select  Oncoprint ")
+
+[**Select oncoplot**](_static/images/MolOncCRC/Select_oncoprint_nunes.png)
 
 
-The CMS subclasses each have their own characteristics we have seen that CMS2 classed  has a significant lower amount of mutations and we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver genes. But we cannot see in the hypermution group which genes are actually hypermutated.
+In this so called oncoprint Here we have an overview of most occurring mutations in our complete cohort since many CRC oncodriving genes haven been reported we can use R2 to investigate which mutations occur and also information about the mutations type like missence, nonsense, frameshifs etc which are reported in detail.
+
+Scrolling down, you will find in Settings menu all sort of interesting options you can toggle on/off wich revealing more insights of this cohort and CRC in general also adding extra tracks to plot on top of the oncoprint picture could be of interest,
+
+![](_static/images/MolOncCRC/oncoprint_settings.png "Select  Oncoprint ")
+[**Settings**](_static/images/MolOncCRC/Select_oncoprint_nunes.png)
+
+Q: Name some genes which have been listed in top.
 
 
-Go to te mainscreen and select in again WGS/WE, select scan mutations with maftools, the proper variant source an Oncoplot.
-
-
-![](_static/images/MolOncCRC/oncoplot_selectnunes.png "Select  Oncoplot")
-[**Select oncoplot**](_static/images/MolOncCRC/oncoplot_selectnunes.png)
-
-Here we have an overview of most occurring mutations in our complete cohort since many CRC oncodriving genes haven been reported we can use R2 to investigate which mutations occur and also information about the mutations type like missence, nonsense, frameshifs etc  which are reported in detail.
-
-
-![](_static/images/MolOncCRC/onco_plot_nunes.png "onco_plot_nunes.png")
-
+### Somatic variants
 
 To investigate mutations in each individual sample for this cohort. Select in the main menu the WES/WES module and select somatic mutations. 
 
@@ -748,17 +736,11 @@ To investigate mutations in each individual sample for this cohort. Select in th
 
 * Now switch to de detailed list mode and click 'next'. Here you see all the reported mutation with  their specifics at you disposal. In which patient is which  mutation reported. If you click on details view  of a patient at the  top this will guide you to the genomic location of e.g APC mutations if you zoom out 2 x  20 times. You see all the different reported mutations for the APC gene. Hoovering over the small coloured blocks you can also investigate the details for the different mutation categories.
 
-![](_static/images/MolOncCRC/APCexample_detail.png "APCexample_detail.png")
 
 KRAS and BRAF mutations are oncogenetic driver genes in cancer. Do the same for  KRAS and  BRAF, it is more convenient to enter the gene symbols in the box and click next.
 
 Q: After some zooming what do you notice  when comparing  by eye balling the mutation of APC vs BRAF / KRAS.
 
-A: APC has many and different mutations on multiple  locations compared to KRAS and BRAF.
-
-![](_static/images/MolOncCRC/KRASexample_detail.png "KRAS_detail.png")
-
-![](_static/images/MolOncCRC/BRAFexample_detail.png "BRAF example_detail.png")
 
 
 Hoovering over de coloured blocks below the genomic location of BRAF reveals the mutation types.
