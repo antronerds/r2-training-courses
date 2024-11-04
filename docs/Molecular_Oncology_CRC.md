@@ -753,15 +753,19 @@ Q: If you want to find out what patient with or without a certain mutation have 
 
 A: Annotate this cohort with the mutations for each patient.
 
-In r2 you can easily with somatic variation module annotate each sample with the  mutation status in a cohort. With te
-
-* Make a track for BRAF and KRAS mutation.
-USe  the table grid again  for each BRAF mutation the cohort, scroll down and click build a track, select the proper column or track annotation and OK. Select the 1063 dataset and click next. You can name the track, change group name and / or the track color. 
-
+In r2 you can easily with the somatic variation module annotate each sample with the mutation status in a cohort. So you can use all te mutations reporeted as already seen and take this to the geneexpression dataset(s). Below is pictured as you have already used in the previous excercises how you can use these tracks (annotations) to find differentially expressed genes. Imagine the endless hours you can spend to find DEG genes you can find with performing these tests when you combine information of the genomic data together with the geneexpression data. 
 
 
 ![](_static/images/MolOncCRC/mutation_track_usage.png "mutation_track_usage.png")
-[**Use track in R2**](_static/images/MolOncCRC/BRAF_select_som.png)
+[**Using tracks in R2**](_static/images/MolOncCRC/BRAF_select_som.png)
+
+
+### Signature scores
+
+Explain signature scores here..
+
+
+A Differential Expression genes has already been performed for APC mutants in the cohort versus non-APC mutantsin in the Nunes set. A signature score has been generated for the genes which were upregulated (activated) as result of this test.  Go the main screen and select the 
 
 
 
@@ -770,22 +774,9 @@ USe  the table grid again  for each BRAF mutation the cohort, scroll down and cl
 
 
 
-You can also do the same for APC and KRAS. Now these tracks (or group parameters) are stored and can be found in R2 in most of the analysis modules.  Also do the same for a sub-cohort of this dataset, this set is a subcollection of the Nunes set with normal and tumor tissue of the same patients, **Mixed Colon (pairs) - Nunes.
-
-![](_static/images/MolOncCRC/Mixed-colon-nunnes_track.png "BRAF.png")
-[**Create a track in R2:Mixed**](_static/images/MolOncCRC/BRAF_select_som.png).
-
-
-- Add a test with DEG for MIXED
-- Create a signature a
 
 
 
-
-
-
-
-Let's start to see if what we have learned so for of co-occurring mutations in the CMS classification.
 
 
 
