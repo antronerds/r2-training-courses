@@ -654,17 +654,16 @@ It is nice to see that again the CMS clusters clearly separates this set into 4 
 
 
 * Going back to the main of R2 the  **Nunes set**  should still be selected.
-* Also check in the **Cohort Overview** the annotation to investiagte  what kind is annotation is provided which could be handy to query this dataset.
+* Also check in the **Cohort Overview** the annotation to investigate  what kind is annotation is provided which could be handy to query this dataset.
 
-Q: Do you seen any interesting parameter(s) which have already been discussed during in the lectures (ignore all the metastasis tracks).
-
+Q: Do you see any interesting parameter(s) which have already been discussed during in the lectures (ignore all the metastasis tracks).
 
 #### Genomic data.
 
 
 Up to now, we have mainly looked at gene expression profiles,the Nunes data provides us with the means also to examine genomic data in more detail. 
 
-In the context of colorectal cancer,  **Comparative Genomic Hybridization (CGH)** profiles are used to detect** copy numebr variation (CNV)** across the genome. Those CNV's include amplifications (gains) and deletions (losses). This type of genomic event can lead to overexpression of oncogenes and or loss of tumor supression genes.
+In the context of colorectal cancer,  **Comparative Genomic Hybridization (CGH)** profiles are used to detect **copy number variation (CNV)** across the genome. Those CNV's include amplifications (gains) and deletions (losses). This type of genomic events can lead to overexpression of oncogenes and or loss of tumor suppression genes.
 
 ![](_static/images/MolOncCRC/CGH_examples.jpg "CGH example")
 [**Example of CGH profiles:CGH profile of malignant melonama:  A is a Control sample**](_static/images/MolOncCRC/CGH_examples.jpg)
@@ -686,36 +685,37 @@ Now let see how the CGH profiles look for the CMS sub-category.
 Q: looking CGH profiles, do you see a difference between the several CMS classifications for the CGH profiles, what do you observe.?
 
 
-In cancer a high rate of mutations occur in the genome and could sometimes even reach hundreds and thousand of genes per megabase.  In general, tumors are classified as hypermutated when they exibit more than 10-12 mutation per megabase.  Also, this dataset is annotated for each patient with the hypermutation status.
+In cance, a high rate of mutations occur in the genome and could sometimes even reach hundreds and thousand of genes per megabase.  In general, tumors are classified as hypermutated when they exibit more than 10-12 mutation per megabase.  Also, this dataset is annotated for each patient with the hypermutation status.
 
 * Again generate CHG profile for the hypermutation status.
 
-Q: what do you observe??.
+Q: What do you observe??.
 
 
 It has been shown that genome aberrations gains and losses do not completely overlap wit  hypermutation.
 
 Q: Can you think of a reason why this does not correspond ?
-A: For tumour survival is makes sense that once a tumor is hypermutated genomic abbaration is less needed for tumour survival o the otherway arround.
 
 
-This clearly shows that hypermutations do correlate negative with the CGH profiles, unfortunately you can not identify which CMS class has a higher incidence.
+
+This clearly shows that hypermutations do correlate negatively with the CGH profiles, unfortunately you can not identify which CMS class has a higher incidence.
 
 * Analyse the cohort to see how the hypermutations are divided  for each sub-type.
   (relate two tracks)
-* Go to relate in te main menu  two tracks and select the hypermutation status and the CMS profiles
+* Go to **Relate 2 tracks**  in te main menu and select the hypermutation status and the CMS profiles.
 
 Q: what do observe and was this expected when keeping the CGH profiles in mind
-A: As expected and for CMS1 specific much less pronounced genomic aberrations are witnessed.
+A: As expected and for CMS1 specific much less pronounced genomic aberrations are obeserved.
 
 
 The CMS subclasses each have their own characteristics we have seen that the CMS2 class has a significant lower amount of mutations and we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver genes. But we cannot see in the hypermution group which genes are actually hypermutated.
 
 Go the main menu , go to  WGS/WES and select Pers. Med. Oncoprint (fixed data) and as resource the CRC OncoKB hotspots Nunes.
 
-![](_static/images/MolOncCRC/Select_oncoprint_nunes.png "Select  Oncoprint ")
 
-[**Select oncoplot**](_static/images/MolOncCRC/Select_oncoprint_nunes.png)
+![](_static/images/MolOncCRC/select_oncoprint_nunes.png "Select  Oncoprint ")
+
+[**Select oncoprint**](_static/images/MolOncCRC/select_oncoprint_nunes.png)
 
 
 In this so called oncoprint Here we have an overview of most occurring mutations in our complete cohort since many CRC oncodriving genes haven been reported we can use R2 to investigate which mutations occur and also information about the mutations type like missence, nonsense, frameshifs etc which are reported in detail.
@@ -725,7 +725,7 @@ Scrolling down, you will find in Settings menu all sort of interesting options y
 ![](_static/images/MolOncCRC/oncoprint_settings.png "Select  Oncoprint ")
 [**Settings**](_static/images/MolOncCRC/Select_oncoprint_nunes.png)
 
-Q: Name some genes which have been listed in top.
+Q: Name some genes which have been listed in the top.
 
 
 ### Somatic variants
