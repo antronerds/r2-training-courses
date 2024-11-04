@@ -640,7 +640,6 @@ This can provide more meaningful insights into the underlying biology of a parti
 
 
 
-
 Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently,  there is a paper published were a large cohort of CRC patients described and analysed. The data used in this article comprehend  genome and transciptome data and on top of that this set is surprisingly well annotated with a lot of clinical information which is not often in de case.  [Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3).
 
 It is good common scientific practice to validate and check your analysis in other resources. We already have seen that the Molecular signature classification (CMS) are nicely clustered in the previous datasets.  Let's start to check whether this is also the case for the Nunes RNA seq dataset.
@@ -765,7 +764,7 @@ A: APC has many and different mutations on multiple  locations compared to KRAS 
 Hoovering over de coloured blocks below the genomic location of BRAF reveals the mutation types.
 
 Q: Which mutation type in BRAF is the most prominent. 
-A: V640E also often reported as V600R and is an activating mutation.
+A: V640E also often reported as V600E and is an activating mutation.
 
 
 Up to now we have investigated the transcriptome and the genomics data separately except for  some annotation of hypermutations which was the result of the genomics analysis.
@@ -788,8 +787,15 @@ USe  the table grid again  for each BRAF mutation the cohort, scroll down and cl
 ![](_static/images/MolOncCRC/Create_track.png "BRAF.png").
 [**Create a track in R2**](_static/images/MolOncCRC/BRAF_select_som.png)
 
-You can also do the same for APC and KRAS. Now these tracks (or group parameters) are stored and can be found in R2 in most of the analysis modules.
-Also do the same for a sub-cohort of this dataset . 
+You can also do the same for APC and KRAS. Now these tracks (or group parameters) are stored and can be found in R2 in most of the analysis modules.  Also do the same for a sub-cohort of this dataset, this set is a subcollection of the Nunes set with normal and tumor tissue of the same patients, **Mixed Colon (pairs) - Nunes.
+
+![](_static/images/MolOncCRC/Mixed-colon-nunnes_track.png "BRAF.png")
+[**Create a track in R2:Mixed**](_static/images/MolOncCRC/BRAF_select_som.png).
+
+
+- Add a test with DEG for MIXED
+- Create a signature a
+
 
 
 
