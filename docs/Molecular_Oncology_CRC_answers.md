@@ -497,6 +497,25 @@ A: APC has many and different mutations on multiple  locations compared to KRAS 
 ![](_static/images/MolOncCRC/BRAFexample_detail.png "BRAF example_detail.png")
 
 
+Hoovering over de coloured blocks below the genomic location of BRAF reveals the mutation types.
+
+Q: Which mutation type in BRAF is the most prominent.
+A: V640E also often reported as V600E and is an activating mutation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

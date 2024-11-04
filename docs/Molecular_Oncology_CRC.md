@@ -742,11 +742,10 @@ KRAS and BRAF mutations are oncogenetic driver genes in cancer. Do the same for 
 Q: After some zooming what do you notice  when comparing  by eye balling the mutation of APC vs BRAF / KRAS.
 
 
-
 Hoovering over de coloured blocks below the genomic location of BRAF reveals the mutation types.
 
 Q: Which mutation type in BRAF is the most prominent. 
-A: V640E also often reported as V600E and is an activating mutation.
+
 
 
 Up to now we have investigated the transcriptome and the genomics data separately except for  some annotation of hypermutations which was the result of the genomics analysis.
@@ -760,7 +759,7 @@ In r2 you can easily with somatic variation module annotate each sample with the
 * Make a track for BRAF and KRAS mutation.
 USe  the table grid again  for each BRAF mutation the cohort, scroll down and click build a track, select the proper column or track annotation and OK. Select the 1063 dataset and click next. You can name the track, change group name and / or the track color. 
 
-![](_static/images/MolOncCRC/BRAF_select_som.png "BRAF.png").
+![](_static/images/MolOncCRC/BRAF_select_som.png "BRAF.png")
 
 [**Create a track in R2**](_static/images/MolOncCRC/BRAF_select_som.png)
 
