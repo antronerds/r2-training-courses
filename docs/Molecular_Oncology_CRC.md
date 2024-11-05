@@ -908,7 +908,7 @@ ______
   
 The treatment resulted in a shift in gene expressions. To find out what the effect is of this shift, we will make 
 use of the geneset of upregulated genes that we just saved, now in combination with the Guinney dataset, the 
-cohort dataset with annotated CMS status and survival data. We use the unsupervised k-means algoritm to find groups 
+cohort dataset with annotated CMS status and survival data. We use the unsupervised k-means algorithm to find groups 
 in our cohort that show similar expression patterns for our geneset. 
 
 * On the main page, select the Guinney dataset again
@@ -973,6 +973,7 @@ ______
 ![](_static/images/R2d2_logo.png)**What is your conclusion?**
 
 ______
+#### Optional when there is time left......
 
 ## Identifying key drivers of CRC: superenhancers controlling gene expression
 
