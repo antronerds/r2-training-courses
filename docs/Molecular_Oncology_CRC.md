@@ -753,7 +753,7 @@ Q: If you want to find out what patient with or without a certain mutation have 
 
 A: Annotate this cohort with the mutations for each patient.
 
-In r2 you can easily use the somatic variation module annotate each sample with the mutation status in a cohort. So you can use all te mutations reported seen and take this to the geneexpression dataset(s). Below is pictured, as you have already used in the previous excercises how you can use these tracks (annotations) to find differentially expressed genes. Imagine the endless hours you can spend to find DEG genes you can find with performing these tests when you combine information of the genomic data together with the gene expression data. 
+In r2 you can easily with the somatic variation module annotate each sample with the mutation status in a cohort. So you can use all te mutations reporeted as already seen and take this to the geneexpression dataset(s). Below is pictured as you have already used in the previous excercises how you can use these tracks (annotations) to find differentially expressed genes. Imagine the endless hours you can spend to find DEG genes you can find with performing these tests when you combine information of the genomic data together with the geneexpression data. 
 
 
 ![](_static/images/MolOncCRC/mutation_track_usage.png "mutation_track_usage.png")
@@ -762,73 +762,34 @@ In r2 you can easily use the somatic variation module annotate each sample with 
 
 ### Signature scores
 
-What are signature scores? A gene signature score is een predfined set of genes which are involved in a particular biological process, pathway of a set of genes as result of an analysis. 
+What are signature scores?. A quick memory refresher. A gene signature score is een predfined set of genes which are involved in a particular biological process, pathway of a set of genes as result of an analysis.
 
-To calculate a signature score, the expression levels of all genes in the signature are analyzed within a givensample. The calculation methods vary but often include:
+To calculate a signature score, the expression levels of all genes in the signature are analyzed within a given sample for the complete cohort. The calculation methods vary but often include:
 
 * Average expression of the signature genes.
 * Weighted sums where each gene’s contribution is weighted by its known importance.
 
 
-A differential Expression gene analysis  has already been performed for APC mutants in the cohort versus non-APC mutants for the Nunes set. We have already stored a list genes which are upregulated and will be used to find correlations for the sigature scores of other pathways.   Go the main screen and select the geneset correlation modules select the list activated genes in in Geneset(source) and for geneset (target) select the collection of broad 2023 Hallmark genesets. 
 
-Q: Which pathway do you expect to pop-up as a result of this test. 
+
+A differential Expression gene analysis has already been performed for APC mutants versus non-APC mutants for the Nunes set. We have   stored a list of  genes which are upregulated in the APC mutated group and will be used to find correlations for the signature scores of other pathways. R2 will calculate the signature scores for the activated APC genelist and all the genesets the selected collection harbors.
+
+![](_static/images/MolOncCRC/APC_genesig_corr.png  "Genesign corr")
+[**Geneset correlations**](_static/images/MolOncCRC/APC_genesig_corr.png)
+
+
+Go the main screen and select the geneset correlation module. In the next screen select for the Geneset (source) in the Community genesets > student > main APC activated (click the green confirm button) and for Geneset (target) select the collection of broad 2023 Hallmark genesets.
+
+Q: Which pathway do you expect to pop-up as a result of this test.
 
 
 
 
 Click next. R2 is now performing  a correlation test on the signature score of the activated genelist in APC mutants against  the signature scores of all the genesets in the broad hallark collecting.
 
-Q: Name other pathways in the list which you recognize and can be associated witg e.g CMS classes.
+Q: Name other pathways in the list which you recognize and can be associated with e.g CMS classes.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-#### to use and remarks:
-
-Q: Can you think of a reason why hypermutations occur less in tumor with genomic gains and losses and the otherway arround. 
-
-Q:
-- Can you think of  possible reason why in after a BRAF mut analysis the MAP/ERK which is activated pathy in the most of the tumors where you can find a BRAF mutation. (not detect with expression, phosphorylation)
-
-opm: Plaatjes naar answers doc
-
-- why are tumors with MSI hypermutated -> MSI broken DNA repair system -> lot of mutations -> Hypermutated
 
 
 ------
