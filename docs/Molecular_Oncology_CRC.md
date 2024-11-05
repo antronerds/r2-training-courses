@@ -762,7 +762,7 @@ In r2 you can easily with the somatic variation module annotate each sample with
 
 ### Signature scores
 
-What are signature scores?. A quick memory refresher. A gene signature score is een predfined set of genes which are involved in a particular biological process, pathway of a set of genes as result of an analysis.
+What are signature scores?. A quick memory refresher. A gene signature score is een predefined set of genes which are involved in a particular biological process, pathway of a set of genes as result of an analysis.
 
 To calculate a signature score, the expression levels of all genes in the signature are analyzed within a given sample for the complete cohort. The calculation methods vary but often include:
 
@@ -774,18 +774,19 @@ To calculate a signature score, the expression levels of all genes in the signat
 
 A differential Expression gene analysis has already been performed for APC mutants versus non-APC mutants for the Nunes set. We have   stored a list of  genes which are upregulated in the APC mutated group and will be used to find correlations for the signature scores of other pathways. R2 will calculate the signature scores for the activated APC genelist and all the genesets the selected collection harbors.
 
+
 ![](_static/images/MolOncCRC/APC_genesig_corr.png  "Genesign corr")
 [**Geneset correlations**](_static/images/MolOncCRC/APC_genesig_corr.png)
 
 
-Go the main screen and select the geneset correlation module. In the next screen select for the Geneset (source) in the Community genesets > student > main APC activated (click the green confirm button) and for Geneset (target) select the collection of broad 2023 Hallmark genesets.
+Go the main screen and select the geneset correlation module. In the next screen select for the Geneset (source) in the Community genesets > student > main > APC activated (click the green confirm button) and for Geneset (target) select the collection of broad 2023 Hallmark genesets.
 
 Q: Which pathway do you expect to pop-up as a result of this test.
 
 
 
 
-Click next. R2 is now performing  a correlation test on the signature score of the activated genelist in APC mutants against  the signature scores of all the genesets in the broad hallark collecting.
+Click next. R2 is now performing  a correlation test on the signature scores of the APC activated genelist in APC mutants against the signature scores of allthe genesets in the broad hallmark collectiong.
 
 Q: Name other pathways in the list which you recognize and can be associated with e.g CMS classes.
 
