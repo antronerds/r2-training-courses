@@ -753,7 +753,7 @@ Q: If you want to find out what patient with or without a certain mutation have 
 
 A: Annotate this cohort with the mutations for each patient.
 
-In r2 you can easily with the somatic variation module annotate each sample with the mutation status in a cohort. So you can use all te mutations reporeted as already seen and take this to the geneexpression dataset(s). Below is pictured as you have already used in the previous excercises how you can use these tracks (annotations) to find differentially expressed genes. Imagine the endless hours you can spend to find DEG genes you can find with performing these tests when you combine information of the genomic data together with the geneexpression data. 
+In r2 you can easily use the somatic variation module annotate each sample with the mutation status in a cohort. So you can use all te mutations reported seen and take this to the geneexpression dataset(s). Below is pictured, as you have already used in the previous excercises how you can use these tracks (annotations) to find differentially expressed genes. Imagine the endless hours you can spend to find DEG genes you can find with performing these tests when you combine information of the genomic data together with the gene expression data. 
 
 
 ![](_static/images/MolOncCRC/mutation_track_usage.png "mutation_track_usage.png")
@@ -762,10 +762,15 @@ In r2 you can easily with the somatic variation module annotate each sample with
 
 ### Signature scores
 
-Explain signature scores here..
+What are signature scores? A gene signature score is een predfined set of genes which are involved in a particular biological process, pathway of a set of genes as result of an analysis. 
+
+To calculate a signature score, the expression levels of all genes in the signature are analyzed within a givensample. The calculation methods vary but often include:
+
+* Average expression of the signature genes.
+* Weighted sums where each gene’s contribution is weighted by its known importance.
 
 
-A Differential Expression genes has already been performed for APC mutants in the cohort versus non-APC mutants  in the Nunes set. We have already stored a list genes which are upregulated and will be used to find correlations for for the sigature scores of other pathways.   Go the main screen and select the geneset correlation modules select the list activated genes in in Geneset(source) and for geneset (target) select the collection of broad 2023 Hallmark genesets. 
+A differential Expression gene analysys  has already been performed for APC mutants in the cohort versus non-APC mutants  in the Nunes set. We have already stored a list genes which are upregulated and will be used to find correlations for the sigature scores of other pathways.   Go the main screen and select the geneset correlation modules select the list activated genes in in Geneset(source) and for geneset (target) select the collection of broad 2023 Hallmark genesets. 
 
 Q: Which pathway do you expect to pop-up as a result of this test. 
 
