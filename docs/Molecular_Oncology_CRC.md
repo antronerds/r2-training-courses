@@ -357,6 +357,7 @@ Let's see if these cms subtypes that cluster separately on the t-SNE map hold an
 
 * In the left side menu on the main page, click on Survival (Kaplan-Meier / Cox)
 * In the menu at the center of the page, click at the Data set setting on **Select a data set**, and find the dataset with *Author* **Guinney** and the amount of samples *N* is **3232**
+* Select on the main page in the left menu Survival (Kaplan-Meier)
 * Click on the row to read its description in the information box underneath the dataset selection grid
 
 * Leave *Separate by* at **categorical track (Kaplan-Meier)** and click **Next**
@@ -653,8 +654,8 @@ It is good common scientific practice to validate and check your analysis in oth
 It is nice to see that again the CMS clusters clearly separates this set into 4 clusters.
 
 
-* Going back to the main of R2 the  **Nunes set**  should still be selected.
-* Also check in the **Cohort Overview** the annotation to investigate  what kind is annotation is provided which could be handy to query this dataset.
+* Going back to the main page of R2 the  **Nunes set**  should still be selected.
+* Also check in the **Cohort Overview** the annotation to investigate  what kind of annotation is provided which could be handy to query this dataset.
 
 Q: Do you see any interesting parameter(s) which have already been discussed during in the lectures (ignore all the metastasis tracks).
 
@@ -669,13 +670,13 @@ In the context of colorectal cancer,  **Comparative Genomic Hybridization (CGH)*
 [**Example of CGH profiles:CGH profile of malignant melonama:  A is a Control sample**](_static/images/MolOncCRC/CGH_examples.jpg)
 
 
-CGH profiling plays an important role in understanding CRC by revealing genomic instability which is a Hallmark of cancer. Since we could als obtain the genomic data, he CGH profiles could be generated and added to R2. Let's take a look at the CGH profiles to investigate if  we can say something about CGH properties when plotting the profiles per characteristic.
+CGH profiling plays an important role in understanding CRC by revealing genomic instability which is a Hallmark of cancer. Since we could als obtain the genomic data, the CGH profiles could be generated and added to R2. Let's take a look at the CGH profiles to investigate if  we can say something about CGH properties when plotting the profiles per characteristic.
 
 ![](_static/images/MolOncCRC/WES-menu_nunes.png "onco_plot_nunes.png")
 
 [**Selecting CGH profiles**](_static/images/MolOncCRC/WES-menu_nunes.png)
 
-* On the main page select in left menu **WGS/WES data** and click on plot CGH karyograms intrack. Select CRC Nunes 2024 (copy number) and click next. A general CGH plot combining all the 1063 profiles  with Gains (in red) and Losses ( in Blue) is summarized in one plot.
+* On the main page select in the left menu **WGS/WES data** and click on plot CGH karyograms intrack. Select CRC Nunes 2024 (copy number) and click next. A general CGH plot combining all the 1063 profiles  with Gains (in red) and Losses ( in Blue) is summarized in one plot.
 
 Now let see how the CGH profiles look for the CMS sub-category.
 
@@ -685,7 +686,7 @@ Now let see how the CGH profiles look for the CMS sub-category.
 Q: looking CGH profiles, do you see a difference between the several CMS classifications for the CGH profiles, what do you observe.?
 
 
-In cance, a high rate of mutations occur in the genome and could sometimes even reach hundreds and thousand of genes per megabase.  In general, tumors are classified as hypermutated when they exibit more than 10-12 mutation per megabase.  Also, this dataset is annotated for each patient with the hypermutation status.
+In cancer, a high rate of mutations occur in the genome and could sometimes even reach hundreds and thousand of genes per megabase.  In general, tumors are classified as hypermutated when they exibit more than 10-12 mutation per megabase.  Also, this dataset is annotated for each patient with the hypermutation status.
 
 * Again generate CHG profile for the hypermutation status.
 
@@ -694,7 +695,7 @@ Q: What do you observe??.
 
 It has been shown that genome aberrations gains and losses do not completely overlap wit  hypermutation.
 
-Q: Can you think of a reason why this does not correspond ?
+Q: Can you think of a reason why this does not correspond?
 
 
 
