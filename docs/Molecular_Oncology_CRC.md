@@ -770,7 +770,7 @@ To calculate a signature score, the expression levels of all genes in the signat
 * Weighted sums where each gene’s contribution is weighted by its known importance.
 
 
-A differential Expression gene analysys  has already been performed for APC mutants in the cohort versus non-APC mutants  in the Nunes set. We have already stored a list genes which are upregulated and will be used to find correlations for the sigature scores of other pathways.   Go the main screen and select the geneset correlation modules select the list activated genes in in Geneset(source) and for geneset (target) select the collection of broad 2023 Hallmark genesets. 
+A differential Expression gene analysis  has already been performed for APC mutants in the cohort versus non-APC mutants for the Nunes set. We have already stored a list genes which are upregulated and will be used to find correlations for the sigature scores of other pathways.   Go the main screen and select the geneset correlation modules select the list activated genes in in Geneset(source) and for geneset (target) select the collection of broad 2023 Hallmark genesets. 
 
 Q: Which pathway do you expect to pop-up as a result of this test. 
 
