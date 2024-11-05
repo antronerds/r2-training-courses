@@ -113,7 +113,7 @@ Category - Tissue/ Tumor -  author - number of samples (N) - normalization - chi
 In our case the dataset name tells us that the dataset contains 
 normal and tumor samples (*mixed*) of *colon* tissue; *Marra* is the author and there are *64* samples.
 
-* We leave Box 1 as is, because we will look only in a single dataset. 
+* We leave Box 1 as is, because we will look only at a single dataset. 
 * In order to find the above-mentioned dataset in R2, click on the text of the currently selected dataset in box 2. 
 
 A grid pops up that shows all the datasets that are currently available to you. Each row is a dataset and
@@ -128,8 +128,8 @@ A grid pops up that shows all the datasets that are currently available to you. 
 * Select the dataset with a click on the blue button **Confirm selection**. Check on the main page in box 2 that the 
   correct set has been selected.
 
-Of course, it is nice to have a lot of RNA expression datasets to analyse and explore, but without proper sample 
-annotation your have very limited analysis options. Let's explore the annotation for the Marra dataset.
+Of course, it is nice to have a lot of RNA expression datasets to analyze and explore, but without proper sample 
+annotation you have very limited analysis options. Let's explore the annotation for the Marra dataset.
 
 * In box 3, select the analysis type **Cohort Overview** and click **Next**.
 * In the grid, you can see all the samples in rows, with the available annotation in the columns. Scroll quickly down the 
@@ -138,7 +138,7 @@ grid to take a glance at the possible values for each annotation.
 In R2, samples of a dataset can be annotated with e.g. clinical data or biological information. Each group of annotated
  data is called a **Track** in R2. These tracks can be used to filter, color or split data in all types of R2 analyses.
 
-Above the grid you can find an interactive pie chart for each track. The pie charts present an overview of the track values in the dataset, detailing the percentage of samples in each category. You can hover over the tracks and click on a section to filter the grid underneath for samples with that track value. 
+Above the grid, you can find an interactive pie chart for each track. The pie charts present an overview of the track values in the dataset, detailing the percentage of samples in each category. You can hover over the tracks and click on a section to filter the grid underneath for samples with that track value. 
 * Check the different group values in the pie chart of the tissue track and the proportion of samples for each group. 
 
 [comment]: # (The tissue annotation of the Marra set can thus be used, for instance,  to find the differences between the gene
@@ -170,12 +170,12 @@ type="button">Open the first answering form</button>
 ### Find different expression profiles between normal and adenoma tissue
 
 As you have seen above, R2 provides access to thousands of datasets. All these datasets can be readily analyzed with a comprehensive range of bioinformatics tools without coding. 
-One of these tools is the "Find differential expression between groups". The differential expression analysis aims to identify genes which are 
+One of these tools is the "Find differential expression between groups". The differential expression analysis aims to identify genes that are 
 significantly different between two groups of a dataset.    
 
 * Click on **Main** in the upper left corner.
 * Check if you have selected the **Marra** dataset with 64 samples in box 2 and in box 3 *select type of analysis*, **Differential expression 
-  between two groups**. CLick **Next**.
+  between two groups**. Click **Next**.
 * R2 offers a couple of statistical *Test* options, in this case we use the **T-test** which is selected by default.
 * Now we have to select which grouping variable to use. Select *Group by* **Tissue (2cat)** to use the previously 
   seen tissue annotation. And click **Submit**.
@@ -184,7 +184,7 @@ significantly different between two groups of a dataset.
 
 R2 has generated a large list of differentially expressed genes. On the right hand side of the page you find buttons to follow-up analyses,
 and underneath the buttons are informative tables about the genes list. One table shows how many genes have higher 
-expression in adenomas compared to healthy tissue and the other way around. 
+expression in adenomas compared to healthy tissue and vice versa. 
 
 ------
 
@@ -194,23 +194,23 @@ downregulated?**
 ______
 
 
-Next to the many publicly available datasets, R2 also hosts many curated lists of genes which we call 
+Next to the many publicly available datasets, R2 also hosts many curated lists of genes that we call 
 **gene sets**. These gene sets can be used to restrict or filter an analysis as well.<br>
-We can adapt our current search by scrolling down to the end of page, where you find the Adjustable Settings menu. You can now use a Gene set to 
+We can adapt our current search by scrolling down to the end of the page, where you find the Adjustable Settings menu. You can now use a Gene set to 
 restrict your list of differentially expressed genes between normal tissue and adenomas that is specifically associated with colorectal cancer.  
 
 * Click on **Select gene set** and a grid box will pop-up.
 * Use the search field on the top of the table and fill in **colorectal**, hit **enter**.
 * [The KEGG (Kyoto Encyclopedia of Genes and Genomes) database]( https://www.genome.jp/kegg/pathway.html) is a comprehensive bioinformatics resource that 
   integrates information about genes, proteins, pathways, and diseases. Click on the triangles in front of KEGG 
-  pathways and its subcollections, till you find the **Colorectal_cancer (62)** gene set. Check the checkbox in front of the gene set and hit the green **Confirm selection** button.
-* Always click **Submit** afer you have changed something in the Adjustable settings menu in order for the changes to take effect.
+  pathways and its subcollections, until you find the **Colorectal_cancer (62)** gene set. Check the checkbox in front of the gene set and hit the green **Confirm selection** button.
+* Always click **Submit** after you have changed something in the Adjustable settings menu in order for the changes to take effect.
 * Check out the list and see if you recognize multiple genes. You can hover over the magnifying glasses in front of each row to learn more about the genes.
 * Now click on the magnifying glass in front of **AXIN2** to obtain a violin plot with the scatter points of the expression value of this gene 
   for each sample in the dataset.<br>
   The plot shows the two groups of the tissue track in violin plots  with the individual sample values showing as scatter on top. If you hover your mouse over 
-  any of the violins, you can see the group statistics. Also note you can hoover over the dots in the graph and the tracks to get more information of the individual samples.
-* The green bar in the top allows you to easily go to next or previous gene of your list. Click on the **arrow with 
+  any of the violins, you can see the group statistics. Also note you can hover over the dots in the graph and the tracks to get more information of the individual samples.
+* The green bar in the top allows you to easily go to the next or previous gene of your list. Click on the **arrow with 
   MYC** on the right side of the green bar to view this gene's expression in the samples. 
 
 ------
@@ -220,8 +220,8 @@ about biological processes, why would this be?**
 
 ______
 
-The WNT pathway is an important signal transduction cascade which plays an important role in diverse biological 
-processes. The dysregulation of the Wnt pathway has been observed in several cancers including colon cancer. 
+The WNT pathway is an important signal transduction cascade that plays an important role in diverse biological 
+processes. The dysregulation of the WNT pathway has been observed in several cancers including colon cancer. 
 
 ### The WNT pathway
 
@@ -231,7 +231,7 @@ distribution of the (expression) data to find clusters that have similar (expres
 clusters of samples in the plot based on their (dis)similarity.
 This is combined with the clustering of the genes based on their expression throughout the samples. The heatmap is 
 colored by the z-scores of the samples' gene expression values. Often annotation tracks are shown above a heatmap. 
-Remember that _we can_ see this annotation but that the _heatmap algorithm did not use_ this information to look for 
+Remember that we can see this annotation but that the heatmap algorithm did not use this information to look for 
 subgroups in the data. 
 
 ![](_static/images/TumorHeterogeneity_HeatmapClustering.png "Example heatmap: finding subgroups in your data")
@@ -240,10 +240,10 @@ subgroups in the data.
 
 * Go back to the gene list result page of the previous Differential Expression between two groups analysis, the tab 
   should still be open. 
-* Generate a list of genes which are differentially expressed comparing normal and adenoma tissue within the KEGG WNT 
+* Generate a list of genes that are differentially expressed comparing normal and adenoma tissue within the KEGG WNT 
   pathway by adjusting the settings if needed:
   - Use the False Discovery Rate for multiple testing correction, 
-  - log 2 values 
+  - log2 values 
   - and P <0.01. 
   - Click on the currently selected gene set, **Clear selection** with the red button and find the KEGG **Wnt** 
     pathway geneset (hint: use keyword **Wnt**). 
@@ -254,12 +254,12 @@ subgroups in the data.
 
 ------
 
-![](_static/images/R2d2_logo.png)**Inspect the heatmap did you expect this pronounced clustering?**
+![](_static/images/R2d2_logo.png)**Inspect the heatmap. Did you expect this pronounced clustering?**
 
 ______
 
 Now let's generate a Wnt pathway heatmap from a different route:
-* Go to the main page
+* Go to the main page.
 * Select the analysis **View Geneset (Heatmap)**
 * On the next page, click on *Select gene set* to find the **KEGG** **Wnt_signaling_pathway**. Click **Submit**.
 
@@ -312,7 +312,7 @@ We will use a dataset that was adapted from one of the resources of
  [The Cancer Genome Atlas (TCGA)](https://www.cancer.gov/ccg/research/genome-sequencing/tcga). They provide a wealth 
 of omics data: "TCGA generated over 2.5 
 petabytes of genomic, epigenomic, transcriptomic, and proteomic data. The data, which has already led to improvements in our ability to diagnose, treat, and prevent cancer, will remain publicly available for anyone in the research community to use."
-* In the left side menu on the main page, click on **Sample maps (UMAP/tSNE)**
+* In the left side-menu on the main page, click on **Sample maps (UMAP/tSNE)**
 * In the grid, filter for the dataset **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36** and 
   click its **Select** button.
 
@@ -326,7 +326,7 @@ Colors of the graph points are not set by default.
 The most important parameter for the t-SNE algorithm is the perplexity value. The perplexity parameter controls 
 the balance between a focus on preserving local details or global structures of the data. When R2 receives the 
   request to calculate the t-SNE map for a dataset, it immediately calculates and stores the t-SNE maps with 
-different perplexity values. The resulting maps can be found under de setting 
+different perplexity values. The resulting maps can be found under the setting 
   _Version_. It is also possible to show all the available perplexity maps for the dataset at the same time. 
 
 * Set *Version* to the value **all**.  
@@ -339,7 +339,7 @@ different perplexity values. The resulting maps can be found under de setting
 ![](_static/images/R2d2_logo.png)**What insight did you obtain when you colored the plot with annotation?**
 
 ![](_static/images/R2d2_logo.png)**You looked at several embeddings of the t-SNE plot that were created with different perplexity values.
-roughly what is your impression of the clustering of the samples. Why do you think it is good practice to check different values for a parameter?**
+Roughly, what is your impression of the clustering of the samples. Why do you think it is good practice to check different values for a parameter?**
 
 <br>
 <br>
@@ -355,7 +355,7 @@ Let's see if these cms subtypes that cluster separately on the t-SNE map hold an
 *Dataset used*
 * Tumor Colon (CMS) - Guinney - 3232 - custom - ccrcst1
 
-* In the left side menu on the main page, click on Survival (Kaplan-Meier / Cox)
+* In the left side-menu on the main page, click on Survival (Kaplan-Meier / Cox)
 * In the menu at the center of the page, click at the Data set setting on **Select a data set**, and find the dataset with *Author* **Guinney** and the amount of samples *N* is **3232**
 * Click on the row to read its description in the information box underneath the dataset selection grid
 
@@ -375,15 +375,15 @@ Let's see if these cms subtypes that cluster separately on the t-SNE map hold an
 ------
 
 ### Mutations
-Now we would like to look into colorectal cancer associated mutations and see is they are specific for one of the CMS groups
+Now we would like to look into colorectal cancer associated mutations and see if they are specific for one of the CMS groups
 * On the main page, select the Guinney dataset if it is not selected in box 2 yet
 * Choose the **relate 2 tracks** analysis to show the different ratios of 
   mutations per CMS subtype.
 * For the *X track* choose **cms_final (5 cat)** and for the *Y track* choose **mutant_braf (3 cat)** mutations.
 * Select the *Graph type* **stacked barplot (%)**  
 *The Guinney dataset contains several datasets put together. To only look at the samples from studies that looked at the 
-mutational aberrations, use the Sample Filter with the setting *Subset track*, select **mutant_braf (3 cat)** and in the 
-pop-up check the boxes of **0 (776) and 1(87)**. We thus eliminate the samples from this analysis for which it is not known whether they have a BRAF mutations (value nd gets omitted). Click 
+mutational aberrations, use the Sample Filter with the setting *Subset Track*, select **mutant_braf (3 cat)** and in the 
+pop-up check the boxes of **0 (776) and 1(87)**. We thus eliminate the samples from this analysis for which it is not known whether they have a BRAF mutation (value nd gets omitted). Click 
   **Ok** and then **Submit**.
 
 ------  
@@ -397,8 +397,8 @@ pop-up check the boxes of **0 (776) and 1(87)**. We thus eliminate the samples f
 
 Now we will look at the KRAS mutations
 * Underneath your stacked bar plot, scroll down to the **Adjustable settings** menu, change the *y-axis* to **mutant_kras**. 
-* Use the red cross behind the setting *Subset track* to eliminate the braf mutation subset and click on the 
-  dropdown to now select **mutant_kras**. In the pop-up check the boxes of **0 (560) and 1(336)** (thus omit the nd value samples), click **Ok**
+* Use the red cross behind the setting *Subset Track* to eliminate the BRAF mutation subset and click on the 
+  dropdown to now select **mutant_kras**. In the pop-up check the boxes of **0 (560) and 1(336)** (thus omit the samples with ND values), click **Ok**
 * Click **Submit** to see the result
 
 ------  
@@ -421,7 +421,7 @@ In MSI colon cancer, genes of the DNA mismatch repair system play an important r
 
 The next section we will use another dataset. *"Tumor Colon- Watanabe - 84 - MAS5.0 - u133p2"*
 
-This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors.
+This dataset consists of Microsatellite Stable (MSS) tumors and Microsatellite Instable (MSI) tumors.
 
 #### MSS vs MSI
 
@@ -451,7 +451,7 @@ One of the genes that is differentially expressed, is MLH1.
 ------  
 
 ![](_static/images/R2d2_logo.png)**In the list of differentially expressed genes, MLH1 is significantly lower 
-expressed in the msi group vs the mss group: msi < mss.<br><br>
+expressed in the MSI group vs the MSS group: MSI < MSS.<br><br>
 When you look at the expression plot of MLH1, what do you notice about the expression of the samples in this group? Do you see a clear-cut trend of lower MLH1 expression in the 
 MSI group?**
 <br>
@@ -465,7 +465,7 @@ also a subgroup could be identified.
 * Hover with your mouse over data points to see if you can identify a subgroup of an annotation track in which low MLH1 expression occurs more often.
 * Scroll down to the Adjustable settings menu and change grouping setting _Track_ into **MS_orientation**. Click **Submit**
 
-Let's visualize the relation between these dataset annotations inan other way. 
+Let's visualize the relation between these dataset annotations in another way. 
 * Go back to the main menu and select **relate two tracks** and click **Next**. 
 * Select for the _X track_ the **MS_status** and for the _Y track_ **Orientation** and click **Submit**. 
 
@@ -521,7 +521,7 @@ One way to find genes that are possibly affected by MLH1 is to look at (inversel
 * On the result page, click on the best correlating gene to plot both genes together, in a two gene view. Inspect the correlation. Can you think of reasons why the gene expression is highly correlated?
 
 
-* Click on **view additional details**, look at the Probeset Genome Location table.
+* Click on **View Additional Details**, look at the Probeset Genome Location table.
 
 On which chromosomes are both genes located?
 
@@ -533,11 +533,11 @@ On which chromosomes are both genes located?
 
 You arrived at the Genome browser. The Genome Browser allows you to "walk over the genome".
 
-Underneath the genome locations are annotated with the genes that are located at the specific location. Genes colored in red are read in reverse direction. 
+Underneath, the genome locations are annotated with the genes that are located at the specific location. Genes colored in red are read in reverse direction. 
 
 ------  
 
-![](_static/images/R2d2_logo.png)**What can you say about their location of the two genes?**
+![](_static/images/R2d2_logo.png)**What can you say about the location of the two genes?**
 <br>
 <br>
 
@@ -547,8 +547,8 @@ The correlating genes result page shows two columns: the positively correlating 
 correlated genes on the right. Let's have a closer look at this last group.  
 
 * Go back to your genelist of correlating genes (this should still be open in the previous tab) and scroll down to the Adjustable Settings menu at the bottom of the 
-  page. Adapt here the setting *Corr. r cutoff sign* to only look at the **negatively** correlated genes. 
-* Click on the currently selected gene set such that you can **Clear selection**
+  page. Adapt the setting here *Corr. r cutoff sign* to only look at the **negatively** correlated genes. 
+* Click on the currently selected gene set so that you can **Clear selection**
 * Click **Submit** to update the result page. This might take a while. 
 
 ![](_static/images/MolOncCRC/loading_page.png "Loading Page")
@@ -568,9 +568,9 @@ present on (an arm of) a chromosome.
 
 ------
 
-Now let's see how strong MLH1 expression is associated with CMS subtypes.
+Now let's see how strongly MLH1 expression is associated with CMS subtypes.
 
-* From the main page select the **Correlate Gene with a track** analysis to confirm the strong association of MLH1 
+* From the main page, select the **Correlate Gene with a track** analysis to confirm the strong association of MLH1 
   expression with the CMS1 subtype (track **cms_predicted (4 cat)**).
 
 #### DNA methylation
@@ -580,9 +580,9 @@ be found.
 
 * Go to the main menu and select the dataset **Tumor Colon adenocarcinoma - tcga - 296 - custom - ilmnhm450**
 
-* Create the **View a gene** plot for **MLH1**
+* Create the **View a Gene** plot for **MLH1**
 * Under the triangle of *View additional details* click on the **view all** link.
-* Scroll down to the bottom of the page to make a *Subset track* selection with **microsatellite_instability** to 
+* Scroll down to the bottom of the page to make a *Subset Track* selection with **microsatellite_instability** to 
   only select the samples that have been annotated for this characteristic (yes and no). Click **Next**.
 
 A heatmap is generated of methylation levels. Each column corresponds to a sample, and each row corresponds to a 
@@ -618,7 +618,7 @@ Gene set analysis helps researchers interpret the biological relevance of a grou
 individual genes, it allows you to understand the collective functions or pathway involvements of genes in your list. 
 This can provide more meaningful insights into the underlying biology of a particular condition or experiment.
 
-* Click on the top most button on the right that is labeled **Gene set analysis**.
+* Click on the topmost button on the right that is labeled **Gene set analysis**.
 * Select the *Gene set Collection* **Custom collection** and select *Gene set* **Broad 2020 09 h hallmark**
 * Switch the *Representation* setting to **all** to look at both over- and under-representation
 * Click **Next**
@@ -732,17 +732,17 @@ Q: Name some genes which have been listed in the top.
 
 To investigate mutations in each individual sample for this cohort. Select in the main menu the WES/WES module and select somatic mutations. 
 
-* Select as variant hg38 - CRC nunes (Nature 2024) OncoKB only. If you choose as list mode summary you see immediately a list of genes which look familiar do you see genes which play in pivotal role in (CRC) cancers.
+* Select as variant hg38 - CRC nunes (Nature 2024) OncoKB only. If you choose as list mode summary you see immediately a list of genes which look familiar do you see genes that play a pivotal role in (CRC) cancers.
 
-* Now switch to de detailed list mode and click 'next'. Here you see all the reported mutation with  their specifics at you disposal. In which patient is which  mutation reported. If you click on details view  of a patient at the  top this will guide you to the genomic location of e.g APC mutations if you zoom out 2 x  20 times. You see all the different reported mutations for the APC gene. Hoovering over the small coloured blocks you can also investigate the details for the different mutation categories.
+* Now switch to the detailed list mode and click 'next'. Here you see all the reported mutation with their specifics at your disposal. In which patient is which  mutation reported. If you click on details view  of a patient at the top this will guide you to the genomic location of e.g APC mutations if you zoom out 2 x  20 times. You will see all the different reported mutations for the APC gene. Hovering over the small coloured blocks you can also investigate the details for the different mutation categories.
 
 
-KRAS and BRAF mutations are oncogenetic driver genes in cancer. Do the same for  KRAS and  BRAF, it is more convenient to enter the gene symbols in the box and click next.
+KRAS and BRAF mutations are oncogenic driver genes in cancer. Do the same for  KRAS and  BRAF, it is more convenient to enter the gene symbols in the box and click next.
 
 Q: After some zooming what do you notice  when comparing  by eye balling the mutation of APC vs BRAF / KRAS.
 
 
-Hoovering over de coloured blocks below the genomic location of BRAF reveals the mutation types.
+Hovering over de coloured blocks below the genomic location of BRAF reveals the mutation types.
 
 Q: Which mutation type in BRAF is the most prominent. 
 
@@ -765,16 +765,16 @@ In r2 you can easily with the somatic variation module annotate each sample with
 Explain signature scores here..
 
 
-A Differential Expression genes has already been performed for APC mutants in the cohort versus non-APC mutants  in the Nunes set. We have already stored a list genes which are upregulated and will be used to find correlations for for the sigature scores of other pathways.   Go the main screen and select the geneset correlation modules select the list activated genes in in Geneset(source) and for geneset (target) select the collection of broad 2023 Hallmark genesets. 
+A Differential Expression analysis has already been performed for APC mutants in the cohort versus non-APC mutants  in the Nunes set. We have already stored a list genes which are upregulated and will be used to find correlations for the sigature scores of other pathways.   Go to the main screen and select the geneset correlation modules select the list activated genes in in Geneset(source) and for geneset (target) select the collection of broad 2023 Hallmark genesets. 
 
-Q: Which pathway do you expect to pop-up as a result of this test. 
+Q: Which pathway do you expect to pop-up as a result of this test? 
 
 
 
 
 Click next. R2 is now performing  a correlation test on the signature score of the activated genelist in APC mutants against  the signature scores of all the genesets in the broad hallark collecting.
 
-Q: Name other pathways in the list which you recognize and can be associated witg e.g CMS classes.
+Q: Name other pathways in the list which you recognize and can be associated with, e.g CMS classes.
 
 
 
@@ -816,10 +816,10 @@ Q: Name other pathways in the list which you recognize and can be associated wit
 
 #### to use and remarks:
 
-Q: Can you think of a reason why hypermutations occur less in tumor with genomic gains and losses and the otherway arround. 
+Q: Can you think of a reason why hypermutations occur less in tumors with genomic gains and losses and vice versa? 
 
 Q:
-- Can you think of  possible reason why in after a BRAF mut analysis the MAP/ERK which is activated pathy in the most of the tumors where you can find a BRAF mutation. (not detect with expression, phosphorylation)
+- Can you think of possible reason why after a BRAF mut analysis the MAP/ERK, which is activated pathy i most of the tumors where you can find a BRAF mutation. (not detect with expression, phosphorylation)
 
 opm: Plaatjes naar answers doc
 
@@ -946,7 +946,7 @@ in our cohort that show similar expression patterns for our geneset.
 
 * On the main page, select the Guinney dataset again
 * Select the **K-means analysis** in *box 3* and click Next
-* In the *Subset track* dropdown, select **stage**, and in the pop-up window check the boxes **2** and **3** , 
+* In the *Subset Track* dropdown, select **stage**, and in the pop-up window check the boxes **2** and **3** , 
   click **Ok**
 * Behind the setting *Gene set*, click **Select gene set** to find your previously 
   stored gene set under **Personal gene sets > _TEMPORARY > impacct_imatinib_treatment_up**. Check the box in front of your gene set and **Confirm selection**.
@@ -977,7 +977,7 @@ Let's see which CMS subtypes are represented in the two k-means sample clusters
 * On the main page, select the analysis **Relate 2 tracks**
 * For the *X track* scroll all the way down and select **kmeans_imatinib_induced (3 cat)**
 * For the *Y track* choose **cms_final (5 cat)**
-* In the *Subset track* dropdown, select **stage**, and in the pop-up window check the boxes **2** and **3** ,
+* In the *Subset Track* dropdown, select **stage**, and in the pop-up window check the boxes **2** and **3** ,
   click **Ok**
 * Change the *Graph type* into **Stacked bar (%)** and use *Color mode (groups) **Color by Track**
 * *Order Groups by* **group size** and hit **Submit**
@@ -1038,7 +1038,7 @@ regions can be studied. Regions with H3K27Ac acetylation mark active enhancers a
 transcription), H3K4Me3 methylation marks active promotors. Studying the relative contributions of both types of 
 modifications allows a researcher to discern enhancer regions from active transcription sites.
 
-* From the main page left side menu, select the module **ChIP data** and click on **ChIP Genome Browser** 
+* From the main page left side-menu, select the module **ChIP data** and click on **ChIP Genome Browser** 
 <br.
 You are now at the Genome Browser at the genomic location of the gene MYCN.
 Regions encoding genes are drawn at the bottom of the graph. When in red they are encoded in the reverse direction, 
