@@ -357,6 +357,7 @@ Let's see if these cms subtypes that cluster separately on the t-SNE map hold an
 
 * In the left side-menu on the main page, click on Survival (Kaplan-Meier / Cox)
 * In the menu at the center of the page, click at the Data set setting on **Select a data set**, and find the dataset with *Author* **Guinney** and the amount of samples *N* is **3232**
+* Select on the main page in the left menu Survival (Kaplan-Meier)
 * Click on the row to read its description in the information box underneath the dataset selection grid
 
 * Leave *Separate by* at **categorical track (Kaplan-Meier)** and click **Next**
@@ -653,8 +654,8 @@ It is good common scientific practice to validate and check your analysis in oth
 It is nice to see that again the CMS clusters clearly separates this set into 4 clusters.
 
 
-* Going back to the main of R2 the  **Nunes set**  should still be selected.
-* Also check in the **Cohort Overview** the annotation to investigate  what kind is annotation is provided which could be handy to query this dataset.
+* Going back to the main page of R2 the  **Nunes set**  should still be selected.
+* Also check in the **Cohort Overview** the annotation to investigate  what kind of annotation is provided which could be handy to query this dataset.
 
 Q: Do you see any interesting parameter(s) which have already been discussed during in the lectures (ignore all the metastasis tracks).
 
@@ -669,13 +670,13 @@ In the context of colorectal cancer,  **Comparative Genomic Hybridization (CGH)*
 [**Example of CGH profiles:CGH profile of malignant melonama:  A is a Control sample**](_static/images/MolOncCRC/CGH_examples.jpg)
 
 
-CGH profiling plays an important role in understanding CRC by revealing genomic instability which is a Hallmark of cancer. Since we could als obtain the genomic data, he CGH profiles could be generated and added to R2. Let's take a look at the CGH profiles to investigate if  we can say something about CGH properties when plotting the profiles per characteristic.
+CGH profiling plays an important role in understanding CRC by revealing genomic instability which is a Hallmark of cancer. Since we could als obtain the genomic data, the CGH profiles could be generated and added to R2. Let's take a look at the CGH profiles to investigate if  we can say something about CGH properties when plotting the profiles per characteristic.
 
 ![](_static/images/MolOncCRC/WES-menu_nunes.png "onco_plot_nunes.png")
 
 [**Selecting CGH profiles**](_static/images/MolOncCRC/WES-menu_nunes.png)
 
-* On the main page select in left menu **WGS/WES data** and click on plot CGH karyograms intrack. Select CRC Nunes 2024 (copy number) and click next. A general CGH plot combining all the 1063 profiles  with Gains (in red) and Losses ( in Blue) is summarized in one plot.
+* On the main page select in the left menu **WGS/WES data** and click on plot CGH karyograms intrack. Select CRC Nunes 2024 (copy number) and click next. A general CGH plot combining all the 1063 profiles  with Gains (in red) and Losses ( in Blue) is summarized in one plot.
 
 Now let see how the CGH profiles look for the CMS sub-category.
 
@@ -685,7 +686,7 @@ Now let see how the CGH profiles look for the CMS sub-category.
 Q: looking CGH profiles, do you see a difference between the several CMS classifications for the CGH profiles, what do you observe.?
 
 
-In cance, a high rate of mutations occur in the genome and could sometimes even reach hundreds and thousand of genes per megabase.  In general, tumors are classified as hypermutated when they exibit more than 10-12 mutation per megabase.  Also, this dataset is annotated for each patient with the hypermutation status.
+In cancer, a high rate of mutations occur in the genome and could sometimes even reach hundreds and thousand of genes per megabase.  In general, tumors are classified as hypermutated when they exibit more than 10-12 mutation per megabase.  Also, this dataset is annotated for each patient with the hypermutation status.
 
 * Again generate CHG profile for the hypermutation status.
 
@@ -694,7 +695,7 @@ Q: What do you observe??.
 
 It has been shown that genome aberrations gains and losses do not completely overlap wit  hypermutation.
 
-Q: Can you think of a reason why this does not correspond ?
+Q: Can you think of a reason why this does not correspond?
 
 
 
@@ -708,7 +709,7 @@ Q: what do observe and was this expected when keeping the CGH profiles in mind
 A: As expected and for CMS1 specific much less pronounced genomic aberrations are obeserved.
 
 
-The CMS subclasses each have their own characteristics we have seen that the CMS2 class has a significant lower amount of mutations and we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver genes. But we cannot see in the hypermution group which genes are actually hypermutated.
+The CMS subclasses each have their own characteristics we have seen that the CMS2 class has a significant lower amount of mutations and we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver genes. But we cannot see in the hypermutation group which genes are actually hypermutated.
 
 Go the main menu , go to  WGS/WES and select Pers. Med. Oncoprint (fixed data) and as resource the CRC OncoKB hotspots Nunes.
 
@@ -718,9 +719,9 @@ Go the main menu , go to  WGS/WES and select Pers. Med. Oncoprint (fixed data) a
 [**Select oncoprint**](_static/images/MolOncCRC/select_oncoprint_nunes.png)
 
 
-In this so called oncoprint Here we have an overview of most occurring mutations in our complete cohort since many CRC oncodriving genes haven been reported we can use R2 to investigate which mutations occur and also information about the mutations type like missence, nonsense, frameshifs, etc which are reported in detail.
+In this so called oncoprint we have an overview of the most occurring mutations in our complete cohort. Since many CRC oncodriving genes haven been reported we can use R2 to investigate which mutations occur and also information about the mutations type like missence, nonsense, frameshifts, etc which are reported in detail.
 
-Scrolling down, you will find in Settings menu all sort of interesting options you can toggle on/off wich revealing more insights of this cohort and CRC in general also adding extra tracks to plot on top of the oncoprint picture could be of interest.
+Scrolling down, you will find in the Settings menu all sort of interesting options you can toggle on/off  revealing more insights of this cohort and CRC in general also adding extra tracks to plot on top of the oncoprint picture could be of interest.
 
 ![](_static/images/MolOncCRC/oncoprint_settings.png "Select  Oncoprint")
 [**Oncoprint Settings**](_static/images/MolOncCRC/Select_oncoprint_nunes.png)
@@ -732,6 +733,7 @@ Q: Name some genes which have been listed in the top.
 
 To investigate mutations in each individual sample for this cohort. Select in the main menu the WES/WES module and select somatic mutations. 
 
+
 * Select as variant hg38 - CRC nunes (Nature 2024) OncoKB only. If you choose as list mode summary you see immediately a list of genes which look familiar do you see genes that play a pivotal role in (CRC) cancers.
 
 * Now switch to the detailed list mode and click 'next'. Here you see all the reported mutation with their specifics at your disposal. In which patient is which  mutation reported. If you click on details view  of a patient at the top this will guide you to the genomic location of e.g APC mutations if you zoom out 2 x  20 times. You will see all the different reported mutations for the APC gene. Hovering over the small coloured blocks you can also investigate the details for the different mutation categories.
@@ -739,7 +741,7 @@ To investigate mutations in each individual sample for this cohort. Select in th
 
 KRAS and BRAF mutations are oncogenic driver genes in cancer. Do the same for  KRAS and  BRAF, it is more convenient to enter the gene symbols in the box and click next.
 
-Q: After some zooming what do you notice  when comparing  by eye balling the mutation of APC vs BRAF / KRAS.
+Q: After some zooming out what do you notice  when comparing  by eye-balling the mutation variants of APC vs BRAF / KRAS.
 
 
 Hovering over de coloured blocks below the genomic location of BRAF reveals the mutation types.
@@ -747,13 +749,13 @@ Hovering over de coloured blocks below the genomic location of BRAF reveals the 
 Q: Which mutation type in BRAF is the most prominent. 
 
 
-Up to now we have investigated the transcriptome and the genomics data separately except for  some annotation of hypermutations which was the result of the genomics analysis.
+Up to now we have investigated the transcriptome and the genomics data separately except for  some annotation of the hypermutation status which was the result of the genomics analysis.
 
 Q: If you want to find out what patient with or without a certain mutation have an effect on  pathway (in)activation of other means of gene regulation.  What do you need for further analysis in the R2 platform??. Suppose we want to find differential expressed genes with or without a mutated BRAF gene.
 
 A: Annotate this cohort with the mutations for each patient.
 
-In r2 you can easily with the somatic variation module annotate each sample with the mutation status in a cohort. So you can use all te mutations reporeted as already seen and take this to the geneexpression dataset(s). Below is pictured as you have already used in the previous excercises how you can use these tracks (annotations) to find differentially expressed genes. Imagine the endless hours you can spend to find DEG genes you can find with performing these tests when you combine information of the genomic data together with the geneexpression data. 
+In r2 you can easily use  the somatic variation module to annotate each sample with the mutation status in a cohort. So you can use all te mutations reported annotate your datset and take this to the geneexpression dataset(s). Below is pictured as you have already used in the previous excercises how you can use these tracks (annotations) to find differentially expressed genes. Imagine the endless hours you can spend to find DEG genes with performing these tests when you combine information of the genomic data together with the gene expression data. 
 
 
 ![](_static/images/MolOncCRC/mutation_track_usage.png "mutation_track_usage.png")
@@ -762,7 +764,7 @@ In r2 you can easily with the somatic variation module annotate each sample with
 
 ### Signature scores
 
-What are signature scores?. A quick memory refresher. A gene signature score is een predefined set of genes which are involved in a particular biological process, pathway of a set of genes as result of an analysis.
+What are signature scores?. A quick memory refresher. A gene signature score is een predefined set of genes which are involved in a particular biological process, pathway, a set of genes as result of an analysis.
 
 To calculate a signature score, the expression levels of all genes in the signature are analyzed within a given sample for the complete cohort. The calculation methods vary but often include:
 
@@ -786,9 +788,9 @@ Q: Which pathway do you expect to pop-up as a result of this test.
 
 
 
-Click next. R2 is now performing  a correlation test on the signature scores of the APC activated genelist in APC mutants against the signature scores of allthe genesets in the broad hallmark collectiong.
+Click next. R2 is now performing  a correlation test on the signature scores of the APC activated genelist in APC mutants against the signature scores of all the genesets in the broad hallmark collectiong.
 
-Q: Name other pathways in the list which you recognize and can be associated with e.g CMS classes.
+Q: Name other pathways in the list which you recognize and can be associated with CRC or CMS classes
 
 
 
@@ -800,7 +802,7 @@ Q: Name other pathways in the list which you recognize and can be associated wit
 
 Mesenchymal Consensus Molecular Subtype 4 (CMS4) colon cancer is associated with poor prognosis and therapy resistance.
 In this proof-of-concept study, Kranenburg et al. assessed whether imatinib could shift cms4 subtype specific 
-characteritics.  
+characteristics.  
 
 The button below brings you to the form in which you can submit your answers for the third section.
 
@@ -815,9 +817,8 @@ mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :
 * On the main page in the center menu, select the dataset **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**  
 * Choose the analysis **View Multiple Genes** and click Next
 * In the *Genes/Reporters to include* textbox, type **Zeb1,PDGFRA,PDGFRB,CD36**
-* Set Track to **pre-post-imatinib** to divide the samples in the pretreatment and the posttreatment group and *Handle 
-  groups 
-  by* **lump by gene plot group** to show this per gene. 
+* Set Track to **pre-post-imatinib** to divide the samples in the pre treatment and the post-treatment group and *Handle 
+  groups bsy* **lump by gene plot group** to show this per gene. 
 * Set *color by* to **Track** in order to make the box plots visually more distinct.  
 * Click next
 
@@ -908,7 +909,7 @@ ______
   
 The treatment resulted in a shift in gene expressions. To find out what the effect is of this shift, we will make 
 use of the geneset of upregulated genes that we just saved, now in combination with the Guinney dataset, the 
-cohort dataset with annotated CMS status and survival data. We use the unsupervised k-means algoritm to find groups 
+cohort dataset with annotated CMS status and survival data. We use the unsupervised k-means algorithm to find groups 
 in our cohort that show similar expression patterns for our geneset. 
 
 * On the main page, select the Guinney dataset again
@@ -973,6 +974,7 @@ ______
 ![](_static/images/R2d2_logo.png)**What is your conclusion?**
 
 ______
+#### Optional when there is time left......
 
 ## Identifying key drivers of CRC: superenhancers controlling gene expression
 
