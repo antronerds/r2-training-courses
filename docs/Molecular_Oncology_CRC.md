@@ -785,8 +785,6 @@ Q: Which pathway do you expect to pop-up as a result of this test.
 
 
 
-
-
 Click next. R2 is now performing  a correlation test on the signature score of the activated genelist in APC mutants against  the signature scores of all the genesets in the broad hallark collecting.
 
 Q: Name other pathways in the list which you recognize and can be associated with e.g CMS classes.
