@@ -594,7 +594,7 @@ correlating in expression.
 
 ------  
 
-![](_static/images/R2d2_logo.png)**Which cms group did you find?**
+![](_static/images/R2d2_logo.png)**Which CMS group did you find?**
 
 ![](_static/images/R2d2_logo.png)**Why are we looking at methylation levels around the promotor of MLH1?**
 <br>
@@ -637,9 +637,7 @@ This can provide more meaningful insights into the underlying biology of a parti
 ##  A song of Genomic Alterations en Oncogenes
 
 
-Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently, a new article was published that describes and analyses a large cohort of CRC patients.   
-
-The data used in this new article thus include both genome and transcriptome information, and, notably, this dataset is exceptionally well-annotated with extensive clinical information ([Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3)). It contains 1063 tumor samples and 120 tissue normals.
+Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently, a new article was published that describes and analyses a large cohort of CRC patients. The data used in this new article include both genome and transcriptome information. Notably, this dataset is exceptionally well-annotated with extensive clinical information ([Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3)). It contains 1063 tumor samples and 120 tissue normals.
 
 ### Introduction to the Nunes data
 
@@ -657,7 +655,7 @@ Again the CMS clusters clearly separate this set into 4 clusters, confirming our
 
 ------
 
-![](_static/images/R2d2_logo.png)**In context of genomic data, which annotation would you be interested in to further examine and why? Just name a few and provide a short explanation.**
+![](_static/images/R2d2_logo.png)**In context of using the genomic data that belongs to this dataset, which annotation would yóu be interested in to further examine and why? Just name a few annotation tracks and provide a short explanation what you want to look investigate.**
 
 <br>
 <br>
@@ -686,24 +684,39 @@ Let’s examine these profiles to see if any patterns emerge when plotting them 
 
 An averaged CGH plot, integrating the CGH data from all 1063 tumor samples, provides a summary of the gains (in red) and losses (in blue) observed across the dataset in a single visualization.
 
-Now, let's examine the CGH profiles for each CMS sub-category.
+Now, let's examine the CGH profiles for each CMS subtype.
 
 * In the second pull down *X track*, select **cms_tumour (5 cat)** and click **Redraw**.
 
+------
 
-Q: looking CGH profiles, do you see a difference between the several CMS classifications for the CGH profiles, what do you observe.?
+![](_static/images/R2d2_logo.png)**When examining the CGH profiles for the different CMS subtypes, what patterns or variations do you observe?**
+
+<br>
+<br>
+
+------
 
 
-In cancer, a high rate of mutations occur in the genome and could sometimes even reach hundreds and thousand of genes per megabase.  In general, tumors are classified as hypermutated when they exibit more than 10-12 mutation per megabase.  Also, this dataset is annotated for each patient with the hypermutation status.
 
-* Again generate CHG profile for the hypermutation status.
+In cancer, a high rate of mutations can occur in the genome and could sometimes even reach tens or hundreds of mutations per megabase.  In general, tumors are classified as hypermutated when they exhibit more than 10-12 mutation per megabase. 
 
-Q: What do you observe??.
+This dataset is annotated for hypermutation status.
+
+* Generate CHG profiles split by hypermutation status: change _X track_ to **hypermytation_status (2cat)**. You can also check the **msi_status (2 cat)** track.
+
+------
+
+![](_static/images/R2d2_logo.png)**What do you observe?**
+
+<br>
+<br>
+
+------
 
 
-It has been shown that genome aberrations gains and losses do not completely overlap wit  hypermutation.
+Hypermutated tumors, especially MSI-H tumors, show fewer CNVs gains and losses. Why is this the case?
 
-Q: Can you think of a reason why this does not correspond?
 
 
 
