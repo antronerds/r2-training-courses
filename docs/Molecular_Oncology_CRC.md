@@ -231,7 +231,7 @@ distribution of the (expression) data to find clusters that have similar (expres
 clusters of samples in the plot based on their (dis)similarity.
 This is combined with the clustering of the genes based on their expression throughout the samples. The heatmap is 
 colored by the z-scores of the samples' gene expression values. Often annotation tracks are shown above a heatmap. 
-Remember that we can see this annotation but that the heatmap algorithm did not use this information to look for 
+Remember that _we can_ see this annotation but that the _heatmap algorithm did not use_ this information to look for 
 subgroups in the data. 
 
 ![](_static/images/TumorHeterogeneity_HeatmapClustering.png "Example heatmap: finding subgroups in your data")
@@ -240,7 +240,7 @@ subgroups in the data.
 
 * Go back to the gene list result page of the previous Differential Expression between two groups analysis, the tab 
   should still be open. 
-* Generate a list of genes that are differentially expressed comparing normal and adenoma tissue within the KEGG WNT 
+* Generate a list of genes which are differentially expressed comparing normal and adenoma tissue within the KEGG WNT 
   pathway by adjusting the settings if needed:
   - Use the False Discovery Rate for multiple testing correction, 
   - log2 values 
@@ -347,16 +347,15 @@ Roughly, what is your impression of the clustering of the samples. Why do you th
 
 ------  
 
-Let's see if these cms subtypes that cluster separately on the t-SNE map hold any prognostic survival value. 
+Let's see if these CMS subtypes, that cluster separately on the t-SNE map, hold any prognostic survival value. 
 
 
 ### Different survival chances for different CMS CRC subtypes? 
   
-*Dataset used*
-* Tumor Colon (CMS) - Guinney - 3232 - custom - ccrcst1
+We will use the Guinney dataset: _Tumor Colon (CMS) - Guinney - 3232 - custom - ccrcst1_
 
 * In the left side-menu on the main page, click on Survival (Kaplan-Meier / Cox)
-* Select a dataset by clicking on **Select a data set**, and find the dataset with *Author* **Guinney** and the amount of samples *N* is **3232**
+* In the menu at the center of the page, select a dataset by clicking on **Select a data set**, and find the dataset with *Author* **Guinney** and the amount of samples *N* is **3232**
 * Click on the row to read its description in the information box underneath the dataset selection grid and **confirm**
 * Leave *Separate by* at **categorical track (Kaplan-Meier)** and click **Next**
 * Choose *Type of Survival* **overall** and *Track* **cms_final** and click **Next**
@@ -638,7 +637,8 @@ This can provide more meaningful insights into the underlying biology of a parti
 ##  A song of Genomic Alterations en Oncogenes
 
 
-Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently,  there is a paper published were a large cohort of CRC patients described and analysed. The data used in this article comprehend  genome and transciptome data and on top of that this set is surprisingly well annotated with a lot of clinical information which is not often in de case.  [Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3).
+Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently,  a new article was published that describes and analyses a large cohort of CRC patients.
+The data used in this article include both genome and transcriptome information, and, notably, this dataset is exceptionally well-annotated with extensive clinical information ([Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3)).
 
 It is good common scientific practice to validate and check your analysis in other resources. We already have seen that the Molecular signature classification (CMS) are nicely clustered in the previous datasets.  Let's start to check whether this is also the case for the Nunes RNA seq dataset.
 
@@ -722,7 +722,7 @@ In this so called oncoprint we have an overview of the most occurring mutations 
 Scrolling down, you will find in the Settings menu all sort of interesting options you can toggle on/off  revealing more insights of this cohort and CRC in general also adding extra tracks to plot on top of the oncoprint picture could be of interest.
 
 ![](_static/images/MolOncCRC/oncoprint_settings.png "Select  Oncoprint")
-[**Oncoprint Settings**](_static/images/MolOncCRC/Select_oncoprint_nunes.png)
+[**Oncoprint Settings**](_static/images/MolOncCRC/select_oncoprint_nunes.png)
 
 Q: Name some genes which have been listed in the top.
 
@@ -815,7 +815,7 @@ mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :
 * On the main page in the center menu, select the dataset **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**  
 * Choose the analysis **View Multiple Genes** and click Next
 * In the *Genes/Reporters to include* textbox, type **Zeb1,PDGFRA,PDGFRB,CD36**
-* Set Track to **pre-post-imatinib** to divide the samples in the pre treatment and the post-treatment group and *Handle 
+* Set Track to **pre-post-imatinib** to divide the samples in the pre-treatment and the post-treatment group and *Handle 
   groups bsy* **lump by gene plot group** to show this per gene. 
 * Set *color by* to **Track** in order to make the box plots visually more distinct.  
 * Click next
@@ -972,7 +972,6 @@ ______
 ![](_static/images/R2d2_logo.png)**What is your conclusion?**
 
 ______
-#### Optional when there is time left......
 
 ## Identifying key drivers of CRC: superenhancers controlling gene expression
 
@@ -1059,81 +1058,6 @@ ______
 * Search the internet as to why these could be interesting genes to look up. 
 
 
-## Optional exercise: Experiments TP53 - Molecule of the year 1994
-
-Nearly half of human malignancies harbor mutations in tumor suppressor gene p53, mutations that facilitate and promote
-metastasis, tumorigenesis, and resistance to apoptosis.
-
-These mutations generally lead to loss of DNA binding and an inability to transactivate
-canonical anti-proliferative p53 target genes.
-Genotoxic chemotherapeutics, like doxorubicin and etoposide, are clinically relevant activators of wild-type p53,
-but the potential risk of resistance and secondary malignancies due to increased mutational burden
-remains a significant concern. Given the powerful tumor suppression abilities of p53, restoration of the
-p53-regulated transcriptome without inducing additional DNA damage represents an intriguing approach for development
-of anticancer strategies and therapeutics.
-Nongenotoxic, small molecule activation of the p53 pathway has been proposed as
-a potential solution.
-
-TP53 mutations were found in 60% of the CRCs. However, gene set enrichment analyses indicated that their transcriptional consequences varied among the CMSs and were most pronounced in CMS1-immune and CMS4-mesenchymal.
-
-### TP53 activation
-
-In the coming analyses we will use the dataset:<br>
-**Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo**.
-
-In this expriment, 4 drugs were tested that can be diveded in two types.  
-Etoposide:  Clinically relevant activators of wild-type p53. Activates p53 via induction of  DNA double strand
-breaks. Initiation double strand breaks but leads of course to resitance and secondary malignancies.
-Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non-genotoxic, considered a proto-oncogene.
-
-
-
-**Integrated stress response pathway:**
-
-Effector of anti-proliferative and cell death expression programs
-
-Tunicamycin: Activates the ISR (integrated stress response pathway), via ER stress of accumulating
-Histidinol: Activates the ISR (integrated stress response pathway), via histinide depletion.
-
-
-
-* ATF3 mRNA and protein levels increased under both p53 and ISR stimulating treatments
-  in HCT116 WT cells
-* A second approach uses compounds like the MDM2 inhibitor nutlin-3A to activate wild-type p53 in a nongenotoxic
-* TP53 is mayor player of one of the tumor supressor mechanisms.
-* Both the p53-dependent and the ATF4-driven ISR gene networks are antiproliferative,
-  either through induction of apoptosis or cell cycle control
-
-
-
-* Check the TP53 level in this dataset. Is the dataset grouped by a different p53 expression.
-
-* Analyse which genes are affected by the compounds
-
-Let's start with drugs known to interact with tp53. In college also MDM2 has been mentioned as negative P53 regulator.
-If you want to find differentially expressed genes in Tp53 dependent background which subgroups do you have to select. Once again use the Differential expression between two groups. For now we only focus on a small part of this experiment using Nultin-3a, a therapeutic agent which is a known P53 regulator via MDM2 inhibition. For this analysis we only want to use the TP53 wt genotype, since we want to inspect the effect of Nutlin-3a in a TP53 background.
-
-* Group by treatment and filter for TP53 wild-type. Click submit and select the two groups in the DESeq2 test (default) use the DMSO vs Nutlin-3A group.**
-
-* Do you see the MDM2 gene ?.
-
-* Inspect the MDM2 level in a one gene view are you surprised ?
-
-* In the left menu you can store your found list of 162 genes with the "store result as custom geneset" button and save it with a proper name in temporary collection (default) for later usage.
-
-
-* Also check the relation with TP53 by using the gene vs gene option in the pull down menu.
-
-
-*  A very significant correlation. Can you think of a reason? Hint:you are looking at RNA expression levels, how does nutlin 3a inhibits MDM2 ???
-
-
-Optional:  You can also perform the same test for Etoposide as you did for Nutlin-3A and store this list as well. So it is obvious that the innersection of genes for both drug treatments are of potential interest. With the VENN-diagram of gene categories option in box 3 of the main menu  you can check for overlapping genes. After selecting the VENN diagram try to find your stored genelistswith GS button, User genesets > Temporary etc.
-
-* Check of there is an overlap between affected genes
-
-
-Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo
 
 
 ## Evaluation
