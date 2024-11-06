@@ -1,9 +1,9 @@
 <a id="molecular_oncology_crc"> </a>
 
-Molecular Oncology Course - Colorectal Cancer
+Molecular Oncology - R2 Practical - Colorectal Cancer
 =================================
 
-*Analyse Colorectal Cancer using the R2 data analysis platform*
+* Use bioinformatics to study mechanisms using the R2 data analysis platform*
 
 
 This resource is located online at http://r2platform.com/studentcourse  
@@ -154,7 +154,7 @@ type="button">Open the first answering form</button>
 <br>
 
 -----------------
-![](_static/images/R2d2_logo.png)***Group question***
+![](_static/images/R2d2_logo.png)
 
 >In the dataset information panel you could read in the summary of the Marra dataset:<br>
 > 
@@ -637,48 +637,58 @@ This can provide more meaningful insights into the underlying biology of a parti
 ##  A song of Genomic Alterations en Oncogenes
 
 
-Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently,  a new article was published that describes and analyses a large cohort of CRC patients.
-The data used in this article include both genome and transcriptome information, and, notably, this dataset is exceptionally well-annotated with extensive clinical information ([Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3)).
+Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently, a new article was published that describes and analyses a large cohort of CRC patients.   
+
+The data used in this new article thus include both genome and transcriptome information, and, notably, this dataset is exceptionally well-annotated with extensive clinical information ([Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3)). It contains 1063 tumor samples and 120 tissue normals.
+
+### Introduction to the Nunes data
 
 It is good common scientific practice to validate and check your analysis in other resources. We already have seen that the Molecular signature classification (CMS) are nicely clustered in the previous datasets.  Let's start to check whether this is also the case for the Nunes RNA seq dataset.
 
-### Nunes data 
+* Select on the mainpage **Sample Maps (UMAP/tSNE)**. 
+* Click on **Tumor Colon - Nunes - 1063 - tpm - ensh38e98** to read the **Summary** of the dataset in the information panel under the grid and then **Select** the dataset.
+* Use *Color mode* again to overlay the plot with **Color by a Track** and **cms_tumour (5cat)**.
+* If you want, you can check multiple (or _all_) versions
 
-* Select on the mainpage Sample Maps (UMAP/tSNE) and select **Tumor Colon - Nunes - 1063 - tpm - ensh38e98**.
-* Click on Select.
-* In the plotted tSNE map you can take a look several versions (e.g:nn=5_mindist=0.3) and  select in "Color settings" , Color by track and select cms_tumour.
-* Take a quick look at the graph may be check some  versions
+Again the CMS clusters clearly separate this set into 4 clusters, confirming our previous conclusion that CMS subtypes have unique gene expression patterns, indicating that they might refer to biologically different subtypes.
 
-It is nice to see that again the CMS clusters clearly separates this set into 4 clusters.
+* Going back to the main page of R2 the **Nunes set** should still be selected.
+* Also check in the **Cohort Overview** the annotation to glance over the kind of annotation that is provided. Think for yourself what kind of questions you could explore with the annotated data at hand.
 
+------
 
-* Going back to the main page of R2 the  **Nunes set**  should still be selected.
-* Also check in the **Cohort Overview** the annotation to investigate  what kind of annotation is provided which could be handy to query this dataset.
+![](_static/images/R2d2_logo.png)**In context of genomic data, which annotation would you be interested in to further examine and why? Just name a few and provide a short explanation.**
 
-Q: Do you see any interesting parameter(s) which have already been discussed during in the lectures (ignore all the metastasis tracks).
+<br>
+<br>
 
-#### Genomic data.
+------
 
+#### Genomic data
 
-Up to now, we have mainly looked at gene expression profiles,the Nunes data provides us with the means also to examine genomic data in more detail. 
+Now let's dive into the genomic data.
 
-In the context of colorectal cancer,  **Comparative Genomic Hybridization (CGH)** profiles are used to detect **copy number variation (CNV)** across the genome. Those CNV's include amplifications (gains) and deletions (losses). This type of genomic events can lead to overexpression of oncogenes and or loss of tumor suppression genes.
+In the context of colorectal cancer,  *Comparative Genomic Hybridization (CGH)* profiles are used to detect *copy number variations (CNV)* across the genome. Those CNVs include amplifications (gains) and deletions (losses). This type of genomic events can lead to overexpression of oncogenes and or loss of tumor suppressor genes.
 
 ![](_static/images/MolOncCRC/CGH_examples.jpg "CGH example")
-[**Example of CGH profiles:CGH profile of malignant melonama:  A is a Control sample**](_static/images/MolOncCRC/CGH_examples.jpg)
+[**Example of CGH profiles: CGH profile of malignant melonama. A is a control sample**](_static/images/MolOncCRC/CGH_examples.jpg)
+
+CGH profiling plays a crucial role in understanding colorectal cancer (CRC) by revealing genomic instability, a hallmark of cancer. We uploaded the genomic data of the Nunes study into the platform, and can generate CGH profiles of the . 
 
 
-CGH profiling plays an important role in understanding CRC by revealing genomic instability which is a Hallmark of cancer. Since we could als obtain the genomic data, the CGH profiles could be generated and added to R2. Let's take a look at the CGH profiles to investigate if  we can say something about CGH properties when plotting the profiles per characteristic.
+Let’s examine these profiles to see if any patterns emerge when plotting them according to different characteristics.
 
 ![](_static/images/MolOncCRC/WES-menu_nunes.png "onco_plot_nunes.png")
 
 [**Selecting CGH profiles**](_static/images/MolOncCRC/WES-menu_nunes.png)
 
-* On the main page select in the left menu **WGS/WES data** and click on plot CGH karyograms intrack. Select CRC Nunes 2024 (copy number) and click next. A general CGH plot combining all the 1063 profiles  with Gains (in red) and Losses ( in Blue) is summarized in one plot.
+* On the main page select in the left menu **WGS/WES data** and in the middle menu click on **Plot CGH karyograms in track assisted order**. Select CRC Nunes 2024 (copy number) and click **Continue**. 
 
-Now let see how the CGH profiles look for the CMS sub-category.
+An averaged CGH plot, integrating the CGH data from all 1063 tumor samples, provides a summary of the gains (in red) and losses (in blue) observed across the dataset in a single visualization.
 
-* In second pull down men, select CMS_tumour and click redraw.
+Now, let's examine the CGH profiles for each CMS sub-category.
+
+* In the second pull down *X track*, select **cms_tumour (5 cat)** and click **Redraw**.
 
 
 Q: looking CGH profiles, do you see a difference between the several CMS classifications for the CGH profiles, what do you observe.?
