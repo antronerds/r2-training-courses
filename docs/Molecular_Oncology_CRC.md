@@ -3,7 +3,7 @@
 Molecular Oncology - R2 Practical - Colorectal Cancer
 =================================
 
-* Use bioinformatics to study mechanisms using the R2 data analysis platform*
+*Use bioinformatics tools to perform data analysis on colorectal cancer omics data sets* 
 
 
 This resource is located online at http://r2platform.com/studentcourse  
