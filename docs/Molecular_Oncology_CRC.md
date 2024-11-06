@@ -95,7 +95,7 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
   address: <a href="https://hgserver2.amc.nl/" target="_blank">https://hgserver2.amc.nl</a> <br>
 
 Generally speaking, the R2 platform is easily accessible by the link <a href="http://r2.amc.nl" 
-target="_blank">http://r2.amc.nl</a>, but today we work from out developer server hgserver2. 
+target="_blank">http://r2.amc.nl</a>, but today we work from our developer server hgserver2. 
 
 * Sign in with your assigned account that you found in the student account Googledoc. 
 
@@ -178,7 +178,7 @@ significantly different between two groups of a dataset.
   between two groups**. Click **Next**.
 * R2 offers a couple of statistical *Test* options, in this case we use the **T-test** which is selected by default.
 * Now we have to select which grouping variable to use. Select *Group by* **Tissue (2cat)** to use the previously 
-  seen tissue annotation. And click **Submit**.
+  seen tissue annotation. And click **Next**.
 * An extra field of settings is shown. Select *Group 1* **normal** and *Group 2* **adenoma**. Check that the default 
   _Transformation_ **Log2**  is selected, and _P-value cutoff_ **0.01**. Click **Submit**.
 
@@ -356,18 +356,16 @@ Let's see if these cms subtypes that cluster separately on the t-SNE map hold an
 * Tumor Colon (CMS) - Guinney - 3232 - custom - ccrcst1
 
 * In the left side-menu on the main page, click on Survival (Kaplan-Meier / Cox)
-* In the menu at the center of the page, click at the Data set setting on **Select a data set**, and find the dataset with *Author* **Guinney** and the amount of samples *N* is **3232**
-* Select on the main page in the left menu Survival (Kaplan-Meier)
-* Click on the row to read its description in the information box underneath the dataset selection grid
-
+* Select a dataset by clicking on **Select a data set**, and find the dataset with *Author* **Guinney** and the amount of samples *N* is **3232**
+* Click on the row to read its description in the information box underneath the dataset selection grid and **confirm**
 * Leave *Separate by* at **categorical track (Kaplan-Meier)** and click **Next**
 * Choose *Type of Survival* **overall** and *Track* **cms_final** and click **Next**
-* Now perform the same analysis, but choose **relapse-free** instead of overall for the setting *type of Survival*  
+* Now perform the same analysis, for this you can click **Kaplan start** button in the top-left of the screen. This time choose **relapse-free** instead of overall for the setting *type of Survival*  
 
-------  
+------
 
 
-![](_static/images/R2d2_logo.png)**What does the first Kaplan Meier plot tell you?**
+![](_static/images/R2d2_logo.png)**What does the first Kaplan Meier plot tell you? (You can still go back to the previous plot by clicking the back-button in your browser)**
 
 ![](_static/images/R2d2_logo.png)**And what is your conclusion from the second Kaplan Meier graph?**
 <br>
