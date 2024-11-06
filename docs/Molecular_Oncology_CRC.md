@@ -772,7 +772,8 @@ Q: Which mutation type in BRAF is the most prominent.
 
 Up to now we have investigated the transcriptome and the genomics data separately except for  some annotation of the hypermutation status which was the result of the genomics analysis.
 
-Q: If you want to find out what patient with or without a certain mutation have an effect on  pathway (in)activation of other means of gene regulation.  What do you need for further analysis in the R2 platform??. Suppose we want to find differential expressed genes with or without a mutated BRAF gene.
+Q: To analyze the effect of a specific mutation detected in genomic data on your transcriptome data, what steps  would you need to apply? (tip: e.g  what do you need to perform a Differential Expression Analysis based on the mutation status of given gene)
+
 
 A: Annotate this cohort with the mutations for each patient.
 
