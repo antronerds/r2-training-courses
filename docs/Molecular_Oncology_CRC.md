@@ -636,6 +636,8 @@ This can provide more meaningful insights into the underlying biology of a parti
 
 ##  A song of Genomic Alterations en Oncogenes
 
+<button class="course googleform" onclick="window.open('https://forms.gle/Ry56jkYU1UUrYUuG9','_blank');"
+type="button">Open the answering form for this section</button>
 
 Thus far we looked at colon cancer characteristics mainly based on gene expression. Recently, a new article was published that describes and analyses a large cohort of CRC patients. The data used in this new article include both genome and transcriptome information. Notably, this dataset is exceptionally well-annotated with extensive clinical information ([Nature 2024: CRC : Nunes et al](https://doi.org/10.1038/s41586-024-07769-3)). It contains 1063 tumor samples and 120 tissue normals.
 
@@ -821,7 +823,7 @@ Click next. R2 is now performing  a correlation test on the signature scores of 
 
 ------
 
-![](_static/images/R2d2_logo.png)**Name other pathways in the list which you recognize and can be associated with CRC or CMS classes.  
+![](_static/images/R2d2_logo.png)**Name other pathways in the list that you recognize and that can be associated with CRC or CMS classes.  
 Several expected CRC-related pathways appear in the table, suggesting potential pathway involvement, though this is only indicative and not necessarily causal. What experimental approaches would you propose to investigate the effects of a specific mutation?**
 
 <br>
