@@ -1103,7 +1103,7 @@ ______
 
 
 ## Summary
-In the introduction part of 1.3 a figure was shown with several characteristics per CMS subtype. Try to recreate this image without looking at the original, by scrolling through the practicum and summarizing the conclusions of the applicable exercises. You might be able to add extra characteristics yourself.  
+In the introduction of section 1.3, a figure summarized various characteristics associated with each CMS subtype. Without referring back to the original figure, try to recreate it by reviewing the practicum and writing down subtype specific characteristics that you came across during exercises. Feel free to include as many characteristics as you can think of.
   
 ## Evaluation
 
