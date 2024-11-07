@@ -762,7 +762,15 @@ Immediately you see a list of genes that should look familiar.
 
 In the grid you can find all the reported mutations for genes that are part of the OncoKB database (https://www.oncokb.org/about). The details of each mutation can be found in tyhe columns. 
 
-If you click on the **detail / view** links  in the first column of a mutation, this will guide you to the genomic location of the mutated gene in the Gene browser or the Genome Browser respectively. When you clicked on the View link of the first mutation to go to the GenomeBrowser at the APC location, you can **zoom out 20x** twice with the navigation button on top. You will then see all the different reported mutations for the APC gene. By hovering over the small colored blocks, you can examine the mutation class and view details about the specific nucleotide changes and their effects.
+If you click on the **view** links  in the first column of a mutation, this will guide you to the genomic location of the mutated gene in the Gene browser or the Genome Browser respectively. It could be that you have to make the first column wider.
+
+![](_static/images/MolOncCRC/select_view_somvar.png "OncoPrint setting suggestions")
+
+[**Hidden? view link**](_static/images/MolOncCRC/select_view_somvar.png )
+
+
+
+When you clicked on the View link of the first mutation to go to the GenomeBrowser at the APC location, you can **zoom out 20x** twice with the navigation button on top. You will then see all the different reported mutations for the APC gene. By hovering over the small colored blocks, you can examine the mutation class and view details about the specific nucleotide changes and their effects.
 
 KRAS and BRAF mutations are oncogenic driver genes in cancer.
 * Use the top left **Find Gene** box to find **KRAS**. Choose the top KRAS result to jump to its genomic location and to look at the somatic variants. 
