@@ -770,7 +770,7 @@ KRAS and BRAF mutations are oncogenic driver genes in cancer.
 
 ------
 
-![](_static/images/R2d2_logo.png)**If you look at the complete gene locations of APC vs BRAF / KRAS, do you see any difference with respect to how many variations are found in the cohort?  
+![](_static/images/R2d2_logo.png)**If you look at the complete gene locations of APC vs BRAF / KRAS, do you see any difference with respect to how many variations are found in the cohort?<br>
 Which mutation type in BRAF mutation is the most prominent?**
 
 <br>
@@ -823,14 +823,20 @@ Click next. R2 is now performing  a correlation test on the signature scores of 
 
 ------
 
-![](_static/images/R2d2_logo.png)**Name other pathways in the list that you recognize and that can be associated with CRC or CMS classes.  
-Several expected CRC-related pathways appear in the table, suggesting potential pathway involvement, though this is only indicative and not necessarily causal. What experimental approaches would you propose to investigate the effects of a specific mutation?**
+![](_static/images/R2d2_logo.png)**Name other pathways in the list that you recognize and that can be associated with CRC or CMS classes.**
 
 <br>
 <br>
 
 ------
+------
 
+![](_static/images/R2d2_logo.png)**Several expected CRC-related pathways appear in the table, suggesting potential pathway involvement, though this is only indicative and not necessarily causal. What experimental approaches would you propose to investigate the effects of a specific mutation?**
+
+<br>
+<br>
+
+------
 
 ## Therapeutic: Effects of imatinib: shifts of signature profiles and molecular subtypes
 
