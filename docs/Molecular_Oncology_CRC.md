@@ -740,7 +740,8 @@ Scrolling down to the bottom, you will find in the Adjustable Settings menu all 
 
 ------
 
-![](_static/images/R2d2_logo.png)**Name the top genes. Also check with the CMS subtype annotation above the plot if you can relate the information in the plot with your knowledge about CMS subtype specific mutations.**
+![](_static/images/R2d2_logo.png)**Name the four top genes. Also check with the CMS subtype annotation above the plot if you can relate the information in the plot with your knowledge about CMS subtype specific mutations.<br>
+Discuss with each other what the biological mechanism is with each of the four top mutations.**
 
 <br>
 <br>
@@ -770,7 +771,7 @@ KRAS and BRAF mutations are oncogenic driver genes in cancer.
 
 ------
 
-![](_static/images/R2d2_logo.png)**If you look at the complete gene locations of APC vs BRAF / KRAS, do you see any difference with respect to how many variations are found in the cohort?<br>
+![](_static/images/R2d2_logo.png)**If you look at the complete gene locations of APC vs BRAF / KRAS and the somatic variants in the GenomeBrowser, do you see any difference with respect to how many variations are found in the cohort?<br>
 Which mutation type in BRAF mutation is the most prominent?**
 
 <br>
@@ -829,6 +830,7 @@ Click next. R2 is now performing  a correlation test on the signature scores of 
 <br>
 
 ------
+
 ------
 
 ![](_static/images/R2d2_logo.png)**Several expected CRC-related pathways appear in the table, suggesting potential pathway involvement, though this is only indicative and not necessarily causal. What experimental approaches would you propose to investigate the effects of a specific mutation?**
@@ -1100,8 +1102,9 @@ ______
 * Search the internet as to why these could be interesting genes to look up. 
 
 
-
-
+## Summary
+In the introduction part of 1.3 a figure was shown with several characteristics per CMS subtype. Try to recreate this image without looking at the original, by scrolling through the practicum and summarizing the conclusions of the applicable exercises. You might be able to add extra characteristics yourself.  
+  
 ## Evaluation
 
 Please don't forget to fill in the evaluation form, which is the first form that you found in this document, about 
