@@ -707,7 +707,38 @@ This dataset is annotated for hypermutation status.
 
 ------
 
-![](_static/images/R2d2_logo.png)**What do you observe?**
+![](_static/images/R2d2_logo.png)**What do you observe? Can you think of an explanation for the differences that you observe?**
+
+<br>
+<br>
+
+------
+
+* Go to **Relate 2 tracks**  in te main menu and select the hypermutation status track for one of the axes and the track of the CMS classification for the other. Hover wityh your mouse over the bars to read the respective percentages. 
+
+Don't be shy to play around with any other annotations to gain more insight in the characteristics of subtypes in this dataset (e.g. MSI vs CMS ).
+Be aware that you check these conditions in a specific dataset, and pause to think if this corresponds with knowledge that you gained from literature or lectures.
+
+CMS2 subtype has a significant lower incidence of tumors that were classified as hypermutated. CMS1 has the highest amount of samples that were hypermutated. We can utilize R2 to explore the specific mutations present, along with detailed information on their types—such as missense, nonsense, frameshifts, and more.
+
+* Go the main page, click in the left menu on **WGS/WES data** and select **Pers. Med. OncoPrint (fixed data)** and as resource the **CRC OncoKB hotspots Nunes**.
+
+
+![](_static/images/MolOncCRC/select_oncoprint_nunes.png "Select  OncoPrint")
+
+[**Select OncoPrint**](_static/images/MolOncCRC/select_oncoprint_nunes.png)
+
+In this OncoPrint, we find an overview of the most common mutations across our entire cohort. Samples are shown in the columns, the genes are shown on the rows. The most commonly mutated genes are found on top. The color coding can be found underneath the plot. 
+
+
+Scrolling down to the bottom, you will find in the Adjustable Settings menu all sort of interesting options that you can toggle on/off. In the picture below, you can find several suggestions to reveal more insights of mutational characteristics in this cohort and of CRC in general. You can add extra tracks to the plot if you click on **Select Tracks**.
+
+![](_static/images/MolOncCRC/oncoprint_settings_suggestions.png "OncoPrint setting suggestions")
+[**OncoPrint setting suggestions**](_static/images/MolOncCRC/oncoprint_settings_suggestions.png)
+
+------
+
+![](_static/images/R2d2_logo.png)**Name the top genes. Also check with the CMS subtype annotation above the plot if you can relate the information in the plot with your knowledge about CMS subtype specific mutations.**
 
 <br>
 <br>
@@ -715,107 +746,86 @@ This dataset is annotated for hypermutation status.
 ------
 
 
-Hypermutated tumors, especially MSI-H tumors, show fewer CNVs gains and losses. Why is this the case?
-
-
-
-
-This clearly shows that hypermutations do correlate negatively with the CGH profiles, unfortunately you can not identify which CMS class has a higher incidence.
-
-* Analyse the cohort to see how the hypermutations are divided  for each sub-type.
-  (relate two tracks)
-* Go to **Relate 2 tracks**  in te main menu and select the hypermutation status and the CMS profiles.
-
-Q: what do observe and was this expected when keeping the CGH profiles in mind
-A: As expected and for CMS1 specific much less pronounced genomic aberrations are obeserved.
-
-
-The CMS subclasses each have their own characteristics we have seen that the CMS2 class has a significant lower amount of mutations and we have already learned that the other CMS classes have a high incidence  of mutations including many oncodriver genes. But we cannot see in the hypermutation group which genes are actually hypermutated.
-
-Go the main menu , go to  WGS/WES and select Pers. Med. Oncoprint (fixed data) and as resource the CRC OncoKB hotspots Nunes.
-
-
-![](_static/images/MolOncCRC/select_oncoprint_nunes.png "Select  Oncoprint")
-
-[**Select oncoprint**](_static/images/MolOncCRC/select_oncoprint_nunes.png)
-
-
-In this so called oncoprint we have an overview of the most occurring mutations in our complete cohort. Since many CRC oncodriving genes haven been reported we can use R2 to investigate which mutations occur and also information about the mutations type like missence, nonsense, frameshifts, etc which are reported in detail.
-
-Scrolling down, you will find in the Settings menu all sort of interesting options you can toggle on/off  revealing more insights of this cohort and CRC in general also adding extra tracks to plot on top of the oncoprint picture could be of interest.
-
-![](_static/images/MolOncCRC/oncoprint_settings.png "Select  Oncoprint")
-[**Oncoprint Settings**](_static/images/MolOncCRC/select_oncoprint_nunes.png)
-
-Q: Name some genes which have been listed in the top.
-
-
 ### Somatic variants
 
-To investigate mutations in each individual sample for this cohort. Select in the main menu the WES/WES module and select somatic mutations. 
+Let's investigate mutations in more detail and look at individual sample mutations in this cohort. On the main page in the left-side menu, select the **WES/WES data** module and then select **Somatic Mutations**. 
 
 
-* Select as variant hg38 - CRC nunes (Nature 2024) OncoKB only. If you choose as list mode summary you see immediately a list of genes which look familiar do you see genes that play a pivotal role in (CRC) cancers.
+* Select as variant **hg38 - CRC nunes (Nature 2024) OncoKB** only. Click **Next**. 
 
-* Now switch to the detailed list mode and click 'next'. Here you see all the reported mutation with their specifics at your disposal. In which patient is which  mutation reported. If you click on details view  of a patient at the top this will guide you to the genomic location of e.g APC mutations if you zoom out 2 x  20 times. You will see all the different reported mutations for the APC gene. Hovering over the small coloured blocks you can also investigate the details for the different mutation categories.
+Immediately you see a list of genes that should look familiar.
 
+* Now switch to **detailed** in the _Detailed or summary_ setting and click **Next**. 
 
-KRAS and BRAF mutations are oncogenic driver genes in cancer. Do the same for  KRAS and  BRAF, it is more convenient to enter the gene symbols in the box and click next.
+In the grid you can find all the reported mutations for genes that are part of the OncoKB database (https://www.oncokb.org/about). The details of each mutation can be found in tyhe columns. 
 
-Q: After some zooming out what do you notice  when comparing  by eye-balling the mutation variants of APC vs BRAF / KRAS.
+If you click on the **detail / view** links  in the first column of a mutation, this will guide you to the genomic location of the mutated gene in the Gene browser or the Genome Browser respectively. When you clicked on the View link of the first mutation to go to the GenomeBrowser at the APC location, you can **zoom out 20x** twice with the navigation button on top. You will then see all the different reported mutations for the APC gene. By hovering over the small colored blocks, you can examine the mutation class and view details about the specific nucleotide changes and their effects.
 
-
-Hovering over de coloured blocks below the genomic location of BRAF reveals the mutation types.
-
-Q: Which mutation type in BRAF is the most prominent. 
-
-
-Up to now we have investigated the transcriptome and the genomics data separately except for  some annotation of the hypermutation status which was the result of the genomics analysis.
-
-Q: To analyze the effect of a specific mutation detected in genomic data on your transcriptome data, what steps  would you need to apply? (tip: e.g  what do you need to perform a Differential Expression Analysis based on the mutation status of given gene)
+KRAS and BRAF mutations are oncogenic driver genes in cancer.
+* Use the top left **Find Gene** box to find **KRAS**. Choose the top KRAS result to jump to its genomic location and to look at the somatic variants. 
+* Also look at **BRAF**.
 
 
-A: Annotate this cohort with the mutations for each patient.
+------
 
-In r2 you can easily use  the somatic variation module to annotate each sample with the mutation status in a cohort. So you can use all te mutations reported annotate your datset and take this to the geneexpression dataset(s). Below is pictured as you have already used in the previous excercises how you can use these tracks (annotations) to find differentially expressed genes. Imagine the endless hours you can spend to find DEG genes with performing these tests when you combine information of the genomic data together with the gene expression data. 
+![](_static/images/R2d2_logo.png)**If you look at the complete gene locations of APC vs BRAF / KRAS, do you see any difference with respect to how many variations are found in the cohort?  
+Which mutation type in BRAF mutation is the most prominent?**
 
+<br>
+<br>
+
+------
+
+So far, we have examined the transcriptome and genomics data separately, with the only overlap being some annotation of hypermutation status derived from the genomics analysis.
+
+In R2 you can easily use the somatic variation module to annotate each sample with the mutation status in a cohort: you can use the filters in the header of the Gene column to filter a specific gene and then use the button Build track underneath teh grid to annotate each sample with its mutation status for that gene. 
+This way you can annotate your dataset for the presence of any gene mutation / specific type and use this annotation with gene expression dataset(s). Below is pictured, as you have already used in the previous exercises, how you can use these tracks (annotations) to find differentially expressed genes. 
 
 ![](_static/images/MolOncCRC/mutation_track_usage.png "mutation_track_usage.png")
 [**Using tracks in R2**](_static/images/MolOncCRC/BRAF_select_som.png)
 
+Even though it can be very interesting to look at the transcriptome effects of a specific gene mutation, you might want to look at several genes at once. In R2 we do this with signature scores.
 
 ### Signature scores
 
-What are signature scores?. A quick memory refresher. A gene signature score is een predefined set of genes which are involved in a particular biological process, pathway, a set of genes as result of an analysis.
-
-To calculate a signature score, the expression levels of all genes in the signature are analyzed within a given sample for the complete cohort. The calculation methods vary but often include:
+Within the current context, we define a _signature_ as a collection of genes that are defined on a particular basis. This can be the presence within a gene-ontology class, the genomic location of a gene, or perhaps something potentially more meaningful like a functional pathway signature.  
+To summarize the expression values of the genes in such a signature, R2 can calculate a _signature score_. This signature score is simply defined as the average z-score of a z-score transformed dataset (the standard way of visualizing a heatmap). In R2, such scores are automatically generated when one generates heatmaps via the “View a geneset” function.
 
 * Average expression of the signature genes.
 * Weighted sums where each gene’s contribution is weighted by its known importance.
 
 
-
-
-A differential Expression gene analysis has already been performed for APC mutants versus non-APC mutants for the Nunes set. We have   stored a list of  genes which are upregulated in the APC mutated group and will be used to find correlations for the signature scores of other pathways. R2 will calculate the signature scores for the activated APC genelist and all the genesets the selected collection harbors.
+A Differential Expression between two groups analysis has already been performed for APC mutants versus non-APC mutants for the Nunes set. We have stored a list of genes which are upregulated in the APC mutated group. This collection of genes will be used to find correlations for the signature scores of other pathways. 
 
 
 ![](_static/images/MolOncCRC/APC_genesig_corr.png  "Genesign corr")
 [**Geneset correlations**](_static/images/MolOncCRC/APC_genesig_corr.png)
 
 
-Go the main screen and select the geneset correlation module. In the next screen select for the Geneset (source) in the Community genesets > student > main > APC activated (click the green confirm button) and for Geneset (target) select the collection of broad 2023 Hallmark genesets.
+* Go the main page and select the **Geneset vs Genesets Correlations** module. In the next screen select for the *Gene set (source)* a sub gene set: click on the arrows in front of the geneset collection to go deeper in the tree **Community genesets > student > main >** **APC_activated (153)** (click the green confirm button). 
+* For **Gene set (target)** select the complete collection of **broad 2023 10 h hallmark** genesets.
 
-Q: Which pathway do you expect to pop-up as a result of this test.
+R2 will calculate the signature scores for the upregulated APC mutant gene list and for each gene set that the selected Broad Hallmark gene set collection harbors.
+
+------
+
+![](_static/images/R2d2_logo.png)**Which pathway do you expect to pop-up as a result of this test?**
+
+<br>
+<br>
+
+------
+
+Click next. R2 is now performing  a correlation test on the signature scores of the APC activated gene list in APC mutants against the signature scores of all the gene sets in the broad hallmark collection.
 
 
+------
 
+![](_static/images/R2d2_logo.png)**Name other pathways in the list which you recognize and can be associated with CRC or CMS classes.  
+Several expected CRC-related pathways appear in the table, suggesting potential pathway involvement, though this is only indicative and not necessarily causal. What experimental approaches would you propose to investigate the effects of a specific mutation?**
 
-Click next. R2 is now performing  a correlation test on the signature scores of the APC activated genelist in APC mutants against the signature scores of all the genesets in the broad hallmark collectiong.
-
-Q: Name other pathways in the list which you recognize and can be associated with CRC or CMS classes
-
-
-
+<br>
+<br>
 
 ------
 
