@@ -587,7 +587,7 @@ A heatmap is generated of methylation levels. Each column corresponds to a sampl
 feature (a single CpG site or a larger target region including multiple CpG sites, e.g. promoter regions). A 
 hierarchical clustering of the samples is performed. The MLH1 reporters themselves seem faulty (complete blue colored rows), but you find CpG 
 sites above that are located at the promotor sites of MLH1 and the gene that we have seen before as strongly 
-correlating in expression. 
+correlating in expression. Note, that blue is methylated and yellow is non-methylated.
 
 * Hover with your mouse over the _r2_at_cms_ track to see to which CMS subtype the cluster of hypermethylated samples 
   belong.  
@@ -782,7 +782,7 @@ Which mutation type in BRAF mutation is the most prominent?**
 So far, we have examined the transcriptome and genomics data separately, with the only overlap being some annotation of hypermutation status derived from the genomics analysis.
 
 In R2 you can easily use the somatic variation module to annotate each sample with the mutation status in a cohort: you can use the filters in the header of the Gene column to filter a specific gene and then use the button Build track underneath teh grid to annotate each sample with its mutation status for that gene. 
-This way you can annotate your dataset for the presence of any gene mutation / specific type and use this annotation with gene expression dataset(s). Below is pictured, as you have already used in the previous exercises, how you can use these tracks (annotations) to find differentially expressed genes. 
+This way you can annotate your dataset for the presence of any gene mutation / specific type and use this annotation with gene expression dataset(s). Below is pictured, as you have already used in the previous exercises, how you can use these tracks (annotations) to find differentially expressed genes, we will leave it at this anc continue.
 
 ![](_static/images/MolOncCRC/mutation_track_usage.png "mutation_track_usage.png")
 [**Using tracks in R2**](_static/images/MolOncCRC/BRAF_select_som.png)
@@ -945,6 +945,14 @@ ______
 
 * To use this gene list in other analyses within R2, click on the lowest button on the right side that is labeled 
   **Store result as custom gene set**
+
+
+![](_static/images/MolOncCRC/select_up_geneskranenburg.png  "Store genesets")
+
+[**Store genesets**](_static/images/MolOncCRC/select_up_geneskranenburg.png)
+
+
+
 * As a name, type **impacct_imatinib_treatment_up**
 * In the *Included groups* check only the upregulated genes
 * Click on **Save gene set**
