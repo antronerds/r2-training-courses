@@ -491,8 +491,8 @@ algorithm.
 
 * Go back to the main page, and select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
-* Perform the **Differential Expression between two groups** analysis for **microsatellite_instability** (no vs 
-  yes), and perform the analysis on the gene set **Broad 2023 10 c6 oncogenic**. **Submit**
+* Perform the **Differential Expression between two groups** analysis, choose Track **microsatellite_instability**, click **next**, set **no** for Group1 and 
+  **yes** for Group2, and perform the analysis on the gene set **Broad 2023 10 c6 oncogenic**. **Submit**
 * Click again on the MHL1 gene magnifying glass.
 
 In this set too MLH1 seems to play a key role for MSI related CRCs. It would be interesting to find out which genes are possibly regulated by the MLH1 gene.
@@ -545,7 +545,7 @@ correlated genes on the right. Let's have a closer look at this last group.
 The over-representation is calculated of genes that negatively correlate with MLH1 expression with respect to all genes 
 present on (an arm of) a chromosome.
 
-* A lot of genes are clearly over-represented on a number of chromosomes, especially chrom 18 with a high p-value.
+* A lot of genes are clearly over-represented on a number of chromosomes, especially chrom 18 with a very low p-value.
 
 ------  
 
@@ -570,7 +570,7 @@ be found.
 * Create the **View a Gene** plot for **MLH1**
 * Under the triangle of *View additional details* click on the **view all** link.
 * Scroll down to the bottom of the page to make a *Subset Track* selection with **microsatellite_instability** to 
-  only select the samples that have been annotated for this characteristic (yes and no). Click **Next**.
+  only select the samples that have been annotated for this characteristic (**yes** and **no**). Click **Next**.
 
 A heatmap is generated of methylation levels. Each column corresponds to a sample, and each row corresponds to a 
 feature (a single CpG site or a larger target region including multiple CpG sites, e.g. promoter regions). A 
@@ -598,7 +598,7 @@ sets CMS 4 apart from the subtypes 2 and 3.
 
 * On the main page, select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 * Choose the *analysis* **Differential Expression Between Two Groups**.
-* Choose the track **cms_predicted** and look at groups **cms2** and **cms4**
+* Choose the track **cms_predicted**, click **next** and look at groups **cms2** and **cms4**
 * The analysis can take a while. 
 
 Gene set analysis helps researchers interpret the biological relevance of a group of genes. Instead of looking at 
@@ -884,7 +884,7 @@ proliferation signatures and Wnt target genes are associated with good prognosis
 
 * On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
 * Select the analysis **View Geneset (Heatmap)**
-* In the *Gene set* selection grid, look in the sub gene set collections of **Broad 2023 10 h hallmark** for **HALLMARK_MYC_TARGETS_V1 (200)** and **Confirm selection**
+* In the *Gene set* selection grid, search for **HALLMARK_MYC_TARGETS_V1 (200)** and select it by clicking on the triangles in the **Broad 2023 10 h hallmark** collection until you've found it. Check the gene set and **Confirm selection**
 * **Submit**
 
 The heatmap for the z-scores of the expression values of the MYC targets geneset is shown. Underneath the heatmap 
