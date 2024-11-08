@@ -753,7 +753,7 @@ Immediately you see a list of genes that should look familiar.
 
 In the grid you can find all the reported mutations for genes that are part of the OncoKB database (https://www.oncokb.org/about). The details of each mutation can be found in tyhe columns. 
 
-If you click on the **view** links  in the first column of a mutation, this will guide you to the genomic location of the mutated gene in the Gene browser or the Genome Browser respectively. It could be that you have to make the first column wider.
+If you click on the **view** (!! not detail) links  in the first column of a mutation, this will guide you to the genomic location of the mutated gene in the Gene browser or the Genome Browser respectively. It could be that you have to make the first column wider.
 
 ![](_static/images/MolOncCRC/select_view_somvar.png "OncoPrint setting suggestions")
 
