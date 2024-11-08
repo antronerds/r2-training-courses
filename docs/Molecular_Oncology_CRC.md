@@ -757,7 +757,7 @@ If you click on the **view** (!! not detail) links  in the first column of a mut
 
 ![](_static/images/MolOncCRC/select_view_somvar.png "OncoPrint setting suggestions")
 
-[**Hidden? view link**](_static/images/MolOncCRC/select_view_somvar.png )
+[Click the **view** link! **You might have to drag the Link column wider**](_static/images/MolOncCRC/select_view_somvar.png )
 
 
 
