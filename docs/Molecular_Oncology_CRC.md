@@ -433,16 +433,6 @@ whether these genes indeed are differentially expressed between MSI and MSS tumo
 * With the **Select gene set** button, filter for **DNA repair** genes, and find them in **Categories**. There are 247 
   genes annotated as DNA repair genes. Perform the analysis by clicking on **Submit**.
 
-------  
-
-
-![](_static/images/R2d2_logo.png)**Which gene is on top of the list?**
-
-
-<br>
-
-------
-
 One of the genes that is differentially expressed, is MLH1. 
 * Click on its magnifying glass to look at the expression of MLH1 in the MSI vs. MSS samples. 
 
@@ -461,11 +451,11 @@ MSI tumors give a very heterogeneous picture. This could be an indication that w
 also a subgroup could be identified. 
 
 * Hover with your mouse over data points to see if you can identify a subgroup of an annotation track in which low MLH1 expression occurs more often.
-* Scroll down to the Adjustable settings menu and change grouping setting _Track_ into **MS_orientation**. Click **Submit**
+* Scroll down to the Adjustable settings menu and change grouping setting _Track_ into **MS_orientation (5 cat)**. Click **Submit**
 
 Let's visualize the relation between these dataset annotations in another way. 
 * Go back to the main menu and select **relate two tracks** and click **Next**. 
-* Select for the _X track_ the **MS_status** and for the _Y track_ **Orientation** and click **Submit**. 
+* Select for the _X track_ the **MS_status (2 cat)** and for the _Y track_ **Orientation (3 cat)** and click **Submit**. 
 
 In the MLH1 expression graph we saw that low gene expression was not equally distributed within the MSI group. 
 * Let's add this layer of information in this plot as well: select *Color mode* **Color by a Gene** and enter **MLH1** 
@@ -493,17 +483,16 @@ colorectal cancer.
 
 
 Colorectal tumors with MSI do not have the same response to chemotherapeutics and are an important subgroup to look at for specialized treatments. 
-In the Watanabe data set we found MLH1 as a possibly important player. We will now corroborate our findings in another dataset. Not only because this is an old set (look up  
-the background information in the information panel of the dataset selection grid), but it is  common practice to 
+In the Watanabe data set we found MLH1 as a possibly important player. We will now corroborate our findings in another dataset. Not only because this is an old set (look up the background information in the information panel of the dataset selection grid), but it is  common practice to 
 validate your results with other sources. We will use a dataset that we already looked at with the t-SNE clustering 
 algorithm.
 
 #### MSI in tcga set
 
-* Select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
+* Go back to the main page, and select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
 * Perform the **Differential Expression between two groups** analysis for **microsatellite_instability** (no vs 
-  yes), and perform the analysis on the gene set **Broad 2020 09 c6 oncogenic**. **Submit**
+  yes), and perform the analysis on the gene set **Broad 2023 10 c6 oncogenic**. **Submit**
 * Click again on the MHL1 gene magnifying glass.
 
 In this set too MLH1 seems to play a key role for MSI related CRCs. It would be interesting to find out which genes are possibly regulated by the MLH1 gene.
@@ -513,7 +502,7 @@ One way to find genes that are possibly affected by MLH1 is to look at (inversel
 #### Find genes correlating with a single gene
 
 * From the main page, run the **Find Correlated Genes with a single Gene** module for the MLH1 gene. Use again
-  the filter option for the **Broad 2020 09 c6 oncogenic** gene set. 
+  the filter option for the **Broad 2023 10 c6 oncogenic** gene set. 
 
 
 * On the result page, click on the best correlating gene to plot both genes together, in a two gene view. Inspect the correlation. Can you think of reasons why the gene expression is highly correlated?
@@ -730,7 +719,10 @@ CMS2 subtype has a significant lower incidence of tumors that were classified as
 
 [**Select OncoPrint**](_static/images/MolOncCRC/select_oncoprint_nunes.png)
 
-In this OncoPrint, we find an overview of the most common mutations across our entire cohort. Samples are shown in the columns, the genes are shown on the rows. The most commonly mutated genes are found on top. The color coding can be found underneath the plot. 
+In this OncoPrint, we find an overview of the most common mutations across our entire cohort. Samples are shown in the columns, the genes are shown on the rows. The most commonly mutated genes are found on top. The color coding can be found underneath the plot and is seen in the image below as well. Thus, the colors in the plot represent the type of mutation per sample per gene. Above the OncoPrint, you see one bar of annotation, which is the CMS annotation.
+
+![](_static/images/MolOncCRC/OncoPrint_legend.png "OncoPrint color legend: the colors represent the type of mutation")
+[**OncoPrint color legend: the colors represent the type of mutation**](_static/images/MolOncCRC/OncoPrint_legend.png)
 
 
 Scrolling down to the bottom, you will find in the Adjustable Settings menu all sort of interesting options that you can toggle on/off. In the picture below, you can find several suggestions to reveal more insights of mutational characteristics in this cohort and of CRC in general. You can add extra tracks to the plot if you click on **Select Tracks**.
@@ -741,7 +733,7 @@ Scrolling down to the bottom, you will find in the Adjustable Settings menu all 
 ------
 
 ![](_static/images/R2d2_logo.png)**Name the four top genes. Also check with the CMS subtype annotation above the plot if you can relate the information in the plot with your knowledge about CMS subtype specific mutations.<br>
-Discuss with each other what the biological mechanism is with each of the four top mutations.**
+Discuss with each other how mutation of the four top genes plays a role in CRC. Check which mutation types are often found in the four top genes.**
 
 <br>
 <br>
@@ -851,8 +843,8 @@ Click next. R2 is now performing  a correlation test on the signature scores of 
 ## Therapeutic: Effects of imatinib: shifts of signature profiles and molecular subtypes
 
 Mesenchymal Consensus Molecular Subtype 4 (CMS4) colon cancer is associated with poor prognosis and therapy resistance.
-In this proof-of-concept study, Kranenburg et al. assessed whether imatinib could shift cms4 subtype specific 
-characteristics.  
+In a proof-of-concept study, Kranenburg et al. assessed whether the drug imatinib could shift the CMS4 subtype specific 
+gene expression program towards a gene expression program that is better treatable.  
 
 The button below brings you to the form in which you can submit your answers for the third section.
 
@@ -861,16 +853,16 @@ type="button">Open the answering form for this section</button>
 <br>
 <br>
 
-We want to see how the expression changes between the pre- and post-treatment samples' expression of specific 
-mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :
+We want to see how the gene expression of specific
+mesenchymal genes, such as ZEB1, PDGFRA, PDGFRB, and CD36, changes between pre- and post-imatinib treatment samples:
 
 * On the main page in the center menu, select the dataset **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**  
 * Choose the analysis **View Multiple Genes** and click Next
 * In the *Genes/Reporters to include* textbox, type **Zeb1,PDGFRA,PDGFRB,CD36**
-* Set Track to **pre-post-imatinib** to divide the samples in the pre-treatment and the post-treatment group and *Handle 
-  groups bsy* **lump by gene plot group** to show this per gene. 
+* Set Track to **pre-post-imatinib (2 cat)** to divide the samples in the pre-treatment and the post-treatment group and *Handle 
+  groups by* **lump by gene plot group**. 
 * Set *color by* to **Track** in order to make the box plots visually more distinct.  
-* Click next
+* Click **next**
 
 
 ------
@@ -896,7 +888,7 @@ proliferation signatures and Wnt target genes are associated with good prognosis
 * **Submit**
 
 The heatmap for the z-scores of the expression values of the MYC targets geneset is shown. Underneath the heatmap 
-you find the geneset average z-value per sample, also known as the signature score. With an account you can save 
+you find the geneset average z-value per sample, the signature score. With an account you can save 
 such scores as a Track to use further analyses in R2. 
 
 * Click on the **store** link in the small table, a bit underneath the heatmap.
