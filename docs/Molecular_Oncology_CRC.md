@@ -715,12 +715,13 @@ CMS2 subtype has a significant lower incidence of tumors that were classified as
 * Go the main page, click in the left menu on **WGS/WES data** and select **Pers. Med. OncoPrint (fixed data)** and as resource the **CRC OncoKB hotspots Nunes**.
 
 
-![](_static/images/MolOncCRC/select_oncoprint_nunes.png "Select  OncoPrint")  
+![](_static/images/MolOncCRC/select_oncoprint_nunes.png "Select  OncoPrint")
 [**Select OncoPrint**](_static/images/MolOncCRC/select_oncoprint_nunes.png)
 
 In this OncoPrint, we find an overview of the most common mutations across our entire cohort. Samples are shown in the columns, the genes are shown on the rows. The most commonly mutated genes are found on top. The color coding can be found underneath the plot and is seen in the image below as well. Thus, the colors in the plot represent the type of mutation per sample per gene. Above the OncoPrint, you see one bar of annotation, which is the CMS annotation.
 
-![](_static/images/MolOncCRC/OncoPrint_legend.png "OncoPrint color legend: the colors represent the type of mutation")
+![](_static/images/MolOncCRC/OncoPrint_legend.png "OncoPrint color legend: the colors represent the type of mutation")  
+  
 [**OncoPrint color legend: the colors represent the type of mutation**](_static/images/MolOncCRC/OncoPrint_legend.png)
 
 
@@ -755,7 +756,7 @@ In the grid you can find all the reported mutations for genes that are part of t
 
 If you click on the **view** (!! not detail) links  in the first column of a mutation, this will guide you to the genomic location of the mutated gene in the Gene browser or the Genome Browser respectively. It could be that you have to make the first column wider.
 
-![](_static/images/MolOncCRC/select_view_somvar.png "OncoPrint setting suggestions")
+![](_static/images/MolOncCRC/select_view_somvar.png "Click the view link! You might have to drag the Link column wider")
 
 [Click the **view** link! **You might have to drag the Link column wider**](_static/images/MolOncCRC/select_view_somvar.png )
 
