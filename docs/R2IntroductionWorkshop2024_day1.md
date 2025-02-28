@@ -92,7 +92,7 @@ If you see a different dataset selected, you can change the dataset as follows:
 ### Investigating single genes / Expression of key genes
 * The button below brings you to the form in which you can submit your answers for section 1.2. 
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1AdLKLVAkgRFiQ_AEHwRyWu0gc3_UZ6XyT3G4KICGStQ/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1</button> 
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSe0J5IjCWcYPo3pzqevTrtkvZtQQd-Ls4VVJJR8yMhtYjxWog/viewform?usp=header','_blank');" type="button">Open the form for section 1</button> 
 <br>
 <br>
 It is known that the amplification of the MYCN gene is associated with a poor prognosis. Now we will 
@@ -242,7 +242,7 @@ Can we find biological processes by looking at differentially expressed genes be
   for 
   subsequently *group 1* and *2* and click **Submit**. 
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1Iit16sf4mQxuUyZ9iyjHnJeeHrP-VAsCw5D-GdT83iI/viewform?usp=sf_link','_blank');" type="button">Open the form for section 2</button>
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1Iit16sf4mQxuUyZ9iyjHnJeeHrP-VAsCw5D-GdT83iI/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button>
 
 ---------
 
@@ -422,7 +422,7 @@ Remarkably, in each patient two *morphologically differing cell types* were obse
 
  * The button below brings you to the form in which you can submit your answers for section 1.3
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1C-jNtu4IlsyR5_hS8Q1y-mdUUpgj1kLo-RmoMRUVHfY/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.3</button>
+<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfCbn8om6AO7p-_nPYHUQnunaPufj3wMF2QcXXeVcGB9zwOOw/viewform?usp=header','_blank');" type="button">Open the form for section 1.3</button>
 <br>
 
 
@@ -719,12 +719,12 @@ can be accessed from the main page in the left set of menu items.
 
 <br>
 
-#### Answers
+## Answers
 
 You can find detailed answers and extra tips per question of this course in the following link:
 <a href="https://hgserver2.amc.nl/r2/help/workshop/online_r2introductionworkshop/Answers_R2IntroductionWorkshop.pdf" target="_blank">Document with answers to the questions</a>
 
-#### Thanks
+## Other options to explore R2
 R2 has many more options, that you can explore by yourself if you want. You can try to find a publicly available dataset that corresponds to your line of research. Try and see if some of the analysis pipelines from this practical could be applied to that dataset.<br>
 <br>Also, other courses from the left side bar might provide further inspiration for the type of analyse sequences that can be performed in R2 to gain more insight in your own or publicly available data.
 <br><br>If you would like to use R2 for your research in the future, then just visit http://r2.amc.nl and get started. 
