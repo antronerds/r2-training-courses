@@ -244,8 +244,6 @@ Can we find biological processes by looking at differentially expressed genes be
   for 
   subsequently *group 1* and *2* and click **Submit**. 
 
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/1Iit16sf4mQxuUyZ9iyjHnJeeHrP-VAsCw5D-GdT83iI/viewform?usp=sf_link','_blank');" type="button">Open the form for section 1.2</button>
-
 ---------
 
 ![](_static/images/R2d2_logo.png) **How many genes are differentially expressed between the alive "no" and "yes" group?**
