@@ -729,6 +729,8 @@ You can find detailed answers and extra tips per question of this course in the 
 ## Other options to explore R2
 R2 has many more options, that you can explore by yourself if you want. You can try to find a publicly available dataset that corresponds to your line of research. Try and see if some of the analysis pipelines from this practical could be applied to that dataset.<br>
 <br>Also, other courses from the left side bar might provide further inspiration for the type of analyse sequences that can be performed in R2 to gain more insight in your own or publicly available data.
-<br><br>If you would like to use R2 for your research in the future, then just visit http://r2.amc.nl and get started. 
+<br>You can check out the <a href="https://r2-tutorials.readthedocs.io/en/latest/" target="_blank">Online R2 Tutorial</a> that provides many smaller step-by-step guides of R2 analyses. 
+<br>Check out the <a href="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=dscope_index" target="_blank">Datascope page</a>, where clickable tiles allow you to navigate interesting resources and enter R2 result pages with preset analysis settings. Note that these result pages are interactive, such that you can simply continue your research from any of these pages. 
+<br><br>If you would like to use R2 for your research in the future, then just visit http://r2.amc.nl and get started. You can <a href="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=about_contact" target="_blank">contact the R2 Support Team </a> with questions about your own research and public or private data set uploads (with public or restricted access).
 
 
