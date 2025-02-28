@@ -6,7 +6,7 @@ Finding causes in Neuroblastoma genomics data
 *Introduction to bioinformatics tools using the web-based genomics analysis and visualization platform R2 and neuroblastoma data*
 
 This resource is located online at http://r2-training-courses.readthedocs.io  
-If you encounter discrepancies between the instructions in this course and the R2 platform options, please <a href="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=about_contact" target="_blank">let our R2 Support Team know</a>. We continuously enhance the platform by adding new functionalities and refining existing features. As a result, our documentation and course instructions may occasionally fall behind.  
+<br><br>If you encounter discrepancies between the instructions in this course and the R2 platform options, please <a href="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=about_contact" target="_blank">let our R2 Support Team know</a>. We continuously enhance the platform by adding new functionalities and refining existing features. As a result, our documentation and course instructions may occasionally fall behind.  
 We very much appreciate your feedback. 
 
 Introduction
@@ -252,7 +252,7 @@ Can we find biological processes by looking at differentially expressed genes be
 ---------
 
 In the generated gene list you can find  marker genes or genes playing a key role in neuroblastoma. However, it would be of interest to find out if certain genes are overrepresented in e.g. biological processes.  
-- In the right menu next to the genelist, click on the button **Geneset analysis**. 
+- In the right menu next to the ge<br>,nelist, click on the button **Geneset analysis**. 
 - In the next screen select **KEGG pathways** in the *Gene set collection* pull down and click next.
 - In the next screen you find a collection of annotated KEGG genesets in which the genes from the analysis are overrepresented.
 
