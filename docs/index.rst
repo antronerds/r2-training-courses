@@ -21,7 +21,7 @@ R2 Offers a variety of resources to help you deepen your understanding of the pl
 
 * Check out the `Datascope page <https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=dscope_index>`_, where clickable tiles allow you to navigate interesting resources and enter R2 result pages with preset analysis settings. Note that these result pages are interactive, such that you can simply continue your research from any of these pages.
 
-* Past R2 Introduction Workshop material can be found on this page `http://r2platform.com/workshop <http://r2platform.com/workshop>`_
+* Past workshop material can be found on this `R2 Introduction Workshop page <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html>`_
 
 If you would like to use R2 for your research in the future, then just visit `http://r2.amc.nl`_ and get started. You can `contact the R2 Support Team <https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=about_contact>`_ with questions about your own research and public or private data set uploads (with public or restricted access).
 
