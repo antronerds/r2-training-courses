@@ -6,6 +6,8 @@ Finding causes in Neuroblastoma genomics data
 *Introduction to bioinformatics tools using the web-based genomics analysis and visualization platform R2 and neuroblastoma data*
 
 This resource is located online at http://r2-training-courses.readthedocs.io  
+If you encounter discrepancies between the instructions in this course and the R2 platform options, please <a href="https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=about_contact" target="_blank">let our R2 Support Team know</a>. We continuously enhance the platform by adding new functionalities and refining existing features. As a result, our documentation and course instructions may occasionally fall behind.  
+We very much appreciate your feedback. 
 
 Introduction
 ------------
