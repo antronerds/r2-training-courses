@@ -13,8 +13,7 @@ R2 is a publicly accessible web-based program (`http://r2.amc.nl <http://r2.amc.
 Overview of resources
 ---------------------
 
-R2 has many different resources that you can explore to gain a better understanding of the platform and of doing genomics research in general.
-Here we list several of these resources:
+R2 Offers a variety of resources to help you deepen your understanding of the platform and of genomics research in general. Below, we’ve listed several of these resources:
 
 * In the navigation bar on the left, you can find several courses that are designed to introduce you to basic R2 analysis pipelines. The pipelines consist of multiple coupled analyses to learn how to gain deeper insight into genomic data. We recommend the first course, `Finding causes in Neuroblastoma genomics data <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop2024_day1.html>`_ , that follows the same research line as was performed in a Nature article in 2017.
 
