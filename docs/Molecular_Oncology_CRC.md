@@ -12,7 +12,7 @@ This resource is located online at http://r2platform.com/studentcourse
 Introduction
 ------------
 
-In the late 1980s the Vogelstein model was proposed. It introduced the concept of a stepwise accumulation of genetic
+In the late 1980s, the Vogelstein model was proposed. It introduced the concept of a stepwise accumulation of genetic
 mutations leading to the development of colorectal cancer (CRC).  
 
 ![](_static/images/MolOncCRC/CRCprogression_combined.jpg "Accumulation of mutations advancing colorectal 
@@ -88,17 +88,10 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
 
 ### Filtering and exploring
 
-* Open a Chrome browser and find your name behind your assigned number for the student account at <a 
-  href="https://docs.google.com/spreadsheets/d/1VsANludkc3_ZgeF5bopq3ldzCv3BV1D7Mh_JWKfGHiQ/edit#gid=0" 
-  target="blank">the student accounts check in form</a>
-* Go to the R2 platform
-  address: <a href="https://hgserver2.amc.nl/" target="_blank">https://hgserver2.amc.nl</a> <br>
+* Open a Chrome browser and use your R2 account to sign in in the collaborator's server of the R2 platform: <a href="https://hgserver2.amc.nl/" target="_blank">https://hgserver2.amc.nl</a> <br>
 
-Generally speaking, the R2 platform is easily accessible by the link <a href="http://r2.amc.nl" 
-target="_blank">http://r2.amc.nl</a>, but today we work from our developer server hgserver2. 
-
-* Sign in with your assigned account that you found in the student account Googledoc. 
-
+Generally speaking, the R2 platform is easily accessible by the link <a href="https://r2.amc.nl" 
+target="_blank">https://r2.amc.nl</a>, but today we work from our collaborator's server hgserver2. 
 
 You're now on the R2 main page. This genomics analysis and visualization platform contains a wealth of data and
 bioinformatics tools to analyze the datasets. Step by step, researchers are guided through a web of options 
@@ -411,11 +404,9 @@ Now we will look at the KRAS mutations
 
 ### A dive into CMS1: MSI / MSS in CRC
 
-One of the characteristics of CMS I is MSI instability. Genomic instability in colon cancer can be divided 
-into at least two major types: microsatellite instability (MSI) or chromosomal instability (CIN). Microsatellite 
-instability (MSI) is caused by mutations in DNA mismatch repair genes such as MLH1, MSH2, MSH6, and PMS2, and it is found in 10% to 15% of sporadic colorectal cancers (CRCs). The presence of MSI predicts a good outcome in colorectal cancer.
+Colorectal cancer exhibits two primary forms of genomic instability: chromosomal instability (CIN) and microsatellite instability (MSI), with MSI being a hallmark of the CMS I subtype. MSI arises from defects in DNA mismatch repair genes, which are responsible for correcting errors that occur during DNA replication. When genes such as MLH1, MSH2, MSH6, and PMS2 are mutated or silenced, the repair process fails, leading to the accumulation of mutations in short repetitive DNA sequences known as microsatellites. The presence of MSI predicts a good outcome in colorectal cancer.
 
-In MSI colon cancer, genes of the DNA mismatch repair system play an important role. Germline mutations in these genes are a major cause of the inherited form of colon cancer, namely HNPCC (hereditary nonpolyposis colon cancer).  In sporadic forms of colon cancer however, these genes are frequently inactivated. Inactivation is often achieved via hypermethylation, switching the gene off. Hypermethylation of genes in colon cancer is most common in colon tumors with a proximal location in the colon and much less in colon tumors with a distal location.
+In MSI colon cancer, genes of the DNA mismatch repair system thus play an important role. Germline mutations in these genes are a major cause of the inherited form of colon cancer, namely HNPCC (hereditary nonpolyposis colon cancer).  In sporadic forms of colon cancer however, these genes are frequently inactivated. Inactivation is often achieved via hypermethylation, switching the gene off. Hypermethylation of genes in colon cancer is most common in colon tumors with a proximal location in the colon and much less in colon tumors with a distal location.
 
 The next section we will use another dataset. *"Tumor Colon- Watanabe - 84 - MAS5.0 - u133p2"*
 
