@@ -47,7 +47,6 @@ visualization platform R2")
 
 [**Web-based genomics analysis and
 visualization platform R2**](_static/images/MolOncCRC/R2webplatform.png)
-
 <span class="citation_txt">(Figure source: https://r2.amc.nl)</span>
 
 Today you will use advanced bioinformatics tools to explore, analyze and visualize colorectal cancer data in
@@ -79,8 +78,7 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
 
 ![](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg)
 
-  [**Normal tissue, precancerous adenomas and cancer growth**](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg) 
-
+  [**Normal tissue, precancerous adenomas and cancer growth**](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg)
 <span class="citation_txt">(Figure source: https://doi.org/10.1126/science.1235122)</span>
 
 
@@ -90,10 +88,10 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
 
 ### Filtering and exploring
 
-* Open a Chrome browser and use your R2 account to sign in in the collaborator's server of the R2 platform: <a href="https://hgserver2.amc.nl/" target="_blank">https://hgserver2.amc.nl</a> <br>
+* Open a Chrome browser and use your R2 account to sign in in the collaborator's server of the R2 platform: <a href="https://hgserver2.amc.nl/" target="_blank">https://hgserver2.amc.nl (also accessible via https://r2platform.com/hg2) </a> <br>
 
-Generally speaking, the R2 platform is easily accessible by the link <a href="https://r2.amc.nl" 
-target="_blank">https://r2.amc.nl</a>, but today we work from our collaborator's server hgserver2. 
+Generally speaking, the R2 platform is easily accessible by the links <a href="https://r2.amc.nl" 
+target="_blank">https://r2.amc.nl | r2platform.com</a>, but today we work from our collaborator's server hgserver2. 
 
 You're now on the R2 main page. This genomics analysis and visualization platform contains a wealth of data and
 bioinformatics tools to analyze the datasets. Step by step, researchers are guided through a web of options 
@@ -102,7 +100,7 @@ boxes to develop your analysis of
 choice.<br><br>
 
 Let's follow these steps to get a first look at gene expressions in one of the colon cancer datasets that is hosted in R2, a
-dataset that is called "Mixed Colon - Marra - 64 - MAS5.0 - u133p2".<br>
+dataset that is called _Mixed Colon - Marra - 64 - MAS5.0 - u133p2_.<br>
 Datasets have a structured naming in R2, using the following rules:<br>
 Category - Tissue/ Tumor -  author - number of samples (N) - normalization - chiptype.<br>
 In our case the dataset name tells us that the dataset contains 
@@ -204,7 +202,7 @@ restrict your list of differentially expressed genes between normal tissue and a
 * Now click on the magnifying glass in front of **AXIN2** to obtain a violin plot with the scatter points of the expression value of this gene 
   for each sample in the dataset.<br>
   The plot shows the two groups of the tissue track in violin plots  with the individual sample values showing as scatter on top. If you hover your mouse over 
-  any of the violins, you can see the group statistics. Also note you can hover over the dots in the graph and the tracks to get more information of the individual samples.
+  any of the violins, you can see the group statistics. Also note you can hover over the dots in the graph to get more information of the individual samples.
 * The green bar in the top allows you to easily go to the next or previous gene of your list. Click on the **arrow with 
   MYC** on the right side of the green bar to view this gene's expression in the samples. 
 
@@ -214,11 +212,12 @@ restrict your list of differentially expressed genes between normal tissue and a
 about biological processes, why would this be?**
 
 ______
+ 
 
-The WNT pathway is an important signal transduction cascade that plays an important role in diverse biological 
-processes. The dysregulation of the WNT pathway has been observed in several cancers including colon cancer. 
+### Heatmaps and the WNT pathway
 
-### The WNT pathway
+The WNT pathway is an important signal transduction cascade that plays an important role in diverse biological
+processes. The dysregulation of the WNT pathway has been observed in several cancers including colon cancer.
 
 In the next sections we will regularly be using heatmaps to find subgroups of samples or genes that show 
 similar expression profiles. Heatmaps perform unsupervised hierarchical clustering of samples. The algorithm uses the 
@@ -227,7 +226,7 @@ clusters of samples in the plot based on their (dis)similarity.
 This is combined with the clustering of the genes based on their expression throughout the samples. The heatmap is 
 colored by the z-scores of the samples' gene expression values. Often annotation tracks are shown above a heatmap. 
 Remember that _we can_ see this annotation but that the _heatmap algorithm did not use_ this information to look for 
-subgroups in the data. 
+subgroups in the data, it uses expression values only. 
 
 ![](_static/images/TumorHeterogeneity_HeatmapClustering.png "Example heatmap: finding subgroups in your data")
 
@@ -282,15 +281,14 @@ Immune), CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal), see the fig
 
 ![](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.png "Subtypes in colorectal
 cancer: CMS classification")
-
 [**Subtypes in colorectal cancer: CMS classification**](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.png)
 
 <span class="citation_txt">(source: http://dx.doi.org/10.1002/ags3.12362)</span>
 
-The button below brings you to the form in which you can submit your answers for the second section.
+The button below brings you to the form in which you can submit your answers for the next section.
 
 <button class="course googleform" onclick="window.open('https://forms.gle/SnVY3NPnjEeHCFhM9','_blank');"
-type="button">Open the answering form for this section</button>
+type="button">Open the answering form for the next section</button>
 <br>
 <br>
 
@@ -299,8 +297,8 @@ type="button">Open the answering form for this section</button>
 
 An unbiased unsupervised type of clustering analysis is a good starting point to familiarize yourself with a new
 dataset. The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of
-samples and will place cells with similar expression profiles together on a map.<br>
-In R2, these maps can be generated by users with an account. Once a dataset t-SNE has run, it is available to other users as well. This saves 
+samples and will place cells with similar expression profiles together on a map. UMAP is a more recent, faster and often considered better alternative to t-SNE that groups similar cells together while also maintaining an overall sense of how different groups relate to each other. You will find options for both algorithms in R2. <br>
+In R2, these maps can be generated by users with an account. Once a dataset t-SNE or UMAP has run, it is available to other users as well. This saves 
 processing time and costs. <br><br>
 
 We will use a dataset that was adapted from one of the resources of
@@ -317,6 +315,7 @@ Colors of the graph points are not set by default.
 * Find the _Color mode_ dropdown and select **Color by Track**. Now set the 
   _Color track_ dropdown to use the
   **cms_predicted (4 cat)** track, and click **Set colors** to show the changes.
+* Note that you can exclude track subgroups in the legend. E.g. click on the yellow square from the legend to hide the datapoint with that value. Click the legend title to invert the data point selection. Click the boxes of the hidden track value data points to show them again.   
 
 The most important parameter for the t-SNE algorithm is the perplexity value. The perplexity parameter controls 
 the balance between a focus on preserving local details or global structures of the data. When R2 receives the 
@@ -324,8 +323,9 @@ the balance between a focus on preserving local details or global structures of 
 different perplexity values. The resulting maps can be found under the setting 
   _Version_. It is also possible to show all the available perplexity maps for the dataset at the same time. 
 
-* Set *Version* to the value **all**.  
+* Set *Version* to the value **all** and color again by the same track (or try out the coloring by the expression of a gene if you prefer so).  
 
+[//]: # (recoloring might not be necessary anymore)
 
 
 ------  
