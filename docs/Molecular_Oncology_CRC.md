@@ -62,12 +62,12 @@ pre-set settings such that you can pick up an analysis easily.)
 [//]: # (The <button class="course googleform">green buttons</button> in this document will open up a Google form, one per section, with which you can submit your answers.)
 The <button class="course googleform">green buttons</button> in this document will open up a Google form, one per section, with which you can submit answers.
 
-We would like to ask you to fill in the evaluation form about this R2 course during or at the end of the course. To open
-the form, click the button below:
+[//]: # (We would like to ask you to fill in the evaluation form about this R2 course during or at the end of the course. To open
+the form, click the button below:)
 
-<button class="course googleform" onclick="window.open('https://forms.gle/kfiE5vQiDmhJVS1f8','_blank');" type="button">Open the Evaluation form</button>
-<br>
-<br>
+[//]: # (<button class="course googleform" onclick="window.open\("https://forms.gle/kfiE5vQiDmhJVS1f8','_blank"\);" type="button">Open the Evaluation form</button><br><br>)
+[//]: # (!!!! remove the \ in the previous window open link !!!!)
+
 
 ## Normal colonic epithelium vs adenomatous tissue: a first impression of genomic data
 
