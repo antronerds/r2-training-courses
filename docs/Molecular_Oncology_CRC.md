@@ -599,14 +599,14 @@ individual genes, it allows you to understand the collective functions or pathwa
 This can provide more meaningful insights into the underlying biology of a particular condition or experiment.
 
 * Click on the topmost button on the right that is labeled **Gene set analysis**.
-* Select the *Gene set Collection* **Custom collection** and select *Gene set* **Broad 2020 09 h hallmark**
+* Select the *Gene set Collection* **Custom collection** and select *Gene set* **Broad 2023 10 h hallmark**
 * Switch the *Representation* setting to **all** to look at both over- and under-representation
 * Click **Next**
 
 
 ------
 
-![](_static/images/R2d2_logo.png)**Which gene sets do you recognize from the first column of the table? Name a few that are overexpressed in CMS 2 and name a few that are overexpressed in CMS 4.**
+![](_static/images/R2d2_logo.png)**Which gene sets do you recognize from the first column of the table? Name a few that are overexpressed in CMS 2 and name a few that are overexpressed in CMS 4. On top of the table you find the meaning of the color coding green and red**
 
 ![](_static/images/R2d2_logo.png)**Explain the biological relevance for the CMS4 subtype for these over- or/and underexpression of these gene sets for CMS4 subtype CRC tumors**
 
@@ -625,16 +625,16 @@ Thus far we looked at colon cancer characteristics mainly based on gene expressi
 
 ### Introduction to the Nunes data
 
-It is good common scientific practice to validate and check your analysis in other resources. We already have seen that the Molecular signature classification (CMS) are nicely clustered in the previous datasets.  Let's start to check whether this is also the case for the Nunes RNA seq dataset.
+It is good common scientific practice to validate and check your analysis in other resources. We already have seen that the Molecular signature classification (CMS) are nicely clustered in the previous datasets.  Let's check whether this is also the case for the Nunes RNA seq dataset.
 
 * Select on the mainpage **Sample Maps (UMAP/tSNE)**. 
-* Click on **Tumor Colon - Nunes - 1063 - tpm - ensh38e98** to read the **Summary** of the dataset in the information panel under the grid and then **Select** the dataset.
+* Find and click on the UMAP embedding of **Tumor Colon - Nunes - 1063 - tpm - ensh38e98** to read the **Summary** of the dataset in the information panel under the grid and then **Select** the dataset.
 * Use *Color mode* again to overlay the plot with **Color by a Track** and **cms_tumour (5cat)**.
 * If you want, you can check multiple (or _all_) versions
 
-Again the CMS clusters clearly separate this set into 4 clusters, confirming our previous conclusion that CMS subtypes have unique gene expression patterns, indicating that they might refer to biologically different subtypes.
+Again the CMS clusters clearly separate this set into 4 clusters, confirming our previous conclusion that CMS subtypes have unique gene expression patterns. This indicates that they might refer to biologically different subtypes.
 
-* Going back to the main page of R2 the **Nunes set** should still be selected.
+* Going back to the main page of R2, make sure that the **Nunes 1063** dataset is selected in box 2.
 * Also check in the **Cohort Overview** the annotation to glance over the kind of annotation that is provided. Think for yourself what kind of questions you could explore with the annotated data at hand.
 
 ------
@@ -683,11 +683,11 @@ Now, let's examine the CGH profiles for each CMS subtype.
 
 
 
-In cancer, a high rate of mutations can occur in the genome and could sometimes even reach tens or hundreds of mutations per megabase.  In general, tumors are classified as hypermutated when they exhibit more than 10-12 mutation per megabase. 
+In cancer, a high rate of mutations can occur in the genome and could sometimes even reach tens or hundreds of mutations per megabase.  In general, tumors are classified as hypermutated when they exhibit more than 10-12 mutations per megabase. 
 
 This dataset is annotated for hypermutation status.
 
-* Generate CHG profiles split by hypermutation status: change _X track_ to **hypermytation_status (2cat)**. You can also check the **msi_status (2 cat)** track.
+* Generate CHG profiles split by hypermutation status: change _X track_ to **hypermytation_status (2cat)**. Don't forget to **Redraw**. You can also check the **msi_status (2 cat)** track.
 
 ------
 
@@ -698,7 +698,7 @@ This dataset is annotated for hypermutation status.
 
 ------
 
-* Go to **Relate 2 tracks**  in te main menu and select the hypermutation status track for one of the axes and the track of the CMS classification for the other. Hover wityh your mouse over the bars to read the respective percentages. 
+* Go to **Relate 2 tracks**  in te main menu and select the hypermutation status track for one of the axes and the track of the CMS classification for the other. Choose a **Stacked bar %** _Graph type_ and hover with your mouse over the bars to read the respective percentages. 
 
 Don't be shy to play around with any other annotations to gain more insight in the characteristics of subtypes in this dataset (e.g. MSI vs CMS ).
 Be aware that you check these conditions in a specific dataset, and pause to think if this corresponds with knowledge that you gained from literature or lectures.
@@ -745,9 +745,9 @@ Immediately you see a list of genes that should look familiar.
 
 * Now switch to **detailed** in the _Detailed or summary_ setting and click **Next**. 
 
-In the grid you can find all the reported mutations for genes that are part of the OncoKB database (https://www.oncokb.org/about). The details of each mutation can be found in tyhe columns. 
+In the grid you can find all the reported mutations for genes that are part of the OncoKB database (https://www.oncokb.org/about). The details of each mutation can be found in the columns. 
 
-If you click on the **view** (!! not detail) links  in the first column of a mutation, this will guide you to the genomic location of the mutated gene in the Gene browser or the Genome Browser respectively. It could be that you have to make the first column wider.
+If you click on the **view** (!! not detail, you might have to broaden the first column's width) links  in the first column of a mutation, this will guide you to the genomic location of the mutated gene in the Gene browser or the Genome Browser respectively. 
 
 ![](_static/images/MolOncCRC/select_view_somvar.png "Click the view link! You might have to drag the Link column wider")
 
@@ -774,19 +774,21 @@ Which mutation type in BRAF mutation is the most prominent?**
 
 So far, we have examined the transcriptome and genomics data separately, with the only overlap being some annotation of hypermutation status derived from the genomics analysis.
 
-In R2 you can easily use the somatic variation module to annotate each sample with the mutation status in a cohort: you can use the filters in the header of the Gene column to filter a specific gene and then use the button Build track underneath teh grid to annotate each sample with its mutation status for that gene. 
-This way you can annotate your dataset for the presence of any gene mutation / specific type and use this annotation with gene expression dataset(s). Below is pictured, as you have already used in the previous exercises, how you can use these tracks (annotations) to find differentially expressed genes, we will leave it at this anc continue.
+For your information: in R2 you can easily use the somatic variation module to annotate each sample with the mutation status in a cohort: you can use the filters in the header of the Gene column to filter a specific gene and then use the button Build track underneath the grid to annotate each sample with its mutation status for that gene. 
+This way you can annotate your dataset for the presence of any gene mutation / specific type and use this annotation with gene expression dataset(s).<br>
+Below is pictured how you can use these tracks (annotations) to find differentially expressed genes, similar to how you have already performed such analyses in the previous exercises. For now we continue to another exercise.
 
 ![](_static/images/MolOncCRC/mutation_track_usage.png "mutation_track_usage.png")
 [**Using tracks in R2**](_static/images/MolOncCRC/BRAF_select_som.png)
 
-Even though it can be very interesting to look at the transcriptome effects of a specific gene mutation, you might want to look at several genes at once. In R2 we do this with signature scores.
 
 ### Signature scores
 
-Within the current context, we define a _signature_ as a collection of genes that are defined on a particular basis. This can be the presence within a gene-ontology class, the genomic location of a gene, or perhaps something potentially more meaningful like a functional pathway signature.  
-To summarize the expression values of the genes in such a signature, R2 can calculate a _signature score_. This signature score is simply defined as the average z-score of a z-score transformed dataset (the standard way of visualizing a heatmap). In R2, such scores are automatically generated when one generates heatmaps via the “View a geneset” function.
+Even though it can be very interesting to look at the transcriptome effects of a specific gene mutation, you might want to look at several genes at once. In R2 we do this with signature scores.
 
+Within the current context, we define a _signature_ as a collection of genes that are defined on a particular basis. This can be the presence within a gene-ontology class, the genomic location of a gene, or perhaps something potentially more meaningful like a functional pathway signature.<br>
+To summarize the expression values of the genes in such a signature, R2 can calculate a _signature score_. This signature score is simply defined as the average z-score of a z-score transformed dataset (the standard way of visualizing a heatmap). In R2, such scores are automatically generated when one generates heatmaps via the “View a geneset” function.
+<br>Often you can find multiple signature scores:
 * Average expression of the signature genes.
 * Weighted sums where each gene’s contribution is weighted by its known importance.
 
@@ -798,7 +800,7 @@ A Differential Expression between two groups analysis has already been performed
 [**Geneset correlations**](_static/images/MolOncCRC/APC_genesig_corr.png)
 
 
-* Go the main page and select the **Geneset vs Genesets Correlations** module. In the next screen select for the *Gene set (source)* a sub gene set: click on the arrows in front of the geneset collection to go deeper in the tree **Community genesets > student > main >** **APC_activated (153)** (click the green confirm button). 
+* Go the main page and select the **Geneset vs Genesets Correlations** module. In the next screen select for the *Gene set (source)* a sub gene set: click on the arrows in front of the geneset collection to go deeper in the tree **Community genesets > r2 > main >** **APC_activated (153)** (click the green confirm button). 
 * For **Gene set (target)** select the complete collection of **broad 2023 10 h hallmark** genesets.
 
 R2 will calculate the signature scores for the upregulated APC mutant gene list and for each gene set that the selected Broad Hallmark gene set collection harbors.
@@ -819,12 +821,6 @@ Click next. R2 is now performing  a correlation test on the signature scores of 
 
 ![](_static/images/R2d2_logo.png)**Name other pathways in the list that you recognize and that can be associated with CRC or CMS classes.**
 
-<br>
-<br>
-
-------
-
-------
 
 ![](_static/images/R2d2_logo.png)**Several expected CRC-related pathways appear in the table, suggesting potential pathway involvement, though this is only indicative and not necessarily causal. What experimental approaches would you propose to investigate the effects of a specific mutation?**
 
