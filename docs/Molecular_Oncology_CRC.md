@@ -6,7 +6,7 @@ Molecular Oncology - R2 Practical - Colorectal Cancer
 *Use bioinformatics tools to perform data analysis on colorectal cancer omics data sets* 
 
 
-This resource is located online at http://r2platform.com/studentcourse  
+[//]: # (This resource is located online at http://r2platform.com/studentcourse )
  
   
 Introduction
@@ -56,9 +56,11 @@ visualization platform R2, a Core Facility of the Amsterdam UMC. R2 provides the
 clinical data sets coupled to a wide variety of clickable bioinformatics tools. Without any coding you will gain
 hands-on research experience with colorectal cancer omics data and bioinformatics tools.
 
-The <button class="course_permalink">grey buttons</button> in this course will bring you to the R2 platform, often with
-pre-set settings such that you can pick up an analysis easily. The <button class="course googleform">green
-buttons</button> in this document will open up a Google form, one per section, with which you can submit your answers.
+[//]: # (The <button class="course_permalink">grey buttons</button> in this course will bring you to the R2 platform, often with
+pre-set settings such that you can pick up an analysis easily.)
+
+[//]: # (The <button class="course googleform">green buttons</button> in this document will open up a Google form, one per section, with which you can submit your answers.)
+The <button class="course googleform">green buttons</button> in this document will open up a Google form, one per section, with which you can submit answers.
 
 We would like to ask you to fill in the evaluation form about this R2 course during or at the end of the course. To open
 the form, click the button below:
@@ -114,7 +116,7 @@ A grid pops up that shows all the datasets that are currently available to you. 
  In the bottom right corner of the grid, you can find the number of rows, i.e. available datasets.
 *  Under the header *Tissue/Tumor* type the keyword **colon** in the white text-field filter, and check the adapted 
    number of rows in the bottom right corner to find out how many data sets R2 is hosting with the keyword colon in its name.
-* Find the RNA expression dataset from *Author* **Marra** and click on the row of the dataset that 
+* Find the RNA expression dataset from *Author* **Marra** (thus type Marra in the Author column search field) and click on the row of the dataset that 
   contains **64** samples (*N*). 
 * In the information panel below the grid, you find more information about this 
   dataset. Quickly glance over the summary of the study. 
