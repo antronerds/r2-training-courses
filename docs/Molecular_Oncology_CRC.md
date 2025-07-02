@@ -853,7 +853,7 @@ mesenchymal genes, such as ZEB1, PDGFRA, PDGFRB, and CD36, changes between pre- 
   groups by* **Separated by track grouped by gene**. 
 * Set *Color mode (groups)* to **Color by Track** in order to make the box plots visually more distinct. 
 * Check **Add Scatter** to see the data points
-* Note that you now also can change *Color mode* of the scatter points to color by track or by gene
+* Note that you now also can change *Color mode* of the scatter points to color by track or by gene (e.g. **CTNNB1**)
 * The plot options in the panel that pops up with the gear icon are directly responsive. Therefor, you don't have to submit your changes for these options, which ís required when you make adaptations in a adjustable settings menu. Sometimes when you change the fonts too much, the plot might look a bit out of balance. Then you can still click **redraw plot** that often rearranges plot elements for the better.  
 
 
@@ -875,23 +875,23 @@ Mesenchymal tumor phenotypes are generally accompanied by reduced proliferation.
 proliferation signatures and Wnt target genes are associated with good prognosis and reduced metastatic capacity in CRC
 
 * On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
-* Select the analysis **View Geneset (Heatmap)**
+* Select the analysis **View Geneset (Heatmap)** and click **Next**
 * In the *Gene set* selection grid, search for **HALLMARK_MYC_TARGETS_V1 (200)** and select it by clicking on the triangles in the **Broad 2023 10 h hallmark** collection until you've found it. Check the gene set and **Confirm selection**
 * **Submit**
 
 The heatmap for the z-scores of the expression values of the MYC targets geneset is shown. Underneath the heatmap 
-you find the geneset average z-value per sample, the signature score. With an account you can save 
-such scores as a Track to use further analyses in R2. 
+you find colored squares which denote the geneset average z-value per sample, _the signature score_. With an account you can save 
+such scores as a Track to use in further analyses in R2. 
 
-* Click on the **store** link in the small table, a bit underneath the heatmap.
+* Click on the **Store (R2)** link in the small table, a bit underneath the heatmap.
 * In the page that pop-ups, you can adjust settings 
-* Check the name that is provided for this signature score: _hallmark_myc_targets_v1 and read the description
-* We leave everything as is and click on **Build set**
+* Check the name that is provided for this signature score: hallmark_myc_targets_v1 and read the description
+* Note that you can change teh setting *Where* from **Temporary (24h)** to **personal track**, in case you want to store it long term. Or you could choose to store it to a **community** if you are part of one and want to share this Track with your colleagues. We leave everything as is and click on **Build set**
 <br><br>
 Now that we have an average expression value for the MYC target genes per sample, we would like to assess how the treatment influenced these values.
 * Go back to the main page
 * Click **Relate 2 tracks**, click **Next**
-* Select *X track* **pre-post-imatinib** and for the Y axis we choose the signature score that we just generated: *Y track* **hallmark_myc_targets_v1**
+* Select *X track* **imatinib (2cat)** and for the Y axis we choose the signature score that we just generated: *Y track* **hallmark_myc_targets_v1**
 * Select *Graph type* **Dot**
 * Change *Color mode (groups)* to **Color by Track** and click **Submit**
 <br><br>
@@ -920,7 +920,7 @@ after treatment.
 
 * On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
 * Select the analysis **Differential expression between two groups**
-* Switch the *Group by* setting to **pre-post-imatinib** and click **Next**
+* Switch the *Group by* setting to **imatinib (2cat)** and click **Next**
 * Choose *Group 1* **pre-imatinib (15)** and *Group 2* **post-imatinib (15)**
 * Set the *P-value cutoff* to a stricter value: **0.001** and click **Submit**
 
@@ -954,9 +954,9 @@ use of the geneset of upregulated genes that we just saved, now in combination w
 cohort dataset with annotated CMS status and survival data. We use the unsupervised k-means algorithm to find groups 
 in our cohort that show similar expression patterns for our geneset. 
 
-* On the main page, select the Guinney dataset again
+* On the main page, select the **Guinney dataset with 3232 samples** again
 * Select the **K-means analysis** in *box 3* and click Next
-* In the *Subset Track* dropdown, select **stage**, and in the pop-up window check the boxes **2** and **3** , 
+* In the *Subset Track* dropdown, select **stage**, and in the pop-up window check the boxes **2** and **3**, 
   click **Ok**
 * Behind the setting *Gene set*, click **Select gene set** to find your previously 
   stored gene set under **Personal gene sets > _TEMPORARY > impacct_imatinib_treatment_up**. Check the box in front of your gene set and **Confirm selection**.
@@ -981,7 +981,7 @@ Again this group division can be stored in R2 to use in a next analysis.
 * To save the results in a way in which we will easily remember what the track was for and which group showed which
   expression, change the name of *Group 'cluster 1'* into **high** and of *Group 'cluster 2'* into **low**. Also 
   change *Track name* into **kmeans_imatinib_induced**
-* Click on **Build set** and go back to the main page
+* Click on **Create Track** and go back to the main page
 
 Let's see which CMS subtypes are represented in the two k-means sample clusters
 * On the main page, select the analysis **Relate 2 tracks**
@@ -990,7 +990,7 @@ Let's see which CMS subtypes are represented in the two k-means sample clusters
 * In the *Subset Track* dropdown, select **stage**, and in the pop-up window check the boxes **2** and **3** ,
   click **Ok**
 * Change the *Graph type* into **Stacked bar (%)** and use *Color mode (groups) **Color by Track**
-* *Order Groups by* **group size** and hit **Submit**
+* With a click on the gear icon you can change plot options, such as *Order Groups by* to **group size**. Also note the different tabs in the plot options. 
 
 
 ------
@@ -1049,7 +1049,7 @@ transcription), H3K4Me3 methylation marks active promotors. Studying the relativ
 modifications allows a researcher to discern enhancer regions from active transcription sites.
 
 * From the main page left side-menu, select the module **ChIP data** and click on **ChIP Genome Browser** 
-<br.
+<br>
 You are now at the Genome Browser at the genomic location of the gene MYCN.
 Regions encoding genes are drawn at the bottom of the graph. When in red they are encoded in the reverse direction, 
   coding exons are darker.<br>
@@ -1102,13 +1102,12 @@ ______
 * Search the internet as to why these could be interesting genes to look up. 
 
 
-## Summary
-In the introduction of section 1.3, a figure summarized various characteristics associated with each CMS subtype. Without referring back to the original figure, try to recreate it by reviewing the practicum and writing down subtype specific characteristics that you came across during exercises. Feel free to include as many characteristics as you can think of.
+[//]: # (## Summary
+In the introduction of section 1.3, a figure summarized various characteristics associated with each CMS subtype. Without referring back to the original figure, try to recreate it by reviewing the practicum and writing down subtype specific characteristics that you came across during exercises. Feel free to include as many characteristics as you can think of.)
   
 ## Evaluation
 
-Please don't forget to fill in the evaluation form, which is the first form that you found in this document, about 
-this R2 course.
+Please fill in the evaluation form about this R2 course!
 
 
 ---------
@@ -1118,8 +1117,8 @@ this R2 course.
 
 This ends the course. Feel free to further explore the course materials or our tutorials.
 <br><br>
-We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2
-platform you can always consult r2-support@amc.nl
+We hope that this course has been helpful. If you want to visualize and analyze your omics data in the R2
+platform, you can always consult r2-support@amc.nl
 <br><br>
 The R2 support team.
 
