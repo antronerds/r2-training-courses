@@ -33,7 +33,7 @@ Copyright (c) 2006-2025 Jan Koster
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: Basics Courses (Recommended
+   :caption: Basics Courses (Recommended)
 
    Molecular_Oncology_CRC
    R2IntroductionWorkshop2024_day1
@@ -42,7 +42,7 @@ Copyright (c) 2006-2025 Jan Koster
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: Additional Course Material (NOT UP TO DATE)
+   :caption: Additional Courses (NOT UP-TO-DATE)
 
    Butterfly_interim_course_R2_day2
    RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
