@@ -13,9 +13,9 @@ You might wonder how to do the shown analyses yourself. The links below connect 
 
 During these steps features related to the respective topic will be introduced, such as additional analyses or visualizations, thereby conveying the ease of using the interconnected R2 interface.   
 
-You choose which modules you find interesting and try them out following the step by step guides on the R2 platform. Above all, we encourage you to tweak the guides to your interest: find datasets that are closely related to your research topic and play around with the modules; fill in settings (genes, gene sets, chromosome locations etc) that are aligned with your research questions. 
+You choose which modules you find interesting and try them out following the step-by-step guides on the R2 platform. Above all, we encourage you to tweak the guides to your interest: find datasets that are closely related to your research topic and play around with the modules; fill in settings (genes, gene sets, chromosome locations etc) that are aligned with your research questions. 
   
-Our platform interface undergoes frequent improvements. It might be that you come across small interface discrepancies. Most of the time, you will find the relocation of the button or name change of teh functionality. IF not, please ask us for help in the R2 Support Breakout Room or email us at r2-support@amsterdamumc.nl.  
+Our platform interface undergoes frequent improvements. It might be that you come across small interface discrepancies. Most of the time, you will find the relocation of the button or name change of the functionality. If not, please ask us for help or email us at r2-support@amsterdamumc.nl.  
 
 You can find an overview of the chapters per presentation topic below:  
   
