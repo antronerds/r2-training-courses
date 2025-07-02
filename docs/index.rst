@@ -15,7 +15,7 @@ Overview of resources
 
 R2 offers a variety of resources to help you deepen your understanding of the platform and of genomics research in general. Below, we’ve listed several of these resources:
 
-* In the navigation bar on the left, you can find several courses that are designed to introduce you to basic R2 analysis pipelines. The pipelines consist of multiple coupled analyses to learn how to gain deeper insight into genomic data. We recommend the Basic Courses, `Molecular Oncology - R2 Practical - Colorectal Cancer<https://r2-training-courses.readthedocs.io/en/latest/Molecular_Oncology_CRC.html>`_ and `Finding causes in Neuroblastoma genomics data <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop2024_day1.html>`_. The additional course material has not been updated with recent changes on the platform's interface.
+* In the navigation bar on the left, you can find several courses that are designed to introduce you to basic R2 analysis pipelines. The pipelines consist of multiple coupled analyses to learn how to gain deeper insight into genomic data. We recommend the Basic Courses, `Molecular Oncology - R2 Practical - Colorectal Cancer <https://r2-training-courses.readthedocs.io/en/latest/Molecular_Oncology_CRC.html>`_ and `Finding causes in Neuroblastoma genomics data <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop2024_day1.html>`_. The additional course material has not been updated with recent changes on the platform's interface.
 
 * You can check out the `Online R2 Tutorial <https://r2-tutorials.readthedocs.io/en/latest/>`_ that provides many smaller step-by-step guides of R2 analyses.
 
