@@ -848,17 +848,20 @@ mesenchymal genes, such as ZEB1, PDGFRA, PDGFRB, and CD36, changes between pre- 
 * On the main page in the center menu, select the dataset **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**  
 * Choose the analysis **View Multiple Genes** and click Next
 * In the *Genes/Reporters to include* textbox, type **Zeb1,PDGFRA,PDGFRB,CD36**
-* Set Track to **pre-post-imatinib (2 cat)** to divide the samples in the pre-treatment and the post-treatment group and *Handle 
-  groups by* **lump by gene plot group**. 
-* Set *color by* to **Track** in order to make the box plots visually more distinct.  
-* Click **next**
+* Set Track to **imatinib (2 cat)** that divides the samples in a pre-treatment and a post-treatment group
+* Click on the _blue gear icon_ in the upper left corner of the plot and change *Handle 
+  groups by* **Separated by track grouped by gene**. 
+* Set *Color mode (groups)* to **Color by Track** in order to make the box plots visually more distinct. 
+* Check **Add Scatter** to see the data points
+* Note that you now also can change *Color mode* of the scatter points to color by track or by gene
+* The plot options in the panel that pops up with the gear icon are directly responsive. Therefor, you don't have to submit your changes for these options, which ís required when you make adaptations in a adjustable settings menu. Sometimes when you change the fonts too much, the plot might look a bit out of balance. Then you can still click **redraw plot** that often rearranges plot elements for the better.  
 
 
 ------
 
   ![](_static/images/R2d2_logo.png)**What can you say about the level of expression of these genes post treatment?**
 
-  ![](_static/images/R2d2_logo.png)**What is the role of ZEB1 in EMT? (Use Google or another informative source)<br>
+  ![](_static/images/R2d2_logo.png)**What is the role of ZEB1 in EMT? (Use any informative source on the internet)<br>
   What is the biological implication of this experiment?**
   
 
