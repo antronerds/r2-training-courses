@@ -366,18 +366,18 @@ Let's find genes that differ between the two groups we defined found with the Ka
 2. On the next page, select the grouping variable you just saved from the Kaplan Meier analysis. If you don't 
   remember the name but haven't changed it, look for the track below the header *temp_24hrs* and the track
   will be called **kaplanscan-mycn (2cat)** and click **Submit**.  
-3. On the following screen, select the **low* and **high* grouping variables for **Group 1** and **Group 2** and click **Submit**.<br>
+3. On the following screen, select the **low** and **high** grouping variables for **Group 1** and **Group 2** and click **Submit**.<br>
 Now, a list of differentially expressed genes has been found based on the Kaplan Meier most prognostic *MYCN* values cut-off.<br>
 
 Again, this result can be taken for further analysis:<br>
 
-1. On the right side of the page, click on **Plot all genes** (XY, volcano etc.). 
-2. Change **plot type** to *Volcano plot*.
+1. In the "Adjustable Settings", change **Display** option from *List* to *Volcano plot* and click **Submit**.
 3. Hover over a few of the dots with the highest -log10 pvalue and the highest and lowest logfold.
 4. Notice how, if you click on the dots with the left mouse button, they get marked, and a menu on the left appears with which you can change their colors.  
 5. Notice how, if you click on the dots with the right mouse button, you get the detailed gene expression values plot, grouped by the chosen track.  
-6. Go back to the result page of the *Differential Expression between two groups* analysis and in the "Adjustable Settings", set **Max number of results** to 100 to get the top 100 differing genes.
-7. After the new result list has come in, click the **Store result as custom gene set** button.  
+6. Go back to *List* view (by switching back the **Display** option) and click Submit.
+7. In the "Adjustable Settings", set **Max number of results** to 100 to get the top 100 differing genes.
+7. After the new result list has come in, click the **Store result as custom gene set** button in the right panel.
 8. Type in a name, for example, *kaplanscan_mycn_deg* and click **Save gene set**.<br>
 
 Tracks and gene sets that are generated as a result of an analysis can be stored and used throughout the many analysis modules in R2.
@@ -639,15 +639,19 @@ You should now see an XY plot where the signature values are used to position th
 
 The resulting graph is a very insightful representation that summarizes the 800 genes that we were looking at in the previous heatmap.
 
-Within this dataset, the 4 pairs are also represented from the earlier analyses. We can make these stand out by drawing lines between the samples from every pair.
+Within this dataset, the four pairs from the earlier analyses are also represented. We can highlight these by drawing lines between the samples from every pair.
 For this, R2 has **sample_paths** which are comma-separated samples that will be connected by a line. These can have a thickness and an associated-color,
 separated by a colon (_:_). A new line can be started by using a semicolon (*;*).
 
-4. within the **Sample paths** field paste **gsm2413241,gsm2413246:#eeeeee;gsm2413239,gsm2413243:#eeeeee;gsm2413242,
-  gsm2413245:#eeeeee;gsm2413240,gsm2413244:#eeeeee;** and press Submit. 
-5. We can also make the samples stand out a bit better by marking them using the 'samples to mark'. Paste the 
-  following into this field **gsm2413241,gsm2413246,gsm2413239,gsm2413243,gsm2413242,gsm2413245,gsm2413240,
-  gsm2413244:#222222;** and press **Submit**.
+4. Click on the gear icon in the top-left corner of the graph. Under the 'Extra' section, find **Sample paths**.
+5. Paste the following into the text field and press **redraw plot**.
+```
+gsm2413241,gsm2413246:#eeeeee;gsm2413239,gsm2413243:#eeeeee;gsm2413242,gsm2413245:#eeeeee;gsm2413240,gsm2413244:#eeeeee;
+```
+
+
+6. Alternatively, lines can be drawn by simply clicking on two data points while pressing **Control** key. 
+
 
 We have now seen the very basic usage of signature scores. 
 
@@ -656,8 +660,7 @@ In the signature plot, we can again see that the MES cell lines are mingled with
 In the next analysis, we will make use of a single cell dataset that describes the human adrenal medulla, a 
 tissue that can generate neuroblasts. Single cell data is frequently depicted in two-dimensional representations 
 such as UMAP or tSNE. Both are dimensionality reduction algorithms that try to group cells together based on 
-resemblance of their expression profiles. Within R2, such representations are available in the **'Sample Maps'** which  
-can be accessed from the main page in the left set of menu items. 
+resemblance of their expression profiles. Within R2, such representations are available in the **'Sample Maps'** which can be accessed from the main page in the left set of menu items. 
 
 1. On the main page, click on the **Sample maps (UMAP/tSNE)** and subsequently select the following resource: '**Normal 
   Adrenal 
