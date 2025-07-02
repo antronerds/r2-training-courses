@@ -13,9 +13,9 @@ R2 is a publicly accessible web-based program (`http://r2.amc.nl <http://r2.amc.
 Overview of resources
 ---------------------
 
-R2 Offers a variety of resources to help you deepen your understanding of the platform and of genomics research in general. Below, we’ve listed several of these resources:
+R2 offers a variety of resources to help you deepen your understanding of the platform and of genomics research in general. Below, we’ve listed several of these resources:
 
-* In the navigation bar on the left, you can find several courses that are designed to introduce you to basic R2 analysis pipelines. The pipelines consist of multiple coupled analyses to learn how to gain deeper insight into genomic data. We recommend the first course, `Finding causes in Neuroblastoma genomics data <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop2024_day1.html>`_ , that follows the same research line as was performed in a Nature article in 2017.
+* In the navigation bar on the left, you can find several courses that are designed to introduce you to basic R2 analysis pipelines. The pipelines consist of multiple coupled analyses to learn how to gain deeper insight into genomic data. We recommend the Basic Courses, `Molecular Oncology - R2 Practical - Colorectal Cancer<https://r2-training-courses.readthedocs.io/en/latest/Molecular_Oncology_CRC.html>`_ and `Finding causes in Neuroblastoma genomics data <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop2024_day1.html>`_. The additional course material has not been updated with recent changes on the platform's interface.
 
 * You can check out the `Online R2 Tutorial <https://r2-tutorials.readthedocs.io/en/latest/>`_ that provides many smaller step-by-step guides of R2 analyses.
 
@@ -33,22 +33,19 @@ Copyright (c) 2006-2025 Jan Koster
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: Basics Courses
-
-   R2IntroductionWorkshop2024_day1
-   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
-
-.. toctree::
-   :maxdepth: 2
-   :numbered: 3
-   :caption: Additional Course Material
+   :caption: Basics Courses (Recommended
 
    Molecular_Oncology_CRC
-   Microarray_analysis_Using_Tumor_Colon_datasets
+   R2IntroductionWorkshop2024_day1
+
 
 .. toctree::
    :maxdepth: 2
    :numbered: 3
-   :caption: Advanced Courses
+   :caption: Additional Course Material (NOT UP TO DATE)
 
    Butterfly_interim_course_R2_day2
+   RNA_seq_data_analysis_Using_Rheumatoid_Arthritis_data
+   Microarray_analysis_Using_Tumor_Colon_datasets
+
+
