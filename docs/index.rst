@@ -23,7 +23,7 @@ R2 offers a variety of resources to help you deepen your understanding of the pl
 
 * Past workshop material can be found on this `R2 Introduction Workshop page <https://r2-training-courses.readthedocs.io/en/latest/R2IntroductionWorkshop.html>`_
 
-If you would like to use R2 for your research in the future, then just visit `http://r2.amc.nl`_ and get started. You can `contact the R2 Support Team <https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=about_contact>`_ with questions about your own research and public or private data set uploads (with public or restricted access).
+If you would like to use R2 for your research in the future, then just visit `https://r2.amc.nl <https://r2.amc.nl>`_ and get started. You can `contact the R2 Support Team <https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=about_contact>`_ with questions about your own research and public or private data set uploads (with public or restricted access).
 
 If you encounter discrepancies between the instructions in this course and the R2 platform options, please `let our R2 Support Team know <https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=about_contact>`_. We continuously enhance the platform by adding new functionalities and refining existing features. As a result, our documentation and course instructions may occasionally fall behind.
 We very much appreciate your feedback!
