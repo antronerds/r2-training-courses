@@ -6,7 +6,7 @@ Molecular Oncology - R2 Practical - Colorectal Cancer
 *Use bioinformatics tools to perform data analysis on colorectal cancer omics data sets* 
 
 
-This resource is located online at http://r2platform.com/studentcourse  
+[//]: # (This resource is located online at http://r2platform.com/studentcourse )
  
   
 Introduction
@@ -47,7 +47,6 @@ visualization platform R2")
 
 [**Web-based genomics analysis and
 visualization platform R2**](_static/images/MolOncCRC/R2webplatform.png)
-
 <span class="citation_txt">(Figure source: https://r2.amc.nl)</span>
 
 Today you will use advanced bioinformatics tools to explore, analyze and visualize colorectal cancer data in
@@ -56,16 +55,18 @@ visualization platform R2, a Core Facility of the Amsterdam UMC. R2 provides the
 clinical data sets coupled to a wide variety of clickable bioinformatics tools. Without any coding you will gain
 hands-on research experience with colorectal cancer omics data and bioinformatics tools.
 
-The <button class="course_permalink">grey buttons</button> in this course will bring you to the R2 platform, often with
-pre-set settings such that you can pick up an analysis easily. The <button class="course googleform">green
-buttons</button> in this document will open up a Google form, one per section, with which you can submit your answers.
+[//]: # (The <button class="course_permalink">grey buttons</button> in this course will bring you to the R2 platform, often with
+pre-set settings such that you can pick up an analysis easily.)
 
-We would like to ask you to fill in the evaluation form about this R2 course during or at the end of the course. To open
-the form, click the button below:
+[//]: # (The <button class="course googleform">green buttons</button> in this document will open up a Google form, one per section, with which you can submit your answers.)
+The <button class="course googleform">green buttons</button> in this document will open up a Google form, one per section, with which you can submit answers.
 
-<button class="course googleform" onclick="window.open('https://forms.gle/kfiE5vQiDmhJVS1f8','_blank');" type="button">Open the Evaluation form</button>
-<br>
-<br>
+[//]: # (We would like to ask you to fill in the evaluation form about this R2 course during or at the end of the course. To open
+the form, click the button below:)
+
+[//]: # (<button class="course googleform" onclick="window.open\("https://forms.gle/kfiE5vQiDmhJVS1f8','_blank"\);" type="button">Open the Evaluation form</button><br><br>)
+[//]: # (!!!! remove the \ in the previous window open link !!!!)
+
 
 ## Normal colonic epithelium vs adenomatous tissue: a first impression of genomic data
 
@@ -77,8 +78,7 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
 
 ![](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg)
 
-  [**Normal tissue, precancerous adenomas and cancer growth**](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg) 
-
+  [**Normal tissue, precancerous adenomas and cancer growth**](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg)
 <span class="citation_txt">(Figure source: https://doi.org/10.1126/science.1235122)</span>
 
 
@@ -88,10 +88,10 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
 
 ### Filtering and exploring
 
-* Open a Chrome browser and use your R2 account to sign in in the collaborator's server of the R2 platform: <a href="https://hgserver2.amc.nl/" target="_blank">https://hgserver2.amc.nl</a> <br>
+* Open a Chrome browser and use your R2 account to sign in in the collaborator's server of the R2 platform: <a href="https://hgserver2.amc.nl/" target="_blank">https://hgserver2.amc.nl (also accessible via https://r2platform.com/hg2) </a> <br>
 
-Generally speaking, the R2 platform is easily accessible by the link <a href="https://r2.amc.nl" 
-target="_blank">https://r2.amc.nl</a>, but today we work from our collaborator's server hgserver2. 
+Generally speaking, the R2 platform is easily accessible by the links <a href="https://r2.amc.nl" 
+target="_blank">https://r2.amc.nl | r2platform.com</a>, but today we work from our collaborator's server hgserver2. 
 
 You're now on the R2 main page. This genomics analysis and visualization platform contains a wealth of data and
 bioinformatics tools to analyze the datasets. Step by step, researchers are guided through a web of options 
@@ -100,7 +100,7 @@ boxes to develop your analysis of
 choice.<br><br>
 
 Let's follow these steps to get a first look at gene expressions in one of the colon cancer datasets that is hosted in R2, a
-dataset that is called "Mixed Colon - Marra - 64 - MAS5.0 - u133p2".<br>
+dataset that is called _Mixed Colon - Marra - 64 - MAS5.0 - u133p2_.<br>
 Datasets have a structured naming in R2, using the following rules:<br>
 Category - Tissue/ Tumor -  author - number of samples (N) - normalization - chiptype.<br>
 In our case the dataset name tells us that the dataset contains 
@@ -114,7 +114,7 @@ A grid pops up that shows all the datasets that are currently available to you. 
  In the bottom right corner of the grid, you can find the number of rows, i.e. available datasets.
 *  Under the header *Tissue/Tumor* type the keyword **colon** in the white text-field filter, and check the adapted 
    number of rows in the bottom right corner to find out how many data sets R2 is hosting with the keyword colon in its name.
-* Find the RNA expression dataset from *Author* **Marra** and click on the row of the dataset that 
+* Find the RNA expression dataset from *Author* **Marra** (thus type Marra in the Author column search field) and click on the row of the dataset that 
   contains **64** samples (*N*). 
 * In the information panel below the grid, you find more information about this 
   dataset. Quickly glance over the summary of the study. 
@@ -202,7 +202,7 @@ restrict your list of differentially expressed genes between normal tissue and a
 * Now click on the magnifying glass in front of **AXIN2** to obtain a violin plot with the scatter points of the expression value of this gene 
   for each sample in the dataset.<br>
   The plot shows the two groups of the tissue track in violin plots  with the individual sample values showing as scatter on top. If you hover your mouse over 
-  any of the violins, you can see the group statistics. Also note you can hover over the dots in the graph and the tracks to get more information of the individual samples.
+  any of the violins, you can see the group statistics. Also note you can hover over the dots in the graph to get more information of the individual samples.
 * The green bar in the top allows you to easily go to the next or previous gene of your list. Click on the **arrow with 
   MYC** on the right side of the green bar to view this gene's expression in the samples. 
 
@@ -212,11 +212,12 @@ restrict your list of differentially expressed genes between normal tissue and a
 about biological processes, why would this be?**
 
 ______
+ 
 
-The WNT pathway is an important signal transduction cascade that plays an important role in diverse biological 
-processes. The dysregulation of the WNT pathway has been observed in several cancers including colon cancer. 
+### Heatmaps and the WNT pathway
 
-### The WNT pathway
+The WNT pathway is an important signal transduction cascade that plays an important role in diverse biological
+processes. The dysregulation of the WNT pathway has been observed in several cancers including colon cancer.
 
 In the next sections we will regularly be using heatmaps to find subgroups of samples or genes that show 
 similar expression profiles. Heatmaps perform unsupervised hierarchical clustering of samples. The algorithm uses the 
@@ -225,7 +226,7 @@ clusters of samples in the plot based on their (dis)similarity.
 This is combined with the clustering of the genes based on their expression throughout the samples. The heatmap is 
 colored by the z-scores of the samples' gene expression values. Often annotation tracks are shown above a heatmap. 
 Remember that _we can_ see this annotation but that the _heatmap algorithm did not use_ this information to look for 
-subgroups in the data. 
+subgroups in the data, it uses expression values only. 
 
 ![](_static/images/TumorHeterogeneity_HeatmapClustering.png "Example heatmap: finding subgroups in your data")
 
@@ -280,15 +281,14 @@ Immune), CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal), see the fig
 
 ![](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.png "Subtypes in colorectal
 cancer: CMS classification")
-
 [**Subtypes in colorectal cancer: CMS classification**](_static/images/MolOncCRC/CMS_classification_characterization_pmc7511559.png)
 
 <span class="citation_txt">(source: http://dx.doi.org/10.1002/ags3.12362)</span>
 
-The button below brings you to the form in which you can submit your answers for the second section.
+The button below brings you to the form in which you can submit your answers for the next section.
 
 <button class="course googleform" onclick="window.open('https://forms.gle/SnVY3NPnjEeHCFhM9','_blank');"
-type="button">Open the answering form for this section</button>
+type="button">Open the answering form for the next section</button>
 <br>
 <br>
 
@@ -297,8 +297,8 @@ type="button">Open the answering form for this section</button>
 
 An unbiased unsupervised type of clustering analysis is a good starting point to familiarize yourself with a new
 dataset. The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of
-samples and will place cells with similar expression profiles together on a map.<br>
-In R2, these maps can be generated by users with an account. Once a dataset t-SNE has run, it is available to other users as well. This saves 
+samples and will place cells with similar expression profiles together on a map. UMAP is a more recent, faster and often considered better alternative to t-SNE that groups similar cells together while also maintaining an overall sense of how different groups relate to each other. You will find options for both algorithms in R2. <br>
+In R2, these maps can be generated by users with an account. Once a dataset t-SNE or UMAP has run, it is available to other users as well. This saves 
 processing time and costs. <br><br>
 
 We will use a dataset that was adapted from one of the resources of
@@ -315,6 +315,7 @@ Colors of the graph points are not set by default.
 * Find the _Color mode_ dropdown and select **Color by Track**. Now set the 
   _Color track_ dropdown to use the
   **cms_predicted (4 cat)** track, and click **Set colors** to show the changes.
+* Note that you can exclude track subgroups in the legend. E.g. click on the yellow square from the legend to hide the datapoint with that value. Click the legend title to invert the data point selection. Click the boxes of the hidden track value data points to show them again.   
 
 The most important parameter for the t-SNE algorithm is the perplexity value. The perplexity parameter controls 
 the balance between a focus on preserving local details or global structures of the data. When R2 receives the 
@@ -322,8 +323,9 @@ the balance between a focus on preserving local details or global structures of 
 different perplexity values. The resulting maps can be found under the setting 
   _Version_. It is also possible to show all the available perplexity maps for the dataset at the same time. 
 
-* Set *Version* to the value **all**.  
+* Set *Version* to the value **all** and color again by the same track (or try out the coloring by the expression of a gene if you prefer so).  
 
+[//]: # (recoloring might not be necessary anymore)
 
 
 ------  
@@ -348,7 +350,7 @@ Let's see if these CMS subtypes, that cluster separately on the t-SNE map, hold 
 We will use the Guinney dataset: _Tumor Colon (CMS) - Guinney - 3232 - custom - ccrcst1_
 
 * In the left side-menu on the main page, click on Survival (Kaplan-Meier / Cox)
-* In the menu at the center of the page, select a dataset by clicking on **Select a data set**, and find the dataset with *Author* **Guinney** and the amount of samples *N* is **3232**
+* In the menu at the center of the page, select a dataset by clicking on **Select a data set**, and find the dataset of which the amount of samples *N* is **3232** and *Author* **Guinney**
 * Click on the row to read its description in the information box underneath the dataset selection grid and **confirm**
 * Leave *Separate by* at **categorical track (Kaplan-Meier)** and click **Next**
 * Choose *Type of Survival* **overall** and *Track* **cms_final** and click **Next**
@@ -369,12 +371,12 @@ We will use the Guinney dataset: _Tumor Colon (CMS) - Guinney - 3232 - custom - 
 Now we would like to look into colorectal cancer associated mutations and see if they are specific for one of the CMS groups
 * On the main page, select the Guinney dataset if it is not selected in box 2 yet
 * Choose the **relate 2 tracks** analysis to show the different ratios of 
-  mutations per CMS subtype.
+  mutations per CMS subtype and click **Next**.
 * For the *X track* choose **cms_final (5 cat)** and for the *Y track* choose **mutant_braf (3 cat)** mutations.
-* Select the *Graph type* **stacked barplot (%)**  
+* Select the *Graph type* **Stacked bar (%)**  
 *The Guinney dataset contains several datasets put together. To only look at the samples from studies that looked at the 
 mutational aberrations, use the Sample Filter with the setting *Subset Track*, select **mutant_braf (3 cat)** and in the 
-pop-up check the boxes of **0 (776) and 1(87)**. We thus eliminate the samples from this analysis for which it is not known whether they have a BRAF mutation (value nd gets omitted). Click 
+pop-up check the boxes of **0 (776) and 1(87)**, note that the value 0 stands for no and 1 for yes. We thus eliminate the samples from this analysis for which it is not known whether they have a BRAF mutation (value nd gets omitted). Click 
   **Ok** and then **Submit**.
 
 ------  
@@ -414,10 +416,10 @@ This dataset consists of Microsatellite Stable (MSS) tumors and Microsatellite I
 
 #### MSS vs MSI
 
-* Find the dataset **Tumor Colon - Watanabe - 84 - MAS5.0 - u133p2** and read the **Summary** in the information panel underneath the dataset selection grid. 
+* From th emain page, find the dataset **Tumor Colon - Watanabe - 84 - MAS5.0 - u133p2** and read the **Summary** in the information panel underneath the dataset selection grid. 
 * Then **Confirm selection** of the dataset.
 * Use the **Differential expression between two groups** module to generate a list of differentially 
-  expressed genes between **MSI** and **MSS** characterized tumors (*MS_status*). 
+  expressed genes between **MSI** and **MSS** characterized tumors (group by *MS_status*). 
 
 Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine 
 whether these genes indeed are differentially expressed between MSI and MSS tumors and which genes exactly make the difference. 
@@ -445,8 +447,9 @@ also a subgroup could be identified.
 * Scroll down to the Adjustable settings menu and change grouping setting _Track_ into **MS_orientation (5 cat)**. Click **Submit**
 
 Let's visualize the relation between these dataset annotations in another way. 
-* Go back to the main menu and select **relate two tracks** and click **Next**. 
-* Select for the _X track_ the **MS_status (2 cat)** and for the _Y track_ **Orientation (3 cat)** and click **Submit**. 
+* In the Adjustable settings menu, change _Analysis type_ to **track vs track**
+* Select for the _X track_ the **MS_status (2 cat)** and for the _Y track_ **Orientation (3 cat)** 
+* Choose *Graph type* **XY-Honeycomb** *and click **Submit**. 
 
 In the MLH1 expression graph we saw that low gene expression was not equally distributed within the MSI group. 
 * Let's add this layer of information in this plot as well: select *Color mode* **Color by a Gene** and enter **MLH1** 
@@ -496,7 +499,7 @@ One way to find genes that are possibly affected by MLH1 is to look at (inversel
   the filter option for the **Broad 2023 10 c6 oncogenic** gene set. 
 
 
-* On the result page, click on the best correlating gene to plot both genes together, in a two gene view. Inspect the correlation. Can you think of reasons why the gene expression is highly correlated?
+* On the result page, click on the best correlating gene (not MLH1) to plot both genes together, in a two gene view. Inspect the correlation. Can you think of reasons why the gene expression might be highly correlated?
 
 
 * Click on **View Additional Details**, look at the Probeset Genome Location table.
@@ -504,14 +507,14 @@ One way to find genes that are possibly affected by MLH1 is to look at (inversel
 On which chromosomes are both genes located?
 
 
-* Click T-view and zoom out 2 times
+* In the table, click on one of the two T-view links and zoom out 2X with the correct button at the top of the page.
 
 
 ![](_static/images/MolOncCRC/viewadddetails.png "Click TView to go to the Genome Browser")
 
 You arrived at the Genome browser. The Genome Browser allows you to "walk over the genome".
 
-Underneath, the genome locations are annotated with the genes that are located at the specific location. Genes colored in red are read in reverse direction. 
+Underneath, each genome location is annotated with the genes found at that position. Genes colored in red are read in reverse direction. 
 
 ------  
 
@@ -521,26 +524,26 @@ Underneath, the genome locations are annotated with the genes that are located a
 
 ------
 
-The correlating genes result page shows two columns: the positively correlating genes on the left, the negatively 
+The correlating genes result page (still open in the previous tab) shows two columns: the positively correlating genes on the left, the negatively 
 correlated genes on the right. Let's have a closer look at this last group.  
 
-* Go back to your genelist of correlating genes (this should still be open in the previous tab) and scroll down to the Adjustable Settings menu at the bottom of the 
+* On the correlating genes result page, scroll down to the Adjustable Settings menu at the bottom of the 
   page. Adapt the setting here *Corr. r cutoff sign* to only look at the **negatively** correlated genes. 
-* Click on the currently selected gene set so that you can **Clear selection**
+* Click on the currently selected gene set so that you can **Clear selection** and **Confirm**
 * Click **Submit** to update the result page. This might take a while. 
 
 ![](_static/images/MolOncCRC/loading_page.png "Loading Page")
 
-* Click the button on the right side of the page **Chromosome map**.
+* Click the button on the right side of the page: **Chromosome map**.
 
 The over-representation is calculated of genes that negatively correlate with MLH1 expression with respect to all genes 
 present on (an arm of) a chromosome.
 
-* A lot of genes are clearly over-represented on a number of chromosomes, especially chrom 18 with a very low p-value.
+* A lot of genes are clearly over-represented on a number of chromosomes with a very low p-value.
 
 ------  
 
-![](_static/images/R2d2_logo.png)**Which chromosomes show extreme significance in gene overrepresentation?**
+![](_static/images/R2d2_logo.png)**Which chromosomes show extreme significance in gene overrepresentation and on which part of these chromosomes can these genes be found?**
 <br>
 <br>
 
@@ -556,7 +559,7 @@ Now let's see how strongly MLH1 expression is associated with CMS subtypes.
 The R2 platform hosts a variety of dataset types. Not only gene expression datasets but also methylation arrays can 
 be found.
 
-* Go to the main menu and select the dataset **Tumor Colon adenocarcinoma - tcga - 296 - custom - ilmnhm450**
+* Go to the main page and select the dataset **Tumor Colon adenocarcinoma - tcga - 296 - custom - ilmnhm450**
 
 * Create the **View a Gene** plot for **MLH1**
 * Under the triangle of *View additional details* click on the **view all** link.
@@ -569,8 +572,7 @@ hierarchical clustering of the samples is performed. The MLH1 reporters themselv
 sites above that are located at the promotor sites of MLH1 and the gene that we have seen before as strongly 
 correlating in expression. Note, that blue is methylated and yellow is non-methylated.
 
-* Hover with your mouse over the _r2_at_cms_ track to see to which CMS subtype the cluster of hypermethylated samples 
-  belong.  
+* Hover with your mouse over the _r2_at_cms_ track to see to which CMS subtype the cluster of hypermethylated samples mostly belong.  
 
 ------  
 
