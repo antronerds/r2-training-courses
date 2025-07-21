@@ -8,7 +8,7 @@ R2 Training Programme
 Welcome
 -------
 
-R2 is a publicly accessible web-based program (`https://r2.amc.nl <https://r2.amc.nl>`_  |  `https://r2platform.com <https://r2platform.com>`_) allowing biomedical researchers, without bioinformatics training, to integrate clinical and genomics data. To help (bio)medical researchers get started, we offer this one day R2 Introduction Workshop.
+R2 is a publicly accessible web-based program (`https://r2.amc.nl <https://r2.amc.nl>`_  |  `https://r2platform.com <https://r2platform.com>`_) allowing biomedical researchers, without bioinformatics training, to integrate clinical and genomics data. To help (bio)medical researchers get started, R2 offers a variety of online educational resources that you can find below.
 
 Overview of resources
 ---------------------
