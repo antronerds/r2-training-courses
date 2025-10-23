@@ -13,7 +13,7 @@ The green buttons in this document will open up a Google form, one per section, 
 
 ### 3.2 Selecting a dataset
 
-Open a Chrome browser and use your R2 account to sign in in the collaborator’s server of the R2 platform: https://hgserver2.amc.nl (also accessible via https://r2platform.com/hg2)
+Open a Chrome browser and use your R2 account to sign in in the collaborator’s server of the R2 platform: https://hgserver1.amc.nl (also accessible via https://r2platform.com/hg2)
 Generally speaking, the R2 platform is easily accessible by the links https://r2.amc.nl | r2platform.com, but today we work from our collaborator’s server hgserver2.
 
 You are now on the R2 main page. Step by step, users are guided through a web of options for data analysis. R2’s main page shows this principle: follow the 4 boxes to develop your analysis of choice. Let’s follow these steps to get a first look at gene expressions in one of the vitiligo datasets
@@ -29,11 +29,12 @@ A grid pops up that shows all the datasets that are currently available to you. 
 
 Datasets have a structured naming in R2, using the following rules: Category - Tissue/ Tumor - author - number of samples (N) - normalization - chiptype. When you click on a specific dataset, in the box below you will find a description of that dataset, including a link to Pubmed (if available). 
 We will start analyzing the Natarajan dataset.
-The grid tells us that this dataset (of which Natarajan is author) contains 30 samples (per patient 1 Lesional (vitiligo spot) and 1 non-lesional (normal skin vitiligo patient) sample), and was analyzed by bulk sequencing of RNA [Material says DNA but this is not correct?] .
-•	Select any of the two **Natarajan** datasets and click on **Confirm selection**.[it looks like these two are identical is that ok?]
+The grid tells us that this dataset (of which Natarajan is author) contains 30 samples (per patient 1 Lesional (vitiligo spot) and 1 non-lesional (normal skin vitiligo patient) sample), and was analyzed by bulk sequencing of RNA. 
+•	Select any of the two **Natarajan** datasets and click on **Confirm selection**, 
 In Box 2 you will now see this dataset. We can now use this dataset for further analysis.
 
 ## 3.3 Pathogenesis of vitiligo
+
 As you know from the lectures, vitiligo is an cutaneous autoimmune disease in which the pigment-producing melanocytes are eliminated, resulting in patches of depigmented white spots. The pathogenesis of vitiligo is multifactorial in which genetic factors, environmental triggers (i.e. chemical compounds), oxidative stress, and autoimmune mechanisms play a part on the disease development. Figure 1 shows a schematic picture of lesional (left side) and non-lesional (right side) vitiligo skin.!
 
 
@@ -68,16 +69,115 @@ You can also quickly look into other genes. For example DCT (Tyrosine-related pr
 
 [**Figure 2: violin plot of DCT (TRP2) expression in L and NL tissue.**](_static/images/vitiligo/vitiligo_DCT_r2.png )
 
-If you go back to the tab containing the gene-list generated for Question 2, you can see on the right side of the screen several options to further explore the differentially expressed genes between lesional and non-lesional vitiligo tissue (Figure 1). For example there is already a mini-ontology analysis, but you can also perform GO-analysis  or Gene set analysis yourself, or make a heatmap of the differentially expressed genes. 
-Heatmaps (hot(up)/cold(down)) are commonly used to visualize RNA-Seq results. In RNA-seq analysis, heatmaps visualize large, complex datasets of gene expression levels, showing patterns of high and low expression across samples using a color gradient. They typically feature samples (columns) and genes (rows) and often incorporate hierarchical clustering, which groups together genes or samples with similar expression patterns, making it easier to identify biological similarities and differences.
-•	To generate a heatmap of all 1596 genes, click Haetmap(zscore) from the list op options presented on the right oy your screen.
-It is also possible to generate a heatmap of a smaller group of differentially expressed genes. For example by changing (in the Adjustable settings window) the **P-value cutoff**, or by limiting the **Max number of results**.
+If you go back to the tab containing the gene-list generated for Question 2, you can see on the right side of the screen several options to further explore the differentially expressed genes between lesional and non-lesional vitiligo tissue. For example there is already a mini-ontology analysis, but you can also perform GO-analysis  or Gene set analysis yourself, or make a heatmap of the differentially expressed genes.   
+Heatmaps (hot(up)/cold(down)) are commonly used to visualize RNA-Seq results. In RNA-seq analysis, heatmaps visualize large, complex datasets of gene expression levels, showing patterns of high and low expression across samples using a color gradient. They typically feature samples (columns) and genes (rows) and often incorporate hierarchical clustering, which groups together genes or samples with similar expression patterns, making it easier to identify biological similarities and differences.  
 
 
-•	In the adjustable settings screen set **Max number of results** to 100 and click **submit**.
+ - To generate a heatmap of all 1390 genes, click **Haetmap(zscore)** from the list options presented on the right on your screen.  
+
+It is also possible to generate a heatmap of a smaller group of differentially expressed genes. For example by changing (in the Adjustable settings window) the **P-value cutoff**, or by limiting the **Max number of results**.  
+
+
+ - In the adjustable settings screen set **Max number of results** to 100 and click **submit**. And click gain on the **Heatmap(zscore)**. This generates the following heatmap (Figure 3).  
 
 
 
 ![](_static/images/vitiligo/vitiligo_heatmap.png "100 genes")
 
 [**Figure 3: Figure 3: heatmap of the 100 most differentially expressed genes between lesional and non-lesional tissue**](_static/images/vitiligo/vitiligo.png )
+
+
+The tissue samples lesional (red) and non-lesional (green) nicely cluster together. This shows that L and NL vitiligo RNAseq samples can be identified based on gene expression.  
+
+
+ • Hovering over the heatmap reveals gene-names.
+
+ • You can also look at the entire gene list shown in the heatmap by clicking on the **Sort order Listing** below the heatmap (click black triangle).  
+
+## 1.4.1 Analyzing differential pathway expression between groups using the KEGG pathway finder  
+
+
+
+ - Another way to look at differential expression is looking at pathways of biological processes other than looking for individual genes.
+ 
+Let’s look which biological processes are differentially regulated between lesional and non-lesional samples.  
+
+ - Go to the **main menu** again (click **Go to: R2 Main** in the left corner) and **From box 3** select **KEGG PathwayFinder by Groups**. Click **Next**.
+ - In the adjustable setting window at **Track** select **tissue(2cat)**. Click **submit**. Which will generate this table:  
+
+
+![](_static/images/vitiligo/KEGG_list.png "KEGG list")
+
+[**table 1: Differentially regulated pathways between lesional and non-lesional vitiligo tissue, identified by KEGG PathwayFinder!**](_static/images/vitiligo/KEGG_list.png )
+
+
+By clicking on the **red R** from a biological process you can find the genes from this pathway that were differentially regulated between L and NL tissue. If you subsequently click on Heatmap(zscore) a heatmap for these genes will be generated. E.g. the heatmap for Nucleotide_excision_repair is shown in figure 4 below.  
+
+![](_static/images/vitiligo/bioproces_heatmap.png "heatmap")
+
+[**Figure 5: Performing KEGG pathway analysis between lesional and non-lesional tissue reveals significant differential regulation of Nucleotide_excision_repair in lesional tissue, illustrated in this heatmap.**](_static/images/vitiligo/bioproces_heatmap.png)
+
+
+
+**Question 5**: Does the differential regulation of processes like *Nucleotide_excision_repair* and *Homologous recombination* (Table 1) make sense in the context of vitiligo? Explain your answer. 
+
+
+## 1.4.2 Finding genes that correlate with your gene of interest.  
+
+
+
+If you are interest in a specific gene (Gene of interest, GOI), and you want to know what the potential biological function of this gene is, you can use the option **KEGG pathwayFinder by gene correlation**.  
+
+- select this option from box 3 and click **Next**  
+- Let’s look for functions for **MLANA** (type and select this gene from the **Gene / reporter window**.  
+- Select genes that correlate (abbreviated by **r/R**) positively with this gene (in Corr R cutoff sign” select **positive**). Click **submit**.  
+- 
+From the table below you can see that genes correlating with MLANA expression do play a role in melanogenesis (among others). If you click on the red R you can see the correlating genes and then click on individual genes to see the correlation with MLANA. This *KEGG pathwayFinder by gene correlation* can thus help you better understand the biological function of your GOI.  
+
+![](_static/images/vitiligo/KEGG_list2.png "KEGG")
+
+[**Table 2:  biological pathways analysis of genes that positively correlate with MLANA**](_static/images/vitiligo/KEGG_list2.png)
+
+
+
+## 1.5 Analyze differential expression using *Gene sets*
+
+Other than looking at the most differentially regulated top genes in a specific tissue, it is also possible to specifically search for a biological process or pathway you are interested in. This can be done by looking at **genesets**.   
+
+
+- From the main menu select again **differential expression between groups** (**tissue (2 cat)**). And click **Next**.
+- In the adjustable settings window click on **select gene set** and type melanogenesis in the search field and click on the **magnifying glass** icon.
+- From the **KEGG pathway** select after a few clicks the biological process **Melanogenesis**. The 100 in the count column indicates the number of genes in this specific genelist.
+- Click **Confirm selection** and then **submit**.  
+You can see that 16 of the 100 genes are significantly differentially expressed between the two groups. Again you can look at individual genes (via the **view** column). But you can also visualize all 16 genes in a single graph:  
+- click on the **heatmap(zscore)** button on the right of your screen to generate a heatmap  
+- or generate a volcano plot from the **adjustable settings** window select at **display** **Volcano plot** from the drop downlist. And click **submit**. This generates a volcano plot in which genes are displayed based on their upregulation in lesional (L) or non-lesional (NL) tissue, as well as their p-value. Hoover over the dots to identify the genes. With respect to the volcano plot:  
+
+**Question 5**: Which gene from the melanogenesis pathway is most significantly down in Lesional tissue?  
+
+**Question 6**: And which gene from the melanogenesis pathway is most strongly expressed in NL tissue?  
+
+As expected, pathway related to melanocytes are downregulated (or absent) in lesional vitiligo.  
+
+## 1.5.1 Analyzing T-cell presence in vitiligo using a Gene set
+
+From the lectures you have learned that vitiligo is an auto-immune disease. 
+
+**Question 7**: Do you expect to detect immune cells in vitiligo tissue using RNAseq? And if so, what kind of cells would you look for and in which tissue type (L / NL)?
+
+Although the Natarajan dataset is a bulk RNAseq dataset we can use a gene set to get an idea whether e.g. T-cells are present in these vitiligo samples.
+
+- From the R2 main page again select **Differential expression between two groups** in box 3, group by **tissue (2 cat)**, and click **Next**.  
+- In the adjustable settings window new select at **display** select **Volcano plot** from the drop downlist. And click **submit**. This generates a volcano plot in which genes are displayed based on their upregulation in lesional (L) or non-lesional (NL) tissue, as well as their p-value.  
+
+
+
+
+
+
+
+
+
+
+
+
