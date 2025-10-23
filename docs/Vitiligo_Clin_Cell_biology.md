@@ -84,7 +84,7 @@ It is also possible to generate a heatmap of a smaller group of differentially e
 
 ![](_static/images/vitiligo/vitiligo_heatmap.png "100 genes")
 
-[**Figure 3: Figure 3: heatmap of the 100 most differentially expressed genes between lesional and non-lesional tissue**](_static/images/vitiligo/vitiligo.png )
+[**Figure 3: Figure 3: heatmap of the 100 most differentially expressed genes between lesional and non-lesional tissue**](_static/images/vitiligo/vitiligo_heatmap.png )
 
 
 The tissue samples lesional (red) and non-lesional (green) nicely cluster together. This shows that L and NL vitiligo RNAseq samples can be identified based on gene expression.  
@@ -169,6 +169,218 @@ Although the Natarajan dataset is a bulk RNAseq dataset we can use a gene set to
 
 - From the R2 main page again select **Differential expression between two groups** in box 3, group by **tissue (2 cat)**, and click **Next**.  
 - In the adjustable settings window new select at **display** select **Volcano plot** from the drop downlist. And click **submit**. This generates a volcano plot in which genes are displayed based on their upregulation in lesional (L) or non-lesional (NL) tissue, as well as their p-value.  
+
+
+We are now going to use this Volcano plot to see if we can detect T-cell.
+
+- Click on the little **wheel icon**, left on top of the volcano plot. 
+- In the pop-up window click on **select gene set** and type **T cell** in the search field and click on the **magnifying glass** icon.  
+- From the **Bindea immune signatures** select **T-cell**, and **Confirm selection**.  
+ Choose a color (e.g. red) for this geneset at the **Emphasize color** option, and click **Redraw plot** (see Figure 5 for the result).  
+
+
+![](_static/images/vitiligo/volcano_plot.png "volcano")
+
+[**Figure 5: Volcano plot of genes differentially expressed between lesional and non-lesional vitiligo skin. Genes of the T cell geneset (that can be detected on this set) are indicated in red**](_static/images/vitiligo/volcano_plot.png)
+
+
+
+## 1.6 Analyzing differential expression using *Gene signatures*
+
+Let’s try to analyze the presence of T-cells in a more quantitative manner.
+For this were are going to analyze a **gene signature** (e.g. T-cells signature), and then explore if this gene-signature is induced in vitiligo samples.
+
+
+Let’s try to analyze the presence of T-cells in a more quantitative manner.
+For this were are going to analyze a **gene signature** (e.g. T-cells signature), and then explore if this gene-signature is induced in vitiligo samples.
+
+A signature (*see chapter 12 from the R2 Tutorial handbook*) can be defined as a collection of genes that are defined on a particular basis. This can e.g. be the presence within a gene-ontology class (e.g. melanogenesis), or a functional pathway signature (e.g. Jak-Stat signaling). Such a collection of genes may have predictive power for the activity of a process. By generating a gene-signature the behavior of all the signature genes are expressed in a single value, a so-called signature score, defined as the average zscore of a zscore transformed dataset (the standard way of visualizing a heatmap). In R2, such scores are automatically generated when one generates heatmaps via the “view a geneset” function or in case the dataset is very large a gene signature can be created directly using “Create Gene set signature”.
+
+We are going to create a Geneset signature for T-cells to analyze there presence in the vitiligo samples.
+
+- In Box 3 select **View geneset (heatmap)** and click **Next**.  
+- In the Adjustable settings window search at **Gene set** for the **T_cell** and select from the KEGG pathways the geneset **T_cell_receptor_signalling_pathway**, consisting of 104 genes. Click **confirm selection**.  
+- Click **submit** (Adjustable settings window).  
+- Below the heatmap you will find the *zscore* of all T-cell genes for each sample.  
+- Store the generated gene signature (click **store** under **Store(R2)**. In the next window click **create track** (storing as a temporary track (24hrs) is fine).   
+Next we can further analyze this T-cell signature. From immunohistochemical (IHC) analysis we know that active vitiligo lesion have the most infiltration of T-cells at the perilesional area, where melanocytes are still present. Let’s check if we can find a difference between 
+- From box 3 select **Relate 2 tracks** and click **Next**.  
+- Select in the next window for the *X track* the **t_cell_receptor_signaling_pathway (#) track**, and as a *Y-track*: **tissue (2cat)**.  A **#** track indicates a numerical track, a **cat** indicates a categorial track.  
+- For Graph type click e.g. **Violin**, and **Submit** (you can also color by track and add scatter if wanted). This will generate a violin graph in which the signature is statistically compared (ANOVA) between Lesional and NL tissue.  
+- 
+**Question 9**: We have now in a quantitative manner analyzed the presence of T-cell in this bulk RNAseq dataset using a representative gene-signature. What is you conclusion about results. Can you think of reason that explain this result?
+
+In a similar way as we did above (creating and using a gene signature) you can e.g. analyze the  presence of melanocytes (using the e.g. **Melanogenesis** geneset) in lesional and nonlesional samples from this dataset using.  
+
+## 1.7 Looking for T-cells in the vitiligo dataset from Passeron
+
+
+In this study (PMID: 26322948) 10 active (progression of disease within last 3 months), non-segmental vitiligo patients were included, from which a non-lesional (NL), peri-lesional (PL) and a Lesional (L) biopsy were taken for RNAseq analysis. Also, 10 biopsies were taken from 10 healthy volunteers.
+
+- From **Box 2** from the main R2 page select the **Passeron** vitiligo dataset.  
+If you are interested to explore the potential biological role for a particular gene of interest (**GOI**), rather than the top most differentially genes, this can be done in many ways.   
+Let’s choose as our GOI *Protein Tyrosine Phosphatase Receptor Type C (PTPRC)*, also known as Leukocyte-common antigen (LCA) or CD45, a protein present on nearly all hematopoietic cells. The presence of CD45 will tell us if immune cells are present in the vitiligo samples. First check the expression of PTPRC in the different samples groups:
+- Select **View a gene in groups** in Box 3, click **Next**.  
+- In the next window at **Gene / reporter** type and select PTPRC.  
+- Select the **track** samples_source_name_ch1(4cat). As a graph type choose e.g. a violin plot, and add the datapoints: **scatter**: **true*, **Color by track** and click **submit**. The resulting graph is shown in figure 6.
+
+
+![](_static/images/vitiligo/Violin_CD45.png "violin")
+
+[**Figure 6: Violin plot from the expression of the immune cell marker CD45 in the four indicated sample types from the Passeron vitiligo bulk RNAseq dataset**](_static/images/vitiligo/Violin_CD45.png)
+
+
+
+From the graph (Figure 6) we can conclude that there is a significant different expression of our gene of interest PTPRC (CD45) among the different samples types. For a detailed statistical analysis between the groups click on **View additional analysis** under the graph/ANOVA to see the table. 
+
+**Question 10**: given the data in the table, between which sample groups is there a significant different (indicated in red) expression of PTPRC (CD45)?
+
+As PTPRC (CD45) is a marker for immune cell in general, it would be interesting to _look in which hematopoietic cell type_ it is enriched in this dataset. One way to do this is to look for genes that correlate with our GOI.
+
+- Go to back to the **R2 main** page.
+- Select in box 3: **Find correlated genes with a single Gene**, click **Next**.  
+- Type / select at **Gene / reporter** *PTPRC*.  
+- Choose only positive correlating (r) genes at Corr. r cutoff sign, as we want to find genes co-expressed with CD45, and click **Submit**.  
+
+
+
+Now we have a genelist (695 genes) of genes that correlate with our GOI. We can now further analyze this list of genes by clicking on **Gene set analysis** (the grey bar in the right of your screen).
+
+- clicking on **Gene set analysis**  
+- In the next window choose **KEGG pathways** and click **Next**.  
+
+**Question 11**: which immune cell types do you find in this list?  
+(You can visualize a KEGG gene set by clicking on the blue **H** next to a specific geneset).
+Now generate a gene signature (as you did in 1.6) for one of the KEGG gene sets identified in question 11 (click **store** under **Store(R2)**. 
+Use **relate 2 tracks**  in box 3, to find out if you can confirm increased expression of your immune geneset in vitiligo tissue:
+
+- use your gene signature as a **X-track**, and as **Y track** sample_source_name_ch1. Choose for example a Violin graph type and click **submit**.  
+
+**Question 12**: Click the **View additional details** under the graph. Do you find a significant increased expression of the gene signature in vitiligo?  
+
+
+## 1.8 Studying vitiligo on a cellular level using single-cell RNAseq
+
+Above we used gene signatures to verify whether there could be **T-cells** present in the bulk RNAseq samples. A more specific way to do this is to analyze a vitiligo tissue samples using single-cell RNAseq.
+
+Single-cell transcriptomics examines the gene expression level of individual cells in a given population by measuring the RNA levels in individual cells isolated from a tumor or tissue. Single-cell transcriptomics therefore not only makes it possible analyze the presence of different cell types, but also to unravel heterogeneous cell populations, reconstruct cellular developmental pathways, and model transcriptional dynamics — all previously masked in bulk RNA sequencing.
+
+There are two vitiligo single-cell R2 RNAseq (scRNAseq) datasets present in R2 (the **Chen, and the Gellatly** dataset). For this training exercise we will only use the scRNAseq dataset from Gellatly et al. This datasets has analyzed gene expression in cells isolated by suction blister biopsies from healthy controls, and from non-lesional and lesional locations from vitiligo patients. Form these samples, 32405 individually cells were sequenced.
+
+
+![](_static/images/vitiligo/sample_preparation.png "lesions")
+
+[**Figure 7: Sample preparation of the Gellatly scRNAseq dataset which analyses gene expression in cells isolated by suction blister biopsies from healthy controls, and from non-lesional and lesional locations from vitiligo patients**](_static/images/vitiligo/sample_preparation.png)
+
+
+R2 offers several machine learning dimensionality reduction algorithms that are well suited for the reduction of high dimensional datasets, such as generated by scRNAseq,  into just 2 or 3 dimensions. Samples or cells that have similar expression profiles in a dataset are located closely together on the 2D or 3D map, which enables the user to find clusters of similar cells/samples. One such clustering method that is popular in biomedical research is the so called t-SNE algorithm. t-SNE stands for t-Distributed Stochastic Neighbor Embedding. Another algorithm with similar properties that is UMAP (Uniform Manifold Approximation and Projection). (See chapter 16 in the R2 turorial book for more info).
+
+Let’s see what celltypes can be identified in suction blister biopsies from vitiligo patients.
+
+- Click on Sample maps (UMAP/tSNE) in the left menu on the main page.  
+- seach for vitiligo (in **dataset class window**). Select the **Gellatly** dataset.  
+You can now see the clustering of all 32405 individual cells based on expression. Now visualize the different celltypes:  
+- go to **color settings** and select **color by track**. And next select the track **celltype (5 cat)**. Click **set colors**. This will generate the following tSNE plot:  
+
+
+![](_static/images/vitiligo/single_cell_tsne.png "tsne")
+
+[**Figure 8: tSNE map of all the 32405 cells analyzed colored by the track celltypes. dc: dendritic cells, Krt: keratinocytes, Mac: macrophages, Mel: melanocytes, Tc: T-cells**](_static/images/vitiligo/single_cell_tsne.png)
+
+From this figure we can clearly see that immune cells are present in this dataset. In a similar way you can also color the cells using the tracks of **disease (2cat)**, or cluster (10 cat) which are the 10 cell clusters identified in the original article. It is also possible to look at individual genes. If you select **color by gene** and choose for **Gene / reporter** PTPRC (CD45) you can see the expression in the tSNE plot.
+
+- Let’s check if there are more immune cells present in vitiligo as you would expect.**- 
+- Go to **Box 2** and select the **Gellatly** vitiligo dataset (**confirm selection**).  
+- In box 3 select **View a gene in groups**, click **Next**.  
+- In the adjustable settings window select the **Gene/reporter** field the general immune cell marker PTPRC (CD45), and by **track**: disease (2cat) or alternatively use skin (3 cat). Choose a bar graph, and Click **submit**.  
+
+**Question 13**: What do you conclude from the resulting bargraph?  
+
+
+Once T-cells have infiltrated the skin, and bind to an HLA molecule presenting a specific peptide (antigen), they get activated and secrete cytolytic enzymes like perforin (PRF1), granzyme b (GZMB ) and interferin gamma (IFNG). Visualize these genes in the tSNE plot to locate activated lymphocytes (T-cells) and get an idea of the proportion activated T-cells in this dataset.
+* Select the Gellatly tSNE plot again as you did above.
+*  At the **color settings** menu choose **color by a gene** and analyze the expression of IFNG, PRF1 and GZMB (Gene / reporter window). Change the **dotsize** (left menu) to 1,25 to better visualize the positive cells.  
+
+**Question 14**: What do you conclude from the result?  
+
+**Question 15**: And how would you explore (using this dataset) if there are more of these activated T-cell in vitiligo?  
+
+
+## 1.9 Melanoma
+
+
+In the last part of this training course we switch to a melanoma dataset. If you look for melanoma datasets in R2 (box 2, from R2 main page) there are both high quality scRNAseq (author Regev) and bulk RNAseq datasets (TCGA). In this section we will use the bulk RNAseq dataset from The Cancer Genome Atlas Network (TCGA). This is a large integrative analysis of cutaneous melanomas (331 patients). This genome-wide analysis classified (Figure 9) the patients both at the genomic level (4 categories: mutant BRAF, RAS, NF1, or wt), as well as at RNA expression (3 clusters: Immune, Keratin, and MITF-low), and also contains a high level of additional information (annotations, that are available as tracks).
+
+
+
+![](_static/images/vitiligo/Graph_abstract.png "abstract")
+
+[**Figure 9:  Graphical abstract from The Cancer Genome Atlas Network (TCGA) analysis of cutaneous melanomas 331 patients.**](_static/images/vitiligo/Graph_abstract.png)
+<span class="citation_txt">(Figure source:https://doi.org/10.1016/j.cell.2015.05.044 )</span>
+
+
+
+
+Let’s explore the possible annotation linked to the samples of this dataset. 
+- Select the TCGA dataset with 375 samples (N) in box 2 from the R2 main page.  
+As an example we’re going to **look at the checkpoint protein PD-L1** (officially knowns as CD274) as our GOI. 
+- In box 3 select: **view a gene in groups** Click **Next**.   
+- In the next window (adj. settings) type and select CD274 (PD-L1) in the **Gene / Reporter** field.   
+- Now look at all the annotation present via the field **Track** from which you can see a large dropdown list. Among the many options it is possible to look at primary versus metastatic melanoma samples, test if your GOI is associated with the mutational subtypes, or look at the association of your GOI with the lymphocyte score (the amount and density of infiltrated immune cells in a tumor). For now we will select the Track **f1_rnaseq-cluster_consenhier (4 cat)**. This track indicates the identified RNA clusters. Click **submit**.   
+- 
+**Question 16**: Can you think of an explanation (mechanism) why PD-L1 is most highly expression in tumors of the immune cell cluster?  
+
+
+![](_static/images/vitiligo/violin_skin.png "violin skin")
+
+[**Figure 10:  PD-L1 expression in the different RNA clusters identified among the 375 tumor samples: immune, keratin and MITF-low. ND, not-determined**](_static/images/vitiligo/violin_skin.png)
+
+
+At section 1.8 we analyzed activated T-cells in vitiligo. Now we are going to do this in melanoma. Activated T-cells (upon antigen binding) secrete among other proteins, Interferon-gamma (IFNG). Now let’s analyze this the entire IFNg signalling pathway and test if this can be a predictor of survival.
+
+- So let’s look at this gene set, go to the main R2 page, and select **view geneset (Heatmap)** in **box 3**. Click **Next**.  
+
+- In the next window click on **select gene set**, and type **interferon** in the search field. Click the **magnifying glass**.  
+- Select Hallmark_Interferon_gamma_response (200 genes) from the Broad 2023 collection and **confirm selection**. Click **Submit**.  
+
+
+In the Track Display Selection menu underneath the heatmap select the track **f1_rnaseq-cluster_consenhier**, and click **Submit**. This will show the selected track on top of the heatmap. Below the heatmap the signature score is displayed.  
+
+![](_static/images/vitiligo/signscore_heatmap.png "heatmap")
+
+[**Figure 11: , Heatmap of the Hallmark_Interferon_gamma_response (200 genes) from the Broad 2023 collection. On top the heatmap the RNA cluster are shown. Below, the signature score!**](_static/images/vitiligo/signscore_heatmap.png)
+
+**Question 17**: In which RNA cluster do you see the highest expression of the Hallmark_Interferon_gamma_response genesignature? (see the legends of the RNA clusters on the right of your screen.
+
+- Store the generated genesignature: click on **store** under Store(R2) in the table underneath the heatmap. And click **create track**.  
+Now we can look of this IFNG signature is predictive of survival.  
+
+- Go to the **R2 main page** again and select **Survival (Kaplan-Meier/Cox)** from the left menu.   
+
+- Select at **Separate by** **a numerical track** (your saved track is a numerical track. Numerical tracks are indicated in R2 by a ‘X’), and click **next**.   
+- In the next window  settings) select the signature track that you just generated (Hallmark_Interferon_gamma_response) from the dropdown list, and select at Type of survival **overall**. Click **Next**.  
+- 
+**Question 18**: What is you conclusion from this survival graph?  
+
+You have now reached the end of this training course, learning some basic skills what kind of analysis you can do with R2. We have only covered a fraction of what is possible with R2. If you want to learn more about this platform the tutorial book on the main page, of any of the other training courses would be a great next step.  
+
+
+**Final Question 19**: Is there an R2 topic or issue that you encountered during this course that should be discussed on the Q&A lecture on Wednesday November 5th?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
