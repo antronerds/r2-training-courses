@@ -46,12 +46,12 @@ and combat cancer.<br>
 visualization platform R2")
 
 [**Web-based genomics analysis and
-visualization platform R2**](_static/images/MolOncCRC/R2webplatform.png)
+visualization platform R2**](_static/images/MolOncCRC/R2webplatform.png)  
 <span class="citation_txt">(Figure source: https://r2.amc.nl)</span>
 
 Today you will use advanced bioinformatics tools to explore, analyze and visualize colorectal cancer data in
 search for a deeper understanding. You will use the freely available and web-based genomics analysis and 
-visualization platform R2, a Core Facility of the Amsterdam UMC. R2 provides the user with many experimental and 
+visualization platform R2, that is developed at Amsterdam UMC and widely adopted by researchers worldwide. R2 provides the user with many experimental and 
 clinical data sets coupled to a wide variety of clickable bioinformatics tools. Without any coding you will gain
 hands-on research experience with colorectal cancer omics data and bioinformatics tools.
 
@@ -78,7 +78,7 @@ differences in gene expressions between normal colonic mucosa and colorectal ade
 
 ![](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg)
 
-  [**Normal tissue, precancerous adenomas and cancer growth**](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg)
+  [**Normal tissue, precancerous adenomas and cancer growth**](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg)  
 <span class="citation_txt">(Figure source: https://doi.org/10.1126/science.1235122)</span>
 
 
