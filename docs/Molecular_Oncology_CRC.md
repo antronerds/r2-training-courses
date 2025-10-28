@@ -208,7 +208,9 @@ restrict your list of differentially expressed genes between normal tissue and a
 
 ------
 
-![](_static/images/R2d2_logo.png)**What did you observe about the gene expression of AXIN2 and MYC? When you think 
+![](_static/images/R2d2_logo.png)**We evaluate differential gene expression using both the p-value and the log fold change. What does each of these metrics tell us about the differences in gene expression?**
+
+**What did you observe about the gene expression of AXIN2 and MYC? When you think 
 about biological processes, why would this be?**
 
 ______
