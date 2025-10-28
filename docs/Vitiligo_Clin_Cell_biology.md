@@ -3,37 +3,48 @@ Clinical Cell biology – Vitiligo training course
 
 *Created by Walbert Bakker & R2-team:2025*
 
-## 3.1 Introduction
+## 1.1 Introduction
 In this training course, designed as part of the UvA master course Clinical Cell Biology, you will use advanced bioinformatics tools to explore, analyze and visualize mRNA expression datasets centered around the pigment producing cells (melanocytes). Both datasets from vitiligo and melanoma are part of this R2 introduction course.
 
 You will use the freely available and web-based genomics analysis and visualization platform R2, a Core Facility of the Amsterdam UMC. R2 provides the user with many experimental and clinical data sets coupled to a wide variety of clickable bioinformatics tools. Without any coding you will gain hands-on research experience with vitiligo and melanoma omics data and bioinformatics tools.
 
-The green buttons in this document will open up a Google form, one per section, with which you can submit answers. Information from these forms will be used in the Q&A lecture (responsie college) to discuss questions that you encounter during this online training course.
+The green buttons in this document will open up a Microsoft form, on which you have to submit your answers. Information from these forms will be used in the Q&A lecture (Responsie College) to discuss questions that you encounter during this online training course.
+
+The <button class="course googleform">green button(s)</button> in this document will open up a MS-office form, one per section, with which you can submit answers.
+
+<button class="course googleform" onclick="window.open('https://forms.office.com/pages/responsepage.aspx?id=GqvfaLsRxky-tSjXVphPtvNdTYy3kUdLmfhJOoP29pdUMjhLRjFUMzVGS0hWTTcyRDRMQjZXQURCTC4u&route=shorturl','_blank');"
+type="button">Open the answering form</button>
 
 
-### 3.2 Selecting a dataset
 
-Open a Chrome browser and use your R2 account to sign in in the collaborator’s server of the R2 platform: https://hgserver1.amc.nl (also accessible via https://r2platform.com/hg2)
+
+### 1.2 Selecting a dataset
+
+Open a Chrome / Edge  browser and use your R2 account to sign in in the collaborator’s server of the R2 platform: https://hgserver1.amc.nl (also accessible via https://r2platform.com/hg2)
 Generally speaking, the R2 platform is easily accessible by the links https://r2.amc.nl | r2platform.com, but today we work from our collaborator’s server hgserver2.
 
-You are now on the R2 main page. Step by step, users are guided through a web of options for data analysis. R2’s main page shows this principle: follow the 4 boxes to develop your analysis of choice. Let’s follow these steps to get a first look at gene expressions in one of the vitiligo datasets
-•	Box 1: we leave box 1 as it is, because we will look only at a single datasets in this training course.
+You are now on the R2 main page. Step by step, users are guided through a web of options for data analysis. R2’s main page shows this principle: follow the 4 boxes to develop your analysis of choice. Let’s follow these steps to get a first look at gene expressions in one of the vitiligo datasets.
+
+- Box 1: we leave box 1 as it is, because we will look only at a single datasets in this training course.
+
 Currently the R2 platform houses a vast number of multi-omic datasets. Let’s find out which vitiligo datasets are present.
-•	Box 2: click on the text
-A grid pops up that shows all the datasets that are currently available to you. Each row is a dataset and each column contains a different searchable characteristic of the datasets. In the bottom right corner of the grid, you can find the exact number of rows, i.e. available datasets.
+
+- 	Box 2: click on the text. A grid pops up that shows all the datasets that are currently available to you. Each row is a dataset and each column contains a different searchable characteristic of the datasets. In the bottom right corner of the grid, you can find the exact number of rows, i.e. available datasets.
 
 
 - 	Under the header **Tissue/Tumor** on top of the grid type in the keyword ‘vitiligo’.
 
-- 	**Question 1**: How many, and what kind of vitiligo datasets are currently in R2?
+**Question 1**: How many, and what kind of vitiligo datasets are currently in R2?
 
 Datasets have a structured naming in R2, using the following rules: Category - Tissue/ Tumor - author - number of samples (N) - normalization - chiptype. When you click on a specific dataset, in the box below you will find a description of that dataset, including a link to Pubmed (if available). 
-We will start analyzing the Natarajan dataset.
-The grid tells us that this dataset (of which Natarajan is author) contains 30 samples (per patient 1 Lesional (vitiligo spot) and 1 non-lesional (normal skin vitiligo patient) sample), and was analyzed by bulk sequencing of RNA. 
-•	Select any of the two **Natarajan** datasets and click on **Confirm selection**, 
-In Box 2 you will now see this dataset. We can now use this dataset for further analysis.
 
-## 3.3 Pathogenesis of vitiligo
+We will start analyzing the Natarajan dataset.
+The grid tells us that this dataset (of which Natarajan is author) contains 30 samples (per patient 1 Lesional (vitiligo spot) and 1 non-lesional (normal skin vitiligo patient) sample), and was analyzed by bulk RNA sequencing. 
+
+- Select the *updated* **Natarajan (update)** dataset and click on **Confirm selection**. In Box 2 you will now see this dataset. We can now use this dataset for further analysis.  
+
+
+## 1.3 Pathogenesis of vitiligo
 
 As you know from the lectures, vitiligo is an cutaneous autoimmune disease in which the pigment-producing melanocytes are eliminated, resulting in patches of depigmented white spots. The pathogenesis of vitiligo is multifactorial in which genetic factors, environmental triggers (i.e. chemical compounds), oxidative stress, and autoimmune mechanisms play a part on the disease development. Figure 1 shows a schematic picture of lesional (left side) and non-lesional (right side) vitiligo skin.!
 
@@ -44,25 +55,35 @@ As you know from the lectures, vitiligo is an cutaneous autoimmune disease in wh
 <span class="citation_txt">(Figure source:https://doi.org/10.1146/annurev-immunol-100919-023531)</span>
 
 
-## 3.4 Finding differentially expressed genes.
+## 1.4 Finding differentially expressed genes.
 
 The Natarajan dataset contains samples from lesional and non-lesional vitiligo skin. Let’s look at the differential expression between these two different samples types.
-•	Select in box 3: ‘Differential expression between two groups’. 
-•	Click ‘next’.
-•	In the next window you can select a statistical **test**. Select the ‘T-test’. 
-•	At group by select **Tissue (2 cat(egories)**) and click **Next**.
-•	In the adjustable settings window we use a **log2 transformation** as this is common practice in bioinformatics to make the dataset resemble a normal distribution, and the log2 aids in the calculating fold-changes between samples/groups. The p-value can be adjusted as well (but for now we leaf it at 0.01), and we use ‘All’ **Gene ontology** processes.
-•	Click **Submit**.
+
+- From the main R2 page, select in box 3: ‘Differential expression between two groups’.
+
+- Click ‘next’.
+
+- 	In the next window you can select a statistical **test**. Select the ‘T-test’. 
+
+- 	At group by select **Tissue (2 cat(egories)**) and click **Next**.
+
+- In the adjustable settings window we use a **log2 transformation** as this is common practice in bioinformatics to make the dataset resemble a normal distribution, and the log2 aids in the calculating fold-changes between samples/groups. The p-value can be adjusted as well (but for now we leaf it at 0.01), and we use ‘All’ **Gene ontology** processes.
+
+- Click **Submit**.
 
 **Question 2**: How many genes are significantly differentially regulated between the two groups?
 
 **Question 3**: Which gene is het most *significantly* differentially expressed?
 
-**Question 4**: And which gene is most *strongly upregulated and downregulated* in lesional tissue (play around with the log2FC (fold change) in the top menu to sort genes based on the fold change). You can click on the lens-icon besides each gene to make a graph. In the geneview window it is possible to change the graph type?
-•	Generate a graph of the most up- or downregulated gene.
+**Question 4**: And which gene is most *strongly upregulated, or downregulated* in lesional tissue (play around with the log2FC (fold change) in the top menu to sort genes based on the fold change). You can click on the lens-icon besides each gene to make a graph. In the geneview window it is possible to change the graph type.  
+
+- Generate a graph of the most up- or downregulated gene.
+
 You can also quickly look into other genes. For example DCT (Tyrosine-related protein 2) which expression is melanocyte specific and performs a key role in the melanin synthesis. 
-•	Go to any of the graphs you just generated. Type in “DCT” in the Gene/reporter box in the adjustable settings window, and select DCT from the dropdown list.
-•	Click Submit in order to make the new graph (the violin graph is shown below). 
+
+- Go to any of the graphs you just generated. Type in “DCT” in the Gene/reporter box in the adjustable settings window, and select DCT from the dropdown list.
+
+- Click Submit in order to make the new graph (the violin graph is shown below, Figure 2).    
 
 
 ![](_static/images/vitiligo/vitiligo_DCT_r2.png "DCT")
@@ -70,10 +91,11 @@ You can also quickly look into other genes. For example DCT (Tyrosine-related pr
 [**Figure 2: violin plot of DCT (TRP2) expression in L and NL tissue.**](_static/images/vitiligo/vitiligo_DCT_r2.png )
 
 If you go back to the tab containing the gene-list generated for Question 2, you can see on the right side of the screen several options to further explore the differentially expressed genes between lesional and non-lesional vitiligo tissue. For example there is already a mini-ontology analysis, but you can also perform GO-analysis  or Gene set analysis yourself, or make a heatmap of the differentially expressed genes.   
+
 Heatmaps (hot(up)/cold(down)) are commonly used to visualize RNA-Seq results. In RNA-seq analysis, heatmaps visualize large, complex datasets of gene expression levels, showing patterns of high and low expression across samples using a color gradient. They typically feature samples (columns) and genes (rows) and often incorporate hierarchical clustering, which groups together genes or samples with similar expression patterns, making it easier to identify biological similarities and differences.  
 
 
- - To generate a heatmap of all 1390 genes, click **Haetmap(zscore)** from the list options presented on the right on your screen.  
+ - To generate a heatmap of all 1390 genes, click **Heatmap(zscore)** from the list options presented on the right on your screen.  
 
 It is also possible to generate a heatmap of a smaller group of differentially expressed genes. For example by changing (in the Adjustable settings window) the **P-value cutoff**, or by limiting the **Max number of results**.  
 
@@ -183,6 +205,8 @@ We are now going to use this Volcano plot to see if we can detect T-cell.
 
 [**Figure 5: Volcano plot of genes differentially expressed between lesional and non-lesional vitiligo skin. Genes of the T cell geneset (that can be detected on this set) are indicated in red**](_static/images/vitiligo/volcano_plot.png)
 
+**Question 8**: Based on the generated plot, can you draw a conclusion about the presence of T-cells in this dataset?
+
 
 
 ## 1.6 Analyzing differential expression using *Gene signatures*
@@ -208,7 +232,7 @@ Next we can further analyze this T-cell signature. From immunohistochemical (IHC
 - Select in the next window for the *X track* the **t_cell_receptor_signaling_pathway (#) track**, and as a *Y-track*: **tissue (2cat)**.  A **#** track indicates a numerical track, a **cat** indicates a categorial track.  
 - For Graph type click e.g. **Violin**, and **Submit** (you can also color by track and add scatter if wanted). This will generate a violin graph in which the signature is statistically compared (ANOVA) between Lesional and NL tissue.  
 - 
-**Question 9**: We have now in a quantitative manner analyzed the presence of T-cell in this bulk RNAseq dataset using a representative gene-signature. What is you conclusion about results. Can you think of reason that explain this result?
+**Question 9**: We have now in a quantitative manner analyzed the presence of T-cell in this bulk RNAseq dataset using a representative gene-signature. What is you conclusion about the results. Can you think of reason that explains this result?
 
 In a similar way as we did above (creating and using a gene signature) you can e.g. analyze the  presence of melanocytes (using the e.g. **Melanogenesis** geneset) in lesional and nonlesional samples from this dataset using.  
 
@@ -273,7 +297,7 @@ There are two vitiligo single-cell R2 RNAseq (scRNAseq) datasets present in R2 (
 [**Figure 7: Sample preparation of the Gellatly scRNAseq dataset which analyses gene expression in cells isolated by suction blister biopsies from healthy controls, and from non-lesional and lesional locations from vitiligo patients**](_static/images/vitiligo/sample_preparation.png)
 
 
-R2 offers several machine learning dimensionality reduction algorithms that are well suited for the reduction of high dimensional datasets, such as generated by scRNAseq,  into just 2 or 3 dimensions. Samples or cells that have similar expression profiles in a dataset are located closely together on the 2D or 3D map, which enables the user to find clusters of similar cells/samples. One such clustering method that is popular in biomedical research is the so called t-SNE algorithm. t-SNE stands for t-Distributed Stochastic Neighbor Embedding. Another algorithm with similar properties that is UMAP (Uniform Manifold Approximation and Projection). (See chapter 16 in the R2 turorial book for more info).
+R2 offers several machine learning dimensionality reduction algorithms that are well suited for the reduction of high dimensional datasets, such as generated by scRNAseq,  into just 2 or 3 dimensions. Samples or cells that have similar expression profiles in a dataset are located closely together on the 2D or 3D map, which enables the user to find clusters of similar cells/samples. One such clustering method that is popular in biomedical research is the so called t-SNE algorithm. t-SNE stands for t-Distributed Stochastic Neighbor Embedding. Another algorithm with similar properties that is UMAP (Uniform Manifold Approximation and Projection). (See chapter 16 in the R2 tutorial book for more info).
 
 Let’s see what celltypes can be identified in suction blister biopsies from vitiligo patients.
 
