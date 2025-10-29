@@ -245,7 +245,7 @@ subgroups in the data, it uses expression values only.
     pathway geneset (hint: use keyword **Wnt**). 
   Don't forget to hit **Submit** in order to redo the analysis with the new settings.
 
-* Use the **Heatmap(zscore)** button on the right.   
+* Use the grey **Heatmap(zscore)** button on the right side of the page, which creates a heatmap from the gene list you just generated.    
 
 
 ------
@@ -264,7 +264,7 @@ Now let's generate a Wnt pathway heatmap from a different route:
 ![](_static/images/R2d2_logo.png)**What does the annotation above the heatmap tell you?**
 
 ![](_static/images/R2d2_logo.png)**How and why does this heatmap differ from the previous Wnt pathway heatmap?<br>
-(Hint: Which genes are you looking at exactly in each heatmap?)**
+(Hint: Think about the criteria used to include genes in each heatmap)**
 
 ______
 
@@ -317,7 +317,7 @@ Colors of the graph points are not set by default.
 * Find the _Color mode_ dropdown and select **Color by Track**. Now set the 
   _Color track_ dropdown to use the
   **cms_predicted (4 cat)** track, and click **Set colors** to show the changes.
-* Note that you can exclude track subgroups in the legend. E.g. click on the yellow square from the legend to hide the datapoint with that value. Click the legend title to invert the data point selection. Click the boxes of the hidden track value data points to show them again.   
+* Note that you can exclude track subgroups in the legend. E.g. click on the yellow square from the legend to hide data points with that value. Click the legend title to invert the data point selection. Click the boxes of the hidden track value data points to show them again.   
 
 The most important parameter for the t-SNE algorithm is the perplexity value. The perplexity parameter controls 
 the balance between a focus on preserving local details or global structures of the data. When R2 receives the 
@@ -376,9 +376,11 @@ Now we would like to look into colorectal cancer associated mutations and see if
   mutations per CMS subtype and click **Next**.
 * For the *X track* choose **cms_final (5 cat)** and for the *Y track* choose **mutant_braf (3 cat)** mutations.
 * Select the *Graph type* **Stacked bar (%)**  
-*The Guinney dataset contains several datasets put together. To only look at the samples from studies that looked at the 
+* The Guinney dataset contains several datasets put together. To only look at the samples from studies that looked at the 
 mutational aberrations, use the Sample Filter with the setting *Subset Track*, select **mutant_braf (3 cat)** and in the 
-pop-up check the boxes of **0 (776) and 1(87)**, note that the value 0 stands for no and 1 for yes. We thus eliminate the samples from this analysis for which it is not known whether they have a BRAF mutation (value nd gets omitted). Click 
+pop-up check the boxes of **0 (776) and 1(87)**.  
+
+Note that the value 0 stands for 'braf mutation: no' and 1 for 'braf mutation: yes' and nd stands for 'no data/ not defined'. We thus eliminate the samples from this analysis for which it is not known whether they have a BRAF mutation (value nd gets omitted). Click 
   **Ok** and then **Submit**.
 
 ------  
