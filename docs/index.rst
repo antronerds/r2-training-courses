@@ -37,6 +37,7 @@ Copyright (c) 2006-2025 Jan Koster
 
    Molecular_Oncology_CRC
    R2IntroductionWorkshop2024_day1
+   Vitiligo_Clin_Cell_biology
 
 
 .. toctree::
