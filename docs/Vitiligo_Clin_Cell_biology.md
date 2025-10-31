@@ -8,9 +8,9 @@ In this training course, designed as part of the UvA master course Clinical Cell
 
 You will use the freely available and web-based genomics analysis and visualization platform R2, a Core Facility of the Amsterdam UMC. R2 provides the user with many experimental and clinical data sets coupled to a wide variety of clickable bioinformatics tools. Without any coding you will gain hands-on research experience with vitiligo and melanoma omics data and bioinformatics tools.
 
-The green buttons in this document will open up a Microsoft form, on which you have to submit your answers. Information from these forms will be used in the Q&A lecture (Responsie College) to discuss questions that you encounter during this online training course.
+The green button in this document will open up a Microsoft form, on which you have to submit your answers. Information from these forms will be used in the Q&A lecture (Responsie College) to discuss questions that you encounter during this online training course.
 
-The <button class="course googleform">green button(s)</button> in this document will open up a MS-office form, one per section, with which you can submit answers.
+The <button class="course googleform">green button(s)</button> in this document will open up a MS-office form. Make sure to type your name at the start of each answer as your name will not automatically be stored when you submit your answers!
 
 <button class="course googleform" onclick="window.open('https://forms.office.com/pages/responsepage.aspx?id=GqvfaLsRxky-tSjXVphPtvNdTYy3kUdLmfhJOoP29pdUMjhLRjFUMzVGS0hWTTcyRDRMQjZXQURCTC4u&route=shorturl','_blank');"
 type="button">Open the answering form</button>
@@ -153,7 +153,8 @@ If you are interest in a specific gene (Gene of interest, GOI), and you want to 
 - select this option from box 3 and click **Next**  
 - Let’s look for functions for **MLANA** (type and select this gene from the **Gene / reporter window**.  
 - Select genes that correlate (abbreviated by **r/R**) positively with this gene (in Corr R cutoff sign” select **positive**). Click **submit**.  
-- 
+
+
 From the table below you can see that genes correlating with MLANA expression do play a role in melanogenesis (among others). If you click on the red R you can see the correlating genes and then click on individual genes to see the correlation with MLANA. This *KEGG pathwayFinder by gene correlation* can thus help you better understand the biological function of your GOI.  
 
 ![](_static/images/vitiligo/KEGG_list2.png "KEGG")
@@ -215,8 +216,6 @@ Let’s try to analyze the presence of T-cells in a more quantitative manner.
 For this were are going to analyze a **gene signature** (e.g. T-cells signature), and then explore if this gene-signature is induced in vitiligo samples.
 
 
-Let’s try to analyze the presence of T-cells in a more quantitative manner.
-For this were are going to analyze a **gene signature** (e.g. T-cells signature), and then explore if this gene-signature is induced in vitiligo samples.
 
 A signature (*see chapter 12 from the R2 Tutorial handbook*) can be defined as a collection of genes that are defined on a particular basis. This can e.g. be the presence within a gene-ontology class (e.g. melanogenesis), or a functional pathway signature (e.g. Jak-Stat signaling). Such a collection of genes may have predictive power for the activity of a process. By generating a gene-signature the behavior of all the signature genes are expressed in a single value, a so-called signature score, defined as the average zscore of a zscore transformed dataset (the standard way of visualizing a heatmap). In R2, such scores are automatically generated when one generates heatmaps via the “view a geneset” function or in case the dataset is very large a gene signature can be created directly using “Create Gene set signature”.
 
@@ -390,6 +389,17 @@ You have now reached the end of this training course, learning some basic skills
 
 
 **Final Question 19**: Is there an R2 topic or issue that you encountered during this course that should be discussed on the Q&A lecture on Wednesday November 5th?
+
+
+### Note
+
+Keep in mind that all most 85% of the data R2 is harboring including the data you are working with for this course is  obtained from public scientific resources,  one of the major repositories  we obtain omics data is the NCBI geo public database. 
+
+As a consequence of the ongoing situation in the United States, access to U.S.-hosted data repositories has become increasingly difficult. We have encountered persistent issues when attempting to download, query, or analyze datasets stored on these servers. Since the onset of the government shutdown, error messages such as those illustrated below have become frequent. It is evident that such interruptions hinder the continuity of scientific research and collaboration on a global scale.
+
+![](_static/images/vitiligo/ncbi_message.png "heatmap")
+
+
 
 
 
