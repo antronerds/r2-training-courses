@@ -391,13 +391,13 @@ You have now reached the end of this training course, learning some basic skills
 **Final Question 19**: Is there an R2 topic or issue that you encountered during this course that should be discussed on the Q&A lecture on Wednesday November 5th?
 
 
-### Note
+### Note!!!
 
-Keep in mind that all most 85% of the data R2 is harboring including the data you are working with for this course is  obtained from public scientific resources,  one of the major repositories  we obtain omics data is the NCBI geo public database. 
+Keep in mind that almost 85% of the data hosted by R2, including the data you are working with in this course, are obtained from public scientific resources. One of the major repositories from which we source omics data is the NCBI GEO public database.
 
 As a consequence of the ongoing situation in the United States, access to U.S.-hosted data repositories has become increasingly difficult. We have encountered persistent issues when attempting to download, query, or analyze datasets stored on these servers. Since the onset of the government shutdown, error messages such as those illustrated below have become frequent. It is evident that such interruptions hinder the continuity of scientific research and collaboration on a global scale.
 
-![](_static/images/vitiligo/ncbi_message.png "heatmap")
+![](_static/images/vitiligo/ncbi_message.png "ncbi")
 
 
 
