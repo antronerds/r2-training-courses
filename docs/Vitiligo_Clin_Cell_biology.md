@@ -3,7 +3,9 @@ Clinical Cell biology – Vitiligo training course
 
 *Created by Walbert Bakker & R2-team:2025*
 
-## 1.1 Introduction
+Introduction
+-------------
+
 In this training course, designed as part of the UvA master course Clinical Cell Biology, you will use advanced bioinformatics tools to explore, analyze and visualize mRNA expression datasets centered around the pigment producing cells (melanocytes). Both datasets from vitiligo and melanoma are part of this R2 introduction course.
 
 You will use the freely available and web-based genomics analysis and visualization platform R2, a Core Facility of the Amsterdam UMC. R2 provides the user with many experimental and clinical data sets coupled to a wide variety of clickable bioinformatics tools. Without any coding you will gain hands-on research experience with vitiligo and melanoma omics data and bioinformatics tools.
@@ -18,7 +20,7 @@ type="button">Open the answering form</button>
 
 
 
-### 1.2 Selecting a dataset
+## Selecting a dataset
 
 Open a Chrome / Edge  browser and use your R2 account to sign in in the collaborator’s server of the R2 platform: https://hgserver1.amc.nl (also accessible via https://r2platform.com/hg2)
 Generally speaking, the R2 platform is easily accessible by the links https://r2.amc.nl | r2platform.com, but today we work from our collaborator’s server hgserver2.
@@ -44,7 +46,7 @@ The grid tells us that this dataset (of which Natarajan is author) contains 30 s
 - Select the *updated* **Natarajan (update)** dataset and click on **Confirm selection**. In Box 2 you will now see this dataset. We can now use this dataset for further analysis.  
 
 
-## 1.3 Pathogenesis of vitiligo
+## Pathogenesis of vitiligo
 
 As you know from the lectures, vitiligo is an cutaneous autoimmune disease in which the pigment-producing melanocytes are eliminated, resulting in patches of depigmented white spots. The pathogenesis of vitiligo is multifactorial in which genetic factors, environmental triggers (i.e. chemical compounds), oxidative stress, and autoimmune mechanisms play a part on the disease development. Figure 1 shows a schematic picture of lesional (left side) and non-lesional (right side) vitiligo skin.!
 
@@ -55,7 +57,7 @@ As you know from the lectures, vitiligo is an cutaneous autoimmune disease in wh
 <span class="citation_txt">(Figure source:https://doi.org/10.1146/annurev-immunol-100919-023531)</span>
 
 
-## 1.4 Finding differentially expressed genes.
+## Finding differentially expressed genes.
 
 The Natarajan dataset contains samples from lesional and non-lesional vitiligo skin. Let’s look at the differential expression between these two different samples types.
 
@@ -116,7 +118,7 @@ The tissue samples lesional (red) and non-lesional (green) nicely cluster togeth
 
  • You can also look at the entire gene list shown in the heatmap by clicking on the **Sort order Listing** below the heatmap (click black triangle).  
 
-## 1.4.1 Analyzing differential pathway expression between groups using the KEGG pathway finder  
+### Analyzing differential pathway expression between groups using the KEGG pathway finder  
 
 
 
@@ -144,7 +146,7 @@ By clicking on the **red R** from a biological process you can find the genes fr
 **Question 5**: Does the differential regulation of processes like *Nucleotide_excision_repair* and *Homologous recombination* (Table 1) make sense in the context of vitiligo? Explain your answer. 
 
 
-## 1.4.2 Finding genes that correlate with your gene of interest.  
+### Finding genes that correlate with your gene of interest.  
 
 
 
@@ -163,7 +165,7 @@ From the table below you can see that genes correlating with MLANA expression do
 
 
 
-## 1.5 Analyze differential expression using *Gene sets*
+## Analyze differential expression using *Gene sets*
 
 Other than looking at the most differentially regulated top genes in a specific tissue, it is also possible to specifically search for a biological process or pathway you are interested in. This can be done by looking at **genesets**.   
 
@@ -182,7 +184,7 @@ You can see that 16 of the 100 genes are significantly differentially expressed 
 
 As expected, pathway related to melanocytes are downregulated (or absent) in lesional vitiligo.  
 
-## 1.5.1 Analyzing T-cell presence in vitiligo using a Gene set
+### Analyzing T-cell presence in vitiligo using a Gene set
 
 From the lectures you have learned that vitiligo is an auto-immune disease. 
 
@@ -210,7 +212,7 @@ We are now going to use this Volcano plot to see if we can detect T-cell.
 
 
 
-## 1.6 Analyzing differential expression using *Gene signatures*
+## Analyzing differential expression using *Gene signatures*
 
 Let’s try to analyze the presence of T-cells in a more quantitative manner.
 For this were are going to analyze a **gene signature** (e.g. T-cells signature), and then explore if this gene-signature is induced in vitiligo samples.
@@ -282,7 +284,7 @@ Use **relate 2 tracks**  in box 3, to find out if you can confirm increased expr
 **Question 12**: Click the **View additional details** under the graph. Do you find a significant increased expression of the gene signature in vitiligo?  
 
 
-## 1.8 Studying vitiligo on a cellular level using single-cell RNAseq
+## Studying vitiligo on a cellular level using single-cell RNAseq
 
 Above we used gene signatures to verify whether there could be **T-cells** present in the bulk RNAseq samples. A more specific way to do this is to analyze a vitiligo tissue samples using single-cell RNAseq.
 
@@ -329,7 +331,7 @@ Once T-cells have infiltrated the skin, and bind to an HLA molecule presenting a
 **Question 15**: And how would you explore (using this dataset) if there are more of these activated T-cell in vitiligo?  
 
 
-## 1.9 Melanoma
+## Melanoma
 
 
 In the last part of this training course we switch to a melanoma dataset. If you look for melanoma datasets in R2 (box 2, from R2 main page) there are both high quality scRNAseq (author Regev) and bulk RNAseq datasets (TCGA). In this section we will use the bulk RNAseq dataset from The Cancer Genome Atlas Network (TCGA). This is a large integrative analysis of cutaneous melanomas (331 patients). This genome-wide analysis classified (Figure 9) the patients both at the genomic level (4 categories: mutant BRAF, RAS, NF1, or wt), as well as at RNA expression (3 clusters: Immune, Keratin, and MITF-low), and also contains a high level of additional information (annotations, that are available as tracks).
