@@ -378,15 +378,14 @@ Now we would like to look into colorectal cancer associated mutations and see if
 * Select the *Graph type* **Stacked bar (%)**  
 * The Guinney dataset contains several datasets put together. To only look at the samples from studies that looked at the 
 mutational aberrations, use the Sample Filter with the setting *Subset Track*, select **mutant_braf (3 cat)** and in the 
-pop-up check the boxes of **0 (776) and 1(87)**.  
-
+pop-up check the boxes of **0 (776) and 1(87)**.
 Note that the value 0 stands for 'braf mutation: no' and 1 for 'braf mutation: yes' and nd stands for 'no data/ not defined'. We thus eliminate the samples from this analysis for which it is not known whether they have a BRAF mutation (value nd gets omitted). Click 
   **Ok** and then **Submit**.
 
 ------  
 
 
-![](_static/images/R2d2_logo.png)**Which CMS group shows the highest amount of BRAF mutations?**
+![](_static/images/R2d2_logo.png)**Which CMS subtype shows the highest frequency of BRAF mutations?**
 <br>
 <br>
 
