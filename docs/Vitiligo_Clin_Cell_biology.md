@@ -393,7 +393,7 @@ You have now reached the end of this training course, learning some basic skills
 **Final Question 20**: Is there an R2 topic or issue that you encountered during this course that should be discussed on the Q&A lecture on Wednesday November 5th?
 
 
-### Note!!!
+## Note!!!
 
 Keep in mind that almost 85% of the data hosted by R2, including the data you are working with in this course, are obtained from public scientific resources. One of the major repositories from which we source omics data is the NCBI GEO public database.
 
