@@ -375,7 +375,7 @@ Now we would like to look into colorectal cancer associated mutations and see if
 * Choose the **relate 2 tracks** analysis to show the different ratios of 
   mutations per CMS subtype and click **Next**.
 * For the *X track* choose **cms_final (5 cat)** and for the *Y track* choose **mutant_braf (3 cat)** mutations.
-* Select the *Graph type* **Stacked bar (%)**  
+* Select the *Graph type* **Stacked bar (%)**
 * The Guinney dataset contains several datasets put together. To only look at the samples from studies that looked at the 
 mutational aberrations, use the Sample Filter with the setting *Subset Track*, select **mutant_braf (3 cat)** and in the 
 pop-up check the boxes of **0 (776) and 1(87)**.
@@ -400,7 +400,7 @@ Now we will look at the KRAS mutations
 ------  
 
 
-![](_static/images/R2d2_logo.png)**Which CMS group shows the highest amount of KRAS mutations?**
+![](_static/images/R2d2_logo.png)**Which CMS group shows the highest amount of KRAS mutations? What difference do you notice in the **
 <br>
 <br>
 
