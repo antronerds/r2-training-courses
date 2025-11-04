@@ -237,7 +237,7 @@ Next we can further analyze this T-cell signature. From immunohistochemical (IHC
 
 In a similar way as we did above (creating and using a gene signature) you can e.g. analyze the  presence of melanocytes (using the e.g. **Melanogenesis** geneset) in lesional and nonlesional samples from this dataset using.  
 
-## 1.7 Looking for T-cells in the vitiligo dataset from Passeron
+## Looking for T-cells in the vitiligo dataset from Passeron
 
 
 In this study (PMID: 26322948) 10 active (progression of disease within last 3 months), non-segmental vitiligo patients were included, from which a non-lesional (NL), peri-lesional (PL) and a Lesional (L) biopsy were taken for RNAseq analysis. Also, 10 biopsies were taken from 10 healthy volunteers.
