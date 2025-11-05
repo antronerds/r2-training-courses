@@ -447,7 +447,8 @@ MSI tumors give a very heterogeneous picture. This could be an indication that w
 also a subgroup could be identified. 
 
 * Hover with your mouse over data points to see if you can identify a subgroup of an annotation track in which low MLH1 expression occurs more often.
-* We can add an extra layer of information by coloring the dots of the violin plot. Scroll down to the Adjustable settings menu and set _Color mode_ to **Color by a Track** and _Color track_ to **MS_Orientation (5cat)**, and submit.
+* We can add an extra layer of information by coloring the dots of the violin plot. Scroll down to the Adjustable settings menu and set _Color mode_ to **Color by a Track** and _Color track_ to **MS_Orientation (5cat)**, and submit.  
+
 To find out if our gene of interest associates strongly with any annotation that is already available for the current dataset, R2 also offers a tool: CliniSnitch. CliniSnitch performs a context-dependent statistical test on each track to identify significant associations with the gene’s expression (i.e. different types of tests based on whether a track is numerical or categorical).
 * On the right hand side of the page, you find several followup links in light grey boxes with dark grey headers. In one of them you can find CliniSnitch. Click on the **CliniSnitch MLH1** link to find show a significant association with MLH1 expression.
 * Click on the magnifying glass icon in front of the track with the lowest p value to find out which subgroup it is that we are looking for.  
