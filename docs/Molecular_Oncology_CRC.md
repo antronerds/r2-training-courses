@@ -419,7 +419,7 @@ This dataset consists of Microsatellite Stable (MSS) tumors and Microsatellite I
 
 #### MSS vs MSI
 
-* From th emain page, find the dataset **Tumor Colon - Watanabe - 84 - MAS5.0 - u133p2** and read the **Summary** in the information panel underneath the dataset selection grid. 
+* From the main page, find the dataset **Tumor Colon - Watanabe - 84 - MAS5.0 - u133p2** and read the **Summary** in the information panel underneath the dataset selection grid. 
 * Then **Confirm selection** of the dataset.
 * Use the **Differential expression between two groups** module to generate a list of differentially 
   expressed genes between **MSI** and **MSS** characterized tumors (group by *MS_status*). 
@@ -447,17 +447,22 @@ MSI tumors give a very heterogeneous picture. This could be an indication that w
 also a subgroup could be identified. 
 
 * Hover with your mouse over data points to see if you can identify a subgroup of an annotation track in which low MLH1 expression occurs more often.
-* Scroll down to the Adjustable settings menu and change grouping setting _Track_ into **MS_orientation (5 cat)**. Click **Submit**
+* We can add an extra layer of information by coloring the dots of the violin plot. Scroll down to the Adjustable settings menu and set _Color mode_ to **Color by a Track** and _Color track_ to **MS_Orientation (5cat)**, and submit.
+To find out if our gene of interest associates strongly with any annotation that is already available for the current dataset, R2 also offers a tool: CliniSnitch. CliniSnitch performs a context-dependent statistical test on each track to identify significant associations with the gene’s expression (i.e. different types of tests based on whether a track is numerical or categorical).
+* On the right hand side of the page, you find several followup links in light grey boxes with dark grey headers. In one of them you can find CliniSnitch. Click on the **CliniSnitch MLH1** link to find show a significant association with MLH1 expression.
+* Click on the magnifying glass icon in front of the track with the lowest p value to find out which subgroup it is that we are looking for.  
 
+<!--
 Let's visualize the relation between these dataset annotations in another way. 
-* In the Adjustable settings menu, change _Analysis type_ to **track vs track**
+* In the Adjustable settings menu at the bottom of the page, change _Analysis type_ to **track vs track**
 * Select for the _X track_ the **MS_status (2 cat)** and for the _Y track_ **Orientation (3 cat)** 
-* Choose *Graph type* **XY-Honeycomb** *and click **Submit**. 
-
+* Choose *Graph type* **XY-Honeycomb** 
 In the MLH1 expression graph we saw that low gene expression was not equally distributed within the MSI group. 
 * Let's add this layer of information in this plot as well: select *Color mode* **Color by a Gene** and enter **MLH1** 
   as gene to color the plot. Click **Submit**.  
-
+We arrived to the same conclusion with the help of several different visualizations and analysis
+-->
+ 
 
 ------  
 
