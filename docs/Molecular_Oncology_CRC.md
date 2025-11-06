@@ -499,7 +499,7 @@ One way to find genes that are possibly affected by MLH1 is to look at (inversel
 #### Find genes correlating with a single gene
 
 * From the main page, run the **Find Correlated Genes with a single Gene** module for the MLH1 gene. Use again
-  the filter option for the **Broad 2023 10 c6 oncogenic** gene set. 
+  the filter option for the **Broad 2025 10 c6 oncogenic** gene set. 
 
 
 * On the result page, click on the best correlating gene (not MLH1) to plot both genes together, in a two gene view. Inspect the correlation. Can you think of reasons why the gene expression might be highly correlated?
@@ -603,7 +603,7 @@ individual genes, it allows you to understand the collective functions or pathwa
 This can provide more meaningful insights into the underlying biology of a particular condition or experiment.
 
 * Click on the topmost button on the right that is labeled **Gene set analysis**.
-* Select the *Gene set Collection* **Custom collection** and select *Gene set* **Broad 2023 10 h hallmark**
+* Select the *Gene set Collection* **Custom collection** and select *Gene set* **Broad 2025 06 h hallmark**
 * Switch the *Representation* setting to **all** to look at both over- and under-representation
 * Click **Next**
 
@@ -805,7 +805,7 @@ A Differential Expression between two groups analysis has already been performed
 
 
 * Go the main page and select the **Geneset vs Genesets Correlations** module. In the next screen select for the *Gene set (source)* a sub gene set: click on the arrows in front of the geneset collection to go deeper in the tree **Community genesets > r2 > main >** **APC_activated (153)** (click the green confirm button). 
-* For **Gene set (target)** select the complete collection of **broad 2023 10 h hallmark** genesets.
+* For **Gene set (target)** select the complete collection of **Broad 2025 06 h hallmark** genesets.
 
 R2 will calculate the signature scores for the upregulated APC mutant gene list and for each gene set that the selected Broad Hallmark gene set collection harbors.
 
@@ -818,7 +818,7 @@ R2 will calculate the signature scores for the upregulated APC mutant gene list 
 
 ------
 
-Click next. R2 is now performing  a correlation test on the signature scores of the APC activated gene list in APC mutants against the signature scores of all the gene sets in the broad hallmark collection.
+Click next. R2 is now performing  a correlation test on the signature scores of the APC activated gene list in APC mutants against the signature scores of all the gene sets in the Broad hallmark collection.
 
 
 ------
