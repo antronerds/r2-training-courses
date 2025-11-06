@@ -489,8 +489,8 @@ algorithm.
 * Go back to the main page, and select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
 * Perform the **Differential Expression between two groups** analysis, choose Track **microsatellite_instability**, click **next**, set **no** for Group1 and 
-  **yes** for Group2, and perform the analysis on the gene set **Broad 2025 10 c6 oncogenic**. **Submit**
-* Click again on the MHL1 gene magnifying glass.
+  **yes** for Group2, and perform the analysis on the gene set **Broad 2025 06 c6 oncogenic**. **Submit**
+* Click again on the MLH1 gene magnifying glass.
 
 In this set too MLH1 seems to play a key role for MSI related CRCs. It would be interesting to find out which genes are possibly regulated by the MLH1 gene.
 One way to find genes that are possibly affected by MLH1 is to look at (inversely) correlated genes.
@@ -499,7 +499,7 @@ One way to find genes that are possibly affected by MLH1 is to look at (inversel
 #### Find genes correlating with a single gene
 
 * From the main page, run the **Find Correlated Genes with a single Gene** module for the MLH1 gene. Use again
-  the filter option for the **Broad 2025 10 c6 oncogenic** gene set. 
+  the filter option for the **Broad 2025 06 c6 oncogenic** gene set. 
 
 
 * On the result page, click on the best correlating gene (not MLH1) to plot both genes together, in a two gene view. Inspect the correlation. Can you think of reasons why the gene expression might be highly correlated?
@@ -522,31 +522,6 @@ Underneath, each genome location is annotated with the genes found at that posit
 ------  
 
 ![](_static/images/R2d2_logo.png)**What can you say about the location of the two genes?**
-<br>
-<br>
-
-------
-
-The correlating genes result page (still open in the previous tab) shows two columns: the positively correlating genes on the left, the negatively 
-correlated genes on the right. Let's have a closer look at this last group.  
-
-* On the correlating genes result page, scroll down to the Adjustable Settings menu at the bottom of the 
-  page. Adapt the setting here *Corr. r cutoff sign* to only look at the **negatively** correlated genes. 
-* Click on the currently selected gene set so that you can **Clear selection** and **Confirm**
-* Click **Submit** to update the result page. This might take a while. 
-
-![](_static/images/MolOncCRC/loading_page.png "Loading Page")
-
-* Click the button on the right side of the page: **Chromosome map**.
-
-The over-representation is calculated of genes that negatively correlate with MLH1 expression with respect to all genes 
-present on (an arm of) a chromosome.
-
-* A lot of genes are clearly over-represented on a number of chromosomes with a very low p-value.
-
-------  
-
-![](_static/images/R2d2_logo.png)**Which chromosomes show extreme significance in gene overrepresentation and on which part of these chromosomes can these genes be found?**
 <br>
 <br>
 
