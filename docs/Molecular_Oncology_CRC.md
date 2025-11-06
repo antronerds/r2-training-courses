@@ -489,7 +489,7 @@ algorithm.
 * Go back to the main page, and select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
 * Perform the **Differential Expression between two groups** analysis, choose Track **microsatellite_instability**, click **next**, set **no** for Group1 and 
-  **yes** for Group2, and perform the analysis on the gene set **Broad 2023 10 c6 oncogenic**. **Submit**
+  **yes** for Group2, and perform the analysis on the gene set **Broad 2025 10 c6 oncogenic**. **Submit**
 * Click again on the MHL1 gene magnifying glass.
 
 In this set too MLH1 seems to play a key role for MSI related CRCs. It would be interesting to find out which genes are possibly regulated by the MLH1 gene.
