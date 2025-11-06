@@ -666,7 +666,7 @@ In cancer, a high rate of mutations can occur in the genome and could sometimes 
 
 This dataset is annotated for hypermutation status.
 
-* Generate CHG profiles split by hypermutation status: change _X track_ to **hypermytation_status (2cat)**. Don't forget to **Redraw**. You can also check the **msi_status (2 cat)** track.
+* Generate CHG profiles split by hypermutation status: change _X track_ to **hypermutation_status (2cat)**. Don't forget to **Redraw**. You can also check the **msi_status (2 cat)** track.
 
 ------
 
