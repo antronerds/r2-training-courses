@@ -450,7 +450,7 @@ also a subgroup could be identified.
 * We can add an extra layer of information by coloring the dots of the violin plot. Scroll down to the Adjustable settings menu and set _Color mode_ to **Color by a Track** and _Color track_ to **MS_Orientation (5cat)**, and submit.  
 
 To find out if our gene of interest associates strongly with any annotation that is already available for the current dataset, R2 also offers a tool: CliniSnitch. CliniSnitch performs a context-dependent statistical test on each track to identify significant associations with the gene’s expression (i.e. different types of tests based on whether a track is numerical or categorical).
-* On the right hand side of the page, you find several followup links in light grey boxes with dark grey headers. In one of them you can find CliniSnitch. Click on the **CliniSnitch MLH1** link to find show a significant association with MLH1 expression.
+* On the right hand side of the page, you find several followup links in light grey boxes with dark grey headers. In one of them you can find CliniSnitch. Click on the **CliniSnitch MLH1** link to find out which available track shows the strongest association with MLH1 expression.
 * Click on the magnifying glass icon in front of the track with the lowest p value to find out which subgroup it is that we are looking for.  
 
 <!--
@@ -474,19 +474,13 @@ more often has a low MLH1 expression?**
 
 ------
 
-
-In many cases of proximal colon cancer with MSI, the high level of microsatellite instability is caused by the loss 
-of MLH1 expression. MLH1 inactivation can occur due to mutations in the MLH1 gene or through epigenetic changes, 
-such as promoter methylation.  
-
-In summary, the loss of MLH1 expression is a common mechanism leading to MSI in 
-proximal colon cancer. Understanding the relationship between MLH1 expression and MSI is crucial for diagnosing MMR 
-(mutation mismatch repair) deficiency, predicting prognosis, and guiding targeted therapies for patients with 
-colorectal cancer.
-
-
+In many cases of proximal colon cancer with MSI, the high level of microsatellite instability is caused by the loss
+of MLH1 expression. Understanding the relationship between MLH1 expression and MSI is crucial for diagnosing MMR 
+(mismatch repair) deficiency, predicting prognosis, and guiding targeted therapies for patients with 
+colorectal cancer.  
+ 
 Colorectal tumors with MSI do not have the same response to chemotherapeutics and are an important subgroup to look at for specialized treatments. 
-In the Watanabe data set we found MLH1 as a possibly important player. We will now corroborate our findings in another dataset. Not only because this is an old set (look up the background information in the information panel of the dataset selection grid), but it is  common practice to 
+In the Watanabe data set we found MLH1 as possibly an important player. We will now corroborate our findings in another dataset. Not only because this is an old set (look up the background information in the information panel of the dataset selection grid), but it is  common practice to 
 validate your results with other sources. We will use a dataset that we already looked at with the t-SNE clustering 
 algorithm.
 
@@ -565,8 +559,9 @@ Now let's see how strongly MLH1 expression is associated with CMS subtypes.
 
 #### DNA methylation
 
+Inactivation of a gene can occur due to mutations in the gene or through epigenetic changes, such as promoter methylation.
 The R2 platform hosts a variety of dataset types. Not only gene expression datasets but also methylation arrays can 
-be found.
+be found. 
 
 * Go to the main page and select the dataset **Tumor Colon adenocarcinoma - tcga - 296 - custom - ilmnhm450**
 
