@@ -996,7 +996,7 @@ ______
 
 ______
 
-## Identifying key drivers of CRC: superenhancers controlling gene expression
+## (OPTIONAL) Identifying key drivers of CRC: superenhancers controlling gene expression
 
 An enhancer is a 50-1500 bp region of DNA where activator proteins, such as transcription factors, bind and that 
 increase the likelihood transcription will occur at a gene. They can be located up to 1 Mbp away from the gene, 
