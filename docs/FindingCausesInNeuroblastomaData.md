@@ -1,4 +1,4 @@
-<a id="R2IntroductionWorkshop_day1"> </a>
+<a id="FindingCausesInNeuroblastomaData"> </a>
 
 Finding causes in Neuroblastoma genomics data
 =================================
