@@ -36,7 +36,7 @@ Copyright (c) 2006-2025 Jan Koster
    :caption: Basics Courses (Recommended)
 
    Molecular_Oncology_CRC
-   R2IntroductionWorkshop2024_day1
+   FindingCausesInNeuroblastomaData
    Vitiligo_Clin_Cell_biology
 
 
