@@ -124,19 +124,20 @@ the annotations underneath the graph?**
 ---------
 
 We can display subgroup patterns more clearly by grouping the tumors according to a property in a track. Go to "Adjustable Settings" below the plot. At the top of that panel, you can adjust the **Analysis type** using a dropdown menu. 
-1. Change this setting from *single gene* to *gene vs track*. 
-2. In the "Adjustable Settings", you now have to choose a **Track** (not **Subset Track**) for separating the samples. In 
-  the dropdown menu, select *mycn_amp (2cat)*. Click **Submit**. Check the plot.
-3. In this view, the samples are not ordered by their *MYCN* expression value by default. To adjust this, hover over to the gear icon ("plot options") at the top-left corner of the graph. Under the 'General' section, find **Extra Graph Option** and select *Track and Gene sort*.
+
+1. In the "Adjustable Settings", you now have to choose a **Group by ** (not **Subset Track**) for separating the samples. In  the dropdown menu, select *mycn_amp (2cat)*. Click **Submit**. Check the plot.
+3. In this view, the samples ar  ordered by their *MYCN* expression value by default with the mycn status. 
 <br>
 
 Additional options to get familiar with the settings in R2:
 
-1. Try it out with a different track: select *inss(5 cat)* for **Track** and click **Submit**. 
-2. Also try out the *Graphics* options. For instance, try *Box* for **Graph type** and  *True* for **Add Scatter** for a box plot visualization.
-3. You can use *Color by Track* for **Color mode (groups)** to add the color of the track categories to your boxes. Don't forget to **Submit**.
-4. Lastly, when you click on the gear icon in the top-left corner of the graph, you can save your plot, copy it to clipboard. You can also use the 'General' section to adjust graphic parameters such as font size and axis-width. Most of these options are applied immediately, so you don't need to click the **Submit** button. If you don't see changes or 
-the plot requires some space reorganisation, you can click the **redraw plot** button. Feel free to try these options.  
+1. In the adjustable settigs box you can also choose other analysis types
+2. Change the setting in the dropdown box to *single gene* to *gene vs track*
+3. Choose mycn_amp (2 cat) and click **submit**.
+4. By default a violin plot is generated. 
+5. In the **gear box**, you can tick "add scatter" to plot the individual samples.
+6. Also   the different graph types can be generated and various graph settings can be adapted. Change the color mode for the group and / or  add an extra dimension such gene expression levels in the color mode setting.
+7. In the save section you can export the graph or copy.
 <br>
 
 ---------
@@ -149,7 +150,7 @@ the plot requires some space reorganisation, you can click the **redraw plot** b
 
 Now we will use links on this page that lead to additional information.<br>
 
-1. To learn basic properties of the gene, look at the one-line table above the "Adjustable Settings". 
+1. To learn basic properties of the gene, clink on the small triagle above  "Adjustable Settings". 
 2. Click on the link in the ‘Gene ID’ column. This will take you to the National Center for Bioinformatics (NCBI) database.
 <br>
 
