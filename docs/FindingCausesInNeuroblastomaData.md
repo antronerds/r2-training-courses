@@ -150,8 +150,14 @@ Additional options to get familiar with the settings in R2:
 
 Now we will use links on this page that lead to additional information.<br>
 
-1. To learn basic properties of the gene, clink on the small triagle above  "Adjustable Settings". 
+1. To learn basic properties of the gene, clink on the small triangle above  "Adjustable Settings".
 2. Click on the link in the ‘Gene ID’ column. This will take you to the National Center for Bioinformatics (NCBI) database.
+3. "Alternative Reporters" shows that this gene is represented by five sets of reporters (probe sets) on the Affymetrix
+   U133 Plus 2.0 Microarray. Take a look at the signal intensities for the different reporters, with average values shown in the parentheses. It is important to realize that genes can have more than one reporter for a given platform — in this case, the
+   Affymetrix platform. This is also relevant for RNAseq datasets, where annotated transcripts (isoforms) may exist.
+   By default, R2 chooses the reporter with the highest signal which is the most representative measurement for in nearly all cases.
+5. For many platforms that use reporters, the genome location is also added. Click on *MYCN* in the
+   *ProbesetVerification* table (under View additional details) leads you to the genome browser where you can explore the exact genomic locations of these reporters.
 <br>
 
 In the top-right corner of R2 *MYCN* expression plot page, you can find links to other external resources. 
@@ -165,12 +171,7 @@ All the tumor samples in our dataset were selected by preparing sections of froz
 2. Select *ITCC0001* and click on **View Sample**. Play with the magnifications in the top-left corner of the sample image (x2, x10, x40).
 3. Go back to the tab with the grouped plot of the *MYCN* expression (Note: You may close the other tabs.)
 4. Below the graph, you can click on the toggle section called **View additional details**. For the *MYCN* gene, the table 
-  "Alternative Reporters" shows that this gene is represented by five sets of reporters (probe sets) on the Affymetrix 
-  U133 Plus 2.0 Microarray. Take a look at the signal intensities for the different reporters, with average values shown in the parentheses. It is important to realize that genes can have more than one reporter for a given platform — in this case, the 
-  Affymetrix platform. This is also relevant for RNAseq datasets, where annotated transcripts (isoforms) may exist. 
-  By default, R2 chooses the reporter with the highest signal which is the most representative measurement for in nearly all cases.
-5. For many platforms that use reporters, the genome location is also added. Click on *MYCN* in the 
-   *ProbesetVerification* table (under View additional details) leads you to the genome browser where you can explore the exact genomic locations of these reporters.
+  
 <br>
 
 ---------
@@ -247,6 +248,7 @@ Can we find biological processes by looking at differentially expressed genes be
 ---------
 
 The resulting gene list includes genes that possibly play a key role in neuroblastoma. However, it would be of interest to determine whether certain genes are overrepresented in, for example, biological processes.  
+
 3. In the right menu next to the gene list, click on the **Gene set analysis** button. 
 4. In the next screen, select *KEGG pathways* in the **Gene set collection** pulldown and click **Next**.
 5. The resulting page displays a collection of annotated KEGG gene sets containing overrepresented genes.
@@ -270,7 +272,10 @@ are considered as promising cancer biomarkers.
 
 ---------
 
-7. Also try clicking on the  <span style="color: deepskyblue">**blue H**</span>. <br>
+7. Also try clicking on the **H**
+
+<!-- <span style="color: deepskyblue">**blue H**</span>.  --> 
+
 The heatmap visualization displays a grid where the samples are placed horizontally, and the genes from the KEGG gene set are placed vertically.
 Each colored square represents the expression value of a specific gene in a specific sample, transformed into a z-score. A high z-score (indicating higher expression relative to the mean) is colored in <span style="color: red">**red**</span>, while a low z-score is colored in <span style="color: blue">**blue**</span>, as indicated by the color bar below the heatmap.
 This allows us to easily see which samples show relative low expression of the gene and which ones a relative high expression of the gene.<br><br>
@@ -283,6 +288,7 @@ The same principle applies to the genes: genes having similar expression profile
 Check whether the clusters that you observe in the heatmap align to these tracks.
 
 ### Using annotation and the Kaplan Meier curve
+
 We have seen that annotation tracks in R2 can be used to group samples for comparative analysis of 
 gene expression between specific subgroups. In addition, these tracks can be utilized to evaluate their prognostic value using a **Kaplan Meier survival curve**.
 
@@ -357,7 +363,7 @@ Below the Kaplan Meier graph, click on the **store as track** button.<br>
 
     In the next screen, each sample is assigned to either the "low" or "high" group. At the bottom, you can store the two groups based on the Kaplan Meier.
 In this example, we will store this track as temporary (24hrs) but you can also store this track permanently.<br>
-3. Click on the **Build set** button. 
+3. Click on the **Store as track** button tracksaver. Choose for temporary / personal / community and optional give the track and groups a more meaning full name and click **Create Track**. 
    
     Now the track is stored for further usage.
 
@@ -574,7 +580,7 @@ In R2, there are many more sets of genes that have been found to be implemented 
 
 1. Go back to the result page with the differentially expressed genes. 
 2. Select the **Gene set analysis** option from the right panel.
-3. Select the *Custom collection* for **Gene set collection** and then for **Gene set** *Broad 2020 09 h hallmark*, **Confirm selection** and click **Next**.
+3. Select the *Custom collection* for **Gene set collection** and then for **Gene set** *Broad 2025 06 h hallmark*, **Confirm selection** and click **Next**.
 <br>
 
 ---------
