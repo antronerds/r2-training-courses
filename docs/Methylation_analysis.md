@@ -13,25 +13,21 @@ Introduction
 
 This manual is intended for scientists and students who wish to study DNA methylation and to its purpose is to provide instructions on how to analyze methylation data using the R2 Genomics Analysis and Visualization Platform, also known as the R2 Platform [1]. Additionally, an online tutorial on the R2 Platform is available on the official website to learn about other features. [2] The following mind map aids in understanding the structure of the manual and the relationships between its sections [2], [3].
 
-![](_static/images/MolGenCRC/temp/santos_ijms241311023_TumorProgression.png "Figure 1: Mutation paths during cancer progression")
+![](_static/images/Methylation/image001.png "Figure 1: Mind map on this R2 methylation manual")
 
-[**Figure 1: Mutation paths during cancer progression**](_static/images/MolGenCRC/temp/santos_ijms241311023_TumorProgression.png)
+[**Figure 1: Mutation paths during cancer progression**](_static/images/Methylation/image001.png)
 
-<span class="citation_txt">(source: https://doi.org/10.3390/ijms241311023)</span>
 
-Similar to the picture above, the model highlights the importance of key genetic mutations during CRC progression, 
-including mutations in APC, KRAS, and TP53. While the Vogelstein model has provided a valuable foundation for 
-understanding colorectal cancer, subsequent research has revealed that the disease is more complex and heterogeneous 
-than initially described. Colorectal cancer can involve various genetic and epigenetic changes. Additional 
-factors, such as the tumor microenvironment, inflammation, and the immune system, also play significant roles in the 
-progression of the disease. <br>
-Colorectal cancer is the third most common cancer worldwide, according to the World Health Organization, accounting 
-for approximately 10% of all cancer cases, and it is the second leading cause of cancer-related deaths worldwide. 
 
-![](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg "Figure 2: Subtypes in colorectal 
- cancer: CMS classification (Guinney et al., 2015)")
+### Generating a Heatmap
 
-[**Figure 2: Subtypes in colorectal cancer: CMS classification (Guinney et al., 2015)**](_static/images/MolGenCRC/CMS_classification_characterization_pmc7511559.jpg)
+For analysis of the human methylome in order to study the potential tumor suppressors we are using the R2 platform and the methylome dataset available in R2. The methylome is analyzed by an EPIC array (details), which is bisulfite treatment based. It determines methylated vs. unmethylated DNA target regions between probes (oligonucleotides) and methylated region per each probe, a Heatmap is a useful tool to observe each (un)methylated probes and the clustered region of isoforms in relation to a degree of methylation. As an example for this manual, a Heatmap is generated under the following conditions: “cancer pharmacogenomic tissue”, “cell line” type from “Illumina” company by the author name “Esteller”. Also, this dataset shows how the Heatmap looks like from the highly proliferated cancer samples. Later in Section 3 Comparing Methylation Heatmaps of this manual, the Heatmap from this example will be compared with two other examples from different datasets. The tutorial scope will be then expanded to more complicated conditions such as a tutorial on “Expression” dataset. With the above conditions, the platform user takes the following steps to create the Heatmap:
+
+
+
+![](_static/images/Methylation/image003.jpg "Figure 2:")
+
+[**Figure 2: Main Menu**](_static/images/Methylation/image003.jpg)
 
 Research is needed to understand the mechanisms underlying treatment resistance and to develop strategies to
 overcome it. Better identification and characterization of multiple CRC subtypes could guide treatment decisions and
