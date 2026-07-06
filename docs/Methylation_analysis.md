@@ -95,820 +95,604 @@ We use the dataset that is described above. In this dataset, 64 samples of   .
 This first dataset that we will use, can be found in R2 as "Mixed Colon - Marra - 64 - MAS5.0 - u133p2". In te main 
 screen more background information is revealed bij clicking on the dataset name. In the rest of  R2 clicking on the exclamation marks next to the dataset name will also reveal additional information.
 
-Of course it is nice to have a lot of RNA expression datasets to analyse and explore but without proper sample annotation your have very limited analysis options. Let's explore the annotation for the Marra dataset.
+**An Introduction on R2 Genomics Analysis and Visualization Platform Usage**
 
+By Ji Sun (Klara) Kwon
+Supervision: Dr. Antje Richter
+Justus-Liebig University Giessen (JLU)
+Institute for Genetics and Institute for Bioinformatics
+Heinrich-Buff Ring 58, 35392 Giessen, Germany
 
+---
 
-![](_static/images/MolGenCRC/temp/CRCprogression_highres.jpg "Figure 2: CRC progression from normal tissue to metastatic 
-cancer")
+## 1 Introduction
 
-[**Figure 2: CRC progression from normal tissue to metastatic cancer**](_static/images/MolGenCRC/temp/CRCprogression_highres.jpg)
-<span class="citation_txt">(source: https://www.sciencedirect.com/science/article/pii/S1936523321001236#fig0001)</<span>
+This manual is intended for scientists and students who wish to study DNA methylation, and its purpose is to provide instructions on how to analyze methylation data using the R2 Genomics Analysis and Visualization Platform, also known as the R2 Platform [1]. Additionally, an online tutorial on the R2 Platform is available on the official website to learn about other features. [2] The following mind map aids in understanding the structure of the manual and the relationships between its sections [2], [3].
 
-* Find  and select the RNA expression dataset from Author Marra and select the one with 64 samples. *Note: Click the blue box with confirm selection*.
+![Mind map on this R2 methylation manual](images/page-02.jpg)
 
-* Go to the cohort overview in box 3 and check the samples annotation by using the pulldown menu. In the annotation section, check *cohort overview* how many normal en tissue samples does the **Marra** set contain this set also contains the location such as tissue location etc etc.
+**Figure 1-1:** Mind map on this R2 methylation manual
 
-The R2 platform support a large  set of analysis types to explore datasets. One of these modules is the "Find differential expression between groups". The differential expression analysis aims to identify genes which are significant different between two groups. R2 offers a couple of statistical test in this case we use the T-test which is selected by default.
+---
 
-* Check if you have selected the **Marra** set and select in the main menu box, "Find Differential expression between two groups. In the next screen, use the default select T-test and select "Tissue" in **the group by:** option, and click submit in the next screen,  Select Normal and Adenoma for subsequently group 1 and group 2, make sure that log2 and p < 0.01 is selected  and click submit.
+## 2 Generating a Heatmap
 
-* R2 has generated a large list of differentially expressed genes, can you say something about the distribution of the genes, how many are up and down regulated.
+For analysis of the human methylome in order to study the potential tumor suppressors we are using the R2 platform and the methylome dataset available in R2. The methylome is analyzed by an EPIC array (details), which is bisulfite treatment based. It determines methylated vs. unmethylated DNA target regions between probes (oligonucleotides), and per methylated region per each probe, a Heatmap is a useful tool to observe each (un)methylated probes and the clustered region of isoforms in relation to a degree of methylation.
 
-**A: A list of 8000 regulated genens has been found. A small tabel shows the numbers of up and down regulated genes. ~4058 vs 3939 **. 
+As an example for this manual, a Heatmap is generated under the following conditions: "cancer pharmacogenomic tissue", "cell line" type from "Illumina" company by the author name "Esteller". Also, this dataset shows how the Heatmap looks like from the highly proliferated cancer samples. Later in *Section 3 Comparing Methylation Heatmaps* of this manual, the Heatmap from this example will be compared with two other examples from different datasets. The tutorial scope will be then expanded to more complicated conditions such as a tutorial on "Expression" dataset.
 
+With the above conditions, the platform user takes the following steps to create the Heatmap:
 
-Next to many publicly available datasets, R2 is also hosting a lot of curated lists of genes which we call `gene sets` (gene categories). These gene categories can be used to restrict or filter as well.  We can adapt our current search by scrolling down to the end of our gene list. In the Adjustable Settings Panel by hitting the **"Search GS"** in the Gene Filters box you can now use a Gene Set to filter your list. Re-generate a list that is specifically associated with (colorectal) cancer (hint: look in the gene category or KEGG pathway list to identify an interesting gene set). You can look with keywords of inspect the KEGG pathway specific.
+**1)** After login to the R2 Platform [1], click the checkbox under Field 2 "Select a dataset for analysis" (in Figure 2-1).
 
-* Check some genes with single gene view (AXIN2 etc etc) by clicking the magnifying glass, in the green bar in the top you can easily go to list. Note the coloured bars beneath plot, containing the sample annotation, these grouping variables are called tracks. Also note you hoover over the dots in the graph and the tracks to get more information of the individual samples.
+![Main menu](images/page-03.jpg)
 
+**Figure 2-1:** Main menu
 
-## A song of heatmaps and pathways
+**2)** On the pop-up box (in Figure 2-2), select "cell line" by clicking Column {Category} "Select Filter", type "cancer pharmacogenomic" on Column {Tissue/Tumor} or type "Esteller" on Column {Author}. One can confirm the right dataset by referring the description table below as shown in Figure 2-2. When the dataset is found, click the found data and click "Confirm selection". (in Figure 2-3) Leave all other settings at their default and click "Next" on the main page to proceed. (in Figure 2-4)
 
+![Change Dataset menu](images/page-04.jpg)
 
-The WNT pathway is an important signal transduction cascade which plays an important role in many biological processes. The dysregulation of the Wnt pathway has been observed in many different cancers including colon cancer. 
+**Figure 2-2:** Change Dataset menu
 
-A:
-![](_static/images/MolGenCRC/marra_wnt_single_geneview.png "Figure 2: heatmap Find Diff")
+**Figure 2-3:** Change Dataset menu (after filter)
 
+![Main menu after selecting the dataset](images/page-05.jpg)
 
+**Figure 2-4:** Main menu (after selecting the dataset)
 
-### The WNT pathway
+**3)** The next page is "View a gene" that narrows down to the specific gene or methylation ID which to be shown in a Heatmap. (in Figure 2-5) As an example, "CLDN10" (Claudin 10) is written in Field {Gene / Met_id} as it is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice. Click "Submit" to execute a Heatmap.
 
-Generate a list of genes which are differentially expressed comparing normal and adenoma within the WNT pathway KEGG, use the False Discovery Rate for multiple testing correction, log 2 values and P <0.01. Find the **Wnt pathway** by clicking again the GS (Gene set button) and search by key word for Wnt or go through the KEGG pathways. 
+**Figure 2-5:** Adjustable settings menu on the dataset
 
-* How many genes are up / down regulated. 
-A:
-33
-32
+In case that a gene name of interest is uncertain, one can find the exact gene name of interest by a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
 
-* In the left menu generate a heatmap. Play a little bit with the color scheme, select e.g: the green-black-red scheme,  Inspect the heatmap did you expect this pronounced clustering?.
+A linear graph is generated as the following graph with an X-axis with samples (probes) and a Y-axis as CLDN10 methylation. (in Figure 2-6) Each sample (a.k.a. cell line type, on the X-axis) is ordered by its degree of CLDN10 methylation (on the Y-axis).
 
+![Graph on the probes of the chosen CLDN10 dataset](images/page-06.jpg)
 
-A:
-![](_static/images/MolGenCRC/marra_biased_wnt.png "Figure 2: heatmap Find Diff"). Yep, the genelist was biased  als result of tje Student T-test. 
+**Figure 2-6:** Graph on the probes of the chosen CLDN10 dataset
 
-### Find relevant pathways
+**Figure 2-7:** Description of the chosen dataset
 
+Two additional features on this webpage come in handy: By clicking on the checkbox right in the graph title (marked in red in Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link (marked in red in Figure 2-6) and read the definition of the terminologies on the National Library of Medicine (NIM) website. (in Figure 2-8)
 
-Often, you do not immediately have an idea which pathways you could look at for in your comparisons between groups (normal versus adenoma in our case). A module within R2 providing you with some suggestions is the so called KEGG Pathway Finder by Groups. It assesses whether the number of genes that show significant differential expression between Normal and Adenoma is significantly higher than you would expect compared to all genes that are mentioned in KEGG. In other words are the genes you found regulated between the groups enriched in the KEGG pathway database. 
+![Definition of terminology CLDN10 on the NLM website](images/page-07.jpg)
 
-[Info: The KEGG pathway Database]( https://www.genome.jp/kegg/pathway.html).
+**Figure 2-8:** Definition of terminology "CLDN10" on the National Library of Medicine (NLM) website
 
+**4)** As a next step, click on "View additional details" on the same page below the previous line graph. (in Figure 2-9) Then by clicking "view all" link as shown in Figure 2-10, the embedded Heatmap and R2 Genome Browser of the chosen dataset will open in a new screen.
 
-* Perform a KEGG pathway analysis from the ‘main’ page. leave the re-presentation on **"over"** again with the Normal vs Adenoma group. Are there KEGG pathways over-represented in the differentially expressed genes  (Set the p-value 0.01 for the analysis and select striking pathways). And does it make sense that these are in the list ?.
+**Figure 2-9:** "View additional details" (clickable)
 
-![](_static/images/MolGenCRC/keggpathway_select.png "Kegg select")
+![View additional details clickable](images/page-08.jpg)
 
+**Figure 2-10:** "View additional details" (clickable)
 
-*A: DNA replication and Cell cycle are in  the list*, when you select over-representation
+**5)** Figure 2-11 shows the generated Heatmap. The **Heatmap** describes where each subset (probe) of the gene is methylated or not. The X-axis of the Heatmap indicates "primary histology" (or cell line type) and the Y-axis indicates all probes of the chosen gene of interest annotated within the dataset. The methylation score is colored by yellow (near to score 0, unmethylated), black in the middle (partially methylated, 50%), and blue (near to score 1, fully methylated). As shown in Figure 2-11, each probe per cell line type has a different tendency of methylation region.
 
-![](_static/images/MolGenCRC/kegg_pathway.png "KEGG results")
+For example, a kidney cell line is shown as green above the Heatmap. The vertical tendency from the green color (a kidney cell) on the X-axis extended towards the bottom shows how probes on the kidney cell are differently methylated. The user could see on this vertical tendency that probe "cg13733394" is unmethylated as in yellow, compared to probe "cg18470456" in blue which is methylated.
 
+![The Heatmap of the chosen dataset](images/page-09.jpg)
 
-* Perform the same task with the under-representation selected in de drop down menu. Do you see interesting 
-  pathways popping up?
+**Figure 2-11:** The Heatmap of the chosen dataset
 
-A: Under-representation e.g.  the mismatch repair pathway.
+If the user is interested in looking into a table of each sample (probe) and gene name of the dataset, click on "Sort Order Listing" on the same webpage below the Heatmap. (in Figure 2-12)
 
-In this test the WNT pathway was not really significant but still in the list at the bottom. One of the reasons why this is the case, is that in this case not all the genes  are assigned to the KEGG WNT pathway. Or that the pathway genes are in this case not sufficient to access pathway activity. However, visualizing the gene expression still hints you towards WNT pathway involvment. 
+**Figure 2-12:** The table of sample and gene names of the chosen dataset
 
-* Go to the main screen select generate a heatmap and select the wnt path way from the text database.
+**6)** By scrolling down, there is R2 Genome Browser as shown in Figure 2-13. The R2 Genome Browser relates the probes on the Y-axis of the Heatmap showing as two isoforms. The user could see Isoform A on the left side and Isoform B on the right side of the bar from R2 Genome Browser. The name of a certain probe could be seen or matched between the Heatmap and R2 Genome Browser by placing a cursor on that probe. Depending on the dataset, only one isoform or more isoforms can exist.
 
-A:
-![](_static/images/MolGenCRC/marra_unbiased_wnt.png "Figure 2: Heatmap - Wnt").
+The colored vertical line just below the diagram title represents the chromosome of this database and shows the gene position in the chromosome by a small vertical line (marked in yellow in Figure 2-13).
 
-* The samples are clearly seperated in Normal vs Adenoma. It's different and less pronounced compared to the previous heatmap you generated.  Do you think this is special? , Why or Why not.
+Then R2 Genome Browser shows the average (mean) CpG by methylation score (on an Y-axis) and the gene (a.k.a. gene position number, on an X-axis). The dots in this diagram are CpG (or probe) and their according methylation degree. It is to be noted that the Y-axis of R2 Genome Browser is the methylation score per probe, whereas the X-axis of Heatmap is the methylation score (which is vice versa).
 
-* In what way is the heatmap your generated different compared to the previous one.  
+The standard deviation of methylation per CpG is shown with the vertical gray line in the diagram, which is located in the gene index around 96,160,000. The letter "q" (queue) from the X-axis label "q32.1" reveals that the gene is located on the chromosome's long arm. If it is located on the small arm of the chromosome it is labeled with "p" (petite).
 
+Below the diagram, there are two green sticks called "CLDN10" labeled on the left and one red stick called "CLDN10-AS1" labeled on the right. The green sticks represent Isoform A and the red stick represents an antisense isoform. The B isoform is shown on the right side. Depending on the dataset, multiple isoforms more than two (A and B) could exist. More details regarding R2 Genome Browser could be found on R2 Platform online tutorial under Section 17. Using the R2-Genome browser. [2]
 
+![R2 Genome Browser with mean methylation score by gene index](images/page-11.jpg)
 
-## Identifying groups and their characteristics: CMS
+**Figure 2-13:** R2 Genome Browser with mean methylation score by gene index
 
-Let us now move past the precancerous stage of adenomas and look at colorectal cancer. Colorectal cancer is a complex 
-and heterogeneous disease, characterized by a multitude of variations in its genetic, molecular, and clinical 
-attributes. This heterogeneity manifests in diverse ways, influencing the tumor's behavior, response to treatments, and patient outcomes. Understanding this heterogeneity is critical for tailoring effective therapies and improving patient care. In this context, we will explore the various dimensions of heterogeneity in colorectal cancer and its implications for diagnosis, treatment, and research.  
-  
-In 2015, Guinney et al. (Nat Med. 2015 Nov; 21(11):1350–1356) published a bioinformatics study on a vast collection 
-of colorectal cancer cohorts with detailed molecular annotation. The consortium developed a now widely accepted 
-molecular classification system that allows researchers to categorize most colorectal tumors into one of four 
-distinct and robust subtypes, each characterized by its unique biological features. These subtypes are: CMS1 (MSI 
-Immune), CMS2 (Canonical), CMS3 (Metabolic), and CMS4 (Mesenchymal), see Figure 2. 
+Now, if the user is interested in investigating certain probes from the dataset, the next steps could be done additionally. (marked in red in Figure 2-13)
 
-### Clustering with t-SNE maps
+**6-1)** When a cursor is placed on one of the probes, a pop-up message shows the information regarding the selected probe. ("ilmnhm450" in Figure 2-13) Filtering by the information on pop-up messages, three CpGs within the promoter of the gene and isoform of interest are selected ("cg08418978" in purple, "cg22122715" in red, "cg25032595" in blue) by clicking the check-boxes on "Select reporters" table. As shown with marked color-arrows in Figure 2-13, the probes are observed both as a dot and as a block. Click "Next" to proceed.
 
-An unbiased unsupervised type of clustering analysis is a good starting point to familiarize yourself with a new
-dataset. The t-SNE algorithm is an algorithm that was developed in recent years. It finds similarity in expression profiles of
-samples and will clump cells with similar expression profiles together on a map.
+**6-2)** Figure 2-14 shows the updated Heatmap and R2 Genome Browser after the previous step (Step 6-1). The user could investigate the methylation tendency of the three probes. Back to the example of "kidney" cell type (indicated in green on the X-axis "primary_histology" of Heatmap), the user sees two probes ("cg08418978", "cg22122715"; yellow in Heatmap) are unmethylated but Probe "cg25032595" (blue in Heatmap) is methylated.
 
-* Click the button below to show the t-SNE map in R2:
+![The updated Heatmap and R2 Genome Browser for a subset of CpG probes chosen](images/page-12.jpg)
 
+**Figure 2-14:** The updated Heatmap and R2 Genome Browser of the chosen dataset for a subset of CpG probes chosen
 
-![](_static/images/MolGenCRC/temp/tSNE204_create_permalink_later.png "Figure 2: temp image, todo make permalink tSNE with CMS coloring")
+### Update: quick access to methylation heatmaps in R2
 
-[**Figure 2: temp image, todo make permalink tSNE with CMS coloring**](_static/images/MolGenCRC/temp/tSNE204_create_permalink_later.png)
+- click view a gene
+- click view all Met_ids
+- click next
+- choose your gene of interest in 'Gene' and click next
+- wait and heatmap is produced from all CpGs assigned to your Gene of interest
 
+![Quick access flow to methylation heatmaps](images/page-13.jpg)
 
-ToDo make permalink to tSNE instead of image above  
-<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_tsne_86_6tumortypes" target="_blank">
-Go to the t-SNE map</a>
-<br>
-<br>
+---
 
-Under the graph, a menu allows the user to adapt settings.
-Colors of the graph points are not set by default.
+## 3 Comparing Methylation Heatmaps
 
-* Find the **Color mode** dropdown and select *Color by Track*. Now set the **Color track** dropdown to use the
-  *cms_predicted* track
-  again, and click **Submit** to show the changes.
-* The different maps can be found under de setting Versions. Set **Versions** to the value *all* and click **Submit**
-  again.  
+To grasp a better idea how to interpret this Heatmap, two further methylation/Methylome datasets will be compared with the "Esteller" dataset. As mentioned earlier in *Section 2 Generating Heatmap* of this manual, this "Esteller" dataset is based on highly proliferating cancer cell lines. The second dataset is based on primary tumors ("tumor" type by the author name "Heyn" on R2 Platform). The third dataset is based on normal control tissue samples ("normal" type by the author name "Lokk" on R2 Platform). In this section, three Heatmaps generated from these three datasets are to be compared to show the difference in methylation tendency for a chosen gene of interest. These comparative methylome heatmaps were used to study another tumor suppressor ZAR1. [5]
 
+To create the second ("Heyn") and the third ("Lokk") datasets, repeat the steps from 1) to 5) in *Section 2 Generating Heatmap* of this manual. The following Figure 3-1 is the generated Heatmaps of the three datasets ("Esteller" on the bottom, "Heyn" in the middle, "Lokk" on the top). As shown with colors in Figure 3-1, the "Lokk" Heatmap of CLDN10 is rather uniform with an CLDN10 CGI (or CpG-Island) that is unmethylated, whereas the CGI surrounding regions are methylated (for all samples).
 
+When looking at the Heatmap from primary tumors "Heyn", some degree of methylation appears across the CLDN10 CGI (the entire black and blue colors throughout the Y-axis). This methylation shows/implies that the tumor samples started to inactivate the tumor suppressor.
 
-------  
+Next, the "Esteller" Heatmap includes even more methylation for the CLDN10 CGI than the "Heyn" Heatmap. Much more blue colors are observed throughout the Y-axis, which makes sense that highly proliferative cancer cells have more CLDN10 inactivated than the less proliferative tumor cells. By comparing the later "Esteller" Heatmap with "Lokk" and "Heyn" Heatmaps, one could see the gradual changes in the methylation tendency for the gene of interest during carcinogenesis.
 
+![Methylation Heatmaps from Lokk, Heyn, and Esteller datasets](images/page-14.jpg)
 
-![](_static/images/R2d2_logo.png)**What insight did you obtain when you colored the plot with annotation?**
+**Figure 3-1:** The methylation Heatmaps from datasets "Lokk" (on the top), "Heyn" (in the middle) and "Esteller" (on the bottom)
 
-![](_static/images/R2d2_logo.png)**Why do you think it is good practice to check different values for a parameter?**
+A single Heatmap can be further categorized and compared by each cell type (by different tissues). With the example of "Lokk" Heatmap (normal cell), the following additional steps could be done after Step 5) to categorize per cell type:
 
-<br>
-<br>
+Scroll down to the "Gene" table on the bottom of the Heatmap webpage. Select "a track" in Field "Order samples by" and "tissue (17 cat)" in Field "Ordering track" (in Figure 3-2). This allows the Heatmap to be organized by cell type.
 
+![The table option on the Heatmap webpage](images/page-15.jpg)
 
-------  
+**Figure 3-2:** The table option on the Heatmap webpage
 
-CRC contains subtypes, of which we already looked at one subtype more in depth. We will study differences among
-the subtypes further. To start, lets see if there is any difference in survival chances among the subtypes
+Figure 3-3 is a categorized Heatmap by cell type. If a cursor is placed on the "tissue" label on the X-axis (above), a pop-up message shows the information regarding the annotations/tracks such as tissue type and gender of each sample. For example, Sample "gsm1215434" came from bladder tissue of a male as shown in Figure 3-3.
 
+![Categorized Heatmaps by cell type from Lokk, Heyn, and Esteller](images/page-16.jpg)
 
-### Different survival chances for different CMS CRC subtypes? 
+**Figure 3-3:** Categorized Heatmaps by cell type from datasets "Lokk" (on the top), "Heyn" (in the middle) and "Esteller" (on the bottom)
 
-* In the left side menu on the main page, click on Survival (Kaplan-Meier / Cox)
-* In the menu at the center of the page, click at the Dataset setting on the current Dataset name, and find the
-  dataset with *Author* is **Guinney** and the amount of samples *N* is **3232**
-* Click on the row to read its description in the information box underneath the dataset selection grid
+---
 
-ToDo: Fill in the information about the dataset Summary Design etc
+## 4 Shortcut of Generating a Heatmap
 
-* Leave *Separate by* at **categorical track (Kaplan-Meier)** and click **Next**
-* Choose *type of Survival* **overall* and *Track* **lv_cms_final**
+The user could take the following steps as a shortcut to generate a heatmap:
 
-![](_static/images/MolGenCRC/temp/KaplanMeier_guinney_cmssurvivalchances_delete_later.png "Figure 2: Kaplan Meier 
-result, different survival chances for different cms groups. ToDo: delete later")
+**1)** To select "Esteller" dataset, repeat the Step 1) to Figure 2-3 in Step 2) in *Section 2 Generating Heatmap* of this manual. After following the steps login to the R2 Platform [1], choose "View all Met_ids for a Gene (Heatmap)" under Field 3 checkbox. Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 4-1).
 
-[**Figure 2: Kaplan Meier
-result, different survival chances for different cms groups. ToDo: delete later**](_static/images/MolGenCRC/temp/KaplanMeier_guinney_cmssurvivalchances_delete_later.png)
+![Main menu](images/page-17.jpg)
 
-* Now perform the same analysis, but choose **relapse-free** in stead of overall for the setting *type of Survival*  
+**Figure 4-1:** Main menu
 
-![](_static/images/MolGenCRC/temp/KaplanMeier_Guinney_cms_relapsefree_delete_later.png "Figure 2: Kaplan Meier
-result, different relapse free Kaplan Meier curves for different cms groups. ToDo: delete later")
+**2)** On the next webpage "View all reporters for a gene", the user could type a gene of interest to generate a Heatmap. As an example, "CLDN10" (Claudin 10) is written in Field {Gene} as shown in Figure 4-2. Click "Next" to execute a Heatmap.
 
-[**Figure 2: Kaplan Meier
-result, different relapse free Kaplan Meier curves for different cms groups. ToDo: delete later**](_static/images/MolGenCRC/temp/KaplanMeier_Guinney_cms_relapsefree_delete_later.png)
+**Figure 4-2:** "View all reporters for a gene" menu
 
- 
+**3)** Figure 2-11 shows the generated Heatmap. One could notice that the Heatmap in Figure 4-3 looks the same as the Heatmap in *Section 2 Generating Heatmap*.
 
-------  
+![The Heatmap of the chosen dataset](images/page-18.jpg)
 
+**Figure 4-3:** The Heatmap of the chosen dataset
 
-![](_static/images/R2d2_logo.png)**What does the first Kaplan Meier plot tell you?**
+The user could also generate a Heatmap by cell type from dataset "Esteller" like the Heatmap in *Section 3 Comparing Methylation Heatmaps*, with the following steps:
 
-![](_static/images/R2d2_logo.png)**And what is your conclusion from the second Kaplan Meier graph?**
-<br>
-<br>
-**ToDO: remove answer:**
-OS curves focus on overall mortality from any cause, while RFS curves specifically track the time until a particular
-event (e.g., disease relapse) occurs. In this casse you can see that CMS 4 has the worst prognosis, both for overall
-survival probability and for relapse free survival.
+**4)** Repeat Step 1) as in Figure 4-1. On the website "View all reporters for a gene", type "CLDN10" (Claudin 10) in Field {Gene}. To create a Heatmap by cell type, select "a track" in the Field {Order samples by} and "primary_site (14 cat)" in the Field {Ordering track}. Click "Next" to execute a Heatmap by cell type (in Figure 4-4).
 
-------
+**Figure 4-4:** "View all reporters for a gene" menu
 
+Figure 4-5 is a categorized Heatmap by cell type. This Figure is the same as the Heatmap from the dataset "Esteller" in Figure 3-1 in *Section 3 Comparing Methylation Heatmaps*.
 
-### Mutations
+![Categorized Heatmaps by cell type from dataset Esteller](images/page-19.jpg)
 
-Optionally   
-* From the main page, select the Guinney choose a **relate 2 tracks** analysis to show the different percentages of  *y 
-  axis* **lv_braf_mut** or/and **lv_kras_mut** mutations and the *X axis* **lv_cms_final**
-* Select the **stacked bars** *graph type*
+**Figure 4-5:** Categorized Heatmaps by cell type from dataset "Esteller"
 
-![](_static/images/MolGenCRC/temp/braf_and_kras_mutation_percms_guinney_stackedbars_delete_later.png "Figure 2: temp 
-image, Braf and Kras mutation ratios per CMS")
+---
 
-[**Figure 2: temp image, Braf and Kras mutation ratios per CMS**](_static/images/MolGenCRC/temp/braf_and_kras_mutation_percms_guinney_stackedbars_delete_later.png)
+## 5 Comparing Methylation Scatter Plots
 
-ToDo: what more can I do with mutational analyses? https://r2-tutorials.readthedocs.io/en/latest/Pathway_Finder.html?highlight=mutation#step-3-finding-pathways-relevant-to-subgroups
-Patwayfinder by group leads here too to Axin
+The user could also compare the methylation level of the same probe from multiple datasets. In this section, the same three datasets as *Section 3 Comparing Methylation Heatmaps* are used ("Lokk": normal cells, "Heyn": tumor cells, "Esteller": cancer cells). The user takes the following steps to create the scatter plots of the same probe methylation dataset:
 
+**5)** After login to the R2 Platform [1], choose "Across Datasets" under Field 1 checkbox. Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 5-1).
 
-![](_static/images/MolGenCRC/temp/brafmutation_followup_analysis_pathwayfinder_wnt_AXIN2_delete_later.png "Figure 2: temp
-image, followup analysis Braf mutation -> WNT pathway, Axin2")
+![MegaSampler main menu](images/page-20.jpg)
 
-[**Figure 2: temp image,  followup analysis Braf mutation -> WNT pathway, Axin2**](_static/images/MolGenCRC/temp/brafmutation_followup_analysis_pathwayfinder_wnt_AXIN2_delete_later.png)
-  
+**Figure 5-1:** Main menu
 
-### A dive into CMS1: MSI / MSS in CRC
+**6)** On the next webpage "MegaSampler", the user could change the settings in relation to the data type or preset/default (either in a global or in a group level) as shown in Figure 5-2. Select "hs, ilmnhm450, custom" on Field "Type of data" to see methylation datasets on the list of the next page. Leave other settings at their default and click "Next" to proceed.
 
-In one the previous tasks we have introduced the R2 platform and looked at differences between Normal and Colon tissue by looking at differentially expressed genes. For many cancers types it is important to focus on subtyping meaning identifying subgroups within CRC datasets R2 is hosting. As already discussed, CRC has 4 CMS subtypes, one of the characteristics of CMS I, is MSI instability.
+**Figure 5-2:** "MegaSampler" menu
 
-The genomic instability in colon cancer can be divided into at least two major types, microsatellite instability (MSI) or chromosomal instability (CIN). Microsatellite instability (MSI) is caused by mutations in DNA mismatch repair genes such as MLH1, MSH2, MSH6, and PMS2, and it is found in 10% to 15% of sporadic colorectal cancers (CRCs). The presence of MSI predicts a good outcome in colorectal cancer.
+**7)** On the next webpage, type "CLDN10" in the Field "Gene / Reporter" and click "Select Datasets" button. (in Figure 5-3)
 
-In MSI colon cancer, genes of the DNA mismatch repair system play an important role. Germline mutations in these genes are a major cause of the inherited form of colon cancer, namely HNPCC (hereditary nonpolyposis colon cancer).  In sporadic forms of colon cancer however, these genes are frequently inactivated. Inactivation is often achieved via hypermethylation, switching the gene off. Hypermethylation of genes in colon cancer is most common in colon tumors with a proximal location in the colon and much less in colon tumors with a distal location.
+**Figure 5-3:** "MegaSampler" menu
 
-Dataset used: The next section we will use another dataset. * "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"*
+**8)** On the pop-up box, type the author name "Lokk" (normal cells) on Column {Author} and select the datasets by clicking "Select". Repeat the same steps for the datasets with the author names "Heyn" (tumor cells) and "Esteller" (cancer cells) respectively. Click "Confirm selection" button to proceed (as shown in Figure 5-4).
 
-This dataset consists of Microsatellite stable (MSS) tumors and microsatellite instable (MSI) tumors.
+![Data selection menu with Lokk, Heyn, Esteller](images/page-21.jpg)
 
-#### Watanabe dataset
+**Figure 5-4:** Data selection menu with the author names "Lokk", "Heyn", "Esteller"
 
-* **Select "Colon Tumor - Watanabe - 84 - MAS5.0 - u133p2"**
+**9)** By previous Step 4), the user could see the data has reflected in the setting as shown in yellow in Figure 5-5. Type "CLDN10" in Field "Gene/Reporter" and choose "None" in Field "Transformation". Click "Next" button to proceed.
 
+**Figure 5-5:** "MegaSampler" menu reflected the selected datasets
 
-Use the “Find Differential expressed genes between groups” module to generate a list of genes that differentially expressed between MSI and MSS characterized tumors. Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
+**10)** Choose one probe ("cg25032595" and "cg16556145" respectively) from the CGI observed in yellow in the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps*. As shown in Figure 4-6, the two probes are found in the "Esteller" heatmap as "cg16275739" is marked in blue and "cg18393747" is marked in red.
 
-* Which one is in top list.
+![Probe location in the Esteller Heatmap](images/page-22.jpg)
 
-A: TYMS
+**Figure 5-6:** Probe location in the "Esteller" Heatmap
 
-*  One of the genes differentially expressed clearly is MLH1 (does this gene sounds familiar). Look at the expression pattern of MLH1 in colon tumors, both sets (MSI vs. MSS). What do you notice ?. The MHL1 expression came significant out our test as a down regulated gene. What did you expect and what do you see?. 
+Select the first probe "cg25032595" as shown on the left in Figure 5-7. On "Adjustable settings" in Figure 5-8, the user could change the dataset order out of all selected datasets. Change the order the datasets: "Lokk" as "1", "Heyn" as "2" and "Esteller" as "3" (in Figure 5-8). This setting lets datasets be compared: "Lokk" as the first dataset, "Heyn" as the second dataset and "Esteller" as the third order. Click "Submit" button to proceed. Repeat the same process for the second probe "cg16556145" as shown on the right in Figure 5-7.
 
+![Selected probe in Gene CLDN10 table](images/page-23.jpg)
 
-**A:**
+**Figure 5-7:** Selected probe ("cg25032595" on the left, "cg16556145" on the right) in "Gene: CLDN10" table
 
-![](_static/images/MolGenCRC/watanabe_mlh1.png "Figure : MLH1")
+**Figure 5-8:** "Adjustable settings" menu
 
-MSI tumors give a very heterogeneous picture. This could be an indication that within the MSI tumor group also a subgroup could be identified. Which one do you think ??. (note: Inspect the tracks or hoover)
+As a result, the first methylation scatter plot from Dataset "Lokk", "Heyn" and "Esteller" of Probe "cg25032595" are generated as shown in Figure 5-9. As expected, the methylation level of "Lokk" for normal tissues (with the average 0.025) is lower than the methylation level of "Heyn" tumor cell lines (with the average 0.08). The methylation level of "Heyn" for tumor tissues is also lower than the methylation level of "Esteller" tumor cell lines (with the average 0.4). It should be noted that the name of Y-axes of the scatter plots in Figure 5-9 and Figure 5-10 is false. The Y-axis of the scatter plot is not "Expression" but "Methylation".
 
-**A:**
-The proximal annotated group within the MSI 
+On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-value is significant enough as shown in red (in Figure 5-9).
 
-Taking a close look at te other tracks below the graph you already get an idea what might be the case. R2 has an analysis tool called *relate two tracks* where you investigate the relation between dataset annotations. Go back to the main menu and select **relate two tracks** and click next.  Select for the X-track the MS_status  and for the Y_track MS_Orientation and click next. 
+![ANOVA table and methylation graphs of probe cg25032595](images/page-24.jpg)
 
-Here the relation between Orientation and MSI is plotted and for the statistics a Fisher Exact test has been performed.
+**Figure 5-9:** ANOVA table and methylation graphs of the three datasets of Probe "cg25032595" (could be compared to expression plot Figure 7-5)
 
-* In the previous question we saw the MLH1 expression was not equally distributed within the MSI group, select in Color mode,  Color by Gene and enter MLH1 and click submit.  What do you see?.
+The second methylation scatter plot from the three datasets of Probe "cg16556145" are generated as shown in Figure 5-9. As expected, the methylation tendency from the normal to cancer cells is increasing as observed in the scatter plot in Figure 5-9. The methylation level "Lokk" for normal tissues (with the average 0.1) is lower than the methylation level of "Heyn" tumor cell lines (with the average 0.25). The methylation level of "Heyn" for tumor tissues is also lower than the methylation level of "Esteller" tumor cell lines (with the average 0.65).
 
+On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-value is significant enough as shown in red (in Figure 5-10).
 
-A:
-This clearly illustrates the relation between MSI/MSS subgroups and MLH1 expression
+![ANOVA table and methylation graphs of probe cg16556145](images/page-25.jpg)
 
-![](_static/images/MolGenCRC/relatedtwotracks_msi.png "Relate two tracks: MLH1")
+**Figure 5-10:** ANOVA table and methylation graphs of the three datasets of Probe "cg16556145" (could be compared to expression plot Figure 7-5)
 
-[**relate two tracks : MLH1 expression**](_static/images/MolGenCRC/relatedtwotracks_msi.png)
+The mean methylation difference of the two probes is shown more simply in another online methylation analysis tool named "Wanderer". [6] There is a methylation difference to be seen between normal and tumor cells from Probe "cg25032595" (marked in blue in Figure 5-11) than the gap from Probe "cg16556145" (marked in red in Figure 5-11).
 
-![](_static/images/MolOncCRC/relatetwotracks_ms_status-orientation-XYplot.png "Relate two tracks: MLH1")
+**Figure 5-11:** Wanderer mean methylation graph of CLDN10 (probe set) of the normal and primary breast tumor ("TCGA" dataset)
 
-In many cases of proximal colon cancer with MSI, the high level of microsatellite instability is caused by the loss of MLH1 expression. MLH1 inactivation can occur due to mutations in the MLH1 gene or through epigenetic changes, such as promoter methylation. In summary, the loss of MLH1 expression is a common mechanism leading to MSI in proximal colon cancer. Understanding the relationship between MLH1 expression and MSI is crucial for diagnosing MMR deficiency, predicting prognosis, and guiding targeted therapies for patients with colorectal cancer.
+---
 
+## 6 An Expression Box Plot
 
-So we have identified an important player as discussed in college. You have just selected the Watanabe set. Inspect the background information and look at the data this dataset has been generated. This is very old set, of course this set still of biological relevance we will also try to find we can find out we can validate this other sets. Not only because this is an old set, but it is always common practice in Research practice to validate your results with other sources
+A box plot (a.k.a. Open High Low Close graph) of a single expression dataset could be drawn to see the expression level by a cell type and for your gene of interest. The user takes the following steps to create a scatter plot of a single gene within an expression dataset:
 
+**1)** Repeat the steps from 1) to 3) in *Section 2 Generating Heatmap* of this manual. But instead, choose the expression dataset by typing "Tissues GTeX v8 Prot_Coding" on Column {Tissue/Tumor} as shown in Figure 6-1.
 
-[comment]: <> (small info  about tcga ?)
+![Change Dataset menu after filter](images/page-26.jpg)
 
-#### MSI in tcga set
+**Figure 6-1:** Change Dataset menu (after filter)
 
-Select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
+**2)** Click on Link "CLDN10" under Field "CliniSnitch" which is located on the right of the webpage (in Figure 6-2).
 
-* Perform the **Find Differential Expression** for **Microsatellite_instability**, select in the GS button filter > Broad 2020, oncogenic and click again the MHL1 gene.
+**3)** A next webpage will be opened on a new internet tab. The user could see that the p-value is significant enough (where marked in red). Click on Link "tissue (View)" on Table "catvsnum" of the webpage (in Figure 6-3).
 
-![](_static/images/MolGenCRC/filter_broad_oncogenic.png "204 set: MLH1")
+**4)** A next webpage will be opened on a new internet tab. To visualize and sort better, scroll down to Table "Adjustable settings". Select "Box plot" on Field "Graph type", "median (numeric Y)" on Field "Order Groups By" and "Color by Track" on Field "Color mode". Click "Submit" Button to update the scatter plot of a single expression data by a tissue type (in Figure 6-4).
 
-[**don't forget to use the filter option**](_static/images/MolGenCRC/chrommap.png)
+![Adjustable settings table](images/page-27.jpg)
 
+**Figure 6-4:** Table "Adjustable settings"
 
+As a result, a scatter plot of the expression dataset "Tissues GTeX v8 Prot_Coding" shows the expression distribution of CLDN10 across primary tissues. The user can see tissue types like "salivary_gland", "pancreas" and "kidney" on the top right, which exhibit higher expression levels of Claudin10 on Figure 6-5.
 
-A:
-![](_static/images/MolGenCRC/tcga_msimss_mlh1.png "204 set: MLH1")
-[**204 set: MSI status only**](_static/images/MolGenCRC/chrommap.png)
+![Expression log2 scatter plot of CLDN10 in normal tissues](images/page-28.jpg)
 
-A:
-![](_static/images/MolGenCRC/tcga_msimss_mlh1_512.png "512 set: MLH1")
-[**In the 512:  set can be deleted**](_static/images/MolGenCRC/chrommap.png)
+**Figure 6-5:** Expression log2 Scatter plot of CLDN10 in normal tissues dataset "Tissues GTeX v8 Prot_Coding"
 
-So clearly it seems that MLH1 plays is a key role and is possible affecting other genes also in other independent generated datasets, 
+---
 
-* One way to find out which genes are possibly regulated by the MLH1 gene is to find genes which are (inverse) correlated with this gene.
+## 7 Comparing Expression Scatter Plots
 
+Now that we have studied methylation graphs, our scope is extended to the next topic, which is "**expression**" of our gene of interest across tissues/cancer types. Methylation and expression have a reciprocal relationship to each other. From the previous *Section 3 Comparing Methylation Heatmaps*, it was observed that the methylation levels increase for certain genes during carcinogenesis. On the contrary, the expression levels decrease. A comparative expression graph is a good tool to observe the difference in expression from different datasets. Here, datasets with author name "Roth" and "Broad" are used to plot the expression graphs. The platform user takes the following steps to create the expression graph:
 
-#### Find genes correlating with a single gene
+**1)** Repeat the steps from 1) to 5) in *Section 4 Comparing Methylation Scatter Plots* of this manual for two datasets with author names "Roth" (normal cells, in Figure 7-2) and "Broad" (cancer cells, in Figure 7-3). But skip the change from Step 2) in *Section 4* and leave the table as defaults as shown in Figure 7-1.
 
-* Run the Find correlated genes with a single gene module for the MLH1 gene do not forget to use the filter option for Broad 2020: Oncogenics further use.  the default settings. 
+![MegaSampler menu and data selection with Roth](images/page-29.jpg)
 
-A:
-![](_static/images/MolGenCRC/Findcorgene_MHL1.png "Table")
-[**List of genes correlating with MLH1**](_static/images/MolGenCRC/chrommap.png)
+**Figure 7-1:** "MegaSampler" menu
 
-* Then click on the best correlating gene to plot both genes together, in a two gene view. Inspect the correlation. Can you think of reasons why the gene expression is highly correlated/
+**Figure 7-2:** Data selection menu with the author name "Roth"
 
-**A:**
-![](_static/images/MolGenCRC/Findcorgene_MHL1_EPM2IP1.png "EPM2AIP1")
+![Data selection menu with Broad and adjustable settings](images/page-30.jpg)
 
-* Click on **view additional details**, on which chromosomes are both genes located
+**Figure 7-3:** Data selection menu with the author name "Broad"
 
-**A:**
-Chrom 3.
+**2)** On "Adjustable settings" in Figure 6-4, the user could change the dataset order out of two datasets. Change the order of the datasets: "Roth" as "1" and "Broad" as "2". This setting lets "Roth" as the first dataset compared to "Broad" as the second dataset. Click "Submit" button to proceed.
 
-* Click T-view and zoom out 2 or 5 times, what can you say about their location of the two genes. 
+**Figure 7-4:** "Adjustable settings" menu
 
-![](_static/images/MolGenCRC/viewadddetails.png "Genome Browser")
+As a result, two expression graphs from Dataset "Roth" and "Broad" are generated as shown in Figure 7-5. As expected, the expression level of "Roth" for normal tissues (with the average 7-5) is higher than the expression level of "Broad" cancer cell lines (with the average 3-4). This is in line with methylation level from the two datasets, because the cancer cells ("Broad") are highly methylated compared to the normal cells ("Roth").
 
+On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-value is significant enough as shown in red (in Figure 7-5).
 
+![Expression comparison ANOVA table and graphs](images/page-31.jpg)
 
-[comment]: <> (hier een klein text bruggetje waarom we de volgende stap doen?).
+**Figure 7-5:** Expression comparison for CLDN10 in normal tissues and cancer cell lines as ANOVA table and expression graphs of the two datasets
 
-The MLH1 gene expression affects clearly some important pathways. In case you want to find genes which 
+---
 
-* Go back to your genelist of correlating genes and select only **neg corr** genes and click chrom map, do not use a filter this take some seconds.
+## 8 Comparing Expression and Methylation Data
 
+The user could also compare and correlate methylation and expression datasets by showing both in one plot. In this section, the datasets, "Garnett" (normal cells) and "Esteller" (cancer cells), are used. The user takes the following steps to create the dot plot of the methylation and the expression datasets:
 
+**1)** After login to the R2 Platform [1], choose "Across Datasets" under Field 1 checkbox and "View a gene in two datatypes". Click "Next" on the main page to proceed (in Figure 8-1).
 
-![](_static/images/MolGenCRC/loading_page.png "Loading Page")
+**2)** On Table "Select data sets to merge" of the next webpage, the user could set the data type and the X- and Y-axis of the dot plot. As shown in Figure 8-2, select "cellline_cancer_pharmaco" on Field "Data set collection", "Methylation data - Cell line Cancer Pharmacogenomic - Esteller - 1028 - custom - ilmnhm450" on Field "Source data" and "Expression data - Cell line Cancer Drug (Sanger) - Garnett - 1017 - RMA - u219" on Field "Target data". Click "Select data sets" to proceed.
 
-**A:**
+![Main menu and select data sets to merge](images/page-32.jpg)
 
-![](_static/images/MolGenCRC/viewadddetails_genbr.png "Figure x: MLH1")
+**Figure 8-1:** Main menu
 
-* A lot of genes are clearly over-represented on a number of chromosome, especially chrom 18 with a high p-value.
+**Figure 8-2:** "Select data sets to merge" menu
 
+**3)** On Table "Adjustable settings" of the next webpage, type "CLDN10" in the left box of Field "Gene / Met_id" and "Gene / Reporter". The two probes from Step 6) on *Section 4 Comparing Methylation Scatter Plots* ("cg25032595", "cg16556145") are to be observed. To look at the dot plot of the first probe, type "cg25032595" in the right box of Field "Gene / Met_id" (in Figure 8-3).
 
-**A:**
+![Adjustable settings menu for probe cg25032595](images/page-33.jpg)
 
-![](_static/images/MolGenCRC/chrommap.png "Chrom Table")
+**Figure 8-3:** "Adjustable settings" menu (for Probe "cg25032595")
 
-[**Chromosome 18 instability**](_static/images/MolGenCRC/chrommap.png)
+As shown in Figure 8-4, the user can see the dot plot of the methylation dataset "Esteller" on the X-axis and the expression dataset "Garnett" on the Y-axis for the Probe "cg25032595". There is a significant correlation between the two axes (as p-value is marked in red under the table in Figure 8-4) supporting the idea of DNA hypermethylation decreasing gene expression.
 
-chrom 18 loss is linked to msi/mss instability
+**Figure 8-4:** The dot plot of Probe "cg25032595" (could be compared to Figure 8-6)
 
+**4)** Repeat the steps from 1) to 3) of this section for the second Probe by typing "cg16556145" in the right box of Field "Gene / Met_id" (in Figure 8-5).
 
-#### DNA repair system
+![Adjustable settings menu for probe cg16556145 and dot plot](images/page-34.jpg)
 
+**Figure 8-5:** "Adjustable settings" menu (for Probe "cg16556145")
 
-Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine whether these genes are differentially expressed between MSI and MSS tumors. Go back to the previous settings for "Finding differentially expressed genes" and then select from 'GeneCategory' the ‘DNA repair’ genes. There are 247 genes annotated as DNA repair genes.
+As shown in Figure 8-6, the dot plot for the Probe "cg16556145" is generated. With the significant correlation between the two axes, the concentration tendency of the most dots are the same as the tendency observed in Figure 8-4. One can observe a negative correlation between the methylation and the expression datasets.
 
+**Figure 8-6:** Comparative log2 dot plot of CLDN10 methylation for probe "cg16556145" vs. CLDN10 expression
 
-* Go back to the MLH1 correlating genelist make sure you have preselected the DNA-repair genes. CLick submit. Click on generated a heatmap. And do you see a clear associated with a CMS subgroup ?, and which one.
+---
 
+## 9 In-Depth Study on Expression Dataset
 
-A:
-![](_static/images/MolGenCRC/dnarepair.png "DNA repair")
-[**DNArepair**](_static/images/MolGenCRC/dnarepair.png)
+One could also take a closer look at expression of your gene of interest in certain tissues of the expression dataset on R2 Platform. From an expression box plot, a certain or several tissue types could be selected. In this section, the tissue type "skin" is further investigated with the following steps after the steps in *Section 6 An Expression Box Plot*.
 
-* and take look at the CMS classification !!! what do you see ?? are you surprised
-CMS4, MSI had been associated with CM1 and CMS4
+**1)** Scroll down to "Adjustable settings" after the expression box plot is executed. Select "tissue (30 cat)" on Field "Subset track". On the pop-up window, click the tissue type "skin (1809)" checkbox and "OK". Click "Submit" to proceed. (In Figure 9-1)
 
-In one of the first questions in this course we have seen there is an association with the genomic location. We have seen that a low MLH1 expression is associated with CRC subtypes. As briefly touched, the R2 platform has many types not only gene expression but also methylation arrays. Go to the main menu and select
+![Adjustable settings menu with skin subset](images/page-35.jpg)
 
-*Tumor Colon adenocarcinoma - tcga - 296 - custom - ilmnhm450*
+**Figure 9-1:** "Adjustable settings" menu
 
-* Plot the one gene view for MLH1, do you see something special ?
+**2)** After the box plot on "skin" is executed, the user could further investigate expression level by skin types, such as differences in the expression between fibroblasts and normal skin types. On Table "Adjustable settings", select "tissue_detail (54 cat)" on Field "Track", "tissue_detail (54 cat)" on "Subset track", "Box/dot plot (dots)" on Field "Graph type" and "Color by Track" on Fields "Color mode/(groups)". "tissue_detail (54 cat)" is an in-depth category than the "tissue (30 cat)" category. (In Figure 9-2)
 
+After selecting "tissue_detail (54 cat)" on Field "Subset track", the user sees the pop-up window. Click two skin types checkboxes ("cells_-_cultured_fibroblasts (504)" and "skin_-_not_sun_exposed_(suprapublic) (604)") and "OK" Button. Not-sun-exposed skin cells are chosen to reduce the impacting factor. Click "Submit" to proceed. (In Figure 9-3)
 
-* In the Alternative box, unfold additional details,  click on the view all link below MLH, here a nice heatmap is plotted of the methylation ratios's what do you see.
+![Adjustable settings and pop-up window for tissue detail](images/page-36.jpg)
 
+**Figure 9-2:** "Adjustable settings" menu
 
-* A lot of samples are unfortunately not all the samples are annotated for Microsatelite instability, filter for those samples only and click submit. The MLH1 reporters for this gene (only 4), seem all methylated however, most likely these are not well designed and can maybe not distinguish for the proper MLH1 reporters. However look at the other reporters on the same location, we also see a gene name we encountered before. Do you see an association with MSI/MSS.
+**Figure 9-3:** Pop-up window on "tissue_detail (54 cat)" subset track
 
+The box plot with dots shown in Figure 9-4 shows the difference of expression levels between fibroblasts and normal skin. Normal skin not exposed to the sun has a higher expression level, compared to the expression level of fibroblasts. (Be reminded that the Y-Axis name is log2 CLDN10 expression.)
 
+![Expression box dot plot fibroblasts vs skin](images/page-37.jpg)
 
+**Figure 9-4:** Expression log2 Box/dot plot (dots) on fibroblasts and not-sun-exposed skin cells for CLDN10
 
-A:
-![](_static/images/MolGenCRC/methylation_mlh1loc.png "Figure 2: heatmap")
-May be a little , maybe you expected CMS1 classification but also CMS4 has been associated with MSI. 
+---
 
+## 10 Comparing Survival Probability
 
-  
+One could also investigate patient survival probability of a certain tumor type/entity in comparison to the expression for your gene of interest using the R2 Platform. In this section, the "TCGA" dataset is used as an example because it contains several general cancer types (including normal control tissues) and is relatively big.
 
-### What pathways drive subtype CMS4?
+**1)** Click "Survival (Kaplan-Meier/Cox)" on the left menu of the main page. On Table "Kaplan-Meier analysis using a data set", select Field "Data set" as shown in Figure 10-1.
 
-Previously we looked into CMS subtype 1. We would like to understand what sets CMS 4 apart from the subtypes 2 and 3.
+**2)** On the pop-up box (in Figure 10-2), type "Kidney" on Column {Tissue/Tumor} and select "Kidney Renal Clear Cell Carcinoma" from "tcgars" on Column {Platform}. Click "Confirm selection" button as shown in Figure 10-2.
 
-* From the main page choose the *analysis* **Differential Expression Between Two Groups**.
-* ToDo: how to Choose the track **cms4vs3**
-* Look in the list of genes if you see anything familiar and hover over the magnifying glass icon of a few genes
+![Survival main page and change dataset menu](images/page-38.jpg)
 
-Gene set analysis helps researchers interpret the biological relevance of a group of genes. Instead of looking at individual
-genes, it allows you to understand the collective functions or pathway involvements genes in your list. This can provide more
-meaningful insights into the underlying biology of a particular condition or experiment.
+**Figure 10-1:** "Survival (Kaplan-Meier/Cox)" main page
 
-* Click on the top most button on the right that is labeled **Gene set analysis**.
-* Select the *Gene set Collection* **Broad 2020 09 h hallmark**
-* Switch the *Representation* setting to **all** to look at both over- and under-representation
-* Click Next
+**Figure 10-2:** Change Dataset menu (after filter)
 
-ToDo: Remove picture
+**3)** Select "a single gene" on Field "Separated by" and click "Next" on the main page to proceed. (in Figure 10-3)
 
-![](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png "Figure 3: temp image of result Gene
-set analysis, todo remove")
+The result on the next page shows the overall survival probability between patients with high gene of interest expression and low expression (on the left in Figure 10-4) and expression levels with p-values (on the right in Figure 10-4).
 
-[**Figure 3: temp image of result Gene set analysis, todo remove**](_static/images/MolGenCRC/temp/GeneSetAnalysis_create_permalink_later.png)
+When the automated separation of patients by expression level produced one big and one small cohort, it should be taken into account that results could be significant, but still not biologically relevant. Further studies should be performed, in order to better understand the contribution of your gene of interest in patient survival. Even though the p-values are significant (statistically valid), the dataset might not be biologically valid as well.
 
-------
+The left graph in Figure 10-4 shows the overall survival probability of two cohorts (on an Y-axis) that are high expression (a line marked in blue) and low expression (a line marked in red) groups, regarding the expression of the gene of interest. An X-axis is the follow-up in months. The total patient number of the cohorts are shown with colors on the right top of the graph ("n=430", "n=103" respectively). One could find out individual information of each sample by putting the cursor on the line (in Figure 10-5).
 
-![](_static/images/R2d2_logo.png)**Which gene sets do you see pop up and are they over or under expressed in CMS 4?**
+![Kaplan-Meier table and overall survival probability graph](images/page-39.jpg)
 
-![](_static/images/R2d2_logo.png)**Explain the biological relevance for the CMS4 subtype for these over- or/and underexpression of these gene sets for CMS4 subtype CRC tumors**
+**Figure 10-3:** "Kaplan-Meier analysis using a data set" Table on main page
 
-<br>
-<br>
+**Figure 10-4:** "Overall survival probability graph" and "Expression graph"
 
+![Individual information pop-up in survival graph](images/page-40.jpg)
 
-------
+**Figure 10-5:** Individual information pop-up in "Overall survival probability graph"
 
-## Experiments TP53; Molecule of the year 1994
+The right graph in Figure 10-4 shows the expression level by "Events" groups. An Y-axis shows the expression level and an X-axis shows the p-values of each sample. The bar graph on the X-axis shows the p-value of each sample. The dots in green on the curve indicate the samples with the "Events" and the dots in red are the samples with no "Events". The definition of the "Events" is different by datasets. These "Events" could be for example relapse free or not (Relapse free means that the patients after primary treatment survived a certain period of time without any symptoms of the cancer). More information on the "Events" dataset label could be found on R2 Platform online tutorial under "Special sample annotation" in *Section 24. R2 Dataset Addition*. [2]
 
+Some adjustments are to be made as the survival probability until 60 follow-up months (or 5 years) is more common (on the left graph in Figure 10-4). The expression graph (on the right graph in Figure 10-4) could be also shifted (or cut) by filtering the range with the significant p-values. This could be done by the following steps.
 
-The well-described tumor suppressor function of p53 primarily relies on transcriptional activation of these target 
-genes and their ability to mitigate the consequences of damaged DNA.
+**4)** Scroll down to "Adjustable settings" after two graphs are executed. Type "60" months on Field "Only draw up to". Click "Redraw Graph" to proceed. (In Figure 10-6)
 
-Nearly half of human malignancies harbor mutations in p53  that facilitate and promote metastasis, tumorigenesis, and resistance to apoptosis.
+![Adjustable settings table for survival graph](images/page-41.jpg)
 
+**Figure 10-6:** "Adjustable settings" Table
 
+Figure 10-7 shows the redrawn "Overall survival probability graph" and the range of the X-axis is adjusted to 60 months (marked in yellow in Figure 10-7). The graph became better to compare the difference between the normal people and cancer patients, as the tails of the two lines in the graph on the right are cut.
 
-These mutations generally lead to loss of DNA binding and an inability to transactivate
-canonical anti proliferative p53 target genes.5 Genotoxic chemotherapeutics, like doxorubicin
-and etoposide, are clinically relevant activators of wild-type p53, but the potential
-risk of resistance and secondary malignancies due to increased mutational burden
-remains a significant concern.Given the powerful tumor suppression abilities of p53,
-restoration of the p53-regulated transcriptome without inducing additional DNA damage
-represents an intriguing approach for development of anticancer strategies and
-therapeutics.
-Nongenotoxic, small molecule activation of the p53 pathway has been proposed as
-a potential solution.
+**Figure 10-7:** "Overall survival probability graph" (after adjustment)
 
-TP53 mutations were found in 60% of the CRCs. However, gene set enrichment analyses indicated that their transcriptional consequences varied among the CMSs and were most pronounced in CMS1-immune and CMS4-mesenchymal.
+Next, a cutoff point on the "Expression graph" (the right graph in Figure 10-4) could be adjusted on Field "Cutoff" in "Adjustable settings" Table. The cutoff point is set with the highest p-value at default. To change the cutoff point, the following step is to be done.
 
-Dataset being used:<br>
-**Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo**.
+**5)** Select any data sample which has the high local p-value ("387 - 819.7227: raw p: 0.015 (bonf: 1.000)" in Figure 10-8) on Field "Cutoff" in "Adjustable settings" Table. Type "60" months on Field "Only draw up to" in the same table. Click "Redraw Graph" to proceed. (In Figure 10-8)
 
-4 drugs are used:
+![Adjustable settings and adjusted survival probability graph](images/page-42.jpg)
 
-The four drugs can be diveded in two types.
+**Figure 10-8:** "Adjustable settings" Table
 
+The result of Step 5 is described in Figure 10-9. The overall survival probability (on the left) has a smaller difference between the two lines compared to the previous graph that was drawn with the highest p-value.
 
-### TP53 activation
+**Figure 10-9:** "Overall survival probability graph" and "Expression graph" (after adjustment)
 
-Etoposide:  Clinically relevant activators of wild-type p53, Activates p53 via induction of  DNA double strand breaks. Initiation double strand breaks but leads of course to resitance and secondary malignancies. 
-Nutlin-3A:  MDM2 inhibitor nutlin-3A to activate wild-type p53 in a non-genotoxic, considered a proto-oncogene.
+---
 
+## 11 Hypermethylation Between Datasets (private data, not yet published)
 
+As Hypermethylation is an indicator of tumor development, hypermethylated regions on Heatmaps could be compared between two datasets of normal and tumor patients. The dataset with the tumor type "renal cell carcinoma (PTM)" and the author name "Richter" is used for this analysis.
 
-**Integrated stress response pathway:**
+**1)** Click "Main" on the left menu of the main page. On Table, select "Differential expression between two groups" in Field 3. Click the option box in Field 2 for data selection. (In Figure 11-1)
 
-Effector of anti-proliferative and cell death expression programs
+**2)** On the pop-up box, type the author name "Richter" on Column {Author} and select the dataset with "Renal cell carcinoma (PTM)" on Column {Tissue/Tumor} by clicking the row. Click "Confirm selection" button to proceed (In Figure 11-2). Click "Next" on main menu to proceed. (In Figure 11-3).
 
-Tunicamycin: Activates the ISR (integrated stress response pathway), via ER stress of accumulating 
-Histidinol: Activates the ISR (integrated stress response pathway), via histinide depletion.
+![Main page and data selection menu with Richter](images/page-43.jpg)
 
+**Figure 11-1:** Main page
 
+**Figure 11-2:** Data selection menu with the author name "Richter" and the tumor type "Renal cell carcinoma (PTM)"
 
-* ATF3 mRNA and protein levels increased under both p53 and ISR stimulating treatments
-in HCT116 WT cells
-* A second approach uses compounds like the MDM2 inhibitor nutlin-3A to activate wild-type p53 in a nongenotoxic
-* TP53 is mayor player of one of the tumor supressor mechanisms. 
-* Both the p53-dependent and the ATF4-driven ISR gene networks are antiproliferative,
-  either through induction of apoptosis or cell cycle control
+**3)** On "Select a test" Table, select "type (2 cat)" in Field "Group by" and "n10nvst (3 cat)" in Field "Subset track". Then on the pop-up menu, click the check buttons of "normal (5)" and "tumor (5)" samples except 2 outliers ("ND (2)"). Click "OK" button to finish the sample choice. Click "Submit" on the table to proceed. (In Figure 11-4)
 
+**4)** On "Adjustable settings" Table, select "n (6)" as normal people in Field "Group 1" and "tm (6)" as tumor patients in Field "Group 2". Click "Submit" to proceed. (In Figure 11-5)
 
+![Main menu, select a test table, and adjustable settings](images/page-44.jpg)
 
+**Figure 11-3:** Main menu
 
-* Check the TP53 level in this dataset. Is the dataset grouped by a different p53 expression
-A:
-![](_static/images/MolGenCRC/tp53wtvsko.png "Figure 2: heatmap")
+**Figure 11-4:** "Select a test" Table
 
-* Analyse which genes are affected by the compounds
+**5)** At the right menu click "Heatmap(zscore)" to proceed. (In Figure 11-6)
 
-Let's start with drugs known to interact with tp53. In college also MDM2 has been mentioned as negative P53 regulator. 
-If you want to  find diffentially expressed genes in Tp53 dependent background which subgroups do you have to select.
+![Adjustable settings and heatmap zscore button](images/page-45.jpg)
 
-A: Select Nutlin-3a for the comparison and the P53 WT
-![](_static/images/MolGenCRC/list_DMSO_nutlin3a_sammons.png "list")
+**Figure 11-5:** "Adjustable settings" Table
 
-* Do you see the MDM2 gene ?.
+**Figure 11-6:** "Heatmap(zscore)" Button on the right menu
 
-* Inspect the MDM2 level in a one gene view  are your surprised ?
-![](_static/images/MolGenCRC/MDM2-gene_sammons.png "MDM2")
+The next page shows the heatmap of hypermethylation between two datasets (normal people and tumor patients).
 
-* Also check the relation with TP53
-  ![](_static/images/MolGenCRC/sammons_tp53MDM2.png "TP53/MDM2")
+![Heatmap zscore title](images/page-46.jpg)
 
+**Figure 11-7:** "Heatmap(zscore)" Title
 
-*  A very significant correlation. Can you think of a reason? Hint:you are looking at RNA expression levels, how does nutlin3a inhibits MDM2 ???
+"zscore" or the standard score is "a statistical measure that represents the number of standard deviations an individual data point is from the mean of a dataset. It indicates how far a particular data point deviates from the average in terms of standard deviation units." [7] And "fdr" stands for False Discovery Rate and is "a statistical concept used in multiple hypothesis testing to control for the proportion of false discoveries or false positives." [7]
 
-A: protein interaction
+On the right of the heatmap, the colored block lines show the type of data points. The enlarged versions are shown in Figure 11-8. The red blocks of "n10nvst" are the data points of the tumor patients and the green blocks of "n10nvst" are the data points of the normal people. One could see the details of a certain data point by placing a cursor on the "n10nvst" block. On the pop-up message shows the type of the data point (marked in red) (in Figure 11-8).
 
-* And why is also TP53 increased ?
+With this background knowledge, the positive score on the heatmap (in Figure 11-9) is colored in yellow and the negative score in blue. The positive score shows the data point above the mean and the negative below the mean of the datasets. All tumor patients have reciprocal behavior of all normal people, as observed in the color difference in the heatmap (yellow heatmap area for tumor patients are blue heatmap area for normal people).
 
-A: ubiquitination
+![Enlarged heatmap zscore with tumor and normal data points](images/page-47.jpg)
 
+**Figure 11-8:** Enlarged "Heatmap(zscore)": tumor patient data point (in red) and normal data point (in green)
 
+![Heatmap zscore rotated to horizontal](images/page-48.jpg)
 
-* ![](_static/images/MolGenCRC/Kegg_analysis.png "KEGG")
+**Figure 11-9:** "Heatmap(zscore)" - rotated to horizontal for convenience
 
-* down regulated TP53 pathways and apoptosis pathway
+When the cursor is placed on Gene type axis, a pop-up message containing the gene name, the probe name and the order number (gene name="CLDN10", probe name="cg16275739", order number="581" on the pop-up message in Figure 11-10). The order number can be found from the table "Sort Order Listing" after clicking it as shown in Figure 11-10. One can investigate the difference in a certain gene's expression in this way.
 
-* Check of there is a overlap between genes affected
+![Heatmap zscore and sort order listing table](images/page-49.jpg)
 
+**Figure 11-10:** "Heatmap(zscore)" and "Sort Order Listing" Table
 
-Exp Colon Cell Lines (TP53 +/-) Nutlin-3A-etoposide - Sammons - 30 - DESeq2_rlog - tpm109geo
+---
 
-![](_static/images/MolGenCRC/atf3_sammons.png "Figure 2: heatmap")
+## 12 Appendix
 
-![](_static/images/MolGenCRC/venn_drugsp53.png "Figure 2: heatmap")
+### 12.1 Finding a Gene Name of Interest
 
+If a gene name of Interest is uncertain, this could be found by using the methylation ID obtained via UCSC Genome Browser. A methylation ID represents a probe name.
 
-  
+For example, assume that a gene of interest is "Insulin". By following Step 3) under *Section 2. Generating a Heatmap* with a gene name as "INS", there are several choices listed below {Gene} Field on the Adjustable settings menu (in Figure 12.1-1). One could address the exact gene name of interest using a methylation ID (i.e. "Met-ID"; for example, "cg20278383" for a gene name "CLDN10") obtained from UCSC Genome Browser and select the right gene name of interest from the choices listed in Figure 12.1-1. The following describes the steps of search on UCSC Genome Browser for each solution, respectively.
 
-## Effects of imatinib: shifts of signature profiles and molecular subtypes
+Firstly, enter UCSC Genome Browser (https://genome.ucsc.edu/). Click "Human GRCh37/hg19" on the "Genomes" menu of the main page as shown in Figure 12.1-2.
 
-Mesenchymal Consensus Molecular Subtype 4 (CMS4) colon cancer is associated with poor prognosis and therapy resistance.
-Therefore a study was conducted to see what 
+![Choices for gene of interest Insulin and UCSC main page](images/page-48.jpg)
 
-We want to see how the expression changes between the pre and post treatment samples expression of specific 
-mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 :
-(ToDo: or Wnt pathway etc uit Supplementary materials)
-* On the main page in the center menu, select the dataset **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**  
-* Choose the analysis **View Multiple Genes** and click Next
-* In the *Genes/Reporters to include* textbox, type **Zeb1,PDGFRA,PDGFRB,CD36**
-* Set Track to **imatinib** to divide the samples in the pretreatment and the posttreatment group and *Handle groups 
-  by* **lump by gene plot group** to show this per gene. 
-* Set *color by* to **Track** in order to make the box plots visually more dictinct.  
-* Click next
+**Figure 12.1-1:** Choices for a gene of interest "Insulin"
 
-ToDo: Remove picture
-![](_static/images/MolGenCRC/temp/impacct_Viewmultiplegenes_4genesign_result_delete_later.png "Figure 4: View  
- multiple genes 4 gene signature, todo remove")
+**Figure 12.1-2:** UCSC Genome Browser main page
 
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/impacct_Viewmultiplegenes_4genesign_result_delete_later.png)
+#### (a) Search a Methylation ID using a sequence
 
+If a sequence for a gene of interest is known, one may still use the sequence to begin the search as a guide. As an example, assume that "Insulin" is a gene of interest and a sequence for the certain region of this gene of interest is known as "TTAAGACTCTAATGACCCGCTGGTCCTGAGGAAGAG".
 
-------
+**1)** Click "Blat" on the "Tools" menu on the UCSC Genome Browser main page (in Figure 12.1-3).
 
-  ![](_static/images/R2d2_logo.png)**What can you say about the level of expression of these genes post treatment?**
+**2)** Write the sequence "TTAAGACTCTAATGACCCGCTGGTCCTGAGGAAGAG" in the input box and click "submit" to proceed (in Figure 12.1-4).
 
-  ![](_static/images/R2d2_logo.png)**What is the role of ZEB1 in EMT?**
-  
+**3)** On the next page, the sequence candidates are listed as the search results. Click one of the most relevant "browser" links to one's interest from the listed results (in Figure 12.1-5).
 
-**ToDo: remove answers**  
-1)expression of specific mesenchymal genes such as ZEB1, PDGFRA, PDGFRB, and CD36 was strongly and significantly 
-reduced after imatinib treatment (here you cant read teh significance - we could choose a different visualization  
-2)- Zinc finger E-box binding homeobox 1 (ZEB1) is a transcription factor that promotes tumor 
-invasion and metastasis by inducing epithelial-mesenchymal transition (EMT) in carcinoma cells. EMT not only plays 
-an important role in embryonic development and malignant progression, but is also implicated in cancer therapy 
-resistance.  
-PDGFRA, PDGFRB, PDGFC, and KIT, identifies CMS4 CRC with very high sensitivity and specificity
-<br>
-<br>
+![UCSC tools menu and BLAT search](images/page-49.jpg)
 
-------
+**Figure 12.1-3:** UCSC Genome Browser main page
 
-### Proliferation vs metastases 
+**Figure 12.1-4:** Human Blat Search page
 
-ToDo: optional analysis - I have not made all the steps. If we want these three analyses in, I will write the actual 
-steps down.  
+**4)** The next page is Genome Browser page that one could observe the genome region. Scroll down and select "show" for "CpG Islands" and for "ENC DNA Methyl" Options in "Regulation" Field. Click "refresh" to apply the modifications on the Genome Browser (in Figure 12.1-6).
 
-Mesenchymal tumor phenotypes are generally accompanied by reduced proliferation. Indeed, high expression of
-proliferation signatures and Wnt target genes are associated with good prognosis and reduced metastatic capacity in CRC
+**5)** One could now see the corresponding methylation IDs on the Genome Browser page. If the methylation IDs are not observed on the page, adjust the genome region using "zoom in" or "zoom out" buttons on the top of the page (in Figure 12.1-7).
 
-ToDo: Remove picture
-![](_static/images/MolGenCRC/temp/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
-multiple genes 4 gene signature, todo remove")
+![BLAT search results and regulation field](images/page-50.jpg)
 
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/wnt_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+**Figure 12.1-5:** Blat Search Results page
 
+**Figure 12.1-6:** "Regulation" Field
 
-ToDo: Remove picture
-![](_static/images/MolGenCRC/temp/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
-multiple genes 4 gene signature, todo remove")
+![Methylation IDs on UCSC Genome Browser page](images/page-51.jpg)
 
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/myc_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+**Figure 12.1-7:** Methylation IDs on UCSC Genome Browser page
 
-ToDo: Remove picture
-![](_static/images/MolGenCRC/temp/mtorc1_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png "Figure 4: View  
-multiple genes 4 gene signature, todo remove")
+**6)** Now, return to the Adjustable settings menu on R2 Genomics Analysis and Visualization Platform (https://r2.amc.nl/) (in Figure 12.1-1). Write the observed methylation ID "cg03366382" observed from the previous Step 5) in {Met_id} Field on Adjustable settings menu. Click the listed option below {Met_id} Field (in Figure 12.1-8). The exact gene name of interest is automatically written in {Gene} Field (in Figure 12.1-9).
 
-[**Figure 4: View multiple genes 4 gene signature, todo remove**](_static/images/MolGenCRC/temp/mtorc1_up_post_imatinib_relate2tracks_optionalanalysis_impacct.png)
+**Figure 12.1-8:** Adjustable settings menu on R2 Platform
 
-"The mesenchymal-to-epithelial phenotype shift following imatinib therapy coincided with increased expression of WNT- and
-MYC-target genes and signatures reflecting proliferation. Accelerated proliferation may – at first sight – not be
-considered a desired effect of any anti-cancer therapy. However, high expression of proliferation signatures and WNT
-target genes are associated with good prognosis and reduced metastatic capacity in CRC (36–38). Proliferation and
-invasion are often inversely regulated in tumor biology, supporting the notion that proliferating tumor cells have to
-switch their transcriptional state (through EMT) in order to acquire invasive and metastatic properties (40, 44, 45).
-Proliferating tumor cells require high expression of mTORC1 and its target genes to meet their anabolic demand (46). The
-high expression of mTORC1 in imatinib-treated tumors may therefore simply reflect the MET phenotype switch"
+![Adjustable settings menu on R2 Platform](images/page-52.jpg)
 
-### Assess the prognostic value of imatinib treatment
-To assess the potential prognostic value of the treatment, we will make a signature of the genes that were changed 
-after treatment. 
+**Figure 12.1-9:** Adjustable settings menu on R2 Platform
 
-* On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
-* Select the analysis **Differential expression between two groups**
-* Switch the *Group by* setting to **imatinib (2cat)** and click Submit
-* Extra settings appear. We can now fill in the groups for which we want to find the differentially expressed genes: 
-  *Group 1* **pre-imatinib (15)** and *Group 2* **post-imatinib (15)**
-* Set the *P-value cutoff* to a stricter value: **0.001** and click Submit
+#### (b) Search a Methylation ID using an uncertain gene name of interest
 
-A table shows the differentially expressed genes. On the right underneath buttons with follow up analyses, you can 
-find a small table that shows how many genes were downregulated by the imatinib treatment (imatinib: pre-imatinib >= 
-post-imatinib) and how many genes were upregulated (imatinib: pre-imatinib < post-imatinib). 
+Now that a search for a methylation ID using a sequence is possible from the Steps in *(a) Search a Methylation ID using a sequence*. On the other hand, if a sequence is also unknown for a gene of interest, one could begin the search using an uncertain gene name of interest on UCSC Genome Browser.
 
+**1)** Write "INS" as a guess for this gene name of interest in {Gene} Field on UCSC Human GRCh37/hg19 Genome Browser. Click the relevant one from the listed choices below {Gene} Field to proceed (in Figure 12.1-10). If one is uncertain what is relevant, press "Enter".
 
-------
+**Figure 12.1-10:** UCSC Human GRCh37/hg19 Genome Browser page
 
-![](_static/images/R2d2_logo.png)**How many upregulated and how many downregulated genes were found?** 
+**2)** If you just pressed "Enter" on the previous Step 1), all search results of a gene "Insulin" are listed with more information. Click the relevant gene option (or just the first option "INS-IGF2 (uc001lvm.3)" as a tryout) to proceed (in Figure 12.1-11).
 
-**ToDo: remove answers**  
-442 and 222
-______
+![UCSC genome browser search page results](images/page-53.jpg)
 
-* To use this genelist in other analyses within R2, click on the lowest button on the right side that is labeled 
-  *Store result as custom gene set*
-* As a name, type **impacct_imatinib_treatment_up**
-* In the *Included groups* check only the upregulated genes
-* Click on **Save gene set**
-  
-The treatment resulted in a shift in gene expressions. To find out what the effect is of this shift, we will make 
-use of geneset of upregulated genes that we just saved, now in combination with the Guinney dataset, the 
-cohort dataset with annotated CMS status and survival data. We use the unsupervised k-means algoritm to find groups 
-in our cohort that sow similar expression patterns for our geneset. 
+**Figure 12.1-11:** Search Results on hg19 for "Insulin"
 
-* On the main page, select the Guinney dataset again
-* Select the **K-means analysis** in *box 3* and click Next
-* In the *Subset track* dropdown, select **lv_stage**, and in the pop up window check the boxes **2** and **3** , 
-  click **Ok**
-* Behind the setting *Gene set*, you find the button **Search GS**. Click on the button and find your previously 
-  stored gene set under **User gene sets > - > impacct_imatinib_treatment_up** and hit the green button on the left 
-  to use the selected gene set
-* We leave the number of groups at 2 
-* Set the *Cell* width to **1** and click on next
+**3)** On the next page, all methylation IDs for "INS-IGF2 (uc001lvm.3)" are listed on the Genome Browser page. If the methylation IDs are not shown at first glance, scroll down or adjust the options below the page as described in Figure 12.1-6. Click the relevant methylation ID (or just the spotted methylation ID "cg02343602" as a tryout) (in Figure 12.1-12).
 
-The Kmeans algorithm looks at the expression of the samples for the selected genes and makes two groups of samples 
-that show most similar expression patterns. Then for each gene it shows the expression by a color code
-ToDo small insert about heatmaps. 
+![Methylation IDs on genome browser page](images/page-54.jpg)
 
-ToDo: Remove picture  
+**Figure 12.1-12:** Methylation IDs on UCSC Genome Browser page
 
-  ![](_static/images/MolGenCRC/temp/impacct_kMeans_result_delete_later.png "Figure 4: kmeans result, todo remove")
+If one wishes to double-check its choice by looking at the DNA sequence for this methylation ID, the following steps could be done.
 
-  [**Figure 4: kmeans result, todo remove**](_static/images/MolGenCRC/temp/impacct_kMeans_result_delete_later.png)
+**4)** On the next page, the information on the spotted methylation ID "cg02343602" is provided. Click "View DNA for this feature" link (in Figure 12.1-13).
 
+**5)** As an example, click "One FASTA record per region" Option under "Sequence Retrieval Region Options". Define a range as "20" for an up- and a downstream (in Figure 12.1-14).
 
-------
+![Methylation ID info page and DNA sequence extraction page](images/page-55.jpg)
 
-  ![](_static/images/R2d2_logo.png)**Which group would you say shows high expression and which group shows low 
-expression of the geneset?**
+**Figure 12.1-13:** Information page on the methylation ID
 
-**ToDo: remove answers**  
-The yellow group is high (red) and the purple group shows low expression on average (blue)
-The genes seem to be quite well coregulated in the two groups, on egroups seems to have upregulation and one group 
-shows downregulation. 
-______
+**Figure 12.1-14:** DNA sequence extraction page
 
-Again this group division can be stored in R2 to use in a next analysis. 
-* To do so, hit the button **Store as track** that you can find on the left
-* On the following page, just click the button Next
-* To save the results in a way in which we will easily remember what the track was for and whic group showed wich
-  expression, change the name of *Group 'cluster 1'* into **high** and of *Group 'cluster 2'* into **low**. Also 
-  change *Track name* into **kmeans_imatinib_induced**
-* Click on Build set and go back to the main page
+**6)** The corresponding DNA sequences on the defined region are shown as Figure 12.1-15. One could check if the sequence is aligned with known information.
 
-Let's see which cms subtypes are represented in the two k-means sample clusters
-* On the main page, select the analysis **Relate 2 tracks**
-* For the *X track* scroll all the way down and select **kmeans_imatinib_induced**
-* For the *Y track* choose **lv_cms_final**
-* In the *Subset track* dropdown, select **lv_stage**, and in the pop up window check the boxes **2** and **3** ,
-  click **Ok**
-* Change the *Graph type* into **Stacked bar plot (%)**
-* *Order Groups by* **group size** and hit **Submit**
+![DNA sequences on the defined region](images/page-56.jpg)
 
-ToDo: Remove picture
+**Figure 12.1-15:** DNA sequences on the define region
 
-![](_static/images/MolGenCRC/temp/impacct_relate2tracks_stackedbars_delete_later_stage23.png "Figure 4: Relate 2 tracks shows a shift 
-from CMS 4 to cms 2, todo remove")
+---
 
-[**Relate 2 tracks shows a shift
-from CMS 4 to cms 2, todo remove**](_static/images/MolGenCRC/temp/impacct_relate2tracks_stackedbars_delete_later_stage23.png)  
+## 13 References
 
+[1] J. Koster, Amsterdam University Medical Centers (AUMC), Center for Experimental and Molecular Medicine (CEMM) - R2 Genomics Analysis and Visualization Platform, https://r2.amc.nl. retrieved on 24.04.2023
 
+[2] R2 support team - R2 Tutorials, https://r2-tutorials.readthedocs.io/en/latest/. updated on 13.04.2023
 
-------
+[3] Mind map on the "Manual on R2 Platform for Methylation Analysis (by Ji Sun Kwon)" - Miro, https://miro.com/app/board/uXjVMMBYyDQ=/. updated on 04.05.2023
 
-![](_static/images/R2d2_logo.png)**If the impact of imatinib shows a shift of the geneset from low expression to 
-high expression values, what shift in CMS subtypes do we expect to see?**
+[4] Groll/Nitaj et al., in prep. - Epigenetic inactivation of CLDN10 in Malignant melanoma and its epigenetic reactivation counteracts tumor progression; Manuscript in preparation.
 
-![](_static/images/R2d2_logo.png)**What is known about the treatability of subtype 4 and cms 2 respectively?**
+[5] V. Deutschmeyer/J. Breuer et al. - Epigenetic therapy of novel tumour suppressor ZAR1 and its cancer biomarker function, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6894338/. published on 04.12.2019
 
-**ToDo: remove answers**  
-A shift from mostly CMS 4 to to mostly CMS 2  
-CMS 4 is more  CMS4 tumors have the highest propensity for developing distant metastases, and CMS2 has better prognosis
-______
-  
-ToDo: not sure we want to include this analysis
-  
-* From the main page in the left menu click the **Survival (Kaplan Meier/Cox)** analysis
-* Check that the Guinney set is selected and that the separation is made by **a categorical track**. Click **Next**
-* Choose *overall* survival type and *Track* **kmeans_stage23_imatinib_induced**. Click Next
+[6] I. Mallona. - Wanderer, an interactive viewer to explore DNA methylation and gene expression data in human cancer, http://maplab.imppc.org/wanderer/. published on 2015
 
-
-![](_static/images/MolGenCRC/temp/KaplanMeier_stage23_overall_impacct_kMeans_result_delete_later.png "Figure 4: Survival 
-chances that are linked to the gene shift, todo remove")
-
-[**Survival
-chances that are linked to the gene shift, todo remove**](_static/images/MolGenCRC/temp/KaplanMeier_stage23_overall_impacct_kMeans_result_delete_later.png)
-
-* In the left menu click again the **Survival (Kaplan Meier/Cox)** analysis
-* Repeat the process but select the **relapse free** in stead of *overall* survival type. 
-
-![](_static/images/MolGenCRC/temp/KaplanMeier_stage23_relapsefree_impacct_kMeans_result_delete_later.png "Figure 4: 
-Survival
-chances that are linked to the gene shift, todo remove")
-
-[**Survival
-chances that are linked to the gene shift, todo remove**](_static/images/MolGenCRC/temp/KaplanMeier_stage23_relapsefree_impacct_kMeans_result_delete_later.png)
-
-------
-
-![](_static/images/R2d2_logo.png)**What is your conclusion?**
-
-**ToDo: remove answers**  
-
-**Better survival chances**
-______
-
-## Identifying key drivers of CRC: superenhancers controlling gene expression
-
-An enhancer is a short (50-1500 bp) region of DNA that can be bound by proteins (activators) to increase the 
-likelihood transcription will occur at a gene. They can be located up to 1 Mbp (1,000,000 bp) away from the gene, 
-either upstream or downstream from the start site, and either in the forward or backward direction. A super-enhancer 
-is a region of the mammalian genome comprising multiple of these enhancers, collectively bound by an array of 
-transcription factor proteins to drive transcription of genes, often involved in regulation of cell identity. They 
-can be up to 20 times the size of an enhancer. <br>
-In chapter [Integrative analysis: ChIP-seq data](https://r2-tutorials.readthedocs.io/en/latest/Integrative_analysis_ChIP-Seq_data.html) of the R2 Tutorial, you can find a more detailed description 
-of Chipseq data analysis. 
-<br><br>
-
-![](_static/images/MolGenCRC/temp/IntAnalysis_ChIPSeq_ModificationTypes.png "Figure 4:Survival chances that are linked to the gene shift, todo remove")
-
-[**Survival chances that are linked to the gene shift, todo remove**](_static/images/MolGenCRC/temp/IntAnalysis_ChIPSeq_ModificationTypes.png)
-
-(Fig source: https://www.nature.com/articles/s12276-020-0428-7)
-
-
-Enhanced enhancer activity can lead to the overexpression of oncogenes, which promote cancer growth. Super-enhancers 
-often play a central role in determining cell identity and tumor initiation and progression. Identifying these active enhancers can help pinpoint key drivers of colorectal cancer, potentially revealing new therapeutic targets.  
-Different patients may have colorectal tumors with distinct enhancer landscapes. By characterizing enhancer activity, researchers can potentially classify patients into subgroups with different treatment responses or prognosis, enabling personalized medicine approaches.
-
-With Chromatine Immuno Precipitation binding of elements to the genome can be studied. Transcription of DNA to RNA
-is regulated by the binding of these elements. These can be Transcription Factors, that bind temporarily to start
-transcription, but also chemical modification of the histones (molecular structures that coil the DNA) by methylation, acetylation, etc. These modifications change the accessibility of the DNA for transcription.
-<br><br>
-When a specific antibody is used in the pulldown that recognizes these chemically modified regions, these specific regions can be studied. Regions with H3K27Ac acetylation mark active enhancers and active transcription, H3K4Me3 methylation marks active and poised transcription (Figure 2). Studying the relative contributions of both types of modifications allows a researcher to discern enhancer regions from active transcription sites.
-
-
-* Click on the button below to show the ChIP-Seq data for VEGFA in the four mesenchymal and five adrenergic neuroblastoma cell lines. For your convenience the signals are colored according to the type (MES or ADRN) of cell line.
-
-ToDo: create new button to go to VEGFA
-
-<a class="course_permalink" href="https://hgserver2.amc.nl/cgi-bin/r2/main.cgi?permalink=course_molgen_chipseq_gb_hand1_9_mes_adrn" target="_blank">Go to R2 GenomeBrowser for HAND1</a>
-<br>
-<br>
-
-Regions encoding genes are drawn at the bottom of the graph. When in red they're encoded in the reverse direction, coding exons are darker.
-
-## Single cell?
-Maybe? Mixed Colon Adenoma-carcinoma - Shi - 43981 - cp10k - 10x300hg38
-"Adenoma-carcinoma sequence is a well-accepted roadmap for the development of sporadic colorectal carcinoma. However, cellular heterogeneity in aberrant epithelia and the complexity of tumor microenvironment limited the understanding of carcinogenesis. Here we performed a scRNA-seq survey from patient-matched samples, including blood, normal, para-cancer, polyp, and cancer tissues."
-
-
-![](_static/images/MolGenCRC/temp/Shi_-Singlecell.png "Figure 4:
-cell populations were visualized using t-SNE plots based on the cluster, tissue origin, and patient origin, todo remove")
-
-[**cell populations were visualized using t-SNE plots based on the cluster, tissue origin, and patient origin, todo remove**](_static/images/MolGenCRC/temp/Shi_-Singlecell.png)
-
-
-## Evaluation
-
-Please don't forget to fill in the evaluation form about this R2 course, if you haven't done so yet:
-
-<button class="course googleform" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSflNJpsTcLIhwEC0ZlHksfnE0VwBay1I2KOGPArYu4Q_QhtrA/viewform?usp=sf_link','_blank');" type="button">
-Open the Evaluation form</button>
-
----------
-
-# Final remarks / future directions
-
-In the March 1st 2018 issue of Nature a paper was published describing a landscape of genomic alterations across
-childhood cancers. The data is accessible in R2 also as a Datascope. This is another example of how R2 can visualize
-your genomics data.
-<br><br>
-This ends the course. Feel free to further explore the course materials or our tutorials.
-<br><br>
-We hope that this course has been helpful. If you want to have your genomics data visualized and analyzed using the R2
-platform you can always consult r2-support@amc.nl
-<br><br>
-The R2 support team.
-
+[7] Chat GPT, keywords as "what is zscore?" and "what is fdr in statistics?", https://chat.openai.com/. retrieved on 27.06.2023
