@@ -19,7 +19,7 @@ Introduction
 
 This manual is intended for scientists and students who wish to study DNA methylation, and its purpose is to provide instructions on how to analyze methylation data using the R2 Genomics Analysis and Visualization Platform, also known as the R2 Platform [1]. Additionally, an online tutorial on the R2 Platform is available on the official website to learn about other features. [2] The following mind map aids in understanding the structure of the manual and the relationships between its sections [2], [3].
 
-![](_static/images/methylation/fig1-1.jpg)
+![](_static/images/Methylation/fig1-1.jpg)
 
 **Figure 1-1:** 
 
