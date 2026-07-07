@@ -17,7 +17,7 @@ Heinrich-Buff Ring 58, 35392 Giessen, Germany
 Introduction
 ---
 
-This manual is intended for scientists and students who wish to study DNA methylation, and its purpose is to provide instructions on how to analyze methylation data using the R2 Genomics Analysis and Visualization Platform, also known as the R2 Platform [1]. Additionally, an online tutorial on the R2 Platform is available on the official website to learn about other features. [2] The following mind map aids in understanding the structure of the manual and the relationships between its sections [2], [3].
+This manual is intended for scientists and students who wish to study DNA methylation, and its purpose is to provide instructions on how to analyze methylation data using the R2 Genomics Analysis and Visualization Platform, also known as the R2 Platform . Additionally, an online tutorial on the R2 Platform is available on the official website to learn about other features. The following mind map aids in understanding the structure of the manual and the relationships between its sections.
 
 ![](_static/images/Methylation/fig1-1.jpg)
 
@@ -43,7 +43,7 @@ With the above conditions, the platform user takes the following steps to create
 
 ![Change Dataset menu](_static/images/Methylation/fig2-2.jpg)
 
-**Figure 2-2:** Change Dataset menu
+**Figure 2-2:** Change Dataset menu 
 
 ![Change Dataset menu after filter](_static/images/Methylation/fig2-3.jpg)
 
@@ -53,7 +53,7 @@ With the above conditions, the platform user takes the following steps to create
 
 **Figure 2-4:** Main menu (after selecting the dataset)
 
-**3)** The next page is "View a gene" that narrows down to the specific gene or methylation ID which to be shown in a Heatmap. (in Figure 2-5) As an example, "CLDN10" (Claudin 10) is written in Field {Gene / Met_id} as it is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice. Click "Submit" to execute a Heatmap.
+**3)** The next page is "View a gene" that narrows down to the specific gene or methylation ID which to be shown in a Heatmap. (in Figure 2-5) As an example, "CLDN10" (Claudin 10) is written in Field {Gene / Met_id } as it is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice. Click "Submit" to generate a YY-plot. 
 
 ![Adjustable settings menu on the dataset](_static/images/Methylation/fig2-5.png)
 
@@ -65,7 +65,7 @@ A linear graph is generated as the following graph with an X-axis with samples (
 
 ![Graph on the probes of the chosen CLDN10 dataset](_static/images/Methylation/fig2-6.jpg)
 
-**Figure 2-6:** Graph on the probes of the chosen CLDN10 dataset
+**Figure 2-6:** Graph on the probe with highest average ratio of the chosen CLDN10 gene
 
 Two additional features on this webpage come in handy: By clicking on the checkbox right in the graph title (marked in red in Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link (marked in red in Figure 2-6) and read the definition of the terminologies on the National Library of Medicine (NIM) website. (in Figure 2-8)
 
