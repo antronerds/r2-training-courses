@@ -43,15 +43,15 @@ With the above conditions, the platform user takes the following steps to create
 
 ![Change Dataset menu](_static/images/Methylation/fig2-2.jpg)
 
-**Figure 2-2:** Change Dataset menu 
+**Figure 2-2:** Search and select a dataset in the grid
 
 ![Change Dataset menu after filter](_static/images/Methylation/fig2-3.jpg)
 
-**Figure 2-3:** Change Dataset menu (after filter)
+**Figure 2-3:** Select a Dataset(after filter)
 
 ![Main menu after selecting the dataset](_static/images/Methylation/fig2-4.png)
 
-**Figure 2-4:** Main menu (after selecting the dataset)
+**Figure 2-4:** Main menu (with selected dataset)
 
 **3)** The next page is "View a gene" that narrows down to the specific gene or methylation ID which to be shown in a Heatmap. (in Figure 2-5) As an example, "CLDN10" (Claudin 10) is written in Field {Gene / Met_id } as it is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice. Click "Submit" to generate a YY-plot. 
 
@@ -67,7 +67,7 @@ A linear graph is generated as the following graph with an X-axis with samples (
 
 **Figure 2-6:** Graph on the probe with highest average ratio of the chosen CLDN10 gene
 
-Two additional features on this webpage come in handy: By clicking on the checkbox right in the graph title (marked in red in Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link (marked in red in Figure 2-6) and read the definition of the terminologies on the National Library of Medicine (NIM) website. (in Figure 2-8)
+Two additional features on this webpage come in handy: By clicking on the exclamation mark right in the graph title (marked in red in Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link (marked in red in Figure 2-6) and read the definition of the terminologies on the National Library of Medicine (NIM) website. (in Figure 2-8)
 
 ![Description of the chosen dataset](_static/images/Methylation/fig2-7.jpg)
 
