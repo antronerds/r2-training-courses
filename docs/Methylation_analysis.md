@@ -474,7 +474,7 @@ When the automated separation of patients by expression level produced one big a
 
 The left graph in Figure 10-4 shows the overall survival probability of two cohorts (on an Y-axis) that are high expression (a line marked in blue) and low expression (a line marked in red) groups, regarding the expression of the gene of interest. An X-axis is the follow-up in months. The total patient number of the cohorts are shown with colors on the right top of the graph ("n=430", "n=103" respectively). One could find out individual information of each sample by putting the cursor on the line (in Figure 10-5).
 
-![Overall survival probability and expression graph](_static/images/Methylation/fig10-4.jpg)
+![Overall survival probability and expression graph](_static/images/Methylation/fig10-4a.png)
 
 **Figure 10-4:** "Overall survival probability graph" and "Expression graph"
 
@@ -488,7 +488,7 @@ Some adjustments are to be made as the survival probability until 60 follow-up m
 
 **4)** Scroll down to "Adjustable settings" after two graphs are executed. Type "60" months on Field "Only draw up to". Click "Redraw Graph" to proceed. (In Figure 10-6)
 
-![Adjustable settings table](_static/images/Methylation/fig10-6.jpg)
+![Adjustable settings table](_static/images/Methylation/fig10-6a.png)
 
 **Figure 10-6:** "Adjustable settings" Table
 
@@ -502,13 +502,13 @@ Next, a cutoff point on the "Expression graph" (the right graph in Figure 10-4) 
 
 **5)** Select any data sample which has the high local p-value ("387 - 819.7227: raw p: 0.015 (bonf: 1.000)" in Figure 10-8) on Field "Cutoff" in "Adjustable settings" Table. Type "60" months on Field "Only draw up to" in the same table. Click "Redraw Graph" to proceed. (In Figure 10-8)
 
-![Adjustable settings table](_static/images/Methylation/fig10-8.png)
+![Adjustable settings table](_static/images/Methylation/fig10-8a.png)
 
 **Figure 10-8:** "Adjustable settings" Table
 
 The result of Step 5 is described in Figure 10-9. The overall survival probability (on the left) has a smaller difference between the two lines compared to the previous graph that was drawn with the highest p-value.
 
-![Overall survival probability and expression graph after adjustment](_static/images/Methylation/fig10-9.jpg)
+![Overall survival probability and expression graph after adjustment](_static/images/Methylation/fig10-9a.png)
 
 **Figure 10-9:** "Overall survival probability graph" and "Expression graph" (after adjustment)
 
@@ -531,6 +531,8 @@ As Hypermethylation is an indicator of tumor development, hypermethylated region
 **Figure 11-2:** Data selection menu with the author name "Richter" and the tumor type "Renal cell carcinoma (PTM)"
 
 **3)** On "Select a test" Table, select "type (2 cat)" in Field "Group by" and "n10nvst (3 cat)" in Field "Subset track". Then on the pop-up menu, click the check buttons of "normal (5)" and "tumor (5)" samples except 2 outliers ("ND (2)"). Click "OK" button to finish the sample choice. Click "Submit" on the table to proceed. (In Figure 11-4)
+
+**>>>>>>>>>>n10nvst not found contact Antje**
 
 ![Main menu](_static/images/Methylation/fig11-3.png)
 
@@ -557,6 +559,8 @@ The next page shows the heatmap of hypermethylation between two datasets (normal
 ![Heatmap zscore title](_static/images/Methylation/fig11-7.jpg)
 
 **Figure 11-7:** "Heatmap(zscore)" Title
+
+**>>>>heatmap plaatje vanuit DEG analysis werkt niet**
 
 "zscore" or the standard score is "a statistical measure that represents the number of standard deviations an individual data point is from the mean of a dataset. It indicates how far a particular data point deviates from the average in terms of standard deviation units." [7] And "fdr" stands for False Discovery Rate and is "a statistical concept used in multiple hypothesis testing to control for the proportion of false discoveries or false positives." [7]
 
