@@ -27,7 +27,7 @@ This manual is intended for scientists and students who wish to study DNA methyl
 
 ## 2 Generating a Heatmap
 
-For analysis of the human methylome in order to study the potential tumor suppressors we are using the R2 platform and the methylome dataset available in R2. The methylome is analyzed by an EPIC array (details), which is bisulfite treatment based. It determines methylated vs. unmethylated DNA target regions between probes (oligonucleotides), and per methylated region per each probe, a Heatmap is a useful tool to observe each (un)methylated probes and the clustered region of isoforms in relation to a degree of methylation.
+For analysis of the human methylome in order to study the potential tumor suppressors we are using the R2 platform and the methylome datasets available in R2. R2 hosts many methylome datasets generated on  Illumina platforms, including the 450K, EPIC, and EPIC v2 arrays. Which is bisulfite treatment based. It determines methylated vs. unmethylated DNA target regions between probes (oligonucleotides), and per methylated region per each probe, a Heatmap is a useful tool to observe each (un)methylated probes and the clustered region of isoforms in relation to a degree of methylation.
 
 As an example for this manual, a Heatmap is generated under the following conditions: "cancer pharmacogenomic tissue", "cell line" type from "Illumina" company by the author name "Esteller". Also, this dataset shows how the Heatmap looks like from the highly proliferated cancer samples. Later in *Section 3 Comparing Methylation Heatmaps* of this manual, the Heatmap from this example will be compared with two other examples from different datasets. The tutorial scope will be then expanded to more complicated conditions such as a tutorial on "Expression" dataset.
 
@@ -35,11 +35,11 @@ With the above conditions, the platform user takes the following steps to create
 
 **1)** After login to the R2 Platform [1], click the checkbox under Field 2 "Select a dataset for analysis" (in Figure 2-1).
 
-![Main menu](_static/images/Methylation/fig2-1.png)
+![Main menu](_static/images/Methylation/fig2-1a.png)
 
 **Figure 2-1:** Main menu
 
-**2)** On the pop-up box (in Figure 2-2), select "cell line" by clicking Column {Category} "Select Filter", type "cancer pharmacogenomic" on Column {Tissue/Tumor} or type "Esteller" on Column {Author}. One can confirm the right dataset by referring the description table below as shown in Figure 2-2. When the dataset is found, click the found data and click "Confirm selection". (in Figure 2-3) Leave all other settings at their default and click "Next" on the main page to proceed. (in Figure 2-4)
+**2)** On the pop-up grid box (in Figure 2-2), select "cell line" by clicking Column {Category} "Select Filter", type "cancer pharmacogenomic" on Column {Tissue/Tumor} or type "Esteller" on Column {Author}. One can confirm the right dataset by referring the description table below as shown in Figure 2-2. When the dataset is found, click the found data and click "Confirm selection". (in Figure 2-3) Leave all other settings at their default and click "Next" on the main page to proceed. (in Figure 2-4)
 
 ![Change Dataset menu](_static/images/Methylation/fig2-2.jpg)
 
@@ -49,7 +49,7 @@ With the above conditions, the platform user takes the following steps to create
 
 **Figure 2-3:** Select a Dataset(after filter)
 
-![Main menu after selecting the dataset](_static/images/Methylation/fig2-4.png)
+![Main menu after selecting the dataset](_static/images/Methylation/fig2-4a.png)
 
 **Figure 2-4:** Main menu (with selected dataset)
 
@@ -79,7 +79,7 @@ Two additional features on this webpage come in handy: By clicking on the exclam
 
 **4)** As a next step, click on "View additional details" on the same page below the previous line graph. (in Figure 2-9) Then by clicking "view all" link as shown in Figure 2-10, the embedded Heatmap and R2 Genome Browser of the chosen dataset will open in a new screen.
 
-![View additional details clickable](_static/images/Methylation/fig2-9.png)
+![View additional details clickable](_static/images/Methylation/fig2-9a.png)
 
 **Figure 2-9:** "View additional details" (clickable)
 
@@ -97,7 +97,7 @@ For example, a kidney cell line is shown as green above the Heatmap. The vertica
 
 If the user is interested in looking into a table of each sample (probe) and gene name of the dataset. Go to the page where the YY-plot is generated and click view datatable (in Figure 2-12)
 
-![The table of sample and gene names of the chosen dataset](_static/images/Methylation/fig2-12a.png)
+![The table of sample and reporter names of the chosen dataset](_static/images/Methylation/fig2-12a.png)
 
 **Figure 2-12:** The table of sample and gene names of the chosen dataset
 
