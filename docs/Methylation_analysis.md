@@ -4,7 +4,7 @@
 Manual on R2 Platform for Methylation Analysis
 =================================
 
-*An Introduction on R2 Genomics Analysis and Visualization Platform Usage**
+*An Introduction on R2 Genomics Analysis and Visualization Platform Usage*
 
 By Ji Sun (Klara) Kwon
 Supervision: Dr. Antje Richter
@@ -17,29 +17,30 @@ Heinrich-Buff Ring 58, 35392 Giessen, Germany
 Introduction
 ---
 
-This manual is intended for scientists and students who wish to study DNA methylation, and its purpose is to provide instructions on how to analyze methylation data using the R2 Genomics Analysis and Visualization Platform, also known as the R2 Platform . Additionally, an online tutorial on the R2 Platform is available on the official website to learn about other features. The following mind map aids in understanding the structure of the manual and the relationships between its sections.
+This manual is intended for scientists and students who wish to study DNA methylation, and its purpose is to provide instructions on how to analyze methylation data using the R2 Genomics Analysis and Visualization Platform, also known as the R2 Platform. Additionally, an online tutorial on the R2 Platform is available on the official website to learn about other features. The following mind map aids in understanding the structure of the manual and the relationships between its sections.
 
-![](_static/images/Methylation/fig1-1.jpg)
+![](_static/images/Methylation/fig1-1.png)
 
-**Figure 1-1:** 
+[**Figure 1-1: Structure of the R2 Platform manual and the relationships between its sections**](_static/images/Methylation/fig1-1.png)
 
 
 
 ## 2 Generating a Heatmap
 
-For analysis of the human methylome in order to study the potential tumor suppressors we are using the R2 platform and the methylome datasets available in R2. R2 hosts many methylome datasets generated on  Illumina platforms, including the 450K, EPIC, and EPIC v2 arrays. Which is bisulfite treatment based. It determines methylated vs. unmethylated DNA target regions between probes (oligonucleotides), and per methylated region per each probe, a Heatmap is a useful tool to observe each (un)methylated probes and the clustered region of isoforms in relation to a degree of methylation.
+For analysis of the human methylome in order to study the potential tumor suppressors, we are using the R2 platform and the methylome datasets available in R2. R2 hosts many methylome datasets generated on Illumina platforms, including the 450K, EPIC, and EPIC v2 arrays, which are bisulfite treatment based. It determines methylated versus unmethylated DNA target regions using probes (oligonucleotides). For each region, a Heatmap is a useful tool for observing the methylation status of individual probes and how isoforms cluster according to their degree of methylation.
 
-As an example for this manual, a Heatmap is generated under the following conditions: "cancer pharmacogenomic tissue", "cell line" type from "Illumina" company by the author name "Esteller". Also, this dataset shows how the Heatmap looks like from the highly proliferated cancer samples. Later in *Section 3 Comparing Methylation Heatmaps* of this manual, the Heatmap from this example will be compared with two other examples from different datasets. The tutorial scope will be then expanded to more complicated conditions such as a tutorial on "Expression" dataset.
+As an example for this manual, the first exercise will show how to generate a Heatmap with an Illumina methylation array dataset on R2. This dataset belongs to a study that is called "A Landscape of Pharmacogenomic Interactions in Cancer" and can be found in R2 as a "cell line" dataset by the author name "Esteller".  
+Also, this dataset shows what the Heatmap looks like for highly proliferating cancer samples. Later, in *Section 3 Comparing Methylation Heatmaps*, the Heatmap from this example will be compared with two other examples from different datasets. The tutorial's scope will then be expanded to more complex use cases, such as a tutorial on the "Expression" dataset.
 
-With the above conditions, the platform user takes the following steps to create the Heatmap:
+With the above dataset information, the platform user takes the following steps to create the Heatmap:
 
-**1)** After login to the R2 Platform [1], click the checkbox under Field 2 "Select a dataset for analysis" (in Figure 2-1).
+**1)** After login to the R2 Platform [1], click the text box under Field 2 "Select a dataset for analysis" (in Figure 2-1).
 
-![Main menu](_static/images/Methylation/fig2-1a.png)
+![Click in box 2 to change the dataset ](_static/images/Methylation/fig2-1a.png)
 
-**Figure 2-1:** Main menu
+[**Figure 2-1:** Click in box 2 to change the dataset](_static/images/Methylation/fig2-1a.png)
 
-**2)** On the pop-up grid box (in Figure 2-2), select "cell line" by clicking Column {Category} "Select Filter", type "cancer pharmacogenomic" on Column {Tissue/Tumor} or type "Esteller" on Column {Author}. One can confirm the right dataset by referring the description table below as shown in Figure 2-2. When the dataset is found, click the found data and click "Confirm selection". (in Figure 2-3) Leave all other settings at their default and click "Next" on the main page to proceed. (in Figure 2-4)
+**2)** On the pop-up grid box (in Figure 2-2), click in Column {Category} on "Select Filter" to uncheck "Select all" and only select "cell line". In the text field of Column {Tissue/Tumor}, type "cancer pharmacogenomic"  or type "Esteller" in Column {Author}. One can confirm the right dataset by referring the description table below as shown in Figure 2-2. When the dataset is found, click anywhere on the row of the dataset and click "Confirm selection". (in Figure 2-3) Leave all other settings at their default and click "Next" on the main page to proceed. (in Figure 2-4)
 
 ![Change Dataset menu](_static/images/Methylation/fig2-2.jpg)
 
@@ -47,13 +48,13 @@ With the above conditions, the platform user takes the following steps to create
 
 ![Change Dataset menu after filter](_static/images/Methylation/fig2-3.jpg)
 
-**Figure 2-3:** Select a Dataset(after filter)
+**Figure 2-3:** Select a Dataset  (after filter)
 
 ![Main menu after selecting the dataset](_static/images/Methylation/fig2-4a.png)
 
 **Figure 2-4:** Main menu (with selected dataset)
 
-**3)** The next page is "View a gene" that narrows down to the specific gene or methylation ID which to be shown in a Heatmap. (in Figure 2-5) As an example, "CLDN10" (Claudin 10) is written in Field {Gene / Met_id } as it is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice. Click "Submit" to generate a YY-plot. 
+**3)** The next page is "View a gene" that narrows down to the specific gene or methylation ID which to be shown in a Heatmap. (in Figure 2-5) As an example, "CLDN10" (Claudin 10) is written in Field {Gene / Met_id }, and the suggested Met_id that pops up is selected by a mouse click. CLDN10 is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice and select a Met_id by mouse that pops up. Click "Submit" to generate a YY-plot. 
 
 ![Adjustable settings menu on the dataset](_static/images/Methylation/fig2-5.png)
 
@@ -65,7 +66,7 @@ A linear graph is generated as the following graph with an X-axis with samples (
 
 ![Graph on the probes of the chosen CLDN10 dataset](_static/images/Methylation/fig2-6.jpg)
 
-**Figure 2-6:** Graph on the probe with highest average ratio of the chosen CLDN10 gene
+**Figure 2-6:** Graph on the probe with the highest average ratio of the chosen CLDN10 gene
 
 Two additional features on this webpage come in handy: By clicking on the exclamation mark right in the graph title (marked in red in Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link (marked in red in Figure 2-6) and read the definition of the terminologies on the National Library of Medicine (NIM) website. (in Figure 2-8)
 
@@ -87,9 +88,10 @@ Two additional features on this webpage come in handy: By clicking on the exclam
 
 **Figure 2-10:** "View additional details" (clickable)
 
-**5)** Figure 2-11 shows the generated Heatmap. The **Heatmap** describes where each subset (probe) of the gene is methylated or not. The X-axis of the Heatmap indicates "primary histology" (or cell line type) and the Y-axis indicates all probes of the chosen gene of interest annotated within the dataset. The methylation score is colored by yellow (near to score 0, unmethylated), black in the middle (partially methylated, 50%), and blue (near to score 1, fully methylated). As shown in Figure 2-11, each probe per cell line type has a different tendency of methylation region.
+**5)** Figure 2-11 shows the generated Heatmap. The **Heatmap** describes where each subset (probe) of the gene is methylated or not.
+The X-axis of the Heatmap represents the individual samples in the dataset, ordered according to the hierarchical clustering of the methylation ratios as shown in the dendrogram below. The Y-axis of the Heatmap lists all probes for the chosen gene of interest annotated within the dataset. The methylation score is colored yellow near 0 (unmethylated), black in the middle (partially methylated, ~50%), and blue near 1 (fully methylated).
 
-For example, a kidney cell line is shown as green above the Heatmap. The vertical tendency from the green color (a kidney cell) on the X-axis extended towards the bottom shows how probes on the kidney cell are differently methylated. The user could see on this vertical tendency that probe "cg13733394" is unmethylated as in yellow, compared to probe "cg18470456" in blue which is methylated.
+Above the Heatmap, color-coded annotation tracks display metadata for each sample — 'primary_histology', and 'primary_site'. When you hover your mouse over the colored blocks, the details of each sample are shown. For example, a kidney cell line is shown as bright green above the Heatmap. The vertical tendency from the green color (a kidney cell) on the X-axis extended towards the bottom shows how probes on the kidney cell are differently methylated. The user could see on this vertical tendency that probe "cg13733394" is unmethylated as in yellow, compared to probe "cg18470456" in blue which is methylated.
 
 ![The Heatmap of the chosen dataset](_static/images/Methylation/fig2-11a.png)
 
