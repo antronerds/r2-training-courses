@@ -4,7 +4,7 @@
 Manual on R2 Platform for Methylation Analysis
 =================================
 
-*An Introduction on R2 Genomics Analysis and Visualization Platform Usage**
+*An Introduction on R2 Genomics Analysis and Visualization Platform Usage*
 
 By Ji Sun (Klara) Kwon
 Supervision: Dr. Antje Richter
@@ -17,21 +17,22 @@ Heinrich-Buff Ring 58, 35392 Giessen, Germany
 Introduction
 ---
 
-This manual is intended for scientists and students who wish to study DNA methylation, and its purpose is to provide instructions on how to analyze methylation data using the R2 Genomics Analysis and Visualization Platform, also known as the R2 Platform . Additionally, an online tutorial on the R2 Platform is available on the official website to learn about other features. The following mind map aids in understanding the structure of the manual and the relationships between its sections.
+This manual is intended for scientists and students who wish to study DNA methylation, and its purpose is to provide instructions on how to analyze methylation data using the R2 Genomics Analysis and Visualization Platform, also known as the R2 Platform. Additionally, an online tutorial on the R2 Platform is available on the official website to learn about other features. The following mind map aids in understanding the structure of the manual and the relationships between its sections.
 
-![](_static/images/Methylation/fig1-1.jpg)
+![](_static/images/Methylation/fig1-1.png)
 
 [**Figure 1-1: Structure of the R2 Platform manual and the relationships between its section**](_static/images/Methylation/fig1-1.jpg)
 
 ## 2 Generating a Heatmap
 
-For analysis of the human methylome in order to study the potential tumor suppressors we are using the R2 platform and the methylome datasets available in R2. R2 hosts many methylome datasets generated on  Illumina platforms, including the 450K, EPIC, and EPIC v2 arrays. Which is bisulfite treatment based. It determines methylated vs. unmethylated DNA target regions between probes (oligonucleotides), and per methylated region per each probe, a Heatmap is a useful tool to observe each (un)methylated probes and the clustered region of isoforms in relation to a degree of methylation.
+For analysis of the human methylome in order to study the potential tumor suppressors, we are using the R2 platform and the methylome datasets available in R2. R2 hosts many methylome datasets generated on Illumina platforms, including the 450K, EPIC, and EPIC v2 arrays, which are bisulfite treatment based. It determines methylated versus unmethylated DNA target regions using probes (oligonucleotides). For each region, a Heatmap is a useful tool for observing the methylation status of individual probes and how isoforms cluster according to their degree of methylation.
 
-As an example for this manual, a Heatmap is generated under the following conditions: "cancer pharmacogenomic tissue", "cell line" type from "Illumina" company by the author name **Esteller**. Also, this dataset shows how the Heatmap looks like from the highly proliferated cancer samples. Later in *Section 3 Comparing Methylation Heatmaps* of this manual, the Heatmap from this example will be compared with two other examples from different datasets. The tutorial scope will be then expanded to more complicated conditions such as a tutorial on "Expression" dataset.
+As an example for this manual, the first exercise will show how to generate a Heatmap with an Illumina methylation array dataset on R2. This dataset belongs to a study that is called "A Landscape of Pharmacogenomic Interactions in Cancer" and can be found in R2 as a "cell line" dataset by the author name **Esteller**.  
+Also, this dataset shows what the Heatmap looks like for highly proliferating cancer samples. Later, in *Section 3 Comparing Methylation Heatmaps*, the Heatmap from this example will be compared with two other examples from different datasets. The tutorial's scope will then be expanded to more complex use cases, such as a tutorial on the "Expression" dataset.
 
-With the above conditions, the platform user takes the following steps to create the Heatmap:
+With the above dataset information, the platform user takes the following steps to create the Heatmap:
 
-**1)** After login to the R2 Platform [1], click the checkbox under Field 2 "Select a dataset for analysis" (in Figure 2-1).
+**1)** After login to the R2 Platform [1], click the text box under Field 2 "Select a dataset for analysis" (in Figure 2-1).
 
 ![](_static/images/Methylation/fig2-1a.png)
 
@@ -39,7 +40,7 @@ With the above conditions, the platform user takes the following steps to create
 
 
 
-**2)** On the pop-up grid box (in Figure 2-2), select "cell line" by clicking Column {Category} "Select Filter", type "cancer pharmacogenomic" on Column {Tissue/Tumor} or type "Esteller" on Column {Author}. One can confirm the right dataset by referring the description table below as shown in Figure 2-2. When the dataset is found, click the found data and click "Confirm selection". (in Figure 2-3) Leave all other settings at their default and click "Next" on the main page to proceed. (in Figure 2-4)
+**2)** On the pop-up grid box (in Figure 2-2), click in Column {Category} on "Select Filter" to uncheck "Select all" and only select "cell line". In the text field of Column {Tissue/Tumor}, type "cancer pharmacogenomic"  or type "Esteller" in Column {Author}. One can confirm the right dataset by referring the description table below as shown in Figure 2-2. When the dataset is found, click anywhere on the row of the dataset and click "Confirm selection". (in Figure 2-3) Leave all other settings at their default and click "Next" on the main page to proceed. (in Figure 2-4)
 
 ![Change Dataset menu](_static/images/Methylation/fig2-2.jpg)
 
@@ -57,7 +58,7 @@ With the above conditions, the platform user takes the following steps to create
 
 
 
-**3)** The next page is "View a gene" that narrows down to the specific gene or methylation ID which to be shown in a Heatmap. (in Figure 2-5) As an example, "CLDN10" (Claudin 10) is written in Field {Gene / Met_id } as it is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice. Click "Submit" to generate a YY-plot. 
+**3)** The next page is "View a gene" that narrows down to the specific gene or methylation ID which to be shown in a Heatmap. (in Figure 2-5) As an example, "CLDN10" (Claudin 10) is written in Field {Gene / Met_id }, and the suggested Met_id that pops up is selected by a mouse click. CLDN10 is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice and select a Met_id by mouse that pops up. Click "Submit" to generate a YY-plot. 
 
 ![](_static/images/Methylation/fig2-5.png)
 
