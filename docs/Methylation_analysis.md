@@ -87,27 +87,34 @@ Two additional features on this webpage come in handy: By clicking on the exclam
 
 **4)** As a next step, click on "View additional details" on the same page below the previous line graph. (in Figure 2-9) Then by clicking "view all" link as shown in Figure 2-10, the embedded Heatmap and R2 Genome Browser of the chosen dataset will open in a new screen.
 
-![View additional details clickable](_static/images/Methylation/fig2-9a.png)
+![](_static/images/Methylation/fig2-9a.png)
 
-**Figure 2-9:** "View additional details" (clickable)
+[**Figure 2-9: View additional details" (clickable)**](_static/images/Methylation/fig2-9a.png)
 
-![View all reporters details](_static/images/Methylation/fig2-10.jpg)
 
-**Figure 2-10:** "View additional details" (clickable)
+
+![](_static/images/Methylation/fig2-10.jpg)
+
+[**Figure 2-10: View all reporters details**](_static/images/Methylation/fig2-10.jpg)
+
+
 
 **5)** Figure 2-11 shows the generated Heatmap. The **Heatmap** describes where each subset (probe) of the gene is methylated or not. The X-axis of the Heatmap indicates "primary histology" (or cell line type) and the Y-axis indicates all probes of the chosen gene of interest annotated within the dataset. The methylation score is colored by yellow (near to score 0, unmethylated), black in the middle (partially methylated, 50%), and blue (near to score 1, fully methylated). As shown in Figure 2-11, each probe per cell line type has a different tendency of methylation region.
 
 For example, a kidney cell line is shown as green above the Heatmap. The vertical tendency from the green color (a kidney cell) on the X-axis extended towards the bottom shows how probes on the kidney cell are differently methylated. The user could see on this vertical tendency that probe "cg13733394" is unmethylated as in yellow, compared to probe "cg18470456" in blue which is methylated.
 
-![The Heatmap of the chosen dataset](_static/images/Methylation/fig2-11a.png)
+![](_static/images/Methylation/fig2-11a.png)
 
-**Figure 2-11:** The Heatmap of the chosen dataset
+[**Figure 2-11:** The Heatmap of the chosen dataset**](_static/images/Methylation/fig2-11a.png)
+
 
 If the user is interested in looking into a table of each sample (probe) and gene name of the dataset. Go to the page where the YY-plot is generated and click view datatable (in Figure 2-12)
 
-![The table of sample and reporter names of the chosen dataset](_static/images/Methylation/fig2-12a.png)
+![](_static/images/Methylation/fig2-12a.png)
 
-**Figure 2-12:** The table of sample and gene names of the chosen dataset
+[**Figure 2-12: The table of sample and reporter names of the chosen dataset**](_static/images/Methylation/fig2-12a.png)
+
+
 
 **6)** Below the heatmap, the average ratio for each probe is depicted against their location on the genome. Clicking on the blue view....Genomebrowser link will open an interactive view of the same location on the genome as shown in Figure 2-13. The R2 Genome Browser relates the probes on the Y-axis of the Heatmap showing as two isoforms. The user could see Isoform A on the left side and Isoform B on the right side of the bar from R2 Genome Browser. The name of a certain probe could be seen or matched between the Heatmap and R2 Genome Browser by placing a cursor on that probe. Depending on the dataset, only one isoform or more isoforms can exist.
 
@@ -131,7 +138,9 @@ Now, if the user is interested in investigating certain probes from the dataset,
 
 ![The updated Heatmap and R2 Genome Browser for a subset of CpG probes chosen](_static/images/Methylation/fig2-14.jpg)
 
-**Figure 2-14:** The updated Heatmap and R2 Genome Browser of the chosen dataset for a subset of CpG probes chosen
+[**Figure 2-14: The updated Heatmap and R2 Genome Browser of the chosen dataset for a subset of CpG probes chosen**](_static/images/Methylation/fig2-14.jpg)
+
+
 
 ### Update: quick access to methylation heatmaps in R2
 
@@ -141,22 +150,27 @@ Now, if the user is interested in investigating certain probes from the dataset,
 
 ![Quick access step 1](_static/images/Methylation/fig-quickaccess-1.jpg)
 
-**Figure 2-15:** View al reporters from main menu
+[**Figure 2-15: Quick access step 1**](_static/images/Methylation/fig-quickaccess-1.jpg)
+
+
 
 - chose your gene of interest in 'Gene' and click next
 
-![Quick access step 2](_static/images/Methylation/fig-quickaccess-2.jpg)
+![](_static/images/Methylation/fig-quickaccess-2.jpg)
 
-**Figure 2-16:** View al reporters from main menu
+[**Figure 2-16: Quick access step 2**](_static/images/Methylation/fig-quickaccess-2.jpg)
+
+
 
 - chose your gene of interest in 'Gene' and click next
 
 
 - wait and heatmap is produced from all CpGs assigned to your Gene of interest
 
-![Quick access step 3 - resulting heatmap](_static/images/Methylation/fig2-17.png)
+![](_static/images/Methylation/fig2-17.png)
 
-**Figure 2-17:** Heatmap via quick access
+[**Figure 2-17: Quick access step 3 - resulting heatmap**](_static/images/Methylation/fig2-17.png)
+
 
 
 
@@ -173,9 +187,10 @@ When looking at the Heatmap from primary tumors "Heyn", some degree of methylati
 
 Next, the "Esteller" Heatmap includes even more methylation for the CLDN10 CGI than the "Heyn" Heatmap. Much more blue colors are observed throughout the Y-axis, which makes sense that highly proliferative cancer cells have more CLDN10 inactivated than the less proliferative tumor cells. By comparing the later "Esteller" Heatmap with "Lokk" and "Heyn" Heatmaps, one could see the gradual changes in the methylation tendency for the gene of interest during carcinogenesis.
 
-![The methylation Heatmaps from Lokk, Heyn, and Esteller datasets](_static/images/Methylation/fig3-1.jpg)
+![](_static/images/Methylation/fig3-1.jpg)
 
-**Figure 3-1:** The methylation Heatmaps from datasets "Lokk" (on the top), "Heyn" (in the middle) and "Esteller" (on the bottom)
+[**Figure 3-1: The methylation Heatmaps from datasets "Lokk" (on the top), "Heyn" (in the middle) and "Esteller" (on the bottom)**](_static/images/Methylation/fig3-1.jpg)
+
 
 A single Heatmap can be further categorized and compared by each cell type (by different tissues). With the example of "Lokk" Heatmap (normal cell), the following additional steps could be done after Step 5) to categorize per cell type:
 
