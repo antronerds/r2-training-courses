@@ -21,61 +21,69 @@ This manual is intended for scientists and students who wish to study DNA methyl
 
 ![](_static/images/Methylation/fig1-1.jpg)
 
-**Figure 1-1:** 
-
-
+[**Figure 1-1: Structure of the R2 Platform manual and the relationships between its section**](_static/images/Methylation/fig1-1.jpg)
 
 ## 2 Generating a Heatmap
 
 For analysis of the human methylome in order to study the potential tumor suppressors we are using the R2 platform and the methylome datasets available in R2. R2 hosts many methylome datasets generated on  Illumina platforms, including the 450K, EPIC, and EPIC v2 arrays. Which is bisulfite treatment based. It determines methylated vs. unmethylated DNA target regions between probes (oligonucleotides), and per methylated region per each probe, a Heatmap is a useful tool to observe each (un)methylated probes and the clustered region of isoforms in relation to a degree of methylation.
 
-As an example for this manual, a Heatmap is generated under the following conditions: "cancer pharmacogenomic tissue", "cell line" type from "Illumina" company by the author name "Esteller". Also, this dataset shows how the Heatmap looks like from the highly proliferated cancer samples. Later in *Section 3 Comparing Methylation Heatmaps* of this manual, the Heatmap from this example will be compared with two other examples from different datasets. The tutorial scope will be then expanded to more complicated conditions such as a tutorial on "Expression" dataset.
+As an example for this manual, a Heatmap is generated under the following conditions: "cancer pharmacogenomic tissue", "cell line" type from "Illumina" company by the author name **Esteller**. Also, this dataset shows how the Heatmap looks like from the highly proliferated cancer samples. Later in *Section 3 Comparing Methylation Heatmaps* of this manual, the Heatmap from this example will be compared with two other examples from different datasets. The tutorial scope will be then expanded to more complicated conditions such as a tutorial on "Expression" dataset.
 
 With the above conditions, the platform user takes the following steps to create the Heatmap:
 
 **1)** After login to the R2 Platform [1], click the checkbox under Field 2 "Select a dataset for analysis" (in Figure 2-1).
 
-![Main menu](_static/images/Methylation/fig2-1a.png)
+![](_static/images/Methylation/fig2-1a.png)
 
-**Figure 2-1:** Main menu
+[**Figure 2-1: Click in box 2 to change the dataset**](_static/images/Methylation/fig1-1.jpg)
+
+
 
 **2)** On the pop-up grid box (in Figure 2-2), select "cell line" by clicking Column {Category} "Select Filter", type "cancer pharmacogenomic" on Column {Tissue/Tumor} or type "Esteller" on Column {Author}. One can confirm the right dataset by referring the description table below as shown in Figure 2-2. When the dataset is found, click the found data and click "Confirm selection". (in Figure 2-3) Leave all other settings at their default and click "Next" on the main page to proceed. (in Figure 2-4)
 
 ![Change Dataset menu](_static/images/Methylation/fig2-2.jpg)
 
-**Figure 2-2:** Search and select a dataset in the grid
+[**Figure 2-1: Search and select a dataset in the grid**](_static/images/Methylation/fig2-2.jpg)
 
-![Change Dataset menu after filter](_static/images/Methylation/fig2-3.jpg)
 
-**Figure 2-3:** Select a Dataset(after filter)
 
-![Main menu after selecting the dataset](_static/images/Methylation/fig2-4a.png)
+![](_static/images/Methylation/fig2-3.jpg)
 
-**Figure 2-4:** Main menu (with selected dataset)
+[**Figure 2-3: Select and confirm**](_static/images/Methylation/fig2-3.jpg)
+
+![](_static/images/Methylation/fig2-4a.png)
+
+[**Figure 2-4: Main menu (with selected dataset)**](_static/images/Methylation/fig2-4.jpg)
+
+
 
 **3)** The next page is "View a gene" that narrows down to the specific gene or methylation ID which to be shown in a Heatmap. (in Figure 2-5) As an example, "CLDN10" (Claudin 10) is written in Field {Gene / Met_id } as it is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice. Click "Submit" to generate a YY-plot. 
 
-![Adjustable settings menu on the dataset](_static/images/Methylation/fig2-5.png)
+![](_static/images/Methylation/fig2-5.png)
 
-**Figure 2-5:** Adjustable settings menu on the dataset
+[**Figure 2-5: Adjustable settings menu on the dataset**](_static/images/Methylation/fig2-5.jpg)
+
 
 In case that a gene name of interest is uncertain, one can find the exact gene name of interest by a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
 
 A linear graph is generated as the following graph with an X-axis with samples (probes) and a Y-axis as CLDN10 methylation. (in Figure 2-6) Each sample (a.k.a. cell line type, on the X-axis) is ordered by its degree of CLDN10 methylation (on the Y-axis).
 
-![Graph on the probes of the chosen CLDN10 dataset](_static/images/Methylation/fig2-6.jpg)
+![](_static/images/Methylation/fig2-6.jpg)
 
-**Figure 2-6:** Graph on the probe with highest average ratio of the chosen CLDN10 gene
+[**Figure 2-6: Graph on the probes of the chosen CLDN10 dataset**](_static/images/Methylation/fig2-.jpg)
+
 
 Two additional features on this webpage come in handy: By clicking on the exclamation mark right in the graph title (marked in red in Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link (marked in red in Figure 2-6) and read the definition of the terminologies on the National Library of Medicine (NIM) website. (in Figure 2-8)
 
 ![Description of the chosen dataset](_static/images/Methylation/fig2-7.jpg)
 
-**Figure 2-7:** Description of the chosen dataset
+[**Figure 2-7: Description of the chosen dataset**](_static/images/Methylation/fig2-7.jpg)
 
-![Definition of terminology CLDN10 on the NLM website](_static/images/Methylation/fig2-8.jpg)
 
-**Figure 2-8:** Definition of terminology "CLDN10" on the National Library of Medicine (NLM) website
+![](_static/images/Methylation/fig2-8.jpg)
+
+[**Figure 2-8: Definition of terminology "CLDN10" on the National Library of Medicine (NLM) website**](_static/images/Methylation/fig2-8.jpg)
+
 
 **4)** As a next step, click on "View additional details" on the same page below the previous line graph. (in Figure 2-9) Then by clicking "view all" link as shown in Figure 2-10, the embedded Heatmap and R2 Genome Browser of the chosen dataset will open in a new screen.
 
@@ -111,9 +119,9 @@ The standard deviation of methylation per CpG is shown with the vertical gray li
 
 Below the diagram, there are two green sticks called "CLDN10" labeled on the left and one red stick called "CLDN10-AS1" labeled on the right. The green sticks represent Isoform A and the red stick represents an antisense isoform. The B isoform is shown on the right side. Depending on the dataset, multiple isoforms more than two (A and B) could exist. More details regarding R2 Genome Browser could be found on R2 Platform online tutorial under Section 17. Using the R2-Genome browser. [2]
 
-![R2 Genome Browser with mean methylation score by gene index](_static/images/Methylation/fig2-13b.png)
+![](_static/images/Methylation/fig2-13b.png "Figure 2-13")
 
-**Figure 2-13:** R2 Genome Browser with mean methylation score by gene index
+[**Figure 2-13: R2 Genome Browser with mean methylation score by gene index**](_static/images/Methylation/fig2-13b.png)
 
 Now, if the user is interested in investigating certain probes from the dataset, the next steps could be done additionally. (marked in red in Figure 2-13)
 
