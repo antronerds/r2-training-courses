@@ -21,7 +21,7 @@ This manual is intended for scientists and students who wish to study DNA methyl
 
 ![](_static/images/Methylation/fig1-1.png)
 
-[**Figure 1-1: Structure of the R2 Platform manual and the relationships between its section**](_static/images/Methylation/fig1-1.jpg)
+[**Figure 1-1: Structure of the R2 Platform manual and the relationships between its section**](_static/images/Methylation/fig1-1.png)
 
 ## 2 Generating a Heatmap
 
@@ -44,7 +44,7 @@ With the above dataset information, the platform user takes the following steps 
 
 ![Change Dataset menu](_static/images/Methylation/fig2-2.jpg)
 
-[**Figure 2-1: Search and select a dataset in the grid**](_static/images/Methylation/fig2-2.jpg)
+[**Figure 2-2: Search and select a dataset in the grid**](_static/images/Methylation/fig2-2.jpg)
 
 
 
@@ -54,7 +54,7 @@ With the above dataset information, the platform user takes the following steps 
 
 ![](_static/images/Methylation/fig2-4a.png)
 
-[**Figure 2-4: Main menu (with selected dataset)**](_static/images/Methylation/fig2-4.jpg)
+[**Figure 2-4: Main menu (with selected dataset)**](_static/images/Methylation/fig2-4a.png)
 
 
 
@@ -62,7 +62,7 @@ With the above dataset information, the platform user takes the following steps 
 
 ![](_static/images/Methylation/fig2-5.png)
 
-[**Figure 2-5: Adjustable settings menu on the dataset**](_static/images/Methylation/fig2-5.jpg)
+[**Figure 2-5: Adjustable settings menu on the dataset**](_static/images/Methylation/fig2-5.png)
 
 
 In case that a gene name of interest is uncertain, one can find the exact gene name of interest by a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
@@ -71,7 +71,7 @@ A linear graph is generated as the following graph with an X-axis with samples (
 
 ![](_static/images/Methylation/fig2-6.jpg)
 
-[**Figure 2-6: Graph on the probes of the chosen CLDN10 dataset**](_static/images/Methylation/fig2-.jpg)
+[**Figure 2-6: Graph on the probes of the chosen CLDN10 dataset**](_static/images/Methylation/fig2-6.jpg)
 
 
 Two additional features on this webpage come in handy: By clicking on the exclamation mark right in the graph title (marked in red in Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link (marked in red in Figure 2-6) and read the definition of the terminologies on the National Library of Medicine (NIM) website. (in Figure 2-8)
