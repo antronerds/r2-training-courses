@@ -76,7 +76,7 @@ A linear graph is generated as the following graph with an X-axis with samples (
 
 Two additional features on this webpage come in handy: By clicking on the exclamation mark right in the graph title (marked in red in Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link (marked in red in Figure 2-6) and read the definition of the terminologies on the National Library of Medicine (NIM) website. (in Figure 2-8)
 
-![Description of the chosen dataset](_static/images/Methylation/fig2-7.jpg)
+![](_static/images/Methylation/fig2-7.jpg)
 
 [**Figure 2-7: Description of the chosen dataset**](_static/images/Methylation/fig2-7.jpg)
 
@@ -137,7 +137,7 @@ Now, if the user is interested in investigating certain probes from the dataset,
 
 **6-2)** Figure 2-14 shows the updated Heatmap and R2 Genome Browser after the previous step (Step 6-1). The user could investigate the methylation tendency of the three probes. Back to the example of "kidney" cell type (indicated in green on the X-axis "primary_histology" of Heatmap), the user sees two probes ("cg08418978", "cg22122715"; yellow in Heatmap) are unmethylated but Probe "cg25032595" (blue in Heatmap) is methylated.
 
-![The updated Heatmap and R2 Genome Browser for a subset of CpG probes chosen](_static/images/Methylation/fig2-14.jpg)
+![](_static/images/Methylation/fig2-14.jpg)
 
 [**Figure 2-14: The updated Heatmap and R2 Genome Browser of the chosen dataset for a subset of CpG probes chosen**](_static/images/Methylation/fig2-14.jpg)
 
@@ -149,7 +149,7 @@ Now, if the user is interested in investigating certain probes from the dataset,
 - click view all Met_ids
 - click next
 
-![Quick access step 1](_static/images/Methylation/fig-quickaccess-1.jpg)
+![](_static/images/Methylation/fig-quickaccess-1.jpg)
 
 [**Figure 2-15: Quick access step 1**](_static/images/Methylation/fig-quickaccess-1.jpg)
 
@@ -197,19 +197,22 @@ A single Heatmap can be further categorized and compared by each cell type (by d
 
 Scroll down to the "Gene" table on the bottom of the Heatmap webpage. Select "a track" in Field "Order samples by" and "tissue (17 cat)" in Field "Ordering track" (in Figure 3-2). This allows the Heatmap to be organized by cell type.
 
-![The table option on the Heatmap webpage](_static/images/Methylation/fig3-2.jpg)
+![](_static/images/Methylation/fig3-2.jpg)
+[**Figure 3-2: The table option on the Heatmap webpage**](_static/images/Methylation/fig3-2.jpg)
 
-**Figure 3-2:** The table option on the Heatmap webpage
 
 Figure 3-3 is a categorized Heatmap by cell type. If a cursor is placed on the "tissue" label on the X-axis (above), a pop-up message shows the information regarding the annotations/tracks such as tissue type and gender of each sample. For example, Sample "gsm1215434" came from bladder tissue of a male as shown in Figure 3-3.
 
-![Categorized heatmap - Lokk normal tissues by tissue type](_static/images/Methylation/fig3-3a1.png)
+![](_static/images/Methylation/fig3-3a1.png)
+[**Figure 3-3a1: Categorized heatmap - Lokk normal tissues by tissue type**](_static/images/Methylation/fig3-3a1.png)
 
-![Categorized heatmap - Heyn tumor types](_static/images/Methylation/fig3-3b1.png)
 
-![Categorized heatmap - Esteller cell line cancer](_static/images/Methylation/fig3-3c1.png)
+![](_static/images/Methylation/fig3-3b1.png)
+[**Figure 3-3a2: Categorized heatmap - Heyn Tumor types**](_static/images/Methylation/fig3-3b1.png)
 
-**Figure 3-3:** Categorized Heatmaps by cell type from datasets "Lokk" (on the top), "Heyn" (in the middle) and "Esteller" (on the bottom)
+![](_static/images/Methylation/fig3-3c1.png)
+[**Figure 3-3: Esteller cell line cancer**](_static/images/Methylation/fig3-3c1.png)
+
 
 ---
 
@@ -219,35 +222,38 @@ The user could take the following steps as a shortcut to generate a heatmap:
 
 **1)** To select "Esteller" dataset, repeat the Step 1) to Figure 2-3 in Step 2) in *Section 2 Generating Heatmap* of this manual. After following the steps login to the R2 Platform [1], choose "View all Met_ids for a Gene (Heatmap)" under Field 3 checkbox. Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 4-1).
 
-![Main menu](_static/images/Methylation/fig4-1.png)
+![](_static/images/Methylation/fig4-1.png)
+[***Figure 4-1:** Main menu**](_static/images/Methylation/fig4-1.png)
 
-**Figure 4-1:** Main menu
 
 **2)** On the next webpage "View all reporters for a gene", the user could type a gene of interest to generate a Heatmap. As an example, "CLDN10" (Claudin 10) is written in Field {Gene} as shown in Figure 4-2. Click "Next" to execute a Heatmap.
 
-![View all reporters for a gene menu](_static/images/Methylation/fig4-2.jpg)
+![](_static/images/Methylation/fig4-2.jpg)
 
-**Figure 4-2:** "View all reporters for a gene" menu
+[**Figure 4-2: "View all reporters for a gene" menu**](_static/images/Methylation/fig4-2.jpg)
+
 
 **3)** Figure 2-11 shows the generated Heatmap. One could notice that the Heatmap in Figure 4-3 looks the same as the Heatmap in *Section 2 Generating Heatmap*.
 
-![The Heatmap of the chosen dataset](_static/images/Methylation/fig4-3.jpg)
+![](_static/images/Methylation/fig4-3.jpg)
+[**Figure 4-3: The Heatmap of the chosen dataset**](_static/images/Methylation/fig4-3.jpg)
 
-**Figure 4-3:** The Heatmap of the chosen dataset
 
-The user could also generate a Heatmap by cell type from dataset "Esteller" like the Heatmap in *Section 3 Comparing Methylation Heatmaps*, with the following steps:
+-The user could also generate a Heatmap by cell type from dataset "Esteller" like the Heatmap in *Section 3 Comparing Methylation Heatmaps*, with the following steps:
 
 **4)** Repeat Step 1) as in Figure 4-1. On the website "View all reporters for a gene", type "CLDN10" (Claudin 10) in Field {Gene}. To create a Heatmap by cell type, select "a track" in the Field {Order samples by} and "primary_site (14 cat)" in the Field {Ordering track}. Click "Next" to execute a Heatmap by cell type (in Figure 4-4).
 
-![View all reporters for a gene menu with track ordering](_static/images/Methylation/fig4-4.jpg)
+![](_static/images/Methylation/fig4-4.jpg)
+[**Figure 4-4: "View all reporters for a gene" menu**](_static/images/Methylation/fig4-4.jpg)
 
-**Figure 4-4:** "View all reporters for a gene" menu
 
 Figure 4-5 is a categorized Heatmap by cell type. This Figure is the same as the Heatmap from the dataset "Esteller" in Figure 3-1 in *Section 3 Comparing Methylation Heatmaps*.
 
-![Categorized Heatmaps by cell type from dataset Esteller](_static/images/Methylation/fig4-5.jpg)
+![](_static/images/Methylation/fig4-5.jpg)
 
-**Figure 4-5:** Categorized Heatmaps by cell type from dataset "Esteller"
+[**Figure 4-5: Categorized Heatmaps by cell type from dataset "Esteller"**](_static/images/Methylation/fig4-5.jpg)
+
+
 
 ---
 
@@ -258,73 +264,81 @@ The user could also compare the methylation level of the same probe from multipl
 **5)** After login to the R2 Platform [1], choose "Across Datasets" under Field 1 checkbox. Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 5-1).
 
 ![Main menu](_static/images/Methylation/fig5-1.png)
+[****Figure 5-1: Main menu**](_static/images/Methylation/fig5-1.png)
 
-**Figure 5-1:** Main menu
+
 
 **6)** On the next webpage "MegaSampler", the user could change the settings in relation to the data type or preset/default (either in a global or in a group level) as shown in Figure 5-2. Select "hs, ilmnhm450, custom" on Field "Type of data" to see methylation datasets on the list of the next page. Leave other settings at their default and click "Next" to proceed.
 
-![MegaSampler menu](_static/images/Methylation/fig5-2.jpg)
+![](_static/images/Methylation/fig5-2.jpg)
+[**Figure 5-2: "MegaSampler" menu**](_static/images/Methylation/fig5-2.png)
 
-**Figure 5-2:** "MegaSampler" menu
 
 **7)** On the next webpage, type "CLDN10" in the Field "Gene / Reporter" and click "Select Datasets" button. (in Figure 5-3)
+[](_static/images/Methylation/fig5-3.jpg)
+[**Figure 5-3:  "MegaSampler" menu**](_static/images/Methylation/fig5-3.png)
 
-![MegaSampler menu step 2](_static/images/Methylation/fig5-3.jpg)
 
-**Figure 5-3:** "MegaSampler" menu
 
 **8)** On the pop-up box, type the author name "Lokk" (normal cells) on Column {Author} and select the datasets by clicking "Select". Repeat the same steps for the datasets with the author names "Heyn" (tumor cells) and "Esteller" (cancer cells) respectively. Click "Confirm selection" button to proceed (as shown in Figure 5-4).
 
-![Data selection menu with Lokk, Heyn, Esteller](_static/images/Methylation/fig5-4.jpg)
+![](_static/images/Methylation/fig5-4.jpg)
+[**Figure 5-3:  "MegaSampler" menu**](_static/images/Methylation/fig5-4.png)
 
 **Figure 5-4:** Data selection menu with the author names "Lokk", "Heyn", "Esteller"
 
 **9)** By previous Step 4), the user could see the data has reflected in the setting as shown in yellow in Figure 5-5. Type "CLDN10" in Field "Gene/Reporter" and choose "None" in Field "Transformation". Click "Next" button to proceed.
 
-![MegaSampler menu reflected selected datasets](_static/images/Methylation/fig5-5.jpg)
+![](_static/images/Methylation/fig5-5.jpg)
+[**Figure 5-5: "MegaSampler" menu reflected the selected datasets**](_static/images/Methylation/fig5-5.png)
 
 **Figure 5-5:** "MegaSampler" menu reflected the selected datasets
 
 **10)** Choose one probe ("cg25032595" and "cg16556145" respectively) from the CGI observed in yellow in the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps*. As shown in Figure 4-6, the two probes are found in the "Esteller" heatmap as "cg16275739" is marked in blue and "cg18393747" is marked in red.
 
-![Probe location in the Esteller Heatmap](_static/images/Methylation/fig5-61.png)
+![](_static/images/Methylation/fig5-61.png)
+[**Figure 5-6: Probe location in the "Esteller" Heatmap**](_static/images/Methylation/fig5-61.png)
 
 
-**Figure 5-6:** Probe location in the "Esteller" Heatmap
+
 
 Select the first probe "cg25032595" as shown on the right in Figure 5-6. On "Adjustable settings" in Figure 5-8, the user could change the dataset order out of all selected datasets. Change the order the datasets: "Lokk" as "1", "Heyn" as "2" and "Esteller" as "3" (in Figure 5-8). This setting lets datasets be compared: "Lokk" as the first dataset, "Heyn" as the second dataset and "Esteller" as the third order. Click "Submit" button to proceed. Repeat the same process for the second probe "cg16556145" as shown on the right in Figure 5-7.
 
-![Selected probe cg25032595 in Gene CLDN10 table](_static/images/Methylation/fig5-7a.jpg)
 
-![Selected probe cg16556145 in Gene CLDN10 table](_static/images/Methylation/fig5-7b.jpg)
+![](_static/images/Methylation/fig5-7c.png)
+[**Figure 5-7: Selected probe (”cg25032595” on the left, “cg16556145” on the right)**](_static/images/Methylation/fig5-61.png)
 
-**Figure 5-7:** Selected probe ("cg25032595" on the left, "cg16556145" on the right) in "Gene: CLDN10" table
 
-![Adjustable settings menu](_static/images/Methylation/fig5-8.jpg)
 
-**Figure 5-8:** "Adjustable settings" menu
+
+![](_static/images/Methylation/fig5-8.jpg)
+[**Figure 5-8: Probe location in the "Esteller" Heatmap**](_static/images/Methylation/fig5-8.jpg)
+
+
 
 As a result, the first methylation scatter plot from Dataset "Lokk", "Heyn" and "Esteller" of Probe "cg25032595" are generated as shown in Figure 5-9. As expected, the methylation level of "Lokk" for normal tissues (with the average 0.025) is lower than the methylation level of "Heyn" tumor cell lines (with the average 0.08). The methylation level of "Heyn" for tumor tissues is also lower than the methylation level of "Esteller" tumor cell lines (with the average 0.4). It should be noted that the name of Y-axes of the scatter plots in Figure 5-9 and Figure 5-10 is false. The Y-axis of the scatter plot is not "Expression" but "Methylation".
 
 On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-value is significant enough as shown in red (in Figure 5-9). In the gear box tick "add scatter"
 
-![ANOVA table and methylation graphs of probe cg25032595](_static/images/Methylation/fig5-9a.png)
+![](_static/images/Methylation/fig5-9a.png)
+[**Figure 5-9: ANOVA table and methylation graphs of the three datasets of Probe "cg25032595" (could be compared to expression plot Figure 7-5)**](_static/images/Methylation/fig5-9a.png)
 
-**Figure 5-9:** ANOVA table and methylation graphs of the three datasets of Probe "cg25032595" (could be compared to expression plot Figure 7-5)
+
 
 The second methylation scatter plot from the three datasets of Probe "cg16556145" are generated as shown in Figure 5-9. As expected, the methylation tendency from the normal to cancer cells is increasing as observed in the scatter plot in Figure 5-9. The methylation level "Lokk" for normal tissues (with the average 0.1) is lower than the methylation level of "Heyn" tumor cell lines (with the average 0.25). The methylation level of "Heyn" for tumor tissues is also lower than the methylation level of "Esteller" tumor cell lines (with the average 0.65).
 
 On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-value is significant enough as shown in red (in Figure 5-10).
 
-![ANOVA table and methylation graphs of probe cg16556145](_static/images/Methylation/fig5-10a.png)
+![](_static/images/Methylation/fig5-10a.png)
+[**Figure 5-10: ANOVA table and methylation graphs of the three datasets of Probe "cg16556145" (could be compared to expression plot Figure 7-5**](_static/images/Methylation/fig5-10a.png)
 
-**Figure 5-10:** ANOVA table and methylation graphs of the three datasets of Probe "cg16556145" (could be compared to expression plot Figure 7-5)
+
 
 The mean methylation difference of the two probes is shown more simply in another online methylation analysis tool named "Wanderer". [6] There is a methylation difference to be seen between normal and tumor cells from Probe "cg25032595" (marked in blue in Figure 5-11) than the gap from Probe "cg16556145" (marked in red in Figure 5-11).
 
-![Wanderer mean methylation graph](_static/images/Methylation/fig5-11.jpg)
+![](_static/images/Methylation/fig5-11.jpg)
+[**Figure 5-11: Wanderer mean methylation graph**](_static/images/Methylation/fig5-11.png)
 
-**Figure 5-11:** Wanderer mean methylation graph of CLDN10 (probe set) of the normal and primary breast tumor ("TCGA" dataset)
 
 ---
 
