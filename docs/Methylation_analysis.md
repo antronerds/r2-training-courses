@@ -25,9 +25,9 @@ This manual is intended for scientists and students who wish to study DNA methyl
 
 ## 2 Generating a Heatmap
 
-For analysis of the human methylome in order to study the potential tumor suppressors, we are using the R2 platform and the methylome datasets available in R2. R2 hosts many methylome datasets generated on Illumina platforms, including the 450K, EPIC, and EPIC v2 arrays, which are bisulfite treatment based. It determines methylated versus unmethylated DNA target regions using probes (oligonucleotides). For each region, a Heatmap is a useful tool for observing the methylation status of individual probes and how isoforms cluster according to their degree of methylation.
+For analysis of the human methylome in order to study the potential tumor suppressors, we are using the R2 platform and the methylation datasets available in R2. R2 hosts many methylome datasets generated on Illumina platforms, including the 450K, EPIC, and EPIC v2 arrays, which are bisulfite treatment based. It determines methylated versus unmethylated DNA target regions using probes (oligonucleotides). For each region, a Heatmap is a useful tool for observing the methylation status of individual probes and how isoforms cluster according to their degree of methylation.
 
-As an example for this manual, the first exercise will show how to generate a Heatmap with an Illumina methylation array dataset on R2. This dataset belongs to a study that is called "A Landscape of Pharmacogenomic Interactions in Cancer" and can be found in R2 as a "cell line" dataset by the author name **Esteller**.  
+As an example for this manual, the first exercise will show how to generate a Heatmap with an Illumina methylation array dataset on R2. This dataset belongs to a study that is called "A Landscape of Pharmacogenomic Interactions in Cancer" and can be found in R2 as a "cell line" dataset by the author name **Esteller**. 
 Also, this dataset shows what the Heatmap looks like for highly proliferating cancer samples. Later, in *Section 3 Comparing Methylation Heatmaps*, the Heatmap from this example will be compared with two other examples from different datasets. The tutorial's scope will then be expanded to more complex use cases, such as a tutorial on the "Expression" dataset.
 
 With the above dataset information, the platform user takes the following steps to create the Heatmap:
@@ -42,7 +42,7 @@ With the above dataset information, the platform user takes the following steps 
 
 **2)** On the pop-up grid box (in Figure 2-2), click in Column {Category} on "Select Filter" to uncheck "Select all" and only select "cell line". In the text field of Column {Tissue/Tumor}, type "cancer pharmacogenomic"  or type "Esteller" in Column {Author}. One can confirm the right dataset by referring the description table below as shown in Figure 2-2. When the dataset is found, click anywhere on the row of the dataset and click "Confirm selection". (in Figure 2-3) Leave all other settings at their default and click "Next" on the main page to proceed. (in Figure 2-4)
 
-![Change Dataset menu](_static/images/Methylation/fig2-2.jpg)
+![](_static/images/Methylation/fig2-2.jpg)
 
 [**Figure 2-2: Search and select a dataset in the grid**](_static/images/Methylation/fig2-2.jpg)
 
@@ -67,11 +67,11 @@ With the above dataset information, the platform user takes the following steps 
 
 In case that a gene name of interest is uncertain, one can find the exact gene name of interest by a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
 
-A linear graph is generated as the following graph with an X-axis with samples (probes) and a Y-axis as CLDN10 methylation. (in Figure 2-6) Each sample (a.k.a. cell line type, on the X-axis) is ordered by its degree of CLDN10 methylation (on the Y-axis).
+A linear graph is generated as the following graph with an X-axis with samples (probes) and a Y-axis as CLDN10 methylation. (in Figure 2-6) Each sample (a.k.a. cell line type, on the X-axis) is ordered by its degree of CLDN10 methylation (on the Y-axis). The probe with the highesr avarage mean is selected by default. 
 
 ![](_static/images/Methylation/fig2-6.jpg)
 
-[**Figure 2-6: Graph on the probes of the chosen CLDN10 dataset**](_static/images/Methylation/fig2-6.jpg)
+[**Figure 2-6: Graph one probe of the chosen CLDN10 dataset**](_static/images/Methylation/fig2-6.jpg)
 
 
 Two additional features on this webpage come in handy: By clicking on the exclamation mark right in the graph title (marked in red in Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link (marked in red in Figure 2-6) and read the definition of the terminologies on the National Library of Medicine (NIM) website. (in Figure 2-8)
@@ -90,7 +90,7 @@ Two additional features on this webpage come in handy: By clicking on the exclam
 
 ![](_static/images/Methylation/fig2-9a.png)
 
-[**Figure 2-9: View additional details" (clickable)**](_static/images/Methylation/fig2-9a.png)
+[**Figure 2-9: View additional details (clickable)**](_static/images/Methylation/fig2-9a.png)
 
 
 
@@ -125,7 +125,7 @@ Then R2 Genome Browser shows the average (mean) CpG by methylation score (on an 
 
 The standard deviation of methylation per CpG is shown with the vertical gray line in the diagram, which is located in the gene index around 96,160,000. The letter "q" (queue) from the X-axis label "q32.1" reveals that the gene is located on the chromosome's long arm. If it is located on the small arm of the chromosome it is labeled with "p" (petite).
 
-Below the diagram, there are two green sticks called "CLDN10" labeled on the left and one red stick called "CLDN10-AS1" labeled on the right. The green sticks represent Isoform A and the red stick represents an antisense isoform. The B isoform is shown on the right side. Depending on the dataset, multiple isoforms more than two (A and B) could exist. More details regarding R2 Genome Browser could be found on R2 Platform online tutorial under Section 17. Using the R2-Genome browser. [2]
+Below the diagram, there are two green horizontal bars called "CLDN10" labeled on the left and one red stick called "CLDN10-AS1" labeled on the right. The green bars  represent Isoform A and the red bar  represents an antisense isoform. The B isoform is shown on the right side. Depending on the dataset, multiple isoforms more than two (A and B) could exist. More details regarding R2 Genome Browser could be found on R2 Platform online tutorial under Section 17. Using the R2-Genome browser. [2]
 
 ![](_static/images/Methylation/fig2-13b.png "Figure 2-13")
 
@@ -137,11 +137,12 @@ Now, if the user is interested in investigating certain probes from the dataset,
 
 **6-2)** Figure 2-14 shows the updated Heatmap and R2 Genome Browser after the previous step (Step 6-1). The user could investigate the methylation tendency of the three probes. Back to the example of "kidney" cell type (indicated in green on the X-axis "primary_histology" of Heatmap), the user sees two probes ("cg08418978", "cg22122715"; yellow in Heatmap) are unmethylated but Probe "cg25032595" (blue in Heatmap) is methylated.
 
-![](_static/images/Methylation/fig2-14.jpg)
+![](_static/images/Methylation/fig2-14a.png)
 
-[**Figure 2-14: The updated Heatmap and R2 Genome Browser of the chosen dataset for a subset of CpG probes chosen**](_static/images/Methylation/fig2-14.jpg)
+[**Figure 2-14: The updated Heatmap and R2 Genome Browser of the chosen dataset for a subset of CpG probes chosen**](_static/images/Methylation/fig2-14a.png)
 
 
+<!-- This text is commented out and won't be visible
 
 ### Update: quick access to methylation heatmaps in R2
 
@@ -172,7 +173,7 @@ Now, if the user is interested in investigating certain probes from the dataset,
 
 [**Figure 2-17: Quick access step 3 - resulting heatmap**](_static/images/Methylation/fig2-17.png)
 
-
+-->
 
 
 
@@ -180,7 +181,7 @@ Now, if the user is interested in investigating certain probes from the dataset,
 
 ## 3 Comparing Methylation Heatmaps
 
-To grasp a better idea how to interpret this Heatmap, two further methylation/Methylome datasets will be compared with the "Esteller" dataset. As mentioned earlier in *Section 2 Generating Heatmap* of this manual, this "Esteller" dataset is based on highly proliferating cancer cell lines. The second dataset is based on primary tumors ("tumor" type by the author name "Heyn" on R2 Platform). The third dataset is based on normal control tissue samples ("normal" type by the author name "Lokk" on R2 Platform). In this section, three Heatmaps generated from these three datasets are to be compared to show the difference in methylation tendency for a chosen gene of interest. These comparative methylome heatmaps were used to study another tumor suppressor ZAR1. [5]
+To grasp a better idea how to interpret this Heatmap, two further methylation datasets will be compared with the "Esteller" dataset. As mentioned earlier in *Section 2 Generating Heatmap* of this manual, this "Esteller" dataset is based on highly proliferating cancer cell lines. The second dataset is based on primary tumors ("tumor" type by the author name "Heyn" on R2 Platform). The third dataset is based on normal control tissue samples ("normal" type by the author name "Lokk" on R2 Platform). In this section, three Heatmaps generated from these three datasets are to be compared to show the difference in methylation tendency for a chosen gene of interest. These comparative methylome heatmaps were used to study another tumor suppressor ZAR1. [5]
 
 To create the second ("Heyn") and the third ("Lokk") datasets, repeat the steps from 1) to 5) in *Section 2 Generating Heatmap* of this manual. The following Figure 3-1 is the generated Heatmaps of the three datasets ("Esteller" on the bottom, "Heyn" in the middle, "Lokk" on the top). As shown with colors in Figure 3-1, the "Lokk" Heatmap of CLDN10 is rather uniform with an CLDN10 CGI (or CpG-Island) that is unmethylated, whereas the CGI surrounding regions are methylated (for all samples).
 
@@ -188,26 +189,29 @@ When looking at the Heatmap from primary tumors "Heyn", some degree of methylati
 
 Next, the "Esteller" Heatmap includes even more methylation for the CLDN10 CGI than the "Heyn" Heatmap. Much more blue colors are observed throughout the Y-axis, which makes sense that highly proliferative cancer cells have more CLDN10 inactivated than the less proliferative tumor cells. By comparing the later "Esteller" Heatmap with "Lokk" and "Heyn" Heatmaps, one could see the gradual changes in the methylation tendency for the gene of interest during carcinogenesis.
 
-![](_static/images/Methylation/fig3-1.jpg)
+![](_static/images/Methylation/fig3-1a.png)
 
-[**Figure 3-1: The methylation Heatmaps from datasets "Lokk" (on the top), "Heyn" (in the middle) and "Esteller" (on the bottom)**](_static/images/Methylation/fig3-1.jpg)
+[**Figure 3-1: The methylation Heatmaps from datasets "Lokk" (on the top), "Heyn" (in the middle) and "Esteller" (on the bottom)**](_static/images/Methylation/fig3-1a.png)
 
 
 A single Heatmap can be further categorized and compared by each cell type (by different tissues). With the example of "Lokk" Heatmap (normal cell), the following additional steps could be done after Step 5) to categorize per cell type:
 
 Scroll down to the "Gene" table on the bottom of the Heatmap webpage. Select "a track" in Field "Order samples by" and "tissue (17 cat)" in Field "Ordering track" (in Figure 3-2). This allows the Heatmap to be organized by cell type.
 
-![](_static/images/Methylation/fig3-2.jpg)
-[**Figure 3-2: The table option on the Heatmap webpage**](_static/images/Methylation/fig3-2.jpg)
+![](_static/images/Methylation/fig3-2a.png)
+
+[**Figure 3-2: The table option on the Heatmap webpage**](_static/images/Methylation/fig3-2a.png)
 
 
 Figure 3-3 is a categorized Heatmap by cell type. If a cursor is placed on the "tissue" label on the X-axis (above), a pop-up message shows the information regarding the annotations/tracks such as tissue type and gender of each sample. For example, Sample "gsm1215434" came from bladder tissue of a male as shown in Figure 3-3.
 
 ![](_static/images/Methylation/fig3-3a1.png)
+
 [**Figure 3-3a1: Categorized heatmap - Lokk normal tissues by tissue type**](_static/images/Methylation/fig3-3a1.png)
 
 
 ![](_static/images/Methylation/fig3-3b1.png)
+
 [**Figure 3-3a2: Categorized heatmap - Heyn Tumor types**](_static/images/Methylation/fig3-3b1.png)
 
 ![](_static/images/Methylation/fig3-3c1.png)
@@ -223,7 +227,7 @@ The user could take the following steps as a shortcut to generate a heatmap:
 **1)** To select "Esteller" dataset, repeat the Step 1) to Figure 2-3 in Step 2) in *Section 2 Generating Heatmap* of this manual. After following the steps login to the R2 Platform [1], choose "View all Met_ids for a Gene (Heatmap)" under Field 3 checkbox. Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 4-1).
 
 ![](_static/images/Methylation/fig4-1.png)
-[***Figure 4-1:** Main menu**](_static/images/Methylation/fig4-1.png)
+[**Figure 4-1: Main menu**](_static/images/Methylation/fig4-1.png)
 
 
 **2)** On the next webpage "View all reporters for a gene", the user could type a gene of interest to generate a Heatmap. As an example, "CLDN10" (Claudin 10) is written in Field {Gene} as shown in Figure 4-2. Click "Next" to execute a Heatmap.
@@ -236,6 +240,7 @@ The user could take the following steps as a shortcut to generate a heatmap:
 **3)** Figure 2-11 shows the generated Heatmap. One could notice that the Heatmap in Figure 4-3 looks the same as the Heatmap in *Section 2 Generating Heatmap*.
 
 ![](_static/images/Methylation/fig4-3.jpg)
+
 [**Figure 4-3: The Heatmap of the chosen dataset**](_static/images/Methylation/fig4-3.jpg)
 
 
@@ -244,6 +249,7 @@ The user could take the following steps as a shortcut to generate a heatmap:
 **4)** Repeat Step 1) as in Figure 4-1. On the website "View all reporters for a gene", type "CLDN10" (Claudin 10) in Field {Gene}. To create a Heatmap by cell type, select "a track" in the Field {Order samples by} and "primary_site (14 cat)" in the Field {Ordering track}. Click "Next" to execute a Heatmap by cell type (in Figure 4-4).
 
 ![](_static/images/Methylation/fig4-4.jpg)
+
 [**Figure 4-4: "View all reporters for a gene" menu**](_static/images/Methylation/fig4-4.jpg)
 
 
@@ -263,19 +269,23 @@ The user could also compare the methylation level of the same probe from multipl
 
 **5)** After login to the R2 Platform [1], choose "Across Datasets" under Field 1 checkbox. Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 5-1).
 
-![Main menu](_static/images/Methylation/fig5-1.png)
-[****Figure 5-1: Main menu**](_static/images/Methylation/fig5-1.png)
+![](_static/images/Methylation/fig5-1.png)
+
+[**Figure 5-1: Main menu**](_static/images/Methylation/fig5-1.png)
 
 
 
 **6)** On the next webpage "MegaSampler", the user could change the settings in relation to the data type or preset/default (either in a global or in a group level) as shown in Figure 5-2. Select "hs, ilmnhm450, custom" on Field "Type of data" to see methylation datasets on the list of the next page. Leave other settings at their default and click "Next" to proceed.
 
 ![](_static/images/Methylation/fig5-2.jpg)
+
 [**Figure 5-2: "MegaSampler" menu**](_static/images/Methylation/fig5-2.jpg)
 
 
 **7)** On the next webpage, type "CLDN10" in the Field "Gene / Reporter" and click "Select Datasets" button. (in Figure 5-3)
+
 [](_static/images/Methylation/fig5-3.jpg)
+
 [**Figure 5-3:  "MegaSampler" menu**](_static/images/Methylation/fig5-3.jpg)
 
 
@@ -287,7 +297,7 @@ The user could also compare the methylation level of the same probe from multipl
 
 
 
-**9)** By previous Step 4), the user could see the data has reflected in the setting as shown in yellow in Figure 5-5. Type "CLDN10" in Field "Gene/Reporter" and choose "None" in Field "Transformation". Click "Next" button to proceed.
+**9)** By the previous Step 4), the user could see the data has reflected in the setting as shown in yellow in Figure 5-5. Type "CLDN10" in Field "Gene/Reporter" and choose "None" in Field "Transformation". Click "Next" button to proceed.
 
 ![](_static/images/Methylation/fig5-5.jpg)
 [**Figure 5-5: "MegaSampler" menu reflected the selected datasets**](_static/images/Methylation/fig5-5.jpg)
