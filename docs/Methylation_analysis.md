@@ -271,28 +271,28 @@ The user could also compare the methylation level of the same probe from multipl
 **6)** On the next webpage "MegaSampler", the user could change the settings in relation to the data type or preset/default (either in a global or in a group level) as shown in Figure 5-2. Select "hs, ilmnhm450, custom" on Field "Type of data" to see methylation datasets on the list of the next page. Leave other settings at their default and click "Next" to proceed.
 
 ![](_static/images/Methylation/fig5-2.jpg)
-[**Figure 5-2: "MegaSampler" menu**](_static/images/Methylation/fig5-2.png)
+[**Figure 5-2: "MegaSampler" menu**](_static/images/Methylation/fig5-2.jpg)
 
 
 **7)** On the next webpage, type "CLDN10" in the Field "Gene / Reporter" and click "Select Datasets" button. (in Figure 5-3)
 [](_static/images/Methylation/fig5-3.jpg)
-[**Figure 5-3:  "MegaSampler" menu**](_static/images/Methylation/fig5-3.png)
+[**Figure 5-3:  "MegaSampler" menu**](_static/images/Methylation/fig5-3.jpg)
 
 
 
 **8)** On the pop-up box, type the author name "Lokk" (normal cells) on Column {Author} and select the datasets by clicking "Select". Repeat the same steps for the datasets with the author names "Heyn" (tumor cells) and "Esteller" (cancer cells) respectively. Click "Confirm selection" button to proceed (as shown in Figure 5-4).
 
 ![](_static/images/Methylation/fig5-4.jpg)
-[**Figure 5-3:  "MegaSampler" menu**](_static/images/Methylation/fig5-4.png)
+[**Figure 5-4: Data selection menu**](_static/images/Methylation/fig5-4.jpg)
 
-**Figure 5-4:** Data selection menu with the author names "Lokk", "Heyn", "Esteller"
+
 
 **9)** By previous Step 4), the user could see the data has reflected in the setting as shown in yellow in Figure 5-5. Type "CLDN10" in Field "Gene/Reporter" and choose "None" in Field "Transformation". Click "Next" button to proceed.
 
 ![](_static/images/Methylation/fig5-5.jpg)
-[**Figure 5-5: "MegaSampler" menu reflected the selected datasets**](_static/images/Methylation/fig5-5.png)
+[**Figure 5-5: "MegaSampler" menu reflected the selected datasets**](_static/images/Methylation/fig5-5.jpg)
 
-**Figure 5-5:** "MegaSampler" menu reflected the selected datasets
+
 
 **10)** Choose one probe ("cg25032595" and "cg16556145" respectively) from the CGI observed in yellow in the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps*. As shown in Figure 4-6, the two probes are found in the "Esteller" heatmap as "cg16275739" is marked in blue and "cg18393747" is marked in red.
 
@@ -337,7 +337,7 @@ On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-
 The mean methylation difference of the two probes is shown more simply in another online methylation analysis tool named "Wanderer". [6] There is a methylation difference to be seen between normal and tumor cells from Probe "cg25032595" (marked in blue in Figure 5-11) than the gap from Probe "cg16556145" (marked in red in Figure 5-11).
 
 ![](_static/images/Methylation/fig5-11.jpg)
-[**Figure 5-11: Wanderer mean methylation graph**](_static/images/Methylation/fig5-11.png)
+[**Figure 5-11: Wanderer mean methylation graph**](_static/images/Methylation/fig5-11.jpg)
 
 
 ---
@@ -348,33 +348,43 @@ A box plot (a.k.a. Open High Low Close graph) of a single expression dataset cou
 
 **1)** Repeat the steps from 1) to 3) in *Section 2 Generating Heatmap* of this manual. But instead, choose the expression dataset by typing "Tissues GTeX v8 Prot_Coding" on Column {Tissue/Tumor} as shown in Figure 6-1.
 
-![Change Dataset menu after filter](_static/images/Methylation/fig6-1a.png)
+![](_static/images/Methylation/fig6-1a.png)
 
-**Figure 6-1:** Change Dataset menu (after filter)
+[**Figure 6-1: Change Dataset menu (after filter)**](_static/images/Methylation/fig6-1a.png)
+
+
 
 **2)** Click on Link "CLDN10" under Field "CliniSnitch" which is located on the right of the webpage (in Figure 6-2).
 
-![CliniSnitch link](_static/images/Methylation/fig6-2a.png)
+![](_static/images/Methylation/fig6-2a.png)
+[**Figure 6-2: "CliniSnitch" link**](_static/images/Methylation/fig6-2a.png)
 
-**Figure 6-2:** "CliniSnitch" link
+
+
 
 **3)** A next webpage will be opened on a new internet tab. The user could see that the p-value is significant enough (where marked in red). Click on Link "tissue (View)" on Table "catvsnum" of the webpage (in Figure 6-3).
 
-![View link on Table catvsnum](_static/images/Methylation/fig6-3a.png)
+![](_static/images/Methylation/fig6-3a.png)
 
-**Figure 6-3:** "View" link on Table "catvsnum"
+[**Figure 6-3: "View" link on Table "catvsnum"**](_static/images/Methylation/fig6-3a.png)
+
+
 
 **4)** A next webpage will be opened on a new internet tab. To visualize and sort better, scroll down to Table "Adjustable settings". Select "Box plot" on Field "Graph type", "median (numeric Y)" on Field "Order Groups By" and "Color by Track" on Field "Color mode". Click "Submit" Button to update the scatter plot of a single expression data by a tissue type (in Figure 6-4).
 
-![Adjustable settings table](_static/images/Methylation/fig6-4a.png)
+![](_static/images/Methylation/fig6-4a.png)
 
-**Figure 6-4:** Table "Adjustable settings"
+[**Figure 6-4: Table "Adjustable settings"**](_static/images/Methylation/fig6-4a.png)
+
+
 
 As a result, a scatter plot of the expression dataset "Tissues GTeX v8 Prot_Coding" shows the expression distribution of CLDN10 across primary tissues. The user can see tissue types like "salivary_gland", "pancreas" and "kidney" on the top right, which exhibit higher expression levels of Claudin10 on Figure 6-5.
 
-![Expression log2 scatter plot of CLDN10 in normal tissues](_static/images/Methylation/fig6-5a.png)
+![](_static/images/Methylation/fig6-5a.png)
 
-**Figure 6-5:** Expression log2 Scatter plot of CLDN10 in normal tissues dataset "Tissues GTeX v8 Prot_Coding"
+[**Figure 6-5: Expression log2 Scatter plot of CLDN10 in normal tissues dataset "Tissues GTeX v8 Prot_Coding**](_static/images/Methylation/fig6-5a.png)
+
+
 
 ---
 
@@ -384,31 +394,42 @@ Now that we have studied methylation graphs, our scope is extended to the next t
 
 **1)** Repeat the steps from 1) to 5) in *Section 4 Comparing Methylation Scatter Plots* of this manual for two datasets with author names "Roth" (normal cells, in Figure 7-2) and "Broad" (cancer cells, in Figure 7-3). But skip the change from Step 2) in *Section 4* and leave the table as defaults as shown in Figure 7-1.
 
-![MegaSampler menu](_static/images/Methylation/fig7-1.jpg)
+![](_static/images/Methylation/fig7-1.jpg)
 
-**Figure 7-1:** "MegaSampler" menu
+[**Figure 7-1: MegaSampler menu"](_static/images/Methylation/fig7-1.jpg)
 
-![Data selection menu with author name Roth](_static/images/Methylation/fig7-2.jpg)
 
-**Figure 7-2:** Data selection menu with the author name "Roth"
+
+![](_static/images/Methylation/fig7-2.jpg)
+
+[**Figure 7-2: Data selection menu with the author name "Roth"**](_static/images/Methylation/fig7-2.jpg)
+
+
 
 **2)** On "Adjustable settings" in Figure 6-4, the user could change the dataset order out of two datasets. Change the order of the datasets: "Roth" as "1" and "Broad" as "2". This setting lets "Roth" as the first dataset compared to "Broad" as the second dataset. Click "Submit" button to proceed.
 
 ![Data selection menu with author name Broad](_static/images/Methylation/fig7-3a.jpg)
 
-**Figure 7-3:** Data selection menu with the author name "Broad"
+[**Figure 7-3: Data selection menu with the author name "Broad"**](_static/images/Methylation/fig7-3a.jpg)
 
-![Adjustable settings menu](_static/images/Methylation/fig7-4a.png)
 
-**Figure 7-4:** "Adjustable settings" menu
+
+![](_static/images/Methylation/fig7-4a.png)
+
+[**Figure 7-4: Adjustable settings menu"**](_static/images/Methylation/fig7-4a.png)
+
+
+
 
 As a result, two expression graphs from Dataset "Roth" and "Broad" are generated as shown in Figure 7-5. As expected, the expression level of "Roth" for normal tissues (with the average 7-5) is higher than the expression level of "Broad" cancer cell lines (with the average 3-4). This is in line with methylation level from the two datasets, because the cancer cells ("Broad") are highly methylated compared to the normal cells ("Roth").
 
 On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-value is significant enough as shown in red (in Figure 7-5).
 
-![Expression comparison ANOVA table and graphs](_static/images/Methylation/fig7-5a.png)
+![](_static/images/Methylation/fig7-5a.png)
 
-**Figure 7-5:** Expression comparison for CLDN10 in normal tissues and cancer cell lines as ANOVA table and expression graphs of the two datasets
+[**Figure 7-5: Expression comparison for CLDN10 in normal tissues and cancer cell lines as ANOVA table and expression graphs of the two datasets"**](_static/images/Methylation/fig7-5a.png)
+
+
 
 ---
 
@@ -418,51 +439,66 @@ The user could also compare and correlate methylation and expression datasets by
 
 **1)** After login to the R2 Platform [1], choose "Across Datasets" under Field 1 checkbox and "View a gene in two datatypes". Click "Next" on the main page to proceed (in Figure 8-1).
 
-![Main menu](_static/images/Methylation/fig8-1.png)
+![](_static/images/Methylation/fig8-1.png)
+[**Figure 8-1: Main menu**](_static/images/Methylation/fig8-1.png)
 
-**Figure 8-1:** Main menu
+
 
 **2)** On Table "Select data sets to merge" of the next webpage, the user could set the data type and the X- and Y-axis of the dot plot. As shown in Figure 8-2, select "cellline_cancer_pharmaco" on Field "Data set collection", "Methylation data - Cell line Cancer Pharmacogenomic - Esteller - 1028 - custom - ilmnhm450" on Field "Source data" and "Expression data - Cell line Cancer Drug (Sanger) - Garnett - 1017 - RMA - u219" on Field "Target data". Click "Select data sets" to proceed.
 
-![Select data sets to merge menu](_static/images/Methylation/fig8-2.png)
+![](_static/images/Methylation/fig8-2.png)
 
-**Figure 8-2:** "Select data sets to merge" menu
+[**Figure 8-2: "Select data sets to merge" menu](_static/images/Methylation/fig8-2.png)
+
+
 
 **3)** On Table "Adjustable settings" of the next webpage, type "CLDN10" in the left box of Field "Gene / Met_id" and "Gene / Reporter". The two probes from Step 6) on *Section 4 Comparing Methylation Scatter Plots* ("cg25032595", "cg16556145") are to be observed. To look at the dot plot of the first probe, type "cg25032595" in the right box of Field "Gene / Met_id" (in Figure 8-3).
 
-![Adjustable settings menu for probe cg25032595](_static/images/Methylation/fig8-3.jpg)
+![](_static/images/Methylation/fig8-3.jpg)
 
-**Figure 8-3:** "Adjustable settings" menu (for Probe "cg25032595")
+[**Figure 8-3: "Adjustable settings" menu (for Probe "cg25032595")](_static/images/Methylation/fig8-3.jpg)
+
+
+
+
 
 As shown in Figure 8-4, the user can see the dot plot of the methylation dataset "Esteller" on the X-axis and the expression dataset "Garnett" on the Y-axis for the Probe "cg25032595". There is a significant correlation between the two axes (as p-value is marked in red under the table in Figure 8-4) supporting the idea of DNA hypermethylation decreasing gene expression.
 
-![Dot plot of probe cg25032595](_static/images/Methylation/fig8-4a.png)
+![](_static/images/Methylation/fig8-4a.png)
 
-**Figure 8-4:** The dot plot of Probe "cg25032595" (could be compared to Figure 8-6)
+[**Figure 8-4: The dot plot of Probe "cg25032595" (could be compared to Figure 8-6)**](_static/images/Methylation/fig8-4a.png)
+
+
 
 **4)** Repeat the steps from 1) to 3) of this section for the second Probe by typing "cg16556145" in the right box of Field "Gene / Met_id" (in Figure 8-5).
 
-![Adjustable settings menu for probe cg16556145](_static/images/Methylation/fig8-5.jpg)
+![](_static/images/Methylation/fig8-5.jpg)
 
-**Figure 8-5:** "Adjustable settings" menu (for Probe "cg16556145")
+[**Figure 8-5: "Adjustable settings" menu (for Probe "cg16556145")**](_static/images/Methylation/fig8-5.jpg)
+
+
 
 As shown in Figure 8-6, the dot plot for the Probe "cg16556145" is generated. With the significant correlation between the two axes, the concentration tendency of the most dots are the same as the tendency observed in Figure 8-4. One can observe a negative correlation between the methylation and the expression datasets.
 
-![Comparative log2 dot plot cg16556145](_static/images/Methylation/fig8-6a.png)
+![](_static/images/Methylation/fig8-6a.png)
 
-**Figure 8-6:** Comparative log2 dot plot of CLDN10 methylation for probe "cg16556145" vs. CLDN10 expression
+[**Figure 8-6: Comparative log2 dot plot cg16556145**](_static/images/Methylation/fig8-6a.png)
+
+
 
 ---
 
 ## 9 In-Depth Study on Expression Dataset
 
-Let's go back to Normal Tissues GTeX v8 Prot_Coding - GTeX - 17382 - tpm - gencode26 datasety. One could also take a closer look at expression of your gene of interest in certain tissues of the expression dataset on R2 Platform. From an expression box plot, a certain or several tissue types could be selected. In this section, the tissue type "skin" is further investigated with the following steps after the steps in *Section 6 An Expression Box Plot*.
+Let's go back to Normal Tissues GTeX v8 Prot_Coding - GTeX - 17382 - tpm - gencode26 datasety. One could also take a closer look at expression of your gene of interest in certain tissues of the expression dataset on R2 Platform. From an expression box plot, a certain or several tissue types could be selected. In this section, the tissue type "skin" is further investigated with the following steps after the steps in *Section 6 An Expression Box Plot* [8].
 
 **1)** Scroll down to "Adjustable settings" after the expression box plot is executed. Select "tissue (30 cat)" on Field "Subset track". On the pop-up window, click the tissue type "skin (1809)" checkbox and "OK". Click "Submit" to proceed. (In Figure 9-1)
 
-![Adjustable settings menu with skin subset](_static/images/Methylation/fig9-1.jpg)
+![](_static/images/Methylation/fig9-1.jpg)
 
-**Figure 9-1:** "Adjustable settings" menu
+[**Figure 9-1: "Adjustable settings" menu**](_static/images/Methylation/fig9-1.jpg)
+
+
 
 **2)** After the box plot on "skin" is executed, the user could further investigate expression level by skin types, such as differences in the expression between fibroblasts and normal skin types. On Table "Adjustable settings", select "tissue_detail (54 cat)" on Field "Track", "tissue_detail (54 cat)" on "Subset track", "Box/dot plot (dots)" on Field "Graph type" and "Color by Track" on Fields "Color mode/(groups)". "tissue_detail (54 cat)" is an in-depth category than the "tissue (30 cat)" category. (In Figure 9-2)
 
@@ -470,17 +506,25 @@ After selecting "tissue_detail (54 cat)" on Field "Subset track", the user sees 
 
 ![Adjustable settings menu](_static/images/Methylation/fig9-2.jpg)
 
-**Figure 9-2:** "Adjustable settings" menu
+[**Figure 9-2: "Adjustable settings" menu**](_static/images/Methylation/fig9-2.jpg)
 
-![Pop-up window on tissue_detail subset track](_static/images/Methylation/fig9-3.jpg)
 
-**Figure 9-3:** Pop-up window on "tissue_detail (54 cat)" subset track
+
+
+
+![](_static/images/Methylation/fig9-3.jpg)
+
+[**Figure 9-3: Pop-up window on "tissue_detail (54 cat)" subset track**](_static/images/Methylation/fig9-3.jpg)
+
+
 
 The box plot with dots shown in Figure 9-4 shows the difference of expression levels between fibroblasts and normal skin. Normal skin not exposed to the sun has a higher expression level, compared to the expression level of fibroblasts. (Be reminded that the Y-Axis name is log2 CLDN10 expression.)
 
-![Expression box dot plot fibroblasts vs skin](_static/images/Methylation/fig9-4a.png)
+![](_static/images/Methylation/fig9-4a.png)
 
-**Figure 9-4:** Expression log2 Box/dot plot (dots) on fibroblasts and not-sun-exposed skin cells for CLDN10
+[**Figure 9-4:Expression log2 Box/dot plot (dots) on fibroblasts and not-sun-exposed skin cells for CLDN10k**](_static/images/Methylation/fig9-4a.png)
+
+
 
 ---
 
@@ -490,21 +534,27 @@ One could also investigate patient survival probability of a certain tumor type/
 
 **1)** Click "Survival (Kaplan-Meier/Cox)" on the left menu of the main page. On Table "Kaplan-Meier analysis using a data set", select Field "Data set" as shown in Figure 10-1.
 
-![Survival main page](_static/images/Methylation/fig10-1.jpg)
+![](_static/images/Methylation/fig10-1.jpg)
 
-**Figure 10-1:** "Survival (Kaplan-Meier/Cox)" main page
+[**Figure 10-1: "Survival (Kaplan-Meier/Cox)" main page**](_static/images/Methylation/fig10-1.jpg)
+
+
 
 **2)** On the pop-up box (in Figure 10-2), type "Kidney" on Column {Tissue/Tumor} and select "Kidney Renal Clear Cell Carcinoma" from "tcgars" on Column {Platform}. Click "Confirm selection" button as shown in Figure 10-2.
 
-![Change Dataset menu after filter](_static/images/Methylation/fig10-2.jpg)
+![](_static/images/Methylation/fig10-2.jpg)
 
-**Figure 10-2:** Change Dataset menu (after filter)
+[**Figure 10-2: Change Dataset menu (after filter)**](_static/images/Methylation/fig10-2.jpg)
+
+
 
 **3)** Select "a single gene" on Field "Separated by" and click "Next" on the main page to proceed. (in Figure 10-3)
 
-![Kaplan-Meier analysis using a data set table](_static/images/Methylation/fig10-3.png)
+![](_static/images/Methylation/fig10-3.png)
 
-**Figure 10-3:** "Kaplan-Meier analysis using a data set" Table on main page
+[**Figure 10-3: "Kaplan-Meier analysis using a data set" Table on main page)**](_static/images/Methylation/fig10-3.png)
+
+
 
 The result on the next page shows the overall survival probability between patients with high gene of interest expression and low expression (on the left in Figure 10-4) and expression levels with p-values (on the right in Figure 10-4).
 
@@ -512,13 +562,17 @@ When the automated separation of patients by expression level produced one big a
 
 The left graph in Figure 10-4 shows the overall survival probability of two cohorts (on an Y-axis) that are high expression (a line marked in blue) and low expression (a line marked in red) groups, regarding the expression of the gene of interest. An X-axis is the follow-up in months. The total patient number of the cohorts are shown with colors on the right top of the graph ("n=430", "n=103" respectively). One could find out individual information of each sample by putting the cursor on the line (in Figure 10-5).
 
-![Overall survival probability and expression graph](_static/images/Methylation/fig10-4a.png)
+![](_static/images/Methylation/fig10-4a.png)
 
-**Figure 10-4:** "Overall survival probability graph" and "Expression graph"
+[**Figure 10-4:  "Overall survival probability graph" and "Expression graph"**](_static/images/Methylation/fig10-4a.png)
+
+
+
 
 ![Individual information pop-up in survival graph](_static/images/Methylation/fig10-5.png)
 
-**Figure 10-5:** Individual information pop-up in "Overall survival probability graph"
+[**Figure 10-5: Individual information pop-up in "Overall survival probability graph"**](_static/images/Methylation/fig10-5.png)
+
 
 The right graph in Figure 10-4 shows the expression level by "Events" groups. An Y-axis shows the expression level and an X-axis shows the p-values of each sample. The bar graph on the X-axis shows the p-value of each sample. The dots in green on the curve indicate the samples with the "Events" and the dots in red are the samples with no "Events". The definition of the "Events" is different by datasets. These "Events" could be for example relapse free or not (Relapse free means that the patients after primary treatment survived a certain period of time without any symptoms of the cancer). More information on the "Events" dataset label could be found on R2 Platform online tutorial under "Special sample annotation" in *Section 24. R2 Dataset Addition*. [2]
 
@@ -526,15 +580,20 @@ Some adjustments are to be made as the survival probability until 60 follow-up m
 
 **4)** Scroll down to "Adjustable settings" after two graphs are executed. Type "60" months on Field "Only draw up to". Click "Redraw Graph" to proceed. (In Figure 10-6)
 
-![Adjustable settings table](_static/images/Methylation/fig10-6a.png)
+![](_static/images/Methylation/fig10-6a.png)
 
-**Figure 10-6:** "Adjustable settings" Table
+[**Figure 10-6:"Adjustable settings" Table**](_static/images/Methylation/fig10-6a.png)
+
 
 Figure 10-7 shows the redrawn "Overall survival probability graph" and the range of the X-axis is adjusted to 60 months (marked in yellow in Figure 10-7). The graph became better to compare the difference between the normal people and cancer patients, as the tails of the two lines in the graph on the right are cut.
 
-![Overall survival probability graph after adjustment](_static/images/Methylation/fig10-7.jpg)
+![](_static/images/Methylation/fig10-7.jpg)
 
-**Figure 10-7:** "Overall survival probability graph" (after adjustment)
+[**Figure 10-7:** "Overall survival probability graph" (after adjustment)**](_static/images/Methylation/fig10-6a.png)
+
+
+
+
 
 Next, a cutoff point on the "Expression graph" (the right graph in Figure 10-4) could be adjusted on Field "Cutoff" in "Adjustable settings" Table. The cutoff point is set with the highest p-value at default. To change the cutoff point, the following step is to be done.
 
@@ -542,13 +601,19 @@ Next, a cutoff point on the "Expression graph" (the right graph in Figure 10-4) 
 
 ![Adjustable settings table](_static/images/Methylation/fig10-8a.png)
 
-**Figure 10-8:** "Adjustable settings" Table
+[**Figure 10-8: "Adjustable settings" Table**](_static/images/Methylation/fig10-8a.png)
+
+
 
 The result of Step 5 is described in Figure 10-9. The overall survival probability (on the left) has a smaller difference between the two lines compared to the previous graph that was drawn with the highest p-value.
 
 ![Overall survival probability and expression graph after adjustment](_static/images/Methylation/fig10-9a.png)
 
-**Figure 10-9:** "Overall survival probability graph" and "Expression graph" (after adjustment)
+[**Figure 10-9:"Overall survival probability graph" and "Expression graph" (after adjustment)**](_static/images/Methylation/fig10-9a.png)
+
+
+
+
 
 ---
 
@@ -558,45 +623,64 @@ As Hypermethylation is an indicator of tumor development, hypermethylated region
 
 **1)** Click "Main" on the left menu of the main page. On Table, select "Differential expression between two groups" in Field 3. Click the option box in Field 2 for data selection. (In Figure 11-1)
 
-![Main page](_static/images/Methylation/fig11-1.png)
+![](_static/images/Methylation/fig11-1.png)
 
-**Figure 11-1:** Main page
+[**Figure 11-1: Main page**](_static/images/Methylation/fig11-1.png)
+
+
 
 **2)** On the pop-up box, type the author name "Richter" on Column {Author} and select the dataset with "Renal cell carcinoma (PTM)" on Column {Tissue/Tumor} by clicking the row. Click "Confirm selection" button to proceed (In Figure 11-2). Click "Next" on main menu to proceed. (In Figure 11-3).
 
-![Data selection menu with author Richter](_static/images/Methylation/fig11-2.jpg)
+![](_static/images/Methylation/fig11-2.jpg)
 
-**Figure 11-2:** Data selection menu with the author name "Richter" and the tumor type "Renal cell carcinoma (PTM)"
+[**Figure 11-2: Data selection menu with the author name "Richter" and the tumor type "Renal cell carcinoma (PTM)"**](_static/images/Methylation/fig11-2.jpg)
+
+
 
 **3)** On "Select a test" Table, select "type (2 cat)" in Field "Group by" and "n10nvst (3 cat)" in Field "Subset track". Then on the pop-up menu, click the check buttons of "normal (5)" and "tumor (5)" samples except 2 outliers ("ND (2)"). Click "OK" button to finish the sample choice. Click "Submit" on the table to proceed. (In Figure 11-4)
 
 **>>>>>>>>>>n10nvst not found contact Antje**
 
-![Main menu](_static/images/Methylation/fig11-3.png)
+![](_static/images/Methylation/fig11-3.png)
 
-**Figure 11-3:** Main menu
+[**Figure 11-3:** Main menu**](_static/images/Methylation/fig11-3.png)
 
-![Select a test table](_static/images/Methylation/fig11-4.png)
 
-**Figure 11-4:** "Select a test" Table
+
+![](_static/images/Methylation/fig11-4.png)
+
+[**Figure 11-4: "Select a test" Table**](_static/images/Methylation/fig11-4.png)
+
+
 
 **4)** On "Adjustable settings" Table, select "n (6)" as normal people in Field "Group 1" and "tm (6)" as tumor patients in Field "Group 2". Click "Submit" to proceed. (In Figure 11-5)
 
-![Adjustable settings table](_static/images/Methylation/fig11-5.jpg)
+![](_static/images/Methylation/fig11-5.jpg)
 
-**Figure 11-5:** "Adjustable settings" Table
+[**Figure 11-5: "Adjustable settings" Table**](_static/images/Methylation/fig11-5.jpg)
+
+
+
+
 
 **5)** At the right menu click "Heatmap(zscore)" to proceed. (In Figure 11-6)
 
-![Heatmap zscore button on right menu](_static/images/Methylation/fig11-6.jpg)
 
-**Figure 11-6:** "Heatmap(zscore)" Button on the right menu
+![](_static/images/Methylation/fig11-6.jpg)
+
+[**Figure 11-6: "Heatmap(zscore)" Button on the right menu**](_static/images/Methylation/fig11-6.jpg)
+
+
+
+
 
 The next page shows the heatmap of hypermethylation between two datasets (normal people and tumor patients).
 
-![Heatmap zscore title](_static/images/Methylation/fig11-7.jpg)
+![](_static/images/Methylation/fig11-7.jpg)
 
-**Figure 11-7:** "Heatmap(zscore)" Title
+[**Figure 11-7: "Heatmap(zscore)" Title**](_static/images/Methylation/fig11-7.jpg)
+
+
 
 **>>>>heatmap plaatje vanuit DEG analysis werkt niet**
 
@@ -604,23 +688,28 @@ The next page shows the heatmap of hypermethylation between two datasets (normal
 
 On the right of the heatmap, the colored block lines show the type of data points. The enlarged versions are shown in Figure 11-8. The red blocks of "n10nvst" are the data points of the tumor patients and the green blocks of "n10nvst" are the data points of the normal people. One could see the details of a certain data point by placing a cursor on the "n10nvst" block. On the pop-up message shows the type of the data point (marked in red) (in Figure 11-8).
 
-![Enlarged heatmap zscore - tumor patient data point](_static/images/Methylation/fig11-8a.jpg)
+![](_static/images/Methylation/fig11-8c.png)
 
-![Enlarged heatmap zscore - normal data point](_static/images/Methylation/fig11-8b.jpg)
+[**Figure 11-8: "Enlarged heatmap zscore - Data points (in red) and normal data point (in green**](_static/images/Methylation/fig11-8c.png)
 
-**Figure 11-8:** Enlarged "Heatmap(zscore)": tumor patient data point (in red) and normal data point (in green)
+
 
 With this background knowledge, the positive score on the heatmap (in Figure 11-9) is colored in yellow and the negative score in blue. The positive score shows the data point above the mean and the negative below the mean of the datasets. All tumor patients have reciprocal behavior of all normal people, as observed in the color difference in the heatmap (yellow heatmap area for tumor patients are blue heatmap area for normal people).
 
-![Heatmap zscore rotated to horizontal](_static/images/Methylation/fig11-9.jpg)
+![](_static/images/Methylation/fig11-9.jpg)
 
-**Figure 11-9:** "Heatmap(zscore)" - rotated to horizontal for convenience
+[**Figure 11-9: "Heatmap(zscore)" - rotated to horizontal for convenience**](_static/images/Methylation/fig11-9.jpg)
+
+
 
 When the cursor is placed on Gene type axis, a pop-up message containing the gene name, the probe name and the order number (gene name="CLDN10", probe name="cg16275739", order number="581" on the pop-up message in Figure 11-10). The order number can be found from the table "Sort Order Listing" after clicking it as shown in Figure 11-10. One can investigate the difference in a certain gene's expression in this way.
 
-![Heatmap zscore and sort order listing table](_static/images/Methylation/fig11-10.jpg)
+![](_static/images/Methylation/fig11-10.jpg)
 
-**Figure 11-10:** "Heatmap(zscore)" and "Sort Order Listing" Table
+[**Figure 11-10: "Heatmap(zscore)" and "Sort Order Listing" Table**](_static/images/Methylation/fig11-10.jpg)
+
+
+
 
 ---
 
@@ -634,13 +723,17 @@ For example, assume that a gene of interest is "Insulin". By following Step 3) u
 
 Firstly, enter UCSC Genome Browser (https://genome.ucsc.edu/). Click "Human GRCh37/hg19" on the "Genomes" menu of the main page as shown in Figure 12.1-2.
 
-![Choices for gene of interest Insulin](_static/images/Methylation/fig12.1-1.jpg)
+![](_static/images/Methylation/fig12.1-1.jpg)
 
-**Figure 12.1-1:** Choices for a gene of interest "Insulin"
+[**Figure 12.1-1: Choices for a gene of interest "Insulin"**](_static/images/Methylation/fig12.1-1.jpg)
 
-![UCSC Genome Browser main page](_static/images/Methylation/fig12.1-2.jpg)
 
-**Figure 12.1-2:** UCSC Genome Browser main page
+
+![](_static/images/Methylation/fig12.1-2.jpg)
+
+[**Figure 12.1-2: UCSC Genome Browser main page**](_static/images/Methylation/fig12.1-2.jpg)
+
+
 
 #### (a) Search a Methylation ID using a sequence
 
@@ -648,43 +741,59 @@ If a sequence for a gene of interest is known, one may still use the sequence to
 
 **1)** Click "Blat" on the "Tools" menu on the UCSC Genome Browser main page (in Figure 12.1-3).
 
-![UCSC Genome Browser main page - tools menu](_static/images/Methylation/fig12.1-3.jpg)
+![](_static/images/Methylation/fig12.1-3.jpg)
 
-**Figure 12.1-3:** UCSC Genome Browser main page
+[**Figure 12.1-3: UCSC Genome Browser main page**](_static/images/Methylation/fig12.1-3.jpg)
+
+
 
 **2)** Write the sequence "TTAAGACTCTAATGACCCGCTGGTCCTGAGGAAGAG" in the input box and click "submit" to proceed (in Figure 12.1-4).
 
-![Human Blat Search page](_static/images/Methylation/fig12.1-4.png)
+![](_static/images/Methylation/fig12.1-4.png)
 
-**Figure 12.1-4:** Human Blat Search page
+[**Figure 12.1-4: Human Blat Search page**](_static/images/Methylation/fig12.1-4.png)
+
+
 
 **3)** On the next page, the sequence candidates are listed as the search results. Click one of the most relevant "browser" links to one's interest from the listed results (in Figure 12.1-5).
 
-![Blat Search Results page](_static/images/Methylation/fig12.1-5.png)
+![](_static/images/Methylation/fig12.1-5.png)
 
-**Figure 12.1-5:** Blat Search Results page
+[**Figure 12.1-5: Blat Search Results page**](_static/images/Methylation/fig12.1-5.png)
+
+
 
 **4)** The next page is Genome Browser page that one could observe the genome region. Scroll down and select "show" for "CpG Islands" and for "ENC DNA Methyl" Options in "Regulation" Field. Click "refresh" to apply the modifications on the Genome Browser (in Figure 12.1-6).
 
-![Regulation Field](_static/images/Methylation/fig12.1-6.png)
+![](_static/images/Methylation/fig12.1-6.png)
 
-**Figure 12.1-6:** "Regulation" Field
+[
+**Figure 12.1-6: "Regulation" Field**](_static/images/Methylation/fig12.1-6.png)
+
+
 
 **5)** One could now see the corresponding methylation IDs on the Genome Browser page. If the methylation IDs are not observed on the page, adjust the genome region using "zoom in" or "zoom out" buttons on the top of the page (in Figure 12.1-7).
 
-![Methylation IDs on UCSC Genome Browser page](_static/images/Methylation/fig12.1-7.jpg)
+![](_static/images/Methylation/fig12.1-7.jpg)
 
-**Figure 12.1-7:** Methylation IDs on UCSC Genome Browser page
+[**Figure 12.1-7: Methylation IDs on UCSC Genome Browser page**](_static/images/Methylation/fig12.1-7.jpg)
+
+
+
+
 
 **6)** Now, return to the Adjustable settings menu on R2 Genomics Analysis and Visualization Platform (https://r2.amc.nl/) (in Figure 12.1-1). Write the observed methylation ID "cg03366382" observed from the previous Step 5) in {Met_id} Field on Adjustable settings menu. Click the listed option below {Met_id} Field (in Figure 12.1-8). The exact gene name of interest is automatically written in {Gene} Field (in Figure 12.1-9).
 
-![Adjustable settings menu on R2 Platform](_static/images/Methylation/fig12.1-8.jpg)
+![](_static/images/Methylation/fig12.1-8.jpg)
 
-**Figure 12.1-8:** Adjustable settings menu on R2 Platform
+[**Figure 12.1-8: Adjustable settings menu on R2 Platform**](_static/images/Methylation/fig12.1-8.jpg)
+
+
+![](_static/images/Methylation/fig12.1-9.jpg)
 
 ![Adjustable settings menu on R2 Platform with gene name filled](_static/images/Methylation/fig12.1-9.jpg)
 
-**Figure 12.1-9:** Adjustable settings menu on R2 Platform
+
 
 #### (b) Search a Methylation ID using an uncertain gene name of interest
 
@@ -692,41 +801,52 @@ Now that a search for a methylation ID using a sequence is possible from the Ste
 
 **1)** Write "INS" as a guess for this gene name of interest in {Gene} Field on UCSC Human GRCh37/hg19 Genome Browser. Click the relevant one from the listed choices below {Gene} Field to proceed (in Figure 12.1-10). If one is uncertain what is relevant, press "Enter".
 
-![UCSC Human GRCh37/hg19 Genome Browser page](_static/images/Methylation/fig12.1-10.jpg)
+![](_static/images/Methylation/fig12.1-10.jpg)
 
-**Figure 12.1-10:** UCSC Human GRCh37/hg19 Genome Browser page
+![**Figure 12.1-10: UCSC Human GRCh37/hg19 Genome Browser page**](_static/images/Methylation/fig12.1-10.jpg)
+
 
 **2)** If you just pressed "Enter" on the previous Step 1), all search results of a gene "Insulin" are listed with more information. Click the relevant gene option (or just the first option "INS-IGF2 (uc001lvm.3)" as a tryout) to proceed (in Figure 12.1-11).
 
-![Search Results on hg19 for Insulin](_static/images/Methylation/fig12.1-11.jpg)
+![](_static/images/Methylation/fig12.1-11.jpg)
 
-**Figure 12.1-11:** Search Results on hg19 for "Insulin"
+![**Figure 12.1-11: Search Results on hg19 for "Insulin"**](_static/images/Methylation/fig12.1-11.jpg)
+
+
 
 **3)** On the next page, all methylation IDs for "INS-IGF2 (uc001lvm.3)" are listed on the Genome Browser page. If the methylation IDs are not shown at first glance, scroll down or adjust the options below the page as described in Figure 12.1-6. Click the relevant methylation ID (or just the spotted methylation ID "cg02343602" as a tryout) (in Figure 12.1-12).
 
-![Methylation IDs on UCSC Genome Browser page](_static/images/Methylation/fig12.1-12.jpg)
+![](_static/images/Methylation/fig12.1-12.jpg)
 
-**Figure 12.1-12:** Methylation IDs on UCSC Genome Browser page
+![**Figure 12.1-12: Methylation IDs on UCSC Genome Browser page**](_static/images/Methylation/fig12.1-12.jpg)
+
+
 
 If one wishes to double-check its choice by looking at the DNA sequence for this methylation ID, the following steps could be done.
 
 **4)** On the next page, the information on the spotted methylation ID "cg02343602" is provided. Click "View DNA for this feature" link (in Figure 12.1-13).
 
-![Information page on the methylation ID](_static/images/Methylation/fig12.1-13.png)
+![](_static/images/Methylation/fig12.1-13.png)
 
-**Figure 12.1-13:** Information page on the methylation ID
+![**Figure 12.1-13: Information page on the methylation IDe**](_static/images/Methylation/fig12.1-13.png)
+
+
 
 **5)** As an example, click "One FASTA record per region" Option under "Sequence Retrieval Region Options". Define a range as "20" for an up- and a downstream (in Figure 12.1-14).
 
-![DNA sequence extraction page](_static/images/Methylation/fig12.1-14.png)
+![](_static/images/Methylation/fig12.1-14.png)
 
-**Figure 12.1-14:** DNA sequence extraction page
+![**Figure 12.1-14: DNA sequence extraction page**](_static/images/Methylation/fig12.1-14.png)
+
+
 
 **6)** The corresponding DNA sequences on the defined region are shown as Figure 12.1-15. One could check if the sequence is aligned with known information.
 
-![DNA sequences on the defined region](_static/images/Methylation/fig12.1-15.png)
+![](_static/images/Methylation/fig12.1-15.png)
 
-**Figure 12.1-15:** DNA sequences on the define region
+![**Figure 12.1-15: DNA sequences on the define region**](_static/images/Methylation/fig12.1-15.png)
+
+
 
 ---
 
@@ -734,14 +854,19 @@ If one wishes to double-check its choice by looking at the DNA sequence for this
 
 [1] J. Koster, Amsterdam University Medical Centers (AUMC), Center for Experimental and Molecular Medicine (CEMM) - R2 Genomics Analysis and Visualization Platform, https://r2.amc.nl. retrieved on 24.04.2023
 
-[2] R2 support team - R2 Tutorials, https://r2-tutorials.readthedocs.io/en/latest/. updated on 13.04.2023
+[2] R2 support team - R2 Tutorials, https://r2-tutorials.readthedocs.io/en/latest/. updated on 2026-06-24
 
 [3] Mind map on the "Manual on R2 Platform for Methylation Analysis (by Ji Sun Kwon)" - Miro, https://miro.com/app/board/uXjVMMBYyDQ=/. updated on 04.05.2023
 
-[4] Groll/Nitaj et al., in prep. - Epigenetic inactivation of CLDN10 in Malignant melanoma and its epigenetic reactivation counteracts tumor progression; Manuscript in preparation.
+[4] Arroyo et al., 2025 Clinical Epigenetics .Epigenetic silencing and CRISPR-mediated
+reactivation of tight junction protein claudin10b
+(CLDN10B) in renal cancer. 
+https://pubmed.ncbi.nlm.nih.gov/40524239/
 
-[5] V. Deutschmeyer/J. Breuer et al. - Epigenetic therapy of novel tumour suppressor ZAR1 and its cancer biomarker function, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6894338/. published on 04.12.2019
+[5] J. Breuer et al., - Epigenetic therapy of novel tumour suppressor ZAR1 and its cancer biomarker function, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6894338/. published on 04.12.2019
 
-[6] I. Mallona. - Wanderer, an interactive viewer to explore DNA methylation and gene expression data in human cancer, http://maplab.imppc.org/wanderer/. published on 2015
+[6] I. Mallona., - Wanderer, an interactive viewer to explore DNA methylation and gene expression data in human cancer, http://maplab.imppc.org/wanderer/. published on 2015
 
 [7] Chat GPT, keywords as "what is zscore?" and "what is fdr in statistics?", https://chat.openai.com/. retrieved on 27.06.2023
+
+[8] Arroyo et al., 2026 - A Bioinformatics and Wet-Lab-Based Pipeline Identifies CLDN10 and GJB2 as Epigenetically Silenced Tumor Suppressor Genes in Cutaneous Melanoma https://pmc.ncbi.nlm.nih.gov/articles/PMC12986398/
