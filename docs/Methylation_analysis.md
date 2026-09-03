@@ -554,7 +554,7 @@ One could also investigate patient survival probability of a certain tumor type/
 
 ![](_static/images/Methylation/fig10-1.jpg)
 
-[**Figure 10-1: "Survival (Kaplan-Meier/Cox)" main page**](_static/images/Methylation/fig10-1.jpg)
+[**Figure 10-1: Survival (Kaplan-Meier/Cox)main page**](_static/images/Methylation/fig10-1.jpg)
 
 
 
