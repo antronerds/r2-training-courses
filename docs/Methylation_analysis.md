@@ -269,9 +269,9 @@ The user could also compare the methylation level of the same probe from multipl
 
 **5)** After login to the R2 Platform [1], choose "Across Datasets" under Field 1 checkbox. Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 5-1).
 
-![](_static/images/Methylation/fig5-1.png)
+![](_static/images/Methylation/fig5-1a.png)
 
-[**Figure 5-1: Main menu**](_static/images/Methylation/fig5-1.png)
+[**Figure 5-1: Main menu**](_static/images/Methylation/fig5-1a.png)
 
 
 
@@ -290,7 +290,7 @@ The user could also compare the methylation level of the same probe from multipl
 
 
 
-**8)** On the pop-up box, type the author name "Lokk" (normal cells) on Column {Author} and select the datasets by clicking "Select". Repeat the same steps for the datasets with the author names "Heyn" (tumor cells) and "Esteller" (cancer cells) respectively. Click "Confirm selection" button to proceed (as shown in Figure 5-4).
+**8)** In the grid box, type the author name "Lokk" (normal cells) on Column {Author} and select the datasets by clicking "Select". Repeat the same steps for the datasets with the author names "Heyn" (tumor cells) and "Esteller" (cancer cells) respectively. Click "Confirm selection" button to proceed (as shown in Figure 5-4).
 
 ![](_static/images/Methylation/fig5-4.jpg)
 [**Figure 5-4: Data selection menu**](_static/images/Methylation/fig5-4.jpg)
@@ -300,7 +300,8 @@ The user could also compare the methylation level of the same probe from multipl
 **9)** By the previous Step 4), the user could see the data has reflected in the setting as shown in yellow in Figure 5-5. Type "CLDN10" in Field "Gene/Reporter" and choose "None" in Field "Transformation". Click "Next" button to proceed.
 
 ![](_static/images/Methylation/fig5-5.jpg)
-[**Figure 5-5: "MegaSampler" menu reflected the selected datasets**](_static/images/Methylation/fig5-5.jpg)
+
+[**Figure 5-5: MegaSampler menu reflected the selected datasets**](_static/images/Methylation/fig5-5.jpg)
 
 
 
@@ -322,16 +323,18 @@ Select the first probe "cg25032595" as shown on the right in Figure 5-6. On "Adj
 
 
 ![](_static/images/Methylation/fig5-8.jpg)
-[**Figure 5-8: Probe location in the "Esteller" Heatmap**](_static/images/Methylation/fig5-8.jpg)
+
+[**Figure 5-8: Adjustable settings menu**](_static/images/Methylation/fig5-8.jpg)
 
 
 
-As a result, the first methylation scatter plot from Dataset "Lokk", "Heyn" and "Esteller" of Probe "cg25032595" are generated as shown in Figure 5-9. As expected, the methylation level of "Lokk" for normal tissues (with the average 0.025) is lower than the methylation level of "Heyn" tumor cell lines (with the average 0.08). The methylation level of "Heyn" for tumor tissues is also lower than the methylation level of "Esteller" tumor cell lines (with the average 0.4). It should be noted that the name of Y-axes of the scatter plots in Figure 5-9 and Figure 5-10 is false. The Y-axis of the scatter plot is not "Expression" but "Methylation".
+As a result, the first methylation scatter plot from Dataset "Lokk", "Heyn" and "Esteller" of Probe "cg25032595" are generated as shown in Figure 5-9. As expected, the methylation level of "Lokk" for normal tissues (with the average 0.025) is lower than the methylation level of "Heyn" tumor cell lines (with the average 0.08). The methylation level of "Heyn" for tumor tissues is also lower than the methylation level of "Esteller" tumor cell lines (with the average 0.4). 
 
-On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-value is significant enough as shown in red (in Figure 5-9). In the gear box tick "add scatter"
+In the "One-Way Analysis of Variance (ANOVA)" table, it can be observed that the p-value is significant, as shown in red in animated figure 5-9. By default, the values used in the graphs are log2-transformed. In the case of methylation data, the so-called Beta values are ratios, and it is therefore recommendable to use the non-transformed value 
 
-![](_static/images/Methylation/fig5-9a.png)
-[**Figure 5-9: ANOVA table and methylation graphs of the three datasets of Probe "cg25032595" (could be compared to expression plot Figure 7-5)**](_static/images/Methylation/fig5-9a.png)
+![](_static/images/Methylation/megasampler3s.gif)
+
+[**Figure 5-9: ANOVA table and methylation graphs of the three datasets of Probe "cg25032595" (could be compared to expression plot Figure 7-5)**](_static/images/Methylation/megasampler3s.gif)
 
 
 
@@ -339,8 +342,9 @@ The second methylation scatter plot from the three datasets of Probe "cg16556145
 
 On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-value is significant enough as shown in red (in Figure 5-10).
 
-![](_static/images/Methylation/fig5-10a.png)
-[**Figure 5-10: ANOVA table and methylation graphs of the three datasets of Probe "cg16556145" (could be compared to expression plot Figure 7-5**](_static/images/Methylation/fig5-10a.png)
+![](_static/images/Methylation/fig5-10b.png)
+
+[**Figure 5-10: ANOVA table and methylation graphs of the three datasets of Probe "cg16556145" (could be compared to expression plot Figure 7-5**](_static/images/Methylation/fig5-10b.png)
 
 
 
@@ -372,11 +376,11 @@ A box plot (a.k.a. Open High Low Close graph) of a single expression dataset cou
 
 
 
-**3)** A next webpage will be opened on a new internet tab. The user could see that the p-value is significant enough (where marked in red). Click on Link "tissue (View)" on Table "catvsnum" of the webpage (in Figure 6-3).
+**3)** A next webpage will be opened on a new internet tab. The user could see that the p-value is significant enough (where marked in red). Click on Link "tissue (View)" in the right table
 
 ![](_static/images/Methylation/fig6-3a.png)
 
-[**Figure 6-3: "View" link on Table "catvsnum"**](_static/images/Methylation/fig6-3a.png)
+[**Figure 6-3: "View" link on the right table**](_static/images/Methylation/fig6-3a.png)
 
 
 
@@ -384,11 +388,11 @@ A box plot (a.k.a. Open High Low Close graph) of a single expression dataset cou
 
 ![](_static/images/Methylation/fig6-4a.png)
 
-[**Figure 6-4: Table "Adjustable settings"**](_static/images/Methylation/fig6-4a.png)
+[**Figure 6-4: Table "Adjustable settings"**](_static/images/Methylation/fig6-4b.png)
 
 
 
-As a result, a scatter plot of the expression dataset "Tissues GTeX v8 Prot_Coding" shows the expression distribution of CLDN10 across primary tissues. The user can see tissue types like "salivary_gland", "pancreas" and "kidney" on the top right, which exhibit higher expression levels of Claudin10 on Figure 6-5.
+As a result, a scatter plot of the expression dataset "Tissues GTeX v8 Prot_Coding" shows the expression distribution of CLDN10 across primary tissues. The user can see tissue types like "salivary_gland", "pancreas" and "kidney" on the top right, which exhibit higher expression levels of Claudin10 on Figure 6-5. Scatter is turned off.
 
 ![](_static/images/Methylation/fig6-5a.png)
 
@@ -402,11 +406,11 @@ As a result, a scatter plot of the expression dataset "Tissues GTeX v8 Prot_Codi
 
 Now that we have studied methylation graphs, our scope is extended to the next topic, which is "**expression**" of our gene of interest across tissues/cancer types. Methylation and expression have a reciprocal relationship to each other. From the previous *Section 3 Comparing Methylation Heatmaps*, it was observed that the methylation levels increase for certain genes during carcinogenesis. On the contrary, the expression levels decrease. A comparative expression graph is a good tool to observe the difference in expression from different datasets. Here, datasets with author name "Roth" and "Broad" are used to plot the expression graphs. The platform user takes the following steps to create the expression graph:
 
-**1)** Repeat the steps from 1) to 5) in *Section 4 Comparing Methylation Scatter Plots* of this manual for two datasets with author names "Roth" (normal cells, in Figure 7-2) and "Broad" (cancer cells, in Figure 7-3). But skip the change from Step 2) in *Section 4* and leave the table as defaults as shown in Figure 7-1.
+**1)** Repeat the steps from 1) to 5) in *Section 4 Comparing Methylation Scatter Plots* of this manual for two datasets with author names "Roth, n=504" (normal cells, in Figure 7-2) and "Broad" (cancer cells, in Figure 7-3). But skip the change from Step 2) in *Section 4* and leave the table as defaults as shown in Figure 7-1.
 
 ![](_static/images/Methylation/fig7-1.jpg)
 
-[**Figure 7-1: MegaSampler menu"](_static/images/Methylation/fig7-1.jpg)
+[**Figure 7-1: MegaSampler menu**](_static/images/Methylation/fig7-1.jpg)
 
 
 
@@ -426,7 +430,7 @@ Now that we have studied methylation graphs, our scope is extended to the next t
 
 ![](_static/images/Methylation/fig7-4a.png)
 
-[**Figure 7-4: Adjustable settings menu"**](_static/images/Methylation/fig7-4a.png)
+[**Figure 7-4: Adjustable settings menu**](_static/images/Methylation/fig7-4a.png)
 
 
 
@@ -445,7 +449,7 @@ On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-
 
 ## 8 Comparing Expression and Methylation Data
 
-The user could also compare and correlate methylation and expression datasets by showing both in one plot. In this section, the datasets, "Garnett" (normal cells) and "Esteller" (cancer cells), are used. The user takes the following steps to create the dot plot of the methylation and the expression datasets:
+In the case where R2 hosts multi-omics data of the same samples, the user can also compare and correlate methylation and expression datasets by displaying both in one plot. In this section, the datasets "Garnett" (normal cells) and "Esteller" (cancer cells) are used. The user takes the following steps to create a dot plot of the methylation and expression datasets:
 
 **1)** After login to the R2 Platform [1], choose "Across Datasets" under Field 1 checkbox and "View a gene in two datatypes". Click "Next" on the main page to proceed (in Figure 8-1).
 
@@ -458,7 +462,7 @@ The user could also compare and correlate methylation and expression datasets by
 
 ![](_static/images/Methylation/fig8-2.png)
 
-[**Figure 8-2: "Select data sets to merge" menu](_static/images/Methylation/fig8-2.png)
+[**Figure 8-2: Select data sets to merge menu](_static/images/Methylation/fig8-2.png)
 
 
 
@@ -466,7 +470,7 @@ The user could also compare and correlate methylation and expression datasets by
 
 ![](_static/images/Methylation/fig8-3.jpg)
 
-[**Figure 8-3: "Adjustable settings" menu (for Probe "cg25032595")](_static/images/Methylation/fig8-3.jpg)
+[**Figure 8-3: Adjustable settings" menu (for Probe "cg25032595)**](_static/images/Methylation/fig8-3.jpg)
 
 
 
@@ -482,9 +486,9 @@ As shown in Figure 8-4, the user can see the dot plot of the methylation dataset
 
 **4)** Repeat the steps from 1) to 3) of this section for the second Probe by typing "cg16556145" in the right box of Field "Gene / Met_id" (in Figure 8-5).
 
-![](_static/images/Methylation/fig8-5.jpg)
+![](_static/images/Methylation/fig8-5a.png)
 
-[**Figure 8-5: "Adjustable settings" menu (for Probe "cg16556145")**](_static/images/Methylation/fig8-5.jpg)
+[**Figure 8-5: "Adjustable settings" menu (for Probe "cg16556145")**](_static/images/Methylation/fig8-5a.png)
 
 
 
@@ -504,35 +508,39 @@ Let's go back to Normal Tissues GTeX v8 Prot_Coding - GTeX - 17382 - tpm - genco
 
 **1)** Scroll down to "Adjustable settings" after the expression box plot is executed. Select "tissue (30 cat)" on Field "Subset track". On the pop-up window, click the tissue type "skin (1809)" checkbox and "OK". Click "Submit" to proceed. (In Figure 9-1)
 
-![](_static/images/Methylation/fig9-1.jpg)
+![](_static/images/Methylation/fig9-1a.png)
 
-[**Figure 9-1: "Adjustable settings" menu**](_static/images/Methylation/fig9-1.jpg)
+[**Figure 9-1: Adjustable settings menu**](_static/images/Methylation/fig9-1a.png)
 
 
 
 **2)** After the box plot on "skin" is executed, the user could further investigate expression level by skin types, such as differences in the expression between fibroblasts and normal skin types. On Table "Adjustable settings", select "tissue_detail (54 cat)" on Field "Track", "tissue_detail (54 cat)" on "Subset track", "Box/dot plot (dots)" on Field "Graph type" and "Color by Track" on Fields "Color mode/(groups)". "tissue_detail (54 cat)" is an in-depth category than the "tissue (30 cat)" category. (In Figure 9-2)
 
-After selecting "tissue_detail (54 cat)" on Field "Subset track", the user sees the pop-up window. Click two skin types checkboxes ("cells_-_cultured_fibroblasts (504)" and "skin_-_not_sun_exposed_(suprapublic) (604)") and "OK" Button. Not-sun-exposed skin cells are chosen to reduce the impacting factor. Click "Submit" to proceed. (In Figure 9-3)
-
-![Adjustable settings menu](_static/images/Methylation/fig9-2.jpg)
-
-[**Figure 9-2: "Adjustable settings" menu**](_static/images/Methylation/fig9-2.jpg)
+After selecting "tissue_detail (54 cat)" on Field "Subset track", the user sees the pop-up window. Click two skin types checkboxes ("cells_-_cultured_fibroblasts (504)" and "skin_-_not_sun_exposed_(suprapublic) (604)") and "OK" Button. Not-sun-exposed skin cells are chosen to reduce the impacting factor. Click "Submit" to proceed. (In Figure 9-2)
 
 
 
+<!---
+![Adjustable settings menu](_static/images/Methylation/fig9-3a.png)
+
+[**Figure 9-2: Adjustable settings menu**](_static/images/Methylation/fig9-3a.png)
 
 
-![](_static/images/Methylation/fig9-3.jpg)
-
-[**Figure 9-3: Pop-up window on "tissue_detail (54 cat)" subset track**](_static/images/Methylation/fig9-3.jpg)
+-->
 
 
+![](_static/images/Methylation/fig9-3a.png)
 
-The box plot with dots shown in Figure 9-4 shows the difference of expression levels between fibroblasts and normal skin. Normal skin not exposed to the sun has a higher expression level, compared to the expression level of fibroblasts. (Be reminded that the Y-Axis name is log2 CLDN10 expression.)
+
+[**Figure 9-2: Pop-up window on "tissue_detail (54 cat)" subset track**](_static/images/Methylation/fig9-3a.png)
+
+
+
+The box plot with dots shown in Figure 9-3 shows the difference of expression levels between fibroblasts and normal skin. Normal skin not exposed to the sun has a higher expression level, compared to the expression level of fibroblasts. (Be reminded that the Y-Axis name is log2 CLDN10 expression.)
 
 ![](_static/images/Methylation/fig9-4a.png)
 
-[**Figure 9-4:Expression log2 Box/dot plot (dots) on fibroblasts and not-sun-exposed skin cells for CLDN10k**](_static/images/Methylation/fig9-4a.png)
+[**Figure 9-3:Expression log2 Box/dot plot (dots) on fibroblasts and not-sun-exposed skin cells for CLDN10k**](_static/images/Methylation/fig9-4a.png)
 
 
 
