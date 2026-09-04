@@ -67,7 +67,7 @@ With the above dataset information, the platform user takes the following steps 
 
 In case that a gene name of interest is uncertain, one can find the exact gene name of interest by a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
 
-A linear graph is generated as the following graph with an X-axis with samples (probes) and a Y-axis as CLDN10 methylation. (in Figure 2-6) Each sample (a.k.a. cell line type, on the X-axis) is ordered by its degree of CLDN10 methylation (on the Y-axis). The probe with the highesr avarage mean is selected by default. 
+A linear graph is generated as the following graph with an X-axis with samples (probes) and a Y-axis as CLDN10 methylation. (in Figure 2-6) Each sample (a.k.a. cell line type, on the X-axis) is ordered by its degree of CLDN10 methylation (on the Y-axis). The probe with the highest average mean is selected by default. 
 
 ![](_static/images/Methylation/fig2-6.jpg)
 
@@ -133,9 +133,9 @@ Below the diagram, there are two green horizontal bars called "CLDN10" labeled o
 
 Now, if the user is interested in investigating certain probes from the dataset, the next steps could be done additionally. (marked in red in Figure 2-13)
 
-**6-1)** When a cursor is placed on one of the probes, a pop-up message shows the information regarding the selected probe. ("ilmnhm450" in Figure 2-13).  Filtering by the information on pop-up messages, three CpGs within the promoter of the gene and isoform of interest are selected ("cg08418978", "cg22122715" at the left purple arrow, "cg25032595" at the blue arrow) by clicking the check-boxes on "Select reporters" table. As shown with marked color-arrows in Figure 2-13, the probes are observed both as a dot and as a block. Click "Next" to proceed.
+**6-1** When a cursor is placed on one of the probes, a pop-up message shows the information regarding the selected probe. ("ilmnhm450" in Figure 2-13).  Filtering by the information on pop-up messages, three CpGs within the promoter of the gene and isoform of interest are selected ("cg08418978", "cg22122715" at the left purple arrow, "cg25032595" at the blue arrow) by clicking the check-boxes on "Select reporters" table. As shown with marked color-arrows in Figure 2-13, the probes are observed both as a dot and as a block. Click "Next" to proceed.
 
-**6-2)** Figure 2-14 shows the updated Heatmap and R2 Genome Browser after the previous step (Step 6-1). The user could investigate the methylation tendency of the three probes. Back to the example of "kidney" cell type (indicated in green on the X-axis "primary_histology" of Heatmap), the user sees two probes ("cg08418978", "cg22122715"; yellow in Heatmap) are unmethylated but Probe "cg25032595" (blue in Heatmap) is methylated.
+**6-2** Figure 2-14 shows the updated Heatmap and R2 Genome Browser after the previous step (Step 6-1). The user could investigate the methylation tendency of the three probes. Back to the example of "kidney" cell type (indicated in green on the X-axis "primary_histology" of Heatmap), the user sees two probes ("cg08418978", "cg22122715"; yellow in Heatmap) are unmethylated but Probe "cg25032595" (blue in Heatmap) is methylated.
 
 ![](_static/images/Methylation/fig2-14a.png)
 
@@ -639,7 +639,7 @@ The result of Step 5 is described in Figure 10-9. The overall survival probabili
 
 As Hypermethylation is an indicator of tumor development, hypermethylated regions on Heatmaps could be compared between two datasets of normal and tumor patients. The dataset with the tumor type "renal cell carcinoma (PTM)" and the author name "Richter" is used for this analysis.
 
-**1)** Click "Main" on the left menu of the main page. On Table, select "Differential expression between two groups" in Field 3. Click the option box in Field 2 for data selection. (In Figure 11-1)
+**1)** Click "Main" on the left menu of the main page. Click in a dataset name in box 2. (In Figure 11-1).Select "Differential expression between two groups" in Field 3.
 
 ![](_static/images/Methylation/fig11-1.png)
 
@@ -655,39 +655,29 @@ As Hypermethylation is an indicator of tumor development, hypermethylated region
 
 
 
-**3)** On "Select a test" Table, select "type (2 cat)" in Field "Group by" and "n10nvst (3 cat)" in Field "Subset track". Then on the pop-up menu, click the check buttons of "normal (5)" and "tumor (5)" samples except 2 outliers ("ND (2)"). Click "OK" button to finish the sample choice. Click "Submit" on the table to proceed. (In Figure 11-4)
-
-**>>>>>>>>>>n10nvst not found contact Antje**
 
 ![](_static/images/Methylation/fig11-3.png)
 
-[**Figure 11-3:** Main menu**](_static/images/Methylation/fig11-3.png)
+[**Figure 11-3: Main menu**](_static/images/Methylation/fig11-3.png)
 
+**3)** On "Select a test" menu, select "type_upd (3) cat in Field "Group by" . normal (5) and "tumor (5). 2 outliers ("skip (2)") were ommitted so we will proceed with a total of 10 samples instead of 12. Click the submit button  to proceed.
 
+![](_static/images/Methylation/fig11-4a.png)
 
-![](_static/images/Methylation/fig11-4.png)
-
-[**Figure 11-4: "Select a test" Table**](_static/images/Methylation/fig11-4.png)
-
-
-
-**4)** On "Adjustable settings" Table, select "n (6)" as normal people in Field "Group 1" and "tm (6)" as tumor patients in Field "Group 2". Click "Submit" to proceed. (In Figure 11-5)
-
-![](_static/images/Methylation/fig11-5.jpg)
-
-[**Figure 11-5: "Adjustable settings" Table**](_static/images/Methylation/fig11-5.jpg)
+[**Figure 11-4: Select the groups**](_static/images/Methylation/fig11-4a.png)
 
 
 
 
 
-**5)** At the right menu click "Heatmap(zscore)" to proceed. (In Figure 11-6)
+
 
 
 ![](_static/images/Methylation/fig11-6.jpg)
 
-[**Figure 11-6: "Heatmap(zscore)" Button on the right menu**](_static/images/Methylation/fig11-6.jpg)
+[**Figure 11-5: "Heatmap(zscore)" Button on the right menu**](_static/images/Methylation/fig11-6.jpg)
 
+**5)** At the right menu click "Heatmap(zscore)" to proceed. (In Figure 11-5)
 
 
 
@@ -696,11 +686,11 @@ The next page shows the heatmap of hypermethylation between two datasets (normal
 
 ![](_static/images/Methylation/fig11-7.jpg)
 
-[**Figure 11-7: "Heatmap(zscore)" Title**](_static/images/Methylation/fig11-7.jpg)
+[**Figure 11-6: "Heatmap(zscore)" Title**](_static/images/Methylation/fig11-7.jpg)
 
 
 
-**>>>>heatmap plaatje vanuit DEG analysis werkt niet**
+
 
 "zscore" or the standard score is "a statistical measure that represents the number of standard deviations an individual data point is from the mean of a dataset. It indicates how far a particular data point deviates from the average in terms of standard deviation units." [7] And "fdr" stands for False Discovery Rate and is "a statistical concept used in multiple hypothesis testing to control for the proportion of false discoveries or false positives." [7]
 
@@ -708,7 +698,7 @@ On the right of the heatmap, the colored block lines show the type of data point
 
 ![](_static/images/Methylation/fig11-8c.png)
 
-[**Figure 11-8: "Enlarged heatmap zscore - Data points (in red) and normal data point (in green**](_static/images/Methylation/fig11-8c.png)
+[**Figure 11-7: "Enlarged heatmap zscore - Data points (in red) and normal data point (in green**](_static/images/Methylation/fig11-8c.png)
 
 
 
@@ -716,7 +706,7 @@ With this background knowledge, the positive score on the heatmap (in Figure 11-
 
 ![](_static/images/Methylation/fig11-9.jpg)
 
-[**Figure 11-9: "Heatmap(zscore)" - rotated to horizontal for convenience**](_static/images/Methylation/fig11-9.jpg)
+[**Figure 11-8: "Heatmap(zscore)" - rotated to horizontal for convenience**](_static/images/Methylation/fig11-9.jpg)
 
 
 
@@ -724,7 +714,7 @@ When the cursor is placed on Gene type axis, a pop-up message containing the gen
 
 ![](_static/images/Methylation/fig11-10.jpg)
 
-[**Figure 11-10: "Heatmap(zscore)" and "Sort Order Listing" Table**](_static/images/Methylation/fig11-10.jpg)
+[**Figure 11-9: "Heatmap(zscore)" and "Sort Order Listing" Table**](_static/images/Methylation/fig11-10.jpg)
 
 
 
