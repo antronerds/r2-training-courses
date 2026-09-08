@@ -40,6 +40,7 @@ With the above dataset information, the platform user takes the following steps 
 
 
 
+
 **2)** On the pop-up grid box (in Figure 2-2), click in Column {Category} on "Select Filter" to uncheck "Select all" and only select "cell line". In the text field of Column {Tissue/Tumor}, type "cancer pharmacogenomic"  or type "Esteller" in Column {Author}. One can confirm the right dataset by referring the description table below as shown in Figure 2-2. When the dataset is found, click anywhere on the row of the dataset and click "Confirm selection". (in Figure 2-3) Leave all other settings at their default and click "Next" on the main page to proceed. (in Figure 2-4)
 
 ![](_static/images/Methylation/fig2-2.jpg)
@@ -58,7 +59,7 @@ With the above dataset information, the platform user takes the following steps 
 
 
 
-**3)** The next page is "View a gene" that narrows down to the specific gene or methylation ID which to be shown in a Heatmap. (in Figure 2-5) As an example, "CLDN10" (Claudin 10) is written in Field {Gene / Met_id }, and the suggested Met_id that pops up is selected by a mouse click. CLDN10 is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice and select a Met_id by mouse that pops up. Click "Submit" to generate a YY-plot. 
+**3)** The next page is "View a gene" that narrows down to the specific gene or methylation ID which to be shown in a Heatmap. (in Figure 2-5) As an example, "CLDN10" (Claudin 10) is written in Field {Gene / Met_id }, and the suggested Met_id that pops up is selected by a mouse click. CLDN10 is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice and select a Met_id by a mouse click in the pop-up. Click "Submit" to generate a YY-plot. 
 
 ![](_static/images/Methylation/fig2-5.png)
 
@@ -67,7 +68,7 @@ With the above dataset information, the platform user takes the following steps 
 
 In case that a gene name of interest is uncertain, one can find the exact gene name of interest by a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
 
-A linear graph is generated as the following graph with an X-axis with samples (probes) and a Y-axis as CLDN10 methylation. (in Figure 2-6) Each sample (a.k.a. cell line type, on the X-axis) is ordered by its degree of CLDN10 methylation (on the Y-axis). The probe with the highest average mean is selected by default. 
+A ordered sample plot, called a Y-Y plot in R2, is generated with samples (probes) on the X-axis and the CLDN10 methylation ratios on teh Y axis. (in Figure 2-6) Each sample (a.k.a. cell line type, on the X-axis) is ordered by its degree of CLDN10 methylation (on the Y-axis). The probe with the highest average mean is selected by default. 
 
 ![](_static/images/Methylation/fig2-6.jpg)
 
@@ -114,6 +115,11 @@ If the user is interested in looking into a table of each sample (probe) and gen
 ![](_static/images/Methylation/fig2-12a.png)
 
 [**Figure 2-12: The table of sample and reporter names of the chosen dataset**](_static/images/Methylation/fig2-12a.png)
+
+
+
+
+
 
 
 
