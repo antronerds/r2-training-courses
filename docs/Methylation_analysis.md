@@ -322,7 +322,7 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 
 
-**10)** Choose one probe ("cg25032595" and "cg16556145" respectively) from the CGI observed in yellow in the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps*. As shown in Figure 4-6, the two probes are found in the "Esteller" heatmap as "cg16275739" is marked in blue and "cg18393747" is marked in red.
+**10)** Choose one probe ("cg25032595" and "cg16556145" respectively) from the CGI observed in yellow in the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps*. As shown in Figure 5-6, the two probes are found in the "Esteller" heatmap as "cg16275739" is marked in blue and "cg18393747" is marked in red.
 
 ![](_static/images/Methylation/fig5-61.png)
 [**Figure 5-6: Probe location in the "Esteller" Heatmap**](_static/images/Methylation/fig5-61.png)
@@ -330,7 +330,7 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 
 
-Select the first probe "cg25032595" as shown on the right in Figure 5-6. On "Adjustable settings" in Figure 5-8, the user could change the dataset order out of all selected datasets. Change the order the datasets: "Lokk" as "1", "Heyn" as "2" and "Esteller" as "3" (in Figure 5-8). This setting lets datasets be compared: "Lokk" as the first dataset, "Heyn" as the second dataset and "Esteller" as the third order. Click "Submit" button to proceed. Repeat the same process for the second probe "cg16556145" as shown on the right in Figure 5-7.
+Select the first probe "cg25032595" as shown on the right in Figure 5-6. On "Adjustable settings" in Figure 5-8, the user could change the dataset order out of all selected datasets. Change the order the datasets: "Lokk" as "1", "Heyn" as "2" and "Esteller" as "3" (in Figure 5-8). This setting lets datasets be compared: "Lokk" as the first dataset, "Heyn" as the second dataset and "Esteller" as the third order. Click "Submit" button to proceed. Repeat the same process for the second probe "cg16556145" as shown on the right in Table 5-7.
 
 
 ![](_static/images/Methylation/fig5-7c.png)
