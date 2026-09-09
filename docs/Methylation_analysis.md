@@ -60,6 +60,7 @@ With the above dataset information, the platform user takes the following steps 
 
 **3)** In the adjustable settings menu you enter the gene of interest gene / methylation reporter to further investigate. (in Figure 2-5). As an example, "CLDN10" (Claudin 10) is entered in Field {Gene / Met_id }, and the suggested Met_id that pops up is selected by a mouse click. CLDN10 is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice and select a Met_id by mouse that pops up. Click "Submit" to generate a YY-plot. 
 
+
 ![](_static/images/Methylation/fig2-5.png)
 
 [**Figure 2-5: Adjustable settings menu on the dataset**](_static/images/Methylation/fig2-5.png)
