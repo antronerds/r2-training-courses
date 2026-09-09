@@ -249,7 +249,7 @@ The user could take the following steps as a shortcut to generate a heatmap:
 
 ![](_static/images/Methylation/fig4-2.jpg)
 
-[**Figure 4-2: "View all reporters for a gene" menu**](_static/images/Methylation/fig4-2.jpg)
+[**Figure 4-2: "View all reporters for a gene A" menu**](_static/images/Methylation/fig4-2.jpg)
 
 
 **3)** Figure 4-3 shows the generated Heatmap. One could notice that the Heatmap in Figure 4-3 looks the same as the Heatmap in *Section 2 Generating Heatmap*.
@@ -265,7 +265,7 @@ The user could take the following steps as a shortcut to generate a heatmap:
 
 ![](_static/images/Methylation/fig4-4.jpg)
 
-[**Figure 4-4: "View all reporters for a gene" menu**](_static/images/Methylation/fig4-4.jpg)
+[**Figure 4-4: "View all reporters for a gene B" menu**](_static/images/Methylation/fig4-4.jpg)
 
 
 Figure 4-5 is a categorized Heatmap by cell type. This Figure is the same as the Heatmap from the dataset "Esteller" in Figure 3-1 in *Section 3 Comparing Methylation Heatmaps*.
@@ -278,11 +278,13 @@ Figure 4-5 is a categorized Heatmap by cell type. This Figure is the same as the
 
 ---
 
-## 5 Comparing Methylation Scatter Plots
+## 5 Multiple datasets overview with methylation data: 
 
-The user could also compare the methylation level of the same probe from multiple datasets. In this section, the same three datasets as *Section 3 Comparing Methylation Heatmaps* are used ("Lokk": normal cells, "Heyn": tumor cells, "Esteller": cancer cells). The user takes the following steps to create the scatter plots of the same probe methylation dataset:
+With the megasampler module you can investigate the expression levels of a gene in the large collection of datasets R2 is hosting. For this course we will of course we look at the β-value (ratios) of the methylation sets R2 is hosting. One restriction should be noticed, only dataset with the same platform can be inspected together. In case you select the 450k type (Illumina) platform you can only select dataset of the same platform. 
 
-**5)** After login to the R2 Platform [1], choose "Across Datasets" under Field 1 checkbox. Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 5-1).
+The user could also compare the methylation level of the same reporter (probe) from multiple datasets. In this section, the same three datasets as *Section 3 Comparing Methylation Heatmaps* are used ("Lokk": normal cells, "Heyn": tumor cells, "Esteller": cancer cells). The user takes the following steps to create the scatter plots of the same probe methylation dataset:
+
+**5)** Choose "Across Datasets" under Field 1 checkbox. Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 5-1).
 
 ![](_static/images/Methylation/fig5-1a.png)
 
