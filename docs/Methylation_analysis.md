@@ -138,7 +138,7 @@ Then R2 Genome Browser shows the average (mean) CpG by methylation ratio (on an 
 
 The standard deviation of methylation per CpG is shown with the vertical gray line in the diagram, which is located in the gene index around 96,160,000. The letter "q" (queue) from the X-axis label "q32.1" reveals that the gene is located on the chromosome's long arm. If it is located on the small arm of the chromosome it is labeled with "p" (petite).
 
-Below the diagram, there are two green horizontal bars called "CLDN10" labeled on the left and one red stick called "CLDN10-AS1" labeled on the right. The green bars  represent Isoform A and the red bar  represents an antisense isoform. The B isoform is shown on the right side. Depending on the dataset, multiple isoforms more than two (A and B) could exist. More details regarding R2 Genome Browser could be found on R2 Platform online tutorial under Section 17. Using the R2-Genome browser. [2]
+Below the diagram, there are two small green horizontal bars called "CLDN10" labeled on the left and one red stick called "CLDN10-AS1" labeled on the right. The small green bars  represent Isoform A and the small red bar  represents an antisense isoform. The B isoform is shown on the right side. Depending on the dataset, multiple isoforms more than two (A and B) could exist. More details regarding R2 Genome Browser could be found on R2 Platform online tutorial under Section 17. Using the R2-Genome browser. [2]
 
 ![](_static/images/Methylation/fig2-13b.png "Figure 2-13")
 
@@ -146,7 +146,7 @@ Below the diagram, there are two green horizontal bars called "CLDN10" labeled o
 
 Now, if the user is interested in investigating certain probes from the dataset, the next steps could be done additionally. (marked in red in Figure 2-13)
 
-**6-1** When a cursor is placed on one of the probes, a pop-up message shows the information regarding the selected probe. ("ilmnhm450" in Figure 2-13).  Filtering by the information on pop-up messages, three CpGs within the promoter of the gene and isoform of interest are selected ("cg08418978", "cg22122715" at the left purple arrow, "cg25032595" at the blue arrow) by clicking the check-boxes on "Select reporters" table. As shown with marked color-arrows in Figure 2-13, the probes are observed both as a dot and as a block. Click "Next" to proceed.
+**6-1** Hoovering over one of the probes, a message box shows the information regarding the selected probe. ("ilmnhm450" in Figure 2-13).  Filtering by the information of the message box, three CpGs within the promoter of the gene and isoform of interest are selected ("cg08418978", "cg22122715" at the left purple arrow, "cg25032595" at the blue arrow) by clicking the check-boxes on "Select reporters" table. As shown with marked color-arrows in Figure 2-13, the probes are observed both as a dot and as a block. Click "Next" to proceed.
 
 **6-2** Figure 2-14 shows the updated Heatmap and R2 Genome Browser after the previous step (Step 6-1). The user could investigate the methylation tendency of the three probes. Back to the example of "kidney" cell type (indicated in green on the X-axis "primary_histology" of Heatmap), the user sees two probes ("cg08418978", "cg22122715"; yellow in Heatmap) are unmethylated but Probe "cg25032595" (blue in Heatmap) is methylated.
 
@@ -200,9 +200,9 @@ The second dataset is based on primary tumors ("tumor" type by the author name "
 
 To create the second ("Heyn") and the third ("Lokk") datasets, repeat the steps from 1) to 5) in *Section 2 Generating Heatmap* of this manual. The following Figure 3-1 is a collection generated heatmaps of the three datasets ("Esteller" on the bottom, "Heyn" in the middle, "Lokk" on the top). As shown with colors in Figure 3-1, the "Lokk" Heatmap of CLDN10 is rather uniform with an CLDN10 CGI (or CpG-Island) that is unmethylated, whereas the CGI surrounding regions are methylated (for all samples).
 
-When looking at the Heatmap from primary tumors "Heyn", some degree of methylation appears across the CLDN10 CGI (the entire black and blue colors throughout the Y-axis). This methylation shows/implies that the tumor samples started to inactivate the tumor suppressor.
+When looking at the Heatmap from primary tumors "Heyn", some degree of methylation appears across the CLDN10 CGI, the black colored row in the heatmap. This methylation shows/implies that the tumor samples started to inactivate the tumor suppressor.
 
-Next, the "Esteller" Heatmap includes even more methylation for the CLDN10 CGI than the "Heyn" Heatmap. Much more blue colors are observed throughout the Y-axis, which makes sense that highly proliferative cancer cells have more CLDN10 inactivated than the less proliferative tumor cells. By comparing the later "Esteller" Heatmap with "Lokk" and "Heyn" Heatmaps, one could see the gradual changes in the methylation tendency for the gene of interest during carcinogenesis.
+Next, the "Esteller" Heatmap includes even more methylation for the CLDN10 CGI than the "Heyn" Heatmap. Much more blue colors are observed throughout the heatmap rows, which makes sense that highly proliferative cancer cells have more CLDN10 inactivated than the less proliferative tumor cells. By comparing the later "Esteller" Heatmap with "Lokk" and "Heyn" Heatmaps, one could see the gradual changes in the methylation tendency for the gene of interest during carcinogenesis.
 
 ![](_static/images/Methylation/fig3-1a.png)
 
@@ -211,14 +211,14 @@ Next, the "Esteller" Heatmap includes even more methylation for the CLDN10 CGI t
 
 A single Heatmap can be further categorized and compared by each cell type (by different tissues). With the example of "Lokk" Heatmap (normal cell), the following additional steps could be done after Step 5) to categorize per cell type:
 
-Scroll down to the "Gene" table on the bottom of the Heatmap webpage. Select "a track" in Field "Order samples by" and "tissue (17 cat)" in Field "Ordering track" (in Figure 3-2). This allows the Heatmap to be organized by cell type.
+Scroll down to the "Gene" menu on the bottom of the Heatmap webpage. Select "a track" in Field "Order samples by" and "tissue (17 cat)" in Field "Ordering track" (in Figure 3-3a1). This allows the Heatmap to be organized by cell type.
 
 ![](_static/images/Methylation/fig3-2a.png)
 
 [**Figure 3-2: The table option on the Heatmap webpage**](_static/images/Methylation/fig3-2a.png)
 
 
-Figure 3-3 is a categorized Heatmap by cell type. If a cursor is placed on the "tissue" label on the X-axis (above), a pop-up message shows the information regarding the annotations/tracks such as tissue type and gender of each sample. For example, Sample "gsm1215434" came from bladder tissue of a male as shown in Figure 3-3.
+Figure 3-3a1 is a categorized Heatmap by cell type. If you hoover over the small annotation boxes on the tissue annotation track the information box shows the specifications regarding the annotations/tracks such as tissue type and gender of each sample. For example, Sample "gsm1215434" came from bladder tissue of a male as shown in Figure 3-3a1.
 
 ![](_static/images/Methylation/fig3-3a1.png)
 
@@ -252,7 +252,7 @@ The user could take the following steps as a shortcut to generate a heatmap:
 [**Figure 4-2: "View all reporters for a gene" menu**](_static/images/Methylation/fig4-2.jpg)
 
 
-**3)** Figure 2-11 shows the generated Heatmap. One could notice that the Heatmap in Figure 4-3 looks the same as the Heatmap in *Section 2 Generating Heatmap*.
+**3)** Figure 4-3 shows the generated Heatmap. One could notice that the Heatmap in Figure 4-3 looks the same as the Heatmap in *Section 2 Generating Heatmap*.
 
 ![](_static/images/Methylation/fig4-3.jpg)
 
