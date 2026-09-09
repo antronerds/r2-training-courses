@@ -58,7 +58,7 @@ With the above dataset information, the platform user takes the following steps 
 
 
 
-**3)** The next page is "View a gene" that narrows down to the specific gene or methylation ID which to be shown in a Heatmap. (in Figure 2-5) As an example, "CLDN10" (Claudin 10) is written in Field {Gene / Met_id }, and the suggested Met_id that pops up is selected by a mouse click. CLDN10 is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice and select a Met_id by mouse that pops up. Click "Submit" to generate a YY-plot. 
+**3)** In the adjustable settings menu you enter the gene of interest gene / methylation reporter to further investigate. (in Figure 2-5). As an example, "CLDN10" (Claudin 10) is entered in Field {Gene / Met_id }, and the suggested Met_id that pops up is selected by a mouse click. CLDN10 is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice and select a Met_id by mouse that pops up. Click "Submit" to generate a YY-plot. 
 
 ![](_static/images/Methylation/fig2-5.png)
 
@@ -67,14 +67,14 @@ With the above dataset information, the platform user takes the following steps 
 
 In case that a gene name of interest is uncertain, one can find the exact gene name of interest by a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
 
-A linear graph is generated as the following graph with an X-axis with samples (probes) and a Y-axis as CLDN10 methylation. (in Figure 2-6) Each sample (a.k.a. cell line type, on the X-axis) is ordered by its degree of CLDN10 methylation (on the Y-axis). The probe with the highest average mean is selected by default. 
+AA YY-graph is generated with the samples (cell lines) on the X-axis ordered by β-value from low to high, and the CLDN10 methylation β-value on the Y-axis (Figure 2-6). The probe with the highest mean is selected by default.
 
 ![](_static/images/Methylation/fig2-6.jpg)
 
 [**Figure 2-6: Graph one probe of the chosen CLDN10 dataset**](_static/images/Methylation/fig2-6.jpg)
 
 
-Two additional features on this webpage come in handy: By clicking on the exclamation mark right in the graph title (marked in red in Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link (marked in red in Figure 2-6) and read the definition of the terminologies on the National Library of Medicine (NIM) website. (in Figure 2-8)
+Two additional features on this webpage come in handy: By clicking on the exclamation mark right in the graph title (indicated with the red arrow Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link depicted below the YY-plot and read the definition of the terminologies on the National Library of Medicine (NIM) website. (in Figure 2-8)
 
 ![](_static/images/Methylation/fig2-7.jpg)
 
@@ -86,7 +86,7 @@ Two additional features on this webpage come in handy: By clicking on the exclam
 [**Figure 2-8: Definition of terminology "CLDN10" on the National Library of Medicine (NLM) website**](_static/images/Methylation/fig2-8.jpg)
 
 
-**4)** As a next step, click on "View additional details" on the same page below the previous line graph. (in Figure 2-9) Then by clicking "view all" link as shown in Figure 2-10, the embedded Heatmap and R2 Genome Browser of the chosen dataset will open in a new screen.
+**4)** As a next step, click on "View additional details" small triagle on the same page below the previous YY-=plot (in Figure 2-9). Then by clicking "view all" link as shown in Figure 2-10, the embedded Heatmap and R2 Genome Browser of the chosen dataset will open in a new screen.
 
 ![](_static/images/Methylation/fig2-9a.png)
 
@@ -100,7 +100,10 @@ Two additional features on this webpage come in handy: By clicking on the exclam
 
 
 
-**5)** Figure 2-11 shows the generated Heatmap. The **Heatmap** describes where each subset (probe) of the gene is methylated or not. The X-axis of the Heatmap indicates "primary histology" (or cell line type) and the Y-axis indicates all probes of the chosen gene of interest annotated within the dataset. The methylation score is colored by yellow (near to score 0, unmethylated), black in the middle (partially methylated, 50%), and blue (near to score 1, fully methylated). As shown in Figure 2-11, each probe per cell line type has a different tendency of methylation region.
+**5)** Figure 2-11 shows the generated Heatmap. The **Heatmap** describes for  each
+reporter that hybridizes to a specific CpG site within the genomic location of the CLDN10 gene the methylation level (β-value) at the genomic location of  the reporters.
+
+The bars above the heatmap (tracks) indicates "primary histology" (or cell line type) and at the left sit all reporters of the chosen gene within the dataset are plotted. The methylation score is colored by yellow (near to score 0, unmethylated), black in the middle (partially methylated, 50%), and blue (near to score 1, fully methylated). As shown in Figure 2-11, based on β-value per cell line type, the clustering reveals methylated of non-methylated regions for the subsets of the dataset you are investigating./
 
 For example, a kidney cell line is shown as green above the Heatmap. The vertical tendency from the green color (a kidney cell) on the X-axis extended towards the bottom shows how probes on the kidney cell are differently methylated. The user could see on this vertical tendency that probe "cg13733394" is unmethylated as in yellow, compared to probe "cg18470456" in blue which is methylated.
 
