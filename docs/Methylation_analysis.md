@@ -100,8 +100,7 @@ Two additional features on this webpage come in handy: By clicking on the exclam
 
 
 
-**5)** Figure 2-11 shows the generated Heatmap. The **Heatmap** describes for  each
-reporter that hybridizes to a specific CpG site within the genomic location of the CLDN10 gene the methylation level (β-value) at the genomic location of  the reporters.
+**5)** Figure 2-11 shows the generated Heatmap. The Heatmap displays, for each reporter hybridizing to a specific CpG site within the CLDN10 gene locus, the methylation level (β-value) and its relation to the samples, together with the annotation.
 
 The bars above the heatmap (tracks) indicates "primary histology" (or cell line type) and at the left sit all reporters of the chosen gene within the dataset are plotted. The methylation score is colored by yellow (near to score 0, unmethylated), black in the middle (partially methylated, 50%), and blue (near to score 1, fully methylated). As shown in Figure 2-11, based on β-value per cell line type, the clustering reveals methylated of non-methylated regions for the subsets of the dataset you are investigating./
 
@@ -112,7 +111,7 @@ For example, a kidney cell line is shown as green above the Heatmap. The vertica
 [**Figure 2-11:** The Heatmap of the chosen dataset**](_static/images/Methylation/fig2-11a.png)
 
 
-If the user is interested in looking into a table of each sample (probe) and gene name of the dataset. Go to the page where the YY-plot is generated and click view datatable (in Figure 2-12)
+If the user is interested in looking into a table of each sample and gene name of the dataset. Go to the page where the YY-plot is generated and click view datatable (in Figure 2-12)
 
 ![](_static/images/Methylation/fig2-12a.png)
 
@@ -124,7 +123,7 @@ If the user is interested in looking into a table of each sample (probe) and gen
 
 The colored vertical line just below the diagram title represents the chromosome of this database and shows the gene position in the chromosome by a small vertical line (marked in yellow in Figure 2-13).
 
-Then R2 Genome Browser shows the average (mean) CpG by methylation score (on an Y-axis) and the gene (a.k.a. gene position number, on an X-axis). The dots in this diagram are CpG (or probe) and their according methylation degree. It is to be noted that the Y-axis of R2 Genome Browser is the methylation score per probe, whereas the X-axis of Heatmap is the methylation score (which is vice versa).
+Then R2 Genome Browser shows the average (mean) CpG by methylation ratio (on an Y-axis) and the gene (a.k.a. gene position number, on an X-axis). The dots in this diagram are CpG (or probe) and their according methylation degree. It is to be noted that the Y-axis of R2 Genome Browser is the β-value per probe, whereas the X-axis of Heatmap is the  β-value.
 
 The standard deviation of methylation per CpG is shown with the vertical gray line in the diagram, which is located in the gene index around 96,160,000. The letter "q" (queue) from the X-axis label "q32.1" reveals that the gene is located on the chromosome's long arm. If it is located on the small arm of the chromosome it is labeled with "p" (petite).
 
@@ -184,9 +183,11 @@ Now, if the user is interested in investigating certain probes from the dataset,
 
 ## 3 Comparing Methylation Heatmaps
 
-To grasp a better idea how to interpret this Heatmap, two further methylation datasets will be compared with the "Esteller" dataset. As mentioned earlier in *Section 2 Generating Heatmap* of this manual, this "Esteller" dataset is based on highly proliferating cancer cell lines. The second dataset is based on primary tumors ("tumor" type by the author name "Heyn" on R2 Platform). The third dataset is based on normal control tissue samples ("normal" type by the author name "Lokk" on R2 Platform). In this section, three Heatmaps generated from these three datasets are to be compared to show the difference in methylation tendency for a chosen gene of interest. These comparative methylome heatmaps were used to study another tumor suppressor ZAR1. [5]
+To gain a clearer understanding of how to interpret this Heatmap, two further methylation datasets will be compared with the "Esteller" dataset. As mentioned earlier in *Section 2 Generating Heatmap* of this manual, this "Esteller" dataset is based on highly proliferating cancer cell lines. 
 
-To create the second ("Heyn") and the third ("Lokk") datasets, repeat the steps from 1) to 5) in *Section 2 Generating Heatmap* of this manual. The following Figure 3-1 is the generated Heatmaps of the three datasets ("Esteller" on the bottom, "Heyn" in the middle, "Lokk" on the top). As shown with colors in Figure 3-1, the "Lokk" Heatmap of CLDN10 is rather uniform with an CLDN10 CGI (or CpG-Island) that is unmethylated, whereas the CGI surrounding regions are methylated (for all samples).
+The second dataset is based on primary tumors ("tumor" type by the author name "Heyn" on R2 Platform). The third dataset is based on normal control tissue samples ("normal" type by the author name "Lokk" on R2 Platform). In this section, three Heatmaps generated from these three datasets are to be compared to show the difference in methylation tendency for a chosen gene of interest. These comparative methylome heatmaps were used to study another tumor suppressor ZAR1. [5]
+
+To create the second ("Heyn") and the third ("Lokk") datasets, repeat the steps from 1) to 5) in *Section 2 Generating Heatmap* of this manual. The following Figure 3-1 is a collection generated heatmaps of the three datasets ("Esteller" on the bottom, "Heyn" in the middle, "Lokk" on the top). As shown with colors in Figure 3-1, the "Lokk" Heatmap of CLDN10 is rather uniform with an CLDN10 CGI (or CpG-Island) that is unmethylated, whereas the CGI surrounding regions are methylated (for all samples).
 
 When looking at the Heatmap from primary tumors "Heyn", some degree of methylation appears across the CLDN10 CGI (the entire black and blue colors throughout the Y-axis). This methylation shows/implies that the tumor samples started to inactivate the tumor suppressor.
 
