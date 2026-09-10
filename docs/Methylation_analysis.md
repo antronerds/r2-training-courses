@@ -67,7 +67,7 @@ With the above dataset information, the platform user takes the following steps 
 [**Figure 2-5: Adjustable settings menu on the dataset**](_static/images/Methylation/fig2-5.png)
 
 
-In case that a gene name of interest is uncertain, one can find the exact gene name of interest by a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
+In case that a gene name of interest is uncertain, one can find the exact gene name of interest in a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
 
 A YY-graph is generated with the samples (cell lines) on the X-axis ordered by β-value from low to high, and the CLDN10 methylation β-value on the Y-axis (Figure 2-6). The probe with the highest mean is selected by default.
 
@@ -146,7 +146,7 @@ Below the diagram, there are two small green horizontal bars called "CLDN10" lab
 
 Now, if the user is interested in investigating certain probes from the dataset, the next steps could be done additionally. (marked in red in Figure 2-13)
 
-**6-1** Hoovering over one of the probes, a message box shows the information regarding the selected probe. ("ilmnhm450" in Figure 2-13).  Filtering by the information of the message box, three CpGs within the promoter of the gene and isoform of interest are selected ("cg08418978", "cg22122715" at the left purple arrow, "cg25032595" at the blue arrow) by clicking the check-boxes on "Select reporters" table. As shown with marked color-arrows in Figure 2-13, the probes are observed both as a dot and as a block. Click "Next" to proceed.
+**6-1** Hovering over one of the probes, a message box shows the information regarding the selected probe. ("ilmnhm450" in Figure 2-13).  Filtering by the information of the message box, three CpGs within the promoter of the gene and isoform of interest are selected ("cg08418978", "cg22122715" at the left purple arrow, "cg25032595" at the blue arrow) by clicking the check-boxes on "Select reporters" table. As shown with marked color-arrows in Figure 2-13, the probes are observed both as a dot and as a block. Click "Next" to proceed.
 
 **6-2** Figure 2-14 shows the updated Heatmap and R2 Genome Browser after the previous step (Step 6-1). The user could investigate the methylation tendency of the three probes. Back to the example of "kidney" cell type (indicated in green on the X-axis "primary_histology" of Heatmap), the user sees two probes ("cg08418978", "cg22122715"; yellow in Heatmap) are unmethylated but Probe "cg25032595" (blue in Heatmap) is methylated.
 
@@ -301,9 +301,10 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 **7)** On the next webpage, type "CLDN10" in the Field "Gene / Reporter" and click "Select Datasets" button. (in Figure 5-3)
 
-[](_static/images/Methylation/fig5-3.jpg)
 
-[**Figure 5-3:  "MegaSampler" menu**](_static/images/Methylation/fig5-3.jpg)
+![](_static/images/Methylation/fig5-3a.jpg)
+
+[**Figure 5-3:  "MegaSampler" menu**](_static/images/Methylation/fig5-3a.jpg)
 
 
 
@@ -322,7 +323,7 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 
 
-**10)** Choose one probe ("cg25032595" and "cg16556145" respectively) from the CGI observed in yellow in the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps*. As shown in Figure 4-6, the two probes are found in the "Esteller" heatmap as "cg16275739" is marked in blue and "cg18393747" is marked in red.
+**10)** Choose one probe ("cg25032595" and "cg16556145" respectively) from the CGI (CpG Island) observed in yellow in the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps*. As shown in Figure 5-6, the two probes are found in the "Esteller" heatmap as "cg16275739" is marked in blue and "cg18393747" is marked in red.
 
 ![](_static/images/Methylation/fig5-61.png)
 [**Figure 5-6: Probe location in the "Esteller" Heatmap**](_static/images/Methylation/fig5-61.png)
@@ -330,7 +331,7 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 
 
-Select the first probe "cg25032595" as shown on the right in Figure 5-6. On "Adjustable settings" in Figure 5-8, the user could change the dataset order out of all selected datasets. Change the order the datasets: "Lokk" as "1", "Heyn" as "2" and "Esteller" as "3" (in Figure 5-8). This setting lets datasets be compared: "Lokk" as the first dataset, "Heyn" as the second dataset and "Esteller" as the third order. Click "Submit" button to proceed. Repeat the same process for the second probe "cg16556145" as shown on the right in Figure 5-7.
+Select the first probe "cg25032595" as shown on the right in Figure 5-6. On "Adjustable settings" in Figure 5-8, the user could change the dataset order out of all selected datasets. Change the order the datasets: "Lokk" as "1", "Heyn" as "2" and "Esteller" as "3" (in Figure 5-8). This setting lets datasets be compared: "Lokk" as the first dataset, "Heyn" as the second dataset and "Esteller" as the third order. Click "Submit" button to proceed. Repeat the same process for the second probe "cg16556145" as shown on the right in Table 5-7.
 
 
 ![](_static/images/Methylation/fig5-7c.png)
@@ -373,19 +374,21 @@ The mean methylation difference of the two probes is shown more simply in anothe
 
 ---
 
-## 6 An Expression Box Plot
+## 6 An Expression Box Plot and CLinisnitch. 
 
-A box plot (a.k.a. Open High Low Close graph) of a single expression dataset could be drawn to see the expression level by a cell type and for your gene of interest. The user takes the following steps to create a scatter plot of a single gene within an expression dataset:
+A box plot of a single expression dataset could be drawn to see the expression level by group annotation such as cell type and for your gene of interest. The user takes the following steps to create a YY- plot of a single gene within an expression dataset:
 
-**1)** Repeat the steps from 1) to 3) in *Section 2 Generating Heatmap* of this manual. But instead, choose the expression dataset by typing "Tissues GTeX v8 Prot_Coding" on Column {Tissue/Tumor} as shown in Figure 6-1.
+**1)** Select in the main page in box 1  an expression dataset by typing "Tissues GTeX v8 Prot_Coding" on Column {Tissue/Tumor} as shown in Figure 6-1. Select "view" a gene and provide "CLDN10". 
 
-![](_static/images/Methylation/fig6-1a.png)
+![](_static/images/Methylation/fig6-1b.png)
 
-[**Figure 6-1: Change Dataset menu (after filter)**](_static/images/Methylation/fig6-1a.png)
+[**Figure 6-1: Change Dataset menu (after filter)**](_static/images/Methylation/fig6-1b.png)
 
 
 
 **2)** Click on Link "CLDN10" under Field "CliniSnitch" which is located on the right of the webpage (in Figure 6-2).
+
+*R2 also offers a tool: CliniSnitch. CliniSnitch performs a context-dependent statistical test on each track to identify significant associations with the gene’s expression (i.e. different types of tests based on whether a track is numerical or categorical).*
 
 ![](_static/images/Methylation/fig6-2a.png)
 [**Figure 6-2: "CliniSnitch" link**](_static/images/Methylation/fig6-2a.png)
@@ -401,7 +404,7 @@ A box plot (a.k.a. Open High Low Close graph) of a single expression dataset cou
 
 
 
-**4)** A next webpage will be opened on a new internet tab. To visualize and sort better, scroll down to Table "Adjustable settings". Select "Box plot" on Field "Graph type", "median (numeric Y)" on Field "Order Groups By" and "Color by Track" on Field "Color mode". Click "Submit" Button to update the scatter plot of a single expression data by a tissue type (in Figure 6-4).
+**4)** A next webpage will be opened on a new internet tab. To visualize and sort better. CLick on the gear icon on the left side of the plot. Select "Box plot" on Field "Graph type" in case it not selected by default, "median (numeric Y)" on Field "Order Groups By" and "Color by Track" on Field "Color mode" and untick the checkbox at "add scatter" Click the "redraw" Button to update the box plot of a single expression data by a tissue type (in Figure 6-4).
 
 ![](_static/images/Methylation/fig6-4a.png)
 
@@ -409,25 +412,25 @@ A box plot (a.k.a. Open High Low Close graph) of a single expression dataset cou
 
 
 
-As a result, a scatter plot of the expression dataset "Tissues GTeX v8 Prot_Coding" shows the expression distribution of CLDN10 across primary tissues. The user can see tissue types like "salivary_gland", "pancreas" and "kidney" on the top right, which exhibit higher expression levels of Claudin10 on Figure 6-5. Scatter is turned off.
+As a result, a box plot of the expression dataset "Tissues GTeX v8 Prot_Coding" shows the expression distribution of CLDN10 across primary tissues. The user can see tissue types like "salivary_gland", "pancreas" and "kidney" on the right side of the graph, which exhibit higher expression levels of Claudin10 on Figure 6-5. Scatter is turned off.
 
 ![](_static/images/Methylation/fig6-5a.png)
 
-[**Figure 6-5: Expression log2 Scatter plot of CLDN10 in normal tissues dataset "Tissues GTeX v8 Prot_Coding**](_static/images/Methylation/fig6-5a.png)
+[**Figure 6-5: Expression log2 box plot plot of CLDN10 in normal tissues dataset "Tissues GTeX v8 Prot_Coding**](_static/images/Methylation/fig6-5a.png)
 
 
 
 ---
 
-## 7 Comparing Expression Scatter Plots
+## 7 Anylysing plots
 
-Now that we have studied methylation graphs, our scope is extended to the next topic, which is "**expression**" of our gene of interest across tissues/cancer types. Methylation and expression have a reciprocal relationship to each other. From the previous *Section 3 Comparing Methylation Heatmaps*, it was observed that the methylation levels increase for certain genes during carcinogenesis. On the contrary, the expression levels decrease. A comparative expression graph is a good tool to observe the difference in expression from different datasets. Here, datasets with author name "Roth" and "Broad" are used to plot the expression graphs. The platform user takes the following steps to create the expression graph:
+Now that we have studied methylation graphs, our scope is extended to the next topic, which is "**expression**" of our gene of interest across tissues/cancer types.Methylation and expression have a reciprocal relationship. From the previous *Section 3 Comparing Methylation Heatmaps*, it was observed that the methylation levels increase for certain genes during carcinogenesis. In contrast, expression levels are reduced. The across dataset module is a good tool to observe the difference in expression from different datasets. Please note as mentioned before only datasets of the same chiptype (*platform*) and normalization can be analyzed together.  Here, datasets with author name "Roth" and "Broad" are used to plot the expression graphs. The platform user takes the following steps to create the expression graph:
 
-**1)** Repeat the steps from 1) to 5) in *Section 4 Comparing Methylation Scatter Plots* of this manual for two datasets with author names "Roth, n=504" (normal cells, in Figure 7-2) and "Broad" (cancer cells, in Figure 7-3). But skip the change from Step 2) in *Section 4* and leave the table as defaults as shown in Figure 7-1.
+**1)** Repeat the steps from 1) to 5) in *Section 5 Multiple datasets overview..* of this manual for two datasets with author names "Roth, n=504" (normal cells, in Figure 7-2) and "Broad" (cancer cells, in Figure 7-3). Check is u133p2, mas5.0 is selected as indicated in figure 7-1.
 
-![](_static/images/Methylation/fig7-1.jpg)
+![](_static/images/Methylation/fig7-1a.png)
 
-[**Figure 7-1: MegaSampler menu**](_static/images/Methylation/fig7-1.jpg)
+[**Figure 7-1: MegaSampler menu**](_static/images/Methylation/fig7-1a.png)
 
 
 
@@ -437,7 +440,7 @@ Now that we have studied methylation graphs, our scope is extended to the next t
 
 
 
-**2)** On "Adjustable settings" in Figure 6-4, the user could change the dataset order out of two datasets. Change the order of the datasets: "Roth" as "1" and "Broad" as "2". This setting lets "Roth" as the first dataset compared to "Broad" as the second dataset. Click "Submit" button to proceed.
+**2)** On "Adjustable settings" in Figure 7-4, the user could change the dataset order out of two datasets. Change the order of the datasets: "Roth" as "1" and "Broad" as "2". This setting lets "Roth" as the first dataset compared to "Broad" as the second dataset. Click "Submit" button to proceed.
 
 ![Data selection menu with author name Broad](_static/images/Methylation/fig7-3a.jpg)
 
@@ -452,7 +455,7 @@ Now that we have studied methylation graphs, our scope is extended to the next t
 
 
 
-As a result, two expression graphs from Dataset "Roth" and "Broad" are generated as shown in Figure 7-5. As expected, the expression level of "Roth" for normal tissues (with the average 7-5) is higher than the expression level of "Broad" cancer cell lines (with the average 3-4). This is in line with methylation level from the two datasets, because the cancer cells ("Broad") are highly methylated compared to the normal cells ("Roth").
+As a result, two box plots with "add scatter = tcked)  from Dataset "Roth" and "Broad" are generated as shown in Figure 7-5. As expected, the expression level of "Roth" for normal tissues (with the average 7-5) is higher than the expression level of "Broad" cancer cell lines (with the average 3-4). This is in line with methylation level from the two datasets, because the cancer cells ("Broad") are highly methylated compared to the normal cells ("Roth").
 
 On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-value is significant enough as shown in red (in Figure 7-5).
 
@@ -479,7 +482,7 @@ In the case where R2 hosts multi-omics data of the same samples, the user can al
 
 ![](_static/images/Methylation/fig8-2.png)
 
-[**Figure 8-2: Select data sets to merge menu](_static/images/Methylation/fig8-2.png)
+[**Figure 8-2:** Select data sets to merge menu](_static/images/Methylation/fig8-2.png)
 
 
 
