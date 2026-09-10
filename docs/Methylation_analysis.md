@@ -598,7 +598,7 @@ The result on the next page shows the overall survival probability between patie
 
 When the automated separation of patients by expression level produced one big and one small cohort, it should be taken into account that results could be significant, but still not biologically relevant. Further studies should be performed, in order to better understand the contribution of your gene of interest in patient survival. Even though the p-values are significant (statistically valid), the dataset might not be biologically valid as well.
 
-The left graph in Figure 10-4 shows the overall survival probability of two cohorts (on an Y-axis) that are high expression (a line marked in blue) and low expression (a line marked in red) groups, regarding the expression of the gene of interest. An X-axis is the follow-up in months. The total patient number of the cohorts are shown with colors on the right top of the graph ("n=430", "n=103" respectively). One could find out individual information of each sample by putting the cursor on the line (in Figure 10-5).
+The left graph in Figure 10-4 shows the overall survival probability of two cohorts (on an Y-axis) that are high expression (a line marked in blue) and low expression (a line marked in red) groups, regarding the expression of the gene of interest. An X-axis is the follow-up in months. The total patient number of the cohorts are shown with colors on the right top of the graph ("n=430", "n=103" respectively). One could find out individual information of each sample by hovering over de small vertical line in the plot (in Figure 10-5).
 
 ![](_static/images/Methylation/fig10-4a.png)
 
