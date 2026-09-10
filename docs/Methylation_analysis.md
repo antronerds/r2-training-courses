@@ -67,7 +67,7 @@ With the above dataset information, the platform user takes the following steps 
 [**Figure 2-5: Adjustable settings menu on the dataset**](_static/images/Methylation/fig2-5.png)
 
 
-In case that a gene name of interest is uncertain, one can find the exact gene name of interest by a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
+In case that a gene name of interest is uncertain, one can find the exact gene name of interest in a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
 
 A YY-graph is generated with the samples (cell lines) on the X-axis ordered by β-value from low to high, and the CLDN10 methylation β-value on the Y-axis (Figure 2-6). The probe with the highest mean is selected by default.
 
@@ -304,7 +304,7 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 ![](_static/images/Methylation/fig5-3a.jpg)
 
-[**Figure 5-3:  "MegaSampler" menu**](_static/images/Methylation/fig5-3.jpg)
+[**Figure 5-3:  "MegaSampler" menu**](_static/images/Methylation/fig5-3a.jpg)
 
 
 
@@ -404,7 +404,7 @@ A box plot of a single expression dataset could be drawn to see the expression l
 
 
 
-**4)** A next webpage will be opened on a new internet tab. To visualize and sort better, scroll down to Table "Adjustable settings". Select "Box plot" on Field "Graph type", "median (numeric Y)" on Field "Order Groups By" and "Color by Track" on Field "Color mode". Click "Submit" Button to update the scatter plot of a single expression data by a tissue type (in Figure 6-4).
+**4)** A next webpage will be opened on a new internet tab. To visualize and sort better. CLick on the gear icon on the left side of the plot. Select "Box plot" on Field "Graph type" in case it not selected by default, "median (numeric Y)" on Field "Order Groups By" and "Color by Track" on Field "Color mode" and untick the checkbox at "add scatter" Click the "redraw" Button to update the box plot of a single expression data by a tissue type (in Figure 6-4).
 
 ![](_static/images/Methylation/fig6-4a.png)
 
@@ -412,11 +412,11 @@ A box plot of a single expression dataset could be drawn to see the expression l
 
 
 
-As a result, a scatter plot of the expression dataset "Tissues GTeX v8 Prot_Coding" shows the expression distribution of CLDN10 across primary tissues. The user can see tissue types like "salivary_gland", "pancreas" and "kidney" on the top right, which exhibit higher expression levels of Claudin10 on Figure 6-5. Scatter is turned off.
+As a result, a box plot of the expression dataset "Tissues GTeX v8 Prot_Coding" shows the expression distribution of CLDN10 across primary tissues. The user can see tissue types like "salivary_gland", "pancreas" and "kidney" on the right side of the graph, which exhibit higher expression levels of Claudin10 on Figure 6-5. Scatter is turned off.
 
 ![](_static/images/Methylation/fig6-5a.png)
 
-[**Figure 6-5: Expression log2 Scatter plot of CLDN10 in normal tissues dataset "Tissues GTeX v8 Prot_Coding**](_static/images/Methylation/fig6-5a.png)
+[**Figure 6-5: Expression log2 box plot plot of CLDN10 in normal tissues dataset "Tissues GTeX v8 Prot_Coding**](_static/images/Methylation/fig6-5a.png)
 
 
 
