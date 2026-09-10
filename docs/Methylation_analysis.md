@@ -146,7 +146,7 @@ Below the diagram, there are two small green horizontal bars called "CLDN10" lab
 
 Now, if the user is interested in investigating certain probes from the dataset, the next steps could be done additionally. (marked in red in Figure 2-13)
 
-**6-1** Hoovering over one of the probes, a message box shows the information regarding the selected probe. ("ilmnhm450" in Figure 2-13).  Filtering by the information of the message box, three CpGs within the promoter of the gene and isoform of interest are selected ("cg08418978", "cg22122715" at the left purple arrow, "cg25032595" at the blue arrow) by clicking the check-boxes on "Select reporters" table. As shown with marked color-arrows in Figure 2-13, the probes are observed both as a dot and as a block. Click "Next" to proceed.
+**6-1** Hovering over one of the probes, a message box shows the information regarding the selected probe. ("ilmnhm450" in Figure 2-13).  Filtering by the information of the message box, three CpGs within the promoter of the gene and isoform of interest are selected ("cg08418978", "cg22122715" at the left purple arrow, "cg25032595" at the blue arrow) by clicking the check-boxes on "Select reporters" table. As shown with marked color-arrows in Figure 2-13, the probes are observed both as a dot and as a block. Click "Next" to proceed.
 
 **6-2** Figure 2-14 shows the updated Heatmap and R2 Genome Browser after the previous step (Step 6-1). The user could investigate the methylation tendency of the three probes. Back to the example of "kidney" cell type (indicated in green on the X-axis "primary_histology" of Heatmap), the user sees two probes ("cg08418978", "cg22122715"; yellow in Heatmap) are unmethylated but Probe "cg25032595" (blue in Heatmap) is methylated.
 
@@ -301,7 +301,8 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 **7)** On the next webpage, type "CLDN10" in the Field "Gene / Reporter" and click "Select Datasets" button. (in Figure 5-3)
 
-[](_static/images/Methylation/fig5-3.jpg)
+
+![](_static/images/Methylation/fig5-3a.jpg)
 
 [**Figure 5-3:  "MegaSampler" menu**](_static/images/Methylation/fig5-3.jpg)
 
@@ -322,7 +323,7 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 
 
-**10)** Choose one probe ("cg25032595" and "cg16556145" respectively) from the CGI observed in yellow in the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps*. As shown in Figure 5-6, the two probes are found in the "Esteller" heatmap as "cg16275739" is marked in blue and "cg18393747" is marked in red.
+**10)** Choose one probe ("cg25032595" and "cg16556145" respectively) from the CGI (CpG Island) observed in yellow in the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps*. As shown in Figure 5-6, the two probes are found in the "Esteller" heatmap as "cg16275739" is marked in blue and "cg18393747" is marked in red.
 
 ![](_static/images/Methylation/fig5-61.png)
 [**Figure 5-6: Probe location in the "Esteller" Heatmap**](_static/images/Methylation/fig5-61.png)
@@ -373,19 +374,21 @@ The mean methylation difference of the two probes is shown more simply in anothe
 
 ---
 
-## 6 An Expression Box Plot
+## 6 An Expression Box Plot and CLinisnitch. 
 
-A box plot (a.k.a. Open High Low Close graph) of a single expression dataset could be drawn to see the expression level by a cell type and for your gene of interest. The user takes the following steps to create a scatter plot of a single gene within an expression dataset:
+A box plot of a single expression dataset could be drawn to see the expression level by group annotation such as cell type and for your gene of interest. The user takes the following steps to create a YY- plot of a single gene within an expression dataset:
 
-**1)** Repeat the steps from 1) to 3) in *Section 2 Generating Heatmap* of this manual. But instead, choose the expression dataset by typing "Tissues GTeX v8 Prot_Coding" on Column {Tissue/Tumor} as shown in Figure 6-1.
+**1)** Select in the main page in box 1  an expression dataset by typing "Tissues GTeX v8 Prot_Coding" on Column {Tissue/Tumor} as shown in Figure 6-1. Select "view" a gene and provide "CLDN10". 
 
-![](_static/images/Methylation/fig6-1a.png)
+![](_static/images/Methylation/fig6-1b.png)
 
-[**Figure 6-1: Change Dataset menu (after filter)**](_static/images/Methylation/fig6-1a.png)
+[**Figure 6-1: Change Dataset menu (after filter)**](_static/images/Methylation/fig6-1b.png)
 
 
 
 **2)** Click on Link "CLDN10" under Field "CliniSnitch" which is located on the right of the webpage (in Figure 6-2).
+
+*R2 also offers a tool: CliniSnitch. CliniSnitch performs a context-dependent statistical test on each track to identify significant associations with the gene’s expression (i.e. different types of tests based on whether a track is numerical or categorical).*
 
 ![](_static/images/Methylation/fig6-2a.png)
 [**Figure 6-2: "CliniSnitch" link**](_static/images/Methylation/fig6-2a.png)
