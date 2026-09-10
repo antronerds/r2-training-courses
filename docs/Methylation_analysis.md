@@ -422,15 +422,15 @@ As a result, a box plot of the expression dataset "Tissues GTeX v8 Prot_Coding" 
 
 ---
 
-## 7 Comparing Expression Scatter Plots
+## 7 Anylysing plots
 
-Now that we have studied methylation graphs, our scope is extended to the next topic, which is "**expression**" of our gene of interest across tissues/cancer types. Methylation and expression have a reciprocal relationship to each other. From the previous *Section 3 Comparing Methylation Heatmaps*, it was observed that the methylation levels increase for certain genes during carcinogenesis. On the contrary, the expression levels decrease. A comparative expression graph is a good tool to observe the difference in expression from different datasets. Here, datasets with author name "Roth" and "Broad" are used to plot the expression graphs. The platform user takes the following steps to create the expression graph:
+Now that we have studied methylation graphs, our scope is extended to the next topic, which is "**expression**" of our gene of interest across tissues/cancer types.Methylation and expression have a reciprocal relationship. From the previous *Section 3 Comparing Methylation Heatmaps*, it was observed that the methylation levels increase for certain genes during carcinogenesis. In contrast, expression levels are reduced. The across dataset module is a good tool to observe the difference in expression from different datasets. Please note as mentioned before only datasets of the same chiptype (*platform*) and normalization can be analyzed together.  Here, datasets with author name "Roth" and "Broad" are used to plot the expression graphs. The platform user takes the following steps to create the expression graph:
 
-**1)** Repeat the steps from 1) to 5) in *Section 4 Comparing Methylation Scatter Plots* of this manual for two datasets with author names "Roth, n=504" (normal cells, in Figure 7-2) and "Broad" (cancer cells, in Figure 7-3). But skip the change from Step 2) in *Section 4* and leave the table as defaults as shown in Figure 7-1.
+**1)** Repeat the steps from 1) to 5) in *Section 5 Multiple datasets overview..* of this manual for two datasets with author names "Roth, n=504" (normal cells, in Figure 7-2) and "Broad" (cancer cells, in Figure 7-3). Check is u133p2, mas5.0 is selected as indicated in figure 7-1.
 
-![](_static/images/Methylation/fig7-1.jpg)
+![](_static/images/Methylation/fig7-1a.png)
 
-[**Figure 7-1: MegaSampler menu**](_static/images/Methylation/fig7-1.jpg)
+[**Figure 7-1: MegaSampler menu**](_static/images/Methylation/fig7-1a.png)
 
 
 
@@ -440,7 +440,7 @@ Now that we have studied methylation graphs, our scope is extended to the next t
 
 
 
-**2)** On "Adjustable settings" in Figure 6-4, the user could change the dataset order out of two datasets. Change the order of the datasets: "Roth" as "1" and "Broad" as "2". This setting lets "Roth" as the first dataset compared to "Broad" as the second dataset. Click "Submit" button to proceed.
+**2)** On "Adjustable settings" in Figure 7-4, the user could change the dataset order out of two datasets. Change the order of the datasets: "Roth" as "1" and "Broad" as "2". This setting lets "Roth" as the first dataset compared to "Broad" as the second dataset. Click "Submit" button to proceed.
 
 ![Data selection menu with author name Broad](_static/images/Methylation/fig7-3a.jpg)
 
