@@ -455,7 +455,7 @@ Now that we have studied methylation graphs, our scope is extended to the next t
 
 
 
-As a result, two expression graphs from Dataset "Roth" and "Broad" are generated as shown in Figure 7-5. As expected, the expression level of "Roth" for normal tissues (with the average 7-5) is higher than the expression level of "Broad" cancer cell lines (with the average 3-4). This is in line with methylation level from the two datasets, because the cancer cells ("Broad") are highly methylated compared to the normal cells ("Roth").
+As a result, two box plots with "add scatter = tcked)  from Dataset "Roth" and "Broad" are generated as shown in Figure 7-5. As expected, the expression level of "Roth" for normal tissues (with the average 7-5) is higher than the expression level of "Broad" cancer cell lines (with the average 3-4). This is in line with methylation level from the two datasets, because the cancer cells ("Broad") are highly methylated compared to the normal cells ("Roth").
 
 On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-value is significant enough as shown in red (in Figure 7-5).
 
@@ -482,7 +482,7 @@ In the case where R2 hosts multi-omics data of the same samples, the user can al
 
 ![](_static/images/Methylation/fig8-2.png)
 
-[**Figure 8-2: Select data sets to merge menu](_static/images/Methylation/fig8-2.png)
+[**Figure 8-2:** Select data sets to merge menu](_static/images/Methylation/fig8-2.png)
 
 
 
