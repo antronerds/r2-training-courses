@@ -1,8 +1,16 @@
 <a id="Methylation_analysis"> </a>
 
 
-Manual on R2 Platform for Methylation Analysis
+Manual  for Methylation Analysis
 =================================
+
+
+**14th to 18th September 2026.**  
+**Gender-Sensitive Epigenomic Research in Nephrology**  
+*at University Giessen, Germany, Institute f. Genetics*  
+
+
+
 
 *An Introduction on R2 Genomics Analysis and Visualization Platform Usage*
 
@@ -651,7 +659,7 @@ As Hypermethylation is an indicator of tumor development, hypermethylated region
 
 [**Figure 11-3: Main menu**](_static/images/Methylation/fig11-3.png)
 
-**3)** On "Select a test" menu, select "type_upd (3) cat in Field "Group by" . normal (5) and "tumor (5). 2 outliers ("skip (2)") were ommitted so we will proceed with a total of 10 samples instead of 12. Click the submit button  to proceed.
+**3)** On "Select a test" menu, select "type_upd (3) cat in Field "Group by" at the bottom of tyhe pulldown menu click next. At select group 1 and 2,select normal (5) and "tumor (5). 2 outliers ("skip (2)") were ommitted so we will proceed with a total of 10 samples instead of 12. Click the submit button  to proceed.
 
 ![](_static/images/Methylation/fig11-4a.png)
 
@@ -662,13 +670,11 @@ As Hypermethylation is an indicator of tumor development, hypermethylated region
 
 
 
-
-
 ![](_static/images/Methylation/fig11-6.jpg)
 
 [**Figure 11-5: "Heatmap(zscore)" Button on the right menu**](_static/images/Methylation/fig11-6.jpg)
 
-**5)** At the right menu click "Heatmap(zscore)" to proceed. (In Figure 11-5)
+**5)** At the right menu click "Heatmap(zscore)" to proceed, in Figure 11-5)
 
 
 
