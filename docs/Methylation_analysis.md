@@ -6,7 +6,9 @@ Manual  for Methylation Analysis
 
 
 **14th to 18th September 2026.**  
-**Gender-Sensitive Epigenomic Research in Nephrology**  
+
+**Gender-Sensitive Epigenomic Research in Nephrology** 
+
 *at University Giessen, Germany, Institute f. Genetics*  
 
 
@@ -15,11 +17,16 @@ Manual  for Methylation Analysis
 *An Introduction on R2 Genomics Analysis and Visualization Platform Usage*
 
 
-By Ji Sun (Klara) Kwon, Richard Volckmann, Lieke Hoyn  
+By Ji Sun (Klara) Kwon, Richard Volckmann, Lieke Hoyng.  
+
 Supervision: Dr. Antje Richter.  
-Justus-Liebig University Giessen (JLU)  .
-Institute for Genetics and Institute for Bioinformatics  .
-Heinrich-Buff Ring 58, 35392 Giessen, Germany.
+
+Justus-Liebig University Giessen (JLU).  
+
+Institute for Genetics and Institute for Bioinformatics.  
+
+Heinrich-Buff Ring 58, 35392 Giessen, Germany.  
+
 
 
 
@@ -45,7 +52,7 @@ With the above dataset information, the platform user takes the following steps 
 
 ![](_static/images/Methylation/fig2-1a.png)
 
-[**Figure 2-1: Click in box 2 to change the dataset**](_static/images/Methylation/fig1-1.jpg)
+[**Figure 2-1: Click in box 2 to change the dataset**](_static/images/Methylation/fig2-1a.png)
 
 
 
@@ -78,7 +85,7 @@ With the above dataset information, the platform user takes the following steps 
 
 In case that a gene name of interest is uncertain, one can find the exact gene name of interest by a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
 
-A YY-graph is generated with the samples (cell lines) on the X-axis ordered by β-value from low to high, and the CLDN10 methylation β-value on the Y-axis (Figure 2-6). The probe with the highest mean is selected by default.
+A YY-plot is generated with the samples (cell lines) on the X-axis ordered by β-value from low to high, and the CLDN10 methylation β-value on the Y-axis (Figure 2-6). The probe with the highest mean is selected by default.
 
 ![](_static/images/Methylation/fig2-6.jpg)
 
@@ -89,7 +96,7 @@ A YY-graph is generated with the samples (cell lines) on the X-axis ordered by �
 The vast majority of the 1028 cancer cell lines thus have a CLDN10 beta value close to 1, meaning the CLDN10 gene is heavily methylated in most of these cell lines (which typically correlates with gene silencing).
 --> 
 
-Two additional features on this webpage come in handy: By clicking on the exclamation mark right in the graph title (indicated with the red arrow Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link depicted below the YY-plot and read the definition of the terminologies on the National Library of Medicine (NIM) website. (in Figure 2-8)
+Two additional features on this webpage come in handy: By clicking on the exclamation mark right in the graph title (indicated with the red arrow Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link depicted below the YY-plot and read the definition of the terminologies on the National Library of Medicine (NLM) website. (in Figure 2-8)
 
 ![](_static/images/Methylation/fig2-7.jpg)
 
@@ -106,7 +113,7 @@ If the user is interested in looking into a table of each sample and their methy
 
 [**Figure 2-9: The table of sample methylation values**](_static/images/Methylation/fig2-12a.png)
 
-**4)** As a next step, click on "View additional details" small triagle on the same page below the previous YY-plot (in Figure 2-10). Then by clicking the "view all" link as shown in Figure 2-11, the embedded Heatmap and R2 Genome Browser of the chosen dataset will open in a new screen.
+**4)** As a next step, click on "View additional details" small triangle on the same page below the previous YY-plot (in Figure 2-10). Then by clicking the "view all" link as shown in Figure 2-11, the embedded Heatmap and R2 Genome Browser of the chosen dataset will open in a new screen.
 
 ![](_static/images/Methylation/fig2-9a.png)
 
@@ -141,7 +148,7 @@ If the user is interested in looking into a table of each sample and gene name o
 
 **6)** Below the heatmap, the average ratio for each probe is depicted against their position on the chromosome. Clicking on the blue "View chr[...] Genomebrowser" link will open an interactive view of the same location on the genome, as shown in Figure 2-13. The R2 Genome Browser relates the probes on the Y-axis of the Heatmap showing as two isoforms. The RefSeq track shows CLDN10 annotated as two separate isoforms, green colored: one spanning almost the entire locus from the left, and a second, shorter one positioned toward the right side. The CLDN10-AS1 antisense transcript and the neighboring DZIP1 gene on the right are shown in red, indicating that both are encoded in the reverse direction. The name of a certain probe and further details could be seen by placing a cursor on that probe. The probes between the Heatmap and R2 Genome Browser can be matched. Depending on the array platform, not every isoform of a gene is necessarily covered by probes.
 
-The colored horizontal "Transcript view"  just below the Genome Browser title shows the full chromosome (chr13), with a small vertical line (marked with the red circleFigure 2-13) indicating where the current zoomed-in region falls within.
+The colored horizontal "Transcript view"  just below the Genome Browser title shows the full chromosome (chr13), with a small vertical line (marked with the red circle Figure 2-13) indicating where the current zoomed-in region falls within.
 
 In the scatter plot underneath the ideogram, the Y-axis shows the average methylation β-value per probe (averaged across all samples in the dataset), and the X-axis shows the genomic position in base pairs. Each dot represents one CpG probe. The range of the minimal and maximum of methylation β-value per probe is shown with the vertical gray line in the diagram.  
 
@@ -175,9 +182,9 @@ To gain a clearer understanding of how to interpret this Heatmap, two further me
 
 The second dataset is based on primary tumors ("tumor" type by the author name "Heyn" on the R2 Platform). The third dataset is based on normal control tissue samples ("normal" type by the author name "Lokk" on R2 Platform). In this section, three Heatmaps generated from these three datasets are to be compared to show the difference in methylation tendency for a chosen gene of interest. These comparative methylome heatmaps were used to study another tumor suppressor ZAR1. [5]
 
-To create the second ("Heyn") and the third ("Lokk") heatmaps, repeat the steps from 1) to 5) in *Section 2 Generating Heatmap* of this manual. The following Figure 3-1 is a collection generated heatmaps of the three datasets ("Esteller" on the bottom, "Heyn" in the middle, "Lokk" on the top). As shown with colors in Figure 3-1, the "Lokk" Heatmap of CLDN10 is rather uniform with an CLDN10 CGI (or CpG-Island) that is unmethylated, whereas the CGI surrounding regions are methylated (for all samples).
+To create the second ("Heyn") and the third ("Lokk") heatmaps, repeat the steps from 1) to 5) in *Section 2 Generating Heatmap* of this manual. The following Figure 3-1 is a collection of generated heatmaps of the three datasets ("Esteller" on the bottom, "Heyn" in the middle, "Lokk" on the top). As shown with colors in Figure 3-1, the "Lokk" Heatmap of CLDN10 is rather uniform with a CLDN10 CGI (or CpG-Island) that is unmethylated, whereas the CGI surrounding regions are methylated (for all samples).
 
-When looking at the Heatmap from primary tumors "Heyn", some degree of methylation appears across the CLDN10 CGI, the black colored row in the heatmap. This methylation shows/implies that the tumor samples started to inactivate the tumor suppressor.
+When looking at the Heatmap from primary tumors "Heyn", some degree of methylation appears across the CLDN10 CGI, the black colored row in the heatmap. This methylation suggests that the tumor samples started to inactivate the tumor suppressor.
 
 Next, the "Esteller" Heatmap includes even more methylation for the CLDN10 CGI than the "Heyn" Heatmap. Much more blue colors are observed throughout the heatmap rows, which makes sense that highly proliferative cancer cells have more CLDN10 inactivated than the less proliferative tumor cells. By comparing the later "Esteller" Heatmap with "Lokk" and "Heyn" Heatmaps, one could see the gradual changes in the methylation tendency for the gene of interest during carcinogenesis.
 
@@ -188,14 +195,14 @@ Next, the "Esteller" Heatmap includes even more methylation for the CLDN10 CGI t
 
 A single Heatmap can be further categorized and compared by each cell type (by different tissues). With the example of "Lokk" Heatmap (normal cell), the following additional steps could be done after Step 5) to categorize per cell type:
 
-Scroll down to the "Gene" menu on the bottom of the Heatmap webpage. Select "a track" in Field "Order samples by" and "tissue (17 cat)" in Field "Ordering track" (in Figure 3-3a1). This allows the Heatmap to be organized by cell type.
+Scroll down to the "Gene" menu on the bottom of the Heatmap webpage. Select "a track" in Field "Order samples by" and "tissue (17 cat)" in Field "Ordering track" (in Figure 3-2). This allows the Heatmap to be organized by cell type.
 
 ![](_static/images/Methylation/fig3-2a.png)
 
 [**Figure 3-2: The table option on the Heatmap webpage**](_static/images/Methylation/fig3-2a.png)
 
 
-Figure 3-3a1 is a categorized Heatmap by cell type. If you hoover over the small annotation boxes on the tissue annotation track the information box shows the specifications regarding the annotations/tracks such as tissue type and gender of each sample. For example, Sample "gsm1215434" came from bladder tissue of a male as shown in Figure 3-3a1.
+Figure 3-3a1 is a categorized Heatmap by cell type. If you hover over the small annotation boxes on the tissue annotation track the information box shows the specifications regarding the annotations/tracks such as tissue type and gender of each sample. For example, Sample "gsm1215434" came from bladder tissue of a male as shown in Figure 3-3a1.
 
 ![](_static/images/Methylation/fig3-3a1.png)
 
@@ -207,7 +214,8 @@ Figure 3-3a1 is a categorized Heatmap by cell type. If you hoover over the small
 [**Figure 3-3a2: Categorized heatmap - Heyn Tumor types**](_static/images/Methylation/fig3-3b1.png)
 
 ![](_static/images/Methylation/fig3-3c1.png)
-[**Figure 3-3: Esteller cell line cancer**](_static/images/Methylation/fig3-3c1.png)
+
+[**Figure 3-3c: Esteller cell line cancer**](_static/images/Methylation/fig3-3c1.png)
 
 
 ---
@@ -237,7 +245,7 @@ The user could take the following steps as a shortcut to generate a heatmap:
 [**Figure 4-3: The Heatmap of the chosen dataset**](_static/images/Methylation/fig4-3.jpg)
 
 
--The user could also generate a Heatmap by cell type from dataset "Esteller" like the Heatmap in *Section 3 Comparing Methylation Heatmaps*, with the following steps:
+The user could also generate a Heatmap by cell type from dataset "Esteller" like the Heatmap in *Section 3 Comparing Methylation Heatmaps*, with the following steps:
 
 **4)** Repeat Step 1) as in Figure 4-1. On the website "View all reporters for a gene", type "CLDN10" (Claudin 10) in Field {Gene}. To create a Heatmap by cell type, select "a track" in the Field {Order samples by} and "primary_site (14 cat)" in the Field {Ordering track}. Click "Next" to execute a Heatmap by cell type (in Figure 4-4).
 
@@ -258,7 +266,7 @@ Figure 4-5 is a categorized Heatmap by cell type. This Figure is the same as the
 
 ## Multiple datasets overview with methylation data: 
 
-With the megasampler module you can investigate the expression levels of a gene in the large collection of datasets R2 is hosting. For this course we will of course we look at the β-value (ratios) of the methylation sets R2 is hosting. One restriction should be noticed, only dataset with the same platform can be inspected together. In case you select the 450k type (Illumina) platform you can only select dataset of the same platform. 
+With the megasampler module you can investigate the expression levels of a gene in the large collection of datasets R2 is hosting. For this course  we look at the β-value (ratios) of the methylation sets R2 is hosting. One restriction should be noticed, only dataset with the same platform can be inspected together. In case you select the 450k type (Illumina) platform you can only select dataset of the same platform. 
 
 The user could also compare the methylation level of the same reporter (probe) from multiple datasets. In this section, the same three datasets as *Section 3 Comparing Methylation Heatmaps* are used ("Lokk": normal cells, "Heyn": tumor cells, "Esteller": cancer cells). The user takes the following steps to create the scatter plots of the same probe methylation dataset:
 
@@ -302,7 +310,7 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 
 
-**10)** Choose one probe ("cg25032595" and "cg16556145" respectively) from the CGI (CpG Island) observed in yellow in the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps*. As shown in Figure 5-6, the two probes are found in the "Esteller" heatmap as "cg16275739" is marked in blue and "cg18393747" is marked in red.
+**10)** Choose one probe ("cg25032595" and "cg16556145" respectively) from the CGI (CpG Island) observed in yellow in the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps*. As shown in Figure 5-6, the two probes are found in the "Esteller" heatmap as "cg25032595" is marked in blue and ""cg16556145" is marked in red.
 
 ![](_static/images/Methylation/fig5-61.png)
 [**Figure 5-6: Probe location in the "Esteller" Heatmap**](_static/images/Methylation/fig5-61.png)
@@ -310,11 +318,12 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 
 
-Select the first probe "cg25032595" as shown on the right in Figure 5-6. On "Adjustable settings" in Figure 5-8, the user could change the dataset order out of all selected datasets. Change the order the datasets: "Lokk" as "1", "Heyn" as "2" and "Esteller" as "3" (in Figure 5-8). This setting lets datasets be compared: "Lokk" as the first dataset, "Heyn" as the second dataset and "Esteller" as the third order. Click "Submit" button to proceed. Repeat the same process for the second probe "cg16556145" as shown on the right in Table 5-7.
+Select the first probe "cg25032595" as shown on the right in Figure 5-7. On "Adjustable settings" in Figure 5-8, the user could change the dataset order out of all selected datasets. Change the order the datasets: "Lokk" as "1", "Heyn" as "2" and "Esteller" as "3" (in Figure 5-8). This setting lets datasets be compared: "Lokk" as the first dataset, "Heyn" as the second dataset and "Esteller" as the third order. Click "Submit" button to proceed. Repeat the same process for the second probe "cg16556145" as shown on the right in Table 5-7.
 
 
 ![](_static/images/Methylation/fig5-7c.png)
-[**Figure 5-7: Selected probe (”cg25032595” on the left, “cg16556145” on the right)**](_static/images/Methylation/fig5-61.png)
+
+[**Figure 5-7: Selected probe (”cg25032595” on the left, “cg16556145” on the right)**](_static/images/Methylation/fig5-7c.png)
 
 
 
@@ -348,14 +357,40 @@ On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-
 The mean methylation difference of the two probes is shown more simply in another online methylation analysis tool named "Wanderer". [6] There is a methylation difference to be seen between normal and tumor cells from Probe "cg25032595" (marked in blue in Figure 5-11) than the gap from Probe "cg16556145" (marked in red in Figure 5-11).
 
 ![](_static/images/Methylation/fig5-11.jpg)
+
 [**Figure 5-11: Wanderer mean methylation graph**](_static/images/Methylation/fig5-11.jpg)
+
+
+More or less the same visualisation plot can also be generated in R2 with a little tweaking and playing using  the numerous settings of the gear box for the graphical settings. Let's start with generating a heatmap for our gene as show here in fig 5-12 below and click somewhere below the button the button "plot as view multiple reporter". A box plot will be generated like the  graphg in 5-12.
+
+
+![](_static/images/Methylation/fig5-12a.png)
+
+[**Figure 5-12: R2-"wanderer" for the individual reporters I**](_static/images/Methylation/fig5-12a.png).
+
+In the General tab of the settings menu, find the tissue type in the "Separation track" dropdown and try to generate a plot similar to the one shown in the animated GIF below. This type of visualization can be generated for many datasets, allowing you to explore individual reporters for a given gene across grouped parameters.
+
+
+![](_static/images/Methylation/wanderer.gif)
+
+[**Figure 5-12: R2-"wanderer" for the individual reporters II**](_static/images/Methylation/wanderer.gif).
+
+
+![](_static/images/Methylation/fig5-12b.png)
+
+
+[**Figure 5-12: R2-"wanderer" result**](_static/images/Methylation/fig5-12b.png).
+
+
+
+
 
 
 ---
 
 ## An Expression Box Plot
 
-A box plot (a.k.a. Open High Low Close graph) of a single expression dataset could be drawn to see the expression level by a cell type and for your gene of interest. The user takes the following steps to create a scatter plot of a single gene within an expression dataset:
+A box plot of a single expression dataset could be drawn to see the expression level by a cell type and for your gene of interest. The user takes the following steps to create a scatter plot of a single gene within an expression dataset:
 
 **1)** Repeat the steps from 1) to 3) in *Section 2 Generating Heatmap* of this manual. But instead, choose the expression dataset by typing "Tissues GTeX v8 Prot_Coding" on Column {Tissue/Tumor} as shown in Figure 6-1.
 
@@ -383,9 +418,9 @@ A box plot (a.k.a. Open High Low Close graph) of a single expression dataset cou
 
 
 
-**4)** A next webpage will be opened on a new internet tab. To visualize and sort better. CLick on the gear icon on the left side of the plot. Select "Box plot" on Field "Graph type" in case it not selected by default, "median (numeric Y)" on Field "Order Groups By" and "Color by Track" on Field "Color mode" and untick the checkbox at "add scatter" Click the "redraw" Button to update the box plot of a single expression data by a tissue type (in Figure 6-4).
+**4)** A next webpage will be opened on a new internet tab. To visualize and sort better,  click on the gear icon on the left side of the plot. Select "Box plot" on Field "Graph type" in case it not selected by default, "median (numeric Y)" on Field "Order Groups By" and "Color by Track" on Field "Color mode" and untick the checkbox at "add scatter" Click the "redraw" Button to update the box plot of a single expression data by a tissue type (in Figure 6-4).
 
-![](_static/images/Methylation/fig6-4a.png)
+![](_static/images/Methylation/fig6-4b.png)
 
 [**Figure 6-4: Table "Adjustable settings"**](_static/images/Methylation/fig6-4b.png)
 
@@ -401,7 +436,7 @@ As a result, a box plot of the expression dataset "Tissues GTeX v8 Prot_Coding" 
 
 ---
 
-## Anylysing plots
+## Analysing plots
 
 Now that we have studied methylation graphs, our scope is extended to the next topic, which is "**expression**" of our gene of interest across tissues/cancer types.Methylation and expression have a reciprocal relationship. From the previous *Section 3 Comparing Methylation Heatmaps*, it was observed that the methylation levels increase for certain genes during carcinogenesis. In contrast, expression levels are reduced. The across dataset module is a good tool to observe the difference in expression from different datasets. Please note as mentioned before only datasets of the same chiptype (*platform*) and normalization can be analyzed together.  Here, datasets with author name "Roth" and "Broad" are used to plot the expression graphs. The platform user takes the following steps to create the expression graph:
 
@@ -434,7 +469,7 @@ Now that we have studied methylation graphs, our scope is extended to the next t
 
 
 
-As a result, two box plots with "add scatter = tcked)  from Dataset "Roth" and "Broad" are generated as shown in Figure 7-5. As expected, the expression level of "Roth" for normal tissues (with the average 7-5) is higher than the expression level of "Broad" cancer cell lines (with the average 3-4). This is in line with methylation level from the two datasets, because the cancer cells ("Broad") are highly methylated compared to the normal cells ("Roth").
+As a result, two box plots with "add scatter = ticked)  from Dataset "Roth" and "Broad" are generated as shown in Figure 7-5. As expected, the expression level of "Roth" for normal tissues (with the average ~7.5) is higher than the expression level of "Broad" cancer cell lines (with the average ~3.4). This is in line with methylation level from the two datasets, because the cancer cells ("Broad") are highly methylated compared to the normal cells ("Roth").
 
 On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-value is significant enough as shown in red (in Figure 7-5).
 
@@ -465,12 +500,11 @@ In the case where R2 hosts multi-omics data of the same samples, the user can al
 
 
 
-**3)** On Table "Adjustable settings" of the next webpage, type "CLDN10" in the left box of Field "Gene / Met_id" and "Gene / Reporter". The two probes from Step 6) on *Section 4 Comparing Methylation Scatter Plots* ("cg25032595", "cg16556145") are to be observed. To look at the dot plot of the first probe, type "cg25032595" in the right box of Field "Gene / Met_id" (in Figure 8-3).
+**3)** On Table "Adjustable settings" of the next webpage, type "CLDN10" in the left box of Field "Gene / Met_id" and "Gene / Reporter". The two probes from Step 6) on *Section 4 Multiple datasets overview with methylation data* ("cg25032595", "cg16556145") are to be observed. To look at the dot plot of the first probe, type "cg25032595" in the right box of Field "Gene / Met_id" (in Figure 8-3).
 
 ![](_static/images/Methylation/fig8-3.jpg)
 
-[**Figure 8-3: Adjustable settings" menu (for Probe "cg25032595)**](_static/images/Methylation/fig8-3.jpg)
-
+[**Figure 8-3: Adjustable settings menu (for Probe "cg25032595)**](_static/images/Methylation/fig8-3.jpg)
 
 
 
@@ -503,7 +537,7 @@ As shown in Figure 8-6, the dot plot for the Probe "cg16556145" is generated. Wi
 
 ## In-Depth Study on Expression Dataset
 
-Let's go back to Normal Tissues GTeX v8 Prot_Coding - GTeX - 17382 - tpm - gencode26 datasety. One could also take a closer look at expression of your gene of interest in certain tissues of the expression dataset on R2 Platform. From an expression box plot, a certain or several tissue types could be selected. In this section, the tissue type "skin" is further investigated with the following steps after the steps in *Section 6 An Expression Box Plot* [8].
+Let's go back to Normal Tissues GTeX v8 Prot_Coding - GTeX - 17382 - tpm - gencode26 dataset. One could also take a closer look at expression of your gene of interest in certain tissues of the expression dataset on R2 Platform. From an expression box plot, a certain or several tissue types could be selected. In this section, the tissue type "skin" is further investigated with the following steps after the steps in *Section 6 An Expression Box Plot* [8].
 
 **1)** Scroll down to "Adjustable settings" after the expression box plot is executed. Select "tissue (30 cat)" on Field "Subset track". On the pop-up window, click the tissue type "skin (1809)" checkbox and "OK". Click "Submit" to proceed. (In Figure 9-1)
 
@@ -606,7 +640,7 @@ Figure 10-7 shows the redrawn "Overall survival probability graph" and the range
 
 ![](_static/images/Methylation/fig10-7.jpg)
 
-[**Figure 10-7:** "Overall survival probability graph" (after adjustment)**](_static/images/Methylation/fig10-6a.png)
+[**Figure 10-7:** "Overall survival probability graph" (after adjustment)**](_static/images/Methylation/fig10-7.jpg)
 
 
 
@@ -638,7 +672,7 @@ The result of Step 5 is described in Figure 10-9. The overall survival probabili
 
 As Hypermethylation is an indicator of tumor development, hypermethylated regions on Heatmaps could be compared between two datasets of normal and tumor patients. The dataset with the tumor type "renal cell carcinoma (PTM)" and the author name "Richter" is used for this analysis.
 
-**1)** Click "Main" on the left menu of the main page. Click in a dataset name in box 2. (In Figure 11-1).Select "Differential expression between two groups" in Field 3.
+**1)** Click "Main" on the left menu of the main page. Click in a dataset name in box 2. (In Figure 11-1). Select "Differential expression between two groups" in Field 3.
 
 ![](_static/images/Methylation/fig11-1.png)
 
@@ -659,7 +693,7 @@ As Hypermethylation is an indicator of tumor development, hypermethylated region
 
 [**Figure 11-3: Main menu**](_static/images/Methylation/fig11-3.png)
 
-**3)** On "Select a test" menu, select "type_upd (3) cat in Field "Group by" at the bottom of tyhe pulldown menu click next. At select group 1 and 2,select normal (5) and "tumor (5). 2 outliers ("skip (2)") were ommitted so we will proceed with a total of 10 samples instead of 12. Click the submit button  to proceed.
+**3)** On "Select a test" menu, select "type_upd (3) cat in Field "Group by" at the bottom of the pulldown menu, click next. At select group 1 and 2,select normal (5) and "tumor (5). 2 outliers ("skip (2)") were omitted so we will proceed with a total of 10 samples instead of 12. Click the submit button  to proceed.
 
 ![](_static/images/Methylation/fig11-4a.png)
 
@@ -674,7 +708,7 @@ As Hypermethylation is an indicator of tumor development, hypermethylated region
 
 [**Figure 11-5: "Heatmap(zscore)" Button on the right menu**](_static/images/Methylation/fig11-6.jpg)
 
-**5)** At the right menu click "Heatmap(zscore)" to proceed, in Figure 11-5)
+**4)** At the right menu click "Heatmap(zscore)" to proceed, in Figure 11-5)
 
 
 
@@ -833,7 +867,7 @@ If one wishes to double-check its choice by looking at the DNA sequence for this
 
 ![](_static/images/Methylation/fig12.1-13.png)
 
-![**Figure 12.1-13: Information page on the methylation IDe**](_static/images/Methylation/fig12.1-13.png)
+![**Figure 12.1-13: Information page on the methylation ID**](_static/images/Methylation/fig12.1-13.png)
 
 
 
@@ -855,7 +889,7 @@ If one wishes to double-check its choice by looking at the DNA sequence for this
 
 ---
 
-## 13 References
+## References
 
 [1] J. Koster, Amsterdam University Medical Centers (AUMC), Center for Experimental and Molecular Medicine (CEMM) - R2 Genomics Analysis and Visualization Platform, https://r2.amc.nl. retrieved on 24.04.2023
 
