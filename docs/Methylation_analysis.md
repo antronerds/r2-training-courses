@@ -146,14 +146,19 @@ If the user is interested in looking into a table of each sample and gene name o
 
 
 
-**6)** Below the heatmap, the average ratio for each probe is depicted against their position on the chromosome. Clicking on the blue "View chr[...] Genomebrowser" link will open an interactive view of the same location on the genome, as shown in Figure 2-13. The R2 Genome Browser relates the probes on the Y-axis of the Heatmap showing as two isoforms. The RefSeq track shows CLDN10 annotated as two separate isoforms, green colored: one spanning almost the entire locus from the left, and a second, shorter one positioned toward the right side. The CLDN10-AS1 antisense transcript and the neighboring DZIP1 gene on the right are shown in red, indicating that both are encoded in the reverse direction. The name of a certain probe and further details could be seen by placing a cursor on that probe. The probes between the Heatmap and R2 Genome Browser can be matched. Depending on the array platform, not every isoform of a gene is necessarily covered by probes.
+**6)** Below the heatmap, the average β-value (Y-axis) for each probe (the dots) is depicted against their position on the chromosome (X-axis). Clicking on the blue "View chr[...] Genomebrowser" link will open an interactive view of the same location on the genome, as shown in Figure 2-13.
 
-The colored horizontal "Transcript view"  just below the Genome Browser title shows the full chromosome (chr13), with a small vertical line (marked with the red circle Figure 2-13) indicating where the current zoomed-in region falls within.
+The colored horizontal ideogram just below the Genome Browser title shows the full chromosome (chr13), with a small vertical line (marked with the red circle in Figure 2-13) indicating where the current zoomed-in region falls within.
 
-In the scatter plot underneath the ideogram, the Y-axis shows the average methylation β-value per probe (averaged across all samples in the dataset), and the X-axis shows the genomic position in base pairs. Each dot represents one CpG probe. The range of the minimal and maximum of methylation β-value per probe is shown with the vertical gray line in the diagram.  
+In the scatter plot underneath the ideogram, the Y-axis shows that same scatterplot with averaged methylation β-value per CpG probe (averaged across all samples in the dataset), and the X-axis shows the genomic position in base pairs. Hovering over the dots displays detailed information, such as the probe name. These probes are the same probes as where visible on the Y-axis of the Heatmap in teh previous tab. The range of the minimum and maximum methylation β-values per probe is shown with the vertical gray lines in the diagram.
 
-Underneath, the letter "q" in the Cytoband label "q32.1" reveals that the gene is located on the chromosome's long arm. If it is located on the small arm of the chromosome it is labeled with "p" (petit).
+Underneath the averaged β-value scatterplot of the Esteller dataset, the Cytoband annotation shows the location on the chromosome. The letter "q" in the Cytoband label "q32.1" reveals that the gene is located on the chromosome's long arm. If it is located on the small arm of the chromosome it is labeled with "p" (petit).
 
+The RefSeq track shows CLDN10 annotated as three separate isoforms, green colored: two almost identical isoforms spanning nearly the entire locus from the left and a second, and a shorter one positioned toward the right side. With this genomic context, we clearly see that the probes of the dataset are mainly clustered in two locations: one around the promotor area of the first two, long spanning isoforms, and one around the third, smaller isoform on the right.
+The CLDN10-AS1 antisense transcript and the neighboring DZIP1 gene on the right are shown in red, indicating that both are encoded in the reverse direction. Depending on the array platform, not every isoform of a gene is necessarily covered by probes.
+
+In the current dataset name, *Cell line Cancer Pharmacogenomic - Esteller - 1028 - custom - ilmnhm450*, the final segment, *ilmnhm450*, identifies it as generated on the Illumina HumanMethylation450 (450k) BeadChip microarray. The ilmnhm450 track beneath the RefSeq track maps this platform's CpG probe positions onto the reference genome.   
+  
 More details regarding R2 Genome Browser could be found on R2 Platform online tutorial under Section 17: Using the R2-Genome browser. [2]
 
 ![](_static/images/Methylation/fig2-13b.png "Figure 2-13")
@@ -162,9 +167,11 @@ More details regarding R2 Genome Browser could be found on R2 Platform online tu
 
 Now, if the user is interested in investigating certain probes from the dataset, the next steps could be done additionally (marked in red in Figure 2-13).
 
-**6-1** Hovering over one of the probes, a message box shows the information regarding the selected probe. ("ilmnhm450" in Figure 2-13).  Filtering by the information of the message box, three CpGs within the promoter of the gene and isoform of interest are selected ("cg08418978", "cg22122715" at the left purple arrow, "cg25032595" at the blue arrow) by clicking the check-boxes on "Select reporters" table. As shown with marked color-arrows in Figure 2-13, the probes are observed both as a dot and as a block. Click "Next" to proceed.
+**6-1** Hovering over a probe in the ilmnhm450 track opens a message box with details about that probe, including its genomic position, strand, and a gene-region annotation — for example, "1stExon;5UTR" for cg08418978. The latter annotation indicates that the probe lies just downstream of the transcription start site, and is associated with transcriptional regulation (as are other promoter-associated CpG gene-region annotations, such as TSS1500, TSS200).
 
-**6-2** Figure 2-14 shows the updated Heatmap and R2 Genome Browser after the previous step (Step 6-1). The user could investigate the methylation profile of the three probes. Back to the example of "kidney" cell type (indicated in green on the X-axis "primary_histology" of Heatmap), the user sees two probes ("cg08418978", "cg22122715"; yellow in Heatmap) are unmethylated but Probe "cg25032595" (blue in Heatmap) is methylated.
+Using this message box annotation, three promoter-associated CpGs of the different isoforms are selected as interesting: cg08418978 and cg22122715 (left, purple arrow) and cg25032595 (blue arrow). In the previous tab with the Heatmap, you can focus on them only by checking their boxes in the "Select reporters" table and then hitting the Next button.
+
+**6-2** Figure 2-14 shows the updated Heatmap and R2 Genome Browser after the previous step (Step 6-1). The user could investigate the methylation profile of the three probes. Back to the example of "kidney" cell type (indicated in green by the "primary_histology" annotation above the Heatmap), the user sees two probes ("cg08418978", "cg22122715"; yellow in Heatmap) are unmethylated but Probe "cg25032595" (blue in Heatmap) is methylated.
 
 ![](_static/images/Methylation/fig2-14a.png)
 
