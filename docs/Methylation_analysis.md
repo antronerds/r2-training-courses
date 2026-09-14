@@ -15,7 +15,7 @@ Manual  for Methylation Analysis
 *An Introduction on R2 Genomics Analysis and Visualization Platform Usage*
 
 
-By Ji Sun (Klara) Kwon, Richard Volckmann, Lieke Hoyng  
+By Ji Sun (Klara) Kwon, Richard Volckmann, Lieke Hoyng.  
 Supervision: Dr. Antje Richter.  
 Justus-Liebig University Giessen (JLU).  
 Institute for Genetics and Institute for Bioinformatics.  
@@ -350,7 +350,28 @@ On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-
 The mean methylation difference of the two probes is shown more simply in another online methylation analysis tool named "Wanderer". [6] There is a methylation difference to be seen between normal and tumor cells from Probe "cg25032595" (marked in blue in Figure 5-11) than the gap from Probe "cg16556145" (marked in red in Figure 5-11).
 
 ![](_static/images/Methylation/fig5-11.jpg)
+
 [**Figure 5-11: Wanderer mean methylation graph**](_static/images/Methylation/fig5-11.jpg)
+
+
+More or less the same visualisation plot can also be generated in R2 with a little tweaking and playing using  the numerous settings of the gear box for the graphical settings. Let's start with generating a heatmap for our gene as show here in fig 5-12 below and click somewhere below the button the button "plot as view multiple reporter". A box plot will be generated like the  graphg in 5-12.
+
+
+![](_static/images/Methylation/fig5-12a.png)
+
+[**Figure 5-12: R2-"wanderer" for the individual reporters I**](_static/images/Methylation/fig5-12a.png).
+
+In the General tab of the settings menu, find the tissue type in the "Separation track" dropdown and try to generate a plot similar to the one shown in the animated GIF below. This type of visualization can be generated for many datasets, allowing you to explore individual reporters for a given gene across grouped parameters.
+
+
+![](_static/images/Methylation/wanderer.gif)
+
+[**Figure 5-12: R2-"wanderer" for the individual reporters II**](_static/images/Methylation/wanderer.gif).
+
+
+
+
+
 
 
 ---
