@@ -24,7 +24,7 @@ This manual is intended for scientists and students who wish to study DNA methyl
 
 [**Figure 1-1: Structure of the R2 Platform manual and the relationships between its section**](_static/images/Methylation/fig1-1.png)
 
-## 2 Generating a Heatmap
+## Generating a Heatmap
 
 For analysis of the human methylome in order to study the potential tumor suppressors, we are using the R2 platform and the methylation datasets available in R2. R2 hosts many methylome datasets generated on Illumina platforms, including the 450K, EPIC, and EPIC v2 arrays, which are bisulfite treatment based. It determines methylated versus unmethylated DNA target regions using probes (oligonucleotides). For each region, a Heatmap is a useful tool for observing the methylation status of individual probes and how isoforms cluster according to their degree of methylation.
 
@@ -156,44 +156,12 @@ Now, if the user is interested in investigating certain probes from the dataset,
 [**Figure 2-14: The updated Heatmap and R2 Genome Browser of the chosen dataset for a subset of CpG probes chosen**](_static/images/Methylation/fig2-14a.png)
 
 
-<!-- This text is commented out and won't be visible
-
-### Update: quick access to methylation heatmaps in R2
-
-- click view a gene
-- click view all Met_ids
-- click next
-
-![](_static/images/Methylation/fig-quickaccess-1.jpg)
-
-[**Figure 2-15: Quick access step 1**](_static/images/Methylation/fig-quickaccess-1.jpg)
-
-
-
-- chose your gene of interest in 'Gene' and click next
-
-![](_static/images/Methylation/fig-quickaccess-2.jpg)
-
-[**Figure 2-16: Quick access step 2**](_static/images/Methylation/fig-quickaccess-2.jpg)
-
-
-
-- chose your gene of interest in 'Gene' and click next
-
-
-- wait and heatmap is produced from all CpGs assigned to your Gene of interest
-
-![](_static/images/Methylation/fig2-17.png)
-
-[**Figure 2-17: Quick access step 3 - resulting heatmap**](_static/images/Methylation/fig2-17.png)
-
--->
 
 
 
 ---
 
-## 3 Comparing Methylation Heatmaps
+## Comparing Methylation Heatmaps
 
 To gain a clearer understanding of how to interpret this Heatmap, two further methylation datasets will be compared with the "Esteller" dataset. As mentioned earlier in *Section 2 Generating Heatmap* of this manual, this "Esteller" dataset is based on highly proliferating cancer cell lines. 
 
@@ -236,7 +204,7 @@ Figure 3-3a1 is a categorized Heatmap by cell type. If you hoover over the small
 
 ---
 
-## 4 Shortcut of Generating a Heatmap
+## Shortcut of Generating a Heatmap
 
 The user could take the following steps as a shortcut to generate a heatmap:
 
@@ -280,7 +248,7 @@ Figure 4-5 is a categorized Heatmap by cell type. This Figure is the same as the
 
 ---
 
-## 5 Multiple datasets overview with methylation data: 
+## Multiple datasets overview with methylation data: 
 
 With the megasampler module you can investigate the expression levels of a gene in the large collection of datasets R2 is hosting. For this course we will of course we look at the β-value (ratios) of the methylation sets R2 is hosting. One restriction should be noticed, only dataset with the same platform can be inspected together. In case you select the 450k type (Illumina) platform you can only select dataset of the same platform. 
 
@@ -377,7 +345,7 @@ The mean methylation difference of the two probes is shown more simply in anothe
 
 ---
 
-## 6 An Expression Box Plot
+## An Expression Box Plot
 
 A box plot (a.k.a. Open High Low Close graph) of a single expression dataset could be drawn to see the expression level by a cell type and for your gene of interest. The user takes the following steps to create a scatter plot of a single gene within an expression dataset:
 
@@ -425,7 +393,7 @@ As a result, a box plot of the expression dataset "Tissues GTeX v8 Prot_Coding" 
 
 ---
 
-## 7 Anylysing plots
+## Anylysing plots
 
 Now that we have studied methylation graphs, our scope is extended to the next topic, which is "**expression**" of our gene of interest across tissues/cancer types.Methylation and expression have a reciprocal relationship. From the previous *Section 3 Comparing Methylation Heatmaps*, it was observed that the methylation levels increase for certain genes during carcinogenesis. In contrast, expression levels are reduced. The across dataset module is a good tool to observe the difference in expression from different datasets. Please note as mentioned before only datasets of the same chiptype (*platform*) and normalization can be analyzed together.  Here, datasets with author name "Roth" and "Broad" are used to plot the expression graphs. The platform user takes the following steps to create the expression graph:
 
@@ -470,7 +438,7 @@ On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-
 
 ---
 
-## 8 Comparing Expression and Methylation Data
+## Comparing Expression and Methylation Data
 
 In the case where R2 hosts multi-omics data of the same samples, the user can also compare and correlate methylation and expression datasets by displaying both in one plot. In this section, the datasets "Garnett" (normal cells) and "Esteller" (cancer cells) are used. The user takes the following steps to create a dot plot of the methylation and expression datasets:
 
@@ -525,7 +493,7 @@ As shown in Figure 8-6, the dot plot for the Probe "cg16556145" is generated. Wi
 
 ---
 
-## 9 In-Depth Study on Expression Dataset
+## In-Depth Study on Expression Dataset
 
 Let's go back to Normal Tissues GTeX v8 Prot_Coding - GTeX - 17382 - tpm - gencode26 datasety. One could also take a closer look at expression of your gene of interest in certain tissues of the expression dataset on R2 Platform. From an expression box plot, a certain or several tissue types could be selected. In this section, the tissue type "skin" is further investigated with the following steps after the steps in *Section 6 An Expression Box Plot* [8].
 
@@ -569,7 +537,7 @@ The box plot with dots shown in Figure 9-3 shows the difference of expression le
 
 ---
 
-## 10 Comparing Survival Probability
+## Comparing Survival Probability
 
 One could also investigate patient survival probability of a certain tumor type/entity in comparison to the expression for your gene of interest using the R2 Platform. In this section, the "TCGA" dataset is used as an example because it contains several general cancer types (including normal control tissues) and is relatively big.
 
@@ -658,7 +626,7 @@ The result of Step 5 is described in Figure 10-9. The overall survival probabili
 
 ---
 
-## 11 Hypermethylation Between Datasets (private data, not yet published)
+## Hypermethylation Between Datasets (private data, not yet published)
 
 As Hypermethylation is an indicator of tumor development, hypermethylated regions on Heatmaps could be compared between two datasets of normal and tumor patients. The dataset with the tumor type "renal cell carcinoma (PTM)" and the author name "Richter" is used for this analysis.
 
@@ -744,7 +712,7 @@ When the cursor is placed on Gene type axis, a pop-up message containing the gen
 
 ---
 
-## 12 Appendix
+## Appendix
 
 ### 12.1 Finding a Gene Name of Interest
 
