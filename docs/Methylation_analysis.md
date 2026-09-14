@@ -15,7 +15,7 @@ Manual  for Methylation Analysis
 *An Introduction on R2 Genomics Analysis and Visualization Platform Usage*
 
 
-By Ji Sun (Klara) Kwon, Richard Volckmann, Lieke Hoyn  
+By Ji Sun (Klara) Kwon, Richard Volckmann, Lieke Hoyng  
 Supervision: Dr. Antje Richter.  
 Justus-Liebig University Giessen (JLU).  
 Institute for Genetics and Institute for Bioinformatics.  
