@@ -6,15 +6,12 @@ Manual on R2 Platform for Methylation Analysis
 
 *An Introduction on R2 Genomics Analysis and Visualization Platform Usage*
 
-By Ji Sun (Klara) Kwon.
 
-Supervision: Dr. Antje Richter.
-
-Justus-Liebig University Giessen (JLU)
-
-Institute for Genetics and Institute for Bioinformatics
-
-Heinrich-Buff Ring 58, 35392 Giessen, Germany
+By Ji Sun (Klara) Kwon, Richard Volckmann, Lieke Hoyn  
+Supervision: Dr. Antje Richter.  
+Justus-Liebig University Giessen (JLU)  .
+Institute for Genetics and Institute for Bioinformatics  .
+Heinrich-Buff Ring 58, 35392 Giessen, Germany.
 
 
 
