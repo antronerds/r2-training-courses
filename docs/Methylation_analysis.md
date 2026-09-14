@@ -6,10 +6,14 @@ Manual on R2 Platform for Methylation Analysis
 
 *An Introduction on R2 Genomics Analysis and Visualization Platform Usage*
 
-By Ji Sun (Klara) Kwon
-Supervision: Dr. Antje Richter
+By Ji Sun (Klara) Kwon.
+
+Supervision: Dr. Antje Richter.
+
 Justus-Liebig University Giessen (JLU)
+
 Institute for Genetics and Institute for Bioinformatics
+
 Heinrich-Buff Ring 58, 35392 Giessen, Germany
 
 
@@ -132,9 +136,9 @@ If the user is interested in looking into a table of each sample and gene name o
 
 **6)** Below the heatmap, the average ratio for each probe is depicted against their position on the chromosome. Clicking on the blue "View chr[...] Genomebrowser" link will open an interactive view of the same location on the genome as shown in Figure 2-13. The R2 Genome Browser relates the probes on the Y-axis of the Heatmap showing as two isoforms. The RefSeq track shows CLDN10 annotated as two separate isoforms, green colored: one spanning almost the entire locus from the left, and a second, shorter one positioned toward the right side. The CLDN10-AS1 antisense transcript and the neighboring DZIP1 gene on the right are shown in red, indicating that both are encoded in the reverse direction. The name of a certain probe and further details could be seen by placing a cursor on that probe. The probes between the Heatmap and R2 Genome Browser can be matched. Depending on the array platform, not every isoform of a gene is necessarily covered by probes.
 
-The colored horizontal ideogram just below the Genome Browser title shows the full chromosome (chr13), with a small vertical line (marked in yellow in Figure 2-13) indicating where the current zoomed-in region falls within.
+The colored horizontal "Transcript view"  just below the Genome Browser title shows the full chromosome (chr13), with a small vertical line (marked with the red circleFigure 2-13) indicating where the current zoomed-in region falls within.
 
-In the scatter plot underneath the ideogram, the Y-axis shows the average methylation β-value per probe (averaged across all samples in the dataset), and the X-axis shows the genomic position in base pairs. Each dot represents one CpG probe. The standard deviation of methylation β-value per probe is shown with the vertical gray line in the diagram.  
+In the scatter plot underneath the ideogram, the Y-axis shows the average methylation β-value per probe (averaged across all samples in the dataset), and the X-axis shows the genomic position in base pairs. Each dot represents one CpG probe. The range of the minimal and maximum of methylation β-value per probe is shown with the vertical gray line in the diagram.  
 
 Underneath, the letter "q" in the Cytoband label "q32.1" reveals that the gene is located on the chromosome's long arm. If it is located on the small arm of the chromosome it is labeled with "p" (petit).
 
@@ -242,6 +246,7 @@ The user could take the following steps as a shortcut to generate a heatmap:
 **1)** To select "Esteller" dataset, repeat the Step 1) to Figure 2-3 in Step 2) in *Section 2 Generating Heatmap* of this manual. After following the steps login to the R2 Platform [1], choose "View all Met_ids for a Gene (Heatmap)" under Field 3 checkbox. Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 4-1).
 
 ![](_static/images/Methylation/fig4-1.png)
+
 [**Figure 4-1: Main menu**](_static/images/Methylation/fig4-1.png)
 
 
