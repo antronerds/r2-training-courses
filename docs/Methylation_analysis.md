@@ -41,7 +41,7 @@ With the above dataset information, the platform user takes the following steps 
 
 
 
-**2)** On the pop-up grid box (in Figure 2-2), click in Column {Category} on "Select Filter" to uncheck "Select all" and only select "cell line". In the text field of Column {Tissue/Tumor}, type "cancer pharmacogenomic"  or type "Esteller" in Column {Author}. One can confirm the right dataset by referring the description table below as shown in Figure 2-2. When the dataset is found, click anywhere on the row of the dataset and click "Confirm selection". (in Figure 2-3) Leave all other settings at their default and click "Next" on the main page to proceed. (in Figure 2-4)
+**2)** On the pop-up grid box (in Figure 2-2), click in Column {Category} on "Select Filter" to uncheck "Select all" and only select "cell line". In the text field of Column {Tissue/Tumor}, type "cancer pharmacogenomic"  or type "Esteller" in Column {Author}. One can confirm the right dataset by referring the description table below as shown in Figure 2-2. When the dataset is found, click anywhere on the row of the dataset and click "Confirm selection" (in Figure 2-3). Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 2-4).
 
 ![](_static/images/Methylation/fig2-2.jpg)
 
@@ -59,7 +59,7 @@ With the above dataset information, the platform user takes the following steps 
 
 
 
-**3)** In the adjustable settings menu you enter the gene of interest gene / methylation reporter to further investigate. (in Figure 2-5). As an example, "CLDN10" (Claudin 10) is entered in Field {Gene / Met_id }, and the suggested Met_id that pops up is selected by a mouse click. CLDN10 is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice and select a Met_id by mouse that pops up. Click "Submit" to generate a YY-plot. 
+**3)** In the adjustable settings menu you enter the gene of interest gene / methylation reporter to further investigate (in Figure 2-5). As an example, "CLDN10" (Claudin 10) is entered in Field {Gene / Met_id }, and the suggested Met_id that pops up is selected by a mouse click. CLDN10 is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice and select a Met_id by a mouse click in the pop-up. Click "Submit" to generate a YY-plot. 
 
 
 ![](_static/images/Methylation/fig2-5.png)
@@ -67,9 +67,9 @@ With the above dataset information, the platform user takes the following steps 
 [**Figure 2-5: Adjustable settings menu on the dataset**](_static/images/Methylation/fig2-5.png)
 
 
-In case that a gene name of interest is uncertain, one can find the exact gene name of interest in a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
+In case that a gene name of interest is uncertain, one can find the exact gene name of interest by a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
 
-A YY-graph is generated with the samples (cell lines) on the X-axis ordered by β-value from low to high, and the CLDN10 methylation β-value on the Y-axis (Figure 2-6). The probe with the highest mean is selected by default.
+An YY-graph is generated with the samples (cell lines) on the X-axis ordered by β-value from low to high, and the CLDN10 methylation β-value on the Y-axis (Figure 2-6). The probe with the highest mean is selected by default.
 
 ![](_static/images/Methylation/fig2-6.jpg)
 
@@ -80,7 +80,7 @@ A YY-graph is generated with the samples (cell lines) on the X-axis ordered by �
 The vast majority of the 1028 cancer cell lines thus have a CLDN10 beta value close to 1, meaning the CLDN10 gene is heavily methylated in most of these cell lines (which typically correlates with gene silencing).
 --> 
 
-Two additional features on this webpage come in handy: By clicking on the exclamation mark right in the graph title (indicated with the red arrow Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link depicted below the YY-plot and read the definition of the terminologies on the National Library of Medicine (NIM) website. (in Figure 2-8)
+Two additional features on this webpage come in handy: By clicking on the exclamation mark right in the graph title (indicated with the red arrow Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link depicted below the YY-plot and read the definition of the terminologies on the National Library of Medicine (NIM) website (in Figure 2-8).
 
 ![](_static/images/Methylation/fig2-7.jpg)
 
@@ -91,60 +91,51 @@ Two additional features on this webpage come in handy: By clicking on the exclam
 
 [**Figure 2-8: CLDN10 gene entry in the NCBI Gene database**](_static/images/Methylation/fig2-8.jpg)
 
+If the user is interested in looking into a table of each sample and their methylation values, go to the page where the YY-plot is generated and click "View datatable" (in Figure 2-9).
 
-**4)** As a next step, click on "View additional details" small triagle on the same page below the previous YY-=plot (in Figure 2-9). Then by clicking "view all" link as shown in Figure 2-10, the embedded Heatmap and R2 Genome Browser of the chosen dataset will open in a new screen.
+![](_static/images/Methylation/fig2-12a.png)
+
+[**Figure 2-9: The table of sample methylation values**](_static/images/Methylation/fig2-12a.png)
+
+**4)** As a next step, click on "View additional details" small triagle on the same page below the previous YY-plot (in Figure 2-10). Then by clicking the "view all" link as shown in Figure 2-11, the embedded Heatmap and R2 Genome Browser of the chosen dataset will open in a new screen.
 
 ![](_static/images/Methylation/fig2-9a.png)
 
-[**Figure 2-9: View additional details (clickable)**](_static/images/Methylation/fig2-9a.png)
+[**Figure 2-10: View additional details (clickable)**](_static/images/Methylation/fig2-9a.png)
 
 
 
 ![](_static/images/Methylation/fig2-10.jpg)
 
-[**Figure 2-10: View all reporters details**](_static/images/Methylation/fig2-10.jpg)
+[**Figure 2-11: View all reporters details**](_static/images/Methylation/fig2-10.jpg)
 
 
 
-**5)** Figure 2-11 shows the generated Heatmap. The Heatmap displays, for each reporter hybridizing to a specific CpG site within the CLDN10 gene locus, the methylation level (β-value) and its relation to the samples, together with the annotation.
+**5)** Figure 2-12 shows the generated Heatmap. The Heatmap displays, for each reporter hybridizing to a specific CpG site within the CLDN10 gene locus, the methylation level (β-value): reporters on the rows (their names on the right side) and samples on the columns, with color representing the β-value.  
+The methylation score is colored by yellow (near to score 0, unmethylated), black in the middle (partially methylated, 50%), and blue (near to score 1, fully methylated).  
 
-The bars above the heatmap (tracks) indicates "primary histology" (or cell line type) and at the left sit all reporters of the chosen gene within the dataset are plotted. The methylation score is colored by yellow (near to score 0, unmethylated), black in the middle (partially methylated, 50%), and blue (near to score 1, fully methylated). As shown in Figure 2-11, based on β-value per cell line type, the clustering reveals methylated of non-methylated regions for the subsets of the dataset you are investigating./
-
-For example, kidney cell lines are marked in green in the primary_site track above the Heatmap. Several kidney cell lines are clustered together, and reading down their columns reveals a shared methylation pattern across probes: probe cg13733394 appears yellow, indicating low methylation, while probe cg18470456 appears blue, indicating high methylation.
+Above the heatmap, two annotation tracks are visible: primary_histology and primary_site. As shown in Figure 2-12, certain methylation patterns can be detected across different tissue types. For example, kidney cell lines are marked in green in the primary_site track above the Heatmap. Several kidney cell lines are clustered together, and reading down their columns reveals a shared methylation pattern across probes: probe cg13733394 appears yellow, indicating low methylation, while probe cg18470456 appears blue, indicating high methylation.
 
 ![](_static/images/Methylation/fig2-11a.png)
 
-[**Figure 2-11:** The Heatmap of the chosen dataset**](_static/images/Methylation/fig2-11a.png)
+[**Figure 2-12:** The Heatmap of the chosen dataset**](_static/images/Methylation/fig2-11a.png)
 
 
-If the user is interested in looking into a table of each sample and gene name of the dataset. Go to the page where the YY-plot is generated and click view datatable (in Figure 2-12)
+**6)** Below the heatmap, the average ratio for each probe is depicted against their position on the chromosome. Clicking on the blue "View chr[...] Genomebrowser" link will open an interactive view of the same location on the genome as shown in Figure 2-13. The R2 Genome Browser relates the probes on the Y-axis of the Heatmap showing as two isoforms. The RefSeq track shows CLDN10 annotated as two separate isoforms, green colored: one spanning almost the entire locus from the left, and a second, shorter one positioned toward the right side. The CLDN10-AS1 antisense transcript and the neighboring DZIP1 gene on the right are shown in red, indicating that both are encoded in the reverse direction. The name of a certain probe and further details could be seen by placing a cursor on that probe. The probes between the Heatmap and R2 Genome Browser can be matched. Depending on the array platform, not every isoform of a gene is necessarily covered by probes.
 
-![](_static/images/Methylation/fig2-12a.png)
+The colored horizontal ideogram just below the Genome Browser title shows the full chromosome (chr13), with a small vertical line (marked in yellow in Figure 2-13) indicating where the current zoomed-in region falls within.
 
-[**Figure 2-12: The table of sample and reporter names of the chosen dataset**](_static/images/Methylation/fig2-12a.png)
+In the scatter plot underneath the ideogram, the Y-axis shows the average methylation β-value per probe (averaged across all samples in the dataset), and the X-axis shows the genomic position in base pairs. Each dot represents one CpG probe. The standard deviation of methylation β-value per probe is shown with the vertical gray line in the diagram.  
 
+Underneath, the letter "q" in the Cytoband label "q32.1" reveals that the gene is located on the chromosome's long arm. If it is located on the small arm of the chromosome it is labeled with "p" (petit).
 
-
-
-
-
-
-
-**6)** Below the heatmap, the average ratio for each probe is depicted against their location on the genome. Clicking on the blue view....Genomebrowser link will open an interactive view of the same location on the genome as shown in Figure 2-13. The R2 Genome Browser relates the probes on the Y-axis of the Heatmap showing as two isoforms. The user could see Isoform A on the left side and Isoform B on the right side of the bar from R2 Genome Browser. The name of a certain probe could be seen or matched between the Heatmap and R2 Genome Browser by placing a cursor on that probe. Depending on the dataset, only one isoform or more isoforms can exist.
-
-The colored vertical line just below the diagram title represents the chromosome of this database and shows the gene position in the chromosome by a small vertical line (marked in yellow in Figure 2-13).
-
-Then R2 Genome Browser shows the average (mean) CpG by methylation ratio (on an Y-axis) and the gene (a.k.a. gene position number, on an X-axis). The dots in this diagram are CpG (or probe) and their according methylation degree. It is to be noted that the Y-axis of R2 Genome Browser is the β-value per probe, whereas the X-axis of Heatmap is the  β-value.
-
-The standard deviation of methylation per CpG is shown with the vertical gray line in the diagram, which is located in the gene index around 96,160,000. The letter "q" (queue) from the X-axis label "q32.1" reveals that the gene is located on the chromosome's long arm. If it is located on the small arm of the chromosome it is labeled with "p" (petite).
-
-Below the diagram, there are two small green horizontal bars called "CLDN10" labeled on the left and one red stick called "CLDN10-AS1" labeled on the right. The small green bars  represent Isoform A and the small red bar  represents an antisense isoform. The B isoform is shown on the right side. Depending on the dataset, multiple isoforms more than two (A and B) could exist. More details regarding R2 Genome Browser could be found on R2 Platform online tutorial under Section 17. Using the R2-Genome browser. [2]
+More details regarding R2 Genome Browser could be found on R2 Platform online tutorial under Section 17: Using the R2-Genome browser. [2]
 
 ![](_static/images/Methylation/fig2-13b.png "Figure 2-13")
 
-[**Figure 2-13: R2 Genome Browser with mean methylation score by gene index**](_static/images/Methylation/fig2-13b.png)
+[**Figure 2-13: R2 Genome Browser of the CLDN10 locus**](_static/images/Methylation/fig2-13b.png)
 
-Now, if the user is interested in investigating certain probes from the dataset, the next steps could be done additionally. (marked in red in Figure 2-13)
+Now, if the user is interested in investigating certain probes from the dataset, the next steps could be done additionally (marked in red in Figure 2-13).
 
 **6-1** Hovering over one of the probes, a message box shows the information regarding the selected probe. ("ilmnhm450" in Figure 2-13).  Filtering by the information of the message box, three CpGs within the promoter of the gene and isoform of interest are selected ("cg08418978", "cg22122715" at the left purple arrow, "cg25032595" at the blue arrow) by clicking the check-boxes on "Select reporters" table. As shown with marked color-arrows in Figure 2-13, the probes are observed both as a dot and as a block. Click "Next" to proceed.
 
@@ -598,7 +589,7 @@ The result on the next page shows the overall survival probability between patie
 
 When the automated separation of patients by expression level produced one big and one small cohort, it should be taken into account that results could be significant, but still not biologically relevant. Further studies should be performed, in order to better understand the contribution of your gene of interest in patient survival. Even though the p-values are significant (statistically valid), the dataset might not be biologically valid as well.
 
-The left graph in Figure 10-4 shows the overall survival probability of two cohorts (on an Y-axis) that are high expression (a line marked in blue) and low expression (a line marked in red) groups, regarding the expression of the gene of interest. An X-axis is the follow-up in months. The total patient number of the cohorts are shown with colors on the right top of the graph ("n=430", "n=103" respectively). One could find out individual information of each sample by putting the cursor on the line (in Figure 10-5).
+The left graph in Figure 10-4 shows the overall survival probability of two cohorts (on an Y-axis) that are high expression (a line marked in blue) and low expression (a line marked in red) groups, regarding the expression of the gene of interest. An X-axis is the follow-up in months. The total patient number of the cohorts are shown with colors on the right top of the graph ("n=430", "n=103" respectively). One could find out individual information of each sample by hovering over de small vertical line in the plot (in Figure 10-5).
 
 ![](_static/images/Methylation/fig10-4a.png)
 
