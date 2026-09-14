@@ -41,7 +41,7 @@ With the above dataset information, the platform user takes the following steps 
 
 
 
-**2)** On the pop-up grid box (in Figure 2-2), click in Column {Category} on "Select Filter" to uncheck "Select all" and only select "cell line". In the text field of Column {Tissue/Tumor}, type "cancer pharmacogenomic"  or type "Esteller" in Column {Author}. One can confirm the right dataset by referring the description table below as shown in Figure 2-2. When the dataset is found, click anywhere on the row of the dataset and click "Confirm selection" (in Figure 2-3). Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 2-4).
+**2)** On the pop-up grid box (in Figure 2-2), click in Column {Category} on "Select Filter" to uncheck "Select all" and only select "cell line". In the text field of Column {Tissue/Tumor}, type "cancer pharmacogenomic"  or type "Esteller" in Column {Author}. One can confirm the right dataset by referring the description table below as shown in Figure 2-2. When the dataset is found, click anywhere on the row of the dataset and click "Confirm selection". (in Figure 2-3) Leave all other settings at their default and click "Next" on the main page to proceed. (in Figure 2-4)
 
 ![](_static/images/Methylation/fig2-2.jpg)
 
@@ -59,7 +59,7 @@ With the above dataset information, the platform user takes the following steps 
 
 
 
-**3)** In the adjustable settings menu you enter the gene of interest gene / methylation reporter to further investigate (in Figure 2-5). As an example, "CLDN10" (Claudin 10) is entered in Field {Gene / Met_id }, and the suggested Met_id that pops up is selected by a mouse click. CLDN10 is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice and select a Met_id by a mouse click in the pop-up. Click "Submit" to generate a YY-plot. 
+**3)** In the adjustable settings menu you enter the gene of interest gene / methylation reporter to further investigate. (in Figure 2-5). As an example, "CLDN10" (Claudin 10) is entered in Field {Gene / Met_id }, and the suggested Met_id that pops up is selected by a mouse click. CLDN10 is a candidate tumor suppressor currently being studied in our lab [4] and strongly hypermethylated across cancer types. For your purposes please use the name/abbreviation of your candidate gene of choice and select a Met_id by mouse that pops up. Click "Submit" to generate a YY-plot. 
 
 
 ![](_static/images/Methylation/fig2-5.png)
@@ -69,7 +69,7 @@ With the above dataset information, the platform user takes the following steps 
 
 In case that a gene name of interest is uncertain, one can find the exact gene name of interest by a methylation ID obtained from UCSC Genome Browser. This search process is described in *Appendix 12.1 Finding a Gene of Interest* of this manual.
 
-An YY-graph is generated with the samples (cell lines) on the X-axis ordered by β-value from low to high, and the CLDN10 methylation β-value on the Y-axis (Figure 2-6). The probe with the highest mean is selected by default.
+A YY-graph is generated with the samples (cell lines) on the X-axis ordered by β-value from low to high, and the CLDN10 methylation β-value on the Y-axis (Figure 2-6). The probe with the highest mean is selected by default.
 
 ![](_static/images/Methylation/fig2-6.jpg)
 
@@ -80,7 +80,7 @@ An YY-graph is generated with the samples (cell lines) on the X-axis ordered by 
 The vast majority of the 1028 cancer cell lines thus have a CLDN10 beta value close to 1, meaning the CLDN10 gene is heavily methylated in most of these cell lines (which typically correlates with gene silencing).
 --> 
 
-Two additional features on this webpage come in handy: By clicking on the exclamation mark right in the graph title (indicated with the red arrow Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link depicted below the YY-plot and read the definition of the terminologies on the National Library of Medicine (NIM) website (in Figure 2-8).
+Two additional features on this webpage come in handy: By clicking on the exclamation mark right in the graph title (indicated with the red arrow Figure 2-6), the user could see the description of the dataset as in Figure 2-7. Next, if the user wants to grasp the basic knowledge on biological or medical terminologies, one could click on the GeneID table link depicted below the YY-plot and read the definition of the terminologies on the National Library of Medicine (NIM) website. (in Figure 2-8)
 
 ![](_static/images/Methylation/fig2-7.jpg)
 
@@ -101,7 +101,7 @@ If the user is interested in looking into a table of each sample and their methy
 
 ![](_static/images/Methylation/fig2-9a.png)
 
-[**Figure 2-10: View additional details (clickable)**](_static/images/Methylation/fig2-9a.png)
+[**Figure 2-9: View additional details (clickable)**](_static/images/Methylation/fig2-9a.png)
 
 
 
@@ -118,7 +118,16 @@ Above the heatmap, two annotation tracks are visible: primary_histology and prim
 
 ![](_static/images/Methylation/fig2-11a.png)
 
-[**Figure 2-12:** The Heatmap of the chosen dataset**](_static/images/Methylation/fig2-11a.png)
+[**Figure 2-11: The Heatmap of the chosen dataset**](_static/images/Methylation/fig2-11a.png)
+
+
+If the user is interested in looking into a table of each sample and gene name of the dataset. Go to the page where the YY-plot is generated and click view datatable (in Figure 2-12)
+
+![](_static/images/Methylation/fig2-12a.png)
+
+[**Figure 2-12: The table of sample and reporter names of the chosen dataset**](_static/images/Methylation/fig2-12a.png)
+
+
 
 
 **6)** Below the heatmap, the average ratio for each probe is depicted against their position on the chromosome. Clicking on the blue "View chr[...] Genomebrowser" link will open an interactive view of the same location on the genome as shown in Figure 2-13. The R2 Genome Browser relates the probes on the Y-axis of the Heatmap showing as two isoforms. The RefSeq track shows CLDN10 annotated as two separate isoforms, green colored: one spanning almost the entire locus from the left, and a second, shorter one positioned toward the right side. The CLDN10-AS1 antisense transcript and the neighboring DZIP1 gene on the right are shown in red, indicating that both are encoded in the reverse direction. The name of a certain probe and further details could be seen by placing a cursor on that probe. The probes between the Heatmap and R2 Genome Browser can be matched. Depending on the array platform, not every isoform of a gene is necessarily covered by probes.
@@ -139,7 +148,7 @@ Now, if the user is interested in investigating certain probes from the dataset,
 
 **6-1** Hovering over one of the probes, a message box shows the information regarding the selected probe. ("ilmnhm450" in Figure 2-13).  Filtering by the information of the message box, three CpGs within the promoter of the gene and isoform of interest are selected ("cg08418978", "cg22122715" at the left purple arrow, "cg25032595" at the blue arrow) by clicking the check-boxes on "Select reporters" table. As shown with marked color-arrows in Figure 2-13, the probes are observed both as a dot and as a block. Click "Next" to proceed.
 
-**6-2** Figure 2-14 shows the updated Heatmap and R2 Genome Browser after the previous step (Step 6-1). The user could investigate the methylation tendency of the three probes. Back to the example of "kidney" cell type (indicated in green on the X-axis "primary_histology" of Heatmap), the user sees two probes ("cg08418978", "cg22122715"; yellow in Heatmap) are unmethylated but Probe "cg25032595" (blue in Heatmap) is methylated.
+**6-2** Figure 2-14 shows the updated Heatmap and R2 Genome Browser after the previous step (Step 6-1). The user could investigate the methylation profile of the three probes. Back to the example of "kidney" cell type (indicated in green on the X-axis "primary_histology" of Heatmap), the user sees two probes ("cg08418978", "cg22122715"; yellow in Heatmap) are unmethylated but Probe "cg25032595" (blue in Heatmap) is methylated.
 
 ![](_static/images/Methylation/fig2-14a.png)
 
@@ -187,9 +196,9 @@ Now, if the user is interested in investigating certain probes from the dataset,
 
 To gain a clearer understanding of how to interpret this Heatmap, two further methylation datasets will be compared with the "Esteller" dataset. As mentioned earlier in *Section 2 Generating Heatmap* of this manual, this "Esteller" dataset is based on highly proliferating cancer cell lines. 
 
-The second dataset is based on primary tumors ("tumor" type by the author name "Heyn" on R2 Platform). The third dataset is based on normal control tissue samples ("normal" type by the author name "Lokk" on R2 Platform). In this section, three Heatmaps generated from these three datasets are to be compared to show the difference in methylation tendency for a chosen gene of interest. These comparative methylome heatmaps were used to study another tumor suppressor ZAR1. [5]
+The second dataset is based on primary tumors ("tumor" type by the author name "Heyn" on the R2 Platform). The third dataset is based on normal control tissue samples ("normal" type by the author name "Lokk" on R2 Platform). In this section, three Heatmaps generated from these three datasets are to be compared to show the difference in methylation tendency for a chosen gene of interest. These comparative methylome heatmaps were used to study another tumor suppressor ZAR1. [5]
 
-To create the second ("Heyn") and the third ("Lokk") datasets, repeat the steps from 1) to 5) in *Section 2 Generating Heatmap* of this manual. The following Figure 3-1 is a collection generated heatmaps of the three datasets ("Esteller" on the bottom, "Heyn" in the middle, "Lokk" on the top). As shown with colors in Figure 3-1, the "Lokk" Heatmap of CLDN10 is rather uniform with an CLDN10 CGI (or CpG-Island) that is unmethylated, whereas the CGI surrounding regions are methylated (for all samples).
+To create the second ("Heyn") and the third ("Lokk") heatmaps, repeat the steps from 1) to 5) in *Section 2 Generating Heatmap* of this manual. The following Figure 3-1 is a collection generated heatmaps of the three datasets ("Esteller" on the bottom, "Heyn" in the middle, "Lokk" on the top). As shown with colors in Figure 3-1, the "Lokk" Heatmap of CLDN10 is rather uniform with an CLDN10 CGI (or CpG-Island) that is unmethylated, whereas the CGI surrounding regions are methylated (for all samples).
 
 When looking at the Heatmap from primary tumors "Heyn", some degree of methylation appears across the CLDN10 CGI, the black colored row in the heatmap. This methylation shows/implies that the tumor samples started to inactivate the tumor suppressor.
 
@@ -256,7 +265,7 @@ The user could take the following steps as a shortcut to generate a heatmap:
 
 ![](_static/images/Methylation/fig4-4.jpg)
 
-[**Figure 4-4: "View all reporters for a gene B" menu**](_static/images/Methylation/fig4-4.jpg)
+[**Figure 4-4: "View all reporters for a gene" menu**](_static/images/Methylation/fig4-4.jpg)
 
 
 Figure 4-5 is a categorized Heatmap by cell type. This Figure is the same as the Heatmap from the dataset "Esteller" in Figure 3-1 in *Section 3 Comparing Methylation Heatmaps*.
@@ -292,6 +301,7 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 **7)** On the next webpage, type "CLDN10" in the Field "Gene / Reporter" and click "Select Datasets" button. (in Figure 5-3)
 
+[](_static/images/Methylation/fig5-3a.jpg)
 
 ![](_static/images/Methylation/fig5-3a.jpg)
 
@@ -365,15 +375,15 @@ The mean methylation difference of the two probes is shown more simply in anothe
 
 ---
 
-## 6 An Expression Box Plot and CLinisnitch. 
+## 6 An Expression Box Plot
 
-A box plot of a single expression dataset could be drawn to see the expression level by group annotation such as cell type and for your gene of interest. The user takes the following steps to create a YY- plot of a single gene within an expression dataset:
+A box plot (a.k.a. Open High Low Close graph) of a single expression dataset could be drawn to see the expression level by a cell type and for your gene of interest. The user takes the following steps to create a scatter plot of a single gene within an expression dataset:
 
-**1)** Select in the main page in box 1  an expression dataset by typing "Tissues GTeX v8 Prot_Coding" on Column {Tissue/Tumor} as shown in Figure 6-1. Select "view" a gene and provide "CLDN10". 
+**1)** Repeat the steps from 1) to 3) in *Section 2 Generating Heatmap* of this manual. But instead, choose the expression dataset by typing "Tissues GTeX v8 Prot_Coding" on Column {Tissue/Tumor} as shown in Figure 6-1.
 
-![](_static/images/Methylation/fig6-1b.png)
+![](_static/images/Methylation/fig6-1a.png)
 
-[**Figure 6-1: Change Dataset menu (after filter)**](_static/images/Methylation/fig6-1b.png)
+[**Figure 6-1: Change Dataset menu (after filter)**](_static/images/Methylation/fig6-1a.png)
 
 
 
