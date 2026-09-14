@@ -106,7 +106,7 @@ If the user is interested in looking into a table of each sample and their methy
 
 [**Figure 2-9: The table of sample methylation values**](_static/images/Methylation/fig2-12a.png)
 
-**4)** As a next step, click on "View additional details" small triagle on the same page below the previous YY-plot (in Figure 2-10). Then by clicking the "view all" link as shown in Figure 2-11, the embedded Heatmap and R2 Genome Browser of the chosen dataset will open in a new screen.
+**4)** As a next step, click on "View additional details" small triangle on the same page below the previous YY-plot (in Figure 2-10). Then by clicking the "view all" link as shown in Figure 2-11, the embedded Heatmap and R2 Genome Browser of the chosen dataset will open in a new screen.
 
 ![](_static/images/Methylation/fig2-9a.png)
 
@@ -195,7 +195,7 @@ Scroll down to the "Gene" menu on the bottom of the Heatmap webpage. Select "a t
 [**Figure 3-2: The table option on the Heatmap webpage**](_static/images/Methylation/fig3-2a.png)
 
 
-Figure 3-3a1 is a categorized Heatmap by cell type. If you hoover over the small annotation boxes on the tissue annotation track the information box shows the specifications regarding the annotations/tracks such as tissue type and gender of each sample. For example, Sample "gsm1215434" came from bladder tissue of a male as shown in Figure 3-3a1.
+Figure 3-3a1 is a categorized Heatmap by cell type. If you hover over the small annotation boxes on the tissue annotation track the information box shows the specifications regarding the annotations/tracks such as tissue type and gender of each sample. For example, Sample "gsm1215434" came from bladder tissue of a male as shown in Figure 3-3a1.
 
 ![](_static/images/Methylation/fig3-3a1.png)
 
@@ -258,7 +258,7 @@ Figure 4-5 is a categorized Heatmap by cell type. This Figure is the same as the
 
 ## Multiple datasets overview with methylation data: 
 
-With the megasampler module you can investigate the expression levels of a gene in the large collection of datasets R2 is hosting. For this course we will of course we look at the β-value (ratios) of the methylation sets R2 is hosting. One restriction should be noticed, only dataset with the same platform can be inspected together. In case you select the 450k type (Illumina) platform you can only select dataset of the same platform. 
+With the megasampler module you can investigate the expression levels of a gene in the large collection of datasets R2 is hosting. For this course  we look at the β-value (ratios) of the methylation sets R2 is hosting. One restriction should be noticed, only dataset with the same platform can be inspected together. In case you select the 450k type (Illumina) platform you can only select dataset of the same platform. 
 
 The user could also compare the methylation level of the same reporter (probe) from multiple datasets. In this section, the same three datasets as *Section 3 Comparing Methylation Heatmaps* are used ("Lokk": normal cells, "Heyn": tumor cells, "Esteller": cancer cells). The user takes the following steps to create the scatter plots of the same probe methylation dataset:
 
@@ -383,7 +383,7 @@ A box plot (a.k.a. Open High Low Close graph) of a single expression dataset cou
 
 
 
-**4)** A next webpage will be opened on a new internet tab. To visualize and sort better. CLick on the gear icon on the left side of the plot. Select "Box plot" on Field "Graph type" in case it not selected by default, "median (numeric Y)" on Field "Order Groups By" and "Color by Track" on Field "Color mode" and untick the checkbox at "add scatter" Click the "redraw" Button to update the box plot of a single expression data by a tissue type (in Figure 6-4).
+**4)** A next webpage will be opened on a new internet tab. To visualize and sort better. Click on the gear icon on the left side of the plot. Select "Box plot" on Field "Graph type" in case it not selected by default, "median (numeric Y)" on Field "Order Groups By" and "Color by Track" on Field "Color mode" and untick the checkbox at "add scatter" Click the "redraw" Button to update the box plot of a single expression data by a tissue type (in Figure 6-4).
 
 ![](_static/images/Methylation/fig6-4a.png)
 
@@ -401,7 +401,7 @@ As a result, a box plot of the expression dataset "Tissues GTeX v8 Prot_Coding" 
 
 ---
 
-## Anylysing plots
+## Analysing plots
 
 Now that we have studied methylation graphs, our scope is extended to the next topic, which is "**expression**" of our gene of interest across tissues/cancer types.Methylation and expression have a reciprocal relationship. From the previous *Section 3 Comparing Methylation Heatmaps*, it was observed that the methylation levels increase for certain genes during carcinogenesis. In contrast, expression levels are reduced. The across dataset module is a good tool to observe the difference in expression from different datasets. Please note as mentioned before only datasets of the same chiptype (*platform*) and normalization can be analyzed together.  Here, datasets with author name "Roth" and "Broad" are used to plot the expression graphs. The platform user takes the following steps to create the expression graph:
 
@@ -434,7 +434,7 @@ Now that we have studied methylation graphs, our scope is extended to the next t
 
 
 
-As a result, two box plots with "add scatter = tcked)  from Dataset "Roth" and "Broad" are generated as shown in Figure 7-5. As expected, the expression level of "Roth" for normal tissues (with the average 7-5) is higher than the expression level of "Broad" cancer cell lines (with the average 3-4). This is in line with methylation level from the two datasets, because the cancer cells ("Broad") are highly methylated compared to the normal cells ("Roth").
+As a result, two box plots with "add scatter = ticked)  from Dataset "Roth" and "Broad" are generated as shown in Figure 7-5. As expected, the expression level of "Roth" for normal tissues (with the average 7-5) is higher than the expression level of "Broad" cancer cell lines (with the average 3-4). This is in line with methylation level from the two datasets, because the cancer cells ("Broad") are highly methylated compared to the normal cells ("Roth").
 
 On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-value is significant enough as shown in red (in Figure 7-5).
 
@@ -503,7 +503,7 @@ As shown in Figure 8-6, the dot plot for the Probe "cg16556145" is generated. Wi
 
 ## In-Depth Study on Expression Dataset
 
-Let's go back to Normal Tissues GTeX v8 Prot_Coding - GTeX - 17382 - tpm - gencode26 datasety. One could also take a closer look at expression of your gene of interest in certain tissues of the expression dataset on R2 Platform. From an expression box plot, a certain or several tissue types could be selected. In this section, the tissue type "skin" is further investigated with the following steps after the steps in *Section 6 An Expression Box Plot* [8].
+Let's go back to Normal Tissues GTeX v8 Prot_Coding - GTeX - 17382 - tpm - gencode26 dataset. One could also take a closer look at expression of your gene of interest in certain tissues of the expression dataset on R2 Platform. From an expression box plot, a certain or several tissue types could be selected. In this section, the tissue type "skin" is further investigated with the following steps after the steps in *Section 6 An Expression Box Plot* [8].
 
 **1)** Scroll down to "Adjustable settings" after the expression box plot is executed. Select "tissue (30 cat)" on Field "Subset track". On the pop-up window, click the tissue type "skin (1809)" checkbox and "OK". Click "Submit" to proceed. (In Figure 9-1)
 
@@ -659,7 +659,7 @@ As Hypermethylation is an indicator of tumor development, hypermethylated region
 
 [**Figure 11-3: Main menu**](_static/images/Methylation/fig11-3.png)
 
-**3)** On "Select a test" menu, select "type_upd (3) cat in Field "Group by" at the bottom of tyhe pulldown menu click next. At select group 1 and 2,select normal (5) and "tumor (5). 2 outliers ("skip (2)") were ommitted so we will proceed with a total of 10 samples instead of 12. Click the submit button  to proceed.
+**3)** On "Select a test" menu, select "type_upd (3) cat in Field "Group by" at the bottom of the pulldown menu, click next. At select group 1 and 2,select normal (5) and "tumor (5). 2 outliers ("skip (2)") were omitted so we will proceed with a total of 10 samples instead of 12. Click the submit button  to proceed.
 
 ![](_static/images/Methylation/fig11-4a.png)
 
@@ -833,7 +833,7 @@ If one wishes to double-check its choice by looking at the DNA sequence for this
 
 ![](_static/images/Methylation/fig12.1-13.png)
 
-![**Figure 12.1-13: Information page on the methylation IDe**](_static/images/Methylation/fig12.1-13.png)
+![**Figure 12.1-13: Information page on the methylation ID**](_static/images/Methylation/fig12.1-13.png)
 
 
 
