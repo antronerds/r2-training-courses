@@ -38,6 +38,8 @@ Copyright (c) 2006-2025 Jan Koster
    Molecular_Oncology_CRC
    FindingCausesInNeuroblastomaData
    Vitiligo_Clin_Cell_biology
+   Methylation_analysis
+  
 
 
 .. toctree::
