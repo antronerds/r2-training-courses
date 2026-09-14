@@ -6,7 +6,9 @@ Manual  for Methylation Analysis
 
 
 **14th to 18th September 2026.**  
-**Gender-Sensitive Epigenomic Research in Nephrology**  
+
+**Gender-Sensitive Epigenomic Research in Nephrology** 
+
 *at University Giessen, Germany, Institute f. Genetics*  
 
 
@@ -16,10 +18,15 @@ Manual  for Methylation Analysis
 
 
 By Ji Sun (Klara) Kwon, Richard Volckmann, Lieke Hoyng.  
+
 Supervision: Dr. Antje Richter.  
+
 Justus-Liebig University Giessen (JLU).  
+
 Institute for Genetics and Institute for Bioinformatics.  
+
 Heinrich-Buff Ring 58, 35392 Giessen, Germany.  
+
 
 
 
@@ -368,6 +375,11 @@ In the General tab of the settings menu, find the tissue type in the "Separation
 
 [**Figure 5-12: R2-"wanderer" for the individual reporters II**](_static/images/Methylation/wanderer.gif).
 
+
+![](_static/images/Methylation/fig5-12b.png)
+
+
+[**Figure 5-12: R2-"wanderer" result**](_static/images/Methylation/fig5-12b.png).
 
 
 
