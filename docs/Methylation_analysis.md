@@ -17,9 +17,9 @@ Manual  for Methylation Analysis
 
 By Ji Sun (Klara) Kwon, Richard Volckmann, Lieke Hoyn  
 Supervision: Dr. Antje Richter.  
-Justus-Liebig University Giessen (JLU)  .
-Institute for Genetics and Institute for Bioinformatics  .
-Heinrich-Buff Ring 58, 35392 Giessen, Germany.
+Justus-Liebig University Giessen (JLU).  
+Institute for Genetics and Institute for Bioinformatics.  
+Heinrich-Buff Ring 58, 35392 Giessen, Germany.  
 
 
 
