@@ -201,14 +201,14 @@ Next, the "Esteller" Heatmap includes even more methylation for the CLDN10 CGI t
 
 A single Heatmap can be further categorized and compared by each cell type (by different tissues). With the example of "Lokk" Heatmap (normal cell), the following additional steps could be done after Step 5) to categorize per cell type:
 
-Scroll down to the "Gene" menu on the bottom of the Heatmap webpage. Select "a track" in Field "Order samples by" and "tissue (17 cat)" in Field "Ordering track" (in Figure 3-2). This allows the Heatmap to be organized by cell type.
+Scroll down to the "Gene" menu on the bottom of the Heatmap webpage. Select "a track" in Field "Order samples by" and "tissue (17 cat)" in Field "Ordering track" (in Figure 3-2) and click "Next". This allows the Heatmap to be organized by cell type.
 
 ![](_static/images/Methylation/fig3-2a.png)
 
 [**Figure 3-2: The table option on the Heatmap webpage**](_static/images/Methylation/fig3-2a.png)
 
 
-Figure 3-3a1 is a categorized Heatmap by cell type. If you hover over the small annotation boxes on the tissue annotation track the information box shows the specifications regarding the annotations/tracks such as tissue type and gender of each sample. For example, Sample "gsm1215434" came from bladder tissue of a male as shown in Figure 3-3a1.
+Figure 3-3a1 is a categorized Heatmap by cell type. If you hover over the small annotation boxes on the tissue annotation track the information box shows the specifications regarding the annotations/tracks such as tissue type and gender of each sample. For example, Sample "gsm1215435" came from gallbladder tissue of a male as shown in Figure 3-3a1.
 
 ![](_static/images/Methylation/fig3-3a1.png)
 
@@ -230,7 +230,7 @@ Figure 3-3a1 is a categorized Heatmap by cell type. If you hover over the small 
 
 The user could take the following steps as a shortcut to generate a heatmap:
 
-**1)** To select "Esteller" dataset, repeat the Step 1) to Figure 2-3 in Step 2) in *Section 2 Generating Heatmap* of this manual. After following the steps login to the R2 Platform [1], choose "View all Met_ids for a Gene (Heatmap)" under Field 3 checkbox. Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 4-1).
+**1)** On the main page, select the "Esteller" dataset again in Field 2, and this time choose "View all Met_ids for a Gene (Heatmap)" in the Field 3 dropdown menu. Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 4-1).
 
 ![](_static/images/Methylation/fig4-1.png)
 
