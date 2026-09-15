@@ -169,7 +169,7 @@ Now, if the user is interested in investigating certain probes from the dataset,
 
 **6-1** Hovering over a probe in the ilmnhm450 track opens a message box with details about that probe, including its genomic position, strand, and a gene-region annotation — for example, "1stExon;5UTR" for cg08418978. The latter annotation indicates that the probe lies just downstream of the transcription start site, and is associated with transcriptional regulation (as are other promoter-associated CpG gene-region annotations, such as TSS1500, TSS200).
 
-Using this message box annotation, three promoter-associated CpGs of the different isoforms are selected as interesting: cg08418978 and cg22122715 (left, purple arrow) and cg25032595 (blue arrow). In the previous tab with the Heatmap, you can focus on them only by checking their boxes in the "Select reporters" table and then hitting the Next button.
+Using this message box annotation, three promoter-associated CpGs of the different isoforms are selected as interesting: cg08418978 and cg22122715 (left, purple arrow) and cg25032595 (blue arrow). In the previous tab with the Heatmap, you can focus on them only, by checking their boxes in the "Select reporters" table and then hitting the Next button.
 
 **6-2** Figure 2-14 shows the updated Heatmap and R2 Genome Browser after the previous step (Step 6-1). The user could investigate the methylation profile of the three probes. Back to the example of "kidney" cell type (indicated in green by the "primary_histology" annotation above the Heatmap), the user sees two probes ("cg08418978", "cg22122715"; yellow in Heatmap) are unmethylated but Probe "cg25032595" (blue in Heatmap) is methylated.
 
@@ -185,13 +185,12 @@ Using this message box annotation, three promoter-associated CpGs of the differe
 
 ## Comparing Methylation Heatmaps
 
-To gain a clearer understanding of how to interpret this Heatmap, two further methylation datasets will be compared with the "Esteller" dataset. As mentioned earlier in *Section 2 Generating Heatmap* of this manual, this "Esteller" dataset is based on highly proliferating cancer cell lines. 
+To gain a clearer understanding of how to interpret this Heatmap, two further methylation datasets will be compared with the "Esteller" dataset. As mentioned earlier in *Section 2 Generating a Heatmap* of this manual, this "Esteller" dataset is based on highly proliferating cancer cell lines. The second dataset is based on primary tumors snd the third dataset is based on normal control tissue samples.  
+In this section, three Heatmaps generated from these three datasets are to be compared to show the difference in methylation tendency for a chosen gene of interest. These comparative methylome heatmaps were used to study another tumor suppressor ZAR1. [5]
 
-The second dataset is based on primary tumors ("tumor" type by the author name "Heyn" on the R2 Platform). The third dataset is based on normal control tissue samples ("normal" type by the author name "Lokk" on R2 Platform). In this section, three Heatmaps generated from these three datasets are to be compared to show the difference in methylation tendency for a chosen gene of interest. These comparative methylome heatmaps were used to study another tumor suppressor ZAR1. [5]
+To create the second (author "Heyn", category "tumor") and the third (author "Lokk", category "normal") heatmaps, repeat the steps from 1) to 5) in *Section 2 Generating Heatmap* of this manual. The following Figure 3-1 is a collection of generated heatmaps of the three datasets ("Esteller" on the bottom, "Heyn" in the middle, "Lokk" on the top). As shown with colors in Figure 3-1, the "Lokk" Heatmap of CLDN10 is rather uniform with a CLDN10 CGI (or CpG-Island) that is unmethylated, whereas the CGI surrounding regions are methylated (for all samples).
 
-To create the second ("Heyn") and the third ("Lokk") heatmaps, repeat the steps from 1) to 5) in *Section 2 Generating Heatmap* of this manual. The following Figure 3-1 is a collection of generated heatmaps of the three datasets ("Esteller" on the bottom, "Heyn" in the middle, "Lokk" on the top). As shown with colors in Figure 3-1, the "Lokk" Heatmap of CLDN10 is rather uniform with a CLDN10 CGI (or CpG-Island) that is unmethylated, whereas the CGI surrounding regions are methylated (for all samples).
-
-When looking at the Heatmap from primary tumors "Heyn", some degree of methylation appears across the CLDN10 CGI, the black colored row in the heatmap. This methylation suggests that the tumor samples started to inactivate the tumor suppressor.
+When looking at the Heatmap from primary tumors "Heyn", some degree of methylation appears across the CLDN10 CGI, as we can see from the black colored cells in that area of the heatmap. This methylation suggests that the tumor samples started to inactivate the tumor suppressor.
 
 Next, the "Esteller" Heatmap includes even more methylation for the CLDN10 CGI than the "Heyn" Heatmap. Much more blue colors are observed throughout the heatmap rows, which makes sense that highly proliferative cancer cells have more CLDN10 inactivated than the less proliferative tumor cells. By comparing the later "Esteller" Heatmap with "Lokk" and "Heyn" Heatmaps, one could see the gradual changes in the methylation tendency for the gene of interest during carcinogenesis.
 
