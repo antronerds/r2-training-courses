@@ -394,7 +394,7 @@ In the General tab of the settings menu, to separate normal from tumor, we need 
 
 ## An Expression Box Plot
 
-A box plot of a single expression dataset could be drawn to see the expression level by a cell type and for your gene of interest. The user takes the following steps to create a scatter plot of a single gene within an expression dataset:
+A box plot of a single expression dataset could be drawn to see the expression level by a cell type and for your gene of interest. The user first takes the following steps to create the ordered sample plot of a single gene within an expression dataset:
 
 **1)** Repeat the steps from 1) to 3) in *Section 2 Generating Heatmap* of this manual. But instead, choose the expression dataset by typing "Tissues GTeX v8 Prot_Coding" on Column {Tissue/Tumor} as shown in Figure 6-1.
 
@@ -404,33 +404,28 @@ A box plot of a single expression dataset could be drawn to see the expression l
 
 
 
-**2)** Click on Link "CLDN10" under Field "CliniSnitch" which is located on the right of the webpage (in Figure 6-2).
+**2)** Click on Link "CLDN10" under Field "CliniSnitch" which is located on the right  of the webpage (in Figure 6-2).
 
 *R2 also offers a tool: CliniSnitch. CliniSnitch performs a context-dependent statistical test on each track to identify significant associations with the gene’s expression (i.e. different types of tests based on whether a track is numerical or categorical).*
 
 ![](_static/images/Methylation/fig6-2a.png)
 [**Figure 6-2: "CliniSnitch" link**](_static/images/Methylation/fig6-2a.png)
 
-
-
-
-**3)** A next webpage will be opened on a new internet tab. The user could see that the p-value is significant enough (where marked in red). Click on Link "tissue (View)" in the right table
+**3)** A next webpage will be opened in a new browser tab. The user could see that several tracks show a significant p-value. Click on the magnifying glass in front of "tissue" in the table
 
 ![](_static/images/Methylation/fig6-3a.png)
 
-[**Figure 6-3: "View" link on the right table**](_static/images/Methylation/fig6-3a.png)
+[**Figure 6-3: "View" a track with the magnifying icon in the table**](_static/images/Methylation/fig6-3a.png)
 
 
 
-**4)** A next webpage will be opened on a new internet tab. To visualize and sort better,  click on the gear icon on the left side of the plot. Select "Box plot" on Field "Graph type" in case it not selected by default, "median (numeric Y)" on Field "Order Groups By" and "Color by Track" on Field "Color mode" and untick the checkbox at "add scatter" Click the "redraw" Button to update the box plot of a single expression data by a tissue type (in Figure 6-4).
+**4)** In a new browser tab, a box plot with scatter is shown. To visualize and sort better,  click on the gear icon on the left side of the plot. Change setting "Order Groups By" to "median (numeric Y)" and change "Color mode" to "Color by a Track", untick the checkbox at "add scatter" (Figure 6-4).
 
 ![](_static/images/Methylation/fig6-4b.png)
 
 [**Figure 6-4: Table "Adjustable settings"**](_static/images/Methylation/fig6-4b.png)
 
-
-
-As a result, a box plot of the expression dataset "Tissues GTeX v8 Prot_Coding" shows the expression distribution of CLDN10 across primary tissues. The user can see tissue types like "salivary_gland", "pancreas" and "kidney" on the right side of the graph, which exhibit higher expression levels of Claudin10 on Figure 6-5. Scatter is turned off.
+As a result, a box plot of the expression dataset "Tissues GTeX v8 Prot_Coding" shows the expression distribution of CLDN10 across primary tissues. The user can see tissue types like "salivary_gland", "pancreas" and "kidney" on the right side of the graph, which exhibit higher expression levels of Claudin10 (Figure 6-5). 
 
 ![](_static/images/Methylation/fig6-5a.png)
 
@@ -442,9 +437,9 @@ As a result, a box plot of the expression dataset "Tissues GTeX v8 Prot_Coding" 
 
 ## Analysing plots
 
-Now that we have studied methylation graphs, our scope is extended to the next topic, which is "**expression**" of our gene of interest across tissues/cancer types.Methylation and expression have a reciprocal relationship. From the previous *Section 3 Comparing Methylation Heatmaps*, it was observed that the methylation levels increase for certain genes during carcinogenesis. In contrast, expression levels are reduced. The across dataset module is a good tool to observe the difference in expression from different datasets. Please note as mentioned before only datasets of the same chiptype (*platform*) and normalization can be analyzed together.  Here, datasets with author name "Roth" and "Broad" are used to plot the expression graphs. The platform user takes the following steps to create the expression graph:
+Now that we have studied methylation graphs, our scope has extended to the next topic, which is "**expression**" of our gene of interest across tissues/cancer types. Methylation and expression have a reciprocal relationship. From the previous *Section 3 Comparing Methylation Heatmaps*, it was observed that the methylation levels increase for certain genes during carcinogenesis. In contrast, expression levels are reduced. The "across dataset" module is a good tool to observe the difference in expression from different datasets. Please note as mentioned before only datasets of the same chiptype (*platform*) and normalization can be analyzed together. In this section, datasets with author name "Roth" and "Broad" are used to plot expression graphs. The platform user takes the following steps to create the expression graph:
 
-**1)** Repeat the steps from 1) to 5) in *Section 5 Multiple datasets overview..* of this manual for two datasets with author names "Roth, n=504" (normal cells, in Figure 7-2) and "Broad" (cancer cells, in Figure 7-3). Check is u133p2, mas5.0 is selected as indicated in figure 7-1.
+**1)** Repeat the steps from 1) to 5) in *Section 5 Multiple datasets overview.* of this manual for two datasets with author names "Roth, n=504" (normal cells, in Figure 7-2) and "Broad" (cancer cells, in Figure 7-3). Check is u133p2, mas5.0 is selected as indicated in figure 7-1.
 
 ![](_static/images/Methylation/fig7-1a.png)
 
