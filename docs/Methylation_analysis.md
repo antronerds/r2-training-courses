@@ -364,7 +364,7 @@ In the "One Way Analysis of variance (ANOVA)" table, it is again observed that t
 
 
 
-The mean methylation difference of the two probes is shown more simply in another online methylation analysis tool named "Wanderer". [6] There is a methylation difference to be seen between normal and tumor cells from Probe "cg25032595" (marked in blue in Figure 5-11) than the gap from Probe "cg16556145" (marked in red in Figure 5-11).
+The mean methylation difference between the two probes is shown more clearly in another online methylation analysis tool named "Wanderer" [6]. There is a greater methylation difference between normal and tumor cells at probe cg25032595 (marked in blue in Figure 5-11) than at probe cg16556145 (marked in red in Figure 5-11).
 
 ![](_static/images/Methylation/fig5-11.jpg)
 
