@@ -276,7 +276,7 @@ With the megasampler module you can investigate the expression levels of a gene 
 
 The user could also compare the methylation level of the same reporter (probe) from multiple datasets. In this section, the same three datasets as *Section 3 Comparing Methylation Heatmaps* are used ("Lokk": normal cells, "Heyn": tumor cells, "Esteller": cancer cells). The user takes the following steps to create the scatter plots of the same probe methylation dataset:
 
-**5)** Choose "Across Datasets" under Field 1 checkbox. Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 5-1).
+**1)** Choose "Across Datasets" under Field 1 checkbox. Leave all other settings at their default and click "Next" on the main page to proceed (in Figure 5-1).
 
 ![](_static/images/Methylation/fig5-1a.png)
 
@@ -284,14 +284,14 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 
 
-**6)** On the next webpage "MegaSampler", the user could change the settings in relation to the data type or preset/default (either in a global or in a group level) as shown in Figure 5-2. Select "hs, ilmnhm450, custom" on Field "Type of data" to see methylation datasets on the list of the next page. Leave other settings at their default and click "Next" to proceed.
+**2)** On the next webpage "MegaSampler", the user could change the settings in relation to the data type or preset/default (either in a global or in a group level) as shown in Figure 5-2. Select "hs, ilmnhm450, custom" on Field "Type of data" to see methylation datasets on the list of the next page. Leave other settings at their default and click "Next" to proceed.
 
 ![](_static/images/Methylation/fig5-2.jpg)
 
 [**Figure 5-2: "MegaSampler" menu**](_static/images/Methylation/fig5-2.jpg)
 
 
-**7)** On the next webpage, type "CLDN10" in the Field "Gene / Reporter" and click "Select Datasets" button. (in Figure 5-3)
+**3)** On the next webpage, type "CLDN10" in the Field "Gene / Reporter" and click "Select Datasets" button. (in Figure 5-3)
 
 [](_static/images/Methylation/fig5-3a.jpg)
 
@@ -301,14 +301,14 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 
 
-**8)** In the grid box, type the author name "Lokk" (normal cells) on Column {Author} and select the datasets by checking the checkbox in front. Repeat the same steps for the datasets with the author names "Heyn" (tumor cells) and "Esteller" (cancer cells) respectively. Only now that you have checked the boxes of all three datasets, click the "Confirm selection" button to proceed (as shown in Figure 5-4).
+**4)** In the grid box, type the author name "Lokk" (normal cells) on Column {Author} and select the datasets by checking the checkbox in front. Repeat the same steps for the datasets with the author names "Heyn" (tumor cells) and "Esteller" (cancer cells) respectively. Only now that you have checked the boxes of all three datasets, click the "Confirm selection" button to proceed (as shown in Figure 5-4).
 
 ![](_static/images/Methylation/fig5-4.jpg)
 [**Figure 5-4: Data selection menu**](_static/images/Methylation/fig5-4.jpg)
 
 
 
-**9)** By the previous Step 4), the user could see the data has reflected in the setting as shown in yellow in Figure 5-5. Type "CLDN10" in Field "Gene/Reporter" and choose "None" in Field "Transformation". Click "Next" button to proceed.
+**5)** By the previous Step 4), the user could see the data has reflected in the setting as shown in yellow in Figure 5-5. Type "CLDN10" in Field "Gene/Reporter" and choose "None" in Field "Transformation". Click "Next" button to proceed.
 
 ![](_static/images/Methylation/fig5-5.jpg)
 
@@ -316,7 +316,7 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 
 
-**10)** Look at the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps* to find a probe name from the CGI (CpG Island) observed in yellow, e.g."cg16556145" or "cg25032595". In Figure 5-6, the two probes "cg25032595" and "cg16556145" are marked in red in the "Esteller" dataset.
+**6)** Look at the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps* to find a probe name from the CGI (CpG Island) observed in yellow, e.g."cg16556145" or "cg25032595". In Figure 5-6, the two probes "cg25032595" and "cg16556145" are marked in red in the "Esteller" dataset.
 
 ![](_static/images/Methylation/fig5-61.png)
 [**Figure 5-6: Probe location in the "Esteller" Heatmap**](_static/images/Methylation/fig5-61.png)
@@ -439,7 +439,7 @@ As a result, a box plot of the expression dataset "Tissues GTeX v8 Prot_Coding" 
 
 Now that we have studied methylation graphs, our scope has extended to the next topic, which is "**expression**" of our gene of interest across tissues/cancer types. Methylation and expression have a reciprocal relationship. From the previous *Section 3 Comparing Methylation Heatmaps*, it was observed that the methylation levels increase for certain genes during carcinogenesis. In contrast, expression levels are reduced. The "across dataset" module is a good tool to observe the difference in expression from different datasets. Please note as mentioned before only datasets of the same chiptype (*platform*) and normalization can be analyzed together. In this section, datasets with author name "Roth" and "Broad" are used to plot expression graphs. The platform user takes the following steps to create the expression graph:
 
-**1)** Repeat the steps from 1) to 5) in *Section 5 Multiple datasets overview.* of this manual for two datasets with author names "Roth, n=504" (normal cells, in Figure 7-2) and "Broad" (cancer cells, in Figure 7-3). Check is u133p2, mas5.0 is selected as indicated in figure 7-1.
+**1)** Repeat the steps from 1) to 5) in *Section 5 Multiple datasets overview.* of this manual with a couple of changes: make sure that this time "Type of data" is set to "hs, u133p2, mas5.0" as indicated in figure 7-1; in the dataset selection, select two datasets, one with author names "Roth, n=504" (normal cells, in Figure 7-2) and the second with author "Broad" (cancer cells, in Figure 7-3). 
 
 ![](_static/images/Methylation/fig7-1a.png)
 
@@ -451,13 +451,13 @@ Now that we have studied methylation graphs, our scope has extended to the next 
 
 [**Figure 7-2: Data selection menu with the author name "Roth"**](_static/images/Methylation/fig7-2.jpg)
 
-
-
-**2)** On "Adjustable settings" in Figure 7-4, the user could change the dataset order out of two datasets. Change the order of the datasets: "Roth" as "1" and "Broad" as "2". This setting lets "Roth" as the first dataset compared to "Broad" as the second dataset. Click "Submit" button to proceed.
-
 ![Data selection menu with author name Broad](_static/images/Methylation/fig7-3a.jpg)
 
 [**Figure 7-3: Data selection menu with the author name "Broad"**](_static/images/Methylation/fig7-3a.jpg)
+
+
+
+**2)** In the "Adjustable settings" menu (Figure 7-4), the user could change the dataset order out of two datasets. Change the order of the datasets: "Roth" as "1" and "Broad" as "2". This setting lets "Roth" as the first dataset compared to "Broad" as the second dataset. Click "Submit" button to proceed.
 
 
 
@@ -466,17 +466,13 @@ Now that we have studied methylation graphs, our scope has extended to the next 
 [**Figure 7-4: Adjustable settings menu**](_static/images/Methylation/fig7-4a.png)
 
 
+As a result, a box plot with two groups is generated: one shows CLDN10 expression for the samples in the "Roth" dataset, and the other shows CLDN10 expression for the samples in the "Broad" dataset, as shown in Figure 7-5 (add scatter in the gear menu). As expected, the expression level of "Roth" for normal tissues is higher than the expression level of "Broad" cancer cell lines (again, you can view the summary statistics for each box by hovering over it). This matches the methylation pattern we saw earlier for promoter-associated CLDN10 probes: lower methylation in normal cells (thus higher expression) and higher methylation in cancer cells (thus lower expression).
 
-
-As a result, two box plots with "add scatter = ticked)  from Dataset "Roth" and "Broad" are generated as shown in Figure 7-5. As expected, the expression level of "Roth" for normal tissues (with the average ~7.5) is higher than the expression level of "Broad" cancer cell lines (with the average ~3.4). This is in line with methylation level from the two datasets, because the cancer cells ("Broad") are highly methylated compared to the normal cells ("Roth").
-
-On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-value is significant enough as shown in red (in Figure 7-5).
+In the "One Way Analysis of Variance (ANOVA)" table, the p-value (3.53e-172, highlighted in red), shows a highly statistically significant difference between the groups (Figure 7-5).
 
 ![](_static/images/Methylation/fig7-5a.png)
 
-[**Figure 7-5: Expression comparison for CLDN10 in normal tissues and cancer cell lines as ANOVA table and expression graphs of the two datasets"**](_static/images/Methylation/fig7-5a.png)
-
-
+[**Figure 7-5: Box plot and ANOVA comparison of CLDN10 expression between normal tissue and cancer cell line datasets**](_static/images/Methylation/fig7-5a.png)
 
 ---
 
