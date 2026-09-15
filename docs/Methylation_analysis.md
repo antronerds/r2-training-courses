@@ -186,7 +186,7 @@ Using this message box annotation, three promoter-associated CpGs of the differe
 ## Comparing Methylation Heatmaps
 
 To gain a clearer understanding of how to interpret this Heatmap, two further methylation datasets will be compared with the "Esteller" dataset. As mentioned earlier in *Section 2 Generating a Heatmap* of this manual, this "Esteller" dataset is based on highly proliferating cancer cell lines. The second dataset is based on primary tumors snd the third dataset is based on normal control tissue samples.  
-In this section, three Heatmaps generated from these three datasets are to be compared to show the difference in methylation tendency for a chosen gene of interest. These comparative methylome heatmaps were used to study another tumor suppressor ZAR1. [5]
+In this section, three Heatmaps generated from these three datasets are to be compared to show the difference in methylation tendency for a chosen gene of interest. Below e use again CLDN10 for these comparative methylome heatmaps, but you could also look into another gene, such as the tumor suppressor ZAR1 [5].
 
 To create the second (author "Heyn", category "tumor") and the third (author "Lokk", category "normal") heatmaps, repeat the steps from 1) to 5) in *Section 2 Generating Heatmap* of this manual. The following Figure 3-1 is a collection of generated heatmaps of the three datasets ("Esteller" on the bottom, "Heyn" in the middle, "Lokk" on the top). As shown with colors in Figure 3-1, the "Lokk" Heatmap of CLDN10 is rather uniform with a CLDN10 CGI (or CpG-Island) that is unmethylated, whereas the CGI surrounding regions are methylated (for all samples).
 
@@ -272,7 +272,7 @@ Figure 4-5 is a categorized Heatmap by cell type. This Figure is the same as the
 
 ## Multiple datasets overview with methylation data: 
 
-With the megasampler module you can investigate the expression levels of a gene in the large collection of datasets R2 is hosting. For this course  we look at the β-value (ratios) of the methylation sets R2 is hosting. One restriction should be noticed, only dataset with the same platform can be inspected together. In case you select the 450k type (Illumina) platform you can only select dataset of the same platform. 
+With the megasampler module you can investigate the expression levels of a gene in the large collection of datasets R2 is hosting. For this course  we look at the β-value (ratios) of the methylation sets R2 is hosting. One restriction should be noticed, only datasets with the same platform can be inspected together. In case you select the 450k type (Illumina) platform you can only select datasets of the same platform. 
 
 The user could also compare the methylation level of the same reporter (probe) from multiple datasets. In this section, the same three datasets as *Section 3 Comparing Methylation Heatmaps* are used ("Lokk": normal cells, "Heyn": tumor cells, "Esteller": cancer cells). The user takes the following steps to create the scatter plots of the same probe methylation dataset:
 
@@ -301,7 +301,7 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 
 
-**8)** In the grid box, type the author name "Lokk" (normal cells) on Column {Author} and select the datasets by clicking "Select". Repeat the same steps for the datasets with the author names "Heyn" (tumor cells) and "Esteller" (cancer cells) respectively. Click "Confirm selection" button to proceed (as shown in Figure 5-4).
+**8)** In the grid box, type the author name "Lokk" (normal cells) on Column {Author} and select the datasets by checking the checkbox in front. Repeat the same steps for the datasets with the author names "Heyn" (tumor cells) and "Esteller" (cancer cells) respectively. Only now that you have checked the boxes of all three datasets, click the "Confirm selection" button to proceed (as shown in Figure 5-4).
 
 ![](_static/images/Methylation/fig5-4.jpg)
 [**Figure 5-4: Data selection menu**](_static/images/Methylation/fig5-4.jpg)
@@ -316,20 +316,17 @@ The user could also compare the methylation level of the same reporter (probe) f
 
 
 
-**10)** Choose one probe ("cg25032595" and "cg16556145" respectively) from the CGI (CpG Island) observed in yellow in the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps*. As shown in Figure 5-6, the two probes are found in the "Esteller" heatmap as "cg25032595" is marked in blue and ""cg16556145" is marked in red.
+**10)** Look at the three Heatmaps produced from *Section 3 Comparing Methylation Heatmaps* to find a probe name from the CGI (CpG Island) observed in yellow, e.g."cg16556145" or "cg25032595". In Figure 5-6, the two probes "cg25032595" and "cg16556145" are marked in red in the "Esteller" dataset.
 
 ![](_static/images/Methylation/fig5-61.png)
 [**Figure 5-6: Probe location in the "Esteller" Heatmap**](_static/images/Methylation/fig5-61.png)
 
-
-
-
-Select the first probe "cg25032595" as shown on the right in Figure 5-7. On "Adjustable settings" in Figure 5-8, the user could change the dataset order out of all selected datasets. Change the order the datasets: "Lokk" as "1", "Heyn" as "2" and "Esteller" as "3" (in Figure 5-8). This setting lets datasets be compared: "Lokk" as the first dataset, "Heyn" as the second dataset and "Esteller" as the third order. Click "Submit" button to proceed. Repeat the same process for the second probe "cg16556145" as shown on the right in Table 5-7.
+In the probe table of the Megasampler select that probe, e.g. "cg16556145" or "cg25032595" as shown on the left and right side in Figure 5-7 respectively. In "Adjustable settings" in Figure 5-8, the user could change the order of the selected datasets. Change the order as follows, if they aren't in the right order yet: "Lokk" as "1", "Heyn" as "2" and "Esteller" as "3" (in Figure 5-8). This setting lets datasets be compared: "Lokk" as the first dataset, "Heyn" as the second dataset and "Esteller" as the third order. Click "Submit" button to proceed. Repeat the same process for the second probe "cg16556145" as shown on the right in Table 5-7.
 
 
 ![](_static/images/Methylation/fig5-7c.png)
 
-[**Figure 5-7: Selected probe (”cg25032595” on the left, “cg16556145” on the right)**](_static/images/Methylation/fig5-7c.png)
+[**Figure 5-7: Selected probe (“cg16556145” on the left, ”cg25032595” on the right)**](_static/images/Methylation/fig5-7c.png)
 
 
 
