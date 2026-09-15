@@ -354,15 +354,13 @@ This page has two menus to adapt your graph as is shown in Figure 5-9b. First, n
 
 
 
-A second methylation scatter plot from the three datasets of Probe "cg16556145" can be generated as shown in Figure 5-10. As expected, the methylation tendency from the normal to cancer cells is increasing, as was observed in the scatter plot in Figure 5-9 as well. The methylation level "Lokk" for normal tissues is lower than the methylation level of "Heyn"  tumor cell lines (compare the summary statistics by hovering over the boxes). The methylation level of the primary tumor tissues in the "Heyn" dataset is also lower than the methylation level of the "Esteller" proliferative tumor cell lines.
+A second methylation scatter plot, this time with Probe "cg16556145" and with the same three datasets, can be generated as shown in Figure 5-10. As expected, the methylation tendency from the normal to cancer cells is increasing, as was observed in the scatter plot in Figure 5-9 as well. The methylation level "Lokk" for normal tissues is lower than the methylation level of "Heyn"  tumor cell lines (compare the summary statistics by hovering over the boxes). The methylation level of the primary tumor tissues in the "Heyn" dataset is also lower than the methylation level of the "Esteller" proliferative tumor cell lines.
 
 In the "One Way Analysis of variance (ANOVA)" table, it is again observed that the p-value is quite significant as shown in red (in Figure 5-10).
 
 ![](_static/images/Methylation/fig5-10b.png)
 
 [**Figure 5-10: ANOVA table and methylation graphs of the three datasets of Probe "cg16556145" (could be compared to expression plot Figure 7-5**](_static/images/Methylation/fig5-10b.png)
-
-
 
 The mean methylation difference between the two probes is shown more clearly in another online methylation analysis tool named "Wanderer" [6]. There is a greater methylation difference between normal and tumor cells at probe cg25032595 (marked in blue in Figure 5-11) than at probe cg16556145 (marked in red in Figure 5-11).
 
@@ -371,14 +369,14 @@ The mean methylation difference between the two probes is shown more clearly in 
 [**Figure 5-11: Wanderer mean methylation graph**](_static/images/Methylation/fig5-11.jpg)
 
 
-More or less the same visualisation plot can also be generated in R2 with a little tweaking and playing using  the numerous settings of the gear box for the graphical settings. Let's start with generating a heatmap for our gene as show here in fig 5-12 below and click somewhere below the button the button "plot as view multiple reporter". A box plot will be generated like the  graphg in 5-12.
+More or less the same visualisation plot can also be generated in R2 with a little tweaking and playing using the numerous settings of the gear box for the graphical settings. Let's start with generating a heatmap for our gene CLDN10 as show here in fig 5-12 and scroll down to find the button "plot as view multiple reporter" and click. A box plot will be generated like the graph in 5-12.
 
 
 ![](_static/images/Methylation/fig5-12a.png)
 
 [**Figure 5-12: R2-"wanderer" for the individual reporters I**](_static/images/Methylation/fig5-12a.png).
 
-In the General tab of the settings menu, find the tissue type in the "Separation track" dropdown and try to generate a plot similar to the one shown in the animated GIF below. This type of visualization can be generated for many datasets, allowing you to explore individual reporters for a given gene across grouped parameters.
+In the General tab of the settings menu, to separate normal from tumor, we need to use the "tissue type" in the "Separation track" dropdown. It is also important to change "Handle groups by" to "Separated by track grouped by gene" and widen the plot in "Plot dimensions". Try to generate a plot similar to the one shown in the animated GIF below. This type of visualization can be generated for many datasets, allowing you to explore individual reporters for a given gene across grouped parameters.
 
 
 ![](_static/images/Methylation/wanderer.gif)
@@ -390,10 +388,6 @@ In the General tab of the settings menu, find the tissue type in the "Separation
 
 
 [**Figure 5-12: R2-"wanderer" result**](_static/images/Methylation/fig5-12b.png).
-
-
-
-
 
 
 ---
