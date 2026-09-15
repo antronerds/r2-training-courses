@@ -321,7 +321,7 @@ The user could also compare the methylation level of the same reporter (probe) f
 ![](_static/images/Methylation/fig5-61.png)
 [**Figure 5-6: Probe location in the "Esteller" Heatmap**](_static/images/Methylation/fig5-61.png)
 
-In the probe table of the Megasampler select that probe, e.g. "cg16556145" or "cg25032595" as shown on the left and right side in Figure 5-7 respectively. In "Adjustable settings" in Figure 5-8, the user could change the order of the selected datasets. Change the order as follows, if they aren't in the right order yet: "Lokk" as "1", "Heyn" as "2" and "Esteller" as "3" (in Figure 5-8). This setting lets datasets be compared: "Lokk" as the first dataset, "Heyn" as the second dataset and "Esteller" as the third order. Click "Submit" button to proceed. Repeat the same process for the second probe "cg16556145" as shown on the right in Table 5-7.
+In the probe table of the Megasampler select the probe, e.g. "cg16556145" or "cg25032595" as shown on the left and right side in Figure 5-7 respectively. In "Adjustable settings" in Figure 5-8, the user could change the order of the selected datasets. Change the order as follows, if they aren't in the right order yet: "Lokk" as "1", "Heyn" as "2" and "Esteller" as "3" (in Figure 5-8). This setting lets datasets be compared: "Lokk" as the first dataset, "Heyn" as the second dataset and "Esteller" as the third order. Click "Submit" button to proceed. Repeat the same process for the second probe "cg16556145" as shown on the right in Table 5-7.
 
 
 ![](_static/images/Methylation/fig5-7c.png)
@@ -337,19 +337,26 @@ In the probe table of the Megasampler select that probe, e.g. "cg16556145" or "c
 
 
 
-As a result, the first methylation scatter plot from Dataset "Lokk", "Heyn" and "Esteller" of Probe "cg25032595" are generated as shown in Figure 5-9. As expected, the methylation level of "Lokk" for normal tissues (with the average 0.025) is lower than the methylation level of "Heyn" tumor cell lines (with the average 0.08). The methylation level of "Heyn" for tumor tissues is also lower than the methylation level of "Esteller" tumor cell lines (with the average 0.4). 
+As a result, the first methylation scatter plot from Dataset "Lokk", "Heyn" and "Esteller" of Probe "cg25032595" are generated. When you place your mouse over one of the dataset boxes in the graph, summary statistics of the respective dataset pop up as shown in Figure 5-9. As expected, the methylation level of "Lokk" for normal tissues is lower than the methylation level of "Heyn" tumor cell lines. The methylation level of "Heyn" for tumor tissues is also lower than the methylation level of "Esteller" tumor cell lines. 
 
-In the "One-Way Analysis of Variance (ANOVA)" table, it can be observed that the p-value is significant, as shown in red in animated figure 5-9. By default, the values used in the graphs are log2-transformed. In the case of methylation data, the so-called Beta values are ratios, and it is therefore recommendable to use the non-transformed value 
+In the "One-Way Analysis of Variance (ANOVA)" table, it can be observed that the p-value is significant, as shown in red in animated figure 5-9. 
+
+![](_static/images/Methylation/fig5-9a.jpg)
+
+[**Figure 5-9a: Megasampler result for probe cg25032595 and the three datasets**](_static/images/Methylation/fig5-9a.jpg)
+
+This page has two menus to adapt your graph as is shown in Figure 5-9b. First, next to the plot in the upper left corner, a clickable gear icon opens up a menu to adapt the looks of the graph interactively. You can play around with the settings to get a feel of how such changes can assist in obtaining new insights about your data. At the bottom of the page analysis settings can be changed.  
+
 
 ![](_static/images/Methylation/megasampler3s.gif)
 
-[**Figure 5-9: ANOVA table and methylation graphs of the three datasets of Probe "cg25032595" (could be compared to expression plot Figure 7-5)**](_static/images/Methylation/megasampler3s.gif)
+[**Figure 5-9b: ANOVA table and methylation graphs of the three datasets of Probe "cg25032595" (could be compared to expression plot Figure 7-5)**](_static/images/Methylation/megasampler3s.gif)
 
 
 
-The second methylation scatter plot from the three datasets of Probe "cg16556145" are generated as shown in Figure 5-9. As expected, the methylation tendency from the normal to cancer cells is increasing as observed in the scatter plot in Figure 5-9. The methylation level "Lokk" for normal tissues (with the average 0.1) is lower than the methylation level of "Heyn" tumor cell lines (with the average 0.25). The methylation level of "Heyn" for tumor tissues is also lower than the methylation level of "Esteller" tumor cell lines (with the average 0.65).
+A second methylation scatter plot from the three datasets of Probe "cg16556145" can be generated as shown in Figure 5-10. As expected, the methylation tendency from the normal to cancer cells is increasing, as was observed in the scatter plot in Figure 5-9 as well. The methylation level "Lokk" for normal tissues is lower than the methylation level of "Heyn"  tumor cell lines (compare the summary statistics by hovering over the boxes). The methylation level of the primary tumor tissues in the "Heyn" dataset is also lower than the methylation level of the "Esteller" proliferative tumor cell lines.
 
-On "One Way Analysis of variance (ANOVA)" table, it is also observed that the p-value is significant enough as shown in red (in Figure 5-10).
+In the "One Way Analysis of variance (ANOVA)" table, it is again observed that the p-value is quite significant as shown in red (in Figure 5-10).
 
 ![](_static/images/Methylation/fig5-10b.png)
 
