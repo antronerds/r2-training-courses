@@ -727,7 +727,7 @@ The color gradient beside the heatmap shows that positive z-scores are colored y
 
 
 
-When the cursor is placed on a row iin the heatmap, a pop-up message containing the gene name, the probe name and the order number (gene name="CLDN10", probe name="cg16275739" on the pop-up message in Figure 11-9). The samples, and the genes are listed in order of appearance in the table that opens when you click on "Sort Order Listing", as shown in Figure 11-9. 
+When the cursor is placed on a row in the heatmap, a pop-up message containing the gene name, the probe name and the methylation value for the sample in that column are shown (e.g. gene name="CLDN10", probe name="cg16275739", and value -0.99 for sample 11_mk0590_n on the pop-up message in Figure 11-9). The samples, and the genes are listed in order of appearance in the table that opens when you click on "Sort Order Listing", as shown in Figure 11-9. 
 
 ![](_static/images/Methylation/fig11-10.jpg)
 
