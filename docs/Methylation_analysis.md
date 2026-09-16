@@ -704,27 +704,22 @@ Select "Differential expression between two groups" in Field 3. Click "Next" on 
 
 
 
-The next page shows the heatmap of hypermethylation between two groups (normal samples and tumor samples).
+The next page shows a heatmap of methylation z-scores for the samples in the dataset, with samples grouped by tissue type (normal vs. tumor).
 
 ![](_static/images/Methylation/fig11-7.jpg)
 
 [**Figure 11-6: "Heatmap(zscore)" Title**](_static/images/Methylation/fig11-7.jpg)
 
 
+"Zscore," or the standard score, is "a statistical measure that represents the number of standard deviations an individual data point is from the mean of a dataset. It indicates how far a particular data point deviates from the average in terms of standard deviation units." [7] "FDR" stands for False Discovery Rate, "a statistical concept used in multiple hypothesis testing to control for the proportion of false discoveries or false positives." [7]  
 
-
-
-"zscore" or the standard score is "a statistical measure that represents the number of standard deviations an individual data point is from the mean of a dataset. It indicates how far a particular data point deviates from the average in terms of standard deviation units." [7] And "fdr" stands for False Discovery Rate and is "a statistical concept used in multiple hypothesis testing to control for the proportion of false discoveries or false positives." [7]
-
-On the right of the heatmap, the colored block lines show the type of data points. The enlarged versions are shown in Figure 11-8. The red blocks of "n10nvst" are the data points of the tumor patients and the green blocks of "n10nvst" are the data points of the normal people. One could see the details of a certain data point by placing a cursor on the "n10nvst" block. On the pop-up message shows the type of the data point (marked in red) (in Figure 11-8).
+At the top of the heatmap, a colored annotation for track "type_upd" shows the type of each sample; an enlarged view is shown in Figure 11-7. In the "type_upd" track, red blocks mark tumor samples and green blocks mark normal samples. You can view the details of a specific sample by hovering over its block in the "type_upd" track; the pop-up shows that sample's annotation (circled in red here for illustration), as in Figure 11-7.
 
 ![](_static/images/Methylation/fig11-8c.png)
 
-[**Figure 11-7: "Enlarged heatmap zscore - Data points (in red) and normal data point (in green**](_static/images/Methylation/fig11-8c.png)
+[**Figure 11-7: "Enlarged heatmap - normal in green vs. tumor in red**](_static/images/Methylation/fig11-8c.png)
 
-
-
-With this background knowledge, the positive score on the heatmap (in Figure 11-9) is colored in yellow and the negative score in blue. The positive score shows the data point above the mean and the negative below the mean of the datasets. All tumor patients have reciprocal behavior of all normal people, as observed in the color difference in the heatmap (yellow heatmap area for tumor patients are blue heatmap area for normal people).
+The color gradient beside the heatmap shows that positive z-scores are colored yellow-red, while negative z-scores are colored blue. A positive z-score means a sample's methylation value is above the mean for that probe across all samples; a negative z-score means it is below that mean. In this heatmap, the tumor samples largely show the opposite pattern from the normal samples: probes that appear yellow-red (above the mean) in the tumor samples tend to appear blue (below the mean) in the normal samples, and vice versa.
 
 ![](_static/images/Methylation/fig11-9.jpg)
 
@@ -732,7 +727,7 @@ With this background knowledge, the positive score on the heatmap (in Figure 11-
 
 
 
-When the cursor is placed on Gene type axis, a pop-up message containing the gene name, the probe name and the order number (gene name="CLDN10", probe name="cg16275739", order number="581" on the pop-up message in Figure 11-10). The order number can be found from the table "Sort Order Listing" after clicking it as shown in Figure 11-10. One can investigate the difference in a certain gene's expression in this way.
+When the cursor is placed on a row iin the heatmap, a pop-up message containing the gene name, the probe name and the order number (gene name="CLDN10", probe name="cg16275739" on the pop-up message in Figure 11-9). The samples, and the genes are listed in order of appearance in the table that opens when you click on "Sort Order Listing", as shown in Figure 11-9. 
 
 ![](_static/images/Methylation/fig11-10.jpg)
 
