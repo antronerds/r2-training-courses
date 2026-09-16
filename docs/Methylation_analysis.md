@@ -478,16 +478,16 @@ In the "One Way Analysis of Variance (ANOVA)" table, the p-value (3.53e-172, hig
 
 ## Comparing Expression and Methylation Data
 
-In the case where R2 hosts multi-omics data of the same samples, the user can also compare and correlate methylation and expression datasets by displaying both in one plot. In this section, the datasets "Garnett" (normal cells) and "Esteller" (cancer cells) are used. The user takes the following steps to create a dot plot of the methylation and expression datasets:
+In the case where R2 hosts multi-omics data of the same samples, the user can also compare and correlate methylation and expression datasets by displaying both in one plot. In this section, the datasets "Garnett" (normal cells) and "Esteller" (cancer cells) are used. The user takes the following steps to create a correlation scatter plot of the methylation and expression datasets:
 
-**1)** After login to the R2 Platform [1], choose "Across Datasets" under Field 1 checkbox and "View a gene in two datatypes". Click "Next" on the main page to proceed (in Figure 8-1).
+**1)** On the main page, choose "Across Datasets" in field 1 and "View a gene in two datatypes" in field 2. Click "Next" to proceed (Figure 8-1).
 
 ![](_static/images/Methylation/fig8-1.png)
 [**Figure 8-1: Main menu**](_static/images/Methylation/fig8-1.png)
 
 
 
-**2)** On Table "Select data sets to merge" of the next webpage, the user could set the data type and the X- and Y-axis of the dot plot. As shown in Figure 8-2, select "cellline_cancer_pharmaco" on Field "Data set collection", "Methylation data - Cell line Cancer Pharmacogenomic - Esteller - 1028 - custom - ilmnhm450" on Field "Source data" and "Expression data - Cell line Cancer Drug (Sanger) - Garnett - 1017 - RMA - u219" on Field "Target data". Click "Select data sets" to proceed.
+**2)** In the menu "Select data sets to merge" of the next page, the user can choose the datasets and the X- and Y-axis of the scatter plot. As shown in Figure 8-2, select "cellline_cancer_pharmaco" in the field "Data set collection", "Methylation data - Cell line Cancer Pharmacogenomic - Esteller - 1028 - custom - ilmnhm450" in the field "Source data" and "Expression data - Cell line Cancer Drug (Sanger) - Garnett - 1017 - RMA - u219" in the field "Target data". Click "Select data sets" to proceed.
 
 ![](_static/images/Methylation/fig8-2.png)
 
@@ -495,16 +495,13 @@ In the case where R2 hosts multi-omics data of the same samples, the user can al
 
 
 
-**3)** On Table "Adjustable settings" of the next webpage, type "CLDN10" in the left box of Field "Gene / Met_id" and "Gene / Reporter". The two probes from Step 6) on *Section 4 Multiple datasets overview with methylation data* ("cg25032595", "cg16556145") are to be observed. To look at the dot plot of the first probe, type "cg25032595" in the right box of Field "Gene / Met_id" (in Figure 8-3).
+**3)** The two probes from Step 6) in *Section 4 Multiple datasets overview with methylation data* ("cg25032595", "cg16556145") are to be observed. First we will generate the correlation scatter plot of the probe "cg25032595". In the table "Adjustable settings" menu, copy-paste "cg25032595" in the right box of the field "Gene / Met_id". Select the suggested "CLDN10 / cg25032595" with a mouse click. Now, in the field "Gene / Reporter", fill in "CLDN10" in the left field and click with the mouse on the suggested CLDN10/Reporter (Figure 8-3). The setting "Graph type" is set to "XY" Hit Submit.
 
 ![](_static/images/Methylation/fig8-3.jpg)
 
 [**Figure 8-3: Adjustable settings menu (for Probe "cg25032595)**](_static/images/Methylation/fig8-3.jpg)
 
-
-
-
-As shown in Figure 8-4, the user can see the dot plot of the methylation dataset "Esteller" on the X-axis and the expression dataset "Garnett" on the Y-axis for the Probe "cg25032595". There is a significant correlation between the two axes (as p-value is marked in red under the table in Figure 8-4) supporting the idea of DNA hypermethylation decreasing gene expression.
+As shown in Figure 8-4, the user obtained a scatter plot, where each dot represents a sample with its methylation value of probe "cg25032595" of the methylation dataset "Esteller" on the X-axis and its expression value of the dataset "Garnett" on the Y-axis. There is a significant correlation between the two axes (shown by the p-value marked in red, Figure 8-4) supporting the idea of DNA hypermethylation decreasing gene expression.
 
 ![](_static/images/Methylation/fig8-4a.png)
 
@@ -514,27 +511,25 @@ As shown in Figure 8-4, the user can see the dot plot of the methylation dataset
 
 **4)** Repeat the steps from 1) to 3) of this section for the second Probe by typing "cg16556145" in the right box of Field "Gene / Met_id" (in Figure 8-5).
 
-![](_static/images/Methylation/fig8-5a.png)
-
-[**Figure 8-5: "Adjustable settings" menu (for Probe "cg16556145")**](_static/images/Methylation/fig8-5a.png)
-
-
-
-As shown in Figure 8-6, the dot plot for the Probe "cg16556145" is generated. With the significant correlation between the two axes, the concentration tendency of the most dots are the same as the tendency observed in Figure 8-4. One can observe a negative correlation between the methylation and the expression datasets.
+As shown in Figure 8-5, the scatter plot for the Probe "cg16556145" is generated. The significant correlation shows the same dot concentration pattern observed in Figure 8-4, indicating a negative correlation between the methylation and expression datasets.
 
 ![](_static/images/Methylation/fig8-6a.png)
 
-[**Figure 8-6: Comparative log2 dot plot cg16556145**](_static/images/Methylation/fig8-6a.png)
+[**Figure 8-5: Comparative log2 dot plot cg16556145**](_static/images/Methylation/fig8-6a.png)
 
+With a simple check in the gear menu, R2 allows box plots to be added along side the axis of the scatterplot, and histograms can be added as well (Figure 8-6). In some correlation scatter plot linear fit lines can highlight the relation between the axis very well. In this case, while a negative association is real and statistically significant, the shape of the scatter suggests the relationship is better described as "low methylation permits variable expression, while high methylation consistently suppresses it" rather than a simple linear decrease.
 
+![](_static/images/Methylation/fig8-5a.png)
+
+[**Figure 8-6: "Adjustable settings" menu (for Probe "cg16556145")**](_static/images/Methylation/fig8-5a.png)
 
 ---
 
 ## In-Depth Study on Expression Dataset
 
-Let's go back to Normal Tissues GTeX v8 Prot_Coding - GTeX - 17382 - tpm - gencode26 dataset. One could also take a closer look at expression of your gene of interest in certain tissues of the expression dataset on R2 Platform. From an expression box plot, a certain or several tissue types could be selected. In this section, the tissue type "skin" is further investigated with the following steps after the steps in *Section 6 An Expression Box Plot* [8].
+Let's go back to the dataset "Normal Tissues GTeX v8 Prot_Coding - GTeX - 17382 - tpm - gencode26". This dataset allows us to take a closer look at the expression of a gene of interest in selected tissues.  In this section, the tissue type "skin" is further investigated. The steps in *Section 6 An Expression Box Plot* are taken as a starting point, from which we continue with the following steps [8].
 
-**1)** Scroll down to "Adjustable settings" after the expression box plot is executed. Select "tissue (30 cat)" on Field "Subset track". On the pop-up window, click the tissue type "skin (1809)" checkbox and "OK". Click "Submit" to proceed. (In Figure 9-1)
+**1)** Scroll down to "Adjustable settings" after the expression box plot is executed. Set the field "Subset track" to "tissue (30 cat)". On the pop-up window, click the tissue type "skin (1809)" checkbox and "OK". Click "Submit" to proceed. (In Figure 9-1)
 
 ![](_static/images/Methylation/fig9-1a.png)
 
@@ -542,9 +537,10 @@ Let's go back to Normal Tissues GTeX v8 Prot_Coding - GTeX - 17382 - tpm - genco
 
 
 
-**2)** After the box plot on "skin" is executed, the user could further investigate expression level by skin types, such as differences in the expression between fibroblasts and normal skin types. On Table "Adjustable settings", select "tissue_detail (54 cat)" on Field "Track", "tissue_detail (54 cat)" on "Subset track", "Box/dot plot (dots)" on Field "Graph type" and "Color by Track" on Fields "Color mode/(groups)". "tissue_detail (54 cat)" is an in-depth category than the "tissue (30 cat)" category. (In Figure 9-2)
+**2)** After the box plot for "skin" is generated, the user can further investigate expression levels across skin types, such as differences between fibroblasts and normal skin. The "tissue_detail (54 cat)" track annotates such subtypes of the "tissue (30 cat)" category. In the "Adjustable settings" table, set both the "Track" field and the "Subset track" field to "tissue_detail (54 cat)". The user sees a pop-up window. Click on the checkboxes of these two skin types "cells_-\_cultured_fibroblasts (504)" and "skin_-\_not_sun_exposed_(suprapublic) (604)" and hit the "OK" Button. Not-sun-exposed skin cells are chosen to reduce the impacting factor.  
+Set the "Graph type" field to "Box", "Add Scatter" to "true" and the "Color mode (groups)" field to "Color by Track", as shown in Figure 9-2. 
 
-After selecting "tissue_detail (54 cat)" on Field "Subset track", the user sees the pop-up window. Click two skin types checkboxes ("cells_-_cultured_fibroblasts (504)" and "skin_-_not_sun_exposed_(suprapublic) (604)") and "OK" Button. Not-sun-exposed skin cells are chosen to reduce the impacting factor. Click "Submit" to proceed. (In Figure 9-2)
+ Click "Submit" to proceed. 
 
 
 
@@ -564,7 +560,7 @@ After selecting "tissue_detail (54 cat)" on Field "Subset track", the user sees 
 
 
 
-The box plot with dots shown in Figure 9-3 shows the difference of expression levels between fibroblasts and normal skin. Normal skin not exposed to the sun has a higher expression level, compared to the expression level of fibroblasts. (Be reminded that the Y-Axis name is log2 CLDN10 expression.)
+The box plot with dots shown in Figure 9-3 shows the difference of CLDN10 expression levels between fibroblasts and normal skin. Normal skin not exposed to the sun has a higher expression level, compared to the expression level of fibroblasts. (Be reminded that the Y-Axis name is log2 CLDN10 expression)
 
 ![](_static/images/Methylation/fig9-4a.png)
 
@@ -578,7 +574,7 @@ The box plot with dots shown in Figure 9-3 shows the difference of expression le
 
 One could also investigate patient survival probability of a certain tumor type/entity in comparison to the expression for your gene of interest using the R2 Platform. In this section, the "TCGA" dataset is used as an example because it contains several general cancer types (including normal control tissues) and is relatively big.
 
-**1)** Click "Survival (Kaplan-Meier/Cox)" on the left menu of the main page. On Table "Kaplan-Meier analysis using a data set", select Field "Data set" as shown in Figure 10-1.
+**1)** Click "Survival (Kaplan-Meier/Cox)" in the left menu of the main page. In the center menu "Kaplan-Meier analysis using a single data set", select Field "Data set" as shown in Figure 10-1.
 
 ![](_static/images/Methylation/fig10-1.jpg)
 
@@ -586,7 +582,7 @@ One could also investigate patient survival probability of a certain tumor type/
 
 
 
-**2)** On the pop-up box (in Figure 10-2), type "Kidney" on Column {Tissue/Tumor} and select "Kidney Renal Clear Cell Carcinoma" from "tcgars" on Column {Platform}. Click "Confirm selection" button as shown in Figure 10-2.
+**2)** In the pop-up dataset selection grid (in Figure 10-2), type "Kidney" in Column {Tissue/Tumor} and select "Kidney Renal Clear Cell Carcinoma" with "tcgars" in Column {Platform}. Click "Confirm selection" button as shown in Figure 10-2.
 
 ![](_static/images/Methylation/fig10-2.jpg)
 
@@ -594,19 +590,23 @@ One could also investigate patient survival probability of a certain tumor type/
 
 
 
-**3)** Select "a single gene" on Field "Separated by" and click "Next" on the main page to proceed. (in Figure 10-3)
+**3)** Select "a single gene" iin the field "Separated by" and click "Next" on the main page to proceed (Figure 10-3a).
 
 ![](_static/images/Methylation/fig10-3.png)
 
-[**Figure 10-3: "Kaplan-Meier analysis using a data set" Table on main page)**](_static/images/Methylation/fig10-3.png)
+[**Figure 10-3a: "Kaplan-Meier analysis using a data set" Table on main page)**](_static/images/Methylation/fig10-3.png)
 
+Set "Type of Survival" to "overall" and fill in Gene "CLDN10" (Figure 10-3b).
 
+![](_static/images/Methylation/fig10-3b.png)
 
-The result on the next page shows the overall survival probability between patients with high gene of interest expression and low expression (on the left in Figure 10-4) and expression levels with p-values (on the right in Figure 10-4).
+[**Figure 10-3b: "Kaplan-Meier analysis settings)**](_static/images/Methylation/fig10-3b.png)
 
-When the automated separation of patients by expression level produced one big and one small cohort, it should be taken into account that results could be significant, but still not biologically relevant. Further studies should be performed, in order to better understand the contribution of your gene of interest in patient survival. Even though the p-values are significant (statistically valid), the dataset might not be biologically valid as well.
+The result on the next page shows the overall survival probability of patients with high expression of the gene of interest compared to those with low expression (left plot in Figure 10-4). The right graph in Figure 10-4 shows each sample's expression level (Y-axis), with samples ranked along the X-axis. The bars indicate the p-value that would result from splitting the cohort into high and low expression groups at each possible cutoff value. This is the "scan" mode used to identify the optimal cutoff (244.9162 in this example, the cutoff that gives the most significant split).  
+  
+When the automated cutoff produces one large and one small cohort, keep in mind that a statistically significant result isn't necessarily biologically meaningful. Further studies are needed to understand a gene's actual contribution to patient survival — a significant p-value doesn't guarantee biological relevance.
 
-The left graph in Figure 10-4 shows the overall survival probability of two cohorts (on an Y-axis) that are high expression (a line marked in blue) and low expression (a line marked in red) groups, regarding the expression of the gene of interest. An X-axis is the follow-up in months. The total patient number of the cohorts are shown with colors on the right top of the graph ("n=430", "n=103" respectively). One could find out individual information of each sample by hovering over de small vertical line in the plot (in Figure 10-5).
+The left graph in Figure 10-4 shows the overall survival probability (Y-axis) of two cohorts split by expression of the gene of interest: high expression (red line, n=430) and low expression (blue line, n=103). High thus means, the samples that showed higher CLDN10 expression than the "scan" mode identified as the optimal cutoff expression. The X-axis shows follow-up time in months. Hovering over a small vertical tick on either line reveals individual sample information (Figure 10-5).
 
 ![](_static/images/Methylation/fig10-4a.png)
 
@@ -620,34 +620,30 @@ The left graph in Figure 10-4 shows the overall survival probability of two coho
 [**Figure 10-5: Individual information pop-up in "Overall survival probability graph"**](_static/images/Methylation/fig10-5.png)
 
 
-The right graph in Figure 10-4 shows the expression level by "Events" groups. An Y-axis shows the expression level and an X-axis shows the p-values of each sample. The bar graph on the X-axis shows the p-value of each sample. The dots in green on the curve indicate the samples with the "Events" and the dots in red are the samples with no "Events". The definition of the "Events" is different by datasets. These "Events" could be for example relapse free or not (Relapse free means that the patients after primary treatment survived a certain period of time without any symptoms of the cancer). More information on the "Events" dataset label could be found on R2 Platform online tutorial under "Special sample annotation" in *Section 24. R2 Dataset Addition*. [2]
+In the right graph in Figure 10-4 the green dots mark samples with an "Event"; red dots mark samples without one. What counts as an "Event" varies by dataset. In another dataset this could be for example marking relapse (recurrence of the cancer after a symptom-free period following treatment) versus no relapse. More detail on "Event" annotations for a given dataset can be found in the R2 Platform's online tutorial, under "Special sample annotation" in Section 24, R2 Dataset Addition. [2]
 
 Some adjustments are to be made as the survival probability until 60 follow-up months (or 5 years) is more common (on the left graph in Figure 10-4). The expression graph (on the right graph in Figure 10-4) could be also shifted (or cut) by filtering the range with the significant p-values. This could be done by the following steps.
 
-**4)** Scroll down to "Adjustable settings" after two graphs are executed. Type "60" months on Field "Only draw up to". Click "Redraw Graph" to proceed. (In Figure 10-6)
+**4)** Scroll down to the "Adjustable settings" menu. In the "Max. time in months" field, type 60, then click "Redraw Graph" to apply the change (Figure 10-6).
 
 ![](_static/images/Methylation/fig10-6a.png)
 
 [**Figure 10-6:"Adjustable settings" Table**](_static/images/Methylation/fig10-6a.png)
 
-
-Figure 10-7 shows the redrawn "Overall survival probability graph" and the range of the X-axis is adjusted to 60 months (marked in yellow in Figure 10-7). The graph became better to compare the difference between the normal people and cancer patients, as the tails of the two lines in the graph on the right are cut.
+Figure 10-7 shows the redrawn overall survival probability graph, now limited to 60 months of follow-up (highlighted in yellow). This makes it easier to compare survival between the high- and low-expression groups, since the long, sparse tails of both curves in the graph on the left — where only a handful of patients remain at risk — are cut off.
 
 ![](_static/images/Methylation/fig10-7.jpg)
 
 [**Figure 10-7:** "Overall survival probability graph" (after adjustment)**](_static/images/Methylation/fig10-7.jpg)
 
 
+Next, a cutoff point on the "Expression graph" (the right graph in Figure 10-4) could be adjusted with the "Cutoff" field in the "Select a different cut-off" menu underneath the ranked expression plot. The cutoff point is set with the highest p-value by default. To change the cutoff point, the following step is to be done.
 
-
-
-Next, a cutoff point on the "Expression graph" (the right graph in Figure 10-4) could be adjusted on Field "Cutoff" in "Adjustable settings" Table. The cutoff point is set with the highest p-value at default. To change the cutoff point, the following step is to be done.
-
-**5)** Select any data sample which has the high local p-value ("387 - 819.7227: raw p: 0.015 (bonf: 1.000)" in Figure 10-8) on Field "Cutoff" in "Adjustable settings" Table. Type "60" months on Field "Only draw up to" in the same table. Click "Redraw Graph" to proceed. (In Figure 10-8)
+**5)** In the "Cutoff" field, select any data sample which has the high local p-value (e.g. "387 - 819.7227: raw p: 0.015 (bonf: 1.000)") as shown in Figure 10-8. Click "Redraw" to proceed 
 
 ![Adjustable settings table](_static/images/Methylation/fig10-8a.png)
 
-[**Figure 10-8: "Adjustable settings" Table**](_static/images/Methylation/fig10-8a.png)
+[**Figure 10-8: Select a different cut-off**](_static/images/Methylation/fig10-8a.png)
 
 
 
