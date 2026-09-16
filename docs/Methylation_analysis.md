@@ -663,7 +663,7 @@ The result of Step 5 is described in Figure 10-9. The overall survival probabili
 
 As Hypermethylation is an indicator of tumor development, hypermethylated regions on Heatmaps could be compared between two datasets of normal and tumor patients. The dataset with the tumor type "renal cell carcinoma (PTM)" and the author name "Richter" is used for this analysis.
 
-**1)** Click "Main" on the left menu of the main page. Click in a dataset name in box 2. (In Figure 11-1). Select "Differential expression between two groups" in Field 3.
+**1)** Click "Main" on the left menu of the main page. Click in a dataset name in box 2 (Figure 11-1).
 
 ![](_static/images/Methylation/fig11-1.png)
 
@@ -671,27 +671,27 @@ As Hypermethylation is an indicator of tumor development, hypermethylated region
 
 
 
-**2)** On the pop-up box, type the author name "Richter" on Column {Author} and select the dataset with "Renal cell carcinoma (PTM)" on Column {Tissue/Tumor} by clicking the row. Click "Confirm selection" button to proceed (In Figure 11-2). Click "Next" on main menu to proceed. (In Figure 11-3).
+**2)** On the pop-up box, type the author name "Richter" on Column {Author} and select the dataset with "Renal cell carcinoma (PTM)" on Column {Tissue/Tumor} by clicking the row. Click "Confirm selection" button to proceed (In Figure 11-2). 
 
 ![](_static/images/Methylation/fig11-2.jpg)
 
 [**Figure 11-2: Data selection menu with the author name "Richter" and the tumor type "Renal cell carcinoma (PTM)"**](_static/images/Methylation/fig11-2.jpg)
 
-
+Select "Differential expression between two groups" in Field 3. Click "Next" on main menu to proceed. (In Figure 11-3).
 
 
 ![](_static/images/Methylation/fig11-3.png)
 
 [**Figure 11-3: Main menu**](_static/images/Methylation/fig11-3.png)
 
-**3)** On "Select a test" menu, select "type_upd (3) cat in Field "Group by" at the bottom of the pulldown menu, click next. At select group 1 and 2,select normal (5) and "tumor (5). 2 outliers ("skip (2)") were omitted so we will proceed with a total of 10 samples instead of 12. Click the submit button  to proceed.
+**3)** In the menu in field "Group by", select "type_upd (3) cat" at the bottom of the pulldown menu, click next. At the settings Group 1 and 2, select "normal (5)" and "tumor (5)". 2 outliers ("skip (2)") were omitted, so we will proceed with a total of 10 samples instead of 12. Click the "Submit" button  to proceed.
 
 ![](_static/images/Methylation/fig11-4a.png)
 
 [**Figure 11-4: Select the groups**](_static/images/Methylation/fig11-4a.png)
 
 
-
+**4)** At the right menu click "Heatmap(zscore)" to proceed, as marked in Figure 11-5.
 
 
 
@@ -699,12 +699,12 @@ As Hypermethylation is an indicator of tumor development, hypermethylated region
 
 [**Figure 11-5: "Heatmap(zscore)" Button on the right menu**](_static/images/Methylation/fig11-6.jpg)
 
-**4)** At the right menu click "Heatmap(zscore)" to proceed, in Figure 11-5)
 
 
 
 
-The next page shows the heatmap of hypermethylation between two datasets (normal people and tumor patients).
+
+The next page shows the heatmap of hypermethylation between two groups (normal samples and tumor samples).
 
 ![](_static/images/Methylation/fig11-7.jpg)
 
