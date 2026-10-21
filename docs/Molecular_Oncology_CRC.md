@@ -459,7 +459,7 @@ MSI tumors give a very heterogeneous picture. This could be an indication that w
 also a subgroup could be identified. 
 
 * Hover with your mouse over data points to see if you can identify a subgroup of an annotation track in which low MLH1 expression occurs more often.
-* We can add an extra layer of information by coloring the dots of the violin plot. Scroll down to the Adjustable settings menu and set _Color mode_ to **Color by a Track** and _Color track_ to **MS_Orientation (5cat)**, and submit.  
+* We can add an extra layer of information by coloring the dots of the violin plot. Click on the steering wheel and select at the general tab in the gearbox at color mode, *color by track*, and subsequently at color by track *MS_orientation (5 cat)*  in case the graph is not updated on the fly click redraw plot.  
 
 To find out if our gene of interest associates strongly with any annotation that is already available for the current dataset, R2 also offers a tool: CliniSnitch. CliniSnitch performs a context-dependent statistical test on each track to identify significant associations with the gene’s expression (i.e. different types of tests based on whether a track is numerical or categorical).
 * On the right hand side of the page, you find several followup links in light grey boxes with dark grey headers. In one of them you can find CliniSnitch. Click on the **CliniSnitch MLH1** link to find out which available track shows the strongest association with MLH1 expression.
@@ -469,7 +469,7 @@ To find out if our gene of interest associates strongly with any annotation that
 Let's visualize the relation between these dataset annotations in another way. 
 * In the Adjustable settings menu at the bottom of the page, change _Analysis type_ to **track vs track**
 * Select for the _X track_ the **MS_status (2 cat)** and for the _Y track_ **Orientation (3 cat)** 
-* Choose *Graph type* **XY-Honeycomb** 
+* Choose *Graph type*  XY is not selected
 In the MLH1 expression graph we saw that low gene expression was not equally distributed within the MSI group. 
 * Let's add this layer of information in this plot as well: select *Color mode* **Color by a Gene** and enter **MLH1** 
   as gene to color the plot. Click **Submit**.  
@@ -501,7 +501,7 @@ algorithm.
 * Go back to the main page, and select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
 * Perform the **Differential Expression between two groups** analysis, choose Track **microsatellite_instability**, click **next**, set **no** for Group1 and 
-  **yes** for Group2, and perform the analysis on the gene set **Broad 2025 06 c6 oncogenic**. **Submit**
+  **yes** for Group2, and perform the analysis on the gene set **Broad 2025 06 c6 oncogenic**. **Submit** at **geneset**,do not forget to  click the green confirm button. 
 * Click again on the MLH1 gene magnifying glass.
 
 In this set too MLH1 seems to play a key role for MSI related CRCs. It would be interesting to find out which genes are possibly regulated by the MLH1 gene.
@@ -541,8 +541,8 @@ Underneath, each genome location is annotated with the genes found at that posit
 
 Now let's see how strongly MLH1 expression is associated with CMS subtypes.
 
-* From the main page, select the **Correlate Gene with a track** analysis to confirm the strong association of MLH1 
-  expression with the CMS1 subtype (track **cms_predicted (4 cat)**).
+* From the main page, select the **Correlate Gene with a track** analysis to confirm the strong association of MLH1 of course enter the MLH1 gene 
+  expression with the CMS subtype (track **cms_predicted (4 cat)**). In the gearbox you can select color by track in the color mode (groups) pull down.
 
 #### DNA methylation
 
@@ -554,7 +554,7 @@ be found.
 
 * Create the **View a Gene** plot for **MLH1**
 * Under the triangle of *View additional details* click on the **view all** link.
-* Scroll down to the bottom of the page to make a *Subset Track* selection with **microsatellite_instability** to 
+* Scroll down to the bottom of the page to make a *Subset Track* selection at sample filter with **microsatellite_instability** to 
   only select the samples that have been annotated for this characteristic (**yes** and **no**). Click **Next**.
 
 A heatmap is generated of methylation levels. Each column corresponds to a sample, and each row corresponds to a 
