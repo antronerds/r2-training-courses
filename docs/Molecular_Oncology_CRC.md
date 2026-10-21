@@ -166,7 +166,7 @@ As you have seen above, R2 provides access to thousands of datasets. All these d
 One of these tools is the "Find differential expression between groups". The differential expression analysis aims to identify genes that are 
 significantly different between two groups of a dataset.    
 
-* Click on **Main** in the upper left corner.
+* Click on **R2 Main** in the upper left corner.
 * Check if you have selected the **Marra** dataset with 64 samples in box 2 and in box 3 *select type of analysis*, **Differential expression 
   between two groups**. Click **Next**.
 * R2 offers a couple of statistical *Test* options, in this case we use the **T-test** which is selected by default.
@@ -370,17 +370,29 @@ We will use the Guinney dataset: _Tumor Colon (CMS) - Guinney - 3232 - custom - 
 ------
 
 ### Mutations
+
 Now we would like to look into colorectal cancer associated mutations and see if they are specific for one of the CMS groups
 * On the main page, select the Guinney dataset if it is not selected in box 2 yet
 * Choose the **relate 2 tracks** analysis to show the different ratios of 
   mutations per CMS subtype and click **Next**.
 * For the *X track* choose **cms_final (5 cat)** and for the *Y track* choose **mutant_braf (3 cat)** mutations.
-* Select the *Graph type* **Stacked bar (%)**
+* Select the *Graph type* **Stacked bar (%)**. This can be selected in the adjustable settings panel below the graph. This can also be archieved by clicking the gearwheel which reveals the gearbox many more options to adapt the graph (see figure below).
 * The Guinney dataset contains several datasets put together. To only look at the samples from studies that looked at the 
 mutational aberrations, use the Sample Filter with the setting *Subset Track*, select **mutant_braf (3 cat)** and in the 
 pop-up check the boxes of **0 (776) and 1(87)**.
 Note that the value 0 stands for 'braf mutation: no' and 1 for 'braf mutation: yes' and nd stands for 'no data/ not defined'. We thus eliminate the samples from this analysis for which it is not known whether they have a BRAF mutation (value nd gets omitted). Click 
   **Ok** and then **Submit**.
+
+
+![](_static/images/MolOncCRC/gearwheel.png "Graph settings")
+
+[**Graph settings using the gear box.**](_static/images/MolOncCRC/gearwheel.png)
+
+
+
+
+
+
 
 ------  
 
@@ -400,7 +412,7 @@ Now we will look at the KRAS mutations
 ------  
 
 
-![](_static/images/R2d2_logo.png)**Which CMS group shows the highest amount of KRAS mutations? What difference do you notice in the **
+![](_static/images/R2d2_logo.png)**Which CMS group shows the highest amount of KRAS mutations? What difference do you notice comparing the graphs**
 <br>
 <br>
 
