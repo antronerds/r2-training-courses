@@ -711,8 +711,9 @@ In this OncoPrint, we find an overview of the most common mutations across our e
 
 Scrolling down to the bottom, you will find in the Adjustable Settings menu all sort of interesting options that you can toggle on/off. In the picture below, you can find several suggestions to reveal more insights of mutational characteristics in this cohort and of CRC in general. You can add extra tracks to the plot if you click on **Select Tracks**.
 
-![](_static/images/MolOncCRC/oncoprint_settings_suggestions.png "OncoPrint setting suggestions")
-[**OncoPrint setting suggestions**](_static/images/MolOncCRC/oncoprint_settings_suggestions.png)
+![](_static/images/MolOncCRC/oncoprint_settings_suggestions1a.png "OncoPrint setting suggestions")
+
+[**OncoPrint setting suggestions**](_static/images/MolOncCRC/oncoprint_settings_suggestions1a.png)
 
 ------
 
