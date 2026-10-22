@@ -717,8 +717,7 @@ Scrolling down to the bottom, you will find in the Adjustable Settings menu all 
 
 ------
 
-![](_static/images/R2d2_logo.png)**Name the four top genes. Also check with the CMS subtype annotation above the plot if you can relate the information in the plot with your knowledge about CMS subtype specific mutations.<br>
-Discuss with each other how mutation of the four top genes plays a role in CRC. Check which mutation types are often found in the four top genes.**
+![](_static/images/R2d2_logo.png)**Name the four top genes. Also check with the CMS subtype annotation above the plot if you can relate the information in the plot with your knowledge about CMS subtype specific mutations.  Discuss with each other how mutation of the four top genes plays a role in CRC. Check which mutation types are often found in the four top genes.**
 
 <br>
 <br>
@@ -741,9 +740,9 @@ In the grid you can find all the reported mutations for genes that are part of t
 
 If you click on the **view** (!! not detail, you might have to broaden the first column's width) links  in the first column of a mutation, this will guide you to the genomic location of the mutated gene in the Gene browser or the Genome Browser respectively. 
 
-![](_static/images/MolOncCRC/select_view_somvar.png "Click the view link! You might have to drag the Link column wider")
+![](_static/images/MolOncCRC/detailed_view.png "Click the view link! You might have to drag the Link column wider")
 
-[Click the **view** link! **You might have to drag the Link column wider**](_static/images/MolOncCRC/select_view_somvar.png )
+[Click the **view** link! **You might have to drag the Link column wider**](_static/images/MolOncCRC/detailed_view.png )
 
 
 
@@ -771,6 +770,7 @@ This way you can annotate your dataset for the presence of any gene mutation / s
 Below is pictured how you can use these tracks (annotations) to find differentially expressed genes, similar to how you have already performed such analyses in the previous exercises. For now we continue to another exercise.
 
 ![](_static/images/MolOncCRC/mutation_track_usage.png "mutation_track_usage.png")
+
 [**Using tracks in R2**](_static/images/MolOncCRC/BRAF_select_som.png)
 
 
@@ -785,10 +785,18 @@ To summarize the expression values of the genes in such a signature, R2 can calc
 * Weighted sums where each gene’s contribution is weighted by its known importance.
 
 
+![](_static/images/MolOncCRC/cms_signature_score_2.gif "Signature score")
+
+[**Animated signature score explained**](_static/images/MolOncCRC/cms_signature_score_2.gif)
+
+
+
+
 A Differential Expression between two groups analysis has already been performed for APC mutants versus non-APC mutants for the Nunes set. We have stored a list of genes which are upregulated in the APC mutated group. This collection of genes will be used to find correlations for the signature scores of other pathways. 
 
 
 ![](_static/images/MolOncCRC/APC_genesig_corr.png  "Genesign corr")
+
 [**Geneset correlations**](_static/images/MolOncCRC/APC_genesig_corr.png)
 
 
@@ -841,12 +849,21 @@ mesenchymal genes, such as ZEB1, PDGFRA, PDGFRB, and CD36, changes between pre- 
 * Choose the analysis **View Multiple Genes** and click Next
 * In the *Genes/Reporters to include* textbox, type **Zeb1,PDGFRA,PDGFRB,CD36**
 * Set Track to **imatinib (2 cat)** that divides the samples in a pre-treatment and a post-treatment group
-* Click on the _blue gear icon_ in the upper left corner of the plot and change *Handle 
-  groups by* **Separated by track grouped by gene**. 
-* Set *Color mode (groups)* to **Color by Track** in order to make the box plots visually more distinct. 
+.  
+
+
+
+![](_static/images/MolOncCRC/multiplegeneview.png  "Genesign corr")
+
+[**Gearbox settings**](_static/images/MolOncCRC/multiplegeneview.png)
+
+
+* Click on the _blue gear icon_ in the upper left corner of the plot and change *Handle
+  groups by* **Separated by track grouped by gene**.
+* Set *Color mode (groups)* to **Color by Track** in order to make the box plots visually more distinct.
 * Check **Add Scatter** to see the data points
 * Note that you now also can change *Color mode* of the scatter points to color by track or by gene (e.g. **CTNNB1**)
-* The plot options in the panel that pops up with the gear icon are directly responsive. Therefor, you don't have to submit your changes for these options, which ís required when you make adaptations in a adjustable settings menu. Sometimes when you change the fonts too much, the plot might look a bit out of balance. Then you can still click **redraw plot** that often rearranges plot elements for the better.  
+* The plot options in the panel that pops up with the gear icon are directly responsive. Therefor, you don't have to submit your changes for these options, which ís required when you make adaptations in a adjustable settings menu. Sometimes when you change the fonts too much, the plot might look a bit out of balance. Then you can still click **redraw plot** that often rearranges plot elements for the better
 
 
 ------
@@ -868,7 +885,7 @@ proliferation signatures and Wnt target genes are associated with good prognosis
 
 * On the main page, make sure that the selected dataset is **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**
 * Select the analysis **View Geneset (Heatmap)** and click **Next**
-* In the *Gene set* selection grid, search for **HALLMARK_MYC_TARGETS_V1 (200)** and select it by clicking on the triangles in the **Broad 2023 10 h hallmark** collection until you've found it. Check the gene set and **Confirm selection**
+* In the *Gene set* selection grid, search for **HALLMARK_MYC_TARGETS_V1 (200)** and select it by clicking on the triangles in the **Broad 2025 6 h hallmark** collection until you've found it. Check the gene set and **Confirm selection**
 * **Submit**
 
 The heatmap for the z-scores of the expression values of the MYC targets geneset is shown. Underneath the heatmap 
@@ -878,7 +895,7 @@ such scores as a Track to use in further analyses in R2.
 * Click on the **Store (R2)** link in the small table, a bit underneath the heatmap.
 * In the page that pop-ups, you can adjust settings 
 * Check the name that is provided for this signature score: hallmark_myc_targets_v1 and read the description
-* Note that you can change teh setting *Where* from **Temporary (24h)** to **personal track**, in case you want to store it long term. Or you could choose to store it to a **community** if you are part of one and want to share this Track with your colleagues. We leave everything as is and click on **Build set**
+* Note that you can change the setting *Where* from **Temporary (24h)** to **personal track**, in case you want to store it long term. Or you could choose to store it to a **community** if you are part of one and want to share this Track with your colleagues. We leave everything as is and click on **Build set**
 <br><br>
 Now that we have an average expression value for the MYC target genes per sample, we would like to assess how the treatment influenced these values.
 * Go back to the main page
