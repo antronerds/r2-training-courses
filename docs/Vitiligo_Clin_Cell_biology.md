@@ -225,6 +225,17 @@ We are now going to use this Volcano plot to see if we can detect T-cell.
 
 
 
+In a similar way as we did above (creating and using a gene signature) you can e.g. analyze the  presence of melanocytes (using the e.g. **Melanogenesis** geneset) in lesional and nonlesional samples from this dataset using.  This will tell you that the geneset melanogenesis is downregulated in lesional tissue (Figure 7a), which is sort of a positive control analysis.
+
+![](_static/images/vitiligo/melanogenesis_violin.png "volcano")
+
+[**Figure 7a: Geneset analysis melanogenesis in L and NL tissue. Layout: color by track, and add scatter**](_static/images/vitiligo/melanogenesis_violin.png)
+
+
+
+
+
+
 ## Analyzing differential expression using *Gene signatures*
 
 Let’s try to analyze the presence of T-cells in a more quantitative manner.
@@ -260,12 +271,12 @@ If you are interested to explore the potential biological role for a particular 
 Let’s choose as our GOI *Protein Tyrosine Phosphatase Receptor Type C (PTPRC)*, also known as Leukocyte-common antigen (LCA) or CD45, a protein present on nearly all hematopoietic cells. The presence of CD45 will tell us if immune cells are present in the vitiligo samples. First check the expression of PTPRC in the different samples groups:
 - Select **View a gene in groups** in Box 3, click **Next**.  
 - In the next window at **Gene / reporter** type and select PTPRC.  
-- Select the **track** samples_source_name_ch1(4cat). As a graph type choose e.g. a violin plot, and add the datapoints: **scatter**: **true*, **Color by track** and click **submit**. The resulting graph is shown in figure 7.
+- Select the **track** samples_source_name_ch1(4cat). As a graph type choose e.g. a violin plot, and add the datapoints: **scatter**: **true*, **Color by track** and click **submit**. The resulting graph is shown in figure 7b.
 
 
-![](_static/images/vitiligo/Violin_CD45.png "violin")
+![](_static/images/vitiligo/Violin_CD451a.png "violin")
 
-[**Figure 7: Violin plot from the expression of the immune cell marker CD45 in the four indicated sample types from the Passeron vitiligo bulk RNAseq dataset**](_static/images/vitiligo/Violin_CD45.png)
+[**Figure 7b: Violin plot from the expression of the immune cell marker CD45 in the four indicated sample types from the Passeron vitiligo bulk RNAseq dataset**](_static/images/vitiligo/Violin_CD45.png)
 
 
 
@@ -355,7 +366,7 @@ Once T-cells have infiltrated the skin, and bind to an HLA molecule presenting a
 ## Melanoma
 
 
-In the last part of this training course we switch to a melanoma dataset. If you look for melanoma datasets in R2 (box 2, from R2 main page) there are both high quality scRNAseq (author Regev) and bulk RNAseq datasets (TCGA). In this section we will use the bulk RNAseq dataset from The Cancer Genome Atlas Network (TCGA). This is a large integrative analysis of cutaneous melanomas (331 patients). This genome-wide analysis classified (Figure 9) the patients both at the genomic level (4 categories: mutant BRAF, RAS, NF1, or wt), as well as at RNA expression (3 clusters: Immune, Keratin, and MITF-low), and also contains a high level of additional information (annotations, that are available as tracks).
+In the last part of this training course we switch to a melanoma dataset. If you look for melanoma datasets in R2 (box 2, from R2 main page) there are both high quality scRNAseq (author Regev) and bulk RNAseq datasets (TCGA). In this section we will use the bulk RNAseq dataset from The Cancer Genome Atlas Network (TCGA). This is a large integrative analysis of cutaneous melanomas (331 patients). This genome-wide analysis classified (Figure 11) the patients both at the genomic level (4 categories: mutant BRAF, RAS, NF1, or wt), as well as at RNA expression (3 clusters: Immune, Keratin, and MITF-low), and also contains a high level of additional information (annotations, that are available as tracks).
 
 
 
@@ -407,6 +418,14 @@ Now we can look of this IFNG signature is predictive of survival.
 - In the next window  settings) select the signature track that you just generated (Hallmark_Interferon_gamma_response) from the dropdown list, and select at Type of survival **overall**. Click **Next**.  
 - 
 **Question 19**: What is you conclusion from this survival graph?  
+
+![](_static/images/vitiligo/melanoma_survival.png "surival")
+
+[**Figure 14: , OS of 375 melanoma patients separated by high or low expression of the gene set Hallmark Interferon gamma response**](_static/images/vitiligo/melanoma_survival)
+
+
+
+
 
 You have now reached the end of this training course, learning some basic skills what kind of analysis you can do with R2. We have only covered a fraction of what is possible with R2. If you want to learn more about this platform the tutorial book on the main page, of any of the other training courses would be a great next step.  
 
