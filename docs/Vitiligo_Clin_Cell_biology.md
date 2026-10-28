@@ -176,7 +176,7 @@ Other than looking at the most differentially regulated top genes in a specific 
 
 - From the main menu select again **differential expression between groups** (**tissue (2 cat)**). And click **Next**.
 - In the adjustable settings window click on **select gene set** and type melanogenesis in the search field and click on the **magnifying glass** icon.
-- From the **KEGG pathway** select after a few clicks the biological process **Melanogenesis**. The 100 in the count column indicates the number of genes in this specific genelist.
+- From the **KEGG pathway** select after a few clicks the biological process **Melanogenesis**. Do not forget to click the green **confirm button** The 100 in the count column indicates the number of genes in this specific genelist.
 - Click **Confirm selection** and then **submit**.  
 You can see that 16 of the 100 genes are significantly differentially expressed between the two groups. Again you can look at individual genes (via the **view** column). But you can also visualize all 16 genes in a single graph:  
 - click on the **heatmap(zscore)** button on the right of your screen to generate a heatmap  
@@ -203,7 +203,16 @@ Although the Natarajan dataset is a bulk RNAseq dataset we can use a gene set to
 We are now going to use this Volcano plot to see if we can detect T-cell.
 
 - Click on the little **wheel icon**, left on top of the volcano plot. 
-- In the pop-up window click on **select gene set** and type **T cell** in the search field and click on the **magnifying glass** icon.  
+- In the pop-up window add color gene selection → select T-cell adaptive and T-cell, Bindea immune signatures. Maybe change the color to make the genes more clear
+
+![](_static/images/vitiligo/selectgeneset.png "select genest")
+
+
+[**Figure 5: Color genes in a volcano plot**](_static/images/vitiligo/volcano_plot.png)
+
+
+
+
 - From the **Bindea immune signatures** select **T-cell**, and **Confirm selection**.  
  Choose a color (e.g. red) for this geneset at the **Emphasize color** option, and click **Redraw plot** (see Figure 5 for the result).  
 
