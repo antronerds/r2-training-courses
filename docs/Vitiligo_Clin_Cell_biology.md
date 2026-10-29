@@ -10,9 +10,9 @@ In this training course, designed as part of the UvA master course Clinical Cell
 
 You will use the freely available and web-based genomics analysis and visualization platform R2, a Core Facility of the Amsterdam UMC. R2 provides the user with many experimental and clinical data sets coupled to a wide variety of clickable bioinformatics tools. Without any coding you will gain hands-on research experience with vitiligo and melanoma omics data and bioinformatics tools.
 
-The green button in this document will open up a Microsoft form, on which you have to submit your answers. Information from these forms will be used in the Q&A lecture (Responsie College) to discuss questions that you encounter during this online training course.
 
-The <button class="course googleform">green button(s)</button> in this document will open up a MS-office form. Make sure to type your name at the start of each answer as your name will not automatically be stored when you submit your answers!
+
+The <button class="course googleform">green button(s)</button> in this document will open up a Microsoft form, on which you have to submit your answers. Information from these forms will be used in the Q&A lecture to discuss questions that you encounter during this online training course.
 
 <button class="course googleform" onclick="window.open('https://forms.office.com/pages/responsepage.aspx?id=GqvfaLsRxky-tSjXVphPtvNdTYy3kUdLmfhJOoP29pdUMjhLRjFUMzVGS0hWTTcyRDRMQjZXQURCTC4u&route=shorturl','_blank');"
 type="button">Open the answering form</button>
@@ -77,7 +77,7 @@ You now can see that we will test differential expression between the 15 lesiona
 
 **Question 2**: How many genes are significantly differentially regulated between the two groups?
 
-**Question 3**: Which gene is het most *significantly* differentially expressed? ! play around with the **Sort** option in the top menu (P-value) to sort genes).
+**Question 3**: Which gene is het most *significantly* differentially expressed?. Play around with the **Sort** option in the top menu (P-value) to sort genes).
 
 **Question 4**: And which gene is most *strongly upregulated, or downregulated* in lesional tissue (play around with the log2FC (fold change) in the top menu to sort genes based on the fold change). You can click on the lens-icon besides each gene to make a graph. In the geneview window it is possible to change the graph type.  
 
@@ -89,7 +89,7 @@ You can also quickly look into other genes. For example DCT (Tyrosine-related pr
 
 - Click Submit in order to make the new graph (the violin graph is shown below, Figure 2).
 
-*Copying/adjusting a R2-grap: if you click on the rotation wheel left from any figure in R2, it is possible to adjust the figure to your needs, and also copy a graph (tab General, save as: COPY).*
+*Copying/adjusting a R2-graph: if you click on the rotation wheel left from any figure in R2, it is possible to adjust the figure to your needs, and also copy a graph (tab General, save as: COPY).*
 
 
 ![](_static/images/vitiligo/vitiligo_DCT_r2.png "DCT")
@@ -158,7 +158,7 @@ If you are interest in a specific gene (Gene of interest, GOI), and you want to 
 
 - select this option from box 3 and click **Next**  
 - Let’s look for functions for **MLANA** (type and select this gene from the **Gene / reporter window**.  
-- Select genes that correlate (abbreviated by **r/R**) positively with this gene (in Corr R cutoff sign” select **positive**). In the adjustable settings panal and Click **Adjust Cutoff**.  
+- Select genes that correlate (abbreviated by **r/R**) positively with this gene (in Corr R cutoff sign” select **positive**). In the adjustable settings panel and Click **Adjust Cutoff**.  
 
 
 From the table below you can see that genes correlating with MLANA expression do play a role in melanogenesis (among others). If you click on the red R you can see the correlating genes and then click on individual genes to see the correlation with MLANA. This *KEGG pathwayFinder by gene correlation* can thus help you better understand the biological function of your GOI.  
@@ -254,7 +254,7 @@ We are going to create a Geneset signature for T-cells to analyze their presence
 - Store the generated gene signature (click **store** under **Store(R2)**. In the next window click **create track** (storing as a temporary track (24hrs) is fine).   
 Next we can further analyze this T-cell signature. From immunohistochemical (IHC) analysis we know that active vitiligo lesion have the most infiltration of T-cells at the perilesional area, where melanocytes are still present. Let’s check if we can find a difference between 
 - From box 3 select **Relate 2 tracks** and click **Next**.  
-- Select in the next window for the *X track* the **t_cell_receptor_signaling_pathway (#) track**, and as a *Y-track*: **tissue (2cat)**.  A **#** track indicates a numerical track, a **cat** indicates a categorial track.  
+- Select in the next window for the *X track* the **t_cell_receptor_signaling_pathway (#) track**, and as a *Y-track*: **tissue (2cat)**.  A **#** track indicates a numerical track, a **cat** indicates a categorical track.  
 - For Graph type click e.g. **Violin**, and **Submit** (you can also color by track and add scatter if wanted). This will generate a violin graph in which the signature is statistically compared (ANOVA) between Lesional and NL tissue.  
 
 **Question 10**: We have now in a quantitative manner analyzed the presence of T-cell in this bulk RNAseq dataset using a representative gene-signature. What is you conclusion about the results. Can you think of reason that explains this result?
@@ -327,7 +327,7 @@ R2 offers several machine learning dimensionality reduction algorithms that are 
 Let’s see what celltypes can be identified in suction blister biopsies from vitiligo patients.
 
 - Click on Sample maps (UMAP/tSNE) in the left menu on the main page.  
-- seach for vitiligo (in **dataset class window**). Select the **Gellatly** dataset.  
+- Search for vitiligo (in **dataset class window**). Select the **Gellatly** dataset.  
 You can now see the clustering of all 32405 individual cells based on expression. Now visualize the different celltypes:  
 - go to **color settings** and select **color by track**. And next select the track **celltype (5 cat)**. Click **set colors**. This will generate the following tSNE plot:  
 
@@ -341,7 +341,7 @@ From this figure we can clearly see that immune cells are present in this datase
 - Let’s check if there are more immune cells present in vitiligo as you would expect.**- 
 - Go to **Box 2** and select the **Gellatly** vitiligo dataset (**confirm selection**).  
 - In box 3 select **View a gene in groups**, click **Next**.  
-- In the adjustable settings window select the **Gene/reporter** field the general immune cell marker PTPRC (CD45), and by **track**: disease (2cat) or alternatively use skin (3 cat). Choose a bar graph and subsequenty a pie per group plit, and Click **submit**.  
+- In the adjustable settings window select the **Gene/reporter** field the general immune cell marker PTPRC (CD45), and by **track**: disease (2cat) or alternatively use skin (3 cat). Choose a bar graph and subsequenty a pie per group plot, and Click **submit**.  
 
 ![](_static/images/vitiligo/barvspie_plot.png "single cell: pie plot")
 
@@ -354,7 +354,7 @@ From this figure we can clearly see that immune cells are present in this datase
 *Since single-cell data contain many zero counts, a pie chart is more suitable for gaining insight into the proportion of expression across subgroups.*
 
 
-Once T-cells have infiltrated the skin, and bind to an HLA molecule presenting a specific peptide (antigen), they get activated and secrete cytolytic enzymes like perforin (PRF1), granzyme b (GZMB ) and interferin gamma (IFNG). Visualize these genes in the tSNE plot to locate activated lymphocytes (T-cells) and get an idea of the proportion activated T-cells in this dataset.
+Once T-cells have infiltrated the skin, and bind to an HLA molecule presenting a specific peptide (antigen), they get activated and secrete cytolytic enzymes like perforin (PRF1), granzyme b (GZMB ) and interferon gamma (IFNG). Visualize these genes in the tSNE plot to locate activated lymphocytes (T-cells) and get an idea of the proportion activated T-cells in this dataset.
 * Select the Gellatly tSNE plot again as you did above.
 *  At the **color settings** menu choose **color by a gene** and analyze the expression of IFNG, PRF1 and GZMB (Gene / reporter window). Change the **dotsize** (left menu) to 1,25 to better visualize the positive cells.  
 
@@ -380,7 +380,7 @@ In the last part of this training course we switch to a melanoma dataset. If you
 
 Let’s explore the possible annotation linked to the samples of this dataset. 
 - Select the TCGA dataset with 375 samples (N) in box 2 from the R2 main page.  
-As an example we’re going to **look at the checkpoint protein PD-L1** (officially knowns as CD274) as our GOI. 
+As an example we’re going to **look at the checkpoint protein PD-L1** (officially known as CD274) as our GOI. 
 - In box 3 select: **view a gene in groups** Click **Next**.   
 - In the next window (adj. settings) type and select CD274 (PD-L1) in the **Gene / Reporter** field.   
 - Now look at all the annotation present via the field **Track** from which you can see a large dropdown list. Among the many options it is possible to look at primary versus metastatic melanoma samples, test if your GOI is associated with the mutational subtypes, or look at the association of your GOI with the lymphocyte score (the amount and density of infiltrated immune cells in a tumor). For now we will select the Track **f1_rnaseq-cluster_consenhier (4 cat)**. This track indicates the identified RNA clusters. Click **submit**.   
@@ -430,7 +430,7 @@ Now we can look of this IFNG signature is predictive of survival.
 You have now reached the end of this training course, learning some basic skills what kind of analysis you can do with R2. We have only covered a fraction of what is possible with R2. If you want to learn more about this platform the tutorial book on the main page, of any of the other training courses would be a great next step.  
 
 
-**Final Question 20**: Is there an R2 topic or issue that you encountered during this course that should be discussed on the Q&A lecture on Wednesday November 5th?
+**Final Question 20**: Is there an R2 topic or issue that you encountered during this course that should be discussed on the Q&A lecture on Wednesday November 4th?
 
 
 ## Note!!!
