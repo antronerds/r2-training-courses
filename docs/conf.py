@@ -42,6 +42,12 @@ latex_elements = {
 # A4 paper (we are in Europe)
 'papersize': 'a4paper',
 
+# Greek letters in the text (alpha, beta): pdflatex does not know them by default (Sphinx 5.3)
+'preamble': r'''
+\DeclareUnicodeCharacter{03B1}{\ensuremath{\alpha}}
+\DeclareUnicodeCharacter{03B2}{\ensuremath{\beta}}
+''',
+
 # Put figures exactly where they appear in the text (H) instead of letting them float
 'figure_align': 'H',
 }
