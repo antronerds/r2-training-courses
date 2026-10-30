@@ -22,7 +22,7 @@ type="button">Open the answering form</button>
 
 ## Selecting a dataset
 
-Open a Chrome / Edge  browser and use your R2 account to sign in in the collaborator’s server of the R2 platform: https://hgserver2.amc.nl (also accessible via https://r2platform.com/hg2)
+Open a Chrome / Edge  browser and use your R2 account to sign in in the collaborator’s server of the R2 platform: https://hgserver2.amc.nl (also accessible via https://r2platform.com/hg2).  
 Generally speaking, the R2 platform is easily accessible by the links https://r2.amc.nl | r2platform.com, but today we work from our collaborator’s server hgserver2.
 
 You are now on the R2 main page. Step by step, users are guided through a web of options for data analysis. R2’s main page shows this principle: follow the 4 boxes to develop your analysis of choice. Let’s follow these steps to get a first look at gene expressions in one of the vitiligo datasets.
@@ -415,13 +415,13 @@ Now we can look of this IFNG signature is predictive of survival.
 - Go to the **R2 main page** again and select **Survival (Kaplan-Meier/Cox)** from the left menu.   
 
 - Select at **Separate by** **a numerical track** (your saved track is a numerical track. Numerical tracks are indicated in R2 by a ‘X’), and click **next**.   
-- In the next window  settings) select the signature track that you just generated (Hallmark_Interferon_gamma_response) from the dropdown list, and select at Type of survival **overall**. Click **Next**.  
+- In the next window  settings, select the signature track that you just generated (Hallmark_Interferon_gamma_response) from the dropdown list, and select at Type of survival **overall**. Click **Next**.  
 - 
-**Question 19**: What is you conclusion from this survival graph?  
+**Question 19**: What is your conclusion from this survival graph?  
 
 ![](_static/images/vitiligo/melanoma_survival.png "surival")
 
-[**Figure 14: , OS of 375 melanoma patients separated by high or low expression of the gene set Hallmark Interferon gamma response**](_static/images/vitiligo/melanoma_survival)
+[**Figure 14: , OS of 375 melanoma patients separated by high or low expression of the gene set Hallmark Interferon gamma response**](_static/images/vitiligo/melanoma_survival.png)
 
 
 
