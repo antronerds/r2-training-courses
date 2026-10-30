@@ -28,7 +28,7 @@ If you would like to use R2 for your research in the future, then just visit `ht
 If you encounter discrepancies between the instructions in this course and the R2 platform options, please `let our R2 Support Team know <https://hgserver1.amc.nl/cgi-bin/r2/main.cgi?option=about_contact>`_. We continuously enhance the platform by adding new functionalities and refining existing features. As a result, our documentation and course instructions may occasionally fall behind.
 We very much appreciate your feedback!
 
-Copyright (c) 2006-2025 Jan Koster
+Copyright (c) 2006-2026 Jan Koster
 
 .. toctree::
    :maxdepth: 2
