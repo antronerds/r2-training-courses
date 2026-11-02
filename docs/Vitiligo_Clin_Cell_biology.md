@@ -225,14 +225,6 @@ We are now going to use this Volcano plot to see if we can detect T-cell.
 
 
 
-In a similar way as we did above (creating and using a gene signature) you can e.g. analyze the  presence of melanocytes (using the e.g. **Melanogenesis** geneset) in lesional and nonlesional samples from this dataset using.  This will tell you that the geneset melanogenesis is downregulated in lesional tissue (Figure 7a), which is sort of a positive control analysis.
-
-![](_static/images/vitiligo/melanogenesis_violin.png "volcano")
-
-[**Figure 7a: Geneset analysis melanogenesis in L and NL tissue. Layout: color by track, and add scatter**](_static/images/vitiligo/melanogenesis_violin.png)
-
-
-
 
 
 
@@ -259,7 +251,13 @@ Next we can further analyze this T-cell signature. From immunohistochemical (IHC
 
 **Question 10**: We have now in a quantitative manner analyzed the presence of T-cell in this bulk RNAseq dataset using a representative gene-signature. What is you conclusion about the results. Can you think of reason that explains this result?
 
-In a similar way as we did above (creating and using a gene signature) you can e.g. analyze the  presence of melanocytes (using the e.g. **Melanogenesis** geneset) in lesional and nonlesional samples from this dataset using.  
+In a similar way as we did above (creating and using a gene signature) you can e.g. analyze the  presence of melanocytes (using the e.g. **Melanogenesis** geneset) in lesional and nonlesional samples from this dataset using.  This will tell you that the geneset melanogenesis is downregulated in lesional tissue (Figure 7a), which is sort of a positive control analysis.
+
+
+
+![](_static/images/vitiligo/melanogenesis_violin.png "volcano")
+
+[**Figure 7a: Geneset analysis melanogenesis in L and NL tissue. Layout: color by track, and add scatter**](_static/images/vitiligo/melanogenesis_violin.png)
 
 ## Looking for T-cells in the vitiligo dataset from Passeron
 
@@ -421,7 +419,7 @@ Now we can look of this IFNG signature is predictive of survival.
 
 ![](_static/images/vitiligo/melanoma_survival.png "surival")
 
-[**Figure 14: , OS of 375 melanoma patients separated by high or low expression of the gene set Hallmark Interferon gamma response**](_static/images/vitiligo/melanoma_survival)
+[**Figure 14: , OS of 375 melanoma patients separated by high or low expression of the gene set Hallmark Interferon gamma response**](_static/images/vitiligo/melanoma_survival.png)
 
 
 
