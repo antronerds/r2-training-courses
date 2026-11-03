@@ -1,4 +1,8 @@
+/.idea
+/.settings
 /.project
+*.komodoproject
 /.pydevproject
-/r2-training.komodoproject
-/.idea/
+*.xml
+*.iml
+*.pptx
