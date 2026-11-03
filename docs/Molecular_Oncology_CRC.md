@@ -12,26 +12,16 @@ Molecular Oncology - R2 Practical - Colorectal Cancer
 Introduction
 ------------
 
-In the late 1980s, the Vogelstein model was proposed. It introduced the concept of a stepwise accumulation of genetic
-mutations leading to the development of colorectal cancer (CRC).  
+In the late 1980s, the Vogelstein model proposed that colorectal cancer (CRC) develops through a stepwise accumulation of genetic mutations.
 
 ![](_static/images/MolOncCRC/CRCprogression_combined.jpg "Accumulation of mutations advancing colorectal 
 cancer development")
 
 [**Accumulation of mutations advancing colorectal cancer development**](_static/images/MolOncCRC/CRCprogression_combined.jpg)
 
-<span class="citation_txt">(Figure sources: https://doi.org/10.3390/ijms241311023, https://doi.org/10.1016/j.
-tranon.2021.101131)</span>
+<span class="citation_txt">(Figure sources: https://doi.org/10.3390/ijms241311023, https://doi.org/10.1016/j.tranon.2021.101131)</span>
 
-Similar to the picture above, the model highlights the importance of key genetic mutations during CRC progression, including mutations in APC, KRAS, and TP53. While the Vogelstein model has provided a valuable foundation for 
-understanding colorectal cancer, subsequent research has revealed that the disease is more complex and heterogeneous than initially described. Colorectal cancer can involve various genetic and epigenetic changes. Additional 
-factors, such as the tumor microenvironment, inflammation, and the immune system, also play significant roles in the progression of the disease. <br>
-Colorectal cancer is the third most common cancer worldwide, according to the World Health Organization, accounting for approximately 10% of all cancer cases, and it is the second leading cause of cancer-related deaths worldwide. 
-
-Research is needed to understand the mechanisms underlying treatment resistance and to develop strategies to overcome it. Better identification and characterization of multiple CRC subtypes could guide treatment decisions and
-improve the outcomes for individuals with colorectal cancer. Furthermore, markers for early detection and prevention might allow for interventions before advanced mutations occur. Clearly it is crucial to understand the diversity and complexity of colorectal cancer in order to develop new and effective targeted treatment strategies. <br><br>
-Bioinformatics tools enable the analysis of vast amounts of omic and clinical data, helping researchers identify genetic mutations, epigenetic aberrations, biomarkers, and potential therapeutic targets in order to better understand 
-and combat cancer.<br>
+The model highlights key mutations during CRC progression, such as in APC, KRAS and TP53. Since then, CRC has turned out to be more complex and heterogeneous: epigenetic changes, the tumor microenvironment, inflammation and the immune system also play a role. CRC is the third most common cancer worldwide and the second leading cause of cancer-related deaths (World Health Organization). Better characterization of CRC subtypes can guide treatment decisions, and markers for early detection could allow intervention before advanced mutations occur. Bioinformatics tools help to find such mutations, biomarkers and therapeutic targets in large amounts of omics and clinical data.<br>
 
 
 ![](_static/images/MolOncCRC/R2webplatform.png "Web-based genomics analysis and
@@ -41,10 +31,7 @@ visualization platform R2")
 visualization platform R2**](_static/images/MolOncCRC/R2webplatform.png)  
 <span class="citation_txt">(Figure source: https://r2.amc.nl)</span>
 
-Today you will use advanced bioinformatics tools to explore, analyze and visualize colorectal cancer data in search for a deeper understanding. You will use the freely available and web-based genomics analysis and 
-visualization platform R2, that is developed at Amsterdam UMC and widely adopted by researchers worldwide. R2 provides the user with many experimental and 
-clinical data sets coupled to a wide variety of clickable bioinformatics tools. Without any coding you will gain
-hands-on research experience with colorectal cancer omics data and bioinformatics tools.
+Today you will explore, analyze and visualize colorectal cancer data with R2, a free web-based genomics analysis and visualization platform developed at Amsterdam UMC and used by researchers worldwide. R2 combines many experimental and clinical datasets with clickable analysis tools, so you gain hands-on research experience without any coding.
 
 The <button class="course googleform">green buttons</button> in this document will open up a Google form, one per section, with which you can submit answers.
 
@@ -57,7 +44,7 @@ the form, click the button below:)
 
 ## Normal colonic epithelium vs adenomatous tissue: a first impression of genomic data
 
-Colorectal cancers are believed to arise predominantly from adenomas. A fundamental question in cancer research consistently revolves around understanding the distinctions between the transcriptomic profiles of normal tissue and tumor tissues. Let's get acquainted with R2 and its large collection of omic datasets while immediately exploring differences in gene expressions between normal colonic mucosa and colorectal adenomatous tissue.  
+Colorectal cancers are believed to arise mostly from adenomas. In this first part you get to know R2 and its large collection of omics datasets, while comparing gene expression between normal colonic mucosa and colorectal adenomas.
 
 
 ![](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg)
@@ -74,11 +61,9 @@ Colorectal cancers are believed to arise predominantly from adenomas. A fundamen
 
 * Open a Chrome browser and browse to https://r2platform.com. Use your R2 account to sign in.
 
-You're now on the R2 main page. This genomics analysis and visualization platform contains a wealth of data and bioinformatics tools to analyze the datasets. Step by step, researchers are guided through a web of options 
-for data analysis with mostly clickable items. R2's main page shows this principle: follow the numbered boxes to develop your analysis of 
-choice.<br><br>
+You're now on the R2 main page. R2 guides you through an analysis step by step: you simply follow the numbered boxes on the main page.<br><br>
 
-Let's follow these steps to get a first look at gene expressions in one of the colon cancer datasets that is hosted in R2, a dataset that is called _Mixed Colon - Marra - 64 - MAS5.0 - u133p2_.<br>
+To get a first look at gene expressions in one of the colon cancer datasets that is hosted in R2, we will use a dataset that is called _Mixed Colon - Marra - 64 - MAS5.0 - u133p2_.<br>
 Datasets have a structured naming in R2, using the following rules:<br>
 Category - Tissue/ Tumor -  author - number of samples (N) - normalization - chiptype.<br>
 In our case the dataset name tells us that the dataset contains 
