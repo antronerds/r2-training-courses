@@ -21,7 +21,9 @@ cancer development")
 
 <span class="citation_txt">(Figure sources: https://doi.org/10.3390/ijms241311023, https://doi.org/10.1016/j.tranon.2021.101131)</span>
 
-The model highlights key mutations during CRC progression, such as in APC, KRAS and TP53. Since then, CRC has turned out to be more complex and heterogeneous: epigenetic changes, the tumor microenvironment, inflammation and the immune system also play a role. CRC is the third most common cancer worldwide and the second leading cause of cancer-related deaths (World Health Organization). Better characterization of CRC subtypes can guide treatment decisions, and markers for early detection could allow intervention before advanced mutations occur. Bioinformatics tools help to find such mutations, biomarkers and therapeutic targets in large amounts of omics and clinical data.<br>
+The model highlights key mutations during CRC progression, such as in APC, KRAS and TP53. Since then, CRC has turned out to be more complex and heterogeneous: epigenetic changes, the tumor microenvironment, inflammation and the immune system also play a role.  
+  
+CRC is the third most common cancer worldwide and the second leading cause of cancer-related deaths (World Health Organization). Better characterization of CRC subtypes can guide treatment decisions, and markers for early detection could allow intervention before tumor progression occurs. Bioinformatics tools help to find such mutations, biomarkers and therapeutic targets in large amounts of omics and clinical data.<br>
 
 
 ![](_static/images/MolOncCRC/R2webplatform.png "Web-based genomics analysis and
@@ -44,7 +46,7 @@ the form, click the button below:)
 
 ## Normal colonic epithelium vs adenomatous tissue: a first impression of genomic data
 
-Colorectal cancers are believed to arise mostly from adenomas. In this first part you get to know R2 and its large collection of omics datasets, while comparing gene expression between normal colonic mucosa and colorectal adenomas.
+Colorectal cancers are believed to arise mostly from adenomas. In this first part you get to know R2 and its large collection of omics datasets and interactive analysis options, while comparing gene expression between normal colonic mucosa and colorectal adenomas.
 
 
 ![](_static/images/MolOncCRC/genetic_alterations_and_the_progression_of_colorectal_cancer_fig2_e_cook.jpeg)
@@ -53,27 +55,21 @@ Colorectal cancers are believed to arise mostly from adenomas. In this first par
 <span class="citation_txt">(Figure source: https://doi.org/10.1126/science.1235122)</span>
 
 
-*Datasets used:*
-* Mixed Colon - Marra - 64 - MAS5.0 - u133p2
-
-
 ### Filtering and exploring
 
 * Open a Chrome browser and browse to https://r2platform.com. Use your R2 account to sign in.
 
-You're now on the R2 main page. R2 guides you through an analysis step by step: you simply follow the numbered boxes on the main page.<br><br>
-
-To get a first look at gene expressions in one of the colon cancer datasets that is hosted in R2, we will use a dataset that is called _Mixed Colon - Marra - 64 - MAS5.0 - u133p2_.<br>
-Datasets have a structured naming in R2, using the following rules:<br>
-Category - Tissue/ Tumor -  author - number of samples (N) - normalization - chiptype.<br>
-In our case the dataset name tells us that the dataset contains 
-normal and tumor samples (*mixed*) of *colon* tissue; *Marra* is the author and there are *64* samples.
-
+You're now on the R2 main page. R2 guides you through an analysis step by step: you simply follow the numbered boxes on the main page. To get a first look at gene expressions in one of the colon cancer datasets that is hosted in R2, we will use a dataset that is called:  
+_Mixed Colon - Marra - 64 - MAS5.0 - u133p2_.  
+  
 * We leave Box 1 as is, because we will look only at a single dataset. 
 * In order to find the above-mentioned dataset in R2, click on the text of the currently selected dataset in box 2. 
 
 A grid pops up that shows all the datasets that are currently available to you. Each row is a dataset and
-  each column contains a different searchable characteristic of the datasets.<br>
+  each column contains a different searchable characteristic of the datasets. Datasets have a structured naming in R2, using the following rules:<br>
+Category - Tissue/ Tumor -  author - number of samples (N) - normalization - chiptype.<br>
+In our case the dataset name tells us that the dataset contains
+normal and tumor samples (*mixed*) of *colon* tissue; *Marra* is the author and there are *64* samples.  
  In the bottom right corner of the grid, you can find the number of rows, i.e. available datasets.
 *  Under the header *Tissue/Tumor* type the keyword **colon** in the white text-field filter, and check the adapted 
    number of rows in the bottom right corner to find out how many data sets R2 is hosting with the keyword colon in its name.
