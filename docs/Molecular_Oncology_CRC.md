@@ -72,7 +72,7 @@ Colorectal cancers are believed to arise predominantly from adenomas. A fundamen
 
 ### Filtering and exploring
 
-* Open a Chrome browser and browse to https://r2.amc.nl and https://r2platform.com. Use your R2 account to sign in.
+* Open a Chrome browser and browse to https://r2platform.com. Use your R2 account to sign in.
 
 You're now on the R2 main page. This genomics analysis and visualization platform contains a wealth of data and bioinformatics tools to analyze the datasets. Step by step, researchers are guided through a web of options 
 for data analysis with mostly clickable items. R2's main page shows this principle: follow the numbered boxes to develop your analysis of 
