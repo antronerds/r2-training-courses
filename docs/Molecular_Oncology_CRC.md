@@ -176,17 +176,13 @@ ______
 
 ### Heatmaps and the WNT pathway
 
-The WNT pathway is an important signal transduction cascade that plays an important role in diverse biological
-processes. The dysregulation of the WNT pathway has been observed in several cancers including colon cancer.
+The WNT pathway is a signal transduction cascade that controls cell proliferation and the renewal of the intestinal lining. Its dysregulation is one of the earliest steps in colorectal cancer, and you just saw two of its target genes, AXIN2 and MYC, strongly upregulated in adenomas.
 
-In the next sections we will regularly be using heatmaps to find subgroups of samples or genes that show 
-similar expression profiles. Heatmaps perform unsupervised hierarchical clustering of samples. The algorithm uses the 
-distribution of the (expression) data to find clusters that have similar (expression) profiles and shows the 
-clusters of samples in the plot based on their (dis)similarity.
-This is combined with the clustering of the genes based on their expression throughout the samples. The heatmap is 
-colored by the z-scores of the samples' gene expression values. Often annotation tracks are shown above a heatmap. 
-Remember that _we can_ see this annotation but that the _heatmap algorithm did not use_ this information to look for 
-subgroups in the data, it uses expression values only. 
+In the next sections we will regularly use heatmaps to find subgroups of samples or genes with similar expression profiles. A heatmap shows expression values as colours: each row is a gene, each column a sample. The rows and columns are ordered by unsupervised hierarchical clustering: samples with similar expression profiles are placed next to each other, and so are genes that behave similarly across the samples. The tree-like dendrograms show how similar the clusters are.
+
+The colors show z-scores: for each gene, how far a sample’s expression lies above or below that gene’s average over all samples. A z-score compares samples with each other, not genes with each other.
+
+Annotation tracks, such as tissue type, are often shown above a heatmap. Remember that we can see this annotation, but the clustering did not use it: it uses expression values only. If the samples still group by tissue, that grouping comes from the expression data itself.
 
 ![](_static/images/TumorHeterogeneity_HeatmapClustering.png "Example heatmap: finding subgroups in your data")
 
