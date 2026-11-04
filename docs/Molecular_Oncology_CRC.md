@@ -397,7 +397,7 @@ This dataset consists of Microsatellite Stable (MSS) tumors and Microsatellite I
 
 Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine 
 whether these genes indeed are differentially expressed between MSI and MSS tumors and which genes exactly make the difference. 
-* With the **Select gene set** button, filter for **DNA repair** genes, and find them in **Categories**. There are 247 
+* With the **Select gene set** button, filter for **DNA repair** genes, and find them in **r2 courses** and click the triangles to select the DNA repair set. There are 247 
   genes annotated as DNA repair genes. Perform the analysis by clicking on **Submit**.
 
 One of the genes that is differentially expressed, is MLH1. 
