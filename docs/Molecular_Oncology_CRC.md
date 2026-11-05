@@ -449,30 +449,32 @@ One way to find genes that are possibly affected by MLH1 is to look at (inversel
 
 #### Find genes correlating with a single gene
 
-* From the main page, run the **Find Correlated Genes with a single Gene** module for the MLH1 gene. Use again
-  the filter option for the **Broad 2025 06 c6 oncogenic** gene set. 
+* From the main page, run the **Find Correlated Genes with a single Gene** module for the **MLH1** gene
+  * After typing the gene name in _Search by Gene_, click on the dropdown suggestion to get the reporter field filled in automatically.
+  * Use again the gene set filter option for the **Broad 2025 06 c6 oncogenic** gene set. 
 
 
-* On the result page, click on the best correlating gene (not MLH1) to plot both genes together, in a two gene view. Inspect the correlation. Can you think of reasons why the gene expression might be highly correlated?
+* On the result page, click on the best correlating gene (not MLH1) to plot both genes together, in a two gene view. 
+* Inspect the correlation. Can you think of reasons why the gene expression might be highly correlated?
+  
 
-
-* Click on **View Additional Details**, look at the Probeset Genome Location table.
-
+* Click on **> View Additional Details**
+* Look at the **Probeset Genome Location table**.  
 On which chromosomes are both genes located?
 
+![](_static/images/MolOncCRC/viewadddetails.png "Click TView to go to the Genome Browser")  
 
-* In the table, click on one of the two T-view links and zoom out 2X with the correct button at the top of the page.
+[**Click TView to go to the Genome Browser**](_static/images/MolOncCRC/viewadddetails.png)
 
+* In the table, click on one of the two **T-view links** and **zoom out 2X** with the correct button at the top of the page.
 
-![](_static/images/MolOncCRC/viewadddetails.png "Click TView to go to the Genome Browser")
-
-You arrived at the Genome browser. The Genome Browser allows you to "walk over the genome".
+You arrived at the Genome Browser. The Genome Browser allows you to "walk over the genome".
 
 Underneath, each genome location is annotated with the genes found at that position. Genes colored in red are read in reverse direction. 
 
 ------  
 
-![](_static/images/R2d2_logo.png)**What can you say about the location of the two genes?**
+![](_static/images/R2d2_logo.png)**What can you say about the location of the two genes? And what about their promotor region?**
 <br>
 <br>
 
@@ -480,8 +482,15 @@ Underneath, each genome location is annotated with the genes found at that posit
 
 Now let's see how strongly MLH1 expression is associated with CMS subtypes.
 
-* From the main page, select the **Correlate Gene with a track** analysis to confirm the strong association of MLH1 of course enter the MLH1 gene 
-  expression with the CMS subtype (track **cms_predicted (4 cat)**). In the gearbox you can select color by track in the color mode (groups) pull down.
+* From the main page, select the **Correlate Gene with a track** analysis to confirm the strong association of MLH1 
+  * enter the **MLH1** as gene 
+  * and the track **cms_predicted (4 cat)**. 
+
+In the left upper corner of the plot, you can find a gear icon. When clicked, a menu opens with a lot of interactive plot settings. This gear menu can be found in most plots and allow for quick adjusting and playing with the plots.
+* Click on the **gear icon** to open the menu
+  * Select at the General tab for _Color mode_, **Color by a track**
+  * Set _Color by Track_ to **cms_predicted (4 cat)**. 
+  * You can also choose in Color mode **Color by a Gene** and check different genes, or play around with other tracks to color the groups by.
 
 #### DNA methylation
 
