@@ -191,14 +191,17 @@ Annotation tracks, such as tissue type, are often shown above a heatmap. Remembe
 * Go back to the gene list result page of the previous Differential Expression between two groups analysis, the tab 
   should still be open. 
 * Generate a list of genes which are differentially expressed comparing normal and adenoma tissue within the KEGG WNT pathway by adjusting the settings if needed:
-  - Use the False Discovery Rate for multiple testing correction, 
-  - log2 values 
-  - and P <0.01. 
+  - Use the **Benjamini & Hochberg (FDR)** for multiple testing correction, 
+  - **Log2** transformation 
+  - and P <**0.01**. 
   - Click on the currently selected gene set, **Clear selection** with the red button and find the KEGG **Wnt** 
-    pathway geneset (hint: use keyword **Wnt**). 
+    pathway geneset (hint: use keyword **Wnt**).  
+    
   Don't forget to hit **Submit** in order to redo the analysis with the new settings.
 
-* Use the grey **Heatmap(zscore)** button on the right side of the page, which creates a heatmap from the gene list you just generated.    
+* Use the grey **Heatmap(zscore)** button on the right side of the page, which creates a heatmap from the gene list you just generated. 
+
+If the menu on the left side is in the way, you can easily collapse it with the x button at the top and later expand it with a click on the three horizontal lines.
 
 
 ------
