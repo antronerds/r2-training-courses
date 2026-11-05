@@ -436,9 +436,12 @@ In the Watanabe dataset we found MLH1 to be a possible key player. We will now t
 
 * Go back to the main page, and select the dataset **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
-* Perform the **Differential Expression between two groups** analysis, choose Track **microsatellite_instability**, click **next**, set **no** for Group1 and 
-  **yes** for Group2, and perform the analysis on the gene set **Broad 2025 06 c6 oncogenic**. **Submit** at **geneset**,do not forget to  click the green confirm button. 
-* Click again on the MLH1 gene magnifying glass.
+* Perform the **Differential Expression between two groups** analysis:
+  * Choose  **microsatellite_instability** as a grouping variable, click **next**
+  * Set _Group 1_ **no** and _Group 2_ **yes**
+  * Perform the analysis on the gene set **Broad 2025 06 c6 oncogenic**, don't forget to click the green confirm button after checking the checkbox of the geneset. 
+  * **Submit**  
+* Click again on the MLH1 gene magnifying glass
 
 In this set too MLH1 seems to play a key role for MSI related CRCs. It would be interesting to find out which genes are possibly regulated by the MLH1 gene.
 One way to find genes that are possibly affected by MLH1 is to look at (inversely) correlated genes.
