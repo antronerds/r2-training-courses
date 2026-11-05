@@ -756,8 +756,11 @@ A Differential Expression between two groups analysis has already been performed
 [**Geneset correlations**](_static/images/MolOncCRC/APC_genesig_corr.png)
 
 
-* Go the main page and select the **Geneset vs Genesets Correlations** module. In the next screen select for the *Gene set (source)* a sub gene set: click on the arrows in front of the geneset collection to go deeper in the tree **Community genesets > r2 > main >** **APC_activated (153)** (click the green confirm button). 
-* For **Gene set (target)** select the complete collection of **Broad 2025 06 h hallmark** genesets.
+* Go the main page and select the **Geneset vs Genesets Correlations** module. 
+* In the next screen select for the *Gene set (source)* a sub gene set: 
+  * click on the arrows in front of the geneset collection to go deeper in the tree **Community genesets > r2 > main >** **APC_activated (153)**
+  * (click the green confirm button). 
+* For *Gene set (target)* select the complete collection of **Broad 2025 06 h hallmark** genesets. 
 
 R2 will calculate the signature scores for the upregulated APC mutant gene list and for each gene set that the selected Broad Hallmark gene set collection harbors.
 
@@ -769,8 +772,9 @@ R2 will calculate the signature scores for the upregulated APC mutant gene list 
 <br>
 
 ------
+* Click next.
 
-Click next. R2 is now performing  a correlation test on the signature scores of the APC activated gene list in APC mutants against the signature scores of all the gene sets in the Broad hallmark collection.
+R2 is now performing  a correlation test on the signature scores of the APC activated gene list in APC mutants against the signature scores of all the gene sets in the Broad hallmark collection.
 
 
 ------
@@ -791,7 +795,7 @@ Mesenchymal Consensus Molecular Subtype 4 (CMS4) colon cancer is associated with
 In a proof-of-concept study, Kranenburg et al. assessed whether the drug imatinib could shift the CMS4 subtype specific 
 gene expression program towards a gene expression program that is better treatable.  
 
-The button below brings you to the form in which you can submit your answers for the third section.
+The button below brings you to the form in which you can submit your answers for the next section.
 
 <button class="course googleform" onclick="window.open('https://forms.gle/F3NgZSunnbJ8815k8','_blank');"
 type="button">Open the answering form for this section</button>
@@ -804,9 +808,7 @@ mesenchymal genes, such as ZEB1, PDGFRA, PDGFRB, and CD36, changes between pre- 
 * On the main page in the center menu, select the dataset **Tumor ImPACCT - Kranenburg - 30 - custom - ensh37e75**  
 * Choose the analysis **View Multiple Genes** and click Next
 * In the *Genes/Reporters to include* textbox, type **Zeb1,PDGFRA,PDGFRB,CD36**
-* Set Track to **imatinib (2 cat)** that divides the samples in a pre-treatment and a post-treatment group
-.  
-
+* Set _Group by_ to **pre-post-imatinib (2 cat)** that divides the samples in a pre-treatment and a post-treatment group
 
 
 ![](_static/images/MolOncCRC/multiplegeneview.png  "Genesign corr")
@@ -814,13 +816,10 @@ mesenchymal genes, such as ZEB1, PDGFRA, PDGFRB, and CD36, changes between pre- 
 [**Gearbox settings**](_static/images/MolOncCRC/multiplegeneview.png)
 
 
-* Click on the _blue gear icon_ in the upper left corner of the plot and change *Handle
-  groups by* **Separated by track grouped by gene**.
+* Click on the _blue gear icon_ in the upper left corner of the plot and change *Handle groups by* **Separated by track grouped by gene**.
 * Set *Color mode (groups)* to **Color by Track** in order to make the box plots visually more distinct.
 * Check **Add Scatter** to see the data points
 * Note that you now also can change *Color mode* of the scatter points to color by track or by gene (e.g. **CTNNB1**)
-* The plot options in the panel that pops up with the gear icon are directly responsive. Therefor, you don't have to submit your changes for these options, which ís required when you make adaptations in a adjustable settings menu. Sometimes when you change the fonts too much, the plot might look a bit out of balance. Then you can still click **redraw plot** that often rearranges plot elements for the better
-
 
 ------
 
@@ -856,9 +855,12 @@ such scores as a Track to use in further analyses in R2.
 Now that we have an average expression value for the MYC target genes per sample, we would like to assess how the treatment influenced these values.
 * Go back to the main page
 * Click **Relate 2 tracks**, click **Next**
-* Select *X track* **imatinib (2cat)** and for the Y axis we choose the signature score that we just generated: *Y track* **hallmark_myc_targets_v1**
-* Select *Graph type* **Dot**
-* Change *Color mode (groups)* to **Color by Track** and click **Submit**
+* Select *X track* **pre-post-imatinib (2 cat)** and for the Y axis we choose the signature score that we just generated: *Y track* **hallmark_myc_targets_v1**
+* Select *Graph type* **Dot** and click **Submit**
+
+Let's add some color:
+* Click the **gear icon**
+* Change *Color mode (groups)* to **Color by Track** 
 <br><br>
 We also would like to know the influence of the treatment on WNT target gene expressions. 
 * Do the same route, starting with View Geneset (heatmap), for the WNT target gene set: find **WNT_ImPACCT** that 
