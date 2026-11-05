@@ -494,28 +494,29 @@ In the left upper corner of the plot, you can find a gear icon. When clicked, a 
 
 #### DNA methylation
 
-Inactivation of a gene can occur due to mutations in the gene or through epigenetic changes, such as promoter methylation.
-The R2 platform hosts a variety of dataset types. Not only gene expression datasets but also methylation arrays can 
-be found. 
+As was mentioned efore, inactivation of a gene can occur due to mutations in the gene or through epigenetic changes, such as promoter methylation.
+The R2 platform hosts a variety of dataset types. Not only gene expression datasets but also methylation arrays can be found. 
 
-* Go to the main page and select the dataset **Tumor Colon adenocarcinoma - tcga - 296 - custom - ilmnhm450**
-
+* Go to the main page and select the methylation dataset **Tumor Colon adenocarcinoma - tcga - 296 - custom - ilmnhm450**
 * Create the **View a Gene** plot for **MLH1**
 * Under the triangle of *View additional details* click on the **view all** link.
-* Scroll down to the bottom of the page to make a *Subset Track* selection at sample filter with **microsatellite_instability** to 
-  only select the samples that have been annotated for this characteristic (**yes** and **no**). Click **Next**.
+* Scroll down to the bottom of the page. 
+  * Make a *Subset Track* selection at sample filter with **microsatellite_instability** 
+  * Select the samples that have been annotated for this characteristic (**yes** and **no**). 
+  * Click **Ok** and **Next**.
 
-A heatmap is generated of methylation levels. Each column corresponds to a sample, and each row corresponds to a 
-feature (a single CpG site or a larger target region including multiple CpG sites, e.g. promoter regions). A 
-hierarchical clustering of the samples is performed. The MLH1 reporters themselves seem faulty (complete blue colored rows), but you find CpG 
-sites above that are located at the promotor sites of MLH1 and the gene that we have seen before as strongly 
-correlating in expression. Note, that blue is methylated and yellow is non-methylated.
+A heatmap is generated of methylation levels. Each column corresponds to a sample, and each row corresponds to a feature (a single CpG site or a larger target region including multiple CpG sites, e.g. promoter regions). A hierarchical clustering of the samples is performed for the ordering: samples with similar methylation profiles are positioned together.  
+  
+You find CpG sites that are located at the promotor sites of MLH1 and the gene EPM2AIP1 that we have seen before as strongly correlating in expression. Note, that blue is methylated and yellow is non-methylated.
 
-* Hover with your mouse over the _r2_at_cms_ track to see to which CMS subtype the cluster of hypermethylated samples mostly belong.  
+* Check out the _microsatellite_instability_ annotation above the heatmap
+* Also hover with your mouse over the _r2-at_cms_ track to see to which **CMS subtype** the cluster of hypermethylated samples (blue in the whole region) mostly belong.  
+
+The four MLH1 CpG sites at the bottom are methylated in all tumors. They lie outside the promoter, and methylation there does not switch the gene off: the location of methylation matters. You can check their location at the bottom where a part of the genome browser is depicted, with the probe identifiers. 
 
 ------  
 
-![](_static/images/R2d2_logo.png)**Which CMS group did you find?**
+![](_static/images/R2d2_logo.png)**Which subtypes of both annotations did you find?**
 
 ![](_static/images/R2d2_logo.png)**Why are we looking at methylation levels around the promotor of MLH1?**
 <br>
@@ -525,8 +526,7 @@ correlating in expression. Note, that blue is methylated and yellow is non-methy
 
 ### What pathways drive subtype CMS4?
 
-Previously we looked into CMS subtype 1. Let's now have a look at the other subtypes. We would like to understand what 
-sets CMS 4 apart from the subtypes 2 and 3.
+Previously we looked into CMS subtype 1. Let's now have a look at the other subtypes. We would like to understand what sets CMS 4 apart from the subtypes 2 and 3.
 
 * On the main page, select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 * Choose the *analysis* **Differential Expression Between Two Groups**.
@@ -566,8 +566,8 @@ Thus far we looked at colon cancer characteristics mainly based on gene expressi
 
 It is good common scientific practice to validate and check your analysis in other resources. We already have seen that the Molecular signature classification (CMS) are nicely clustered in the previous datasets.  Let's check whether this is also the case for the Nunes RNA seq dataset.
 
-* Select on the mainpage **Sample Maps (UMAP/tSNE)**. 
-* Find and click on the UMAP embedding of **Tumor Colon - Nunes - 1063 - tpm - ensh38e98** to read the **Summary** of the dataset in the information panel under the grid and then **Select** the dataset.
+* From the left side menu, go to **Sample Maps (UMAP/tSNE)**. 
+* Find and click on the **UMAP** embedding of **Tumor Colon - Nunes - 1063 - tpm - ensh38e98** to read the **Summary** of the dataset in the information panel under the grid and then **Select** the dataset.
 * Use *Color mode* again to overlay the plot with **Color by a Track** and **cms_tumour (5cat)**.
 * If you want, you can check multiple (or _all_) versions
 
@@ -594,8 +594,7 @@ In the context of colorectal cancer,  *Comparative Genomic Hybridization (CGH)* 
 ![](_static/images/MolOncCRC/CGH_examples.jpg "CGH example")
 [**Example of CGH profiles: CGH profile of malignant melonama. A is a control sample**](_static/images/MolOncCRC/CGH_examples.jpg)
 
-CGH profiling plays a crucial role in understanding colorectal cancer (CRC) by revealing genomic instability, a hallmark of cancer. We uploaded the genomic data of the Nunes study into the platform, and can generate CGH profiles of the . 
-
+CGH profiling plays a crucial role in understanding colorectal cancer (CRC) by revealing genomic instability, a hallmark of cancer. We uploaded the genomic data of the Nunes study into the platform, and can generate CGH profiles of the different subtypes. 
 
 Let’s examine these profiles to see if any patterns emerge when plotting them according to different characteristics.
 
@@ -603,7 +602,7 @@ Let’s examine these profiles to see if any patterns emerge when plotting them 
 
 [**Selecting CGH profiles**](_static/images/MolOncCRC/WES-menu_nunes.png)
 
-* On the main page select in the left menu **WGS/WES data** and in the middle menu click on **Plot CGH karyograms in track assisted order**. Select CRC Nunes 2024 (copy number) and click **Continue**. 
+* In the left menu, click **WGS/WES data** and in the middle menu, click on **Plot CGH karyograms in track assisted order**. Select CRC Nunes 2024 (copy number) and click **Continue**. 
 
 An averaged CGH plot, integrating the CGH data from all 1063 tumor samples, provides a summary of the gains (in red) and losses (in blue) observed across the dataset in a single visualization.
 
@@ -658,11 +657,17 @@ In this OncoPrint, we find an overview of the most common mutations across our e
 [**OncoPrint color legend: the colors represent the type of mutation**](_static/images/MolOncCRC/OncoPrint_legend.png)
 
 
-Scrolling down to the bottom, you will find in the Adjustable Settings menu all sort of interesting options that you can toggle on/off. In the picture below, you can find several suggestions to reveal more insights of mutational characteristics in this cohort and of CRC in general. You can add extra tracks to the plot if you click on **Select Tracks**.
+Scrolling down to the bottom, you will find in the Adjustable Settings menu all sort of interesting options that you can toggle on/off. In the picture below, you can find several suggestions to reveal more insights of mutational characteristics in this cohort and of CRC in general. Don't forget to click on **Next** after you changed settings. 
 
 ![](_static/images/MolOncCRC/oncoprint_settings_suggestions1a.png "OncoPrint setting suggestions")
 
 [**OncoPrint setting suggestions**](_static/images/MolOncCRC/oncoprint_settings_suggestions1a.png)
+
+With the gear icon you can also adapt settings, such as add extra tracks to the plot with _Display annotation_ **Selected**.
+
+![](_static/images/MolOncCRC/oncoprint_gearsettings_suggestions1b.png "OncoPrint setting suggestions")
+
+[**OncoPrint setting suggestions**](_static/images/MolOncCRC/oncoprint_gearsettings_suggestions1b.png)
 
 ------
 
@@ -676,12 +681,12 @@ Scrolling down to the bottom, you will find in the Adjustable Settings menu all 
 
 ### Somatic variants
 
-Let's investigate mutations in more detail and look at individual sample mutations in this cohort. On the main page in the left-side menu, select the **WES/WES data** module and then select **Somatic Mutations**. 
+Let's investigate mutations in more detail and look at individual sample mutations in this cohort. In the left-side menu, select the **WES/WES data** module and then select **Somatic Mutations**. 
 
 
-* Select as variant **hg38 - CRC nunes (Nature 2024) OncoKB** only. Click **Next**. 
+* Select as variant source **hg38 - CRC nunes (Nature 2024) OncoKB** only. Click **Next**. 
 
-Immediately you see a list of genes that should look familiar.
+Immediately you see a list of genes that should looks familiar.
 
 * Now switch to **detailed** in the _Detailed or summary_ setting and click **Next**. 
 
@@ -705,7 +710,7 @@ KRAS and BRAF mutations are oncogenic driver genes in cancer.
 ------
 
 ![](_static/images/R2d2_logo.png)**If you look at the complete gene locations of APC vs BRAF / KRAS and the somatic variants in the GenomeBrowser, do you see any difference with respect to how many variations are found in the cohort?<br>
-Which mutation type in BRAF mutation is the most prominent?**
+Which mutation type in BRAF mutation is the most prominent? (Most intense in color)**
 
 <br>
 <br>
@@ -734,12 +739,14 @@ To summarize the expression values of the genes in such a signature, R2 can calc
 * Weighted sums where each gene’s contribution is weighted by its known importance.
 
 
-![](_static/images/MolOncCRC/cms_signature_score_2.gif "Signature score")
+[//]: # (![]&#40;_static/images/MolOncCRC/cms_signature_score_2.gif "Signature score"&#41;)
 
-[**Animated signature score explained**](_static/images/MolOncCRC/cms_signature_score_2.gif)
+[//]: # ()
+[//]: # ([**Animated signature score explained**]&#40;_static/images/MolOncCRC/cms_signature_score_2.gif&#41;)
 
+![](_static/images/MolOncCRC/signature_score.png  "Signature score: per sample the average expression of the chosen genes")
 
-
+[**Signature score: per sample the average expression of the chosen genes**](_static/images/MolOncCRC/signature_score.png)
 
 A Differential Expression between two groups analysis has already been performed for APC mutants versus non-APC mutants for the Nunes set. We have stored a list of genes which are upregulated in the APC mutated group. This collection of genes will be used to find correlations for the signature scores of other pathways. 
 
