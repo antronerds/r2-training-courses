@@ -414,46 +414,27 @@ When you look at the expression plot of MLH1, what do you notice about the expre
 MSI tumors give a very heterogeneous picture. This could be an indication that within the MSI tumor group a subgroup could be identified. 
 
 * Hover with your mouse over data points to see if you can identify a subgroup of an annotation track in which low MLH1 expression occurs more often.  
-* In the Adjustable settings menu, you can switch the sample grouping _Track_ from **MS_status** to **MS_Orientation**. Of course,  **Submit**.
 
 To find out if our gene of interest associates strongly with any annotation that is already available for the current dataset, R2 also offers a tool: CliniSnitch. CliniSnitch performs a context-dependent statistical test on each track to identify significant associations with the gene’s expression (i.e. different types of tests based on whether a track is numerical or categorical).
-* On the right hand side of the page, you find several followup links in light grey boxes with dark grey headers. In one of them you can find CliniSnitch. Click on the **CliniSnitch MLH1** link to find out which available track shows the strongest association with MLH1 expression.
+*  On the right hand side of the page, you find several followup links in light grey boxes with dark grey headers. In one of them you can find CliniSnitch. Click on the CliniSnitch **Gene: MLH1** link to find out which available track shows the strongest association with MLH1 expression.
 * Click on the magnifying glass icon in front of the track with the lowest p value to find out which subgroup it is that we are looking for.  
 
-<!--
-Let's visualize the relation between these dataset annotations in another way. 
-* In the Adjustable settings menu at the bottom of the page, change _Analysis type_ to **track vs track**
-* Select for the _X track_ the **MS_status (2 cat)** and for the _Y track_ **Orientation (3 cat)** 
-* Choose *Graph type*  XY is not selected
-In the MLH1 expression graph we saw that low gene expression was not equally distributed within the MSI group. 
-* Let's add this layer of information in this plot as well: select *Color mode* **Color by a Gene** and enter **MLH1** 
-  as gene to color the plot. Click **Submit**.  
-We arrived to the same conclusion with the help of several different visualizations and analysis
--->
- 
 
 ------  
 
-![](_static/images/R2d2_logo.png)**Concluding, with which two characteristics can you describe the subgroup that 
-more often has a low MLH1 expression?**
+![](_static/images/R2d2_logo.png)**Concluding, with which two characteristics can you describe the subgroup that more often has a low MLH1 expression?**
 <br>
 <br>
 
 ------
 
-In many cases of proximal colon cancer with MSI, the high level of microsatellite instability is caused by the loss
-of MLH1 expression. Understanding the relationship between MLH1 expression and MSI is crucial for diagnosing MMR 
-(mismatch repair) deficiency, predicting prognosis, and guiding targeted therapies for patients with 
-colorectal cancer.  
- 
-Colorectal tumors with MSI do not have the same response to chemotherapeutics and are an important subgroup to look at for specialized treatments. 
-In the Watanabe data set we found MLH1 as possibly an important player. We will now corroborate our findings in another dataset. Not only because this is an old set (look up the background information in the information panel of the dataset selection grid), but it is  common practice to 
-validate your results with other sources. We will use a dataset that we already looked at with the t-SNE clustering 
-algorithm.
+In many cases of proximal colon cancer with MSI, the high level of microsatellite instability is caused by the loss of MLH1 expression. Understanding the relationship between MLH1 expression and MSI helps to diagnose mismatch repair (MMR) deficiency, to predict prognosis, and to choose treatment for patients with colorectal cancer. MSI tumors respond differently to treatment: they benefit less from standard 5-FU chemotherapy, but often respond well to immunotherapy with immune checkpoint inhibitors.
+
+In the Watanabe dataset we found MLH1 to be a possible key player. We will now try to confirm this finding in another dataset. Not only because the Watanabe set is old (look up the background information in the information panel of the dataset selection grid), but also because it is common practice to validate your results in an independent dataset. We will use the dataset that we already looked at with the t-SNE clustering algorithm.
 
 #### MSI in tcga set
 
-* Go back to the main page, and select **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
+* Go back to the main page, and select the dataset **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
 * Perform the **Differential Expression between two groups** analysis, choose Track **microsatellite_instability**, click **next**, set **no** for Group1 and 
   **yes** for Group2, and perform the analysis on the gene set **Broad 2025 06 c6 oncogenic**. **Submit** at **geneset**,do not forget to  click the green confirm button. 
