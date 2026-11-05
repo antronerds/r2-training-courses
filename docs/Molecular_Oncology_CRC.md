@@ -374,45 +374,47 @@ Now we will look at the KRAS mutations
 
 ### A dive into CMS1: MSI / MSS in CRC
 
-Colorectal cancer exhibits two primary forms of genomic instability: chromosomal instability (CIN) and microsatellite instability (MSI), with MSI being a hallmark of the CMS I subtype. MSI arises from defects in DNA mismatch repair genes, which are responsible for correcting errors that occur during DNA replication. When genes such as MLH1, MSH2, MSH6, and PMS2 are mutated or silenced, the repair process fails, leading to the accumulation of mutations in short repetitive DNA sequences known as microsatellites. The presence of MSI predicts a good outcome in colorectal cancer.
+Colorectal cancer shows two main forms of genomic instability: chromosomal instability (CIN) and microsatellite instability (MSI). We will now dive deeper into MSI characteristics, a hallmark of the CMS1 subtype.  
 
-In MSI colon cancer, genes of the DNA mismatch repair system thus play an important role. Germline mutations in these genes are a major cause of the inherited form of colon cancer, namely HNPCC (hereditary nonpolyposis colon cancer).  In sporadic forms of colon cancer however, these genes are frequently inactivated. Inactivation is often achieved via hypermethylation, switching the gene off. Hypermethylation of genes in colon cancer is most common in colon tumors with a proximal location in the colon and much less in colon tumors with a distal location.
+MSI arises when the DNA mismatch repair (MMR) system fails. This system corrects errors made during DNA replication. Without it, mutations pile up, especially in short repetitive DNA sequences called microsatellites. MSI is associated with a better prognosis, especially in early-stage colorectal cancer.
 
-The next section we will use another dataset. *"Tumor Colon- Watanabe - 84 - MAS5.0 - u133p2"*
+The MMR genes, such as MLH1, MSH2, MSH6 and PMS2, can be switched off in two ways: by a mutation, or by hypermethylation.  
+In the inherited form of colon cancer, called HNPCC (hereditary nonpolyposis colorectal cancer), patients carry a mutation in one of these genes.  
+In sporadic (non-inherited) colon cancer, MLH1 is usually switched off by hypermethylation of its promoter: the gene itself is intact, but it is no longer read. This hypermethylation is much more common in tumors in the proximal (right) colon than in the distal (left) colon.
 
-This dataset consists of Microsatellite Stable (MSS) tumors and Microsatellite Instable (MSI) tumors.
+For the coming section we will use a dataset that is consists of Microsatellite Stable (MSS) tumors and Microsatellite Instable (MSI) tumors.
 
 #### MSS vs MSI
 
 * From the main page, find the dataset **Tumor Colon - Watanabe - 84 - MAS5.0 - u133p2** and read the **Summary** in the information panel underneath the dataset selection grid. 
 * Then **Confirm selection** of the dataset.
-* Use the **Differential expression between two groups** module to generate a list of differentially 
-  expressed genes between **MSI** and **MSS** characterized tumors (group by *MS_status*). 
+* Use the **Differential expression between two groups** module to generate a list of differentially expressed genes between **MSI** and **MSS** characterized tumors (group by *MS_status*). 
 
-Because we know that DNA repair genes play an important role in microsatellite (in) stability, we can use a set of DNA repair genes to examine 
+Because we know that DNA repair genes play an important role in microsatellite (in)stability, we can use a set of DNA repair genes to examine 
 whether these genes indeed are differentially expressed between MSI and MSS tumors and which genes exactly make the difference. 
-* With the **Select gene set** button, filter for **DNA repair** genes, and find them in **r2 courses** and click the triangles to select the DNA repair set. There are 247 
-  genes annotated as DNA repair genes. Perform the analysis by clicking on **Submit**.
+* With the **Select gene set** button, 
+  * Filter for **DNA repair** genes, 
+  * Find them in **r2 courses** 
+  * Click the triangles to select the DNA repair set. There are 247 
+    genes annotated as DNA repair genes. 
+  * Perform the analysis by clicking on **Submit**.
 
 One of the genes that is differentially expressed, is MLH1. 
-* Click on its magnifying glass to look at the expression of MLH1 in the MSI vs. MSS samples. 
+* Click on its magnifying glass to look at the expression of MLH1 in the MSI vs. MSS grouped samples. 
 
 ------  
 
-![](_static/images/R2d2_logo.png)**In the list of differentially expressed genes, MLH1 is significantly lower 
-expressed in the MSI group vs the MSS group: MSI < MSS.<br><br>
-When you look at the expression plot of MLH1, what do you notice about the expression of the samples in this group? Do you see a clear-cut trend of lower MLH1 expression in the 
-MSI group?**
+![](_static/images/R2d2_logo.png)**In the list of differentially expressed genes, MLH1 is significantly lower expressed in the MSI group vs the MSS group: MSI < MSS.<br><br>
+When you look at the expression plot of MLH1, what do you notice about the expression of the samples in this group? Do you see a clear-cut trend of lower MLH1 expression in the MSI group?**
 <br>
 <br>
 
 ------
 
-MSI tumors give a very heterogeneous picture. This could be an indication that within the MSI tumor group 
-also a subgroup could be identified. 
+MSI tumors give a very heterogeneous picture. This could be an indication that within the MSI tumor group a subgroup could be identified. 
 
-* Hover with your mouse over data points to see if you can identify a subgroup of an annotation track in which low MLH1 expression occurs more often.
-* We can add an extra layer of information by coloring the dots of the violin plot. Click on the steering wheel and select at the general tab in the gearbox at color mode, *color by track*, and subsequently at color by track *MS_orientation (5 cat)*  in case the graph is not updated on the fly click redraw plot.  
+* Hover with your mouse over data points to see if you can identify a subgroup of an annotation track in which low MLH1 expression occurs more often.  
+* In the Adjustable settings menu, you can switch the sample grouping _Track_ from **MS_status** to **MS_Orientation**. Of course,  **Submit**.
 
 To find out if our gene of interest associates strongly with any annotation that is already available for the current dataset, R2 also offers a tool: CliniSnitch. CliniSnitch performs a context-dependent statistical test on each track to identify significant associations with the gene’s expression (i.e. different types of tests based on whether a track is numerical or categorical).
 * On the right hand side of the page, you find several followup links in light grey boxes with dark grey headers. In one of them you can find CliniSnitch. Click on the **CliniSnitch MLH1** link to find out which available track shows the strongest association with MLH1 expression.
