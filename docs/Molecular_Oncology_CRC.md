@@ -144,6 +144,13 @@ significantly different between two groups of a dataset.
 R2 has generated a large list of differentially expressed genes. On the right hand side of the page you find buttons to follow-up analyses,
 and underneath the buttons are informative tables about the genes list. One table shows how many genes have higher expression in adenomas compared to healthy tissue and vice versa. 
 
+What can you see in this list? The most significantly differentially expressed genes between the adenoma samples and the normal samples. Look at both the p-value and the Log2Fold change and whether it's positive or negative!
+
+![](_static/images/MolOncCRC/diffexpr_2logFC_pvalue_.png "What does the this list tell you? Look at both the p-value and the Log2Fold")
+
+[**What does the this list tell you? Look at both the p-value and the Log2Fold**](_static/images/MolOncCRC/diffexpr_2logFC_pvalue_.png)  
+
+
 ------
 
 ![](_static/images/R2d2_logo.png)**How many genes have been found in total? How many genes were significantly upregulated in adenomas and how many were downregulated?**
@@ -1084,10 +1091,12 @@ ______
 [//]: # (## Summary
 In the introduction of section 1.3, a figure summarized various characteristics associated with each CMS subtype. Without referring back to the original figure, try to recreate it by reviewing the practicum and writing down subtype specific characteristics that you came across during exercises. Feel free to include as many characteristics as you can think of.)
   
-## Evaluation
+## Feedback
 
-Please fill in the evaluation form about this R2 course!
+We would love for you to give us feedback about the course: what did work well and what could be improved!  
 
+**Feedback about this R2 practical** can be provided at:  
+**https://r2platform.com/feedback**
 
 ---------
 
