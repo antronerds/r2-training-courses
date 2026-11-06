@@ -7,8 +7,18 @@ Molecular Oncology - R2 Practical - Colorectal Cancer
 
 
 [//]: # (This resource is located online at http://r2platform.com/studentcourse )
+ This practical is part of the Molecular Oncology course.  
  
+Maarten Bijlsma aks you to fill in the **evaluation of the** **entire Molecular Oncology course** at:
+https://studentfeedback.uva.nl/evaluations/211185  
+(You don't have to do this now! You can copy this link and do it whenever you have some spare time)
+
+
+We, as the R2 team, also love feedback: what works well in this practical, what could be improved.  
+**Feedback about this R2 practical** can be provided at:  
+https://r2platform.com/feedback
   
+
 Introduction
 ------------
 
