@@ -143,19 +143,19 @@ significantly different between two groups of a dataset.
 
 R2 has generated a large list of differentially expressed genes. On the right hand side of the page you find buttons to follow-up analyses,
 and underneath the buttons are informative tables about the genes list. One table shows how many genes have higher expression in adenomas compared to healthy tissue and vice versa. 
-
-What can you see in this list? The most significantly differentially expressed genes between the adenoma samples and the normal samples. Look at both the p-value and the Log2Fold change and whether it's positive or negative!
-
-![](_static/images/MolOncCRC/diffexpr_2logFC_pvalue_.png "What does the this list tell you? Look at both the p-value and the Log2Fold")
-
-[**What does the this list tell you? Look at both the p-value and the Log2Fold**](_static/images/MolOncCRC/diffexpr_2logFC_pvalue_.png)  
-
-
+  
 ------
 
 ![](_static/images/R2d2_logo.png)**How many genes have been found in total? How many genes were significantly upregulated in adenomas and how many were downregulated?**
 
 ______
+  
+
+What can you see in the big table in the center? The differentially expressed genes between the adenoma samples and the normal samples. Look at both the p-value and the Log2Fold change and whether it's positive or negative!
+
+![](_static/images/MolOncCRC/diffexpr_2logFC_pvalue_.png "What does the this list tell you? Look at both the p-value and the Log2Fold")
+
+[**What does the this list tell you? Look at both the p-value and the Log2Fold**](_static/images/MolOncCRC/diffexpr_2logFC_pvalue_.png)  
 
 
 Next to the many publicly available datasets, R2 also hosts many curated lists of genes that we call **gene sets**. These gene sets can be used to restrict or filter an analysis as well.<br>
