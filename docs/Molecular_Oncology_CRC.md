@@ -57,9 +57,11 @@ Colorectal cancers are believed to arise mostly from adenomas. In this first par
 
 ### Filtering and exploring
 
-* Open a Chrome browser and browse to https://r2platform.com. Use your R2 account to sign in.
+* Open a Chrome browser and use your R2 account to sign in in the collaborator's server of the R2 platform: https://r2platform.com/hg2
 
-You're now on the R2 main page. R2 guides you through an analysis step by step: you simply follow the numbered boxes on the main page. To get a first look at gene expressions in one of the colon cancer datasets that is hosted in R2, we will use a dataset that is called: _Mixed Colon - Marra - 64 - MAS5.0 - u133p2_.  
+Generally speaking, the R2 platform is easily accessible by the link https://r2platform.com, but today we work from our collaborator's server hgserver2.
+
+R2 guides you through an analysis step by step: you simply follow the numbered boxes on the main page. To get a first look at gene expressions in one of the colon cancer datasets that is hosted in R2, we will use a dataset that is called: _Mixed Colon - Marra - 64 - MAS5.0 - u133p2_.  
   
 * We leave Box 1 as is, because we will look only at a single dataset. 
 * In order to find the above-mentioned dataset in R2, click on the text of the currently selected dataset in box 2. 
@@ -422,7 +424,7 @@ To find out if our gene of interest associates strongly with any annotation that
 
 ------  
 
-![](_static/images/R2d2_logo.png)**Concluding, with which two characteristics can you describe the subgroup that more often has a low MLH1 expression?**
+![](_static/images/R2d2_logo.png)**Concluding, with which two characteristics can you describe the subgroup for which the transcription of MLH1 is often prevented? (Look at the values of the two tracks above the heatmap that show you the cms subtype of the samples and their microsatellite state)**
 <br>
 <br>
 
