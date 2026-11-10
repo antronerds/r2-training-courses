@@ -441,7 +441,7 @@ To find out if our gene of interest associates strongly with any annotation that
 
 ------  
 
-![](_static/images/R2d2_logo.png)**Concluding, with which two characteristics can you describe the subgroup for which the transcription of MLH1 is often prevented? (Look at the values of the two tracks above the heatmap that show you the cms subtype of the samples and their microsatellite state)**
+![](_static/images/R2d2_logo.png)**Concluding, with which two characteristics can you describe the subgroup for which the transcription of MLH1 is often prevented? (Look at the values of the two tracks above the heatmap that show you the cms subtype of the samples and their microsatellite state and confirm with the name of the subgroup in the violin plot)**
 <br>
 <br>
 
@@ -455,7 +455,7 @@ In the Watanabe dataset we found MLH1 to be a possible key player. We will now t
 
 * Go back to the main page, and select the dataset **Tumor Colon Adenocarcinoma (students) - tcga - 204 - tpm - gencode36**
 
-* Perform the **Differential Expression between two groups** analysis:
+* Perform the **Differential Expression between two groups** analysis (box 3) and in the next page:
   * Choose  **microsatellite_instability** as a grouping variable, click **next**
   * Set _Group 1_ **no** and _Group 2_ **yes**
   * Perform the analysis on the gene set **Broad 2025 06 c6 oncogenic**, don't forget to click the green confirm button after checking the checkbox of the geneset. 
@@ -510,6 +510,11 @@ In the left upper corner of the plot, you can find a gear icon. When clicked, a 
   * Select at the General tab for _Color mode_, **Color by a track**
   * Set _Color by Track_ to **cms_predicted (4 cat)**. 
   * You can also choose in Color mode **Color by a Gene** and check different genes, or play around with other tracks to color the groups by.
+
+![](_static/images/MolOncCRC/menu_gearicon.png "Click the gear icon to adjust plot settings")
+
+[**Click the gear icon to adjust plot settings**](_static/images/MolOncCRC/menu_gearicon.png)
+
 
 #### DNA methylation
 
