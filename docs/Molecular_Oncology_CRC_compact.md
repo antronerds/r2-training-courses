@@ -92,6 +92,11 @@ Of course, it is nice to have a lot of RNA expression datasets to analyze and ex
 
 In R2, samples of a dataset can be annotated with e.g. clinical data or biological information. Each group of annotated data is called a **Track** in R2. For instance, _Location_ is one track in this dataset, that tells us what the location of the biopsy was for the respective sample; _Tissue_ is a track that tells us whether the sample is normal (mucosa) or adenoma. Tracks can be used to filter the cohort, color plots or split data in all types of R2 analyses.
 
+![](_static/images/MolOncCRC/Tracks_as_annotation_inR2.png "Cohort overview: show the different annotation, i.e. tracks, available for a dataset")
+
+[**Cohort overview: show the different annotation, i.e. tracks, available for a dataset**](_static/images/MolOncCRC/Tracks_as_annotation_inR2.png)
+
+
 Above the grid, you can find an interactive pie chart for each track. The pie charts present an overview of the track's values in the dataset, detailing the percentage of samples in each category. You can hover over the pie charts to see more information per value and click on a pie section to filter the grid underneath for samples with that track value. 
 * Check the different group values in the pie chart of the tissue track and the proportion of samples for each group. 
 
